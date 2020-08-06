@@ -1,0 +1,11 @@
+@import "./mixins";
+@import "./light.less";
+@import "./dark.less";
+
+// OSUI的默认主题，分为亮色和暗色两种，不能放到variables.less里面（即通过styles-resources-loader注入到项目所有less文件中的less变量文件）
+// 否则所有的css variables会重复，而且很大
+
+// 如果想单独使用某种theme，可以不引用这个文件，而用自己的theme.less
+// 注意，定义的变量名应该一样
+
+.use-theme(.light-theme(), .dark-theme());

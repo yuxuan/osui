@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "packages/ui/*"
+  ],
+  "name": "osui-monorepo",
+  "description": "通用组件库",
+  "author": "osc,baidu",
+  "license": "MIT",
+  "scripts": {
+    "lint": "yarn workpspaces lint",
+    "build": "lerna run --stream --sort build",
+    "clean": "yarn workspaces run clean",
+    "storybook": "start-storybook -p 8777 -s public",
+    "prepack": "yarn build",
+    "version": "lerna version --conventional-commits"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn workspaces run lint"
+    }
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.7"
+  }
+}

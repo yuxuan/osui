@@ -1,0 +1,21 @@
+.use-theme(@light-theme, @dark-theme) {
+    @media (prefers-color-scheme: light) {
+        :root[data-theme="auto"] {
+            @light-theme();
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root[data-theme="auto"] {
+            @dark-theme();
+        }
+    }
+
+    :root {
+        @light-theme();
+    }
+
+    [data-theme="dark"] {
+        @dark-theme();
+    }
+}

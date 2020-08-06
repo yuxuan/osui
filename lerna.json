@@ -1,0 +1,27 @@
+{
+    "packages": [
+        "packages/*"
+    ],
+    "version": "independent",
+    "npmClient": "yarn",
+    "useWorkspaces": true,
+    "command": {
+        "version": {
+            "allowBranch": "master",
+            "ignoreChanges": [
+                "**/*.md",
+                "**/stories/**",
+                "**/__tests__/**",
+                "**/.eslintrc.js",
+                "**/jest.config.js",
+                "**/tsconfig.json"
+            ]
+        },
+        "publish": {
+            "ignoreChanges": ["*.md"],
+            "verifyAccess": false,
+            "verifyRegistry": false,
+            "message":"chore: publish"
+        }
+    }
+}

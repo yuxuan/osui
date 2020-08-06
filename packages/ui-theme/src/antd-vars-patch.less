@@ -1,0 +1,143 @@
+/**
+ * 主题，定制antd主题
+ */
+
+// -------- Colors -----------
+@primary-color: var(--theme-primary-color);
+@info-color: var(--theme-info-color);
+@success-color: var(--theme-success-color);
+@error-color: var(--theme-error-color);
+@warning-color: var(--theme-warning-color);
+
+// Color used by default to control hover and active backgrounds and for
+// alert info backgrounds.
+@primary-1: #eef0fd; // replace tint(@primary-color, 90%)
+@primary-2: #dce1fa;// replace tint(@primary-color, 80%)
+@primary-5: #7387eb; // color used to control the text color in many active and hover states, replace tint(@primary-color, 20%)
+@primary-7: #5971e7; // replace shade(@primary-color, 5%)
+
+// Base Scaffolding Variables
+// ---
+
+// Background color for `<body>`
+@body-background: var(--theme-body-bg);
+// Base background color for most components
+@component-background: var(--theme-component-bg);
+@font-family: "Helvetica Neue", "Helvetica", "Arial", "PingFangSC-Regular", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "sans-serif";
+@code-family: Consolas, Menlo, Courier, monospace;
+@heading-color: var(--theme-heading-color);
+@text-color:var(--theme-text-color);
+@text-color-secondary: var(--theme-text-color-secondary);
+@font-variant-base: normal; // https://github.com/ant-design/ant-design/issues/12690
+@font-size-base: 14px;
+@font-size-lg: 16px;
+@font-size-sm: 12px;
+@line-height-base: 1.5;
+@border-radius-base: 2px;
+@border-radius-sm: 2px;
+
+// The background colors for active and hover states for things like
+// list items or table cells.
+@item-hover-bg: var(--theme-secondaryColor-hover);
+@item-active-bg: var(--theme-secondaryColor-hover);
+
+// LINK
+@link-color:var(--link-color);
+@link-hover-color:var(--link-hover-color);
+@link-active-color:var(--link-active-color);
+@link-decoration: none;
+@link-hover-decoration: none;
+
+// Border color
+// 元素边框
+@border-color-base: var(--theme-border-color-base);
+@border-color-split: var(--theme-border-color-split);   // split border inside a component
+@border-color-inverse: var(--theme-border-color-inverse);
+@border-width-base: 1px;
+@border-style-base: solid;
+
+// Outline
+// ---
+@outline-blur-size: 6px;
+@outline-width: 0;
+
+@background-color-light: var(--ee-selected-item-bg-color); // background of header and selected item
+@background-color-base: var(--theme-bg-color-base);
+
+// Disabled states
+// ---
+@disabled-color: var(--theme-disabled-color);
+@disabled-bg: var(--theme-disabled-bg);
+
+// Input
+// ---
+@input-height-sm: @height-s;
+@input-height-base: @height-m;
+@input-height-lg: @height-l;
+@input-height-xl: @height-xl;
+@input-hover-border-color: var(--theme-primary-color);
+
+// Table
+// ---
+@table-row-hover-bg: var(--table-row-hover-bg);
+// Menu
+// ---
+@menu-inline-toplevel-item-height: 40px;
+@menu-item-height: 40px;
+@menu-collapsed-width: 80px;
+@menu-bg: var(--menu-bg);
+@menu-popup-bg: var(--menu-popup-bg);
+@menu-item-color: var(--menu-item-color);
+@menu-highlight-color: var(--menu-highlight-color);
+@menu-item-active-bg: var(--menu-item-active-bg);
+@menu-item-active-border-width: 3px;
+@menu-item-group-title-color: var(--menu-item-group-title-color);
+@menu-icon-size: @font-size-base;
+@menu-icon-size-lg: @font-size-lg;
+
+// Collapse
+// ---
+@collapse-header-padding: 12px 16px;
+@collapse-header-padding-extra: 40px;
+@collapse-header-bg: var(--collapse-header-bg);
+@collapse-content-bg: var(--collapse-content-bg);
+
+// Select
+// ---
+@select-item-selected-bg: var(--select-item-selected-bg);
+@select-item-active-bg: var(--select-item-active-bg);
+
+// ===== EE patch ====
+@height-s: 24px;
+@height-m: 30px;
+@height-l: 40px;
+@height-xl: 50px;
+
+/**
+ * text
+ * 字体相关
+ */
+@ee-font-family-no-number: "Helvetica Neue", "Helvetica", "Arial", "PingFangSC-Regular", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "sans-serif";
+@ee-font-family: @ee-font-family-no-number;
+@ee-code-family: Consolas, Menlo, Courier, monospace;
+@ee-font-variant-base: normal;
+@ee-font-size-s: 12px;
+@ee-font-size-m: 14px;
+@ee-font-size-l: 16px;
+@ee-font-size-xl: 20px;
+@ee-line-height: 1.5;
+
+/**
+ * box
+ * @description Try hard to put all box(block) related variables in this file.
+ */
+@ee-border-radius-xs: 2px;
+@ee-border-width-base: 1px;
+@ee-border-style-base: solid;
+// box-shadow blur的大小
+@ee-outline-blur-size: 6px;
+// box-shadow 宽度
+@ee-outline-width: 0;
+@ee-input-shadow: 0 2px 6px 0 var(--theme-primary-color);
+@ee-input-error-shadow: 0 2px 6px 0 var(--theme-error-color);
+@ee-input-warning-shadow: 0 2px 6px 0 var(--theme-warning-color);
