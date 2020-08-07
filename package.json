@@ -14,7 +14,7 @@
     "clean": "yarn workspaces run clean",
     "storybook": "start-storybook -p 8777 -s public",
     "prepack": "yarn build",
-    "version": "lerna version --conventional-commits",
+    "version": "lerna version --conventional-commits --yes",
     "commit": "git-cz"
   },
   "devDependencies": {
