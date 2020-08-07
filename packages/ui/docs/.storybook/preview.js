@@ -1,1 +1,1 @@
-import '@osui/theme/dist/theme.less';
+import '@osui/theme/dist/theme/vars.css';

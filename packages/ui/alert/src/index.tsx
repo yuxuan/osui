@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 const clsPrefix = 'osui-alert';
 
-export interface AlertProps extends AntdAlertProps {}
+export type AlertProps = AntdAlertProps;
 
 const Alert: React.FC<AlertProps> = props => {
     return <AntdAlert className={classNames(clsPrefix, props.className)} {...props} />;
