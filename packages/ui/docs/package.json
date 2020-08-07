@@ -1,7 +1,7 @@
 {
     "name": "@osui/docs",
     "private": true,
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -51,7 +51,5 @@
         "url": "ssh://huoyuxuan@icode.baidu.com:8235/baidu/ee-fe/etui"
     },
     "author": "huoyuxuan",
-    "license": "MIT",
-    "dependencies": {
-    }
+    "license": "MIT"
 }
