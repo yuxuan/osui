@@ -5,7 +5,8 @@ echo "npm $(npm -v)"
 echo "yarn $(yarn -v)"
 
 rm -rf dist
-mkdir dist
+mkdir -p dist/theme
 cp -r src/* dist
+cp -r vars/* dist/theme
 
 echo "build success"

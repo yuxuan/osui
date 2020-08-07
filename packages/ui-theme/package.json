@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "lint": "skr lint",
-    "build": "sh scripts/build.sh",
+    "build": "node scripts/build.js && sh scripts/build.sh",
     "prepack": "yarn build",
     "storybook": "start-storybook -p 8700",
     "clean": "rm -rf node_modules && rm -rf dist",
@@ -15,7 +15,7 @@
     "dist"
   ],
   "sideEffects": [
-    "dist/*.less"
+    "dist/*"
   ],
   "devDependencies": {
     "@babel/cli": "^7.10.5",
