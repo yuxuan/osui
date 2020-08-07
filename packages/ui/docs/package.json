@@ -1,7 +1,7 @@
 {
     "name": "@osui/docs",
     "private": true,
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -48,7 +48,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "ssh://huoyuxuan@icode.baidu.com:8235/baidu/ee-fe/etui"
+        "url": "https://gitee.com/yuxuanhuo/osui/tree/master"
     },
     "author": "huoyuxuan",
     "license": "MIT"

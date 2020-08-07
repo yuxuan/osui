@@ -1,41 +1,41 @@
 {
-  "private": true,
-  "workspaces": [
-    "packages/*",
-    "packages/ui/*"
-  ],
-  "name": "osui-monorepo",
-  "description": "通用组件库",
-  "author": "osc,baidu",
-  "license": "MIT",
-  "scripts": {
-    "lint": "yarn workpspaces lint",
-    "build": "lerna run --stream --sort build",
-    "clean": "yarn workspaces run clean",
-    "storybook": "start-storybook -p 8777 -s public",
-    "prepack": "yarn build",
-    "version": "lerna version --conventional-commits --yes",
-    "commit": "git-cz"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^9.1.1",
-    "@commitlint/config-conventional": "^9.1.1",
-    "commitizen": "^4.1.2",
-    "cz-conventional-changelog": "^3.2.0",
-    "husky": "^4.2.5",
-    "lerna": "^3.22.1",
-    "rimraf": "^3.0.2",
-    "typescript": "^3.9.7"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "skr lint --staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    "private": true,
+    "workspaces": [
+        "packages/*",
+        "packages/ui/*"
+    ],
+    "name": "osui-monorepo",
+    "description": "通用组件库",
+    "author": "osc,baidu",
+    "license": "MIT",
+    "scripts": {
+        "lint": "yarn workpspaces lint",
+        "build": "lerna run --stream --sort build",
+        "clean": "yarn workspaces run clean",
+        "storybook": "start-storybook -p 8777 -s public",
+        "prepack": "yarn build",
+        "version": "lerna version --conventional-commits --no-push",
+        "commit": "git-cz"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^9.1.1",
+        "@commitlint/config-conventional": "^9.1.1",
+        "commitizen": "^4.1.2",
+        "cz-conventional-changelog": "^3.2.0",
+        "husky": "^4.2.5",
+        "lerna": "^3.22.1",
+        "rimraf": "^3.0.2",
+        "typescript": "^3.9.7"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "skr lint --staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
     }
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  }
 }
