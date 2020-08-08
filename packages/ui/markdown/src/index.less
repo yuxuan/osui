@@ -1,0 +1,34 @@
+@osui-markdown-class-prefix: osui-alert;
+.@{osui-markdown-class-prefix} {
+    .main {
+        padding: 20px;
+
+        ul {
+            list-style: disc;
+        }
+
+        ol {
+            list-style: decimal;
+        }
+
+        ul,
+        ol {
+            ul {
+                list-style: circle;
+            }
+
+            ol {
+                list-style: lower-latin;
+            }
+        }
+
+        strong {
+            font-weight: 900;
+        }
+
+        // 覆盖 prism 中的样式
+        pre code::selection {
+            background-color: var(--ee-theme-primary-color);
+        }
+    }
+}
