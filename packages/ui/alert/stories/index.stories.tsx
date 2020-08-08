@@ -1,7 +1,6 @@
 import * as React from 'react';
-import {Alert} from 'antd';
 import {CheckCircleFilled, InfoCircleFilled} from '@ant-design/icons';
-import '@osui/theme/dist/theme/vars.css';
+import Alert from '../src';
 
 export default {
     title: 'OSUI-Alert',
