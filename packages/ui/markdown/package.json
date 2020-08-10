@@ -1,5 +1,5 @@
 {
-    "name": "@osui/{componentName}",
+    "name": "@osui/markdown",
     "version": "0.1.0",
     "description": "",
     "main": "dist/index.js",
@@ -56,5 +56,10 @@
         }
     },
     "dependencies": {
+        "classnames": "^2.2.6",
+        "github-markdown-css": "^4.0.0",
+        "remark": "^12.0.1",
+        "remark-html": "^12.0.0",
+        "unist-util-visit": "^2.0.3"
     }
 }

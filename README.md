@@ -1,22 +1,18 @@
 # osui
 
-#### 介绍
+## 介绍
 osui是基于开源组件库（例如antd），封装的一套业务性质的组件
 
-#### 软件架构
+## 软件架构
 采用monorepo模式，
 
 快速了解monorepo基本用法：https://zhuanlan.zhihu.com/p/71385053
 可以参考这篇文章快速了解monorepo的基本用法
 
-
-#### 安装教程
-
-
-#### 使用说明
+## 使用说明
 
 
-#### 参与贡献
+## 参与贡献
 
 1.  Fork 本仓库 （可以不fork直接拉分支）
 2.  新建 feat_xxx 或者 fix_xxx 分支，对分支名尽量和 convertional commits（见下面）保持一致
@@ -35,5 +31,55 @@ osui是基于开源组件库（例如antd），封装的一套业务性质的组
 
 最短操作路径： yarn commit -> 选feat或者fix -> 回车跳过 -> 输入你干了啥概述（字数限制） -> 回车跳过 -> 回车（没有breaking change的话） -> 回车
 
+熟练之后，可以用git commit 提交符合conventional commits的message。
+
 4.  新建 Pull Request
+
+## 开发说明
+
+### 准备工作
+
+1. clone 代码库到本地
+2. 执行：
+
+```
+yarn
+```
+
+### 如何开发一个新组件
+
+#### 创建新组件
+
+执行
+
+```
+yarn new-component 组件名
+```
+
+该命令会在`packages/ui/`目录下创建`组件名`目录，并将`package.json`中的`name`改为`@osui/组件名`
+
+（模板在`templates/component`下， 也可以手动复制到`packages/ui`目录下，但要记得替换`组件名`相关内容）
+
+**注意：**
+
+组件名小写字母，多个词用`-`分割，例如`app-layout`
+
+##### `yarn new-component` 不好用？
+
+手动方式：
+
+1. 把`templates/component`复制到`packages/ui`目录下，重命名成新建组件
+2. 将`package.json`和`README.md`中的`{componentName}`换成新命名的组件
+3. 将`{CapComponentName}`换成大写字母开头，camelcase的形式
+
+#### 开发新组件
+
+组件开发代码在组件文件夹`src/`目录下。开发时可以通过storybook进行调试：
+
+1. 在`stories/`目录下创建`index.stories.tsx`
+2. 从`src`中引入组件， 仿照`alert`
+3. `yarn`
+4. `yarn storybook`
+
+示例： 参考`alert`组件
 
