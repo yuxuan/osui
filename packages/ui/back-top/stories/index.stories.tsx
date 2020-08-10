@@ -11,7 +11,7 @@ export const Demo = () => {
             {/* default */}
             <OscBackTop style={{ right: 200 }} />
             {/* circle */}
-            <OscBackTop className={'ddd osui-back-top-circle'} />
+            <OscBackTop className={'osui-back-top-circle'} />
             <p>BackTop 回到顶部</p>
         </div>);
 };
