@@ -1,5 +1,5 @@
 {
-    "name": "@osui/alert",
+    "name": "@osui/input",
     "version": "0.1.2",
     "description": "",
     "main": "dist/index.js",
