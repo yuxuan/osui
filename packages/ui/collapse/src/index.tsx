@@ -8,11 +8,11 @@ const clsPrefix = 'osui-collapse';
 
 export type CollapseProps = AntdCollapseProps;
 
-const Collapse: React.FC<CollapseProps> = props => {
+const Collapse: React.FC<CollapseProps> = ({ className, ...restProps }) => {
     const defaultProps = {
         ghost: true,
-        ...props,
-        className: classNames(clsPrefix, props.className),
+        ...restProps,
+        className: classNames(clsPrefix, className),
     };
     return <AntdCollapse {...defaultProps} />;
 };
