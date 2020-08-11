@@ -8,7 +8,7 @@ export default {
 };
 
 export const Demo = () => {
-    return (<div style={{ padding: '50px' }}>
+    return (<div style={{padding: '50px'}}>
         <h2></h2>
         <Timeline>
             <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
@@ -19,12 +19,12 @@ export const Demo = () => {
         <Timeline mode="alternate" style={{width: 200}}>
             <Timeline.Item>时间列表</Timeline.Item>
             <Timeline.Item color="green">时间列表</Timeline.Item>
-            <Timeline.Item dot={<ClockCircleOutlined style={{ fontSize: '16px' }} />}>
+            <Timeline.Item dot={<ClockCircleOutlined style={{fontSize: '16px'}} />}>
                 时间列表
             </Timeline.Item>
             <Timeline.Item color="red">时间列表</Timeline.Item>
             <Timeline.Item>时间列表</Timeline.Item>
-            <Timeline.Item dot={<ClockCircleOutlined style={{ fontSize: '16px' }} />}>
+            <Timeline.Item dot={<ClockCircleOutlined style={{fontSize: '16px'}} />}>
                 时间列表
             </Timeline.Item>
         </Timeline>
