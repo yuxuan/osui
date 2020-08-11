@@ -1,0 +1,50 @@
+{
+  "name": "@osui/icons",
+  "version": "0.1.0",
+  "description": "OSUI icons",
+  "author": {
+    "name": "zhanglili01,huoyuxuan,lisiqi06,guyiling"
+  },
+  "scripts": {
+    "build": "yarn workspace @osui/icons-builder generate && sh scripts/build.sh",
+    "build-icons-only": "sh scripts/build.sh",
+    "prepublishOnly": "npm run build"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-export-default-from": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@rollup/plugin-alias": "^3.1.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "babel-plugin-react-require": "^3.0.0",
+    "react": "^16.4.1",
+    "rollup": "^1.12.3",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-node-resolve": "^5.0.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-string": "^3.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "icon",
+    "svg",
+    "ui",
+    "dls",
+    "react"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "dependencies": {
+    "@osui/icons-builder": "0.1.0"
+  }
+}
