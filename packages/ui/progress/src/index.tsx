@@ -9,7 +9,7 @@ const clsPrefix = 'osui-progress';
 export type ProgressProps = AntdProgressProps;
 
 const Progress: React.FC<ProgressProps> = props => {
-    return <AntdProgress className={classNames(clsPrefix, props.className)} {...props} />;
+    return <AntdProgress {...props}  className={classNames(clsPrefix, props.className)} />;
 };
 
 export default Progress;

@@ -10,8 +10,8 @@ export type CollapseProps = AntdCollapseProps;
 
 const Collapse: React.FC<CollapseProps> = props => {
     const defaultProps = {
-        ...props,
         ghost: true,
+        ...props,
         className: classNames(clsPrefix, props.className),
     };
     return <AntdCollapse {...defaultProps} />;
