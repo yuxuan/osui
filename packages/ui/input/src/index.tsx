@@ -5,13 +5,16 @@ import classNames from 'classnames';
 import './index.less';
 
 const clsPrefix = 'osui-input';
-const {TextArea} = AntdInput;
 export type InputProps = AntdInputProps;
 
-const Input: React.FC<InputProps> = props => {
-    return <AntdInput className={classNames(clsPrefix, props.className)} {...props} />;
-};
-Input.TextArea = TextArea;
+const Input = React.forwardRef<any, AntdInputProps>((props, ref) => {
+    return <AntdInput ref={ref} {...props} className={classNames(clsPrefix, props.className)} />;
+});
+
+Input.Group = AntdInput.Group;
+Input.Search = AntdInput.Search;
+Input.TextArea = AntdInput.TextArea;
+Input.Password = AntdInput.Password;
 
 export default Input;
 

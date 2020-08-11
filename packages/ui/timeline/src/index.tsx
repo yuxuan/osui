@@ -1,13 +1,18 @@
 import * as React from 'react';
 import {Timeline as AntdTimeline} from 'antd';
-import {TimelineProps as AntdTimelineProps} from 'antd/lib/timeline';
+import {TimelineProps as AntdTimelineProps, TimeLineItemProps as AntdTimelineItemProps} from 'antd/lib/Timeline';
 import classNames from 'classnames';
 
 const clsPrefix = 'osui-timeline';
 
 export type TimelineProps = AntdTimelineProps;
+export type TimelineItemProps = AntdTimelineItemProps;
 
-const Timeline: React.FC<TimelineProps> = props => {
+interface TimelineType extends React.FC<TimelineProps> {
+    Item: React.FC<TimelineItemProps>;
+  }
+
+const Timeline: TimelineType = props => {
     return <AntdTimeline className={classNames(clsPrefix, props.className)} {...props} />;
 };
 

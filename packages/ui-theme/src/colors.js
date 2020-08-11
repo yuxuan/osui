@@ -62,7 +62,7 @@ exports.tagColors = {
     '--color-purple-4': '#8777d9',
     '--color-purple-5': '#6554c0',
     '--color-purple-6': '#5243aa',
-    '--color-purple-7': '#403294', // gai
+    '--color-purple-7': '#403294',
     '--color-purple-8': '#35297a',
     '--color-purple-9': '#29205f',
     '--color-purple-10': '#1e1745',
@@ -263,6 +263,6 @@ exports.presetColors = {
     '--table-row-hover-bg': 'var(--color-brand-1)',
     '--tabs-highlight-color': 'var(--color-gray-9)',
     '--tabs-ink-bar-color': 'var(--color-gray-9)',
-    '--theme-tabs-top-before': '2px solid #ECEDF0', // tab的bottom线
+    '--tabs-top-before': '2px solid #ECEDF0', // tab的bottom线
     '--tabs-hover-color': 'var(--color-gray-9)',
 };

@@ -17,7 +17,6 @@ export const Demo = () => {
                 showIcon
                 closable
                 closeText={<span onClick={e => {
-                    console.log(1);
                     e.stopPropagation();
                 }}
                 >查看详情</span>}
@@ -45,7 +44,6 @@ export const Demo = () => {
                 showIcon
                 closable
                 closeText={<span onClick={e => {
-                    console.log(1);
                     e.stopPropagation();
                 }}
                 >查看详情</span>}
@@ -73,7 +71,6 @@ export const Demo = () => {
                 showIcon
                 closable
                 closeText={<span onClick={e => {
-                    console.log(1);
                     e.stopPropagation();
                 }}
                 >查看详情</span>}
@@ -101,7 +98,6 @@ export const Demo = () => {
                 showIcon
                 closable
                 closeText={<span onClick={e => {
-                    console.log(1);
                     e.stopPropagation();
                 }}
                 >查看详情</span>}
