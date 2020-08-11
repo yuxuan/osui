@@ -11,8 +11,8 @@ export type AlertProps = AntdAlertProps;
 
 const Alert: React.FC<AlertProps> = props => {
     let {icon} = props;
-    const {type} = props;
-    if (props.description && !icon) { // 描述存在，并且没有传递icon，则添加默认icon
+    const {type, description} = props;
+    if (description && !icon) { // 描述存在，并且没有传递icon，则添加默认icon
         icon = type === 'success' ? <CheckCircleFilled /> : <InfoCircleFilled />;
     }
     return <AntdAlert {...props} icon={icon} className={classNames(clsPrefix, props.className)} />;
