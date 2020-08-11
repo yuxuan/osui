@@ -8,7 +8,7 @@ export default {
 
 export const Demo = () => {
     return (
-        <div style={{padding: 30}}>
+        <>
             {/* success */}
             <Alert
                 style={{width: 500, marginBottom: 20}}
@@ -121,5 +121,6 @@ export const Demo = () => {
                 showIcon
                 icon={<InfoCircleFilled />}
             />
-        </div>);
+        </>
+    );
 };
