@@ -233,7 +233,7 @@ async function generate() {
             .map(({ slug, name }) =>
                 EXPORT_TPL.replace(/\{slug\}/g, slug).replace(/\{name\}/g, name)
             )
-            .join('') + 'export createIcon from \'./createIcon;\'\n';
+            .join('') + 'export createIcon from \'./createIcon\';\n';
         const decalreFile = icons
             .map(({ slug, name }) =>
                 DECLARE_TPL.replace(/\{slug\}/g, slug).replace(/\{name\}/g, name)
