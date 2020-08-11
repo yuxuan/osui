@@ -6,7 +6,8 @@
     "name": "zhanglili01,huoyuxuan,lisiqi06,guyiling"
   },
   "scripts": {
-    "build": "sh scripts/build.sh",
+    "build": "yarn workspace @osui/icons-builder generate && sh scripts/build.sh",
+    "build-icons-only": "sh scripts/build.sh",
     "prepublishOnly": "npm run build"
   },
   "main": "dist/cjs/index.js",

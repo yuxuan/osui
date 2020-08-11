@@ -83,3 +83,15 @@ yarn new-component 组件名
 
 示例： 参考`alert`组件
 
+
+#### 如何制作icon
+
+`packages/ui-icons`包为`osui`的icon工具包，其中包含`icons-builder`和`osui-icons`。
+
+`icons-builder`用于制作icon，`osui-icons`导出icon包。使用方法如下：
+
+1. 将svg添加到`icons-builder/raw`内，命名为`xxx-xxx.svg`（与组件命名方式相同）
+2. 执行 `yarn workspace @osui/icons-builder generate`。会产出新的icon到`osui-icons`。
+3. 执行 `yarn workspace @osui/icons build`。产出`dist/`目录。
+4. 在需要用到icon的组件，引入`import {IconXxxXxx} from '@osui/icons'`。
+

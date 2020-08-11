@@ -2,8 +2,8 @@
  * @file SVG icon factory
  * @author zhanglili, guyiling
  */
-import '@osui/icons-builder/src/icon.css';
-import { escapeHTML } from '@osui/icons-builder/src/util';
+import './icon.css';
+import { escapeHTML } from './util';
 
 const baseClassName = 'osui-icon';
 
