@@ -5,7 +5,6 @@
         "packages/ui/*",
         "packages/ui-icons/*"
     ],
-    "useWorkspaces":true,
     "name": "osui-monorepo",
     "description": "通用组件库",
     "author": "osc,baidu",

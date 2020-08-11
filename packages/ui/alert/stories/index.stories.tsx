@@ -1,5 +1,4 @@
 import * as React from 'react';
-import {CheckCircleFilled, InfoCircleFilled} from '@ant-design/icons';
 import Alert from '../src';
 
 export default {
@@ -34,7 +33,6 @@ export const Demo = () => {
                 description="你所提交的信息已经审核通过，请及时跟进申请状况。如有问题，请联系审核人员或在线客服。"
                 type="success"
                 showIcon
-                icon={<CheckCircleFilled />}
             />
             {/* warning */}
             <Alert
@@ -61,7 +59,6 @@ export const Demo = () => {
                 description="你所提交的信息已经审核失败，可以进入个人信箱查看原因，如有疑问，请联系客服人员。"
                 type="warning"
                 showIcon
-                icon={<InfoCircleFilled />}
             />
             {/* eroor */}
             <Alert
@@ -88,7 +85,6 @@ export const Demo = () => {
                 description="你所提交的信息已经审核失败，可以进入个人信箱查看原因，如有疑问，请联系客服人员。"
                 type="error"
                 showIcon
-                icon={<InfoCircleFilled />}
             />
             {/* info */}
             <Alert
@@ -115,7 +111,6 @@ export const Demo = () => {
                 description="你所提交的信息已经审核失败，可以进入个人信箱查看原因，如有疑问，请联系客服人员。"
                 type="info"
                 showIcon
-                icon={<InfoCircleFilled />}
             />
         </>
     );
