@@ -6,7 +6,7 @@
     "module": "dist/index.js",
     "scripts": {
         "lint": "skr lint",
-        "build": "echo \"release manual build\"",
+        "build": "echi \"release manual build\"",
         "build-all": "sh scripts/build.sh",
         "storybook": "start-storybook -p 8700",
         "clean": "rm -rf node_modules && rm -rf dist",
