@@ -1,7 +1,7 @@
 
 import * as React from 'react';
-import {Form, InputNumber} from 'antd';
-import {SearchOutlined, ExclamationCircleFilled, WarningFilled} from '@ant-design/icons';
+import {InputNumber} from 'antd';
+import {SearchOutlined} from '@ant-design/icons';
 import '@osui/theme/dist/theme/vars.css';
 import Input from '../src';
 const {TextArea} = Input;

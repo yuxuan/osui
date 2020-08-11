@@ -4,6 +4,7 @@
         "packages/*",
         "packages/ui/*"
     ],
+    "useWorkspaces":true,
     "name": "osui-monorepo",
     "description": "通用组件库",
     "author": "osc,baidu",
