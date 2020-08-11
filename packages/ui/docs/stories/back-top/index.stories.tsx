@@ -1,5 +1,5 @@
 import * as React from 'react';
-import OscBackTop from '../src';
+import OscBackTop from '@osui/back-top';
 
 export default {
     title: 'OSUI-BackTop',

@@ -94,4 +94,5 @@ yarn new-component 组件名
 2. 执行 `yarn workspace @osui/icons-builder generate`。会产出新的icon到`osui-icons`。
 3. 执行 `yarn workspace @osui/icons build`。产出`dist/`目录。
 4. 在需要用到icon的组件，引入`import {IconXxxXxx} from '@osui/icons'`。
+5. 使用： `<IconXxxXxxx />`
 

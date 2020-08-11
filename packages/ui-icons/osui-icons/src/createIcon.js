@@ -3,11 +3,11 @@
  * @author zhanglili, guyiling
  */
 import './icon.css';
-import { escapeHTML } from './util';
+import {escapeHTML} from './util';
 
 const baseClassName = 'osui-icon';
 
-export default function createIcon({ content, width, height }) {
+export default function createIcon({content, width, height}) {
     return ({ className, title, spin, ...props }) => {
         const iconClasses = [baseClassName, className];
 
