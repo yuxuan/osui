@@ -256,4 +256,5 @@ exports.presetColors = {
     '--select-item-active-bg': 'var(--theme-secondary-color-hover)',
     '--select-item-selected-bg': 'var(--theme-secondary-color-hover)',
     '--table-row-hover-bg': 'var(--color-brand-1)',
+    '--tag-check-border': 'var(--color-brand-4)',
 };

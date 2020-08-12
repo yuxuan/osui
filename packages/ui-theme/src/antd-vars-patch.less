@@ -33,7 +33,7 @@
 @font-size-lg: 16px;
 @font-size-sm: 12px;
 @line-height-base: 1.5;
-@border-radius-base: 2px;
+@border-radius-base: 4px;
 @border-radius-sm: 2px;
 
 // The background colors for active and hover states for things like
@@ -61,7 +61,7 @@
 @outline-blur-size: 6px;
 @outline-width: 0;
 
-@background-color-light: var(--ee-selected-item-bg-color); // background of header and selected item
+@background-color-light: var(--tag-default-bg); // background of header and selected item
 @background-color-base: var(--theme-bg-color-base);
 
 // Disabled states
@@ -141,3 +141,9 @@
 @ee-input-shadow: 0 2px 6px 0 var(--theme-primary-color);
 @ee-input-error-shadow: 0 2px 6px 0 var(--theme-error-color);
 @ee-input-warning-shadow: 0 2px 6px 0 var(--theme-warning-color);
+
+// Tag
+@tag-default-bg: @background-color-light;
+@tag-default-color: @text-color;
+@tag-font-size: @font-size-base;
+@tag-line-height: 22px;
