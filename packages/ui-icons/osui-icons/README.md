@@ -13,14 +13,14 @@ yarn add @osui/icons
 ## Usage
 
 ```jsx
-import {IconBackTop} from '@osui/icons'
+import { IconBackTop } from '@osui/icons'
 
 export default function Title() {
   return (
     <div className="title">
       <h1>
         Hello Icons
-        <IconBackTop style={{color: '#999', marginLeft: 5}} />
+        <IconBackTop style={{ color: '#999', marginLeft: 5 }} />
       </h1>
     </div>
   )
@@ -29,4 +29,8 @@ export default function Title() {
 
 ## Available Icons
 
-<table><tbody><tr><td align="center"><img src="./svg/back-top.svg"/><br/><sub>IconBackTop</sub></td><td align="center"></td><td align="center"></td></tr></tbody></table>
+<table><tbody><tr><td align="center">
+                                                        <img src="./svg/back-top.svg"/><br/><sub>IconBackTop</sub>
+                                                        </td><td align="center">
+                                                        <img src="./svg/navi-doc.svg"/><br/><sub>IconNaviDoc</sub>
+                                                        </td><td align="center"></td></tr></tbody></table>

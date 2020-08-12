@@ -1,6 +1,6 @@
-interface IconProps extends React.SVGProps<SVGSVGElement> {
-    scale?: number;
-}
 
-export type IconComponent = React.FC<IconProps>;
-export const IconBackTop: IconComponent;
+        interface IconProps extends React.SVGProps<SVGSVGElement> {
+        scale?: number;
+        }
+        export const IconBackTop: IconComponent;
+export const IconNaviDoc: IconComponent;
