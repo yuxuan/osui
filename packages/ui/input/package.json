@@ -1,6 +1,6 @@
 {
     "name": "@osui/input",
-    "version": "0.1.2",
+    "version": "0.1.0",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -48,9 +48,13 @@
         "type": "git",
         "url": "https://gitee.com/yuxuanhuo/osui/tree/master"
     },
-    "author": "huoyuxuan,zhusen",
+    "author": "huoyuxuan",
     "license": "MIT",
+    "husky": {
+        "hooks": {
+            "pre-commit": "skr lint ./src"
+        }
+    },
     "dependencies": {
-        "classnames": "^2.2.6"
     }
 }
