@@ -9,7 +9,6 @@ export default {
 export const Demo = () => {
     const [visible, setVisible] = useState(false);
     const [visibleBig, setBigVisible] = useState(false);
-
     return (
         <div style={{ padding: 30 }}>
             <Button type="primary" onClick={() => setVisible(true)}>
