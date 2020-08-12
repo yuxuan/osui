@@ -1,0 +1,37 @@
+@osui-search-select-list-class-prefix: osui-search-select-list;
+
+.@{osui-search-select-list-class-prefix} {
+    &-popover{
+        .ant-popover-content{
+            .ant-popover-inner{
+                .ant-popover-title{
+                    border-bottom: none;
+                    .ant-menu-horizontal{
+                        border-bottom-width: 2px;
+                    }
+                    .ant-menu-item{
+                        margin-right: 33px;
+                        margin-left: 0;
+                    }
+                }
+                .ant-popover-inner-content{
+                    .input{
+                        margin-bottom: 16px;
+                    }
+                    .list{
+                        list-style: none;
+                        padding: 0;
+                        li{
+                            display: block;
+                            height: 32px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+            }
+            .ant-popover-arrow{
+                display: none;
+            }
+        }
+    }
+}
