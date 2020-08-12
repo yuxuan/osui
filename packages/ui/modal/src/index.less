@@ -1,0 +1,55 @@
+@osui-modal-class-prefix: osui-modal;
+
+.@{osui-modal-class-prefix} {
+    &.@{osui-modal-class-prefix}-body-border {
+        .ant-modal-header {
+            border-bottom: 1px solid var(--theme-border-color-split);
+            padding-bottom: 24px;
+        }
+
+        .ant-modal-footer {
+            padding-top: 24px;
+            border-top: 1px solid var(--theme-border-color-split);
+        }
+
+        .ant-modal-body {
+            overflow-y: auto;
+        }
+    }
+
+    .ant-modal-header {
+        border-bottom: none;
+        padding-top: 24px;
+        padding-bottom: 0;
+
+        .ant-modal-title {
+            line-height: 24px;
+        }
+    }
+
+    .ant-modal-footer {
+        border-top: none;
+        padding: 0 30px 24px 24px;
+
+        .ant-btn {
+            min-width: 65px;
+            padding: 5px 16px;
+            border-radius: 4px;
+        }
+    }
+
+    .ant-modal-body {
+        padding: 16px 32px 16px 24px;
+    }
+
+    .ant-modal-content {
+        .ant-modal-close {
+            top: 8px;
+
+            .ant-modal-close-icon {
+                font-size: 14px;
+                color: var(--theme-heading-color);
+            }
+        }
+    }
+}

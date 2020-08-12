@@ -61,7 +61,7 @@
 @outline-blur-size: 6px;
 @outline-width: 0;
 
-@background-color-light: var(--tag-default-bg); // background of header and selected item
+@background-color-light: var(--theme-bg-color-light); // background of header and selected item
 @background-color-base: var(--theme-bg-color-base);
 
 // Disabled states
@@ -107,43 +107,29 @@
 @select-item-selected-bg: var(--select-item-selected-bg);
 @select-item-active-bg: var(--select-item-active-bg);
 
-// ===== EE patch ====
+// 一些less变量patch
+// ----
 @height-s: 24px;
 @height-m: 30px;
 @height-l: 40px;
 @height-xl: 50px;
 
-/**
- * text
- * 字体相关
- */
-@ee-font-family-no-number: "Helvetica Neue", "Helvetica", "Arial", "PingFangSC-Regular", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "sans-serif";
-@ee-font-family: @ee-font-family-no-number;
-@ee-code-family: Consolas, Menlo, Courier, monospace;
-@ee-font-variant-base: normal;
-@ee-font-size-s: 12px;
-@ee-font-size-m: 14px;
-@ee-font-size-l: 16px;
-@ee-font-size-xl: 20px;
-@ee-line-height: 1.5;
-
-/**
- * box
- * @description Try hard to put all box(block) related variables in this file.
- */
-@ee-border-radius-xs: 2px;
-@ee-border-width-base: 1px;
-@ee-border-style-base: solid;
-// box-shadow blur的大小
-@ee-outline-blur-size: 6px;
-// box-shadow 宽度
-@ee-outline-width: 0;
-@ee-input-shadow: 0 2px 6px 0 var(--theme-primary-color);
-@ee-input-error-shadow: 0 2px 6px 0 var(--theme-error-color);
-@ee-input-warning-shadow: 0 2px 6px 0 var(--theme-warning-color);
-
-// Tag
-@tag-default-bg: @background-color-light;
-@tag-default-color: @text-color;
-@tag-font-size: @font-size-base;
-@tag-line-height: 22px;
+// Alert
+// ---
+@alert-success-border-color: var(--alert-success-border-color);
+@alert-success-bg-color: var(--alert-success-bg-color);
+@alert-success-icon-color: var(--alert-success-icon-color);
+@alert-info-border-color: var(--alert-info-border-color);
+@alert-info-bg-color: var(--alert-info-bg-color);
+@alert-info-icon-color: var(--alert-info-icon-color);
+@alert-warning-border-color: var(--alert-warning-border-color);
+@alert-warning-bg-color: var(--alert-warning-bg-color);
+@alert-warning-icon-color: var(--alert-warning-icon-color);
+@alert-error-border-color: var(--alert-error-border-color);
+@alert-error-bg-color: var(--alert-error-bg-color);
+@alert-error-icon-color: var(--alert-error-icon-color);
+@alert-message-color: var(--theme-heading-color);
+@alert-text-color: var(--color-brand-10);
+@alert-close-color:  var(--theme-text-color-secondary);
+@alert-with-description-padding: var(--alert-with-description-padding);
+@alert-with-description-icon-top: var(--alert-with-description-icon-top);

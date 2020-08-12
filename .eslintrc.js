@@ -4,6 +4,7 @@ module.exports = {
     ],
     rules: {
         'react/jsx-uses-react': 'error',
+        'linebreak-style': [0, 'error', 'windows'],
     },
     overrides: [
         {
