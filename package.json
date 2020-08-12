@@ -2,7 +2,8 @@
     "private": true,
     "workspaces": [
         "packages/*",
-        "packages/ui/*"
+        "packages/ui/*",
+        "packages/ui-icons/*"
     ],
     "name": "osui-monorepo",
     "description": "通用组件库",
@@ -16,7 +17,8 @@
         "prepack": "yarn build",
         "version": "lerna version --conventional-commits --no-push",
         "commit": "git-cz",
-        "new-component": "sh scripts/new-component.sh"
+        "new-component": "sh scripts/new-component.sh",
+        "copy-to-docs": "sh scripts/copy-to-docs.sh"
     },
     "devDependencies": {
         "@commitlint/cli": "^9.1.1",

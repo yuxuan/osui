@@ -9,9 +9,11 @@ export const Demo = () => {
     return (
         <div style={{padding: 30, height: 1800}}>
             {/* default */}
-            <OscBackTop style={{ right: 200 }} />
+            <OscBackTop style={{right: 200}} />
             {/* circle */}
-            <OscBackTop className={'osui-back-top-circle'} />
+            <OscBackTop type="circle" />
             <p>BackTop 回到顶部</p>
-        </div>);
+            <p>往下滚才能看到我哟</p>
+        </div>
+    );
 };

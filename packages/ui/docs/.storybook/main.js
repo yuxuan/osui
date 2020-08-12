@@ -36,6 +36,7 @@ module.exports = {
     webpackFinal: async (config) => {
         config.module.rules.push({
             test: /\.(js|jsx|ts|tsx)$/,
+            exclude: /node_modules/,
             use: [
                 {
                     loader: 'babel-loader',
@@ -52,7 +53,6 @@ module.exports = {
                 loaders.styleResources(loaderOptions),
             ],
         });
-
 
         config.resolve.extensions.push('.ts', '.tsx');
         return config;
