@@ -271,6 +271,7 @@ exports.presetColors = {
     '--tag-font-color': 'var(--color-gray-9)',
     '--tag-blue-color': 'var(--color-brand-2)',
     '--tag-green-color': 'var(--color-success-1)',
+    '--tag-purple-color': 'var(--color-purple-1)',
     '--tag-red-color': 'var(--color-error-1)',
     '--tag-yellow-color': 'var(--color-warning-1)',
 };
