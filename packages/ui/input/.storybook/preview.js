@@ -1,4 +1,4 @@
-import {addParameters} from '@storybook/react';
+import {addParameters, addDecorator} from '@storybook/react';
 import {DocsPage, DocsContainer} from '@storybook/addon-docs/blocks';
 import {
     INITIAL_VIEWPORTS,
@@ -16,3 +16,5 @@ addParameters({
         }
     },
 });
+
+addDecorator(storyFn => <div style={{padding: 30}}>{storyFn()}</div>);
