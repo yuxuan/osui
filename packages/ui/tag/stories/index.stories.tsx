@@ -50,11 +50,13 @@ export const Demo = () => {
                 </CheckableTag>
             ))}
             {/* 多彩标签 */}
-            <Tag color="magenta">magenta</Tag>
+            <Tag color="blue">blue</Tag>
+            <Tag color="green">red</Tag>
+            <Tag color="purple">purple</Tag>
             <Tag color="red">red</Tag>
-            <Tag color="volcano">volcano</Tag>
-            <Tag color="orange">orange</Tag>
-            <Tag color="gold">gold</Tag>
+            <Tag color="teal">teal</Tag>
+            <Tag color="yellow">yellow</Tag>
+
 
             <Tag color="#f50">#f50</Tag>
             <Tag color="#2db7f5">#2db7f5</Tag>

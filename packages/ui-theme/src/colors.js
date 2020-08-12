@@ -257,4 +257,10 @@ exports.presetColors = {
     '--select-item-selected-bg': 'var(--theme-secondary-color-hover)',
     '--table-row-hover-bg': 'var(--color-brand-1)',
     '--tag-check-border': 'var(--color-brand-4)',
+    '--tag-font-color': 'var(--color-gray-9)',
+    '--tag-blue-color': 'var(--color-brand-2)',
+    '--tag-green-color': 'var(--color-success-1)',
+    '--tag-red-color': 'var(--color-error-1)',
+    '--tag-yellow-color': 'var(--color-warning-1)',
+
 };
