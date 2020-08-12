@@ -1,7 +1,7 @@
 import * as React from 'react';
+import {Divider} from 'antd';
 import {PlusOutlined} from '@ant-design/icons';
 import Tag from '../src';
-import {Divider} from 'antd';
 
 
 export default {
