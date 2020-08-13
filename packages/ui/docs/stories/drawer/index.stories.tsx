@@ -1,7 +1,5 @@
 import * as React from 'react';
-import {Button, Divider} from 'antd';
-import Drawer from '../src';
-
+import {Button, Divider, Drawer} from 'antd';
 
 export default {
     title: 'OSUI-Drawer',
