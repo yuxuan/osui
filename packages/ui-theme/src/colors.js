@@ -267,4 +267,6 @@ exports.presetColors = {
     '--tabs-ink-bar-color': 'var(--color-gray-9)',
     '--tabs-top-before': '2px solid #ECEDF0', // tab的bottom线
     '--tabs-hover-color': 'var(--color-gray-9)',
+    '--tooltip-bg': 'var(--color-gray-9)',
+    '--tooltip-color': 'var(--color-gray-1)',
 };

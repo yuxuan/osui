@@ -1,3 +1,8 @@
+/**
+ * @file Tooltip组件
+ * @author yangpeng
+ * */
+
 import * as React from 'react';
 import {Tooltip as AntdTooltip} from 'antd';
 import {TooltipProps as AntdTooltipProps} from 'antd/lib/Tooltip';
