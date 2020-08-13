@@ -1,7 +1,7 @@
 import * as React from 'react';
+import {Divider} from 'antd';
 import {PlusOutlined} from '@ant-design/icons';
 import Tag from '../src';
-
 
 export default {
     title: 'OSUI-Tag',
@@ -25,6 +25,7 @@ export const Demo = () => {
     return (
         <div style={{padding: 30}}>
             {/* success */}
+            <Divider orientation="left">基本</Divider>
             <Tag>标签</Tag>
             <Tag className={'osui-tag-dome-dashed'}>
                 <PlusOutlined style={{fontSize: '12px', marginRight: '4px'}} />
@@ -39,7 +40,9 @@ export const Demo = () => {
             >
                 标签
             </Tag>
+
             {/* 焦点状态 */}
+            <Divider orientation="left">可选择状态</Divider>
             {tagsData.map(tag => (
                 <CheckableTag
                     key={tag}
@@ -49,21 +52,18 @@ export const Demo = () => {
                     {tag}
                 </CheckableTag>
             ))}
-            {/* 多彩标签 */}
-            <Tag color="magenta">magenta</Tag>
-            <Tag color="red">red</Tag>
-            <Tag color="volcano">volcano</Tag>
-            <Tag color="orange">orange</Tag>
-            <Tag color="gold">gold</Tag>
 
+            {/* 多彩标签 */}
+            <Divider orientation="left">多彩标签(已修改属性，其他可用原生)</Divider>
+            <Tag color="blue">blue</Tag>
+            <Tag color="green">red</Tag>
+            <Tag color="purple">purple</Tag>
+            <Tag color="red">red</Tag>
+            <Tag color="teal">teal</Tag>
+            <Tag color="yellow">yellow</Tag>
+
+            <Divider orientation="left">自定义颜色</Divider>
             <Tag color="#f50">#f50</Tag>
             <Tag color="#2db7f5">#2db7f5</Tag>
-
-            <Tag color="success">success</Tag>
-            <Tag color="processing">processing</Tag>
-            <Tag color="error">error</Tag>
-            <Tag color="warning">warning</Tag>
-            <Tag color="default">default</Tag>
-
         </div>);
 };

@@ -267,4 +267,11 @@ exports.presetColors = {
     '--tabs-ink-bar-color': 'var(--color-gray-9)',
     '--tabs-top-before': '2px solid #ECEDF0', // tab的bottom线
     '--tabs-hover-color': 'var(--color-gray-9)',
+    '--tag-check-border': 'var(--color-brand-4)',
+    '--tag-font-color': 'var(--color-gray-9)',
+    '--tag-blue-color': 'var(--color-brand-2)',
+    '--tag-green-color': 'var(--color-success-1)',
+    '--tag-purple-color': 'var(--color-purple-1)',
+    '--tag-red-color': 'var(--color-error-1)',
+    '--tag-yellow-color': 'var(--color-warning-1)',
 };
