@@ -20,7 +20,7 @@ types.forEach(item => {
             defaultProps.className = clsPrefix;
             defaultProps.content = props;
         }
-        AntdMessage[item](props);
+        AntdMessage[item](defaultProps);
     };
 });
 
