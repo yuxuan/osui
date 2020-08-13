@@ -10,7 +10,7 @@
     "author": "osc,baidu",
     "license": "MIT",
     "scripts": {
-        "lint": "yarn workpspaces lint",
+        "lint": "yarn workspaces run lint",
         "build": "lerna run --stream --sort build",
         "clean": "yarn workspaces run clean",
         "storybook": "start-storybook -p 8777 -s public",
