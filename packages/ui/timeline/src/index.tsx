@@ -10,7 +10,7 @@ export type TimelineItemProps = AntdTimelineItemProps;
 
 interface TimelineType extends React.FC<TimelineProps> {
     Item: React.FC<TimelineItemProps>;
-  }
+}
 
 const Timeline: TimelineType = props => {
     return <AntdTimeline className={classNames(clsPrefix, props.className)} {...props} />;
