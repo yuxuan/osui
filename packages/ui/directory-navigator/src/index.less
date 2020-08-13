@@ -1,0 +1,38 @@
+@osui-tree-class-prefix: osui-directory-navigator;
+
+.@{osui-tree-class-prefix} {
+    &-tree {
+        &.ant-tree.ant-tree-directory {
+            .ant-tree-treenode {
+                height: 36px;
+                margin-left: -24px;
+                padding-left: 24px;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    &::before {
+                        background: var(--color-gray-3);
+                    }
+                }
+                // 选中的字体颜色
+                .ant-tree-node-content-wrapper.ant-tree-node-selected {
+                    color: var(--theme-text-color);
+                }
+            }
+
+            // 选中的背景色
+            .ant-tree-treenode-selected {
+                &:hover::before,
+                &::before {
+                    background: var(--color-brand-1);
+                }
+            }
+
+            // 隐藏switcher
+            .ant-tree-switcher {
+                display: none;
+            }
+        }
+    }
+}
