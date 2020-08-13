@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Radio as AntdRadio } from 'antd';
-import { RadioProps as AntdRadioProps, RadioGroupProps as AntdRadioGroupProps } from 'antd/lib/Radio';
+import { RadioProps as AntdRadioProps, RadioGroupProps as AntdRadioGroupProps } from 'antd/lib/radio';
 import classNames from 'classnames';
 import './index.less';
 
