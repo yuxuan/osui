@@ -9,8 +9,8 @@ const Group = Radio.Group;
 const RadioButton = Radio.Button;
 
 export const Demo = () => {
-    let [value, setValue] = useState(1);
-    let [valueButton, setValueButton] = useState('a');
+    const [value, setValue] = useState(1);
+    const [valueButton, setValueButton] = useState('a');
     return (
         <div style={{ padding: 30 }}>
             <p>基础示例</p>
@@ -20,7 +20,7 @@ export const Demo = () => {
             <Radio defaultChecked disabled>Radio</Radio>
             <p></p>
             <p>单选组合</p>
-            <Group onChange={(e) => setValue(e.target.value)} value={value}>
+            <Group onChange={e => setValue(e.target.value)} value={value}>
                 <Radio value={1}>A</Radio>
                 <Radio value={2}>B</Radio>
                 <Radio value={3}>C</Radio>
@@ -29,7 +29,7 @@ export const Demo = () => {
             </Group>
             <p></p>
             <p>按钮样式单选组合</p>
-            <Group onChange={(e) => setValueButton(e.target.value)} value={valueButton}>
+            <Group onChange={e => setValueButton(e.target.value)} value={valueButton}>
                 <RadioButton value="a">Hangzhou</RadioButton>
                 <RadioButton value="b">Shanghai</RadioButton>
                 <RadioButton value="c">Beijing</RadioButton>
