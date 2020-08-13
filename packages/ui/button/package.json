@@ -48,7 +48,7 @@
         "type": "git",
         "url": "https://gitee.com/yuxuanhuo/osui/tree/master"
     },
-    "author": "huoyuxuan",
+    "author": "zhangxingchang",
     "license": "MIT",
     "husky": {
         "hooks": {

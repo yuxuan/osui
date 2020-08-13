@@ -8,7 +8,7 @@ const clsPrefix = 'osui-button';
 
 export type ButtonProps = AntdButtonProps;
 
-const OscButton: React.FC<ButtonProps> = props => {
+const OSUIButton: React.FC<ButtonProps> = props => {
     let btnText = '';
     if (props.type !== 'image-text' && props.loading) {
         btnText = '';
@@ -20,4 +20,4 @@ const OscButton: React.FC<ButtonProps> = props => {
     </AntdButton>);
 };
 
-export default OscButton;
+export default OSUIButton;
