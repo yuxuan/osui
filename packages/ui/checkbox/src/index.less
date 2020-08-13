@@ -1,0 +1,23 @@
+@osui-checkbox-class-prefix: osui-checkbox;
+
+.@{osui-checkbox-class-prefix} {
+    .ant-checkbox-inner,
+    .ant-checkbox-checked::after {
+        border-radius: 4px;
+    }
+
+    .ant-checkbox-disabled .ant-checkbox-inner {
+        background-color: #fff;
+    }
+
+    &-group {
+        .ant-checkbox-inner,
+        .ant-checkbox-checked::after {
+            border-radius: 4px;
+        }
+
+        .ant-checkbox-disabled .ant-checkbox-inner {
+            background-color: #fff;
+        }
+    }
+}
