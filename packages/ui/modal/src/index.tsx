@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Modal as AntdModal } from 'antd';
-import { ModalProps as AntdModalProps } from 'antd/lib/Modal';
+import { ModalProps as AntdModalProps } from 'antd/lib/modal';
 import classNames from 'classnames';
 import './index.less';
 
