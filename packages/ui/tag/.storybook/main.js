@@ -37,7 +37,6 @@ module.exports = {
     webpackFinal: async (config) => {
         config.module.rules.push({
             test: /\.(js|jsx|ts|tsx)$/,
-            exclude: /node_modules/,
             use: [
                 {
                     loader: 'babel-loader',
