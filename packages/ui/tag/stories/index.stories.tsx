@@ -3,7 +3,6 @@ import {Divider} from 'antd';
 import {PlusOutlined} from '@ant-design/icons';
 import Tag from '../src';
 
-
 export default {
     title: 'OSUI-Tag',
 };
@@ -71,6 +70,5 @@ export const Demo = () => {
             <Tag color="processing">processing</Tag>
             <Tag color="error">error</Tag>
             <Tag color="warning">warning</Tag>
-            <Tag color="default">default</Tag>
         </div>);
 };
