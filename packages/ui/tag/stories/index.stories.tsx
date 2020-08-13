@@ -65,10 +65,5 @@ export const Demo = () => {
             <Divider orientation="left">自定义颜色</Divider>
             <Tag color="#f50">#f50</Tag>
             <Tag color="#2db7f5">#2db7f5</Tag>
-
-            <Tag color="success">success</Tag>
-            <Tag color="processing">processing</Tag>
-            <Tag color="error">error</Tag>
-            <Tag color="warning">warning</Tag>
         </div>);
 };
