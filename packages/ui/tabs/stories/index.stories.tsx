@@ -52,7 +52,8 @@ export const Demo = () => {
                     tab={
                         <span>
                             <ForkOutlined />
-                            Tab 1<em className="num">15</em>
+                            Tab 1
+                            <em className="num">15</em>
                         </span>
                     }
                     key="1"
@@ -63,7 +64,8 @@ export const Demo = () => {
                     tab={
                         <span>
                             <ForkOutlined />
-                            Tab 2<em className="num">15</em>
+                            Tab 2
+                            <em className="num">15</em>
                         </span>
                     }
                     key="2"
