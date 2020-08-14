@@ -12,12 +12,13 @@ export type CheckboxProps = AntdCheckboxProps;
 export type CheckboxGroupProps = AntdCheckboxGroupProps;
 
 const CheckboxGroup: React.FC<CheckboxGroupProps> = ({ className, ...restProps }) => {
-    return <AntdCheckboxGroup className={classNames(clsPrefix + '-group', className)} {...restProps} />;
+    return <AntdCheckboxGroup className={classNames(`${clsPrefix}-group`, className)} {...restProps} />;
 };
 
 interface CheckboxInterface extends React.FC<CheckboxProps> {
     Group: typeof CheckboxGroup;
 }
+
 const Checkbox: CheckboxInterface = ({ className, ...restProps }) => {
     return <AntdCheckbox className={classNames(clsPrefix, className)} {...restProps} />;
 };

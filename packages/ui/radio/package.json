@@ -1,5 +1,5 @@
 {
-    "name": "@osui/collapse",
+    "name": "@osui/radio",
     "version": "0.0.1",
     "description": "",
     "main": "dist/index.js",

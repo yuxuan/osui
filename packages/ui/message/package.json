@@ -48,7 +48,7 @@
         "type": "git",
         "url": "https://gitee.com/yuxuanhuo/osui/tree/master"
     },
-    "author": "huoyuxuan",
+    "author": "huoyuxuan,liushaozhen",
     "license": "MIT",
     "dependencies": {
         "classnames": "^2.2.6"
