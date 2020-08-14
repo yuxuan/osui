@@ -3354,7 +3354,7 @@
   dependencies:
     "@types/lodash" "*"
 
-"@types/lodash@*", "@types/lodash@^4.14.159":
+"@types/lodash@*":
   version "4.14.159"
   resolved "https://registry.npm.taobao.org/@types/lodash/download/@types/lodash-4.14.159.tgz#61089719dc6fdd9c5cb46efc827f2571d1517065"
   integrity sha1-YQiXGdxv3ZxctG78gn8lcdFRcGU=
