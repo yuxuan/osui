@@ -1,4 +1,4 @@
-import {partial} from 'lodash';
+import partial from 'lodash.partial';
 import {message as AntdMessage} from 'antd';
 import {MessageInstance as AntdMessageInstance, MessageApi as AntdMessageApi} from 'antd/lib/message';
 import './index.less';

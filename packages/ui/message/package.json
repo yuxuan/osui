@@ -28,7 +28,7 @@
         "@storybook/client-api": "^5.3.19",
         "@storybook/react": "^5.3.19",
         "@types/classnames": "^2.2.10",
-        "@types/lodash": "^4.14.159",
+        "@types/lodash.partial": "^4.2.6",
         "@types/react-dom": "^16.9.8",
         "antd": "^4.4.0",
         "babel-loader": "^8.1.0",
@@ -53,6 +53,6 @@
     "license": "MIT",
     "dependencies": {
         "classnames": "^2.2.6",
-        "lodash": "^4.17.19"
+        "lodash.partial": "^4.2.1"
     }
 }
