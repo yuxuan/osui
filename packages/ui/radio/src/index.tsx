@@ -12,7 +12,7 @@ export type RadioProps = AntdRadioProps;
 export type RadioGroupProps = AntdRadioGroupProps;
 
 const RadioGroup: React.FC<RadioGroupProps> = ({ className, ...restProps }) => {
-    return <AntdRadioGroup className={classNames(clsPrefix + '-group', className)} {...restProps} />;
+    return <AntdRadioGroup className={classNames(`${clsPrefix}-group`, className)} {...restProps} />;
 };
 
 interface RadioInterface extends React.FC<RadioProps> {
