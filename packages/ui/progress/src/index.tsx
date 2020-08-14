@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Progress as AntdProgress } from 'antd';
-import { ProgressProps as AntdProgressProps } from 'antd/lib/Progress';
+import { ProgressProps as AntdProgressProps } from 'antd/lib/progress';
 import classNames from 'classnames';
 import './index.less';
 
