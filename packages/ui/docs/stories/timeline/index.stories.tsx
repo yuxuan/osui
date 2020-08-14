@@ -9,7 +9,6 @@ export default {
 
 export const Demo = () => {
     return (<div style={{padding: '50px'}}>
-        <h2></h2>
         <Timeline>
             <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
             <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
