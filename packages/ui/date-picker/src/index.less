@@ -1,0 +1,26 @@
+@osui-picker-class-prefix: osui-picker;
+
+.@{osui-picker-class-prefix} {
+    .ant-picker-suffix {
+        color: var(--color-gray-8);
+    }
+
+    &.ant-picker-disabled {
+        border-color: var(--color-gray-3);
+        background: none;
+    }
+
+    &-dropdown {
+        .ant-picker-cell-in-range.ant-picker-cell-range-hover {
+            color: var(--color-gray-1);
+        }
+
+        .ant-picker-cell-in-range.ant-picker-cell-range-hover-start {
+            color: var(--color-gray-1);
+        }
+
+        .ant-picker-cell-in-range.ant-picker-cell-range-hover-end {
+            color: var(--color-gray-1);
+        }
+    }
+}

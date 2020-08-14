@@ -1,3 +1,5 @@
+import React from 'react';
+// @ts-ignore
 import Theme from '../src/';
 import '../src/styles/theme.less';
 
@@ -6,16 +8,16 @@ export default {title: 'EE theme'};
 export const Switcher = () => {
     return (
         <>
-        <div style={{background: '#000'}}>
-            <Theme.DarkModeSwitcher/>
-        </div>
-        <br />
-        <br />
-        <div style={{background: '#fff'}}>
-            <Theme.DarkModeSwitcher color="#000"/>
-        </div>
+            <div style={{background: '#000'}}>
+                <Theme.DarkModeSwitcher />
+            </div>
+            <br />
+            <br />
+            <div style={{background: '#fff'}}>
+                <Theme.DarkModeSwitcher color="#000" />
+            </div>
         </>
-    )
+    );
 };
 
 export const Demo = () => {
