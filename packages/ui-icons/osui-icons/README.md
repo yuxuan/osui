@@ -32,5 +32,7 @@ export default function Title() {
 <table><tbody><tr><td align="center">
                                                         <img src="./svg/back-top.svg"/><br/><sub>IconBackTop</sub>
                                                         </td><td align="center">
+                                                        <img src="./svg/branch-dropdown.svg"/><br/><sub>IconBranchDropdown</sub>
+                                                        </td><td align="center">
                                                         <img src="./svg/navi-doc.svg"/><br/><sub>IconNaviDoc</sub>
-                                                        </td><td align="center"></td></tr></tbody></table>
+                                                        </td></tr></tbody></table>
