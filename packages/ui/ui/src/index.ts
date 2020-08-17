@@ -1,2 +1,23 @@
 // @ts-nocheck
+export {default as BackTop} from './back-top';
+export {default as Markdown} from './markdown';
+export {default as Tag} from './tag';
+export {default as DatePicker} from './date-picker';
+export {default as Drawer} from './drawer';
+export {default as Checkbox} from './checkbox';
+export {default as SearchSelectList} from './search-select-list';
+export {default as Tooltip} from './tooltip';
+export {default as Timeline} from './timeline';
+export {default as Avatar} from './avatar';
+export {default as Radio} from './radio';
+export {default as Button} from './button';
+export {default as Table} from './table';
+export {default as Switch} from './switch';
+export {default as Message} from './message';
+export {default as Input} from './input';
+export {default as Modal} from './modal';
+export {default as Collapse} from './collapse';
+export {default as DirectoryNavigator} from './directory-navigator';
+export {default as Progress} from './progress';
+export {default as Badge} from './badge';
 export {default as Alert} from './alert';
