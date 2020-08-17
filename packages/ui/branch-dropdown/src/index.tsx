@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { DropDownProps as AntdDropDownProps} from 'antd/lib/dropdown';
-import { Menu, Dropdown, Button } from 'antd';
+import {DropDownProps as AntdDropDownProps} from 'antd/lib/dropdown';
+import {Menu, Dropdown, Button } from 'antd';
 import {DownOutlined} from '@ant-design/icons';
 import {IconBranchDropdown} from '@osui/icons';
 import classNames from 'classnames';
@@ -9,7 +9,15 @@ import './index.less';
 const clsPrefix = 'osui-branch-dropdown';
 export type DropdownProps = AntdDropDownProps;
 
-const BranchDropdown = (props: any) => {
+// overlay自己在组件里面覆盖了，所以不需要从外面传
+interface DropdownInterface extends Omit<DropdownProps, 'overlay'>{
+    classButtonName?: string;
+    classDropDownName?: string;
+    list: any[];
+    handleMenuItemClick: (item: any) => void;
+}
+
+const BranchDropdown: React.FC<DropdownInterface> = props => {
     const {
         classButtonName,
         classDropDownName,

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import OsuiBranchDropdown from '../src';
+import BranchDropdown from '../src';
 // eslint-disable-next-line @reskript/import-order
 
 export default {
@@ -33,13 +33,13 @@ export const Demo = () => {
         id: 'ecc339f',
     }];
     const [title, setTitle] = React.useState('');
-    function handleMenuItemClick(item) {
+    function handleMenuItemClick(item: any) {
         setTitle(item.title);
     }
     return (
         <div style={{padding: 30}}>
             <p>当前选中的选项是：<span style={{color: '#4C88FF'}}>{title}</span></p>
-            <OsuiBranchDropdown
+            <BranchDropdown
                 list={list}
                 handleMenuItemClick={handleMenuItemClick}
             />
