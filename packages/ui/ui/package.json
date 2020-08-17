@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "",
     "main": "dist/index.js",
     "module": "dist/index.js",
@@ -34,7 +34,5 @@
         "hooks": {
             "pre-commit": "skr lint ./src"
         }
-    },
-    "dependencies": {
     }
 }

@@ -30,6 +30,8 @@ export default function Title() {
 ## Available Icons
 
 <table><tbody><tr><td align="center">
+                                                        <img src="./svg/avatar.svg"/><br/><sub>IconAvatar</sub>
+                                                        </td><td align="center">
                                                         <img src="./svg/back-top.svg"/><br/><sub>IconBackTop</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/branch-dropdown.svg"/><br/><sub>IconBranchDropdown</sub>

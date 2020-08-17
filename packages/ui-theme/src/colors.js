@@ -274,4 +274,6 @@ exports.presetColors = {
     '--tag-purple-color': 'var(--color-purple-1)',
     '--tag-red-color': 'var(--color-error-1)',
     '--tag-yellow-color': 'var(--color-warning-1)',
+    '--tooltip-bg': 'var(--color-gray-9)',
+    '--tooltip-color': 'var(--color-gray-1)',
 };
