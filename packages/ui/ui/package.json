@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "",
     "main": "dist/index.js",
     "module": "dist/index.js",
@@ -36,7 +36,7 @@
         }
     },
     "dependencies": {
-        "@osui/icons": "0.2.0",
+        "@osui/icons": "^0.3.0",
         "classnames": "^2.2.6"
     }
 }

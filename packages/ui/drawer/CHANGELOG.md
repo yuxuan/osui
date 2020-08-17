@@ -5,12 +5,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # 0.3.0 (2020-08-17)
 
-**Note:** Version bump only for package @osui/tag
-
-
-
-
-
-## 0.1.1 (2020-08-17)
-
-**Note:** Version bump only for package @osui/tag
+**Note:** Version bump only for package @osui/drawer

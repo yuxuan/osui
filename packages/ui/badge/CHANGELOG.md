@@ -5,12 +5,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # 0.3.0 (2020-08-17)
 
-**Note:** Version bump only for package @osui/tag
 
+### Features
 
-
-
-
-## 0.1.1 (2020-08-17)
-
-**Note:** Version bump only for package @osui/tag
+* 新增avatar，badge组件 ([f6db4a8](https://gitee.com/yuxuanhuo/osui/tree/master/commits/f6db4a8575c347ffe1aa3b1c575590ae8a844567))
