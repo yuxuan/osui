@@ -38,5 +38,10 @@
     "dependencies": {
         "@osui/icons": "^0.3.0",
         "classnames": "^2.2.6"
-    }
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.com"
+    },
+    "gitHead": "d22c04b87ec8dc035e148bc616e0db1eac8afd98"
 }

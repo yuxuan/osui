@@ -47,5 +47,10 @@
     "url": "https://gitee.com/gitee-fe/osui/tree/master"
   },
   "author": "huoyuxuan",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.com"
+  },
+  "gitHead": "d22c04b87ec8dc035e148bc616e0db1eac8afd98"
 }
