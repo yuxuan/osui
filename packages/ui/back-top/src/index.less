@@ -1,11 +1,16 @@
 @osui-back-top-class-prefix: osui-back-top;
 
 .@{osui-back-top-class-prefix} {
-    background: var(--color-gray-7);
+    background: var(--color-gray-8);
     border-radius: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0.66;
+
+    &:hover {
+        opacity: 1;
+    }
 
     svg {
         font-size: 24px;
