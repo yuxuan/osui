@@ -1,4 +1,4 @@
-# @osui/{componentName}
+# @osui/tabs
 
 ## 安装说明
 
