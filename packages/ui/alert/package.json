@@ -51,6 +51,7 @@
     "author": "huoyuxuan,zhusen",
     "license": "MIT",
     "dependencies": {
+        "@osui/icons": "0.2.0",
         "classnames": "^2.2.6"
     }
 }

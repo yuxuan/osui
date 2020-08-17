@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { Modal as AntdModal } from 'antd';
-import { ModalProps as AntdModalProps } from 'antd/lib/modal';
+import {Modal as AntdModal} from 'antd';
+import {ModalProps as AntdModalProps} from 'antd/es/modal';
+import {ModalStaticFunctions as AntdModalStaticFunctions, globalConfig } from 'antd/es/Modal/confirm';
 import classNames from 'classnames';
 import './index.less';
 
-const { success, confirm, info, error, warning, destroyAll, useModal } = AntdModal;
+const {success, confirm, info, error, warning, warn, destroyAll, config} = AntdModal;
 
 const clsPrefix = 'osui-modal';
 
@@ -13,16 +14,10 @@ export interface ModalProps extends AntdModalProps {
 }
 
 interface ModalInterface extends React.FC<ModalProps> {
-    success: typeof success;
-    confirm: typeof confirm;
-    info: typeof info;
-    error: typeof error;
-    warning: typeof warning;
-    destroyAll: typeof destroyAll;
-    useModal: typeof useModal;
+    useModal: typeof AntdModal.useModal;
 }
 
-const Modal: ModalInterface = ({ className, bodyStyle = {}, bodyHeight, ...restProps }) => {
+const OriginModal: ModalInterface = ({ className, bodyStyle = {}, bodyHeight, ...restProps }) => {
     const classes = classNames({
         [`${clsPrefix}`]: true,
         [`${clsPrefix}-body-border`]: bodyHeight,
@@ -33,13 +28,20 @@ const Modal: ModalInterface = ({ className, bodyStyle = {}, bodyHeight, ...restP
     return <AntdModal bodyStyle={bodyStyle} className={classNames(classes)} {...restProps} />;
 };
 
+OriginModal.useModal = AntdModal.useModal;
+
+type Modal = typeof OriginModal & AntdModalStaticFunctions & { destroyAll: () => void, config: typeof globalConfig };
+
+const Modal: Modal = OriginModal as typeof AntdModal;
+
+// TODO: 这边没有添加自己的class preifx，因为UE没设计
 Modal.success = success;
 Modal.confirm = confirm;
 Modal.info = info;
 Modal.error = error;
+Modal.warn = warn;
 Modal.warning = warning;
 Modal.destroyAll = destroyAll;
-Modal.useModal = useModal;
-
+Modal.config = config;
 
 export default Modal;

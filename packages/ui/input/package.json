@@ -54,5 +54,8 @@
         "hooks": {
             "pre-commit": "skr lint ./src"
         }
+    },
+    "dependencies": {
+        "classnames": "^2.2.6"
     }
 }

@@ -45,6 +45,6 @@
     "react": ">=16"
   },
   "dependencies": {
-    "@osui/icons-builder": "^0.2.0"
+    "classnames": "^2.2.6"
   }
 }

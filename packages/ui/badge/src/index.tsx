@@ -1,12 +1,14 @@
 import * as React from 'react';
-import { Badge as AntdBadge } from 'antd';
-import { BadgeProps as AntdBadgeProps} from 'antd/lib/button';
+import {Badge as AntdBadge} from 'antd';
+import {BadgeProps as AntdBadgeProps} from 'antd/es/badge';
 import classNames from 'classnames';
 import './index.less';
 
 const clsPrefix = 'osui-badge';
 
-export type BadgeProps = AntdBadgeProps;
+export interface BadgeProps extends AntdBadgeProps {
+    count: number;
+}
 
 const OSUIBadge: React.FC<BadgeProps> = props => {
     let number = '';

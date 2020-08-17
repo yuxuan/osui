@@ -51,5 +51,8 @@
         "url": "https://gitee.com/yuxuanhuo/osui/tree/master"
     },
     "author": "huoyuxuan",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "classnames": "^2.2.6"
+    }
 }

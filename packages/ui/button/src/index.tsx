@@ -1,24 +1,27 @@
 import * as React from 'react';
 import { Button as AntdButton } from 'antd';
-import { ButtonProps as AntdButtonProps} from 'antd/lib/button';
+import { ButtonProps as AntdButtonProps, ButtonType} from 'antd/es/button';
 import classNames from 'classnames';
 import './index.less';
 
 const clsPrefix = 'osui-button';
 
-export type ButtonProps = AntdButtonProps;
+export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
+    type?: ButtonType | 'image-text';
+}
 
 const OSUIButton: React.FC<ButtonProps> = props => {
-    let btnText = '';
+    let btnText: string | React.ReactNode = '';
     if (props.type !== 'image-text' && props.loading) {
         btnText = '';
     } else {
         btnText = props.children;
     }
     return (
-    <AntdButton {...props} className={classNames(props.className, clsPrefix)} >
-        {btnText}
-    </AntdButton>
+        // @ts-ignore
+        <AntdButton {...props} className={classNames(props.className, clsPrefix)} >
+            {btnText}
+        </AntdButton>
     );
 };
 
