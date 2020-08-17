@@ -1,4 +1,4 @@
-# @osui/{componentName}
+# @osui/BranchDropdown
 
 ## 安装说明
 
@@ -7,11 +7,11 @@
 单包使用
 
 ```
-yarn install @osui/{componentName}
+yarn install @osui/branch-dropdown
 ```
 
 ```
-import {CapComponentName} from '@osui/{componentName}'
+import BranchDropdown from '@osui/branch-dropdown'
 ```
 
 ### 方式二
@@ -23,7 +23,7 @@ yarn install @osui/ui
 ```
 
 ```
-import {{CapComponentName}} from '@osui/ui';
+import {BranchDropdown} from '@osui/ui';
 ```
 
 
