@@ -1,6 +1,6 @@
 {
     "name": "@osui/radio",
-    "version": "0.1.0",
+    "version": "0.3.2",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -46,11 +46,16 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://gitee.com/yuxuanhuo/osui/tree/master"
+        "url": "https://gitee.com/gitee-fe/osui/tree/master"
     },
     "author": "huoyuxuan,liushaozhen",
     "license": "MIT",
     "dependencies": {
         "classnames": "^2.2.6"
-    }
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.com"
+    },
+    "gitHead": "d22c04b87ec8dc035e148bc616e0db1eac8afd98"
 }

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Timeline as AntdTimeline} from 'antd';
-import {TimelineProps as AntdTimelineProps, TimeLineItemProps as AntdTimelineItemProps} from 'antd/lib/timeline';
+import {TimelineProps as AntdTimelineProps, TimeLineItemProps as AntdTimelineItemProps} from 'antd/es/timeline';
 import classNames from 'classnames';
 
 const clsPrefix = 'osui-timeline';
