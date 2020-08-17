@@ -3,7 +3,7 @@ import {Divider} from 'antd';
 import RightDropdown from '../src';
 
 export default {
-    title: 'OSUI-Right-dropdown',
+    title: 'OSUI-Menu-dropdown',
 };
 
 export const Demo = () => {
@@ -14,6 +14,7 @@ export const Demo = () => {
         console.log(e);
     };
 
+    // 菜单数据
     const menuDate = [
         {
             title: '新建 Pull Request',
@@ -63,7 +64,6 @@ export const Demo = () => {
     return (
         <div style={{padding: 30}}>
             <Divider orientation="left">基本</Divider>
-
             <RightDropdown
                 //  @ts-ignore
                 trigger={['contextMenu']}
