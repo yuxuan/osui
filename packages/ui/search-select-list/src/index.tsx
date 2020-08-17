@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Popover, Button, Input, Menu} from 'antd';
-import {PopoverProps as AntdPooverProps} from 'antd/lib/popover';
+import {PopoverProps as AntdPooverProps} from 'antd/es/popover';
 import classNames from 'classnames';
 import {SearchOutlined} from '@ant-design/icons';
 import './index.less';
@@ -129,4 +129,3 @@ const SeacrhSelectList: React.FC<SeacrhSelectListProps> = props => {
 };
 
 export default SeacrhSelectList;
-
