@@ -7,11 +7,11 @@
 单包使用
 
 ```
-yarn install @osui/{componentName}
+yarn install @osui/tabs
 ```
 
 ```
-import {CapComponentName} from '@osui/{componentName}'
+import tabs from '@osui/tabs'
 ```
 
 ### 方式二
@@ -23,7 +23,7 @@ yarn install @osui/ui
 ```
 
 ```
-import {{CapComponentName}} from '@osui/ui';
+import {tabs} from '@osui/ui';
 ```
 
 
