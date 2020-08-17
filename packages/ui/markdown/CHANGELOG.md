@@ -8,7 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **markdown:** 添加markdown组件 ([b8e5cf8](https://gitee.com/yuxuanhuo/osui/tree/master/commits/b8e5cf81c78ecc732eaae9e88452cd9611432843))
+* **markdown:** 添加markdown组件 ([b8e5cf8](https://gitee.com/gitee-fe/osui/tree/master/commits/b8e5cf81c78ecc732eaae9e88452cd9611432843))
 
 
 
@@ -19,4 +19,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **markdown:** 添加markdown组件 ([b8e5cf8](https://gitee.com/yuxuanhuo/osui/tree/master/commits/b8e5cf81c78ecc732eaae9e88452cd9611432843))
+* **markdown:** 添加markdown组件 ([b8e5cf8](https://gitee.com/gitee-fe/osui/tree/master/commits/b8e5cf81c78ecc732eaae9e88452cd9611432843))

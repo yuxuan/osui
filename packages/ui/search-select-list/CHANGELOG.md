@@ -8,7 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **select-search-list:** 新增select-search-list组件 ([dfb8652](https://gitee.com/yuxuanhuo/osui/tree/master/commits/dfb8652356a64fd13c17559d040cd6b35ae773bc))
+* **select-search-list:** 新增select-search-list组件 ([dfb8652](https://gitee.com/gitee-fe/osui/tree/master/commits/dfb8652356a64fd13c17559d040cd6b35ae773bc))
 
 
 
@@ -19,4 +19,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **select-search-list:** 新增select-search-list组件 ([dfb8652](https://gitee.com/yuxuanhuo/osui/tree/master/commits/dfb8652356a64fd13c17559d040cd6b35ae773bc))
+* **select-search-list:** 新增select-search-list组件 ([dfb8652](https://gitee.com/gitee-fe/osui/tree/master/commits/dfb8652356a64fd13c17559d040cd6b35ae773bc))

@@ -8,9 +8,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* 修改pr头像图标尺寸 ([2812e9a](https://gitee.com/yuxuanhuo/osui/tree/master/commits/2812e9ab855c4a62f29a5829a8a8220ba4bb8def))
+* 修改pr头像图标尺寸 ([2812e9a](https://gitee.com/gitee-fe/osui/tree/master/commits/2812e9ab855c4a62f29a5829a8a8220ba4bb8def))
 
 
 ### Features
 
-* 新增avatar，badge组件 ([f6db4a8](https://gitee.com/yuxuanhuo/osui/tree/master/commits/f6db4a8575c347ffe1aa3b1c575590ae8a844567))
+* 新增avatar，badge组件 ([f6db4a8](https://gitee.com/gitee-fe/osui/tree/master/commits/f6db4a8575c347ffe1aa3b1c575590ae8a844567))

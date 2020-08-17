@@ -8,7 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* 新增table组件 ([eb0b2e7](https://gitee.com/yuxuanhuo/osui/tree/master/commits/eb0b2e70c2a8fa16dc4f6d30fc90bdf3f0a0e004))
+* 新增table组件 ([eb0b2e7](https://gitee.com/gitee-fe/osui/tree/master/commits/eb0b2e70c2a8fa16dc4f6d30fc90bdf3f0a0e004))
 
 
 
@@ -19,4 +19,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* 新增table组件 ([eb0b2e7](https://gitee.com/yuxuanhuo/osui/tree/master/commits/eb0b2e70c2a8fa16dc4f6d30fc90bdf3f0a0e004))
+* 新增table组件 ([eb0b2e7](https://gitee.com/gitee-fe/osui/tree/master/commits/eb0b2e70c2a8fa16dc4f6d30fc90bdf3f0a0e004))

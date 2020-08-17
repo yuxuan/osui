@@ -8,12 +8,12 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* 修改公共样式文件注释，修改button命名 ([f585ce0](https://gitee.com/yuxuanhuo/osui/tree/master/commits/f585ce0c491838f8780d3dd262b9b429ea56a2f1))
+* 修改公共样式文件注释，修改button命名 ([f585ce0](https://gitee.com/gitee-fe/osui/tree/master/commits/f585ce0c491838f8780d3dd262b9b429ea56a2f1))
 
 
 ### Features
 
-* 新增Button组件 ([a19c3e0](https://gitee.com/yuxuanhuo/osui/tree/master/commits/a19c3e0e95a4e6644f35e302f437aba906e27726))
+* 新增Button组件 ([a19c3e0](https://gitee.com/gitee-fe/osui/tree/master/commits/a19c3e0e95a4e6644f35e302f437aba906e27726))
 
 
 
@@ -24,9 +24,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* 修改公共样式文件注释，修改button命名 ([f585ce0](https://gitee.com/yuxuanhuo/osui/tree/master/commits/f585ce0c491838f8780d3dd262b9b429ea56a2f1))
+* 修改公共样式文件注释，修改button命名 ([f585ce0](https://gitee.com/gitee-fe/osui/tree/master/commits/f585ce0c491838f8780d3dd262b9b429ea56a2f1))
 
 
 ### Features
 
-* 新增Button组件 ([a19c3e0](https://gitee.com/yuxuanhuo/osui/tree/master/commits/a19c3e0e95a4e6644f35e302f437aba906e27726))
+* 新增Button组件 ([a19c3e0](https://gitee.com/gitee-fe/osui/tree/master/commits/a19c3e0e95a4e6644f35e302f437aba906e27726))

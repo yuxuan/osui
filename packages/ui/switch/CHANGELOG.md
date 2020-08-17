@@ -8,7 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **switch:** 新增switch组件 ([942201c](https://gitee.com/yuxuanhuo/osui/tree/master/commits/942201c054c18c3552a73c7baf01147cbc3a5b84))
+* **switch:** 新增switch组件 ([942201c](https://gitee.com/gitee-fe/osui/tree/master/commits/942201c054c18c3552a73c7baf01147cbc3a5b84))
 
 
 
@@ -19,4 +19,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **switch:** 新增switch组件 ([942201c](https://gitee.com/yuxuanhuo/osui/tree/master/commits/942201c054c18c3552a73c7baf01147cbc3a5b84))
+* **switch:** 新增switch组件 ([942201c](https://gitee.com/gitee-fe/osui/tree/master/commits/942201c054c18c3552a73c7baf01147cbc3a5b84))

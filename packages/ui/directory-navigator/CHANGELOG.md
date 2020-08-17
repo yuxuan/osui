@@ -8,7 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* 添加directory-navigator组件 ([593ea49](https://gitee.com/yuxuanhuo/osui/tree/master/commits/593ea499244b385bf89615f44e72d237ecd91607))
+* 添加directory-navigator组件 ([593ea49](https://gitee.com/gitee-fe/osui/tree/master/commits/593ea499244b385bf89615f44e72d237ecd91607))
 
 
 
@@ -19,4 +19,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* 添加directory-navigator组件 ([593ea49](https://gitee.com/yuxuanhuo/osui/tree/master/commits/593ea499244b385bf89615f44e72d237ecd91607))
+* 添加directory-navigator组件 ([593ea49](https://gitee.com/gitee-fe/osui/tree/master/commits/593ea499244b385bf89615f44e72d237ecd91607))
