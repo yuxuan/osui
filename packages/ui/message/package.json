@@ -1,6 +1,6 @@
 {
     "name": "@osui/message",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -28,6 +28,7 @@
         "@storybook/client-api": "^5.3.19",
         "@storybook/react": "^5.3.19",
         "@types/classnames": "^2.2.10",
+        "@types/lodash.partial": "^4.2.6",
         "@types/react-dom": "^16.9.8",
         "antd": "^4.4.0",
         "babel-loader": "^8.1.0",
@@ -48,9 +49,10 @@
         "type": "git",
         "url": "https://gitee.com/yuxuanhuo/osui/tree/master"
     },
-    "author": "huoyuxuan",
+    "author": "huoyuxuan,liushaozhen",
     "license": "MIT",
     "dependencies": {
-        "classnames": "^2.2.6"
+        "classnames": "^2.2.6",
+        "lodash.partial": "^4.2.1"
     }
 }

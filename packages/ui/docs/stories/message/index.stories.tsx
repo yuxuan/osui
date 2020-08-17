@@ -25,6 +25,11 @@ export const Demo = () => {
     const loading = () => {
         message.loading('This is a loading message');
     };
+
+    const open = () => {
+        message.open({type: 'success', content: 'This is a loading message', duration: 2});
+    };
+
     return (
         <div style={{ padding: 30 }}>
             <Space>
@@ -34,6 +39,7 @@ export const Demo = () => {
                 <Button onClick={warning}>Warning</Button>
                 <Button onClick={warn}>warn</Button>
                 <Button onClick={loading}>loading</Button>
+                <Button onClick={open}>open success</Button>
             </Space>
         </div>);
 };

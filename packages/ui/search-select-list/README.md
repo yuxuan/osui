@@ -1,4 +1,4 @@
-# @osui/{componentName}
+# @osui/search-select-list
 
 ## 安装说明
 
@@ -7,11 +7,11 @@
 单包使用
 
 ```
-yarn install @osui/{componentName}
+yarn install @osui/search-select-list
 ```
 
 ```
-import {CapComponentName} from '@osui/{componentName}'
+import SearchSelectList from '@osui/search-select-list'
 ```
 
 ### 方式二
@@ -23,7 +23,7 @@ yarn install @osui/ui
 ```
 
 ```
-import {{CapComponentName}} from '@osui/ui';
+import {SearchSelectList} from '@osui/ui';
 ```
 
 

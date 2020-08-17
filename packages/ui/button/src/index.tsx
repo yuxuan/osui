@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Button as AntdButton } from 'antd';
-import { ButtonProps as AntdButtonProps} from 'antd/lib/back-top';
+import { ButtonProps as AntdButtonProps} from 'antd/lib/button';
 import classNames from 'classnames';
 import './index.less';
 
@@ -15,9 +15,11 @@ const OSUIButton: React.FC<ButtonProps> = props => {
     } else {
         btnText = props.children;
     }
-    return (<AntdButton {...props} className={classNames(props.className, clsPrefix)} >
+    return (
+    <AntdButton {...props} className={classNames(props.className, clsPrefix)} >
         {btnText}
-    </AntdButton>);
+    </AntdButton>
+    );
 };
 
 export default OSUIButton;

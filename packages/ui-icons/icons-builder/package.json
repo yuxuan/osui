@@ -1,9 +1,11 @@
 {
   "private": true,
   "name": "@osui/icons-builder",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Icons for OSUI",
-  "files": ["src/"],
+  "files": [
+    "src/"
+  ],
   "scripts": {
     "generate": "node -r esm build/generate.js"
   },

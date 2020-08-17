@@ -1,0 +1,27 @@
+@osui-switch-class-prefix: osui-switch;
+
+.@{osui-switch-class-prefix} {
+    &.ant-switch-disabled {
+        opacity: 1;
+        background-color: var(--theme-disabled-bg);
+
+        .ant-switch-handle::before {
+            background-color: var(--theme-color-border-base);
+            box-shadow: none;
+        }
+    }
+
+    &.ant-switch-checked .ant-switch-inner {
+        margin-left: 9px;
+        margin-right: 25px;
+    }
+
+    .ant-switch-inner {
+        margin-right: 7px;
+        margin-left: 25px;
+
+        .anticon {
+            font-size: 10px;
+        }
+    }
+}
