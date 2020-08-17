@@ -1,6 +1,6 @@
 import partial from 'lodash.partial';
 import {message as AntdMessage} from 'antd';
-import {MessageInstance as AntdMessageInstance, MessageApi as AntdMessageApi} from 'antd/lib/message';
+import {MessageInstance as AntdMessageInstance, MessageApi as AntdMessageApi} from 'antd/es/message';
 import './index.less';
 
 const clsPrefix = 'osui-message';

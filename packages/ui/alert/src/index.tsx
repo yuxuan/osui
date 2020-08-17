@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Alert as AntdAlert} from 'antd';
-import {AlertProps as AntdAlertProps} from 'antd/lib/alert';
+import {AlertProps as AntdAlertProps} from 'antd/es/alert';
 import {CheckCircleFilled, InfoCircleFilled} from '@ant-design/icons';
 import classNames from 'classnames';
 import './index.less';

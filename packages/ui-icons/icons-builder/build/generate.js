@@ -247,10 +247,10 @@ async function generate() {
                             DECLARE_TPL.replace(/\{slug\}/g, slug).replace(/\{name\}/g, name)
                         );
                     decalreFile.unshift(`
-        interface IconProps extends React.SVGProps<SVGSVGElement> {
-        scale?: number;
-        }
-        `
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+    scale?: number;
+}
+`
                     );
                     decalreFile = decalreFile.join('');
                     ICON_PACKS.forEach(pack => {
