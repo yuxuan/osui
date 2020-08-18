@@ -1,0 +1,59 @@
+@osui-button-filter-class-prefix: osui-button-filter;
+
+.@{osui-button-filter-class-prefix} {
+    &.ant-btn {
+        border: none;
+        box-shadow: none;
+        color: var(--theme-text-color);
+        padding: 5px 12px;
+
+        .anticon-down {
+            margin-top: 4px;
+        }
+
+        .before-icon {
+            margin-right: 8px;
+            vertical-align: middle;
+            display: inline-block;
+            margin-top: -2px;
+        }
+    }
+
+    &:hover {
+        background-color: var(--color-gray-2);
+    }
+
+    &:active {
+        background-color: var(--color-gray-5);
+    }
+
+    &-number.ant-btn {
+        border: 1px solid var(--color-gray-4);
+
+        .num {
+            display: inline-block;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 12px;
+            background-color: var(--color-gray-3);
+            padding: 0 5px;
+            margin-left: 4px;
+            color: var(--theme-text-color);
+        }
+    }
+
+    &&-clicked {
+        color: var(--color-gray-1);
+        background-color: var(--color-gray-8);
+
+        .num {
+            color: var(--theme-text-color);
+        }
+    }
+
+    &[ant-click-animating-without-extra-node]::after {
+        border: 0 none;
+        opacity: 0;
+        animation: none 0 ease 0 1 normal;
+    }
+}
