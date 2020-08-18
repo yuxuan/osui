@@ -1,0 +1,29 @@
+@osui-tabs-class-prefix: osui-tabs;
+
+.@{osui-tabs-class-prefix} {
+    &.ant-tabs-top > .ant-tabs-nav::before {
+        border-bottom: 2px solid #ecedf0;
+    }
+
+    .ant-tabs-tab .anticon {
+        margin-right: 4px;
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        font-weight: normal;
+    }
+
+    .ant-tabs-tab .ant-tabs-tab-btn em.num {
+        background: #f5f6f8;
+        border-radius: 10px;
+        width: 25px;
+        height: 20px;
+        font-size: 12px;
+        color: var(--color-gray-9);
+        line-height: 20px;
+        display: inline-block;
+        text-align: center;
+        margin-left: 5px;
+        font-style: normal;
+    }
+}
