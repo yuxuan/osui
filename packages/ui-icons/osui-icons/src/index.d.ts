@@ -3,4 +3,6 @@
         scale?: number;
         }
         export const IconBackTop: IconComponent;
+export const IconLeftArrow: IconComponent;
+export const IconRightArrow: IconComponent;
 export const IconNaviDoc: IconComponent;

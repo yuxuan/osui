@@ -1,0 +1,52 @@
+@osui-back-top-class-prefix: osui-pagination;
+
+.@{osui-back-top-class-prefix} {
+
+    .ant-pagination-item {
+        border: 1px solid var(--color-gray-5);
+
+        &:hover {
+            border-color: var(--color-brand-4) !important;
+
+            a {
+                color: var(--color-brand-4);
+            }
+        }
+    }
+
+    .ant-pagination-prev {
+        border: 1px solid var(--color-gray-5);
+
+        &:hover {
+            border-color: var(--color-brand-4);
+        }
+    }
+
+    .ant-pagination-item-active {
+        border-color: var(--color-brand-1);
+        background: var(--color-brand-1);
+
+        a {
+            color: var(--color-brand-7);
+        }
+    }
+
+    .ant-pagination-simple-pager {
+
+        input {
+            width: 48px;
+            height: 22px;
+        }
+
+        .ant-pagination-slash {
+            margin: 0 16px;
+        }
+    }
+
+    &.ant-pagination-simple,&.mini {
+
+        .ant-pagination-prev {
+            border: none;
+        }
+    }
+}
