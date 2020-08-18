@@ -37,4 +37,3 @@ const OSUIAvatar: React.FC<AvatarProps> = props => {
 };
 
 export default OSUIAvatar;
->>>>>>> 18356f5cb3a10a9b9d2e5c1401c9a6a66520f3c7
