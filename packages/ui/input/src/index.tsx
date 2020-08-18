@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Input as AntdInput} from 'antd';
-import {InputProps as AntdInputProps} from 'antd/lib/input';
+import {InputProps as AntdInputProps} from 'antd/es/input';
 import classNames from 'classnames';
 import './index.less';
 
@@ -25,4 +25,3 @@ Input.TextArea = AntdInput.TextArea;
 Input.Password = AntdInput.Password;
 
 export default Input;
-

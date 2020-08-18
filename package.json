@@ -14,7 +14,6 @@
         "build": "lerna run --stream --sort build",
         "clean": "yarn workspaces run clean",
         "storybook": "start-storybook -p 8777 -s public",
-        "prepack": "yarn build",
         "version": "lerna version --conventional-commits --no-push",
         "commit": "git-cz",
         "new-component": "sh scripts/new-component.sh",

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Checkbox as AntdCheckbox } from 'antd';
-import { CheckboxProps as AntdCheckboxProps, CheckboxGroupProps as AntdCheckboxGroupProps } from 'antd/lib/checkbox';
+import { CheckboxProps as AntdCheckboxProps, CheckboxGroupProps as AntdCheckboxGroupProps } from 'antd/es/checkbox';
 import classNames from 'classnames';
 import './index.less';
 

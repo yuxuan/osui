@@ -1,7 +1,7 @@
 {
     "name": "@osui/docs",
     "private": true,
-    "version": "0.2.0",
+    "version": "0.3.1",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -48,8 +48,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://gitee.com/yuxuanhuo/osui/tree/master"
+        "url": "https://gitee.com/gitee-fe/osui/tree/master"
     },
     "author": "huoyuxuan",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "classnames": "^2.2.6"
+    }
 }

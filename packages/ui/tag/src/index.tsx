@@ -5,7 +5,7 @@
 
 import * as React from 'react';
 import {Tag as AntdTag} from 'antd';
-import {TagProps as AntdTagProps, CheckableTagProps as AntdCheckableTagProps} from 'antd/lib/tag';
+import {TagProps as AntdTagProps, CheckableTagProps as AntdCheckableTagProps} from 'antd/es/tag';
 import classNames from 'classnames';
 import './index.less';
 

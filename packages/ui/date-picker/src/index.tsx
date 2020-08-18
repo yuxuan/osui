@@ -5,7 +5,7 @@ import {
     WeekPickerProps as AntdWeekPickerProps,
     RangePickerProps as AntdRangePickerProps,
     DatePickerProps as AntdDatePickerProps,
-} from 'antd/lib/date-picker';
+} from 'antd/es/date-picker';
 import classNames from 'classnames';
 import './index.less';
 

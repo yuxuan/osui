@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Collapse as AntdCollapse} from 'antd';
-import {CollapseProps as AntdCollapseProps} from 'antd/lib/collapse';
+import {CollapseProps as AntdCollapseProps} from 'antd/es/collapse';
 import classNames from 'classnames';
 import './index.less';
 
