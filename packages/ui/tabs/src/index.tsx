@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Tabs as AntdTabs} from 'antd';
-import {TabsProps as AntdTabsProps, TabPaneProps as AntdTabPaneProps} from 'antd/lib/Tabs';
+import {TabsProps as AntdTabsProps, TabPaneProps as AntdTabPaneProps} from 'antd/es/tabs';
 import classNames from 'classnames';
 import './index.less';
 

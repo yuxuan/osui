@@ -1,5 +1,5 @@
 {
-    "name": "@osui/right-dropdown",
+    "name": "@osui/menu-dropdown",
     "version": "0.1.0",
     "description": "",
     "main": "dist/index.js",
@@ -56,5 +56,6 @@
         }
     },
     "dependencies": {
+        "classnames": "^2.2.6"
     }
 }
