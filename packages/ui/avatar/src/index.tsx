@@ -1,27 +1,40 @@
 import * as React from 'react';
-import {BackTop as AntdBackTop} from 'antd';
-import {BackTopProps as AntdBackTopProps} from 'antd/lib/back-top';
+import {Avatar as AntdAvatar} from 'antd';
+import {AvatarProps as AntdAvatarProps} from 'antd/lib/avatar';
+import {IconAvatar} from '@osui/icons';
 import classNames from 'classnames';
-import {IconBackTop} from '@osui/icons';
 import './index.less';
 
-const clsPrefix = 'osui-back-top';
+const clsPrefix = 'osui-avatar';
 
-export interface BackTopProps extends AntdBackTopProps {
-    type?: 'circle' | 'default';
+export interface AvatarProps extends AntdAvatarProps {
+    pr?: boolean;
 }
 
-const BackTop: React.FC<BackTopProps> = ({type = 'default', ...props}) => {
+const OSUIAvatar: React.FC<AvatarProps> = props => {
+    let size = '';
+    switch (props.size) {
+        case 'l':
+            size = `${clsPrefix}-l`;
+            break;
+        case 'm':
+            size = `${clsPrefix}-m`;
+            break;
+        case 's':
+            size = `${clsPrefix}-s`;
+            break;
+    }
     return (
-        <AntdBackTop
-            {...props}
-            className={
-                classNames(clsPrefix, props.className, {[`${clsPrefix}-circle`]: type === 'circle'})
+        <span className={clsPrefix}>
+            <AntdAvatar {...props} className={classNames(props.className, size)} />
+            {
+                props.pr ? (
+                    <IconAvatar className={`${clsPrefix}-pr`} />
+                ) : null
             }
-        >
-            <IconBackTop />
-        </AntdBackTop>
+        </span>
     );
 };
 
-export default BackTop;
+export default OSUIAvatar;
+>>>>>>> 18356f5cb3a10a9b9d2e5c1401c9a6a66520f3c7

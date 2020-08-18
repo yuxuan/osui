@@ -20,7 +20,5 @@ asdfasdf
 `;
 
 export const Demo = () => (
-    <div style={{padding: 30}}>
-        <Markdown content={content} />
-    </div>
+    <Markdown content={content} />
 );

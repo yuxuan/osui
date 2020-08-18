@@ -1,19 +1,41 @@
-@osui-back-top-class-prefix: osui-back-top;
+@osui-back-top-class-prefix: osui-avatar;
 
 .@{osui-back-top-class-prefix} {
-    background: var(--color-gray-7);
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    display: inline-block;
 
-    svg {
-        font-size: 24px;
-        color: var(--color-gray-1);
+    &-l {
+        font-size: 14px;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
     }
 
-    &-circle {
+    &-m {
+        font-size: 11px;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+    }
+
+    &-s {
+        font-size: 11px;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+    }
+
+    &-pr {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: var(--color-success-5);
+        background: var(--color-gray-1);
         border-radius: 50%;
-        overflow: hidden;
+        border: 1px solid var(--color-gray-1);
+>>>>>>> 18356f5cb3a10a9b9d2e5c1401c9a6a66520f3c7
     }
 }

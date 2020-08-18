@@ -1,6 +1,6 @@
 {
   "name": "@osui/icons",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "OSUI icons",
   "author": {
     "name": "zhanglili01,huoyuxuan,lisiqi06,guyiling"
@@ -45,6 +45,6 @@
     "react": ">=16"
   },
   "dependencies": {
-    "@osui/icons-builder": "0.1.0"
+    "@osui/icons-builder": "^0.2.0"
   }
 }
