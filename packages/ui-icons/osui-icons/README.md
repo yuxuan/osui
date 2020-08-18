@@ -35,6 +35,10 @@ export default function Title() {
                                                         <img src="./svg/back-top.svg"/><br/><sub>IconBackTop</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/branch-dropdown.svg"/><br/><sub>IconBranchDropdown</sub>
+                                                        </td></tr><tr><td align="center">
+                                                        <img src="./svg/branch-filter.svg"/><br/><sub>IconBranchFilter</sub>
+                                                        </td><td align="center">
+                                                        <img src="./svg/git-filter.svg"/><br/><sub>IconGitFilter</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/navi-doc.svg"/><br/><sub>IconNaviDoc</sub>
-                                                        </td><td align="center"></td></tr></tbody></table>
+                                                        </td></tr></tbody></table>

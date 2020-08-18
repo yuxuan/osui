@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Divider, Button} from 'antd';
-import MenuDropdown from '../src';
+import MenuDropdown from '@osui/menu-dropdown';
 
 export default {
     title: 'OSUI-Menu-dropdown',
