@@ -11,14 +11,65 @@ osui是基于开源组件库（例如antd），封装的一套业务性质的组
 
 ## 使用说明
 
+### 使用主题
+
+```
+yarn add @osui/theme
+```
+
+主题是**必须安装**的，不论是单包还是整包使用组件库，都需要主题。
+
+### 使用icons
+
+```
+yarn add @osui/icons
+```
+
+有些组件是需要`@osui/icons`的，或者项目中需要使用icons
+
+### 使用组件
+
 使用OSUI有两种方式
 
-### 方式一： 整包安装
+#### 方式一： 整包安装
 
 ```
 yarn add @osui/ui
 ```
 
+```
+import {Button} from '@osui/ui';
+```
+
+#### 方式二：单包使用
+
+```
+yarn add @osui/button
+```
+
+```
+import Button from '@osui/button';
+```
+
+### 结合create-react-app使用
+
+参考`example/create-react-app/my-app`的方式，（简单粗暴的复制粘贴吧）
+
+#### 说明
+
+本主题覆盖了antd主题，因此需要参考[antd create-react-app 主题替换的方案](https://ant.design/docs/react/use-with-create-react-app-cn#%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE)，即配合`craco`使用
+
+`example/create-react-app/my-app`中，需要注意的以下几点：
+
+1. 注意`package.json`中的依赖，`dependencies`和`devDependencies`都是必须的
+2. 在`App.js`引入`import '@osui/theme/dist/theme/vars.css';`
+3. 在`App.less`引入`@import '~antd/dist/antd.less';` antd有说明
+4. `craco.config.js`是CRA没有的
+5. `eslint`需要自己配置
+
+### 结合reskript使用
+
+TODO
 
 ## 参与贡献
 
@@ -104,3 +155,9 @@ yarn new-component 组件名
 4. 在需要用到icon的组件，引入`import {IconXxxXxx} from '@osui/icons'`。
 5. 使用： `<IconXxxXxxx />`
 
+
+## 已知问题
+
+1. 整包使用时，有一些依赖报错
+
+手动安装依赖的包，后续会添加到`@osui/ui`依赖内

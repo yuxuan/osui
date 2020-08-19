@@ -15,4 +15,6 @@ module.exports = {
             },
         },
     ],
+    ignorePatterns: ['examples/**/*'],
+    root: true,
 };
