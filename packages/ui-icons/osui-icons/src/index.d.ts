@@ -8,5 +8,7 @@ export const IconRightArrow: IconComponent;
 export const IconAvatar: IconComponent;
 export const IconBranchDropdown: IconComponent;
 export const IconBranchFilter: IconComponent;
+export const IconChecked: IconComponent;
+export const IconDown: IconComponent;
 export const IconGitFilter: IconComponent;
 export const IconNaviDoc: IconComponent;

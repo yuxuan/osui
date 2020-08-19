@@ -40,7 +40,11 @@ export default function Title() {
                                                         </td></tr><tr><td align="center">
                                                         <img src="./svg/branch-filter.svg"/><br/><sub>IconBranchFilter</sub>
                                                         </td><td align="center">
+                                                        <img src="./svg/checked.svg"/><br/><sub>IconChecked</sub>
+                                                        </td><td align="center">
+                                                        <img src="./svg/down.svg"/><br/><sub>IconDown</sub>
+                                                        </td></tr><tr><td align="center">
                                                         <img src="./svg/git-filter.svg"/><br/><sub>IconGitFilter</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/navi-doc.svg"/><br/><sub>IconNaviDoc</sub>
-                                                        </td><td align="center"></td><td align="center"></td></tr></tbody></table>
+                                                        </td><td align="center"></td></tr></tbody></table>
