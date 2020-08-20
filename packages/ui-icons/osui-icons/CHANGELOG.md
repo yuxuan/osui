@@ -23,7 +23,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * 新增avatar，badge组件 ([f6db4a8](https://gitee.com/gitee-fe/osui/commits/f6db4a8575c347ffe1aa3b1c575590ae8a844567))
 * 添加@osui/icons, 并在back-top组件中使用 ([28092fa](https://gitee.com/gitee-fe/osui/commits/28092fa3d54a91b116ffe5fc05f43a628fc376c0))
-* 添加对twotones icon的支持 ([d6f1523](https://gitee.com/gitee-fe/osui/commits/d6f15230d7865e3017bfc6cf15c87367e3bb187e))
+* 添加对colorful icon的支持 ([d6f1523](https://gitee.com/gitee-fe/osui/commits/d6f15230d7865e3017bfc6cf15c87367e3bb187e))
 
 
 
@@ -40,4 +40,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Features
 
 * 添加@osui/icons, 并在back-top组件中使用 ([28092fa](https://gitee.com/gitee-fe/osui/commits/28092fa3d54a91b116ffe5fc05f43a628fc376c0))
-* 添加对twotones icon的支持 ([d6f1523](https://gitee.com/gitee-fe/osui/commits/d6f15230d7865e3017bfc6cf15c87367e3bb187e))
+* 添加对colorful icon的支持 ([d6f1523](https://gitee.com/gitee-fe/osui/commits/d6f15230d7865e3017bfc6cf15c87367e3bb187e))

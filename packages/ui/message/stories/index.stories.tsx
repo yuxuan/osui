@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Button, Space } from 'antd';
 import message from '../src';
 

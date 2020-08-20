@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {Popover, Button, Input, Menu} from 'antd';
 import {PopoverProps as AntdPooverProps} from 'antd/es/popover';
 import classNames from 'classnames';

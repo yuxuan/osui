@@ -11,7 +11,7 @@ yarn install @osui/ButtonFilter
 ```
 
 ```
-import {ButtonFilter} from '@osui/button-filter'
+import {ButtonFilter} from '@osui/toggle-button'
 ```
 
 ### 方式二
@@ -25,6 +25,3 @@ yarn install @osui/ui
 ```
 import {ButtonFilter} from '@osui/ui';
 ```
-
-
-

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {Alert as AntdAlert} from 'antd';
 import {AlertProps as AntdAlertProps} from 'antd/es/alert';
 import {CheckCircleFilled, InfoCircleFilled} from '@ant-design/icons';

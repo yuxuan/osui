@@ -3,7 +3,7 @@
  * @author yangpeng
  * */
 
-import * as React from 'react';
+import React from 'react';
 import {Tooltip as AntdTooltip} from 'antd';
 import {TooltipProps as AntdTooltipProps} from 'antd/es/tooltip';
 import classNames from 'classnames';

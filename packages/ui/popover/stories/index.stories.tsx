@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import OSUIPopover from '../src';
 import { Button } from 'antd';
 

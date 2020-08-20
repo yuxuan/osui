@@ -30,12 +30,10 @@ export default function Title() {
 ## Available Icons
 
 <table><tbody><tr><td align="center">
+                                                        <img src="./svg/avatar.svg"/><br/><sub>IconAvatar</sub>
+                                                        </td><td align="center">
                                                         <img src="./svg/back-top.svg"/><br/><sub>IconBackTop</sub>
                                                         </td><td align="center">
-                                                        <img src="./svg/left-arrow.svg"/><br/><sub>IconLeftArrow</sub>
-                                                        </td><td align="center">
-                                                        <img src="./svg/right-arrow.svg"/><br/><sub>IconRightArrow</sub>
-                                                        </td></tr><tr><td align="center">
                                                         <img src="./svg/branch-dropdown.svg"/><br/><sub>IconBranchDropdown</sub>
                                                         </td></tr><tr><td align="center">
                                                         <img src="./svg/branch-filter.svg"/><br/><sub>IconBranchFilter</sub>
@@ -46,5 +44,9 @@ export default function Title() {
                                                         </td></tr><tr><td align="center">
                                                         <img src="./svg/git-filter.svg"/><br/><sub>IconGitFilter</sub>
                                                         </td><td align="center">
+                                                        <img src="./svg/left-arrow.svg"/><br/><sub>IconLeftArrow</sub>
+                                                        </td><td align="center">
+                                                        <img src="./svg/right-arrow.svg"/><br/><sub>IconRightArrow</sub>
+                                                        </td></tr><tr><td align="center">
                                                         <img src="./svg/navi-doc.svg"/><br/><sub>IconNaviDoc</sub>
-                                                        </td><td align="center"></td></tr></tbody></table>
+                                                        </td><td align="center"></td><td align="center"></td></tr></tbody></table>

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import OSUIPagination from '../src';
 import zhCN from 'antd/es/locale/zh_CN';
 import { ConfigProvider } from 'antd';

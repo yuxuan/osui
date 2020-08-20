@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {ClockCircleOutlined} from '@ant-design/icons';
 import '@osui/theme/dist/theme/vars.css';
 import Timeline from '@osui/timeline';

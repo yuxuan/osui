@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Checkbox from '@osui/checkbox';
 
 const Group = Checkbox.Group;

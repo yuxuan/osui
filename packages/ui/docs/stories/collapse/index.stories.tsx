@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Collapse from '@osui/collapse';
 
 const { Panel } = Collapse;

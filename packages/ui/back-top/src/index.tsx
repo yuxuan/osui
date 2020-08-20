@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {BackTop as AntdBackTop} from 'antd';
 import {BackTopProps as AntdBackTopProps} from 'antd/es/back-top';
 import classNames from 'classnames';

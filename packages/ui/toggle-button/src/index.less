@@ -1,22 +1,20 @@
-@osui-button-filter-class-prefix: osui-button-filter;
+@osui-toggle-button-class-prefix: osui-toggle-button;
 
-.@{osui-button-filter-class-prefix} {
+.@{osui-toggle-button-class-prefix} {
+    &-afterIcon {
+        margin-left: 8px;
+    }
+
+    &-beforeIcon {
+        margin-right: 8px;
+    }
+
     &.ant-btn {
         border: none;
         box-shadow: none;
         color: var(--theme-text-color);
-        padding: 5px 12px;
-
-        .anticon-down {
-            margin-top: 4px;
-        }
-
-        .before-icon {
-            margin-right: 8px;
-            vertical-align: middle;
-            display: inline-block;
-            margin-top: -2px;
-        }
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     &:hover {

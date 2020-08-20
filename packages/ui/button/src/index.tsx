@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Button as AntdButton } from 'antd';
 import { ButtonProps as AntdButtonProps, ButtonType} from 'antd/es/button';
 import classNames from 'classnames';

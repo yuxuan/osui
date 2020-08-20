@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {Tabs as AntdTabs} from 'antd';
 import {TabsProps as AntdTabsProps, TabPaneProps as AntdTabPaneProps} from 'antd/es/tabs';
 import classNames from 'classnames';
@@ -19,4 +19,3 @@ const Tabs: TabInterface = props => {
 Tabs.TabPane = AntdTabs.TabPane;
 
 export default Tabs;
-

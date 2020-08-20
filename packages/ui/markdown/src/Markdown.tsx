@@ -2,7 +2,7 @@
  * @file Markdown 组件
  * @author zhangguoqing02
  */
-import * as React from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import remark from 'remark';
 import htmlPlugin from 'remark-html';

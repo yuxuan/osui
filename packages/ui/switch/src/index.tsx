@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Switch as AntdSwitch } from 'antd';
 import { SwitchProps as AntdSwitchProps } from 'antd/es/switch';
 import classNames from 'classnames';

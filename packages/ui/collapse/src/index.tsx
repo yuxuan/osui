@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {Collapse as AntdCollapse} from 'antd';
 import {CollapseProps as AntdCollapseProps} from 'antd/es/collapse';
 import classNames from 'classnames';

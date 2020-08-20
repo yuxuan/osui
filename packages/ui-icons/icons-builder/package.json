@@ -7,7 +7,9 @@
     "src/"
   ],
   "scripts": {
-    "generate": "node -r esm build/generate.js"
+    "generate": "node -r esm build/generate.js",
+    "clean": "rm -rf node_modules"
+
   },
   "keywords": [
     "svg",

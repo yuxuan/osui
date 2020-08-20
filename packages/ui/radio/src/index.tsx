@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Radio as AntdRadio } from 'antd';
 import { RadioProps as AntdRadioProps, RadioGroupProps as AntdRadioGroupProps } from 'antd/es/radio';
 import classNames from 'classnames';

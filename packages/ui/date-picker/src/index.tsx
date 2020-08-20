@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {DatePicker as AntdDatePicker} from 'antd';
 import {
     MonthPickerProps as AntdMonthPickerProps,

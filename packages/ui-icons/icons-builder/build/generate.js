@@ -17,7 +17,7 @@ const svgo = new Svgo({
 const ENDPOINT = process.env.DLS_ICONS_API;
 // 硬编码与osui-icons绑在了一起
 const RAW_DIR = path.resolve(__dirname, '../../osui-icons', 'raw');
-const RAW_TWOTONES_DIR = path.resolve(__dirname, '../../osui-icons', 'twotonesRaw');
+const RAW_COLORFUL_DIR = path.resolve(__dirname, '../../osui-icons', 'colorfulRaw');
 const SVG_DIR = path.resolve(__dirname, '../../osui-icons', 'svg');
 const ICON_PATTERN = /^(.+)\.svg$/;
 const MODULE_TPL = fs.readFileSync(
@@ -58,7 +58,7 @@ function walkElement(el, { enter, leave }) {
 }
 
 async function getSVGFiles(DIR, { keepSvgFill = false }) {
-    // ENDPOINT 如果有twotones的怎么办
+    // ENDPOINT 如果有COLORFUL的怎么办
     if (ENDPOINT) {
         const { data } = JSON.parse(await fetch(ENDPOINT).then(res => res.text()));
 
@@ -198,7 +198,7 @@ async function generate() {
 
     Promise.all([
         await getSVGFiles(RAW_DIR, { keepSvgFill: false }),
-        await getSVGFiles(RAW_TWOTONES_DIR, { keepSvgFill: true }),
+        await getSVGFiles(RAW_COLORFUL_DIR, { keepSvgFill: true }),
     ])
         .then(svgs => flatten(svgs).map(
             async ({ slug, content, keepSvgFill }) => {

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {Select as AntSelect} from 'antd';
 import {SelectProps} from 'antd/es/select';
 import classNames from 'classnames';

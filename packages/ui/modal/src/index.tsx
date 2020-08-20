@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {Modal as AntdModal} from 'antd';
 import {ModalProps as AntdModalProps} from 'antd/es/modal';
 import {ModalStaticFunctions as AntdModalStaticFunctions, globalConfig} from 'antd/es/modal/confirm';

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import {Tree as AntdTree} from 'antd';
 import {TreeProps as AntdTreeProps} from 'antd/es/tree';

@@ -1499,6 +1499,44 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
+"@huse/boolean@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/@huse/boolean/download/@huse/boolean-1.0.2.tgz#139cfe12703ad76dbc7a67c92a82d853d7e0ff89"
+  integrity sha1-E5z+EnA61228emfJKoLYU9fg/4k=
+  dependencies:
+    "@huse/methods" "^1.1.1"
+
+"@huse/click-outside@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/@huse/click-outside/download/@huse/click-outside-1.0.1.tgz#a9f1f0b1f3d0646e28344f9a5c4a513ccfcc6f4d"
+  integrity sha1-qfHwsfPQZG4oNE+aXEpRPM/Mb00=
+  dependencies:
+    "@huse/document-event" "^1.0.1"
+
+"@huse/derived-state@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/@huse/derived-state/download/@huse/derived-state-1.0.1.tgz#89b33caa3281923c6afe1ee702a852c427bdf233"
+  integrity sha1-ibM8qjKBkjxq/h7nAqhSxCe98jM=
+
+"@huse/document-event@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/@huse/document-event/download/@huse/document-event-1.0.1.tgz#adcaa13cf841ae74b19d07e7c0d9dc65936e1dfd"
+  integrity sha1-rcqhPPhBrnSxnQfnwNncZZNuHf0=
+
+"@huse/immer@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/@huse/immer/download/@huse/immer-1.0.2.tgz#e1bad0884284864c4ea1694377c9dc91aa7741ca"
+  integrity sha1-4brQiEKEhkxOoWlDd8nckap3Qco=
+  dependencies:
+    immer "^6.0.1"
+
+"@huse/methods@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.npm.taobao.org/@huse/methods/download/@huse/methods-1.1.1.tgz#9e1d417cdff5a068319ac1b2282b1fd784015f58"
+  integrity sha1-nh1BfN/1oGgxmsGyKCsf14QBX1g=
+  dependencies:
+    "@huse/immer" "^1.0.2"
+
 "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.npm.taobao.org/@jest/console/download/@jest/console-24.9.0.tgz?cache=0&sync_timestamp=1596104022924&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40jest%2Fconsole%2Fdownload%2F%40jest%2Fconsole-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"
@@ -5451,14 +5489,9 @@ classnames-loader@^2.1.0:
   dependencies:
     loader-utils "^0.2.11"
 
-classnames@2.x, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5:
+classnames@2.x, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.npm.taobao.org/classnames/download/classnames-2.2.6.tgz?cache=0&sync_timestamp=1589682470447&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fclassnames%2Fdownload%2Fclassnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
-  integrity sha1-Q5Nb/90pHzJtrQogUwmzjQD2UM4=
-
-classnames@^2.2.6:
-  version "2.2.6"
-  resolved "https://registry.npm.taobao.org/classnames/download/classnames-2.2.6.tgz?cache=0&sync_timestamp=1565343473250&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fclassnames%2Fdownload%2Fclassnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha1-Q5Nb/90pHzJtrQogUwmzjQD2UM4=
 
 clean-css@^4.2.3:
@@ -8769,6 +8802,11 @@ immer@1.10.0:
   version "1.10.0"
   resolved "https://registry.npm.taobao.org/immer/download/immer-1.10.0.tgz?cache=0&sync_timestamp=1595826436643&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimmer%2Fdownload%2Fimmer-1.10.0.tgz#bad67605ba9c810275d91e1c2a47d4582e98286d"
   integrity sha1-utZ2BbqcgQJ12R4cKkfUWC6YKG0=
+
+immer@^6.0.1:
+  version "6.0.9"
+  resolved "https://registry.npm.taobao.org/immer/download/immer-6.0.9.tgz?cache=0&sync_timestamp=1595826436643&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimmer%2Fdownload%2Fimmer-6.0.9.tgz#b9dd69b8e69b3a12391e87db1e3ff535d1b26485"
+  integrity sha1-ud1puOabOhI5HofbHj/1NdGyZIU=
 
 import-cwd@^2.0.0:
   version "2.1.0"

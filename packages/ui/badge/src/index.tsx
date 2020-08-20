@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {Badge as AntdBadge} from 'antd';
 import {BadgeProps as AntdBadgeProps} from 'antd/es/badge';
 import classNames from 'classnames';

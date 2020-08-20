@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import BranchDropdown from '../src';
 // eslint-disable-next-line @reskript/import-order
 

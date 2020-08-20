@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Progress as AntdProgress } from 'antd';
 import { ProgressProps as AntdProgressProps } from 'antd/es/progress';
 import classNames from 'classnames';

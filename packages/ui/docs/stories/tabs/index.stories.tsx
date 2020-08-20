@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { ForkOutlined } from '@ant-design/icons';
 import Tabs from '@osui/tabs';
 
@@ -76,5 +76,3 @@ export const Demo = () => {
         </>
     );
 };
-
-

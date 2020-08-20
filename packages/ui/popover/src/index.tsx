@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { Popover as AntdPopover } from 'antd';
-import { PopoverProps as AntdPopoverProps} from 'antd/lib/back-top';
+import React from 'react';
+import {Popover as AntdPopover } from 'antd';
+import {PopoverProps as AntdPopoverProps} from 'antd/es/popover';
 import classNames from 'classnames';
 import './index.less';
 

@@ -1,11 +1,11 @@
-import * as React from 'react';
+import React from 'react';
 import {Row} from 'antd';
 import {IconGitFilter, IconBranchFilter} from '@osui/icons';
-import ButtonFilter from '@osui/button-filter';
+import ButtonFilter from '@osui/toggle-button';
 // eslint-disable-next-line @reskript/import-order
 
 export default {
-    title: 'OSUI-Button-Filter',
+    title: 'OSUI-toggle-button',
 };
 
 export const Demo = () => {

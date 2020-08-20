@@ -1,5 +1,5 @@
 
-import * as React from 'react';
+import React from 'react';
 import {InputNumber} from 'antd';
 import {SearchOutlined} from '@ant-design/icons';
 import '@osui/theme/dist/theme/vars.css';

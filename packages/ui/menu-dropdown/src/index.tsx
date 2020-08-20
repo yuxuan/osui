@@ -3,7 +3,7 @@
  * @author yangpeng, huoyuxuan
  * */
 
-import * as React from 'react';
+import React from 'react';
 import {Dropdown as AntdDropdown, Menu} from 'antd';
 import {DropDownProps as AntdDropdownProps} from 'antd/es/dropdown';
 import {MenuItemProps} from 'antd/es/menu/MenuItem';

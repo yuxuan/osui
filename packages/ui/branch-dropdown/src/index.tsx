@@ -1,8 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 import {DropDownProps as AntdDropDownProps} from 'antd/es/dropdown';
 import {Menu, Dropdown, Button } from 'antd';
-import {DownOutlined} from '@ant-design/icons';
-import {IconBranchDropdown} from '@osui/icons';
+import {IconBranchDropdown, IconDown} from '@osui/icons';
 import classNames from 'classnames';
 import './index.less';
 
@@ -52,18 +51,20 @@ const BranchDropdown: React.FC<DropdownInterface> = props => {
         </Menu.Item>
         ))}
     </Menu>);
-    return (<Dropdown
-        overlay={menu}
-        overlayClassName={classNames(`${clsPrefix}`, classDropDownName)}
-        {...props}
-    >
-        <Button className={classNames(`${clsPrefix}-button`, classButtonName)}>
-            <IconBranchDropdown />
-            <p className="title">{title}</p>
-            <p className="desc">{desc}</p>
-            <DownOutlined className="dropdown-arrow-icon" />
-        </Button>
-    </Dropdown>);
+    return (
+        <Dropdown
+            overlay={menu}
+            overlayClassName={classNames(`${clsPrefix}`, classDropDownName)}
+            {...props}
+        >
+            <Button className={classNames(`${clsPrefix}-button`, classButtonName)}>
+                <IconBranchDropdown />
+                <p className="title">{title}</p>
+                <p className="desc">{desc}</p>
+                <IconDown className="dropdown-arrow-icon" />
+            </Button>
+        </Dropdown>
+    );
 };
 
 export default BranchDropdown;

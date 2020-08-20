@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {Input as AntdInput} from 'antd';
 import {InputProps as AntdInputProps} from 'antd/es/input';
 import classNames from 'classnames';

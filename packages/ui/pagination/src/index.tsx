@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React, {useCallback} from 'react';
 import { Pagination as AntdPagination } from 'antd';
-import { PaginationProps as AntdPaginationProps} from 'antd/lib/back-top';
+import { PaginationProps as AntdPaginationProps } from 'antd/es/pagination';
 import classNames from 'classnames';
 import {IconRightArrow, IconLeftArrow} from '@osui/icons';
 import './index.less';
@@ -11,15 +11,18 @@ export type PaginationProps = AntdPaginationProps;
 
 const OSUIPagination: React.FC<PaginationProps> = props => {
 
-    function itemRender(current, type, originalElement) {
-        if (type === 'prev') {
-            return <IconLeftArrow />;
-        }
-        if (type === 'next') {
-            return <IconRightArrow />;
-        }
-        return originalElement;
-    }
+    const itemRender: AntdPaginationProps['itemRender'] = useCallback(
+        (current, type, originalElement) => {
+            if (type === 'prev') {
+                return <IconLeftArrow />;
+            }
+            if (type === 'next') {
+                return <IconRightArrow />;
+            }
+            return originalElement;
+        },
+        []
+    );
 
     return (<AntdPagination {...props} itemRender={itemRender} className={classNames(props.className, clsPrefix)} />);
 };
