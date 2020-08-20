@@ -2,8 +2,10 @@
 interface IconProps extends React.SVGProps<SVGSVGElement> {
     scale?: number;
 }
-export const IconAvatar: IconComponent;
 export const IconBackTop: IconComponent;
+export const IconLeftArrow: IconComponent;
+export const IconRightArrow: IconComponent;
+export const IconAvatar: IconComponent;
 export const IconBranchDropdown: IconComponent;
 export const IconBranchFilter: IconComponent;
 export const IconChecked: IconComponent;

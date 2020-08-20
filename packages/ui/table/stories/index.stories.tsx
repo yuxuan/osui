@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Table, Tag, Space } from 'antd';
+import { Table } from 'antd';
 
 export default {
     title: 'OSUI-Table',
