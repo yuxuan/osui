@@ -1,4 +1,3 @@
-const CracoLessPlugin = require('craco-less');
 const fs = require('fs');
 const lessVarsToJs = require('less-vars-to-js');
 const lessVars = fs.readFileSync(require.resolve('@osui/theme/dist/antd-vars-patch.less'), 'utf8');
@@ -6,42 +5,45 @@ const modifyVars = lessVarsToJs(lessVars, {
     resolveVariables: true,
     stripPrefix: true
 });
-const LessPluginFunctions = require('less-plugin-functions');
+
+const {loaders} = require('@reskript/config-webpack');
+
+const loaderOptions = {
+    cwd: process.cwd(),
+    srcDirectory: '',
+    projectSettings: {
+        build: {
+            extractCSS: false,
+            extraLessVariables: modifyVars,
+            styleResources: [
+                require.resolve('@osui/theme/dist/less-functions-overrides.less'),
+            ],
+        },
+    },
+};
 
 module.exports = {
-    plugins: [
-        {
-            plugin: CracoLessPlugin,
-            options: {
-                lessLoaderOptions: {
-                    lessOptions: {
-                        modifyVars: modifyVars,
-                        javascriptEnabled: true,
-                        plugins: [
-                            new LessPluginFunctions({alwaysOverride: true}),
-                        ],
-                    },
-                },
-            },
-        },
-        {
-            plugin: {
-                overrideWebpackConfig({webpackConfig}) {
-                    const oneOfRule = webpackConfig.module.rules.find(rule => rule.oneOf);
-                    const lessRule = oneOfRule.oneOf.find(
-                        rule => rule.test && rule.test.toString().includes("less")
-                    );
+    plugins: [{
+        plugin: {
+            overrideWebpackConfig({webpackConfig}) {
+                const oneOfRule = webpackConfig.module.rules.find(rule => rule.oneOf);
 
-                    lessRule.use.push({
-                        loader: require.resolve('style-resources-loader'),
-                        options: {
-                            patterns: [require.resolve('@osui/theme/dist/less-functions-overrides.less')],
-                            injector: "append",
-                        }
+                const lessRule = oneOfRule.oneOf.find(
+                    rule => String(rule.test) === String(/\.less$/)
+                );
+                if (!lessRule) {
+                    oneOfRule.oneOf.unshift({
+                        test: /\.less$/,
+                        use: [
+                            loaders.style(loaderOptions),
+                            loaders.css(loaderOptions),
+                            loaders.less(loaderOptions),
+                            loaders.styleResources(loaderOptions),
+                        ]
                     });
-                    return webpackConfig;
                 }
+                return webpackConfig;
             }
         }
-    ],
+    }],
 };
