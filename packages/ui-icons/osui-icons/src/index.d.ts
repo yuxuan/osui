@@ -10,7 +10,7 @@ export const IconCheckCircleFill: IconComponent;
 export const IconChecked: IconComponent;
 export const IconCloseCircleFill: IconComponent;
 export const IconCross: IconComponent;
-export const IconDown: IconComponent;
+export const IconDownArrow: IconComponent;
 export const IconGitFilter: IconComponent;
 export const IconLeftArrow: IconComponent;
 export const IconRightArrow: IconComponent;

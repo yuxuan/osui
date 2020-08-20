@@ -46,7 +46,7 @@ export default function Title() {
                                                         </td><td align="center">
                                                         <img src="./svg/cross.svg"/><br/><sub>IconCross</sub>
                                                         </td><td align="center">
-                                                        <img src="./svg/down.svg"/><br/><sub>IconDown</sub>
+                                                        <img src="./svg/down-arrow.svg"/><br/><sub>IconDownArrow</sub>
                                                         </td></tr><tr><td align="center">
                                                         <img src="./svg/git-filter.svg"/><br/><sub>IconGitFilter</sub>
                                                         </td><td align="center">
