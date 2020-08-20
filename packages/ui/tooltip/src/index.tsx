@@ -14,7 +14,7 @@ const clsPrefix = 'osui-tooltip';
 export type TooltipProps = AntdTooltipProps;
 
 const Tooltip: React.FC<TooltipProps> = props => {
-    return <AntdTooltip className={classNames(clsPrefix, props.className)} {...props} />;
+    return <AntdTooltip overlayClassName={classNames(clsPrefix, props.overlayClassName)} {...props} />;
 };
 
 export default Tooltip;
