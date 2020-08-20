@@ -1,5 +1,20 @@
 @osui-tooltip-class-prefix: osui-tooltip;
 
 .@{osui-tooltip-class-prefix} {
-
+    &.ant-tooltip-placement-top .ant-tooltip-arrow,
+    &.ant-tooltip-placement-topLeft .ant-tooltip-arrow,
+    &.ant-tooltip-placement-topRight .ant-tooltip-arrow,
+    &.ant-tooltip-placement-right .ant-tooltip-arrow,
+    &.ant-tooltip-placement-rightTop .ant-tooltip-arrow,
+    &.ant-tooltip-placement-rightBottom .ant-tooltip-arrow,
+    &.ant-tooltip-placement-left .ant-tooltip-arrow,
+    &.ant-tooltip-placement-leftTop .ant-tooltip-arrow,
+    &.ant-tooltip-placement-leftBottom .ant-tooltip-arrow,
+    &.ant-tooltip-placement-bottom .ant-tooltip-arrow,
+    &.ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,
+    &.ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
+        &-content {
+            box-shadow: none;
+        }
+    }
 }

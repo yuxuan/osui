@@ -1,163 +1,41 @@
 /* stylelint-disable */
+
+// In order to make css varialbes possible to pass less compile,
+// brutally overwrites less/css color functions by using [less-plugin-functions](https://www.npmjs.com/package/less-plugin-functions).
+// Functions below just return whatever color pass in. In project, the overwrites should override all possible appearance,
+// therefore we are using another loader [style-resources-loader](https://www.npmjs.com/package/style-resources-loader) to inject
+// functions into 'all' less files. Or optionally inject by config webpack loader rules
+
+// 为了css variables能通过less编译，通过使用[less-plugin-functions](https://www.npmjs.com/package/less-plugin-functions)插件，
+// 将以下函数覆盖less/css原生color函数。覆盖函数应能覆盖到'所有'mixin出现的地方，因此使用了[style-resources-loader](https://www.npmjs.com/package/style-resources-loader)
+// 将这个less文件注入到所有less文件后面，也可以通过webpack loader rules选择性注入
+
 // === less mixin override ===
-// hexToRGB ref: https://css-tricks.com/converting-color-spaces-in-javascript/
-// RGBToHSL ref: less.js
-.utils() {
-    @functions: ~`(function() {
-        function hexToRGB(H) {
-            let r = 0, g = 0, b = 0;
-            if (H.length == 4) {
-                r = "0x" + H[1] + H[1];
-                g = "0x" + H[2] + H[2];
-                b = "0x" + H[3] + H[3];
-            } else if (H.length == 7) {
-                r = "0x" + H[1] + H[2];
-                g = "0x" + H[3] + H[4];
-                b = "0x" + H[5] + H[6];
-            }
-            return {r, g, b};
-        }
-
-        function RGBToHSL(rgb, a) {
-            const r = rgb[0] / 255;
-            const g = rgb[1] / 255;
-            const b = rgb[2] / 255;
-            const alpha = (typeof a === 'number' ? a : 1);
-            const max = Math.max(r, g, b);
-            const min = Math.min(r, g, b);
-            let h;
-            let s;
-            const l = (max + min) / 2;
-            const d = max - min;
-
-            if (max === min) {
-                h = s = 0;
-            } else {
-                s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-
-                switch (max) {
-                    case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-                    case g: h = (b - r) / d + 2;               break;
-                    case b: h = (r - g) / d + 4;               break;
-                }
-                h /= 6;
-            }
-
-            return { h: Math.round(h * 360), s: (s * 100).toFixed(1), l: (l * 100).toFixed(1), a: alpha };
-        }
-
-        function hexToHSL(H) {
-            const rgb = hexToRGB(H);
-            const hsl = RGBToHSL([rgb.r, rgb.g, rgb.b]);
-            return hsl;
-        }
-
-        function hslToString(hsl) {
-            return "" + hsl.h + "," + hsl.s + "%," + hsl.l + "%";
-        }
-
-        // 内部转换函数
-        this._hexToHSL = hexToHSL;
-        this._hexToRGB = hexToRGB;
-        this._RGBToHSL = RGBToHSL;
-        this._HSLToString = hslToString;
-
-        // 外部less直接用的
-        this.hextohsl = (H) => {
-            return hslToString(hexToHSL(H));
-        }
-    })()`;
-}
-
-.utils();
-
-// 正常颜色的less函数处理
-.colorFunctions() {
-    @functions: `(function() {
-        const self = this;
-
-        function clamp(val) {
-            return Math.min(1, Math.max(0, val));
-        }
-
-        function lessfade(color, percentage) {
-            const hsl = self.hextohsl(color);
-            return hsl + "," + (percentage / 100);
-        }
-
-        function lessdarken(color, amount, method) {
-            const hsl = self._hexToHSL(color);
-
-            if (typeof method !== 'undefined' && method === 'relative') {
-                hsl.l -= hsl.l * amount / 100;
-            }
-            else {
-                hsl.l -= amount / 100;
-            }
-            return self._HSLToString(hsl);
-        }
-
-        function lesslighten(color, amount, method) {
-            const hsl = self._hexToHSL(color);
-
-            if (typeof method !== 'undefined' && method === 'relative') {
-                hsl.l += hsl.l * amount / 100;
-            }
-            else {
-                hsl.l += amount / 100;
-            }
-            return self._HSLToString(hsl);
-        }
-
-        this.lessfade = lessfade;
-        this.lessdarken = lessdarken;
-        this.lesslighten = lesslighten;
-    })()`
-}
-
-.colorFunctions();
-
 .function {
     .fade(@color, @percentage: 100%) {
-        return: hsla(@color, @percentage);
+        return: @color;
     }
-    // 如果是正常颜色，则直接用lessfade
-    .fade(@color, @percentage: 100%) when(iscolor(@color)){
-        @color-value: "@{color}";
-        @percentage-value: unit(@percentage);
-        return: hsla(~`lessfade(@{color-value}, @{percentage-value})`);
+
+    .fade(@color, @percentage: 100%) when(iscolor(@color)) {
+        return: rgba(@color, @percentage);
     }
 
     .darken(@color, @percentage: 100%) {
-        return: @color; // css vars转不过去
-    }
-    .darken(@color, @percentage: 100%) when(iscolor(@color)) {
-        @color-value: "@{color}";
-        @percentage-value: unit(@percentage);
-        return: hsla(~`lessdarken(@{color-value}, @{percentage-value})`);
+        return: @color;
     }
 
     .lighten(@color, @percentage: 100%) {
-        return: @color; // css vars转不过去
-    }
-
-    .lighten(@color, @percentage: 100%) when(iscolor(@color)) {
         return: @color;
     }
 
     .tint(@color, @percentage: 100%) {
-        return: @color; // css vars转不过去
-    }
-    .tint(@color, @percentage: 100%) when(iscolor(@color)) {
-        return: mix(#ffffff, @color, @percentage);
+        return: @color;
     }
 
     .shade(@color, @percentage: 100%) {
-        return: @color; // css vars转不过去
+        return: @color;
     }
-    .shade(@color, @percentage: 100%) when(iscolor(@color)) {
-        return: mix(#000000, @color, @percentage);
-    }
+
     .color(@color) {
       return: @color;
     }
