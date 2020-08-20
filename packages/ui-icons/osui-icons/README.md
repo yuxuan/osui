@@ -38,7 +38,13 @@ export default function Title() {
                                                         </td></tr><tr><td align="center">
                                                         <img src="./svg/branch-filter.svg"/><br/><sub>IconBranchFilter</sub>
                                                         </td><td align="center">
+                                                        <img src="./svg/check-circle-fill.svg"/><br/><sub>IconCheckCircleFill</sub>
+                                                        </td><td align="center">
                                                         <img src="./svg/checked.svg"/><br/><sub>IconChecked</sub>
+                                                        </td></tr><tr><td align="center">
+                                                        <img src="./svg/close-circle-fill.svg"/><br/><sub>IconCloseCircleFill</sub>
+                                                        </td><td align="center">
+                                                        <img src="./svg/cross.svg"/><br/><sub>IconCross</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/down.svg"/><br/><sub>IconDown</sub>
                                                         </td></tr><tr><td align="center">
@@ -48,5 +54,7 @@ export default function Title() {
                                                         </td><td align="center">
                                                         <img src="./svg/right-arrow.svg"/><br/><sub>IconRightArrow</sub>
                                                         </td></tr><tr><td align="center">
+                                                        <img src="./svg/warning-circle-fill.svg"/><br/><sub>IconWarningCircleFill</sub>
+                                                        </td><td align="center">
                                                         <img src="./svg/navi-doc.svg"/><br/><sub>IconNaviDoc</sub>
-                                                        </td><td align="center"></td><td align="center"></td></tr></tbody></table>
+                                                        </td><td align="center"></td></tr></tbody></table>
