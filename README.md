@@ -69,7 +69,12 @@ import Button from '@osui/button';
 
 ### 结合reskript使用
 
-TODO
+参考`example/reskript/my-app`的方式，（简单粗暴的复制粘贴吧）
+
+#### 说明
+
+1. 注意`package.json`中的依赖，`dependencies`和`devDependencies`都是必须的
+2. `settings.js` devLogin 关闭了，如果有需要自行打开
 
 ## 参与贡献
 
