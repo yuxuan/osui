@@ -50,11 +50,13 @@ export default function Title() {
                                                         </td></tr><tr><td align="center">
                                                         <img src="./svg/git-filter.svg"/><br/><sub>IconGitFilter</sub>
                                                         </td><td align="center">
-                                                        <img src="./svg/left-arrow.svg"/><br/><sub>IconLeftArrow</sub>
+                                                        <img src="./svg/info-circle-fill.svg"/><br/><sub>IconInfoCircleFill</sub>
                                                         </td><td align="center">
-                                                        <img src="./svg/right-arrow.svg"/><br/><sub>IconRightArrow</sub>
+                                                        <img src="./svg/left-arrow.svg"/><br/><sub>IconLeftArrow</sub>
                                                         </td></tr><tr><td align="center">
+                                                        <img src="./svg/right-arrow.svg"/><br/><sub>IconRightArrow</sub>
+                                                        </td><td align="center">
                                                         <img src="./svg/warning-circle-fill.svg"/><br/><sub>IconWarningCircleFill</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/navi-doc.svg"/><br/><sub>IconNaviDoc</sub>
-                                                        </td><td align="center"></td></tr></tbody></table>
+                                                        </td></tr></tbody></table>

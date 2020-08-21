@@ -19,9 +19,7 @@ export const Demo = () => {
     const warning = () => {
         message.warning('This is a warning message');
     };
-    const warn = () => {
-        message.warn('This is a warn message');
-    };
+
     const loading = () => {
         message.loading('This is a loading message');
     };
@@ -35,10 +33,9 @@ export const Demo = () => {
             <Space>
                 <Button onClick={success}>Success</Button>
                 <Button onClick={error}>Error</Button>
-                <Button onClick={info}>info</Button>
+                <Button onClick={info}>Info</Button>
                 <Button onClick={warning}>Warning</Button>
-                <Button onClick={warn}>warn</Button>
-                <Button onClick={loading}>loading</Button>
+                <Button onClick={loading}>Loading</Button>
                 <Button onClick={open}>open success</Button>
             </Space>
         </div>);

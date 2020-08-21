@@ -1,7 +1,13 @@
 import React from 'react';
 import {Alert as AntdAlert} from 'antd';
 import {AlertProps as AntdAlertProps} from 'antd/es/alert';
-import {IconCheckCircleFill, IconWarningCircleFill, IconCloseCircleFill, IconCross} from '@osui/icons';
+import {
+    IconCheckCircleFill,
+    IconWarningCircleFill,
+    IconCloseCircleFill,
+    IconInfoCircleFill,
+    IconCross,
+} from '@osui/icons';
 import classNames from 'classnames';
 import './index.less';
 
@@ -9,35 +15,25 @@ const clsPrefix = 'osui-alert';
 
 export type AlertProps = AntdAlertProps;
 
-const Alert: React.FC<AlertProps> = props => {
-    const {showIcon, icon, closeText, type, closable} = props; // omit props
+type iconTypes = 'info' | 'success' | 'error' | 'warning'; // 不覆盖loading
+const typeToIcon: Record<iconTypes, React.ReactNode> = {
+    info: <IconInfoCircleFill className={`${clsPrefix}-infoIcon`} />,
+    success: <IconCheckCircleFill className={`${clsPrefix}-successIcon`} />,
+    error: <IconCloseCircleFill className={`${clsPrefix}-errorIcon`} />,
+    warning: <IconWarningCircleFill className={`${clsPrefix}-warningIcon`} />,
+};
 
-    let internalIcon = icon;
-    if (!icon && showIcon) { // 要求showIcon但是没有传入
-        switch (type) {
-            case 'success':
-                internalIcon = <IconCheckCircleFill />;
-                break;
-            case 'warning':
-            case 'info':
-                internalIcon = <IconWarningCircleFill />;
-                break;
-            case 'error':
-                internalIcon = <IconCloseCircleFill />;
-                break;
-        }
-    }
-    let internalCloseText = closeText;
-    if (!closeText && closable) {
-        internalCloseText = <IconCross />;
-    }
+const Alert: React.FC<AlertProps> = props => {
+    const { icon, closeText, type, className} = props;
+    const patchedIcon = icon || typeToIcon[type as iconTypes];
+    const patchedCloseText = closeText || <IconCross />;
 
     return (
         <AntdAlert
             {...props}
-            icon={internalIcon}
-            closeText={internalCloseText}
-            className={classNames(clsPrefix, props.className)}
+            icon={patchedIcon}
+            closeText={patchedCloseText}
+            className={classNames(clsPrefix, className)}
         />
     );
 };
