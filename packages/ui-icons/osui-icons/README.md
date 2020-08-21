@@ -56,7 +56,9 @@ export default function Title() {
                                                         </td></tr><tr><td align="center">
                                                         <img src="./svg/right-arrow.svg"/><br/><sub>IconRightArrow</sub>
                                                         </td><td align="center">
-                                                        <img src="./svg/warning-circle-fill.svg"/><br/><sub>IconWarningCircleFill</sub>
+                                                        <img src="./svg/search.svg"/><br/><sub>IconSearch</sub>
                                                         </td><td align="center">
+                                                        <img src="./svg/warning-circle-fill.svg"/><br/><sub>IconWarningCircleFill</sub>
+                                                        </td></tr><tr><td align="center">
                                                         <img src="./svg/navi-doc.svg"/><br/><sub>IconNaviDoc</sub>
-                                                        </td></tr></tbody></table>
+                                                        </td><td align="center"></td><td align="center"></td></tr></tbody></table>

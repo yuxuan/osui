@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { SearchOutlined } from '@ant-design/icons';
+import { IconSearch } from '@osui/icons';
 import '@osui/theme/dist/theme/vars.css';
 import Input from '@osui/input';
 const { TextArea } = Input;
@@ -20,10 +20,7 @@ export const Demo = () => {
                 style={{ width: 200 }}
                 placeholder="请输入搜索关键字"
                 suffix={
-                    <SearchOutlined onClick={() => {
-                        console.log(1);
-                    }}
-                    />
+                    <IconSearch />
                 }
             />
             <br />
