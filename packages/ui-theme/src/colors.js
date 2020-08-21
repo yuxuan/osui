@@ -263,6 +263,8 @@ exports.presetColors = {
     '--select-item-active-bg': 'var(--theme-secondary-color-hover)',
     '--select-item-selected-bg': 'var(--theme-secondary-color-hover)',
     '--table-row-hover-bg': 'var(--color-brand-1)',
+    '--table-header-bg': 'transparent',
+    '--table-header-color': 'var(--color-gray-7)',
     '--tabs-highlight-color': 'var(--color-gray-9)',
     '--tabs-ink-bar-color': 'var(--color-gray-9)',
     '--tabs-top-before': '2px solid #ECEDF0', // tab的bottom线
