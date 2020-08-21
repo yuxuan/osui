@@ -2,7 +2,7 @@ import React from 'react';
 import {Select as AntSelect} from 'antd';
 import {SelectProps} from 'antd/es/select';
 import classNames from 'classnames';
-import {IconDown, IconChecked} from '@osui/icons';
+import {IconDownArrow, IconChecked} from '@osui/icons';
 import {adjustAntdProps} from './utils';
 import './index.less';
 
@@ -30,7 +30,7 @@ function InternalOSUISelect<R, T>(props: OSUISelectProps<T>, ref: React.Ref<R>):
         {
             targetProp: 'suffixIcon',
             shouldOverride: !loading, // 只有在loading时，使用antd的loading icon，非loading时覆盖
-            override: <IconDown />,
+            override: <IconDownArrow />,
         },
         {
             targetProp: 'dropdownClassName',

@@ -3,6 +3,7 @@ import {Modal as AntdModal} from 'antd';
 import {ModalProps as AntdModalProps} from 'antd/es/modal';
 import {ModalStaticFunctions as AntdModalStaticFunctions, globalConfig} from 'antd/es/modal/confirm';
 import classNames from 'classnames';
+import {IconCross} from '@osui/icons';
 import './index.less';
 
 const {success, confirm, info, error, warning, warn, destroyAll, config} = AntdModal;
@@ -25,7 +26,7 @@ const OriginModal: ModalInterface = ({ className, bodyStyle = {}, bodyHeight, ..
     if (bodyHeight) {
         bodyStyle.height = bodyHeight;
     }
-    return <AntdModal bodyStyle={bodyStyle} className={classNames(classes)} {...restProps} />;
+    return <AntdModal bodyStyle={bodyStyle} className={classNames(classes)} {...restProps} closeIcon={<IconCross />} />;
 };
 
 OriginModal.useModal = AntdModal.useModal;

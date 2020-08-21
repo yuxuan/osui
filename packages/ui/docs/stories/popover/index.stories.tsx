@@ -1,6 +1,6 @@
 import React from 'react';
+import Button from '@osui/button';
 import OSUIPopover from '@osui/popover';
-import { Button } from 'antd';
 
 export default {
     title: 'OSUI-Popover',

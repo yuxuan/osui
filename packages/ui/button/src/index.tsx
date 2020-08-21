@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button as AntdButton } from 'antd';
-import { ButtonProps as AntdButtonProps, ButtonType} from 'antd/es/button';
+import {Button as AntdButton} from 'antd';
+import {ButtonProps as AntdButtonProps, ButtonType} from 'antd/es/button';
 import classNames from 'classnames';
 import './index.less';
 

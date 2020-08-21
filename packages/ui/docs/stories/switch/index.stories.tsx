@@ -1,6 +1,6 @@
 import React from 'react';
-import { Space } from 'antd';
-import { CloseOutlined, CheckOutlined } from '@ant-design/icons';
+import {Space} from 'antd';
+import {IconSwitchTick, IconSwitchCross} from '@osui/icons';
 import Switch from '@osui/switch';
 
 export default {
@@ -14,8 +14,8 @@ export const Demo = () => {
             <Switch defaultChecked >Switch</Switch>
             <Switch disabled>Switch</Switch>
             <Switch defaultChecked disabled>Switch</Switch>
-            <Switch checkedChildren={<CheckOutlined />} unCheckedChildren={<CloseOutlined />} />
-            <Switch defaultChecked checkedChildren={<CheckOutlined />} unCheckedChildren={<CloseOutlined />} />
+            <Switch checkedChildren={<IconSwitchTick />} unCheckedChildren={<IconSwitchCross />} />
+            <Switch defaultChecked checkedChildren={<IconSwitchTick />} unCheckedChildren={<IconSwitchCross />} />
         </Space>
     );
 };

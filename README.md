@@ -76,6 +76,18 @@ import Button from '@osui/button';
 1. 注意`package.json`中的依赖，`dependencies`和`devDependencies`都是必须的
 2. `settings.js` devLogin 关闭了，如果有需要自行打开
 
+### 引入样式
+
+与antd一样，需要在app入口引入less文件来添加样式。
+在入口js引入下面代码：
+
+```
+import '@osui/theme/dist/theme/vars.css';
+import '@osui/theme/antd4-styles-patch.css'; // 去掉antd动效等全局覆盖
+```
+
+
+
 ## 参与贡献
 
 1.  Fork 本仓库 （可以不fork直接拉分支）

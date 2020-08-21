@@ -75,11 +75,14 @@
 @input-height-base: @height-m;
 @input-height-lg: @height-l;
 @input-height-xl: @height-xl;
-@input-hover-border-color: var(--theme-primary-color);
+@input-hover-border-color: var(--theme-border-color-base);
 
 // Table
 // ---
 @table-row-hover-bg: var(--table-row-hover-bg);
+@table-header-bg: var(--table-header-bg);
+@table-header-color: var(--table-header-color);
+@table-padding-vertical: 9.5px; // UE要求行号40，行高= {padding-vertical} * 2 + {font-size} * 1.5
 // Menu
 // ---
 @menu-inline-toplevel-item-height: 40px;
@@ -152,6 +155,11 @@
 // Tooltip background color
 @tooltip-bg: var(--tooltip-bg);
 
+// Outline
+// ---
+@outline-width: 1px;
+@outline-blur-size: 0px;
+@outline-color: var(--theme-border-focus-color);
 
 // 自定义的一些less变量patch，放在最下面
 // ----
@@ -161,7 +169,7 @@
 @height-xl: 50px;
 
 // Tag
-@tag-default-bg: @background-color-light;
+@tag-default-bg: var(--tag-default-bg);
 @tag-default-color: @text-color;
 @tag-font-size: @font-size-base;
 @tag-line-height: 22px;
@@ -177,3 +185,7 @@
 // Badge
 // ---
 @badge-color: var(--color-error-6);
+
+// Radio
+// ---
+@radio-focus-shadow: 0 0 0 0 var(--theme-border-focus-color);

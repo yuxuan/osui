@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import {Collapse as AntdCollapse} from 'antd';
 import {CollapseProps as AntdCollapseProps} from 'antd/es/collapse';
+import {IconRightArrow, IconDownArrow} from '@osui/icons';
 import classNames from 'classnames';
 import './index.less';
 
@@ -18,7 +19,14 @@ const Collapse: CollapseInterface = ({className, ...restProps}) => {
         ...restProps,
         className: classNames(clsPrefix, className),
     };
-    return <AntdCollapse {...defaultProps} />;
+
+    const expandIcon = useCallback(
+        panelProps => {
+            return panelProps.isActive ? <IconDownArrow /> : <IconRightArrow />;
+        },
+        []
+    );
+    return <AntdCollapse {...defaultProps} expandIcon={expandIcon} />;
 };
 
 Collapse.Panel = AntdCollapse.Panel;

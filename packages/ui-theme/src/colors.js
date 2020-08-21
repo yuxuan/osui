@@ -232,6 +232,7 @@ exports.presetColors = {
     '--theme-highlight-color': 'var(--color-error-5)',
     '--theme-outline-color': 'var(--color-brand-4)',
     '--theme-processing-color': 'var(--color-brand-6)',
+    '--theme-border-focus-color': 'var(--color-brand-4)',
     // 以下按照字母顺序排序
     '--alert-error-bg-color': 'var(--color-error-1)',
     '--alert-error-border-color': 'var(--theme-error-color)',
@@ -263,6 +264,8 @@ exports.presetColors = {
     '--select-item-active-bg': 'var(--theme-secondary-color-hover)',
     '--select-item-selected-bg': 'var(--theme-secondary-color-hover)',
     '--table-row-hover-bg': 'var(--color-brand-1)',
+    '--table-header-bg': 'transparent',
+    '--table-header-color': 'var(--color-gray-7)',
     '--tabs-highlight-color': 'var(--color-gray-9)',
     '--tabs-ink-bar-color': 'var(--color-gray-9)',
     '--tabs-top-before': '2px solid #ECEDF0', // tab的bottom线
@@ -274,6 +277,7 @@ exports.presetColors = {
     '--tag-purple-color': 'var(--color-purple-1)',
     '--tag-red-color': 'var(--color-error-1)',
     '--tag-yellow-color': 'var(--color-warning-1)',
+    '--tag-default-bg': 'var(--color-gray-3)',
     '--tooltip-bg': 'var(--color-gray-9)',
     '--tooltip-color': 'var(--color-gray-1)',
 };

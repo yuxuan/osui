@@ -4,7 +4,7 @@
  */
 import React, {useCallback} from 'react';
 import {Button} from 'antd';
-import {IconDown} from '@osui/icons';
+import {IconDownArrow} from '@osui/icons';
 import classNames from 'classnames';
 import {useDerivedState} from '@huse/derived-state';
 import './index.less';
@@ -73,7 +73,7 @@ const ToggleButton = React.forwardRef<any, ToggleButtonProps>((props, ref) => {
             {children}
             {hasShowNumber ? <span className="num">{num}</span> : null}
             {hasSelectNumber ? <span className="select-num">（+{num}）</span> : null}
-            {hasArrow ? <IconDown className={`${clsPrefix}-afterIcon`} /> : null}
+            {hasArrow ? <IconDownArrow className={`${clsPrefix}-afterIcon`} /> : null}
         </Button>
     );
 });

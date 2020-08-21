@@ -5,6 +5,10 @@
         margin-left: 4px;
     }
 
+    &.ant-btn {
+        transition: none;
+    }
+
     &.ant-btn-default,
     &.ant-btn-strong,
     &.ant-btn-primary {
@@ -23,11 +27,11 @@
         &:focus {
             background: var(--color-gray-1);
             border-color: var(--color-brand-4);
+            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
         }
 
         &:active {
             background: var(--color-gray-4);
-            border-color: var(--color-gray-5);
         }
 
         &[disabled] {
@@ -55,11 +59,11 @@
             background: var(--color-gray-1);
             border-color: var(--color-brand-4);
             color: var(--color-gray-9);
+            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
         }
 
         &:active {
             background: var(--color-gray-4);
-            border-color: var(--color-gray-5);
             color: var(--color-gray-9);
         }
 
@@ -87,6 +91,7 @@
         &:focus {
             background: var(--color-gray-1);
             border-color: var(--color-brand-4);
+            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
         }
 
         &:active {
@@ -106,7 +111,6 @@
     }
 
     &.ant-btn-primary {
-
         &:hover {
             background: var(--color-brand-5);
             border-color: var(--color-brand-5);
@@ -115,6 +119,7 @@
         &:focus {
             background: var(--color-brand-6);
             border-color: var(--color-brand-4);
+            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
         }
 
         &:active {
@@ -149,6 +154,7 @@
 
         &:focus {
             border-color: var(--color-brand-4);
+            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
         }
 
         &:active {
@@ -167,7 +173,7 @@
         border: 1px solid var(--color-gray-5);
 
         .anticon {
-            color: var(--color-gray-5);
+            color: var(--theme-text-color);
         }
 
         &:hover {
@@ -176,18 +182,18 @@
 
         &:focus {
             border-color: var(--color-brand-4);
+            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
         }
 
         &:active {
             background: var(--color-gray-4);
-            border-color: var(--color-gray-5);
         }
 
         &[disabled] {
             background: var(--color-gray-1);
             border-color: var(--color-gray-4);
 
-            &.anticon {
+            .anticon {
                 color: var(--color-gray-5);
             }
         }
@@ -195,25 +201,24 @@
 
     &.ant-btn-only-icon {
         border: none;
-        color: transparent;
 
         .anticon {
-            color: var(--color-gray-5);
+            color: var(--theme-text-color);
         }
 
         &:focus {
             color: transparent;
             border-radius: 4px;
             border: 1px solid var(--color-brand-4);
+            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
         }
 
         &:active {
             color: transparent;
-            border: none;
         }
 
         &[disabled] {
-            &.anticon {
+            .anticon {
                 color: var(--color-gray-5);
             }
         }
