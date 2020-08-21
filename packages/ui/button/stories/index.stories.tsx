@@ -1,7 +1,7 @@
 import React from 'react';
 import OSUIButton from '../src';
 // eslint-disable-next-line @reskript/import-order
-import { SearchOutlined, HomeOutlined } from '@ant-design/icons';
+import {SearchOutlined, HomeOutlined} from '@ant-design/icons';
 
 export default {
     title: 'OSUI-Button',

@@ -159,6 +159,7 @@
 // ---
 @outline-width: 1px;
 @outline-blur-size: 0px;
+@outline-color: var(--theme-border-focus-color);
 
 // 自定义的一些less变量patch，放在最下面
 // ----
@@ -168,7 +169,7 @@
 @height-xl: 50px;
 
 // Tag
-@tag-default-bg: @background-color-light;
+@tag-default-bg: var(--tag-default-bg);
 @tag-default-color: @text-color;
 @tag-font-size: @font-size-base;
 @tag-line-height: 22px;
@@ -187,4 +188,4 @@
 
 // Radio
 // ---
-@radio-focus-shadow: 0 0 0 0 var(--theme-primary-color);
+@radio-focus-shadow: 0 0 0 0 var(--theme-border-focus-color);

@@ -2,7 +2,7 @@ import React from 'react';
 import {Popover, Button, Input, Menu} from 'antd';
 import {PopoverProps as AntdPooverProps} from 'antd/es/popover';
 import classNames from 'classnames';
-import {SearchOutlined} from '@ant-design/icons';
+import {IconSearch} from '@osui/icons';
 import './index.less';
 
 const clsPrePopfix = 'osui-search-select-list-popover';
@@ -22,14 +22,15 @@ const LiItem: React.FC<LiItemProps> = props => {
     function handleClickItem() {
         props.handleClickItem(props);
     }
-    return (<li
-        onClick={handleClickItem}
-        key={props.value}
-        value={props.value}
-    >
-        {/* {icon? icon : null}*/}
-        <span>{props.label}</span>
-    </li>
+    return (
+        <li
+            onClick={handleClickItem}
+            key={props.value}
+            value={props.value}
+        >
+            {/* {icon? icon : null}*/}
+            <span>{props.label}</span>
+        </li>
     );
 };
 
@@ -92,27 +93,30 @@ const SeacrhSelectList: React.FC<SeacrhSelectListProps> = props => {
             }
         </Menu>);
     }
-    const content = (<div className="select-list-wrap">
-        <div className="input-box">
-            <Input
-                placeholder={placeholder || '请输入搜索的内容'}
-                value={searchVal}
-                onChange={handleChangeSearch}
-                suffix={
-                    <SearchOutlined onClick={handleSearchFunc} />
+    const content = (
+        <div className="select-list-wrap">
+            <div className="input-box">
+                <Input
+                    placeholder={placeholder || '请输入搜索的内容'}
+                    value={searchVal}
+                    onChange={handleChangeSearch}
+                    suffix={<IconSearch onClick={handleSearchFunc} />}
+                />
+            </div>
+            <ul className="list-box">
+                {
+                    selectlist && selectlist.length && selectlist.map(item => (
+                        <LiItem
+                            handleClickItem={handleClickItem}
+                            label={item.label}
+                            value={item.value}
+                            key={item.value}
+                        />
+                    ))
                 }
-            />
+            </ul>
         </div>
-        <ul className="list-box">
-            {selectlist && selectlist.length && selectlist.map(item => (<LiItem
-                handleClickItem={handleClickItem}
-                label={item.label}
-                value={item.value}
-                key={item.value}
-            />
-            ))}
-        </ul>
-    </div>);
+    );
     {/* todo button OsuiSelect完成后，看基于select修改还是自己写btn */}
     return (
         <>
