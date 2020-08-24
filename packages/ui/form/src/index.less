@@ -1,0 +1,62 @@
+@osui-form-class-prefix: osui-form;
+
+.@{osui-form-class-prefix} {
+    .ant-form-item-has-error .ant-form-item-explain {
+        div::before {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            content: '';
+            -webkit-mask: url('./error.svg') no-repeat 50% 50%;
+            mask: url('./error.svg') no-repeat 50% 50%;
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            background-color: var(--theme-error-color);
+            vertical-align: middle;
+            margin-right: 2px;
+        }
+    }
+
+    .ant-form-item-has-warning .ant-form-item-explain {
+        div::before {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            content: '';
+            -webkit-mask: url('./warning.svg') no-repeat 50% 50%;
+            mask: url('./warning.svg') no-repeat 50% 50%;
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            background-color: var(--theme-warning-color);
+            vertical-align: middle;
+            margin-right: 2px;
+        }
+    }
+
+    .ant-form-item-is-validating .ant-form-item-explain {
+        div::before {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            content: '';
+            -webkit-mask: url('./spinner.svg') no-repeat 50% 50%;
+            mask: url('./spinner.svg') no-repeat 50% 50%;
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            background-color: var(--theme-text-color);
+            vertical-align: middle;
+            margin-right: 2px;
+            animation: osui-icon-spin 1s infinite linear;
+        }
+    }
+}
+
+@keyframes osui-icon-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
