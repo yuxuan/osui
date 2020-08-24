@@ -16,6 +16,7 @@ export const IconInfoCircleFill: IconComponent;
 export const IconLeftArrow: IconComponent;
 export const IconRightArrow: IconComponent;
 export const IconSearch: IconComponent;
+export const IconSpinner: IconComponent;
 export const IconSwitchCross: IconComponent;
 export const IconSwitchTick: IconComponent;
 export const IconWarningCircleFill: IconComponent;
