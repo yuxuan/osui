@@ -1,6 +1,10 @@
 @osui-collapse-class-prefix: osui-collapse;
 
 .@{osui-collapse-class-prefix} {
+    .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+        font-size: 0;
+    }
+
     .ant-collapse-item {
         .ant-collapse-header {
             color: var(--theme-heading-color);
@@ -11,23 +15,19 @@
             height: 32px;
             line-height: 32px;
 
-            .anticon-right {
+            .icon-wrapper {
                 background: var(--collapse-expand-icon-bg);
                 width: 16px;
                 height: 16px;
-                padding-top: 3px;
-                border-radius: 9px;
-
-                svg {
-                    font-size: 10px;
-                    color: var(--theme-text-color);
-                }
+                border-radius: 50%;
+                color: var(--theme-text-color);
             }
         }
     }
 
     .ant-collapse-item.ant-collapse-item-disabled {
-        .ant-collapse-header {
+        .ant-collapse-header,
+        .ant-collapse-arrow {
             color: var(--theme-disabled-color);
         }
     }
