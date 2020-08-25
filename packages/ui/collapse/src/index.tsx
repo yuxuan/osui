@@ -22,7 +22,11 @@ const Collapse: CollapseInterface = ({className, ...restProps}) => {
 
     const expandIcon = useCallback(
         panelProps => {
-            return panelProps.isActive ? <IconDownArrow /> : <IconRightArrow />;
+            return (
+                panelProps.isActive
+                    ? <span className="icon-wrapper"><IconDownArrow /> </span>
+                    : <span className="icon-wrapper"><IconRightArrow /></span>
+            );
         },
         []
     );

@@ -7,7 +7,7 @@ import './index.less';
 const clsPrefix = 'osui-button';
 
 export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
-    type?: ButtonType | 'image-text';
+    type?: ButtonType | 'image-text' | 'strong' | 'icon' | 'only-icon';
 }
 
 const OSUIButton: React.FC<ButtonProps> = props => {
@@ -18,8 +18,11 @@ const OSUIButton: React.FC<ButtonProps> = props => {
         btnText = props.children;
     }
     return (
-        // @ts-ignore
-        <AntdButton {...props} className={classNames(props.className, clsPrefix)} >
+        <AntdButton
+            {...props}
+            type={props.type as AntdButtonProps['type']} // 因为不兼容，做了强制类型转换
+            className={classNames(props.className, clsPrefix)}
+        >
             {btnText}
         </AntdButton>
     );
