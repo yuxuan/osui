@@ -3,6 +3,14 @@
 .@{osui-alert-class-prefix} {
     .ant-alert-close-icon {
         font-size: 14px;
+        height: 14px;
+    }
+
+    .ant-alert-close-text {
+        &:hover {
+            color: var(--link-color);
+            text-decoration: underline;
+        }
     }
 
     .ant-alert-icon {
@@ -22,43 +30,7 @@
         }
     }
 
-    &.ant-alert-warning {
-        .ant-alert-message {
-            color: var(--theme-warning-color);
-        }
-
-        .ant-alert-description {
-            color: var(--theme-warning-color);
-        }
-    }
-
-    &.ant-alert-error {
-        .ant-alert-message {
-            color: var(--theme-error-color);
-        }
-
-        .ant-alert-description {
-            color: var(--theme-error-color);
-        }
-    }
-
-    &.ant-alert-info {
-        .ant-alert-message {
-            color: var(--theme-primary-color);
-        }
-
-        .ant-alert-description {
-            color: var(--theme-primary-color);
-        }
-    }
-
-    &.ant-alert-success {
-        .ant-alert-message {
-            color: var(--theme-success-color);
-        }
-
-        .ant-alert-description {
-            color: var(--theme-success-color);
-        }
+    &-icon-cross {
+        color: var(--color-gray-9);
     }
 }
