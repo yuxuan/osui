@@ -25,7 +25,7 @@
 @component-background: var(--theme-component-bg);
 @font-family: "Helvetica Neue", "Helvetica", "Arial", "PingFangSC-Regular", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "sans-serif";
 @code-family: Consolas, Menlo, Courier, monospace;
-@heading-color: var(--theme-heading-color);
+@heading-color: var(--theme-text-color);
 @text-color:var(--theme-text-color);
 @text-color-secondary: var(--theme-text-color-secondary);
 @font-variant-base: normal; // https://github.com/ant-design/ant-design/issues/12690
@@ -76,6 +76,7 @@
 @input-height-lg: @height-l;
 @input-height-xl: @height-xl;
 @input-hover-border-color: var(--theme-border-color-base);
+@input-placeholder-color: var(--theme-placeholder-color);
 
 // Table
 // ---
@@ -124,8 +125,8 @@
 @alert-error-border-color: var(--alert-error-bg-color);
 @alert-error-bg-color: var(--alert-error-bg-color);
 @alert-error-icon-color: var(--alert-error-icon-color);
-@alert-message-color: var(--theme-heading-color);
-@alert-text-color: var(--theme-heading-color);
+@alert-message-color: var(--theme-text-color);
+@alert-text-color: var(--theme-text-color);
 @alert-close-color: var(--link-color);
 @alert-with-description-padding: var(--alert-with-description-padding);
 @alert-with-description-icon-top: var(--alert-with-description-icon-top);
@@ -139,7 +140,7 @@
 //Button
 // ---
 @btn-border-radius-base: 4px;
-@btn-default-color: var(--color-gray-9);
+@btn-default-color: var(--theme-text-color);
 @btn-default-bg: var(--color-gray-1);
 @btn-default-border: var(--color-gray-5);
 @btn-disable-color: var(--color-gray-6);
@@ -161,6 +162,9 @@
 @outline-width: 1px;
 @outline-blur-size: 0px;
 @outline-color: var(--theme-border-focus-color);
+
+// Radio
+// ---
 
 // 自定义的一些less变量patch，放在最下面
 // ----
@@ -189,4 +193,5 @@
 
 // Radio
 // ---
-@radio-focus-shadow: 0 0 0 0 var(--theme-border-focus-color);
+@radio-focus-shadow: 0 0 0 1px var(--theme-border-focus-color);
+@radio-duration: 0;
