@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import {Alert as AntdAlert} from 'antd';
 import {AlertProps as AntdAlertProps} from 'antd/es/alert';
 import {
@@ -13,7 +13,9 @@ import './index.less';
 
 const clsPrefix = 'osui-alert';
 
-export type AlertProps = AntdAlertProps;
+export interface AlertProps extends AntdAlertProps {
+    shouldStopClose?: boolean;
+}
 
 type iconTypes = 'info' | 'success' | 'error' | 'warning'; // 不覆盖loading
 const typeToIcon: Record<iconTypes, React.ReactNode> = {
@@ -24,9 +26,15 @@ const typeToIcon: Record<iconTypes, React.ReactNode> = {
 };
 
 const Alert: React.FC<AlertProps> = props => {
-    const { icon, closeText, type, className} = props;
+    const { icon, closeText, type, className, shouldStopClose = true} = props;
     const patchedIcon = icon || typeToIcon[type as iconTypes];
-    const patchedCloseText = closeText || <IconCross />;
+    const stopClose: (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement, MouseEvent>) => void = useCallback(
+        e => shouldStopClose && e.stopPropagation(),
+        [shouldStopClose]
+    );
+    const patchedCloseText = closeText
+        ? <span onClick={stopClose}>{closeText}</span>
+        : <IconCross className={`${clsPrefix}-icon-cross`} />;
 
     return (
         <AntdAlert

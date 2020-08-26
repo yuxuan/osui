@@ -15,10 +15,7 @@ export const Demo = () => {
                 type="success"
                 showIcon
                 closable
-                closeText={<span onClick={e => {
-                    e.stopPropagation();
-                }}
-                >查看详情</span>}
+                closeText="查看详情"
             />
             <br />
             <Alert
@@ -44,10 +41,7 @@ export const Demo = () => {
                 type="warning"
                 showIcon
                 closable
-                closeText={<span onClick={e => {
-                    e.stopPropagation();
-                }}
-                >查看详情</span>}
+                closeText="查看详情"
             />
             <br />
             <Alert
@@ -66,17 +60,15 @@ export const Demo = () => {
                 showIcon
             />
             <br />
-            {/* eroor */}
+            {/* error */}
             <Alert
                 style={{width: 500}}
                 message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
                 type="error"
                 showIcon
                 closable
-                closeText={<span onClick={e => {
-                    e.stopPropagation();
-                }}
-                >查看详情</span>}
+                closeText="查看详情"
+                shouldStopClose={false}
             />
             <br />
             <Alert
@@ -102,10 +94,7 @@ export const Demo = () => {
                 type="info"
                 showIcon
                 closable
-                closeText={<span onClick={e => {
-                    e.stopPropagation();
-                }}
-                >查看详情</span>}
+                closeText="查看详情"
             />
             <br />
             <Alert
