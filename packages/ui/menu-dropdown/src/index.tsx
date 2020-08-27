@@ -8,6 +8,7 @@ import {Dropdown as AntdDropdown, Menu} from 'antd';
 import {DropDownProps as AntdDropdownProps} from 'antd/es/dropdown';
 import {MenuItemProps} from 'antd/es/menu/MenuItem';
 import classNames from 'classnames';
+import {IconRightArrow} from '@osui/icons';
 import './index.less';
 
 const clsPrefix = 'osui-menu-dropdown';
@@ -38,6 +39,8 @@ const MenuDropdown: React.FC<MenuDropdownProps> = props => {
                                 key={item.key}
                                 title={item.title}
                                 popupClassName={classNames(`${clsPrefix}-menu`, props.className)}
+                                // @ts-ignore 这个没有暴露出来
+                                expandIcon={<IconRightArrow className={`${clsPrefix}-expand-icon`} />}
                             >
                                 {item.children.map((item: MenuDropdownData) => {
                                     return (

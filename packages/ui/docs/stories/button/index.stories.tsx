@@ -1,7 +1,6 @@
 import React from 'react';
+import {IconSearch, IconHome} from '@osui/icons';
 import OSUIButton from '@osui/button';
-// eslint-disable-next-line @reskript/import-order
-import { SearchOutlined, HomeOutlined } from '@ant-design/icons';
 
 export default {
     title: 'OSUI-Button',
@@ -9,7 +8,7 @@ export default {
 
 export const Demo = () => {
     return (
-        <div style={{padding: 30}}>
+        <>
             <div>
                 <OSUIButton type="default" style={{'margin': '0 20px 20px 0'}}>普通样式</OSUIButton>
                 <OSUIButton type="default" disabled style={{'margin': '0 20px 20px 0'}}>普通样式</OSUIButton>
@@ -30,25 +29,26 @@ export const Demo = () => {
                 <OSUIButton type="link" disabled style={{'margin': '0 20px 20px 0'}}>文字按钮</OSUIButton>
             </div>
             <div>
-                <OSUIButton type="icon" icon={<SearchOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                <OSUIButton type="icon" disabled icon={<SearchOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                <OSUIButton type="icon" loading icon={<SearchOutlined />} style={{'margin': '0 20px 20px 0'}} />
+                <OSUIButton type="icon" icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
+                <OSUIButton type="icon" disabled icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
+                <OSUIButton type="icon" loading icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
             </div>
             <div>
-                <OSUIButton type="only-icon" icon={<SearchOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                <OSUIButton type="only-icon" disabled icon={<SearchOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                <OSUIButton type="only-icon" loading icon={<SearchOutlined />} style={{'margin': '0 20px 20px 0'}} />
+                <OSUIButton type="only-icon" icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
+                <OSUIButton type="only-icon" disabled icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
+                <OSUIButton type="only-icon" loading icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
             </div>
             <div>
-                <OSUIButton type="image-text" icon={<HomeOutlined />} style={{'margin': '0 20px 20px 0'}}>
+                <OSUIButton type="image-text" icon={<IconHome />} style={{'margin': '0 20px 20px 0'}}>
                     图文按钮
                 </OSUIButton>
-                <OSUIButton type="image-text" disabled icon={<HomeOutlined />} style={{'margin': '0 20px 20px 0'}}>
+                <OSUIButton type="image-text" disabled icon={<IconHome />} style={{'margin': '0 20px 20px 0'}}>
                     图文按钮
                 </OSUIButton>
-                <OSUIButton type="image-text" loading icon={<HomeOutlined />} style={{'margin': '0 20px 20px 0'}}>
+                <OSUIButton type="image-text" loading icon={<IconHome />} style={{'margin': '0 20px 20px 0'}}>
                     图文按钮
                 </OSUIButton>
             </div>
-        </div>);
+        </>
+    );
 };

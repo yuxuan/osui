@@ -11,16 +11,16 @@ const clsPrefix = 'osui-checkbox';
 export type CheckboxProps = AntdCheckboxProps;
 export type CheckboxGroupProps = AntdCheckboxGroupProps;
 
-const CheckboxGroup: React.FC<CheckboxGroupProps> = ({ className, ...restProps }) => {
-    return <AntdCheckboxGroup className={classNames(`${clsPrefix}-group`, className)} {...restProps} />;
+const CheckboxGroup: React.FC<CheckboxGroupProps> = ({ className, ...props }) => {
+    return <AntdCheckboxGroup className={classNames(`${clsPrefix}-group`, className)} {...props} />;
 };
 
 interface CheckboxInterface extends React.FC<CheckboxProps> {
     Group: typeof CheckboxGroup;
 }
 
-const Checkbox: CheckboxInterface = ({ className, ...restProps }) => {
-    return <AntdCheckbox className={classNames(clsPrefix, className)} {...restProps} />;
+const Checkbox: CheckboxInterface = ({ className, ...props }) => {
+    return <AntdCheckbox className={classNames(clsPrefix, className)} {...props} />;
 };
 
 Checkbox.Group = CheckboxGroup;

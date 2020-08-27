@@ -1,8 +1,10 @@
 import React from 'react';
-import {Popover, Button, Input, Menu} from 'antd';
+import {Popover, Menu} from 'antd';
 import {PopoverProps as AntdPooverProps} from 'antd/es/popover';
 import classNames from 'classnames';
 import {IconSearch} from '@osui/icons';
+import Input from '@osui/input';
+import Button from '@osui/button';
 import './index.less';
 
 const clsPrePopfix = 'osui-search-select-list-popover';
@@ -83,15 +85,17 @@ const SeacrhSelectList: React.FC<SeacrhSelectListProps> = props => {
     // menuList 存在，则赋默认menu值，若没有则第一个为默认
     if (menuList && menuList.length) {
         const selectSelectedKey = defaultMenuSelect ? [`${defaultMenuSelect}`] : [menuList[0].value];
-        menu = (<Menu
-            mode="horizontal"
-            defaultSelectedKeys={selectSelectedKey}
-            onClick={handleClickMenu}
-        >
-            {
-                menuList.map((item: any) => <Menu.Item key={item.value}>{item.label}</Menu.Item>)
-            }
-        </Menu>);
+        menu = (
+            <Menu
+                mode="horizontal"
+                defaultSelectedKeys={selectSelectedKey}
+                onClick={handleClickMenu}
+            >
+                {
+                    menuList.map((item: any) => <Menu.Item key={item.value}>{item.label}</Menu.Item>)
+                }
+            </Menu>
+        );
     }
     const content = (
         <div className="select-list-wrap">

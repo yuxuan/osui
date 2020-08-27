@@ -1,18 +1,47 @@
 @osui-radio-class-prefix: osui-radio;
 
 .@{osui-radio-class-prefix} {
+    // 没选中时hover的效果
+    .ant-radio-wrapper:hover .ant-radio,
+    .ant-radio:hover .ant-radio-inner {
+        border-color: var(--theme-border-color-base);
+        background: var(--color-gray-3);
+    }
+
+    // checked时hover border的颜色
+    .ant-radio-wrapper:hover .ant-radio-checked.ant-radio,
+    .ant-radio-checked.ant-radio:hover .ant-radio-inner {
+        border-color: var(--color-brand-5);
+    }
+
+    // checked时hover border的颜色
+    .ant-radio-checked:not(.ant-radio-disabled):hover::after {
+        border-color: var(--color-brand-5);
+    }
+
+    // checked时hover里面点的颜色
+    .ant-radio-checked:not(.ant-radio-disabled):hover .ant-radio-inner::after {
+        background-color: var(--color-brand-5);
+    }
+
+    // disable时hover的效果
+    .ant-radio-disabled:hover .ant-radio-inner,
     .ant-radio-disabled .ant-radio-inner,
-    .ant-radio-button-wrapper-disabled {
-        background-color: #fff;
+    .ant-radio-button-disabled {
+        border-color: var(--theme-disabled-bg) !important;
+        background-color: var(--color-gray-1);
     }
 
-    &-group {
-        .ant-radio-disabled .ant-radio-inner,
-        .ant-radio-button-wrapper-disabled {
-            background-color: #fff;
-        }
+    // disable时checked的效果
+    .ant-radio-disabled.ant-radio-checked::after {
+        border-color: var(--theme-disabled-bg);
     }
 
+    .ant-radio.ant-radio-checked:not(.ant-radio-disabled):focus .ant-radio-inner {
+        box-shadow: 0 0 0 1px var(--theme-border-focus-color);
+    }
+
+    // 去除动画
     .ant-radio-checked .ant-radio-inner::after,
     .ant-radio-inner::after {
         transition: none;
@@ -20,5 +49,18 @@
 
     .ant-radio-checked::after {
         animation: none;
+    }
+
+    // group
+    &-group {
+        .ant-radio-button-wrapper:not(:first-child):focus-within::before {
+            left: 0;
+        }
+
+        .ant-radio-button-wrapper-disabled {
+            color: var(--theme-disabled-color);
+            background: var(--color-gray-1);
+            border-color: var(--color-gray-4);
+        }
     }
 }

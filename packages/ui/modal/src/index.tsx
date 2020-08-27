@@ -4,6 +4,7 @@ import {ModalProps as AntdModalProps} from 'antd/es/modal';
 import {ModalStaticFunctions as AntdModalStaticFunctions, globalConfig} from 'antd/es/modal/confirm';
 import classNames from 'classnames';
 import {IconCross} from '@osui/icons';
+import Button from '@osui/button';
 import './index.less';
 
 const {success, confirm, info, error, warning, warn, destroyAll, config} = AntdModal;
@@ -18,15 +19,40 @@ interface ModalInterface extends React.FC<ModalProps> {
     useModal: typeof AntdModal.useModal;
 }
 
-const OriginModal: ModalInterface = ({ className, bodyStyle = {}, bodyHeight, ...restProps }) => {
+const OriginModal: ModalInterface = ({className, bodyStyle = {}, bodyHeight, ...props}) => {
+    const {
+        okText = '确定',
+        cancelText = '取消',
+        onOk,
+        onCancel,
+        confirmLoading,
+        okButtonProps,
+        cancelButtonProps,
+    } = props;
+
     const classes = classNames({
         [`${clsPrefix}`]: true,
         [`${clsPrefix}-body-border`]: bodyHeight,
     }, className);
+
     if (bodyHeight) {
         bodyStyle.height = bodyHeight;
     }
-    return <AntdModal bodyStyle={bodyStyle} className={classNames(classes)} {...restProps} closeIcon={<IconCross />} />;
+    const footer = (
+        <div>
+            <Button onClick={onCancel} {...cancelButtonProps}>{cancelText}</Button>
+            <Button type="primary" onClick={onOk} loading={confirmLoading} {...okButtonProps}>{okText}</Button>
+        </div>
+    );
+    return (
+        <AntdModal
+            className={classNames(classes)}
+            bodyStyle={bodyStyle}
+            closeIcon={<IconCross />}
+            footer={footer}
+            {...props}
+        />
+    );
 };
 
 OriginModal.useModal = AntdModal.useModal;

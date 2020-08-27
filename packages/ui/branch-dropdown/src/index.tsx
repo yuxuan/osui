@@ -38,19 +38,20 @@ const BranchDropdown: React.FC<DropdownInterface> = props => {
         }
         handleMenuItemClick(data);
     }
-    const menu = (<Menu className={classNames(`${clsPrefix}-menu`)} onClick={handleMenuClick} >
-        {list.map((item: any) => (<Menu.Item
-            key={item.id}
-        >
-            <IconBranchDropdown />
-            <p className="title">
-                <span>{item.title}</span>
-                <em>{item.id === '0' ? '' : item.id }</em>
-            </p>
-            <p className="desc">{item.desc} </p>
-        </Menu.Item>
-        ))}
-    </Menu>);
+    const menu = (
+        <Menu className={classNames(`${clsPrefix}-menu`)} onClick={handleMenuClick} >
+            {list.map((item: any) => (<Menu.Item
+                key={item.id}
+            >
+                <IconBranchDropdown />
+                <p className="title">
+                    <span>{item.title}</span>
+                    <em>{item.id === '0' ? '' : item.id }</em>
+                </p>
+                <p className="desc">{item.desc} </p>
+            </Menu.Item>
+            ))}
+        </Menu>);
     return (
         <Dropdown
             overlay={menu}

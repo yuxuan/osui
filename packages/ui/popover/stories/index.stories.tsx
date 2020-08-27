@@ -9,16 +9,15 @@ export default {
 export const Demo = () => {
     const text = <span>我是标题我是标题</span>;
     const text1 = <span>我是标题</span>;
-    const content = (<div>
-        我是内容
-    </div>);
-    const content1 = (<div>
-        我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容
-    </div>);
-
-    const buttonClick = () => {
-        console.log('zxc');
-    };
+    const content = (
+        <div>
+            我是内容
+        </div>);
+    const content1 = (
+        <div>
+            我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容
+        </div>
+    );
 
     const buttonWidth = 60;
 
@@ -30,7 +29,6 @@ export const Demo = () => {
                 content={
                     <div>
                         {content1}
-                        <Button type="link" onClick={buttonClick}>Link Button</Button>
                     </div>
                 }
                 placement="topLeft"
@@ -43,7 +41,6 @@ export const Demo = () => {
                 content={
                     <div>
                         {content1}
-                        <Button type="link" onClick={buttonClick}>Link Button</Button>
                     </div>
                 }
                 placement="topLeft"
@@ -56,7 +53,6 @@ export const Demo = () => {
                 content={
                     <div>
                         {content1}
-                        <Button type="link" onClick={buttonClick}>Link Button</Button>
                     </div>
                 }
                 placement="topLeft"
@@ -72,7 +68,6 @@ export const Demo = () => {
                     content={
                         <div>
                             {content}
-                            <Button type="link" onClick={buttonClick}>Link Button</Button>
                         </div>
                     }
                     placement="topLeft"
@@ -85,7 +80,6 @@ export const Demo = () => {
                     content={
                         <div>
                             {content}
-                            <Button type="link" onClick={buttonClick}>Link Button</Button>
                         </div>
                     }
                     placement="top"
@@ -98,7 +92,6 @@ export const Demo = () => {
                     content={
                         <div>
                             {content}
-                            <Button type="link" onClick={buttonClick}>Link Button</Button>
                         </div>
                     }
                     placement="topRight"
@@ -113,7 +106,6 @@ export const Demo = () => {
                     content={
                         <div>
                             {content}
-                            <Button type="link" onClick={buttonClick}>Link Button</Button>
                         </div>
                     }
                     placement="leftTop"
@@ -126,7 +118,6 @@ export const Demo = () => {
                     content={
                         <div>
                             {content}
-                            <Button type="link" onClick={buttonClick}>Link Button</Button>
                         </div>
                     }
                     placement="left"
@@ -139,7 +130,6 @@ export const Demo = () => {
                     content={
                         <div>
                             {content}
-                            <Button type="link" onClick={buttonClick}>Link Button</Button>
                         </div>
                     }
                     placement="leftBottom"
@@ -154,7 +144,6 @@ export const Demo = () => {
                     content={
                         <div>
                             {content}
-                            <Button type="link" onClick={buttonClick}>Link Button</Button>
                         </div>
                     }
                     placement="rightTop"
@@ -167,7 +156,6 @@ export const Demo = () => {
                     content={
                         <div>
                             {content}
-                            <Button type="link" onClick={buttonClick}>Link Button</Button>
                         </div>
                     }
                     placement="right"
@@ -180,7 +168,6 @@ export const Demo = () => {
                     content={
                         <div>
                             {content}
-                            <Button type="link" onClick={buttonClick}>Link Button</Button>
                         </div>
                     }
                     placement="rightBottom"
@@ -195,7 +182,6 @@ export const Demo = () => {
                     content={
                         <div>
                             {content}
-                            <Button type="link" onClick={buttonClick}>Link Button</Button>
                         </div>
                     }
                     placement="bottomLeft"
@@ -208,7 +194,6 @@ export const Demo = () => {
                     content={
                         <div>
                             {content}
-                            <Button type="link" onClick={buttonClick}>Link Button</Button>
                         </div>
                     }
                     placement="bottom"
@@ -221,7 +206,6 @@ export const Demo = () => {
                     content={
                         <div>
                             {content}
-                            <Button type="link" onClick={buttonClick}>Link Button</Button>
                         </div>
                     }
                     placement="bottomRight"
@@ -231,5 +215,6 @@ export const Demo = () => {
                     <Button>BR</Button>
                 </OSUIPopover>
             </div>
-        </div>);
+        </div>
+    );
 };

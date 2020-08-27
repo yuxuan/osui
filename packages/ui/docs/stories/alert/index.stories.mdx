@@ -11,9 +11,16 @@ import {Demo} from './index.stories'
 
 支持所有antd属性：见[antd文档](https://ant.design/components/alert-cn/)
 
+### 新增属性
+
+| 参数 | 说明 | 类型 | 默认值
+| --- | --- | --- | --- |
+| shouldStopClose | 是否点击关闭文字时停止关闭 | boolean | true |
+
 ### 其他说明
 
-若icon不传并且存在description,则会赋予默认的icon
+- 若icon不传并且存在description,则会赋予默认的icon， 不会通过`shouldStopClose`控制，点击则关闭
+- 当`closeText`会裹一个span，通过`shouldStopClose`来控制，点击时是否关闭alert。
 
 <Preview>
   <Story name="Demo">

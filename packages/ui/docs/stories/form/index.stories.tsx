@@ -87,26 +87,9 @@ export const Demo = () => {
 
 export const StatusDemo = () => {
     const { Option } = Select;
-    const formItemLayout = {
-        labelCol: {
-            xs: {
-                span: 24,
-            },
-            sm: {
-                span: 5,
-            },
-        },
-        wrapperCol: {
-            xs: {
-                span: 24,
-            },
-            sm: {
-                span: 12,
-            },
-        },
-    };
+
     return (
-        <Form {...formItemLayout}>
+        <Form layout="vertical">
             <Form.Item
                 label="Fail"
                 validateStatus="error"
