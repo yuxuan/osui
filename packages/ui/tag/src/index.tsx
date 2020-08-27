@@ -7,6 +7,7 @@ import React from 'react';
 import {Tag as AntdTag} from 'antd';
 import {TagProps as AntdTagProps, CheckableTagProps as AntdCheckableTagProps} from 'antd/es/tag';
 import classNames from 'classnames';
+import {IconCross} from '@osui/icons';
 import './index.less';
 
 const clsPrefix = 'osui-tag';
@@ -19,7 +20,10 @@ interface TagInterface extends React.FC<TagProps> {
 }
 
 const Tag: TagInterface = props => {
-    return <AntdTag {...props} className={classNames(clsPrefix, props.className)} />;
+    const {closeIcon} = props;
+    const patchedIcon = closeIcon || <IconCross />;
+
+    return <AntdTag {...props} closeIcon={patchedIcon} className={classNames(clsPrefix, props.className)} />;
 };
 
 const CheckableTag: React.FC<CheckableTagProps> = props => {

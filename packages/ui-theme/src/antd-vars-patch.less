@@ -38,7 +38,7 @@
 
 // The background colors for active and hover states for things like
 // list items or table cells.
-@item-hover-bg: var(--theme-secondary-color-hover);
+@item-hover-bg: var(--item-hover-bg);
 @item-active-bg: var(--theme-secondary-color-hover);
 
 // LINK
@@ -67,7 +67,7 @@
 // Disabled states
 // ---
 @disabled-color: var(--theme-disabled-color);
-@disabled-bg: var(--theme-disabled-bg);
+@disabled-bg: var(--theme-component-bg);
 
 // Input
 // ---
@@ -109,7 +109,8 @@
 // Select
 // ---
 @select-item-selected-bg: var(--select-item-selected-bg);
-@select-item-active-bg: var(--select-item-active-bg);
+@select-item-active-bg: var(--item-hover-bg); // 这个是item hover的颜色
+@select-item-selected-font-weight: normal;
 
 // Alert
 // ---
@@ -149,6 +150,7 @@
 @btn-primary-color: var(--color-gray-1);
 @btn-primary-bg: var(--color-brand-6);
 @btn-shadow: 0 2px 0 rgba(0, 0, 0, 0);
+@btn-line-height: 23px;
 
 // Tooltip
 // ---
@@ -163,8 +165,14 @@
 @outline-blur-size: 0px;
 @outline-color: var(--theme-border-focus-color);
 
-// Radio
+// Form
 // ---
+@label-color: var(--color-gray-8);
+
+// Tabs
+// ---
+@tabs-active-color: var(--link-color);
+@tabs-hover-color: var(--link-color);
 
 // 自定义的一些less变量patch，放在最下面
 // ----

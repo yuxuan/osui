@@ -1,9 +1,38 @@
 @osui-checkbox-class-prefix: osui-checkbox;
 
-.@{osui-checkbox-class-prefix} {
+.@{osui-checkbox-class-prefix},
+.@{osui-checkbox-class-prefix}-group .ant-checkbox-group-item {
+    // 没选中时hover的效果
+    &.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+    .ant-checkbox:hover .ant-checkbox-inner,
+    .ant-checkbox-input:focus + .ant-checkbox-inner {
+        border-color: var(--theme-border-color-base);
+        background-color: var(--color-gray-3);
+    }
+    // 没选中且focus时的hover效果
+    &.ant-checkbox-wrapper:hover :not(.ant-checkbox-checked) .ant-checkbox-input:focus + .ant-checkbox-inner,
+    .ant-checkbox:not(.ant-checkbox-checked):hover .ant-checkbox-input:focus + .ant-checkbox-inner {
+        background-color: var(--color-gray-3);
+    }
+    // focus时的效果
+    .ant-checkbox-input:focus + .ant-checkbox-inner {
+        background-color: var(--color-gray-1);
+    }
+    // 选中focus时的效果
+    .ant-checkbox-checked .ant-checkbox-input:focus + .ant-checkbox-inner {
+        border-color: var(--theme-border-color-base);
+        box-shadow: 0 0 0 1px var(--theme-border-focus-color);
+    }
+    // 选中hover且focus时的效果
+    &.ant-checkbox-wrapper:hover .ant-checkbox-checked .ant-checkbox-inner,
+    .ant-checkbox-checked:hover .ant-checkbox-inner,
+    .ant-checkbox-checked .ant-checkbox-input:focus + .ant-checkbox-inner {
+        background-color: var(--theme-primary-color);
+    }
+
     .ant-checkbox-inner,
     .ant-checkbox-checked::after {
-        border-radius: 4px;
+        border-color: var(--theme-border-color-base);
         animation: none;
         animation-fill-mode: none;
     }

@@ -3,7 +3,7 @@
     width: auto;
     height: 16px; /* osui规范16px */
     fill: currentColor;
-    vertical-align: -.22em;
+    vertical-align: -.125em;
 }
 
 .osui-icon-spin {

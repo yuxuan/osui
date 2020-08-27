@@ -30,41 +30,45 @@ export default function Title() {
 ## Available Icons
 
 <table><tbody><tr><td align="center">
+                                                        <img src="./svg/add.svg"/><br/><sub>IconAdd</sub>
+                                                        </td><td align="center">
                                                         <img src="./svg/avatar.svg"/><br/><sub>IconAvatar</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/back-top.svg"/><br/><sub>IconBackTop</sub>
-                                                        </td><td align="center">
-                                                        <img src="./svg/branch-dropdown.svg"/><br/><sub>IconBranchDropdown</sub>
                                                         </td></tr><tr><td align="center">
+                                                        <img src="./svg/branch-dropdown.svg"/><br/><sub>IconBranchDropdown</sub>
+                                                        </td><td align="center">
                                                         <img src="./svg/branch-filter.svg"/><br/><sub>IconBranchFilter</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/check-circle-fill.svg"/><br/><sub>IconCheckCircleFill</sub>
-                                                        </td><td align="center">
-                                                        <img src="./svg/checked.svg"/><br/><sub>IconChecked</sub>
                                                         </td></tr><tr><td align="center">
+                                                        <img src="./svg/checked.svg"/><br/><sub>IconChecked</sub>
+                                                        </td><td align="center">
                                                         <img src="./svg/close-circle-fill.svg"/><br/><sub>IconCloseCircleFill</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/cross.svg"/><br/><sub>IconCross</sub>
-                                                        </td><td align="center">
-                                                        <img src="./svg/down-arrow.svg"/><br/><sub>IconDownArrow</sub>
                                                         </td></tr><tr><td align="center">
+                                                        <img src="./svg/down-arrow.svg"/><br/><sub>IconDownArrow</sub>
+                                                        </td><td align="center">
                                                         <img src="./svg/git-filter.svg"/><br/><sub>IconGitFilter</sub>
                                                         </td><td align="center">
+                                                        <img src="./svg/home.svg"/><br/><sub>IconHome</sub>
+                                                        </td></tr><tr><td align="center">
                                                         <img src="./svg/info-circle-fill.svg"/><br/><sub>IconInfoCircleFill</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/left-arrow.svg"/><br/><sub>IconLeftArrow</sub>
-                                                        </td></tr><tr><td align="center">
-                                                        <img src="./svg/right-arrow.svg"/><br/><sub>IconRightArrow</sub>
                                                         </td><td align="center">
+                                                        <img src="./svg/right-arrow.svg"/><br/><sub>IconRightArrow</sub>
+                                                        </td></tr><tr><td align="center">
                                                         <img src="./svg/search.svg"/><br/><sub>IconSearch</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/spinner.svg"/><br/><sub>IconSpinner</sub>
-                                                        </td></tr><tr><td align="center">
-                                                        <img src="./svg/switch-cross.svg"/><br/><sub>IconSwitchCross</sub>
                                                         </td><td align="center">
+                                                        <img src="./svg/switch-cross.svg"/><br/><sub>IconSwitchCross</sub>
+                                                        </td></tr><tr><td align="center">
                                                         <img src="./svg/switch-tick.svg"/><br/><sub>IconSwitchTick</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/warning-circle-fill.svg"/><br/><sub>IconWarningCircleFill</sub>
-                                                        </td></tr><tr><td align="center">
+                                                        </td><td align="center">
                                                         <img src="./svg/navi-doc.svg"/><br/><sub>IconNaviDoc</sub>
-                                                        </td><td align="center"></td><td align="center"></td></tr></tbody></table>
+                                                        </td></tr></tbody></table>

@@ -1,7 +1,7 @@
 import React from 'react';
-import OSUIPagination from '../src';
 import zhCN from 'antd/es/locale/zh_CN';
 import { ConfigProvider } from 'antd';
+import Pagination from '../src';
 
 export default {
     title: 'OSUI-Pagination',
@@ -15,11 +15,13 @@ export const Demo = () => {
     return (
         <div style={{padding: 30}}>
             <ConfigProvider locale={zhCN}>
-                <OSUIPagination showQuickJumper defaultCurrent={2} total={500} onChange={onChange} />
+                <Pagination showQuickJumper defaultCurrent={2} total={500} onChange={onChange} />
                 <br />
-                <OSUIPagination size="small" total={50} />
+                <Pagination size="small" total={50} />
                 <br />
-                <OSUIPagination simple defaultCurrent={2} total={50} />
+                <Pagination simple defaultCurrent={2} total={50} />
+                <br />
+                <Pagination showQuickJumper defaultCurrent={2} total={500} onChange={onChange} disabled />
             </ConfigProvider>
         </div>);
 };

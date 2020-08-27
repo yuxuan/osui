@@ -11,19 +11,33 @@
 
     .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
         font-weight: normal;
+
+        em.num {
+            background: var(--color-brand-1);
+            color: var(--link-color);
+        }
     }
 
-    .ant-tabs-tab .ant-tabs-tab-btn em.num {
-        background: var(--color-gray-3);
-        border-radius: 10px;
-        width: 25px;
-        height: 20px;
-        font-size: 12px;
-        color: var(--theme-text-color);
-        line-height: 20px;
-        display: inline-block;
-        text-align: center;
-        margin-left: 5px;
-        font-style: normal;
+    .ant-tabs-tab .ant-tabs-tab-btn {
+        em.num {
+            background: var(--color-gray-3);
+            border-radius: 10px;
+            width: 25px;
+            height: 20px;
+            font-size: 12px;
+            color: var(--theme-text-color);
+            line-height: 20px;
+            display: inline-block;
+            text-align: center;
+            margin-left: 5px;
+            font-style: normal;
+        }
+
+        &:hover {
+            em.num {
+                background: var(--color-brand-1);
+                color: var(--link-color);
+            }
+        }
     }
 }

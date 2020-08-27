@@ -1,27 +1,22 @@
 @osui-back-top-class-prefix: osui-pagination;
 
-.@{osui-back-top-class-prefix} {
-    .ant-pagination-item {
-        border: 1px solid var(--color-gray-5);
-
-        &:hover {
-            border-color: var(--color-brand-4) !important;
-
-            a {
-                color: var(--color-brand-4);
-            }
-        }
-    }
-
+.@{osui-back-top-class-prefix}:not(.ant-pagination-disabled) {
+    .ant-pagination-item,
+    .ant-pagination-next,
     .ant-pagination-prev {
         border: 1px solid var(--color-gray-5);
 
         &:hover {
-            border-color: var(--color-brand-4);
+            background-color: var(--color-gray-3);
+
+            a {
+                color: var(--theme-text-color);
+            }
         }
     }
 
-    .ant-pagination-item-active {
+    .ant-pagination-item-active,
+    .ant-pagination-item-active:hover {
         border-color: var(--color-brand-1);
         background: var(--color-brand-1);
 
@@ -43,8 +38,41 @@
 
     &.ant-pagination-simple,
     &.mini {
-        .ant-pagination-prev {
+        .ant-pagination-prev,
+        .ant-pagination-next {
             border: none;
+        }
+    }
+}
+
+.@{osui-back-top-class-prefix}.ant-pagination-disabled {
+    .ant-pagination-item,
+    .ant-pagination-next,
+    .ant-pagination-prev {
+        background: var(--color-gray-1);
+        border: 1px solid var(--color-gray-4);
+        cursor: not-allowed;
+
+        svg {
+            color: var(--theme-disabled-color);
+        }
+
+        &:hover {
+            background-color: var(--color-gray-1);
+
+            a {
+                color: var(--theme-disabled-color);
+            }
+        }
+    }
+
+    .ant-pagination-item-active,
+    .ant-pagination-item-active:hover {
+        border-color: var(--color-brand-1);
+        border-color: var(--color-gray-4);
+
+        a {
+            color: var(--theme-disabled-color);
         }
     }
 }

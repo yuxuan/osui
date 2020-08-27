@@ -263,7 +263,7 @@ exports.presetColors = {
     '--menu-popup-bg': 'var(--theme-component-bg)',
     '--progress-primary-text-color': 'var(--color-gray-7)',
     '--select-item-active-bg': 'var(--theme-secondary-color-hover)',
-    '--select-item-selected-bg': 'var(--theme-secondary-color-hover)',
+    '--select-item-selected-bg': 'var(--color-brand-1)',
     '--table-row-hover-bg': 'var(--color-brand-1)',
     '--table-header-bg': 'transparent',
     '--table-header-color': 'var(--color-gray-7)',
@@ -281,4 +281,5 @@ exports.presetColors = {
     '--tag-default-bg': 'var(--color-gray-3)',
     '--tooltip-bg': 'var(--color-gray-9)',
     '--tooltip-color': 'var(--color-gray-1)',
+    '--item-hover-bg': 'var(--color-gray-3)',
 };
