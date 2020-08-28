@@ -4,46 +4,31 @@
     &-button {
         height: 48px;
         width: 208px;
-        border: 1px solid var(--color-gray-5);
-        background: #fff;
-        border-radius: 4px;
-        padding-top: 7px;
         position: relative;
         padding-left: 28px;
 
-        span.dropdown-commit-icon {
+        .branch-dropdown-icon {
             position: absolute;
             left: 8px;
             top: 16px;
         }
 
-        span.dropdown-arrow-icon {
+        .dropdown-arrow-icon {
             position: absolute;
+            right: 8px;
             top: 16px;
-            left: 190px;
-            color: var(--theme-text-color);
-        }
-
-        .osui-icon {
-            width: 16px;
-            position: absolute;
-            left: 8px;
-            top: 18px;
-        }
-
-        &.ant-dropdown-open,
-        &:hover,
-        &:focus {
-            color: var(--theme-text-color);
-            background: var(--color-gray-1);
-            border-color: var(--color-brand-4);
         }
 
         .title {
+            max-width: 144px;
             color: var(--theme-text-color);
-            font-size: 12px;
+            font-size: 14px;
             margin-bottom: 0;
             text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.5;
         }
 
         .desc {
@@ -52,10 +37,11 @@
             font-size: 12px;
             color: var(--color-gray-7);
             margin-bottom: 0;
+            display: block;
+            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;
-            display: block;
+            line-height: 1.5;
         }
     }
 
@@ -63,20 +49,18 @@
         max-height: 250px;
         overflow-y: scroll;
 
-        .ant-dropdown {
-            border-radius: 4px;
-        }
-
-        .ant-dropdown-menu {
-            border-radius: 4px;
-        }
-
         .ant-dropdown-menu-item {
             border-bottom: 1px solid #ecedf0;
             padding: 4px 28px 12px;
             position: relative;
             width: 360px;
             height: 48px;
+
+            svg {
+                position: absolute;
+                left: 8px;
+                top: 16px;
+            }
 
             p {
                 height: 22px;
@@ -95,30 +79,34 @@
                     text-overflow: ellipsis;
                     white-space: nowrap;
                     display: inline-block;
+                    font-size: 14px;
+                    line-height: 1.5;
                 }
 
                 em {
                     color: var(--color-gray-7);
                     float: right;
                     font-style: normal;
-                    font-size: 12px;
+                    font-size: 14px;
                 }
             }
 
-            svg {
-                position: absolute;
-                left: 8px;
-                top: 16px;
+            .desc {
+                width: 144px;
+                text-align: left;
+                font-size: 12px;
+                color: var(--color-gray-7);
+                margin-bottom: 0;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 1.5;
             }
 
             &:last-child {
                 border-bottom: 0;
             }
-        }
-
-        .ant-dropdown-menu-item:hover,
-        .ant-dropdown-menu-submenu-title:hover {
-            background-color: var(--color-brand-1);
         }
     }
 }

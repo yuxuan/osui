@@ -1,6 +1,7 @@
 import React from 'react';
 import {DropDownProps as AntdDropDownProps} from 'antd/es/dropdown';
-import {Menu, Dropdown, Button } from 'antd';
+import {Menu, Dropdown} from 'antd';
+import Button from '@osui/button';
 import {IconBranchDropdown, IconDownArrow} from '@osui/icons';
 import classNames from 'classnames';
 import './index.less';
@@ -40,16 +41,17 @@ const BranchDropdown: React.FC<DropdownInterface> = props => {
     }
     const menu = (
         <Menu className={classNames(`${clsPrefix}-menu`)} onClick={handleMenuClick} >
-            {list.map((item: any) => (<Menu.Item
-                key={item.id}
-            >
-                <IconBranchDropdown />
-                <p className="title">
-                    <span>{item.title}</span>
-                    <em>{item.id === '0' ? '' : item.id }</em>
-                </p>
-                <p className="desc">{item.desc} </p>
-            </Menu.Item>
+            {list.map((item: any) => (
+                <Menu.Item
+                    key={item.id}
+                >
+                    <IconBranchDropdown />
+                    <p className="title">
+                        <span>{item.title}</span>
+                        <em>{item.id === '0' ? '' : item.id }</em>
+                    </p>
+                    <p className="desc">{item.desc} </p>
+                </Menu.Item>
             ))}
         </Menu>);
     return (
@@ -58,8 +60,8 @@ const BranchDropdown: React.FC<DropdownInterface> = props => {
             overlayClassName={classNames(`${clsPrefix}`, classDropDownName)}
             {...props}
         >
-            <Button className={classNames(`${clsPrefix}-button`, classButtonName)}>
-                <IconBranchDropdown />
+            <Button className={classNames(`${clsPrefix}-button`, classButtonName)} type="default">
+                <IconBranchDropdown className="branch-dropdown-icon" />
                 <p className="title">{title}</p>
                 <p className="desc">{desc}</p>
                 <IconDownArrow className="dropdown-arrow-icon" />
