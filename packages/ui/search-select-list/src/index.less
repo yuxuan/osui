@@ -16,7 +16,15 @@
                     .ant-menu-item {
                         margin-right: 33px;
                         margin-left: 0;
+                    }
+
+                    .ant-menu-item:not(.ant-menu-item-selected) {
                         color: var(--color-gray-7);
+
+                        &:hover {
+                            color: var(--link-color);
+                            border-bottom: 2px solid transparent;
+                        }
                     }
                 }
 
