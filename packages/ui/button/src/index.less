@@ -1,7 +1,7 @@
 @osui-back-top-class-prefix: osui-button;
 
 .@{osui-back-top-class-prefix} {
-    & > .anticon + span {
+    & > .osui-icon + span {
         margin-left: 4px;
     }
 
@@ -37,43 +37,6 @@
             color: var(--theme-disabled-color);
             background: var(--color-gray-1);
             border-color: var(--color-gray-4);
-        }
-    }
-
-    &.ant-btn-image-text {
-        color: var(--theme-text-color);
-        background: var(--color-gray-1);
-        border-color: var(--color-gray-5);
-
-        .anticon {
-            color: var(--theme-text-color);
-        }
-
-        &:hover {
-            background: var(--color-gray-3);
-            border-color: var(--color-gray-5);
-        }
-
-        &:focus {
-            background: var(--color-gray-1);
-            border-color: var(--color-brand-4);
-            color: var(--theme-text-color);
-            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
-        }
-
-        &:active {
-            background: var(--color-gray-4);
-            color: var(--theme-text-color);
-        }
-
-        &[disabled] {
-            color: var(--theme-disabled-color);
-            background: var(--color-gray-1);
-            border-color: var(--color-gray-5);
-
-            .anticon {
-                color: var(--color-gray-5);
-            }
         }
     }
 
