@@ -1,34 +1,41 @@
-@osui-markdown-class-prefix: osui-alert;
+@osui-markdown-class-prefix: osui-markdown-main;
 .@{osui-markdown-class-prefix} {
-    .main {
-        padding: 20px;
+    ul {
+        list-style: disc;
+    }
 
+    ol {
+        list-style: decimal;
+    }
+
+    ul,
+    ol {
         ul {
-            list-style: disc;
+            list-style: circle;
         }
 
         ol {
-            list-style: decimal;
+            list-style: lower-latin;
         }
+    }
 
-        ul,
-        ol {
-            ul {
-                list-style: circle;
-            }
+    strong {
+        font-weight: 900;
+    }
 
-            ol {
-                list-style: lower-latin;
-            }
-        }
+    // 覆盖 prism 中的样式
+    pre code::selection {
+        background-color: var(--ee-theme-primary-color);
+    }
 
-        strong {
-            font-weight: 900;
-        }
-
-        // 覆盖 prism 中的样式
-        pre code::selection {
-            background-color: var(--ee-theme-primary-color);
-        }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    pre {
+        line-height: 1.5;
     }
 }
