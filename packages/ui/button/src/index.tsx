@@ -7,12 +7,12 @@ import './index.less';
 const clsPrefix = 'osui-button';
 
 export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
-    type?: ButtonType | 'image-text' | 'strong' | 'icon' | 'only-icon';
+    type?: ButtonType | 'strong' | 'icon' | 'only-icon';
 }
 
 const OSUIButton: React.FC<ButtonProps> = ({type = 'default', ...props}) => {
     let btnText: string | React.ReactNode = '';
-    if (type !== 'image-text' && props.loading) {
+    if (props.loading) {
         btnText = '';
     } else {
         btnText = props.children;

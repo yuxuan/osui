@@ -29,6 +29,7 @@ export const Demo = () => {
                 content={
                     <div>
                         {content1}
+                        <Button type="link" style={{marginTop: 10}}>link</Button>
                     </div>
                 }
                 placement="topLeft"
@@ -44,7 +45,7 @@ export const Demo = () => {
                     </div>
                 }
                 placement="topLeft"
-                title={text1}
+                title=""
                 trigger="click"
             >
                 <Button style={{margin: '0 20px'}}>Click</Button>
