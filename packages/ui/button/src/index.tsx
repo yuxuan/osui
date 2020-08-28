@@ -10,9 +10,9 @@ export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
     type?: ButtonType | 'image-text' | 'strong' | 'icon' | 'only-icon';
 }
 
-const OSUIButton: React.FC<ButtonProps> = props => {
+const OSUIButton: React.FC<ButtonProps> = ({type = 'default', ...props}) => {
     let btnText: string | React.ReactNode = '';
-    if (props.type !== 'image-text' && props.loading) {
+    if (type !== 'image-text' && props.loading) {
         btnText = '';
     } else {
         btnText = props.children;
@@ -20,7 +20,7 @@ const OSUIButton: React.FC<ButtonProps> = props => {
     return (
         <AntdButton
             {...props}
-            type={props.type as AntdButtonProps['type']} // 因为不兼容，做了强制类型转换
+            type={type as AntdButtonProps['type']} // 因为不兼容，做了强制类型转换
             className={classNames(props.className, clsPrefix)}
         >
             {btnText}

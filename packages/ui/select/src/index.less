@@ -69,6 +69,12 @@
     }
 }
 
+.@{osui-select-class-prefix}.ant-select-multiple {
+    .ant-select-selection-item .ant-select-selection-item-remove {
+        color: var(--color-gray-6);
+    }
+}
+
 // 多选下拉移动到左边，
 .@{osui-select-class-prefix}-multiple-dropdown {
     .ant-select-item.ant-select-item-option,
@@ -77,8 +83,8 @@
     }
 
     // 以下通过使用::before画出来未选中时的边框，border可以通过variables控制，TODO：大小也可以控制，但是position要相应调整
-    .ant-select-item.ant-select-item-option .ant-select-item-option-content {
-        &::before {
+    .ant-select-item.ant-select-item-option {
+        .ant-select-item-option-content::before {
             @checkbox-size: 14px;
 
             position: absolute;
@@ -89,7 +95,13 @@
             height: @checkbox-size;
             border: 1px solid var(--theme-border-color-base);
             border-radius: @border-radius-base;
-            content: ' ';
+            content: '';
+        }
+    }
+
+    .ant-select-item-option-selected.ant-select-item.ant-select-item-option {
+        .ant-select-item-option-content::before {
+            display: none;
         }
     }
 
