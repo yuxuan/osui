@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/alert@0.3.2...@osui/alert@0.4.0) (2020-09-01)
+
+
+### Bug Fixes
+
+* alert style ([82c0201](https://gitee.com/gitee-fe/osui/tree/master/commits/82c0201a2adb7bdb6d761dec95e6b3b38b317acf))
+* ue样式修复 ([b96ad12](https://gitee.com/gitee-fe/osui/tree/master/commits/b96ad1267689dd649f0a8bf82bedcbeff7e60983))
+* 修复alert样式 ([3db38e0](https://gitee.com/gitee-fe/osui/tree/master/commits/3db38e065d2f67673b98b6823bd6e93638096e36))
+* 修复message和alert代码调整 ([f0fbac7](https://gitee.com/gitee-fe/osui/tree/master/commits/f0fbac740c0a124b7b2801cfffb70847f28fa74a))
+* 样式修复 ([896665a](https://gitee.com/gitee-fe/osui/tree/master/commits/896665a45f52be9a2896157f20125f8a77809e34))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/gitee-fe/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+
+
+
+
+
 ## [0.3.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/alert@0.3.1...@osui/alert@0.3.2) (2020-08-17)
 
 **Note:** Version bump only for package @osui/alert

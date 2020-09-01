@@ -1,6 +1,6 @@
 {
   "name": "@osui/icons",
-  "version": "0.3.1",
+  "version": "0.4.1",
   "description": "OSUI icons",
   "author": {
     "name": "zhanglili01,huoyuxuan,lisiqi06,guyiling"
@@ -51,5 +51,6 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.com"
-  }
+  },
+  "gitHead": "ef37ee758318e45a5778dd56c596373032cb6fa1"
 }

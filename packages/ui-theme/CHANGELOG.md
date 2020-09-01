@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.3.2...@osui/theme@0.4.0) (2020-09-01)
+
+
+### Bug Fixes
+
+* alert style ([82c0201](https://gitee.com/gitee-fe/osui/tree/master/commits/82c0201a2adb7bdb6d761dec95e6b3b38b317acf))
+* input border color ([7439d98](https://gitee.com/gitee-fe/osui/tree/master/commits/7439d98404bf6cddc114daa36c0b63fd79f1baf2))
+* less-functions-override ([6f1f4c0](https://gitee.com/gitee-fe/osui/tree/master/commits/6f1f4c055f5701044f95a97ac3e7585a772e314a))
+* ue样式修复 ([b96ad12](https://gitee.com/gitee-fe/osui/tree/master/commits/b96ad1267689dd649f0a8bf82bedcbeff7e60983))
+* 修复alert样式 ([3db38e0](https://gitee.com/gitee-fe/osui/tree/master/commits/3db38e065d2f67673b98b6823bd6e93638096e36))
+* 修复table switch ([29c9ba8](https://gitee.com/gitee-fe/osui/tree/master/commits/29c9ba8b79904566ea84e010dd5ffa62c8e75ab4))
+* 修复样式 ([9979e55](https://gitee.com/gitee-fe/osui/tree/master/commits/9979e556048898e5182851e9cfde7f464b1c749d))
+* 修复样式 ([a43ed79](https://gitee.com/gitee-fe/osui/tree/master/commits/a43ed793f7b01e40526ba3b0917d8ac902ec2eb7))
+* 修复样式 ([94c5450](https://gitee.com/gitee-fe/osui/tree/master/commits/94c545078c2b4c05dee48b880f32bed2d11459ea))
+* 样式修复 ([896665a](https://gitee.com/gitee-fe/osui/tree/master/commits/896665a45f52be9a2896157f20125f8a77809e34))
+* 解决icon冲突 ([297269b](https://gitee.com/gitee-fe/osui/tree/master/commits/297269bc9b980efba87e5759b82a4f5fbea04052))
+* 解决冲突 ([d602c0e](https://gitee.com/gitee-fe/osui/tree/master/commits/d602c0ecaae95988d4c7d4b0c04e4dada9eb6e8f))
+* 调整Button,popover,search-select-list的样式 ([aa66478](https://gitee.com/gitee-fe/osui/tree/master/commits/aa66478c36f1b271c008b8ce71e923f218b68fb7))
+* 调整radio和input的search icon ([b1eaed5](https://gitee.com/gitee-fe/osui/tree/master/commits/b1eaed535b9704b14d463948f553940e78e48daa))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/gitee-fe/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+
+
+### Features
+
+* 新增分页组件 ([c24133f](https://gitee.com/gitee-fe/osui/tree/master/commits/c24133f72fc5b3f00584e26f62daaa1a23083eac))
+
+
+
+
+
 ## [0.3.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.3.1...@osui/theme@0.3.2) (2020-08-17)
 
 **Note:** Version bump only for package @osui/theme

@@ -1,6 +1,6 @@
 {
     "name": "@osui/tabs",
-    "version": "0.1.0",
+    "version": "0.4.1",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -55,6 +55,9 @@
             "pre-commit": "skr lint ./src"
         }
     },
-    "dependencies": {
-    }
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.com"
+    },
+    "gitHead": "f77d1e9647b040fb6b4681cca99900d94f9fbc19"
 }

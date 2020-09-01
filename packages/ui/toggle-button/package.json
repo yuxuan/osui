@@ -1,6 +1,6 @@
 {
     "name": "@osui/toggle-button",
-    "version": "0.1.0",
+    "version": "0.4.1",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -59,6 +59,11 @@
         "@huse/boolean": "^1.0.2",
         "@huse/click-outside": "^1.0.1",
         "@huse/derived-state": "^1.0.1",
-        "@osui/icons": "0.3.1"
-    }
+        "@osui/icons": "^0.4.1"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.com"
+    },
+    "gitHead": "830345347dde3c4a665d8de7fbc31231aec0b520"
 }

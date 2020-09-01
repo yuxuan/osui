@@ -1,6 +1,6 @@
 {
     "name": "@osui/back-top",
-    "version": "0.3.2",
+    "version": "0.4.1",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -56,12 +56,12 @@
         }
     },
     "dependencies": {
-        "@osui/icons": "^0.3.1",
+        "@osui/icons": "^0.4.1",
         "classnames": "^2.2.6"
     },
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "gitHead": "d22c04b87ec8dc035e148bc616e0db1eac8afd98"
+    "gitHead": "d14770e91575397ea2a3701d8a62c575390df9ed"
 }

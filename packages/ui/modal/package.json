@@ -1,6 +1,6 @@
 {
     "name": "@osui/modal",
-    "version": "0.3.2",
+    "version": "0.4.1",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -51,12 +51,12 @@
     "author": "huoyuxuan,liushaozhen",
     "license": "MIT",
     "dependencies": {
-        "@osui/button": "0.3.2",
+        "@osui/button": "^0.4.1",
         "classnames": "^2.2.6"
     },
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "gitHead": "d22c04b87ec8dc035e148bc616e0db1eac8afd98"
+    "gitHead": "f77d1e9647b040fb6b4681cca99900d94f9fbc19"
 }

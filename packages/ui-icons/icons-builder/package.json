@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@osui/icons-builder",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "description": "Icons for OSUI",
   "files": [
     "src/"
@@ -9,7 +9,6 @@
   "scripts": {
     "generate": "node -r esm build/generate.js",
     "clean": "rm -rf node_modules"
-
   },
   "keywords": [
     "svg",
