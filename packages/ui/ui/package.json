@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "0.3.2",
+    "version": "0.4.0",
     "description": "",
     "main": "dist/index.js",
     "module": "dist/index.js",
@@ -36,7 +36,7 @@
         }
     },
     "dependencies": {
-        "@osui/icons": "^0.3.1",
+        "@osui/icons": "^0.4.0",
         "classnames": "^2.2.6",
         "github-markdown-css": "^4.0.0",
         "lodash.partial": "^4.2.1",

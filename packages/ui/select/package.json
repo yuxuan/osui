@@ -1,6 +1,6 @@
 {
     "name": "@osui/select",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -58,7 +58,5 @@
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
-    },
-    "dependencies": {
     }
 }

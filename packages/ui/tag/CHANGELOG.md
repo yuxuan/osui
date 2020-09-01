@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tag@0.3.2...@osui/tag@0.4.0) (2020-09-01)
+
+
+### Bug Fixes
+
+* ue样式修复 ([b96ad12](https://gitee.com/gitee-fe/osui/tree/master/commits/b96ad1267689dd649f0a8bf82bedcbeff7e60983))
+* 修复样式 ([94c5450](https://gitee.com/gitee-fe/osui/tree/master/commits/94c545078c2b4c05dee48b880f32bed2d11459ea))
+* 样式修复 ([896665a](https://gitee.com/gitee-fe/osui/tree/master/commits/896665a45f52be9a2896157f20125f8a77809e34))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/gitee-fe/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+
+
+
+
+
 ## [0.3.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tag@0.3.1...@osui/tag@0.3.2) (2020-08-17)
 
 **Note:** Version bump only for package @osui/tag
