@@ -1,6 +1,6 @@
 {
     "name": "@osui/pagination",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -56,8 +56,12 @@
         }
     },
     "dependencies": {
-        "@osui/icons": "^0.4.0",
+        "@osui/icons": "^0.4.1",
         "classnames": "^2.2.6"
     },
-    "gitHead": "320043d84865d42bb137764885b161e844002087"
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.com"
+    },
+    "gitHead": "f77d1e9647b040fb6b4681cca99900d94f9fbc19"
 }

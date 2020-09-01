@@ -1,6 +1,6 @@
 {
     "name": "@osui/alert",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -51,12 +51,12 @@
     "author": "huoyuxuan,zhusen",
     "license": "MIT",
     "dependencies": {
-        "@osui/icons": "^0.4.0",
+        "@osui/icons": "^0.4.1",
         "classnames": "^2.2.6"
     },
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "gitHead": "320043d84865d42bb137764885b161e844002087"
+    "gitHead": "830345347dde3c4a665d8de7fbc31231aec0b520"
 }

@@ -1,6 +1,6 @@
 {
     "name": "@osui/markdown",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -66,5 +66,5 @@
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "gitHead": "320043d84865d42bb137764885b161e844002087"
+    "gitHead": "ef37ee758318e45a5778dd56c596373032cb6fa1"
 }

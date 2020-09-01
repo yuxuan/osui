@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "description": "",
     "main": "dist/index.js",
     "module": "dist/index.js",
@@ -36,7 +36,7 @@
         }
     },
     "dependencies": {
-        "@osui/icons": "^0.4.0",
+        "@osui/icons": "^0.4.1",
         "classnames": "^2.2.6",
         "github-markdown-css": "^4.0.0",
         "lodash.partial": "^4.2.1",
@@ -47,5 +47,5 @@
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "gitHead": "320043d84865d42bb137764885b161e844002087"
+    "gitHead": "d14770e91575397ea2a3701d8a62c575390df9ed"
 }
