@@ -58,5 +58,6 @@
     "dependencies": {
         "@osui/icons": "^0.4.0",
         "classnames": "^2.2.6"
-    }
+    },
+    "gitHead": "320043d84865d42bb137764885b161e844002087"
 }
