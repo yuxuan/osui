@@ -1,4 +1,4 @@
-const {stableChunk, sentry, devLogin, browserInspect, dependenciesOnCDN} = require('@baidu/reskript-plugins');
+const {stableChunk, sentry, browserInspect, dependenciesOnCDN} = require('@baidu/reskript-plugins');
 
 const enableTrack = process.env.TRACK_ENV !== 'off';
 
@@ -32,14 +32,14 @@ exports.devServer = {
 
 exports.addition = () => ({});
 
-const devLoginOptions = {
-    uuapCallbackURL: '/',
-    sessionCookieName: 'SESSION',
-    // TODO: 使用常用的测试用户名
-    presetUsers: [
-        {username: 'zhanglili01', tags: ['测试用户']},
-    ],
-};
+// const devLoginOptions = {
+//     uuapCallbackURL: '/',
+//     sessionCookieName: 'SESSION',
+//     // TODO: 使用常用的测试用户名
+//     presetUsers: [
+//         {username: 'zhanglili01', tags: ['测试用户']},
+//     ],
+// };
 
 exports.plugins = [
     stableChunk(),

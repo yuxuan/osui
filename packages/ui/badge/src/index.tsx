@@ -7,14 +7,14 @@ import './index.less';
 const clsPrefix = 'osui-badge';
 
 export interface BadgeProps extends AntdBadgeProps {
-    count: number;
+    count?: number;
 }
 
 const OSUIBadge: React.FC<BadgeProps> = props => {
     let number = '';
-    if (props.count > 9 && props.count < 100) {
+    if (props.count && props.count > 9 && props.count < 100) {
         number = `${clsPrefix}-much`;
-    } else if (props.count > 100) {
+    } else if (props.count && props.count > 100) {
         number = `${clsPrefix}-super-much`;
     }
     return (<AntdBadge {...props} className={classNames(props.className, clsPrefix, number)} />);

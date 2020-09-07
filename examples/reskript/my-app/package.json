@@ -17,8 +17,9 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@ecomfe/react-track": "^1.6.0",
-    "@osui/button": "^0.3.2",
+    "@osui/icons": "^0.4.1",
     "@osui/theme": "^0.3.2",
+    "@osui/ui": "^0.4.1",
     "antd": "^4.5.4",
     "axios": "^0.19.0",
     "classnames": "^2.2.6",
