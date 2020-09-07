@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://gitee.com/gitee-fe/osui/compare/@osui/icons-builder@0.3.0...@osui/icons-builder@0.4.2) (2020-09-07)
+
+**Note:** Version bump only for package @osui/icons-builder
+
+
+
+
+
 # [0.4.0](https://gitee.com/gitee-fe/osui/compare/@osui/icons-builder@0.3.0...@osui/icons-builder@0.4.0) (2020-09-01)
 
 **Note:** Version bump only for package @osui/icons-builder

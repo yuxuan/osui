@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/avatar@0.3.2...@osui/avatar@0.4.2) (2020-09-07)
+
+
+### Bug Fixes
+
+* avatar调整 ([dfde4ba](https://gitee.com/gitee-fe/osui/tree/master/commits/dfde4baa8f27f89c3246f7ea735cd05e2609c8a1))
+
+
+
+
+
 # [0.4.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/avatar@0.3.2...@osui/avatar@0.4.0) (2020-09-01)
 
 **Note:** Version bump only for package @osui/avatar

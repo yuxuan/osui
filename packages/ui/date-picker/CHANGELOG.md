@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/date-picker@0.3.2...@osui/date-picker@0.4.2) (2020-09-07)
+
+
+### Bug Fixes
+
+* 样式修复 ([4d6a435](https://gitee.com/gitee-fe/osui/tree/master/commits/4d6a435d8619434d977ea4988b2aa8474f90ce59))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/gitee-fe/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+
+
+
+
+
 # [0.4.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/date-picker@0.3.2...@osui/date-picker@0.4.0) (2020-09-01)
 
 
