@@ -1131,17 +1131,24 @@
   dependencies:
     classnames "^2.2.6"
 
-"@osui/theme@^0.3.2":
-  version "0.3.2"
-  resolved "http://registry.npm.baidu-int.com/@osui%2ftheme/-/theme-0.3.2.tgz#d931de922a9766dda812e96a2d45eb372b05b48f"
-  integrity sha1-2THekiqXZt2oEulqLUXrNysFtI8=
-
-"@osui/ui@^0.4.1":
-  version "0.4.1"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fui/-/ui-0.4.1.tgz#9de7ea2c0f1393f1a5537121b0e7700ae067715b"
-  integrity sha1-nefqLA8Tk/GlU3EhsOdwCuBncVs=
+"@osui/icons@^0.4.2":
+  version "0.4.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ficons/-/icons-0.4.2.tgz#218c0c8d0bc1ed3f5dab9eabc475d6a132d5a681"
+  integrity sha1-IYwMjQvB7T9dq56rxHXWoTLVpoE=
   dependencies:
-    "@osui/icons" "^0.4.1"
+    classnames "^2.2.6"
+
+"@osui/theme@^0.4.2":
+  version "0.4.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ftheme/-/theme-0.4.2.tgz#594b34c8e45bfa9b5e2f566ad447150f9e44ec88"
+  integrity sha1-WUs0yORb+pteL1Zq1EcVD55E7Ig=
+
+"@osui/ui@^0.4.2":
+  version "0.4.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fui/-/ui-0.4.2.tgz#cc917b8f9362ce52175a29a824951a80e1727d79"
+  integrity sha1-zJF7j5NizlIXWimoJJUagOFyfXk=
+  dependencies:
+    "@osui/icons" "^0.4.2"
     classnames "^2.2.6"
     github-markdown-css "^4.0.0"
     lodash.partial "^4.2.1"

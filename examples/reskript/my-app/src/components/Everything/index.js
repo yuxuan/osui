@@ -1,9 +1,125 @@
 /* eslint-disable no-console, max-len, max-lines, react/jsx-no-bind */
-import {useState, useCallback} from 'react';
-import {Row} from 'antd';
-import {IconSearch} from '@osui/icons';
+import {useState} from 'react';
+import {Space, Row, ConfigProvider} from 'antd';
+import zhCN from 'antd/es/locale/zh_CN';
+import {
+    IconAdd,
+    IconSearch,
+    IconSwitchTick,
+    IconSwitchCross,
+    IconGitFilter,
+    IconBranchFilter,
+} from '@osui/icons';
 import moment from 'moment';
 import * as OSUI from '@osui/ui';
+import {ClockCircleOutlined} from '@ant-design/icons';
+
+export const Alert = () => {
+    return (
+        <>
+            <OSUI.Alert
+                style={{width: 500}}
+                message="恭喜！你所提交的信息已经审核通过，如有问题请联系客服。"
+                type="success"
+                showIcon
+                closable
+                closeText="查看详情"
+            />
+            <br />
+            <OSUI.Alert
+                style={{width: 500}}
+                message="恭喜！你所提交的信息已经审核通过，如有问题请联系客服。"
+                type="success"
+                showIcon
+                closable
+            />
+            <br />
+            <OSUI.Alert
+                style={{width: 500}}
+                message="已成功！"
+                description="你所提交的信息已经审核通过，请及时跟进申请状况。如有问题，请联系审核人员或在线客服。"
+                type="success"
+                showIcon
+            />
+            <br />
+            <OSUI.Alert
+                style={{width: 500}}
+                message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
+                type="warning"
+                showIcon
+                closable
+                closeText="查看详情"
+            />
+            <br />
+            <OSUI.Alert
+                style={{width: 500}}
+                message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
+                type="warning"
+                showIcon
+                closable
+            />
+            <br />
+            <OSUI.Alert
+                style={{width: 500}}
+                message="请注意！"
+                description="你所提交的信息已经审核失败，可以进入个人信箱查看原因，如有疑问，请联系客服人员。"
+                type="warning"
+                showIcon
+            />
+            <br />
+            <OSUI.Alert
+                style={{width: 500}}
+                message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
+                type="error"
+                showIcon
+                closable
+                closeText="查看详情"
+                shouldStopClose={false}
+            />
+            <br />
+            <OSUI.Alert
+                style={{width: 500}}
+                message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
+                type="error"
+                showIcon
+                closable
+            />
+            <br />
+            <OSUI.Alert
+                style={{width: 500}}
+                message="请注意！"
+                description="你所提交的信息已经审核失败，可以进入个人信箱查看原因，如有疑问，请联系客服人员。"
+                type="error"
+                showIcon
+            />
+            <br />
+            <OSUI.Alert
+                style={{width: 500}}
+                message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
+                type="info"
+                showIcon
+                closable
+                closeText="查看详情"
+            />
+            <br />
+            <OSUI.Alert
+                style={{width: 500}}
+                message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
+                type="info"
+                showIcon
+                closable
+            />
+            <br />
+            <OSUI.Alert
+                style={{width: 500}}
+                message="帮助信息！"
+                description="你所提交的信息已经审核失败，可以进入个人信箱查看原因，如有疑问，请联系客服人员。"
+                type="info"
+                showIcon
+            />
+        </>
+    );
+};
 
 export const BranchDropdown = () => {
     const list = [{
@@ -131,6 +247,8 @@ export const Collapse = () => {
 };
 
 export const DatePicker = () => {
+    const {RangePicker} = OSUI.DatePicker;
+
     return (
         <div style={{padding: 20}}>
             <h4>日期选择</h4>
@@ -139,7 +257,7 @@ export const DatePicker = () => {
             </Row>
             <h4>日期范围选择</h4>
             <Row style={{marginBottom: 20}}>
-                <OSUI.DatePicker.RangePicker />
+                <RangePicker />
             </Row>
             <h4>日期禁用选择</h4>
             <Row style={{marginBottom: 20}}>
@@ -200,7 +318,7 @@ export const DirectoryNavigator = () => {
     };
 
     return (
-        <DirectoryNavigator
+        <OSUI.DirectoryNavigator
             onSelect={onSelect}
             onExpand={onExpand}
             treeData={treeData}
@@ -230,7 +348,6 @@ export const Input = () => {
             <OSUI.Input.Password style={{ width: 500 }} placeholder="请输入" />
         </>);
 };
-
 
 export const Message = () => {
 
@@ -291,123 +408,42 @@ export const Message = () => {
     );
 };
 
-const Modal = () => {
+export const Modal = () => {
     const [visible, setVisible] = useState(false);
-    const showModal = useCallback(
-        () => {
-            setVisible(true);
-        },
-        []
-    );
-    const closeModal = useCallback(
-        () => {
-            setVisible(false);
-        },
-        []
-    );
+    const [visibleBig, setBigVisible] = useState(false);
     return (
-        <div>
-            <OSUI.Button onClick={showModal}>{'Modal M'}</OSUI.Button>
+        <div style={{ padding: 30 }}>
+            <OSUI.Button type="primary" onClick={() => setVisible(true)}>
+                打开基础modal
+            </OSUI.Button>
             <OSUI.Modal
-                size="m"
-                title="Basic Modal"
+                title="我是标题我是标题"
                 visible={visible}
-                onOk={closeModal}
-                onCancel={closeModal}
+                onOk={() => setVisible(false)}
+                onCancel={() => setVisible(false)}
             >
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
+                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
             </OSUI.Modal>
-        </div>
-    );
-};
-
-
-export const MultiSelect = () => {
-    const onChange = arg => {
-        console.log(arg);
-    };
-
-    const items = [
-        {value: 'lucy', title: 'Lucy'},
-        {value: 'jack', title: 'Jack'},
-        {value: 'this is a super long name', title: 'This is a super long name'},
-    ];
-
-    return (<div>
-        <OSUI.MultiSelect
-            onChange={onChange}
-            defaultValues={['lucy', 'jack']}
-        >
-            {items.map(item => <OSUI.MultiSelect.Option key={item.value} value={item.value}>{item.title}</OSUI.MultiSelect.Option>)}
-        </OSUI.MultiSelect>
-        <OSUI.MultiSelect
-            onChange={onChange}
-            placeholder="请选择"
-            style={{marginLeft: 10}}
-        >
-            {items.map(item => <OSUI.MultiSelect.Option key={item.value} value={item.value}>{item.title}</OSUI.MultiSelect.Option>)}
-        </OSUI.MultiSelect>
-    </div>
-    );
-};
-
-export const Popconfirm = () => {
-    const text = '确定？';
-
-    function confirm() {
-        OSUI.message.info('Click on Yes.');
-    }
-    return (
-        <div className="demo">
-            <div style={{ marginLeft: 70, whiteSpace: 'nowrap' }}>
-                <OSUI.Popconfirm placement="topLeft" title={text} onConfirm={confirm} okText="确定" cancelText="取消">
-                    <OSUI.Button>TL</OSUI.Button>
-                </OSUI.Popconfirm>
-                <OSUI.Popconfirm placement="top" title={text} onConfirm={confirm} okText="确定" cancelText="取消">
-                    <OSUI.Button>Top</OSUI.Button>
-                </OSUI.Popconfirm>
-                <OSUI.Popconfirm placement="topRight" title={text} onConfirm={confirm} okText="确定" cancelText="取消">
-                    <OSUI.Button>TR</OSUI.Button>
-                </OSUI.Popconfirm>
-            </div>
-            <div style={{ width: 70, float: 'left' }}>
-                <OSUI.Popconfirm placement="leftTop" title={text} onConfirm={confirm} okText="确定" cancelText="取消">
-                    <OSUI.Button>LT</OSUI.Button>
-                </OSUI.Popconfirm>
-                <OSUI.Popconfirm placement="left" title={text} onConfirm={confirm} okText="确定" cancelText="取消">
-                    <OSUI.Button>Left</OSUI.Button>
-                </OSUI.Popconfirm>
-                <OSUI.Popconfirm placement="leftBottom" title={text} onConfirm={confirm} okText="确定" cancelText="取消">
-                    <OSUI.Button>LB</OSUI.Button>
-                </OSUI.Popconfirm>
-            </div>
-            <div style={{ width: 70, marginLeft: 304 }}>
-                <OSUI.Popconfirm placement="rightTop" title={text} onConfirm={confirm} okText="确定" cancelText="取消">
-                    <OSUI.Button>RT</OSUI.Button>
-                </OSUI.Popconfirm>
-                <OSUI.Popconfirm placement="right" title={text} onConfirm={confirm} okText="确定" cancelText="取消">
-                    <OSUI.Button>Right</OSUI.Button>
-                </OSUI.Popconfirm>
-                <OSUI.Popconfirm placement="rightBottom" title={text} onConfirm={confirm} okText="确定" cancelText="取消">
-                    <OSUI.Button>RB</OSUI.Button>
-                </OSUI.Popconfirm>
-            </div>
-            <div style={{ marginLeft: 70, clear: 'both', whiteSpace: 'nowrap' }}>
-                <OSUI.Popconfirm placement="bottomLeft" title={text} onConfirm={confirm} okText="确定" cancelText="取消">
-                    <OSUI.Button>BL</OSUI.Button>
-                </OSUI.Popconfirm>
-                <OSUI.Popconfirm placement="bottom" title={text} onConfirm={confirm} okText="确定" cancelText="取消">
-                    <OSUI.Button>Bottom</OSUI.Button>
-                </OSUI.Popconfirm>
-                <OSUI.Popconfirm placement="bottomRight" title={text} onConfirm={confirm} okText="确定" cancelText="取消">
-                    <OSUI.Button>BR</OSUI.Button>
-                </OSUI.Popconfirm>
-            </div>
+            <p></p>
+            <OSUI.Button type="primary" onClick={() => setBigVisible(true)}>
+                打开大数据modal
+            </OSUI.Button>
+            <OSUI.Modal
+                bodyHeight={200}
+                title="我是标题我是标题"
+                visible={visibleBig}
+                onOk={() => setBigVisible(false)}
+                onCancel={() => setBigVisible(false)}
+            >
+                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+            </OSUI.Modal>
         </div>
     );
 };
@@ -433,8 +469,16 @@ export const Select = () => {
         console.log(`selected ${value}`);
     }
 
-    return () => (
-        <>
+    return (
+        <Space>
+            <OSUI.Select placeholder="请选择" style={{ width: 120 }} onChange={handleChange}>
+                <Option value="jack">Jack</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="disabled" disabled>
+                    Disabled
+                </Option>
+                <Option value="Yiminghe">yiminghe</Option>
+            </OSUI.Select>
             <OSUI.Select defaultValue="lucy" style={{ width: 120 }} onChange={handleChange}>
                 <Option value="jack">Jack</Option>
                 <Option value="lucy">Lucy</Option>
@@ -449,88 +493,81 @@ export const Select = () => {
             <OSUI.Select defaultValue="lucy" style={{ width: 120 }} loading>
                 <Option value="lucy">Lucy</Option>
             </OSUI.Select>
-            <OSUI.Select defaultValue="lucy" style={{ width: 120 }} allowClear>
+            <OSUI.Select defaultValue="lucy" style={{ width: 120 }} noBorder>
                 <Option value="lucy">Lucy</Option>
+            </OSUI.Select>
+        </Space>
+    );
+};
+
+export const MultipleSelect = () => {
+    const Option = Select.Option;
+
+    function handleChange(value) {
+        console.log(`selected ${value}`);
+    }
+
+    return (
+        <>
+            <p>默认多选使用方式：</p>
+            <OSUI.Select mode="multiple" defaultValue="lucy" style={{ width: 560 }} onChange={handleChange} allowClear>
+                <Option value="jack">Jack</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="disabled" disabled>
+                    Disabled
+                </Option>
+                <Option value="Yiminghe">yiminghe</Option>
+            </OSUI.Select>
+            <br />
+            <br />
+            <p>不带allowClear的做法：</p>
+            <OSUI.Select
+                mode="multiple"
+                defaultValue="lucy"
+                style={{ width: 560 }}
+                onChange={handleChange}
+                allowClear={false}
+            >
+                <Option value="jack">Jack</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="disabled" disabled>
+                    Disabled
+                </Option>
+                <Option value="Yiminghe">yiminghe</Option>
+            </OSUI.Select>
+            <br />
+            <br />
+            <p>不带下拉箭头的做法：</p>
+            <OSUI.Select
+                mode="multiple"
+                defaultValue="lucy"
+                style={{ width: 560 }}
+                onChange={handleChange}
+                allowClear={false}
+                showArrow={false}
+            >
+                <Option value="jack">Jack</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="disabled" disabled>
+                    Disabled
+                </Option>
+                <Option value="Yiminghe">yiminghe</Option>
             </OSUI.Select>
         </>
     );
 };
 
-const Table = () => {
-    const columns = [
-        {
-            title: 'Name',
-            dataIndex: 'name',
-            key: 'name',
-            render: text => <a>{text}</a>,
-        },
-        {
-            title: 'Age',
-            dataIndex: 'age',
-            key: 'age',
-        },
-        {
-            title: 'Address',
-            dataIndex: 'address',
-            key: 'address',
-        },
-        {
-            title: 'Tags',
-            key: 'tags',
-            dataIndex: 'tags',
-            render: tags => (
-                <>
-                    {tags.map(tag => {
-                        let color = tag.length > 5 ? 'geekblue' : 'green';
-                        if (tag === 'loser') {
-                            color = 'volcano';
-                        }
-                        return (
-                            <OSUI.Tag color={color} key={tag}>
-                                {tag.toUpperCase()}
-                            </OSUI.Tag>
-                        );
-                    })}
-                </>
-            ),
-        },
-        {
-            title: 'Action',
-            key: 'action',
-            render: (text, record) => (
-                <>
-                    <a>Invite {record.name}</a>
-                    <a>Delete</a>
-                </>
-            ),
-        },
-    ];
-
-    const data = [
-        {
-            key: '1',
-            name: 'John Brown',
-            age: 32,
-            address: 'New York No. 1 Lake Park',
-            tags: ['nice', 'developer'],
-        },
-        {
-            key: '2',
-            name: 'Jim Green',
-            age: 42,
-            address: 'London No. 1 Lake Park',
-            tags: ['loser'],
-        },
-        {
-            key: '3',
-            name: 'Joe Black',
-            age: 32,
-            address: 'Sidney No. 1 Lake Park',
-            tags: ['cool', 'teacher'],
-        },
-    ];
-
-    return <OSUI.Table columns={columns} dataSource={data} />;
+export const Switch = () => {
+    return (
+        <Space>
+            <OSUI.Switch >Switch</OSUI.Switch>
+            <OSUI.Switch defaultChecked >Switch</OSUI.Switch>
+            <OSUI.Switch disabled>Switch</OSUI.Switch>
+            <OSUI.Switch defaultChecked disabled>Switch</OSUI.Switch>
+            <OSUI.Switch checkedChildren={<IconSwitchTick />} unCheckedChildren={<IconSwitchCross />} />
+            <OSUI.Switch defaultChecked checkedChildren={<IconSwitchTick />} unCheckedChildren={<IconSwitchCross />} />
+        </Space>
+    );
 };
 
 const Tooltip = () => {
@@ -715,14 +752,6 @@ export const Form = () => {
                 </OSUI.Form.Item>
             </OSUI.Form.Item>
 
-            <OSUI.Form.Item label="Success" validateStatus="success">
-                <OSUI.InputNumber
-                    style={{
-                        width: '100%',
-                    }}
-                />
-            </OSUI.Form.Item>
-
             <OSUI.Form.Item label="Success" validateStatus="success" help="hey hey">
                 <OSUI.Input allowClear placeholder="with allowClear" />
             </OSUI.Form.Item>
@@ -828,7 +857,6 @@ export const MenuDropdown = () => {
         </div>);
 };
 
-
 export const MenuDropdownButtonDemo = () => {
     // 菜单数据
     const data = [
@@ -891,113 +919,352 @@ export const MenuDropdownButtonDemo = () => {
         </div>);
 };
 
+export const Pagination = () => {
+    function onChange(val) {
+        console.log(val);
+    }
+
+    return (
+        <div style={{padding: 30}}>
+            <ConfigProvider locale={zhCN}>
+                <OSUI.Pagination showQuickJumper defaultCurrent={2} total={500} onChange={onChange} />
+                <br />
+                <OSUI.Pagination size="small" total={50} />
+                <br />
+                <OSUI.Pagination simple defaultCurrent={2} total={50} />
+                <br />
+                <OSUI.Pagination showQuickJumper defaultCurrent={2} total={500} onChange={onChange} disabled />
+            </ConfigProvider>
+        </div>);
+};
+
+export const Progress = () => {
+    return (
+        <div style={{padding: 30}}>
+            <OSUI.Progress percent={20} />
+            <OSUI.Progress percent={30} status="success" />
+            <OSUI.Progress percent={40} status="exception" />
+            <OSUI.Progress percent={50} status="normal" />
+            <OSUI.Progress percent={60} status="active" />
+        </div>
+    );
+};
+
+export const Radio = () => {
+    const [value, setValue] = useState(1);
+    const [valueButton, setValueButton] = useState('a');
+    const Group = OSUI.Radio.Group;
+    const RadioButton = OSUI.Radio.Button;
+    return (
+        <div style={{ padding: 30 }}>
+            <p>基础示例</p>
+            <OSUI.Radio >Radio</OSUI.Radio>
+            <OSUI.Radio defaultChecked >Radio</OSUI.Radio>
+            <OSUI.Radio disabled>Radio</OSUI.Radio>
+            <OSUI.Radio defaultChecked disabled>Radio</OSUI.Radio>
+            <p></p>
+            <p>单选组合</p>
+            <Group onChange={e => setValue(e.target.value)} value={value}>
+                <OSUI.Radio value={1}>A</OSUI.Radio>
+                <OSUI.Radio value={2}>B</OSUI.Radio>
+                <OSUI.Radio value={3}>C</OSUI.Radio>
+                <OSUI.Radio value={4}>D</OSUI.Radio>
+                <OSUI.Radio value={5} disabled>E</OSUI.Radio>
+            </Group>
+            <p>按钮样式单选组合</p>
+            <Group onChange={e => setValueButton(e.target.value)} value={valueButton}>
+                <RadioButton value="a">Hangzhou</RadioButton>
+                <RadioButton value="b">Shanghai</RadioButton>
+                <RadioButton value="c">Beijing</RadioButton>
+                <RadioButton value="d">Chengdu</RadioButton>
+                <RadioButton value="e" disabled>guangzhou</RadioButton>
+            </Group>
+        </div>
+    );
+};
+
+export const SearchSelectList = () => {
+    const menuList = [{
+        value: 'key1',
+        label: '分支',
+    }, {
+        value: 'key2',
+        label: '标签',
+    }];
+    const selectlist = [];
+    for (let i = 0; i < 10; i++) {
+        selectlist.push({
+            value: i,
+            label: `选项${i + 1}`,
+            icon: '',
+        });
+    }
+    const [selectVal, setSelectVal] = useState();
+    const [searchVal, setSearchVal] = useState();
+    const [menuVal, setMenuVal] = useState('');
+    function handleClickItem(item) {
+        setSelectVal(item.label);
+    }
+    function handleSearch(val) {
+        setSearchVal(val);
+    }
+    function handleClickMenu(e) {
+        const val = menuList.filter(item => item.value === e.key)[0].label;
+        setMenuVal(val);
+    }
+    return (
+        <>
+            <p>当前点击的menu是 <span style={{color: '#4C88FF'}}>{menuVal}</span></p>
+            <p>当前搜索的是 <span style={{color: '#4C88FF'}}>{searchVal}</span></p>
+            <p>当前点击了 <span style={{color: '#4C88FF'}}>{selectVal}</span></p>
+            <Row style={{marginBottom: 30}}>
+                <OSUI.SearchSelectList
+                    btnName={'存在menu'}
+                    defaultMenuSelect={'key1'}
+                    placement="topLeft"
+                    menuList={menuList}
+                    selectlist={selectlist}
+                    handleClickItem={handleClickItem}
+                    handleSearch={handleSearch}
+                    handleClickMenu={handleClickMenu}
+                />
+            </Row>
+            <Row>
+                <OSUI.SearchSelectList
+                    popoverClassName={'myPopoverClassName'}
+                    btnClassName={'myBtnClassName'}
+                    btnName={'不存在menu'}
+                    defaultMenuSelect={'key1'}
+                    placeholder={'请输入'}
+                    placement="topLeft"
+                    selectlist={selectlist}
+                    handleClickItem={handleClickItem}
+                    handleSearch={handleSearch}
+                />
+            </Row>
+        </>
+    );
+};
+
+export const Table = () => {
+
+    const columns = [
+        {
+            title: 'Name',
+            dataIndex: 'name',
+            key: 'name',
+        },
+        {
+            title: 'Age',
+            dataIndex: 'age',
+            key: 'age',
+        },
+        {
+            title: 'Address',
+            dataIndex: 'address',
+            key: 'address',
+        },
+    ];
+
+    const data = [
+        {
+            key: '1',
+            name: 'John Brown',
+            age: 32,
+            address: 'New York No. 1 Lake Park',
+        },
+        {
+            key: '2',
+            name: 'Jim Green',
+            age: 42,
+            address: 'London No. 1 Lake Park',
+        },
+        {
+            key: '3',
+            name: 'Joe Black',
+            age: 32,
+            address: 'Sidney No. 1 Lake Park',
+        },
+    ];
+
+
+    return (
+        <div style={{padding: 30}}>
+            <OSUI.Table columns={columns} dataSource={data} />
+        </div>);
+};
+
+export const Tabs = () => {
+    const { TabPane } = OSUI.Tabs;
+
+    return (
+        <>
+            <OSUI.Tabs defaultActiveKey="1" style={{ marginBottom: 50 }}>
+                <TabPane tab="选中标签" key="1">
+                    Content of Tab Pane 1
+                </TabPane>
+                <TabPane tab="可选标签" key="2">
+                    Content of Tab Pane 2
+                </TabPane>
+                <TabPane tab="不可选标签" disabled key="3">
+                    Content of Tab Pane 3
+                </TabPane>
+            </OSUI.Tabs>
+
+            <OSUI.Tabs defaultActiveKey="1" style={{ marginBottom: 50 }}>
+                <TabPane
+                    tab={
+                        <span>
+                            Tab 1
+                        </span>
+                    }
+                    key="1"
+                >
+                    Tab 1
+                </TabPane>
+                <TabPane
+                    tab={
+                        <span>
+                            Tab 2
+                        </span>
+                    }
+                    key="2"
+                >
+                    Tab 2
+                </TabPane>
+            </OSUI.Tabs>
+            <OSUI.Tabs defaultActiveKey="1" style={{ marginBottom: 50 }}>
+                <TabPane
+                    tab={
+                        <span>
+                            Tab 1
+                            <em className="num">15</em>
+                        </span>
+                    }
+                    key="1"
+                >
+                    Tab 1
+                </TabPane>
+                <TabPane
+                    tab={
+                        <span>
+                            Tab 2
+                            <em className="num">15</em>
+                        </span>
+                    }
+                    key="2"
+                >
+                    Tab 2
+                </TabPane>
+            </OSUI.Tabs>
+        </>
+    );
+};
+
+export const Tag = () => {
+    return (
+        <>
+            {/* success */}
+            <OSUI.Tag>标签</OSUI.Tag>
+            <OSUI.Tag className={'osui-tag-dome-dashed'}>
+                <IconAdd style={{fontSize: '12px', marginRight: '4px'}} />
+                标签
+            </OSUI.Tag>
+            <OSUI.Tag
+                closable
+                onClose={e => {
+                    e.preventDefault();
+                    console.log('Clicked! But prevent default.');
+                }}
+            >
+                标签
+            </OSUI.Tag>
+            <br />
+            <br />
+            <OSUI.Tag
+                color="blue"
+                closable
+            >
+                blue
+            </OSUI.Tag>
+            <OSUI.Tag
+                color="purple"
+                closable
+            >
+                purple
+            </OSUI.Tag>
+            <OSUI.Tag
+                color="red"
+                closable
+            >
+                red
+            </OSUI.Tag>
+            <OSUI.Tag
+                color="green"
+                closable
+            >
+                green
+            </OSUI.Tag>
+            <OSUI.Tag
+                color="yellow"
+                closable
+            >
+                yellow
+            </OSUI.Tag>
+
+        </>
+    );
+};
+
+export const Timeline = () => {
+    return (<div style={{padding: '50px'}}>
+        <OSUI.Timeline>
+            <OSUI.Timeline.Item>Create a services site 2015-09-01</OSUI.Timeline.Item>
+            <OSUI.Timeline.Item>Create a services site 2015-09-01</OSUI.Timeline.Item>
+            <OSUI.Timeline.Item>Create a services site 2015-09-01</OSUI.Timeline.Item>
+            <OSUI.Timeline.Item>Create a services site 2015-09-01</OSUI.Timeline.Item>
+        </OSUI.Timeline>
+        <OSUI.Timeline mode="alternate" style={{width: 200}}>
+            <OSUI.Timeline.Item>时间列表</OSUI.Timeline.Item>
+            <OSUI.Timeline.Item color="green">时间列表</OSUI.Timeline.Item>
+            <OSUI.Timeline.Item dot={<ClockCircleOutlined style={{fontSize: '16px'}} />}>
+                时间列表
+            </OSUI.Timeline.Item>
+            <OSUI.Timeline.Item color="red">时间列表</OSUI.Timeline.Item>
+            <OSUI.Timeline.Item>时间列表</OSUI.Timeline.Item>
+            <OSUI.Timeline.Item dot={<ClockCircleOutlined style={{fontSize: '16px'}} />}>
+                时间列表
+            </OSUI.Timeline.Item>
+        </OSUI.Timeline>
+    </div>
+    );
+};
+
+export const ToggleButton = () => {
+    return (
+        <>
+            <Row style={{marginBottom: 20}}>
+                <OSUI.ToggleButton num={18}>筛选普通样式</OSUI.ToggleButton>
+            </Row>
+            <Row style={{marginBottom: 20}}>
+                <OSUI.ToggleButton hasArrow >筛选带箭头</OSUI.ToggleButton>
+            </Row>
+            <Row style={{marginBottom: 20}}>
+                <OSUI.ToggleButton hasShowNumber num={18}>筛选带数值</OSUI.ToggleButton>
+            </Row>
+            <Row style={{marginBottom: 20}}>
+                <OSUI.ToggleButton hasArrow beforeIcon={<IconGitFilter />}>筛选带icon</OSUI.ToggleButton>
+            </Row>
+            <Row style={{marginBottom: 20}}>
+                <OSUI.ToggleButton hasArrow beforeIcon={<IconBranchFilter />}>筛选带icon</OSUI.ToggleButton>
+            </Row>
+        </>
+    );
+};
 
 const Everything = () => (
     <div>
-        {/* success */}
-        <OSUI.Alert
-            style={{width: 500}}
-            message="恭喜！你所提交的信息已经审核通过，如有问题请联系客服。"
-            type="success"
-            showIcon
-            closable
-            closeText="查看详情"
-        />
-        <br />
-        <OSUI.Alert
-            style={{width: 500}}
-            message="恭喜！你所提交的信息已经审核通过，如有问题请联系客服。"
-            type="success"
-            showIcon
-            closable
-        />
-        <br />
-        <OSUI.Alert
-            style={{width: 500}}
-            message="已成功！"
-            description="你所提交的信息已经审核通过，请及时跟进申请状况。如有问题，请联系审核人员或在线客服。"
-            type="success"
-            showIcon
-        />
-        <br />
-        {/* warning */}
-        <OSUI.Alert
-            style={{width: 500}}
-            message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
-            type="warning"
-            showIcon
-            closable
-            closeText="查看详情"
-        />
-        <br />
-        <OSUI.Alert
-            style={{width: 500}}
-            message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
-            type="warning"
-            showIcon
-            closable
-        />
-        <br />
-        <OSUI.Alert
-            style={{width: 500}}
-            message="请注意！"
-            description="你所提交的信息已经审核失败，可以进入个人信箱查看原因，如有疑问，请联系客服人员。"
-            type="warning"
-            showIcon
-        />
-        <br />
-        {/* error */}
-        <OSUI.Alert
-            style={{width: 500}}
-            message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
-            type="error"
-            showIcon
-            closable
-            closeText="查看详情"
-            shouldStopClose={false}
-        />
-        <br />
-        <OSUI.Alert
-            style={{width: 500}}
-            message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
-            type="error"
-            showIcon
-            closable
-        />
-        <br />
-        <OSUI.Alert
-            style={{width: 500}}
-            message="请注意！"
-            description="你所提交的信息已经审核失败，可以进入个人信箱查看原因，如有疑问，请联系客服人员。"
-            type="error"
-            showIcon
-        />
-        <br />
-        {/* info */}
-        <OSUI.Alert
-            style={{width: 500}}
-            message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
-            type="info"
-            showIcon
-            closable
-            closeText="查看详情"
-        />
-        <br />
-        <OSUI.Alert
-            style={{width: 500}}
-            message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
-            type="info"
-            showIcon
-            closable
-        />
-        <br />
-        <OSUI.Alert
-            style={{width: 500}}
-            message="帮助信息！"
-            description="你所提交的信息已经审核失败，可以进入个人信箱查看原因，如有疑问，请联系客服人员。"
-            type="info"
-            showIcon
-        />
+        <Alert />
         <OSUI.Avatar size="default" pr>a</OSUI.Avatar>
         <OSUI.Avatar pr src="https://icons.iconarchive.com/icons/diversity-avatars/avatars/128/batman-icon.png" />
         <span style={{marginRight: 30}}>
@@ -1026,11 +1293,18 @@ const Everything = () => (
         <Modal />
         <Popover />
         <Select />
-        <Table />
         <Tooltip />
-        {/* default */}
+        <Pagination />
+        <Progress />
+        <Radio />
+        <SearchSelectList />
+        <Switch />
+        <Table />
+        <Tabs />
+        <Tag />
+        <Timeline />
+        <ToggleButton />
         <OSUI.BackTop />
-        {/* circle */}
         <OSUI.BackTop type="circle" />
     </div>
 );
