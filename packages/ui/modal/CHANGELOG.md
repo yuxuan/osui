@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.3.2...@osui/modal@0.4.2) (2020-09-07)
+
+
+### Bug Fixes
+
+* 样式修复 ([4d6a435](https://gitee.com/gitee-fe/osui/tree/master/commits/4d6a435d8619434d977ea4988b2aa8474f90ce59))
+* 样式修复 ([896665a](https://gitee.com/gitee-fe/osui/tree/master/commits/896665a45f52be9a2896157f20125f8a77809e34))
+* 调整Button,popover,search-select-list的样式 ([aa66478](https://gitee.com/gitee-fe/osui/tree/master/commits/aa66478c36f1b271c008b8ce71e923f218b68fb7))
+* 调整menu-dropdpwn; 添加文档 ([43014b7](https://gitee.com/gitee-fe/osui/tree/master/commits/43014b7b6e860729398cd8ead30cd47953b76af7))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/gitee-fe/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+
+
+
+
+
 # [0.4.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.3.2...@osui/modal@0.4.0) (2020-09-01)
 
 

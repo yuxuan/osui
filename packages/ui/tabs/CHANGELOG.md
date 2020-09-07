@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.4.2 (2020-09-07)
+
+
+### Bug Fixes
+
+* 修改tabs的readme ([dfe4711](https://gitee.com/yuxuanhuo/osui/tree/master/commits/dfe471115308df6e861bf349d0b46774393cb3be))
+* 修改tabs的readme ([4960b7b](https://gitee.com/yuxuanhuo/osui/tree/master/commits/4960b7b91b63d11366dcd679f89519ff33835df4))
+* 修改样式文件格式 ([1158d48](https://gitee.com/yuxuanhuo/osui/tree/master/commits/1158d48243b77dac6883241a739415f9d638b458))
+* 样式修复 ([896665a](https://gitee.com/yuxuanhuo/osui/tree/master/commits/896665a45f52be9a2896157f20125f8a77809e34))
+* 调整menu-dropdpwn; 添加文档 ([43014b7](https://gitee.com/yuxuanhuo/osui/tree/master/commits/43014b7b6e860729398cd8ead30cd47953b76af7))
+* 调整ts文件格式 ([18cbf49](https://gitee.com/yuxuanhuo/osui/tree/master/commits/18cbf499872572fcc3ed22c581691d4772d72759))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/yuxuanhuo/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+
+
+### Features
+
+* 新增tabs组件 ([667f1a3](https://gitee.com/yuxuanhuo/osui/tree/master/commits/667f1a3d9475c95d4f63db0052e0c9c744bf5f05))
+
+
+
+
+
 # 0.4.0 (2020-09-01)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/radio@0.3.2...@osui/radio@0.4.2) (2020-09-07)
+
+
+### Bug Fixes
+
+* 调整radio和input的search icon ([b1eaed5](https://gitee.com/gitee-fe/osui/tree/master/commits/b1eaed535b9704b14d463948f553940e78e48daa))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/gitee-fe/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+
+
+
+
+
 # [0.4.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/radio@0.3.2...@osui/radio@0.4.0) (2020-09-01)
 
 

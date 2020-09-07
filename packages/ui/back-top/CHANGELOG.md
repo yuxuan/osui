@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/back-top@0.3.2...@osui/back-top@0.4.2) (2020-09-07)
+
+
+### Bug Fixes
+
+* back-top icon ([694588c](https://gitee.com/gitee-fe/osui/tree/master/commits/694588cbad1cb7adbaa33641d284df864299e2e8))
+* ue样式修复 ([b96ad12](https://gitee.com/gitee-fe/osui/tree/master/commits/b96ad1267689dd649f0a8bf82bedcbeff7e60983))
+* 样式修复 ([896665a](https://gitee.com/gitee-fe/osui/tree/master/commits/896665a45f52be9a2896157f20125f8a77809e34))
+
+
+
+
+
 # [0.4.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/back-top@0.3.2...@osui/back-top@0.4.0) (2020-09-01)
 
 

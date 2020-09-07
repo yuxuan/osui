@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@0.3.2...@osui/input@0.4.2) (2020-09-07)
+
+
+### Bug Fixes
+
+* input border color ([7439d98](https://gitee.com/gitee-fe/osui/tree/master/commits/7439d98404bf6cddc114daa36c0b63fd79f1baf2))
+* 调整Button,popover,search-select-list的样式 ([aa66478](https://gitee.com/gitee-fe/osui/tree/master/commits/aa66478c36f1b271c008b8ce71e923f218b68fb7))
+* 调整radio和input的search icon ([b1eaed5](https://gitee.com/gitee-fe/osui/tree/master/commits/b1eaed535b9704b14d463948f553940e78e48daa))
+
+
+### Features
+
+* 添加form的调整 ([3a8cc63](https://gitee.com/gitee-fe/osui/tree/master/commits/3a8cc63d9e06fde110cf641346064e81c572c67f))
+
+
+
+
+
 # [0.4.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@0.3.2...@osui/input@0.4.0) (2020-09-01)
 
 

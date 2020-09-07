@@ -14,7 +14,7 @@ export {default as Form} from './form';
 export {default as Input} from './input';
 export {default as Markdown} from './markdown';
 export {default as MenuDropdown} from './menu-dropdown';
-export {default as Message} from './message';
+export {default as message} from './message';
 export {default as Modal} from './modal';
 export {default as Pagination} from './pagination';
 export {default as Popover} from './popover';

@@ -1,8 +1,11 @@
-import Button from '@osui/button';
 import c from './index.less';
 
 const Welcome = () => (
     <div className={c.root}>
+        <ul>
+            <li><a href="/welcome">welcome</a></li>
+            <li><a href="/everything">everything</a></li>
+        </ul>
         <h1>恭喜你跑起来了</h1>
         <p>能看到这个页面，至少你已经能够启动系统，后面还需要清理一些TODO~</p>
         <h2>检查项</h2>
@@ -16,7 +19,6 @@ const Welcome = () => (
             <li>确保iPipe的流水线等都是正确的，能通过构建。</li>
         </ul>
         <p>最后，有了业务代码后，记得删除这个组件。</p>
-        <Button type="primary">Hi there</Button>
     </div>
 );
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/markdown@0.3.2...@osui/markdown@0.4.2) (2020-09-07)
+
+
+### Bug Fixes
+
+* 修复样式 ([94c5450](https://gitee.com/gitee-fe/osui/tree/master/commits/94c545078c2b4c05dee48b880f32bed2d11459ea))
+* 修复样式 ([a43ed79](https://gitee.com/gitee-fe/osui/tree/master/commits/a43ed793f7b01e40526ba3b0917d8ac902ec2eb7))
+
+
+
+
+
 # [0.4.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/markdown@0.3.2...@osui/markdown@0.4.0) (2020-09-01)
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Avatar as AntdAvatar} from 'antd';
 import {AvatarProps as AntdAvatarProps} from 'antd/es/avatar';
-import {IconAvatar} from '@osui/icons';
+import {IconCheckCircleFill} from '@osui/icons';
 import classNames from 'classnames';
 import './index.less';
 
@@ -11,29 +11,29 @@ export interface AvatarProps extends AntdAvatarProps {
     pr?: boolean;
 }
 
-const OSUIAvatar: React.FC<AvatarProps> = props => {
-    let size = '';
-    switch (props.size) {
-        case 'l':
-            size = `${clsPrefix}-l`;
-            break;
-        case 'm':
-            size = `${clsPrefix}-m`;
-            break;
-        case 's':
-            size = `${clsPrefix}-s`;
-            break;
+export interface AvatarInterface extends React.FC<AvatarProps> {
+    Group: typeof AntdAvatar.Group;
+}
+
+const Avatar: AvatarInterface = props => {
+    if (props.pr) {
+        return (
+            <span className={`${clsPrefix}-wrapper`}>
+                <AntdAvatar {...props} className={classNames(clsPrefix, props.className)} />
+                {
+                    props.pr ? (
+                        <IconCheckCircleFill className={`${clsPrefix}-pr`} />
+                    ) : null
+                }
+            </span>
+        );
     }
+
     return (
-        <span className={clsPrefix}>
-            <AntdAvatar {...props} className={classNames(props.className, size)} />
-            {
-                props.pr ? (
-                    <IconAvatar className={`${clsPrefix}-pr`} />
-                ) : null
-            }
-        </span>
+        <AntdAvatar {...props} className={classNames(clsPrefix, props.className)} />
     );
 };
 
-export default OSUIAvatar;
+Avatar.Group = AntdAvatar.Group;
+
+export default Avatar;
