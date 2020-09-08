@@ -10,20 +10,23 @@ EXCLUDE_FOLDER='docs$|ui$|\/$|\.\.$' # docs, ui, / 目录都要过滤掉
 # 重置index.ts
 echo "// @ts-nocheck" > ./src/index.ts
 
-# 注意：需要提前build好各个包
-# 把各个包的dist目录复制到 dist
-find $ROOT -maxdepth 1 -type d | grep -v -E $EXCLUDE_FOLDER | while IFS= read -r d; do
+DEPENDENCIES=""
+
+# 把各个包包名从package.json中读取出来
+find $ROOT -maxdepth 1 -type d | grep -v -E $EXCLUDE_FOLDER | ( while IFS= read -r d; do
     COMPONENT=`echo $d | sed  's|../||'`
-    COMPONENT_NAME=`echo $(tr '[:lower:]' '[:upper:]' <<< ${COMPONENT:0:1})${COMPONENT:1} | sed -E 's/-(.)/\U\1/g'`
+    COMPONENT_NAME="$COMPONENT"
+    if [ "$COMPONENT_NAME" != "message" ]
+    then
+        COMPONENT_NAME=`echo $(tr '[:lower:]' '[:upper:]' <<< ${COMPONENT:0:1})${COMPONENT:1} | sed -E 's/-(.)/\U\1/g'`
+    fi
     echo "building $COMPONENT => $COMPONENT_NAME"
-    mkdir -p dist/$COMPONENT
-    # 复制dist
-    cp -R $d/dist/* dist/$COMPONENT
-    # 复制README
-    cp $d/README.md dist/$COMPONENT
-    #
-    echo "export {default as $COMPONENT_NAME} from './$COMPONENT';" >> ./src/index.ts
+    PACKAGE_NAME=`cat $d/package.json | grep '"name":' | sed -E 's/"name": "(.*)",/\1/g' | sed -e 's/^[[:space:]]*//'` ;
+    echo $PACKAGE_NAME
+    DEPENDENCIES+="$PACKAGE_NAME "
+    echo "export {default as $COMPONENT_NAME} from '$PACKAGE_NAME';" >> ./src/index.ts
 done
+echo "$DEPENDENCIES" ) # while 是 subshell， 括号来group subshell
 
 # build index
 $(npm bin)/tsc

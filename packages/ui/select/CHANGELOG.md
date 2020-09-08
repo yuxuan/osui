@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@0.4.2...@osui/select@0.4.3) (2020-09-08)
+
+
+### Bug Fixes
+
+* 修复multiselect dropdown classname没有透传下去的问题 ([d4964e4](https://gitee.com/gitee-fe/osui/tree/master/commits/d4964e4c6f4fb50fe331c61491b5a785ba6e3cdc))
+
+
+
+
+
 ## 0.4.2 (2020-09-07)
 
 

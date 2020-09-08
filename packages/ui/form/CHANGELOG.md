@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.4.2...@osui/form@0.4.3) (2020-09-08)
+
+**Note:** Version bump only for package @osui/form
+
+
+
+
+
 ## 0.4.2 (2020-09-07)
 
 
