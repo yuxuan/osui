@@ -15,7 +15,11 @@ DEPENDENCIES=""
 # 把各个包包名从package.json中读取出来
 find $ROOT -maxdepth 1 -type d | grep -v -E $EXCLUDE_FOLDER | ( while IFS= read -r d; do
     COMPONENT=`echo $d | sed  's|../||'`
-    COMPONENT_NAME=`echo $(tr '[:lower:]' '[:upper:]' <<< ${COMPONENT:0:1})${COMPONENT:1} | sed -E 's/-(.)/\U\1/g'`
+    COMPONENT_NAME="$COMPONENT"
+    if [ "$COMPONENT_NAME" != "message" ]
+    then
+        COMPONENT_NAME=`echo $(tr '[:lower:]' '[:upper:]' <<< ${COMPONENT:0:1})${COMPONENT:1} | sed -E 's/-(.)/\U\1/g'`
+    fi
     echo "building $COMPONENT => $COMPONENT_NAME"
     PACKAGE_NAME=`cat $d/package.json | grep '"name":' | sed -E 's/"name": "(.*)",/\1/g' | sed -e 's/^[[:space:]]*//'` ;
     echo $PACKAGE_NAME

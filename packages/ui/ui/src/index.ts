@@ -12,7 +12,7 @@ export {default as Input} from '@osui/input';
 export {default as Alert} from '@osui/alert';
 export {default as Markdown} from '@osui/markdown';
 export {default as Checkbox} from '@osui/checkbox';
-export {default as Message} from '@osui/message';
+export {default as message} from '@osui/message';
 export {default as Collapse} from '@osui/collapse';
 export {default as BackUtop} from '@osui/back-top';
 export {default as DirectoryUnavigator} from '@osui/directory-navigator';
