@@ -36,6 +36,7 @@ function InternalOSUISelect<R, T>(props: OSUISelectProps<T>, ref: React.Ref<R>):
             targetProp: 'dropdownClassName',
             shouldOverride: isMultiple, // 只有在多选时，加上dropdownClassName
             override: classNames(`${clsPrefix}-multiple-dropdown`, dropdownClassName),
+            alwaysOverride: true,
         },
         {
             targetProp: 'menuItemSelectedIcon',
