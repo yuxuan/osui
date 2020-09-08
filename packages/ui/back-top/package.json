@@ -1,6 +1,6 @@
 {
     "name": "@osui/back-top",
-    "version": "0.4.2",
+    "version": "0.4.3",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -56,7 +56,7 @@
         }
     },
     "dependencies": {
-        "@osui/icons": "^0.4.2",
+        "@osui/icons": "^0.4.3",
         "classnames": "^2.2.6"
     },
     "publishConfig": {

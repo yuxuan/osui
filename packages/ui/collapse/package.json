@@ -1,6 +1,6 @@
 {
     "name": "@osui/collapse",
-    "version": "0.4.2",
+    "version": "0.4.3",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -51,7 +51,7 @@
     "author": "huoyuxuan,liushaozhen",
     "license": "MIT",
     "dependencies": {
-        "@osui/icons": "^0.4.2",
+        "@osui/icons": "^0.4.3",
         "classnames": "^2.2.6"
     },
     "publishConfig": {
