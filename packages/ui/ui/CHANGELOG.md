@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.4.3...@osui/ui@0.4.4) (2020-09-08)
+
+
+### Bug Fixes
+
+* message导出名字错误 ([09d3959](https://gitee.com/gitee-fe/osui/tree/master/commits/09d3959a351e42a235c42432e1174bf987d0a036))
+
+
+
+
+
 ## [0.4.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.4.2...@osui/ui@0.4.3) (2020-09-08)
 
 **Note:** Version bump only for package @osui/ui
