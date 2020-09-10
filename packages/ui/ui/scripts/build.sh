@@ -21,7 +21,7 @@ find $ROOT -maxdepth 1 -type d | grep -v -E $EXCLUDE_FOLDER | ( while IFS= read 
         COMPONENT_NAME=`echo $(tr '[:lower:]' '[:upper:]' <<< ${COMPONENT:0:1})${COMPONENT:1} | sed -E 's/-(.)/\U\1/g'`
     fi
     echo "building $COMPONENT => $COMPONENT_NAME"
-    PACKAGE_NAME=`cat $d/package.json | grep '"name":' | sed -E 's/"name": "(.*)",/\1/g' | sed -e 's/^[[:space:]]*//'` ;
+    PACKAGE_NAME=`cat $d/package.json | grep '"name":' | sed -E 's/"name": "(.*)",/\1/g' | sed -E 's/^[[:space:]]*//'` ;
     echo $PACKAGE_NAME
     DEPENDENCIES+="$PACKAGE_NAME "
     echo "export {default as $COMPONENT_NAME} from '$PACKAGE_NAME';" >> ./src/index.ts
