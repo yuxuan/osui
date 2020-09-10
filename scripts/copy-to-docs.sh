@@ -17,11 +17,11 @@ then
         mkdir -p packages/ui/docs/stories/${COMPONENT_NAME}
         cp -R ${COMPONENT_DIR}/stories/* packages/ui/docs/stories/${COMPONENT_NAME}
         ## Ubuntu ships with GNU sed, where the suffix for the -i option is optional. OS X ships with BSD sed, where the suffix is mandatory. Try sed -i ''
-        sed -i '' "s|../src|@osui/${COMPONENT_NAME}|" packages/ui/docs/stories/${COMPONENT_NAME}/index.stories.tsx
+        sed -i.bak "s|../src|@osui/${COMPONENT_NAME}|" packages/ui/docs/stories/${COMPONENT_NAME}/index.stories.tsx && rm -- "packages/ui/docs/stories/${COMPONENT_NAME}/index.stories.tsx.bak"
     done
 else
     # 单个组件复制
     mkdir -p packages/ui/docs/stories/${COMPONENT_NAME_ARG}
     cp -R packages/ui/${COMPONENT_NAME_ARG}/stories/* packages/ui/docs/stories/${COMPONENT_NAME_ARG}
-    sed -i '' "s|../src|@osui/${COMPONENT_NAME_ARG}|" packages/ui/docs/stories/${COMPONENT_NAME_ARG}/index.stories.tsx
+    sed -i.bak "s|../src|@osui/${COMPONENT_NAME_ARG}|" packages/ui/docs/stories/${COMPONENT_NAME_ARG}/index.stories.tsx && rm -- "packages/ui/docs/stories/${COMPONENT_NAME_ARG}/index.stories.tsx.bak"
 fi

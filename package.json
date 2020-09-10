@@ -3,7 +3,8 @@
     "workspaces": [
         "packages/*",
         "packages/ui/*",
-        "packages/ui-icons/*"
+        "packages/ui-icons/*",
+        "packages/ui-theme/*"
     ],
     "name": "osui-monorepo",
     "description": "通用组件库",

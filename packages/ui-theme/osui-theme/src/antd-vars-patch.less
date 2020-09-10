@@ -1,0 +1,219 @@
+/**
+ * 主题，定制antd主题
+ */
+
+// -------- Colors -----------
+@primary-color: var(--theme-primary-color);
+@info-color: var(--theme-info-color);
+@success-color: var(--theme-success-color);
+@error-color: var(--theme-error-color);
+@warning-color: var(--theme-warning-color);
+
+// Color used by default to control hover and active backgrounds and for
+// alert info backgrounds.
+@primary-1: #eef0fd; // replace tint(@primary-color, 90%)
+@primary-2: #dce1fa; // replace tint(@primary-color, 80%)
+@primary-5: #7387eb; // color used to control the text color in many active and hover states, replace tint(@primary-color, 20%)
+@primary-7: #5971e7; // replace shade(@primary-color, 5%)
+
+// Base Scaffolding Variables
+// ---
+
+// Background color for `<body>`
+@body-background: var(--theme-body-bg);
+// Base background color for most components
+@component-background: var(--theme-component-bg);
+@font-family: "Helvetica Neue", "Helvetica", "Arial", "PingFangSC-Regular", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "sans-serif";
+@code-family: Consolas, Menlo, Courier, monospace;
+@heading-color: var(--theme-text-color);
+@text-color: var(--theme-text-color);
+@text-color-secondary: var(--theme-text-color-secondary);
+@font-variant-base: normal; // https://github.com/ant-design/ant-design/issues/12690
+@font-size-base: 14px;
+@font-size-lg: 16px;
+@font-size-sm: 12px;
+@line-height-base: 1.5715;
+@border-radius-base: 4px;
+@border-radius-sm: 2px;
+
+// The background colors for active and hover states for things like
+// list items or table cells.
+@item-hover-bg: var(--item-hover-bg);
+@item-active-bg: var(--theme-secondary-color-hover);
+
+// LINK
+@link-color: var(--link-color);
+@link-hover-color: var(--link-hover-color);
+@link-active-color: var(--link-active-color);
+@link-decoration: none;
+@link-hover-decoration: none;
+
+// Border color
+// 元素边框
+@border-color-base: var(--theme-border-color-base);
+@border-color-split: var(--theme-border-color-split); // split border inside a component
+@border-color-inverse: var(--theme-border-color-inverse);
+@border-width-base: 1px;
+@border-style-base: solid;
+
+// Outline
+// ---
+@outline-blur-size: 6px;
+@outline-width: 0;
+
+@background-color-light: var(--theme-bg-color-light); // background of header and selected item
+@background-color-base: var(--theme-bg-color-base);
+
+// Disabled states
+// ---
+@disabled-color: var(--theme-disabled-color);
+@disabled-bg: var(--theme-component-bg);
+
+// Input
+// ---
+@input-height-sm: @height-s;
+@input-height-base: @height-m;
+@input-height-lg: @height-l;
+@input-height-xl: @height-xl;
+@input-hover-border-color: var(--theme-border-color-base);
+@input-placeholder-color: var(--theme-placeholder-color);
+
+// Table
+// ---
+@table-row-hover-bg: var(--table-row-hover-bg);
+@table-header-bg: var(--table-header-bg);
+@table-header-color: var(--table-header-color);
+@table-padding-vertical: 9.5px; // UE要求行号40，行高= {padding-vertical} * 2 + {font-size} * 1.5
+// Menu
+// ---
+@menu-inline-toplevel-item-height: 40px;
+@menu-item-height: 40px;
+@menu-collapsed-width: 80px;
+@menu-bg: var(--menu-bg);
+@menu-popup-bg: var(--menu-popup-bg);
+@menu-item-color: var(--menu-item-color);
+@menu-highlight-color: var(--menu-highlight-color);
+@menu-item-active-bg: var(--menu-item-active-bg);
+@menu-item-active-border-width: 3px;
+@menu-item-group-title-color: var(--menu-item-group-title-color);
+@menu-icon-size: @font-size-base;
+@menu-icon-size-lg: @font-size-lg;
+
+// Collapse
+// ---
+@collapse-header-padding: 12px 16px;
+@collapse-header-padding-extra: 40px;
+@collapse-header-bg: var(--collapse-header-bg);
+@collapse-content-bg: var(--collapse-content-bg);
+
+// Select
+// ---
+@select-item-selected-bg: var(--select-item-selected-bg);
+@select-item-active-bg: var(--item-hover-bg); // 这个是item hover的颜色
+@select-item-selected-font-weight: normal;
+@select-selection-item-bg: var(--color-gray-3);
+
+// Alert
+// ---
+@alert-success-border-color: var(--alert-success-bg-color);
+@alert-success-bg-color: var(--alert-success-bg-color);
+@alert-success-icon-color: var(--alert-success-icon-color);
+@alert-info-border-color: var(--alert-info-bg-color);
+@alert-info-bg-color: var(--alert-info-bg-color);
+@alert-info-icon-color: var(--alert-info-icon-color);
+@alert-warning-border-color: var(--alert-warning-bg-color);
+@alert-warning-bg-color: var(--alert-warning-bg-color);
+@alert-warning-icon-color: var(--alert-warning-icon-color);
+@alert-error-border-color: var(--alert-error-bg-color);
+@alert-error-bg-color: var(--alert-error-bg-color);
+@alert-error-icon-color: var(--alert-error-icon-color);
+@alert-message-color: var(--theme-text-color);
+@alert-text-color: var(--theme-text-color);
+@alert-close-color: var(--link-color);
+@alert-with-description-padding: var(--alert-with-description-padding);
+@alert-with-description-icon-top: var(--alert-with-description-icon-top);
+
+// Tree
+@tree-directory-selected-color: var(--tree-directory-selected-color, #fff);
+@tree-directory-selected-bg: var(--tree-directory-selected-bg, --theme-primary-color);
+@tree-node-hover-bg: var(--tree-node-hover-bg, --theme-secondary-color-hover);
+@tree-node-selected-bg: var(--tree-node-selected-bg, #dce1fa); // @primary-2
+
+//Button
+// ---
+@btn-border-radius-base: 4px;
+@btn-default-color: var(--theme-text-color);
+@btn-default-bg: var(--color-gray-1);
+@btn-default-border: var(--color-gray-5);
+@btn-primary-color: var(--color-gray-1);
+@btn-primary-bg: var(--color-brand-6);
+@btn-shadow: 0 2px 0 rgba(0, 0, 0, 0);
+@btn-line-height: 23px;
+@btn-disable-color: var(--btn-disable-color);
+@btn-disable-bg: var(--btn-disable-bg);
+@btn-disable-border: var(--btn-disable-border);
+
+// Tooltip
+// ---
+// Tooltip text color
+@tooltip-color: var(--tooltip-color);
+// Tooltip background color
+@tooltip-bg: var(--tooltip-bg);
+
+// Outline
+// ---
+@outline-width: 1px;
+@outline-blur-size: 0px;
+@outline-color: var(--theme-border-focus-color);
+
+// Form
+// ---
+@label-color: var(--color-gray-8);
+
+// Tabs
+// ---
+@tabs-active-color: var(--link-color);
+@tabs-hover-color: var(--link-color);
+
+// Box-shadow
+// ---
+@shadow-2: var(--shadow-1);
+
+// Avatar
+// --
+@avatar-size-sm: 16px;
+@avatar-size-base: 24px;
+@avatar-size-lg: 32px;
+@avatar-font-size-sm: 12px;
+@avatar-font-size-base: 12px;
+@avatar-font-size-lg: 14px;
+
+// 自定义的一些less变量patch，放在最下面
+// ----
+@height-s: 24px;
+@height-m: 30px;
+@height-l: 40px;
+@height-xl: 50px;
+
+// Tag
+@tag-default-bg: var(--tag-default-bg);
+@tag-default-color: @text-color;
+@tag-font-size: @font-size-base;
+@tag-line-height: 22px;
+
+// Table
+//--
+@table-row-hover-bg: var(--color-gray-3);
+
+// pagination
+//--
+@pagination-item-bg-active: var(--color-brand-1);
+
+// Badge
+// ---
+@badge-color: var(--color-error-6);
+
+// Radio
+// ---
+@radio-focus-shadow: 0 0 0 1px var(--theme-border-focus-color);
+@radio-duration: 0;

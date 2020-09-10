@@ -1,6 +1,16 @@
 const {getBabelConfig} = require('@reskript/config-babel');
 const {loaders} = require('@reskript/config-webpack');
 const path = require('path');
+const process = require('process');
+
+const themeEnv = process.env.THEME;
+const isiCloudTheme = themeEnv === 'icloud-theme';
+
+const styleResources = isiCloudTheme ? (
+    [require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less')]
+) : (
+    [require.resolve('@osui/theme/dist/antd-vars-patch.less')]
+);
 
 const loaderOptions = {
     cwd: process.cwd(),
@@ -9,7 +19,7 @@ const loaderOptions = {
         build: {
             extractCSS: false,
             styleResources: [
-                require.resolve('@osui/theme/dist/antd-vars-patch.less'),
+                ...styleResources,
                 require.resolve('@osui/theme/dist/less-functions-overrides.less'),
             ],
         },

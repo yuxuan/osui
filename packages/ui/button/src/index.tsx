@@ -8,24 +8,18 @@ const clsPrefix = 'osui-button';
 
 export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
     type?: ButtonType | 'strong' | 'icon' | 'only-icon';
+
 }
 
-const OSUIButton: React.FC<ButtonProps> = ({type = 'default', ...props}) => {
-    let btnText: string | React.ReactNode = '';
-    if (props.loading) {
-        btnText = '';
-    } else {
-        btnText = props.children;
-    }
+const Button: React.FC<ButtonProps> = ({type = 'default', ...props}) => {
+
     return (
         <AntdButton
             {...props}
             type={type as AntdButtonProps['type']} // 因为不兼容，做了强制类型转换
             className={classNames(props.className, clsPrefix)}
-        >
-            {btnText}
-        </AntdButton>
+        />
     );
 };
 
-export default OSUIButton;
+export default Button;

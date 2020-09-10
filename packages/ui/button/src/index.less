@@ -26,7 +26,7 @@
         &:focus {
             background: var(--color-gray-1);
             border-color: var(--color-brand-4);
-            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
+            box-shadow: var(--theme-component-focus-box-shadow);
         }
 
         &:active {
@@ -34,9 +34,9 @@
         }
 
         &[disabled] {
-            color: var(--theme-disabled-color);
-            background: var(--color-gray-1);
-            border-color: var(--color-gray-4);
+            color: var(--btn-disable-color);
+            background: var(--btn-disable-bg);
+            border-color: var(--btn-disable-border);
         }
     }
 
@@ -53,7 +53,7 @@
         &:focus {
             background: var(--color-gray-1);
             border-color: var(--color-brand-4);
-            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
+            box-shadow: var(--theme-component-focus-box-shadow);
         }
 
         &:active {
@@ -62,9 +62,9 @@
         }
 
         &[disabled] {
-            color: var(--theme-disabled-color);
-            background: var(--color-gray-1);
-            border-color: var(--color-gray-4);
+            color: var(--btn-disable-color);
+            background: var(--btn-disable-bg);
+            border-color: var(--btn-disable-border);
         }
 
         &.ant-btn-loading {
@@ -81,7 +81,7 @@
         &:focus {
             background: var(--color-brand-6);
             border-color: var(--color-brand-4);
-            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
+            box-shadow: var(--theme-component-focus-box-shadow);
         }
 
         &:active {
@@ -90,9 +90,9 @@
         }
 
         &[disabled] {
-            color: var(--theme-disabled-color);
-            background: var(--color-gray-1);
-            border-color: var(--color-gray-4);
+            color: var(--btn-disable-color);
+            background: var(--btn-disable-bg);
+            border-color: var(--btn-disable-border);
         }
 
         .ant-btn-loading-icon .anticon-loading {
@@ -116,7 +116,7 @@
 
         &:focus {
             border-color: var(--color-brand-4);
-            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
+            box-shadow: var(--theme-component-focus-box-shadow);
         }
 
         &:active {
@@ -144,7 +144,7 @@
 
         &:focus {
             border-color: var(--color-brand-4);
-            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
+            box-shadow: var(--theme-component-focus-box-shadow);
         }
 
         &:active {
@@ -152,12 +152,9 @@
         }
 
         &[disabled] {
-            background: var(--color-gray-1);
-            border-color: var(--color-gray-4);
-
-            .anticon {
-                color: var(--color-gray-5);
-            }
+            color: var(--btn-disable-color);
+            background: var(--btn-disable-bg);
+            border-color: var(--btn-disable-border);
         }
     }
 
@@ -170,9 +167,9 @@
 
         &:focus {
             color: var(--theme-text-color);
-            border-radius: 4px;
+            border-radius: @btn-border-radius-base;
             border: 1px solid var(--color-brand-4);
-            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
+            box-shadow: var(--theme-component-focus-box-shadow);
         }
 
         &:active {
@@ -188,5 +185,9 @@
 
     .ant-btn-loading-icon .anticon-loading {
         color: var(--theme-text-color);
+    }
+
+    &.ant-btn-loading .ant-btn-loading-icon + span {
+        display: var(--btn-loading-text-display);
     }
 }

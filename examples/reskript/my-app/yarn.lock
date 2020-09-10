@@ -1124,6 +1124,11 @@
   dependencies:
     mkdirp "^1.0.4"
 
+"@osui/icloud-theme@^0.4.4":
+  version "0.4.4"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ficloud-theme/-/icloud-theme-0.4.4.tgz#098f02261c681ab0cf40fec0d1b0ef9042b3ec11"
+  integrity sha1-CY8CJhxoGrDPQP7A0bDvkEKz7BE=
+
 "@osui/icons@^0.4.1":
   version "0.4.1"
   resolved "http://registry.npm.baidu-int.com/@osui%2ficons/-/icons-0.4.1.tgz#478f08de6f2234800671e2b7d383624ba6a1b419"

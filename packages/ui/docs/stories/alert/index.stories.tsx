@@ -2,7 +2,7 @@ import React from 'react';
 import Alert from '@osui/alert';
 
 export default {
-    title: 'OSUI-Alert',
+    title: 'Alert',
 };
 
 export const Demo = () => {

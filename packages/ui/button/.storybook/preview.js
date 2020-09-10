@@ -1,9 +1,11 @@
-import {addParameters} from '@storybook/react';
+import {addParameters, addDecorator} from '@storybook/react';
 import {DocsPage, DocsContainer} from '@storybook/addon-docs/blocks';
 import {
     INITIAL_VIEWPORTS,
   } from '@storybook/addon-viewport';
-import '@osui/theme/dist/theme/vars.css';
+// import '@osui/theme/dist/theme/vars.css';
+import '@osui/icloud-theme/dist/theme/vars.css';
+
 
 addParameters({
     docs: {
@@ -16,3 +18,5 @@ addParameters({
         }
     },
 });
+
+addDecorator(storyFn => <div style={{padding: 30}}>{storyFn()}</div>);

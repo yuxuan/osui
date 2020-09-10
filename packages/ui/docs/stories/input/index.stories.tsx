@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { IconSearch } from '@osui/icons';
-import '@osui/theme/dist/theme/vars.css';
 import Input from '@osui/input';
+
 const { TextArea } = Input;
 
 export default {
