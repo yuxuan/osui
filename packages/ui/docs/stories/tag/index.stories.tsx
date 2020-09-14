@@ -4,7 +4,7 @@ import {IconAdd} from '@osui/icons';
 import Tag from '@osui/tag';
 
 export default {
-    title: 'OSUI-Tag',
+    title: 'Tag',
 };
 
 export const Demo = () => {

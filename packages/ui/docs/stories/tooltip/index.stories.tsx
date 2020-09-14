@@ -3,7 +3,7 @@ import {Divider} from 'antd';
 import Tooltip from '@osui/tooltip';
 
 export default {
-    title: 'OSUI-Tooltip',
+    title: 'Tooltip',
 };
 
 export const Demo = () => {

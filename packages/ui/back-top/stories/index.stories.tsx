@@ -2,7 +2,7 @@ import React from 'react';
 import BackTop from '../src';
 
 export default {
-    title: 'OSUI-BackTop',
+    title: 'BackTop',
 };
 
 export const Demo = () => {

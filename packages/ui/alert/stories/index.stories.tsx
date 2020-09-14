@@ -1,5 +1,3 @@
-import '@osui/icloud-theme/dist/theme/vars.css';
-// import '@osui/theme/dist/theme/vars.css';
 import React from 'react';
 import Alert from '../src';
 

@@ -3,7 +3,7 @@ import {Row} from 'antd';
 import SearchSelectList from '@osui/search-select-list';
 
 export default {
-    title: '业务/OSUI-Search-Select-List',
+    title: '业务/Search-Select-List',
 };
 
 export const Demo = () => {

@@ -3,7 +3,7 @@ import { ForkOutlined } from '@ant-design/icons';
 import Tabs from '../src';
 
 export default {
-    title: 'OSUI-Tabs',
+    title: 'Tabs',
 };
 
 export const Demo = () => {

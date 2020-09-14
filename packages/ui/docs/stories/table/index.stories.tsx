@@ -2,7 +2,7 @@ import React from 'react';
 import Table from '@osui/table';
 
 export default {
-    title: 'OSUI-Table',
+    title: 'Table',
 };
 
 export const Demo = () => {

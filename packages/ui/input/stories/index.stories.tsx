@@ -1,12 +1,11 @@
 
 import React from 'react';
 import { IconSearch } from '@osui/icons';
-import '@osui/theme/dist/theme/vars.css';
 import Input from '../src';
 const { TextArea } = Input;
 
 export default {
-    title: 'OSUI-Input',
+    title: 'Input',
 };
 
 export const Demo = () => {
@@ -29,5 +28,18 @@ export const Demo = () => {
             <br />
             <br />
             <Input.Password style={{ width: 500 }} placeholder="请输入" />
+        </>);
+};
+
+export const Size = () => {
+    return (
+        <>
+            <Input style={{ width: 200 }} placeholder="small size" size="small" />
+            <br />
+            <br />
+            <Input style={{ width: 200 }} placeholder="default size" />
+            <br />
+            <br />
+            <Input style={{ width: 200 }} placeholder="large size" size="large" />
         </>);
 };

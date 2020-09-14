@@ -1,9 +1,9 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo, MultipleDemo} from './index.stories'
+import {Demo, MultipleDemo, Size} from './index.stories'
 
-<Meta title="OSUI-Select" component={Demo} />
+<Meta title="Select" component={Demo} />
 
-# OSUI Select
+# Select
 
 ## API
 
@@ -19,6 +19,12 @@ import {Demo, MultipleDemo} from './index.stories'
   </Story>
 </Preview>
 
+<Preview>
+  <Story name="Size">
+        {Size()}
+  </Story>
+</Preview>
+
 ### 多选用法
 
 <Preview>
@@ -26,4 +32,3 @@ import {Demo, MultipleDemo} from './index.stories'
         {MultipleDemo()}
   </Story>
 </Preview>
-

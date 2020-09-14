@@ -3,7 +3,7 @@ import { Button } from 'antd';
 import Modal from '@osui/modal';
 
 export default {
-    title: 'OSUI-modal',
+    title: 'modal',
 };
 
 export const Demo = () => {

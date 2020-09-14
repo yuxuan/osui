@@ -3,7 +3,7 @@ import { Button, Space } from 'antd';
 import message from '@osui/message';
 
 export default {
-    title: 'OSUI-Message',
+    title: 'Message',
 };
 
 export const Demo = () => {

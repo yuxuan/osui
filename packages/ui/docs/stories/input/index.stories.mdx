@@ -1,7 +1,7 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo} from './index.stories'
+import {Demo, Size} from './index.stories'
 
-<Meta title="OSUI-Input" component={Demo} />
+<Meta title="Input" component={Demo} />
 
 # OSUI Input
 
@@ -10,5 +10,11 @@ import {Demo} from './index.stories'
 <Preview>
   <Story name="Demo">
         {Demo()}
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Size">
+        {Size()}
   </Story>
 </Preview>

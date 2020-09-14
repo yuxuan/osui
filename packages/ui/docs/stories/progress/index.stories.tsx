@@ -2,7 +2,7 @@ import React from 'react';
 import Progress from '@osui/progress';
 
 export default {
-    title: 'OSUI-Progress',
+    title: 'Progress',
 };
 
 export const Demo = () => {

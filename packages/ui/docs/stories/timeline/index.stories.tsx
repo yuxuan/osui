@@ -3,7 +3,7 @@ import {ClockCircleOutlined} from '@ant-design/icons';
 import Timeline from '@osui/timeline';
 
 export default {
-    title: 'OSUI-Timeline',
+    title: 'Timeline',
 };
 
 export const Demo = () => {

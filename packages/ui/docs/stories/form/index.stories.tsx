@@ -8,7 +8,7 @@ import {Cascader, InputNumber} from 'antd';
 import Form from '@osui/form';
 
 export default {
-    title: 'OSUI-Form',
+    title: 'Form',
 };
 
 const layout = {

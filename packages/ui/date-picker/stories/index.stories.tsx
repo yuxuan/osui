@@ -5,7 +5,7 @@ import DatePicker from '../src';
 const {RangePicker} = DatePicker;
 
 export default {
-    title: 'OSUI-DatePicker',
+    title: 'DatePicker',
 };
 
 export const Demo = () => {

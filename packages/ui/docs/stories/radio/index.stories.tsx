@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Radio from '@osui/radio';
 
 export default {
-    title: 'OSUI-Radio',
+    title: 'Radio',
 };
 
 const Group = Radio.Group;

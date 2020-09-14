@@ -2,7 +2,7 @@ import React from 'react';
 import OscBackTop from '@osui/back-top';
 
 export default {
-    title: 'OSUI-BackTop',
+    title: 'BackTop',
 };
 
 export const Demo = () => {

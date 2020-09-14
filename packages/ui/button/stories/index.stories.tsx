@@ -3,7 +3,7 @@ import {IconSearch, IconHome} from '@osui/icons';
 import Button from '../src';
 
 export default {
-    title: 'OSUI-Button',
+    title: 'Button',
 };
 
 export const Demo = () => {

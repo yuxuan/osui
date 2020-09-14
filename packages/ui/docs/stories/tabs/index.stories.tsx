@@ -5,7 +5,7 @@ import Tabs from '@osui/tabs';
 const { TabPane } = Tabs;
 
 export default {
-    title: 'OSUI-Tabs',
+    title: 'Tabs',
 };
 
 export const Demo = () => {

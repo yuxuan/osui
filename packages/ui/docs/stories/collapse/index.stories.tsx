@@ -4,7 +4,7 @@ import Collapse from '@osui/collapse';
 const { Panel } = Collapse;
 
 export default {
-    title: 'OSUI-Collapse',
+    title: 'Collapse',
 };
 
 export const Demo = () => {

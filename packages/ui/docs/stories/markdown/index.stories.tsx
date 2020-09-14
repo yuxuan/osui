@@ -2,7 +2,7 @@ import React from 'react';
 import Markdown from '@osui/markdown';
 
 export default {
-    title: 'OSUI-Markdown',
+    title: 'Markdown',
 };
 
 const content = `

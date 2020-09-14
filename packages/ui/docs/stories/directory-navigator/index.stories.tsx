@@ -37,7 +37,7 @@ const treeData = [
 ];
 
 export default {
-    title: 'OSUI-DirectoryNavigator',
+    title: 'DirectoryNavigator',
 };
 
 export const DirectoryNavigatorDemo = () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import {Button, Divider, Drawer} from 'antd';
 
 export default {
-    title: 'OSUI-Drawer',
+    title: 'Drawer',
 };
 
 export const Demo = () => {

@@ -3,7 +3,7 @@ import {Space} from 'antd';
 import Select from '@osui/select';
 
 export default {
-    title: 'OSUI-Select',
+    title: 'Select',
 };
 
 export const Demo = () => {

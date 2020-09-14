@@ -4,7 +4,7 @@ import {IconSwitchTick, IconSwitchCross} from '@osui/icons';
 import Switch from '@osui/switch';
 
 export default {
-    title: 'OSUI-Switch',
+    title: 'Switch',
 };
 
 export const Demo = () => {

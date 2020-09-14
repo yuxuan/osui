@@ -3,7 +3,7 @@ import {Divider, Button} from 'antd';
 import MenuDropdown from '../src';
 
 export default {
-    title: 'OSUI-Menu-dropdown',
+    title: 'Menu-dropdown',
 };
 
 export const Demo = () => {

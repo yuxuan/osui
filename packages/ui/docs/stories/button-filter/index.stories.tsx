@@ -5,7 +5,7 @@ import ButtonFilter from '@osui/toggle-button';
 // eslint-disable-next-line @reskript/import-order
 
 export default {
-    title: 'OSUI-toggle-button',
+    title: 'toggle-button',
 };
 
 export const Demo = () => {

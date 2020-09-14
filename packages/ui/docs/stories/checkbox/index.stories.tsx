@@ -4,7 +4,7 @@ import Checkbox from '@osui/checkbox';
 const Group = Checkbox.Group;
 
 export default {
-    title: 'OSUI-Checkbox',
+    title: 'Checkbox',
 };
 
 export const Demo = () => {

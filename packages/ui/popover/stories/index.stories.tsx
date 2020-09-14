@@ -3,7 +3,7 @@ import Button from '@osui/button';
 import OSUIPopover from '../src';
 
 export default {
-    title: 'OSUI-Popover',
+    title: 'Popover',
 };
 
 export const Demo = () => {

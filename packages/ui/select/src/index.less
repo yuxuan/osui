@@ -27,7 +27,16 @@
         svg {
             font-size: @font-size-lg;
             color: var(--theme-text-color);
+            transition: var(--select-arrow-transition);
         }
+    }
+
+    &.ant-select-open .ant-select-arrow:not(.ant-select-arrow-loading) svg {
+        transform: var(--select-arrow-open-transform-rotate);
+    }
+
+    &:hover .ant-select-arrow svg {
+        color: var(--select-arrow-hover-color);
     }
 
     // no-border
@@ -44,7 +53,7 @@
 
         &.ant-select-open .ant-select-selector {
             border: 1px solid var(--theme-primary-color-hover);
-            box-shadow: 0 0 0 1px var(--theme-border-focus-color);
+            box-shadow: 0 0 0 @outline-width var(--theme-border-focus-color);
             background: var(--theme-component-bg);
         }
     }

@@ -1,10 +1,9 @@
 import React from 'react';
 import {ClockCircleOutlined} from '@ant-design/icons';
-import '@osui/theme/dist/theme/vars.css';
 import Timeline from '../src';
 
 export default {
-    title: 'OSUI-Timeline',
+    title: 'Timeline',
 };
 
 export const Demo = () => {

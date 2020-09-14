@@ -2,7 +2,7 @@ import React from 'react';
 import Badge from '../src';
 
 export default {
-    title: 'OSUI-Badge',
+    title: 'Badge',
 };
 
 export const Demo = () => {

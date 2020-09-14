@@ -4,7 +4,7 @@ import { ConfigProvider } from 'antd';
 import Pagination from '../src';
 
 export default {
-    title: 'OSUI-Pagination',
+    title: 'Pagination',
 };
 
 export const Demo = () => {
