@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.5.0...@osui/icloud-theme@0.5.2) (2020-09-14)
+
+
+### Bug Fixes
+
+* theme高度调整 ([4fe8ddc](https://gitee.com/gitee-fe/osui/tree/master/commits/4fe8ddc29e2eb649c6e21281803f0f2e5d3f7438))
+
+
+
+
+
 # 0.5.0 (2020-09-14)
 
 
