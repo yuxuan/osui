@@ -2,13 +2,12 @@ import React from 'react';
 import { ForkOutlined } from '@ant-design/icons';
 import Tabs from '@osui/tabs';
 
-const { TabPane } = Tabs;
-
 export default {
     title: 'Tabs',
 };
 
 export const Demo = () => {
+    const { TabPane } = Tabs;
     return (
         <>
             <Tabs defaultActiveKey="1" style={{ marginBottom: 50 }}>

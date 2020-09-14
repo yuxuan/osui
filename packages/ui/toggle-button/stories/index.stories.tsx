@@ -5,7 +5,7 @@ import MenuDropdown from '@osui/menu-dropdown';
 import ToggleButton from '../src';
 
 export default {
-    title: 'toggle-button',
+    title: '业务/ToggleButton',
 };
 
 export const Demo = () => {

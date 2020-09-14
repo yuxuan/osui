@@ -3,7 +3,7 @@ import BranchDropdown from '../src';
 // eslint-disable-next-line @reskript/import-order
 
 export default {
-    title: 'BranchDropDown',
+    title: '业务/BranchDropDown',
 };
 
 export const Demo = () => {

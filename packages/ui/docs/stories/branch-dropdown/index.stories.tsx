@@ -3,7 +3,7 @@ import BranchDropdown from '@osui/branch-dropdown';
 // eslint-disable-next-line @reskript/import-order
 
 export default {
-    title: 'BranchDropDown',
+    title: '业务/BranchDropDown',
 };
 
 export const Demo = () => {

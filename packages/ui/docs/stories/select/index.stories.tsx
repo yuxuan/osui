@@ -44,6 +44,37 @@ export const Demo = () => {
 };
 
 
+export const Size = () => {
+    const Option = Select.Option;
+    function handleChange(value: string) {
+        console.log(`selected ${value}`);
+    }
+
+    return (
+        <Space>
+            <Select placeholder="small size" style={{ width: 120 }} size="small">
+                <Option value="lucy">Lucy</Option>
+            </Select>
+            <Select placeholder="default size" style={{ width: 120 }} onChange={handleChange}>
+                <Option value="jack">Jack</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="disabled" disabled>
+                    Disabled
+                </Option>
+                <Option value="Yiminghe">yiminghe</Option>
+            </Select>
+            <Select placeholder="large size" style={{ width: 120 }} onChange={handleChange} size="large">
+                <Option value="jack">Jack</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="disabled" disabled>
+                    Disabled
+                </Option>
+                <Option value="Yiminghe">yiminghe</Option>
+            </Select>
+        </Space>
+    );
+};
+
 export const MultipleDemo = () => {
     const Option = Select.Option;
     function handleChange(value: string) {

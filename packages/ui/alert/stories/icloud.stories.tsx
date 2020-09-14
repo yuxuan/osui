@@ -2,7 +2,7 @@ import React from 'react';
 import Alert from '../src';
 
 export default {
-    title: 'icloud-ui/Alert',
+    title: 'icloud/Alert',
 };
 
 export const Demo = () => {
