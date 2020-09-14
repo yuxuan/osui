@@ -3,6 +3,7 @@
     "workspaces": [
         "packages/*",
         "packages/ui/*",
+        "packages/ui/docs/*",
         "packages/ui-icons/*",
         "packages/ui-theme/*"
     ],

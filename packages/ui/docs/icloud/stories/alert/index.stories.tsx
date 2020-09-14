@@ -2,7 +2,7 @@ import React from 'react';
 import Alert from '@osui/alert';
 
 export default {
-    title: 'icloud/Alert',
+    title: 'Alert',
 };
 
 export const Demo = () => {

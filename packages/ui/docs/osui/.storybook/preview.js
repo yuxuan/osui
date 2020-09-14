@@ -1,6 +1,4 @@
 import {addDecorator} from '@storybook/react';
-// import '@osui/icloud-theme/dist/theme/vars.css';
-// import '@osui/icloud-theme/dist/antd4-styles-patch.css';
 import '@osui/theme/dist/theme/vars.css';
 import '@osui/theme/dist/antd4-styles-patch.css';
 
