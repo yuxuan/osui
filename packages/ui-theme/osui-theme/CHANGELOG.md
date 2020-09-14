@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.4.3...@osui/theme@0.5.0) (2020-09-14)
+
+
+### Bug Fixes
+
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+
+
+### Features
+
+* icloud-theme调整 ([bf7b7bb](https://gitee.com/gitee-fe/osui/tree/master/commits/bf7b7bb19b3b442273af9df94258492b684d0920))
+
+
+
+
+
 ## [0.3.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.3.1...@osui/theme@0.3.2) (2020-08-17)
 
 **Note:** Version bump only for package @osui/theme

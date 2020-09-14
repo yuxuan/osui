@@ -1,6 +1,6 @@
 {
     "name": "@osui/alert",
-    "version": "0.4.3",
+    "version": "0.5.0",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -51,7 +51,7 @@
     "author": "huoyuxuan,zhusen",
     "license": "MIT",
     "dependencies": {
-        "@osui/icons": "^0.4.3",
+        "@osui/icons": "^0.5.0",
         "classnames": "^2.2.6"
     },
     "publishConfig": {
