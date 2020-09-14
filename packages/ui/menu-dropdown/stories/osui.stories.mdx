@@ -1,0 +1,101 @@
+import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
+import {Demo, ButtonDemo} from './index.stories'
+
+<Meta title="业务/Menu-Dropdown" component={Demo} />
+
+# OSUI Menu-Dropdown
+
+Dropdown下面是个Menu
+
+## API
+
+### 描述
+
+该组件支持一级、二级菜单。
+
+数据格式为：
+```javaScript
+// 菜单数据示例
+const data = [
+    {
+        key: 'newPr',
+        title: '新建 Pull Request',
+    },
+    {
+        key: 'newBranch',
+        title: '新建分支',
+    },
+    {
+        key: 'newComponents',
+        title: '新建组件',
+    },
+    {
+        key: 'newProject',
+        title: '新建项目',
+        children: [
+            {
+                key: 'project',
+                title: '计划 Project',
+            },
+            {
+                key: 'doc',
+                title: '文档 DOC',
+            },
+            {
+                key: 'pipe',
+                title: '流水线 Pipe',
+            },
+            {
+                key: 'repo',
+                title: '制品库 Repo',
+            },
+            {
+                key: 'test',
+                title: '测试用例 Test',
+            },
+        ],
+    },
+];
+```
+
+### 基本属性
+
+支持所有Dropdown属性：见[antd文档](https://ant.design/components/dropdown-cn/)
+支持所有Menu属性：见[antd文档](https://ant.design/components/menu-cn/)
+
+**说明：**
+ - Menu的`onClick`事件更改为`handleMenuClick`触发，其他暂时不变。如果遇到跟Dropdown事件同名的，也需要更改一下。
+ - 使用方式与`Menu`相同，onClick时返回antd `Menu` onClick的事件，见[Menu onClick](https://ant.design/components/menu-cn/#Menu)
+
+### 新增属性
+
+|参数|说明|类型|默认值|
+|:---|:----:|:---:|------:|
+|handleMenuClick|Menu点击事件，因Menu组件和Dropdown`onClick`事件同名，重新命名了一下。|function|-|
+|data|传入MenuDropdown的数据|MenuDropdownData[]|[]|
+
+**注意：** `data`的格式如下，尽量与`Menu.Item`保持一致，去掉了`icon`，如果有需要单独加回来。`key`相当于`value`而不仅仅是loop中的key
+
+#### MenuDropdownData 接口格式
+```
+interface MenuDropdownData {
+    key: string;
+    title: React.ReactNode;
+    disabled?: boolean;
+    children?: MenuDropdownData[];
+}
+```
+
+<Preview>
+  <Story name="Demo">
+        {Demo()}
+  </Story>
+</Preview>
+
+### 支持Button形式
+
+<Preview>
+  <Story name="ButtonDemo">
+        {ButtonDemo()}
+  </Story>
+</Preview>
