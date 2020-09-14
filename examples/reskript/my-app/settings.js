@@ -18,8 +18,8 @@ exports.build = {
     appTitle: 'Unknown', // TODO: 修改系统名称
     extractCSS: false,
     styleResources: [
-        require.resolve('@osui/theme/dist/antd-vars-patch.less'),
-        require.resolve('@osui/theme/dist/less-functions-overrides.less'),
+        require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less'),
+        require.resolve('@osui/icloud-theme/dist/less-functions-overrides.less'),
     ],
 };
 

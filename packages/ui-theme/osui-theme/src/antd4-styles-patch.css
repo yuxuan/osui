@@ -1,0 +1,6 @@
+/* UE要求取消所有点击动画 */
+[ant-click-animating-without-extra-node="true"]::after,
+.ant-click-animating-node {
+    animation: none !important;
+    animation-fill-mode: none !important;
+}

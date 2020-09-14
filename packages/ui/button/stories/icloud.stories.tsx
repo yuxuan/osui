@@ -1,31 +1,32 @@
 import React from 'react';
 import {IconSearch, IconHome} from '@osui/icons';
-import OSUIButton from '@osui/button';
+import OSUIButton from '../src';
 
 export default {
-    title: 'OSUI-Button',
+    title: 'icloud/Button',
 };
 
 export const Demo = () => {
     return (
         <>
             <div>
-                <OSUIButton type="default" style={{'margin': '0 20px 20px 0'}}>普通样式</OSUIButton>
-                <OSUIButton type="default" disabled style={{'margin': '0 20px 20px 0'}}>普通样式</OSUIButton>
-                <OSUIButton type="default" loading style={{'margin': '0 20px 20px 0'}}>普通样式</OSUIButton>
+                <OSUIButton type="primary" style={{'margin': '0 20px 20px 0'}}>主要按钮</OSUIButton>
+                <OSUIButton type="primary" loading style={{'margin': '0 20px 20px 0'}}>主要按钮</OSUIButton>
+                <OSUIButton type="primary" disabled style={{'margin': '0 20px 20px 0'}}>主要按钮</OSUIButton>
             </div>
             <div>
-                <OSUIButton type="strong" icon={<IconHome />} style={{'margin': '0 20px 20px 0'}}>加强样式</OSUIButton>
-                <OSUIButton type="strong" disabled style={{'margin': '0 20px 20px 0'}}>加强样式</OSUIButton>
-                <OSUIButton type="strong" loading style={{'margin': '0 20px 20px 0'}}>加强样式</OSUIButton>
+                <OSUIButton type="strong" icon={<IconHome />} style={{'margin': '0 20px 20px 0'}}>次要按钮</OSUIButton>
+                <OSUIButton type="strong" loading style={{'margin': '0 20px 20px 0'}}>次要按钮</OSUIButton>
+                <OSUIButton type="strong" disabled style={{'margin': '0 20px 20px 0'}}>次要按钮</OSUIButton>
             </div>
             <div>
-                <OSUIButton type="primary" style={{'margin': '0 20px 20px 0'}}>重要样式</OSUIButton>
-                <OSUIButton type="primary" disabled style={{'margin': '0 20px 20px 0'}}>重要样式</OSUIButton>
-                <OSUIButton type="primary" loading style={{'margin': '0 20px 20px 0'}}>重要样式</OSUIButton>
+                <OSUIButton type="default" style={{'margin': '0 20px 20px 0'}}>次要按钮</OSUIButton>
+                <OSUIButton type="default" loading style={{'margin': '0 20px 20px 0'}}>次要按钮</OSUIButton>
+                <OSUIButton type="default" disabled style={{'margin': '0 20px 20px 0'}}>次要按钮</OSUIButton>
             </div>
             <div>
                 <OSUIButton type="link" style={{'margin': '0 20px 20px 0'}}>文字按钮</OSUIButton>
+                <OSUIButton type="link" loading style={{'margin': '0 20px 20px 0'}}>文字按钮</OSUIButton>
                 <OSUIButton type="link" disabled style={{'margin': '0 20px 20px 0'}}>文字按钮</OSUIButton>
             </div>
             <div>

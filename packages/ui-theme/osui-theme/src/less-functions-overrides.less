@@ -1,0 +1,57 @@
+/* stylelint-disable */
+
+// In order to make css varialbes possible to pass less compile,
+// brutally overwrites less/css color functions by using [less-plugin-functions](https://www.npmjs.com/package/less-plugin-functions).
+// Functions below just return whatever color pass in. In project, the overwrites should override all possible appearance,
+// therefore we are using another loader [style-resources-loader](https://www.npmjs.com/package/style-resources-loader) to inject
+// functions into 'all' less files. Or optionally inject by config webpack loader rules
+
+// 为了css variables能通过less编译，通过使用[less-plugin-functions](https://www.npmjs.com/package/less-plugin-functions)插件，
+// 将以下函数覆盖less/css原生color函数。覆盖函数应能覆盖到'所有'mixin出现的地方，因此使用了[style-resources-loader](https://www.npmjs.com/package/style-resources-loader)
+// 将这个less文件注入到所有less文件后面，也可以通过webpack loader rules选择性注入
+
+// === less mixin override ===
+.function {
+    .fade(@color, @percentage: 100%) {
+        return: @color;
+    }
+
+    .fade(@color, @percentage: 100%) when(iscolor(@color)) {
+        return: rgba(@color, @percentage);
+    }
+
+    .darken(@color, @percentage: 100%) {
+        return: @color;
+    }
+
+    .lighten(@color, @percentage: 100%) {
+        return: @color;
+    }
+
+    .tint(@color, @percentage: 100%) {
+        return: @color;
+    }
+
+    .shade(@color, @percentage: 100%) {
+        return: @color;
+    }
+
+    .color(@color) {
+      return: @color;
+    }
+}
+// === endof less mixin overrides ===
+
+// === overrides antd mixin ===
+.colorPaletteMixin() {
+@functions: ~`(function() {
+  this.colorPalette = function(color, index) {
+    return color;
+  };
+})()`;
+}
+.colorPaletteMixin();
+
+// === endof antd mixin overrides ===
+
+/* stylelint-enable */

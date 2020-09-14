@@ -204,6 +204,7 @@ exports.presetColors = {
     '--theme-border-color-inverse': '#fff',
     '--theme-border-color-split': 'var(--color-gray-4)',
     '--theme-component-bg': 'var(--color-gray-1)',
+    '--theme-component-focus-box-shadow': '0 0 0 1px var(--theme-border-focus-color)',
     '--theme-disabled-bg': 'var(--color-gray-4)',
     '--theme-disabled-color': 'var(--color-gray-6)',
     '--theme-error-color-active': 'var(--color-error-5)',
@@ -249,6 +250,9 @@ exports.presetColors = {
     '--alert-warning-icon-color': 'var(--theme-warning-color)',
     '--alert-with-description-icon-top': '24px',
     '--alert-with-description-padding': '8px 15px 8px 37px',
+    '--btn-disable-color': 'var(--theme-disabled-color)',
+    '--btn-disable-bg': 'var(--color-gray-1)',
+    '--btn-disable-border': 'var(--color-gray-4)',
     '--collapse-content-bg': 'var(--theme-component-bg)',
     '--collapse-expand-icon-bg': 'var(--color-gray-3)',
     '--collapse-header-bg': 'var(--color-gray-2)',
@@ -284,4 +288,5 @@ exports.presetColors = {
     '--tag-yellow-color': 'var(--color-warning-1)',
     '--tooltip-bg': 'var(--color-gray-9)',
     '--tooltip-color': 'var(--color-gray-1)',
+    '--btn-loading-text-display': 'none',
 };

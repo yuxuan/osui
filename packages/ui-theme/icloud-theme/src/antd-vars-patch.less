@@ -12,7 +12,7 @@
 // Color used by default to control hover and active backgrounds and for
 // alert info backgrounds.
 @primary-1: #eef0fd; // replace tint(@primary-color, 90%)
-@primary-2: #dce1fa;// replace tint(@primary-color, 80%)
+@primary-2: #dce1fa; // replace tint(@primary-color, 80%)
 @primary-5: #7387eb; // color used to control the text color in many active and hover states, replace tint(@primary-color, 20%)
 @primary-7: #5971e7; // replace shade(@primary-color, 5%)
 
@@ -25,20 +25,20 @@
 @component-background: var(--theme-component-bg);
 @font-family: "Helvetica Neue", "Helvetica", "Arial", "PingFangSC-Regular", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "sans-serif";
 @code-family: Consolas, Menlo, Courier, monospace;
-@heading-color: var(--theme-text-color);
-@text-color:var(--theme-text-color);
+@heading-color: var(--theme-heading-color);
+@text-color: var(--theme-text-color);
 @text-color-secondary: var(--theme-text-color-secondary);
 @font-variant-base: normal; // https://github.com/ant-design/ant-design/issues/12690
 @font-size-base: 14px;
 @font-size-lg: 16px;
 @font-size-sm: 12px;
-@line-height-base: 1.5715;
-@border-radius-base: 4px;
-@border-radius-sm: 2px;
+@line-height-base: 1.5;
+@border-radius-base: 0px;
+@border-radius-sm: 0px;
 
 // The background colors for active and hover states for things like
 // list items or table cells.
-@item-hover-bg: var(--item-hover-bg);
+@item-hover-bg: var(--theme-secondary-color-hover);
 @item-active-bg: var(--theme-secondary-color-hover);
 
 // LINK
@@ -51,7 +51,7 @@
 // Border color
 // 元素边框
 @border-color-base: var(--theme-border-color-base);
-@border-color-split: var(--theme-border-color-split);   // split border inside a component
+@border-color-split: var(--theme-border-color-split); // split border inside a component
 @border-color-inverse: var(--theme-border-color-inverse);
 @border-width-base: 1px;
 @border-style-base: solid;
@@ -67,7 +67,7 @@
 // Disabled states
 // ---
 @disabled-color: var(--theme-disabled-color);
-@disabled-bg: var(--theme-component-bg);
+@disabled-bg: var(--theme-disabled-bg);
 
 // Input
 // ---
@@ -109,27 +109,27 @@
 // Select
 // ---
 @select-item-selected-bg: var(--select-item-selected-bg);
-@select-item-active-bg: var(--item-hover-bg); // 这个是item hover的颜色
+@select-item-active-bg: var(--select-item-active-bg);
 @select-item-selected-font-weight: normal;
 @select-selection-item-bg: var(--color-gray-3);
 
 // Alert
 // ---
-@alert-success-border-color: var(--alert-success-bg-color);
+@alert-success-border-color: var(--alert-success-border-color);
 @alert-success-bg-color: var(--alert-success-bg-color);
 @alert-success-icon-color: var(--alert-success-icon-color);
-@alert-info-border-color: var(--alert-info-bg-color);
+@alert-info-border-color: var(--alert-info-border-color);
 @alert-info-bg-color: var(--alert-info-bg-color);
 @alert-info-icon-color: var(--alert-info-icon-color);
-@alert-warning-border-color: var(--alert-warning-bg-color);
+@alert-warning-border-color: var(--alert-warning-border-color);
 @alert-warning-bg-color: var(--alert-warning-bg-color);
 @alert-warning-icon-color: var(--alert-warning-icon-color);
-@alert-error-border-color: var(--alert-error-bg-color);
+@alert-error-border-color: var(--alert-error-border-color);
 @alert-error-bg-color: var(--alert-error-bg-color);
 @alert-error-icon-color: var(--alert-error-icon-color);
-@alert-message-color: var(--theme-text-color);
-@alert-text-color: var(--theme-text-color);
-@alert-close-color: var(--link-color);
+@alert-message-color: var(--theme-heading-color);
+@alert-text-color: var(--color-brand-10);
+@alert-close-color: var(--theme-text-color-secondary);
 @alert-with-description-padding: var(--alert-with-description-padding);
 @alert-with-description-icon-top: var(--alert-with-description-icon-top);
 
@@ -141,17 +141,17 @@
 
 //Button
 // ---
-@btn-border-radius-base: 4px;
+@btn-border-radius-base: 0px;
 @btn-default-color: var(--theme-text-color);
 @btn-default-bg: var(--color-gray-1);
 @btn-default-border: var(--color-gray-5);
-@btn-disable-color: var(--color-gray-6);
-@btn-disable-bg: var(--color-gray-1);
-@btn-disable-border: var(--color-gray-4);
 @btn-primary-color: var(--color-gray-1);
 @btn-primary-bg: var(--color-brand-6);
 @btn-shadow: 0 2px 0 rgba(0, 0, 0, 0);
 @btn-line-height: 23px;
+@btn-disable-color: var(--btn-disable-color);
+@btn-disable-bg: var(--btn-disable-bg);
+@btn-disable-border: var(--btn-disable-border);
 
 // Tooltip
 // ---
@@ -215,5 +215,5 @@
 
 // Radio
 // ---
-@radio-focus-shadow: 0 0 0 1px var(--theme-border-focus-color);
+@radio-focus-shadow: 0 0 0 0 var(--theme-border-focus-color);
 @radio-duration: 0;
