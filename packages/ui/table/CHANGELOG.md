@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.4.3...@osui/table@0.5.0) (2020-09-14)
+
+
+### Bug Fixes
+
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+
+
+
+
+
 ## [0.4.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.4.2...@osui/table@0.4.3) (2020-09-08)
 
 **Note:** Version bump only for package @osui/table

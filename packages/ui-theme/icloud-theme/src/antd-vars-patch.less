@@ -56,11 +56,6 @@
 @border-width-base: 1px;
 @border-style-base: solid;
 
-// Outline
-// ---
-@outline-blur-size: 6px;
-@outline-width: 0;
-
 @background-color-light: var(--theme-bg-color-light); // background of header and selected item
 @background-color-base: var(--theme-bg-color-base);
 
@@ -71,11 +66,10 @@
 
 // Input
 // ---
-@input-height-sm: @height-s;
-@input-height-base: @height-m;
-@input-height-lg: @height-l;
-@input-height-xl: @height-xl;
-@input-hover-border-color: var(--theme-border-color-base);
+@input-height-sm: @height-sm;
+@input-height-base: @height-base;
+@input-height-lg: @height-lg;
+@input-hover-border-color: var(--theme-primary-color-hover);
 @input-placeholder-color: var(--theme-placeholder-color);
 
 // Table
@@ -108,6 +102,7 @@
 
 // Select
 // ---
+@select-item-selected-color: var(--theme-primary-color);
 @select-item-selected-bg: var(--select-item-selected-bg);
 @select-item-active-bg: var(--select-item-active-bg);
 @select-item-selected-font-weight: normal;
@@ -148,7 +143,7 @@
 @btn-primary-color: var(--color-gray-1);
 @btn-primary-bg: var(--color-brand-6);
 @btn-shadow: 0 2px 0 rgba(0, 0, 0, 0);
-@btn-line-height: 23px;
+@btn-line-height: 21px;
 @btn-disable-color: var(--btn-disable-color);
 @btn-disable-bg: var(--btn-disable-bg);
 @btn-disable-border: var(--btn-disable-border);
@@ -162,7 +157,7 @@
 
 // Outline
 // ---
-@outline-width: 1px;
+@outline-width: 0px;
 @outline-blur-size: 0px;
 @outline-color: var(--theme-border-focus-color);
 
@@ -177,7 +172,9 @@
 
 // Box-shadow
 // ---
-@shadow-2: var(--shadow-1);
+// 与antd的相同，另外theme定了这个值，覆盖另外theme
+@shadow-2: 0 3px 6px -4px rgba(0, 0, 0, .12), 0 6px 16px 0 rgba(0, 0, 0, .08),
+    0 9px 28px 8px rgba(0, 0, 0, .05);
 
 // Avatar
 // --
@@ -188,12 +185,11 @@
 @avatar-font-size-base: 12px;
 @avatar-font-size-lg: 14px;
 
+@height-base: 30px;
+@height-lg: 40px;
+@height-sm: 24px;
+
 // 自定义的一些less变量patch，放在最下面
-// ----
-@height-s: 24px;
-@height-m: 30px;
-@height-l: 40px;
-@height-xl: 50px;
 
 // Tag
 @tag-default-bg: var(--tag-default-bg);
@@ -205,7 +201,7 @@
 //--
 @table-row-hover-bg: var(--color-gray-3);
 
-// pagination
+// Pagination
 //--
 @pagination-item-bg-active: var(--color-brand-1);
 

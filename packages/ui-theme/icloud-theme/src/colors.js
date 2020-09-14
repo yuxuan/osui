@@ -129,7 +129,7 @@ exports.rotatingColors = {
 // ui标准色盘，50个颜色
 exports.uiColors = {
     // 品牌色
-    '--color-brand-1': '#f2f8ff',
+    '--color-brand-1': '#eaf6fe',
     '--color-brand-2': '#d3e9ff',
     '--color-brand-3': '#a3d3ff',
     '--color-brand-4': '#73beff',
@@ -238,9 +238,9 @@ exports.presetColors = {
     '--alert-error-bg-color': 'var(--color-error-1)',
     '--alert-error-border-color': 'var(--theme-error-color)',
     '--alert-error-icon-color': 'var(--theme-error-color)',
-    '--alert-info-bg-color': 'var(--color-brand-2)',
-    '--alert-info-border-color': 'var(--color-brand-5)',
-    '--alert-info-icon-color': 'var(--color-brand-5)',
+    '--alert-info-bg-color': 'var(--color-gray-1)',
+    '--alert-info-border-color': 'var(--theme-border-color-base)',
+    '--alert-info-icon-color': 'var(--color-brand-6)',
     '--alert-success-bg-color': 'var(--color-success-1)',
     '--alert-success-border-color': 'var(--theme-success-color)',
     '--alert-success-icon-color': 'var(--theme-success-color)',
@@ -267,6 +267,9 @@ exports.presetColors = {
     '--progress-primary-text-color': 'var(--color-gray-7)',
     '--select-item-active-bg': 'var(--theme-secondary-color-hover)',
     '--select-item-selected-bg': 'var(--theme-secondary-color-hover)',
+    '--select-arrow-transition': 'transform .3s, -webkit-transform .3s',
+    '--select-arrow-open-transform-rotate': 'rotate(180deg)',
+    '--select-arrow-hover-color': 'var(--theme-primary-color-hover)',
     '--table-row-hover-bg': 'var(--color-brand-1)',
     '--table-header-bg': 'transparent',
     '--table-header-color': 'var(--color-gray-7)',

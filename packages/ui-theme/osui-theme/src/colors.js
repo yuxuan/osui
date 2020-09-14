@@ -269,6 +269,9 @@ exports.presetColors = {
     '--progress-primary-text-color': 'var(--color-gray-7)',
     '--select-item-active-bg': 'var(--theme-secondary-color-hover)',
     '--select-item-selected-bg': 'var(--color-brand-1)',
+    '--select-arrow-transition': 'none',
+    '--select-arrow-open-transform': 'none',
+    '--select-arrow-hover-color': 'var(--theme-text-color)',
     '--shadow-1': '0 4px 8px -2px rgba(9, 30, 66, 0.25), 0 0 1px 0 rgba(9, 30, 66, 0.31)', // 和antd的shadow-1的不一样，用于气泡
     '--shadow-2': '0 8px 16px -4px rgba(9, 30, 66, 0.25)',
     '--table-header-bg': 'transparent',

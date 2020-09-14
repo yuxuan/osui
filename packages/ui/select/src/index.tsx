@@ -20,7 +20,7 @@ export interface OSUISelectType extends OSUISelectFC {
 }
 
 function InternalOSUISelect<R, T>(props: OSUISelectProps<T>, ref: React.Ref<R>): React.ReactElement | null {
-    const {size, className, noBorder, loading, ...restProps} = props;
+    const {className, noBorder, loading, ...restProps} = props;
     // 暂时用，后面需要透传下去
     const {mode, dropdownClassName} = restProps;
 
