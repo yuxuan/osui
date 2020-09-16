@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@0.5.1...@osui/select@0.5.2) (2020-09-16)
+
+
+### Bug Fixes
+
+* 调整select multiple checkbox大小 ([e5dd7ce](https://gitee.com/gitee-fe/osui/tree/master/commits/e5dd7ce69c50fc76cc2a04e928df9f4e3ca44306))
+
+
+
+
+
 ## [0.5.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@0.5.0...@osui/select@0.5.1) (2020-09-16)
 
 
