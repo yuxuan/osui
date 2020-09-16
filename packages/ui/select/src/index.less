@@ -98,7 +98,7 @@
     // 以下通过使用::before画出来未选中时的边框，border可以通过variables控制，TODO：大小也可以控制，但是position要相应调整
     .ant-select-item.ant-select-item-option {
         .ant-select-item-option-content::before {
-            @checkbox-size: 12px;
+            @checkbox-size: 13px;
 
             position: absolute;
             top: 27%;
@@ -119,9 +119,11 @@
     }
 
     // 以下调整选中时的icon，外面可以进行替换
-    .ant-select-item-option-selected:not(.ant-select-item-option-disabled) .ant-select-item-option-state {
-        position: absolute;
-        top: 17%;
-        left: 16px;
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+        .ant-select-item-option-state {
+            position: absolute;
+            top: 17%;
+            left: 16px;
+        }
     }
 }
