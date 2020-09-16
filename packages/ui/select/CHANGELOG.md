@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@0.5.0...@osui/select@0.5.1) (2020-09-16)
+
+
+### Bug Fixes
+
+* ant-select 多选样式调整 ([70338df](https://gitee.com/gitee-fe/osui/tree/master/commits/70338df143036b459cc8b4f530d7909c13ceece1))
+
+
+
+
+
 # [0.5.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@0.4.3...@osui/select@0.5.0) (2020-09-14)
 
 
