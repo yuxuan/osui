@@ -217,6 +217,7 @@ exports.presetColors = {
     '--theme-primary-color-active': 'var(--color-brand-7)',
     '--theme-primary-color-hover': 'var(--color-brand-5)',
     '--theme-primary-color': 'var(--color-brand-6)',
+    '--theme-placeholder-color': 'var(--color-gray-7)',
     '--theme-secondary-color-active': 'var(--color-brand-3)',
     '--theme-secondary-color-hover': 'var(--color-brand-1)',
     '--theme-secondary-color': 'var(--color-brand-2)',
