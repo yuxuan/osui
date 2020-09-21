@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconSearch, IconHome } from '@osui/icons';
-import OSUIButton from '@osui/button';
+import OSUIButton from '../src';
 
 export default {
     title: 'Button',
@@ -15,7 +15,7 @@ export const Demo = () => {
                 <OSUIButton type="primary" disabled style={{ 'margin': '0 20px 20px 0' }}>主要按钮</OSUIButton>
             </div>
             <div>
-                <OSUIButton type="strong" icon={<IconHome />} style={{ 'margin': '0 20px 20px 0' }}>次要按钮</OSUIButton>
+                <OSUIButton type="strong" style={{ 'margin': '0 20px 20px 0' }}>次要按钮</OSUIButton>
                 <OSUIButton type="strong" loading style={{ 'margin': '0 20px 20px 0' }}>次要按钮</OSUIButton>
                 <OSUIButton type="strong" disabled style={{ 'margin': '0 20px 20px 0' }}>次要按钮</OSUIButton>
             </div>
@@ -30,9 +30,9 @@ export const Demo = () => {
                 <OSUIButton type="link" disabled style={{ 'margin': '0 20px 20px 0' }}>文字按钮</OSUIButton>
             </div>
             <div>
-                <OSUIButton type="icon" icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
-                <OSUIButton type="icon" disabled icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
-                <OSUIButton type="icon" loading icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
+                <OSUIButton icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
+                <OSUIButton disabled icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
+                <OSUIButton loading icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
             </div>
             <div>
                 <OSUIButton type="only-icon" icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />

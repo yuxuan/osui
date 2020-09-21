@@ -1,18 +1,12 @@
-@osui-back-top-class-prefix: osui-button;
+@osui-button-class-prefix: osui-button;
 
-.@{osui-back-top-class-prefix} {
+.@{osui-button-class-prefix} {
     & > .osui-icon + span {
         margin-left: 4px;
     }
 
     &.ant-btn {
         transition: none;
-    }
-
-    &.ant-btn-default,
-    &.ant-btn-strong,
-    &.ant-btn-primary {
-        min-width: 88px;
     }
 
     &.ant-btn-default {
@@ -67,8 +61,9 @@
             border-color: var(--btn-disable-border);
         }
 
-        &.ant-btn-loading {
+        &.@{osui-button-class-prefix}-loading {
             background: var(--color-brand-2);
+            border-color: var(--color-brand-6);
         }
     }
 
@@ -95,22 +90,20 @@
             border-color: var(--btn-disable-border);
         }
 
-        .ant-btn-loading-icon .anticon-loading {
-            color: var(--color-gray-1);
+        &.@{osui-button-class-prefix}-loading {
+            background: var(--color-brand-6);
+            border-color: var(--color-brand-6);
         }
     }
 
     &.ant-btn-link {
         color: var(--color-brand-6);
         margin: 0;
-        height: 22px;
         padding: 0 4px;
         border: 1px solid transparent;
 
         & span:hover {
-            height: 18px;
             color: var(--color-brand-5);
-            border-radius: 0;
             border-bottom: 1px solid var(--color-brand-5);
         }
 
@@ -128,36 +121,6 @@
         }
     }
 
-    &.ant-btn-icon {
-        width: 32px;
-        height: 32px;
-        background: var(--color-gray-1);
-        border: 1px solid var(--color-gray-5);
-
-        .anticon {
-            color: var(--theme-text-color);
-        }
-
-        &:hover {
-            background: var(--color-gray-3);
-        }
-
-        &:focus {
-            border-color: var(--color-brand-4);
-            box-shadow: var(--theme-component-focus-box-shadow);
-        }
-
-        &:active {
-            background: var(--color-gray-4);
-        }
-
-        &[disabled] {
-            color: var(--btn-disable-color);
-            background: var(--btn-disable-bg);
-            border-color: var(--btn-disable-border);
-        }
-    }
-
     &.ant-btn-only-icon {
         border: none;
 
@@ -167,7 +130,6 @@
 
         &:focus {
             color: var(--theme-text-color);
-            border-radius: @btn-border-radius-base;
             border: 1px solid var(--color-brand-4);
             box-shadow: var(--theme-component-focus-box-shadow);
         }
@@ -182,12 +144,13 @@
             }
         }
     }
-
-    .ant-btn-loading-icon .anticon-loading {
-        color: var(--theme-text-color);
+    // 是否loading的时候隐藏spinner后面的内容
+    &-loading &-icon-spinner + * {
+        display: var(--btn-loading-text-display);
     }
 
-    &.ant-btn-loading .ant-btn-loading-icon + span {
-        display: var(--btn-loading-text-display);
+    &-icon-spinner {
+        vertical-align: -3px;
+        animation: osui-icon-spin 1s infinite linear;
     }
 }
