@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.5.3...@osui/icloud-theme@0.5.4) (2020-09-21)
+
+
+### Bug Fixes
+
+* 调整button loading时的表现 ([91c0e35](https://gitee.com/gitee-fe/osui/tree/master/commits/91c0e354293dfd734a555931173f8a8715d97aa6))
+
+
+
+
+
 ## [0.5.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.5.2...@osui/icloud-theme@0.5.3) (2020-09-16)
 
 
