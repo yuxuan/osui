@@ -58,6 +58,32 @@
             animation: osui-icon-spin 1s infinite linear;
         }
     }
+    // status
+    .ant-form-item-has-error {
+        .ant-input:focus,
+        .ant-input-affix-wrapper:focus,
+        .ant-input-focused,
+        .ant-input-affix-wrapper-focused {
+            background: var(--input-error-focus-background-color);
+
+            input.ant-input {
+                background: var(--input-error-focus-background-color);
+            }
+        }
+    }
+
+    .ant-form-item-has-warning {
+        .ant-input:focus,
+        .ant-input-affix-wrapper:focus,
+        .ant-input-focused,
+        .ant-input-affix-wrapper-focused {
+            background: var(--input-warning-focus-background-color);
+
+            input.ant-input {
+                background: var(--input-warning-focus-background-color);
+            }
+        }
+    }
 }
 
 @keyframes osui-icon-spin {

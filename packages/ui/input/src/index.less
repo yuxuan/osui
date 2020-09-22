@@ -1,8 +1,16 @@
 @osui-input-class-prefix: osui-input;
 
 .@{osui-input-class-prefix} {
+    // focus
     &.ant-input-affix-wrapper:focus,
-    &.ant-input-affix-wrapper-focused {
+    &.ant-input-affix-wrapper-focused,
+    &.ant-input:focus,
+    &.ant-input-focused {
+        background: var(--input-focus-background-color);
         border-color: var(--theme-border-focus-color);
+
+        input.ant-input {
+            background: var(--input-focus-background-color);
+        }
     }
 }
