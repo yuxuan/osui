@@ -31,5 +31,5 @@ else
     mkdir -p packages/ui/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}
     cp packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}.stories.tsx packages/ui/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/index.stories.tsx
     cp packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}.stories.mdx packages/ui/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/index.stories.mdx
-    sed -i.bak "s|../src|@osui/${COMPONENT_NAME_ARG}|" packages/ui/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/index.stories.tsx && rm -- "packages/ui/docs/stories/${TARGET}/${COMPONENT_NAME_ARG}/index.stories.tsx.bak"
+    sed -i.bak "s|../src|@osui/${COMPONENT_NAME_ARG}|" packages/ui/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/index.stories.tsx && rm -- "packages/ui/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/index.stories.tsx.bak"
 fi

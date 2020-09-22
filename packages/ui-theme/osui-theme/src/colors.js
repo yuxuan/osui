@@ -253,6 +253,7 @@ exports.presetColors = {
     '--btn-disable-color': 'var(--theme-disabled-color)',
     '--btn-disable-bg': 'var(--color-gray-1)',
     '--btn-disable-border': 'var(--color-gray-4)',
+    '--btn-border-radius-base': '4px',
     '--collapse-content-bg': 'var(--theme-component-bg)',
     '--collapse-expand-icon-bg': 'var(--color-gray-3)',
     '--collapse-header-bg': 'var(--color-gray-2)',

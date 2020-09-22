@@ -29,12 +29,12 @@ export const Demo = () => {
                 <Button type="link" disabled style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
             </div>
             <div>
-                <Button type="icon" icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
-                <Button type="icon" disabled icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
-                <Button type="icon" loading icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
+                <Button icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
+                <Button disabled icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
+                <Button loading icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
             </div>
             <div>
-                <Button type="only-icon" icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
+                <Button type="only-icon" icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
                 <Button type="only-icon" disabled icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
                 <Button type="only-icon" loading icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
             </div>
