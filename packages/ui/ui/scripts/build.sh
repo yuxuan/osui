@@ -1,6 +1,7 @@
 #!/bin/sh
 # build ui完整库的脚本
 # 注意： 要在 packages/ui/ui/ 目录下运行， 否则 ./src 或者 ../ 这种相对路径会错误
+# 注意： 在MAC下用gsed，在linux下请将gsed替换成sed
 
 rm -rf dist
 
@@ -14,14 +15,14 @@ DEPENDENCIES=""
 
 # 把各个包包名从package.json中读取出来
 find $ROOT -maxdepth 1 -type d | grep -v -E $EXCLUDE_FOLDER | ( while IFS= read -r d; do
-    COMPONENT=`echo $d | sed  's|../||'`
+    COMPONENT=`echo $d | gsed  's|../||'`
     COMPONENT_NAME="$COMPONENT"
     if [ "$COMPONENT_NAME" != "message" ]
     then
-        COMPONENT_NAME=`echo $(tr '[:lower:]' '[:upper:]' <<< ${COMPONENT:0:1})${COMPONENT:1} | sed -E 's/-(.)/\U\1/g'`
+        COMPONENT_NAME=`echo $(tr '[:lower:]' '[:upper:]' <<< ${COMPONENT:0:1})${COMPONENT:1} | gsed -E 's/-(.)/\U\1/g'`
     fi
     echo "building $COMPONENT => $COMPONENT_NAME"
-    PACKAGE_NAME=`cat $d/package.json | grep '"name":' | sed -E 's/"name": "(.*)",/\1/g' | sed -E 's/^[[:space:]]*//'` ;
+    PACKAGE_NAME=`cat $d/package.json | grep '"name":' | gsed -E 's/"name": "(.*)",/\1/g' | gsed -E 's/^[[:space:]]*//'` ;
     echo $PACKAGE_NAME
     DEPENDENCIES+="$PACKAGE_NAME "
     echo "export {default as $COMPONENT_NAME} from '$PACKAGE_NAME';" >> ./src/index.ts
