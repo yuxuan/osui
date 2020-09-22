@@ -3,7 +3,7 @@ import { IconSearch, IconHome } from '@osui/icons';
 import OSUIButton from '../src';
 
 export default {
-    title: 'Button',
+    title: '1-Button',
 };
 
 export const Demo = () => {
@@ -13,11 +13,6 @@ export const Demo = () => {
                 <OSUIButton type="primary" style={{ 'margin': '0 20px 20px 0' }}>主要按钮</OSUIButton>
                 <OSUIButton type="primary" loading style={{ 'margin': '0 20px 20px 0' }}>主要按钮</OSUIButton>
                 <OSUIButton type="primary" disabled style={{ 'margin': '0 20px 20px 0' }}>主要按钮</OSUIButton>
-            </div>
-            <div>
-                <OSUIButton type="strong" style={{ 'margin': '0 20px 20px 0' }}>次要按钮</OSUIButton>
-                <OSUIButton type="strong" loading style={{ 'margin': '0 20px 20px 0' }}>次要按钮</OSUIButton>
-                <OSUIButton type="strong" disabled style={{ 'margin': '0 20px 20px 0' }}>次要按钮</OSUIButton>
             </div>
             <div>
                 <OSUIButton type="default" style={{ 'margin': '0 20px 20px 0' }}>次要按钮</OSUIButton>

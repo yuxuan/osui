@@ -1,5 +1,11 @@
 @osui-button-class-prefix: osui-button;
 
+.button-color-mixin(@color; @background; @border-color) {
+    color: @color;
+    background: @background;
+    border-color: @border-color;
+}
+
 .@{osui-button-class-prefix} {
     & > .osui-icon + span {
         margin-left: 4px;
@@ -13,46 +19,19 @@
         color: var(--theme-text-color);
 
         &:hover {
-            background: var(--color-gray-3);
-            border-color: var(--color-gray-5);
+            background: var(--btn-default-hover-background);
+            border-color: var(--btn-default-hover-border-color);
         }
 
         &:focus {
-            background: var(--color-gray-1);
-            border-color: var(--color-brand-4);
+            color: var(--btn-default-focus-color);
+            background: var(--theme-component-bg);
+            border-color: var(--theme-border-focus-color);
             box-shadow: var(--theme-component-focus-box-shadow);
         }
 
         &:active {
-            background: var(--color-gray-4);
-        }
-
-        &[disabled] {
-            color: var(--btn-disable-color);
-            background: var(--btn-disable-bg);
-            border-color: var(--btn-disable-border);
-        }
-    }
-
-    &.ant-btn-strong {
-        color: var(--color-brand-6);
-        background: var(--color-gray-1);
-        border-color: var(--color-brand-6);
-
-        &:hover {
-            background: var(--color-brand-2);
-            border-color: var(--color-brand-6);
-        }
-
-        &:focus {
-            background: var(--color-gray-1);
-            border-color: var(--color-brand-4);
-            box-shadow: var(--theme-component-focus-box-shadow);
-        }
-
-        &:active {
-            background: var(--color-brand-3);
-            border-color: var(--color-brand-6);
+            background: var(--btn-default-active-background);
         }
 
         &[disabled] {
@@ -62,20 +41,54 @@
         }
 
         &.@{osui-button-class-prefix}-loading {
-            background: var(--color-brand-2);
-            border-color: var(--color-brand-6);
+            color: var(--btn-default-loading-color);
+            background: var(--btn-default-loading-background);
+            border-color: var(--btn-default-loading-border-color);
+        }
+    }
+
+    &.ant-btn-strong {
+        color: var(--theme-primary-color);
+        background: var(--theme-component-bg);
+        border-color: var(--theme-primary-color);
+
+        &:hover {
+            background: var(--btn-strong-hover-background);
+            border-color: var(--theme-primary-color);
+        }
+
+        &:focus {
+            background: var(--theme-component-bg);
+            border-color: var(--theme-border-focus-color);
+            box-shadow: var(--theme-component-focus-box-shadow);
+        }
+
+        &:active {
+            background: var(--btn-strong-active-background);
+            border-color: var(--theme-primary-color);
+        }
+
+        &[disabled] {
+            color: var(--btn-disable-color);
+            background: var(--btn-disable-bg);
+            border-color: var(--btn-disable-border);
+        }
+
+        &.@{osui-button-class-prefix}-loading {
+            background: var(--btn-strong-hover-background);
+            border-color: var(--theme-primary-color);
         }
     }
 
     &.ant-btn-primary {
         &:hover {
-            background: var(--color-brand-5);
-            border-color: var(--color-brand-5);
+            background: var(--btn-primary-hover-background);
+            border-color: var(--btn-primary-hover-border-color);
         }
 
         &:focus {
-            background: var(--color-brand-6);
-            border-color: var(--color-brand-4);
+            background: var(--theme-primary-color);
+            border-color: var(--theme-border-focus-color);
             box-shadow: var(--theme-component-focus-box-shadow);
         }
 
@@ -91,33 +104,38 @@
         }
 
         &.@{osui-button-class-prefix}-loading {
-            background: var(--color-brand-6);
-            border-color: var(--color-brand-6);
+            background: var(--theme-primary-color);
+            border-color: var(--theme-primary-color);
+            color: var(--btn-primary-loading-color);
         }
     }
 
     &.ant-btn-link {
-        color: var(--color-brand-6);
+        color: var(--theme-primary-color);
         margin: 0;
         padding: 0 4px;
         border: 1px solid transparent;
 
         & span:hover {
-            color: var(--color-brand-5);
-            border-bottom: 1px solid var(--color-brand-5);
+            color: var(--btn-primary-hover-background);
+            text-decoration: var(--btn-link-text-decoration);
         }
 
         &:focus {
-            border-color: var(--color-brand-4);
+            border-color: var(--theme-border-focus-color);
             box-shadow: var(--theme-component-focus-box-shadow);
         }
 
         &:active {
-            color: var(--color-brand-7);
+            color: var(--link-color);
         }
 
         &[disabled] {
-            color: var(--color-gray-5);
+            color: var(--btn-disable-color);
+        }
+
+        &.@{osui-button-class-prefix}-loading {
+            color: var(--btn-link-loading-color);
         }
     }
 
@@ -129,13 +147,13 @@
         }
 
         &:focus {
-            color: var(--theme-text-color);
-            border: 1px solid var(--color-brand-4);
+            color: var(--btn-default-focus-color);
+            border: 1px solid var(--theme-border-focus-color);
             box-shadow: var(--theme-component-focus-box-shadow);
         }
 
         &:active {
-            color: var(--theme-text-color);
+            color: var(--btn-default-focus-color);
         }
 
         &[disabled] {
