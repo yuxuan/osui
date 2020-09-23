@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@0.5.2...@osui/button@0.5.3) (2020-09-23)
+
+
+### Bug Fixes
+
+* 调整button icloud样式 ([924aef2](https://gitee.com/gitee-fe/osui/tree/master/commits/924aef2dec2fb1303f77d5fd032f73268b7dab7e))
+* 调整button颜色实现 ([bc17800](https://gitee.com/gitee-fe/osui/tree/master/commits/bc178004aa4d80a5c3f4276556dd7a118cb0125d))
+
+
+
+
+
 ## [0.5.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@0.5.1...@osui/button@0.5.2) (2020-09-22)
 
 **Note:** Version bump only for package @osui/button
