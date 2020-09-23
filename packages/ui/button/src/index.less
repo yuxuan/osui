@@ -1,10 +1,68 @@
 @osui-button-class-prefix: osui-button;
 
+@button-types: default, strong, primary, link, only-icon;
+
 .button-color-mixin(@color; @background; @border-color) {
     color: @color;
     background: @background;
     border-color: @border-color;
 }
+
+.generate(@i: length(@button-types)) when (@i > 0) {
+    @type: extract(@button-types, @i);
+
+    .@{osui-button-class-prefix}.ant-btn-@{type} {
+        .button-color-mixin(
+            ~'var(--btn-@{type}-color)';
+            ~'var(--btn-@{type}-bg)';
+            ~'var(--btn-@{type}-border-color)';
+        );
+
+        &:hover {
+            .button-color-mixin(
+                ~'var(--btn-@{type}-hover-color)';
+                ~'var(--btn-@{type}-hover-bg)';
+                ~'var(--btn-@{type}-hover-border-color)';
+            );
+        }
+
+        &:focus {
+            .button-color-mixin(
+                ~'var(--btn-@{type}-focus-color)';
+                ~'var(--btn-@{type}-focus-bg)';
+                ~'var(--btn-@{type}-focus-border-color)';
+            );
+            box-shadow: var(--theme-component-focus-box-shadow);
+        }
+
+        &:active {
+            .button-color-mixin(
+                ~'var(--btn-@{type}-active-color)';
+                ~'var(--btn-@{type}-active-bg)';
+                ~'var(--btn-@{type}-active-border-color)';
+            );
+        }
+
+        &[disabled] {
+            .button-color-mixin(
+                ~'var(--btn-@{type}-disable-color)';
+                ~'var(--btn-@{type}-disable-bg)';
+                ~'var(--btn-@{type}-disable-border-color)';
+            );
+        }
+
+        &.@{osui-button-class-prefix}-loading {
+            .button-color-mixin(
+                ~'var(--btn-@{type}-loading-color)';
+                ~'var(--btn-@{type}-loading-bg)';
+                ~'var(--btn-@{type}-loading-border-color)';
+            );
+        }
+    }
+    .generate((@i - 1));
+}
+
+.generate;
 
 .@{osui-button-class-prefix} {
     & > .osui-icon + span {
@@ -15,160 +73,22 @@
         transition: none;
     }
 
-    &.ant-btn-default {
-        color: var(--theme-text-color);
-
-        &:hover {
-            background: var(--btn-default-hover-background);
-            border-color: var(--btn-default-hover-border-color);
-        }
-
-        &:focus {
-            color: var(--btn-default-focus-color);
-            background: var(--theme-component-bg);
-            border-color: var(--theme-border-focus-color);
-            box-shadow: var(--theme-component-focus-box-shadow);
-        }
-
-        &:active {
-            background: var(--btn-default-active-background);
-        }
-
-        &[disabled] {
-            color: var(--btn-disable-color);
-            background: var(--btn-disable-bg);
-            border-color: var(--btn-disable-border);
-        }
-
-        &.@{osui-button-class-prefix}-loading {
-            color: var(--btn-default-loading-color);
-            background: var(--btn-default-loading-background);
-            border-color: var(--btn-default-loading-border-color);
-        }
-    }
-
-    &.ant-btn-strong {
-        color: var(--theme-primary-color);
-        background: var(--theme-component-bg);
-        border-color: var(--theme-primary-color);
-
-        &:hover {
-            background: var(--btn-strong-hover-background);
-            border-color: var(--theme-primary-color);
-        }
-
-        &:focus {
-            background: var(--theme-component-bg);
-            border-color: var(--theme-border-focus-color);
-            box-shadow: var(--theme-component-focus-box-shadow);
-        }
-
-        &:active {
-            background: var(--btn-strong-active-background);
-            border-color: var(--theme-primary-color);
-        }
-
-        &[disabled] {
-            color: var(--btn-disable-color);
-            background: var(--btn-disable-bg);
-            border-color: var(--btn-disable-border);
-        }
-
-        &.@{osui-button-class-prefix}-loading {
-            background: var(--btn-strong-hover-background);
-            border-color: var(--theme-primary-color);
-        }
-    }
-
-    &.ant-btn-primary {
-        &:hover {
-            background: var(--btn-primary-hover-background);
-            border-color: var(--btn-primary-hover-border-color);
-        }
-
-        &:focus {
-            background: var(--theme-primary-color);
-            border-color: var(--theme-border-focus-color);
-            box-shadow: var(--theme-component-focus-box-shadow);
-        }
-
-        &:active {
-            background: var(--color-brand-7);
-            border-color: var(--color-brand-7);
-        }
-
-        &[disabled] {
-            color: var(--btn-disable-color);
-            background: var(--btn-disable-bg);
-            border-color: var(--btn-disable-border);
-        }
-
-        &.@{osui-button-class-prefix}-loading {
-            background: var(--theme-primary-color);
-            border-color: var(--theme-primary-color);
-            color: var(--btn-primary-loading-color);
-        }
-    }
-
-    &.ant-btn-link {
-        color: var(--theme-primary-color);
-        margin: 0;
-        padding: 0 4px;
-        border: 1px solid transparent;
-
-        & span:hover {
-            color: var(--btn-primary-hover-background);
-            text-decoration: var(--btn-link-text-decoration);
-        }
-
-        &:focus {
-            border-color: var(--theme-border-focus-color);
-            box-shadow: var(--theme-component-focus-box-shadow);
-        }
-
-        &:active {
-            color: var(--link-color);
-        }
-
-        &[disabled] {
-            color: var(--btn-disable-color);
-        }
-
-        &.@{osui-button-class-prefix}-loading {
-            color: var(--btn-link-loading-color);
-        }
-    }
-
-    &.ant-btn-only-icon {
-        border: none;
-
-        .anticon {
-            color: var(--theme-text-color);
-        }
-
-        &:focus {
-            color: var(--btn-default-focus-color);
-            border: 1px solid var(--theme-border-focus-color);
-            box-shadow: var(--theme-component-focus-box-shadow);
-        }
-
-        &:active {
-            color: var(--btn-default-focus-color);
-        }
-
-        &[disabled] {
-            .anticon {
-                color: var(--color-gray-5);
-            }
-        }
-    }
-    // 是否loading的时候隐藏spinner后面的内容
-    &-loading &-icon-spinner + * {
+    // loading的时候隐藏spinner后面的内容，除非强制keep-children
+    &-loading &-icon-spinner:not(&-keep-children) + * {
         display: var(--btn-loading-text-display);
     }
 
     &-icon-spinner {
         vertical-align: -3px;
         animation: osui-icon-spin 1s infinite linear;
+    }
+
+    &.ant-btn-link {
+        margin: var(--btn-link-margin);
+        padding: var(--btn-link-padding);
+
+        & span:hover {
+            text-decoration: var(--btn-link-text-decoration);
+        }
     }
 }

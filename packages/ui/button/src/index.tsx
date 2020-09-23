@@ -21,11 +21,11 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = ({t
     let innerIcon = icon;
     let innerStyle = style;
 
-    // 当loading且有icon的button时，icon替换成spinner
+    // 当loading且有icon的button时，icon替换成spinner，不论什么情况都要保持后面的chidlren
     if (loading && icon) {
-        innerIcon = <IconSpinner className={`${clsPrefix}-icon-spinner`} />;
+        innerIcon = <IconSpinner className={`${clsPrefix}-icon-spinner ${clsPrefix}-keep-children`} />;
     }
-    // 当loading但没有icon时，children替换成spinner，且最小宽度保留88
+    // 当loading但没有icon时，children替换成spinner，且最小宽度保留88，根据主题保留或者隐藏children
     if (loading && !icon) {
         innerIcon = <IconSpinner className={`${clsPrefix}-icon-spinner`} />;
         innerStyle = {minWidth: 88, ...style};
