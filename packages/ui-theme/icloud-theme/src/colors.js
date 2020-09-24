@@ -375,5 +375,12 @@ exports.presetColors = {
     '--tag-yellow-color': 'var(--color-warning-1)',
     '--tooltip-bg': 'var(--color-gray-9)',
     '--tooltip-color': 'var(--color-gray-1)',
+    '--pagination-item-border-color': 'var(--theme-component-bg)',
+    '--pagination-item-hover-bg': 'var(--theme-component-bg)',
+    '--pagination-item-hover-color': 'var(--theme-primary-color-hover)',
+    '--pagination-item-hover-border-color': 'var(--theme-primary-color-hover)',
+    '--pagination-item-active-border-color': 'var(--theme-primary-color)',
+    '--pagination-item-active-bg': 'var(--theme-component-bg)',
+    '--pagination-item-active-color': 'var(--theme-primary-color)',
     ...buttonColors,
 };
