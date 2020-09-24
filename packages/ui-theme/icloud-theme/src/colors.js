@@ -382,5 +382,13 @@ exports.presetColors = {
     '--pagination-item-active-border-color': 'var(--theme-primary-color)',
     '--pagination-item-active-bg': 'var(--theme-component-bg)',
     '--pagination-item-active-color': 'var(--theme-primary-color)',
+    '--checkbox-hover-border-color': 'var(--theme-primary-color-hover)',
+    '--checkbox-hover-bg': 'var(--theme-component-bg)',
+    '--checkbox-focus-bg': 'var(--theme-component-bg)',
+    '--checkbox-checked-focus-border-color': 'var(--theme-primary-color)',
+    '--checkbox-checked-focus-box-shadow': 'var(--theme-component-focus-box-shadow)',
+    '--checkbox-checked-focus-bg': 'var(--theme-primary-color)',
+    '--checkbox-disabled-bg': 'var(--theme-disabled-bg)',
+    '--checkbox-checked-border-color': 'var(--theme-border-color-base)',
     ...buttonColors,
 };
