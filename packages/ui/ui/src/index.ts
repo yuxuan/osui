@@ -25,6 +25,7 @@ export {default as Avatar} from '@osui/avatar';
 export {default as Switch} from '@osui/switch';
 export {default as Select} from '@osui/select';
 export {default as Modal} from '@osui/modal';
+export {default as Space} from '@osui/space';
 export {default as Timeline} from '@osui/timeline';
 export {default as Tag} from '@osui/tag';
 export {default as ToggleButton} from '@osui/toggle-button';

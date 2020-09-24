@@ -1,0 +1,21 @@
+@osui-space-class-prefix: osui-space;
+
+.@{osui-space-class-prefix} {
+    &-small {
+        .ant-space-item:not(:last-child) {
+            margin-right: var(--space-small) !important;
+        }
+    }
+
+    &-middle {
+        .ant-space-item:not(:last-child) {
+            margin-right: var(--space-middle) !important;
+        }
+    }
+
+    &-large {
+        .ant-space-item:not(:last-child) {
+            margin-right: var(--space-large) !important;
+        }
+    }
+}

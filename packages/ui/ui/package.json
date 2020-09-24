@@ -60,6 +60,7 @@
         "@osui/radio": "^0.5.1",
         "@osui/search-select-list": "^0.5.1",
         "@osui/select": "^0.5.4",
+        "@osui/space": "0.5.2",
         "@osui/switch": "^0.5.1",
         "@osui/table": "^0.5.1",
         "@osui/tabs": "^0.5.1",
