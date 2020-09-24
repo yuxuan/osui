@@ -16,6 +16,11 @@ export const Demo = () => {
                 <Button type="primary" disabled style={{ 'margin': '0 20px 20px 0' }}>主要按钮</Button>
             </div>
             <div>
+                <Button type="strong" style={{ 'margin': '0 20px 20px 0' }}>次要按钮</Button>
+                <Button type="strong" loading style={{ 'margin': '0 20px 20px 0' }}>次要按钮</Button>
+                <Button type="strong" disabled style={{ 'margin': '0 20px 20px 0' }}>次要按钮</Button>
+            </div>
+            <div>
                 <Button type="default" style={{ 'margin': '0 20px 20px 0' }}>次要按钮</Button>
                 <Button type="default" loading style={{ 'margin': '0 20px 20px 0' }}>次要按钮</Button>
                 <Button type="default" disabled style={{ 'margin': '0 20px 20px 0' }}>次要按钮</Button>
@@ -52,9 +57,46 @@ export const Demo = () => {
 
 export const Group = () => {
     return (
-        <Space>
-            <Button type="primary">primary</Button>
-            <Button>secondary</Button>
-        </Space>
+        <>
+            <Space>
+                <Button size="small">取消</Button>
+                <Button type="primary" size="small">确定</Button>
+            </Space>
+            <br />
+            <br />
+            <Space>
+                <Button>取消</Button>
+                <Button type="primary">确定</Button>
+            </Space>
+            <br />
+            <br />
+            <Space>
+                <Button size="large">取消</Button>
+                <Button size="large" type="primary">确定</Button>
+            </Space>
+        </>
+    );
+};
+
+export const Face = () => {
+    return (
+        <>
+            <Space>
+                <Button success>成功按钮</Button>
+                <Button success type="primary">成功按钮</Button>
+            </Space>
+            <br />
+            <br />
+            <Space>
+                <Button error>失败按钮</Button>
+                <Button error type="primary">失败按钮</Button>
+            </Space>
+            <br />
+            <br />
+            <Space>
+                <Button warning>失败按钮</Button>
+                <Button warning type="primary">失败按钮</Button>
+            </Space>
+        </>
     );
 };

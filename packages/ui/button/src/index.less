@@ -60,10 +60,64 @@
             );
         }
     }
+
     .generate((@i - 1));
 }
 
 .generate;
+
+@osui-buttno-faces: success, error, warning;
+
+.generate-face(@i: length(@osui-buttno-faces)) when (@i > 0) {
+    @face: extract(@osui-buttno-faces, @i);
+
+    .@{osui-button-class-prefix}.ant-btn-default.@{osui-button-class-prefix}-face-@{face} {
+        color: ~"var(--theme-@{face}-color)";
+        border-color: ~"var(--theme-@{face}-color)";
+
+        &:hover {
+            color: ~"var(--theme-@{face}-color-hover)";
+            border-color: ~"var(--theme-@{face}-color-hover)";
+        }
+
+        &:active {
+            color: ~"var(--theme-@{face}-color-hover)";
+            border-color: ~"var(--theme-@{face}-color-hover)";
+            background-color: ~"var(--color-@{face}-1)";
+        }
+
+        &:focus {
+            color: ~"var(--theme-@{face}-color)";
+            border-color: ~"var(--theme-@{face}-color)";
+        }
+    }
+
+    .@{osui-button-class-prefix}.ant-btn-primary.@{osui-button-class-prefix}-face-@{face} {
+        background-color: ~"var(--theme-@{face}-color)";
+        border-color: ~"var(--theme-@{face}-color)";
+
+        &:hover {
+            background-color: ~"var(--theme-@{face}-color-hover)";
+            border-color: ~"var(--theme-@{face}-color-hover)";
+        }
+
+        &:active {
+            background-color: ~"var(--theme-@{face}-color-active)";
+            border-color: ~"var(--theme-@{face}-color-active)";
+            color: var(--color-gray-1);
+        }
+
+        &:focus {
+            background-color: ~"var(--theme-@{face}-color)";
+            border-color: ~"var(--theme-@{face}-color)";
+            color: var(--color-gray-1);
+        }
+    }
+
+    .generate-face((@i - 1));
+}
+
+.generate-face;
 
 .@{osui-button-class-prefix} {
     & > .osui-icon + span {
@@ -72,6 +126,7 @@
 
     &.ant-btn {
         transition: none;
+        border-radius: var(--btn-border-radius-base);
     }
 
     // loading的时候隐藏spinner后面的内容，除非强制keep-children

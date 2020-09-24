@@ -9,15 +9,17 @@ const clsPrefix = 'osui-button';
 
 export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
     type?: ButtonType | 'strong' | 'only-icon';
+    success?: boolean;
+    error?: boolean;
+    warning?: boolean;
 }
 
-/* eslint-disable max-len */
-export interface ButtonInterface extends React.ForwardRefExoticComponent<ButtonProps & React.RefAttributes<HTMLElement>> {
-    Group: typeof AntdButton.Group;
-}
+export type ButtonInterface = React.ForwardRefExoticComponent<ButtonProps & React.RefAttributes<HTMLElement>>;
 
 /* eslint-disable complexity */
-const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = ({type = 'default', loading, icon, style, disabled, ...props}, ref) => {
+const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
+    {type = 'default', loading, icon, style, disabled, ...props}, ref
+) => {
     let innerIcon = icon;
     let innerStyle = style;
 
@@ -31,6 +33,8 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = ({t
         innerStyle = {minWidth: 88, ...style};
     }
 
+    const {success, error, danger, warning} = props;
+
     return (
         <AntdButton
             ref={ref as any}
@@ -43,6 +47,9 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = ({t
                     {
                         [`${clsPrefix}-loading`]: loading,
                         [`${clsPrefix}-disabled`]: loading || disabled,
+                        [`${clsPrefix}-face-success`]: success,
+                        [`${clsPrefix}-face-error`]: error || danger,
+                        [`${clsPrefix}-face-warning`]: warning,
                     }
                 )
             }
@@ -54,7 +61,5 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = ({t
 };
 
 const Button = React.forwardRef<unknown, ButtonProps>(InternalButton) as ButtonInterface;
-
-Button.Group = AntdButton.Group;
 
 export default Button;
