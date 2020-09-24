@@ -1,6 +1,6 @@
 {
     "name": "@osui/space",
-    "version": "0.5.2",
+    "version": "0.5.3",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -59,7 +59,5 @@
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
-    },
-    "dependencies": {
     }
 }

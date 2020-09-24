@@ -1,6 +1,6 @@
 {
     "name": "@osui/modal",
-    "version": "0.5.3",
+    "version": "0.5.4",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -52,7 +52,7 @@
     "author": "huoyuxuan,liushaozhen",
     "license": "MIT",
     "dependencies": {
-        "@osui/button": "^0.5.3",
+        "@osui/button": "^0.5.4",
         "classnames": "^2.2.6"
     },
     "publishConfig": {
