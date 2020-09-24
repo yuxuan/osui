@@ -416,5 +416,13 @@ exports.presetColors = {
     '--checkbox-checked-focus-bg': 'var(--theme-primary-color)',
     '--checkbox-disabled-bg': 'var(--color-gray-1)',
     '--checkbox-checked-border-color': 'var(--theme-border-color-base)',
+    '--radio-hover-border-color': 'var(--theme-border-color-base)',
+    '--radio-hover-bg': 'var(--color-gray-3)',
+    '--radio-checked-color': 'var(--color-brand-5)',
+    '--radio-disabled-border-color': 'var(--theme-disabled-bg)',
+    '--radio-disabled-bg': 'var(--color-gray-1)',
+    '--radio-button-disabled-color': 'var(--theme-disabled-color)',
+    '--radio-button-disabled-border-color': 'var(--color-gray-4)',
+    '--radio-button-disabled-bg': 'var(--color-gray-1)',
     ...buttonColors,
 };
