@@ -424,5 +424,6 @@ exports.presetColors = {
     '--radio-button-disabled-color': 'var(--theme-disabled-color)',
     '--radio-button-disabled-border-color': 'var(--color-gray-4)',
     '--radio-button-disabled-bg': 'var(--color-gray-1)',
+    '--switch-min-width': '44px',
     ...buttonColors,
 };

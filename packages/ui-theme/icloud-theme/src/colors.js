@@ -285,8 +285,8 @@ exports.presetColors = {
     '--theme-border-color-split': 'var(--color-gray-4)',
     '--theme-component-bg': 'var(--color-gray-1)',
     '--theme-component-focus-box-shadow': 'none',
-    '--theme-disabled-bg': 'var(--color-gray-3)',
-    '--theme-disabled-color': 'var(--color-gray-7)',
+    '--theme-disabled-bg': 'var(--color-gray-5)',
+    '--theme-disabled-color': 'var(--color-gray-6)',
     '--theme-error-color-active': 'var(--color-error-7)',
     '--theme-error-color-hover': 'var(--color-error-5)',
     '--theme-error-color': 'var(--color-error-6)',
@@ -398,5 +398,6 @@ exports.presetColors = {
     '--radio-button-disabled-color': 'var(--color-gray-6)',
     '--radio-button-disabled-border-color': 'var(--color-gray-3)',
     '--radio-button-disabled-bg': 'var(--color-gray-4)',
+    '--switch-min-width': '50px',
     ...buttonColors,
 };
