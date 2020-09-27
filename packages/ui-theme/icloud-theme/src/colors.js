@@ -399,5 +399,12 @@ exports.presetColors = {
     '--radio-button-disabled-border-color': 'var(--color-gray-3)',
     '--radio-button-disabled-bg': 'var(--color-gray-4)',
     '--switch-min-width': '50px',
+    '--modal-header-bg': 'var(--color-gray-3)',
+    '--modal-no-border-padding': '14px 20px',
+    '--modal-no-border-body-padding-top': '0px',
+    '--modal-padding': '9px 20px',
+    '--modal-header-close-size': '40px',
+    '--modal-close-icon-height': '16px',
+    '--modal-close-icon-line-height': '40px',
     ...buttonColors,
 };

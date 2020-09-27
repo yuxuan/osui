@@ -1,57 +1,94 @@
 @osui-modal-class-prefix: osui-modal;
 
 .@{osui-modal-class-prefix} {
-    &.@{osui-modal-class-prefix}-body-border {
-        .ant-modal-header {
-            border-bottom: 1px solid var(--theme-border-color-split);
-            padding-bottom: 24px;
-        }
 
-        .ant-modal-footer {
-            padding-top: 24px;
-            border-top: 1px solid var(--theme-border-color-split);
-        }
-
-        .ant-modal-body {
-            overflow-y: auto;
-        }
+    .ant-modal-close-x {
+        line-height: var(--modal-close-icon-line-height);
     }
 
     .ant-modal-header {
-        border-bottom: none;
-        padding-top: 24px;
-        padding-bottom: 0;
+        padding: var(--modal-padding);
+    }
 
+    // no-border
+    &-no-border {
         .ant-modal-title {
-            line-height: 24px;
+            line-height: var(--modal-title-line-height);
         }
-    }
 
-    .ant-modal-footer {
-        border-top: none;
-        padding: 0 30px 24px 24px;
-
-        .ant-btn {
-            min-width: 65px;
+        .ant-modal-header {
+            border-bottom: 1px solid var(--theme-component-bg);
+            padding: var(--modal-no-border-padding);
         }
-    }
 
-    .ant-modal-body {
-        padding: 16px 32px 16px 24px;
+        .ant-modal-body {
+            padding-top: var(--modal-no-border-body-padding-top);
+        }
+
+        .ant-modal-footer {
+            border-top: 1px solid var(--theme-component-bg);
+        }
     }
 
     .ant-modal-content {
         .ant-modal-close {
-            top: 8px;
-            right: 3px;
-
             svg {
-                height: 24px;
+                height: var(--modal-close-icon-height);
             }
 
             .ant-modal-close-icon {
                 color: var(--theme-text-color);
             }
         }
+    }
+
+    &-auto-height {
+        .ant-modal-body {
+            overflow: auto;
+            height: auto;
+            max-height: calc(100vh - 90px - 100px);
+            min-height: 240px;
+        }
+    }
+}
+
+.@{osui-modal-class-prefix}-confirm {
+
+    &-icon {
+        float: left;
+        margin-right: 20px;
+    }
+
+    &-icon svg,
+    .anticon {
+        width: 36px;
+        height: 36px;
+        font-size: 36px;
+    }
+
+    .ant-modal-confirm-body {
+        min-height: 76px;
+        border-bottom: 1px solid var(--theme-border-color-base);
+    }
+
+    .ant-modal-confirm-btns {
+        margin-top: 15px;
+    }
+
+    &.ant-modal-confirm-error .ant-modal-confirm-body > &-icon svg {
+        color: var(--theme-error-color);
+    }
+
+    &.ant-modal-confirm-warning .ant-modal-confirm-body>&-icon svg,
+    &.ant-modal-confirm-confirm .ant-modal-confirm-body>&-icon svg {
+        color: var(--theme-warning-color);
+    }
+
+    &.ant-modal-confirm-info .ant-modal-confirm-body>&-icon svg {
+        color: var(--theme-info-color);
+    }
+
+    &.ant-modal-confirm-success .ant-modal-confirm-body>&-icon svg {
+        color: var(--theme-success-color);
     }
 }
