@@ -1,5 +1,5 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo} from './icloud.stories'
+import {Demo, Size, Confirm, AutoHeight} from './index.stories'
 
 <Meta title="Modal" component={Demo} />
 
@@ -17,9 +17,38 @@ import {Demo} from './icloud.stories'
 |:---|:----:|:---:|------:|
 |bodyHeight|`body`数据较多，可以设置高度，会显示`header`和`footer`的边框|number|-|
 
+## 基本用法
 
 <Preview>
   <Story name="Demo">
         {Demo()}
+  </Story>
+</Preview>
+
+## 尺寸
+
+大、中、小三种尺寸
+
+<Preview>
+  <Story name="Size">
+        {Size()}
+  </Story>
+</Preview>
+
+## 确认弹窗
+
+二次确认型弹窗—所有需要用户进行二次确认动作时，可以使用此弹窗
+
+<Preview>
+  <Story name="Confirm">
+        {Confirm()}
+  </Story>
+</Preview>
+
+## 根据内容自适应高度
+
+<Preview>
+  <Story name="Auto Height">
+        {AutoHeight()}
   </Story>
 </Preview>
