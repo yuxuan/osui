@@ -4,30 +4,30 @@ import Button from '@osui/button';
 import Checkbox from '@osui/checkbox';
 import DatePicker from '@osui/date-picker';
 import Select from '@osui/select';
-import {Cascader, InputNumber} from 'antd';
+import {TimePicker, Cascader, InputNumber} from 'antd';
 import Form from '../src';
 
 export default {
     title: 'Form',
 };
 
-const layout = {
-    labelCol: {
-        span: 6,
-    },
-    wrapperCol: {
-        span: 18,
-    },
-};
-
-const tailLayout = {
-    wrapperCol: {
-        offset: 6,
-        span: 18,
-    },
-};
-
 export const Demo = () => {
+    const layout = {
+        labelCol: {
+            span: 6,
+        },
+        wrapperCol: {
+            span: 18,
+        },
+    };
+
+    const tailLayout = {
+        wrapperCol: {
+            offset: 6,
+            span: 18,
+        },
+    };
+
     const onFinish = values => {
         console.log('Success:', values);
     };
@@ -85,28 +85,116 @@ export const Demo = () => {
     );
 };
 
+export const ValidateMessageDemo = () => {
+    const formItemLayout = {
+        labelCol: {
+            span: 5,
+        },
+        wrapperCol: {
+            span: 12,
+        },
+    };
+    const tailLayout = {
+        wrapperCol: {
+            offset: 6,
+            span: 18,
+        },
+    };
+    const onFinish = values => {
+        console.log('Success:', values);
+    };
+    const onFinishFailed = values => {
+        console.log('Success:', values);
+    };
+    return (
+        <Form {...formItemLayout} onFinish={onFinish} onFinishFailed={onFinishFailed}>
+            <Form.Item
+                label="Username"
+                name="username"
+                hint="由大小写字母、数字以及-_/.特殊字符组成"
+                validateMessageLayout="inline"
+                rules={[
+                    {
+                        required: true,
+                        message: '必填字段',
+                    },
+                    {
+                        max: 10,
+                        message: '最多不超过10个字',
+                    },
+                    {
+                        type: 'number',
+                        message: '只能是数字',
+                    },
+                ]}
+            >
+                <Input />
+            </Form.Item>
+            <Form.Item label="Warning" name="what" validateStatus="warning">
+                <Input />
+            </Form.Item>
+            <Form.Item {...tailLayout}>
+                <Button type="primary" htmlType="submit">
+                    Submit
+                </Button>
+            </Form.Item>
+        </Form>
+    );
+};
+
+
 export const StatusDemo = () => {
     const { Option } = Select;
-
+    const formItemLayout = {
+        labelCol: {
+            span: 5,
+        },
+        wrapperCol: {
+            span: 12,
+        },
+    };
+    const tailLayout = {
+        wrapperCol: {
+            offset: 6,
+            span: 18,
+        },
+    };
+    const onFinish = values => {
+        console.log('Success:', values);
+    };
+    const onFinishFailed = values => {
+        console.log('Success:', values);
+    };
     return (
-        <Form layout="vertical">
+        <Form {...formItemLayout} onFinish={onFinish} onFinishFailed={onFinishFailed}>
             <Form.Item
-                label="Fail"
-                validateStatus="error"
-                help="Should be combination of numbers & alphabets"
+                label="Username"
+                name="username"
+                hint="由大小写字母、数字以及-_/.特殊字符组成"
+                validateMessageLayout="inline"
+                rules={[
+                    {
+                        required: true,
+                        message: '必填字段',
+                    },
+                    {
+                        max: 10,
+                        message: '最多不超过10个字',
+                    },
+                    {
+                        type: 'number',
+                        message: '只能是数字',
+                    },
+                ]}
             >
-                <Input placeholder="unavailable choice" id="error" />
+                <Input />
             </Form.Item>
-
-            <Form.Item label="Warning" validateStatus="warning">
-                <Input placeholder="Warning" id="warning" />
+            <Form.Item label="Warning" name="what" validateStatus="warning">
+                <Input />
             </Form.Item>
-
             <Form.Item
                 label="Validating"
-
                 validateStatus="validating"
-                help="The information is being validated..."
             >
                 <Input placeholder="I'm the content is being validated" id="validating" />
             </Form.Item>
@@ -121,7 +209,6 @@ export const StatusDemo = () => {
 
             <Form.Item
                 label="Fail"
-
                 validateStatus="error"
                 help="Should be combination of numbers & alphabets"
             >
@@ -130,6 +217,14 @@ export const StatusDemo = () => {
 
             <Form.Item label="Success" validateStatus="success">
                 <DatePicker
+                    style={{
+                        width: '100%',
+                    }}
+                />
+            </Form.Item>
+
+            <Form.Item label="Warning" validateStatus="warning">
+                <TimePicker
                     style={{
                         width: '100%',
                     }}
@@ -146,7 +241,6 @@ export const StatusDemo = () => {
 
             <Form.Item
                 label="Validating"
-
                 validateStatus="validating"
                 help="The information is being validated..."
             >
@@ -172,7 +266,7 @@ export const StatusDemo = () => {
                     help="Please select the correct date"
                     style={{
                         display: 'inline-block',
-                        width: 'calc(50% - 90px)',
+                        width: 'calc(50% - 12px)',
                     }}
                 >
                     <DatePicker />
@@ -205,16 +299,22 @@ export const StatusDemo = () => {
                 />
             </Form.Item>
 
-            <Form.Item label="Success" validateStatus="success" help="hey hey">
+            <Form.Item label="Success" validateStatus="success">
                 <Input allowClear placeholder="with allowClear" />
             </Form.Item>
 
-            <Form.Item label="Warning" validateStatus="warning" help="hey hey">
+            <Form.Item label="Warning" validateStatus="warning">
                 <Input.Password placeholder="with input password" />
             </Form.Item>
 
             <Form.Item label="Error" validateStatus="error">
                 <Input.Password allowClear placeholder="with input password and allowClear" />
             </Form.Item>
-        </Form>);
+            <Form.Item {...tailLayout}>
+                <Button type="primary" htmlType="submit">
+                    Submit
+                </Button>
+            </Form.Item>
+        </Form>
+    );
 };

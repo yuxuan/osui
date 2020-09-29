@@ -1,6 +1,6 @@
 {
     "name": "@osui/branch-dropdown",
-    "version": "0.5.1",
+    "version": "0.5.4",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -57,7 +57,7 @@
         }
     },
     "dependencies": {
-        "@osui/button": "^0.5.1",
+        "@osui/button": "^0.5.4",
         "@osui/icons": "^0.5.0"
     },
     "publishConfig": {

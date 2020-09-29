@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.5.5...@osui/ui@0.5.6) (2020-09-24)
+
+
+### Features
+
+* 增加Space组件, 增加button group形式的demo ([39eaa10](https://gitee.com/gitee-fe/osui/tree/master/commits/39eaa104cda0bd352b1a2c791856db98e673a7fb))
+
+
+
+
+
+## [0.5.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.5.4...@osui/ui@0.5.5) (2020-09-23)
+
+**Note:** Version bump only for package @osui/ui
+
+
+
+
+
+## [0.5.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.5.3...@osui/ui@0.5.4) (2020-09-22)
+
+**Note:** Version bump only for package @osui/ui
+
+
+
+
+
 ## [0.5.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.5.2...@osui/ui@0.5.3) (2020-09-21)
 
 **Note:** Version bump only for package @osui/ui

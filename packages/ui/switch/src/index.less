@@ -1,6 +1,10 @@
 @osui-switch-class-prefix: osui-switch;
 
 .@{osui-switch-class-prefix} {
+    &.ant-switch {
+        min-width: var(--switch-min-width);
+    }
+
     &.ant-switch-disabled {
         opacity: 1;
         background-color: var(--theme-disabled-bg);
@@ -11,16 +15,9 @@
         }
     }
 
-    &.ant-switch-checked .ant-switch-inner {
-        margin-top: 2px;
-        margin-left: 7px;
-        margin-right: 25px;
-    }
-
-    .ant-switch-inner {
-        margin-top: 2px;
-        margin-right: 7px;
-        margin-left: 25px;
+    .ant-switch-inner .osui-icon {
+        // 用osui-icon的时候调整高度
+        vertical-align: -4px;
     }
 
     .ant-click-animating-node {
@@ -29,6 +26,7 @@
     }
 
     &.ant-switch:focus {
-        box-shadow: 0 0 0 2px var(--theme-border-focus-color);
+        box-shadow: var(--theme-component-focus-box-shadow);
     }
+
 }

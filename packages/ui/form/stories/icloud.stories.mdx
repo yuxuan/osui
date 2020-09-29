@@ -1,15 +1,33 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo, StatusDemo} from './icloud.stories'
+import {Demo, StatusDemo, ValidateMessageDemo} from './icloud.stories'
 
 <Meta title="Form" component={Demo} />
 
-# OSUI Drawer
+# OSUI Form
 
 ## API
 
 ### 基本属性
 
-支持所有antd属性：见[antd文档](https://ant.design/components/drawer-cn/)
+支持所有antd属性：见[antd文档](https://ant.design/components/form-cn/)
+
+### OSUI新增属性
+
+#### Form.Item
+
+| 参数 | 说明 | 类型 | 默认值
+| --- | --- | --- | --- |
+| hint | 对所填内容的说明 | string | undefined |
+| validateMessageLayout | 报错信息展示位置 | 'inline', 'default' | 'default' |
+
+### 说明：
+`hint`与`help`的区别： `help`会冲掉validate message，即当传入`help`之后，报错的时候会显示`help`内容而不是validate message的。这个不符合我们的设计，所以新增了hint属性。
+
+`validateMessageLayout`有两种`inline`|`default`，`default`垂直排放，`inline`会在Item后面显示，`inline`没有经过完善的实际使用测试，有可能有样式问题。
+
+## 示例
+
+### 基本用法
 
 <Preview>
   <Story name="Demo">
@@ -17,11 +35,13 @@ import {Demo, StatusDemo} from './icloud.stories'
   </Story>
 </Preview>
 
-### 对antd的强制修改
+### 验证消息提示
 
-用css对antd的help信息强加了icon。
-
-**注意**：这个不能使用antd`hasFeedback`属性，样式与UE要求不符
+<Preview>
+  <Story name="ValidateMessageDemo">
+        {ValidateMessageDemo()}
+  </Story>
+</Preview>
 
 <Preview>
   <Story name="StatusDemo">

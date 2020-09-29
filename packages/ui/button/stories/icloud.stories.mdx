@@ -1,14 +1,39 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo} from './icloud.stories'
+import {Demo, Face, Group} from './icloud.stories'
 
 <Meta title="Button" component={Demo} />
 
-# OSUI Alert
+# OSUI Button
 
-一些给UE看的文档说明，可以放在这里
+2020-9-28 通过UE视觉验收
+
+### 基本属性
+
+支持所有antd属性：见[antd文档](https://ant.design/components/button-cn/#API)
+
+### OSUI新增属性
+
+| 参数 | 说明 | 类型 | 默认值
+| --- | --- | --- | --- |
+| type | 除antd原有属性以外，新增加strong值 | string | primary, ghost, dashed, link, text, default, strong |
+| success | 成功按钮 | boolean | true |
+| error | 失败按钮 | boolean | true |
+| wanring | 警告按钮 | boolean | true |
 
 <Preview>
   <Story name="Demo">
         {Demo()}
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Group">
+        {Group()}
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Face">
+        {Face()}
   </Story>
 </Preview>

@@ -26,7 +26,8 @@ export const Demo = () => {
             </div>
             <div>
                 <Button type="link" style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
-                <Button type="link" disabled style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
+                <Button type="link" disabled style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
+                <Button type="link" loading style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
             </div>
             <div>
                 <Button icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />

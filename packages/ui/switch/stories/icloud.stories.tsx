@@ -14,7 +14,7 @@ export const Demo = () => {
             <Switch defaultChecked >Switch</Switch>
             <Switch disabled>Switch</Switch>
             <Switch defaultChecked disabled>Switch</Switch>
-            <Switch checkedChildren={<IconSwitchTick />} unCheckedChildren={<IconSwitchCross />} />
+            <Switch checkedChildren="开" unCheckedChildren="关" />
             <Switch defaultChecked checkedChildren={<IconSwitchTick />} unCheckedChildren={<IconSwitchCross />} />
         </Space>
     );

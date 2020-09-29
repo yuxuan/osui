@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.5.1...@osui/form@0.5.2) (2020-09-23)
+
+
+### Bug Fixes
+
+* 调整form,select,input focus,hover 样式 ([c54a8d0](https://gitee.com/gitee-fe/osui/tree/master/commits/c54a8d018d42e6a6b2c2f85826db8d9a53339ccc))
+
+
+
+
+
+## [0.5.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.5.0...@osui/form@0.5.1) (2020-09-22)
+
+**Note:** Version bump only for package @osui/form
+
+
+
+
+
 # [0.5.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.4.3...@osui/form@0.5.0) (2020-09-14)
 
 

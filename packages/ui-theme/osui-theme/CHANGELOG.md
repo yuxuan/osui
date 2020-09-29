@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.5.4...@osui/theme@0.5.5) (2020-09-24)
+
+
+### Features
+
+* 增加Space组件, 增加button group形式的demo ([39eaa10](https://gitee.com/gitee-fe/osui/tree/master/commits/39eaa104cda0bd352b1a2c791856db98e673a7fb))
+
+
+
+
+
+## [0.5.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.5.3...@osui/theme@0.5.4) (2020-09-23)
+
+
+### Bug Fixes
+
+* 调整button icloud样式 ([924aef2](https://gitee.com/gitee-fe/osui/tree/master/commits/924aef2dec2fb1303f77d5fd032f73268b7dab7e))
+* 调整button颜色实现 ([bc17800](https://gitee.com/gitee-fe/osui/tree/master/commits/bc178004aa4d80a5c3f4276556dd7a118cb0125d))
+* 调整form,select,input focus,hover 样式 ([c54a8d0](https://gitee.com/gitee-fe/osui/tree/master/commits/c54a8d018d42e6a6b2c2f85826db8d9a53339ccc))
+
+
+
+
+
 ## [0.5.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.5.2...@osui/theme@0.5.3) (2020-09-21)
 
 

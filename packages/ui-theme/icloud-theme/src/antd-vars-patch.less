@@ -18,7 +18,6 @@
 
 // Base Scaffolding Variables
 // ---
-
 // Background color for `<body>`
 @body-background: var(--theme-body-bg);
 // Base background color for most components
@@ -35,6 +34,9 @@
 @line-height-base: 1.5;
 @border-radius-base: 0px;
 @border-radius-sm: 0px;
+@height-base: 30px;
+@height-lg: 40px;
+@height-sm: 24px;
 
 // The background colors for active and hover states for things like
 // list items or table cells.
@@ -78,6 +80,8 @@
 @table-header-bg: var(--table-header-bg);
 @table-header-color: var(--table-header-color);
 @table-padding-vertical: 9.5px; // UE要求行号40，行高= {padding-vertical} * 2 + {font-size} * 1.5
+@table-row-hover-bg: var(--color-gray-3);
+
 // Menu
 // ---
 @menu-inline-toplevel-item-height: 40px;
@@ -185,21 +189,11 @@
 @avatar-font-size-base: 12px;
 @avatar-font-size-lg: 14px;
 
-@height-base: 30px;
-@height-lg: 40px;
-@height-sm: 24px;
-
-// 自定义的一些less变量patch，放在最下面
-
 // Tag
 @tag-default-bg: var(--tag-default-bg);
 @tag-default-color: @text-color;
 @tag-font-size: @font-size-base;
 @tag-line-height: 22px;
-
-// Table
-//--
-@table-row-hover-bg: var(--color-gray-3);
 
 // Pagination
 //--
@@ -213,3 +207,12 @@
 // ---
 @radio-focus-shadow: 0 0 0 0 var(--theme-border-focus-color);
 @radio-duration: 0;
+
+// Modal
+// ---
+@modal-header-bg: var(--modal-header-bg);
+@modal-header-close-size: var(--modal-header-close-size);
+@modal-header-border-color-split: var(--modal-header-bg);
+@modal-footer-padding-vertical: 20px;
+@modal-footer-padding-horizontal: 20px;
+@modal-confirm-body-padding: 40px 30px 15px 30px;

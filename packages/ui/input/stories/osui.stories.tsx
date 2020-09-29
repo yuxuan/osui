@@ -24,6 +24,13 @@ export const Demo = () => {
             />
             <br />
             <br />
+            <Input
+                disabled
+                style={{ width: 200 }}
+                placeholder="请输入搜索关键字"
+            />
+            <br />
+            <br />
             <TextArea style={{ width: 500, height: 150 }} placeholder="请输入" />
             <br />
             <br />
