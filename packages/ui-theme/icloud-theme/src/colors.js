@@ -398,6 +398,7 @@ exports.presetColors = {
     '--radio-button-disabled-color': 'var(--color-gray-6)',
     '--radio-button-disabled-border-color': 'var(--color-gray-3)',
     '--radio-button-disabled-bg': 'var(--color-gray-4)',
+    '--radio-button-hover-color': 'var(--theme-primary-color-hover)',
     '--switch-min-width': '50px',
     '--modal-header-bg': 'var(--color-gray-3)',
     '--modal-no-border-padding': '14px 20px',
