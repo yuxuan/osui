@@ -12,7 +12,7 @@
 
     .ant-form-item-has-error .ant-form-item-explain {
         div::before {
-            display: inline-block;
+            display: var(--form-item-explain-icon-display);
             width: 16px;
             height: 16px;
             content: '';
@@ -28,7 +28,7 @@
 
     .ant-form-item-has-warning .ant-form-item-explain {
         div::before {
-            display: inline-block;
+            display: var(--form-item-explain-icon-display);
             width: 16px;
             height: 16px;
             content: '';
@@ -44,7 +44,7 @@
 
     .ant-form-item-is-validating .ant-form-item-explain {
         div::before {
-            display: inline-block;
+            display: var(--form-item-explain-icon-display);
             width: 16px;
             height: 16px;
             content: '';
@@ -81,6 +81,29 @@
 
             input.ant-input {
                 background: var(--input-warning-focus-background-color);
+            }
+        }
+    }
+
+    &-form-item-hint {
+        color: var(--theme-placeholder-color);
+    }
+
+    &-validate-message-inline {
+        .@{osui-form-class-prefix}-form-item-hint {
+            position: absolute;
+        }
+        .ant-form-item-explain {
+            display: inline-block;
+            position: relative;
+            left: 100%;
+            padding-left: 10px;
+            bottom: 29px;
+        }
+
+        &-has-hint {
+            .ant-form-item-explain {
+                bottom: 50px;
             }
         }
     }

@@ -432,5 +432,6 @@ exports.presetColors = {
     '--modal-header-close-size': '72px',
     '--modal-close-icon-height': '24px',
     '--modal-close-icon-line-height': '72px',
+    '--form-item-explain-icon-display': 'inline-block',
     ...buttonColors,
 };
