@@ -408,5 +408,8 @@ exports.presetColors = {
     '--modal-close-icon-height': '16px',
     '--modal-close-icon-line-height': '40px',
     '--form-item-explain-icon-display': 'none',
+    '--modal-body-border-bottom': '1px solid var(--theme-border-color-split)',
+    '--modal-footer-border-top': 'none',
+    '--modal-body-margin': '0 30px',
     ...buttonColors,
 };
