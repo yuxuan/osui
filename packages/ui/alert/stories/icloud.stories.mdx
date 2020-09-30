@@ -1,5 +1,5 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo} from './icloud.stories'
+import {Demo, CountDownDemo} from './icloud.stories'
 
 <Meta title="Alert" component={Demo} />
 
@@ -15,15 +15,26 @@ import {Demo} from './icloud.stories'
 
 | 参数 | 说明 | 类型 | 默认值
 | --- | --- | --- | --- |
-| shouldStopClose | 是否点击关闭文字时停止关闭 | boolean | true |
+| actions | message中增加的action，例如：查看文档连接 | ReactNode | - |
+| expandable | 是否展开收起展示message，为true时只展示一行内容 | boolean | - |
+| countDown | 倒计时自动关闭alert | number | -1 |
 
-### 其他说明
+### 说明
 
-- 若icon不传并且存在description,则会赋予默认的icon， 不会通过`shouldStopClose`控制，点击则关闭
-- 当`closeText`会裹一个span，通过`shouldStopClose`来控制，点击时是否关闭alert。
+**注意**：当时用`countDown`自动关闭的时候，`onClose`不再是antd close按钮的触发时间，是一个没有参数的回调函数
+
+## 示例
 
 <Preview>
   <Story name="Demo">
         {Demo()}
+  </Story>
+</Preview>
+
+### 倒计时自动关闭
+
+<Preview>
+  <Story name="CountDownDemo">
+        {CountDownDemo()}
   </Story>
 </Preview>
