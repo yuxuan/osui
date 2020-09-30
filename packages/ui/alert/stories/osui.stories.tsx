@@ -14,8 +14,7 @@ export const Demo = () => {
                 message="恭喜！你所提交的信息已经审核通过，如有问题请联系客服。"
                 type="success"
                 showIcon
-                closable
-                closeText="查看详情"
+                actions={<a>查看详情</a>}
             />
             <br />
             <Alert
@@ -40,8 +39,7 @@ export const Demo = () => {
                 message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
                 type="warning"
                 showIcon
-                closable
-                closeText="查看详情"
+                actions={<a>查看详情</a>}
             />
             <br />
             <Alert
@@ -66,9 +64,7 @@ export const Demo = () => {
                 message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
                 type="error"
                 showIcon
-                closable
-                closeText="查看详情"
-                shouldStopClose={false}
+                actions={<a>查看详情</a>}
             />
             <br />
             <Alert
@@ -85,6 +81,7 @@ export const Demo = () => {
                 description="你所提交的信息已经审核失败，可以进入个人信箱查看原因，如有疑问，请联系客服人员。"
                 type="error"
                 showIcon
+                actions={<a>查看详情</a>}
             />
             <br />
             {/* info */}
@@ -93,8 +90,6 @@ export const Demo = () => {
                 message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
                 type="info"
                 showIcon
-                closable
-                closeText="查看详情"
             />
             <br />
             <Alert

@@ -33,4 +33,49 @@
     &-icon-cross {
         color: var(--theme-text-color);
     }
+
+    &.ant-alert {
+        padding: var(--alert-padding);
+    }
+
+    &.ant-alert.ant-alert-no-icon {
+        padding: var(--alert-no-icon-padding);
+    }
+
+    &-message {
+        &-wrapper {
+            display: flex;
+
+            &-closable {
+                margin-right: 20px;
+            }
+        }
+
+        &-content {
+            flex: 1;
+            margin-right: 20px;
+
+            &-expanded-close {
+                max-height: 16px;
+                overflow: hidden;
+            }
+        }
+
+        &-actions {
+            & > *:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &-action-expand-open {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    &-count-down-close {
+        color: var(--theme-placeholder-color);
+        margin-right: 20px;
+    }
 }

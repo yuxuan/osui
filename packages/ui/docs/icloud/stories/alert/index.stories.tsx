@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-omni-link';
 import Alert from '@osui/alert';
 
 export default {
@@ -8,111 +9,46 @@ export default {
 export const Demo = () => {
     return (
         <>
-            {/* success */}
             <Alert
-                style={{width: 500}}
-                message="恭喜！你所提交的信息已经审核通过，如有问题请联系客服。"
-                type="success"
-                showIcon
-                closable
-                closeText="查看详情"
+                message="弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。"
             />
             <br />
             <Alert
-                style={{width: 500}}
-                message="恭喜！你所提交的信息已经审核通过，如有问题请联系客服。"
-                type="success"
-                showIcon
-                closable
+                style={{width: 600}}
+                /* eslint-disable-next-line max-len */
+                message="弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。"
+                type="info"
+                expandable
+                actions={<Link external to="https://www.baidu.com">查看文档</Link>}
             />
             <br />
             <Alert
-                style={{width: 500}}
-                message="已成功！"
-                description="你所提交的信息已经审核通过，请及时跟进申请状况。如有问题，请联系审核人员或在线客服。"
+                message="弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。"
                 type="success"
                 showIcon
             />
             <br />
-            {/* warning */}
             <Alert
-                style={{width: 500}}
-                message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
-                type="warning"
-                showIcon
-                closable
-                closeText="查看详情"
-            />
-            <br />
-            <Alert
-                style={{width: 500}}
-                message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
-                type="warning"
-                showIcon
-                closable
-            />
-            <br />
-            <Alert
-                style={{width: 500}}
-                message="请注意！"
-                description="你所提交的信息已经审核失败，可以进入个人信箱查看原因，如有疑问，请联系客服人员。"
+                message="弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。"
                 type="warning"
                 showIcon
             />
             <br />
-            {/* error */}
             <Alert
-                style={{width: 500}}
-                message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
-                type="error"
-                showIcon
-                closable
-                closeText="查看详情"
-                shouldStopClose={false}
-            />
-            <br />
-            <Alert
-                style={{width: 500}}
-                message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
-                type="error"
-                showIcon
-                closable
-            />
-            <br />
-            <Alert
-                style={{width: 500}}
-                message="请注意！"
-                description="你所提交的信息已经审核失败，可以进入个人信箱查看原因，如有疑问，请联系客服人员。"
+                message="弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。"
                 type="error"
                 showIcon
             />
-            <br />
-            {/* info */}
-            <Alert
-                style={{width: 500}}
-                message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
-                type="info"
-                showIcon
-                closable
-                closeText="查看详情"
-            />
-            <br />
-            <Alert
-                style={{width: 500}}
-                message="系统将于 15 : 00 - 17 : 00 进行升级，请及时保存你的资料！"
-                type="info"
-                showIcon
-                closable
-            />
-            <br />
-            <Alert
-                style={{width: 500}}
-                message="帮助信息！"
-                description="你所提交的信息已经审核失败，可以进入个人信箱查看原因，如有疑问，请联系客服人员。"
-                type="info"
-                showIcon
-            />
-            <br />
         </>
+    );
+};
+
+export const CountDownDemo = () => {
+    return (
+        <Alert
+            message="弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。"
+            onClose={() => {console.log('closed');}}
+            countDown={5}
+        />
     );
 };
