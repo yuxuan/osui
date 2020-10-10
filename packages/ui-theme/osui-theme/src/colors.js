@@ -439,5 +439,7 @@ exports.presetColors = {
     '--modal-body-border-bottom': 'none',
     '--modal-footer-border-top': '1px solid var(--theme-border-color-split)',
     '--modal-body-margin': '0',
+    '--popover-font-size': '14px',
+    '--popover-line-height': '1.5715',
     ...buttonColors,
 };
