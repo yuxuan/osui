@@ -19,10 +19,10 @@ const clsPrefix = 'osui-alert';
 export interface AlertProps extends AntdAlertProps {
     actions?: React.ReactNode;
     expandable?: boolean;
-    countDown?: number;
+    countDown?: number | null;
 }
 
-type iconTypes = 'info' | 'success' | 'error' | 'warning'; // 不覆盖loading
+type iconTypes = 'info' | 'success' | 'error' | 'warning';
 
 const typeToIcon: Record<iconTypes, React.ReactNode> = {
     info: <IconInfoCircleFill className={`${clsPrefix}-infoIcon`} />,

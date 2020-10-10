@@ -8,16 +8,16 @@ export default {
 
 export const Demo = () => {
     const success = () => {
-        message.success('This is a success message');
+        message.success({content: 'This is a success message', original: true});
     };
     const error = () => {
-        message.error('This is an error message');
+        message.error({content: 'This is an error message', original: true});
     };
     const info = () => {
-        message.info('This is an info message');
+        message.info({content: 'This is an info message', original: true});
     };
     const warning = () => {
-        message.warning('This is a warning message');
+        message.warning({content: 'This is a warning message', original: true});
     };
 
     const loading = () => {
@@ -25,7 +25,7 @@ export const Demo = () => {
     };
 
     const open = () => {
-        message.open({type: 'success', content: 'This is a loading message', duration: 2});
+        message.open({type: 'success', content: 'This is a loading message', duration: 2, original: true});
     };
 
     return (
