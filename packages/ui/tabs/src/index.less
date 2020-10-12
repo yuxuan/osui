@@ -1,8 +1,25 @@
+// osui
+:root {
+    --tabs-border-bottom: 2px solid var(--color-gray-4);
+    --tabs-tab-color: var(--theme-text-color);
+    --tabs-card-bg: transparent;
+    --tabs-card-nav-list-padding: 0;
+}
+
+:root {
+    --tabs-border-bottom: 1px solid var(--color-gray-5);
+    --tabs-tab-color: var(--color-gray-8);
+    --tabs-card-bg: var(--color-gray-3);
+    --tabs-card-nav-list-padding: 4px 0 0 10px;
+}
+
 @osui-tabs-class-prefix: osui-tabs;
 
 .@{osui-tabs-class-prefix} {
+    color: var(--tabs-tab-color);
+
     &.ant-tabs-top > .ant-tabs-nav::before {
-        border-bottom: 2px solid #ecedf0;
+        border-bottom: var(--tabs-border-bottom);
     }
 
     .ant-tabs-tab .anticon {
@@ -40,4 +57,40 @@
             }
         }
     }
+
+    // card 模式 // 以下覆盖没有考虑osc的样式
+    &.ant-tabs-card {
+        &.ant-tabs>.ant-tabs-nav,
+        &.ant-tabs>div>.ant-tabs-nav {
+            background: var(--tabs-card-bg);
+        }
+
+        .ant-tabs-nav-list {
+            padding: var(--tabs-card-nav-list-padding);
+        }
+
+        & > .ant-tabs-nav .ant-tabs-tab,
+        & > div > .ant-tabs-nav .ant-tabs-tab {
+            border: 1px solid var(--color-gray-3);
+
+            &:not(.ant-tabs-tab-active) {
+                background: var(--color-gray-3);
+            }
+        }
+
+        .ant-tabs-tab.ant-tabs-tab-with-remove {
+            padding-right: 4px;
+        }
+
+        .ant-tabs-nav-add {
+            background: var(--color-gray-3);
+            border: 1px solid var(--color-gray-6);
+            color: var(--color-gray-8);
+            width: 30px;
+            height: 30px;
+            min-width: 30px;
+            align-self: center;
+        }
+    }
+
 }

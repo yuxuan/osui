@@ -1,5 +1,5 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo} from './index.stories'
+import {Demo, PanelDemo, PanelClosableDemo} from './index.stories'
 
 <Meta title="Tabs" component={Demo} />
 
@@ -16,5 +16,12 @@ import {Demo} from './index.stories'
 <Preview>
   <Story name="Demo">
         {Demo()}
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="PanelDemo">
+        {PanelDemo()}
+        {PanelClosableDemo()}
   </Story>
 </Preview>
