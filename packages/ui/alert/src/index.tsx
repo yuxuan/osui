@@ -48,7 +48,7 @@ const Alert: React.FC<AlertProps> = props => {
     const [isDestory, {on: destory}] = useBoolean(false);
 
     const patchedIcon = icon || typeToIcon[type as iconTypes];
-    const patchedClosable = closable === true || countDown > 0;
+    const patchedClosable = closable === true || countDown! > 0;
     const patchedCloseText = patchedClosable ? (
         closeText || <IconCross className={`${clsPrefix}-icon-cross`} />
     ) : null;
@@ -65,11 +65,11 @@ const Alert: React.FC<AlertProps> = props => {
             );
         }
 
-        if (countDown > 0) {
+        if (countDown! > 0) {
             internalActions = (
                 <>
                     {internalActions}
-                    <ActionCountDownClose countDown={countDown} onTimeout={destory} />
+                    <ActionCountDownClose countDown={countDown!} onTimeout={destory} />
                 </>
             );
         }

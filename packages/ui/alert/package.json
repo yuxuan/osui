@@ -1,6 +1,6 @@
 {
     "name": "@osui/alert",
-    "version": "0.5.1",
+    "version": "0.6.0",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -55,12 +55,12 @@
     "dependencies": {
         "@huse/boolean": "^1.0.3",
         "@huse/timeout": "^1.0.2",
-        "@osui/icons": "^0.5.0",
+        "@osui/icons": "^0.6.0",
         "classnames": "^2.2.6"
     },
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "gitHead": "830345347dde3c4a665d8de7fbc31231aec0b520"
+    "gitHead": "904178b6c0bb86963017122daa529580decb66e8"
 }

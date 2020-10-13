@@ -1,6 +1,6 @@
 {
   "name": "@osui/theme",
-  "version": "0.5.5",
+  "version": "0.6.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -52,5 +52,5 @@
     "access": "public",
     "registry": "https://registry.npmjs.com"
   },
-  "gitHead": "ef37ee758318e45a5778dd56c596373032cb6fa1"
+  "gitHead": "904178b6c0bb86963017122daa529580decb66e8"
 }

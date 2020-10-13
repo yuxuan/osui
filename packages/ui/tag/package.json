@@ -1,6 +1,6 @@
 {
     "name": "@osui/tag",
-    "version": "0.5.1",
+    "version": "0.6.0",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -63,5 +63,5 @@
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "gitHead": "f77d1e9647b040fb6b4681cca99900d94f9fbc19"
+    "gitHead": "904178b6c0bb86963017122daa529580decb66e8"
 }

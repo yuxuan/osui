@@ -1,6 +1,6 @@
 {
     "name": "@osui/branch-dropdown",
-    "version": "0.5.4",
+    "version": "0.6.0",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -57,12 +57,12 @@
         }
     },
     "dependencies": {
-        "@osui/button": "^0.5.4",
-        "@osui/icons": "^0.5.0"
+        "@osui/button": "^0.6.0",
+        "@osui/icons": "^0.6.0"
     },
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "gitHead": "d14770e91575397ea2a3701d8a62c575390df9ed"
+    "gitHead": "904178b6c0bb86963017122daa529580decb66e8"
 }

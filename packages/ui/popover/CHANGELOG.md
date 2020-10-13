@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/popover@0.5.1...@osui/popover@0.6.0) (2020-10-13)
+
+
+### Bug Fixes
+
+* popover icloud theme调整 ([ceaa52a](https://gitee.com/gitee-fe/osui/tree/master/commits/ceaa52ac3f5057b8f644938dd5e722c2676827ef))
+* 修复popover overlayClassName透传问题 ([77d16db](https://gitee.com/gitee-fe/osui/tree/master/commits/77d16dba740ccb19eb95ebcecb5fadc8b070ce77))
+
+
+
+
+
 ## [0.5.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/popover@0.5.0...@osui/popover@0.5.1) (2020-09-22)
 
 **Note:** Version bump only for package @osui/popover
