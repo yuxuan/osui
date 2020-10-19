@@ -1,14 +1,14 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo} from './index.stories'
+import * as stories from './index.stories'
 
-<Meta title="Avatar" component={Demo} />
+<Meta title="Avatar" />
 
 # OSUI Avatar
 
-一些给UE看的文档说明，可以放在这里
+2020-9-28 通过UE视觉验收
+
+## 示例
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>

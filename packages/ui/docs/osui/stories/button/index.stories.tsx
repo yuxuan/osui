@@ -3,7 +3,8 @@ import {IconSearch, IconHome} from '@osui/icons';
 import Button from '@osui/button';
 
 export default {
-    title: 'Button',
+    title: '3-Button',
+    component: Button,
 };
 
 export const Demo = () => {

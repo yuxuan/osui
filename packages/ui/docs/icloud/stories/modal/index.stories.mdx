@@ -1,7 +1,7 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo, Size, Confirm, AutoHeight} from './index.stories'
+import * as stories from './index.stories'
 
-<Meta title="Modal" component={Demo} />
+<Meta title="Modal" />
 
 # OSUI Modal
 
@@ -20,9 +20,7 @@ import {Demo, Size, Confirm, AutoHeight} from './index.stories'
 ## 基本用法
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>
 
 ## 尺寸
@@ -30,9 +28,7 @@ import {Demo, Size, Confirm, AutoHeight} from './index.stories'
 大、中、小三种尺寸
 
 <Preview>
-  <Story name="Size">
-        {Size()}
-  </Story>
+  <Story name="Size" story={stories.Size} />
 </Preview>
 
 ## 确认弹窗
@@ -40,15 +36,11 @@ import {Demo, Size, Confirm, AutoHeight} from './index.stories'
 二次确认型弹窗—所有需要用户进行二次确认动作时，可以使用此弹窗
 
 <Preview>
-  <Story name="Confirm">
-        {Confirm()}
-  </Story>
+  <Story name="Confirm" story={stories.Confirm} />
 </Preview>
 
 ## 根据内容自适应高度
 
 <Preview>
-  <Story name="Auto Height">
-        {AutoHeight()}
-  </Story>
+  <Story name="Auto Height" story={stories.AutoHeight} />
 </Preview>

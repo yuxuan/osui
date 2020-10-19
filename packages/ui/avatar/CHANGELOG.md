@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/avatar@0.5.1...@osui/avatar@0.6.0) (2020-10-13)
+
+
+### Bug Fixes
+
+* 增加button default border高亮, success, error, warning 状态 ([32dfd0f](https://gitee.com/gitee-fe/osui/tree/master/commits/32dfd0f8ef987a3e0a3adc724f75c07f5d6c9a2a))
+
+
+### Features
+
+* 调整alert功能和icloud theme ([1b7d15b](https://gitee.com/gitee-fe/osui/tree/master/commits/1b7d15b741841378951a69d72db03ed334ab287e))
+
+
+
+
+
 ## [0.5.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/avatar@0.5.0...@osui/avatar@0.5.1) (2020-09-22)
 
 **Note:** Version bump only for package @osui/avatar

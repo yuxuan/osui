@@ -4,6 +4,7 @@ import Alert from '@osui/alert';
 
 export default {
     title: 'Alert',
+    component: Alert,
 };
 
 export const Demo = () => {

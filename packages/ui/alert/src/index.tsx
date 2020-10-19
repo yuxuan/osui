@@ -19,10 +19,10 @@ const clsPrefix = 'osui-alert';
 export interface AlertProps extends AntdAlertProps {
     actions?: React.ReactNode;
     expandable?: boolean;
-    countDown?: number;
+    countDown?: number | null;
 }
 
-type iconTypes = 'info' | 'success' | 'error' | 'warning'; // 不覆盖loading
+type iconTypes = 'info' | 'success' | 'error' | 'warning';
 
 const typeToIcon: Record<iconTypes, React.ReactNode> = {
     info: <IconInfoCircleFill className={`${clsPrefix}-infoIcon`} />,
@@ -48,7 +48,7 @@ const Alert: React.FC<AlertProps> = props => {
     const [isDestory, {on: destory}] = useBoolean(false);
 
     const patchedIcon = icon || typeToIcon[type as iconTypes];
-    const patchedClosable = closable === true || countDown > 0;
+    const patchedClosable = closable === true || countDown! > 0;
     const patchedCloseText = patchedClosable ? (
         closeText || <IconCross className={`${clsPrefix}-icon-cross`} />
     ) : null;
@@ -65,11 +65,11 @@ const Alert: React.FC<AlertProps> = props => {
             );
         }
 
-        if (countDown > 0) {
+        if (countDown! > 0) {
             internalActions = (
                 <>
                     {internalActions}
-                    <ActionCountDownClose countDown={countDown} onTimeout={destory} />
+                    <ActionCountDownClose countDown={countDown!} onTimeout={destory} />
                 </>
             );
         }

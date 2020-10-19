@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/radio@0.5.1...@osui/radio@0.6.0) (2020-10-13)
+
+
+### Bug Fixes
+
+* radio调整icloud主题 ([86a94a3](https://gitee.com/gitee-fe/osui/tree/master/commits/86a94a359ff0a03301df779f240a9e6beaa5933e))
+
+
+
+
+
 ## [0.5.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/radio@0.5.0...@osui/radio@0.5.1) (2020-09-22)
 
 **Note:** Version bump only for package @osui/radio

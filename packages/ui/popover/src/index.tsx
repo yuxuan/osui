@@ -8,8 +8,8 @@ const clsPrefix = 'osui-popover';
 
 export type PopoverProps = AntdPopoverProps;
 
-const OSUIPopover: React.FC<PopoverProps> = props => {
-    return (<AntdPopover {...props} overlayClassName={classNames(props.className, clsPrefix)} />);
+const Popover: React.FC<PopoverProps> = props => {
+    return (<AntdPopover {...props} overlayClassName={classNames(clsPrefix, props.overlayClassName)} />);
 };
 
-export default OSUIPopover;
+export default Popover;

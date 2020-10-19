@@ -5,6 +5,7 @@ import Button from '@osui/button';
 
 export default {
     title: 'Button',
+    component: Button,
 };
 
 export const Demo = () => {

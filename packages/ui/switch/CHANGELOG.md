@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/switch@0.5.1...@osui/switch@0.6.0) (2020-10-13)
+
+
+### Bug Fixes
+
+* switch icloud主题样式调整 ([4cfd4c3](https://gitee.com/gitee-fe/osui/tree/master/commits/4cfd4c345a704f1f97f0453b7a921395c1164ccc))
+
+
+
+
+
 ## [0.5.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/switch@0.5.0...@osui/switch@0.5.1) (2020-09-22)
 
 **Note:** Version bump only for package @osui/switch

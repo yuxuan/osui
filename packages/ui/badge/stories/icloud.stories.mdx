@@ -1,14 +1,12 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo} from './icloud.stories'
+import * as stories from './icloud.stories'
 
-<Meta title="Badge" component={Demo} />
+<Meta title="Badge" />
 
 # OSUI Badge
 
 一些给UE看的文档说明，可以放在这里
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>

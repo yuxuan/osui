@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/osui-docs@0.5.2...@osui/osui-docs@0.6.0) (2020-10-13)
+
+
+### Bug Fixes
+
+* 增加button default border高亮, success, error, warning 状态 ([32dfd0f](https://gitee.com/gitee-fe/osui/tree/master/commits/32dfd0f8ef987a3e0a3adc724f75c07f5d6c9a2a))
+* 调整button icloud样式 ([924aef2](https://gitee.com/gitee-fe/osui/tree/master/commits/924aef2dec2fb1303f77d5fd032f73268b7dab7e))
+* 调整form,select,input focus,hover 样式 ([c54a8d0](https://gitee.com/gitee-fe/osui/tree/master/commits/c54a8d018d42e6a6b2c2f85826db8d9a53339ccc))
+* 调整message icloud theme ([45e0e6a](https://gitee.com/gitee-fe/osui/tree/master/commits/45e0e6ac48b01f0a5c1f2a6a9fabb6192d0ee937))
+
+
+### Features
+
+* 调整alert功能和icloud theme ([1b7d15b](https://gitee.com/gitee-fe/osui/tree/master/commits/1b7d15b741841378951a69d72db03ed334ab287e))
+
+
+
+
+
 ## 0.5.2 (2020-09-16)
 
 **Note:** Version bump only for package @osui/osui-docs

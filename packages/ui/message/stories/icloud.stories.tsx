@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Space } from 'antd';
+import Button from '@osui/button';
+import Space from '@osui/space';
 import message from '../src';
 
 export default {
@@ -25,9 +26,17 @@ export const Demo = () => {
     };
 
     const open = () => {
-        message.open({type: 'success', content: 'This is a loading message', duration: 2});
+        message.open({type: 'success', content: 'This is a loading message', duration: 20, showCountDown: true});
     };
 
+    const original = () => {
+        message.open({
+            type: 'success',
+            content: '弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。',
+            original: true,
+            duration: 3,
+        });
+    };
     return (
         <div style={{ padding: 30 }}>
             <Space>
@@ -37,6 +46,7 @@ export const Demo = () => {
                 <Button onClick={warning}>Warning</Button>
                 <Button onClick={loading}>Loading</Button>
                 <Button onClick={open}>open success</Button>
+                <Button onClick={original}>open Antd Original Message</Button>
             </Space>
         </div>);
 };

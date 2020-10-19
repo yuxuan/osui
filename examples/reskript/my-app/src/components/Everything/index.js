@@ -1306,6 +1306,8 @@ const Everything = () => (
         <ToggleButton />
         <OSUI.BackTop />
         <OSUI.BackTop type="circle" />
+        <OSUI.Calendar />
+        <OSUI.InputNumber />
     </div>
 );
 
