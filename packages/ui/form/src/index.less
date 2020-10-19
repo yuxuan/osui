@@ -85,26 +85,25 @@
         }
     }
 
-    &-form-item-hint {
+    .ant-form-item-extra {
         color: var(--theme-placeholder-color);
+        margin-top: 6px;
+        font-size: 12px;
     }
 
+
     &-validate-message-inline {
-        .@{osui-form-class-prefix}-form-item-hint {
-            position: absolute;
+        &.ant-form-item-with-help {
+            margin-bottom: @form-item-margin-bottom;
         }
+
         .ant-form-item-explain {
-            display: inline-block;
-            position: relative;
+            position: absolute;
             left: 100%;
             padding-left: 10px;
             bottom: 29px;
-        }
-
-        &-has-hint {
-            .ant-form-item-explain {
-                bottom: 50px;
-            }
+            width: 50%;
+            max-width: 200px;
         }
     }
 }

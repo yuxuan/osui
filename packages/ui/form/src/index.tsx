@@ -16,10 +16,37 @@ import './index.less';
 
 const clsPrefix = 'osui-form';
 
-declare function InternalFormItemType(props: FormItemProps): React.ReactElement;
-interface Form extends AntdForm {
+const InternalForm: React.ForwardRefRenderFunction<any, AntdFormProps> = (props, ref) => {
+    return <AntdForm ref={ref} {...props} className={classNames(clsPrefix, props.className)} />;
+};
+
+// ==== 对Form.Item的覆盖 ====
+type ValidateMessageLayout = 'inline' | 'default';
+
+export interface FormItemProps extends AntdFormItemProps {
+    validateMessageLayout?: ValidateMessageLayout;
+}
+
+function InternalFormItem(
+    {validateMessageLayout = 'default', extra, ...props}: FormItemProps
+): React.ReactElement {
+    // 对extra的样式修改
+    const hasHint = !!extra;
+    const itemClassName = classNames(
+        props.className,
+        `${clsPrefix}-validate-message-${validateMessageLayout}`,
+        {[`${clsPrefix}-validate-message-has-hint`]: hasHint}
+    );
+
+    return <AntdForm.Item {...props} className={itemClassName} extra={extra || extra} />;
+}
+
+// ==== 完善Form类型 ====
+type InternalFormType = typeof InternalForm;
+
+interface FormInterface extends InternalFormType {
     useForm: typeof useForm;
-    Item: typeof InternalFormItemType;
+    Item: typeof InternalFormItem;
     List: typeof List;
     Provider: typeof FormProvider;
 
@@ -27,53 +54,7 @@ interface Form extends AntdForm {
     create: () => void;
 }
 
-// ==== 对Form的覆盖 ====
-const InternalForm: React.ForwardRefRenderFunction<AntdFormInstance, AntdFormProps> = (props, ref) => {
-    return <AntdForm ref={ref} {...props} className={classNames(clsPrefix, props.className)} />;
-};
-
-const Form = React.forwardRef<AntdFormInstance, AntdFormProps>(InternalForm) as Form;
-
-// ==== 对Form.Item的覆盖 ====
-
-type ValidateMessageLayout = 'inline' | 'default';
-
-export interface FormItemProps extends AntdFormItemProps {
-    hint?: string;
-    validateMessageLayout?: ValidateMessageLayout;
-}
-
-function InternalFormItem({hint, validateMessageLayout = 'default', ...props}: FormItemProps): React.ReactElement {
-    const hasHint = !!hint;
-    const hintComponent = hasHint ? <div className={`${clsPrefix}-form-item-hint`}>{hint}</div> : null;
-    const itemClassName = classNames(
-        props.className,
-        `${clsPrefix}-validate-message-${validateMessageLayout}`,
-        {[`${clsPrefix}-validate-message-has-hint`]: hasHint}
-    );
-
-    const {children} = props;
-    let childNode = children;
-
-    // 只对单个ReactElement做hint处理
-    // 增加了hint节点，不能放到Item里面，因为Antd会按照children array处理，丢失onChange、value、等属性
-    if (React.isValidElement(children)) {
-        childNode = (
-            <span {...children.props}>
-                {props.children}
-                {hintComponent}
-            </span>
-        );
-    }
-
-    return (
-        <>
-            <AntdForm.Item {...props} className={itemClassName}>
-                {childNode}
-            </AntdForm.Item>
-        </>
-    );
-}
+const Form = React.forwardRef<any, AntdFormProps>(InternalForm) as unknown as FormInterface;
 
 Form.Item = InternalFormItem;
 Form.List = List;
