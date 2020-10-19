@@ -1,7 +1,7 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo, MultipleDemo, Size} from './osui.stories'
+import * as stories from './osui.stories'
 
-<Meta title="Select" component={Demo} />
+<Meta title="Select"  />
 
 # Select
 
@@ -14,21 +14,15 @@ import {Demo, MultipleDemo, Size} from './osui.stories'
 **注意：** 不支持Select的allowClear在单选上使用
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>
 
 <Preview>
-  <Story name="Size">
-        {Size()}
-  </Story>
+  <Story name="Size" story={stories.Size} />
 </Preview>
 
 ### 多选用法
 
 <Preview>
-  <Story name="MultipleDemo">
-        {MultipleDemo()}
-  </Story>
+  <Story name="MultipleDemo" story={stories.MultipleDemo} />
 </Preview>

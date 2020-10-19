@@ -1,7 +1,7 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo} from './icloud.stories'
+import * as stories from './icloud.stories'
 
-<Meta title="Timeline" component={Demo} />
+<Meta title="Timeline"  />
 
 # OSUI Timeline
 
@@ -10,7 +10,5 @@ import {Demo} from './icloud.stories'
 支持所有antd属性：见[antd文档](https://ant.design/components/timeline-cn/)
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>

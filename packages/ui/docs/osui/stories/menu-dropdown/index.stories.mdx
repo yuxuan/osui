@@ -1,7 +1,7 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo, ButtonDemo} from './index.stories'
+import * as stories from './index.stories'
 
-<Meta title="业务/Menu-Dropdown" component={Demo} />
+<Meta title="业务/Menu-Dropdown"  />
 
 # OSUI Menu-Dropdown
 
@@ -87,15 +87,11 @@ interface MenuDropdownData {
 ```
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>
 
 ### 支持Button形式
 
 <Preview>
-  <Story name="ButtonDemo">
-        {ButtonDemo()}
-  </Story>
+  <Story name="ButtonDemo" story={stories.ButtonDemo} />
 </Preview>

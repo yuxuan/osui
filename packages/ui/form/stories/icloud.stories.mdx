@@ -1,7 +1,7 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo, StatusDemo, ValidateMessageDemo} from './icloud.stories'
+import * as stories from './icloud.stories'
 
-<Meta title="Form" component={Demo} />
+<Meta title="Form"  />
 
 # OSUI Form
 
@@ -30,21 +30,15 @@ import {Demo, StatusDemo, ValidateMessageDemo} from './icloud.stories'
 ### 基本用法
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>
 
 ### 验证消息提示
 
 <Preview>
-  <Story name="ValidateMessageDemo">
-        {ValidateMessageDemo()}
-  </Story>
+  <Story name="ValidateMessageDemo" story={stories.ValidateMessageDemo} />
 </Preview>
 
 <Preview>
-  <Story name="StatusDemo">
-        {StatusDemo()}
-  </Story>
+  <Story name="StatusDemo" story={stories.StatusDemo} />
 </Preview>

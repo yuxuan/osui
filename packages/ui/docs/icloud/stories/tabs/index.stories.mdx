@@ -1,7 +1,7 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo, PanelDemo, PanelClosableDemo} from './index.stories'
+import * as stories from './index.stories'
 
-<Meta title="Tabs" component={Demo} />
+<Meta title="Tabs"  />
 
 # OSUI Alert
 
@@ -14,14 +14,10 @@ import {Demo, PanelDemo, PanelClosableDemo} from './index.stories'
 ### 其他说明
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>
 
 <Preview>
-  <Story name="PanelDemo">
-        {PanelDemo()}
-        {PanelClosableDemo()}
-  </Story>
+  <Story name="PanelDemo" story={stories.PanelDemo} />
+  <Story name="PanelClosableDemo" story={stories.PanelClosableDemo} />
 </Preview>

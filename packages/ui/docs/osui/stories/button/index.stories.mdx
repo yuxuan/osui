@@ -1,7 +1,7 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo} from './index.stories'
+import * as stories from './index.stories'
 
-<Meta title="Button" component={Demo} />
+<Meta title="2-Button"  />
 
 # OSUI Button
 
@@ -19,7 +19,5 @@ import {Demo} from './index.stories'
 | wanring | 警告按钮 | boolean | true |
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>

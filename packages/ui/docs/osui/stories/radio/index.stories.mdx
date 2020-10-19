@@ -1,7 +1,7 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo} from './index.stories'
+import * as stories from './index.stories'
 
-<Meta title="Radio" component={Demo} />
+<Meta title="Radio"  />
 
 # OSUI Radio
 
@@ -14,7 +14,5 @@ import {Demo} from './index.stories'
 
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>

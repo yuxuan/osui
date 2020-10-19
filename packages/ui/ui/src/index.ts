@@ -17,6 +17,7 @@ export {default as Collapse} from '@osui/collapse';
 export {default as BackTop} from '@osui/back-top';
 export {default as DirectoryNavigator} from '@osui/directory-navigator';
 export {default as Popover} from '@osui/popover';
+export {default as MultiMenu} from '';
 export {default as Button} from '@osui/button';
 export {default as DatePicker} from '@osui/date-picker';
 export {default as Table} from '@osui/table';

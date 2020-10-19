@@ -1,7 +1,7 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo} from './index.stories'
+import * as stories from './index.stories'
 
-<Meta title="Tag" component={Demo} />
+<Meta title="Tag"  />
 
 # OSUI Alert
 
@@ -18,7 +18,5 @@ import {Demo} from './index.stories'
 |color|标签色(OSUI已支持预设颜色：'blue、red、purple、red、teal、yellow'，除之外颜色按原生显示)|string|-|
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>

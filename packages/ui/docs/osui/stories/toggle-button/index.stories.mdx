@@ -1,7 +1,7 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo} from './index.stories'
+import * as stories from './index.stories'
 
-<Meta title="业务/ToggleButton" component={Demo} />
+<Meta title="业务/ToggleButton"  />
 
 # OSUI toggle-button
 
@@ -16,7 +16,5 @@ import {Demo} from './index.stories'
 | beforeIcon | 展示按钮前面的icon | React.ReactNode |
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>

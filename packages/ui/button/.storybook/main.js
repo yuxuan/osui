@@ -12,6 +12,8 @@ const styleResources = isiCloudTheme ? (
     [require.resolve('@osui/theme/dist/antd-vars-patch.less')]
 );
 
+console.log(JSON.stringify(getBabelConfig().presets, null, 4));
+
 const loaderOptions = {
     cwd: process.cwd(),
     srcDirectory: 'src',
@@ -32,15 +34,8 @@ module.exports = {
         '../stories/**/*.stories.mdx'
     ],
     addons: [
-        {
-            name: '@storybook/addon-docs',
-            options: {
-                configureJSX: true,
-                babelOptions: {},
-                sourceLoaderOptions: null,
-            },
-        },
-        '@storybook/addon-storysource', // https://github.com/storybookjs/storybook/tree/master/addons/storysource
+        '@storybook/addon-docs',
+        '@storybook/addon-storysource',
         '@storybook/addon-a11y/register', // https://github.com/storybookjs/storybook/tree/master/addons/a11y
         '@storybook/addon-viewport/register', // https://github.com/storybookjs/storybook/tree/master/addons/viewport
     ],

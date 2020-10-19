@@ -9,7 +9,8 @@
         "prepublishOnly": "yarn run build",
         "storybook": "start-storybook -p 8700",
         "clean": "rm -rf node_modules && rm -rf dist",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sb-upgrade": "sb upgrade"
     },
     "sideEffects": [
         "dist/*.less"
@@ -21,13 +22,13 @@
         "@reskript/config-babel": "^0.9.0",
         "@reskript/config-lint": "^0.12.3",
         "@reskript/config-webpack": "^0.11.2",
-        "@storybook/addon-a11y": "^5.3.19",
-        "@storybook/addon-docs": "^5.3.19",
-        "@storybook/addon-storysource": "^5.3.19",
-        "@storybook/addon-viewport": "^5.3.19",
-        "@storybook/addons": "^5.3.19",
-        "@storybook/client-api": "^5.3.19",
-        "@storybook/react": "^5.3.19",
+        "@storybook/addon-a11y": "^6.0.26",
+        "@storybook/addon-docs": "^6.0.26",
+        "@storybook/addon-storysource": "^6.0.26",
+        "@storybook/addon-viewport": "^6.0.26",
+        "@storybook/addons": "^6.0.26",
+        "@storybook/client-api": "^6.0.26",
+        "@storybook/react": "^6.0.26",
         "@types/classnames": "^2.2.10",
         "@types/lodash.partial": "^4.2.6",
         "@types/react-dom": "^16.9.8",

@@ -1,4 +1,4 @@
-import React, {FC, ReactElement} from 'react';
+import React from 'react';
 import {Form as AntdForm} from 'antd';
 import {
     Rule as AntdRule,

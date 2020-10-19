@@ -1,20 +1,16 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo, Size} from './index.stories'
+import * as stories from './index.stories'
 
-<Meta title="Input" component={Demo} />
+<Meta title="Input"  />
 
 # OSUI Input
 
 支持所有antd属性：见[antd文档](https://ant.design/components/input-cn/)
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>
 
 <Preview>
-  <Story name="Size">
-        {Size()}
-  </Story>
+  <Story name="Size" story={stories.Size} />
 </Preview>

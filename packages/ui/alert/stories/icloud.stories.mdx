@@ -1,7 +1,8 @@
-import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo, CountDownDemo} from './icloud.stories'
+import {Meta, Story, Canvas} from '@storybook/addon-docs/blocks';
+import Alert from '@osui/alert';
+import * as stories from './icloud.stories'
 
-<Meta title="Alert" component={Demo} />
+<Meta title="Alert" component={Alert}/>
 
 # OSUI Alert
 
@@ -25,16 +26,12 @@ import {Demo, CountDownDemo} from './icloud.stories'
 
 ## 示例
 
-<Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
-</Preview>
+<Canvas withSource='open'>
+  <Story name="Demo" story={stories.Demo} />
+</Canvas>
 
 ### 倒计时自动关闭
 
-<Preview>
-  <Story name="CountDownDemo">
-        {CountDownDemo()}
-  </Story>
-</Preview>
+<Canvas withSource='open'>
+  <Story name="CountDownDemo" story={stories.CountDownDemo} />
+</Canvas>

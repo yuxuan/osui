@@ -1,7 +1,7 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import {Demo} from './index.stories'
+import * as stories from './index.stories'
 
-<Meta title="Space" component={Demo} />
+<Meta title="Space"  />
 
 # OSUI Space
 
@@ -22,7 +22,5 @@ middle: 16px;
 large: 24px;
 
 <Preview>
-  <Story name="Demo">
-        {Demo()}
-  </Story>
+  <Story name="Demo" story={stories.Demo} />
 </Preview>
