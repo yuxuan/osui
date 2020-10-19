@@ -17,17 +17,20 @@ import * as stories from './index.stories'
 
 | 参数 | 说明 | 类型 | 默认值
 | --- | --- | --- | --- |
-| hint | 对所填内容的说明 | string | undefined |
 | validateMessageLayout | 报错信息展示位置 | 'inline', 'default' | 'default' |
 
 ### 说明：
-`hint`与`help`的区别： `help`会冲掉validate message，即当传入`help`之后，报错的时候会显示`help`内容而不是validate message的。这个不符合我们的设计，所以新增了hint属性。
-
 `validateMessageLayout`有两种`inline`|`default`，`default`垂直排放，`inline`会在Item后面显示，`inline`没有经过完善的实际使用测试，有可能有样式问题。
 
 ## 示例
 
-### 基本用法
+### 基础表单
+
+<Preview>
+  <Story name="StatusDemo" story={stories.BasicDemo} />
+</Preview>
+
+### 用户名密码
 
 <Preview>
   <Story name="Demo" story={stories.Demo} />
@@ -37,8 +40,4 @@ import * as stories from './index.stories'
 
 <Preview>
   <Story name="ValidateMessageDemo" story={stories.ValidateMessageDemo} />
-</Preview>
-
-<Preview>
-  <Story name="StatusDemo" story={stories.StatusDemo} />
 </Preview>
