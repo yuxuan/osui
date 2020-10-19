@@ -19,3 +19,14 @@ export const Demo = () => {
         </Space>
     );
 };
+
+
+export const Size = () => {
+    return (
+        <>
+            <Switch defaultChecked />
+            <br />
+            <Switch size="small" defaultChecked />
+        </>
+    );
+};
