@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/tabs@0.5.1...@osui/tabs@0.6.1) (2020-10-19)
+
+
+### Bug Fixes
+
+* tabs icloud theme 调整 ([a0815ba](https://gitee.com/yuxuanhuo/osui/tree/master/commits/a0815baa516af2c799ad982538868ec6fed88d9c))
+
+
+
+
+
 # [0.6.0](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/tabs@0.5.1...@osui/tabs@0.6.0) (2020-10-13)
 
 

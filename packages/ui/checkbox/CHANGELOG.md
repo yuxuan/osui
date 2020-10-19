@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/checkbox@0.5.1...@osui/checkbox@0.6.1) (2020-10-19)
+
+
+### Bug Fixes
+
+* 调整checkbox icloud主题样式 ([fd43d5b](https://gitee.com/gitee-fe/osui/tree/master/commits/fd43d5b6c846e19db8682b6b7ef70392844029f9))
+
+
+
+
+
 # [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/checkbox@0.5.1...@osui/checkbox@0.6.0) (2020-10-13)
 
 

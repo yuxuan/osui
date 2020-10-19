@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@0.5.1...@osui/pagination@0.6.1) (2020-10-19)
+
+
+### Bug Fixes
+
+* pagniation icloud主题调整 ([1d1f513](https://gitee.com/yuxuanhuo/osui/tree/master/commits/1d1f5139658689663e4cdfcfd843cbcd6b654ba6))
+
+
+
+
+
 # [0.6.0](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@0.5.1...@osui/pagination@0.6.0) (2020-10-13)
 
 

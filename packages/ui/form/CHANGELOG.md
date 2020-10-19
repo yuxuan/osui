@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.5.2...@osui/form@0.6.1) (2020-10-19)
+
+
+### Bug Fixes
+
+* form修复onChange没有透传的问题 ([28665aa](https://gitee.com/gitee-fe/osui/tree/master/commits/28665aac36d94950b218f94a8dd9e1edcf55da96))
+
+
+### Features
+
+* form icloud theme调整 ([b90c6e4](https://gitee.com/gitee-fe/osui/tree/master/commits/b90c6e4f86dd65f3270afb3627fe7baf9811a615))
+
+
+
+
+
 # [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.5.2...@osui/form@0.6.0) (2020-10-13)
 
 

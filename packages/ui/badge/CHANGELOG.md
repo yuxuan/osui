@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/badge@0.5.1...@osui/badge@0.6.1) (2020-10-19)
+
+
+### Bug Fixes
+
+* 增加button default border高亮, success, error, warning 状态 ([32dfd0f](https://gitee.com/gitee-fe/osui/tree/master/commits/32dfd0f8ef987a3e0a3adc724f75c07f5d6c9a2a))
+
+
+
+
+
 # [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/badge@0.5.1...@osui/badge@0.6.0) (2020-10-13)
 
 
