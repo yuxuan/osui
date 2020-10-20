@@ -142,7 +142,7 @@ export const BasicDemo = () => {
                     },
                 ]}
             >
-                <Radio.Group onChange={e => console.log(e.target.value)} defaultValue={1} value={1}>
+                <Radio.Group onChange={e => console.log(e.target.value)}>
                     <Radio.Button value={1}>已有ACL账户</Radio.Button>
                     <Radio.Button value={2}>创建ACL账户</Radio.Button>
                 </Radio.Group>

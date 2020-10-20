@@ -1,5 +1,5 @@
 // storybook 6.0 需要 @babel/preset-env @babel/plugin-proposal-class-properties loose: true
-// 直接复制本文件粘贴到 {your-project-path}/osui/node_modules/@reskript/config-babel/dist/index.js
+// 直接复制本文件粘贴到 {your-project-path}/node_modules/@reskript/config-babel/dist/index.js
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getBabelConfig = exports.getTransformBabelConfig = exports.getParseOnlyBabelConfig = void 0;
