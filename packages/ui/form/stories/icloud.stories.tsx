@@ -2,10 +2,8 @@ import React from 'react';
 import Input from '@osui/input';
 import Button from '@osui/button';
 import Checkbox from '@osui/checkbox';
-import DatePicker from '@osui/date-picker';
 import Radio from '@osui/radio';
-import Select from '@osui/select';
-import {TimePicker, Cascader, InputNumber} from 'antd';
+import {InputNumber} from 'antd';
 import Form from '../src';
 
 export default {

@@ -38,7 +38,7 @@ function InternalFormItem(
         {[`${clsPrefix}-validate-message-has-hint`]: hasHint}
     );
 
-    return <AntdForm.Item {...props} className={itemClassName} extra={extra || extra} />;
+    return <AntdForm.Item {...props} className={itemClassName} extra={extra} />;
 }
 
 // ==== 完善Form类型 ====
