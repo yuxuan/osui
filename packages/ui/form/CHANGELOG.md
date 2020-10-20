@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.6.2...@osui/form@0.6.3) (2020-10-20)
+
+
+### Bug Fixes
+
+* form代码调整 ([14a843f](https://gitee.com/gitee-fe/osui/tree/master/commits/14a843f9aacb56b4e0209aa0f490f6e1f7cb57eb))
+* popover padding; chore：默认开发icloud-theme ([356cc34](https://gitee.com/gitee-fe/osui/tree/master/commits/356cc34992918ffb6c3d30283b2810fed8e18e79))
+
+
+
+
+
 ## [0.6.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.6.1...@osui/form@0.6.2) (2020-10-20)
 
 
