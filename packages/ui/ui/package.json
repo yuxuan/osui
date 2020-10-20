@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "0.6.2",
+    "version": "0.6.3",
     "description": "",
     "main": "dist/index.js",
     "module": "dist/index.js",
@@ -54,7 +54,7 @@
         "@osui/date-picker": "^0.6.1",
         "@osui/directory-navigator": "^0.6.1",
         "@osui/drawer": "^0.6.1",
-        "@osui/form": "^0.6.1",
+        "@osui/form": "^0.6.2",
         "@osui/icons": "^0.6.1",
         "@osui/input": "^0.6.1",
         "@osui/markdown": "^0.6.1",
