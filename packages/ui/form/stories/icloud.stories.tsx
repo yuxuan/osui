@@ -219,7 +219,6 @@ export const BasicDemo = () => {
     );
 };
 
-
 export const ValidateMessageDemo = () => {
     const formItemLayout = {
         labelCol: {

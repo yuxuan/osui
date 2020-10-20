@@ -415,5 +415,7 @@ exports.presetColors = {
     '--modal-body-padding': '0 30px',
     '--popover-font-size': '12px',
     '--popover-line-height': '20px',
+    '--popover-inner-content-padding': '10px',
+    '--popover-title-padding': '10px 10px 0 10px',
     ...buttonColors,
 };
