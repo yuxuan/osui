@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.6.2...@osui/icloud-theme@0.6.3) (2020-10-21)
+
+
+### Bug Fixes
+
+* message closeicon 位置调整 ([4a7601b](https://gitee.com/gitee-fe/osui/tree/master/commits/4a7601b6249904d74ca649269ed9051eb3fb91bb))
+* table icloud-theme样式修复 ([3f0d5e3](https://gitee.com/gitee-fe/osui/tree/master/commits/3f0d5e36838640cf65145b5f489dfbb629f0ac8f))
+
+
+
+
+
 ## [0.6.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.6.1...@osui/icloud-theme@0.6.2) (2020-10-20)
 
 
