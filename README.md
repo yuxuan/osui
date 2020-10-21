@@ -175,6 +175,6 @@ yarn new-component 组件名
 
 ## 已知问题
 
-1. 整包使用时，有一些依赖报错
+1. 升级storybook 6.0之后，构建报错
 
-手动安装依赖的包，后续会添加到`@osui/ui`依赖内
+构建报错说 babel preset-env loose: true的问题，修复方式见scripts/fix-babel-loader.md （临时方案，后续会调整所有skr配置）

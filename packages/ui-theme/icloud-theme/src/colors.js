@@ -330,7 +330,7 @@ exports.presetColors = {
     '--alert-warning-icon-color': 'var(--theme-warning-color)',
     '--alert-with-description-icon-top': '24px',
     '--alert-with-description-padding': '8px 15px 8px 37px',
-    '--alert-padding': '8px 20px 8px 40px',
+    '--alert-padding': '8px 10px 8px 40px',
     '--alert-no-icon-padding': '8px 20px',
     '--btn-border-radius-base': '0px',
     '--btn-link-margin': '0',

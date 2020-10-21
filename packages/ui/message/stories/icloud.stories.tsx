@@ -26,7 +26,7 @@ export const Demo = () => {
     };
 
     const open = () => {
-        message.open({type: 'success', content: 'This is a loading message', duration: 20, showCountDown: true});
+        message.open({type: 'success', content: 'This is a loading message', duration: 200, showCountDown: true});
     };
 
     const original = () => {

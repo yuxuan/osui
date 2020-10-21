@@ -1,15 +1,10 @@
 @osui-message-class-prefix: osui-message;
 
 .@{osui-message-class-prefix} {
-
     &-alert {
         .ant-message-notice-content {
             padding: 0;
         }
-    }
-
-    .osui-icon {
-        padding-right: 8px;
     }
 
     &-infoIcon {
@@ -26,5 +21,9 @@
 
     &-warningIcon {
         color: var(--theme-warning-color);
+    }
+
+    .ant-alert-close-icon {
+        right: 10px;
     }
 }
