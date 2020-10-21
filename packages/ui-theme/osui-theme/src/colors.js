@@ -389,6 +389,7 @@ exports.presetColors = {
     '--table-header-bg': 'transparent',
     '--table-header-color': 'var(--color-gray-7)',
     '--table-row-hover-bg': 'var(--color-brand-1)',
+    '--table-header-cell-border-right': 'none',
     '--tabs-highlight-color': 'var(--color-gray-9)',
     '--tabs-hover-color': 'var(--color-gray-9)',
     '--tabs-ink-bar-color': 'var(--color-gray-9)',
