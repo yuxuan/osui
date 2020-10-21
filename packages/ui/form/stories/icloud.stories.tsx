@@ -3,11 +3,11 @@ import Input from '@osui/input';
 import Button from '@osui/button';
 import Checkbox from '@osui/checkbox';
 import Radio from '@osui/radio';
-import {InputNumber} from 'antd';
+import InputNumber from '@osui/input-number';
 import Form from '../src';
 
 export default {
-    title: '1-Form',
+    title: 'Form',
 };
 
 export const Demo = () => {

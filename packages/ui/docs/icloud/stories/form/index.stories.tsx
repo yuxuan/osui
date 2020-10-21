@@ -2,14 +2,12 @@ import React from 'react';
 import Input from '@osui/input';
 import Button from '@osui/button';
 import Checkbox from '@osui/checkbox';
-import DatePicker from '@osui/date-picker';
 import Radio from '@osui/radio';
-import Select from '@osui/select';
-import {TimePicker, Cascader, InputNumber} from 'antd';
+import {InputNumber} from 'antd';
 import Form from '@osui/form';
 
 export default {
-    title: '1-Form',
+    title: 'Form',
 };
 
 export const Demo = () => {
@@ -142,7 +140,7 @@ export const BasicDemo = () => {
                     },
                 ]}
             >
-                <Radio.Group onChange={e => console.log(e.target.value)} defaultValue={1} value={1}>
+                <Radio.Group onChange={e => console.log(e.target.value)}>
                     <Radio.Button value={1}>已有ACL账户</Radio.Button>
                     <Radio.Button value={2}>创建ACL账户</Radio.Button>
                 </Radio.Group>
@@ -220,7 +218,6 @@ export const BasicDemo = () => {
         </Form>
     );
 };
-
 
 export const ValidateMessageDemo = () => {
     const formItemLayout = {
