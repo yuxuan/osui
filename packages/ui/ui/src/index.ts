@@ -26,7 +26,6 @@ export {default as BackTop} from '@osui/back-top';
 export {default as Spin} from '@osui/spin';
 export {default as DirectoryNavigator} from '@osui/directory-navigator';
 export {default as Popover} from '@osui/popover';
-export {default as MultiMenu} from '';
 export {default as Row} from '@osui/row';
 export {default as Button} from '@osui/button';
 export {default as Steps} from '@osui/steps';

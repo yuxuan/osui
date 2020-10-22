@@ -17,9 +17,10 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@ecomfe/react-track": "^1.6.0",
-    "@osui/icloud-theme": "^0.6.0",
+    "@osui/icloud-theme": "^0.6.3",
     "@osui/icons": "^0.4.1",
-    "@osui/ui": "^0.6.0",
+    "@osui/theme": "^0.6.3",
+    "@osui/ui": "^0.6.5",
     "antd": "^4.5.4",
     "axios": "^0.19.0",
     "classnames": "^2.2.6",

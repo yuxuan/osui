@@ -1167,98 +1167,128 @@
   dependencies:
     mkdirp "^1.0.4"
 
-"@osui/alert@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2falert/-/alert-0.6.0.tgz#878fee1cce1bcccb5dc7aa6ed06412f3503084d3"
-  integrity sha1-h4/uHM4bzMtdx6pu0GQS81AwhNM=
+"@osui/alert@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2falert/-/alert-0.6.2.tgz#8bd19f96265d6200c6671ad495ea3b848fc5c444"
+  integrity sha1-i9GfliZdYgDGZxrUleo7hI/FxEQ=
   dependencies:
     "@huse/boolean" "^1.0.3"
     "@huse/timeout" "^1.0.2"
-    "@osui/icons" "^0.6.0"
+    "@osui/icons" "^0.6.1"
     classnames "^2.2.6"
 
-"@osui/avatar@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2favatar/-/avatar-0.6.0.tgz#e168b948582719dced58eebcbe5db6ec819c9c59"
-  integrity sha1-4Wi5SFgnGdztWO68vl227IGcnFk=
+"@osui/auto-complete@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fauto-complete/-/auto-complete-0.6.1.tgz#ae66894d5192f15075204188dede034546365228"
+  integrity sha1-rmaJTVGS8VB1IEGI3t4DRUY2Uig=
+
+"@osui/avatar@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2favatar/-/avatar-0.6.1.tgz#959408ea872e43d2757372e4485f9550665c6a9f"
+  integrity sha1-lZQI6ocuQ9J1c3LkSF+VUGZcap8=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/back-top@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fback-top/-/back-top-0.6.0.tgz#555f913ce2a2d95f298a9daa1a35c7e681c0899e"
-  integrity sha1-VV+RPOKi2V8pip2qGjXH5oHAiZ4=
+"@osui/back-top@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fback-top/-/back-top-0.6.1.tgz#fd58495ea48cb52bda5ce82c78df13906ef5b0d4"
+  integrity sha1-/VhJXqSMtSvaXOgseN8TkG71sNQ=
   dependencies:
-    "@osui/icons" "^0.6.0"
+    "@osui/icons" "^0.6.1"
     classnames "^2.2.6"
 
-"@osui/badge@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fbadge/-/badge-0.6.0.tgz#009272af772935cd245cf1dea0ba92f1dca1002d"
-  integrity sha1-AJJyr3cpNc0kXPHeoLqS8dyhAC0=
-  dependencies:
-    classnames "^2.2.6"
-
-"@osui/branch-dropdown@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fbranch-dropdown/-/branch-dropdown-0.6.0.tgz#de1df3138ad0a2e6f6ce3dad0a660cc8509dce27"
-  integrity sha1-3h3zE4rQoub2zj2tCmYMyFCdzic=
-  dependencies:
-    "@osui/button" "^0.6.0"
-    "@osui/icons" "^0.6.0"
-
-"@osui/button@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fbutton/-/button-0.6.0.tgz#16cc7c6914789e41ea66bef8a86fecf2ec882d38"
-  integrity sha1-Fsx8aRR4nkHqZr74qG/s8uyILTg=
+"@osui/badge@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fbadge/-/badge-0.6.1.tgz#cb6f791ccf35ab122b1d2b8fe948f1e8a454348e"
+  integrity sha1-y295HM81qxIrHSuP6Ujx6KRUNI4=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/checkbox@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fcheckbox/-/checkbox-0.6.0.tgz#127e8cd029cf767e6207d6b62fce57442691f725"
-  integrity sha1-En6M0CnPdn5iB9a2L85XRCaR9yU=
+"@osui/branch-dropdown@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fbranch-dropdown/-/branch-dropdown-0.6.2.tgz#c2f948fa64fc44a99d85444a177fa0cf311d1c13"
+  integrity sha1-wvlI+mT8RKmdhURKF3+gzzEdHBM=
+  dependencies:
+    "@osui/button" "^0.6.2"
+    "@osui/icons" "^0.6.1"
+
+"@osui/breadcrumb@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fbreadcrumb/-/breadcrumb-0.6.1.tgz#270446e49d011603c5316e55e93660d228f4a46a"
+  integrity sha1-JwRG5J0BFgPFMW5V6TZg0ij0pGo=
+
+"@osui/button@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fbutton/-/button-0.6.2.tgz#27811aebd08ffa6fe6526b2e8c7a955548e82d1a"
+  integrity sha1-J4Ea69CP+m/mUmsujHqVVUjoLRo=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/collapse@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fcollapse/-/collapse-0.6.0.tgz#1190e6343cbd39417f18174d48c2e09a42f141b7"
-  integrity sha1-EZDmNDy9OUF/GBdNSMLgmkLxQbc=
-  dependencies:
-    "@osui/icons" "^0.6.0"
-    classnames "^2.2.6"
+"@osui/cascader@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fcascader/-/cascader-0.6.1.tgz#d922ca99e8879c12eb49450bdd0f1af9695a16ef"
+  integrity sha1-2SLKmeiHnBLrSUUL3Q8a+WlaFu8=
 
-"@osui/date-picker@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fdate-picker/-/date-picker-0.6.0.tgz#a2d93db25923e60fc9b521ff39ffa4b01653cb2e"
-  integrity sha1-otk9slkj5g/JtSH/Of+ksBZTyy4=
+"@osui/checkbox@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fcheckbox/-/checkbox-0.6.2.tgz#b3c2e7d2223d229637e8f891f7e1fb4672ac2885"
+  integrity sha1-s8Ln0iI9IpY36PiR9+H7RnKsKIU=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/directory-navigator@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fdirectory-navigator/-/directory-navigator-0.6.0.tgz#2d7a7c2b8fd99021bc733d0cd1fe8f7df22b8401"
-  integrity sha1-LXp8K4/ZkCG8cz0M0f6PffIrhAE=
+"@osui/col@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fcol/-/col-0.6.1.tgz#27758baf9b4ab557d6b89737118d222ac9d6fbef"
+  integrity sha1-J3WLr5tKtVfWuJc3EY0iKsnW++8=
+
+"@osui/collapse@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fcollapse/-/collapse-0.6.2.tgz#ba06681575423abbcac85b992e34fd93e85aab99"
+  integrity sha1-ugZoFXVCOrvKyFuZLjT9k+haq5k=
+  dependencies:
+    "@osui/icons" "^0.6.1"
+    classnames "^2.2.6"
+
+"@osui/date-picker@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fdate-picker/-/date-picker-0.6.1.tgz#15a1eaa336b575bc1a9e07e5ce8a19344e75e83f"
+  integrity sha1-FaHqoza1dbwangflzooZNE516D8=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/drawer@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fdrawer/-/drawer-0.6.0.tgz#af3d7ab813ff639ec7dceff328687317001f64e5"
-  integrity sha1-rz16uBP/Y57H3O/zKGhzFwAfZOU=
+"@osui/directory-navigator@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fdirectory-navigator/-/directory-navigator-0.6.1.tgz#8c893cef9ce42c4f171a599fa5f58037af0ebeec"
+  integrity sha1-jIk875zkLE8XGlmfpfWAN68Ovuw=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/form@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fform/-/form-0.6.0.tgz#b87e03bd04bd07276767a3b716b10b6be995799a"
-  integrity sha1-uH4DvQS9BydnZ6O3FrELa+mVeZo=
+"@osui/drawer@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fdrawer/-/drawer-0.6.1.tgz#a032a9ea517f521fdd40b79ddd6effbc18e0d883"
+  integrity sha1-oDKp6lF/Uh/dQLed3W7/vBjg2IM=
+  dependencies:
+    classnames "^2.2.6"
 
-"@osui/icloud-theme@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2ficloud-theme/-/icloud-theme-0.6.0.tgz#f8415a590bda42229a34d49ca12e71f504777b61"
-  integrity sha1-+EFaWQvaQiKaNNScoS5x9QR3e2E=
+"@osui/dropdown@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fdropdown/-/dropdown-0.6.1.tgz#60bc911d84b2d954fde826651f66d1896d8f4787"
+  integrity sha1-YLyRHYSy2VT96CZlH2bRiW2PR4c=
+
+"@osui/empty@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fempty/-/empty-0.6.1.tgz#ba879b7cb3e747bcf5f13f3a92e8d83b49da2172"
+  integrity sha1-uoebfLPnR7z18T86kujYO0naIXI=
+
+"@osui/form@^0.6.3":
+  version "0.6.3"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fform/-/form-0.6.3.tgz#6f375131e40a9a3a77791b60273720ebf4970ff5"
+  integrity sha1-bzdRMeQKmjp3eRtgJzcg6/SXD/U=
+
+"@osui/icloud-theme@^0.6.3":
+  version "0.6.3"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ficloud-theme/-/icloud-theme-0.6.3.tgz#b95bf17b12812e23fe380a7ac16ab8bd26581c16"
+  integrity sha1-uVvxexKBLiP+OAp6wWq4vSZYHBY=
 
 "@osui/icons@^0.4.1":
   version "0.4.1"
@@ -1267,24 +1297,36 @@
   dependencies:
     classnames "^2.2.6"
 
-"@osui/icons@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2ficons/-/icons-0.6.0.tgz#b8515f984d4a5489bf8e6f737c81d00da1920d01"
-  integrity sha1-uFFfmE1KVIm/jm9zfIHQDaGSDQE=
+"@osui/icons@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ficons/-/icons-0.6.1.tgz#6640383972305d2d955680341f3444d4355518bf"
+  integrity sha1-ZkA4OXIwXS2VVoA0HzRE1DVVGL8=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/input@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2finput/-/input-0.6.0.tgz#798dc400f37691e2ae10df89add91d1393146b30"
-  integrity sha1-eY3EAPN2keKuEN+JrdkdE5MUazA=
+"@osui/input-number@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2finput-number/-/input-number-0.6.1.tgz#cf289e6f7d62b4a9d48f34707a20a02d44d1181c"
+  integrity sha1-zyieb31itKnUjzRweiCgLUTRGBw=
+  dependencies:
+    "@osui/icloud-theme" "^0.6.3"
+
+"@osui/input@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2finput/-/input-0.6.2.tgz#838289a944a5584c60a48ef995164443b6b3821d"
+  integrity sha1-g4KJqUSlWExgpI75lRZEQ7azgh0=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/markdown@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fmarkdown/-/markdown-0.6.0.tgz#55bba10a7cb66d8a78a08e7c650f8e87cbb54592"
-  integrity sha1-VbuhCny2bYp4oI58ZQ+Oh8u1RZI=
+"@osui/list@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2flist/-/list-0.6.1.tgz#c1e091ab4d717ddcc56b227090fd0e584216f5fd"
+  integrity sha1-weCRq01xfdzFayJwkP0OWEIW9f0=
+
+"@osui/markdown@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fmarkdown/-/markdown-0.6.1.tgz#e690967dc133df858cfa104a7648fef0c1827eae"
+  integrity sha1-5pCWfcEz34WM+hBKdkj+8MGCfq4=
   dependencies:
     classnames "^2.2.6"
     github-markdown-css "^4.0.0"
@@ -1292,165 +1334,215 @@
     remark-html "^12.0.0"
     unist-util-visit "^2.0.3"
 
-"@osui/menu-dropdown@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fmenu-dropdown/-/menu-dropdown-0.6.0.tgz#752a1202b2d308b7a54bba56a486c1ff1b5523f1"
-  integrity sha1-dSoSArLTCLelS7pWpIbB/xtVI/E=
+"@osui/menu-dropdown@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fmenu-dropdown/-/menu-dropdown-0.6.1.tgz#c1d57ed3ca7a95921420cd3f6b558eaca742a9a2"
+  integrity sha1-wdV+08p6lZIUIM0/a1WOrKdCqaI=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/message@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fmessage/-/message-0.6.0.tgz#4ed3bc27bb3ce3fe1507ac8280fd996801c22196"
-  integrity sha1-TtO8J7s84/4VB6yCgP2ZaAHCIZY=
+"@osui/menu@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fmenu/-/menu-0.6.1.tgz#889d7b412f25788117bec4f8e2e7ebe75ff203c6"
+  integrity sha1-iJ17QS8leIEXvsT44ufr51/yA8Y=
+
+"@osui/message@^0.6.3":
+  version "0.6.3"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fmessage/-/message-0.6.3.tgz#1d2878a7c1dd4463285368c24143c58752ff5137"
+  integrity sha1-HSh4p8HdRGMoU2jCQUPFh1L/UTc=
   dependencies:
     classnames "^2.2.6"
     lodash.partial "^4.2.1"
 
-"@osui/modal@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fmodal/-/modal-0.6.0.tgz#d4efd7e7150e114687c87c6147ba558c008b2239"
-  integrity sha1-1O/X5xUOEUaHyHxhR7pVjACLIjk=
+"@osui/modal@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fmodal/-/modal-0.6.2.tgz#ed06e715ddf9b224bc9ee9f816b27e0858937b89"
+  integrity sha1-7QbnFd35siS8nun4FrJ+CFiTe4k=
   dependencies:
-    "@osui/button" "^0.6.0"
+    "@osui/button" "^0.6.2"
     classnames "^2.2.6"
 
-"@osui/pagination@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fpagination/-/pagination-0.6.0.tgz#bc49f0d58c49d2d6b8c06b6c386b269ae88942d8"
-  integrity sha1-vEnw1YxJ0ta4wGtsOGsmmuiJQtg=
+"@osui/pagination@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fpagination/-/pagination-0.6.2.tgz#f4334e6a4cd20a6383972a63e46a87b7f31ab738"
+  integrity sha1-9DNOakzSCmODlypj5GqHt/Matzg=
   dependencies:
-    "@osui/icons" "^0.6.0"
+    "@osui/icons" "^0.6.1"
     classnames "^2.2.6"
 
-"@osui/popover@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fpopover/-/popover-0.6.0.tgz#47608e66e3e02bf1aa515a08577e0c48b84b29b6"
-  integrity sha1-R2COZuPgK/GqUVoIV34MSLhLKbY=
+"@osui/popover@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fpopover/-/popover-0.6.2.tgz#68e87982a74cf4ccc57f53d95e2fd49de0bf0cd4"
+  integrity sha1-aOh5gqdM9MzFf1PZXi/UneC/DNQ=
 
-"@osui/progress@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fprogress/-/progress-0.6.0.tgz#f455d0552d227bc694655673e689bfc6b7026f4d"
-  integrity sha1-9FXQVS0ie8aUZVZz5om/xrcCb00=
-  dependencies:
-    classnames "^2.2.6"
-
-"@osui/radio@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fradio/-/radio-0.6.0.tgz#a3d36bf2ba53a65985721a7d2accbc009615f60b"
-  integrity sha1-o9Nr8rpTplmFchp9Ksy8AJYV9gs=
+"@osui/progress@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fprogress/-/progress-0.6.2.tgz#13b0b80162052b69e1f51fb16100da2c93c6e961"
+  integrity sha1-E7C4AWIFK2nh9R+xYQDaLJPG6WE=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/search-select-list@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fsearch-select-list/-/search-select-list-0.6.0.tgz#cd0e0c2bd487ceca976465bdf1af311f13c278cf"
-  integrity sha1-zQ4MK9SHzsqXZGW98a8xHxPCeM8=
+"@osui/radio@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fradio/-/radio-0.6.2.tgz#d51da7ea8fae30fb259d5e3e710e37523a43e5ee"
+  integrity sha1-1R2n6o+uMPslnV4+cQ43UjpD5e4=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/select@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fselect/-/select-0.6.0.tgz#2de2d6845fa45f6a241e60ccc4a89a8ae5e5efaa"
-  integrity sha1-LeLWhF+kX2okHmDMxKiaiuXl76o=
+"@osui/row@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2frow/-/row-0.6.1.tgz#0bd74bba2a6d28a58013d12d509eb45c3b1e49e4"
+  integrity sha1-C9dLuiptKKWAE9EtUJ60XDseSeQ=
 
-"@osui/space@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fspace/-/space-0.6.0.tgz#0463c0101d7f2ca646fe93d719bfd2cf7aa3e7cf"
-  integrity sha1-BGPAEB1/LKZG/pPXGb/Sz3qj588=
-
-"@osui/switch@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fswitch/-/switch-0.6.0.tgz#6975fc80bfa2ef620853d6adccb9eee2ff0322f4"
-  integrity sha1-aXX8gL+i72IIU9atzLnu4v8DIvQ=
+"@osui/search-select-list@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fsearch-select-list/-/search-select-list-0.6.1.tgz#24ee3a87109cd03314b274dc06d5f8237ca85817"
+  integrity sha1-JO46hxCc0DMUsnTcBtX4I3yoWBc=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/table@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2ftable/-/table-0.6.0.tgz#a2c8105b6ab58ae1d335aa9fd35b640e4d3dbb85"
-  integrity sha1-osgQW2q1iuHTNaqf01tkDk09u4U=
+"@osui/select@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fselect/-/select-0.6.2.tgz#521e0f83c4bc777e7bd7c3720bd2ea22b5f1ed23"
+  integrity sha1-Uh4Pg8S8d35718NyC9LqIrXx7SM=
+
+"@osui/space@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fspace/-/space-0.6.1.tgz#b40e8978a27ea4cf88dd0444b471b5f6945062d9"
+  integrity sha1-tA6JeKJ+pM+I3QREtHG19pRQYtk=
+
+"@osui/spin@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fspin/-/spin-0.6.1.tgz#c3ca8c355f0828d2368e1416ed98f16600995eb7"
+  integrity sha1-w8qMNV8IKNI2jhQW7ZjxZgCZXrc=
+
+"@osui/steps@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fsteps/-/steps-0.6.1.tgz#35349b80f11ca81ebed3cc76c537ca5a5e92942a"
+  integrity sha1-NTSbgPEcqB6+08x2xTfKWl6SlCo=
+
+"@osui/switch@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fswitch/-/switch-0.6.2.tgz#7d045d2c717cd5bbdfb9a8e5fbbe91714cb54c8f"
+  integrity sha1-fQRdLHF81bvfuajl+76RcUy1TI8=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/tabs@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2ftabs/-/tabs-0.6.0.tgz#887ce3c0f86a47178aac4a3cc4adb7a7fc014c23"
-  integrity sha1-iHzjwPhqRxeKrEo8xK23p/wBTCM=
-
-"@osui/tag@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2ftag/-/tag-0.6.0.tgz#e4adbf6079aca86aee2068361f3eeadea2db4887"
-  integrity sha1-5K2/YHmsqGruIGg2Hz7q3qLbSIc=
+"@osui/table@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ftable/-/table-0.6.2.tgz#51daa164b095fc2ae7a8dee93c1bdb038d3c3141"
+  integrity sha1-UdqhZLCV/CrnqN7pPBvbA408MUE=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/theme@^0.4.2":
-  version "0.4.2"
-  resolved "http://registry.npm.baidu-int.com/@osui%2ftheme/-/theme-0.4.2.tgz#594b34c8e45bfa9b5e2f566ad447150f9e44ec88"
-  integrity sha1-WUs0yORb+pteL1Zq1EcVD55E7Ig=
+"@osui/tabs@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ftabs/-/tabs-0.6.2.tgz#f22019a5d8d3f8166147ad3fa2b3b15212f503d1"
+  integrity sha1-8iAZpdjT+BZhR60/orOxUhL1A9E=
 
-"@osui/timeline@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2ftimeline/-/timeline-0.6.0.tgz#f8c006f1d6e467c9e25542cc0e698b9ff4f67144"
-  integrity sha1-+MAG8dbkZ8niVULMDmmLn/T2cUQ=
+"@osui/tag@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ftag/-/tag-0.6.2.tgz#2d53ede9e81cd4f7d33b7fa502d26798c9b9fd6c"
+  integrity sha1-LVPt6egc1PfTO3+lAtJnmMm5/Ww=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/toggle-button@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2ftoggle-button/-/toggle-button-0.6.0.tgz#5389fdf8a3d8aec7657c21ba84b88e70df44028b"
-  integrity sha1-U4n9+KPYrsdlfCG6hLiOcN9EAos=
+"@osui/theme@^0.6.3":
+  version "0.6.3"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ftheme/-/theme-0.6.3.tgz#3367b45acae30dee341f4ab8d4698109765c8e10"
+  integrity sha1-M2e0WsrjDe40H0q41GmBCXZcjhA=
+
+"@osui/time-picker@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ftime-picker/-/time-picker-0.6.1.tgz#b0e9f56dc1136da5adbc59c9c4715314056b22d5"
+  integrity sha1-sOn1bcETbaWtvFnJxHFTFAVrItU=
+
+"@osui/timeline@^0.6.2":
+  version "0.6.2"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ftimeline/-/timeline-0.6.2.tgz#c3d848ce0a4c11e662d90305106298d93a885a7e"
+  integrity sha1-w9hIzgpMEeZi2QMFEGKY2TqIWn4=
+  dependencies:
+    classnames "^2.2.6"
+
+"@osui/toggle-button@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ftoggle-button/-/toggle-button-0.6.1.tgz#7cce1032385138173b47c0f4972fe8054ad83b7c"
+  integrity sha1-fM4QMjhROBc7R8D0ly/oBUrYO3w=
   dependencies:
     "@huse/boolean" "^1.0.2"
     "@huse/click-outside" "^1.0.1"
     "@huse/derived-state" "^1.0.1"
-    "@osui/icons" "^0.6.0"
+    "@osui/icons" "^0.6.1"
 
-"@osui/tooltip@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2ftooltip/-/tooltip-0.6.0.tgz#11e47c2d2dbd67800e1003bdc4d98157e9564688"
-  integrity sha1-EeR8LS29Z4AOEAO9xNmBV+lWRog=
+"@osui/tooltip@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ftooltip/-/tooltip-0.6.1.tgz#833bca7440f4652b25741bdb7be7a343c3c7bf89"
+  integrity sha1-gzvKdED0ZSsldBvbe+ejQ8PHv4k=
   dependencies:
     classnames "^2.2.6"
 
-"@osui/ui@^0.6.0":
-  version "0.6.0"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fui/-/ui-0.6.0.tgz#e15d43da35142f335f0bb634c4b4b809b86c36dd"
-  integrity sha1-4V1D2jUULzNfC7Y0xLS4CbhsNt0=
+"@osui/tree-select@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ftree-select/-/tree-select-0.6.1.tgz#a596616a3068cd6295dc6fe1e081ddb5a70bd802"
+  integrity sha1-pZZhajBozWKV3G/h4IHdtacL2AI=
+
+"@osui/tree@^0.6.1":
+  version "0.6.1"
+  resolved "http://registry.npm.baidu-int.com/@osui%2ftree/-/tree-0.6.1.tgz#91f041ecd4a6f97b2d57a79814aa1889d9d68fba"
+  integrity sha1-kfBB7NSm+XstV6eYFKoYidnWj7o=
+
+"@osui/ui@^0.6.5":
+  version "0.6.5"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fui/-/ui-0.6.5.tgz#741aec3d08ab56f6ff20105324c7ae355ce98428"
+  integrity sha1-dBrsPQirVvb/IBBTJMeuNVzphCg=
   dependencies:
-    "@osui/alert" "^0.6.0"
-    "@osui/avatar" "^0.6.0"
-    "@osui/back-top" "^0.6.0"
-    "@osui/badge" "^0.6.0"
-    "@osui/branch-dropdown" "^0.6.0"
-    "@osui/button" "^0.6.0"
-    "@osui/checkbox" "^0.6.0"
-    "@osui/collapse" "^0.6.0"
-    "@osui/date-picker" "^0.6.0"
-    "@osui/directory-navigator" "^0.6.0"
-    "@osui/drawer" "^0.6.0"
-    "@osui/form" "^0.6.0"
-    "@osui/icons" "^0.6.0"
-    "@osui/input" "^0.6.0"
-    "@osui/markdown" "^0.6.0"
-    "@osui/menu-dropdown" "^0.6.0"
-    "@osui/message" "^0.6.0"
-    "@osui/modal" "^0.6.0"
-    "@osui/pagination" "^0.6.0"
-    "@osui/popover" "^0.6.0"
-    "@osui/progress" "^0.6.0"
-    "@osui/radio" "^0.6.0"
-    "@osui/search-select-list" "^0.6.0"
-    "@osui/select" "^0.6.0"
-    "@osui/space" "^0.6.0"
-    "@osui/switch" "^0.6.0"
-    "@osui/table" "^0.6.0"
-    "@osui/tabs" "^0.6.0"
-    "@osui/tag" "^0.6.0"
-    "@osui/timeline" "^0.6.0"
-    "@osui/toggle-button" "^0.6.0"
-    "@osui/tooltip" "^0.6.0"
+    "@osui/alert" "^0.6.2"
+    "@osui/auto-complete" "^0.6.1"
+    "@osui/avatar" "^0.6.1"
+    "@osui/back-top" "^0.6.1"
+    "@osui/badge" "^0.6.1"
+    "@osui/branch-dropdown" "^0.6.2"
+    "@osui/breadcrumb" "^0.6.1"
+    "@osui/button" "^0.6.2"
+    "@osui/cascader" "^0.6.1"
+    "@osui/checkbox" "^0.6.2"
+    "@osui/col" "^0.6.1"
+    "@osui/collapse" "^0.6.2"
+    "@osui/date-picker" "^0.6.1"
+    "@osui/directory-navigator" "^0.6.1"
+    "@osui/drawer" "^0.6.1"
+    "@osui/dropdown" "^0.6.1"
+    "@osui/empty" "^0.6.1"
+    "@osui/form" "^0.6.3"
+    "@osui/icons" "^0.6.1"
+    "@osui/input" "^0.6.2"
+    "@osui/input-number" "^0.6.1"
+    "@osui/list" "^0.6.1"
+    "@osui/markdown" "^0.6.1"
+    "@osui/menu" "^0.6.1"
+    "@osui/menu-dropdown" "^0.6.1"
+    "@osui/message" "^0.6.3"
+    "@osui/modal" "^0.6.2"
+    "@osui/pagination" "^0.6.2"
+    "@osui/popover" "^0.6.2"
+    "@osui/progress" "^0.6.2"
+    "@osui/radio" "^0.6.2"
+    "@osui/row" "^0.6.1"
+    "@osui/search-select-list" "^0.6.1"
+    "@osui/select" "^0.6.2"
+    "@osui/space" "^0.6.1"
+    "@osui/spin" "^0.6.1"
+    "@osui/steps" "^0.6.1"
+    "@osui/switch" "^0.6.2"
+    "@osui/table" "^0.6.2"
+    "@osui/tabs" "^0.6.2"
+    "@osui/tag" "^0.6.2"
+    "@osui/time-picker" "^0.6.1"
+    "@osui/timeline" "^0.6.2"
+    "@osui/toggle-button" "^0.6.1"
+    "@osui/tooltip" "^0.6.1"
+    "@osui/tree" "^0.6.1"
+    "@osui/tree-select" "^0.6.1"
     classnames "^2.2.6"
     github-markdown-css "^4.0.0"
     lodash.partial "^4.2.1"
