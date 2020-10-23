@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.6.5...@osui/ui@0.6.6) (2020-10-22)
+
+
+### Bug Fixes
+
+* @osui/ui package导出错误 ([b30b4e2](https://gitee.com/gitee-fe/osui/tree/master/commits/b30b4e22b2dc041520868e94c125ec72658273a2))
+
+
+
+
+
+## [0.6.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.6.4...@osui/ui@0.6.5) (2020-10-21)
+
+
+### Bug Fixes
+
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+
+
+
+
+
+## [0.6.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.6.3...@osui/ui@0.6.4) (2020-10-20)
+
+**Note:** Version bump only for package @osui/ui
+
+
+
+
+
+## [0.6.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.6.2...@osui/ui@0.6.3) (2020-10-20)
+
+**Note:** Version bump only for package @osui/ui
+
+
+
+
+
+## [0.6.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.5.5...@osui/ui@0.6.2) (2020-10-19)
+
+
+### Features
+
+* 增加Space组件, 增加button group形式的demo ([39eaa10](https://gitee.com/gitee-fe/osui/tree/master/commits/39eaa104cda0bd352b1a2c791856db98e673a7fb))
+
+
+
+
+
 # [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.5.5...@osui/ui@0.6.0) (2020-10-13)
 
 

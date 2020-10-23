@@ -3,7 +3,7 @@ import {Link} from 'react-omni-link';
 import Alert from '../src';
 
 export default {
-    title: 'Alert',
+    title: '通过验收/Alert 警告提示',
     component: Alert,
 };
 

@@ -5,7 +5,7 @@ import Input from '../src';
 const { TextArea } = Input;
 
 export default {
-    title: 'Input',
+    title: '通过验收/Input 输入框',
 };
 
 export const Demo = () => {

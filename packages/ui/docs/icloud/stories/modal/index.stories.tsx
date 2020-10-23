@@ -4,7 +4,7 @@ import {IconWarningCircleFill} from '@osui/icons';
 import Modal from '@osui/modal';
 
 export default {
-    title: 'Modal',
+    title: '验收中/Modal 对话框',
 };
 
 export const Demo = () => {

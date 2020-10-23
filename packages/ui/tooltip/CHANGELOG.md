@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tooltip@0.5.1...@osui/tooltip@0.6.1) (2020-10-19)
+
+
+### Features
+
+* 调整alert功能和icloud theme ([1b7d15b](https://gitee.com/gitee-fe/osui/tree/master/commits/1b7d15b741841378951a69d72db03ed334ab287e))
+
+
+
+
+
 # [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tooltip@0.5.1...@osui/tooltip@0.6.0) (2020-10-13)
 
 

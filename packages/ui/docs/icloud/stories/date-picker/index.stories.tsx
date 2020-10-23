@@ -5,7 +5,7 @@ import DatePicker from '@osui/date-picker';
 const {RangePicker} = DatePicker;
 
 export default {
-    title: 'DatePicker',
+    title: '待验收/DatePicker 日期选择框',
 };
 
 export const Demo = () => {

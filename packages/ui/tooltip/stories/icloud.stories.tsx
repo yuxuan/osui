@@ -3,7 +3,7 @@ import {Divider} from 'antd';
 import Tooltip from '../src';
 
 export default {
-    title: 'Tooltip',
+    title: '通过验收/Tooltip 文字提示',
 };
 
 export const Demo = () => {

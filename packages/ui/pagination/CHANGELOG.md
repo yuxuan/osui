@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@0.6.1...@osui/pagination@0.6.2) (2020-10-20)
+
+
+### Bug Fixes
+
+* popover padding; chore：默认开发icloud-theme ([356cc34](https://gitee.com/yuxuanhuo/osui/tree/master/commits/356cc34992918ffb6c3d30283b2810fed8e18e79))
+
+
+
+
+
+## [0.6.1](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@0.5.1...@osui/pagination@0.6.1) (2020-10-19)
+
+
+### Bug Fixes
+
+* pagniation icloud主题调整 ([1d1f513](https://gitee.com/yuxuanhuo/osui/tree/master/commits/1d1f5139658689663e4cdfcfd843cbcd6b654ba6))
+
+
+
+
+
 # [0.6.0](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@0.5.1...@osui/pagination@0.6.0) (2020-10-13)
 
 

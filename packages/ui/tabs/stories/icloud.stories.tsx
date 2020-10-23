@@ -3,7 +3,7 @@ import { ForkOutlined } from '@ant-design/icons';
 import Tabs from '../src';
 
 export default {
-    title: 'Tabs',
+    title: '待验收/Tabs 标签页',
 };
 
 export const Demo = () => {

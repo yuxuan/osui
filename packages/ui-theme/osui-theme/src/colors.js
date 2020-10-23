@@ -389,6 +389,7 @@ exports.presetColors = {
     '--table-header-bg': 'transparent',
     '--table-header-color': 'var(--color-gray-7)',
     '--table-row-hover-bg': 'var(--color-brand-1)',
+    '--table-header-cell-border-right': 'none',
     '--tabs-highlight-color': 'var(--color-gray-9)',
     '--tabs-hover-color': 'var(--color-gray-9)',
     '--tabs-ink-bar-color': 'var(--color-gray-9)',
@@ -441,5 +442,7 @@ exports.presetColors = {
     '--modal-body-padding': '0',
     '--popover-font-size': '14px',
     '--popover-line-height': '1.5715',
+    '--popover-inner-content-padding': '16px',
+    '--popover-title-padding': '16px 16px 0 16px',
     ...buttonColors,
 };

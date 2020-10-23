@@ -5,7 +5,7 @@ import { UserOutlined, AntDesignOutlined } from '@ant-design/icons';
 import Avatar from '@osui/avatar';
 
 export default {
-    title: 'Avatar',
+    title: '通过验收/Avatar 头像',
 };
 
 export const Demo = () => {

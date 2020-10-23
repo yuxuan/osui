@@ -2,7 +2,7 @@ import React from 'react';
 import Progress from '../src';
 
 export default {
-    title: 'Progress',
+    title: '待验收/Progress 进度条',
 };
 
 export const Demo = () => {

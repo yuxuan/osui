@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/message@0.6.2...@osui/message@0.6.3) (2020-10-21)
+
+
+### Bug Fixes
+
+* message closeicon 位置调整 ([4a7601b](https://gitee.com/gitee-fe/osui/tree/master/commits/4a7601b6249904d74ca649269ed9051eb3fb91bb))
+
+
+
+
+
+## [0.6.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/message@0.6.1...@osui/message@0.6.2) (2020-10-20)
+
+
+### Bug Fixes
+
+* popover padding; chore：默认开发icloud-theme ([356cc34](https://gitee.com/gitee-fe/osui/tree/master/commits/356cc34992918ffb6c3d30283b2810fed8e18e79))
+
+
+
+
+
+## [0.6.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/message@0.5.1...@osui/message@0.6.1) (2020-10-19)
+
+
+### Bug Fixes
+
+* 调整message icloud theme ([45e0e6a](https://gitee.com/gitee-fe/osui/tree/master/commits/45e0e6ac48b01f0a5c1f2a6a9fabb6192d0ee937))
+
+
+
+
+
 # [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/message@0.5.1...@osui/message@0.6.0) (2020-10-13)
 
 

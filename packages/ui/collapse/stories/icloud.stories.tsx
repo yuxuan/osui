@@ -4,7 +4,7 @@ import Collapse from '../src';
 const { Panel } = Collapse;
 
 export default {
-    title: 'Collapse',
+    title: '待验收/Collapse 折叠面板',
 };
 
 export const Demo = () => {

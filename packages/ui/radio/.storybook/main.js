@@ -1,6 +1,16 @@
 const {getBabelConfig} = require('@reskript/config-babel');
 const {loaders} = require('@reskript/config-webpack');
 const path = require('path');
+const process = require('process');
+
+const themeEnv = process.env.THEME;
+const isOsuiTheme = themeEnv === 'osui';
+
+const styleResources = isOsuiTheme ? (
+     [require.resolve('@osui/theme/dist/antd-vars-patch.less')]
+) : (
+    [require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less')]
+);
 
 const loaderOptions = {
     cwd: process.cwd(),
@@ -9,7 +19,7 @@ const loaderOptions = {
         build: {
             extractCSS: false,
             styleResources: [
-                require.resolve('@osui/theme/dist/antd-vars-patch.less'),
+                ...styleResources,
                 require.resolve('@osui/theme/dist/less-functions-overrides.less'),
             ],
         },
@@ -21,8 +31,7 @@ module.exports = {
         '../stories/**/*.stories.[tj]s{,x}',
         '../stories/**/*.stories.mdx'
     ],
-    addons: [
-        {
+    addons: [{
             name: '@storybook/addon-docs',
             options: {
                 configureJSX: true,
@@ -37,12 +46,11 @@ module.exports = {
     webpackFinal: async (config) => {
         config.module.rules.push({
             test: /\.(js|jsx|ts|tsx)$/,
-            use: [
-                {
-                    loader: 'babel-loader',
-                    options: getBabelConfig(),
-                },
-            ],
+            exclude: /node_modules/,
+            use: [{
+                loader: 'babel-loader',
+                options: getBabelConfig(),
+            }, ],
         });
         config.module.rules.push({
             test: /\.less$/,

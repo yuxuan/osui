@@ -2,13 +2,12 @@ import React from 'react';
 import Input from '@osui/input';
 import Button from '@osui/button';
 import Checkbox from '@osui/checkbox';
-import DatePicker from '@osui/date-picker';
-import Select from '@osui/select';
-import {TimePicker, Cascader, InputNumber} from 'antd';
+import Radio from '@osui/radio';
+import InputNumber from '@osui/input-number';
 import Form from '../src';
 
 export default {
-    title: 'Form',
+    title: '验收中/Form 表单',
 };
 
 export const Demo = () => {
@@ -47,12 +46,12 @@ export const Demo = () => {
             onFinishFailed={onFinishFailed}
         >
             <Form.Item
-                label="Username"
+                label="用户名"
                 name="username"
                 rules={[
                     {
                         required: true,
-                        message: 'Please input your username!',
+                        message: '请输入用户名',
                     },
                 ]}
             >
@@ -60,12 +59,12 @@ export const Demo = () => {
             </Form.Item>
 
             <Form.Item
-                label="Password"
+                label="密码"
                 name="password"
                 rules={[
                     {
                         required: true,
-                        message: 'Please input your password!',
+                        message: '请输入密码',
                     },
                 ]}
             >
@@ -76,6 +75,141 @@ export const Demo = () => {
                 <Checkbox>Remember me</Checkbox>
             </Form.Item>
 
+            <Form.Item {...tailLayout}>
+                <Button type="primary" htmlType="submit">
+                    提交
+                </Button>
+            </Form.Item>
+        </Form>
+    );
+};
+
+export const BasicDemo = () => {
+    const formItemLayout = {
+        labelCol: {
+            span: 5,
+        },
+        wrapperCol: {
+            span: 12,
+        },
+    };
+    const tailLayout = {
+        wrapperCol: {
+            offset: 6,
+            span: 18,
+        },
+    };
+    const onFinish = values => {
+        console.log('Success:', values);
+    };
+    const onFinishFailed = values => {
+        console.log('Success:', values);
+    };
+    return (
+        <Form {...formItemLayout} onFinish={onFinish} onFinishFailed={onFinishFailed}>
+            <Form.Item
+                label="主题(topic)"
+                name="topic"
+                extra="支持以大小写字母数字开头和结尾，可包含短横线的组合，不支持汉字与特殊字符，创建后不可更改"
+                validateMessageLayout="inline"
+                rules={[
+                    {
+                        required: true,
+                        message: '必填字段',
+                    },
+                    {
+                        max: 10,
+                        message: '最多不超过10个字',
+                    },
+                    {
+                        type: 'number',
+                        message: '只能是数字',
+                    },
+                ]}
+            >
+                <Input placeholder="请输入主题（Topic）" />
+            </Form.Item>
+            <Form.Item
+                label="ACL账户"
+                name="account"
+                validateMessageLayout="inline"
+                rules={[
+                    {
+                        required: true,
+                        message: '必填字段',
+                    },
+                ]}
+            >
+                <Radio.Group onChange={e => console.log(e.target.value)}>
+                    <Radio.Button value={1}>已有ACL账户</Radio.Button>
+                    <Radio.Button value={2}>创建ACL账户</Radio.Button>
+                </Radio.Group>
+            </Form.Item>
+            <Form.Item
+                label="ACL账户名称"
+                extra="用于发布/订阅请求鉴权"
+                name="accountName"
+                validateMessageLayout="inline"
+                rules={[
+                    {
+                        required: true,
+                        message: '必填字段',
+                    },
+                ]}
+            >
+                <Input placeholder="请输入ACL账户名" />
+            </Form.Item>
+            <Form.Item
+                label={<><div>ACL账户密码</div><div>账户密码</div></>}
+                name="password"
+                extra="字符需满足大于6位"
+                validateMessageLayout="inline"
+                rules={[
+                    {
+                        required: true,
+                        message: '必填字段',
+                    },
+                    {
+                        min: 6,
+                        message: '最少6位',
+                    },
+                ]}
+            >
+                <Input.Password placeholder="请输入ACL账户密码" />
+            </Form.Item>
+            <Form.Item
+                label="Queue名称"
+                name="queueletName"
+                extra="建议**-Queue格式，支持字母、数字组合，不支持汉字与特殊字符，创建后不可更改"
+                validateMessageLayout="inline"
+                rules={[
+                    {
+                        required: true,
+                        message: '必填字段',
+                    },
+                    {
+                        validator(_, value) {
+                            return /[0-9a-zA-Z]/.test(value) ? Promise.resolve() : Promise.reject(Error('支持字母、数字组合'));
+                        },
+                    },
+                ]}
+            >
+                <Input placeholder="" />
+            </Form.Item>
+            <Form.Item
+                label="Queuelet数量"
+                name="queueletAmount"
+                extra="设置queue数量后会按照该数量均分pipe对应的pipelet，生成queue"
+                validateMessageLayout="inline"
+                rules={[
+                    {
+                        required: true,
+                        message: '必填字段',
+                    },
+                ]}
+            >
+                <InputNumber defaultValue={6} />
+            </Form.Item>
             <Form.Item {...tailLayout}>
                 <Button type="primary" htmlType="submit">
                     Submit
@@ -111,7 +245,7 @@ export const ValidateMessageDemo = () => {
             <Form.Item
                 label="Username"
                 name="username"
-                hint="由大小写字母、数字以及-_/.特殊字符组成"
+                extra="由大小写字母、数字以及-_/.特殊字符组成"
                 validateMessageLayout="inline"
                 rules={[
                     {
@@ -132,183 +266,6 @@ export const ValidateMessageDemo = () => {
             </Form.Item>
             <Form.Item label="Warning" name="what" validateStatus="warning">
                 <Input />
-            </Form.Item>
-            <Form.Item {...tailLayout}>
-                <Button type="primary" htmlType="submit">
-                    Submit
-                </Button>
-            </Form.Item>
-        </Form>
-    );
-};
-
-
-export const StatusDemo = () => {
-    const { Option } = Select;
-    const formItemLayout = {
-        labelCol: {
-            span: 5,
-        },
-        wrapperCol: {
-            span: 12,
-        },
-    };
-    const tailLayout = {
-        wrapperCol: {
-            offset: 6,
-            span: 18,
-        },
-    };
-    const onFinish = values => {
-        console.log('Success:', values);
-    };
-    const onFinishFailed = values => {
-        console.log('Success:', values);
-    };
-    return (
-        <Form {...formItemLayout} onFinish={onFinish} onFinishFailed={onFinishFailed}>
-            <Form.Item
-                label="Username"
-                name="username"
-                hint="由大小写字母、数字以及-_/.特殊字符组成"
-                validateMessageLayout="inline"
-                rules={[
-                    {
-                        required: true,
-                        message: '必填字段',
-                    },
-                    {
-                        max: 10,
-                        message: '最多不超过10个字',
-                    },
-                    {
-                        type: 'number',
-                        message: '只能是数字',
-                    },
-                ]}
-            >
-                <Input />
-            </Form.Item>
-            <Form.Item label="Warning" name="what" validateStatus="warning">
-                <Input />
-            </Form.Item>
-            <Form.Item
-                label="Validating"
-                validateStatus="validating"
-            >
-                <Input placeholder="I'm the content is being validated" id="validating" />
-            </Form.Item>
-
-            <Form.Item label="Success" validateStatus="success">
-                <Input placeholder="I'm the content" id="success" />
-            </Form.Item>
-
-            <Form.Item label="Warning" validateStatus="warning">
-                <Input placeholder="Warning" id="warning2" />
-            </Form.Item>
-
-            <Form.Item
-                label="Fail"
-                validateStatus="error"
-                help="Should be combination of numbers & alphabets"
-            >
-                <Input placeholder="unavailable choice" id="error2" />
-            </Form.Item>
-
-            <Form.Item label="Success" validateStatus="success">
-                <DatePicker
-                    style={{
-                        width: '100%',
-                    }}
-                />
-            </Form.Item>
-
-            <Form.Item label="Warning" validateStatus="warning">
-                <TimePicker
-                    style={{
-                        width: '100%',
-                    }}
-                />
-            </Form.Item>
-
-            <Form.Item label="Error" validateStatus="error">
-                <Select allowClear>
-                    <Option value="1">Option 1</Option>
-                    <Option value="2">Option 2</Option>
-                    <Option value="3">Option 3</Option>
-                </Select>
-            </Form.Item>
-
-            <Form.Item
-                label="Validating"
-                validateStatus="validating"
-                help="The information is being validated..."
-            >
-                <Cascader
-                    options={[
-                        {
-                            value: 'xx',
-                            label: 'xx',
-                        },
-                    ]}
-                    allowClear
-                />
-            </Form.Item>
-
-            <Form.Item
-                label="inline"
-                style={{
-                    marginBottom: 0,
-                }}
-            >
-                <Form.Item
-                    validateStatus="error"
-                    help="Please select the correct date"
-                    style={{
-                        display: 'inline-block',
-                        width: 'calc(50% - 12px)',
-                    }}
-                >
-                    <DatePicker />
-                </Form.Item>
-                <span
-                    style={{
-                        display: 'inline-block',
-                        width: '24px',
-                        lineHeight: '32px',
-                        textAlign: 'center',
-                    }}
-                >
-                    -
-                </span>
-                <Form.Item
-                    style={{
-                        display: 'inline-block',
-                        width: 'calc(50% - 12px)',
-                    }}
-                >
-                    <DatePicker />
-                </Form.Item>
-            </Form.Item>
-
-            <Form.Item label="Success" validateStatus="success">
-                <InputNumber
-                    style={{
-                        width: '100%',
-                    }}
-                />
-            </Form.Item>
-
-            <Form.Item label="Success" validateStatus="success">
-                <Input allowClear placeholder="with allowClear" />
-            </Form.Item>
-
-            <Form.Item label="Warning" validateStatus="warning">
-                <Input.Password placeholder="with input password" />
-            </Form.Item>
-
-            <Form.Item label="Error" validateStatus="error">
-                <Input.Password allowClear placeholder="with input password and allowClear" />
             </Form.Item>
             <Form.Item {...tailLayout}>
                 <Button type="primary" htmlType="submit">

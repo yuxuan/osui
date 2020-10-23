@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.6.1...@osui/modal@0.6.2) (2020-10-20)
+
+
+### Bug Fixes
+
+* popover padding; chore：默认开发icloud-theme ([356cc34](https://gitee.com/gitee-fe/osui/tree/master/commits/356cc34992918ffb6c3d30283b2810fed8e18e79))
+
+
+
+
+
+## [0.6.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.5.3...@osui/modal@0.6.1) (2020-10-19)
+
+
+### Bug Fixes
+
+* modal icloud theme 调整 ([c8e0598](https://gitee.com/gitee-fe/osui/tree/master/commits/c8e059806876a3154c23b629008a9e27cae01caa))
+* modal icloud theme 调整 ([7c56388](https://gitee.com/gitee-fe/osui/tree/master/commits/7c563884ea60f84489c56aa018d67a8e892fc5f4))
+* modal, switch icloud-theme样式修复 ([d1eea7d](https://gitee.com/gitee-fe/osui/tree/master/commits/d1eea7d5984887a7bec2fd8fa59dcf867b6564c4))
+
+
+
+
+
 # [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.5.3...@osui/modal@0.6.0) (2020-10-13)
 
 

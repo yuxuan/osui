@@ -3,7 +3,7 @@ import {ClockCircleOutlined} from '@ant-design/icons';
 import Timeline from '@osui/timeline';
 
 export default {
-    title: 'Timeline',
+    title: '待验收/Timeline 时间轴',
 };
 
 export const Demo = () => {

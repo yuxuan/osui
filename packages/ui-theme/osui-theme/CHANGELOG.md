@@ -3,6 +3,56 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.6.2...@osui/theme@0.6.3) (2020-10-21)
+
+
+### Bug Fixes
+
+* table icloud-theme样式修复 ([3f0d5e3](https://gitee.com/gitee-fe/osui/tree/master/commits/3f0d5e36838640cf65145b5f489dfbb629f0ac8f))
+
+
+
+
+
+## [0.6.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.6.1...@osui/theme@0.6.2) (2020-10-20)
+
+
+### Bug Fixes
+
+* popover padding; chore：默认开发icloud-theme ([356cc34](https://gitee.com/gitee-fe/osui/tree/master/commits/356cc34992918ffb6c3d30283b2810fed8e18e79))
+
+
+
+
+
+## [0.6.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.5.4...@osui/theme@0.6.1) (2020-10-19)
+
+
+### Bug Fixes
+
+* form修复onChange没有透传的问题 ([28665aa](https://gitee.com/gitee-fe/osui/tree/master/commits/28665aac36d94950b218f94a8dd9e1edcf55da96))
+* modal icloud theme 调整 ([7c56388](https://gitee.com/gitee-fe/osui/tree/master/commits/7c563884ea60f84489c56aa018d67a8e892fc5f4))
+* modal icloud theme 调整 ([c8e0598](https://gitee.com/gitee-fe/osui/tree/master/commits/c8e059806876a3154c23b629008a9e27cae01caa))
+* modal, switch icloud-theme样式修复 ([d1eea7d](https://gitee.com/gitee-fe/osui/tree/master/commits/d1eea7d5984887a7bec2fd8fa59dcf867b6564c4))
+* pagniation icloud主题调整 ([1d1f513](https://gitee.com/gitee-fe/osui/tree/master/commits/1d1f5139658689663e4cdfcfd843cbcd6b654ba6))
+* popover icloud theme调整 ([ceaa52a](https://gitee.com/gitee-fe/osui/tree/master/commits/ceaa52ac3f5057b8f644938dd5e722c2676827ef))
+* radio button hover color icloud theme 调整 ([a8ed354](https://gitee.com/gitee-fe/osui/tree/master/commits/a8ed354377eea758c0e239cca0618a5d91c0e8d6))
+* radio调整icloud主题 ([86a94a3](https://gitee.com/gitee-fe/osui/tree/master/commits/86a94a359ff0a03301df779f240a9e6beaa5933e))
+* switch icloud主题样式调整 ([4cfd4c3](https://gitee.com/gitee-fe/osui/tree/master/commits/4cfd4c345a704f1f97f0453b7a921395c1164ccc))
+* tabs icloud theme 调整 ([a0815ba](https://gitee.com/gitee-fe/osui/tree/master/commits/a0815baa516af2c799ad982538868ec6fed88d9c))
+* 调整checkbox icloud主题样式 ([fd43d5b](https://gitee.com/gitee-fe/osui/tree/master/commits/fd43d5b6c846e19db8682b6b7ef70392844029f9))
+
+
+### Features
+
+* form icloud theme调整 ([b90c6e4](https://gitee.com/gitee-fe/osui/tree/master/commits/b90c6e4f86dd65f3270afb3627fe7baf9811a615))
+* 增加Space组件, 增加button group形式的demo ([39eaa10](https://gitee.com/gitee-fe/osui/tree/master/commits/39eaa104cda0bd352b1a2c791856db98e673a7fb))
+* 调整alert功能和icloud theme ([1b7d15b](https://gitee.com/gitee-fe/osui/tree/master/commits/1b7d15b741841378951a69d72db03ed334ab287e))
+
+
+
+
+
 # [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.5.4...@osui/theme@0.6.0) (2020-10-13)
 
 

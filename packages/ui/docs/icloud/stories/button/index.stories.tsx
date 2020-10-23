@@ -4,7 +4,7 @@ import Space from '@osui/space';
 import Button from '@osui/button';
 
 export default {
-    title: 'Button',
+    title: '通过验收/Button 按钮',
     component: Button,
 };
 

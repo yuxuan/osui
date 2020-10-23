@@ -8,12 +8,12 @@ const path = require('path');
 const process = require('process');
 
 const themeEnv = process.env.THEME;
-const isiCloudTheme = themeEnv === 'icloud-theme';
+const isOsuiTheme = themeEnv === 'osui';
 
-const styleResources = isiCloudTheme ? (
-    [require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less')]
+const styleResources = isOsuiTheme ? (
+     [require.resolve('@osui/theme/dist/antd-vars-patch.less')]
 ) : (
-    [require.resolve('@osui/theme/dist/antd-vars-patch.less')]
+    [require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less')]
 );
 
 const loaderOptions = {

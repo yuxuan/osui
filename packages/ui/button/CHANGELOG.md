@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@0.6.1...@osui/button@0.6.2) (2020-10-20)
+
+
+### Bug Fixes
+
+* popover padding; chore：默认开发icloud-theme ([356cc34](https://gitee.com/gitee-fe/osui/tree/master/commits/356cc34992918ffb6c3d30283b2810fed8e18e79))
+
+
+
+
+
+## [0.6.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@0.5.3...@osui/button@0.6.1) (2020-10-19)
+
+
+### Bug Fixes
+
+* 增加button default border高亮, success, error, warning 状态 ([32dfd0f](https://gitee.com/gitee-fe/osui/tree/master/commits/32dfd0f8ef987a3e0a3adc724f75c07f5d6c9a2a))
+
+
+### Features
+
+* 增加Space组件, 增加button group形式的demo ([39eaa10](https://gitee.com/gitee-fe/osui/tree/master/commits/39eaa104cda0bd352b1a2c791856db98e673a7fb))
+
+
+
+
+
 # [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@0.5.3...@osui/button@0.6.0) (2020-10-13)
 
 

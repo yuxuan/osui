@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.6.2...@osui/form@0.6.3) (2020-10-20)
+
+
+### Bug Fixes
+
+* form代码调整 ([14a843f](https://gitee.com/gitee-fe/osui/tree/master/commits/14a843f9aacb56b4e0209aa0f490f6e1f7cb57eb))
+* popover padding; chore：默认开发icloud-theme ([356cc34](https://gitee.com/gitee-fe/osui/tree/master/commits/356cc34992918ffb6c3d30283b2810fed8e18e79))
+
+
+
+
+
+## [0.6.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.6.1...@osui/form@0.6.2) (2020-10-20)
+
+
+### Bug Fixes
+
+* form icloud-theme error message样式调整 ([3141f1b](https://gitee.com/gitee-fe/osui/tree/master/commits/3141f1bd9f34b1475eb9521566e466d35814a803))
+
+
+
+
+
+## [0.6.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.5.2...@osui/form@0.6.1) (2020-10-19)
+
+
+### Bug Fixes
+
+* form修复onChange没有透传的问题 ([28665aa](https://gitee.com/gitee-fe/osui/tree/master/commits/28665aac36d94950b218f94a8dd9e1edcf55da96))
+
+
+### Features
+
+* form icloud theme调整 ([b90c6e4](https://gitee.com/gitee-fe/osui/tree/master/commits/b90c6e4f86dd65f3270afb3627fe7baf9811a615))
+
+
+
+
+
 # [0.6.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.5.2...@osui/form@0.6.0) (2020-10-13)
 
 
