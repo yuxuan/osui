@@ -1,6 +1,6 @@
 {
     "name": "@osui/alert",
-    "version": "0.6.2",
+    "version": "0.6.3",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
@@ -56,7 +56,7 @@
     "dependencies": {
         "@huse/boolean": "^1.0.3",
         "@huse/timeout": "^1.0.2",
-        "@osui/icons": "^0.6.1",
+        "@osui/icons": "^0.6.2",
         "classnames": "^2.2.6"
     },
     "publishConfig": {

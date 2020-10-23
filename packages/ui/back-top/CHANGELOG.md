@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/back-top@0.6.1...@osui/back-top@0.6.2) (2020-10-23)
+
+**Note:** Version bump only for package @osui/back-top
+
+
+
+
+
 ## [0.6.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/back-top@0.5.1...@osui/back-top@0.6.1) (2020-10-19)
 
 **Note:** Version bump only for package @osui/back-top
