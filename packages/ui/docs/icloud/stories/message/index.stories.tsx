@@ -4,7 +4,7 @@ import Space from '@osui/space';
 import message from '@osui/message';
 
 export default {
-    title: 'Message',
+    title: '验收中/Message 全局提示',
 };
 
 export const Demo = () => {
@@ -26,7 +26,7 @@ export const Demo = () => {
     };
 
     const open = () => {
-        message.open({type: 'success', content: 'This is a loading message', duration: 20, showCountDown: true});
+        message.open({type: 'success', content: 'This is a loading message', duration: 200, showCountDown: true});
     };
 
     const original = () => {

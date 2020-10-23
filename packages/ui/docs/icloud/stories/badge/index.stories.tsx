@@ -2,7 +2,7 @@ import React from 'react';
 import Badge from '@osui/badge';
 
 export default {
-    title: 'Badge',
+    title: '待验收/Badge 徽标数',
 };
 
 export const Demo = () => {

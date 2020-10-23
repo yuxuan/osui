@@ -2,7 +2,7 @@ import React from 'react';
 import Table from '@osui/table';
 
 export default {
-    title: 'Table',
+    title: '验收中/Table 表格',
 };
 
 export const Demo = () => {

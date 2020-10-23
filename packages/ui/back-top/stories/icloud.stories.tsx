@@ -2,7 +2,7 @@ import React from 'react';
 import BackTop from '../src';
 
 export default {
-    title: 'BackTop',
+    title: '待验收/BackTop 回到顶部',
 };
 
 export const Demo = () => {

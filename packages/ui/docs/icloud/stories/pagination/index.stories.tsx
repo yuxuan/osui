@@ -4,7 +4,7 @@ import { ConfigProvider } from 'antd';
 import Pagination from '@osui/pagination';
 
 export default {
-    title: 'Pagination',
+    title: '通过验收/Pagination 分页',
 };
 
 export const Demo = () => {

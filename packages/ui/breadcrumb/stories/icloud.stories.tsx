@@ -1,8 +1,8 @@
+import React from 'react';
 import Breadcrumb from '../src';
 
 export default {
-    title: 'Breadcrumb',
-    component: Breadcrumb,
+    title: '待验收/Breadcrumb 面包屑',
 };
 
 export const Demo = () => {

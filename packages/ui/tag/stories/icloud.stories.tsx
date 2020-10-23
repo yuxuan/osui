@@ -4,7 +4,7 @@ import {IconAdd} from '@osui/icons';
 import Tag from '../src';
 
 export default {
-    title: 'Tag',
+    title: '待验收/Tag 标签',
 };
 
 export const Demo = () => {

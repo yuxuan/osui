@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AutoComplete from '@osui/auto-complete';
 
 export default {
-    title: 'AutoComplete',
+    title: '待验收/AutoComplete 自动完成',
     component: AutoComplete,
 };
 

@@ -1,7 +1,7 @@
 import {TreeSelect} from 'antd';
 
 export default {
-    title: 'TreeSelect',
+    title: '待验收/TreeSelect 树选择',
     component: TreeSelect,
 };
 

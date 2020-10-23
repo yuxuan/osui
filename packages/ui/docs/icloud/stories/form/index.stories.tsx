@@ -3,11 +3,11 @@ import Input from '@osui/input';
 import Button from '@osui/button';
 import Checkbox from '@osui/checkbox';
 import Radio from '@osui/radio';
-import {InputNumber} from 'antd';
+import InputNumber from '@osui/input-number';
 import Form from '@osui/form';
 
 export default {
-    title: 'Form',
+    title: '验收中/Form 表单',
 };
 
 export const Demo = () => {

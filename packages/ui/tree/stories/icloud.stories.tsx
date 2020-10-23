@@ -1,7 +1,7 @@
 import {Tree} from 'antd';
 
 export default {
-    title: 'Tree',
+    title: '待验收/Tree 树形组件',
     component: Tree,
 };
 

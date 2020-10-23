@@ -3,7 +3,7 @@ import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/ico
 import Menu from '../src';
 
 export default {
-    title: 'Menu',
+    title: '待验收/Menu 导航菜单',
     component: Menu,
 };
 

@@ -2,7 +2,7 @@ import Menu from '@osui/menu';
 import Dropdown from '../src';
 
 export default {
-    title: 'Dropdown',
+    title: '待验收/Dropdown 下拉菜单',
     component: Dropdown,
 };
 

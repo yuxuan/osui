@@ -1,7 +1,7 @@
 import {Col} from 'antd';
 
 export default {
-    title: 'Col',
+    title: '不用验收/Col',
     component: Col,
 };
 

@@ -1,7 +1,7 @@
 import {Steps} from 'antd';
 
 export default {
-    title: 'Steps',
+    title: '待验收/Steps 步骤条',
     component: Steps,
 };
 

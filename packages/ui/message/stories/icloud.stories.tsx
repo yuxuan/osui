@@ -4,7 +4,7 @@ import Space from '@osui/space';
 import message from '../src';
 
 export default {
-    title: 'Message',
+    title: '验收中/Message 全局提示',
 };
 
 export const Demo = () => {

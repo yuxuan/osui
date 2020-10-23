@@ -7,7 +7,7 @@ import InputNumber from '@osui/input-number';
 import Form from '../src';
 
 export default {
-    title: 'Form',
+    title: '验收中/Form 表单',
 };
 
 export const Demo = () => {

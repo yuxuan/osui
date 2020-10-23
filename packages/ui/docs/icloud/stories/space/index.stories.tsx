@@ -3,7 +3,7 @@ import Button from '@osui/button';
 import Space from '@osui/space';
 
 export default {
-    title: 'Space',
+    title: '不用验收/Space',
 };
 
 export const Demo = () => {

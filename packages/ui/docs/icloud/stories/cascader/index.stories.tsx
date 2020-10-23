@@ -1,7 +1,7 @@
 import Cascader from '@osui/cascader';
 
 export default {
-    title: 'Cascader',
+    title: '待验收/Cascader 级联选择',
     component: Cascader,
 };
 

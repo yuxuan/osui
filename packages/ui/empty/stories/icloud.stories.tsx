@@ -1,7 +1,7 @@
 import {Empty} from 'antd';
 
 export default {
-    title: 'Empty',
+    title: '待验收/Empty 空状态',
     component: Empty,
 };
 
