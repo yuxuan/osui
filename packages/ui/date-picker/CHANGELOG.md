@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/date-picker@0.6.2...@osui/date-picker@0.7.0) (2020-10-25)
+
+**Note:** Version bump only for package @osui/date-picker
+
+
+
+
+
 ## [0.6.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/date-picker@0.6.1...@osui/date-picker@0.6.2) (2020-10-23)
 
 **Note:** Version bump only for package @osui/date-picker

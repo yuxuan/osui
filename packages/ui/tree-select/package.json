@@ -1,14 +1,14 @@
 {
     "name": "@osui/tree-select",
-    "version": "0.6.2",
+    "version": "0.7.0",
     "description": "",
     "main": "es/index.js",
-"module": "es/index.js",
-"types": "es/index.d.ts",
-"files": [
-    "es",
-    "src"
-],
+    "module": "es/index.js",
+    "types": "es/index.d.ts",
+    "files": [
+        "es",
+        "src"
+    ],
     "scripts": {
         "lint": "skr lint",
         "build": "sh scripts/build.sh",

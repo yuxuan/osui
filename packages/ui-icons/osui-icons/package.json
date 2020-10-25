@@ -1,7 +1,6 @@
 {
-  "private": true,
   "name": "@osui/icons",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "OSUI icons",
   "author": {
     "name": "zhanglili01,huoyuxuan,lisiqi06,guyiling"
