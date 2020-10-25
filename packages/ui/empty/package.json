@@ -2,18 +2,26 @@
     "name": "@osui/empty",
     "version": "0.6.2",
     "description": "",
-    "main": "dist/index.js",
+    "main": "es/index.js",
+    "module": "es/index.js",
+    "types": "es/index.d.ts",
+    "files": [
+        "es",
+        "src",
+        "README.md",
+        "CHANGELOG.md"
+    ],
     "scripts": {
         "lint": "skr lint",
         "build": "sh scripts/build.sh",
         "prepublishOnly": "yarn run build",
         "storybook": "start-storybook -p 8700",
-        "clean": "rm -rf node_modules && rm -rf dist",
+        "clean": "rm -rf node_modules && rm -rf es",
         "test": "echo \"Error: no test specified\" && exit 1",
         "sb-upgrade": "sb upgrade"
     },
     "sideEffects": [
-        "dist/*.less"
+        "es/*.less"
     ],
     "devDependencies": {
         "@babel/cli": "^7.10.5",

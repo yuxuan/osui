@@ -8,4 +8,3 @@ cp -R svg dist/svg
 cp -R raw dist/raw
 
 cp src/index.d.ts dist/
-
