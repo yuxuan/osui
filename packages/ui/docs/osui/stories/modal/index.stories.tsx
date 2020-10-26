@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Button } from 'antd';
+import Button from '@osui/button';
 import Modal from '@osui/modal';
 
 export default {
-    title: 'modal',
+    title: 'Modal',
 };
 
 export const Demo = () => {
