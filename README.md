@@ -174,7 +174,5 @@ yarn new-component 组件名
 
 
 ## 已知问题
-
-1. 升级storybook 6.0之后，构建报错
-
-构建报错说 babel preset-env loose: true的问题，修复方式见scripts/fix-babel-loader.md （临时方案，后续会调整所有skr配置）
+1. less 的 calc 问题
+    [antd issus](https://github.com/ant-design/ant-design/issues/23125)
