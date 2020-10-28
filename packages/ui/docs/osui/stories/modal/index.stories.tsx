@@ -3,7 +3,7 @@ import Button from '@osui/button';
 import Modal from '@osui/modal';
 
 export default {
-    title: 'Modal',
+    title: 'modal',
 };
 
 export const Demo = () => {

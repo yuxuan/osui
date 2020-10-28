@@ -37,7 +37,7 @@ const treeData = [
 ];
 
 export default {
-    title: '业务/DirectoryNavigator',
+    title: 'DirectoryNavigator',
 };
 
 export const DirectoryNavigatorDemo = () => {
