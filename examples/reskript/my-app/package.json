@@ -45,10 +45,5 @@
     "@reskript/config-lint": "^0.12.3",
     "husky": "^4.2.5",
     "webpack": "^4.43.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "skr lint --staged"
-    }
   }
 }

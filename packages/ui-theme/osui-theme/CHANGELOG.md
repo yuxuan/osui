@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.6.3...@osui/theme@0.6.4) (2020-10-23)
+
+
+### Bug Fixes
+
+* modal osc-theme修复 ([b74283d](https://gitee.com/gitee-fe/osui/tree/master/commits/b74283de2f7e50753b679013d1b72ce80134a0dc))
+
+
+
+
+
 ## [0.6.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.6.2...@osui/theme@0.6.3) (2020-10-21)
 
 

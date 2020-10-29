@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.6.4...@osui/form@0.7.0) (2020-10-25)
+
+**Note:** Version bump only for package @osui/form
+
+
+
+
+
+## [0.6.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.6.3...@osui/form@0.6.4) (2020-10-23)
+
+
+### Bug Fixes
+
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+
+
+
+
+
 ## [0.6.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.6.2...@osui/form@0.6.3) (2020-10-20)
 
 

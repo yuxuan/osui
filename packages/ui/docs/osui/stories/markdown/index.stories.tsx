@@ -2,7 +2,7 @@ import React from 'react';
 import Markdown from '@osui/markdown';
 
 export default {
-    title: '业务/Markdown',
+    title: 'Markdown',
 };
 
 const content = `

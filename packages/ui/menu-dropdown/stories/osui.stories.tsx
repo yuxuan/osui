@@ -3,7 +3,8 @@ import {Divider, Button} from 'antd';
 import MenuDropdown from '../src';
 
 export default {
-    title: '业务/Menu-dropdown',
+    title: 'MenuDropdown',
+    component: MenuDropdown,
 };
 
 export const Demo = () => {
