@@ -91,7 +91,6 @@
         font-size: 12px;
     }
 
-
     &-validate-message-inline {
         &.ant-form-item-with-help {
             margin-bottom: @form-item-margin-bottom;
@@ -109,8 +108,13 @@
 
     &-validate-message-has-hint {
         .ant-form-item-explain {
-            bottom: 32px;
+            top: 6px;
+        }
+    }
 
+    .ant-form-item-label {
+        label {
+            width: 100%;
         }
     }
 }
