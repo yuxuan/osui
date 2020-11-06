@@ -1,7 +1,6 @@
 @osui-modal-class-prefix: osui-modal;
 
 .@{osui-modal-class-prefix} {
-
     .ant-modal-close-x {
         line-height: var(--modal-close-icon-line-height);
     }
@@ -62,7 +61,6 @@
 }
 
 .@{osui-modal-class-prefix}-confirm {
-
     &-icon {
         float: left;
         margin-right: 20px;
@@ -72,7 +70,7 @@
     .anticon {
         width: 36px;
         height: 36px;
-        font-size: 36px;
+        font-size: 14px;
     }
 
     .ant-modal-confirm-body {
@@ -88,16 +86,16 @@
         color: var(--theme-error-color);
     }
 
-    &.ant-modal-confirm-warning .ant-modal-confirm-body>&-icon svg,
-    &.ant-modal-confirm-confirm .ant-modal-confirm-body>&-icon svg {
+    &.ant-modal-confirm-warning .ant-modal-confirm-body > &-icon svg,
+    &.ant-modal-confirm-confirm .ant-modal-confirm-body > &-icon svg {
         color: var(--theme-warning-color);
     }
 
-    &.ant-modal-confirm-info .ant-modal-confirm-body>&-icon svg {
+    &.ant-modal-confirm-info .ant-modal-confirm-body > &-icon svg {
         color: var(--theme-info-color);
     }
 
-    &.ant-modal-confirm-success .ant-modal-confirm-body>&-icon svg {
+    &.ant-modal-confirm-success .ant-modal-confirm-body > &-icon svg {
         color: var(--theme-success-color);
     }
 }
