@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.8.0 (2020-11-06)
+
+
+### Bug Fixes
+
+* avatar调整 ([dfde4ba](https://gitee.com/gitee-fe/osui/tree/master/commits/dfde4baa8f27f89c3246f7ea735cd05e2609c8a1))
+* 修改pr头像图标尺寸 ([2812e9a](https://gitee.com/gitee-fe/osui/tree/master/commits/2812e9ab855c4a62f29a5829a8a8220ba4bb8def))
+* 增加button default border高亮, success, error, warning 状态 ([32dfd0f](https://gitee.com/gitee-fe/osui/tree/master/commits/32dfd0f8ef987a3e0a3adc724f75c07f5d6c9a2a))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+
+
+### Features
+
+* 新增avatar，badge组件 ([f6db4a8](https://gitee.com/gitee-fe/osui/tree/master/commits/f6db4a8575c347ffe1aa3b1c575590ae8a844567))
+* 调整alert功能和icloud theme ([1b7d15b](https://gitee.com/gitee-fe/osui/tree/master/commits/1b7d15b741841378951a69d72db03ed334ab287e))
+
+
+
+
+
 # [0.7.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/avatar@0.6.2...@osui/avatar@0.7.0) (2020-10-25)
 
 **Note:** Version bump only for package @osui/avatar

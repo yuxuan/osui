@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.8.0 (2020-11-06)
+
+
+### Bug Fixes
+
+* @osui/ui package导出错误 ([8deea4e](https://gitee.com/gitee-fe/osui/tree/master/commits/8deea4ef603fda3ba5c46e72065096c2c8dfdfe5))
+* message导出名字错误 ([09d3959](https://gitee.com/gitee-fe/osui/tree/master/commits/09d3959a351e42a235c42432e1174bf987d0a036))
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+* 调整example，@osui/ui 修复导出命名出错的问题 ([ac26bce](https://gitee.com/gitee-fe/osui/tree/master/commits/ac26bcef52231792e77658c7a85e5694c53cb42e))
+
+
+### Features
+
+* **ui:** ui包导出所有组件 ([5ef63db](https://gitee.com/gitee-fe/osui/tree/master/commits/5ef63db89de00ff92a703e9e99d5e6aa1ed3bfde))
+* 增加Space组件, 增加button group形式的demo ([39eaa10](https://gitee.com/gitee-fe/osui/tree/master/commits/39eaa104cda0bd352b1a2c791856db98e673a7fb))
+* 添加@osui/icons, 并在back-top组件中使用 ([28092fa](https://gitee.com/gitee-fe/osui/tree/master/commits/28092fa3d54a91b116ffe5fc05f43a628fc376c0))
+
+
+
+
+
 # [0.7.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.6.7...@osui/ui@0.7.0) (2020-10-25)
 
 **Note:** Version bump only for package @osui/ui

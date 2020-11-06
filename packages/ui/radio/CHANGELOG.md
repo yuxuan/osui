@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.8.0 (2020-11-06)
+
+
+### Bug Fixes
+
+* **checkboxgroup:** pr意见修改 ([4059b23](https://gitee.com/gitee-fe/osui/tree/master/commits/4059b23a1fa67c4458a6a5f4bfe600abd675b4fc))
+* popover padding; chore：默认开发icloud-theme ([356cc34](https://gitee.com/gitee-fe/osui/tree/master/commits/356cc34992918ffb6c3d30283b2810fed8e18e79))
+* radio调整icloud主题 ([86a94a3](https://gitee.com/gitee-fe/osui/tree/master/commits/86a94a359ff0a03301df779f240a9e6beaa5933e))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 调整radio和input的search icon ([b1eaed5](https://gitee.com/gitee-fe/osui/tree/master/commits/b1eaed535b9704b14d463948f553940e78e48daa))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/gitee-fe/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+
+
+### Features
+
+* **radio:** 新增radio组件,修改checkbox lint ([f5b58aa](https://gitee.com/gitee-fe/osui/tree/master/commits/f5b58aab8b179caee6384dce7dd48de6b7a99021))
+* **switch:** 新增switch组件 ([942201c](https://gitee.com/gitee-fe/osui/tree/master/commits/942201c054c18c3552a73c7baf01147cbc3a5b84))
+
+
+
+
+
 # [0.7.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/radio@0.6.3...@osui/radio@0.7.0) (2020-10-25)
 
 **Note:** Version bump only for package @osui/radio

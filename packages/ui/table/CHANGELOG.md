@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.8.0 (2020-11-06)
+
+
+### Bug Fixes
+
+* table icloud-theme样式修复 ([3f0d5e3](https://gitee.com/gitee-fe/osui/tree/master/commits/3f0d5e36838640cf65145b5f489dfbb629f0ac8f))
+* 修复table switch ([29c9ba8](https://gitee.com/gitee-fe/osui/tree/master/commits/29c9ba8b79904566ea84e010dd5ffa62c8e75ab4))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 解决icon冲突 ([297269b](https://gitee.com/gitee-fe/osui/tree/master/commits/297269bc9b980efba87e5759b82a4f5fbea04052))
+* 解决冲突 ([d602c0e](https://gitee.com/gitee-fe/osui/tree/master/commits/d602c0ecaae95988d4c7d4b0c04e4dada9eb6e8f))
+
+
+### Features
+
+* 新增table组件 ([eb0b2e7](https://gitee.com/gitee-fe/osui/tree/master/commits/eb0b2e70c2a8fa16dc4f6d30fc90bdf3f0a0e004))
+* 新增分页组件 ([c24133f](https://gitee.com/gitee-fe/osui/tree/master/commits/c24133f72fc5b3f00584e26f62daaa1a23083eac))
+
+
+
+
+
 # [0.7.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.6.3...@osui/table@0.7.0) (2020-10-25)
 
 **Note:** Version bump only for package @osui/table

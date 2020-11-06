@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.8.0 (2020-11-06)
+
+
+### Bug Fixes
+
+* modal, switch icloud-theme样式修复 ([d1eea7d](https://gitee.com/gitee-fe/osui/tree/master/commits/d1eea7d5984887a7bec2fd8fa59dcf867b6564c4))
+* popover icloud theme调整 ([ceaa52a](https://gitee.com/gitee-fe/osui/tree/master/commits/ceaa52ac3f5057b8f644938dd5e722c2676827ef))
+* tabs icloud theme 调整 ([a0815ba](https://gitee.com/gitee-fe/osui/tree/master/commits/a0815baa516af2c799ad982538868ec6fed88d9c))
+* 修复babel问题 ([d2c34d7](https://gitee.com/gitee-fe/osui/tree/master/commits/d2c34d73e63fb6500057e8e93cabf036b6339a04))
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+* 调整button icloud样式 ([924aef2](https://gitee.com/gitee-fe/osui/tree/master/commits/924aef2dec2fb1303f77d5fd032f73268b7dab7e))
+* 调整button颜色实现 ([bc17800](https://gitee.com/gitee-fe/osui/tree/master/commits/bc178004aa4d80a5c3f4276556dd7a118cb0125d))
+* 调整form,select,input focus,hover 样式 ([c54a8d0](https://gitee.com/gitee-fe/osui/tree/master/commits/c54a8d018d42e6a6b2c2f85826db8d9a53339ccc))
+* 调整message icloud theme ([45e0e6a](https://gitee.com/gitee-fe/osui/tree/master/commits/45e0e6ac48b01f0a5c1f2a6a9fabb6192d0ee937))
+
+
+### Features
+
+* form icloud theme调整 ([b90c6e4](https://gitee.com/gitee-fe/osui/tree/master/commits/b90c6e4f86dd65f3270afb3627fe7baf9811a615))
+* 调整alert功能和icloud theme ([1b7d15b](https://gitee.com/gitee-fe/osui/tree/master/commits/1b7d15b741841378951a69d72db03ed334ab287e))
+
+
+
+
+
 # [0.7.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-docs@0.6.2...@osui/icloud-docs@0.7.0) (2020-10-25)
 
 **Note:** Version bump only for package @osui/icloud-docs
