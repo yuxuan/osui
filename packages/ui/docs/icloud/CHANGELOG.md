@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-docs@0.6.2...@osui/icloud-docs@0.8.1) (2020-11-10)
+
+
+### Bug Fixes
+
+* 修复babel问题 ([d2c34d7](https://gitee.com/gitee-fe/osui/tree/master/commits/d2c34d73e63fb6500057e8e93cabf036b6339a04))
+
+
+
+
+
 # 0.8.0 (2020-11-06)
 
 

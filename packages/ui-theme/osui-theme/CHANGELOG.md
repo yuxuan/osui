@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.6.4...@osui/theme@0.8.1) (2020-11-10)
+
+
+### Bug Fixes
+
+* form输入框样式、标题样式修复，Modal异步确认样式修复 ([6e92879](https://gitee.com/gitee-fe/osui/tree/master/commits/6e92879a3dcae165145af0493614dce7d44531f9))
+
+
+
+
+
 # 0.7.0 (2020-11-06)
 
 
