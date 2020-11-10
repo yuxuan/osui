@@ -1,6 +1,6 @@
 {
     "name": "@osui/input-number",
-    "version": "0.7.1",
+    "version": "0.8.1",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -71,6 +71,6 @@
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
-        "@osui/icloud-theme": "^0.7.0"
+        "@osui/icloud-theme": "^0.8.0"
     }
 }
