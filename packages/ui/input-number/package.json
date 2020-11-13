@@ -69,8 +69,5 @@
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
-    },
-    "dependencies": {
-        "@osui/icloud-theme": "^0.8.1"
     }
 }
