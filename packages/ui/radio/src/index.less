@@ -53,12 +53,24 @@
 
     // group
     &-group {
-        .ant-radio-button-wrapper:not(:first-child):focus-within::before {
-            left: 0;
+        .ant-radio-button-wrapper {
+            border-left-width: 1px;
+
+            &::before {
+                content: none;
+            }
+
+            &:not(&-checked) {
+                border-left-color: transparent;
+            }
         }
 
-        .ant-radio-button-wrapper:hover {
-            border: 1px solid var(--radio-hover-border-color);
+        .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-disabled) {
+            &:hover {
+                border: 1px solid var(--radio-hover-border-color);
+                border-left: 1px solid var(--radio-hover-border-color);
+                z-index: 2;
+            }
         }
 
         .ant-radio-button-wrapper-disabled {
