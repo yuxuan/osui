@@ -8,4 +8,27 @@
     .ant-table-thead .ant-table-cell:not(:last-child) {
         border-right: var(--table-header-cell-border-right);
     }
+
+    &-no-row-border {
+        .ant-table-tbody {
+            & > tr {
+                & > th,
+                & > td {
+                    border-bottom: 1px solid transparent;
+                }
+            }
+        }
+    }
+
+    &-no-border {
+        .ant-table-thead,
+        .ant-table-tbody {
+            & > tr {
+                & > th,
+                & > td {
+                    border-bottom: 1px solid transparent;
+                }
+            }
+        }
+    }
 }

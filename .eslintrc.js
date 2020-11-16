@@ -9,6 +9,7 @@ module.exports = {
         'rules': {
             'react/jsx-no-bind': 'off',
             'no-console': 'off',
+            'no-use-before-define': 'off',
         },
     }],
     root: true,
