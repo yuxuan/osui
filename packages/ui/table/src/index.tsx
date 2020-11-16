@@ -1,3 +1,4 @@
+import React from 'react';
 import {Table as AntdTable} from 'antd';
 import {TableProps as AntdTableProps} from 'antd/es/table';
 import classNames from 'classnames';
