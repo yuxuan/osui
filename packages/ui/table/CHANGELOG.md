@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.8.1...@osui/table@0.8.3) (2020-11-16)
+
+
+### Bug Fixes
+
+* table加上import React ([5b4c513](https://gitee.com/gitee-fe/osui/tree/master/commits/5b4c51342e570dfeb33328fcac29e47b8df87c59))
+* table调整增加no border的用法 ([ddee425](https://gitee.com/gitee-fe/osui/tree/master/commits/ddee42577d4feb343c5044c2df71481cf030d945))
+
+
+
+
+
 ## [0.8.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.8.1...@osui/table@0.8.2) (2020-11-16)
 
 

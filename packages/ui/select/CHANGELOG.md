@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@0.8.1...@osui/select@0.8.2) (2020-11-16)
+
+**Note:** Version bump only for package @osui/select
+
+
+
+
+
 ## [0.8.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@0.6.3...@osui/select@0.8.1) (2020-11-10)
 
 
