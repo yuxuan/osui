@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/radio@0.8.1...@osui/radio@0.8.2) (2020-11-14)
+
+
+### Bug Fixes
+
+* radio group hover效果修复 ([450a40e](https://gitee.com/gitee-fe/osui/tree/master/commits/450a40e6c8ef185b9af0baf27a93998dd08d2e92))
+
+
+
+
+
+## [0.8.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/radio@0.6.3...@osui/radio@0.8.1) (2020-11-10)
+
+**Note:** Version bump only for package @osui/radio
+
+
+
+
+
 # 0.8.0 (2020-11-06)
 
 

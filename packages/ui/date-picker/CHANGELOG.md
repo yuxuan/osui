@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/date-picker@0.6.2...@osui/date-picker@0.8.1) (2020-11-10)
+
+
+### Bug Fixes
+
+* 修复date-picker RangePicker的className ([b227b8d](https://gitee.com/gitee-fe/osui/tree/master/commits/b227b8deaccb8dc4335c371675f3ccbebcf55b10))
+
+
+
+
+
 # 0.8.0 (2020-11-06)
 
 

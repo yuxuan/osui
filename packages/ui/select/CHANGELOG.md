@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@0.6.3...@osui/select@0.8.1) (2020-11-10)
+
+
+### Bug Fixes
+
+* 修复select arrow的样式覆盖, 不影响search ([e288bf1](https://gitee.com/gitee-fe/osui/tree/master/commits/e288bf18038e11a0fcfcb694372c91ee11a98929))
+
+
+
+
+
 # 0.8.0 (2020-11-06)
 
 

@@ -1,7 +1,7 @@
 {
     "name": "@osui/icloud-docs",
     "private": true,
-    "version": "0.8.0",
+    "version": "0.8.1",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",

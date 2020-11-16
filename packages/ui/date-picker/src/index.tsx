@@ -62,9 +62,9 @@ const RangePicker: React.FC<AntdRangePickerProps> = React.forwardRef<any, AntdRa
         return (
             <AntdDatePicker.RangePicker
                 ref={ref}
+                {...props}
                 className={classNames(clsPrefix, props.className)}
                 dropdownClassName={classNames(`${clsPrefix}-dropdown`, props.dropdownClassName)}
-                {...props}
             />
         );
     }
