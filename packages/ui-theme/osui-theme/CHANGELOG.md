@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.9.1...@osui/theme@0.9.2) (2020-11-20)
+
+
+### Bug Fixes
+
+* 修复link button focus效果, 修复radio group OChover效果 ([96d8986](https://gitee.com/gitee-fe/osui/tree/master/commits/96d898663da00e854867c9c142ebd4a6f3f965b3))
+
+
+
+
+
 ## [0.9.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.9.0...@osui/theme@0.9.1) (2020-11-16)
 
 **Note:** Version bump only for package @osui/theme
