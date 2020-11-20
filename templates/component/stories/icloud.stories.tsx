@@ -1,12 +1,12 @@
-import {CapComponentName} from '../src';
+import {ComponentName} from '../src';
 
 export default {
-    title: '{CapComponentName}',
-    component: {CapComponentName},
+    title: '{ComponentName}',
+    component: {ComponentName},
 };
 
 export const Demo = () => {
     return (
-        <{CapComponentName} />
+        <{ComponentName} />
     );
 };

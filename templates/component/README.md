@@ -1,4 +1,4 @@
-# @osui/{componentName}
+# @osui/{PkgComponentName}
 
 ## 安装说明
 
@@ -7,11 +7,11 @@
 单包使用
 
 ```
-yarn install @osui/{componentName}
+yarn install @osui/{PkgComponentName}
 ```
 
 ```
-import {CapComponentName} from '@osui/{componentName}'
+import {ComponentName} from '@osui/{PkgComponentName}'
 ```
 
 ### 方式二
@@ -23,7 +23,7 @@ yarn install @osui/ui
 ```
 
 ```
-import {{CapComponentName}} from '@osui/ui';
+import {{ComponentName}} from '@osui/ui';
 ```
 
 
