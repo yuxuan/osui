@@ -191,3 +191,4 @@ cd 项目root目录
 ## 已知问题
 1. less 的 calc 问题
     [antd issus](https://github.com/ant-design/ant-design/issues/23125)
+    解决方式：尝试`yarn add -D @reskript/config-webpack@0.11.2`锁定@reskript/config-webpack版本

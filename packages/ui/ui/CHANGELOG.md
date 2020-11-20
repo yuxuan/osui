@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.8.2...@osui/ui@0.8.5) (2020-11-16)
+
+**Note:** Version bump only for package @osui/ui
+
+
+
+
+
+## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.8.2...@osui/ui@0.8.4) (2020-11-16)
+
+**Note:** Version bump only for package @osui/ui
+
+
+
+
+
 ## [0.8.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.8.2...@osui/ui@0.8.3) (2020-11-14)
 
 **Note:** Version bump only for package @osui/ui

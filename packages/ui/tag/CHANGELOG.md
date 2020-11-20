@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tag@0.8.2...@osui/tag@0.8.3) (2020-11-16)
+
+**Note:** Version bump only for package @osui/tag
+
+
+
+
+
 ## [0.8.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tag@0.6.3...@osui/tag@0.8.2) (2020-11-10)
 
 **Note:** Version bump only for package @osui/tag

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-docs@0.8.1...@osui/icloud-docs@0.8.2) (2020-11-16)
+
+
+### Bug Fixes
+
+* table调整增加no border的用法 ([ddee425](https://gitee.com/gitee-fe/osui/tree/master/commits/ddee42577d4feb343c5044c2df71481cf030d945))
+
+
+
+
+
 ## [0.8.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-docs@0.6.2...@osui/icloud-docs@0.8.1) (2020-11-10)
 
 
