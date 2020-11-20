@@ -250,7 +250,7 @@ const buttonColors = {
     '--btn-link-disable-border-color': 'transparent',
     '--btn-link-disable-color': 'var(--btn-disable-color)',
     '--btn-link-focus-bg': 'transparent',
-    '--btn-link-focus-border-color': 'transparent',
+    '--btn-link-focus-border-color': 'var(--theme-border-focus-color)',
     '--btn-link-focus-color': 'var(--theme-primary-color)',
     '--btn-link-hover-bg': 'transparent',
     '--btn-link-hover-border-color': 'transparent',

@@ -65,11 +65,13 @@
             }
         }
 
-        .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-disabled) {
-            &:hover {
-                border: 1px solid var(--radio-hover-border-color);
-                border-left: 1px solid var(--radio-hover-border-color);
-                z-index: 2;
+        .ant-radio-button-wrapper {
+            &:not(.ant-radio-button-wrapper-disabled):not(.ant-radio-button-wrapper-checked) {
+                &:hover {
+                    border: 1px solid var(--radio-hover-border-color);
+                    border-left: 1px solid var(--radio-hover-border-color);
+                    z-index: 2;
+                }
             }
         }
 
