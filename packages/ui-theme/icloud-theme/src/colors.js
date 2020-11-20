@@ -364,10 +364,11 @@ exports.presetColors = {
     '--table-header-color': 'var(--color-gray-8)',
     '--table-row-hover-bg': 'var(--color-brand-1)',
     '--table-header-cell-border-right': '1px solid var(--color-gray-1)',
+    '--table-header-border-bottom-color': 'var(--color-gray-4)',
     '--tabs-highlight-color': 'var(--color-gray-9)',
     '--tabs-hover-color': 'var(--color-gray-9)',
     '--tabs-ink-bar-color': 'var(--color-gray-9)',
-    '--tabs-top-before': '2px solid #ECEDF0', // tab的bottom线
+    '--tabs-top-before': '2px solid var(--color-gray-4)',
     '--tag-blue-color': 'var(--color-brand-2)',
     '--tag-check-border': 'var(--color-brand-4)',
     '--tag-default-bg': 'var(--color-gray-3)',
