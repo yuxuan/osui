@@ -17,7 +17,8 @@ DEPENDENCIES=""
 find $ROOT -maxdepth 1 -type d | grep -v -E $EXCLUDE_FOLDER | ( while IFS= read -r d; do
     COMPONENT=`echo $d | gsed  's|../||'`
     COMPONENT_NAME="$COMPONENT"
-    if [ "$COMPONENT_NAME" != "message" ]
+    # message 和 notification 需要保持小写
+    if [[ "$COMPONENT_NAME" != "message" ]] && [[ "$COMPONENT_NAME" != "notification" ]]
     then
         COMPONENT_NAME=`echo $(tr '[:lower:]' '[:upper:]' <<< ${COMPONENT:0:1})${COMPONENT:1} | gsed -E 's/-(.)/\U\1/g'`
     fi
