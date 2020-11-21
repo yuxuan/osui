@@ -32,8 +32,6 @@ export {default as Input} from '@osui/input';
 export {default as InputNumber} from '@osui/input-number';
 export {default as Layout} from '@osui/layout';
 export {default as List} from '@osui/list';
-export {default as Local} from '@osui/local';
-export {default as LocalProvider} from '@osui/local-provider';
 export {default as Markdown} from '@osui/markdown';
 export {default as Mentions} from '@osui/mentions';
 export {default as Menu} from '@osui/menu';
