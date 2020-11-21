@@ -427,5 +427,6 @@ exports.presetColors = {
     '--popover-line-height': '20px',
     '--popover-inner-content-padding': '10px',
     '--popover-title-padding': '10px 10px 0 10px',
+    '--dropdown-menu-min-width': '137px',
     ...buttonColors,
 };

@@ -176,6 +176,15 @@ yarn new-component 组件名
 3. `yarn`
 4. `yarn storybook`
 
+#### 覆盖Antd
+
+可以参考`Dropdown`组件，覆盖className的方式。
+
+**需要注意的点：**
+1. 透传所有`props`，如果有增加的（如className）采用append的形式，不允许吞掉
+2. 不允许删除任何Antd的原有的`props`
+3. 组件上的static属性注意要带上，例如`Dropdown.Button`，`Input.Textarea`等
+
 示例： 参考`alert`组件
 
 #### 如何发包（publish）
@@ -204,6 +213,7 @@ cd 项目root目录
 - after publish
 
 更新之后`git push` push到远程release分支
+发起pull request，将release合入回master
 
 #### 如何制作icon
 
