@@ -72,6 +72,7 @@ const getPatchedArgs = (args: MessageArgsProps) => {
     const alertProps: AlertProps = {
         message: content,
         type: type as AlertProps['type'],
+        className: `${clsPrefix}-alert`,
     };
     if (args.showCountDown) {
         alertProps.countDown = countDown;
