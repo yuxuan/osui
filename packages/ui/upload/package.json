@@ -1,0 +1,75 @@
+{
+    "name": "@osui/upload",
+    "version": "0.8.1",
+    "description": "",
+    "main": "es/index.js",
+    "module": "es/index.js",
+    "types": "es/index.d.ts",
+    "files": [
+        "es",
+        "src",
+        "README.md",
+        "CHANGELOG.md"
+    ],
+    "scripts": {
+        "lint": "skr lint",
+        "build": "sh scripts/build.sh",
+        "prepublishOnly": "yarn run build",
+        "storybook": "start-storybook -p 8700",
+        "clean": "rm -rf node_modules && rm -rf es",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sb-upgrade": "sb upgrade"
+    },
+    "sideEffects": [
+        "es/*.less"
+    ],
+     "devDependencies": {
+        "@babel/cli": "^7.10.5",
+        "@reskript/cli": "^0.9.0",
+        "@reskript/cli-lint": "^0.9.9",
+        "@reskript/config-babel": "^0.9.0",
+        "@reskript/config-lint": "^0.12.3",
+        "@reskript/config-webpack": "^0.11.2",
+        "@storybook/addon-a11y": "^6.0.26",
+        "@storybook/addon-docs": "^6.0.26",
+        "@storybook/addon-storysource": "^6.0.26",
+        "@storybook/addon-viewport": "^6.0.26",
+        "@storybook/addons": "^6.0.26",
+        "@storybook/client-api": "^6.0.26",
+        "@storybook/react": "^6.0.26",
+        "@types/classnames": "^2.2.10",
+        "@types/react-dom": "^16.9.8",
+        "antd": "^4.7.0",
+        "babel-loader": "^8.1.0",
+        "cpy-cli": "^3.1.1",
+        "husky": "^4.2.5",
+        "prop-types": "^15.7.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-is": "^16.13.1",
+        "react-router-dom": "^5.2.0",
+        "typescript": "^3.9.6"
+    },
+    "peerDependencies": {
+        "antd": ">=4.4.0",
+        "react": ">=16.9.0",
+        "react-dom": ">=16.9.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://gitee.com/gitee-fe/osui/tree/master"
+    },
+    "author": "huoyuxuan",
+    "license": "MIT",
+    "husky": {
+        "hooks": {
+            "pre-commit": "skr lint ./src"
+        }
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.com"
+    },
+    "dependencies": {
+    }
+}

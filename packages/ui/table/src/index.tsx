@@ -12,7 +12,7 @@ interface TableProps<T> extends AntdTableProps<T> {
 }
 
 // Record的用法是因为用object报错提示
-function OSUITable<RecordType extends Record<string, unknown>>(
+function OSUITable<RecordType extends Record<string, any>>(
     {
         className,
         bordered,
