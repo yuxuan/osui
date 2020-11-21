@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.8.4...@osui/table@0.8.5) (2020-11-21)
+
+
+### Bug Fixes
+
+*  table header border 颜色调整 ([34eaccc](https://gitee.com/gitee-fe/osui/tree/master/commits/34eacccd7f83063517a420ecaf37c132a086eaa4))
+
+
+
+
+
 ## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.8.3...@osui/table@0.8.4) (2020-11-20)
 
 **Note:** Version bump only for package @osui/table
