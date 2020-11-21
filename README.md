@@ -179,10 +179,17 @@ yarn new-component 组件名
 示例： 参考`alert`组件
 
 #### 如何发包（publish）
+
+**NOTE：只能在release分支发布**
+
 - publish前准备工作
 
 cd 项目root目录
-git checkout master 只能在master分支上发版
+git checkout release
+git fetch --all
+git pull
+git pull origin master 合并master
+
 ./node_modules/.bin/lerna version 或者yarn run version 这个会把修改的版本信息列出来
 如果版本号不符合预期的话，可以
 1. 强制只升级minor或者patch `yarn run version patch` 或者 `yarn run version minor` 参考：https://github.com/lerna/lerna/tree/main/commands/version#semver-bump
@@ -193,6 +200,10 @@ git checkout master 只能在master分支上发版
 cd 项目root目录
 ./node_modules/.bin/lerna publish from-package
 每个包package.json都有 prepublishOnly: "yarn run build"，发布前会build，所以不用提前run yarn build了
+
+- after publish
+
+更新之后`git push` push到远程release分支
 
 #### 如何制作icon
 
