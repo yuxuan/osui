@@ -1,6 +1,6 @@
 {
     "name": "@osui/slider",
-    "version": "0.6.0",
+    "version": "0.8.1",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
