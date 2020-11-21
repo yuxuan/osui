@@ -4,6 +4,7 @@ import {
     INITIAL_VIEWPORTS,
   } from '@storybook/addon-viewport';
 import '@osui/theme/dist/theme/vars.css';
+// import '@osui/icloud-theme/dist/theme/vars.css';
 
 addParameters({
     docs: {

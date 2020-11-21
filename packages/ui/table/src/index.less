@@ -3,6 +3,12 @@
 .@{osui-table-class-prefix} {
     .ant-table-thead {
         font-size: 12px;
+
+        > tr {
+            > th {
+                border-bottom: 1px solid var(--table-header-border-bottom-color);
+            }
+        }
     }
 
     .ant-table-thead .ant-table-cell:not(:last-child) {
