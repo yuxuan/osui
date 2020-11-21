@@ -1,7 +1,7 @@
 # osui
 
 ## 介绍
-osui是基于开源组件库（例如antd），封装的一套业务性质的组件
+osui是基于开源组件库（例如antd，导出了所有antd组件），封装的一套业务性质的组件
 
 ## 软件架构
 采用monorepo模式，
@@ -121,6 +121,25 @@ import '@osui/theme/antd4-styles-patch.css'; // 去掉antd动效等全局覆盖
 ```
 yarn
 ```
+
+### 开发流程
+
+- 确保与master同步
+```
+git checkout master
+git fetch --all
+git pull
+```
+- 分支开发
+```
+git checkout 开发分支
+```
+
+- 提交评审
+```
+git push --set-upstream origin 开发分支
+```
+
 
 ### 如何开发一个新组件
 
