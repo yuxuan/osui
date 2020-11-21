@@ -1,2 +1,2 @@
-import {{CapComponentName}} from 'antd';
-export default {CapComponentName};
+import {{ComponentName}} from 'antd';
+export default {ComponentName};

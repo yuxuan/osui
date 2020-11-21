@@ -1,5 +1,5 @@
 {
-    "name": "@osui/{componentName}",
+    "name": "@osui/{PkgComponentName}",
     "version": "0.6.0",
     "description": "",
     "main": "es/index.js",
