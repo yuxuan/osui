@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/message@0.8.3...@osui/message@0.8.4) (2020-11-21)
+
+
+### Bug Fixes
+
+* 修复message样式 ([9705008](https://gitee.com/gitee-fe/osui/tree/master/commits/970500865ebdd7d0d9636e12e0c53e0f733d8d9b))
+
+
+
+
+
 ## [0.8.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/message@0.8.2...@osui/message@0.8.3) (2020-11-20)
 
 **Note:** Version bump only for package @osui/message

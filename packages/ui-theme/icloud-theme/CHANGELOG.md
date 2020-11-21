@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.9.3...@osui/icloud-theme@0.9.4) (2020-11-21)
+
+
+### Bug Fixes
+
+*  table header border 颜色调整 ([34eaccc](https://gitee.com/gitee-fe/osui/tree/master/commits/34eacccd7f83063517a420ecaf37c132a086eaa4))
+* 修复message样式 ([9705008](https://gitee.com/gitee-fe/osui/tree/master/commits/970500865ebdd7d0d9636e12e0c53e0f733d8d9b))
+
+
+
+
+
 ## [0.9.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.9.2...@osui/icloud-theme@0.9.3) (2020-11-20)
 
 **Note:** Version bump only for package @osui/icloud-theme
