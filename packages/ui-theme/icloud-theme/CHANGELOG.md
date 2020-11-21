@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.9.4...@osui/icloud-theme@0.9.5) (2020-11-21)
+
+
+### Bug Fixes
+
+* dropdown下拉menu设置最小宽度 ([8898c23](https://gitee.com/gitee-fe/osui/tree/master/commits/8898c2378ca47ddeb330e48b43c9190b4f656e27))
+
+
+
+
+
 ## [0.9.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.9.3...@osui/icloud-theme@0.9.4) (2020-11-21)
 
 
