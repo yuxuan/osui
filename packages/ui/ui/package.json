@@ -84,8 +84,6 @@
         "@osui/input-number": "^0.8.5",
         "@osui/layout": "^0.8.2",
         "@osui/list": "^0.8.4",
-        "@osui/local": "^0.8.2",
-        "@osui/local-provider": "^0.8.2",
         "@osui/markdown": "^0.8.3",
         "@osui/mentions": "^0.8.2",
         "@osui/menu": "^0.8.4",
