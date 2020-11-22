@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/dropdown@0.8.4...@osui/dropdown@0.8.5) (2020-11-21)
+
+
+### Bug Fixes
+
+* dropdown下拉menu设置最小宽度 ([8898c23](https://gitee.com/gitee-fe/osui/tree/master/commits/8898c2378ca47ddeb330e48b43c9190b4f656e27))
+
+
+
+
+
 ## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/dropdown@0.8.3...@osui/dropdown@0.8.4) (2020-11-20)
 
 **Note:** Version bump only for package @osui/dropdown
