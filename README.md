@@ -194,10 +194,11 @@ yarn new-component 组件名
 - publish前准备工作
 
 cd 项目root目录
-git checkout release
+git checkout master
 git fetch --all
 git pull
-git pull origin master 合并master
+
+可能遇到的问题：
 
 ./node_modules/.bin/lerna version 或者yarn run version 这个会把修改的版本信息列出来
 如果版本号不符合预期的话，可以
@@ -212,8 +213,7 @@ cd 项目root目录
 
 - after publish
 
-更新之后`git push` push到远程release分支
-发起pull request，将release合入回master
+更新之后`git push` push到远程master分支，只有管理员有此操作权限
 
 #### 如何制作icon
 
