@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.9.5...@osui/icloud-theme@0.9.6) (2020-11-23)
+
+
+### Bug Fixes
+
+* theme导出colors.js ([9c6d1bc](https://gitee.com/gitee-fe/osui/tree/master/commits/9c6d1bc84045f6c682abcb3c4bf402633da79364))
+* 修复弹窗内容padding ([3c0caed](https://gitee.com/gitee-fe/osui/tree/master/commits/3c0caed613e6dc7837ee8744e62c60be703b7cd0))
+
+
+
+
+
 ## [0.9.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.9.4...@osui/icloud-theme@0.9.5) (2020-11-21)
 
 
