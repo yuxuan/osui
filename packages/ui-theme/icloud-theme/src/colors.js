@@ -422,7 +422,7 @@ exports.presetColors = {
     '--form-item-explain-icon-display': 'none',
     '--modal-body-border-bottom': '1px solid var(--theme-border-color-split)',
     '--modal-footer-border-top': 'none',
-    '--modal-body-padding': '0 30px',
+    '--modal-body-padding': '20px 20px',
     '--popover-font-size': '12px',
     '--popover-line-height': '20px',
     '--popover-inner-content-padding': '10px',
