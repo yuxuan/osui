@@ -7,7 +7,7 @@
     "useWorkspaces": true,
     "command": {
         "version": {
-            "allowBranch": "release",
+            "allowBranch": "master",
             "ignoreChanges": [
                 "**/*.md",
                 "**/stories/**",
