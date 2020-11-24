@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.8.3...@osui/modal@0.8.4) (2020-11-24)
+
+
+### Bug Fixes
+
+* modal样式修复 ([18b79ce](https://gitee.com/gitee-fe/osui/tree/master/commits/18b79cec00f20aa8cd65c18fcccbbc24d139f2a4))
+
+
+
+
+
 ## [0.8.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.8.2...@osui/modal@0.8.3) (2020-11-20)
 
 **Note:** Version bump only for package @osui/modal
