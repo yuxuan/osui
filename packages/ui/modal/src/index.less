@@ -18,6 +18,13 @@
         border-top: var(--modal-footer-border-top);
     }
 
+    &-body-border {
+        .ant-modal-body {
+            border-bottom: 1px solid var(--theme-border-color-split);
+            border-top: 1px solid var(--theme-border-color-split);
+        }
+    }
+
     // no-border
     &-no-border {
         .ant-modal-title {
@@ -75,7 +82,7 @@
 
     .ant-modal-confirm-body {
         min-height: 76px;
-        border-bottom: 1px solid var(--theme-border-color-base);
+        border-bottom: var(--modal-body-border-bottom);
     }
 
     .ant-modal-confirm-btns {
