@@ -3,6 +3,7 @@
   "version": "0.9.6",
   "description": "",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "lint": "skr lint",
     "build": "node scripts/build.js && sh scripts/build.sh",
