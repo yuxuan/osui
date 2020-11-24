@@ -57,6 +57,7 @@ const OriginModal: ModalInterface = ({className, bodyStyle = {}, bodyHeight, siz
         {
             [`${clsPrefix}-no-border`]: noBorder,
             [`${clsPrefix}-auto-height`]: autoHeight,
+            [`${clsPrefix}-body-border`]: bodyHeight,
         },
         `${clsPrefix}-${classNameSize}`,
         className
@@ -105,9 +106,9 @@ export interface ModalStaticFunctions {
     confirm: ModalFunc;
 }
 
-type Modal = typeof OriginModal & ModalStaticFunctions & { destroyAll: () => void, config: typeof globalConfig };
+type ModalType = typeof OriginModal & ModalStaticFunctions & { destroyAll: () => void, config: typeof globalConfig };
 
-const Modal: Modal = OriginModal as Modal;
+const Modal = OriginModal as ModalType;
 
 interface ConfirmProps extends ModalFuncProps {
     size?: Size;
