@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.8](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.9.7...@osui/theme@0.9.8) (2020-11-25)
+
+
+### Bug Fixes
+
+* only-icon-button 样式调整 ([2748501](https://gitee.com/gitee-fe/osui/tree/master/commits/274850151179f0639aa6eed38e65c07cb8875530))
+
+
+
+
+
 ## [0.9.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.9.6...@osui/theme@0.9.7) (2020-11-24)
 
 
