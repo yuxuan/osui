@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/menu-dropdown@0.8.4...@osui/menu-dropdown@0.8.5) (2020-11-25)
+
+
+### Bug Fixes
+
+* menu-dropdown换用osui的组件 ([918ab86](https://gitee.com/yuxuanhuo/osui/tree/master/commits/918ab86ce24c6191ab49ce895f3231db43f30d14))
+
+
+
+
+
 ## [0.8.4](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/menu-dropdown@0.8.3...@osui/menu-dropdown@0.8.4) (2020-11-20)
 
 **Note:** Version bump only for package @osui/menu-dropdown

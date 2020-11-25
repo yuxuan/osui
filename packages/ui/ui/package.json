@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "0.8.10",
+    "version": "0.8.11",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -87,7 +87,7 @@
         "@osui/markdown": "^0.8.3",
         "@osui/mentions": "^0.8.2",
         "@osui/menu": "^0.8.4",
-        "@osui/menu-dropdown": "^0.8.4",
+        "@osui/menu-dropdown": "^0.8.5",
         "@osui/message": "^0.8.4",
         "@osui/modal": "^0.8.4",
         "@osui/notification": "^0.9.1",
