@@ -66,6 +66,8 @@
         }
     },
     "dependencies": {
+        "@osui/dropdown": "^0.8.5",
+        "@osui/menu": "^0.8.4",
         "classnames": "^2.2.6"
     },
     "publishConfig": {
