@@ -4,7 +4,8 @@
  * */
 
 import React from 'react';
-import {Dropdown as AntdDropdown, Menu} from 'antd';
+import Dropdown from '@osui/dropdown';
+import Menu from '@osui/menu';
 import {DropDownProps as AntdDropdownProps} from 'antd/es/dropdown';
 import {MenuItemProps} from 'antd/es/menu/MenuItem';
 import classNames from 'classnames';
@@ -58,7 +59,7 @@ const MenuDropdown: React.FC<MenuDropdownProps> = props => {
     );
 
     return (
-        <AntdDropdown
+        <Dropdown
             {...rest}
             overlay={menu}
             className={classNames(clsPrefix, props.className)}
