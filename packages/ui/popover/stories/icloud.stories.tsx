@@ -3,7 +3,7 @@ import Button from '@osui/button';
 import Popover from '../src';
 
 export default {
-    title: '验收中/Popover 气泡卡片',
+    title: '通过验收/Popover 气泡卡片',
 };
 
 export const Demo = () => {

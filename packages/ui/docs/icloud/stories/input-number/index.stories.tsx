@@ -2,7 +2,7 @@ import { InputNumber } from 'antd';
 import Space from '@osui/space';
 
 export default {
-    title: '待验收/InputNumber 数字输入框',
+    title: '通过验收/InputNumber 数字输入框',
     component: InputNumber,
 };
 
