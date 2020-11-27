@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.8.5...@osui/table@0.8.6) (2020-11-27)
+
+
+### Bug Fixes
+
+* 修复table, radio样式问题 ([da66f88](https://gitee.com/gitee-fe/osui/tree/master/commits/da66f88f6744c34bfca87a980979661001a5dcc4))
+
+
+
+
+
 ## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.8.4...@osui/table@0.8.5) (2020-11-21)
 
 
