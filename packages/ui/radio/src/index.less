@@ -54,23 +54,26 @@
     // group
     &-group {
         .ant-radio-button-wrapper {
-            border-left-width: 1px;
-
-            &::before {
-                content: none;
-            }
-
-            &:not(&-checked) {
-                border-left-color: transparent;
-            }
-        }
-
-        .ant-radio-button-wrapper {
             &:not(.ant-radio-button-wrapper-disabled):not(.ant-radio-button-wrapper-checked) {
                 &:hover {
+                    // 这里是hover时左侧border的颜色，osui需要与button边框颜色一致，而icloud需要变色
                     border: 1px solid var(--radio-hover-border-color);
+                    border-left: 0;
+                    z-index: var(--radio-hover-border-zindex);
+
+                    &::before {
+                        background: var(--radio-hover-border-color);
+                    }
+                }
+            }
+        }
+        // 第一个元素默认border-left和hover的效果
+        .ant-radio-button-wrapper:first-child {
+            &:not(.ant-radio-button-wrapper-disabled):not(.ant-radio-button-wrapper-checked) {
+                border-left: 1px solid var(--theme-border-color-base);
+
+                &:hover {
                     border-left: 1px solid var(--radio-hover-border-color);
-                    z-index: 2;
                 }
             }
         }
