@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@0.8.3...@osui/button@0.8.4) (2020-11-27)
+
+
+### Bug Fixes
+
+* button only-icon的情况下,设置display inline-flex ([4f80513](https://gitee.com/gitee-fe/osui/tree/master/commits/4f80513cd4474d3b6c829cdf31b87cbe86ab82ba))
+
+
+
+
+
 ## [0.8.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@0.8.2...@osui/button@0.8.3) (2020-11-20)
 
 **Note:** Version bump only for package @osui/button
