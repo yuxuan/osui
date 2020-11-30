@@ -1,15 +1,18 @@
 @osui-back-top-class-prefix: osui-back-top;
 
 .@{osui-back-top-class-prefix} {
-    background: var(--color-gray-8);
+    background: var(--back-top-bg);
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: .66;
 
     &:hover {
-        opacity: 1;
+        background: var(--back-top-hover-bg);
+    }
+
+    &:active {
+        background: var(--back-top-active-bg);
     }
 
     svg {
