@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/radio@0.8.6...@osui/radio@0.8.7) (2020-12-02)
+
+
+### Bug Fixes
+
+* radio group focus不显示outline ([befe885](https://gitee.com/gitee-fe/osui/tree/master/commits/befe8858eb1f26be91e7dc19d88bb2330b69fd80))
+
+
+
+
+
 ## [0.8.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/radio@0.8.5...@osui/radio@0.8.6) (2020-11-27)
 
 

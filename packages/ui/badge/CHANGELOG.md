@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/badge@0.8.3...@osui/badge@0.8.4) (2020-12-02)
+
+
+### Bug Fixes
+
+* badge样式调整 ([eca4382](https://gitee.com/gitee-fe/osui/tree/master/commits/eca438216df53e1eb58f7d39ebf557ee04548061))
+
+
+
+
+
 ## [0.8.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/badge@0.8.2...@osui/badge@0.8.3) (2020-11-20)
 
 **Note:** Version bump only for package @osui/badge
