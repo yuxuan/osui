@@ -3,7 +3,7 @@ import Space from '@osui/space';
 import Badge from '@osui/badge';
 
 export default {
-    title: '待验收/Badge 徽标数',
+    title: '验收中/Badge 徽标数',
 };
 
 export const Demo = () => {
