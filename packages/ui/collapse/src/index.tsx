@@ -1,23 +1,33 @@
 import React, {useCallback} from 'react';
 import {Collapse as AntdCollapse} from 'antd';
-import {CollapseProps as AntdCollapseProps} from 'antd/es/collapse';
+import {CollapseProps as AntdCollapseProps, CollapsePanelProps as AntdCollapsePanelProps} from 'antd/es/collapse';
 import {IconRightArrow, IconDownArrow} from '@osui/icons';
 import classNames from 'classnames';
 import './index.less';
 
 const clsPrefix = 'osui-collapse';
 
-export type CollapseProps = AntdCollapseProps;
-
-interface CollapseInterface extends React.FC<CollapseProps> {
-    Panel: typeof AntdCollapse.Panel;
+interface CollapseProps extends AntdCollapseProps {
+    /**
+     * @description 嵌套的场景下，用于标记Collapse是Panel的子，
+     */
+    levelChild?: boolean;
 }
 
-const Collapse: CollapseInterface = ({className, ...restProps}) => {
+interface CollapseInterface extends React.FC<CollapseProps> {
+    Panel: typeof CollapsePanel;
+}
+
+const Collapse: CollapseInterface = ({className, levelChild, ...restProps}) => {
     const defaultProps = {
-        ghost: true,
+        className: classNames(
+            clsPrefix,
+            className,
+            {
+                [`${clsPrefix}-level-child`]: levelChild,
+            }
+        ),
         ...restProps,
-        className: classNames(clsPrefix, className),
     };
 
     const expandIcon = useCallback(
@@ -33,6 +43,24 @@ const Collapse: CollapseInterface = ({className, ...restProps}) => {
     return <AntdCollapse {...defaultProps} expandIcon={expandIcon} />;
 };
 
-Collapse.Panel = AntdCollapse.Panel;
+interface CollapsePanelProps extends AntdCollapsePanelProps {
+    /**
+     * @description 嵌套的场景下，指明是第几层，从而控制缩进，目前只支持1, 2
+     */
+    level?: 1 | 2;
+}
+
+const CollapsePanel: React.FC<CollapsePanelProps> = ({className, level, ...props}) => {
+    const classes = classNames(
+        className,
+        {
+            [`${clsPrefix}-level-${level}`]: level,
+        }
+    );
+
+    return <AntdCollapse.Panel className={classes} {...props} />;
+};
+
+Collapse.Panel = CollapsePanel;
 
 export default Collapse;
