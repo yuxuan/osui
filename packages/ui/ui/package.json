@@ -58,6 +58,7 @@
         "@osui/back-top": "^0.8.4",
         "@osui/badge": "^0.8.4",
         "@osui/branch-dropdown": "^0.8.4",
+        "@osui/brand-provider": "0.8.1",
         "@osui/breadcrumb": "^0.8.4",
         "@osui/button": "^0.8.4",
         "@osui/calendar": "^0.9.0",
