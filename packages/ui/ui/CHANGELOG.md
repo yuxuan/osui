@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.16](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.8.15...@osui/ui@0.8.16) (2020-12-04)
+
+
+### Bug Fixes
+
+* ui导出BrandProvider ([3313c16](https://gitee.com/gitee-fe/osui/tree/master/commits/3313c16a418d0434d6bf9543d428713383e01128))
+
+
+
+
+
 ## [0.8.15](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.8.14...@osui/ui@0.8.15) (2020-12-02)
 
 **Note:** Version bump only for package @osui/ui

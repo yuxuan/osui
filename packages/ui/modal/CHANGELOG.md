@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.8.6...@osui/modal@0.8.7) (2020-12-04)
+
+
+### Bug Fixes
+
+* modal overflow auto ([c80d97c](https://gitee.com/gitee-fe/osui/tree/master/commits/c80d97c08401b35d8960f78f675f42e05b92b0e6))
+
+
+### Features
+
+* 增加BrandProvider组件, collapse使用BrandProvider组件 ([95a1cb1](https://gitee.com/gitee-fe/osui/tree/master/commits/95a1cb1f9f1aa56706ae171937fe6fc1255a644c))
+
+
+
+
+
 ## [0.8.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.8.5...@osui/modal@0.8.6) (2020-11-27)
 
 **Note:** Version bump only for package @osui/modal

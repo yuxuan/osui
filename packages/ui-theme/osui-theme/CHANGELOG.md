@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.11](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.9.10...@osui/theme@0.9.11) (2020-12-04)
+
+
+### Bug Fixes
+
+* collapse 样式修复调整 ([c925d84](https://gitee.com/gitee-fe/osui/tree/master/commits/c925d844003621bc4afb9f8e2a1a74a87cb17b1e))
+
+
+
+
+
 ## [0.9.10](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.9.9...@osui/theme@0.9.10) (2020-12-02)
 
 
