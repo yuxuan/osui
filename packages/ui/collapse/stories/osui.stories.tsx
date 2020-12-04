@@ -11,7 +11,7 @@ export const Demo = () => {
     const text = '开源中国是目前国内最大的开源技术社区，拥有超过400万会员，形成了由开源软件库、代码分享、资讯、协作翻译、讨论区和博客等几大频道内容，为IT开发者提供了一个发现、使用、并交流开源技术的平台。';
     return (
         <div style={{ padding: 30 }}>
-            <strong style={{color: 'red'}}>注意：使用OSC主题的时候，需要手动传入ghost属性！！！</strong>
+            <strong style={{color: 'red'}}>注意：使用OSC主题的时候，需要手动传入ghost属性！！！或者使用BrandProvider</strong>
             <br />
             <br />
             <p>基础折叠面板</p>

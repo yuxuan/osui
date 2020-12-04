@@ -27,9 +27,21 @@ const getModalSize = (size?: Size) => {
 const clsPrefix = 'osui-modal';
 
 export interface ModalProps extends AntdModalProps {
+    /**
+     * @description 制定body的高度，当指定高度时，overflow:auto
+     */
     bodyHeight?: number;
+    /**
+     * @description 没有边框
+     */
     noBorder?: boolean;
+    /**
+     * @description 支持small default large 三种宽度
+     */
     size?: Size;
+    /**
+     * @deprecated 目前没有height的限制时，自动就是autoheight
+     */
     autoHeight?: boolean;
 }
 
@@ -65,7 +77,6 @@ const OriginModal: ModalInterface = ({className, bodyStyle = {}, bodyHeight, siz
 
     if (bodyHeight) {
         bodyStyle.height = bodyHeight;
-        bodyStyle.overflowY = 'scroll';
     }
 
     const footer = (
