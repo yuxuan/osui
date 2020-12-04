@@ -1,6 +1,6 @@
 {
-    "name": "@osui/collapse",
-    "version": "0.8.3",
+    "name": "@osui/brand-provider",
+    "version": "0.8.1",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -23,7 +23,7 @@
     "sideEffects": [
         "es/*.less"
     ],
-    "devDependencies": {
+     "devDependencies": {
         "@babel/cli": "^7.10.5",
         "@reskript/cli": "^0.9.0",
         "@reskript/cli-lint": "^0.9.9",
@@ -47,6 +47,7 @@
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-is": "^16.13.1",
+        "react-router-dom": "^5.2.0",
         "typescript": "^3.9.6"
     },
     "peerDependencies": {
@@ -58,16 +59,17 @@
         "type": "git",
         "url": "https://gitee.com/gitee-fe/osui/tree/master"
     },
-    "author": "huoyuxuan,liushaozhen",
+    "author": "huoyuxuan",
     "license": "MIT",
-    "dependencies": {
-        "@osui/brand-provider": "0.8.1",
-        "@osui/icons": "^0.8.3",
-        "classnames": "^2.2.6"
+    "husky": {
+        "hooks": {
+            "pre-commit": "skr lint ./src"
+        }
     },
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "gitHead": "904178b6c0bb86963017122daa529580decb66e8"
+    "dependencies": {
+    }
 }
