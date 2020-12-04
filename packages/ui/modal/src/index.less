@@ -12,6 +12,7 @@
     .ant-modal-body {
         border-bottom: var(--modal-body-border-bottom);
         padding: var(--modal-body-padding);
+        overflow: auto;
     }
 
     .ant-modal-footer {
@@ -58,15 +59,6 @@
             .ant-modal-close-icon {
                 color: var(--theme-text-color);
             }
-        }
-    }
-
-    &-auto-height {
-        .ant-modal-body {
-            overflow: auto;
-            height: auto;
-            max-height: calc(100vh - 90px - 100px);
-            min-height: 240px;
         }
     }
 }
