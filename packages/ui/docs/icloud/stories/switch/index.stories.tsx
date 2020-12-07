@@ -9,14 +9,24 @@ export default {
 
 export const Demo = () => {
     return (
-        <Space>
-            <Switch >Switch</Switch>
-            <Switch defaultChecked >Switch</Switch>
-            <Switch disabled>Switch</Switch>
-            <Switch defaultChecked disabled>Switch</Switch>
-            <Switch checkedChildren="开" unCheckedChildren="关" />
-            <Switch defaultChecked checkedChildren={<IconSwitchTick />} unCheckedChildren={<IconSwitchCross />} />
-        </Space>
+        <>
+            <Space>
+                <Switch />
+                <Switch defaultChecked />
+            </Space>
+            <br />
+            <br />
+            <Space>
+                <Switch disabled />
+                <Switch defaultChecked disabled />
+            </Space>
+            <br />
+            <br />
+            <Space>
+                <Switch checkedChildren="开" unCheckedChildren="关" />
+                <Switch defaultChecked checkedChildren={<IconSwitchTick />} unCheckedChildren={<IconSwitchCross />} />
+            </Space>
+        </>
     );
 };
 

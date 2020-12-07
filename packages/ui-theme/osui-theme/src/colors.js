@@ -443,6 +443,8 @@ exports.presetColors = {
     '--radio-button-hover-color': 'var(--theme-primary-color-hover)',
     '--radio-hover-border-zindex': '0',
     '--switch-min-width': '44px',
+    '--switch-disable-bg': 'var(--theme-disabled-bg)',
+    '--switch-handle-disable-bg': 'var(--theme-color-border-base)',
     '--modal-header-bg': 'var(--theme-component-bg)',
     '--modal-no-border-padding': '24px 24px 16px 24px',
     '--modal-no-border-body-padding-top': '0px',

@@ -417,6 +417,8 @@ exports.presetColors = {
     '--radio-button-hover-color': 'var(--theme-primary-color-hover)',
     '--radio-hover-border-zindex': 2,
     '--switch-min-width': '50px',
+    '--switch-disable-bg': 'var(--color-gray-3)',
+    '--switch-handle-disable-bg': 'var(--color-gray-6)',
     '--modal-header-bg': 'var(--color-gray-3)',
     '--modal-no-border-padding': '14px 20px',
     '--modal-no-border-body-padding-top': '0px',
