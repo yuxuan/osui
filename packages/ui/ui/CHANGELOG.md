@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.19](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.8.18...@osui/ui@0.8.19) (2020-12-07)
+
+
+### Bug Fixes
+
+* 修复ui引入空local local-provider组件的问题 ([7fd6cd4](https://gitee.com/gitee-fe/osui/tree/master/commits/7fd6cd40d28e315a5fc200e523f38e18782fb60a))
+
+
+
+
+
 ## [0.8.18](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.8.17...@osui/ui@0.8.18) (2020-12-07)
 
 **Note:** Version bump only for package @osui/ui
