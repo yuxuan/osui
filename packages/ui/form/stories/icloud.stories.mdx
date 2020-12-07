@@ -24,6 +24,15 @@ import * as stories from './icloud.stories'
 
 ## 示例
 
+** 注意: **  BrandProvider应该是App级别的，不是组件级别的。 BrandProvider的用法应该是：
+
+```
+// App入口
+<BrandProvider brand="icloud">
+  <App />
+</BrandProvider>
+```
+
 ### 基础表单
 
 <Preview>

@@ -1,5 +1,5 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import * as stories from './index.stories';
+import * as stories from './index.stories'
 
 <Meta title="设计文档/Form 表单"  />
 
@@ -23,6 +23,15 @@ import * as stories from './index.stories';
 `validateMessageLayout`有两种`inline`|`default`，`default`垂直排放，`inline`会在Item后面显示，`inline`没有经过完善的实际使用测试，有可能有样式问题。
 
 ## 示例
+
+** 注意: **  BrandProvider应该是App级别的，不是组件级别的。 BrandProvider的用法应该是：
+
+```
+// App入口
+<BrandProvider brand="icloud">
+  <App />
+</BrandProvider>
+```
 
 ### 基础表单
 
