@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.8.3...@osui/form@0.8.4) (2020-12-07)
+
+
+### Bug Fixes
+
+* form 使用BrandProvider控制label的align ([09c5c66](https://gitee.com/gitee-fe/osui/tree/master/commits/09c5c668a831d3b03180c1b453861f6b1a21a791))
+
+
+
+
+
 ## [0.8.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.8.2...@osui/form@0.8.3) (2020-11-20)
 
 **Note:** Version bump only for package @osui/form
