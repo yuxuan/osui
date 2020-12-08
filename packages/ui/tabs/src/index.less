@@ -1,18 +1,3 @@
-// osui
-:root {
-    --tabs-border-bottom: 2px solid var(--color-gray-4);
-    --tabs-tab-color: var(--theme-text-color);
-    --tabs-card-bg: transparent;
-    --tabs-card-nav-list-padding: 0;
-}
-
-:root {
-    --tabs-border-bottom: 1px solid var(--color-gray-5);
-    --tabs-tab-color: var(--color-gray-8);
-    --tabs-card-bg: var(--color-gray-3);
-    --tabs-card-nav-list-padding: 4px 0 0 10px;
-}
-
 @osui-tabs-class-prefix: osui-tabs;
 
 .@{osui-tabs-class-prefix} {
@@ -42,7 +27,7 @@
             width: 25px;
             height: 20px;
             font-size: 12px;
-            color: var(--theme-text-color);
+            color: var(--tabs-tab-color);
             line-height: 20px;
             display: inline-block;
             text-align: center;
@@ -60,8 +45,8 @@
 
     // card 模式 // 以下覆盖没有考虑osc的样式
     &.ant-tabs-card {
-        &.ant-tabs>.ant-tabs-nav,
-        &.ant-tabs>div>.ant-tabs-nav {
+        &.ant-tabs > .ant-tabs-nav,
+        &.ant-tabs > div > .ant-tabs-nav {
             background: var(--tabs-card-bg);
         }
 
@@ -92,5 +77,4 @@
             align-self: center;
         }
     }
-
 }
