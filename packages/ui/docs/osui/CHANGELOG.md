@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/osui-docs@0.8.3...@osui/osui-docs@0.8.4) (2020-12-08)
+
+
+### Bug Fixes
+
+* collapse 样式修复调整 ([c925d84](https://gitee.com/gitee-fe/osui/tree/master/commits/c925d844003621bc4afb9f8e2a1a74a87cb17b1e))
+* modal样式修复 ([18b79ce](https://gitee.com/gitee-fe/osui/tree/master/commits/18b79cec00f20aa8cd65c18fcccbbc24d139f2a4))
+
+
+
+
+
 ## [0.8.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/osui-docs@0.8.2...@osui/osui-docs@0.8.3) (2020-11-20)
 
 **Note:** Version bump only for package @osui/osui-docs

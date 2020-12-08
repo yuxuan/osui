@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/tabs@0.8.4...@osui/tabs@0.8.5) (2020-12-08)
+
+**Note:** Version bump only for package @osui/tabs
+
+
+
+
+
 ## [0.8.4](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/tabs@0.8.3...@osui/tabs@0.8.4) (2020-12-08)
 
 

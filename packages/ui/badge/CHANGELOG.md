@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/badge@0.8.4...@osui/badge@0.8.5) (2020-12-08)
+
+
+### Bug Fixes
+
+* collapse 样式修复调整 ([c925d84](https://gitee.com/gitee-fe/osui/tree/master/commits/c925d844003621bc4afb9f8e2a1a74a87cb17b1e))
+
+
+
+
+
 ## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/badge@0.8.3...@osui/badge@0.8.4) (2020-12-02)
 
 

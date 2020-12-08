@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-docs@0.8.3...@osui/icloud-docs@0.8.4) (2020-12-08)
+
+
+### Bug Fixes
+
+* back-top样式调整 ([6360ac7](https://gitee.com/gitee-fe/osui/tree/master/commits/6360ac7476b739d90e091a771186338d0aecf0a0))
+* badge样式调整 ([eca4382](https://gitee.com/gitee-fe/osui/tree/master/commits/eca438216df53e1eb58f7d39ebf557ee04548061))
+* collapse 样式修复调整 ([c925d84](https://gitee.com/gitee-fe/osui/tree/master/commits/c925d844003621bc4afb9f8e2a1a74a87cb17b1e))
+* form 使用BrandProvider控制label的align ([09c5c66](https://gitee.com/gitee-fe/osui/tree/master/commits/09c5c668a831d3b03180c1b453861f6b1a21a791))
+* 修复alert 由于antd升级导致的bug ([f759cad](https://gitee.com/gitee-fe/osui/tree/master/commits/f759cadaa7266f4d1b033b2d511b7d677b2c3c79))
+* 修复switch icloud主题样式 ([191f21f](https://gitee.com/gitee-fe/osui/tree/master/commits/191f21f582aecb7a893f0cb166d77604829a42e0))
+
+
+
+
+
 ## [0.8.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-docs@0.8.2...@osui/icloud-docs@0.8.3) (2020-11-20)
 
 **Note:** Version bump only for package @osui/icloud-docs

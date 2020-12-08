@@ -1,6 +1,6 @@
 {
     "name": "@osui/space",
-    "version": "0.8.3",
+    "version": "0.8.4",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
