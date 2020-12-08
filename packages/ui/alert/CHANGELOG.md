@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/alert@0.8.4...@osui/alert@0.8.5) (2020-12-08)
+
+
+### Bug Fixes
+
+* 修复alert 由于antd升级导致的bug ([f759cad](https://gitee.com/gitee-fe/osui/tree/master/commits/f759cadaa7266f4d1b033b2d511b7d677b2c3c79))
+
+
+
+
+
 ## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/alert@0.8.3...@osui/alert@0.8.4) (2020-12-08)
 
 **Note:** Version bump only for package @osui/alert
