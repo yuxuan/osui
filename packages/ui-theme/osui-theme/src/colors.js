@@ -402,7 +402,7 @@ exports.presetColors = {
     '--table-header-color': 'var(--color-gray-7)',
     '--table-row-hover-bg': 'var(--color-gray-3)',
     '--table-header-cell-border-right': 'none',
-    '--table-header-border-bottom-color': 'var(--color-gray-5)',
+    '--table-header-border-bottom-color': 'var(--color-gray-4)',
     '--tabs-highlight-color': 'var(--color-gray-9)',
     '--tabs-hover-color': 'var(--color-gray-9)',
     '--tabs-ink-bar-color': 'var(--color-gray-9)',
