@@ -30,7 +30,7 @@
     "@storybook/react": "^5.3.19",
     "@types/classnames": "^2.2.10",
     "@types/react-dom": "^16.9.8",
-    "antd": "^4.7.0",
+    "antd": "^4.9.2",
     "cpy-cli": "^3.1.1",
     "husky": "^4.2.5",
     "mkdirp": "^1.0.4",
