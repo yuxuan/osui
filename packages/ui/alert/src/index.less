@@ -1,6 +1,9 @@
 @osui-alert-class-prefix: osui-alert;
 
 .@{osui-alert-class-prefix} {
+    display: flex;
+    align-items: center;
+
     .ant-alert-close-icon {
         font-size: 14px;
         height: 14px;
@@ -14,11 +17,19 @@
     }
 
     .ant-alert-icon {
-        top: 11px;
+        position: absolute;
         left: 16px;
     }
 
     &.ant-alert-with-description {
+        // with-description时，不能display：flex
+        display: block;
+
+        .ant-alert-icon {
+            // 由于alert-with-description的icon现在是小的，所以有description时，距离上面要和.ant-alert-icon一样
+            top: 11px;
+        }
+
         .ant-alert-message {
             font-size: 14px;
             font-weight: bold;
@@ -56,7 +67,7 @@
             margin-right: 20px;
 
             &-expanded-close {
-                max-height: 16px;
+                max-height: 18px;
                 overflow: hidden;
             }
         }
