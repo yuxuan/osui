@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.13](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.9.12...@osui/icloud-theme@0.9.13) (2020-12-08)
+
+
+### Bug Fixes
+
+* 修复tabs样式 ([2c9e22e](https://gitee.com/gitee-fe/osui/tree/master/commits/2c9e22e543465f04b430633c636550e99306100e))
+
+
+
+
+
 ## [0.9.12](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.9.11...@osui/icloud-theme@0.9.12) (2020-12-07)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://gitee.com/gitee-fe/osui/compare/@osui/icons@0.8.3...@osui/icons@0.8.4) (2020-12-08)
+
+
+### Bug Fixes
+
+* icon优化 ([cf45fe0](https://gitee.com/gitee-fe/osui/commits/cf45fe018084ecbdebc63cacb1cc8f6880220730))
+
+
+
+
+
 ## [0.8.3](https://gitee.com/gitee-fe/osui/compare/@osui/icons@0.8.2...@osui/icons@0.8.3) (2020-11-20)
 
 **Note:** Version bump only for package @osui/icons
