@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.15](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.9.14...@osui/theme@0.9.15) (2020-12-08)
+
+
+### Bug Fixes
+
+* table header border bottom color ([2d47429](https://gitee.com/gitee-fe/osui/tree/master/commits/2d4742946f4dadd23371f3c3386a864ee39b6600))
+
+
+
+
+
 ## [0.9.14](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.9.13...@osui/theme@0.9.14) (2020-12-08)
 
 **Note:** Version bump only for package @osui/theme
