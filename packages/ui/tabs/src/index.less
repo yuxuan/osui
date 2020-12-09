@@ -1,7 +1,9 @@
 @osui-tabs-class-prefix: osui-tabs;
 
 .@{osui-tabs-class-prefix} {
-    color: var(--tabs-tab-color);
+    &.ant-tabs {
+        color: var(--tabs-tab-color);
+    }
 
     &.ant-tabs-top > .ant-tabs-nav::before {
         border-bottom: var(--tabs-border-bottom);
