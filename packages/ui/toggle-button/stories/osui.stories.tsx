@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Row} from 'antd';
 import {IconGitFilter, IconBranchFilter} from '@osui/icons';
 import MenuDropdown from '@osui/menu-dropdown';
+import Table from '@osui/table';
 import ToggleButton, {ActionToggleButton} from '../src';
 
 export default {
@@ -96,37 +97,79 @@ export const MenuDemo = () => {
     );
 };
 
-export const Action = () => {
-    const [visible, setVisible] = useState(false);
+export const TableAction = () => {
+    const Action = () => {
+        const [visible, setVisible] = useState(false);
 
-    const data = [
-        {
-            title: '编辑',
-            key: 'edit',
-        },
-        {
-            title: '删除',
-            key: 'delete',
-        },
-    ];
+        const menuData = [
+            {
+                title: '编辑',
+                key: 'edit',
+            },
+            {
+                title: '删除',
+                key: 'delete',
+            },
+        ];
 
-    // 菜单点击事件
-    const handleMenuClick = (e: any) => {
-        console.log(`获取Menu点击的key值: ${e.key}`);
-        console.log(e);
-        setVisible(false);
-    };
-    return (
-        <>
+        return (
             <MenuDropdown
                 trigger={['click']}
-                handleMenuClick={handleMenuClick}
                 placement="bottomCenter"
-                data={data}
+                data={menuData}
                 onVisibleChange={visible => {setVisible(visible);}}
             >
                 <ActionToggleButton isOn={visible} />
             </MenuDropdown>
-        </>
-    );
+        );
+    };
+
+    const columns = [
+        {
+            title: 'Name',
+            dataIndex: 'name',
+            key: 'name',
+        },
+        {
+            title: 'Age',
+            dataIndex: 'age',
+            key: 'age',
+        },
+        {
+            title: 'Address',
+            dataIndex: 'address',
+            key: 'address',
+        },
+        {
+            title: 'Action',
+            key: 'action',
+            render: () => (<Action />),
+        },
+    ];
+
+    const data = [
+        {
+            key: '1',
+            name: 'John Brown',
+            age: 32,
+            address: 'New York No. 1 Lake Park',
+        },
+        {
+            key: '2',
+            name: 'Jim Green',
+            age: 42,
+            address: 'London No. 1 Lake Park',
+        },
+        {
+            key: '3',
+            name: 'Joe Black',
+            age: 32,
+            address: 'Sidney No. 1 Lake Park',
+        },
+    ];
+
+    return (
+        <div style={{ padding: 30 }}>
+            <Table columns={columns} dataSource={data} />
+        </div>);
 };
