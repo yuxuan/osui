@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.6](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/tabs@0.8.5...@osui/tabs@0.8.6) (2020-12-09)
+
+
+### Bug Fixes
+
+* tabs color 样式修复 ([98f46fe](https://gitee.com/yuxuanhuo/osui/tree/master/commits/98f46fe6404f83b8a8d75d834ab0ac712a56dbe9))
+
+
+
+
+
 ## [0.8.5](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/tabs@0.8.4...@osui/tabs@0.8.5) (2020-12-08)
 
 **Note:** Version bump only for package @osui/tabs
