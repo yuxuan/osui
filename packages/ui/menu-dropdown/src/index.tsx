@@ -23,15 +23,15 @@ interface MenuDropdownData {
 export interface MenuDropdownProps extends Omit<AntdDropdownProps, 'overlay'> {
     data?: MenuDropdownData[];
     className?: string;
-    handleMenuClick?: MenuItemProps['onClick'];
+    onMenuClick?: MenuItemProps['onClick'];
 }
 
 const MenuDropdown: React.FC<MenuDropdownProps> = props => {
     const { SubMenu } = Menu;
-    const { data, handleMenuClick, ...rest } = props;
+    const { data, onMenuClick, ...rest } = props;
 
     const menu = (
-        <Menu {...rest} onClick={handleMenuClick} >
+        <Menu {...rest} onClick={onMenuClick} >
             {
                 data && data.map(item => {
                     if (item.children && item.children.length > 0) {

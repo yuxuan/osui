@@ -118,6 +118,7 @@ export const TableAction = () => {
                 placement="bottomCenter"
                 data={menuData}
                 onVisibleChange={visible => {setVisible(visible);}}
+                onMenuClick={() => setVisible(false)}
             >
                 <ActionToggleButton isOn={visible} />
             </MenuDropdown>
