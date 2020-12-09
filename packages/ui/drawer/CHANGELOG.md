@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/drawer@0.8.5...@osui/drawer@0.8.6) (2020-12-09)
+
+
+### Bug Fixes
+
+* drawer close icon修复 ([98129b6](https://gitee.com/gitee-fe/osui/tree/master/commits/98129b6238e9213885b6e201747f65d5ce500880))
+
+
+
+
+
 ## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/drawer@0.8.4...@osui/drawer@0.8.5) (2020-12-08)
 
 **Note:** Version bump only for package @osui/drawer
