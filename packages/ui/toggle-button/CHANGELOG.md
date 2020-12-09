@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.9](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/toggle-button@0.8.8...@osui/toggle-button@0.8.9) (2020-12-09)
+
+
+### Bug Fixes
+
+* action toggle button background ([71cc863](https://gitee.com/yuxuanhuo/osui/tree/master/commits/71cc863e1b4eae70955bfde327a12e9ba4e6787d))
+
+
+
+
+
 ## [0.8.8](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/toggle-button@0.8.7...@osui/toggle-button@0.8.8) (2020-12-09)
 
 

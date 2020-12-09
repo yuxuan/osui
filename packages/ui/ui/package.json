@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "0.8.27",
+    "version": "0.8.28",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -115,7 +115,7 @@
         "@osui/tag": "^0.8.5",
         "@osui/time-picker": "^0.8.5",
         "@osui/timeline": "^0.8.4",
-        "@osui/toggle-button": "^0.8.8",
+        "@osui/toggle-button": "^0.8.9",
         "@osui/tooltip": "^0.8.4",
         "@osui/transfer": "^0.9.1",
         "@osui/tree": "^0.8.5",
