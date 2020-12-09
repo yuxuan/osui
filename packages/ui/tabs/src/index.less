@@ -1,12 +1,12 @@
 @osui-tabs-class-prefix: osui-tabs;
 
 .@{osui-tabs-class-prefix} {
-    &.ant-tabs {
-        color: var(--tabs-tab-color);
-    }
-
     &.ant-tabs-top > .ant-tabs-nav::before {
         border-bottom: var(--tabs-border-bottom);
+    }
+
+    .ant-tabs-nav-list {
+        color: var(--tabs-tab-color);
     }
 
     .ant-tabs-tab .anticon {
