@@ -1,8 +1,9 @@
 import React from 'react';
-import {Button, Divider, Drawer} from 'antd';
+import { Button, Divider } from 'antd';
+import Drawer from '@osui/drawer';
 
 export default {
-    title: 'Drawer',
+    title: '待验收/Drawer 抽屉',
 };
 
 export const Demo = () => {
@@ -18,18 +19,18 @@ export const Demo = () => {
     };
 
     return (
-        <div style={{padding: 30}}>
+        <div style={{ padding: 30 }}>
             {/* success */}
             <Divider orientation="left">基础抽屉</Divider>
             <Button type="primary" onClick={showDrawer}>
                 Open
             </Button>
-            <p style={{margin: '20px 0 20px 0'}}>基础抽屉，点击触发按钮抽屉从右滑出，点击遮罩区关闭</p>
+            <p style={{ margin: '20px 0 20px 0' }}>基础抽屉，点击触发按钮抽屉从右滑出，点击遮罩区关闭</p>
             <Drawer
                 title="Basic Drawer"
                 placement="right"
                 width="450"
-                closable={false}
+                closable
                 onClose={onClose}
                 visible={visible}
             >

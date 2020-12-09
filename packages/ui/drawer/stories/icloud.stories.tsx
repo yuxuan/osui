@@ -1,5 +1,6 @@
 import React from 'react';
-import {Button, Divider, Drawer} from 'antd';
+import {Button, Divider} from 'antd';
+import Drawer from '../src';
 
 export default {
     title: '待验收/Drawer 抽屉',
@@ -29,7 +30,7 @@ export const Demo = () => {
                 title="Basic Drawer"
                 placement="right"
                 width="450"
-                closable={false}
+                closable
                 onClose={onClose}
                 visible={visible}
             >
