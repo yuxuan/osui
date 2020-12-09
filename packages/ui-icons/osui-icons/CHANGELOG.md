@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.6](https://gitee.com/gitee-fe/osui/compare/@osui/icons@0.8.5...@osui/icons@0.8.6) (2020-12-09)
+
+
+### Bug Fixes
+
+* toggle button 添加action toggle button 组件 ([c50cd75](https://gitee.com/gitee-fe/osui/commits/c50cd751c53711c4d8f201387892459da91858a1))
+
+
+
+
+
 ## [0.8.5](https://gitee.com/gitee-fe/osui/compare/@osui/icons@0.8.4...@osui/icons@0.8.5) (2020-12-08)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.8](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/toggle-button@0.8.7...@osui/toggle-button@0.8.8) (2020-12-09)
+
+
+### Bug Fixes
+
+* toggle button 添加action toggle button 组件 ([c50cd75](https://gitee.com/yuxuanhuo/osui/tree/master/commits/c50cd751c53711c4d8f201387892459da91858a1))
+
+
+
+
+
 ## [0.8.7](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/toggle-button@0.8.6...@osui/toggle-button@0.8.7) (2020-12-08)
 
 **Note:** Version bump only for package @osui/toggle-button
