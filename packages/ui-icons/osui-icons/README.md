@@ -56,17 +56,19 @@ export default function Title() {
                                                         </td></tr><tr><td align="center">
                                                         <img src="./svg/left-arrow.svg"/><br/><sub>IconLeftArrow</sub>
                                                         </td><td align="center">
-                                                        <img src="./svg/right-arrow.svg"/><br/><sub>IconRightArrow</sub>
+                                                        <img src="./svg/more.svg"/><br/><sub>IconMore</sub>
                                                         </td><td align="center">
-                                                        <img src="./svg/search.svg"/><br/><sub>IconSearch</sub>
+                                                        <img src="./svg/right-arrow.svg"/><br/><sub>IconRightArrow</sub>
                                                         </td></tr><tr><td align="center">
+                                                        <img src="./svg/search.svg"/><br/><sub>IconSearch</sub>
+                                                        </td><td align="center">
                                                         <img src="./svg/spinner.svg"/><br/><sub>IconSpinner</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/switch-cross.svg"/><br/><sub>IconSwitchCross</sub>
-                                                        </td><td align="center">
-                                                        <img src="./svg/switch-tick.svg"/><br/><sub>IconSwitchTick</sub>
                                                         </td></tr><tr><td align="center">
+                                                        <img src="./svg/switch-tick.svg"/><br/><sub>IconSwitchTick</sub>
+                                                        </td><td align="center">
                                                         <img src="./svg/warning-circle-fill.svg"/><br/><sub>IconWarningCircleFill</sub>
                                                         </td><td align="center">
                                                         <img src="./svg/navi-doc.svg"/><br/><sub>IconNaviDoc</sub>
-                                                        </td><td align="center"></td></tr></tbody></table>
+                                                        </td></tr></tbody></table>

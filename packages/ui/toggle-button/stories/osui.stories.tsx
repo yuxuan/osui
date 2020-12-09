@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Row} from 'antd';
 import {IconGitFilter, IconBranchFilter} from '@osui/icons';
 import MenuDropdown from '@osui/menu-dropdown';
-import ToggleButton from '../src';
+import ToggleButton, {ActionToggleButton} from '../src';
 
 export default {
     title: 'ToggleButton',
@@ -30,7 +30,6 @@ export const Demo = () => {
         </>
     );
 };
-
 
 export const MenuDemo = () => {
     const [visible, setVisible] = useState(false);
@@ -92,6 +91,41 @@ export const MenuDemo = () => {
                 onVisibleChange={visible => {setVisible(visible);}}
             >
                 <ToggleButton isOn={visible}>筛选普通样式</ToggleButton>
+            </MenuDropdown>
+        </>
+    );
+};
+
+export const Action = () => {
+    const [visible, setVisible] = useState(false);
+
+    const data = [
+        {
+            title: '编辑',
+            key: 'edit',
+        },
+        {
+            title: '删除',
+            key: 'delete',
+        },
+    ];
+
+    // 菜单点击事件
+    const handleMenuClick = (e: any) => {
+        console.log(`获取Menu点击的key值: ${e.key}`);
+        console.log(e);
+        setVisible(false);
+    };
+    return (
+        <>
+            <MenuDropdown
+                trigger={['click']}
+                handleMenuClick={handleMenuClick}
+                placement="bottomCenter"
+                data={data}
+                onVisibleChange={visible => {setVisible(visible);}}
+            >
+                <ActionToggleButton isOn={visible} />
             </MenuDropdown>
         </>
     );

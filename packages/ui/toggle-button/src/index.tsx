@@ -4,20 +4,21 @@
  */
 import React, {useCallback} from 'react';
 import {Button} from 'antd';
-import {IconDownArrow} from '@osui/icons';
+import {ButtonProps} from 'antd/es/button';
+import {IconDownArrow, IconMore} from '@osui/icons';
 import classNames from 'classnames';
 import {useDerivedState} from '@huse/derived-state';
 import './index.less';
 
 const clsPrefix = 'osui-toggle-button';
 
-interface ToggleButtonProps {
+interface ToggleButtonProps extends ButtonProps {
     num?: number;
     hasSelectNumber?: boolean;
     hasShowNumber?: boolean;
     hasArrow?: boolean;
     className?: string;
-    children: React.ReactNode;
+    children?: React.ReactNode;
     beforeIcon?: React.ReactNode & React.ReactElement;
     onClick?: React.MouseEventHandler<HTMLElement>;
     isOn?: boolean;
@@ -34,6 +35,7 @@ const ToggleButton = React.forwardRef<any, ToggleButtonProps>((props, ref) => {
         children,
         onClick,
         isOn = false,
+        ...restProps
     } = props;
 
     const [clicked, setClicked] = useDerivedState(isOn);
@@ -68,6 +70,7 @@ const ToggleButton = React.forwardRef<any, ToggleButtonProps>((props, ref) => {
                 },
                 className
             )}
+            {...restProps}
         >
             {beforeIconCloned}
             {children}
@@ -77,5 +80,12 @@ const ToggleButton = React.forwardRef<any, ToggleButtonProps>((props, ref) => {
         </Button>
     );
 });
+
+export const ActionToggleButton: React.FC<ToggleButtonProps> = ({className, ...props}) => {
+    const classnames = classNames(`${clsPrefix}-actionButton`, className);
+    return (
+        <ToggleButton {...props} className={classnames} icon={<IconMore />} />
+    );
+};
 
 export default ToggleButton;

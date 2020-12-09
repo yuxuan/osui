@@ -15,6 +15,7 @@ export const IconGitFilter: IconComponent;
 export const IconHome: IconComponent;
 export const IconInfoCircleFill: IconComponent;
 export const IconLeftArrow: IconComponent;
+export const IconMore: IconComponent;
 export const IconRightArrow: IconComponent;
 export const IconSearch: IconComponent;
 export const IconSpinner: IconComponent;

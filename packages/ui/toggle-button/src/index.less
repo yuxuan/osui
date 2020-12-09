@@ -13,16 +13,14 @@
         border: 1px solid transparent;
         box-shadow: none;
         color: var(--theme-text-color);
-        padding-left: 12px;
-        padding-right: 12px;
-    }
 
-    &:hover {
-        background-color: var(--color-gray-2);
-    }
+        &:hover {
+            background-color: var(--color-gray-3);
+        }
 
-    &:active {
-        background-color: var(--color-gray-5);
+        &:active {
+            background-color: var(--color-gray-4);
+        }
     }
 
     &-number.ant-btn {
@@ -41,8 +39,10 @@
     }
 
     &&-clicked {
-        color: var(--color-gray-1);
-        background-color: var(--color-gray-8);
+        &.ant-btn {
+            color: var(--color-gray-1);
+            background-color: var(--color-gray-8);
+        }
 
         .num {
             color: var(--theme-text-color);
@@ -53,5 +53,11 @@
         border: 0 none;
         opacity: 0;
         animation: none 0 ease 0 1 normal;
+    }
+
+    &-actionButton {
+        padding: 0;
+        height: 24px;
+        width: 24px;
     }
 }
