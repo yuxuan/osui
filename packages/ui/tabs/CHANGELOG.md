@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.7](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/tabs@0.8.6...@osui/tabs@0.8.7) (2020-12-09)
+
+
+### Bug Fixes
+
+* 修复tabs nav list 字体颜色 ([e5d51c3](https://gitee.com/yuxuanhuo/osui/tree/master/commits/e5d51c390c4de173de230a0ec3a9cd55192c53fc))
+
+
+
+
+
 ## [0.8.6](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/tabs@0.8.5...@osui/tabs@0.8.6) (2020-12-09)
 
 
