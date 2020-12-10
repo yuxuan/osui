@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 import {Row} from 'antd';
 import {IconGitFilter, IconBranchFilter} from '@osui/icons';
 import MenuDropdown from '@osui/menu-dropdown';
-import Table from '@osui/table';
-import ToggleButton, {ActionToggleButton} from '../src';
+import ToggleButton from '../src';
 
 export default {
     title: 'ToggleButton',
@@ -86,7 +85,7 @@ export const MenuDemo = () => {
         <>
             <MenuDropdown
                 trigger={['click']}
-                handleMenuClick={handleMenuClick}
+                onMenuClick={handleMenuClick}
                 placement="bottomCenter"
                 data={data}
                 onVisibleChange={visible => {setVisible(visible);}}
@@ -95,82 +94,4 @@ export const MenuDemo = () => {
             </MenuDropdown>
         </>
     );
-};
-
-export const TableAction = () => {
-    const Action = () => {
-        const [visible, setVisible] = useState(false);
-
-        const menuData = [
-            {
-                title: '编辑',
-                key: 'edit',
-            },
-            {
-                title: '删除',
-                key: 'delete',
-            },
-        ];
-
-        return (
-            <MenuDropdown
-                trigger={['click']}
-                placement="bottomCenter"
-                data={menuData}
-                onVisibleChange={visible => {setVisible(visible);}}
-                onMenuClick={() => setVisible(false)}
-            >
-                <ActionToggleButton isOn={visible} />
-            </MenuDropdown>
-        );
-    };
-
-    const columns = [
-        {
-            title: 'Name',
-            dataIndex: 'name',
-            key: 'name',
-        },
-        {
-            title: 'Age',
-            dataIndex: 'age',
-            key: 'age',
-        },
-        {
-            title: 'Address',
-            dataIndex: 'address',
-            key: 'address',
-        },
-        {
-            title: 'Action',
-            key: 'action',
-            render: () => (<Action />),
-        },
-    ];
-
-    const data = [
-        {
-            key: '1',
-            name: 'John Brown',
-            age: 32,
-            address: 'New York No. 1 Lake Park',
-        },
-        {
-            key: '2',
-            name: 'Jim Green',
-            age: 42,
-            address: 'London No. 1 Lake Park',
-        },
-        {
-            key: '3',
-            name: 'Joe Black',
-            age: 32,
-            address: 'Sidney No. 1 Lake Park',
-        },
-    ];
-
-    return (
-        <div style={{ padding: 30 }}>
-            <Table columns={columns} dataSource={data} />
-        </div>);
 };

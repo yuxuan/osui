@@ -3,13 +3,14 @@
  * @author yangpeng, huoyuxuan
  * */
 
-import React from 'react';
+import React, {useState, useCallback} from 'react';
 import Dropdown from '@osui/dropdown';
 import Menu from '@osui/menu';
 import {DropDownProps as AntdDropdownProps} from 'antd/es/dropdown';
 import {MenuItemProps} from 'antd/es/menu/MenuItem';
 import classNames from 'classnames';
 import {IconRightArrow} from '@osui/icons';
+import {ActionToggleButton} from '@osui/toggle-button';
 import './index.less';
 
 const clsPrefix = 'osui-menu-dropdown';
@@ -64,6 +65,38 @@ const MenuDropdown: React.FC<MenuDropdownProps> = props => {
             overlay={menu}
             className={classNames(clsPrefix, props.className)}
         />
+    );
+};
+
+export const ActionMenuDropdown: React.FC<MenuDropdownProps> = ({
+    onMenuClick,
+    onVisibleChange,
+    ...props
+}) => {
+    const [actionOn, setActionOn] = useState(false);
+    const handleClick = useCallback(
+        e => {
+            setActionOn(false);
+            onMenuClick && onMenuClick(e);
+        },
+        [onMenuClick]
+    );
+    const handleVisibleChange = useCallback(
+        visible => {
+            setActionOn(visible);
+            onVisibleChange && onVisibleChange(visible);
+        },
+        [onVisibleChange]
+    );
+    return (
+        <MenuDropdown
+            trigger={['click']}
+            onMenuClick={handleClick}
+            onVisibleChange={handleVisibleChange}
+            {...props}
+        >
+            <ActionToggleButton isOn={actionOn} />
+        </MenuDropdown>
     );
 };
 

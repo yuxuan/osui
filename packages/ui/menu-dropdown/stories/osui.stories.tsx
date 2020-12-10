@@ -1,6 +1,8 @@
 import React from 'react';
-import {Divider, Button} from 'antd';
-import MenuDropdown from '../src';
+import {Divider} from 'antd';
+import Table from '@osui/table';
+import Button from '@osui/button';
+import MenuDropdown, {ActionMenuDropdown} from '../src';
 
 export default {
     title: 'MenuDropdown',
@@ -62,7 +64,7 @@ export const Demo = () => {
             <MenuDropdown
                 trigger={['contextMenu']}
                 data={data}
-                handleMenuClick={handleMenuClick}
+                onMenuClick={handleMenuClick}
             >
                 <div
                     style={{
@@ -135,11 +137,74 @@ export const ButtonDemo = () => {
             <Divider orientation="left">基本</Divider>
             <MenuDropdown
                 trigger={['click']}
-                handleMenuClick={handleMenuClick}
+                onMenuClick={handleMenuClick}
                 placement="bottomCenter"
                 data={data}
             >
                 <Button>bottomCenter</Button>
             </MenuDropdown>
+        </div>);
+};
+
+
+export const TableAction = () => {
+    const menuData = [
+        {
+            title: '编辑',
+            key: 'edit',
+        },
+        {
+            title: '删除',
+            key: 'delete',
+        },
+    ];
+
+    const columns = [
+        {
+            title: 'Name',
+            dataIndex: 'name',
+            key: 'name',
+        },
+        {
+            title: 'Age',
+            dataIndex: 'age',
+            key: 'age',
+        },
+        {
+            title: 'Address',
+            dataIndex: 'address',
+            key: 'address',
+        },
+        {
+            title: 'Action',
+            key: 'action',
+            render: () => (<ActionMenuDropdown data={menuData} />),
+        },
+    ];
+
+    const data = [
+        {
+            key: '1',
+            name: 'John Brown',
+            age: 32,
+            address: 'New York No. 1 Lake Park',
+        },
+        {
+            key: '2',
+            name: 'Jim Green',
+            age: 42,
+            address: 'London No. 1 Lake Park',
+        },
+        {
+            key: '3',
+            name: 'Joe Black',
+            age: 32,
+            address: 'Sidney No. 1 Lake Park',
+        },
+    ];
+
+    return (
+        <div style={{ padding: 30 }}>
+            <Table columns={columns} dataSource={data} />
         </div>);
 };

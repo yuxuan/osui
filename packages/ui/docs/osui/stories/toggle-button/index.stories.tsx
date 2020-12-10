@@ -31,7 +31,6 @@ export const Demo = () => {
     );
 };
 
-
 export const MenuDemo = () => {
     const [visible, setVisible] = useState(false);
 
@@ -86,7 +85,7 @@ export const MenuDemo = () => {
         <>
             <MenuDropdown
                 trigger={['click']}
-                handleMenuClick={handleMenuClick}
+                onMenuClick={handleMenuClick}
                 placement="bottomCenter"
                 data={data}
                 onVisibleChange={visible => {setVisible(visible);}}
