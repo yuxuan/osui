@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.15](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.9.14...@osui/icloud-theme@0.9.15) (2020-12-10)
+
+
+### Bug Fixes
+
+* icloud-theme色盘gray5颜色调整 ([de5d932](https://gitee.com/gitee-fe/osui/tree/master/commits/de5d932cc5199745866856123ff53d6a843818ab))
+
+
+
+
+
 ## [0.9.14](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.9.13...@osui/icloud-theme@0.9.14) (2020-12-08)
 
 **Note:** Version bump only for package @osui/icloud-theme

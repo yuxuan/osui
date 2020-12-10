@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.10](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/toggle-button@0.8.9...@osui/toggle-button@0.8.10) (2020-12-10)
+
+
+### Bug Fixes
+
+* menu-dropdown handleMenuClick 修改为 onMenuClick ([14796a5](https://gitee.com/yuxuanhuo/osui/tree/master/commits/14796a53c42b287d058ab6fe313e9185fc6ac623))
+* 添加ActionMenuDropdown组件 ([77e399a](https://gitee.com/yuxuanhuo/osui/tree/master/commits/77e399a0a6fe464578c26aeae96a0b370882cd65))
+
+
+
+
+
 ## [0.8.9](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/toggle-button@0.8.8...@osui/toggle-button@0.8.9) (2020-12-09)
 
 
