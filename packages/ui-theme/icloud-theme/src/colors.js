@@ -122,7 +122,7 @@ exports.uiColors = {
     '--color-gray-2': '#fafafa',
     '--color-gray-3': '#f5f5f5',
     '--color-gray-4': '#eeeeee',
-    '--color-gray-5': '#ebebeb',
+    '--color-gray-5': '#e0e0e0',
     '--color-gray-6': '#cccccc',
     '--color-gray-7': '#999999',
     '--color-gray-8': '#666666',
