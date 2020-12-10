@@ -68,6 +68,7 @@
     "dependencies": {
         "@osui/dropdown": "^0.8.6",
         "@osui/menu": "^0.8.5",
+        "@osui/toggle-button": "^0.8.9",
         "classnames": "^2.2.6"
     },
     "publishConfig": {

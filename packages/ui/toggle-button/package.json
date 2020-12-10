@@ -66,8 +66,6 @@
         }
     },
     "dependencies": {
-        "@huse/boolean": "^1.0.2",
-        "@huse/click-outside": "^1.0.1",
         "@huse/derived-state": "^1.0.1",
         "@osui/icons": "^0.8.6"
     },
