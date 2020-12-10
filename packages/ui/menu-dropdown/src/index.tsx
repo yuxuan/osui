@@ -29,10 +29,10 @@ export interface MenuDropdownProps extends Omit<AntdDropdownProps, 'overlay'> {
 
 const MenuDropdown: React.FC<MenuDropdownProps> = props => {
     const { SubMenu } = Menu;
-    const { data, onMenuClick, ...rest } = props;
+    const { data, onMenuClick, onVisibleChange, ...rest } = props;
 
     const menu = (
-        <Menu {...rest} onClick={onMenuClick} >
+        <Menu {...rest} onClick={onMenuClick}>
             {
                 data && data.map(item => {
                     if (item.children && item.children.length > 0) {
@@ -64,6 +64,7 @@ const MenuDropdown: React.FC<MenuDropdownProps> = props => {
             {...rest}
             overlay={menu}
             className={classNames(clsPrefix, props.className)}
+            onVisibleChange={onVisibleChange}
         />
     );
 };
