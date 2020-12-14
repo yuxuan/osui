@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.16](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.9.15...@osui/icloud-theme@0.9.16) (2020-12-14)
+
+
+### Bug Fixes
+
+* table font-size icloud 主题调整 ([9d03e56](https://gitee.com/gitee-fe/osui/tree/master/commits/9d03e56c29623344c7c4b625ec30fdf71826c27b))
+
+
+
+
+
 ## [0.9.15](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.9.14...@osui/icloud-theme@0.9.15) (2020-12-10)
 
 
