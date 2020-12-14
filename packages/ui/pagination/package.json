@@ -1,6 +1,6 @@
 {
     "name": "@osui/pagination",
-    "version": "0.8.7",
+    "version": "0.8.8",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",

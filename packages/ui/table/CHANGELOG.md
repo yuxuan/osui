@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.8](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.8.7...@osui/table@0.8.8) (2020-12-14)
+
+
+### Bug Fixes
+
+* 修复table里面pagination的样式 ([1b096a2](https://gitee.com/gitee-fe/osui/tree/master/commits/1b096a2c4bbb6f1f3099f336724b9dae6e46adaa))
+
+
+
+
+
 ## [0.8.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.8.6...@osui/table@0.8.7) (2020-12-08)
 
 **Note:** Version bump only for package @osui/table

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.16](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.9.15...@osui/theme@0.9.16) (2020-12-14)
+
+
+### Bug Fixes
+
+* 修复table里面pagination的样式 ([1b096a2](https://gitee.com/gitee-fe/osui/tree/master/commits/1b096a2c4bbb6f1f3099f336724b9dae6e46adaa))
+
+
+
+
+
 ## [0.9.15](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.9.14...@osui/theme@0.9.15) (2020-12-08)
 
 
