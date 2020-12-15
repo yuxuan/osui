@@ -2,10 +2,11 @@
 
 .@{osui-tag-class-prefix} {
     border: 1px solid transparent;
+    padding: var(--tag-padding);
 
     svg {
+        font-size: 12px;
         height: 12px;
-        vertical-align: -.1em;
     }
 
     &:hover {
@@ -17,28 +18,48 @@
     }
 
     &.ant-tag-blue {
-        color: var(--tag-font-color);
-        background: var(--tag-blue-color);
+        color: var(--tag-blue-font-color);
+        background: var(--tag-blue-bg-color);
+
+        &.@{osui-tag-class-prefix}-solid {
+            color: var(--theme-component-bg);
+            background: var(--tag-blue-solid-bg-color);
+        }
     }
 
     &.ant-tag-green {
-        color: var(--tag-font-color);
-        background: var(--tag-green-color);
+        color: var(--tag-green-font-color);
+        background: var(--tag-green-bg-color);
+
+        &.@{osui-tag-class-prefix}-solid {
+            color: var(--theme-component-bg);
+            background: var(--tag-green-solid-bg-color);
+        }
+    }
+
+    &.ant-tag-red {
+        color: var(--tag-red-font-color);
+        background: var(--tag-red-bg-color);
+
+        &.@{osui-tag-class-prefix}-solid {
+            color: var(--theme-component-bg);
+            background: var(--tag-red-solid-bg-color);
+        }
+    }
+
+    &.ant-tag-yellow {
+        color: var(--tag-yellow-font-color);
+        background: var(--tag-yellow-bg-color);
+
+        &.@{osui-tag-class-prefix}-solid {
+            color: var(--theme-component-bg);
+            background: var(--tag-yellow-solid-bg-color);
+        }
     }
 
     &.ant-tag-purple {
         color: var(--tag-font-color);
         background: var(--tag-purple-color);
-    }
-
-    &.ant-tag-red {
-        color: var(--tag-font-color);
-        background: var(--tag-red-color);
-    }
-
-    &.ant-tag-yellow {
-        color: var(--tag-font-color);
-        background: var(--tag-yellow-color);
     }
 }
 
@@ -60,5 +81,12 @@
 
     &:hover {
         background: var(--color-gray-3);
+    }
+}
+
+.@{osui-tag-class-prefix}-round {
+    &.ant-tag {
+        border-radius: 14px;
+        padding: 0 10px;
     }
 }

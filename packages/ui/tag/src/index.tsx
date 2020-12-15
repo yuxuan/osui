@@ -12,7 +12,11 @@ import './index.less';
 
 const clsPrefix = 'osui-tag';
 
-export type TagProps = AntdTagProps;
+export interface TagProps extends AntdTagProps {
+    solid?: boolean;
+    round?: boolean;
+}
+
 export type CheckableTagProps = AntdCheckableTagProps;
 
 interface TagInterface extends React.FC<TagProps> {
@@ -22,8 +26,14 @@ interface TagInterface extends React.FC<TagProps> {
 const Tag: TagInterface = props => {
     const {closeIcon} = props;
     const patchedIcon = closeIcon || <IconCross />;
+    const classnames = classNames(
+        clsPrefix,
+        props.className,
+        {[`${clsPrefix}-solid`]: props.solid},
+        {[`${clsPrefix}-round`]: props.round}
+    );
 
-    return <AntdTag {...props} closeIcon={patchedIcon} className={classNames(clsPrefix, props.className)} />;
+    return <AntdTag {...props} closeIcon={patchedIcon} className={classnames} />;
 };
 
 const CheckableTag: React.FC<CheckableTagProps> = props => {
