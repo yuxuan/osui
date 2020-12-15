@@ -2,7 +2,7 @@ import React from 'react';
 import {Table as AntdTable} from 'antd';
 import {TableProps as AntdTableProps, TablePaginationConfig as AntdTablePaginationConfig} from 'antd/es/table';
 import classNames from 'classnames';
-import {itemRender} from '@osui/pagination';
+import {customPaginationProps} from '@osui/pagination';
 import '@osui/pagination/es/index.less';
 import './index.less';
 
@@ -58,7 +58,9 @@ function OSUITable<RecordType extends Record<string, any>>(
             'osui-pagination',
             pagination && pagination.className
         ),
-        itemRender,
+        itemRender: customPaginationProps.itemRender,
+        showQuickJumper: customPaginationProps.showQuickJumper(pagination && pagination.showQuickJumper, props.size),
+        locale: customPaginationProps.locale,
     };
     return (
         <AntdTable<RecordType>

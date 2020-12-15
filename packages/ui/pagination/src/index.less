@@ -77,3 +77,18 @@
         }
     }
 }
+
+.@{osui-back-top-class-prefix} {
+    .ant-pagination-options-quick-jumper input {
+        &:focus,
+        &:hover {
+            z-index: 2;
+        }
+        // 只有跟在input后面的需要往前移动
+        & + span {
+            .@{osui-back-top-class-prefix}-jumper {
+                margin-left: -9px;
+            }
+        }
+    }
+}

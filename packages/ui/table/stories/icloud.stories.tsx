@@ -169,7 +169,7 @@ export const CompleteDemo = () => {
     const title = () => 'Here is title';
     const showHeader = true;
     const footer = () => 'Here is footer';
-    const pagination = { position: 'bottom' };
+    const pagination = { position: 'bottom', showQuickJumper: true };
 
     class Demo extends React.Component {
         state = {
@@ -340,7 +340,7 @@ export const CompleteDemo = () => {
                     </Form>
                     <Table
                         {...this.state}
-                        pagination={{ position: [this.state.top, this.state.bottom] }}
+                        pagination={{ position: [this.state.top, this.state.bottom], showQuickJumper: true }}
                         columns={tableColumns}
                         dataSource={state.hasData ? data : null}
                         scroll={scroll}
