@@ -3,10 +3,20 @@ import {Drawer as AntdDrawer} from 'antd';
 import {DrawerProps as AntdDrawerProps} from 'antd/es/drawer';
 import {IconCross} from '@osui/icons';
 
-const Drawer: React.FC<AntdDrawerProps> = ({closeIcon, ...props}) => {
-    const innerCloseIcon = closeIcon || <IconCross />;
+export interface DrawerProps extends AntdDrawerProps {
+    size?: 'large' | 'middle' | 'small';
+}
 
-    return <AntdDrawer {...props} closeIcon={innerCloseIcon} />;
+const sizeWidthMap: {[key in 'large' | 'middle' | 'small']: number} = {
+    'large': 600,
+    'middle': 400,
+    'small': 200,
+};
+
+const Drawer: React.FC<DrawerProps> = ({ closeIcon, size, ...props }) => {
+    const innerCloseIcon = closeIcon || <IconCross />;
+    const innerWidth = props.width ?? (size && sizeWidthMap[size]);
+    return <AntdDrawer {...props} closeIcon={innerCloseIcon} width={innerWidth} />;
 };
 
 export default Drawer;
