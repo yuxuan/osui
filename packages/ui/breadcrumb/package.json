@@ -59,7 +59,7 @@
         "type": "git",
         "url": "https://gitee.com/gitee-fe/osui/tree/master"
     },
-    "author": "huoyuxuan",
+    "author": "huoyuxuan,lisiqi06",
     "license": "MIT",
     "husky": {
         "hooks": {

@@ -1,5 +1,5 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import * as stories from './index.stories';
+import * as stories from './index.stories'
 
 <Meta title="设计文档/Breadcrumb 面包屑"  />
 
@@ -7,6 +7,22 @@ import * as stories from './index.stories';
 
 支持所有antd属性：见[antd文档](https://ant.design/components/breadcrumb-cn/)
 
+面包屑能够作为用户路径的记录，可点击切换至对应页面，至多展示5级面包屑内容，超过部分展示一级与末尾2级，中间省略号显示，可从后之前逐级展开内容
+
+## a.小于等于5级时：
+
 <Preview>
   <Story name="Demo" story={stories.Demo} />
+</Preview>
+
+## b.超过5级时（超过5级时，可从末尾逐级点击展开上一级）：
+
+<Preview>
+  <Story name="Ellipsis" story={stories.Ellipsis} />
+</Preview>
+
+## 部分功能中，需切换如代码库、流水线，可根据业务诉求在面包屑中增加切换功能：
+
+<Preview>
+  <Story name="Dropdown" story={stories.Dropdown} />
 </Preview>
