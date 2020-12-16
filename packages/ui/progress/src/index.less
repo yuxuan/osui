@@ -1,40 +1,6 @@
 @osui-progress-class-prefix: osui-progress;
 
 .@{osui-progress-class-prefix} {
-    .ant-progress-inner {
-        background-color: var(--theme-bg-color-base);
-    }
-
-    &.ant-progress-status-normal {
-        .ant-progress-bg {
-            background-color: var(--theme-primary-color);
-        }
-
-        .ant-progress-text {
-            color: var(--progress-primary-text-color);
-        }
-    }
-
-    .ant-progress-status-success {
-        .ant-progress-bg {
-            background-color: var(--theme-success-color);
-        }
-
-        .ant-progress-text {
-            color: var(--theme-success-color);
-        }
-    }
-
-    .ant-progress-status-exception {
-        .ant-progress-bg {
-            background-color: var(--theme-warning-color);
-        }
-
-        .ant-progress-text {
-            color: var(--theme-warning-color);
-        }
-    }
-
     &.ant-progress-status-active {
         .ant-progress-bg {
             background-color: var(--theme-secondary-color-active);
@@ -43,10 +9,7 @@
         .ant-progress-bg::before {
             background: var(--theme-primary-color);
             animation: osui-progress-active 2.4s cubic-bezier(.23, 1, .32, 1) infinite;
-        }
-
-        .ant-progress-text {
-            color: var(--progress-primary-text-color);
+            border-radius: var(--progress-radius);
         }
     }
 }

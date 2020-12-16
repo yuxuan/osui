@@ -1,5 +1,5 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import * as stories from './index.stories';
+import * as stories from './index.stories'
 
 <Meta title="设计文档/Progress 进度条"  />
 
@@ -11,8 +11,40 @@ import * as stories from './index.stories';
 
 支持所有antd属性：见[antd文档](https://ant.design/components/progress-cn/#API)
 
-
+## 主要样式
 
 <Preview>
   <Story name="Demo" story={stories.Demo} />
+</Preview>
+
+### 2、含读数的进度条
+
+常用于有精准进度比例的场景。
+
+<Preview>
+  <Story name="Status" story={stories.Status} />
+</Preview>
+
+### 3、含图标的进度条
+
+通过醒目的视觉图标提醒用户进度。
+
+<Preview>
+  <Story name="StatusIcon" story={stories.StatusIcon} />
+</Preview>
+
+### 4、含操作的进度条
+
+TODO
+
+### 5、基础进度环
+
+<Preview>
+  <Story name="Circle" story={stories.Circle} />
+</Preview>
+
+### 6、含读数、图标进度环
+
+<Preview>
+  <Story name="CircleInfo" story={stories.CircleInfo} />
 </Preview>

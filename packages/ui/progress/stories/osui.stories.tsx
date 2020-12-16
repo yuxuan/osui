@@ -13,5 +13,6 @@ export const Demo = () => {
             <Progress percent={40} status="exception" />
             <Progress percent={50} status="normal" />
             <Progress percent={60} status="active" />
-        </div>);
+        </div>
+    );
 };
