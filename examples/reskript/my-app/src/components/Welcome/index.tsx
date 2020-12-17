@@ -1,12 +1,13 @@
+import {ReactComponent as Beer} from './assets/beer.svg';
 import c from './index.less';
 
 const Welcome = () => (
     <div className={c.root}>
-        <ul>
-            <li><a href="/welcome">welcome</a></li>
-            <li><a href="/everything">everything</a></li>
-        </ul>
-        <h1>恭喜你跑起来了</h1>
+         <a href="/everything">See everything</a>
+        <h1>
+            <Beer className={c.greeting} />
+            恭喜你跑起来了
+        </h1>
         <p>能看到这个页面，至少你已经能够启动系统，后面还需要清理一些TODO~</p>
         <h2>检查项</h2>
         <ul>

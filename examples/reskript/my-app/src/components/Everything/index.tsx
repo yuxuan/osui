@@ -1263,7 +1263,7 @@ export const ToggleButton = () => {
 };
 
 const Everything = () => (
-    <div>
+    <div style={{margin: 20}}>
         <Alert />
         <OSUI.Avatar size="default" pr>a</OSUI.Avatar>
         <OSUI.Avatar pr src="https://icons.iconarchive.com/icons/diversity-avatars/avatars/128/batman-icon.png" />

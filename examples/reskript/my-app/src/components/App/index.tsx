@@ -1,12 +1,16 @@
-import {useMemo} from 'react';
+import {FC, useMemo} from 'react';
 import {Switch, Redirect} from 'react-router-dom';
 import {Tracker, TrackRoute, combineCollects, browser, context, session} from '@ecomfe/react-track';
-import {welcomeIndex, everythingIndex} from '@/urls';
+import {welcomeIndex, everythingIndex} from '@/urls/welcome';
 import Welcome from '../Welcome';
 import Everything from '../Everything';
 import {provider} from './tracker';
 
-const App = ({username}) => {
+interface Props {
+    username: string;
+}
+
+const App: FC<Props> = ({username}) => {
     const collect = useMemo(
         () => {
             const appContext = {
@@ -26,15 +30,13 @@ const App = ({username}) => {
     );
 
     return (
-        <>
-            <Tracker collect={collect} provider={provider}>
-                <Switch>
-                    <TrackRoute path={welcomeIndex.fill()} component={Welcome} />
-                    <TrackRoute path={everythingIndex.fill()} component={Everything} />
-                    <Redirect to={welcomeIndex.fill()} />
-                </Switch>
-            </Tracker>
-        </>
+        <Tracker collect={collect} provider={provider}>
+            <Switch>
+                <TrackRoute path={welcomeIndex.fill()} component={Welcome} />
+                <TrackRoute path={everythingIndex.fill()} component={Everything} />
+                <Redirect to={welcomeIndex.fill()} />
+            </Switch>
+        </Tracker>
     );
 };
 

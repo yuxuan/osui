@@ -1,4 +1,7 @@
-export PATH=$NODEJS_BIN_LATEST:$YARN_BIN_LATEST:$PATH
+export PATH=$NODEJS_12_16_1_BIN:$YARN_1_22_4_BIN:$PATH
+export PATH=$PATH:$(yarn bin)
+
+set -e
 
 echo "node $(node -v)"
 echo "npm $(npm -v)"
@@ -11,7 +14,7 @@ yarn install --production=false
 yarn run build || { echo 'build failed'; exit 1; }
 
 mkdir output
-cp ./conf/* ./output
+cp ./conf/* ./output || echo "no conf to copy"
 cd dist
 tar czf ../output/bundle.tar.gz ./
 
