@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.8](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/drawer@0.8.7...@osui/drawer@0.8.8) (2020-12-18)
+
+
+### Bug Fixes
+
+* drawer icloud 主题调整 ([db269c4](https://gitee.com/gitee-fe/osui/tree/master/commits/db269c4bc44f95b209d4ce9f1c4ab1b032fe63fc))
+
+
+
+
+
 ## [0.8.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/drawer@0.8.6...@osui/drawer@0.8.7) (2020-12-09)
 
 **Note:** Version bump only for package @osui/drawer

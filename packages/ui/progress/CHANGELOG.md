@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/progress@0.8.4...@osui/progress@0.8.5) (2020-12-18)
+
+
+### Bug Fixes
+
+* progress icloud主题调整 ([2277631](https://gitee.com/gitee-fe/osui/tree/master/commits/22776314f1a6aab7431b344da86864a9230f3811))
+
+
+
+
+
 ## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/progress@0.8.3...@osui/progress@0.8.4) (2020-12-08)
 
 **Note:** Version bump only for package @osui/progress

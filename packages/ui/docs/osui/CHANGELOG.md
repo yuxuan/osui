@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/osui-docs@0.8.4...@osui/osui-docs@0.8.5) (2020-12-18)
+
+
+### Bug Fixes
+
+* drawer close icon修复 ([98129b6](https://gitee.com/gitee-fe/osui/tree/master/commits/98129b6238e9213885b6e201747f65d5ce500880))
+* 添加ActionMenuDropdown组件 ([77e399a](https://gitee.com/gitee-fe/osui/tree/master/commits/77e399a0a6fe464578c26aeae96a0b370882cd65))
+* 移除OSUI组件名前缀, 修复Table类型 ([72312fd](https://gitee.com/gitee-fe/osui/tree/master/commits/72312fd966309c8879c0ad283f435e9f3f4e0b29))
+
+
+
+
+
 ## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/osui-docs@0.8.3...@osui/osui-docs@0.8.4) (2020-12-08)
 
 

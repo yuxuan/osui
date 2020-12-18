@@ -1,6 +1,6 @@
 {
     "name": "@osui/badge",
-    "version": "0.8.5",
+    "version": "0.8.6",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",

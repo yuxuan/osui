@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/breadcrumb@0.8.5...@osui/breadcrumb@0.8.6) (2020-12-18)
+
+
+### Bug Fixes
+
+* breadcrumb icloud实现 ([91bc001](https://gitee.com/gitee-fe/osui/tree/master/commits/91bc001e812cda04df956b42d01c6d1766dfd47e))
+
+
+
+
+
 ## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/breadcrumb@0.8.4...@osui/breadcrumb@0.8.5) (2020-12-08)
 
 **Note:** Version bump only for package @osui/breadcrumb

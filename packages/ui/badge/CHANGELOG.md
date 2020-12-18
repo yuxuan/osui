@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/badge@0.8.5...@osui/badge@0.8.6) (2020-12-18)
+
+
+### Bug Fixes
+
+* 移除OSUI组件名前缀, 修复Table类型 ([72312fd](https://gitee.com/gitee-fe/osui/tree/master/commits/72312fd966309c8879c0ad283f435e9f3f4e0b29))
+
+
+
+
+
 ## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/badge@0.8.4...@osui/badge@0.8.5) (2020-12-08)
 
 

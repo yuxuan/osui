@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tag@0.8.5...@osui/tag@0.8.6) (2020-12-18)
+
+
+### Bug Fixes
+
+* tag icloud 主题修复 ([3b414d4](https://gitee.com/gitee-fe/osui/tree/master/commits/3b414d49b8b04a6d51bb52ab18e5c6768be81703))
+
+
+
+
+
 ## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tag@0.8.4...@osui/tag@0.8.5) (2020-12-08)
 
 **Note:** Version bump only for package @osui/tag

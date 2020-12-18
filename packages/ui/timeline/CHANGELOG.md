@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/timeline@0.8.4...@osui/timeline@0.8.5) (2020-12-18)
+
+
+### Bug Fixes
+
+* timeline icloud 主题调整 ([bd36bdc](https://gitee.com/gitee-fe/osui/tree/master/commits/bd36bdce939ca9f1f03e62ebd6b298ffa2b63205))
+
+
+
+
+
 ## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/timeline@0.8.3...@osui/timeline@0.8.4) (2020-12-08)
 
 **Note:** Version bump only for package @osui/timeline
