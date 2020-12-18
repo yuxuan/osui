@@ -42,7 +42,7 @@ export const customPaginationProps = {
     ),
 };
 
-const OSUIPagination: React.FC<PaginationProps> = props => {
+const Pagination: React.FC<PaginationProps> = props => {
     return (
         <AntdPagination
             {...props}
@@ -56,4 +56,4 @@ const OSUIPagination: React.FC<PaginationProps> = props => {
     );
 };
 
-export default OSUIPagination;
+export default Pagination;

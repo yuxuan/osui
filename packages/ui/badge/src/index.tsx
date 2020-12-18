@@ -6,8 +6,8 @@ import './index.less';
 
 const clsPrefix = 'osui-badge';
 
-const OSUIBadge: React.FC<AntdBadgeProps> = props => {
+const Badge: React.FC<AntdBadgeProps> = props => {
     return (<AntdBadge {...props} className={classNames(props.className, clsPrefix)} />);
 };
 
-export default OSUIBadge;
+export default Badge;

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Table as AntdTable} from 'antd';
 import {TableProps as AntdTableProps, TablePaginationConfig as AntdTablePaginationConfig} from 'antd/es/table';
+import {PaginationProps} from 'antd/es/pagination';
 import classNames from 'classnames';
 import {customPaginationProps} from '@osui/pagination';
 import '@osui/pagination/es/index.less';
@@ -28,7 +29,7 @@ const paginationPostion = (position: AntdTablePaginationConfig['position']) => {
     return 'right';
 };
 // Record的用法是因为用object报错提示
-function OSUITable<RecordType extends Record<string, any>>(
+function Table<RecordType extends Record<string, any>>(
     {
         className,
         bordered,
@@ -59,7 +60,9 @@ function OSUITable<RecordType extends Record<string, any>>(
             pagination && pagination.className
         ),
         itemRender: customPaginationProps.itemRender,
-        showQuickJumper: customPaginationProps.showQuickJumper(pagination && pagination.showQuickJumper, props.size),
+        showQuickJumper: customPaginationProps.showQuickJumper(
+            pagination && pagination.showQuickJumper, props.size as PaginationProps['size']
+        ),
         locale: customPaginationProps.locale,
     };
     return (
@@ -72,10 +75,10 @@ function OSUITable<RecordType extends Record<string, any>>(
     );
 }
 
-OSUITable.SELECTION_ALL = AntdTable.SELECTION_ALL;
-OSUITable.SELECTION_INVERT = AntdTable.SELECTION_INVERT;
-OSUITable.Column = AntdTable.Column;
-OSUITable.ColumnGroup = AntdTable.ColumnGroup;
-OSUITable.Summary = AntdTable.Summary;
+Table.SELECTION_ALL = AntdTable.SELECTION_ALL;
+Table.SELECTION_INVERT = AntdTable.SELECTION_INVERT;
+Table.Column = AntdTable.Column;
+Table.ColumnGroup = AntdTable.ColumnGroup;
+Table.Summary = AntdTable.Summary;
 
-export default OSUITable;
+export default Table;

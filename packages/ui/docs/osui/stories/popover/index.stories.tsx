@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@osui/button';
-import OSUIPopover from '@osui/popover';
+import Popover from '@osui/popover';
 
 export default {
     title: 'Popover',
@@ -25,7 +25,7 @@ export const Demo = () => {
         <div style={{padding: 30}}>
             <p>三种触发方式</p>
             <br />
-            <OSUIPopover
+            <Popover
                 content={
                     <div>
                         {content1}
@@ -37,8 +37,8 @@ export const Demo = () => {
                 trigger="hover"
             >
                 <Button>Hover</Button>
-            </OSUIPopover>
-            <OSUIPopover
+            </Popover>
+            <Popover
                 content={
                     <div>
                         {content1}
@@ -49,8 +49,8 @@ export const Demo = () => {
                 trigger="click"
             >
                 <Button style={{margin: '0 20px'}}>Click</Button>
-            </OSUIPopover>
-            <OSUIPopover
+            </Popover>
+            <Popover
                 content={
                     <div>
                         {content1}
@@ -61,11 +61,11 @@ export const Demo = () => {
                 trigger="focus"
             >
                 <Button>Focus</Button>
-            </OSUIPopover>
+            </Popover>
             <p style={{marginTop: 20}}>气泡位置</p>
             <br />
             <div style={{ marginLeft: buttonWidth + 32, whiteSpace: 'nowrap' }}>
-                <OSUIPopover
+                <Popover
                     content={
                         <div>
                             {content}
@@ -76,8 +76,8 @@ export const Demo = () => {
                     trigger="click"
                 >
                     <Button>TL</Button>
-                </OSUIPopover>
-                <OSUIPopover
+                </Popover>
+                <Popover
                     content={
                         <div>
                             {content}
@@ -88,8 +88,8 @@ export const Demo = () => {
                     trigger="click"
                 >
                     <Button style={{margin: '0 20px'}}>Top</Button>
-                </OSUIPopover>
-                <OSUIPopover
+                </Popover>
+                <Popover
                     content={
                         <div>
                             {content}
@@ -100,10 +100,10 @@ export const Demo = () => {
                     trigger="click"
                 >
                     <Button>TR</Button>
-                </OSUIPopover>
+                </Popover>
             </div>
             <div style={{ width: buttonWidth, float: 'left', textAlign: 'right' }}>
-                <OSUIPopover
+                <Popover
                     content={
                         <div>
                             {content}
@@ -114,8 +114,8 @@ export const Demo = () => {
                     trigger="click"
                 >
                     <Button>LT</Button>
-                </OSUIPopover>
-                <OSUIPopover
+                </Popover>
+                <Popover
                     content={
                         <div>
                             {content}
@@ -126,8 +126,8 @@ export const Demo = () => {
                     trigger="click"
                 >
                     <Button style={{margin: '20px 0'}}>Left</Button>
-                </OSUIPopover>
-                <OSUIPopover
+                </Popover>
+                <Popover
                     content={
                         <div>
                             {content}
@@ -138,10 +138,10 @@ export const Demo = () => {
                     trigger="click"
                 >
                     <Button>LB</Button>
-                </OSUIPopover>
+                </Popover>
             </div>
             <div style={{ width: buttonWidth, marginLeft: buttonWidth * 5 + 24 }}>
-                <OSUIPopover
+                <Popover
                     content={
                         <div>
                             {content}
@@ -152,8 +152,8 @@ export const Demo = () => {
                     trigger="click"
                 >
                     <Button>RT</Button>
-                </OSUIPopover>
-                <OSUIPopover
+                </Popover>
+                <Popover
                     content={
                         <div>
                             {content}
@@ -164,8 +164,8 @@ export const Demo = () => {
                     trigger="click"
                 >
                     <Button style={{margin: '20px 0'}}>Right</Button>
-                </OSUIPopover>
-                <OSUIPopover
+                </Popover>
+                <Popover
                     content={
                         <div>
                             {content}
@@ -176,10 +176,10 @@ export const Demo = () => {
                     trigger="click"
                 >
                     <Button>RB</Button>
-                </OSUIPopover>
+                </Popover>
             </div>
             <div style={{ marginLeft: buttonWidth + 25, clear: 'both', whiteSpace: 'nowrap' }}>
-                <OSUIPopover
+                <Popover
                     content={
                         <div>
                             {content}
@@ -190,8 +190,8 @@ export const Demo = () => {
                     trigger="click"
                 >
                     <Button>BL</Button>
-                </OSUIPopover>
-                <OSUIPopover
+                </Popover>
+                <Popover
                     content={
                         <div>
                             {content}
@@ -202,8 +202,8 @@ export const Demo = () => {
                     trigger="click"
                 >
                     <Button style={{margin: '0 20px'}}>Bottom</Button>
-                </OSUIPopover>
-                <OSUIPopover
+                </Popover>
+                <Popover
                     content={
                         <div>
                             {content}
@@ -214,7 +214,7 @@ export const Demo = () => {
                     trigger="click"
                 >
                     <Button>BR</Button>
-                </OSUIPopover>
+                </Popover>
             </div>
         </div>
     );

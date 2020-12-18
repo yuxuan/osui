@@ -1,6 +1,6 @@
 import React from 'react';
-import {Select as AntSelect} from 'antd';
-import {SelectProps} from 'antd/es/select';
+import {Select as AntdSelect} from 'antd';
+import {SelectProps as AntdSelectProps} from 'antd/es/select';
 import classNames from 'classnames';
 import {IconDownArrow, IconChecked} from '@osui/icons';
 import {adjustAntdProps} from './utils';
@@ -8,18 +8,18 @@ import './index.less';
 
 const clsPrefix = 'osui-select';
 
-export interface OSUISelectProps<T> extends SelectProps<T> {
+export interface SelectProps<T> extends AntdSelectProps<T> {
     noBorder?: boolean;
 }
 
-type OSUISelectFC = <T>(props: OSUISelectProps<T>) => React.ReactElement | null;
+type SelectFC = <T>(props: SelectProps<T>) => React.ReactElement | null;
 
-export interface OSUISelectType extends OSUISelectFC {
-    Option: typeof AntSelect.Option;
-    OptGroup: typeof AntSelect.OptGroup;
+export interface SelectType extends SelectFC {
+    Option: typeof AntdSelect.Option;
+    OptGroup: typeof AntdSelect.OptGroup;
 }
 
-function InternalOSUISelect<R, T>(props: OSUISelectProps<T>, ref: React.Ref<R>): React.ReactElement | null {
+function InternalSelect<R, T>(props: SelectProps<T>, ref: React.Ref<R>): React.ReactElement | null {
     const {className, noBorder, loading, ...restProps} = props;
     // 暂时用，后面需要透传下去
     const {mode, dropdownClassName} = restProps;
@@ -56,7 +56,7 @@ function InternalOSUISelect<R, T>(props: OSUISelectProps<T>, ref: React.Ref<R>):
     ]);
 
     return (
-        <AntSelect
+        <AntdSelect
             ref={ref}
             className={classNames(
                 clsPrefix,
@@ -69,9 +69,9 @@ function InternalOSUISelect<R, T>(props: OSUISelectProps<T>, ref: React.Ref<R>):
     );
 }
 
-const OSUISelect: OSUISelectType = React.forwardRef(InternalOSUISelect) as unknown as OSUISelectType;
+const Select: SelectType = React.forwardRef(InternalSelect) as unknown as SelectType;
 
-OSUISelect.Option = AntSelect.Option;
-OSUISelect.OptGroup = AntSelect.OptGroup;
+Select.Option = AntdSelect.Option;
+Select.OptGroup = AntdSelect.OptGroup;
 
-export default OSUISelect;
+export default Select;
