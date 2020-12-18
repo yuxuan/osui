@@ -4,7 +4,7 @@ import Menu from '@osui/menu';
 import Breadcrumb from '@osui/breadcrumb';
 
 export default {
-    title: '待验收/Breadcrumb 面包屑',
+    title: '验收中/Breadcrumb 面包屑',
 };
 
 export const Demo = () => {

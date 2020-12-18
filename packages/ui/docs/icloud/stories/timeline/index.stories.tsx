@@ -2,7 +2,7 @@ import React from 'react';
 import Timeline from '@osui/timeline';
 
 export default {
-    title: '待验收/Timeline 时间轴',
+    title: '验收中/Timeline 时间轴',
 };
 
 export const Demo = () => {

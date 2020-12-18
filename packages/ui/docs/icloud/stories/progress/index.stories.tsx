@@ -3,7 +3,7 @@ import BrandProvider from '@osui/brand-provider';
 import Progress from '@osui/progress';
 
 export default {
-    title: '待验收/Progress 进度条',
+    title: '验收中/Progress 进度条',
 };
 
 export const Demo = () => {
