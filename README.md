@@ -231,4 +231,4 @@ cd 项目root目录
 ## 已知问题
 1. less 的 calc 问题
     [antd issus](https://github.com/ant-design/ant-design/issues/23125)
-    解决方式：尝试`yarn add -D @reskript/config-webpack@0.11.2`锁定@reskript/config-webpack版本
+    解决方式：检查`less`版本，检查`less-loader`版本，如果用yarn的话，可以用`yarn list less`，确保`less`的版本在3.9.0 - 3.11.2 之间。相关issue： https://github.com/less/less.js/issues/3579
