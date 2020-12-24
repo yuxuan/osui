@@ -1,6 +1,6 @@
 {
     "name": "@osui/breadcrumb",
-    "version": "0.8.6",
+    "version": "0.8.7",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",

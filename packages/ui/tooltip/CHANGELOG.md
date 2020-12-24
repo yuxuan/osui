@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.8.5 (2020-12-24)
+
+
+### Bug Fixes
+
+* less-functions-override ([6f1f4c0](https://gitee.com/gitee-fe/osui/tree/master/commits/6f1f4c055f5701044f95a97ac3e7585a772e314a))
+* 修复样式 ([9979e55](https://gitee.com/gitee-fe/osui/tree/master/commits/9979e556048898e5182851e9cfde7f464b1c749d))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 调整menu-dropdpwn; 添加文档 ([43014b7](https://gitee.com/gitee-fe/osui/tree/master/commits/43014b7b6e860729398cd8ead30cd47953b76af7))
+
+
+### Features
+
+* 调整alert功能和icloud theme ([1b7d15b](https://gitee.com/gitee-fe/osui/tree/master/commits/1b7d15b741841378951a69d72db03ed334ab287e))
+
+
+
+
+
 ## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tooltip@0.8.3...@osui/tooltip@0.8.4) (2020-12-08)
 
 **Note:** Version bump only for package @osui/tooltip

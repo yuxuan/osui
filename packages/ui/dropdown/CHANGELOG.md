@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.8.7 (2020-12-24)
+
+
+### Bug Fixes
+
+* dropdown下拉menu设置最小宽度 ([8898c23](https://gitee.com/gitee-fe/osui/tree/master/commits/8898c2378ca47ddeb330e48b43c9190b4f656e27))
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+
+
+
+
+
 ## [0.8.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/dropdown@0.8.5...@osui/dropdown@0.8.6) (2020-12-08)
 
 **Note:** Version bump only for package @osui/dropdown

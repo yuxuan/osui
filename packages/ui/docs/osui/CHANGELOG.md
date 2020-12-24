@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.8.6 (2020-12-24)
+
+
+### Bug Fixes
+
+* collapse 样式修复调整 ([c925d84](https://gitee.com/gitee-fe/osui/tree/master/commits/c925d844003621bc4afb9f8e2a1a74a87cb17b1e))
+* drawer close icon修复 ([98129b6](https://gitee.com/gitee-fe/osui/tree/master/commits/98129b6238e9213885b6e201747f65d5ce500880))
+* form输入框样式、标题样式修复，Modal异步确认样式修复 ([6e92879](https://gitee.com/gitee-fe/osui/tree/master/commits/6e92879a3dcae165145af0493614dce7d44531f9))
+* modal样式修复 ([18b79ce](https://gitee.com/gitee-fe/osui/tree/master/commits/18b79cec00f20aa8cd65c18fcccbbc24d139f2a4))
+* table调整增加no border的用法 ([ddee425](https://gitee.com/gitee-fe/osui/tree/master/commits/ddee42577d4feb343c5044c2df71481cf030d945))
+* 增加button default border高亮, success, error, warning 状态 ([32dfd0f](https://gitee.com/gitee-fe/osui/tree/master/commits/32dfd0f8ef987a3e0a3adc724f75c07f5d6c9a2a))
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+* 添加ActionMenuDropdown组件 ([77e399a](https://gitee.com/gitee-fe/osui/tree/master/commits/77e399a0a6fe464578c26aeae96a0b370882cd65))
+* 移除OSUI组件名前缀, 修复Table类型 ([72312fd](https://gitee.com/gitee-fe/osui/tree/master/commits/72312fd966309c8879c0ad283f435e9f3f4e0b29))
+* 调整button icloud样式 ([924aef2](https://gitee.com/gitee-fe/osui/tree/master/commits/924aef2dec2fb1303f77d5fd032f73268b7dab7e))
+* 调整form,select,input focus,hover 样式 ([c54a8d0](https://gitee.com/gitee-fe/osui/tree/master/commits/c54a8d018d42e6a6b2c2f85826db8d9a53339ccc))
+* 调整message icloud theme ([45e0e6a](https://gitee.com/gitee-fe/osui/tree/master/commits/45e0e6ac48b01f0a5c1f2a6a9fabb6192d0ee937))
+
+
+### Features
+
+* 调整alert功能和icloud theme ([1b7d15b](https://gitee.com/gitee-fe/osui/tree/master/commits/1b7d15b741841378951a69d72db03ed334ab287e))
+
+
+
+
+
 ## [0.8.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/osui-docs@0.8.4...@osui/osui-docs@0.8.5) (2020-12-18)
 
 

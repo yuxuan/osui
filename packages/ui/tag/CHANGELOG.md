@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.8.7 (2020-12-24)
+
+
+### Bug Fixes
+
+* tag icloud 主题修复 ([3b414d4](https://gitee.com/gitee-fe/osui/tree/master/commits/3b414d49b8b04a6d51bb52ab18e5c6768be81703))
+* ue样式修复 ([b96ad12](https://gitee.com/gitee-fe/osui/tree/master/commits/b96ad1267689dd649f0a8bf82bedcbeff7e60983))
+* 修复样式 ([94c5450](https://gitee.com/gitee-fe/osui/tree/master/commits/94c545078c2b4c05dee48b880f32bed2d11459ea))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 样式修复 ([896665a](https://gitee.com/gitee-fe/osui/tree/master/commits/896665a45f52be9a2896157f20125f8a77809e34))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/gitee-fe/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+
+
+
+
+
 ## [0.8.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tag@0.8.5...@osui/tag@0.8.6) (2020-12-18)
 
 

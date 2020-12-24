@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.8.5 (2020-12-24)
+
+
+### Bug Fixes
+
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+
+
+### Features
+
+* 添加directory-navigator组件 ([593ea49](https://gitee.com/gitee-fe/osui/tree/master/commits/593ea499244b385bf89615f44e72d237ecd91607))
+
+
+
+
+
 ## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/directory-navigator@0.8.3...@osui/directory-navigator@0.8.4) (2020-12-08)
 
 **Note:** Version bump only for package @osui/directory-navigator

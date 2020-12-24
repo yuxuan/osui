@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.8.5 (2020-12-24)
+
+
+### Bug Fixes
+
+* 修复date-picker RangePicker的className ([b227b8d](https://gitee.com/gitee-fe/osui/tree/master/commits/b227b8deaccb8dc4335c371675f3ccbebcf55b10))
+* 增加author ([dabbc23](https://gitee.com/gitee-fe/osui/tree/master/commits/dabbc23ddf453a1184833f6d784c36f567b2532e))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 样式修复 ([4d6a435](https://gitee.com/gitee-fe/osui/tree/master/commits/4d6a435d8619434d977ea4988b2aa8474f90ce59))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/gitee-fe/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+
+
+### Features
+
+* **datepicker:** 新增日期组件 ([33a831d](https://gitee.com/gitee-fe/osui/tree/master/commits/33a831dee8c0e6f46eef039e1abe160c7147cbdc))
+
+
+
+
+
 ## [0.8.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/date-picker@0.8.3...@osui/date-picker@0.8.4) (2020-12-08)
 
 **Note:** Version bump only for package @osui/date-picker

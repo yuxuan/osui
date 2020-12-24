@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.8.9 (2020-12-24)
+
+
+### Bug Fixes
+
+* drawer close icon修复 ([98129b6](https://gitee.com/gitee-fe/osui/tree/master/commits/98129b6238e9213885b6e201747f65d5ce500880))
+* drawer icloud 主题调整 ([db269c4](https://gitee.com/gitee-fe/osui/tree/master/commits/db269c4bc44f95b209d4ce9f1c4ab1b032fe63fc))
+* 修复babel问题 ([d2c34d7](https://gitee.com/gitee-fe/osui/tree/master/commits/d2c34d73e63fb6500057e8e93cabf036b6339a04))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+
+
+
+
+
 ## [0.8.8](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/drawer@0.8.7...@osui/drawer@0.8.8) (2020-12-18)
 
 

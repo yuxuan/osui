@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.8.7 (2020-12-24)
+
+
+### Bug Fixes
+
+* badge样式调整 ([eca4382](https://gitee.com/gitee-fe/osui/tree/master/commits/eca438216df53e1eb58f7d39ebf557ee04548061))
+* collapse 样式修复调整 ([c925d84](https://gitee.com/gitee-fe/osui/tree/master/commits/c925d844003621bc4afb9f8e2a1a74a87cb17b1e))
+* 增加button default border高亮, success, error, warning 状态 ([32dfd0f](https://gitee.com/gitee-fe/osui/tree/master/commits/32dfd0f8ef987a3e0a3adc724f75c07f5d6c9a2a))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 移除OSUI组件名前缀, 修复Table类型 ([72312fd](https://gitee.com/gitee-fe/osui/tree/master/commits/72312fd966309c8879c0ad283f435e9f3f4e0b29))
+
+
+### Features
+
+* 新增avatar，badge组件 ([f6db4a8](https://gitee.com/gitee-fe/osui/tree/master/commits/f6db4a8575c347ffe1aa3b1c575590ae8a844567))
+
+
+
+
+
 ## [0.8.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/badge@0.8.5...@osui/badge@0.8.6) (2020-12-18)
 
 
