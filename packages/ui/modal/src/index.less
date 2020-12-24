@@ -81,6 +81,11 @@
         border-bottom: var(--modal-body-border-bottom);
     }
 
+    .ant-modal-confirm-content {
+        margin-bottom: 40px;
+        margin-left: 55px;
+    }
+
     .ant-modal-confirm-btns {
         margin-top: 15px;
     }
@@ -100,5 +105,10 @@
 
     &.ant-modal-confirm-success .ant-modal-confirm-body > &-icon svg {
         color: var(--theme-success-color);
+    }
+
+    .ant-modal-confirm-body > .osui-modal-confirm-icon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+        margin-left: 55px;
+        margin-bottom: 40px;
     }
 }
