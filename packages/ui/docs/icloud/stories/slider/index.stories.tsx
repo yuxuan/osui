@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from '../src';
+import Slider from '@osui/slider';
 
 export default {
     title: 'Slider',

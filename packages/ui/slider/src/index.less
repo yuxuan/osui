@@ -1,0 +1,67 @@
+@osui-slider-class-prefix: osui-slider;
+
+.@{osui-slider-class-prefix} {
+    &.ant-slider {
+        .ant-slider-handle {
+            &-dragging&-dragging&-dragging {
+                box-shadow: none;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    &-icloud {
+        &.ant-slider.ant-slider-disabled {
+            .ant-slider-rail {
+                background: var(--color-gray-3);
+            }
+            .ant-slider-handle {
+                background: var(--theme-disabled-color);
+            }
+            .ant-slider-dot {
+                border-color: var(--theme-component-bg) !important;
+            }
+        }
+        &.ant-slider {
+            .ant-slider-rail,
+            .ant-slider-track,
+            .ant-slider-step {
+                height: 10px;
+            }
+
+            .ant-slider-dot {
+                position: absolute;
+                top: 0;
+                width: 1px;
+                height: 10px;
+                margin-left: -1px;
+                background-color: var(--theme-component-bg);
+                border: 1px solid var(--theme-component-bg);
+                cursor: pointer;
+                border-radius: 0;
+            }
+
+            .ant-slider-handle {
+                &::after {
+                    content: '';
+                    border: 1px solid #fff;
+                    height: 10px;
+                    width: 4px;
+                    position: absolute;
+                    border-top: 0;
+                    border-bottom: 0;
+                    top: 4px;
+                    right: 3px;
+                }
+
+                width: 12px;
+                height: 20px;
+                border-radius: 0;
+                background-color: var(--theme-primary-color);
+            }
+        }
+    }
+}
