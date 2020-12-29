@@ -1,5 +1,5 @@
 import {Meta, Story, Preview} from '@storybook/addon-docs/blocks';
-import * as stories from './index.stories';
+import * as stories from './index.stories'
 
 <Meta title="设计文档/Button 按钮" />
 
@@ -16,8 +16,12 @@ import * as stories from './index.stories';
 | type | 除antd原有属性以外，新增加strong值 | string | primary, ghost, dashed, link, text, default, strong |
 | success | 成功按钮 | boolean | true |
 | error | 失败按钮 | boolean | true |
-| wanring | 警告按钮 | boolean | true |
+| warning | 警告按钮 | boolean | true |
 
 <Preview>
   <Story name="Demo" story={stories.Demo} />
+</Preview>
+
+<Preview>
+  <Story name="Group" story={stories.Group} />
 </Preview>

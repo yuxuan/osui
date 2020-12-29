@@ -42,13 +42,14 @@ export const Demo = () => {
                 <Button type="only-icon" disabled icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
             </div>
             <div>
-                <Button icon={<IconHome />} style={{ 'margin': '0 20px 20px 0' }}>
+                <p>当icon和文字一起的时候，如果对不齐，可以添加flexCenter属性，如果导致同行不齐，外面包裹div display: flex</p>
+                <Button flexCenter icon={<IconHome />} style={{ 'margin': '0 20px 20px 0' }}>
                     图文按钮
                 </Button>
-                <Button loading icon={<IconHome />} style={{ 'margin': '0 20px 20px 0' }}>
+                <Button flexCenter loading icon={<IconHome />} style={{ 'margin': '0 20px 20px 0' }}>
                     图文按钮
                 </Button>
-                <Button disabled icon={<IconHome />} style={{ 'margin': '0 20px 20px 0' }}>
+                <Button flexCenter disabled icon={<IconHome />} style={{ 'margin': '0 20px 20px 0' }}>
                     图文按钮
                 </Button>
             </div>
@@ -59,6 +60,9 @@ export const Demo = () => {
 export const Group = () => {
     return (
         <>
+            <p>当有两个以上Button共同出现使用时，考虑用Button Group</p>
+            <p>Button Group的的几种用法</p>
+            <p>1. 中间有间隔的，可以使用Space，可以参考Space的参数</p>
             <Space>
                 <Button size="small">取消</Button>
                 <Button type="primary" size="small">确定</Button>
@@ -75,6 +79,20 @@ export const Group = () => {
                 <Button size="large">取消</Button>
                 <Button size="large" type="primary">确定</Button>
             </Space>
+            <br />
+            <br />
+            <p>2. Antd默认的Button.Group，没有间隔，Button之间的border做了处理</p>
+            <Button.Group>
+                <Button>Cancel</Button>
+                <Button>Ok</Button>
+            </Button.Group>
+            <br />
+            <br />
+            <p>如果需要Group内的button等宽，需要自行设置min-width，例如：</p>
+            <Button.Group>
+                <Button style={{minWidth: 75}}>Cancel</Button>
+                <Button style={{minWidth: 75}}>Ok</Button>
+            </Button.Group>
         </>
     );
 };

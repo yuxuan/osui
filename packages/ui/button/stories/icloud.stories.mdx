@@ -16,9 +16,10 @@ import * as stories from './icloud.stories'
 | 参数 | 说明 | 类型 | 默认值
 | --- | --- | --- | --- |
 | type | 除antd原有属性以外，新增加strong值 | string | primary, ghost, dashed, link, text, default, strong |
-| success | 成功按钮 | boolean | true |
-| error | 失败按钮 | boolean | true |
-| wanring | 警告按钮 | boolean | true |
+| success | 成功按钮 | boolean、undefined | undefined |
+| error | 失败按钮 | boolean、undefined | undefined |
+| warning | 警告按钮 | boolean、undefined | undefined |
+| flexCenter | button内容是否flex居中 | boolean、undefined | undefined |
 
 <Preview>
   <Story name="Demo" story={stories.Demo} />

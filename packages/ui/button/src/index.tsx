@@ -9,16 +9,31 @@ const clsPrefix = 'osui-button';
 
 export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
     type?: ButtonType | 'strong' | 'only-icon';
+    /**
+     * @description 表示success状态的button
+     */
     success?: boolean;
+    /**
+     * @description 表示error状态的button
+     */
     error?: boolean;
+    /**
+     * @description 表示warning状态的button
+     */
     warning?: boolean;
+    /**
+     * @description 当button带icon时，vertical-align尝尝会有问题，flexCenter: true 添加display: flex; align-items: center;
+     */
+    flexCenter?: boolean;
 }
 
-export type ButtonInterface = React.ForwardRefExoticComponent<ButtonProps & React.RefAttributes<HTMLElement>>;
+export interface ButtonInterface extends React.ForwardRefExoticComponent<ButtonProps & React.RefAttributes<HTMLElement>> {
+    Group: typeof AntdButton.Group;
+}
 
 /* eslint-disable complexity */
 const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
-    {type = 'default', loading, icon, style, disabled, ...props}, ref
+    {type = 'default', loading, icon, style, disabled, flexCenter, ...props}, ref
 ) => {
     let innerIcon = icon;
     let innerStyle = style;
@@ -50,6 +65,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
                         [`${clsPrefix}-face-success`]: success,
                         [`${clsPrefix}-face-error`]: error || danger,
                         [`${clsPrefix}-face-warning`]: warning,
+                        [`${clsPrefix}-flex-center`]: flexCenter,
                     }
                 )
             }
@@ -61,5 +77,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
 };
 
 const Button = React.forwardRef<unknown, ButtonProps>(InternalButton) as ButtonInterface;
+
+Button.Group = AntdButton.Group;
 
 export default Button;

@@ -1,5 +1,6 @@
 import React from 'react';
 import {IconSearch, IconHome} from '@osui/icons';
+import Space from '@osui/space';
 import Button from '../src';
 
 export default {
@@ -51,6 +52,46 @@ export const Demo = () => {
                     图文按钮
                 </Button>
             </div>
+        </>
+    );
+};
+
+export const Group = () => {
+    return (
+        <>
+            <p>当有两个以上Button共同出现使用时，考虑用Button Group</p>
+            <p>Button Group的的几种用法</p>
+            <p>1. 中间有间隔的，可以使用Space，可以参考Space的参数</p>
+            <Space>
+                <Button size="small">取消</Button>
+                <Button type="primary" size="small">确定</Button>
+            </Space>
+            <br />
+            <br />
+            <Space>
+                <Button>取消</Button>
+                <Button type="primary">确定</Button>
+            </Space>
+            <br />
+            <br />
+            <Space>
+                <Button size="large">取消</Button>
+                <Button size="large" type="primary">确定</Button>
+            </Space>
+            <br />
+            <br />
+            <p>2. Antd默认的Button.Group，没有间隔，Button之间的border做了处理</p>
+            <Button.Group>
+                <Button>Cancel</Button>
+                <Button>Ok</Button>
+            </Button.Group>
+            <br />
+            <br />
+            <p>如果需要Group内的button等宽，需要自行设置min-width，例如：</p>
+            <Button.Group>
+                <Button style={{minWidth: 75}}>Cancel</Button>
+                <Button style={{minWidth: 75}}>Ok</Button>
+            </Button.Group>
         </>
     );
 };

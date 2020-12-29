@@ -64,7 +64,7 @@
     .generate((@i - 1));
 }
 
-.generate;
+.generate();
 
 @osui-buttno-faces: success, error, warning;
 
@@ -117,9 +117,14 @@
     .generate-face((@i - 1));
 }
 
-.generate-face;
+.generate-face();
 
 .@{osui-button-class-prefix} {
+    &-flex-center {
+        display: inline-flex;
+        align-items: center;
+    }
+
     & > .osui-icon + span {
         margin-left: 4px;
     }
@@ -153,5 +158,13 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+// revert antd不太正常的修复 https://github.com/ant-design/ant-design/issues/12978
+a.@{osui-button-class-prefix} {
+    &.ant-btn  {
+        padding-top: 3.5px;
+        line-height: 21px;
     }
 }
