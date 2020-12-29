@@ -1,0 +1,15 @@
+@osui-steps-class-prefix: osui-steps;
+
+.@{osui-steps-class-prefix} {
+    &.ant-steps-navigation .ant-steps-item-active {
+        &::before {
+            height: 0;
+        }
+    }
+
+    &.ant-steps-navigation .ant-steps-item {
+        &::before {
+            transition: none;
+        }
+    }
+}
