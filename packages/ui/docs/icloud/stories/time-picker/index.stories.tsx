@@ -1,7 +1,8 @@
+import React from 'react';
 import {TimePicker} from 'antd';
 
 export default {
-    title: '待验收/TimePicker 时间选择框',
+    title: '通过验收/TimePicker 时间选择框',
     component: TimePicker,
 };
 

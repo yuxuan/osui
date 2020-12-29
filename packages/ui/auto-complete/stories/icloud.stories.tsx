@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AutoComplete from '../src';
 
 export default {
-    title: '待验收/AutoComplete 自动完成',
+    title: '通过验收/AutoComplete 自动完成',
     component: AutoComplete,
 };
 

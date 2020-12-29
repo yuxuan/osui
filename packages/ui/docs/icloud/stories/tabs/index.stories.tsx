@@ -3,7 +3,7 @@ import { ForkOutlined } from '@ant-design/icons';
 import Tabs from '@osui/tabs';
 
 export default {
-    title: '待验收/Tabs 标签页',
+    title: '通过验收/Tabs 标签页',
 };
 
 export const Demo = () => {

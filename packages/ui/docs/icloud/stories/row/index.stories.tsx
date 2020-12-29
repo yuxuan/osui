@@ -1,7 +1,7 @@
 import {Row} from 'antd';
 
 export default {
-    title: '不用验收/Row',
+    title: '通过验收/Row',
     component: Row,
 };
 

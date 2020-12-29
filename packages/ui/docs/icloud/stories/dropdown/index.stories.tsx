@@ -1,9 +1,9 @@
+import React from 'react';
 import Menu from '@osui/menu';
 import Dropdown from '@osui/dropdown';
 
 export default {
-    title: '待验收/Dropdown 下拉菜单',
-    component: Dropdown,
+    title: '通过验收/Dropdown 下拉菜单',
 };
 
 export const Demo = () => {

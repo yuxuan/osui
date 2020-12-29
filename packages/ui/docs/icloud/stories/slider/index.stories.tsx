@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from '@osui/slider';
 
 export default {
-    title: 'Slider',
+    title: '验收中/Slider 滑动输入条',
     component: Slider,
 };
 
