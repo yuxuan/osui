@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 export interface BrandContextValue {
-    brand: 'osc' | 'icloud';
+    brand: 'osc' | 'icloud' | undefined;
 }
 
-export const BrandContext = React.createContext<BrandContextValue>({brand: 'osc'});
+export const BrandContext = React.createContext<BrandContextValue>({brand: undefined});
 
-const BrandProvider: React.FC<{ brand?: 'osc' | 'icloud'}> = ({brand = 'osc', children}) => {
+const BrandProvider: React.FC<{brand?: 'osc' | 'icloud'}> = ({brand, children}) => {
     const context: BrandContextValue = {brand};
     return (
         <BrandContext.Provider value={context}>

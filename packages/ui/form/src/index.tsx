@@ -34,7 +34,7 @@ function InternalFormItem(
     const {brand} = useBrandContext();
     // 对extra的样式修改
     const hasHint = !!extra;
-    const internalLableAlign = labelAlign === undefined ? (brand === 'icloud' ? 'left' : 'right') : labelAlign;
+    const internalLableAlign = labelAlign ?? (brand === 'icloud' ? 'left' : 'right');
     const itemClassName = classNames(
         props.className,
         `${clsPrefix}-validate-message-${validateMessageLayout}`,

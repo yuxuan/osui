@@ -30,9 +30,9 @@ const Collapse: CollapseInterface = ({className, levelChild, ghost, ...restProps
                 [`${clsPrefix}-level-child`]: levelChild,
             }
         ),
-        // osc主题时如果ghost默认为true
+        // osc主题时ghost默认为true
         // eslint-disable-next-line no-negated-condition
-        ghost: ghost !== undefined ? ghost : brand === 'osc',
+        ghost: ghost ?? brand === 'osc',
         ...restProps,
     };
 
