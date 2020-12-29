@@ -27,6 +27,7 @@ export {default as Drawer} from '@osui/drawer';
 export {default as Dropdown} from '@osui/dropdown';
 export {default as Empty} from '@osui/empty';
 export {default as Form} from '@osui/form';
+export {default as Gap} from '@osui/gap';
 export {default as Grid} from '@osui/grid';
 export {default as Image} from '@osui/image';
 export {default as Input} from '@osui/input';

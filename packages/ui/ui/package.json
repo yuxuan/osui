@@ -78,6 +78,7 @@
         "@osui/dropdown": "^0.8.7",
         "@osui/empty": "^0.8.6",
         "@osui/form": "^0.8.6",
+        "@osui/gap": "^0.8.1",
         "@osui/grid": "^0.8.4",
         "@osui/icons": "^0.8.7",
         "@osui/image": "^0.8.4",
