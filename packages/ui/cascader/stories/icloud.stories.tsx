@@ -46,6 +46,10 @@ export const Demo = () => {
     }
 
     return (
-        <Cascader options={options} onChange={onChange} placeholder="Please select" />
+        <Cascader
+            options={options}
+            onChange={onChange}
+            placeholder="Please select"
+        />
     );
 };
