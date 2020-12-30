@@ -2,59 +2,59 @@
 
 .@{osui-radio-class-prefix} {
     // 没选中时hover的效果
-    .ant-radio-wrapper:hover .ant-radio,
-    .ant-radio:hover .ant-radio-inner {
+    .@{ant-prefix}-radio-wrapper:hover .@{ant-prefix}-radio,
+    .@{ant-prefix}-radio:hover .@{ant-prefix}-radio-inner {
         border-color: var(--radio-hover-border-color);
         background: var(--radio-hover-bg);
     }
 
     // checked时hover border的颜色
-    .ant-radio-wrapper:hover .ant-radio-checked.ant-radio,
-    .ant-radio-checked.ant-radio:hover .ant-radio-inner {
+    .@{ant-prefix}-radio-wrapper:hover .@{ant-prefix}-radio-checked.@{ant-prefix}-radio,
+    .@{ant-prefix}-radio-checked.@{ant-prefix}-radio:hover .@{ant-prefix}-radio-inner {
         border-color: var(--radio-checked-color);
     }
 
     // checked时hover border的颜色
-    .ant-radio-checked:not(.ant-radio-disabled):hover::after {
+    .@{ant-prefix}-radio-checked:not(.@{ant-prefix}-radio-disabled):hover::after {
         border-color: var(--radio-checked-color);
     }
 
     // checked时hover里面点的颜色
-    .ant-radio-checked:not(.ant-radio-disabled):hover .ant-radio-inner::after {
+    .@{ant-prefix}-radio-checked:not(.@{ant-prefix}-radio-disabled):hover .@{ant-prefix}-radio-inner::after {
         background-color: var(--radio-checked-color);
     }
 
     // disable时hover的效果
-    .ant-radio-disabled:hover .ant-radio-inner,
-    .ant-radio-disabled .ant-radio-inner,
-    .ant-radio-button-disabled {
+    .@{ant-prefix}-radio-disabled:hover .@{ant-prefix}-radio-inner,
+    .@{ant-prefix}-radio-disabled .@{ant-prefix}-radio-inner,
+    .@{ant-prefix}-radio-button-disabled {
         border-color: var(--radio-disabled-border-color) !important;
         background-color: var(--radio-disabled-bg);
     }
 
     // disable时checked的效果
-    .ant-radio-disabled.ant-radio-checked::after {
+    .@{ant-prefix}-radio-disabled.@{ant-prefix}-radio-checked::after {
         border-color: var(--radio-disabled-border-color);
     }
 
-    .ant-radio.ant-radio-checked:not(.ant-radio-disabled):focus .ant-radio-inner {
+    .@{ant-prefix}-radio.@{ant-prefix}-radio-checked:not(.@{ant-prefix}-radio-disabled):focus .@{ant-prefix}-radio-inner {
         box-shadow: var(--theme-component-focus-box-shadow);
     }
 
     // 去除动画
-    .ant-radio-checked .ant-radio-inner::after,
-    .ant-radio-inner::after {
+    .@{ant-prefix}-radio-checked .@{ant-prefix}-radio-inner::after,
+    .@{ant-prefix}-radio-inner::after {
         transition: none;
     }
 
-    .ant-radio-checked::after {
+    .@{ant-prefix}-radio-checked::after {
         animation: none;
     }
 
     // group
     &-group {
-        .ant-radio-button-wrapper {
-            &:not(.ant-radio-button-wrapper-disabled):not(.ant-radio-button-wrapper-checked) {
+        .@{ant-prefix}-radio-button-wrapper {
+            &:not(.@{ant-prefix}-radio-button-wrapper-disabled):not(.@{ant-prefix}-radio-button-wrapper-checked) {
                 &:hover {
                     // 这里是hover时左侧border的颜色，osui需要与button边框颜色一致，而icloud需要变色
                     border: 1px solid var(--radio-hover-border-color);
@@ -68,8 +68,8 @@
             }
         }
         // 第一个元素默认border-left和hover的效果
-        .ant-radio-button-wrapper:first-child {
-            &:not(.ant-radio-button-wrapper-disabled):not(.ant-radio-button-wrapper-checked) {
+        .@{ant-prefix}-radio-button-wrapper:first-child {
+            &:not(.@{ant-prefix}-radio-button-wrapper-disabled):not(.@{ant-prefix}-radio-button-wrapper-checked) {
                 border-left: 1px solid var(--theme-border-color-base);
 
                 &:hover {
@@ -78,13 +78,13 @@
             }
         }
 
-        .ant-radio-button-wrapper-disabled {
+        .@{ant-prefix}-radio-button-wrapper-disabled {
             color: var(--radio-button-disabled-color);
             background: var(--radio-button-disabled-bg);
             border-color: var(--radio-button-disabled-border-color);
         }
 
-        .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+        .@{ant-prefix}-radio-button-wrapper-checked:not(.@{ant-prefix}-radio-button-wrapper-disabled):focus-within {
             box-shadow: none;
         }
     }

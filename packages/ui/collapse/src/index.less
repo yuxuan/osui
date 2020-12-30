@@ -1,8 +1,8 @@
 @osui-collapse-class-prefix: osui-collapse;
 
 .@{osui-collapse-class-prefix} {
-    .ant-collapse-item {
-        .ant-collapse-header {
+    .@{ant-prefix}-collapse-item {
+        .@{ant-prefix}-collapse-header {
             color: var(--theme-text-color);
             font-weight: var(--collapse-header-font-weight);
             font-size: 14px;
@@ -21,14 +21,14 @@
         }
     }
 
-    .ant-collapse-item.ant-collapse-item-disabled {
-        .ant-collapse-header,
-        .ant-collapse-arrow {
+    .@{ant-prefix}-collapse-item.@{ant-prefix}-collapse-item-disabled {
+        .@{ant-prefix}-collapse-header,
+        .@{ant-prefix}-collapse-arrow {
             color: var(--theme-disabled-color);
         }
     }
 
-    .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+    .@{ant-prefix}-collapse-item > .@{ant-prefix}-collapse-content > .@{ant-prefix}-collapse-content-box {
         .content-padding(42px);
     }
 }
@@ -42,19 +42,19 @@
 // 对层级的控制
 .nest(@level, @content-padding, @icon-padding) {
     .@{osui-collapse-class-prefix}-level-@{level} {
-        &.ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+        &.@{ant-prefix}-collapse-item > .@{ant-prefix}-collapse-content > .@{ant-prefix}-collapse-content-box {
             padding: 0 !important;
         }
 
         .@{osui-collapse-class-prefix}-level-child {
-            .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+            .@{ant-prefix}-collapse-item > .@{ant-prefix}-collapse-content > .@{ant-prefix}-collapse-content-box {
                 .content-padding(@content-padding);
             }
 
-            .ant-collapse-header {
+            .@{ant-prefix}-collapse-header {
                 padding-left: @content-padding !important;
 
-                .icon-wrapper.ant-collapse-arrow {
+                .icon-wrapper.@{ant-prefix}-collapse-arrow {
                     left: @icon-padding;
                 }
             }

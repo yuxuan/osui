@@ -1,35 +1,35 @@
 @osui-switch-class-prefix: osui-switch;
 
 .@{osui-switch-class-prefix} {
-    &.ant-switch {
+    &.@{ant-prefix}-switch {
         min-width: var(--switch-min-width);
 
-        &.ant-switch-small {
+        &.@{ant-prefix}-switch-small {
             min-width: 28px;
         }
     }
 
-    &.ant-switch-disabled {
+    &.@{ant-prefix}-switch-disabled {
         opacity: 1;
         background-color: var(--switch-disable-bg);
 
-        .ant-switch-handle::before {
+        .@{ant-prefix}-switch-handle::before {
             background-color: var(--switch-handle-disable-bg);
             box-shadow: none;
         }
     }
 
-    .ant-switch-inner .osui-icon {
+    .@{ant-prefix}-switch-inner .osui-icon {
         // 用osui-icon的时候调整高度
         vertical-align: -4px;
     }
 
-    .ant-click-animating-node {
+    .@{ant-prefix}-click-animating-node {
         animation: none;
         animation-fill-mode: none;
     }
 
-    &.ant-switch:focus {
+    &.@{ant-prefix}-switch:focus {
         box-shadow: var(--theme-component-focus-box-shadow);
     }
 }

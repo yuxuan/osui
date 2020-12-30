@@ -1,12 +1,12 @@
 @osui-progress-class-prefix: osui-progress;
 
 .@{osui-progress-class-prefix} {
-    &.ant-progress-status-active {
-        .ant-progress-bg {
+    &.@{ant-prefix}-progress-status-active {
+        .@{ant-prefix}-progress-bg {
             background-color: var(--theme-secondary-color-active);
         }
 
-        .ant-progress-bg::before {
+        .@{ant-prefix}-progress-bg::before {
             background: var(--theme-primary-color);
             animation: osui-progress-active 2.4s cubic-bezier(.23, 1, .32, 1) infinite;
             border-radius: var(--progress-radius);

@@ -1,19 +1,19 @@
 @osui-tabs-class-prefix: osui-tabs;
 
 .@{osui-tabs-class-prefix} {
-    &.ant-tabs-top > .ant-tabs-nav::before {
+    &.@{ant-prefix}-tabs-top > .@{ant-prefix}-tabs-nav::before {
         border-bottom: var(--tabs-border-bottom);
     }
 
-    .ant-tabs-nav-list {
+    .@{ant-prefix}-tabs-nav-list {
         color: var(--tabs-tab-color);
     }
 
-    .ant-tabs-tab .anticon {
+    .@{ant-prefix}-tabs-tab .anticon {
         margin-right: 4px;
     }
 
-    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    .@{ant-prefix}-tabs-tab.@{ant-prefix}-tabs-tab-active .@{ant-prefix}-tabs-tab-btn {
         font-weight: normal;
 
         em.num {
@@ -22,7 +22,7 @@
         }
     }
 
-    .ant-tabs-tab .ant-tabs-tab-btn {
+    .@{ant-prefix}-tabs-tab .@{ant-prefix}-tabs-tab-btn {
         em.num {
             background: var(--color-gray-3);
             border-radius: 10px;
@@ -46,30 +46,30 @@
     }
 
     // card 模式 // 以下覆盖没有考虑osc的样式
-    &.ant-tabs-card {
-        &.ant-tabs > .ant-tabs-nav,
-        &.ant-tabs > div > .ant-tabs-nav {
+    &.@{ant-prefix}-tabs-card {
+        &.@{ant-prefix}-tabs > .@{ant-prefix}-tabs-nav,
+        &.@{ant-prefix}-tabs > div > .@{ant-prefix}-tabs-nav {
             background: var(--tabs-card-bg);
         }
 
-        .ant-tabs-nav-list {
+        .@{ant-prefix}-tabs-nav-list {
             padding: var(--tabs-card-nav-list-padding);
         }
 
-        & > .ant-tabs-nav .ant-tabs-tab,
-        & > div > .ant-tabs-nav .ant-tabs-tab {
+        & > .@{ant-prefix}-tabs-nav .@{ant-prefix}-tabs-tab,
+        & > div > .@{ant-prefix}-tabs-nav .@{ant-prefix}-tabs-tab {
             border: 1px solid var(--color-gray-3);
 
-            &:not(.ant-tabs-tab-active) {
+            &:not(.@{ant-prefix}-tabs-tab-active) {
                 background: var(--color-gray-3);
             }
         }
 
-        .ant-tabs-tab.ant-tabs-tab-with-remove {
+        .@{ant-prefix}-tabs-tab.@{ant-prefix}-tabs-tab-with-remove {
             padding-right: 4px;
         }
 
-        .ant-tabs-nav-add {
+        .@{ant-prefix}-tabs-nav-add {
             background: var(--color-gray-3);
             border: 1px solid var(--color-gray-6);
             color: var(--color-gray-8);

@@ -4,39 +4,39 @@
     display: flex;
     align-items: center;
 
-    .ant-alert-close-icon {
+    .@{ant-prefix}-alert-close-icon {
         font-size: 14px;
         height: 14px;
     }
 
-    .ant-alert-close-text {
+    .@{ant-prefix}-alert-close-text {
         &:hover {
             color: var(--link-color);
             text-decoration: underline;
         }
     }
 
-    .ant-alert-icon {
+    .@{ant-prefix}-alert-icon {
         position: absolute;
         left: 16px;
     }
 
-    &.ant-alert-with-description {
+    &.@{ant-prefix}-alert-with-description {
         // with-description时，不能display：flex
         display: block;
 
-        .ant-alert-icon {
-            // 由于alert-with-description的icon现在是小的，所以有description时，距离上面要和.ant-alert-icon一样
+        .@{ant-prefix}-alert-icon {
+            // 由于alert-with-description的icon现在是小的，所以有description时，距离上面要和.@{ant-prefix}-alert-icon一样
             top: 11px;
         }
 
-        .ant-alert-message {
+        .@{ant-prefix}-alert-message {
             font-size: 14px;
             font-weight: bold;
         }
 
-        .ant-alert-close-icon {
-            // 由于alert-with-description的icon现在是小的，所以有description时，距离上面要和.ant-alert-icon一样
+        .@{ant-prefix}-alert-close-icon {
+            // 由于alert-with-description的icon现在是小的，所以有description时，距离上面要和.@{ant-prefix}-alert-icon一样
             top: 11px;
         }
     }
@@ -45,11 +45,11 @@
         color: var(--theme-text-color);
     }
 
-    &.ant-alert {
+    &.@{ant-prefix}-alert {
         padding: var(--alert-padding);
     }
 
-    &.ant-alert.ant-alert-no-icon {
+    &.@{ant-prefix}-alert.@{ant-prefix}-alert-no-icon {
         padding: var(--alert-no-icon-padding);
     }
 

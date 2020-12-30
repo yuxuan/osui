@@ -2,24 +2,24 @@
 
 .@{osui-select-class-prefix} {
     // placeholder
-    .ant-select-selection-placeholder {
+    .@{ant-prefix}-select-selection-placeholder {
         color: var(--color-gray-7);
         opacity: 1;
     }
 
     // disable
-    &.ant-select-disabled.ant-select-single:not(.ant-select-customize-input) {
-        .ant-select-selector {
+    &.@{ant-prefix}-select-disabled.@{ant-prefix}-select-single:not(.@{ant-prefix}-select-customize-input) {
+        .@{ant-prefix}-select-selector {
             background: transparent;
         }
 
-        .ant-select-arrow svg {
+        .@{ant-prefix}-select-arrow svg {
             color: var(--theme-disabled-color);
         }
     }
 
     // arrow icon
-    .ant-select-arrow {
+    .@{ant-prefix}-select-arrow {
         width: @font-size-lg;
         height: @font-size-lg;
         top: 43%;
@@ -31,13 +31,13 @@
         }
     }
 
-    &.ant-select-open .ant-select-arrow:not(.ant-select-arrow-loading) > svg {
+    &.@{ant-prefix}-select-open .@{ant-prefix}-select-arrow:not(.@{ant-prefix}-select-arrow-loading) > svg {
         transform: var(--select-arrow-open-transform-rotate);
     }
 
     // no-border
     &&-no-border {
-        .ant-select-selector {
+        .@{ant-prefix}-select-selector {
             border: 1px solid transparent;
             box-shadow: none;
             background: transparent;
@@ -47,14 +47,14 @@
             }
         }
 
-        &.ant-select-open .ant-select-selector {
+        &.@{ant-prefix}-select-open .@{ant-prefix}-select-selector {
             border: 1px solid var(--theme-primary-color-hover);
             box-shadow: 0 0 0 @outline-width var(--theme-border-focus-color);
             background: var(--theme-component-bg);
         }
     }
 
-    .ant-select-clear {
+    .@{ant-prefix}-select-clear {
         opacity: 1;
         right: 30px;
         width: 14px;
@@ -67,33 +67,33 @@
     }
 
     // hover + focus border color
-    &.ant-select-focused.ant-select-single:not(.ant-select-customize-input) {
-        .ant-select-selector {
+    &.@{ant-prefix}-select-focused.@{ant-prefix}-select-single:not(.@{ant-prefix}-select-customize-input) {
+        .@{ant-prefix}-select-selector {
             border-color: var(--theme-border-focus-color); // 为了focus时，不被hover的border减掉
         }
     }
 }
 
-.@{osui-select-class-prefix}.ant-select-multiple {
-    .ant-select-selection-item .ant-select-selection-item-remove {
+.@{osui-select-class-prefix}.@{ant-prefix}-select-multiple {
+    .@{ant-prefix}-select-selection-item .@{ant-prefix}-select-selection-item-remove {
         color: var(--color-gray-6);
     }
 
-    .ant-select-selection-item {
+    .@{ant-prefix}-select-selection-item {
         border: 1px solid var(--color-gray-3);
     }
 }
 
 // 多选下拉移动到左边，
 .@{osui-select-class-prefix}-multiple-dropdown {
-    .ant-select-item.ant-select-item-option,
-    .ant-select-item-option-selected {
+    .@{ant-prefix}-select-item.@{ant-prefix}-select-item-option,
+    .@{ant-prefix}-select-item-option-selected {
         padding-left: 40px;
     }
 
     // 以下通过使用::before画出来未选中时的边框，border可以通过variables控制，TODO：大小也可以控制，但是position要相应调整
-    .ant-select-item.ant-select-item-option {
-        .ant-select-item-option-content::before {
+    .@{ant-prefix}-select-item.@{ant-prefix}-select-item-option {
+        .@{ant-prefix}-select-item-option-content::before {
             @checkbox-size: 13px;
 
             position: absolute;
@@ -108,15 +108,15 @@
         }
     }
 
-    .ant-select-item-option-selected.ant-select-item.ant-select-item-option {
-        .ant-select-item-option-content::before {
+    .@{ant-prefix}-select-item-option-selected.@{ant-prefix}-select-item.@{ant-prefix}-select-item-option {
+        .@{ant-prefix}-select-item-option-content::before {
             display: none;
         }
     }
 
     // 以下调整选中时的icon，外面可以进行替换
-    .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
-        .ant-select-item-option-state {
+    .@{ant-prefix}-select-item-option-selected:not(.@{ant-prefix}-select-item-option-disabled) {
+        .@{ant-prefix}-select-item-option-state {
             position: absolute;
             top: 17%;
             left: 16px;

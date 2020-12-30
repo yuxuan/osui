@@ -1,9 +1,9 @@
 @osui-back-top-class-prefix: osui-pagination;
 
-.@{osui-back-top-class-prefix}:not(.ant-pagination-disabled) {
-    .ant-pagination-item,
-    .ant-pagination-next,
-    .ant-pagination-prev {
+.@{osui-back-top-class-prefix}:not(.@{ant-prefix}-pagination-disabled) {
+    .@{ant-prefix}-pagination-item,
+    .@{ant-prefix}-pagination-next,
+    .@{ant-prefix}-pagination-prev {
         border: 1px solid var(--pagination-item-border-color);
 
         &:hover {
@@ -16,8 +16,8 @@
         }
     }
 
-    .ant-pagination-item-active,
-    .ant-pagination-item-active:hover {
+    .@{ant-prefix}-pagination-item-active,
+    .@{ant-prefix}-pagination-item-active:hover {
         border-color: var(--pagination-item-active-border-color);
         background: var(--pagination-item-active-bg);
 
@@ -26,30 +26,30 @@
         }
     }
 
-    .ant-pagination-simple-pager {
+    .@{ant-prefix}-pagination-simple-pager {
         input {
             width: 48px;
             height: 22px;
         }
 
-        .ant-pagination-slash {
+        .@{ant-prefix}-pagination-slash {
             margin: 0 16px;
         }
     }
 
-    &.ant-pagination-simple,
+    &.@{ant-prefix}-pagination-simple,
     &.mini {
-        .ant-pagination-prev,
-        .ant-pagination-next {
+        .@{ant-prefix}-pagination-prev,
+        .@{ant-prefix}-pagination-next {
             border: none;
         }
     }
 }
 
-.@{osui-back-top-class-prefix}.ant-pagination-disabled {
-    .ant-pagination-item,
-    .ant-pagination-next,
-    .ant-pagination-prev {
+.@{osui-back-top-class-prefix}.@{ant-prefix}-pagination-disabled {
+    .@{ant-prefix}-pagination-item,
+    .@{ant-prefix}-pagination-next,
+    .@{ant-prefix}-pagination-prev {
         background: var(--color-gray-1);
         border: 1px solid var(--color-gray-4);
         cursor: not-allowed;
@@ -67,8 +67,8 @@
         }
     }
 
-    .ant-pagination-item-active,
-    .ant-pagination-item-active:hover {
+    .@{ant-prefix}-pagination-item-active,
+    .@{ant-prefix}-pagination-item-active:hover {
         border-color: var(--color-brand-1);
         border-color: var(--color-gray-4);
 
@@ -79,7 +79,7 @@
 }
 
 .@{osui-back-top-class-prefix} {
-    .ant-pagination-options-quick-jumper input {
+    .@{ant-prefix}-pagination-options-quick-jumper input {
         &:focus,
         &:hover {
             z-index: 2;

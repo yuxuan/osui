@@ -11,7 +11,7 @@
 .generate(@i: length(@button-types)) when (@i > 0) {
     @type: extract(@button-types, @i);
 
-    .@{osui-button-class-prefix}.ant-btn-@{type} {
+    .@{osui-button-class-prefix}.@{ant-prefix}-btn-@{type} {
         .button-color-mixin(
             ~'var(--btn-@{type}-color)';
             ~'var(--btn-@{type}-bg)';
@@ -71,7 +71,7 @@
 .generate-face(@i: length(@osui-buttno-faces)) when (@i > 0) {
     @face: extract(@osui-buttno-faces, @i);
 
-    .@{osui-button-class-prefix}.ant-btn-default.@{osui-button-class-prefix}-face-@{face} {
+    .@{osui-button-class-prefix}.@{ant-prefix}-btn-default.@{osui-button-class-prefix}-face-@{face} {
         color: ~"var(--theme-@{face}-color)";
         border-color: ~"var(--theme-@{face}-color)";
 
@@ -92,7 +92,7 @@
         }
     }
 
-    .@{osui-button-class-prefix}.ant-btn-primary.@{osui-button-class-prefix}-face-@{face} {
+    .@{osui-button-class-prefix}.@{ant-prefix}-btn-primary.@{osui-button-class-prefix}-face-@{face} {
         background-color: ~"var(--theme-@{face}-color)";
         border-color: ~"var(--theme-@{face}-color)";
 
@@ -129,7 +129,7 @@
         margin-left: 4px;
     }
 
-    &.ant-btn {
+    &.@{ant-prefix}-btn {
         transition: none;
         border-radius: var(--btn-border-radius-base);
     }
@@ -144,7 +144,7 @@
         animation: osui-icon-spin 1s infinite linear;
     }
 
-    &.ant-btn-link {
+    &.@{ant-prefix}-btn-link {
         margin: var(--btn-link-margin);
         padding: var(--btn-link-padding);
 
@@ -154,7 +154,7 @@
     }
 
     // 只有icon的时候居中icon
-    &.ant-btn-only-icon {
+    &.@{ant-prefix}-btn-only-icon {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -163,7 +163,7 @@
 
 // revert antd不太正常的修复 https://github.com/ant-design/ant-design/issues/12978
 a.@{osui-button-class-prefix} {
-    &.ant-btn  {
+    &.@{ant-prefix}-btn  {
         padding-top: 3.5px;
         line-height: 21px;
     }

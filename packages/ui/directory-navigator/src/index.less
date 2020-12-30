@@ -2,8 +2,8 @@
 
 .@{osui-tree-class-prefix} {
     &-tree {
-        &.ant-tree.ant-tree-directory {
-            .ant-tree-treenode {
+        &.@{ant-prefix}-tree.@{ant-prefix}-tree-directory {
+            .@{ant-prefix}-tree-treenode {
                 height: 36px;
                 margin-left: -24px;
                 padding-left: 24px;
@@ -16,13 +16,13 @@
                     }
                 }
                 // 选中的字体颜色
-                .ant-tree-node-content-wrapper.ant-tree-node-selected {
+                .@{ant-prefix}-tree-node-content-wrapper.@{ant-prefix}-tree-node-selected {
                     color: var(--theme-text-color);
                 }
             }
 
             // 选中的背景色
-            .ant-tree-treenode-selected {
+            .@{ant-prefix}-tree-treenode-selected {
                 &:hover::before,
                 &::before {
                     background: var(--color-brand-1);
@@ -30,7 +30,7 @@
             }
 
             // 隐藏switcher
-            .ant-tree-switcher {
+            .@{ant-prefix}-tree-switcher {
                 display: none;
             }
         }

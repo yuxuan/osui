@@ -1,7 +1,7 @@
 @osui-table-class-prefix: osui-table;
 
 .@{osui-table-class-prefix} {
-    .ant-table-thead {
+    .@{ant-prefix}-table-thead {
         font-size: 12px;
 
         > tr {
@@ -11,12 +11,12 @@
         }
     }
 
-    .ant-table-thead .ant-table-cell:not(:last-child) {
+    .@{ant-prefix}-table-thead .@{ant-prefix}-table-cell:not(:last-child) {
         border-right: var(--table-header-cell-border-right);
     }
 
     &-no-row-border {
-        .ant-table-tbody {
+        .@{ant-prefix}-table-tbody {
             & > tr {
                 & > th,
                 & > td {
@@ -27,8 +27,8 @@
     }
 
     &-no-border {
-        .ant-table-thead,
-        .ant-table-tbody {
+        .@{ant-prefix}-table-thead,
+        .@{ant-prefix}-table-tbody {
             & > tr {
                 & > th,
                 & > td {
