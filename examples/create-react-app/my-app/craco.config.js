@@ -13,6 +13,7 @@ const loaderOptions = {
     srcDirectory: '',
     projectSettings: {
         build: {
+            extraLessVariables: {'ant-prefix': 'ant'},
             extractCSS: false,
             extraLessVariables: modifyVars,
             styleResources: [

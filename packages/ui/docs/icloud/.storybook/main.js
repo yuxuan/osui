@@ -7,6 +7,7 @@ const loaderOptions = {
     srcDirectory: '',
     projectSettings: {
         build: {
+            extraLessVariables: {'ant-prefix': 'ant'},
             extractCSS: false,
             styleResources: [
                 require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less'),

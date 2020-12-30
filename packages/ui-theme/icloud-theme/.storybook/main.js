@@ -7,6 +7,7 @@ const loaderOptions = {
     srcDirectory: 'src',
     projectSettings: {
         build: {
+            extraLessVariables: {'ant-prefix': 'ant'},
             extractCSS: false,
             styleResources: [
                 require.resolve('../src/styles/theme.var.less'),
