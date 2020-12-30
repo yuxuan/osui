@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.8.6...@osui/form@0.10.0-beta.0) (2020-12-30)
+
+
+### Bug Fixes
+
+* 调整brand-provider, 默认为undefined而不是osc ([46b1774](https://gitee.com/gitee-fe/osui/tree/master/commits/46b177404089ee38112a0347fe1c36d458672e5c))
+
+
+### Features
+
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+
+
+
+
+
 ## 0.8.6 (2020-12-24)
 
 

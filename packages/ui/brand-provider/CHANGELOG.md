@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/brand-provider@0.8.4...@osui/brand-provider@0.10.0-beta.0) (2020-12-30)
+
+
+### Bug Fixes
+
+* 调整brand-provider, 默认为undefined而不是osc ([46b1774](https://gitee.com/gitee-fe/osui/tree/master/commits/46b177404089ee38112a0347fe1c36d458672e5c))
+
+
+
+
+
 ## 0.8.4 (2020-12-24)
 
 

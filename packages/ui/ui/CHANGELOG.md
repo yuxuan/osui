@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.8.37...@osui/ui@0.10.0-beta.0) (2020-12-30)
+
+
+### Bug Fixes
+
+* ui添加gap ([8b35637](https://gitee.com/gitee-fe/osui/tree/master/commits/8b3563775457250a3ec414f24ef22137c802a183))
+
+
+
+
+
 ## [0.8.37](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.8.35...@osui/ui@0.8.37) (2020-12-25)
 
 **Note:** Version bump only for package @osui/ui

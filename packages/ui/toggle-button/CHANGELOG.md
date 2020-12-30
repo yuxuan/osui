@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.0](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/toggle-button@0.8.11...@osui/toggle-button@0.10.0-beta.0) (2020-12-30)
+
+
+### Features
+
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/yuxuanhuo/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+
+
+
+
+
 ## 0.8.11 (2020-12-24)
 
 

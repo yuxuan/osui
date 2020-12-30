@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/steps@0.8.6...@osui/steps@0.10.0-beta.0) (2020-12-30)
+
+
+### Bug Fixes
+
+* steps样式调整 ([f672a60](https://gitee.com/gitee-fe/osui/tree/master/commits/f672a60ab9bb86f97796a54f2779c65abdad394e))
+
+
+### Features
+
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+
+
+
+
+
 ## 0.8.6 (2020-12-24)
 
 

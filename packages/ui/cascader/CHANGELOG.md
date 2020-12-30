@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/cascader@0.8.6...@osui/cascader@0.10.0-beta.0) (2020-12-30)
+
+
+### Bug Fixes
+
+* cascader级联icloud样式调整 ([f952eb9](https://gitee.com/gitee-fe/osui/tree/master/commits/f952eb91e6195118aa2c727e0ff08e0be4bb96f9))
+
+
+
+
+
 ## 0.8.6 (2020-12-24)
 
 

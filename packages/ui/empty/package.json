@@ -1,6 +1,6 @@
 {
     "name": "@osui/empty",
-    "version": "0.8.6",
+    "version": "0.10.0-beta.0",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",

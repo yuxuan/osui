@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-docs@0.8.5...@osui/icloud-docs@0.10.0-beta.0) (2020-12-30)
+
+
+### Bug Fixes
+
+* button添加flexCenter属性, 调整为anchor时样式的问题, demo展示ButtonGroup的用法 ([7043f07](https://gitee.com/gitee-fe/osui/tree/master/commits/7043f0764924da745ffcedcf769524fe62e15eb0))
+* slider, date-picker icloud样式调整 ([c8983d9](https://gitee.com/gitee-fe/osui/tree/master/commits/c8983d9dbe90af5406e528e6b68f52677d320408))
+
+
+
+
+
 ## 0.8.5 (2020-12-24)
 
 

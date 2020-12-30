@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.9.19...@osui/icloud-theme@0.10.0-beta.0) (2020-12-30)
+
+
+### Bug Fixes
+
+* cascader级联icloud样式调整 ([f952eb9](https://gitee.com/gitee-fe/osui/tree/master/commits/f952eb91e6195118aa2c727e0ff08e0be4bb96f9))
+* slider, date-picker icloud样式调整 ([c8983d9](https://gitee.com/gitee-fe/osui/tree/master/commits/c8983d9dbe90af5406e528e6b68f52677d320408))
+* steps样式调整 ([f672a60](https://gitee.com/gitee-fe/osui/tree/master/commits/f672a60ab9bb86f97796a54f2779c65abdad394e))
+
+
+
+
+
 ## 0.9.19 (2020-12-24)
 
 
