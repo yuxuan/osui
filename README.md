@@ -11,22 +11,12 @@ osui是基于开源组件库（例如antd，导出了所有antd组件），封�
 
 ## 使用说明
 
-### 使用主题
-
-```
-yarn add @osui/theme
-```
-
-主题是**必须安装**的，不论是单包还是整包使用组件库，都需要主题。
-
-### 使用icons
-
-```
-yarn add @osui/icons
-```
-
-有些组件是需要`@osui/icons`的，或者项目中需要使用icons
-
+注意：
+- 需要项目自行安装antd
+- 需要项目安装主题
+- 需要项目在less入口文件添加 `@import "~@osui/theme/dist/theme/vars.css"`
+- 需要项目配置webpack，可以参考`examples`
+- 需要项目的less-loader配置`modifyVars: {'ant-prefix': 'ant'}`或其他prefix
 ### 使用组件
 
 使用OSUI有两种方式
@@ -51,6 +41,25 @@ yarn add @osui/button
 import Button from '@osui/button';
 ```
 
+从`0.10.0`之后，项目需要在`less-loader`中配置modifyVars，添加`{'ant-prefix': 'ant'}`字段。 否则编译时会报错。
+
+### 使用主题
+
+```
+yarn add @osui/theme
+```
+
+主题是**必须安装**的，不论是单包还是整包使用组件库，都需要主题。
+
+### 使用icons
+
+```
+yarn add @osui/icons
+```
+
+有些组件是需要`@osui/icons`的，或者项目中需要使用icons
+
+
 ### 结合create-react-app使用
 
 参考`example/create-react-app/my-app`的方式，（简单粗暴的复制粘贴吧）
@@ -62,7 +71,7 @@ import Button from '@osui/button';
 `example/create-react-app/my-app`中，需要注意的以下几点：
 
 1. 注意`package.json`中的依赖，`dependencies`和`devDependencies`都是必须的
-2. 在`App.js`引入`import '@osui/theme/dist/theme/vars.css';`
+2. 在`App.less`引入`@import '~@osui/theme/dist/theme/vars.css';`
 3. 在`App.less`引入`@import '~antd/dist/antd.less';` antd有说明
 4. `craco.config.js`是CRA没有的
 5. `eslint`需要自己配置
@@ -85,8 +94,6 @@ import Button from '@osui/button';
 import '@osui/theme/dist/theme/vars.css';
 import '@osui/theme/antd4-styles-patch.css'; // 去掉antd动效等全局覆盖
 ```
-
-
 
 ## 参与贡献
 
@@ -232,3 +239,9 @@ cd 项目root目录
 1. less 的 calc 问题
     [antd issus](https://github.com/ant-design/ant-design/issues/23125)
     解决方式：检查`less`版本，检查`less-loader`版本，如果用yarn的话，可以用`yarn list less`，确保`less`的版本在3.9.0 - 3.11.2 之间。相关issue： https://github.com/less/less.js/issues/3579
+
+2. 构建项目时，报错`Variable @ant-prefix is undefined`。
+    是因为项目webpack的less-loader没有配置，modifyVars: {'ant-prefix': 'antd'}
+
+3. 构建项目时，报错某些less变量undefined。
+    检查是否`style-resources-loader`有添加`antd-vars-patch.less`。检查`style-resources-loader`的rules test是否命中了antd和osui。或者使用`modifyVars`是否正确

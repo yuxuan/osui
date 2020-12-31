@@ -62,6 +62,8 @@
     "author": "huoyuxuan,liushaozhen",
     "license": "MIT",
     "dependencies": {
+        "@osui/alert": "^0.8.9",
+        "@osui/icons": "^0.8.7",
         "classnames": "^2.2.6",
         "lodash.partial": "^4.2.1"
     },
