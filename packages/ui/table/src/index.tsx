@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Table as AntdTable} from 'antd';
+import {ConfigContext} from 'antd/es/config-provider';
 import {TableProps as AntdTableProps, TablePaginationConfig as AntdTablePaginationConfig} from 'antd/es/table';
 import {PaginationProps} from 'antd/es/pagination';
 import classNames from 'classnames';
@@ -41,6 +42,8 @@ function Table<RecordType extends Record<string, any>>(
         ...props
     }: TableProps<RecordType>
 ) {
+    const {getPrefixCls} = useContext(ConfigContext);
+    const antPrefix = getPrefixCls('table');
     // antd的bordered只控制column的border，当noBorder=true时，所有border都没有，包括头部
     // 当noRowBorder时，保留头部border，没有row的border
     const internalBordered = noBorder === true ? false : bordered;
@@ -54,8 +57,8 @@ function Table<RecordType extends Record<string, any>>(
     const innerPagination = {
         ...pagination,
         className: classNames(
-            'ant-table-pagination',
-            `ant-table-pagination-${paginationPostion(pagination && pagination.position || ['bottomRight'])}`,
+            `${antPrefix}-pagination`,
+            `${antPrefix}-pagination-${paginationPostion(pagination && pagination.position || ['bottomRight'])}`,
             'osui-pagination',
             pagination && pagination.className
         ),
