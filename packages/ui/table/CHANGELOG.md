@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.10.0-beta.0...@osui/table@0.10.0-beta.1) (2020-12-31)
+
+
+### Bug Fixes
+
+* 修复table pagination hardcode antPrefix的问题 ([f904964](https://gitee.com/gitee-fe/osui/tree/master/commits/f904964108ec0903a45d531934e08be5eab30d17))
+
+
+
+
+
 # [0.10.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.8.10...@osui/table@0.10.0-beta.0) (2020-12-30)
 
 
