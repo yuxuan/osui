@@ -25,6 +25,7 @@ exports.featureMatrix = {
 exports.build = {
     appTitle: 'OSUI Example', // TODO: 修改系统名称
     style: {
+        lessVariables: {'ant-prefix': 'ant'},
         resources: [
             require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less'),
             require.resolve('@osui/icloud-theme/dist/less-functions-overrides.less'),
