@@ -352,7 +352,7 @@ exports.presetColors = {
     '--alert-warning-border-color': 'var(--theme-warning-color)',
     '--alert-warning-icon-color': 'var(--theme-warning-color)',
     '--alert-with-description-icon-top': '24px',
-    '--alert-with-description-padding': '8px 15px 8px 37px',
+    '--alert-with-description-padding': '8px 15px 8px 39px',
     '--alert-padding': '8px 20px 8px 37px', // antd 默认值
     '--alert-no-icon-padding': '8px 15px',
     '--alert-icon-padding-right': '8px',

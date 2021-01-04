@@ -8,23 +8,23 @@
     }
 
     .@{ant-prefix}-alert-success {
-        background:var(--message-alert-success-bg-color);
-        border-color:var(--message-alert-success-border-color);
+        background: var(--message-alert-success-bg-color);
+        border-color: var(--message-alert-success-border-color);
     }
 
     .@{ant-prefix}-alert-warning {
         background: var(--message-alert-warning-bg-color);
-        border-color:var(--message-alert-warning-border-color);
+        border-color: var(--message-alert-warning-border-color);
     }
 
     .@{ant-prefix}-alert-error {
         background: var(--message-alert-error-bg-color);
-        border-color:var(--message-alert-error-border-color);
+        border-color: var(--message-alert-error-border-color);
     }
 
     .@{ant-prefix}-alert-info {
         background: var(--message-alert-info-bg-color);
-        border-color:var(--message-alert-info-border-color);
+        border-color: var(--message-alert-info-border-color);
     }
 
     &-infoIcon {
@@ -46,15 +46,13 @@
     .@{ant-prefix}-alert-close-icon {
         right: 10px;
     }
-}
 
-// 对original的样式patch
-.@{osui-message-class-prefix} {
-    .ant-message-custom-content {
+    // 对original的样式patch
+    .@{ant-prefix}-message-custom-content {
         display: flex;
         align-items: center;
 
-        svg {
+        > svg {
             padding-right: var(--alert-icon-padding-right);
         }
     }
