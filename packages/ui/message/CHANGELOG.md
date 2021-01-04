@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/message@0.10.0-beta.1...@osui/message@0.10.0-beta.2) (2021-01-04)
+
+
+### Bug Fixes
+
+* message prefix 修复 ([337cc0e](https://gitee.com/gitee-fe/osui/tree/master/commits/337cc0e3364d3b71ba1c206f8b42769d48775671))
+
+
+
+
+
 # [0.10.0-beta.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/message@0.10.0-beta.0...@osui/message@0.10.0-beta.1) (2021-01-04)
 
 

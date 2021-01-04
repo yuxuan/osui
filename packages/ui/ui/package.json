@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "0.10.0-beta.2",
+    "version": "0.10.0-beta.3",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -90,7 +90,7 @@
         "@osui/mentions": "^0.10.0-beta.0",
         "@osui/menu": "^0.10.0-beta.0",
         "@osui/menu-dropdown": "^0.10.0-beta.0",
-        "@osui/message": "^0.10.0-beta.1",
+        "@osui/message": "^0.10.0-beta.2",
         "@osui/modal": "^0.10.0-beta.0",
         "@osui/notification": "^0.10.0-beta.0",
         "@osui/page-header": "^0.10.0-beta.0",
