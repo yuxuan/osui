@@ -47,3 +47,15 @@
         right: 10px;
     }
 }
+
+// 对original的样式patch
+.@{osui-message-class-prefix} {
+    .ant-message-custom-content {
+        display: flex;
+        align-items: center;
+
+        svg {
+            padding-right: var(--alert-icon-padding-right);
+        }
+    }
+}

@@ -7,12 +7,16 @@ import {
     MessageInstance as AntdMessageInstance,
     MessageApi as AntdMessageApi,
     ArgsProps as AntdMessageArgsProps,
+    ConfigOptions,
 } from 'antd/es/message';
 import Alert, {AlertProps} from '@osui/alert';
 import {IconCheckCircleFill, IconCloseCircleFill, IconInfoCircleFill, IconWarningCircleFill} from '@osui/icons';
 import './index.less';
 
 const clsPrefix = 'osui-message';
+
+// eslint-disable-next-line init-declarations
+let localOptions: ConfigOptions;
 
 type NoticeType = AntdMessageArgsProps['type'];
 type JointContent = React.ReactNode | string | AntdMessageArgsProps;
@@ -80,7 +84,7 @@ const getPatchedArgs = (args: MessageArgsProps) => {
     return {
         ...args,
         className,
-        content: <Alert showIcon {...alertProps} />,
+        content: <Alert showIcon {...alertProps} prefixCls={localOptions && localOptions.prefixCls} />,
         icon,
     };
 };
@@ -112,4 +116,9 @@ export default Object.assign({}, AntdMessage, {
     warn: partial(messageBuilder, 'warning'),
     loading: AntdMessage.loading,
     open: openMessageBuilder,
+    config: (options: ConfigOptions) => {
+        // 对antd message config的patch，注意还不支持context的方式
+        localOptions = options;
+        AntdMessage.config(options);
+    },
 }) as MessageApi;
