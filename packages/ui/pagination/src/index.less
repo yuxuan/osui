@@ -1,28 +1,62 @@
-@osui-back-top-class-prefix: osui-pagination;
+@osui-pagination-class-prefix: osui-pagination;
 
-.@{osui-back-top-class-prefix}:not(.@{ant-prefix}-pagination-disabled) {
-    .@{ant-prefix}-pagination-item,
-    .@{ant-prefix}-pagination-next,
-    .@{ant-prefix}-pagination-prev {
-        border: 1px solid var(--pagination-item-border-color);
+.@{osui-pagination-class-prefix} {
+    :not(.@{ant-prefix}-pagination-disabled) {
+        &.@{ant-prefix}-pagination-item,
+        &.@{ant-prefix}-pagination-next,
+        &.@{ant-prefix}-pagination-prev {
+            border: 1px solid var(--pagination-item-border-color);
 
-        &:hover {
-            background-color: var(--pagination-item-hover-bg);
-            border: 1px solid var(--pagination-item-hover-border-color);
+            &:hover {
+                background-color: var(--pagination-item-hover-bg);
+                border: 1px solid var(--pagination-item-hover-border-color);
+
+                a {
+                    color: var(--pagination-item-hover-color);
+                }
+            }
+        }
+
+        &.@{ant-prefix}-pagination-item-active,
+        &.@{ant-prefix}-pagination-item-active:hover {
+            border-color: var(--pagination-item-active-border-color);
+            background: var(--pagination-item-active-bg);
 
             a {
-                color: var(--pagination-item-hover-color);
+                color: var(--pagination-item-active-color);
             }
         }
     }
 
-    .@{ant-prefix}-pagination-item-active,
-    .@{ant-prefix}-pagination-item-active:hover {
-        border-color: var(--pagination-item-active-border-color);
-        background: var(--pagination-item-active-bg);
+    .@{ant-prefix}-pagination-disabled {
+        &.@{ant-prefix}-pagination-item,
+        &.@{ant-prefix}-pagination-next,
+        &.@{ant-prefix}-pagination-prev {
+            background: var(--color-gray-1);
+            border: 1px solid var(--pagination-item-disabled-border-color);
+            cursor: not-allowed;
 
-        a {
-            color: var(--pagination-item-active-color);
+            svg {
+                color: var(--theme-disabled-color);
+            }
+
+            &:hover {
+                background-color: var(--color-gray-1);
+
+                a {
+                    color: var(--theme-disabled-color);
+                }
+            }
+        }
+
+        &.@{ant-prefix}-pagination-item-active,
+        &.@{ant-prefix}-pagination-item-active:hover {
+            border-color: var(--color-brand-1);
+            border-color: var(--color-gray-4);
+
+            a {
+                color: var(--theme-disabled-color);
+            }
         }
     }
 
@@ -37,48 +71,14 @@
         }
     }
 
-    &.@{ant-prefix}-pagination-simple,
-    &.mini {
+    .@{ant-prefix}-pagination-simple,
+    .mini {
         .@{ant-prefix}-pagination-prev,
         .@{ant-prefix}-pagination-next {
             border: none;
         }
     }
-}
 
-.@{osui-back-top-class-prefix}.@{ant-prefix}-pagination-disabled {
-    .@{ant-prefix}-pagination-item,
-    .@{ant-prefix}-pagination-next,
-    .@{ant-prefix}-pagination-prev {
-        background: var(--color-gray-1);
-        border: 1px solid var(--color-gray-4);
-        cursor: not-allowed;
-
-        svg {
-            color: var(--theme-disabled-color);
-        }
-
-        &:hover {
-            background-color: var(--color-gray-1);
-
-            a {
-                color: var(--theme-disabled-color);
-            }
-        }
-    }
-
-    .@{ant-prefix}-pagination-item-active,
-    .@{ant-prefix}-pagination-item-active:hover {
-        border-color: var(--color-brand-1);
-        border-color: var(--color-gray-4);
-
-        a {
-            color: var(--theme-disabled-color);
-        }
-    }
-}
-
-.@{osui-back-top-class-prefix} {
     .@{ant-prefix}-pagination-options-quick-jumper input {
         &:focus,
         &:hover {
@@ -86,7 +86,7 @@
         }
         // 只有跟在input后面的需要往前移动
         & + span {
-            .@{osui-back-top-class-prefix}-jumper {
+            .@{osui-pagination-class-prefix}-jumper {
                 margin-left: -9px;
             }
         }

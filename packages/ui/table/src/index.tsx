@@ -53,21 +53,26 @@ function Table<RecordType extends Record<string, any>>(
         { [`${clsPrefix}-no-row-border`]: noRowBorder },
         { [`${clsPrefix}-no-border`]: noBorder }
     );
+    // 允许传入null
+    let innerPagination: boolean | AntdTablePaginationConfig = !(pagination === false || pagination === null);
 
-    const innerPagination = {
-        ...pagination,
-        className: classNames(
-            `${antPrefix}-pagination`,
-            `${antPrefix}-pagination-${paginationPostion(pagination && pagination.position || ['bottomRight'])}`,
-            'osui-pagination',
-            pagination && pagination.className
-        ),
-        itemRender: customPaginationProps.itemRender,
-        showQuickJumper: customPaginationProps.showQuickJumper(
-            pagination && pagination.showQuickJumper, props.size as PaginationProps['size']
-        ),
-        locale: customPaginationProps.locale,
-    };
+    if (innerPagination) {
+        innerPagination = {
+            ...pagination,
+            className: classNames(
+                `${antPrefix}-pagination`,
+                `${antPrefix}-pagination-${paginationPostion(pagination && pagination.position || ['bottomRight'])}`,
+                'osui-pagination',
+                pagination && pagination.className
+            ),
+            itemRender: customPaginationProps.itemRender,
+            showQuickJumper: customPaginationProps.showQuickJumper(
+                pagination && pagination.showQuickJumper, props.size as PaginationProps['size']
+            ),
+            locale: customPaginationProps.locale,
+        };
+    }
+
     return (
         <AntdTable<RecordType>
             {...props}
