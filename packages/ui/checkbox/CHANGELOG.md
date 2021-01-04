@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/checkbox@0.10.0-beta.0...@osui/checkbox@0.10.0-beta.1) (2021-01-04)
+
+
+### Bug Fixes
+
+* 调整checkbox focus hover效果 ([6314943](https://gitee.com/gitee-fe/osui/tree/master/commits/6314943e776591c3eb1aa3a806558b21537f907f))
+
+
+
+
+
 # [0.10.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/checkbox@0.8.5...@osui/checkbox@0.10.0-beta.0) (2020-12-30)
 
 
