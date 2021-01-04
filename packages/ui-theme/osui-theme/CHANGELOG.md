@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.10.0-beta.2...@osui/theme@0.10.0-beta.3) (2021-01-04)
+
+
+### Bug Fixes
+
+* table pagination可以设置为false, 修复pagination disabled样式问题 ([7b0100c](https://gitee.com/gitee-fe/osui/tree/master/commits/7b0100c6f23ad8d1c97ef8b7ee84f6d5a8bb11e3))
+* 修复collapse箭头位置不居中的问题 ([a68a84f](https://gitee.com/gitee-fe/osui/tree/master/commits/a68a84f240afa4297b9556c4188587e64cdbc1dc))
+
+
+
+
+
 # [0.10.0-beta.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.10.0-beta.1...@osui/theme@0.10.0-beta.2) (2021-01-04)
 
 

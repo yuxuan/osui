@@ -1,6 +1,6 @@
 {
     "name": "@osui/collapse",
-    "version": "0.10.0-beta.0",
+    "version": "0.10.0-beta.1",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",

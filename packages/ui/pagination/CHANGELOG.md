@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.1](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@0.10.0-beta.0...@osui/pagination@0.10.0-beta.1) (2021-01-04)
+
+
+### Bug Fixes
+
+* table pagination可以设置为false, 修复pagination disabled样式问题 ([7b0100c](https://gitee.com/yuxuanhuo/osui/tree/master/commits/7b0100c6f23ad8d1c97ef8b7ee84f6d5a8bb11e3))
+
+
+
+
+
 # [0.10.0-beta.0](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@0.8.10...@osui/pagination@0.10.0-beta.0) (2020-12-30)
 
 

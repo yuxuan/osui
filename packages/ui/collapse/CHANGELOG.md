@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0-beta.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/collapse@0.10.0-beta.0...@osui/collapse@0.10.0-beta.1) (2021-01-04)
+
+
+### Bug Fixes
+
+* 修复collapse箭头位置不居中的问题 ([a68a84f](https://gitee.com/gitee-fe/osui/tree/master/commits/a68a84f240afa4297b9556c4188587e64cdbc1dc))
+
+
+
+
+
 # [0.10.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/collapse@0.8.9...@osui/collapse@0.10.0-beta.0) (2020-12-30)
 
 
