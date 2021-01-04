@@ -17,6 +17,7 @@
     // focus时的效果
     .@{ant-prefix}-checkbox-input:focus + .@{ant-prefix}-checkbox-inner {
         background-color: var(--checkbox-focus-bg);
+        box-shadow: var(--checkbox-checked-focus-box-shadow);
     }
     // 选中focus时的效果
     .@{ant-prefix}-checkbox-checked .@{ant-prefix}-checkbox-input:focus + .@{ant-prefix}-checkbox-inner {
@@ -27,6 +28,7 @@
     &.@{ant-prefix}-checkbox-wrapper:hover .@{ant-prefix}-checkbox-checked .@{ant-prefix}-checkbox-inner,
     .@{ant-prefix}-checkbox-checked:hover .@{ant-prefix}-checkbox-inner,
     .@{ant-prefix}-checkbox-checked .@{ant-prefix}-checkbox-input:focus+.@{ant-prefix}-checkbox-inner {
+        border-color: transparent;
         background-color: var(--checkbox-checked-focus-bg);
     }
 
