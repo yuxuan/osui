@@ -49,10 +49,16 @@ export const Demo = () => {
 
     return (
         <div style={{padding: 30}}>
+            <p>正常</p>
             <Table columns={columns} dataSource={data} />
             <div style={{ paddingBottom: 30 }} />
+            <p>没有pagination</p>
+            <Table columns={columns} dataSource={data} pagination={false} />
+            <div style={{ paddingBottom: 30 }} />
+            <p>没有横线</p>
             <Table columns={columns} dataSource={data} noRowBorder />
             <div style={{ paddingBottom: 30 }} />
+            <p>没有border</p>
             <Table columns={columns} dataSource={data} noBorder />
         </div>);
 };
