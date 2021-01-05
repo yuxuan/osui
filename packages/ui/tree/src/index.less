@@ -1,0 +1,39 @@
+@osui-tree-class-prefix: osui-tree;
+
+.@{osui-tree-class-prefix} {
+    .ant-tree-node-selected {
+        .ant-tree-title {
+            color: var(--theme-primary-color);
+        }
+    }
+
+    &-small {
+        font-size: 12px;
+        line-height: 24px;
+
+        .ant-tree-switcher,
+        .ant-tree-node-content-wrapper {
+            line-height: 24px;
+        }
+    }
+
+    &-middle {
+        font-size: 14px;
+        line-height: 30px;
+
+        .ant-tree-switcher,
+        .ant-tree-node-content-wrapper {
+            line-height: 30px;
+        }
+    }
+
+    &-large {
+        font-size: 14px;
+        line-height: 40px;
+
+        .ant-tree-switcher,
+        .ant-tree-node-content-wrapper {
+            line-height: 40px;
+        }
+    }
+}
