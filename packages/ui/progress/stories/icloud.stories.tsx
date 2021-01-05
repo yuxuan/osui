@@ -20,7 +20,6 @@ export const Demo = () => {
                 <Wrapper title="进行中状态"><Progress percent={40} showInfo={false} /></Wrapper>
                 <Wrapper title="完成常驻"><Progress percent={100} showInfo={false} /></Wrapper>
                 <Wrapper title="报错状态"><Progress percent={40} status="exception" showInfo={false} /></Wrapper>
-                <Wrapper title="报错状态"><Progress percent={40} status="active" showInfo={false} /></Wrapper>
             </div>
         </BrandProvider>
     );
