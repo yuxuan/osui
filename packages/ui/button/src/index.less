@@ -80,15 +80,15 @@
             border-color: ~"var(--theme-@{face}-color-hover)";
         }
 
+        &:focus {
+            color: ~"var(--theme-@{face}-color)";
+            border-color: ~"var(--theme-@{face}-color)";
+        }
+
         &:active {
             color: ~"var(--theme-@{face}-color-hover)";
             border-color: ~"var(--theme-@{face}-color-hover)";
             background-color: ~"var(--color-@{face}-1)";
-        }
-
-        &:focus {
-            color: ~"var(--theme-@{face}-color)";
-            border-color: ~"var(--theme-@{face}-color)";
         }
     }
 
@@ -101,15 +101,15 @@
             border-color: ~"var(--theme-@{face}-color-hover)";
         }
 
-        &:active {
-            background-color: ~"var(--theme-@{face}-color-active)";
-            border-color: ~"var(--theme-@{face}-color-active)";
-            color: var(--color-gray-1);
-        }
-
         &:focus {
             background-color: ~"var(--theme-@{face}-color)";
             border-color: ~"var(--theme-@{face}-color)";
+            color: var(--color-gray-1);
+        }
+
+        &:active {
+            background-color: ~"var(--theme-@{face}-color-active)";
+            border-color: ~"var(--theme-@{face}-color-active)";
             color: var(--color-gray-1);
         }
     }
@@ -163,7 +163,7 @@
 
 // revert antd不太正常的修复 https://github.com/ant-design/ant-design/issues/12978
 a.@{osui-button-class-prefix} {
-    &.@{ant-prefix}-btn  {
+    &.@{ant-prefix}-btn {
         padding-top: 3.5px;
         line-height: 21px;
     }
