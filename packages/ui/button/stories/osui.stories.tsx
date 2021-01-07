@@ -1,6 +1,7 @@
 import React from 'react';
 import {IconSearch, IconHome} from '@osui/icons';
 import Space from '@osui/space';
+import Gap from '@osui/gap';
 import Button from '../src';
 
 export default {
@@ -11,44 +12,64 @@ export default {
 export const Demo = () => {
     return (
         <>
-            <div>
-                <Button type="default" style={{'margin': '0 20px 20px 0'}}>普通样式</Button>
-                <Button type="default" disabled style={{'margin': '0 20px 20px 0'}}>普通样式</Button>
-                <Button type="default" loading style={{'margin': '0 20px 20px 0'}}>普通样式</Button>
+            <div style={{display: 'flex'}}>
+                <Button type="default">普通样式</Button>
+                <Gap factor={2} orientation="horizontal" />
+                <Button type="default" disabled>普通样式</Button>
+                <Gap factor={2} orientation="horizontal" />
+                <Button type="default" loading>普通样式</Button>
             </div>
-            <div>
-                <Button type="strong" icon={<IconHome />} style={{'margin': '0 20px 20px 0'}}>加强样式</Button>
-                <Button type="strong" disabled style={{'margin': '0 20px 20px 0'}}>加强样式</Button>
-                <Button type="strong" loading style={{'margin': '0 20px 20px 0'}}>加强样式</Button>
+            <Gap factor={2} orientation="vertical" />
+            <div style={{display: 'flex'}}>
+                <Button type="strong" icon={<IconHome />}>加强样式</Button>
+                <Gap factor={2} orientation="horizontal" />
+                <Button type="strong" disabled>加强样式</Button>
+                <Gap factor={2} orientation="horizontal" />
+                <Button type="strong" loading>加强样式</Button>
             </div>
-            <div>
-                <Button type="primary" style={{'margin': '0 20px 20px 0'}}>重要样式</Button>
-                <Button type="primary" disabled style={{'margin': '0 20px 20px 0'}}>重要样式</Button>
-                <Button type="primary" loading style={{'margin': '0 20px 20px 0'}}>重要样式</Button>
+            <Gap factor={2} orientation="vertical" />
+            <div style={{display: 'flex'}}>
+                <Button type="primary">重要样式</Button>
+                <Gap factor={2} orientation="horizontal" />
+                <Button type="primary" disabled>重要样式</Button>
+                <Gap factor={2} orientation="horizontal" />
+                <Button type="primary" loading>重要样式</Button>
             </div>
-            <div>
-                <Button type="link" style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
+            <Gap factor={2} orientation="vertical" />
+            <div style={{display: 'flex'}}>
+                <Button type="link">文字按钮</Button>
+                <Gap factor={2} orientation="horizontal" />
                 <Button type="link" disabled style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
-                <Button type="link" loading style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
+                <Gap factor={2} orientation="horizontal" />
+                <Button type="link" loading>文字按钮</Button>
             </div>
-            <div>
-                <Button icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
-                <Button disabled icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
-                <Button loading icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
+            <Gap factor={2} orientation="vertical" />
+            <div style={{display: 'flex'}}>
+                <Button icon={<IconSearch />} />
+                <Gap factor={2} orientation="horizontal" />
+                <Button disabled icon={<IconSearch />} />
+                <Gap factor={2} orientation="horizontal" />
+                <Button loading icon={<IconSearch />} />
             </div>
-            <div>
-                <Button type="only-icon" icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
-                <Button type="only-icon" disabled icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
-                <Button type="only-icon" loading icon={<IconSearch />} style={{'margin': '0 20px 20px 0'}} />
+            <Gap factor={2} orientation="vertical" />
+            <div style={{display: 'flex'}}>
+                <Button type="only-icon" icon={<IconSearch />} />
+                <Gap factor={2} orientation="horizontal" />
+                <Button type="only-icon" disabled icon={<IconSearch />} />
+                <Gap factor={2} orientation="horizontal" />
+                <Button type="only-icon" loading icon={<IconSearch />} />
             </div>
-            <div>
-                <Button type="default" icon={<IconHome />} style={{'margin': '0 20px 20px 0'}}>
+            <Gap factor={2} orientation="vertical" />
+            <div style={{display: 'flex'}}>
+                <Button type="default" icon={<IconHome />}>
                     图文按钮
                 </Button>
-                <Button type="default" disabled icon={<IconHome />} style={{'margin': '0 20px 20px 0'}}>
+                <Gap factor={2} orientation="horizontal" />
+                <Button type="default" disabled icon={<IconHome />}>
                     图文按钮
                 </Button>
-                <Button type="default" loading icon={<IconHome />} style={{'margin': '0 20px 20px 0'}}>
+                <Gap factor={2} orientation="horizontal" />
+                <Button type="default" loading icon={<IconHome />}>
                     图文按钮
                 </Button>
             </div>

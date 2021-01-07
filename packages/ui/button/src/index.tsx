@@ -27,8 +27,10 @@ export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
     flexCenter?: boolean;
 }
 
+// eslint-disable-next-line max-len
 export interface ButtonInterface extends React.ForwardRefExoticComponent<ButtonProps & React.RefAttributes<HTMLElement>> {
     Group: typeof AntdButton.Group;
+    __ANT_BUTTON: boolean;
 }
 
 /* eslint-disable complexity */
@@ -79,5 +81,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
 const Button = React.forwardRef<unknown, ButtonProps>(InternalButton) as ButtonInterface;
 
 Button.Group = AntdButton.Group;
+// eslint-disable-next-line no-underscore-dangle
+Button.__ANT_BUTTON = true; // 用于tooltip disable时确保hover生效： https://github.com/ant-design/ant-design/pull/4865/files#diff-186839a30bf8b9d67a4b10bf7c091d5fR88
 
 export default Button;
