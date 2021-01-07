@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/checkbox@0.10.0...@osui/checkbox@0.10.1) (2021-01-07)
+
+
+### Bug Fixes
+
+* 修复button disable时tooltip不显示的问题 ([91ca7c6](https://gitee.com/gitee-fe/osui/tree/master/commits/91ca7c682d0fe97e2ea5cc11ae8665952310728c))
+
+
+
+
+
 # [0.10.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/checkbox@0.10.0-beta.1...@osui/checkbox@0.10.0) (2021-01-04)
 
 **Note:** Version bump only for package @osui/checkbox

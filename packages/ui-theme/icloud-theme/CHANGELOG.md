@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.10.0...@osui/icloud-theme@0.10.1) (2021-01-07)
+
+
+### Bug Fixes
+
+* tree样式的更新 ([f75be55](https://gitee.com/gitee-fe/osui/tree/master/commits/f75be55449a1d5f1d1e38aaa9c9649dafc83f67b))
+
+
+
+
+
 # [0.10.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.10.0-beta.2...@osui/icloud-theme@0.10.0) (2021-01-04)
 
 **Note:** Version bump only for package @osui/icloud-theme
