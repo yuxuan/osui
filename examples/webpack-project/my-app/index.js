@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { render } from "react-dom";
 import Drawer from '@osui/drawer';
 import Button from '@osui/button';
+import Input from '@osui/input';
 import './index.less';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Button type="primary" onClick={showDrawer}>
                 Open
             </Button>
+            <Input />
             <Drawer
                 closable
                 placement="right"

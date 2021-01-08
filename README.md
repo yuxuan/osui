@@ -1,7 +1,7 @@
 # osui
 
 ## 介绍
-osui是基于开源组件库（例如antd，导出了所有antd组件），封装的一套业务性质的组件
+osui是基于开源组件库（例如antd，导出了所有antd组件），封装的一套业务性质的组件。按照UE规范，对antd组件样式和部分功能做了调整
 
 ## 软件架构
 采用monorepo模式，
@@ -238,10 +238,24 @@ cd 项目root目录
 ## 已知问题
 1. less 的 calc 问题
     [antd issus](https://github.com/ant-design/ant-design/issues/23125)
-    解决方式：检查`less`版本，检查`less-loader`版本，如果用yarn的话，可以用`yarn list less`，确保`less`的版本在3.9.0 - 3.11.2 之间。相关issue： https://github.com/less/less.js/issues/3579
+    解决方式：检查`less`版本，检查`less-loader`版本，如果用yarn的话，可以用`yarn list less`，确保`less`的版本在3.9.0 - 3.11.2 之间。相关issue： https://github.com/less/less.js/issues/3579。
+    **这个在antd4.10.0修复了。**
 
 2. 构建项目时，报错`Variable @ant-prefix is undefined`。
     是因为项目webpack的less-loader没有配置，modifyVars: {'ant-prefix': 'antd'}
 
 3. 构建项目时，报错某些less变量undefined。
     检查是否`style-resources-loader`有添加`antd-vars-patch.less`。检查`style-resources-loader`的rules test是否命中了antd和osui。或者使用`modifyVars`是否正确
+
+4. 项目引入组件库之后，项目内样式和组件库样式不一样：
+   antd 样式的覆盖分为两部分：
+   1. 调整antd less variables，是antd暴露出来、可以覆盖的less变量，一些组件用了这些变量，见：https://ant.design/docs/react/customize-theme-cn。可以覆盖的变量有这些：https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less，osui覆盖了这些：https://gitee.com/gitee-fe/osui/blob/master/packages/ui-theme/osui-theme/src/antd-vars-patch.less。
+
+   2. 然而有些组件的样式是不在这些less变量里面的，我们会通过组件 + less，覆盖antd组件样式。比如https://gitee.com/gitee-fe/osui/blob/master/packages/ui/alert/src/index.less，这里面的样式。所有的osui组件覆盖，都会加`osui-`的前缀，为了调高css权重，和防止误伤。
+
+   组件库demo的样式是干净的。只有组件样式 + antd样式
+
+   项目中的样式如果和组件库的不一样有可能是：
+   1. 项目中对同样组件，用了同样的class覆盖，并且权重 > osui 组件样式
+   2. modifyVars被覆盖
+   3. osui样式没有覆盖到，或者是osui的bug ==> 这个问题请参看是不是demo也是不对的

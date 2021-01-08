@@ -20,7 +20,8 @@
         "commit": "git-cz",
         "new-component": "sh scripts/new-component.sh",
         "copy-to-docs": "sh scripts/copy-to-docs.sh",
-        "publish": "lerna publish from-package"
+        "publish": "lerna publish from-package",
+        "build-docs": "sh scripts/build-docs.sh osui && sh scripts/build-docs.sh icloud"
     },
     "devDependencies": {
         "@commitlint/cli": "^9.1.1",
