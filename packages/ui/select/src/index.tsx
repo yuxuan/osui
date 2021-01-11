@@ -2,7 +2,7 @@ import React from 'react';
 import {Select as AntdSelect} from 'antd';
 import {SelectProps as AntdSelectProps} from 'antd/es/select';
 import classNames from 'classnames';
-import {IconDownArrow, IconChecked} from '@osui/icons';
+import {IconDownOutlined, IconCheckSquareFilled} from '@osui/icons';
 import {adjustAntdProps} from './utils';
 import './index.less';
 
@@ -30,7 +30,7 @@ function InternalSelect<R, T>(props: SelectProps<T>, ref: React.Ref<R>): React.R
         {
             targetProp: 'suffixIcon',
             shouldOverride: !loading, // 只有在loading时，使用antd的loading icon，非loading时覆盖
-            override: <IconDownArrow />,
+            override: <IconDownOutlined />,
         },
         {
             targetProp: 'dropdownClassName',
@@ -41,7 +41,7 @@ function InternalSelect<R, T>(props: SelectProps<T>, ref: React.Ref<R>): React.R
         {
             targetProp: 'menuItemSelectedIcon',
             shouldOverride: isMultiple, // 只有在多选时，加上menuItemSelectedIcon
-            override: <IconChecked />,
+            override: <IconCheckSquareFilled />,
         },
         {
             targetProp: 'showArrow',

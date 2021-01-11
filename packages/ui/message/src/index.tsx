@@ -10,7 +10,7 @@ import {
     ConfigOptions,
 } from 'antd/es/message';
 import Alert, {AlertProps} from '@osui/alert';
-import {IconCheckCircleFill, IconCloseCircleFill, IconInfoCircleFill, IconWarningCircleFill} from '@osui/icons';
+import {IconCheckCircleFilled, IconCloseCircleFilled, IconInfoCircleFilled, IconExclamationCircleFilled} from '@osui/icons';
 import './index.less';
 
 const clsPrefix = 'osui-message';
@@ -33,10 +33,10 @@ export interface MessageApi extends Omit<AntdMessageApi, 'open'> {
 }
 
 const typeToIcon: Record<iconTypes, React.ReactNode> = {
-    info: <IconInfoCircleFill className={`${clsPrefix}-infoIcon`} />,
-    success: <IconCheckCircleFill className={`${clsPrefix}-successIcon`} />,
-    error: <IconCloseCircleFill className={`${clsPrefix}-errorIcon`} />,
-    warning: <IconWarningCircleFill className={`${clsPrefix}-warningIcon`} />,
+    info: <IconInfoCircleFilled className={`${clsPrefix}-infoIcon`} />,
+    success: <IconCheckCircleFilled className={`${clsPrefix}-successIcon`} />,
+    error: <IconCloseCircleFilled className={`${clsPrefix}-errorIcon`} />,
+    warning: <IconExclamationCircleFilled className={`${clsPrefix}-warningIcon`} />,
 };
 
 function isArgsProps(content: JointContent): boolean {

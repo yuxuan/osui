@@ -5,7 +5,7 @@
 import React, {useCallback} from 'react';
 import {Button} from 'antd';
 import {ButtonProps} from 'antd/es/button';
-import {IconDownArrow, IconMore} from '@osui/icons';
+import {IconDownOutlined, IconMoreOutlined} from '@osui/icons';
 import classNames from 'classnames';
 import {useDerivedState} from '@huse/derived-state';
 import './index.less';
@@ -76,7 +76,7 @@ const ToggleButton = React.forwardRef<any, ToggleButtonProps>((props, ref) => {
             {children}
             {hasShowNumber ? <span className="num">{num}</span> : null}
             {hasSelectNumber ? <span className="select-num">（+{num}）</span> : null}
-            {hasArrow ? <IconDownArrow className={`${clsPrefix}-afterIcon`} /> : null}
+            {hasArrow ? <IconDownOutlined className={`${clsPrefix}-afterIcon`} /> : null}
         </Button>
     );
 });
@@ -84,7 +84,7 @@ const ToggleButton = React.forwardRef<any, ToggleButtonProps>((props, ref) => {
 export const ActionToggleButton: React.FC<ToggleButtonProps> = ({className, ...props}) => {
     const classnames = classNames(`${clsPrefix}-actionButton`, className);
     return (
-        <ToggleButton {...props} className={classnames} icon={<IconMore />} />
+        <ToggleButton {...props} className={classnames} icon={<IconMoreOutlined />} />
     );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {IconSearch, IconHome} from '@osui/icons';
+import {IconSearchOutlined, IconHomeOutlined} from '@osui/icons';
 import Space from '@osui/space';
 import Gap from '@osui/gap';
 import Button from '../src';
@@ -21,7 +21,7 @@ export const Demo = () => {
             </div>
             <Gap factor={2} orientation="vertical" />
             <div style={{display: 'flex'}}>
-                <Button type="strong" icon={<IconHome />}>加强样式</Button>
+                <Button type="strong" icon={<IconHomeOutlined />}>加强样式</Button>
                 <Gap factor={2} orientation="horizontal" />
                 <Button type="strong" disabled>加强样式</Button>
                 <Gap factor={2} orientation="horizontal" />
@@ -45,31 +45,31 @@ export const Demo = () => {
             </div>
             <Gap factor={2} orientation="vertical" />
             <div style={{display: 'flex'}}>
-                <Button icon={<IconSearch />} />
+                <Button icon={<IconSearchOutlined />} />
                 <Gap factor={2} orientation="horizontal" />
-                <Button disabled icon={<IconSearch />} />
+                <Button disabled icon={<IconSearchOutlined />} />
                 <Gap factor={2} orientation="horizontal" />
-                <Button loading icon={<IconSearch />} />
+                <Button loading icon={<IconSearchOutlined />} />
             </div>
             <Gap factor={2} orientation="vertical" />
             <div style={{display: 'flex'}}>
-                <Button type="only-icon" icon={<IconSearch />} />
+                <Button type="only-icon" icon={<IconSearchOutlined />} />
                 <Gap factor={2} orientation="horizontal" />
-                <Button type="only-icon" disabled icon={<IconSearch />} />
+                <Button type="only-icon" disabled icon={<IconSearchOutlined />} />
                 <Gap factor={2} orientation="horizontal" />
-                <Button type="only-icon" loading icon={<IconSearch />} />
+                <Button type="only-icon" loading icon={<IconSearchOutlined />} />
             </div>
             <Gap factor={2} orientation="vertical" />
             <div style={{display: 'flex'}}>
-                <Button type="default" icon={<IconHome />}>
+                <Button type="default" icon={<IconHomeOutlined />}>
                     图文按钮
                 </Button>
                 <Gap factor={2} orientation="horizontal" />
-                <Button type="default" disabled icon={<IconHome />}>
+                <Button type="default" disabled icon={<IconHomeOutlined />}>
                     图文按钮
                 </Button>
                 <Gap factor={2} orientation="horizontal" />
-                <Button type="default" loading icon={<IconHome />}>
+                <Button type="default" loading icon={<IconHomeOutlined />}>
                     图文按钮
                 </Button>
             </div>

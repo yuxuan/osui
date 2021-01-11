@@ -1,7 +1,7 @@
 import React, {useCallback} from 'react';
 import {Collapse as AntdCollapse} from 'antd';
 import {CollapseProps as AntdCollapseProps, CollapsePanelProps as AntdCollapsePanelProps} from 'antd/es/collapse';
-import {IconRightArrow, IconDownArrow} from '@osui/icons';
+import {IconRightOutlined, IconDownOutlined} from '@osui/icons';
 import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';
 import './index.less';
@@ -40,8 +40,8 @@ const Collapse: CollapseInterface = ({className, levelChild, ghost, ...restProps
         panelProps => {
             return (
                 panelProps.isActive
-                    ? <span className="icon-wrapper"><IconDownArrow /> </span>
-                    : <span className="icon-wrapper"><IconRightArrow /></span>
+                    ? <span className="icon-wrapper"><IconDownOutlined /> </span>
+                    : <span className="icon-wrapper"><IconRightOutlined /></span>
             );
         },
         []

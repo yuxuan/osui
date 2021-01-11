@@ -1,6 +1,6 @@
 import React from 'react';
 import {Divider} from 'antd';
-import {IconAdd} from '@osui/icons';
+import {IconPlusOutlined} from '@osui/icons';
 import ClockCircleOutlined from '@ant-design/icons/ClockCircleOutlined';
 import Tag from '../src';
 
@@ -14,7 +14,7 @@ export const Demo = () => {
             {/* success */}
             <Divider orientation="left">基本</Divider>
             <Tag>标签</Tag>
-            <Tag className={'osui-tag-dome-dashed'} icon={<IconAdd style={{marginRight: '4px'}} />}>
+            <Tag className={'osui-tag-dome-dashed'} icon={<IconPlusOutlined style={{marginRight: '4px'}} />}>
                 标签
             </Tag>
             <Tag

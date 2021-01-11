@@ -3,7 +3,7 @@ import {Modal as AntdModal} from 'antd';
 import {ModalProps as AntdModalProps, ModalFuncProps} from 'antd/es/modal';
 import {globalConfig} from 'antd/es/modal/confirm';
 import classNames from 'classnames';
-import {IconCross} from '@osui/icons';
+import {IconCloseOutlined} from '@osui/icons';
 import Button from '@osui/button';
 import './index.less';
 
@@ -90,7 +90,7 @@ const OriginModal: ModalInterface = ({className, bodyStyle = {}, bodyHeight, siz
         <AntdModal
             className={classNames(classes)}
             bodyStyle={bodyStyle}
-            closeIcon={<IconCross />}
+            closeIcon={<IconCloseOutlined />}
             footer={footer}
             width={width}
             {...props}

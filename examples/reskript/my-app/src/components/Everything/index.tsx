@@ -3,8 +3,8 @@ import {useState} from 'react';
 import {Space, Row, ConfigProvider} from 'antd';
 import zhCN from 'antd/es/locale/zh_CN';
 import {
-    IconAdd,
-    IconSearch,
+    IconPlusOutlined,
+    IconSearchOutlined,
     IconSwitchTick,
     IconSwitchCross,
     IconGitFilter,
@@ -337,7 +337,7 @@ export const Input = () => {
                 style={{ width: 200 }}
                 placeholder="请输入搜索关键字"
                 suffix={
-                    <IconSearch />
+                    <IconSearchOutlined />
                 }
             />
             <br />
@@ -1167,7 +1167,7 @@ export const Tag = () => {
             {/* success */}
             <OSUI.Tag>标签</OSUI.Tag>
             <OSUI.Tag className={'osui-tag-dome-dashed'}>
-                <IconAdd style={{fontSize: '12px', marginRight: '4px'}} />
+                <IconPlusOutlined style={{fontSize: '12px', marginRight: '4px'}} />
                 标签
             </OSUI.Tag>
             <OSUI.Tag

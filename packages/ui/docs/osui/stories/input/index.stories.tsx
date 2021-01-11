@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { IconSearch } from '@osui/icons';
+import { IconSearchOutlined } from '@osui/icons';
 import Input from '@osui/input';
 const { TextArea } = Input;
 
@@ -19,7 +19,7 @@ export const Demo = () => {
                 style={{ width: 200 }}
                 placeholder="请输入搜索关键字"
                 suffix={
-                    <IconSearch />
+                    <IconSearchOutlined />
                 }
             />
             <br />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from '@osui/button';
 import Space from '@osui/space';
-import {IconWarningCircleFill} from '@osui/icons';
+import {IconExclamationCircleFilled} from '@osui/icons';
 import {ExclamationCircleOutlined} from '@ant-design/icons';
 import Modal from '../src';
 
@@ -109,7 +109,7 @@ export const Confirm = () => {
     function showConfirm() {
         Modal.confirm({
             size: 'small',
-            icon: <IconWarningCircleFill />,
+            icon: <IconExclamationCircleFilled />,
             content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
             onOk() {
                 console.log('OK');

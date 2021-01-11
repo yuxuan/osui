@@ -2,12 +2,12 @@ import React, {FC, useCallback, useReducer} from 'react';
 import {Alert as AntdAlert} from 'antd';
 import {AlertProps as AntdAlertProps} from 'antd/es/alert';
 import {
-    IconCheckCircleFill,
-    IconWarningCircleFill,
-    IconCloseCircleFill,
-    IconInfoCircleFill,
-    IconCross,
-    IconDownArrow,
+    IconCheckCircleFilled,
+    IconExclamationCircleFilled,
+    IconCloseCircleFilled,
+    IconInfoCircleFilled,
+    IconCloseOutlined,
+    IconDownOutlined,
 } from '@osui/icons';
 import classNames from 'classnames';
 import {useBoolean} from '@huse/boolean';
@@ -25,10 +25,10 @@ export interface AlertProps extends AntdAlertProps {
 type iconTypes = 'info' | 'success' | 'error' | 'warning';
 
 const typeToIcon: Record<iconTypes, React.ReactNode> = {
-    info: <IconInfoCircleFill className={`${clsPrefix}-infoIcon`} />,
-    success: <IconCheckCircleFill className={`${clsPrefix}-successIcon`} />,
-    error: <IconCloseCircleFill className={`${clsPrefix}-errorIcon`} />,
-    warning: <IconWarningCircleFill className={`${clsPrefix}-warningIcon`} />,
+    info: <IconInfoCircleFilled className={`${clsPrefix}-infoIcon`} />,
+    success: <IconCheckCircleFilled className={`${clsPrefix}-successIcon`} />,
+    error: <IconCloseCircleFilled className={`${clsPrefix}-errorIcon`} />,
+    warning: <IconExclamationCircleFilled className={`${clsPrefix}-warningIcon`} />,
 };
 
 const Alert: React.FC<AlertProps> = props => {
@@ -50,7 +50,7 @@ const Alert: React.FC<AlertProps> = props => {
     const patchedIcon = icon || typeToIcon[type as iconTypes];
     const patchedClosable = closable === true || countDown! > 0;
     const patchedCloseText = patchedClosable ? (
-        closeText || <IconCross className={`${clsPrefix}-icon-cross`} />
+        closeText || <IconCloseOutlined className={`${clsPrefix}-icon-cross`} />
     ) : null;
 
     const renderActions = () => {
@@ -138,7 +138,7 @@ const ActionExpand: FC<ActionExpandProps> = ({expanded, open, close}) => {
     );
     return (
         <a onClick={handleClick} className={classNames({ [`${clsPrefix}-action-expand-open`]: expanded })}>
-            {expanded ? '收起' : '展开'} <IconDownArrow />
+            {expanded ? '收起' : '展开'} <IconDownOutlined />
         </a>
     );
 };

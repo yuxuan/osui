@@ -2,7 +2,7 @@ import React from 'react';
 import {Pagination as AntdPagination} from 'antd';
 import {PaginationProps as AntdPaginationProps} from 'antd/es/pagination';
 import classNames from 'classnames';
-import {IconRightArrow, IconLeftArrow} from '@osui/icons';
+import {IconRightOutlined, IconLeftOutlined} from '@osui/icons';
 import Button from '@osui/button';
 import './index.less';
 
@@ -12,10 +12,10 @@ export type PaginationProps = AntdPaginationProps;
 
 const itemRender: AntdPaginationProps['itemRender'] = (current, type, originalElement) => {
     if (type === 'prev') {
-        return <IconLeftArrow />;
+        return <IconLeftOutlined />;
     }
     if (type === 'next') {
-        return <IconRightArrow />;
+        return <IconRightOutlined />;
     }
     return originalElement;
 };

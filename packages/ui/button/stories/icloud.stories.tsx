@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconSearch, IconHome } from '@osui/icons';
+import { IconSearchOutlined, IconHomeOutlined } from '@osui/icons';
 import Space from '@osui/space';
 import Button from '../src';
 
@@ -32,24 +32,24 @@ export const Demo = () => {
                 <Button type="link" disabled style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
             </div>
             <div>
-                <Button icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
-                <Button loading icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
-                <Button disabled icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button loading icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button disabled icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
             </div>
             <div>
-                <Button type="only-icon" icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
-                <Button type="only-icon" loading icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
-                <Button type="only-icon" disabled icon={<IconSearch />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button type="only-icon" icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button type="only-icon" loading icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button type="only-icon" disabled icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
             </div>
             <div>
                 <p>当icon和文字一起的时候，如果对不齐，可以添加flexCenter属性，如果导致同行不齐，外面包裹div display: flex</p>
-                <Button flexCenter icon={<IconHome />} style={{ 'margin': '0 20px 20px 0' }}>
+                <Button flexCenter icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }}>
                     图文按钮
                 </Button>
-                <Button flexCenter loading icon={<IconHome />} style={{ 'margin': '0 20px 20px 0' }}>
+                <Button flexCenter loading icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }}>
                     图文按钮
                 </Button>
-                <Button flexCenter disabled icon={<IconHome />} style={{ 'margin': '0 20px 20px 0' }}>
+                <Button flexCenter disabled icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }}>
                     图文按钮
                 </Button>
             </div>

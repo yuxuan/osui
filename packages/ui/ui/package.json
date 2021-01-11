@@ -80,7 +80,7 @@
         "@osui/form": "^0.10.0",
         "@osui/gap": "^0.10.0",
         "@osui/grid": "^0.10.0",
-        "@osui/icons": "^0.8.7",
+        "@osui/icons": "^0.10.0",
         "@osui/image": "^0.10.0",
         "@osui/input": "^0.10.0",
         "@osui/input-number": "^0.10.0",

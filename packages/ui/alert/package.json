@@ -64,7 +64,7 @@
     "dependencies": {
         "@huse/boolean": "^1.0.3",
         "@huse/timeout": "^1.0.2",
-        "@osui/icons": "^0.8.7",
+        "@osui/icons": "^0.10.0",
         "classnames": "^2.2.6"
     },
     "publishConfig": {

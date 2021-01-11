@@ -2,7 +2,7 @@ import React from 'react';
 import {DropDownProps as AntdDropDownProps} from 'antd/es/dropdown';
 import {Menu, Dropdown} from 'antd';
 import Button from '@osui/button';
-import {IconBranchDropdown, IconDownArrow} from '@osui/icons';
+import {IconBranchDropdown, IconDownOutlined} from '@osui/icons';
 import classNames from 'classnames';
 import './index.less';
 
@@ -64,7 +64,7 @@ const BranchDropdown: React.FC<DropdownInterface> = props => {
                 <IconBranchDropdown className="branch-dropdown-icon" />
                 <p className="title">{title}</p>
                 <p className="desc">{desc}</p>
-                <IconDownArrow className="dropdown-arrow-icon" />
+                <IconDownOutlined className="dropdown-arrow-icon" />
             </Button>
         </Dropdown>
     );

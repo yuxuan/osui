@@ -1,7 +1,7 @@
 import React from 'react';
 import {Avatar as AntdAvatar} from 'antd';
 import {AvatarProps as AntdAvatarProps} from 'antd/es/avatar';
-import {IconCheckCircleFill} from '@osui/icons';
+import {IconCheckCircleFilled} from '@osui/icons';
 import classNames from 'classnames';
 import './index.less';
 
@@ -22,7 +22,7 @@ const Avatar: AvatarInterface = props => {
                 <AntdAvatar {...props} className={classNames(clsPrefix, props.className)} />
                 {
                     props.pr ? (
-                        <IconCheckCircleFill className={`${clsPrefix}-pr`} />
+                        <IconCheckCircleFilled className={`${clsPrefix}-pr`} />
                     ) : null
                 }
             </span>

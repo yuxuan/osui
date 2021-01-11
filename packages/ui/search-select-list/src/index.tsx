@@ -2,7 +2,7 @@ import React from 'react';
 import {Popover, Menu} from 'antd';
 import {PopoverProps as AntdPooverProps} from 'antd/es/popover';
 import classNames from 'classnames';
-import {IconSearch} from '@osui/icons';
+import {IconSearchOutlined} from '@osui/icons';
 import Input from '@osui/input';
 import Button from '@osui/button';
 import './index.less';
@@ -104,7 +104,7 @@ const SeacrhSelectList: React.FC<SeacrhSelectListProps> = props => {
                     placeholder={placeholder || '请输入搜索的内容'}
                     value={searchVal}
                     onChange={handleChangeSearch}
-                    suffix={<IconSearch onClick={handleSearchFunc} />}
+                    suffix={<IconSearchOutlined onClick={handleSearchFunc} />}
                 />
             </div>
             <ul className="list-box">

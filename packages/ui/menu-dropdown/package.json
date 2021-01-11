@@ -69,7 +69,8 @@
         "@osui/dropdown": "^0.10.0",
         "@osui/menu": "^0.10.0",
         "@osui/toggle-button": "^0.10.0",
-        "classnames": "^2.2.6"
+        "classnames": "^2.2.6",
+        "@osui/icons": "^0.10.0"
     },
     "publishConfig": {
         "access": "public",
