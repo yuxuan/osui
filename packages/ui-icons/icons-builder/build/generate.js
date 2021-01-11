@@ -275,7 +275,8 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
                                                 `<td align="center">${
                                                     icon
                                                         ? `
-                                                        <img src="./svg/${icon.file}"/><br/><sub>Icon${icon.name}</sub>
+                                                        <img width="16" height="16" src="./svg/${icon.file}"/>
+                                                        <br/><sub>Icon${icon.name}</sub>
                                                         `
                                                         : ''
                                                 }</td>`

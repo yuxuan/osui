@@ -460,5 +460,7 @@ exports.presetColors = {
     '--back-top-bg': 'var(--btn-primary-bg)',
     '--back-top-hover-bg': 'var(--btn-primary-hover-bg)',
     '--back-top-active-bg': 'var(--btn-primary-active-bg)',
+    '--page-header-title-font-weight': '600',
+    '--page-header-title-font-size': '20px',
     ...buttonColors,
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import PageHeader from '../src';
+import PageHeader from '@osui/page-header';
 
 export default {
     title: 'PageHeader',

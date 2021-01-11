@@ -1,4 +1,4 @@
-import Typography from '../src';
+import Typography from '@osui/typography';
 
 export default {
     title: 'Typography',

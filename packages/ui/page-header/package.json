@@ -69,5 +69,8 @@
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
+    },
+    "dependencies": {
+        "@osui/icons": "^0.8.7"
     }
 }

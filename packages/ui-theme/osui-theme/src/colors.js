@@ -401,7 +401,7 @@ exports.presetColors = {
     '--space-large': '24px',
     '--space-middle': '16px',
     '--space-small': '8px',
-    '--table-header-bg': 'transparent',
+    '--table-header-bg': 'var(--theme-component-bg)',
     '--table-header-color': 'var(--color-gray-7)',
     '--table-row-hover-bg': 'var(--color-gray-3)',
     '--table-header-cell-border-right': 'none',
@@ -486,5 +486,7 @@ exports.presetColors = {
     '--back-top-bg': 'var(--color-gray-7)',
     '--back-top-hover-bg': 'var(--color-gray-8)',
     '--back-top-active-bg': 'var(--color-gray-8)',
+    '--page-header-title-font-weight': 'normal',
+    '--page-header-title-font-size': '24px',
     ...buttonColors,
 };
