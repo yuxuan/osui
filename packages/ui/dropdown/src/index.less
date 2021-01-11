@@ -2,4 +2,11 @@
 
 .@{osui-dropdown-class-prefix} {
     min-width: var(--dropdown-menu-min-width) !important; // 覆盖inline计算出来的style
+
+    .@{ant-prefix}-dropdown-menu {
+        &-item,
+        &-submenu-title {
+            padding: var(--dropdown-menu-item-padding);
+        }
+    }
 }

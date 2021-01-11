@@ -456,6 +456,7 @@ exports.presetColors = {
     '--popover-inner-content-padding': '10px',
     '--popover-title-padding': '10px 10px 0 10px',
     '--dropdown-menu-min-width': '137px',
+    '--dropdown-menu-item-padding': '5px 12px',
     '--back-top-bg': 'var(--btn-primary-bg)',
     '--back-top-hover-bg': 'var(--btn-primary-hover-bg)',
     '--back-top-active-bg': 'var(--btn-primary-active-bg)',
