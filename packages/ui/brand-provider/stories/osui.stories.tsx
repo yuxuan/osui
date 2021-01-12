@@ -1,3 +1,4 @@
+import React from 'react';
 import BrandProvider, { useBrandContext } from '../src';
 
 export default {

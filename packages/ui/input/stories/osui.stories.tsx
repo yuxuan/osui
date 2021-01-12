@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { IconSearchOutlined } from '@osui/icons';
 import Input from '../src';

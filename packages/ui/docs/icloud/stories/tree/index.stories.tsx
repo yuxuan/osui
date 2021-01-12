@@ -6,7 +6,7 @@ import Input from '@osui/input';
 import Tree from '@osui/tree';
 
 export default {
-    title: '待验收/Tree 树形组件',
+    title: '验收中/Tree 树形组件',
 };
 
 export const SizeDemo = () => {

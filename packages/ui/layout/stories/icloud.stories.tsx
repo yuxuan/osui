@@ -1,7 +1,8 @@
+import React from 'react';
 import Layout from '../src';
 
 export default {
-    title: 'Layout',
+    title: '未实现/Layout',
     component: Layout,
 };
 

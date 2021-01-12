@@ -1,7 +1,8 @@
+import React from 'react';
 import Result from '../src';
 
 export default {
-    title: 'Result',
+    title: '未实现/Result',
     component: Result,
 };
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import Affix from '../src';
 
 export default {

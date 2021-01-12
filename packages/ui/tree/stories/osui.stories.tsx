@@ -1,3 +1,4 @@
+import React from 'react';
 import {Tree} from 'antd';
 
 export default {

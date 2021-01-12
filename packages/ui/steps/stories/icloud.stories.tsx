@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Steps from '../src';
 
 export default {
-    title: '待验收/Steps 步骤条',
+    title: '验收中/Steps 步骤条',
     component: Steps,
 };
 

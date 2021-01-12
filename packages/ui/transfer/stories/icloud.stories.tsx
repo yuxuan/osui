@@ -1,7 +1,8 @@
+import React from 'react';
 import Transfer from '../src';
 
 export default {
-    title: 'Transfer',
+    title: '未实现/Transfer',
     component: Transfer,
 };
 

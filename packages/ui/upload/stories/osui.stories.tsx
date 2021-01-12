@@ -1,3 +1,4 @@
+import React from 'react';
 import Upload from '../src';
 
 export default {

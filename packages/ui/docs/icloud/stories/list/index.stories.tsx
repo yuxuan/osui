@@ -1,7 +1,8 @@
+import React from 'react';
 import {List} from 'antd';
 
 export default {
-    title: '待验收/List 列表',
+    title: '验收中/List 列表',
     component: List,
 };
 

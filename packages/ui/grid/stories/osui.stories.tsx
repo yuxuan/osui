@@ -1,3 +1,4 @@
+import React from 'react';
 import Grid from '../src';
 
 export default {

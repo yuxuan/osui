@@ -1,7 +1,8 @@
+import React from 'react';
 import Cascader from '@osui/cascader';
 
 export default {
-    title: '待验收/Cascader 级联选择',
+    title: '验收中/Cascader 级联选择',
     component: Cascader,
 };
 

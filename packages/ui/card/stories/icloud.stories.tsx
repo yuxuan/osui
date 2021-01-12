@@ -1,7 +1,8 @@
+import React from 'react';
 import Card from '../src';
 
 export default {
-    title: 'Card',
+    title: '未实现/Card',
     component: Card,
 };
 

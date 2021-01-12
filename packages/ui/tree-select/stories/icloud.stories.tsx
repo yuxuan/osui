@@ -1,7 +1,8 @@
+import React from 'react';
 import {TreeSelect} from 'antd';
 
 export default {
-    title: '待验收/TreeSelect 树选择',
+    title: '验收中/TreeSelect 树选择',
     component: TreeSelect,
 };
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import Popconfirm from '../src';
 
 export default {

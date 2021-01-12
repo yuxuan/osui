@@ -1,7 +1,8 @@
+import React from 'react';
 import Divider from '../src';
 
 export default {
-    title: 'Divider',
+    title: '未实现/Divider',
     component: Divider,
 };
 

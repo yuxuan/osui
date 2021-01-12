@@ -1,7 +1,8 @@
+import React from 'react';
 import Carousel from '../src';
 
 export default {
-    title: 'Carousel',
+    title: '未实现/Carousel',
     component: Carousel,
 };
 

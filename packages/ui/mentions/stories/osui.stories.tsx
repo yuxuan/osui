@@ -1,3 +1,4 @@
+import React from 'react';
 import Mentions from '../src';
 
 export default {

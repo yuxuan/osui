@@ -1,3 +1,4 @@
+import React from 'react';
 import {Steps} from 'antd';
 
 export default {

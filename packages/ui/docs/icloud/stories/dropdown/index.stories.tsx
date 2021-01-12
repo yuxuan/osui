@@ -4,6 +4,7 @@ import Dropdown from '@osui/dropdown';
 
 export default {
     title: '通过验收/Dropdown 下拉菜单',
+    component: Dropdown,
 };
 
 export const Demo = () => {

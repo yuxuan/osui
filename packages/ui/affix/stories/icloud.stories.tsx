@@ -1,7 +1,8 @@
+import React from 'react';
 import Affix from '../src';
 
 export default {
-    title: 'Affix',
+    title: '未实现/Affix',
     component: Affix,
 };
 

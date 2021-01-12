@@ -1,7 +1,8 @@
+import React from 'react';
 import Descriptions from '../src';
 
 export default {
-    title: 'Descriptions',
+    title: '未实现/Descriptions',
     component: Descriptions,
 };
 

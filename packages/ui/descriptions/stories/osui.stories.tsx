@@ -1,3 +1,4 @@
+import React from 'react';
 import Descriptions from '../src';
 
 export default {

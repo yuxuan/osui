@@ -1,3 +1,4 @@
+import React from 'react';
 import Menu from '@osui/menu';
 import Dropdown from '../src';
 

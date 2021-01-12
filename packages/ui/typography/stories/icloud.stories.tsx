@@ -1,7 +1,8 @@
+import React from 'react';
 import Typography from '../src';
 
 export default {
-    title: 'Typography',
+    title: '未实现/Typography',
     component: Typography,
 };
 

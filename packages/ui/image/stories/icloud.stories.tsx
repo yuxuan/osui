@@ -1,7 +1,8 @@
+import React from 'react';
 import Image from '../src';
 
 export default {
-    title: 'Image',
+    title: '未实现/Image',
     component: Image,
 };
 

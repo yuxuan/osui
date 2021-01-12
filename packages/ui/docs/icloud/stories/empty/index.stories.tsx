@@ -1,7 +1,8 @@
+import React from 'react';
 import {Empty} from 'antd';
 
 export default {
-    title: '待验收/Empty 空状态',
+    title: '验收中/Empty 空状态',
     component: Empty,
 };
 

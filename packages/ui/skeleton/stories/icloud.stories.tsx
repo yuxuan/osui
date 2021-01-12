@@ -1,7 +1,8 @@
+import React from 'react';
 import Skeleton from '../src';
 
 export default {
-    title: 'Skeleton',
+    title: '未实现/Skeleton',
     component: Skeleton,
 };
 

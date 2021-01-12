@@ -1,3 +1,4 @@
+import React from 'react';
 import Anchor from '../src';
 
 export default {

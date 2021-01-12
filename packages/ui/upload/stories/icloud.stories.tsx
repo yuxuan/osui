@@ -1,7 +1,8 @@
+import React from 'react';
 import Upload from '../src';
 
 export default {
-    title: 'Upload',
+    title: '未实现/Upload',
     component: Upload,
 };
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import ConfigProvider from '../src';
 
 export default {
