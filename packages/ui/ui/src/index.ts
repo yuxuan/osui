@@ -71,3 +71,4 @@ export {default as Tree} from '@osui/tree';
 export {default as TreeSelect} from '@osui/tree-select';
 export {default as Typography} from '@osui/typography';
 export {default as Upload} from '@osui/upload';
+export {default as version} from '@osui/version';

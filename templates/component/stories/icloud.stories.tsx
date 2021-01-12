@@ -1,8 +1,7 @@
 import {ComponentName} from '../src';
 
 export default {
-    title: '{ComponentName}',
-    component: {ComponentName},
+    title: '{ComponentName}'
 };
 
 export const Demo = () => {
