@@ -1,6 +1,6 @@
 {
     "name": "@osui/message",
-    "version": "0.10.0",
+    "version": "0.10.1",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -63,7 +63,7 @@
     "license": "MIT",
     "dependencies": {
         "@osui/alert": "^0.8.9",
-        "@osui/icons": "^0.10.0",
+        "@osui/icons": "^0.10.1",
         "classnames": "^2.2.6",
         "lodash.partial": "^4.2.1"
     },

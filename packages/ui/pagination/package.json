@@ -1,6 +1,6 @@
 {
     "name": "@osui/pagination",
-    "version": "0.10.1",
+    "version": "0.10.2",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -66,8 +66,8 @@
         }
     },
     "dependencies": {
-        "@osui/button": "^0.10.1",
-        "@osui/icons": "^0.10.0",
+        "@osui/button": "^0.10.2",
+        "@osui/icons": "^0.10.1",
         "classnames": "^2.2.6"
     },
     "publishConfig": {

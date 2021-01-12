@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/menu-dropdown@0.10.0...@osui/menu-dropdown@0.10.1) (2021-01-12)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/yuxuanhuo/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* menu-dropdown osc 样式修复 ([b5f7ea8](https://gitee.com/yuxuanhuo/osui/tree/master/commits/b5f7ea8d2e8df8f7468fa969c20102fcce03bbe6))
+
+
+
+
+
 # [0.10.0](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/menu-dropdown@0.10.0-beta.0...@osui/menu-dropdown@0.10.0) (2021-01-04)
 
 **Note:** Version bump only for package @osui/menu-dropdown

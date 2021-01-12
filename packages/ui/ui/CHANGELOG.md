@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.10.1...@osui/ui@0.10.2) (2021-01-12)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 添加version组件 ([076c9f6](https://gitee.com/gitee-fe/osui/tree/master/commits/076c9f62cad981177ca1dc60dcbf88816cab0347))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.10.0...@osui/ui@0.10.1) (2021-01-07)
 
 **Note:** Version bump only for package @osui/ui

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://gitee.com/gitee-fe/osui/compare/@osui/icons@0.8.7...@osui/icons@0.10.1) (2021-01-12)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* table page-header typography ([7630db0](https://gitee.com/gitee-fe/osui/commits/7630db06b79589004950e7527cf63f020d0677a7))
+
+
+
+
+
 ## 0.8.7 (2020-12-24)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.10.1...@osui/icloud-theme@0.10.2) (2021-01-12)
+
+
+### Bug Fixes
+
+* menu-dropdown osc 样式修复 ([b5f7ea8](https://gitee.com/gitee-fe/osui/tree/master/commits/b5f7ea8d2e8df8f7468fa969c20102fcce03bbe6))
+* table page-header typography ([7630db0](https://gitee.com/gitee-fe/osui/tree/master/commits/7630db06b79589004950e7527cf63f020d0677a7))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.10.0...@osui/icloud-theme@0.10.1) (2021-01-07)
 
 
