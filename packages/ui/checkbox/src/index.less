@@ -60,4 +60,11 @@
             background-color: var(--checkbox-disabled-bg);
         }
     }
+
+    .@{ant-prefix}-checkbox-checked,
+    .@{ant-prefix}-checkbox {
+        &.@{ant-prefix}-checkbox-disabled .@{ant-prefix}-checkbox-inner {
+            border-color: var(--theme-border-color-disabled) !important;
+        }
+    }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputNumber } from 'antd';
+import InputNumber from '@osui/input-number';
 
 export default {
     title: 'InputNumber',

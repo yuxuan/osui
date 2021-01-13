@@ -1,6 +1,6 @@
 import React from 'react';
-import { InputNumber } from 'antd';
 import Space from '@osui/space';
+import InputNumber from '@osui/input-number';
 
 export default {
     title: '通过验收/InputNumber 数字输入框',

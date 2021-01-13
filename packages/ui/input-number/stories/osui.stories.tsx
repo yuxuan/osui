@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputNumber } from 'antd';
+import InputNumber from '../src';
 
 export default {
     title: 'InputNumber',
