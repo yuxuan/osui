@@ -462,5 +462,6 @@ exports.presetColors = {
     '--back-top-active-bg': 'var(--btn-primary-active-bg)',
     '--page-header-title-font-weight': '600',
     '--page-header-title-font-size': '20px',
+    '--date-picker-suffix-color': 'var(--theme-placeholder-color)',
     ...buttonColors,
 };

@@ -488,5 +488,6 @@ exports.presetColors = {
     '--back-top-active-bg': 'var(--color-gray-8)',
     '--page-header-title-font-weight': 'normal',
     '--page-header-title-font-size': '24px',
+    '--date-picker-suffix-color': 'var(--theme-text-color)',
     ...buttonColors,
 };
