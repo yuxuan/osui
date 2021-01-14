@@ -1,22 +1,12 @@
 import React from 'react';
-import {Divider} from 'antd';
-import Tooltip, {TextOverflowTooltip} from '@osui/tooltip';
+import Divider from '@osui/divider';
+import TextOverflowTooltip from '../src';
 
 export default {
-    title: 'Tooltip',
+    title: '业务组件/TextOverflowTooltip',
 };
 
 export const Demo = () => {
-    return (
-        <div style={{padding: 30}}>
-            <Divider orientation="left">基本</Divider>
-            <Tooltip title="最简单的用法">
-                <span>Tooltip will show on mouse enter.</span>
-            </Tooltip>
-        </div>);
-};
-
-export const TextOverflowTooltipDemo = () => {
     return (
         <>
             <Divider orientation="left">当内容超长时，展示Tooltip</Divider>

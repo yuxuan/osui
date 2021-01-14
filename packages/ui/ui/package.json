@@ -114,6 +114,7 @@
         "@osui/table": "^0.10.2",
         "@osui/tabs": "^0.10.0",
         "@osui/tag": "^0.10.1",
+        "@osui/text-overflow-tooltip": "0.10.0",
         "@osui/time-picker": "^0.10.0",
         "@osui/timeline": "^0.10.0",
         "@osui/toggle-button": "^0.10.1",

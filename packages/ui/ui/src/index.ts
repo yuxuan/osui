@@ -62,6 +62,7 @@ export {default as Switch} from '@osui/switch';
 export {default as Table} from '@osui/table';
 export {default as Tabs} from '@osui/tabs';
 export {default as Tag} from '@osui/tag';
+export {default as TextOverflowTooltip} from '@osui/text-overflow-tooltip';
 export {default as Timeline} from '@osui/timeline';
 export {default as TimePicker} from '@osui/time-picker';
 export {default as ToggleButton} from '@osui/toggle-button';

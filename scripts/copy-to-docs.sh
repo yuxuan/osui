@@ -13,7 +13,7 @@ EXCLUDE_FOLDER='/$|ui$|/docs$|\.\.$'
 echo $TARGET
 
 ICLOUD_COMPONENTS="affix alert anchor auto-complete avatar back-top badge brand-provider breadcrumb button calendar card carousel cascader checkbox col collapse comment config-provider date-picker descriptions divider drawer dropdown empty form gap grid image input input-number layout list mentions menu message modal notification page-header pagination popconfirm popover progress radio rate result row select skeleton slider space spin statistic steps switch table tabs tag time-picker timeline tooltip transfer tree tree-select typography upload version"
-OSUI_COMPONENTS="alert avatar back-top badge branch-dropdown button checkbox collapse date-picker directory-navigator drawer form input input-number markdown menu-dropdown message modal pagination popover progress radio search-select-list select space switch table tabs tag timeline toggle-button tooltip"
+OSUI_COMPONENTS="alert avatar back-top badge branch-dropdown button checkbox collapse date-picker directory-navigator drawer form input input-number markdown menu-dropdown message modal pagination popover progress radio search-select-list select space switch table tabs tag timeline toggle-button tooltip text-overflow-tooltip"
 # 根据target给出是哪个component list，来选择复制组件到docs中去
 COMPONENT_LIST=`[[ $TARGET == "icloud" ]] && echo "$ICLOUD_COMPONENTS" || echo "$OSUI_COMPONENTS"`
 
