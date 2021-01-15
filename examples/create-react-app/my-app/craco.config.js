@@ -13,9 +13,8 @@ const loaderOptions = {
     srcDirectory: '',
     projectSettings: {
         build: {
-            extraLessVariables: {'ant-prefix': 'ant'},
+            extraLessVariables: {'ant-prefix': 'ant', ...modifyVars},
             extractCSS: false,
-            extraLessVariables: modifyVars,
             styleResources: [
                 require.resolve('@osui/theme/dist/less-functions-overrides.less'),
             ],
