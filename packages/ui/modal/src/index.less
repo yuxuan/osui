@@ -1,5 +1,11 @@
 @osui-modal-class-prefix: osui-modal;
 
+.@{ant-prefix}-modal-centered .@{osui-modal-class-prefix} {
+    &.@{ant-prefix}-modal {
+        padding-bottom: 0px;
+    }
+}
+
 .@{osui-modal-class-prefix} {
     .@{ant-prefix}-modal-close-x {
         line-height: var(--modal-close-icon-line-height);
@@ -13,6 +19,7 @@
         border-bottom: var(--modal-body-border-bottom);
         padding: var(--modal-body-padding);
         overflow: auto;
+        max-height: var(--modal-body-max-height);
     }
 
     .@{ant-prefix}-modal-footer {
@@ -30,26 +37,6 @@
         max-width: 95%;
     }
 
-    // no-border
-    &-no-border {
-        .@{ant-prefix}-modal-title {
-            line-height: var(--modal-title-line-height);
-        }
-
-        .@{ant-prefix}-modal-header {
-            border-bottom: 1px solid var(--theme-component-bg);
-            padding: var(--modal-no-border-padding);
-        }
-
-        .@{ant-prefix}-modal-body {
-            padding-top: var(--modal-no-border-body-padding-top);
-        }
-
-        .@{ant-prefix}-modal-footer {
-            border-top: 1px solid var(--theme-component-bg);
-        }
-    }
-
     .@{ant-prefix}-modal-content {
         .@{ant-prefix}-modal-close {
             svg {
@@ -64,13 +51,9 @@
 }
 
 .@{osui-modal-class-prefix}-confirm {
-    &-icon {
+    svg.osui-icon {
         float: left;
         margin-right: 20px;
-    }
-
-    &-icon svg,
-    .anticon {
         width: 36px;
         height: 36px;
         font-size: 14px;
@@ -90,21 +73,21 @@
         margin-top: 15px;
     }
 
-    &.@{ant-prefix}-modal-confirm-error .@{ant-prefix}-modal-confirm-body > &-icon svg {
-        color: var(--theme-error-color);
-    }
-
-    &.@{ant-prefix}-modal-confirm-warning .@{ant-prefix}-modal-confirm-body > &-icon svg,
-    &.@{ant-prefix}-modal-confirm-confirm .@{ant-prefix}-modal-confirm-body > &-icon svg {
+    &.@{ant-prefix}-modal-confirm-warning .@{ant-prefix}-modal-confirm-body svg.osui-icon,
+    &.@{ant-prefix}-modal-confirm-confirm .@{ant-prefix}-modal-confirm-body svg.osui-icon {
         color: var(--theme-warning-color);
     }
 
-    &.@{ant-prefix}-modal-confirm-info .@{ant-prefix}-modal-confirm-body > &-icon svg {
+    &.@{ant-prefix}-modal-confirm-success .@{ant-prefix}-modal-confirm-body svg.osui-icon {
+        color: var(--theme-success-color);
+    }
+
+    &.@{ant-prefix}-modal-confirm-info .@{ant-prefix}-modal-confirm-body svg.osui-icon {
         color: var(--theme-info-color);
     }
 
-    &.@{ant-prefix}-modal-confirm-success .@{ant-prefix}-modal-confirm-body > &-icon svg {
-        color: var(--theme-success-color);
+    &.@{ant-prefix}-modal-confirm-error .@{ant-prefix}-modal-confirm-body svg.osui-icon {
+        color: var(--theme-error-color);
     }
 
     .@{ant-prefix}-modal-confirm-body > .osui-modal-confirm-icon + .@{ant-prefix}-modal-confirm-title + .@{ant-prefix}-modal-confirm-content {

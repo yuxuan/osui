@@ -10,13 +10,22 @@ export default {
 export const Demo = () => {
     return (
         <>
-            <h2></h2>
             <Input style={{ width: 200 }} placeholder="请输入" />
             <br />
             <br />
             <Input
                 style={{ width: 200 }}
                 placeholder="请输入搜索关键字"
+                suffix={
+                    <IconSearchOutlined />
+                }
+            />
+            <br />
+            <br />
+            <Input
+                style={{ width: 200 }}
+                placeholder="请输入搜索关键字"
+                allowClear
                 suffix={
                     <IconSearchOutlined />
                 }

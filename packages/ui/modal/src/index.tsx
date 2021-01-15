@@ -3,7 +3,13 @@ import {Modal as AntdModal} from 'antd';
 import {ModalProps as AntdModalProps, ModalFuncProps} from 'antd/es/modal';
 import {globalConfig} from 'antd/es/modal/confirm';
 import classNames from 'classnames';
-import {IconCloseOutlined} from '@osui/icons';
+import {
+    IconCloseOutlined,
+    IconCheckCircleFilled,
+    IconCloseCircleFilled,
+    IconInfoCircleFilled,
+    IconExclamationCircleFilled,
+} from '@osui/icons';
 import Button from '@osui/button';
 import './index.less';
 
@@ -14,13 +20,11 @@ type Size = 'small' | 'default' | 'large';
 const getModalSize = (size?: Size) => {
     switch (size) {
         case 'small':
-            return [400, 'size-s'];
+            return 400;
         case 'default':
-            return [600, 'size-m'];
+            return 600;
         case 'large':
-            return [800, 'size-l'];
-        default:
-            return [600, 'size-m'];
+            return 800;
     }
 };
 
@@ -28,13 +32,9 @@ const clsPrefix = 'osui-modal';
 
 export interface ModalProps extends AntdModalProps {
     /**
-     * @description 制定body的高度，当指定高度时，overflow:auto
+     * @description 是否展示body上的boder
      */
-    bodyHeight?: number;
-    /**
-     * @description 没有边框
-     */
-    noBorder?: boolean;
+    bodyBorder?: boolean;
     /**
      * @description 支持small default large 三种宽度
      */
@@ -49,7 +49,7 @@ interface ModalInterface extends React.FC<ModalProps> {
     useModal: typeof AntdModal.useModal;
 }
 
-const OriginModal: ModalInterface = ({className, bodyStyle = {}, bodyHeight, size = 'default', ...props}) => {
+const OriginModal: ModalInterface = ({className, bodyBorder, size, ...props}) => {
     const {
         okText = '确定',
         cancelText = '取消',
@@ -58,26 +58,21 @@ const OriginModal: ModalInterface = ({className, bodyStyle = {}, bodyHeight, siz
         confirmLoading,
         okButtonProps,
         cancelButtonProps,
-        noBorder = false,
         autoHeight = false,
+        centered,
+        width: widthProp,
     } = props;
 
-    const [width, classNameSize] = getModalSize(size);
+    const width = getModalSize(size);
 
     const classes = classNames(
         clsPrefix,
         {
-            [`${clsPrefix}-no-border`]: noBorder,
             [`${clsPrefix}-auto-height`]: autoHeight,
-            [`${clsPrefix}-body-border`]: bodyHeight,
+            [`${clsPrefix}-body-border`]: bodyBorder,
         },
-        `${clsPrefix}-${classNameSize}`,
         className
     );
-
-    if (bodyHeight) {
-        bodyStyle.height = bodyHeight;
-    }
 
     const footer = (
         <div>
@@ -85,14 +80,15 @@ const OriginModal: ModalInterface = ({className, bodyStyle = {}, bodyHeight, siz
             <Button type="primary" onClick={onOk} loading={confirmLoading} {...okButtonProps}>{okText}</Button>
         </div>
     );
+    const innerCentered = centered ?? true;
 
     return (
         <AntdModal
             className={classNames(classes)}
-            bodyStyle={bodyStyle}
             closeIcon={<IconCloseOutlined />}
             footer={footer}
-            width={width}
+            width={widthProp ?? width}
+            centered={innerCentered}
             {...props}
         />
     );
@@ -121,30 +117,40 @@ type ModalType = typeof OriginModal & ModalStaticFunctions & { destroyAll: () =>
 
 const Modal = OriginModal as ModalType;
 
+// ======= Confirm ======
+
+const confirmIconMap = {
+    info: <IconInfoCircleFilled />,
+    warning: <IconExclamationCircleFilled />,
+    confirm: <IconExclamationCircleFilled />,
+    error: <IconCloseCircleFilled />,
+    success: <IconCheckCircleFilled />,
+};
 interface ConfirmProps extends ModalFuncProps {
     size?: Size;
 }
-const getConfirmConfig = ({size = 'default', ...config}: ConfirmProps) => {
+const getConfirmConfig = (
+    {size, width, ...config}: ConfirmProps,
+    type: 'info'|'warning'|'success'|'error'|'confirm'
+) => {
     const baseConfig = config;
 
-    if (config.icon) {
-        // 对confirm图表的样式调整处理
-        Object.assign(baseConfig, {icon: <span className={`${clsPrefix}-confirm-icon`}>{config.icon}</span>});
-    }
+    // 对confirm图表的样式调整处理
+    Object.assign(baseConfig, {icon: config.icon ?? confirmIconMap[type]});
 
     return {
-        width: getModalSize(size)[0],
+        width: width ?? getModalSize(size),
         ...baseConfig,
         className: classNames(`${clsPrefix}-confirm`, config.className),
     };
 };
 
-Modal.info = (config: ConfirmProps) => AntdModal.info(getConfirmConfig(config));
-Modal.warning = (config: ConfirmProps) => AntdModal.warning(getConfirmConfig(config));
+Modal.info = (config: ConfirmProps) => AntdModal.info(getConfirmConfig(config, 'info'));
+Modal.warning = (config: ConfirmProps) => AntdModal.warning(getConfirmConfig(config, 'warning'));
 Modal.warn = Modal.warning;
-Modal.error = (config: ConfirmProps) => AntdModal.error(getConfirmConfig(config));
-Modal.success = (config: ConfirmProps) => AntdModal.success(getConfirmConfig(config));
-Modal.confirm = (config: ConfirmProps) => AntdModal.confirm(getConfirmConfig(config));
+Modal.error = (config: ConfirmProps) => AntdModal.error(getConfirmConfig(config, 'error'));
+Modal.success = (config: ConfirmProps) => AntdModal.success(getConfirmConfig(config, 'success'));
+Modal.confirm = (config: ConfirmProps) => AntdModal.confirm(getConfirmConfig(config, 'confirm'));
 
 Modal.destroyAll = destroyAll;
 Modal.config = config;
