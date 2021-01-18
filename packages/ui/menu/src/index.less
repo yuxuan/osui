@@ -1,0 +1,51 @@
+@osui-menu-class-prefix: osui-menu;
+
+.@{osui-menu-class-prefix} {
+    .@{ant-prefix}-menu {
+        .@{ant-prefix}-menu-item,
+        .@{ant-prefix}-menu-submenu-title {
+            &:hover {
+                background-color: @item-hover-bg;
+            }
+        }
+    }
+
+    .@{ant-prefix}-menu-item-group-list .@{ant-prefix}-menu-item,
+    .@{ant-prefix}-menu-item-group-list .@{ant-prefix}-menu-submenu-title {
+        padding: 0 16px 0 16px;
+    }
+
+    .@{ant-prefix}-menu-item-group-title {
+        height: 28px;
+        line-height: 34px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.@{osui-menu-class-prefix}-submenu {
+    .@{ant-prefix}-menu-vertical.@{ant-prefix}-menu-sub,
+    .@{ant-prefix}-menu-vertical-left.@{ant-prefix}-menu-sub,
+    .@{ant-prefix}-menu-vertical-right.@{ant-prefix}-menu-sub {
+        max-height: ~"calc(100vh - 100px)";
+    }
+
+    .@{ant-prefix}-menu-item,
+    .@{ant-prefix}-menu-submenu-title {
+        &:hover {
+            background-color: @item-hover-bg;
+        }
+    }
+
+    .@{ant-prefix}-menu-item-group-list .@{ant-prefix}-menu-item,
+    .@{ant-prefix}-menu-item-group-list .@{ant-prefix}-menu-submenu-title {
+        padding: 0 16px 0 16px;
+    }
+
+    .@{ant-prefix}-menu-item-group-title {
+        height: 28px;
+        line-height: 34px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
