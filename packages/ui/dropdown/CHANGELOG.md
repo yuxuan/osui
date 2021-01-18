@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/dropdown@0.10.1...@osui/dropdown@0.10.2) (2021-01-18)
+
+
+### Bug Fixes
+
+* 调整menu dropdown osc主题样式 ([0d5fa97](https://gitee.com/gitee-fe/osui/tree/master/commits/0d5fa97a317b88e454ef3347030fac059a3bc4c8))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/dropdown@0.10.0...@osui/dropdown@0.10.1) (2021-01-12)
 
 

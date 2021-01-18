@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/checkbox@0.10.1...@osui/checkbox@0.10.3) (2021-01-18)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* checkbox, radio, input-number ([64f36e6](https://gitee.com/gitee-fe/osui/tree/master/commits/64f36e6b6eb46a333a044a9452207866682d8df4))
+
+
+
+
+
 ## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/checkbox@0.10.1...@osui/checkbox@0.10.2) (2021-01-13)
 
 
