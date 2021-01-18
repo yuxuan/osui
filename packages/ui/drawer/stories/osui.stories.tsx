@@ -3,7 +3,7 @@ import { Button, Divider } from 'antd';
 import Drawer from '../src';
 
 export default {
-    title: '验收中/Drawer 抽屉',
+    title: 'Drawer',
 };
 
 export const Demo = () => {

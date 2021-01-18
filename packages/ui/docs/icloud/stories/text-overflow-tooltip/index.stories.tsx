@@ -1,5 +1,5 @@
 import React from 'react';
-import TextOverflowTooltip from '../src';
+import TextOverflowTooltip from '@osui/text-overflow-tooltip';
 
 export default {
     title: '设计文档/TextOverflowTooltip',

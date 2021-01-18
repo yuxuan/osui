@@ -5,6 +5,7 @@ import {TableProps as AntdTableProps, TablePaginationConfig as AntdTablePaginati
 import {PaginationProps} from 'antd/es/pagination';
 import classNames from 'classnames';
 import {customPaginationProps} from '@osui/pagination';
+import {useBrandContext} from '@osui/brand-provider';
 import '@osui/pagination/es/index.less';
 import './index.less';
 
@@ -42,6 +43,7 @@ function Table<RecordType extends Record<string, any>>(
         ...props
     }: TableProps<RecordType>
 ) {
+    const {brand} = useBrandContext();
     const {getPrefixCls} = useContext(ConfigContext);
     const antPrefix = getPrefixCls('table');
     // antd的bordered只控制column的border，当noBorder=true时，所有border都没有，包括头部
@@ -65,11 +67,11 @@ function Table<RecordType extends Record<string, any>>(
                 'osui-pagination',
                 pagination && pagination.className
             ),
-            itemRender: customPaginationProps.itemRender,
-            showQuickJumper: customPaginationProps.showQuickJumper(
+            itemRender: customPaginationProps(brand).itemRender,
+            showQuickJumper: customPaginationProps(brand).showQuickJumper(
                 pagination && pagination.showQuickJumper, props.size as PaginationProps['size']
             ),
-            locale: customPaginationProps.locale,
+            locale: customPaginationProps(brand).locale,
         };
     }
 
