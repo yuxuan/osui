@@ -8,8 +8,14 @@ const isNodeOverflow = (node: HTMLElement) => {
     return node.scrollWidth > node.offsetWidth;
 };
 
-export const TextOverflowTooltip = React.forwardRef<unknown, TooltipProps & {width: number}>(
-    ({width, ...props}, ref) => {
+interface ChildStyleProps {
+    width?: number;
+    maxWidth?: number;
+    style?: any;
+}
+
+export const TextOverflowTooltip = React.forwardRef<unknown, TooltipProps & ChildStyleProps>(
+    ({width, maxWidth, style, ...props}, ref) => {
         const textRef = useRef(null);
         // 控制展示
         const [visible, setVisible] = useState(false);
@@ -46,7 +52,7 @@ export const TextOverflowTooltip = React.forwardRef<unknown, TooltipProps & {wid
             child = React.cloneElement(
                 textNode,
                 {
-                    style: {width},
+                    style: {width, maxWidth, ...style},
                     ...patchedEvent,
                 }
             );
