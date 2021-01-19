@@ -4,7 +4,6 @@ import Dropdown from '@osui/dropdown';
 
 export default {
     title: 'Dropdown',
-    component: Dropdown,
 };
 
 export const Demo = () => {
@@ -76,7 +75,7 @@ export const DropdownSubMenuGroupDemo = () => {
     );
 
     return (
-        <Dropdown overlay={menu}>
+        <Dropdown overlay={menu} overlayStyle={{width: 200}}>
             <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
                 Hover me
             </a>
