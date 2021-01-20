@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/menu@0.10.0...@osui/menu@0.10.2) (2021-01-20)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 补齐antd组件, 补齐文档 ([b6c76a8](https://gitee.com/gitee-fe/osui/tree/master/commits/b6c76a864b121479e151a97e926546f3370d0aed))
+* 调整menu dropdown osc主题样式 ([7d4868c](https://gitee.com/gitee-fe/osui/tree/master/commits/7d4868c6b47fdbf024b06300d6d3064c94fb6f8e))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/menu@0.10.0...@osui/menu@0.10.1) (2021-01-18)
 
 

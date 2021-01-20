@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.10.2...@osui/ui@0.10.5) (2021-01-20)
+
+
+### Bug Fixes
+
+* 增加TextOverflowTooltip，只在text overflow的时候展示 ([b1df65d](https://gitee.com/gitee-fe/osui/tree/master/commits/b1df65d1a62e3fff3fb7f8735631a24b0cb5d587))
+
+
+
+
+
 ## [0.10.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.10.2...@osui/ui@0.10.4) (2021-01-18)
 
 

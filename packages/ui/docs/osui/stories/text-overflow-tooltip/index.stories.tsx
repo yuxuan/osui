@@ -3,7 +3,7 @@ import Divider from '@osui/divider';
 import TextOverflowTooltip from '@osui/text-overflow-tooltip';
 
 export default {
-    title: '业务组件/TextOverflowTooltip',
+    title: 'TextOverflowTooltip',
 };
 
 export const Demo = () => {

@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.10.2...@osui/theme@0.10.5) (2021-01-20)
+
+
+### Bug Fixes
+
+* checkbox, radio, input-number ([64f36e6](https://gitee.com/gitee-fe/osui/tree/master/commits/64f36e6b6eb46a333a044a9452207866682d8df4))
+* dropdown满足osui和icloud调整 ([2026476](https://gitee.com/gitee-fe/osui/tree/master/commits/202647660b178deb4141b6684cc302fef854cb8b))
+* modal 调整 ([3e92aa4](https://gitee.com/gitee-fe/osui/tree/master/commits/3e92aa40204994ce2b8ed6bcb85d7006aa297710))
+* 修复date-picker suffix color ([fa1ff3c](https://gitee.com/gitee-fe/osui/tree/master/commits/fa1ff3cd4cbf3e9f77cfce0850e28048f1d2dbcd))
+* 调整menu dropdown osc主题样式 ([7d4868c](https://gitee.com/gitee-fe/osui/tree/master/commits/7d4868c6b47fdbf024b06300d6d3064c94fb6f8e))
+
+
+
+
+
 ## [0.10.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.10.2...@osui/theme@0.10.4) (2021-01-18)
 
 

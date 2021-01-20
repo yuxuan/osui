@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tooltip@0.10.0...@osui/tooltip@0.10.2) (2021-01-20)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 增加TextOverflowTooltip，只在text overflow的时候展示 ([b1df65d](https://gitee.com/gitee-fe/osui/tree/master/commits/b1df65d1a62e3fff3fb7f8735631a24b0cb5d587))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tooltip@0.10.0...@osui/tooltip@0.10.1) (2021-01-18)
 
 

@@ -1,6 +1,6 @@
 {
     "name": "@osui/modal",
-    "version": "0.10.3",
+    "version": "0.10.4",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
