@@ -464,5 +464,9 @@ exports.presetColors = {
     '--page-header-title-font-weight': '600',
     '--page-header-title-font-size': '20px',
     '--date-picker-suffix-color': 'var(--theme-placeholder-color)',
+    '--back-top-size': '36px',
+    '--back-top-transparent-bg': 'rgba(0,0,0,.6)',
+    '--back-top-transparent-hover-bg': 'rgba(0,0,0,.5)',
+    '--back-top-transparent-active-bg': 'rgba(0,0,0,.7)',
     ...buttonColors,
 };

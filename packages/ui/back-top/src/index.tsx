@@ -9,17 +9,24 @@ const clsPrefix = 'osui-back-top';
 
 export interface BackTopProps extends AntdBackTopProps {
     type?: 'circle' | 'default';
+    transparent?: boolean;
 }
 
-const BackTop: React.FC<BackTopProps> = ({type = 'default', ...props}) => {
+const BackTop: React.FC<BackTopProps> = ({type = 'default', transparent, ...props}) => {
+    const innerClassName = classNames(
+        clsPrefix,
+        props.className,
+        {
+            [`${clsPrefix}-circle`]: type === 'circle',
+            [`${clsPrefix}-transparent`]: transparent,
+        }
+    );
+
     return (
-        <AntdBackTop
-            {...props}
-            className={
-                classNames(clsPrefix, props.className, {[`${clsPrefix}-circle`]: type === 'circle'})
-            }
-        >
-            <IconVerticalAlignTopOutlined />
+        <AntdBackTop {...props}>
+            <span className={innerClassName}>
+                <IconVerticalAlignTopOutlined />
+            </span>
         </AntdBackTop>
     );
 };

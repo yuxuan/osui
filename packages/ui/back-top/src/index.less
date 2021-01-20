@@ -1,8 +1,10 @@
 @osui-back-top-class-prefix: osui-back-top;
 
 .@{osui-back-top-class-prefix} {
+    width: var(--back-top-size);
+    height: var(--back-top-size);
     background: var(--back-top-bg);
-    border-radius: 4px;
+    border-radius: var(--btn-border-radius-base);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,5 +26,24 @@
     &-circle {
         border-radius: 50%;
         overflow: hidden;
+    }
+
+    .fade-enter.fade-enter-active,
+    .fade-appear.fade-appear-active {
+        animation-name: none;
+        animation-play-state: none;
+    }
+
+    &-transparent {
+        background: var(--back-top-transparent-bg);
+
+        &:hover {
+            background: var(--back-top-transparent-hover-bg);
+
+        }
+
+        &:active {
+            background: var(--back-top-transparent-active-bg);
+        }
     }
 }
