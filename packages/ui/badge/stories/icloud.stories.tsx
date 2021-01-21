@@ -53,3 +53,28 @@ export const Status = () => {
         </div>
     );
 };
+
+
+export const TypeDemo = () => {
+    return (
+        <>
+            <p>用<code>type</code>来区分Badage徽标形式下的状态</p>
+            <p>注意：用的是<code>count</code>才能作为徽标形式展示</p>
+            <p>注意：当error展示文字的时候，也是需要<code>type</code>的，因为仅对<code>type</code>实现了<code>min-width: 40px</code></p>
+            <Space size="large">
+                <Badge count="9折" type="warning">
+                    <a href="#" style={{width: 76, height: 30, background: '#ddd', display: 'inline-block'}} />
+                </Badge>
+                <Badge count="New" type="error">
+                    <a href="#" style={{ width: 76, height: 30, background: '#ddd', display: 'inline-block' }} />
+                </Badge>
+                <Badge count="Sale" type="warning">
+                    <a href="#" style={{ width: 76, height: 30, background: '#ddd', display: 'inline-block' }} />
+                </Badge>
+                <Badge count="Top" type="success">
+                    <a href="#" style={{ width: 76, height: 30, background: '#ddd', display: 'inline-block' }} />
+                </Badge>
+            </Space>
+        </>
+    );
+};

@@ -1,6 +1,35 @@
 @osui-back-top-class-prefix: osui-badge;
 
 .@{osui-back-top-class-prefix} {
+
+    &-type {
+        &-success {
+            .@{ant-prefix}-badge-count {
+                min-width: 40px;
+                background: var(--theme-success-color);
+            }
+        }
+
+        &-warning {
+            .@{ant-prefix}-badge-count {
+                min-width: 40px;
+                background: var(--theme-warning-color);
+            }
+        }
+
+        &-error {
+            .@{ant-prefix}-badge-count {
+                min-width: 40px;
+                background: var(--theme-error-color);
+            }
+        }
+
+    }
+
+    .@{ant-prefix}-badge-count {
+        padding: var(--badge-count-padding);
+    }
+
     .@{ant-prefix}-badge-status-dot {
         width: 8px;
         height: 8px;
@@ -12,5 +41,9 @@
 
     .@{ant-prefix}-badge-status-default {
         background-color: var(--theme-disabled-color);
+    }
+
+    .@{ant-prefix}-badge-status-processing::after {
+        animation: none;
     }
 }

@@ -1,6 +1,16 @@
 const {getBabelConfig} = require('@reskript/config-babel');
 const {loaders} = require('@reskript/config-webpack');
 const path = require('path');
+const process = require('process');
+
+const themeEnv = process.env.THEME;
+const isOsuiTheme = themeEnv === 'osui';
+
+const styleResources = isOsuiTheme ? (
+    [require.resolve('@osui/theme/dist/antd-vars-patch.less')]
+) : (
+    [require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less')]
+);
 
 const loaderOptions = {
     cwd: process.cwd(),
@@ -10,7 +20,7 @@ const loaderOptions = {
             extraLessVariables: {'ant-prefix': 'ant'},
             extractCSS: false,
             styleResources: [
-                require.resolve('@osui/theme/dist/antd-vars-patch.less'),
+                ...styleResources,
                 require.resolve('@osui/theme/dist/less-functions-overrides.less'),
             ],
         },
@@ -23,15 +33,8 @@ module.exports = {
         '../stories/**/*.stories.mdx'
     ],
     addons: [
-        {
-            name: '@storybook/addon-docs',
-            options: {
-                configureJSX: true,
-                babelOptions: {},
-                sourceLoaderOptions: null,
-            },
-        },
-        '@storybook/addon-storysource', // https://github.com/storybookjs/storybook/tree/master/addons/storysource
+        '@storybook/addon-docs',
+        '@storybook/addon-storysource',
         '@storybook/addon-a11y/register', // https://github.com/storybookjs/storybook/tree/master/addons/a11y
         '@storybook/addon-viewport/register', // https://github.com/storybookjs/storybook/tree/master/addons/viewport
     ],

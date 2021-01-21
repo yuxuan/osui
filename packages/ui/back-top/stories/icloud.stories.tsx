@@ -1,5 +1,4 @@
 import React from 'react';
-import Gap from '@osui/gap';
 import BackTop from '../src';
 
 export default {
