@@ -1,0 +1,13 @@
+@osui-drawer-class-prefix: osui-drawer;
+
+.@{osui-drawer-class-prefix} {
+    .@{ant-prefix}-drawer-header {
+        border-bottom: 1px solid transparent;
+    }
+
+    .@{ant-prefix}-drawer-footer {
+        // TODO: antd修复这个issue https://github.com/ant-design/ant-design/pull/28975 后换成变量
+        padding: 10px 20px;
+        border-top: 1px solid var(--theme-border-color-base)
+    }
+}

@@ -36,9 +36,6 @@ const Markdown: React.FC<Props> = ({content = '', className, plugins = []}) => {
      * 故首先 revert 至不处理 xss
      * 可能的解决方案如下
      * 利用 remark 找到会被解析为 html 的代码，对这些 html 运行 xss，然后重新 stringify 并得到 html
-     * 相关的 icafe 卡片
-     * @see http://newicafe.baidu.com/issue/icode-12580/show?cid=5
-     * @see http://newicafe.baidu.com/issue/icode-11691/show?cid=5
      */
 
     const html = getHtml(content, plugins);
