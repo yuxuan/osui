@@ -1,6 +1,10 @@
 @osui-breadcrumb-class-prefix: osui-breadcrumb;
 
 .@{osui-breadcrumb-class-prefix} {
+    &.@{ant-prefix}-breadcrumb > span:last-child {
+        font-weight: var(--breadcrumb-last-child-font-weight);
+    }
+
     &-ellipsis {
         cursor: pointer;
     }

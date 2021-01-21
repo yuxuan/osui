@@ -495,5 +495,6 @@ exports.presetColors = {
     '--back-top-transparent-hover-bg': 'rgba(0,0,0,.5)',
     '--back-top-transparent-active-bg': 'rgba(0,0,0,.7)',
     '--badge-count-padding': '0 6px',
+    '--breadcrumb-last-child-font-weight': 'normal',
     ...buttonColors,
 };

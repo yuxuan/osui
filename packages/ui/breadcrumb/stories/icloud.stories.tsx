@@ -9,21 +9,45 @@ export default {
 
 export const Demo = () => {
     return (
-        <Breadcrumb>
-            <Breadcrumb.Item>一级页面名称</Breadcrumb.Item>
-            <Breadcrumb.Item>
-                <a href="">二级页面名称</a>
-            </Breadcrumb.Item>
-            <Breadcrumb.Item>
-                <a href="">三级页面名称</a>
-            </Breadcrumb.Item>
-            <Breadcrumb.Item>
-                <a href="">四级页面名称</a>
-            </Breadcrumb.Item>
-            <Breadcrumb.Item>
-                <a href="">末级页面名称</a>
-            </Breadcrumb.Item>
-        </Breadcrumb>
+        <>
+            <p>如果需要蓝色hover，放个<code>a</code>标签</p>
+            <Breadcrumb>
+                <Breadcrumb.Item>
+                    <a href="">一级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">二级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">三级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">四级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">末级页面名称</a>
+                </Breadcrumb.Item>
+            </Breadcrumb>
+            <br />
+            <p>不同的<code>font-size</code> 12px </p>
+            <Breadcrumb style={{fontSize: '12px'}}>
+                <Breadcrumb.Item>
+                    <a href="">一级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">二级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">三级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">四级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">末级页面名称</a>
+                </Breadcrumb.Item>
+            </Breadcrumb>
+        </>
     );
 };
 
@@ -109,6 +133,7 @@ export const Routes = () => {
     return (
         <BrowserRouter>
             <p>支持routes</p>
+            <p>注意：箭头icon目前无法覆盖</p>
             <Breadcrumb itemRender={itemRender} routes={routes} showEllipsis />
         </BrowserRouter>
     );
@@ -138,15 +163,18 @@ export const Dropdown = () => {
     );
 
     return (
-        <Breadcrumb>
-            <Breadcrumb.Item>Ant Design</Breadcrumb.Item>
-            <Breadcrumb.Item>
-                <a href="">Component</a>
-            </Breadcrumb.Item>
-            <Breadcrumb.Item overlay={menu}>
-                <a href="">General</a>
-            </Breadcrumb.Item>
-            <Breadcrumb.Item>Button</Breadcrumb.Item>
-        </Breadcrumb>
+        <>
+            <p>注意：箭头icon目前无法覆盖</p>
+            <Breadcrumb>
+                <Breadcrumb.Item><a href="">Ant Design</a></Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">Component</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item overlay={menu}>
+                    <a href="">General</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>Button</Breadcrumb.Item>
+            </Breadcrumb>
+        </>
     );
 };
