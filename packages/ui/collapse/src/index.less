@@ -2,7 +2,30 @@
 
 .@{osui-collapse-class-prefix} {
     &.@{ant-prefix}-collapse > .@{ant-prefix}-collapse-item {
-        & > .@{ant-prefix}-collapse-header {
+        border-bottom: 1px solid var(--color-gray-4);
+    }
+
+    &.@{ant-prefix}-collapse {
+        border: 1px solid var(--color-gray-4);
+        border-bottom: 0;
+    }
+
+    .@{ant-prefix}-collapse-content {
+        border-top: 1px solid var(--color-gray-4);
+    }
+
+    &.@{ant-prefix}-collapse > .@{ant-prefix}-collapse-item > .@{ant-prefix}-collapse-header .@{ant-prefix}-collapse-arrow {
+        top: var(--collapse-arrow-top);
+
+        svg {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    .@{ant-prefix}-collapse-item {
+        .@{ant-prefix}-collapse-header {
             color: var(--theme-text-color);
             font-weight: var(--collapse-header-font-weight);
             font-size: 14px;
@@ -34,7 +57,7 @@
     .@{ant-prefix}-collapse-item.@{ant-prefix}-collapse-item-disabled {
         .@{ant-prefix}-collapse-header,
         .@{ant-prefix}-collapse-arrow {
-            color: var(--theme-disabled-color);
+            color: var(--collapse-disabled-color);
         }
     }
 
@@ -43,8 +66,8 @@
     }
 }
 
-.content-padding(@padding-left) {
-    padding-left: @padding-left;
+.content-padding(@content-padding-left) {
+    padding-left: @content-padding-left;
     padding-top: var(--collapse-content-box-padding-top);
     padding-bottom: var(--collapse-content-box-padding-bottom);
 }
@@ -52,6 +75,17 @@
 // 对层级的控制
 .nest(@level, @content-padding, @icon-padding) {
     .@{osui-collapse-class-prefix}-level-@{level} {
+        .@{ant-prefix}-collapse {
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+
+            > .@{ant-prefix}-collapse-item:last-child {
+                border-bottom: 0;
+            }
+        }
+
+
         &.@{ant-prefix}-collapse-item > .@{ant-prefix}-collapse-content > .@{ant-prefix}-collapse-content-box {
             padding: 0 !important;
         }

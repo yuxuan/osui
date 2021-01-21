@@ -7,7 +7,7 @@ const themeEnv = process.env.THEME;
 const isOsuiTheme = themeEnv === 'osui';
 
 const styleResources = isOsuiTheme ? (
-     [require.resolve('@osui/theme/dist/antd-vars-patch.less')]
+    [require.resolve('@osui/theme/dist/antd-vars-patch.less')]
 ) : (
     [require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less')]
 );

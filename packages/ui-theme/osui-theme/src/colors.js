@@ -378,6 +378,7 @@ exports.presetColors = {
     '--collapse-content-box-padding-bottom': '8px',
     '--collapse-header-height': '32px',
     '--collapse-arrow-top': '7px',
+    '--collapse-disabled-color': 'var(--theme-disabled-color)',
     '--input-error-focus-background-color': 'var(--theme-component-bg)',
     '--input-focus-background-color': 'var(--theme-component-bg)',
     '--input-warning-focus-background-color': 'var(--theme-component-bg)',
