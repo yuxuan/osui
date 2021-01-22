@@ -1,5 +1,11 @@
 # Change log
 
+## 0.10.7
+
+fix: 修复collpase箭头不居中的问题
+## 0.10.6
+
+chore: 修复版本错误
 ## 0.10.5
 
 fix: text-overflow-tooltip支持maxWidth和style props
