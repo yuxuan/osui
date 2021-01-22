@@ -1,26 +1,18 @@
 @osui-collapse-class-prefix: osui-collapse;
 
 .@{osui-collapse-class-prefix} {
-    &.@{ant-prefix}-collapse > .@{ant-prefix}-collapse-item {
-        border-bottom: 1px solid var(--color-gray-4);
-    }
+    &:not(.@{ant-prefix}-collapse-ghost) {
+        &.@{ant-prefix}-collapse > .@{ant-prefix}-collapse-item {
+            border-bottom: 1px solid var(--collapse-border-color);
+        }
 
-    &.@{ant-prefix}-collapse {
-        border: 1px solid var(--color-gray-4);
-        border-bottom: 0;
-    }
+        &.@{ant-prefix}-collapse {
+            border: 1px solid var(--collapse-border-color);
+            border-bottom: 0;
+        }
 
-    .@{ant-prefix}-collapse-content {
-        border-top: 1px solid var(--color-gray-4);
-    }
-
-    &.@{ant-prefix}-collapse > .@{ant-prefix}-collapse-item > .@{ant-prefix}-collapse-header .@{ant-prefix}-collapse-arrow {
-        top: var(--collapse-arrow-top);
-
-        svg {
-            position: absolute;
-            top: 0;
-            right: 0;
+        .@{ant-prefix}-collapse-content {
+            border-top: 1px solid var(--collapse-border-color);
         }
     }
 
@@ -49,7 +41,6 @@
                     top: 0;
                     right: 0;
                 }
-
             }
         }
     }
