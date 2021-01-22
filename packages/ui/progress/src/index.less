@@ -1,6 +1,19 @@
 @osui-progress-class-prefix: osui-progress;
 
 .@{osui-progress-class-prefix} {
+
+    .@{ant-prefix}-progress-text {
+        color: var(--progress-text-color);
+    }
+
+    &.@{ant-prefix}-progress-status-exception .@{ant-prefix}-progress-text {
+        color: var(--theme-error-color);
+    }
+
+    &.@{ant-prefix}-progress-status-success .@{ant-prefix}-progress-text {
+        color: var(--theme-success-color);
+    }
+
     &.@{ant-prefix}-progress-status-active {
         .@{ant-prefix}-progress-bg {
             background-color: var(--theme-secondary-color-active);

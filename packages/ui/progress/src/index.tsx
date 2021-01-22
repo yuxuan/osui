@@ -9,13 +9,16 @@ const clsPrefix = 'osui-progress';
 
 export type ProgressProps = AntdProgressProps;
 
-const Progress: React.FC<ProgressProps> = ({ className, strokeWidth, ...props }) => {
+const Progress: React.FC<ProgressProps> = ({ className, strokeWidth, strokeLinecap, ...props }) => {
     const {brand} = useBrandContext();
     const innerStrokeWidth = strokeWidth ?? (brand === 'icloud' ? 10 : strokeWidth);
+    const innerStrokeLinecap = strokeLinecap ?? (brand === 'icloud' ? 'square' : 'round');
+
     return (
         <AntdProgress
             className={classNames(clsPrefix, className)}
             strokeWidth={innerStrokeWidth}
+            strokeLinecap={innerStrokeLinecap}
             {...props}
         />
     );

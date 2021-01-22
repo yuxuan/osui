@@ -15,6 +15,7 @@ export const Demo = () => {
     );
     return (
         <BrandProvider brand="icloud">
+            <p>说明：progress icon目前不支持替换</p>
             <div style={{ padding: 30 }}>
                 <Wrapper title="初始状态"><Progress percent={0} showInfo={false} /></Wrapper>
                 <Wrapper title="进行中状态"><Progress percent={40} showInfo={false} /></Wrapper>
