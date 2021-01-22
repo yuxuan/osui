@@ -25,6 +25,8 @@ const getModalSize = (size?: Size) => {
             return 600;
         case 'large':
             return 800;
+        default:
+            return 600;
     }
 };
 

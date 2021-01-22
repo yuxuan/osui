@@ -448,7 +448,8 @@ exports.presetColors = {
     '--modal-close-icon-line-height': '40px',
     '--modal-body-border-bottom': '1px solid var(--theme-border-color-split)',
     '--modal-footer-border-top': 'none',
-    '--modal-body-padding': '20px 20px',
+    '--modal-body-padding': '20px 0px',
+    '--modal-body-margin': '0px 20px',
     // 计算公示：100vh - header高度 - footer高度 - 上下要留50px
     '--modal-body-max-height': 'calc(100vh - 40px - 60px - 100px)',
     '--form-item-explain-icon-display': 'none',
