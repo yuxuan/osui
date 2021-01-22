@@ -1,18 +1,8 @@
 @osui-collapse-class-prefix: osui-collapse;
 
 .@{osui-collapse-class-prefix} {
-    &.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
-        top: var(--collapse-arrow-top);
-
-        svg {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-    }
-
-    .@{ant-prefix}-collapse-item {
-        .@{ant-prefix}-collapse-header {
+    &.@{ant-prefix}-collapse > .@{ant-prefix}-collapse-item {
+        & > .@{ant-prefix}-collapse-header {
             color: var(--theme-text-color);
             font-weight: var(--collapse-header-font-weight);
             font-size: 14px;
@@ -20,6 +10,8 @@
             padding-bottom: 0;
             height: var(--collapse-header-height);
             line-height: var(--collapse-header-height);
+            display: flex;
+            align-items: center;
 
             .icon-wrapper {
                 background: var(--collapse-expand-icon-bg);
@@ -27,6 +19,14 @@
                 height: 16px;
                 border-radius: 50%;
                 color: var(--theme-text-color);
+                top: auto;
+
+                svg {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+
             }
         }
     }
