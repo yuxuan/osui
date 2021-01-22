@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "0.10.6",
+    "version": "0.10.7",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -67,7 +67,7 @@
         "@osui/cascader": "^0.10.0",
         "@osui/checkbox": "^0.10.5",
         "@osui/col": "^0.10.0",
-        "@osui/collapse": "^0.10.2",
+        "@osui/collapse": "^0.10.3",
         "@osui/comment": "^0.10.0",
         "@osui/config-provider": "^0.10.0",
         "@osui/date-picker": "^0.10.4",
