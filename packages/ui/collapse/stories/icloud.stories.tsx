@@ -1,6 +1,6 @@
 import React from 'react';
-import Collapse from '@osui/collapse';
 import BrandProvider from '@osui/brand-provider';
+import Collapse from '../src';
 
 const { Panel } = Collapse;
 
