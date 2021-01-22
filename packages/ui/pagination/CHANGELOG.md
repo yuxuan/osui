@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.5](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@0.10.2...@osui/pagination@0.10.5) (2021-01-22)
+
+
+### Bug Fixes
+
+* 调整table,pagination 增加brand context, 来展示对应的分页 ([e0be858](https://gitee.com/yuxuanhuo/osui/tree/master/commits/e0be858d681867a793570807ff93674c53ef3682))
+
+
+
+
+
 ## [0.10.4](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@0.10.2...@osui/pagination@0.10.4) (2021-01-20)
 
 

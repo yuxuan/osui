@@ -1,6 +1,6 @@
 {
     "name": "@osui/text-overflow-tooltip",
-    "version": "0.10.2",
+    "version": "0.10.3",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -71,6 +71,6 @@
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
-        "@osui/tooltip": "^0.10.2"
+        "@osui/tooltip": "^0.10.3"
     }
 }

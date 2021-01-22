@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/date-picker@0.10.0...@osui/date-picker@0.10.4) (2021-01-22)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 修复date-picker suffix color ([fa1ff3c](https://gitee.com/gitee-fe/osui/tree/master/commits/fa1ff3cd4cbf3e9f77cfce0850e28048f1d2dbcd))
+
+
+
+
+
 ## [0.10.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/date-picker@0.10.0...@osui/date-picker@0.10.3) (2021-01-20)
 
 
