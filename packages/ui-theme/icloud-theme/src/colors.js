@@ -370,6 +370,7 @@ exports.presetColors = {
     '--menu-popup-bg': 'var(--theme-component-bg)',
     '--progress-text-color': 'var(--color-gray-9)',
     '--progress-radius': 0,
+    '--progress-circle-text-font-size': '16px',
     '--select-arrow-open-transform-rotate': 'rotate(180deg)',
     '--select-arrow-transition': 'transform .3s, -webkit-transform .3s',
     '--select-item-active-bg': 'var(--theme-secondary-color-hover)',

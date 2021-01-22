@@ -1,6 +1,11 @@
 @osui-progress-class-prefix: osui-progress;
 
 .@{osui-progress-class-prefix} {
+    &.@{ant-prefix}-progress-circle {
+        .@{ant-prefix}-progress-text {
+            font-size: var(--progress-circle-text-font-size) !important;
+        }
+    }
 
     .@{ant-prefix}-progress-text {
         color: var(--progress-text-color);
