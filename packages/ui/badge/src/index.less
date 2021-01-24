@@ -1,26 +1,44 @@
 @osui-back-top-class-prefix: osui-badge;
 
 .@{osui-back-top-class-prefix} {
+    &-count-only {
+        sup.@{ant-prefix}-badge-count {
+            background: transparent;
+            box-shadow: none;
+        }
+    }
 
     &-type {
         &-success {
             .@{ant-prefix}-badge-count {
-                min-width: 40px;
                 background: var(--theme-success-color);
+            }
+            &.@{osui-back-top-class-prefix}-count-only {
+                sup.@{ant-prefix}-badge-count {
+                    color: var(--theme-success-color);
+                }
             }
         }
 
         &-warning {
             .@{ant-prefix}-badge-count {
-                min-width: 40px;
                 background: var(--theme-warning-color);
+            }
+            &.@{osui-back-top-class-prefix}-count-only {
+                sup.@{ant-prefix}-badge-count {
+                    color: var(--theme-warning-color);
+                }
             }
         }
 
         &-error {
             .@{ant-prefix}-badge-count {
-                min-width: 40px;
                 background: var(--theme-error-color);
+            }
+            &.@{osui-back-top-class-prefix}-count-only {
+                sup.@{ant-prefix}-badge-count {
+                    color: var(--theme-error-color);
+                }
             }
         }
 
