@@ -36,5 +36,10 @@ export const Demo = () => {
                 <RadioButton value="d">Chengdu</RadioButton>
                 <RadioButton value="e" disabled>guangzhou</RadioButton>
             </Group>
+            <p>hover的效果需要确认</p>
+            <Group onChange={e => setValueButton(e.target.value)} value={valueButton} buttonStyle="solid">
+                <RadioButton type="primary" value="a">Hangzhou</RadioButton>
+                <RadioButton value="b">Shanghai</RadioButton>
+            </Group>
         </div>);
 };

@@ -1,6 +1,23 @@
 @osui-radio-class-prefix: osui-radio;
 
 .@{osui-radio-class-prefix} {
+    &.ant-radio-wrapper {
+        margin-right: var(--radio-wrapper-margin-right);
+    }
+
+    span.ant-radio + * {
+        padding-left: var(--radio-span-padding-horizantol);
+        padding-right: var(--radio-span-padding-horizantol);
+    }
+
+    .@{ant-prefix}-radio-inner {
+        border-color: var(--radio-border-color);
+    }
+
+    .@{ant-prefix}-radio-checked .@{ant-prefix}-radio-inner {
+        border-color: var(--theme-primary-color);
+    }
+
     // 没选中时hover的效果
     .@{ant-prefix}-radio-wrapper:hover .@{ant-prefix}-radio,
     .@{ant-prefix}-radio:hover .@{ant-prefix}-radio-inner {
@@ -28,13 +45,17 @@
     .@{ant-prefix}-radio-disabled:hover .@{ant-prefix}-radio-inner,
     .@{ant-prefix}-radio-disabled .@{ant-prefix}-radio-inner,
     .@{ant-prefix}-radio-button-disabled {
-        border-color: var(--theme-border-color-disabled) !important;
+        border-color: var(--radio-disabled-border-color) !important;
         background-color: var(--radio-disabled-bg);
     }
 
     // disable时checked的效果
+    .@{ant-prefix}-radio-disabled .@{ant-prefix}-radio-inner::after {
+        background-color: var(--radio-disabled-dot-color)
+    }
+
     .@{ant-prefix}-radio-disabled.@{ant-prefix}-radio-checked::after {
-        border-color: var(--theme-border-color-disabled);
+        border-color: var(--radio-disabled-border-color);
     }
 
     .@{ant-prefix}-radio.@{ant-prefix}-radio-checked:not(.@{ant-prefix}-radio-disabled):focus .@{ant-prefix}-radio-inner {
