@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
 import Menu from '@osui/menu';
+import TextOverflowTooltip from '@osui/text-overflow-tooltip';
 import Breadcrumb from '../src';
 
 export default {
@@ -178,3 +179,33 @@ export const Dropdown = () => {
         </>
     );
 };
+
+export const EllipsisText = () => {
+    return (
+        <>
+            <p>当使用TextOverflowTooltip的时候，需要调整一下a标签的布局居中</p>
+            <Breadcrumb>
+                <Breadcrumb.Item>
+                    <a href="">一级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="" style={{display: 'inline-flex', 'alignItems': 'center'}}>
+                        <TextOverflowTooltip maxWidth={50} title="名字特别长的时候需要hover上去才显示">
+                            名字特别长的时候需要hover上去才显示
+                        </TextOverflowTooltip>
+                    </a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">三级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">四级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">末级页面名称</a>
+                </Breadcrumb.Item>
+            </Breadcrumb>
+        </>
+    );
+
+}
