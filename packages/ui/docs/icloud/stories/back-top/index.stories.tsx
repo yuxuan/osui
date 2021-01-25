@@ -8,8 +8,9 @@ export default {
 export const Demo = () => {
     return (
         <div style={{padding: 30, height: 1800}}>
-            <BackTop style={{right: 200}} />
-            <BackTop type="circle" />
+            <BackTop style={{paddingRight: '200px'}} />
+            <BackTop type="circle" style={{paddingRight: '120px'}} />
+            <BackTop transparent />
             <p>BackTop 回到顶部</p>
             <p>往下滚才能看到我哟</p>
         </div>

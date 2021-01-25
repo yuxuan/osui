@@ -15,10 +15,15 @@ export const Demo = () => {
     );
     return (
         <BrandProvider brand="icloud">
+            <p>说明：progress icon目前不支持替换</p>
+            {/* eslint-disable-next-line react/no-unescaped-entities*/}
+            <p>注意：已完成的状态需要加<code>status="normal"</code></p>
             <div style={{ padding: 30 }}>
                 <Wrapper title="初始状态"><Progress percent={0} showInfo={false} /></Wrapper>
-                <Wrapper title="进行中状态"><Progress percent={40} showInfo={false} /></Wrapper>
+                <Wrapper title="进行中状态"><Progress percent={40} showInfo={false} status="normal" /></Wrapper>
+                <Wrapper title="已完成"><Progress percent={100} showInfo={false} status="normal" /></Wrapper>
                 <Wrapper title="完成常驻"><Progress percent={100} showInfo={false} /></Wrapper>
+                <Wrapper title="报错状态"><Progress percent={40} status="exception" showInfo={false} /></Wrapper>
                 <Wrapper title="报错状态"><Progress percent={40} status="exception" showInfo={false} /></Wrapper>
             </div>
         </BrandProvider>
@@ -64,6 +69,8 @@ export const Circle = () => {
                 <br />
                 <Wrapper title="进行中状态"><Progress type="circle" percent={40} showInfo={false} /></Wrapper>
                 <br />
+                <Wrapper title="已完成"><Progress type="circle" percent={100} showInfo={false} status="normal" /></Wrapper>
+                <br />
                 <Wrapper title="完成常驻"><Progress type="circle" percent={100} showInfo={false} /></Wrapper>
                 <br />
                 <Wrapper title="报错状态">
@@ -89,6 +96,8 @@ export const CircleInfo = () => {
                 <br />
                 <Wrapper title="进行中状态"><Progress type="circle" percent={40} /></Wrapper>
                 <br />
+                <Wrapper title="已完成"><Progress type="circle" percent={100} status="normal" /></Wrapper>
+                <br />
                 <Wrapper title="完成常驻"><Progress type="circle" percent={100} /></Wrapper>
                 <br />
                 <Wrapper title="报错状态">
@@ -96,5 +105,14 @@ export const CircleInfo = () => {
                 </Wrapper>
             </div>
         </BrandProvider>
+    );
+};
+
+export const ProgressAction = () => {
+    return (
+        <>
+            <p>待补充组件：含操作的进度条</p>
+            <p>见设计文档</p>
+        </>
     );
 };
