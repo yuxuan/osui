@@ -1,19 +1,75 @@
 import React, {useState} from 'react';
+import Button from '@osui/button';
+import Space from '@osui/space';
 import Steps from '../src';
 
 export default {
     title: '验收中/Steps 步骤条',
-    component: Steps,
 };
 
 export const Demo = () => {
     const {Step} = Steps;
-    const [current, setCurrent] = useState(0);
+    const {Step: ProcessOnlyStep} = Steps.ProcessOnlySteps;
+    const [current, setCurrent] = useState(-1);
     return (
-        <Steps current={current} onChange={step => setCurrent(step)} type="navigation">
-            <Step title="Step 1" />
-            <Step title="Step 2" />
-            <Step title="Step 3" />
-        </Steps>
+        <>
+            <p>点击底部下一步上一步按钮，可以查看完成状态</p>
+            <p>以下为带完成状态的Steps，UE规范中没有，不建议使用</p>
+            <Steps current={current}>
+                <Step title="Step 1" />
+                <Step title="Step 2" />
+                <Step title="Step 3" />
+            </Steps>
+            <br />
+            <br />
+            <p>以下为ProcessOnlyStepSteps， 注意：需要使用Steps.ProcessOnlySteps</p>
+            <Steps.ProcessOnlySteps current={current}>
+                <ProcessOnlyStep title="Step 1" />
+                <ProcessOnlyStep title="Step 2" />
+                <ProcessOnlyStep title="Step 3" />
+            </Steps.ProcessOnlySteps>
+            <br />
+            <br />
+            <p>以下为箭头分割的Steps</p>
+            <p>注意：箭头形式下，使用navigation，hover效果已经取消</p>
+            <Steps.ProcessOnlySteps current={current} type="navigation">
+                <ProcessOnlyStep title="Step 1" />
+                <ProcessOnlyStep title="Step 2" />
+                <ProcessOnlyStep title="Step 3" />
+            </Steps.ProcessOnlySteps>
+            <br />
+            <br />
+            <p>以下为垂直形式</p>
+            <Steps.ProcessOnlySteps current={current} direction="vertical">
+                <ProcessOnlyStep title="Step 1" description="This is a description." />
+                <ProcessOnlyStep title="Step 2" description="This is a description." />
+                <ProcessOnlyStep title="Step 3" description="This is a description." />
+            </Steps.ProcessOnlySteps>
+            <Space>
+                <Button onClick={() => setCurrent(step => step + 1)}>下一步</Button>
+                <Button onClick={() => setCurrent(step => step - 1)}>上一步</Button>
+            </Space>
+        </>
+    );
+};
+
+export const ErrorStatusDemo = () => {
+    const ProcessOnlySteps = Steps.ProcessOnlySteps;
+    const {Step} = ProcessOnlySteps;
+    const [current, setCurrent] = useState(-1);
+    return (
+        <>
+            <ProcessOnlySteps current={current}>
+                <Step title="Step 1" />
+                <Step title="Step 2" />
+                <Step title="Step 3" status="error" />
+            </ProcessOnlySteps>
+            <br />
+            <br />
+            <Space>
+                <Button onClick={() => setCurrent(step => step + 1)}>下一步</Button>
+                <Button onClick={() => setCurrent(step => step - 1)}>上一步</Button>
+            </Space>
+        </>
     );
 };

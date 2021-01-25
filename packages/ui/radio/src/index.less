@@ -6,8 +6,8 @@
     }
 
     span.ant-radio + * {
-        padding-left: var(--radio-span-padding-horizantol);
-        padding-right: var(--radio-span-padding-horizantol);
+        padding-right: var(--radio-span-padding-horizontal);
+        padding-left: var(--radio-span-padding-horizontal);
     }
 
     .@{ant-prefix}-radio-inner {
@@ -21,8 +21,8 @@
     // 没选中时hover的效果
     .@{ant-prefix}-radio-wrapper:hover .@{ant-prefix}-radio,
     .@{ant-prefix}-radio:hover .@{ant-prefix}-radio-inner {
-        border-color: var(--radio-hover-border-color);
         background: var(--radio-hover-bg);
+        border-color: var(--radio-hover-border-color);
     }
 
     // checked时hover border的颜色
@@ -45,13 +45,13 @@
     .@{ant-prefix}-radio-disabled:hover .@{ant-prefix}-radio-inner,
     .@{ant-prefix}-radio-disabled .@{ant-prefix}-radio-inner,
     .@{ant-prefix}-radio-button-disabled {
-        border-color: var(--radio-disabled-border-color) !important;
         background-color: var(--radio-disabled-bg);
+        border-color: var(--radio-disabled-border-color) !important;
     }
 
     // disable时checked的效果
     .@{ant-prefix}-radio-disabled .@{ant-prefix}-radio-inner::after {
-        background-color: var(--radio-disabled-dot-color)
+        background-color: var(--radio-disabled-dot-color);
     }
 
     .@{ant-prefix}-radio-disabled.@{ant-prefix}-radio-checked::after {
@@ -78,9 +78,9 @@
             &:not(.@{ant-prefix}-radio-button-wrapper-disabled):not(.@{ant-prefix}-radio-button-wrapper-checked) {
                 &:hover {
                     // 这里是hover时左侧border的颜色，osui需要与button边框颜色一致，而icloud需要变色
+                    z-index: var(--radio-hover-border-zindex);
                     border: 1px solid var(--radio-hover-border-color);
                     border-left: 0;
-                    z-index: var(--radio-hover-border-zindex);
 
                     &::before {
                         background: var(--radio-hover-border-color);
