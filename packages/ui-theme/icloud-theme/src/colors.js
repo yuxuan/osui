@@ -482,5 +482,7 @@ exports.presetColors = {
     '--badge-count-padding': '0 4px',
     '--breadcrumb-last-child-font-weight': '600',
     '--button-min-width': '68px',
+    '--timeline-dot-size': '8px',
+    '--timeline-item-content-margin-left': '18px',
     ...buttonColors,
 };
