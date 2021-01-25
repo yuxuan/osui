@@ -18,23 +18,23 @@
 
     .@{ant-prefix}-collapse-item {
         .@{ant-prefix}-collapse-header {
+            display: flex;
+            align-items: center;
+            height: var(--collapse-header-height);
+            padding-top: 0;
+            padding-bottom: 0;
             color: var(--theme-text-color);
             font-weight: var(--collapse-header-font-weight);
             font-size: 14px;
-            padding-top: 0;
-            padding-bottom: 0;
-            height: var(--collapse-header-height);
             line-height: var(--collapse-header-height);
-            display: flex;
-            align-items: center;
 
             .icon-wrapper {
-                background: var(--collapse-expand-icon-bg);
+                top: auto;
                 width: 16px;
                 height: 16px;
-                border-radius: 50%;
                 color: var(--theme-text-color);
-                top: auto;
+                background: var(--collapse-expand-icon-bg);
+                border-radius: 50%;
 
                 svg {
                     position: absolute;
@@ -58,24 +58,23 @@
 }
 
 .content-padding(@content-padding-left) {
-    padding-left: @content-padding-left;
     padding-top: var(--collapse-content-box-padding-top);
     padding-bottom: var(--collapse-content-box-padding-bottom);
+    padding-left: @content-padding-left;
 }
 
 // 对层级的控制
 .nest(@level, @content-padding, @icon-padding) {
     .@{osui-collapse-class-prefix}-level-@{level} {
-        .@{ant-prefix}-collapse {
+        .@{ant-prefix}-collapse:not(.ant-collapse-ghost) {
             border-top: 0;
-            border-left: 0;
             border-right: 0;
+            border-left: 0;
 
             > .@{ant-prefix}-collapse-item:last-child {
                 border-bottom: 0;
             }
         }
-
 
         &.@{ant-prefix}-collapse-item > .@{ant-prefix}-collapse-content > .@{ant-prefix}-collapse-content-box {
             padding: 0 !important;
