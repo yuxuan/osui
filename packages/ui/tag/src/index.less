@@ -1,12 +1,14 @@
 @osui-tag-class-prefix: osui-tag;
 
 .@{osui-tag-class-prefix} {
-    border: 1px solid transparent;
     padding: var(--tag-padding);
+    border: 1px solid transparent;
 
-    svg {
-        font-size: 12px;
+    > svg.osui-icon {
         height: 12px;
+        margin-right: var(--tag-icon-maring-horizantol);
+        color: var(--tag-icon-color);
+        font-size: 12px;
     }
 
     &:hover {
@@ -14,7 +16,14 @@
     }
 
     .@{ant-prefix}-tag-close-icon {
-        color: var(--theme-text-color);
+        margin-left: var(--tag-icon-maring-horizantol);
+        color: var(--tag-icon-color);
+        line-height: 14px;
+        vertical-align: middle;
+
+        svg.osui-icon {
+            height: 12px;
+        }
     }
 
     &.@{ant-prefix}-tag-blue {
@@ -67,9 +76,9 @@
     border: 2px solid transparent;
 
     &.@{ant-prefix}-tag-checkable-checked {
+        color: @text-color;
         background: var(--color-brand-1);
         border: 2px solid var(--color-brand-4);
-        color: @text-color;
     }
 }
 
@@ -86,7 +95,9 @@
 
 .@{osui-tag-class-prefix}-round {
     &.@{ant-prefix}-tag {
-        border-radius: 14px;
+        height: 20px;
         padding: 0 10px;
+        line-height: 20px;
+        border-radius: 14px;
     }
 }

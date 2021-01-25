@@ -25,7 +25,7 @@ interface TagInterface extends React.FC<TagProps> {
 
 const Tag: TagInterface = props => {
     const {closeIcon} = props;
-    const patchedIcon = closeIcon || <IconCloseOutlined />;
+    const patchedIcon = closeIcon ?? <IconCloseOutlined />;
     const classnames = classNames(
         clsPrefix,
         props.className,

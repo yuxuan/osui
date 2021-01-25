@@ -439,6 +439,8 @@ exports.presetColors = {
     '--tag-yellow-solid-bg-color': 'var(--tag-yellow-color)',
     '--tag-yellow-font-color': 'var(--tag-font-color)',
     '--tag-padding': '0 7px',
+    '--tag-icon-color': 'var(--theme-text-color)',
+    '--tag-icon-maring-horizantol': '4px',
     '--tooltip-bg': 'var(--color-gray-9)',
     '--tooltip-color': 'var(--color-gray-1)',
     '--pagination-item-border-color': 'var(--color-gray-5)',

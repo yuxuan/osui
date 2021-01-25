@@ -14,7 +14,7 @@ export const Demo = () => {
             {/* success */}
             <Divider orientation="left">基本</Divider>
             <Tag>标签</Tag>
-            <Tag className={'osui-tag-dome-dashed'} icon={<IconPlusOutlined style={{marginRight: '4px'}} />}>
+            <Tag className={'osui-tag-dome-dashed'} icon={<IconPlusOutlined />}>
                 标签
             </Tag>
             <Tag
