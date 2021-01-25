@@ -70,3 +70,30 @@
         }
     }
 }
+
+// ==================== Compact 模式 ====================
+
+.@{osui-steps-class-prefix}-compact {
+    &.@{ant-prefix}-steps.@{ant-prefix}-steps-horizontal.osui-steps {
+        display: block;
+    }
+
+    &.@{ant-prefix}-steps-navigation .@{ant-prefix}-steps-item-container {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .@{ant-prefix}-steps-horizontal:not(.@{ant-prefix}-steps-label-vertical) .@{ant-prefix}-steps-item {
+        padding-left: 10px;
+
+        &:first-child {
+            .@{ant-prefix}-steps-item-container {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .@{ant-prefix}-steps-navigation .@{ant-prefix}-steps-item::after {
+        margin-left: -4px;
+    }
+}

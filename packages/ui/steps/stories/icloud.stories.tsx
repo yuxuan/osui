@@ -73,3 +73,31 @@ export const ErrorStatusDemo = () => {
         </>
     );
 };
+
+export const CompactDemo = () => {
+    const {Step: ProcessOnlyStep} = Steps.ProcessOnlySteps;
+    const [current, setCurrent] = useState(-1);
+    return (
+        <>
+            <p>当需要展示很多步时</p>
+            <Steps.ProcessOnlySteps current={current} compact type="navigation">
+                <ProcessOnlyStep title="Step 1" />
+                <ProcessOnlyStep title="Step 2" />
+                <ProcessOnlyStep title="Step 3" />
+                <ProcessOnlyStep title="Step 4" />
+                <ProcessOnlyStep title="Step 5" />
+                <ProcessOnlyStep title="Step 6" />
+                <ProcessOnlyStep title="Step 7" />
+                <ProcessOnlyStep title="Step 8" />
+                <ProcessOnlyStep title="Step 9" />
+                <ProcessOnlyStep title="Step 10" />
+            </Steps.ProcessOnlySteps>
+            <br />
+            <br />
+            <Space>
+                <Button onClick={() => setCurrent(step => step + 1)}>下一步</Button>
+                <Button onClick={() => setCurrent(step => step - 1)}>上一步</Button>
+            </Space>
+        </>
+    );
+};

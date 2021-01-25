@@ -9,26 +9,29 @@ import './index.less';
 
 const clsPrefix = 'osui-steps';
 
-interface StepsInterface extends React.FC<AntdStepsProps> {
+export interface StepProps extends AntdStepsProps {
+    compact?: boolean;
+}
+
+interface StepsInterface extends React.FC<StepProps> {
     Step: typeof AntdSteps.Step;
     ProcessOnlySteps: typeof ProcessOnlySteps;
 }
 
-const Steps: StepsInterface = ({className, ...props}) => {
-    const innerClassName = classNames(className, clsPrefix);
+const Steps: StepsInterface = ({className, compact, ...props}) => {
+    const innerClassName = classNames(className, clsPrefix, {[`${clsPrefix}-compact`]: compact});
     return <AntdSteps className={innerClassName} {...props} />;
 };
 
 Steps.Step = AntdSteps.Step;
 
 // ==================== ProcessOnlyStep ====================
-interface ProcessOnlyStepsInterface extends React.FC<AntdStepsProps> {
+interface ProcessOnlyStepsInterface extends React.FC<StepProps> {
     Step: typeof ProcessOnlyStep;
 }
 
-const ProcessOnlySteps: ProcessOnlyStepsInterface = ({className, ...props}) => {
-    const innerClassName = classNames(className, clsPrefix);
-    return <AntdSteps className={innerClassName} {...props} />;
+const ProcessOnlySteps: ProcessOnlyStepsInterface = props => {
+    return <Steps {...props} />;
 };
 
 const ProcessOnlyStep: React.FC<AntdStepProps> = props => {
