@@ -8,7 +8,7 @@ import './index.less';
 const clsPrefix = 'osui-button';
 
 export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
-    type?: ButtonType | 'strong' | 'only-icon';
+    type?: ButtonType | 'strong' | 'icon';
     /**
      * @description 表示success状态的button
      */
@@ -35,19 +35,23 @@ export interface ButtonInterface extends React.ForwardRefExoticComponent<ButtonP
 
 /* eslint-disable complexity */
 const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
-    {type = 'default', loading, icon, style, disabled, flexCenter, ...props}, ref
+    {type = 'default', loading, icon, disabled, flexCenter, ...props}, ref
 ) => {
     let innerIcon = icon;
-    let innerStyle = style;
+    let shouldMinWidth = true;
 
     // 当loading且有icon的button时，icon替换成spinner，不论什么情况都要保持后面的chidlren
     if (loading && icon) {
         innerIcon = <IconLoading3QuartersOutlined className={`${clsPrefix}-icon-spinner ${clsPrefix}-keep-children`} />;
     }
-    // 当loading但没有icon时，children替换成spinner，且最小宽度保留88，根据主题保留或者隐藏children
+    // 当loading但没有icon时，children替换成spinner，根据主题保留或者隐藏children。
+    // osc的文字按钮loading时，文字替换成loading icon；而icloud主题则是保留icon和文字
     if (loading && !icon) {
         innerIcon = <IconLoading3QuartersOutlined className={`${clsPrefix}-icon-spinner`} />;
-        innerStyle = {minWidth: 88, ...style};
+    }
+    // 当类型为icon或者button仅有icon属性时，不保留最小宽度
+    if (type === 'icon' || icon) {
+        shouldMinWidth = false;
     }
 
     const {success, error, danger, warning} = props;
@@ -68,12 +72,12 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
                         [`${clsPrefix}-face-error`]: error || danger,
                         [`${clsPrefix}-face-warning`]: warning,
                         [`${clsPrefix}-flex-center`]: flexCenter,
+                        [`${clsPrefix}-min-width`]: shouldMinWidth,
                     }
                 )
             }
             icon={innerIcon}
             disabled={!!loading || disabled}
-            style={innerStyle}
         />
     );
 };

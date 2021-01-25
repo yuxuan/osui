@@ -1,6 +1,6 @@
 @osui-button-class-prefix: osui-button;
 
-@button-types: default, strong, primary, link, only-icon;
+@button-types: default, strong, primary, link, icon;
 
 .button-color-mixin(@color; @background; @border-color) {
     color: @color;
@@ -87,8 +87,8 @@
 
         &:active {
             color: ~"var(--theme-@{face}-color-hover)";
-            border-color: ~"var(--theme-@{face}-color-hover)";
             background-color: ~"var(--color-@{face}-1)";
+            border-color: ~"var(--theme-@{face}-color-hover)";
         }
     }
 
@@ -102,15 +102,15 @@
         }
 
         &:focus {
+            color: var(--color-gray-1);
             background-color: ~"var(--theme-@{face}-color)";
             border-color: ~"var(--theme-@{face}-color)";
-            color: var(--color-gray-1);
         }
 
         &:active {
+            color: var(--color-gray-1);
             background-color: ~"var(--theme-@{face}-color-active)";
             border-color: ~"var(--theme-@{face}-color-active)";
-            color: var(--color-gray-1);
         }
     }
 
@@ -120,7 +120,9 @@
 .generate-face();
 
 .@{osui-button-class-prefix} {
-    min-width: var(--button-min-width);
+    &-min-width {
+        min-width: var(--button-min-width);
+    }
 
     &-flex-center {
         display: inline-flex;
@@ -132,8 +134,8 @@
     }
 
     &.@{ant-prefix}-btn {
-        transition: none;
         border-radius: var(--btn-border-radius-base);
+        transition: none;
     }
 
     // loading的时候隐藏spinner后面的内容，除非强制keep-children
@@ -156,7 +158,7 @@
     }
 
     // 只有icon的时候居中icon
-    &.@{ant-prefix}-btn-only-icon {
+    &.@{ant-prefix}-btn-icon-only {
         display: inline-flex;
         align-items: center;
         justify-content: center;
