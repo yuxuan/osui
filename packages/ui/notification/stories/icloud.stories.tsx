@@ -3,7 +3,7 @@ import Button from '@osui/button';
 import notification from '../src';
 
 export default {
-    title: '未实现/Notification',
+    title: '未实现/Notification 通知提醒框',
     component: Notification,
 };
 

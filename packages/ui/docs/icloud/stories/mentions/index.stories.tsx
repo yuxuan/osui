@@ -2,12 +2,32 @@ import React from 'react';
 import Mentions from '@osui/mentions';
 
 export default {
-    title: '未实现/Mentions',
+    title: '未实现/Mentions 提及',
     component: Mentions,
 };
 
 export const Demo = () => {
+
+    const { Option } = Mentions;
+
+    function onChange(value) {
+        console.log('Change:', value);
+    }
+
+    function onSelect(option) {
+        console.log('select', option);
+    }
+
     return (
-        <Mentions />
+        <Mentions
+            style={{ width: '100%' }}
+            onChange={onChange}
+            onSelect={onSelect}
+            defaultValue="@afc163"
+        >
+            <Option value="afc163">afc163</Option>
+            <Option value="zombieJ">zombieJ</Option>
+            <Option value="yesmeck">yesmeck</Option>
+        </Mentions>
     );
 };

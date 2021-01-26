@@ -1,13 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Button from '@osui/button';
 import Affix from '../src';
 
 export default {
-    title: '未实现/Affix',
+    title: '未实现/Affix 固钉',
     component: Affix,
 };
 
 export const Demo = () => {
-    return (
-        <Affix />
-    );
+
+    const Demo: React.FC = () => {
+        const [top, setTop] = useState(10);
+        const [bottom, setBottom] = useState(10);
+
+        return (
+            <>
+                <Affix offsetTop={top}>
+                    <Button type="primary" onClick={() => setTop(top + 10)}>
+                        Affix top
+                    </Button>
+                </Affix>
+                <br />
+                <Affix offsetBottom={bottom}>
+                    <Button type="primary" onClick={() => setBottom(bottom + 10)}>
+                        Affix bottom
+                    </Button>
+                </Affix>
+            </>
+        );
+    };
+
+    return (<Demo />);
 };
