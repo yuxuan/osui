@@ -143,7 +143,7 @@
         display: var(--btn-loading-text-display);
     }
 
-    &-icon-spinner {
+    &-icon-spinner.osui-icon.svg {
         vertical-align: -3px;
         animation: osui-icon-spin 1s infinite linear;
     }
@@ -162,6 +162,11 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+    }
+
+    // 去掉primary的box-shadow
+    &.ant-btn-primary {
+        box-shadow: none;
     }
 }
 
