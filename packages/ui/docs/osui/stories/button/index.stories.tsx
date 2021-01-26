@@ -53,11 +53,11 @@ export const Demo = () => {
             </div>
             <Gap factor={2} orientation="vertical" />
             <div style={{display: 'flex'}}>
-                <Button type="only-icon" icon={<IconSearchOutlined />} />
+                <Button type="icon" icon={<IconSearchOutlined />} />
                 <Gap factor={2} orientation="horizontal" />
-                <Button type="only-icon" disabled icon={<IconSearchOutlined />} />
+                <Button type="icon" disabled icon={<IconSearchOutlined />} />
                 <Gap factor={2} orientation="horizontal" />
-                <Button type="only-icon" loading icon={<IconSearchOutlined />} />
+                <Button type="icon" loading icon={<IconSearchOutlined />} />
             </div>
             <Gap factor={2} orientation="vertical" />
             <div style={{display: 'flex'}}>
@@ -110,8 +110,8 @@ export const Group = () => {
             <br />
             <p>如果需要Group内的button等宽，需要自行设置min-width，例如：</p>
             <Button.Group>
-                <Button style={{minWidth: 75}}>Cancel</Button>
-                <Button style={{minWidth: 75}}>Ok</Button>
+                <Button style={{minWidth: 88}}>Cancel</Button>
+                <Button style={{minWidth: 88}}>Ok</Button>
             </Button.Group>
         </>
     );

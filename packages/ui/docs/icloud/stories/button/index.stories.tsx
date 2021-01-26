@@ -32,14 +32,14 @@ export const Demo = () => {
                 <Button type="link" disabled style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
             </div>
             <div>
-                <Button icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
                 <Button loading icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
                 <Button disabled icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
             </div>
             <div>
-                <Button type="only-icon" icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                <Button type="only-icon" loading icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                <Button type="only-icon" disabled icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button type="icon" icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button type="icon" loading icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button type="icon" disabled icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
             </div>
             <div>
                 <p>当icon和文字一起的时候，如果对不齐，可以添加flexCenter属性，如果导致同行不齐，外面包裹div display: flex</p>
