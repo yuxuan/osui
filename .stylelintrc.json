@@ -1,0 +1,6 @@
+{
+    "extends": [
+        "@ecomfe/stylelint-config",
+        "stylelint-config-rational-order"
+    ]
+}

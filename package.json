@@ -33,6 +33,7 @@
         "lerna": "^3.22.1",
         "mkdirp": "^1.0.4",
         "rimraf": "^3.0.2",
+        "stylelint-config-rational-order": "^0.1.2",
         "typescript": "^3.9.7"
     },
     "husky": {
