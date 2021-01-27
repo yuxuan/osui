@@ -1,5 +1,68 @@
 # Change log
 
+## 0.10.8
+
+Breaking Change: 目前由于是内部试用阶段，breaking的修改不单独调整版本。未来正式版会注意。带来不变敬请谅解。
+
+Button：
+- 删除only-icon类型，更换为type="icon"，因为<Button icon={<Xxxx/>} /> 时，antd会添加class icon-ony。容易混淆。icon的用法为 <Button type="icon" icon=<Xxxx> />
+
+------
+
+Modal：
+- 字号调整，标题14px，内容12px
+- 调整底部border
+- 调整不传入width时的default宽度
+
+Progress：
+- 增加已完成状态的Demo
+- 调整circel内的字体大小
+- 调整circel的边缘变为方形
+
+Drawer：
+- 去掉标题下分割线
+- footer操作按钮padding-right: 20px
+
+Collapse：
+- 字号调整为12px
+- 描边调整，修复重复border的问题
+- 禁用状态颜色调整
+
+Breadcrumb
+- 调整最后一级加粗
+- 调整hover link字体颜色
+
+Badge
+- 徽标大小、padding调整
+- 添加文字徽标，通过type表明成功、失败、警告类型
+- 取消进行中动效
+- 增加仅文字的demo
+
+Backtop
+- 修复滚到页面上BackTop不消失的问题
+- 增加transparent效果
+- 调整大小
+
+Steps
+- 调整背景颜色等样式
+- 增加compact模式
+- 增加line形式
+- 增加垂直的demo
+
+Timeline
+- 样式调整
+
+Tag
+- 样式调整
+
+Radio
+- 样式调整
+
+Button
+- 增加min-width，osc的min-width为68px
+- 删除only-icon类型，更换为type="icon"，因为<Button icon={<Xxxx/>} /> 时，antd会添加class icon-ony。容易混淆。icon的用法为 <Button type="icon" icon=<Xxxx> />
+- 调整了primary类型的box-shadow
+
 ## 0.10.7
 
 fix: 修复collpase箭头不居中的问题
