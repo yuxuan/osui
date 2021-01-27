@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.10.5...@osui/table@0.10.6) (2021-01-27)
+
+**Note:** Version bump only for package @osui/table
+
+
+
+
+
 ## [0.10.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.10.2...@osui/table@0.10.5) (2021-01-22)
 
 

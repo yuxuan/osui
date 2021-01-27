@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/markdown@0.10.0...@osui/markdown@0.10.1) (2021-01-27)
+
+
+### Bug Fixes
+
+* 调整drawer icloud样式 ([7ce38a4](https://gitee.com/gitee-fe/osui/tree/master/commits/7ce38a4406014d384a432be4c74bb9d49a05e072))
+
+
+
+
+
 # [0.10.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/markdown@0.10.0-beta.0...@osui/markdown@0.10.0) (2021-01-04)
 
 **Note:** Version bump only for package @osui/markdown

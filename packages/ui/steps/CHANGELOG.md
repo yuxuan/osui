@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/steps@0.10.0...@osui/steps@0.10.1) (2021-01-27)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* steps ([ad5f6e7](https://gitee.com/gitee-fe/osui/tree/master/commits/ad5f6e798690a5872d1fc08e74807dd370d07d9f))
+* 增加steps compact模式 ([ff34bba](https://gitee.com/gitee-fe/osui/tree/master/commits/ff34bba1121d4c6434f32579eef046240d0b8806))
+* 补齐antd组件, 补齐文档 ([b6c76a8](https://gitee.com/gitee-fe/osui/tree/master/commits/b6c76a864b121479e151a97e926546f3370d0aed))
+
+
+
+
+
 # [0.10.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/steps@0.10.0-beta.0...@osui/steps@0.10.0) (2021-01-04)
 
 **Note:** Version bump only for package @osui/steps

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/drawer@0.10.1...@osui/drawer@0.10.2) (2021-01-27)
+
+
+### Bug Fixes
+
+* 调整drawer icloud样式 ([7ce38a4](https://gitee.com/gitee-fe/osui/tree/master/commits/7ce38a4406014d384a432be4c74bb9d49a05e072))
+* 调整table,pagination 增加brand context, 来展示对应的分页 ([e0be858](https://gitee.com/gitee-fe/osui/tree/master/commits/e0be858d681867a793570807ff93674c53ef3682))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/drawer@0.10.0...@osui/drawer@0.10.1) (2021-01-12)
 
 

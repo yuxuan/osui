@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/badge@0.10.0...@osui/badge@0.10.1) (2021-01-27)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 调整Badge icloud主题样式 ([d93b3d2](https://gitee.com/gitee-fe/osui/tree/master/commits/d93b3d22fa6944e2ced97e53d3f0c8f01c341fe1))
+* 调整drawer icloud样式 ([7ce38a4](https://gitee.com/gitee-fe/osui/tree/master/commits/7ce38a4406014d384a432be4c74bb9d49a05e072))
+* 调整徽标 ([5fbd1a5](https://gitee.com/gitee-fe/osui/tree/master/commits/5fbd1a5f77fab7174b8d85b9bf6767eb0a29c8c2))
+
+
+
+
+
 # [0.10.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/badge@0.10.0-beta.0...@osui/badge@0.10.0) (2021-01-04)
 
 **Note:** Version bump only for package @osui/badge

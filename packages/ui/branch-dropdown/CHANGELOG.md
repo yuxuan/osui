@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.3](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/branch-dropdown@0.10.2...@osui/branch-dropdown@0.10.3) (2021-01-27)
+
+**Note:** Version bump only for package @osui/branch-dropdown
+
+
+
+
+
 ## [0.10.2](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/branch-dropdown@0.10.1...@osui/branch-dropdown@0.10.2) (2021-01-12)
 
 

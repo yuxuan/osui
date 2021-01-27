@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.10.6...@osui/icloud-theme@0.10.7) (2021-01-27)
+
+
+### Bug Fixes
+
+* back-top icloud主题调整 ([3ef1dfa](https://gitee.com/gitee-fe/osui/tree/master/commits/3ef1dfaa94864794c3f415a956dd4dc1c9e4925b))
+* button 调整 ([0708751](https://gitee.com/gitee-fe/osui/tree/master/commits/070875170ee669348608ef52b15b123a086bfa46))
+* radio样式修复 ([2aa9fe2](https://gitee.com/gitee-fe/osui/tree/master/commits/2aa9fe2aa48da62d9d48e778d067ba4172885e44))
+* steps ([ad5f6e7](https://gitee.com/gitee-fe/osui/tree/master/commits/ad5f6e798690a5872d1fc08e74807dd370d07d9f))
+* tag icloud ([3c58fee](https://gitee.com/gitee-fe/osui/tree/master/commits/3c58feec4ab531520d611499b0c4eeff49824fbb))
+* timeline ([a1c0e0b](https://gitee.com/gitee-fe/osui/tree/master/commits/a1c0e0bbca8db04b4c28335f9f0a3a71c25431fc))
+* 整体字号调整 ([2f3e08e](https://gitee.com/gitee-fe/osui/tree/master/commits/2f3e08ed896e2fc5bfa489f15b0e6fca52f53aa2))
+* 调整Badge icloud主题样式 ([d93b3d2](https://gitee.com/gitee-fe/osui/tree/master/commits/d93b3d22fa6944e2ced97e53d3f0c8f01c341fe1))
+* 调整breadcrumb icloud样式 ([af29cbc](https://gitee.com/gitee-fe/osui/tree/master/commits/af29cbc361f62da1b1679a4ed73e4c1362c36ee0))
+* 调整collapse icloud样式 ([2b99f10](https://gitee.com/gitee-fe/osui/tree/master/commits/2b99f10fd49b4e5bd016a6de38ea79101543616b))
+* 调整collapse icloud样式 ([02c65fd](https://gitee.com/gitee-fe/osui/tree/master/commits/02c65fd9c7b6c500b7644ce1065f73bc54bf42d2))
+* 调整modal icloud样式 ([38d2e4d](https://gitee.com/gitee-fe/osui/tree/master/commits/38d2e4dc4dee2829061d4083bec0dbc584ddb0e3))
+
+
+
+
+
 ## [0.10.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.10.2...@osui/icloud-theme@0.10.6) (2021-01-22)
 
 

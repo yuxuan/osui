@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/breadcrumb@0.10.0...@osui/breadcrumb@0.10.1) (2021-01-27)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* breadcrumb补充demo文档 ([9a0ec54](https://gitee.com/gitee-fe/osui/tree/master/commits/9a0ec54b769dfea4025fefbdb66edf1c927c65c1))
+* 补齐antd组件, 补齐文档 ([b6c76a8](https://gitee.com/gitee-fe/osui/tree/master/commits/b6c76a864b121479e151a97e926546f3370d0aed))
+* 调整breadcrumb icloud样式 ([af29cbc](https://gitee.com/gitee-fe/osui/tree/master/commits/af29cbc361f62da1b1679a4ed73e4c1362c36ee0))
+
+
+
+
+
 # [0.10.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/breadcrumb@0.10.0-beta.0...@osui/breadcrumb@0.10.0) (2021-01-04)
 
 **Note:** Version bump only for package @osui/breadcrumb

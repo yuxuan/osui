@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/collapse@0.10.3...@osui/collapse@0.10.4) (2021-01-27)
+
+
+### Bug Fixes
+
+* collpase border ([1730740](https://gitee.com/gitee-fe/osui/tree/master/commits/17307405e4b055a2a8eb8439b776213308bd54f4))
+* 调整collapse icloud样式 ([2b99f10](https://gitee.com/gitee-fe/osui/tree/master/commits/2b99f10fd49b4e5bd016a6de38ea79101543616b))
+* 调整collapse icloud样式 ([02c65fd](https://gitee.com/gitee-fe/osui/tree/master/commits/02c65fd9c7b6c500b7644ce1065f73bc54bf42d2))
+
+
+
+
+
 ## [0.10.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/collapse@0.10.2...@osui/collapse@0.10.3) (2021-01-22)
 
 

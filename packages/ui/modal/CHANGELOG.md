@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.10.5...@osui/modal@0.10.6) (2021-01-27)
+
+
+### Bug Fixes
+
+* 调整modal icloud样式 ([38d2e4d](https://gitee.com/gitee-fe/osui/tree/master/commits/38d2e4dc4dee2829061d4083bec0dbc584ddb0e3))
+
+
+
+
+
 ## [0.10.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.10.2...@osui/modal@0.10.5) (2021-01-22)
 
 

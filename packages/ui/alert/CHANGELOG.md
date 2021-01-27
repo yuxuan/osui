@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/alert@0.10.1...@osui/alert@0.10.2) (2021-01-27)
+
+
+### Bug Fixes
+
+* 调整Badge icloud主题样式 ([d93b3d2](https://gitee.com/gitee-fe/osui/tree/master/commits/d93b3d22fa6944e2ced97e53d3f0c8f01c341fe1))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/alert@0.10.0...@osui/alert@0.10.1) (2021-01-12)
 
 

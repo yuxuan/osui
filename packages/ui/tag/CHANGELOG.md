@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tag@0.10.1...@osui/tag@0.10.2) (2021-01-27)
+
+
+### Bug Fixes
+
+* steps ([ad5f6e7](https://gitee.com/gitee-fe/osui/tree/master/commits/ad5f6e798690a5872d1fc08e74807dd370d07d9f))
+* tag icloud ([3c58fee](https://gitee.com/gitee-fe/osui/tree/master/commits/3c58feec4ab531520d611499b0c4eeff49824fbb))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tag@0.10.0...@osui/tag@0.10.1) (2021-01-12)
 
 
