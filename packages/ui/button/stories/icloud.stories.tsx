@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconSearchOutlined, IconHomeOutlined } from '@osui/icons';
+import { IconSearchOutlined, IconHomeOutlined, IconPlusOutlined } from '@osui/icons';
 import Space from '@osui/space';
 import Button from '../src';
 
@@ -57,6 +57,28 @@ export const Demo = () => {
     );
 };
 
+export const Size = () => {
+    return (
+        <>
+            <Space size="small">
+                <Button size="small">确定</Button>
+                <Button size="small" icon={<IconPlusOutlined />}>确定</Button>
+            </Space>
+            <br />
+            <br />
+            <Space size="small">
+                <Button size="middle">确定</Button>
+                <Button size="middle" icon={<IconPlusOutlined />}>确定</Button>
+            </Space>
+            <br />
+            <br />
+            <Space size="small">
+                <Button size="large">确定</Button>
+                <Button size="large" icon={<IconPlusOutlined />}>确定</Button>
+            </Space>
+        </>
+    );
+}
 export const Group = () => {
     return (
         <>

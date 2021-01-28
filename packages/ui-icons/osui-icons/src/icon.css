@@ -1,9 +1,9 @@
 .osui-icon {
     display: inline-block;
     width: auto;
-    height: 16px; /* osui规范16px */
-    fill: currentColor;
+    height: var(--osui-icon-size, 16px); /* osui规范16px */
     vertical-align: -.125em;
+    fill: currentColor;
 }
 
 .osui-icon-spin {

@@ -1,11 +1,17 @@
+/* eslint-disable complexity */
 import React, {useContext} from 'react';
 import {Table as AntdTable} from 'antd';
 import {ConfigContext} from 'antd/es/config-provider';
-import {TableProps as AntdTableProps, TablePaginationConfig as AntdTablePaginationConfig} from 'antd/es/table';
+import {
+    TableProps as AntdTableProps,
+    TablePaginationConfig as AntdTablePaginationConfig
+} from 'antd/es/table';
 import {PaginationProps} from 'antd/es/pagination';
+import { ExpandableConfig, TableRowSelection } from 'antd/es/table/interface';
 import classNames from 'classnames';
 import {customPaginationProps} from '@osui/pagination';
 import {useBrandContext} from '@osui/brand-provider';
+import {IconDownOutlined, IconRightOutlined} from '@osui/icons';
 import '@osui/pagination/es/index.less';
 import './index.less';
 
@@ -31,6 +37,40 @@ const paginationPostion = (position: AntdTablePaginationConfig['position']) => {
     return 'right';
 };
 // Record的用法是因为用object报错提示
+
+// 用于控制expandable
+const expandableConfig = (
+    expandable: ExpandableConfig<any>,
+    rowSelection?: TableRowSelection<any>
+): ExpandableConfig<any> => (
+    {
+        ...expandable,
+        // 如果有rowSelect，expand放在rowSelection后面
+        expandIconColumnIndex: expandable.expandIconColumnIndex ?? (rowSelection && 1),
+        columnWidth: '12px',
+        expandIcon: (
+            expandable.expandIcon ?? (
+                ({expanded, onExpand, record }) => (
+                    expanded
+                        ? (
+                            <IconDownOutlined
+                                className={`${clsPrefix}-icloud-expandableIcon`}
+                                // eslint-disable-next-line react/jsx-no-bind
+                                onClick={(e: any) => onExpand(record, e)}
+                            />
+                        )
+                        : (
+                            <IconRightOutlined
+                                className={`${clsPrefix}-icloud-expandableIcon`}
+                                // eslint-disable-next-line react/jsx-no-bind
+                                onClick={(e: any) => onExpand(record, e)}
+                            />
+                        )
+                ))
+        ),
+    }
+);
+
 function Table<RecordType extends Record<string, any>>(
     {
         className,
@@ -40,6 +80,7 @@ function Table<RecordType extends Record<string, any>>(
         // 表格是否没有border
         noBorder = false,
         pagination,
+        expandable,
         ...props
     }: TableProps<RecordType>
 ) {
@@ -53,8 +94,12 @@ function Table<RecordType extends Record<string, any>>(
         clsPrefix,
         className,
         { [`${clsPrefix}-no-row-border`]: noRowBorder },
-        { [`${clsPrefix}-no-border`]: noBorder }
+        { [`${clsPrefix}-no-border`]: noBorder },
+        // icloud-patch
+        { [`${clsPrefix}-icloud`]: brand === 'icloud'}
     );
+
+    // ==================== pagination ====================
     // 允许传入null
     let innerPagination: boolean | AntdTablePaginationConfig = !(pagination === false || pagination === null);
 
@@ -75,12 +120,19 @@ function Table<RecordType extends Record<string, any>>(
         };
     }
 
+    // ==================== expandable ====================
+    let innerExpandable = expandable;
+    if (brand === 'icloud') {
+        innerExpandable = expandable && expandableConfig(expandable, props.rowSelection);
+    }
+
     return (
         <AntdTable<RecordType>
             {...props}
             className={internalClassNames}
             bordered={internalBordered}
             pagination={innerPagination}
+            expandable={innerExpandable}
         />
     );
 }

@@ -33,7 +33,6 @@ export interface ButtonInterface extends React.ForwardRefExoticComponent<ButtonP
     __ANT_BUTTON: boolean;
 }
 
-/* eslint-disable complexity */
 const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     {type = 'default', loading, icon, disabled, flexCenter, ...props}, ref
 ) => {
