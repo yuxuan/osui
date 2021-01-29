@@ -56,7 +56,7 @@ export const CountDownDemo = () => {
         <Alert
             message="弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。"
             onClose={() => {console.log('closed');}}
-            countDown={5}
+            countDown={50}
         />
     );
 };

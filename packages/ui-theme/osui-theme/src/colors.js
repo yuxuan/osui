@@ -357,6 +357,7 @@ exports.presetColors = {
     '--alert-padding': '8px 20px 8px 37px', // antd 默认值
     '--alert-no-icon-padding': '8px 15px',
     '--alert-icon-padding-right': '8px',
+    '--alert-close-icon-margin-left': '8px',
     '--message-alert-success-bg-color': 'var(--theme-component-bg)',
     '--message-alert-warning-bg-color': 'var(--theme-component-bg)',
     '--message-alert-error-bg-color': 'var(--theme-component-bg)',

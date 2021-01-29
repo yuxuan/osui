@@ -334,6 +334,7 @@ exports.presetColors = {
     '--alert-padding': '8px 10px 8px 40px',
     '--alert-no-icon-padding': '8px 20px',
     '--alert-icon-padding-right': '10px',
+    '--alert-close-icon-margin-left': '10px',
     '--message-alert-success-bg-color': 'var(--alert-success-bg-color)',
     '--message-alert-warning-bg-color': 'var(--alert-warning-bg-color)',
     '--message-alert-error-bg-color': 'var(--alert-error-bg-color)',

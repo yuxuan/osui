@@ -10,7 +10,12 @@ import {
     ConfigOptions,
 } from 'antd/es/message';
 import Alert, {AlertProps} from '@osui/alert';
-import {IconCheckCircleFilled, IconCloseCircleFilled, IconInfoCircleFilled, IconExclamationCircleFilled} from '@osui/icons';
+import {
+    IconCheckCircleFilled,
+    IconCloseCircleFilled,
+    IconInfoCircleFilled,
+    IconExclamationCircleFilled,
+} from '@osui/icons';
 import './index.less';
 
 const clsPrefix = 'osui-message';
