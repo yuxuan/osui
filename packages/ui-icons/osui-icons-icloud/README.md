@@ -1,19 +1,19 @@
-# osui-icons
+# icloud-icons
 
 ## Installation
 
 ```shell
-npm i @osui/icons
+npm i @osui/icons-icloud
 ```
 
 ```shell
-yarn add @osui/icons
+yarn add @osui/icons-icloud
 ```
 
 ## Usage
 
 ```jsx
-import { IconVerticalAlignTopOutlined } from '@osui/icons'
+import { IconVerticalAlignTopOutlined } from '@osui/icons-icloud'
 
 export default function Title() {
   return (

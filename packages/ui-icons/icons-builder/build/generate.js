@@ -15,10 +15,11 @@ const svgo = new Svgo({
 });
 
 const ENDPOINT = process.env.DLS_ICONS_API;
-// 硬编码与osui-icons绑在了一起
-const RAW_DIR = path.resolve(__dirname, '../../osui-icons', 'raw');
-const RAW_COLORFUL_DIR = path.resolve(__dirname, '../../osui-icons', 'colorfulRaw');
-const SVG_DIR = path.resolve(__dirname, '../../osui-icons', 'svg');
+const TARGET = process.argv[2] === 'osui' ? 'osui-icons' : 'osui-icons-icloud';
+
+const RAW_DIR = path.resolve(__dirname, `../../${TARGET}`, 'raw');
+// const RAW_COLORFUL_DIR = path.resolve(__dirname, `../../${TARGET}`, 'colorfulRaw');
+const SVG_DIR = path.resolve(__dirname, `../../${TARGET}`, 'svg');
 const ICON_PATTERN = /^(.+)\.svg$/;
 const MODULE_TPL = fs.readFileSync(
     path.resolve(__dirname, 'component.tpl'),
@@ -35,7 +36,7 @@ const DECLARE_TPL = fs.readFileSync(
     'utf8'
 );
 
-const ICON_PACKS = ['osui-icons'];
+const ICON_PACKS = ['osui-icons', 'osui-icons-icloud'];
 
 function getPackDir(name) {
     return path.resolve(__dirname, `../../${name}`);
@@ -58,7 +59,6 @@ function walkElement(el, { enter, leave }) {
 }
 
 async function getSVGFiles(DIR, { keepSvgFill = false }) {
-    // ENDPOINT 如果有COLORFUL的怎么办
     if (ENDPOINT) {
         const { data } = JSON.parse(await fetch(ENDPOINT).then(res => res.text()));
 
@@ -198,7 +198,7 @@ async function generate() {
 
     Promise.all([
         await getSVGFiles(RAW_DIR, { keepSvgFill: false }),
-        await getSVGFiles(RAW_COLORFUL_DIR, { keepSvgFill: true }),
+        // await getSVGFiles(RAW_COLORFUL_DIR, { keepSvgFill: true }),
     ])
         .then(svgs => flatten(svgs).map(
             async ({ slug, content, keepSvgFill }) => {

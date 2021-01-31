@@ -1,12 +1,12 @@
 {
-  "name": "@osui/icons",
+  "name": "@osui/icons-icloud",
   "version": "0.10.1",
-  "description": "OSUI icons",
+  "description": "OSUI icons icloud-theme",
   "author": {
     "name": "zhanglili01,huoyuxuan,lisiqi06,guyiling"
   },
   "scripts": {
-    "build": "yarn workspace @osui/icons-builder generate osui && sh scripts/build.sh",
+    "build": "yarn workspace @osui/icons-builder generate icloud && sh scripts/build.sh",
     "build-icons-only": "sh scripts/build.sh",
     "prepublishOnly": "npm run build",
     "clean": "rm -rf dist && rm -rf node_modules"

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>表格/表头/正序</title>
+    <g id="表格/表头/正序" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="正序">
+            <rect id="矩形" x="0" y="0" width="12" height="12"></rect>
+            <polygon id="07icon/排序/正序" fill="#108CEE" transform="translate(6.000000, 6.000000) scale(1, -1) translate(-6.000000, -6.000000) " points="6 1 5.3 1.703 2.5 4.514 3.2 5.217 5.505 2.903 5.505 11 6.495 11 6.495 2.903 8.8 5.217 9.5 4.514 6.7 1.703"></polygon>
+        </g>
+    </g>
+</svg>

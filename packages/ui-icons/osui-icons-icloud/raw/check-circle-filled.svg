@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>警告提示/成功</title>
+    <defs>
+        <polygon id="path-1" points="0 0 12 0 12 11.9999 0 11.9999"></polygon>
+    </defs>
+    <g id="警告提示/成功" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-1">
+            <g id="Group-3">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M12,5.9999 C12,9.3139 9.313,11.9999 6,11.9999 C2.687,11.9999 0,9.3139 0,5.9999 C0,2.6869 2.687,-0.0001 6,-0.0001 C9.313,-0.0001 12,2.6869 12,5.9999" id="Fill-1" fill="#5FB333" mask="url(#mask-2)"></path>
+            </g>
+            <polygon id="Stroke-4" fill="#FFFFFF" fill-rule="nonzero" points="2.81841588 5.29290911 5.64641588 8.12190911 4.93918412 8.82889089 2.11118412 5.99989089"></polygon>
+            <polygon id="Stroke-6" fill="#FFFFFF" fill-rule="nonzero" points="9.1816109 3.17178233 9.8887891 3.87881767 4.9397891 8.82881767 4.2326109 8.12178233"></polygon>
+        </g>
+    </g>
+</svg>
