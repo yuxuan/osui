@@ -280,7 +280,7 @@ exports.presetColors = {
     '--theme-bg-color-base': 'var(--color-gray-4)',
     '--theme-bg-color-light': 'var(--color-brand-1)',
     '--theme-body-bg': 'var(--color-gray-1)',
-    '--theme-border-color-base': 'var(--color-gray-5)',
+    '--theme-border-color-base': 'var(--color-gray-6)',
     '--theme-border-color-inverse': '#fff',
     '--theme-border-color-split': 'var(--color-gray-4)',
     '--theme-border-color-disabled': 'var(--theme-border-color-base)',

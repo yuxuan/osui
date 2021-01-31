@@ -15,14 +15,14 @@
             display: var(--form-item-explain-icon-display);
             width: 16px;
             height: 16px;
+            margin-right: 2px;
+            vertical-align: middle;
+            background-color: var(--theme-error-color);
             content: '';
             -webkit-mask: url('./error.svg') no-repeat 50% 50%;
             mask: url('./error.svg') no-repeat 50% 50%;
             -webkit-mask-size: cover;
             mask-size: cover;
-            background-color: var(--theme-error-color);
-            vertical-align: middle;
-            margin-right: 2px;
         }
     }
 
@@ -31,14 +31,14 @@
             display: var(--form-item-explain-icon-display);
             width: 16px;
             height: 16px;
+            margin-right: 2px;
+            vertical-align: middle;
+            background-color: var(--theme-warning-color);
             content: '';
             -webkit-mask: url('./warning.svg') no-repeat 50% 50%;
             mask: url('./warning.svg') no-repeat 50% 50%;
             -webkit-mask-size: cover;
             mask-size: cover;
-            background-color: var(--theme-warning-color);
-            vertical-align: middle;
-            margin-right: 2px;
         }
     }
 
@@ -47,15 +47,15 @@
             display: var(--form-item-explain-icon-display);
             width: 16px;
             height: 16px;
+            margin-right: 2px;
+            vertical-align: middle;
+            background-color: var(--theme-text-color);
+            animation: osui-icon-spin 1s infinite linear;
             content: '';
             -webkit-mask: url('./spinner.svg') no-repeat 50% 50%;
             mask: url('./spinner.svg') no-repeat 50% 50%;
             -webkit-mask-size: cover;
             mask-size: cover;
-            background-color: var(--theme-text-color);
-            vertical-align: middle;
-            margin-right: 2px;
-            animation: osui-icon-spin 1s infinite linear;
         }
     }
     // status
@@ -86,8 +86,8 @@
     }
 
     .@{ant-prefix}-form-item-extra {
-        color: var(--theme-placeholder-color);
         margin-top: 6px;
+        color: var(--theme-placeholder-color);
         font-size: 12px;
     }
 
@@ -98,11 +98,11 @@
 
         .@{ant-prefix}-form-item-explain {
             position: absolute;
-            left: 100%;
-            padding-left: 10px;
             bottom: 4px;
+            left: 100%;
             width: 50%;
             max-width: 200px;
+            padding-left: 10px;
         }
     }
 
