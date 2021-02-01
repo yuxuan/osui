@@ -52,7 +52,7 @@ export interface SeacrhSelectListProps extends AntdPooverProps{
     popoverClassName?: string;
     btnClassName?: string;
     placeholder?: string;
-    btnName?: string;
+    btnName?: string | React.ReactNode;
     menuList?: any[];
     selectlist?: any[];
     defaultMenuSelect?: string;
