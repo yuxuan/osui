@@ -78,7 +78,8 @@ export const Size = () => {
             </Space>
         </>
     );
-}
+};
+
 export const Group = () => {
     return (
         <>

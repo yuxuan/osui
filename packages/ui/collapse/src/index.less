@@ -25,7 +25,7 @@
             padding-bottom: 0;
             color: var(--theme-text-color);
             font-weight: var(--collapse-header-font-weight);
-            font-size: 14px;
+            font-size: var(--collapse-header-font-size);
             line-height: var(--collapse-header-height);
 
             .icon-wrapper {
@@ -46,6 +46,10 @@
     }
 
     .@{ant-prefix}-collapse-item.@{ant-prefix}-collapse-item-disabled {
+        .@{ant-prefix}-collapse-header {
+            background-color: var(--collapse-content-bg);
+        }
+
         .@{ant-prefix}-collapse-header,
         .@{ant-prefix}-collapse-arrow {
             color: var(--collapse-disabled-color);
