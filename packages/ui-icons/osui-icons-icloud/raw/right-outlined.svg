@@ -1,3 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1024 1024">
-  <path fill="#333" fill-rule="evenodd" d="M830.4471,330.224636 C845.443232,316.591788 869.756768,316.591788 884.7529,330.224636 C899.749033,343.857484 899.749033,365.960698 884.7529,379.593546 L539.1529,693.775364 C524.156768,707.408212 499.843232,707.408212 484.8471,693.775364 L139.2471,379.593546 C124.250967,365.960698 124.250967,343.857484 139.2471,330.224636 C154.243232,316.591788 178.556768,316.591788 193.5529,330.224636 L512,619.721999 L830.4471,330.224636 Z" transform="matrix(0 1 1 0 0 0)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>箭头-右</title>
+    <g id="箭头-右" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Shape" fill="#999999" fill-rule="nonzero" transform="translate(4.000000, 6.000000) rotate(-90.000000) translate(-4.000000, -6.000000) " points="8.47272728 2 4 6.79999999 -0.47272728 2 -2 3.6 4 10 10 3.6"></polygon>
+    </g>
 </svg>
