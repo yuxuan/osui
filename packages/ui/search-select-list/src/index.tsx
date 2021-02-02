@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 import {Popover, Menu} from 'antd';
 import {PopoverProps as AntdPooverProps} from 'antd/es/popover';
 import classNames from 'classnames';
@@ -54,12 +54,13 @@ export interface SeacrhSelectListProps extends AntdPooverProps{
     placeholder?: string;
     btnName?: string | React.ReactNode;
     menuList?: any[];
-    allowClear?:boolean;
+    allowClear?: boolean;
     selectlist?: any[];
     defaultMenuSelect?: string;
     handleClickItem: (item: any) => void;
     handleSearch: (val: any) => void;
     handleClickMenu?: (key: any) => void;
+    dropdownRender?: (originNode: React.ReactNode) => React.ReactNode;
 }
 const SeacrhSelectList: React.FC<SeacrhSelectListProps> = props => {
     const {
@@ -74,16 +75,20 @@ const SeacrhSelectList: React.FC<SeacrhSelectListProps> = props => {
         handleSearch,
         handleClickMenu,
         allowClear,
+        dropdownRender,
     } = props;
     let menu = null;
 
     const [searchVal, setSearchVal] = React.useState();
+
     function handleChangeSearch(e: any) {
         setSearchVal(e.target.value);
     }
+
     function handleSearchFunc() {
         handleSearch(searchVal);
     }
+
     // menuList 存在，则赋默认menu值，若没有则第一个为默认
     if (menuList && menuList.length) {
         const selectSelectedKey = defaultMenuSelect ? [`${defaultMenuSelect}`] : [menuList[0].value];
@@ -99,6 +104,16 @@ const SeacrhSelectList: React.FC<SeacrhSelectListProps> = props => {
             </Menu>
         );
     }
+
+    const selectItems = useMemo(() => (selectlist ? selectlist.map(item => (
+        <LiItem
+            handleClickItem={handleClickItem}
+            label={item.label}
+            value={item.value}
+            key={item.value}
+        />
+    )) : null), [selectlist, handleClickItem]);
+
     const content = (
         <div className="select-list-wrap">
             <div className="input-box">
@@ -111,16 +126,7 @@ const SeacrhSelectList: React.FC<SeacrhSelectListProps> = props => {
                 />
             </div>
             <ul className="list-box">
-                {
-                    selectlist && selectlist.length && selectlist.map(item => (
-                        <LiItem
-                            handleClickItem={handleClickItem}
-                            label={item.label}
-                            value={item.value}
-                            key={item.value}
-                        />
-                    ))
-                }
+                {dropdownRender ? dropdownRender(selectItems) : selectItems}
             </ul>
         </div>
     );
