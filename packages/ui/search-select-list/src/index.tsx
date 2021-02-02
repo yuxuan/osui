@@ -14,16 +14,18 @@ const clsPreBtnfix = 'osui-search-select-list-button';
  * selectList的每个选项
  * todo, icon应该定义成什么类型，之后和btn样式一起修改，btn也需要icon
  */
-export interface LiItemProps{
+export interface LiItemProps {
     label: string;
     value: string;
     icon?: any;
     handleClickItem: (item: any) => void;
 }
+
 const LiItem: React.FC<LiItemProps> = props => {
     function handleClickItem() {
         props.handleClickItem(props);
     }
+
     return (
         <li
             onClick={handleClickItem}
@@ -37,18 +39,18 @@ const LiItem: React.FC<LiItemProps> = props => {
 };
 
 /**
-* popoverClassName:popover的className
-* btnClassName:button的className
-* placeholder:input搜索的placeholder内容
-* btnName:按钮的名称
-* menuList:导航列表，若不传的话就没有上面的导航列表
-* selectlist:下拉选项列表
-* defaultMenuSelect:默认选中的menu
-* handleClickItem:点击menu回传的函数
-* handleSearch:点击搜索回传的函数
-* handleClickMenu:点击下拉选项回传的函数
-*/
-export interface SeacrhSelectListProps extends AntdPooverProps{
+ * popoverClassName:popover的className
+ * btnClassName:button的className
+ * placeholder:input搜索的placeholder内容
+ * btnName:按钮的名称
+ * menuList:导航列表，若不传的话就没有上面的导航列表
+ * selectlist:下拉选项列表
+ * defaultMenuSelect:默认选中的menu
+ * handleClickItem:点击menu回传的函数
+ * handleSearch:点击搜索回传的函数
+ * handleClickMenu:点击下拉选项回传的函数
+ */
+export interface SeacrhSelectListProps extends AntdPooverProps {
     popoverClassName?: string;
     btnClassName?: string;
     placeholder?: string;
@@ -60,9 +62,14 @@ export interface SeacrhSelectListProps extends AntdPooverProps{
     handleClickItem: (item: any) => void;
     handleSearch: (val: any) => void;
     handleClickMenu?: (key: any) => void;
-    dropdownRender?: (originNode: React.ReactNode) => React.ReactNode;
+    dropdownRender?: (selectlist: any[]) => React.ReactNode;
 }
-const SeacrhSelectList: React.FC<SeacrhSelectListProps> = props => {
+
+interface SeacrhSelectListInterface extends React.FC<SeacrhSelectListProps> {
+    LiItem: typeof LiItem;
+}
+
+const SeacrhSelectList: SeacrhSelectListInterface = props => {
     const {
         popoverClassName,
         btnClassName,
@@ -126,7 +133,7 @@ const SeacrhSelectList: React.FC<SeacrhSelectListProps> = props => {
                 />
             </div>
             <ul className="list-box">
-                {dropdownRender ? dropdownRender(selectItems) : selectItems}
+                {dropdownRender ? dropdownRender(selectlist || []) : selectItems}
             </ul>
         </div>
     );
@@ -144,5 +151,7 @@ const SeacrhSelectList: React.FC<SeacrhSelectListProps> = props => {
         </>
     );
 };
+
+SeacrhSelectList.LiItem = LiItem;
 
 export default SeacrhSelectList;
