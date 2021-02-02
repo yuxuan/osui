@@ -89,10 +89,10 @@ export const Confirm = () => {
         Modal.confirm({
             content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
             onOk() {
-                console.log('OK');
+                console.log('确定');
             },
             onCancel() {
-                console.log('Cancel');
+                console.log('取消');
             },
         });
     }
@@ -101,10 +101,10 @@ export const Confirm = () => {
         Modal.success({
             content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
             onOk() {
-                console.log('OK');
+                console.log('确定');
             },
             onCancel() {
-                console.log('Cancel');
+                console.log('取消');
             },
         });
     }
@@ -113,10 +113,10 @@ export const Confirm = () => {
         Modal.error({
             content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
             onOk() {
-                console.log('OK');
+                console.log('确定');
             },
             onCancel() {
-                console.log('Cancel');
+                console.log('取消');
             },
         });
     }
@@ -125,10 +125,10 @@ export const Confirm = () => {
         Modal.warning({
             content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
             onOk() {
-                console.log('OK');
+                console.log('确定');
             },
             onCancel() {
-                console.log('Cancel');
+                console.log('取消');
             },
         });
     }
@@ -137,10 +137,10 @@ export const Confirm = () => {
         Modal.info({
             content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
             onOk() {
-                console.log('OK');
+                console.log('确定');
             },
             onCancel() {
-                console.log('Cancel');
+                console.log('取消');
             },
         });
     }
@@ -198,10 +198,10 @@ export const confirmWithPromise = () => {
             icon: <IconExclamationCircleFilled />,
             content: 'Some descriptions',
             onOk() {
-                console.log('OK');
+                console.log('确定');
             },
             onCancel() {
-                console.log('Cancel');
+                console.log('取消');
             },
         });
     }
@@ -224,14 +224,12 @@ export const confirmWithPromise = () => {
             title: 'Are you sure delete this task?',
             icon: <IconExclamationCircleFilled />,
             content: 'Some descriptions',
-            okText: 'Yes',
             okType: 'danger',
-            cancelText: 'No',
             onOk() {
-                console.log('OK');
+                console.log('确定');
             },
             onCancel() {
-                console.log('Cancel');
+                console.log('取消');
             },
         });
     }
@@ -241,17 +239,15 @@ export const confirmWithPromise = () => {
             title: 'Are you sure delete this task?',
             icon: <IconExclamationCircleFilled />,
             content: 'Some descriptions',
-            okText: 'Yes',
             okType: 'danger',
             okButtonProps: {
                 disabled: true,
             },
-            cancelText: 'No',
             onOk() {
-                console.log('OK');
+                console.log('确定');
             },
             onCancel() {
-                console.log('Cancel');
+                console.log('取消');
             },
         });
     }

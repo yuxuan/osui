@@ -1,7 +1,6 @@
 import React from 'react';
 import Input from '@osui/input';
 import Button from '@osui/button';
-import Checkbox from '@osui/checkbox';
 import Radio from '@osui/radio';
 import InputNumber from '@osui/input-number';
 import BrandProvider from '@osui/brand-provider';
@@ -14,7 +13,7 @@ export default {
 export const Demo = () => {
     const layout = {
         labelCol: {
-            span: 6,
+            span: 4,
         },
         wrapperCol: {
             span: 18,
@@ -23,7 +22,7 @@ export const Demo = () => {
 
     const tailLayout = {
         wrapperCol: {
-            offset: 6,
+            offset: 4,
             span: 18,
         },
     };
@@ -39,6 +38,8 @@ export const Demo = () => {
     return (
         <>
             <strong>注意: BrandProvider应该是App级别的，不是组件级别的</strong>
+            <br />
+            <br />
             <BrandProvider brand="icloud">
                 <Form
                     {...layout}
@@ -73,10 +74,6 @@ export const Demo = () => {
                         ]}
                     >
                         <Input.Password />
-                    </Form.Item>
-
-                    <Form.Item {...tailLayout} name="remember" valuePropName="checked">
-                        <Checkbox>Remember me</Checkbox>
                     </Form.Item>
                     <Form.Item {...tailLayout}>
                         <Button type="primary" htmlType="submit">
