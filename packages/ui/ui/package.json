@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "0.10.8",
+    "version": "0.10.9",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -102,7 +102,7 @@
         "@osui/rate": "^0.10.0",
         "@osui/result": "^0.10.0",
         "@osui/row": "^0.10.0",
-        "@osui/search-select-list": "^0.10.1",
+        "@osui/search-select-list": "^0.11.0",
         "@osui/select": "^0.10.1",
         "@osui/skeleton": "^0.10.0",
         "@osui/slider": "^0.10.0",

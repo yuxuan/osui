@@ -1,5 +1,15 @@
 # Change log
 
+## 0.10.9
+
+SearchSelectList:
+- 支持自由扩展下拉菜单
+- 修复空数组时反显为0的问题
+- render方法改为传入数据
+- 导出LiItem自定义render
+- 增加input输入框可清除功能
+- btnName支持React.ReactNode是否会更好些
+
 ## 0.10.8
 
 Breaking Change: 目前由于是内部试用阶段，breaking的修改不单独调整版本。未来正式版会注意。带来不变敬请谅解。

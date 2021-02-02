@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/search-select-list@0.10.1...@osui/search-select-list@0.11.0) (2021-02-02)
+
+
+### Bug Fixes
+
+* 优化 SeacrhSelectListProps 的传入类型 ([78dee7c](https://gitee.com/gitee-fe/osui/tree/master/commits/78dee7c3473e25e4cf762d78dcaf3a7bb1458a73))
+
+
+### Features
+
+* **search-select-list:** render方法改为传入数据，导出LiItem自定义render ([4e7d13e](https://gitee.com/gitee-fe/osui/tree/master/commits/4e7d13ecd6a9c0c74275dc552a1b81d30016e4d4))
+* **search-select-list:** 增加input输入框可清除功能 ([ed9ed80](https://gitee.com/gitee-fe/osui/tree/master/commits/ed9ed80753b7e89b25d0d00b62e3a846be7e0881))
+* **search-select-list:** 支持自由扩展下拉菜单，修复空数组时反显为0的问题 ([4b8ca3f](https://gitee.com/gitee-fe/osui/tree/master/commits/4b8ca3f0f0012ea8762d154f804fd22830f3fad0))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/search-select-list@0.10.0...@osui/search-select-list@0.10.1) (2021-01-12)
 
 
