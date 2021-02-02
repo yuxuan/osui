@@ -52,8 +52,9 @@ export interface SeacrhSelectListProps extends AntdPooverProps{
     popoverClassName?: string;
     btnClassName?: string;
     placeholder?: string;
-    btnName?: string;
+    btnName?: string | React.ReactNode;
     menuList?: any[];
+    allowClear?:boolean;
     selectlist?: any[];
     defaultMenuSelect?: string;
     handleClickItem: (item: any) => void;
@@ -72,6 +73,7 @@ const SeacrhSelectList: React.FC<SeacrhSelectListProps> = props => {
         handleClickItem,
         handleSearch,
         handleClickMenu,
+        allowClear,
     } = props;
     let menu = null;
 
@@ -105,6 +107,7 @@ const SeacrhSelectList: React.FC<SeacrhSelectListProps> = props => {
                     value={searchVal}
                     onChange={handleChangeSearch}
                     suffix={<IconSearchOutlined onClick={handleSearchFunc} />}
+                    allowClear={allowClear}
                 />
             </div>
             <ul className="list-box">
