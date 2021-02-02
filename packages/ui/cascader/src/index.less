@@ -1,1 +1,32 @@
 @osui-cascader-class-prefix: osui-cascader;
+
+.@{osui-cascader-class-prefix} {
+    min-width: 240px;
+
+    &-label-divider-icon {
+        margin: 0 5px;
+        color: var(--color-gray-6);
+    }
+
+    .@{ant-prefix}-cascader-picker-label {
+        padding: 0 30px 0 10px;
+    }
+
+    // ==================== Menu ====================
+    &-menu {
+        &.ant-cascader-menu,
+        &.ant-cascader-menus .ant-cascader-menu {
+            min-width: 100px;
+        }
+
+        .@{ant-prefix}-cascader-menu-item-active:not(.@{ant-prefix}-cascader-menu-item-disabled),
+        .@{ant-prefix}-cascader-menu-item-active:not(.@{ant-prefix}-cascader-menu-item-disabled):hover {
+            color: var(--theme-primary-color);
+            background-color: var(--theme-component-bg);
+
+            .@{ant-prefix}-cascader-menu-item-expand-icon {
+                color: var(--theme-primary-color);
+            }
+        }
+    }
+}
