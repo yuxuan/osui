@@ -1,5 +1,8 @@
 # Change log
 
+##
+调整对@osui/icons的依赖：
+- 单包组件移除@osui/icons的依赖，更改为@osui/theme，@osui/icloud-theme对icon的依赖，原因是，不同主题对应的icon包不同，若组件中依赖需要依赖两个不同的包
 ## 0.10.9
 
 SearchSelectList:

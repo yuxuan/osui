@@ -62,7 +62,6 @@
     "license": "MIT",
     "dependencies": {
         "@osui/button": "^0.10.3",
-        "@osui/icons": "^0.10.1",
         "classnames": "^2.2.6"
     },
     "publishConfig": {

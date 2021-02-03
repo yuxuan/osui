@@ -63,7 +63,6 @@
     "license": "MIT",
     "dependencies": {
         "@osui/alert": "^0.10.2",
-        "@osui/icons": "^0.10.1",
         "classnames": "^2.2.6",
         "lodash.partial": "^4.2.1"
     },

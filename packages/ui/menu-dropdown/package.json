@@ -67,7 +67,6 @@
     },
     "dependencies": {
         "@osui/dropdown": "^0.10.4",
-        "@osui/icons": "^0.10.1",
         "@osui/menu": "^0.10.3",
         "@osui/toggle-button": "^0.10.1",
         "classnames": "^2.2.6"
