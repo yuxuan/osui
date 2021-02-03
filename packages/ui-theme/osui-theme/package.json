@@ -1,6 +1,6 @@
 {
   "name": "@osui/theme",
-  "version": "0.10.7",
+  "version": "0.10.8",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -52,6 +52,6 @@
   },
   "gitHead": "904178b6c0bb86963017122daa529580decb66e8",
   "dependencies": {
-    "@osui/icons": "^0.10.1"
+    "@osui/icons": "^0.10.2"
   }
 }

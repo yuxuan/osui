@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.5](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/menu-dropdown@0.10.4...@osui/menu-dropdown@0.10.5) (2021-02-03)
+
+**Note:** Version bump only for package @osui/menu-dropdown
+
+
+
+
+
 ## [0.10.4](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/menu-dropdown@0.10.1...@osui/menu-dropdown@0.10.4) (2021-01-22)
 
 **Note:** Version bump only for package @osui/menu-dropdown

@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@0.10.3...@osui/button@0.10.4) (2021-02-03)
+
+
+### Bug Fixes
+
+* button调整 ([e31370a](https://gitee.com/gitee-fe/osui/tree/master/commits/e31370a2f9e514b8bfa239a1b76e0906874aed69))
+* button调整spin ([af0e31e](https://gitee.com/gitee-fe/osui/tree/master/commits/af0e31ea2a969bcaf984448cdcb0c43e0cf5e054))
+* collapse, drawer, progress 样式调整 ([c2b594b](https://gitee.com/gitee-fe/osui/tree/master/commits/c2b594b8b0ecf13c6d5afa8afdd0938b11a6467f))
+* slider调整 ([e3d5dff](https://gitee.com/gitee-fe/osui/tree/master/commits/e3d5dff0702ca23a4bfebcea39e7d0640e948d6f))
+* 调整table ([24a19d1](https://gitee.com/gitee-fe/osui/tree/master/commits/24a19d1e54af67256912c9565c2a0c927349ea4a))
+
+
+
+
+
 ## [0.10.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@0.10.2...@osui/button@0.10.3) (2021-01-27)
 
 

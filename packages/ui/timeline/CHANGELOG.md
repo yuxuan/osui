@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/timeline@0.10.1...@osui/timeline@0.10.2) (2021-02-03)
+
+
+### Bug Fixes
+
+* slider调整 ([e3d5dff](https://gitee.com/gitee-fe/osui/tree/master/commits/e3d5dff0702ca23a4bfebcea39e7d0640e948d6f))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/timeline@0.10.0...@osui/timeline@0.10.1) (2021-01-27)
 
 

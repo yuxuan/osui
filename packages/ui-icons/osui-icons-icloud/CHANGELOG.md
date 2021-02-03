@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.10.2 (2021-02-03)
+
+
+### Bug Fixes
+
+* 增加up-outlined down-outlined right-outlined icon ([681e1d4](https://gitee.com/gitee-fe/osui/commits/681e1d41ed197ef4f3d333d204c242d565fe34c2))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/compare/@osui/icons-icloud@0.8.7...@osui/icons-icloud@0.10.1) (2021-01-12)
 
 

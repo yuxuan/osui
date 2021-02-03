@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/steps@0.10.1...@osui/steps@0.10.2) (2021-02-03)
+
+
+### Bug Fixes
+
+* steps调整 ([61c1125](https://gitee.com/gitee-fe/osui/tree/master/commits/61c1125bf08b45e35ad1453d74349e735c871a0e))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/steps@0.10.0...@osui/steps@0.10.1) (2021-01-27)
 
 

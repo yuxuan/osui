@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/message@0.10.1...@osui/message@0.10.2) (2021-02-03)
+
+
+### Bug Fixes
+
+* message 调整 ([32cf5f7](https://gitee.com/gitee-fe/osui/tree/master/commits/32cf5f75966bd7ddd1e19ebe3db33c85f19a9d57))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/message@0.10.0...@osui/message@0.10.1) (2021-01-12)
 
 

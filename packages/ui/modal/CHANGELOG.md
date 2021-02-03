@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.10.6...@osui/modal@0.10.7) (2021-02-03)
+
+
+### Bug Fixes
+
+* modal confirm button调整 ([e408724](https://gitee.com/gitee-fe/osui/tree/master/commits/e40872414fd7d5d12df48e5ef9f736adb8a1cc6a))
+
+
+
+
+
 ## [0.10.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.10.5...@osui/modal@0.10.6) (2021-01-27)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.10.0...@osui/form@0.10.1) (2021-02-03)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 表单部分调整 ([ee01c00](https://gitee.com/gitee-fe/osui/tree/master/commits/ee01c004c2e1a630cfcd9e5085c006d255327cd0))
+
+
+
+
+
 # [0.10.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.10.0-beta.0...@osui/form@0.10.0) (2021-01-04)
 
 **Note:** Version bump only for package @osui/form

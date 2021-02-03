@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/search-select-list@0.11.0...@osui/search-select-list@0.11.1) (2021-02-03)
+
+**Note:** Version bump only for package @osui/search-select-list
+
+
+
+
+
 # [0.11.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/search-select-list@0.10.1...@osui/search-select-list@0.11.0) (2021-02-02)
 
 
