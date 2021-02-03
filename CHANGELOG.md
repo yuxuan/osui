@@ -1,8 +1,78 @@
 # Change log
 
-##
+## 0.10.10
+
+统一调整：
+
 调整对@osui/icons的依赖：
 - 单包组件移除@osui/icons的依赖，更改为@osui/theme，@osui/icloud-theme对icon的依赖，原因是，不同主题对应的icon包不同，若组件中依赖需要依赖两个不同的包
+
+iCloud主题调整：
+
+osui-icons 图标默认大小由 16px 改为 14px，因为字体大小调整为12px
+
+Tree
+- 调整展开图标大小
+- 调整TreeNode间距
+
+Table
+- 表格高度调整到40px
+- 标题font-weight:normal
+- 分页间距调整为10px
+- 去掉表头下边框
+- 修复连接颜色
+- 调整checkbox样式
+- 调整expandable样式
+- checkbox和expandable共同出现时的顺序
+
+Message
+- 调整了倒计时与x的间距
+
+Form
+- 调整了lable的颜色
+- 调整了组件border的颜色
+
+Slider
+- 增加inputNumber的demo
+- 增加mark，并调整样式
+- 去掉type，改用BrandProvider
+
+Modal
+- 调整confirm按钮的样式
+
+Cascader
+- 调整级联选择字体颜色
+- icon颜色
+- 下拉宽度
+
+Button
+- 调整了icon的大小
+- 增加了带icon的size的demo
+
+Collapse
+- 调整面板标题文字字号应为12px
+- 禁用面板缺少底色背景#F5F5F5
+
+Drawer
+- 调整标题字号应为16px
+
+Progress
+- 调整文字字号为14px
+- 调整圆形线宽10px
+
+Breadcrumb
+- 调整文字颜色
+
+Radio
+- 已勾选样式内圆为10px
+
+-----
+
+OSC主题调整：
+
+Table
+- 标题font-weight:600
+
 ## 0.10.9
 
 SearchSelectList:
