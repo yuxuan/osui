@@ -6,9 +6,14 @@
 
         > tr {
             > th {
+                font-weight: var(--table-header-font-weight);
                 border-bottom: 1px solid var(--table-header-border-bottom-color);
             }
         }
+    }
+
+    .@{ant-prefix}-table-pagination.@{ant-prefix}-pagination {
+        margin: var(--table-pagination-margin);
     }
 
     .@{ant-prefix}-table-thead .@{ant-prefix}-table-cell:not(:last-child) {
@@ -35,6 +40,43 @@
                     border-bottom: 1px solid transparent;
                 }
             }
+        }
+    }
+
+    // ===== 以下用class来patch，因为侵入性比较强 ======
+    &-icloud {
+        .@{ant-prefix}-table-thead,
+        .@{ant-prefix}-table-tbody {
+            .@{ant-prefix}-table-cell.@{ant-prefix}-table-row-expand-icon-cell {
+                padding-right: 0;
+                padding-left: 10px;
+                border-right: 0;
+                border-left: 0;
+            }
+
+            .@{ant-prefix}-table-cell.@{ant-prefix}-table-selection-column {
+                padding-right: 10px;
+                padding-left: 10px;
+                border-right: 0;
+                border-left: 0;
+            }
+        }
+
+        .@{ant-prefix}-table-thead,
+        .@{ant-prefix}-table-row {
+            .@{ant-prefix}-table-cell.@{ant-prefix}-table-row-expand-icon-cell:first-child {
+                padding-right: 0;
+                padding-left: 10px;
+            }
+
+            .@{ant-prefix}-table-cell.@{ant-prefix}-table-selection-column:first-child {
+                padding-right: 0;
+                padding-left: 10px;
+            }
+        }
+
+        &-expandableIcon {
+            cursor: pointer;
         }
     }
 }

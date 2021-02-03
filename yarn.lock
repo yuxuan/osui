@@ -2662,23 +2662,6 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@osui/alert@^0.8.9":
-  version "0.8.9"
-  resolved "https://registry.npm.taobao.org/@osui/alert/download/@osui/alert-0.8.9.tgz#2f82bc52f043806262a95d1d6ad4bb4c082beb2f"
-  integrity sha1-L4K8UvBDgGJiqV0datS7TAgr6y8=
-  dependencies:
-    "@huse/boolean" "^1.0.3"
-    "@huse/timeout" "^1.0.2"
-    "@osui/icons" "^0.8.7"
-    classnames "^2.2.6"
-
-"@osui/icons@^0.8.7":
-  version "0.8.7"
-  resolved "https://registry.yarnpkg.com/@osui/icons/-/icons-0.8.7.tgz#a87561d0b9e4b99fbf138cc1594607081b598109"
-  integrity sha512-NK+W2V9ICGwlHKS/jKfD5Q2PiqcbBX74N0OydcxxoJoG4wR8yYrAQUlbzdWaOhsZldjT5N7LxQzGUTV0zW7hQg==
-  dependencies:
-    classnames "^2.2.6"
-
 "@reach/router@^1.3.3":
   version "1.3.4"
   resolved "https://registry.npm.taobao.org/@reach/router/download/@reach/router-1.3.4.tgz#d2574b19370a70c80480ed91f3da840136d10f8c"

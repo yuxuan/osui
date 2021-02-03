@@ -3,6 +3,7 @@
 /* eslint-disable react/no-multi-comp, @typescript-eslint/prefer-for-of */
 import React from 'react';
 import Input from '@osui/input';
+import {IconSearchOutlined} from '@osui/icons';
 import Tree from '../src';
 
 export default {
@@ -389,7 +390,13 @@ export const SearchDemo = () => {
                 });
             return (
                 <div>
-                    <Search style={{ marginBottom: 8 }} placeholder="Search" onChange={this.onChange} />
+                    <p>带搜索的树，使用Input和Tree拼出来的</p>
+                    <Input
+                        suffix={<IconSearchOutlined />}
+                        style={{marginBottom: '20px'}}
+                        placeholder="Search"
+                        onChange={this.onChange}
+                    />
                     <Tree
                         onExpand={this.onExpand}
                         expandedKeys={expandedKeys}

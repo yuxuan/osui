@@ -132,7 +132,7 @@ interface ConfirmProps extends ModalFuncProps {
     size?: Size;
 }
 const getConfirmConfig = (
-    {size, width, ...config}: ConfirmProps,
+    {size, width, okText, cancelText, okButtonProps, cancelButtonProps, ...config}: ConfirmProps,
     type: 'info'|'warning'|'success'|'error'|'confirm'
 ) => {
     const baseConfig = config;
@@ -142,6 +142,16 @@ const getConfirmConfig = (
 
     return {
         width: width ?? getModalSize(size),
+        okText: okText ?? '确定',
+        cancelText: cancelText ?? '取消',
+        okButtonProps: {
+            ...okButtonProps,
+            className: classNames(okButtonProps?.className, 'osui-button', 'osui-button-min-width'),
+        },
+        cancelButtonProps: {
+            ...cancelButtonProps,
+            className: classNames(okButtonProps?.className, 'osui-button', 'osui-button-min-width'),
+        },
         ...baseConfig,
         className: classNames(`${clsPrefix}-confirm`, config.className),
     };

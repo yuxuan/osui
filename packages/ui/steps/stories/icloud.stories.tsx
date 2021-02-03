@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Button from '@osui/button';
 import Space from '@osui/space';
 import Steps from '../src';
@@ -8,8 +8,8 @@ export default {
 };
 
 export const Demo = () => {
-    const {Step} = Steps;
-    const {Step: ProcessOnlyStep} = Steps.ProcessOnlySteps;
+    const { Step } = Steps;
+    const { Step: ProcessOnlyStep } = Steps.ProcessOnlySteps;
     const [current, setCurrent] = useState(-1);
     return (
         <>
@@ -32,7 +32,8 @@ export const Demo = () => {
             <br />
             <p>以下为箭头分割的Steps</p>
             <p>注意：箭头形式下，使用navigation，hover效果已经取消</p>
-            <Steps.ProcessOnlySteps current={current} type="navigation">
+            <p>注意：视觉规范要求必须使用`compact`模式，为了兼容，请手动传入compact属性</p>
+            <Steps.ProcessOnlySteps current={current} type="navigation" compact>
                 <ProcessOnlyStep title="Step 1" />
                 <ProcessOnlyStep title="Step 2" />
                 <ProcessOnlyStep title="Step 3" />
@@ -55,7 +56,7 @@ export const Demo = () => {
 
 export const ErrorStatusDemo = () => {
     const ProcessOnlySteps = Steps.ProcessOnlySteps;
-    const {Step} = ProcessOnlySteps;
+    const { Step } = ProcessOnlySteps;
     const [current, setCurrent] = useState(-1);
     return (
         <>
@@ -75,10 +76,11 @@ export const ErrorStatusDemo = () => {
 };
 
 export const CompactDemo = () => {
-    const {Step: ProcessOnlyStep} = Steps.ProcessOnlySteps;
+    const { Step: ProcessOnlyStep } = Steps.ProcessOnlySteps;
     const [current, setCurrent] = useState(-1);
     return (
         <>
+            <h3>紧凑型</h3>
             <p>当需要展示很多步时</p>
             <Steps.ProcessOnlySteps current={current} compact type="navigation">
                 <ProcessOnlyStep title="Step 1" />

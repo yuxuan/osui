@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconSearchOutlined, IconHomeOutlined } from '@osui/icons';
+import { IconSearchOutlined, IconHomeOutlined, IconPlusOutlined } from '@osui/icons';
 import Space from '@osui/space';
 import Button from '@osui/button';
 
@@ -53,6 +53,30 @@ export const Demo = () => {
                     图文按钮
                 </Button>
             </div>
+        </>
+    );
+};
+
+export const Size = () => {
+    return (
+        <>
+            <p>未在规范内，但是产品有用到，希望ue检查</p>
+            <Space size="small">
+                <Button size="small">确定</Button>
+                <Button size="small" icon={<IconPlusOutlined />}>确定</Button>
+            </Space>
+            <br />
+            <br />
+            <Space size="small">
+                <Button size="middle">确定</Button>
+                <Button size="middle" icon={<IconPlusOutlined />}>确定</Button>
+            </Space>
+            <br />
+            <br />
+            <Space size="small">
+                <Button size="large">确定</Button>
+                <Button size="large" icon={<IconPlusOutlined />}>确定</Button>
+            </Space>
         </>
     );
 };

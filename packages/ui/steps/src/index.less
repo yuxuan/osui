@@ -31,12 +31,18 @@
         border-color: var(--steps-item-active-icon-bg-color);
     }
 
-    .@{ant-prefix}-steps-item-wait > .@{ant-prefix}-steps-item-container > .@{ant-prefix}-steps-item-content > .@{ant-prefix}-steps-item-title {
-        color: var(--steps-item-title-color);
-    }
+    .@{ant-prefix}-steps-item-wait {
+        > .@{ant-prefix}-steps-item-container > .@{ant-prefix}-steps-item-content > .@{ant-prefix}-steps-item-title {
+            color: var(--steps-item-title-color);
+        }
 
-    .@{ant-prefix}-steps-item-wait .@{ant-prefix}-steps-item-icon {
-        border-color: var(--steps-item-icon-color);
+        .@{ant-prefix}-steps-item-icon {
+            border-color: var(--steps-item-icon-color);
+
+            > .@{ant-prefix}-steps-icon {
+                color: var(--steps-item-title-color);
+            }
+        }
     }
 
     // ==================== hover ====================

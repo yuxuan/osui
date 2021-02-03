@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>进度条/完成</title>
+    <g id="进度条/完成" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7,14 C10.8659932,14 14,10.8659932 14,7 C14,3.13400675 10.8659932,0 7,0 C3.13400675,0 0,3.13400675 0,7 C0,10.8659932 3.13400675,14 7,14 Z M7,13 C3.6862915,13 1,10.3137085 1,7 C1,3.6862915 3.6862915,1 7,1 C10.3137085,1 13,3.6862915 13,7 C13,10.3137085 10.3137085,13 7,13 Z" id="形状结合" fill="#5FB333" fill-rule="nonzero"></path>
+        <polygon id="路径" fill="#5FB333" points="3.70710678 6.12132034 5.82842712 8.24264069 10.0710678 4 10.7781746 4.70710678 5.82842712 9.65685425 3 6.82842712"></polygon>
+    </g>
+</svg>

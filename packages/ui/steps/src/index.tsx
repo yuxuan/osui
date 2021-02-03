@@ -19,7 +19,10 @@ interface StepsInterface extends React.FC<StepProps> {
 }
 
 const Steps: StepsInterface = ({className, compact, ...props}) => {
-    const innerClassName = classNames(className, clsPrefix, {[`${clsPrefix}-compact`]: compact});
+    const innerClassName = classNames(
+        className,
+        clsPrefix,
+        {[`${clsPrefix}-compact`]: compact});
     return <AntdSteps className={innerClassName} {...props} />;
 };
 

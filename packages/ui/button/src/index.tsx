@@ -33,7 +33,6 @@ export interface ButtonInterface extends React.ForwardRefExoticComponent<ButtonP
     __ANT_BUTTON: boolean;
 }
 
-/* eslint-disable complexity */
 const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     {type = 'default', loading, icon, disabled, flexCenter, ...props}, ref
 ) => {
@@ -42,12 +41,17 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
 
     // 当loading且有icon的button时，icon替换成spinner，不论什么情况都要保持后面的chidlren
     if (loading && icon) {
-        innerIcon = <IconLoading3QuartersOutlined className={`${clsPrefix}-icon-spinner ${clsPrefix}-keep-children`} />;
+        innerIcon = (
+            <IconLoading3QuartersOutlined
+                spin
+                className={`${clsPrefix}-icon-spinner ${clsPrefix}-keep-children`}
+            />
+        );
     }
     // 当loading但没有icon时，children替换成spinner，根据主题保留或者隐藏children。
     // osc的文字按钮loading时，文字替换成loading icon；而icloud主题则是保留icon和文字
     if (loading && !icon) {
-        innerIcon = <IconLoading3QuartersOutlined className={`${clsPrefix}-icon-spinner`} />;
+        innerIcon = <IconLoading3QuartersOutlined spin className={`${clsPrefix}-icon-spinner`} />;
     }
     // 当类型为icon或者button仅有icon属性时，不保留最小宽度
     if (type === 'icon' || icon) {

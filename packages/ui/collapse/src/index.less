@@ -25,7 +25,7 @@
             padding-bottom: 0;
             color: var(--theme-text-color);
             font-weight: var(--collapse-header-font-weight);
-            font-size: 14px;
+            font-size: var(--collapse-header-font-size);
             line-height: var(--collapse-header-height);
 
             .icon-wrapper {
@@ -46,6 +46,10 @@
     }
 
     .@{ant-prefix}-collapse-item.@{ant-prefix}-collapse-item-disabled {
+        .@{ant-prefix}-collapse-header {
+            background-color: var(--collapse-content-bg);
+        }
+
         .@{ant-prefix}-collapse-header,
         .@{ant-prefix}-collapse-arrow {
             color: var(--collapse-disabled-color);
@@ -66,7 +70,7 @@
 // 对层级的控制
 .nest(@level, @content-padding, @icon-padding) {
     .@{osui-collapse-class-prefix}-level-@{level} {
-        .@{ant-prefix}-collapse:not(.ant-collapse-ghost) {
+        .@{ant-prefix}-collapse:not(.@{ant-prefix}-collapse-ghost) {
             border-top: 0;
             border-right: 0;
             border-left: 0;

@@ -28,12 +28,13 @@
 @text-color: var(--theme-text-color);
 @text-color-secondary: var(--theme-text-color-secondary);
 @font-variant-base: normal; // https://github.com/ant-design/ant-design/issues/12690
+@font-size-sm: 12px;
 @font-size-base: 12px;
 @font-size-lg: 14px;
-@font-size-sm: 12px;
+@font-size-xl: 16px;
 @line-height-base: 1.5;
-@border-radius-base: 0px;
-@border-radius-sm: 0px;
+@border-radius-base: 0;
+@border-radius-sm: 0;
 @height-base: 30px;
 @height-lg: 40px;
 @height-sm: 24px;
@@ -79,10 +80,13 @@
 @table-row-hover-bg: var(--table-row-hover-bg);
 @table-header-bg: var(--table-header-bg);
 @table-header-color: var(--table-header-color);
-@table-padding-vertical: 9.5px; // UE要求行号40，行高= {padding-vertical} * 2 + {font-size} * 1.5
 @table-font-size: @font-size-sm;
 @table-font-size-sm: @font-size-sm;
 @table-font-size-md: @font-size-sm;
+@table-padding-horizontal: 10px;
+@table-padding-vertical: ((40px - @font-size-base * 1.5) / 2); // UE要求行号40，行高= {padding-vertical} * 2 + {font-size} * 1.5
+@table-selected-row-bg: var(--color-brand-1);
+@table-selected-row-hover-bg: var(--color-brand-1);
 
 // Menu
 // ---
@@ -163,13 +167,13 @@
 
 // Outline
 // ---
-@outline-width: 0px;
-@outline-blur-size: 0px;
+@outline-width: 0;
+@outline-blur-size: 0;
 @outline-color: var(--theme-border-focus-color);
 
 // Form
 // ---
-@label-color: var(--color-gray-8);
+@label-color: var(--color-gray-9);
 @form-item-margin-bottom: 20px;
 
 // Tabs
@@ -211,6 +215,7 @@
 @radio-focus-shadow: 0 0 0 0 var(--theme-border-focus-color);
 @radio-duration: 0;
 @radio-button-hover-color: var(--radio-button-hover-color);
+@radio-dot-size: 10px;
 
 // Modal
 // ---
@@ -256,7 +261,7 @@
 
 // Cascader
 // ---
-@cascader-item-selected-bg: var(--color-brand-1);
+@cascader-item-selected-bg: var(--theme-secondary-color);
 
 // Steps
 // ---
@@ -276,6 +281,7 @@
 
 // Breadcrumb
 // ---
+@breadcrumb-link-color: var(--theme-text-color);
 @breadcrumb-link-color-hover: var(--theme-primary-color);
 
 // Steps
