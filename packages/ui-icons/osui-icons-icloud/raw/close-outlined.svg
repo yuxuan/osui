@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>弹窗/关闭</title>
-    <g id="弹窗/关闭" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M11.9437189,1.34711719 L12.6508104,2.05420872 L7.70088075,7.00400278 L12.6508077,11.9537161 L11.9437161,12.6608077 L6.99400278,7.71088075 L2.04420872,12.6608104 L1.33711719,11.9537189 L6.28712482,7.00400278 L1.33711441,2.05420594 L2.04420594,1.34711441 L6.99400278,6.29712482 L11.9437189,1.34711719 Z" id="形状结合" stroke="#979797" fill="#D8D8D8"></path>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板备份 7</title>
+    <g id="画板备份-7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M829.077332,150.254822 L874.332154,195.509644 L557.548154,512.292964 L874.33219,829.077332 L829.077332,874.33219 L512.292964,557.548154 L195.509644,874.332154 L150.254822,829.077332 L467.038846,512.292964 L150.254858,195.509644 L195.509644,150.254858 L512.292964,467.038846 L829.077332,150.254822 Z" id="形状结合" stroke="#979797" stroke-width="64" fill="#D8D8D8"></path>
     </g>
 </svg>

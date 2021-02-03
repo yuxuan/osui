@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>弹窗/提示</title>
-    <g id="弹窗/提示" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Page-1">
-            <path d="M36,18 C36,27.939 27.939,36 18,36 C8.061,36 0,27.939 0,18 C0,8.061 8.061,0 18,0 C27.939,0 36,8.061 36,18" id="Fill-1" fill="#F39000"></path>
-            <line x1="18" y1="6" x2="18" y2="24" id="Stroke-3" stroke="#FFFFFF" stroke-width="3"></line>
-            <line x1="18" y1="27" x2="18" y2="30" id="Stroke-5" stroke="#FFFFFF" stroke-width="3"></line>
-        </g>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>警告提示/警告</title>
+    <g id="警告提示/警告" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M512,64 C759.370667,64 960,264.629333 960,512 C960,759.370667 759.370667,960 512,960 C264.629333,960 64,759.370667 64,512 C64,264.629333 264.629333,64 512,64 Z M544,737 L480,737 L480,801 L544,801 L544,737 Z M544,224 L480,224 L480,672 L544,672 L544,224 Z" id="形状结合" fill="#979797"></path>
     </g>
 </svg>
