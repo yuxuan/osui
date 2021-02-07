@@ -4,12 +4,11 @@ import {Table as AntdTable} from 'antd';
 import {ConfigContext} from 'antd/es/config-provider';
 import {
     TableProps as AntdTableProps,
-    TablePaginationConfig as AntdTablePaginationConfig
+    TablePaginationConfig as AntdTablePaginationConfig,
 } from 'antd/es/table';
-import {PaginationProps} from 'antd/es/pagination';
 import { ExpandableConfig, TableRowSelection } from 'antd/es/table/interface';
 import classNames from 'classnames';
-import {customPaginationProps} from '@osui/pagination';
+import {customPaginationProps, PaginationProps} from '@osui/pagination';
 import {useBrandContext} from '@osui/brand-provider';
 import {IconDownOutlined, IconRightOutlined} from '@osui/icons';
 import '@osui/pagination/es/index.less';
@@ -101,9 +100,15 @@ function Table<RecordType extends Record<string, any>>(
 
     // ==================== pagination ====================
     // 允许传入null
-    let innerPagination: boolean | AntdTablePaginationConfig = !(pagination === false || pagination === null);
+    let innerPagination: boolean | PaginationProps = !(pagination === false || pagination === null);
 
     if (innerPagination) {
+        const goButtonProps = (
+            pagination && {
+                disabled: pagination.disabled,
+                ...(pagination as PaginationProps).goButtonProps,
+            }
+        ) as PaginationProps['goButtonProps'];
         innerPagination = {
             ...pagination,
             className: classNames(
@@ -112,11 +117,11 @@ function Table<RecordType extends Record<string, any>>(
                 'osui-pagination',
                 pagination && pagination.className
             ),
-            itemRender: customPaginationProps(brand).itemRender,
-            showQuickJumper: customPaginationProps(brand).showQuickJumper(
+            itemRender: customPaginationProps(brand, goButtonProps).itemRender,
+            showQuickJumper: customPaginationProps(brand, goButtonProps).showQuickJumper(
                 pagination && pagination.showQuickJumper, props.size as PaginationProps['size']
             ),
-            locale: customPaginationProps(brand).locale,
+            locale: customPaginationProps(brand, goButtonProps).locale,
         };
     }
 

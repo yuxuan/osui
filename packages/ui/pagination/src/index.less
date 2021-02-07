@@ -1,38 +1,37 @@
 @osui-pagination-class-prefix: osui-pagination;
 
 .@{osui-pagination-class-prefix} {
-    :not(.@{ant-prefix}-pagination-disabled) {
-        &.@{ant-prefix}-pagination-item,
-        &.@{ant-prefix}-pagination-next,
-        &.@{ant-prefix}-pagination-prev {
-            border: 1px solid var(--pagination-item-border-color);
+    .@{ant-prefix}-pagination-item,
+    .@{ant-prefix}-pagination-next,
+    .@{ant-prefix}-pagination-prev {
+        border: 1px solid var(--pagination-item-border-color);
 
-            &:hover {
-                background-color: var(--pagination-item-hover-bg);
-                border: 1px solid var(--pagination-item-hover-border-color);
-
-                a {
-                    color: var(--pagination-item-hover-color);
-                }
-            }
-        }
-
-        &.@{ant-prefix}-pagination-item-active,
-        &.@{ant-prefix}-pagination-item-active:hover {
-            border-color: var(--pagination-item-active-border-color);
-            background: var(--pagination-item-active-bg);
+        &:hover {
+            background-color: var(--pagination-item-hover-bg);
+            border: 1px solid var(--pagination-item-hover-border-color);
 
             a {
-                color: var(--pagination-item-active-color);
+                color: var(--pagination-item-hover-color);
             }
         }
     }
 
-    .@{ant-prefix}-pagination-disabled {
-        &.@{ant-prefix}-pagination-item,
-        &.@{ant-prefix}-pagination-next,
-        &.@{ant-prefix}-pagination-prev {
-            background: var(--color-gray-1);
+    .@{ant-prefix}-pagination-item-active,
+    .@{ant-prefix}-pagination-item-active:hover {
+        background: var(--pagination-item-active-bg);
+        border-color: var(--pagination-item-active-border-color);
+
+        a {
+            color: var(--pagination-item-active-color);
+        }
+    }
+
+    // ============================ Disabled ============================
+    &.@{ant-prefix}-pagination-disabled {
+        .@{ant-prefix}-pagination-item,
+        .@{ant-prefix}-pagination-next,
+        .@{ant-prefix}-pagination-prev {
+            background: var(--pagination-disabled-bg);
             border: 1px solid var(--pagination-item-disabled-border-color);
             cursor: not-allowed;
 
@@ -41,7 +40,7 @@
             }
 
             &:hover {
-                background-color: var(--color-gray-1);
+                background-color: var(--pagination-disabled-bg);
 
                 a {
                     color: var(--theme-disabled-color);
@@ -49,10 +48,9 @@
             }
         }
 
-        &.@{ant-prefix}-pagination-item-active,
-        &.@{ant-prefix}-pagination-item-active:hover {
-            border-color: var(--color-brand-1);
-            border-color: var(--color-gray-4);
+        .@{ant-prefix}-pagination-item-active,
+        .@{ant-prefix}-pagination-item-active:hover {
+            border-color: var(--theme-disabled-color);
 
             a {
                 color: var(--theme-disabled-color);
@@ -79,19 +77,23 @@
         }
     }
 
-    .@{ant-prefix}-pagination-options-quick-jumper input {
-        &:focus,
-        &:hover {
-            z-index: 2;
-        }
-        // 只有跟在input后面的需要往前移动
-        & + span {
-            .@{osui-pagination-class-prefix}-icloud-jumper {
-                margin-left: -9px;
-            }
+    .@{ant-prefix}-pagination-options-quick-jumper {
+        display: inline-flex;
 
-            .@{osui-pagination-class-prefix}-osc-jumper {
-                margin-left: 10px;
+        input {
+            &:focus,
+            &:hover {
+                z-index: 2;
+            }
+            // 只有跟在input后面的需要往前移动
+            & + span {
+                .@{osui-pagination-class-prefix}-icloud-jumper {
+                    margin-left: -9px;
+                }
+
+                .@{osui-pagination-class-prefix}-osc-jumper {
+                    margin-left: 10px;
+                }
             }
         }
     }

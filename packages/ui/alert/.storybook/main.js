@@ -73,9 +73,6 @@ module.exports = {
 
         config.resolve.extensions.push('.ts', '.tsx');
         config.resolve.alias['@'] = path.resolve(__dirname, '../src');
-        // if (!isOsuiTheme) {
-        //     config.resolve.alias['@osui/icons'] = require.resolve('@osui/icons-icloud');
-        // }
         return config;
     },
 };

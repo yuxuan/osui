@@ -8,5 +8,17 @@
 
     .@{ant-prefix}-timeline-item-content {
         margin-left: var(--timeline-item-content-margin-left);
+        // 里面是link时，颜色默认为文字色
+        > a {
+            color: var(--theme-text-color);
+
+            &:hover {
+                color: var(--link-hover-color);
+            }
+
+            &:active {
+                color: var(--link-active-color);
+            }
+        }
     }
 }

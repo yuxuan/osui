@@ -19,8 +19,6 @@ export const Demo = () => {
                 <br />
                 <Pagination size="small" total={50} />
                 <br />
-                <Pagination simple defaultCurrent={2} total={50} />
-                <br />
                 <Pagination showQuickJumper defaultCurrent={2} total={500} onChange={onChange} disabled />
             </ConfigProvider>
         </div>);

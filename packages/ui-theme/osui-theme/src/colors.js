@@ -456,6 +456,7 @@ exports.presetColors = {
     '--pagination-item-active-bg': 'var(--color-brand-1)',
     '--pagination-item-active-color': 'var(--color-brand-7)',
     '--pagination-item-disabled-border-color': 'var(--btn-disable-border)',
+    '--pagination-disabled-bg': 'var(--btn-disable-bg)',
     '--checkbox-hover-border-color': 'var(--theme-border-color-base)',
     '--checkbox-hover-bg': 'var(--color-gray-3)',
     '--checkbox-focus-bg': 'var(--color-gray-1)',

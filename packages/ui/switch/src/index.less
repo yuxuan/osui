@@ -10,8 +10,8 @@
     }
 
     &.@{ant-prefix}-switch-disabled {
-        opacity: 1;
         background-color: var(--switch-disable-bg);
+        opacity: 1;
 
         .@{ant-prefix}-switch-handle::before {
             background-color: var(--switch-handle-disable-bg);
@@ -31,5 +31,15 @@
 
     &.@{ant-prefix}-switch:focus {
         box-shadow: var(--theme-component-focus-box-shadow);
+    }
+
+    &.@{ant-prefix}-switch.@{ant-prefix}-switch-checked:not(.@{ant-prefix}-switch-disabled) {
+        &:hover {
+            background: var(--theme-primary-color-hover);
+        }
+
+        &:active {
+            background: var(--theme-primary-color-active);
+        }
     }
 }
