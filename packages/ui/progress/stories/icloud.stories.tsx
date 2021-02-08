@@ -65,7 +65,7 @@ export const Circle = () => {
     return (
         <BrandProvider brand="icloud">
             <div style={{ padding: 30 }}>
-                <Wrapper title="初始状态"><Progress type="circle" percent={0} showInfo={false} width={108} /></Wrapper>
+                <Wrapper title="初始状态"><Progress type="circle" percent={0} showInfo={false} /></Wrapper>
                 <br />
                 <Wrapper title="进行中状态"><Progress type="circle" percent={40} showInfo={false} /></Wrapper>
                 <br />
@@ -92,7 +92,7 @@ export const CircleInfo = () => {
     return (
         <BrandProvider brand="icloud">
             <div style={{ padding: 30 }}>
-                <Wrapper title="初始状态"><Progress type="circle" percent={0} width={108} /></Wrapper>
+                <Wrapper title="初始状态"><Progress type="circle" percent={0} /></Wrapper>
                 <br />
                 <Wrapper title="进行中状态"><Progress type="circle" percent={40} /></Wrapper>
                 <br />
