@@ -339,6 +339,7 @@ exports.presetColors = {
     '--theme-outline-color': 'var(--color-brand-4)',
     '--theme-processing-color': 'var(--color-brand-6)',
     '--theme-border-focus-color': 'var(--color-brand-4)',
+    '--theme-icon-color': 'var(--theme-text-color)',
     // 组件属性
     '--alert-error-bg-color': 'var(--color-error-1)',
     '--alert-error-border-color': 'var(--theme-error-color)',
@@ -525,6 +526,7 @@ exports.presetColors = {
     '--steps-item-active-icon-color': 'var(--theme-component-bg)',
     '--drawer-title-font-size': '14px',
     '--drawer-footer-border-top-color': 'var(--theme-border-color-split)',
+    '--drawer-close-icon-line-height': '1',
     ...buttonColors,
     '--osui-icon-size': '16px',
 };

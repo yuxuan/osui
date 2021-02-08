@@ -316,6 +316,7 @@ exports.presetColors = {
     '--theme-outline-color': 'var(--color-brand-4)',
     '--theme-processing-color': 'var(--color-brand-6)',
     '--theme-border-focus-color': 'var(--color-brand-6)',
+    '--theme-icon-color': 'var(--color-gray-7)',
     // 组件属性
     '--alert-error-bg-color': 'var(--color-error-1)',
     '--alert-error-border-color': 'var(--color-error-1)',
@@ -498,7 +499,8 @@ exports.presetColors = {
     '--steps-item-active-icon-bg-color': 'var(--color-gray-9)',
     '--steps-item-active-icon-color': 'var(--theme-component-bg)',
     '--drawer-title-font-size': '16px',
-    '--drawer-footer-border-top-color': 'var(--color-gray-5)',
+    '--drawer-footer-border-top-color': 'var(--color-gray-4)',
+    '--drawer-close-icon-line-height': '1.5',
     ...buttonColors,
     '--osui-icon-size': '14px',
 };
