@@ -15,9 +15,12 @@ import './index.less';
 
 const {destroyAll, config} = AntdModal;
 
-type Size = 'small' | 'default' | 'large';
+type Size = 'small' | 'default' | 'large' | number;
 
 const getModalSize = (size?: Size) => {
+    if (typeof size === 'number') {
+        return size;
+    }
     switch (size) {
         case 'small':
             return 400;
@@ -136,12 +139,11 @@ const getConfirmConfig = (
     type: 'info'|'warning'|'success'|'error'|'confirm'
 ) => {
     const baseConfig = config;
-
     // 对confirm图表的样式调整处理
     Object.assign(baseConfig, {icon: config.icon ?? confirmIconMap[type]});
 
     return {
-        width: width ?? getModalSize(size),
+        width: width ?? getModalSize(size ?? 500),
         okText: okText ?? '确定',
         cancelText: cancelText ?? '取消',
         okButtonProps: {

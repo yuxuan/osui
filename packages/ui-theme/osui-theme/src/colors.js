@@ -493,6 +493,7 @@ exports.presetColors = {
     '--modal-body-margin': '0px',
     // 计算公示：80vh - header高度 - footer高度
     '--modal-body-max-height': 'calc(80vh - 70px - 80px)',
+    '--modal-close-icon-margin-right': '0',
     '--form-item-explain-icon-display': 'inline-block',
     '--popover-font-size': '14px',
     '--popover-line-height': '1.5715',
