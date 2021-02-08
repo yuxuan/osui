@@ -178,7 +178,7 @@ const buttonColors = {
     // antd
     '--btn-disable-bg': 'var(--theme-disabled-bg)',
     '--btn-disable-border': 'var(--theme-disabled-bg)',
-    '--btn-disable-color': 'var(--theme-disabled-color)',
+    '--btn-disable-color': 'var(--color-gray-7)',
     // type default
     '--btn-default-bg': 'var(--theme-component-bg)',
     '--btn-default-border-color': 'var(--theme-border-color-base)',
@@ -286,7 +286,7 @@ exports.presetColors = {
     '--theme-border-color-disabled': 'var(--theme-border-color-base)',
     '--theme-component-bg': 'var(--color-gray-1)',
     '--theme-component-focus-box-shadow': 'none',
-    '--theme-disabled-bg': 'var(--color-gray-5)',
+    '--theme-disabled-bg': 'var(--color-gray-4)',
     '--theme-disabled-color': 'var(--color-gray-6)',
     '--theme-error-color-active': 'var(--color-error-7)',
     '--theme-error-color-hover': 'var(--color-error-5)',
