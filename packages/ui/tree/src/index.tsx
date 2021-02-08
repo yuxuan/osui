@@ -15,13 +15,14 @@ interface CompoundedComponent extends React.ForwardRefExoticComponent<TreeProps 
 }
 
 
-const Tree = React.forwardRef<any, TreeProps>(({className, size, ...props}, ref) => {
+const Tree = React.forwardRef<any, TreeProps>(({className, size, blockNode, ...props}, ref) => {
     const innerClassName = classNames(
         className,
         clsPrefix,
         {[`${clsPrefix}-${size}`]: size}
     );
-    return <AntdTree ref={ref} className={innerClassName} {...props} />;
+    const innterBlockNode = blockNode ?? true;
+    return <AntdTree ref={ref} className={innerClassName} blockNode={innterBlockNode} {...props} />;
 }) as CompoundedComponent;
 
 Tree.TreeNode = AntdTree.TreeNode;

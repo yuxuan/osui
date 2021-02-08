@@ -273,8 +273,6 @@ export const DraggableDemo = () => {
 };
 
 export const SearchDemo = () => {
-    const { Search } = Input;
-
     const x = 3;
     const y = 2;
     const z = 1;
@@ -391,9 +389,10 @@ export const SearchDemo = () => {
             return (
                 <div>
                     <p>带搜索的树，使用Input和Tree拼出来的</p>
+                    <p>注意：视觉要求搜索框应与树间隔16px</p>
                     <Input
                         suffix={<IconSearchOutlined />}
-                        style={{marginBottom: '20px'}}
+                        style={{marginBottom: '16px'}}
                         placeholder="Search"
                         onChange={this.onChange}
                     />
