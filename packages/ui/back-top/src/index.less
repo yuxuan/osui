@@ -1,13 +1,13 @@
 @osui-back-top-class-prefix: osui-back-top;
 
 .@{osui-back-top-class-prefix} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: var(--back-top-size);
     height: var(--back-top-size);
     background: var(--back-top-bg);
     border-radius: var(--btn-border-radius-base);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     &:hover {
         background: var(--back-top-hover-bg);
@@ -18,14 +18,15 @@
     }
 
     svg {
-        height: 24px;
+        width: var(--back-top-icon-size);
+        height: var(--back-top-icon-size);
         margin-top: 4px;
         color: var(--color-gray-1);
     }
 
     &-circle {
-        border-radius: 50%;
         overflow: hidden;
+        border-radius: 50%;
     }
 
     .fade-enter.fade-enter-active,
@@ -39,7 +40,6 @@
 
         &:hover {
             background: var(--back-top-transparent-hover-bg);
-
         }
 
         &:active {
