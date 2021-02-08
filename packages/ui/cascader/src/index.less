@@ -12,10 +12,14 @@
         padding: 0 30px 0 10px;
     }
 
+    .@{ant-prefix}-cascader-picker-arrow {
+        right: 10px;
+    }
+
     // ==================== Menu ====================
     &-menu {
-        &.ant-cascader-menu,
-        &.ant-cascader-menus .ant-cascader-menu {
+        &.@{ant-prefix}-cascader-menu,
+        &.@{ant-prefix}-cascader-menus .@{ant-prefix}-cascader-menu {
             min-width: 100px;
         }
 
@@ -27,6 +31,13 @@
             .@{ant-prefix}-cascader-menu-item-expand-icon {
                 color: var(--theme-primary-color);
             }
+        }
+
+        .@{ant-prefix}-cascader-menu-item-expand .@{ant-prefix}-cascader-menu-item-expand-icon,
+        .@{ant-prefix}-cascader-menu-item-loading-icon {
+            right: 7px;
+            color: var(--color-gray-9);
+            font-size: 14px;
         }
     }
 }
