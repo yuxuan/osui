@@ -274,7 +274,7 @@ export const CompleteDemo = () => {
             key: 'action',
             sorter: true,
             render: () => (
-                <Space size="small">
+                <Space size="small" align="center">
                     <a>Delete</a>
                     <a className="ant-dropdown-link">
                         More actions <IconDownOutlined />

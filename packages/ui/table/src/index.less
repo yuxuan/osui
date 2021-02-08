@@ -50,14 +50,14 @@
             .@{ant-prefix}-table-cell.@{ant-prefix}-table-row-expand-icon-cell {
                 padding-right: 0;
                 padding-left: 10px;
-                border-right: 0;
+                border-right: 0 !important; // 强制没有右侧border
                 border-left: 0;
             }
 
             .@{ant-prefix}-table-cell.@{ant-prefix}-table-selection-column {
                 padding-right: 10px;
                 padding-left: 10px;
-                border-right: 0;
+                border-right: 0 !important; // 强制没有右侧border
                 border-left: 0;
             }
         }
@@ -66,16 +66,17 @@
         .@{ant-prefix}-table-row {
             .@{ant-prefix}-table-cell.@{ant-prefix}-table-row-expand-icon-cell:first-child {
                 padding-right: 0;
-                padding-left: 10px;
+                padding-left: 20px;
             }
 
             .@{ant-prefix}-table-cell.@{ant-prefix}-table-selection-column:first-child {
                 padding-right: 0;
-                padding-left: 10px;
+                padding-left: 20px;
             }
         }
 
         &-expandableIcon {
+            color: var(--theme-icon-color);
             cursor: pointer;
         }
     }
