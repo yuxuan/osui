@@ -11,6 +11,28 @@
         &::before {
             transition: none;
         }
+
+        &:last-child::after {
+            display: none;
+        }
+
+        &::after {
+            position: absolute;
+            top: 5px;
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin-top: 0;
+            margin-left: 0;
+            vertical-align: middle;
+            background-color: var(--theme-icon-color);
+            transform: none;
+            content: '';
+            -webkit-mask: url('./arrow.svg') no-repeat 50% 50%;
+            mask: url('./arrow.svg') no-repeat 50% 50%;
+            -webkit-mask-size: cover;
+            mask-size: cover;
+        }
     }
 
     .@{ant-prefix}-steps-item-title {
