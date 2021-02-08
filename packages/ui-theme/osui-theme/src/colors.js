@@ -383,6 +383,7 @@ exports.presetColors = {
     '--collapse-arrow-top': '7px',
     '--collapse-disabled-color': 'var(--theme-disabled-color)',
     '--collapse-border-color': 'var(--theme-border-color-base)',
+    '--collapse-expand-icon-color': 'var(--theme-text-color)',
     '--input-error-focus-background-color': 'var(--theme-component-bg)',
     '--input-focus-background-color': 'var(--theme-component-bg)',
     '--input-warning-focus-background-color': 'var(--theme-component-bg)',

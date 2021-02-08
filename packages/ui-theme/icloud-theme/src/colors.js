@@ -360,6 +360,7 @@ exports.presetColors = {
     '--collapse-arrow-top': '12px',
     '--collapse-disabled-color': 'var(--color-gray-7)',
     '--collapse-border-color': 'var(--color-gray-4)',
+    '--collapse-expand-icon-color': 'var(--color-gray-6)',
     '--input-error-focus-background-color': 'var(--color-error-1)',
     '--input-focus-background-color': 'var(--color-brand-1)',
     '--input-warning-focus-background-color': 'var(--color-warning-1)',
