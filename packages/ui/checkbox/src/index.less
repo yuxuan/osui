@@ -6,8 +6,8 @@
     &.@{ant-prefix}-checkbox-wrapper:hover .@{ant-prefix}-checkbox-inner,
     .@{ant-prefix}-checkbox:hover .@{ant-prefix}-checkbox-inner,
     .@{ant-prefix}-checkbox-input:focus + .@{ant-prefix}-checkbox-inner {
-        border-color: var(--checkbox-hover-border-color);
         background-color: var(--checkbox-hover-bg);
+        border-color: var(--checkbox-hover-border-color);
     }
     // 没选中且focus时的hover效果 normal + focus + hover
     &.@{ant-prefix}-checkbox-wrapper:hover :not(.@{ant-prefix}-checkbox-checked) .@{ant-prefix}-checkbox-input:focus + .@{ant-prefix}-checkbox-inner,
@@ -27,20 +27,24 @@
     // 选中hover且focus时的效果
     &.@{ant-prefix}-checkbox-wrapper:hover .@{ant-prefix}-checkbox-checked .@{ant-prefix}-checkbox-inner,
     .@{ant-prefix}-checkbox-checked:hover .@{ant-prefix}-checkbox-inner,
-    .@{ant-prefix}-checkbox-checked .@{ant-prefix}-checkbox-input:focus+.@{ant-prefix}-checkbox-inner {
-        border-color: transparent;
+    .@{ant-prefix}-checkbox-checked .@{ant-prefix}-checkbox-input:focus + .@{ant-prefix}-checkbox-inner {
         background-color: var(--checkbox-checked-focus-bg);
+        border-color: transparent;
     }
 
     .@{ant-prefix}-checkbox-inner,
     .@{ant-prefix}-checkbox-checked::after {
+        transition: none;
         animation: none;
         animation-fill-mode: none;
-        transition: none;
     }
 
     .@{ant-prefix}-checkbox-disabled .@{ant-prefix}-checkbox-inner {
         background-color: var(--checkbox-disabled-bg);
+
+        &::after {
+            border-color: var(--checkbox-disabled-color);
+        }
     }
 
     &.@{ant-prefix}-checkbox-wrapper:hover .@{ant-prefix}-checkbox-disabled .@{ant-prefix}-checkbox-inner,
@@ -58,13 +62,22 @@
 
         .@{ant-prefix}-checkbox-disabled .@{ant-prefix}-checkbox-inner {
             background-color: var(--checkbox-disabled-bg);
+
+            &::after {
+                color: var(--checkbox-disabled-color);
+            }
         }
     }
 
     .@{ant-prefix}-checkbox-checked,
     .@{ant-prefix}-checkbox {
         &.@{ant-prefix}-checkbox-disabled .@{ant-prefix}-checkbox-inner {
-            border-color: var(--theme-border-color-disabled) !important;
+            border-color: var(--checkbox-disabled-border-color) !important;
         }
+    }
+
+    .ant-checkbox + span {
+        padding-right: var(--checkbox-padding-horizontal);
+        padding-left: var(--checkbox-padding-horizontal);
     }
 }
