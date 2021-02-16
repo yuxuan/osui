@@ -38,7 +38,11 @@
     }
 
     .@{ant-prefix}-tree-switcher {
-        width: 18px;
+        width: var(--tree-switcher-width);
+
+        &.@{ant-prefix}-tree-switcher-noop + .@{ant-prefix}-tree-node-content-wrapper {
+            padding-left: 0;
+        }
     }
 
     .@{ant-prefix}-tree-switcher .@{ant-prefix}-tree-switcher-icon,
