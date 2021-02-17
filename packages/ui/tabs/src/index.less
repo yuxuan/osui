@@ -14,33 +14,33 @@
     }
 
     .@{ant-prefix}-tabs-tab.@{ant-prefix}-tabs-tab-active .@{ant-prefix}-tabs-tab-btn {
-        font-weight: normal;
+        font-weight: var(--tabs-tab-active-font-weight);
 
         em.num {
-            background: var(--color-brand-1);
             color: var(--link-color);
+            background: var(--color-brand-1);
         }
     }
 
     .@{ant-prefix}-tabs-tab .@{ant-prefix}-tabs-tab-btn {
         em.num {
-            background: var(--color-gray-3);
-            border-radius: 10px;
+            display: inline-block;
             width: 25px;
             height: 20px;
-            font-size: 12px;
-            color: var(--tabs-tab-color);
-            line-height: 20px;
-            display: inline-block;
-            text-align: center;
             margin-left: 5px;
+            color: var(--tabs-tab-color);
+            font-size: 12px;
             font-style: normal;
+            line-height: 20px;
+            text-align: center;
+            background: var(--color-gray-3);
+            border-radius: 10px;
         }
 
         &:hover {
             em.num {
-                background: var(--color-brand-1);
                 color: var(--link-color);
+                background: var(--color-brand-1);
             }
         }
     }
@@ -66,17 +66,21 @@
         }
 
         .@{ant-prefix}-tabs-tab.@{ant-prefix}-tabs-tab-with-remove {
-            padding-right: 4px;
+            button {
+                margin-left: 0;
+                padding-right: 0;
+                padding-left: 10px;
+            }
         }
 
         .@{ant-prefix}-tabs-nav-add {
+            align-self: center;
+            width: 30px;
+            min-width: 30px;
+            height: 30px;
+            color: var(--color-gray-8);
             background: var(--color-gray-3);
             border: 1px solid var(--color-gray-6);
-            color: var(--color-gray-8);
-            width: 30px;
-            height: 30px;
-            min-width: 30px;
-            align-self: center;
         }
     }
 }
