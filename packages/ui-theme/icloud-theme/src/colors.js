@@ -176,8 +176,9 @@ exports.uiColors = {
 
 const buttonColors = {
     // antd
-    '--btn-disable-bg': 'var(--theme-disabled-bg)',
-    '--btn-disable-border': 'var(--theme-disabled-bg)',
+    // icloud button disabled的颜色和border颜色一样
+    '--btn-disable-bg': 'var(--theme-border-color-disabled)',
+    '--btn-disable-border': 'var(--theme-border-color-disabled)',
     '--btn-disable-color': 'var(--color-gray-7)',
     // type default
     '--btn-default-bg': 'var(--theme-component-bg)',
@@ -283,10 +284,10 @@ exports.presetColors = {
     '--theme-border-color-base': 'var(--color-gray-6)',
     '--theme-border-color-inverse': '#fff',
     '--theme-border-color-split': 'var(--color-gray-4)',
-    '--theme-border-color-disabled': 'var(--theme-border-color-base)',
+    '--theme-border-color-disabled': 'var(--color-gray-4)',
     '--theme-component-bg': 'var(--color-gray-1)',
     '--theme-component-focus-box-shadow': 'none',
-    '--theme-disabled-bg': 'var(--color-gray-4)',
+    '--theme-disabled-bg': 'var(--color-gray-3)',
     '--theme-disabled-color': 'var(--color-gray-6)',
     '--theme-error-color-active': 'var(--color-error-7)',
     '--theme-error-color-hover': 'var(--color-error-5)',
@@ -432,7 +433,8 @@ exports.presetColors = {
     '--pagination-item-active-bg': 'var(--theme-component-bg)',
     '--pagination-item-active-color': 'var(--theme-primary-color)',
     '--pagination-item-disabled-border-color': 'transparent',
-    '--pagination-disabled-bg': 'var(--theme-component-bg)',
+    '--pagination-disabled-bg': 'var(--theme-disabled-bg)',
+    '--pagination-prev-next-icon-color': 'var(--color-gray-7)',
     '--checkbox-hover-border-color': 'var(--theme-primary-color-hover)',
     '--checkbox-hover-bg': 'var(--theme-component-bg)',
     '--checkbox-focus-bg': 'var(--theme-component-bg)',

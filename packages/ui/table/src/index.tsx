@@ -103,12 +103,6 @@ function Table<RecordType extends Record<string, any>>(
     let innerPagination: boolean | PaginationProps = !(pagination === false || pagination === null);
 
     if (innerPagination) {
-        const goButtonProps = (
-            pagination && {
-                disabled: pagination.disabled,
-                ...(pagination as PaginationProps).goButtonProps,
-            }
-        ) as PaginationProps['goButtonProps'];
         innerPagination = {
             ...pagination,
             className: classNames(
@@ -117,11 +111,11 @@ function Table<RecordType extends Record<string, any>>(
                 'osui-pagination',
                 pagination && pagination.className
             ),
-            itemRender: customPaginationProps(brand, goButtonProps).itemRender,
-            showQuickJumper: customPaginationProps(brand, goButtonProps).showQuickJumper(
+            itemRender: customPaginationProps(brand).itemRender,
+            showQuickJumper: customPaginationProps(brand).showQuickJumper(
                 pagination && pagination.showQuickJumper, props.size as PaginationProps['size']
             ),
-            locale: customPaginationProps(brand, goButtonProps).locale,
+            locale: customPaginationProps(brand).locale,
         };
     }
 
