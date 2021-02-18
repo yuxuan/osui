@@ -41,7 +41,7 @@ function InternalSelect<R, T>(props: SelectProps<T>, ref: React.Ref<R>): React.R
         {
             targetProp: 'menuItemSelectedIcon',
             shouldOverride: isMultiple, // 只有在多选时，加上menuItemSelectedIcon
-            override: <IconCheckSquareFilled />,
+            override: <IconCheckSquareFilled className={`${clsPrefix}-check-icon`} />,
         },
         {
             targetProp: 'showArrow',

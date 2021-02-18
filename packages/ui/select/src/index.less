@@ -10,23 +10,25 @@
     // disable
     &.@{ant-prefix}-select-disabled.@{ant-prefix}-select-single:not(.@{ant-prefix}-select-customize-input) {
         .@{ant-prefix}-select-selector {
-            background: transparent;
+            color: var(--theme-disabled-color);
+            background: var(--select-disabled-bg);
+            border-color: var(--theme-border-color-disabled);
         }
 
         .@{ant-prefix}-select-arrow svg {
-            color: var(--theme-disabled-color);
+            color: var(--color-gray-6);
         }
     }
 
     // arrow icon
     .@{ant-prefix}-select-arrow {
+        top: 43%;
         width: @font-size-lg;
         height: @font-size-lg;
-        top: 43%;
 
         svg {
+            color: var(--theme-disabled-color);
             font-size: @font-size-lg;
-            color: var(--theme-text-color);
             transition: var(--select-arrow-transition);
         }
     }
@@ -38,9 +40,9 @@
     // no-border
     &&-no-border {
         .@{ant-prefix}-select-selector {
+            background: transparent;
             border: 1px solid transparent;
             box-shadow: none;
-            background: transparent;
 
             &:hover {
                 background: var(--theme-component-bg);
@@ -48,18 +50,18 @@
         }
 
         &.@{ant-prefix}-select-open .@{ant-prefix}-select-selector {
+            background: var(--theme-component-bg);
             border: 1px solid var(--theme-primary-color-hover);
             box-shadow: 0 0 0 @outline-width var(--theme-border-focus-color);
-            background: var(--theme-component-bg);
         }
     }
 
     .@{ant-prefix}-select-clear {
-        opacity: 1;
         right: 30px;
         width: 14px;
         height: 14px;
         color: var(--color-gray-6);
+        opacity: 1;
 
         &:hover {
             color: var(--color-gray-6);
@@ -119,7 +121,12 @@
         .@{ant-prefix}-select-item-option-state {
             position: absolute;
             top: 17%;
-            left: 16px;
+            left: 17px;
         }
+    }
+
+    .@{osui-select-class-prefix}-check-icon {
+        width: var(--select-check-icon-size);
+        height: var(--select-check-icon-size);
     }
 }

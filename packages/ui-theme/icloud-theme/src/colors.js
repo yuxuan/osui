@@ -316,7 +316,7 @@ exports.presetColors = {
     '--theme-highlight-color': 'var(--color-error-5)',
     '--theme-outline-color': 'var(--color-brand-4)',
     '--theme-processing-color': 'var(--color-brand-6)',
-    '--theme-border-focus-color': 'var(--color-brand-6)',
+    '--theme-border-focus-color': 'var(--theme-primary-color-active)',
     '--theme-icon-color': 'var(--color-gray-7)',
     // 组件属性
     '--alert-error-bg-color': 'var(--color-error-1)',
@@ -383,6 +383,7 @@ exports.presetColors = {
     '--select-item-active-bg': 'var(--theme-secondary-color-hover)',
     '--select-item-selected-bg': 'var(--theme-secondary-color-hover)',
     '--select-disabled-bg': 'var(--theme-disabled-bg)',
+    '--select-check-icon-size': '12px',
     '--space-large': '30px',
     '--space-middle': '20px',
     '--space-small': '10px',

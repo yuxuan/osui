@@ -406,6 +406,7 @@ exports.presetColors = {
     '--select-item-active-bg': 'var(--theme-secondary-color-hover)',
     '--select-item-selected-bg': 'var(--color-brand-1)',
     '--select-disabled-bg': 'transparent',
+    '--select-check-icon-size': '16px',
     '--shadow-1': '0 4px 8px -2px rgba(9, 30, 66, 0.25), 0 0 1px 0 rgba(9, 30, 66, 0.31)', // 和antd的shadow-1的不一样，用于气泡
     '--shadow-2': '0 8px 16px -4px rgba(9, 30, 66, 0.25)',
     '--space-large': '24px',
