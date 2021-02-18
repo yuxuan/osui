@@ -77,6 +77,7 @@
         "@osui/drawer": "^0.10.3",
         "@osui/dropdown": "^0.10.4",
         "@osui/empty": "^0.10.0",
+        "@osui/flex-centered": "0.10.1",
         "@osui/form": "^0.10.1",
         "@osui/gap": "^0.10.0",
         "@osui/grid": "^0.10.0",

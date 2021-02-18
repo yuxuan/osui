@@ -26,6 +26,7 @@ export {default as Divider} from '@osui/divider';
 export {default as Drawer} from '@osui/drawer';
 export {default as Dropdown} from '@osui/dropdown';
 export {default as Empty} from '@osui/empty';
+export {default as FlexCentered} from '@osui/flex-centered';
 export {default as Form} from '@osui/form';
 export {default as Gap} from '@osui/gap';
 export {default as Grid} from '@osui/grid';

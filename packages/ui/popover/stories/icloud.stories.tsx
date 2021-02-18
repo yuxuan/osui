@@ -266,5 +266,4 @@ export const Demo3 = () => {
             </Popover>
         </>
     );
-
-}
+};

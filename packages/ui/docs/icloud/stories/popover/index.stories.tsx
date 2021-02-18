@@ -1,58 +1,85 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Button from '@osui/button';
 import Gap from '@osui/gap';
+import Divider from '@osui/divider';
 import Popover from '@osui/popover';
 
 export default {
     title: '通过验收/Popover 气泡卡片',
 };
 
-export const Demo = () => {
+export const Demo1 = () => {
     const content = (
         <div>
-            我是内容
-        </div>);
-    const content1 = (
-        <div>
-            我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容
+            我是内容内容内容内容内容
         </div>
     );
 
+    return (
+        <div style={{ padding: 30 }}>
+            <Divider orientation="left">带标题</Divider>
+            <Popover
+                title="卡片标题"
+                content={
+                    <div>
+                        {content}
+                    </div>
+                }
+                placement="top"
+            >
+                <Button>上方</Button>
+            </Popover>
+            <Divider orientation="left">三种触发方式</Divider>
+            <div style={{display: 'flex'}}>
+                <Popover
+                    title="卡片标题"
+                    content={content}
+                    placement="topLeft"
+                    trigger="hover"
+                >
+                    <Button>Hover</Button>
+                </Popover>
+                <Gap orientation="horizontal" factor={2} />
+                <Popover
+                    title="卡片标题"
+                    content={
+                        <div>
+                            {content}
+                        </div>
+                    }
+                    placement="topLeft"
+                    trigger="click"
+                >
+                    <Button>Click</Button>
+                </Popover>
+                <Gap orientation="horizontal" factor={2} />
+                <Popover
+                    title="卡片标题"
+                    content={
+                        <div>
+                            {content}
+                        </div>
+                    }
+                    placement="topLeft"
+                    trigger="focus"
+                >
+                    <Button>Focus</Button>
+                </Popover>
+            </div>
+        </div>
+    );
+};
+
+export const Demo2 = () => {
+    const content = (
+        <div>
+            我是内容
+        </div>
+    );
     const buttonWidth = 60;
 
     return (
         <div style={{ padding: 30 }}>
-            <p>三种触发方式</p>
-            <br />
-            <Popover
-                content={content1}
-                placement="topLeft"
-                trigger="hover"
-            >
-                <Button>Hover</Button>
-            </Popover>
-            <Popover
-                content={
-                    <div>
-                        {content1}
-                    </div>
-                }
-                placement="topLeft"
-                trigger="click"
-            >
-                <Button>Click</Button>
-            </Popover>
-            <Popover
-                content={
-                    <div>
-                        {content1}
-                    </div>
-                }
-                placement="topLeft"
-                trigger="focus"
-            >
-                <Button>Focus</Button>
-            </Popover>
             <p style={{ marginTop: 20 }}>气泡位置</p>
             <br />
             <div style={{ marginLeft: buttonWidth + 32, whiteSpace: 'nowrap', display: 'flex' }}>
@@ -207,7 +234,7 @@ export const Demo = () => {
     );
 };
 
-export const Close = () => {
+export const Demo3 = () => {
     const [clicked, setClicked] = useState(false);
 
     const hide = () => {
@@ -221,20 +248,22 @@ export const Close = () => {
     const clickContent = <div>内容内容内容内容内容内容内容内容</div>;
 
     return (
-        <Popover
-            content={
-                <div>
-                    {clickContent}
-                    <a onClick={hide}>关闭</a>
-                </div>
-            }
-            title="卡片标题"
-            trigger="click"
-            visible={clicked}
-            onVisibleChange={handleClickChange}
-        >
-            <Button>单击</Button>
-        </Popover>
+        <>
+            <Divider orientation="left">可以从内部关闭的气泡卡片</Divider>
+            <Popover
+                content={
+                    <div>
+                        {clickContent}
+                        <a onClick={hide}>关闭</a>
+                    </div>
+                }
+                title="卡片标题"
+                trigger="click"
+                visible={clicked}
+                onVisibleChange={handleClickChange}
+            >
+                <Button>单击</Button>
+            </Popover>
+        </>
     );
-
-}
+};

@@ -1,5 +1,6 @@
 import React from 'react';
-import {TimePicker} from 'antd';
+import Divider from '@osui/divider';
+import TimePicker from '@osui/time-picker';
 
 export default {
     title: '通过验收/TimePicker 时间选择框',
@@ -9,5 +10,17 @@ export default {
 export const Demo = () => {
     return (
         <TimePicker />
+    );
+};
+
+export const Demo2 = () => {
+
+    const {RangePicker} = TimePicker;
+
+    return (
+        <>
+            <Divider orientation="left">支持选择时间段</Divider>
+            <RangePicker />
+        </>
     );
 };
