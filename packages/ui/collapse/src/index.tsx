@@ -19,7 +19,7 @@ interface CollapseInterface extends React.FC<CollapseProps> {
     Panel: typeof CollapsePanel;
 }
 
-const Collapse: CollapseInterface = ({className, levelChild, ghost, ...restProps}) => {
+const Collapse: CollapseInterface = ({className, levelChild, ghost, expandIcon, ...restProps}) => {
     const { brand } = useBrandContext();
 
     const defaultProps = {
@@ -36,7 +36,7 @@ const Collapse: CollapseInterface = ({className, levelChild, ghost, ...restProps
         ...restProps,
     };
 
-    const expandIcon = useCallback(
+    const innerExpandIcon = useCallback(
         panelProps => {
             return (
                 panelProps.isActive
@@ -46,7 +46,7 @@ const Collapse: CollapseInterface = ({className, levelChild, ghost, ...restProps
         },
         []
     );
-    return <AntdCollapse {...defaultProps} expandIcon={expandIcon} />;
+    return <AntdCollapse {...defaultProps} expandIcon={expandIcon ?? innerExpandIcon} />;
 };
 
 interface CollapsePanelProps extends AntdCollapsePanelProps {
