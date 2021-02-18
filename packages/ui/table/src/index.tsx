@@ -112,9 +112,6 @@ function Table<RecordType extends Record<string, any>>(
                 pagination && pagination.className
             ),
             itemRender: customPaginationProps(brand).itemRender,
-            showQuickJumper: customPaginationProps(brand).showQuickJumper(
-                pagination && pagination.showQuickJumper, props.size as PaginationProps['size']
-            ),
             locale: customPaginationProps(brand).locale,
         };
     }
