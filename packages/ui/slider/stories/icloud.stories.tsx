@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
 import InputNumber from '@osui/input-number';
 import Gap from '@osui/gap';
+import Divider from '@osui/divider';
 import Slider from '../src';
-import { Divider } from 'antd';
 
 export default {
     title: '验收中/Slider 滑动输入条',
