@@ -23,8 +23,8 @@ export const Demo = () => {
     const tailLayout = {
         wrapperCol: {
             offset: 4,
-            span: 18,
-        },
+            span: 18
+        }
     };
 
     const onFinish = values => {

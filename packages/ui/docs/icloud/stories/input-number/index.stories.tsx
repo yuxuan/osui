@@ -1,5 +1,6 @@
 import React from 'react';
 import Space from '@osui/space';
+import Divider from '@osui/divider';
 import InputNumber from '@osui/input-number';
 
 export default {
@@ -12,7 +13,13 @@ export const Demo = () => {
         console.log('changed', value);
     };
     return (
-        <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />
+        <>
+            <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />
+            <br />
+            <br />
+            <Divider orientation="left">禁用样式</Divider>
+            <InputNumber disabled min={1} max={10} defaultValue={3} onChange={onChange} />
+        </>
     );
 };
 

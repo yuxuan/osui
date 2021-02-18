@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Button from '@osui/button';
+import Gap from '@osui/gap';
 import Popover from '@osui/popover';
 
 export default {
@@ -20,7 +21,7 @@ export const Demo = () => {
     const buttonWidth = 60;
 
     return (
-        <div style={{padding: 30}}>
+        <div style={{ padding: 30 }}>
             <p>三种触发方式</p>
             <br />
             <Popover
@@ -39,7 +40,7 @@ export const Demo = () => {
                 placement="topLeft"
                 trigger="click"
             >
-                <Button style={{margin: '0 20px'}}>Click</Button>
+                <Button>Click</Button>
             </Popover>
             <Popover
                 content={
@@ -52,9 +53,9 @@ export const Demo = () => {
             >
                 <Button>Focus</Button>
             </Popover>
-            <p style={{marginTop: 20}}>气泡位置</p>
+            <p style={{ marginTop: 20 }}>气泡位置</p>
             <br />
-            <div style={{ marginLeft: buttonWidth + 32, whiteSpace: 'nowrap' }}>
+            <div style={{ marginLeft: buttonWidth + 32, whiteSpace: 'nowrap', display: 'flex' }}>
                 <Popover
                     content={
                         <div>
@@ -66,6 +67,7 @@ export const Demo = () => {
                 >
                     <Button>TL</Button>
                 </Popover>
+                <Gap orientation="horizontal" factor={2} />
                 <Popover
                     content={
                         <div>
@@ -75,8 +77,9 @@ export const Demo = () => {
                     placement="top"
                     trigger="click"
                 >
-                    <Button style={{margin: '0 20px'}}>Top</Button>
+                    <Button>Top</Button>
                 </Popover>
+                <Gap orientation="horizontal" factor={2} />
                 <Popover
                     content={
                         <div>
@@ -101,6 +104,7 @@ export const Demo = () => {
                 >
                     <Button>LT</Button>
                 </Popover>
+                <Gap orientation="vertical" factor={2} />
                 <Popover
                     content={
                         <div>
@@ -110,8 +114,9 @@ export const Demo = () => {
                     placement="left"
                     trigger="click"
                 >
-                    <Button style={{margin: '20px 0'}}>Left</Button>
+                    <Button>Left</Button>
                 </Popover>
+                <Gap orientation="vertical" factor={2} />
                 <Popover
                     content={
                         <div>
@@ -136,6 +141,7 @@ export const Demo = () => {
                 >
                     <Button>RT</Button>
                 </Popover>
+                <Gap orientation="vertical" factor={2} />
                 <Popover
                     content={
                         <div>
@@ -145,8 +151,9 @@ export const Demo = () => {
                     placement="right"
                     trigger="click"
                 >
-                    <Button style={{margin: '20px 0'}}>Right</Button>
+                    <Button>Right</Button>
                 </Popover>
+                <Gap orientation="vertical" factor={2} />
                 <Popover
                     content={
                         <div>
@@ -159,7 +166,7 @@ export const Demo = () => {
                     <Button>RB</Button>
                 </Popover>
             </div>
-            <div style={{ marginLeft: buttonWidth + 25, clear: 'both', whiteSpace: 'nowrap' }}>
+            <div style={{ marginLeft: buttonWidth + 25, clear: 'both', whiteSpace: 'nowrap', display: 'flex' }}>
                 <Popover
                     content={
                         <div>
@@ -171,6 +178,7 @@ export const Demo = () => {
                 >
                     <Button>BL</Button>
                 </Popover>
+                <Gap orientation="horizontal" factor={2} />
                 <Popover
                     content={
                         <div>
@@ -180,8 +188,9 @@ export const Demo = () => {
                     placement="bottom"
                     trigger="click"
                 >
-                    <Button style={{margin: '0 20px'}}>Bottom</Button>
+                    <Button>Bottom</Button>
                 </Popover>
+                <Gap orientation="horizontal" factor={2} />
                 <Popover
                     content={
                         <div>
@@ -197,3 +206,35 @@ export const Demo = () => {
         </div>
     );
 };
+
+export const Close = () => {
+    const [clicked, setClicked] = useState(false);
+
+    const hide = () => {
+        setClicked(false);
+    };
+
+    const handleClickChange = () => {
+        setClicked((visible: boolean) => !visible);
+    };
+
+    const clickContent = <div>内容内容内容内容内容内容内容内容</div>;
+
+    return (
+        <Popover
+            content={
+                <div>
+                    {clickContent}
+                    <a onClick={hide}>关闭</a>
+                </div>
+            }
+            title="卡片标题"
+            trigger="click"
+            visible={clicked}
+            onVisibleChange={handleClickChange}
+        >
+            <Button>单击</Button>
+        </Popover>
+    );
+
+}

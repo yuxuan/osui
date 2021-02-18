@@ -3,7 +3,7 @@ import Button from '@osui/button';
 import Gap from '@osui/gap';
 
 export default {
-    title: '通过验收/Gap 间隔',
+    title: '布局/Gap 间隔',
     component: Gap,
 };
 

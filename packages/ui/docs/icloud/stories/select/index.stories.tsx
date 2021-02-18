@@ -130,3 +130,77 @@ export const MultipleDemo = () => {
         </>
     );
 };
+
+
+export const Test = () => {
+    const SelectSearch = () => {
+        const { Option } = Select;
+
+        function onChange(value) {
+            console.log(`selected ${value}`);
+        }
+
+        function onBlur() {
+            console.log('blur');
+        }
+
+        function onFocus() {
+            console.log('focus');
+        }
+
+        function onSearch(val) {
+            console.log('search:', val);
+        }
+
+        return (
+            <Select
+                showSearch
+                showArrow={false}
+                style={{ width: 200 }}
+                placeholder="Select a person"
+                optionFilterProp="children"
+                onChange={onChange}
+                onFocus={onFocus}
+                onBlur={onBlur}
+                onSearch={onSearch}
+                filterOption={(input, option) =>
+                    option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                }
+            >
+                <Option value="jack">Jack</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="tom">Tom</Option>
+            </Select>
+        );
+    };
+
+    const MultiSelect = () => {
+
+        const { Option } = Select;
+
+        const children = [];
+        for (let i = 10; i < 36; i++) {
+            children.push(<Option key={i.toString(36) + i}>{i.toString(36) + i}</Option>);
+        }
+
+        function handleChange(value) {
+            console.log(`selected ${value}`);
+        }
+
+        return (
+            <>
+                <Select
+                    mode="multiple"
+                    allowClear
+                    style={{ width: '100%' }}
+                    placeholder="Please select"
+                    defaultValue={['a10', 'c12']}
+                    onChange={handleChange}
+                >
+                    {children}
+                </Select>
+                <br />
+            </>
+        );
+    };
+}

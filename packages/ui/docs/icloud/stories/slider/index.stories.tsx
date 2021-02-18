@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
 import InputNumber from '@osui/input-number';
 import Gap from '@osui/gap';
+import Divider from '@osui/divider';
 import Slider from '@osui/slider';
 
 export default {
@@ -18,6 +19,7 @@ export const Demo = () => {
         <>
             <h2>轻量/默认</h2>
             <p>说明：这个不是一个单独组件，Input的number可以按需调整</p>
+            <p>注意：规范InputNumber的宽度为72px，需要自己添加style</p>
             <div style={{display: 'flex'}}>
                 <div style={{width: '50%'}}>
                     <Slider
@@ -27,7 +29,7 @@ export const Demo = () => {
                 </div>
                 <Gap orientation="horizontal" factor={4} />
                 <div>
-                    <InputNumber value={inputValue} onChange={handleChange} />
+                    <InputNumber style={{width: 72}} value={inputValue} onChange={handleChange} />
                 </div>
             </div>
         </>
@@ -43,6 +45,7 @@ export const AdvanceDemo = () => {
         <>
             <BrandProvider brand="icloud">
                 <p>目前不支持部分disable</p>
+                <p>注意：规范InputNumber的宽度为72px，需要自己添加style</p>
                 <div style={{display: 'flex'}}>
                     <div style={{width: '50%'}}>
                         <Slider
@@ -63,9 +66,10 @@ export const AdvanceDemo = () => {
                     </div>
                     <Gap orientation="horizontal" factor={4} />
                     <div>
-                        <InputNumber step={25} value={inputValue} onChange={handleChange} />
+                        <InputNumber style={{width: 72}} step={25} value={inputValue} onChange={handleChange} />
                     </div>
                 </div>
+                <Divider orientation="left">Disabled</Divider>
                 <Slider
                     disabled
                     dots
