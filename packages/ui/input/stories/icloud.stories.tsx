@@ -109,8 +109,8 @@ export const Complete = () => {
             <Gap orientation="vertical" factor={2} />
             <p>注意，用组合的时候，disabled需要自己加在addonBefore和addonAfter组件上</p>
             <Input disabled addonBefore={selectBeforeDisabled} addonAfter={selectAfterDisabled} defaultValue="mysite" />
-            <p>宽度自适应： 待补充</p>
-            <p>高度自适应： 待补充</p>
+            <Divider orientation="left">5. 组合输入框 宽度自适应：待补充</Divider>
+            <Divider orientation="left">5. 组合输入框 高度自适应：待补充</Divider>
         </>
     );
 };
