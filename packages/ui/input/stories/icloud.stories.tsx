@@ -97,13 +97,13 @@ export const Complete = () => {
     return (
         <>
             <Divider orientation="left">1. 含推荐功能的输入框</Divider>
-            <p>见Select</p>
+            <p>见AutoComplete，支持输入，同时支持选择内容</p>
             <Divider orientation="left">2. 含搜索联想功能的输入框</Divider>
             <p>见AutoComplete</p>
             <Divider orientation="left">3. 含推荐和搜索联想功能的输入框</Divider>
-            <p>见Select</p>
+            <p>见AutoComplete</p>
             <Divider orientation="left">4. 含搜索联想功能且支持多选的输入框</Divider>
-            <p>见Select</p>
+            <p>见Select多选</p>
             <Divider orientation="left">5. 组合输入框</Divider>
             <Input addonBefore={selectBefore} addonAfter={selectAfter} defaultValue="mysite" />
             <Gap orientation="vertical" factor={2} />
