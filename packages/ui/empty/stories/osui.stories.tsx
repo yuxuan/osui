@@ -1,5 +1,5 @@
 import React from 'react';
-import {Empty} from 'antd';
+import Empty from '../src';
 
 export default {
     title: 'Empty',
