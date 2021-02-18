@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 import {Input as AntdInput} from 'antd';
-import { InputProps as AntdInputProps, TextAreaProps as AntdTextAreaProps} from 'antd/es/input';
+import {InputProps as AntdInputProps, TextAreaProps as AntdTextAreaProps} from 'antd/es/input';
 import classNames from 'classnames';
 import './index.less';
 
@@ -15,8 +15,36 @@ interface InputInterface extends React.FC<InputProps> {
     Password: typeof AntdInput.Password;
 }
 
-const Input = React.forwardRef<any, AntdInputProps>((props, ref) => {
-    return <AntdInput ref={ref} {...props} className={classNames(clsPrefix, props.className)} />;
+const Input = React.forwardRef<any, AntdInputProps>(({className, onFocus, onBlur, disabled, ...props}, ref) => {
+    const [focused, setFocused] = useState(false);
+    const innerClassNames = classNames(clsPrefix, className, {
+        [`${clsPrefix}-focused`]: focused,
+        [`${clsPrefix}-disabled`]: disabled,
+    });
+    const handleFocus = useCallback(
+        e => {
+            onFocus && onFocus(e);
+            setFocused(true);
+        },
+        [onFocus]
+    );
+    const handleBlur = useCallback(
+        e => {
+            onBlur && onBlur(e);
+            setFocused(false);
+        },
+        [onBlur]
+    );
+    return (
+        <AntdInput
+            ref={ref}
+            className={innerClassNames}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
+            disabled={disabled}
+            {...props}
+        />
+    );
 }) as unknown as InputInterface;
 
 Input.Password = React.forwardRef<any, AntdInputProps>((props, ref) => {

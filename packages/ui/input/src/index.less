@@ -13,4 +13,55 @@
             background: var(--input-focus-background-color);
         }
     }
+
+    &.@{ant-prefix}-input-group-wrapper {
+        input {
+            border-right: 0;
+            border-left: 0;
+        }
+    }
+
+    // input group hover
+    &:hover,
+    .@{ant-prefix}-input-group {
+        &:hover {
+            .@{ant-prefix}-input-group-addon,
+            input {
+                border-color: var(--theme-primary-color-hover);
+            }
+        }
+    }
+
+    &-focused {
+        .@{ant-prefix}-input-group {
+            .@{ant-prefix}-input-group-addon,
+            input {
+                border-color: var(--theme-primary-color-active);
+            }
+        }
+    }
+
+    &-disabled {
+        .@{ant-prefix}-input-group {
+            .@{ant-prefix}-input-group-addon {
+                background: var(--theme-border-color-disabled);
+            }
+
+            .@{ant-prefix}-input-group-addon,
+            input {
+                border-color: var(--theme-border-color-disabled);
+            }
+
+            &:hover {
+                .@{ant-prefix}-input-group-addon,
+                input {
+                    border-color: var(--theme-border-color-disabled);
+                }
+            }
+        }
+    }
+
+    .@{ant-prefix}-select-single.@{ant-prefix}-select-open .@{ant-prefix}-select-selection-item {
+        color: var(--theme-primary-color-active);
+    }
 }
