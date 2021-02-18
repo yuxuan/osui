@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 1024 1024"><g fill="none" fill-rule="evenodd"><path fill="#999" d="M0 0h1024v1024H0z"/><path d="M308.02 715.803L127 534.783l90.51-90.509 181.019 181.02L805.823 218l90.51 90.51-497.804 497.803-90.51-90.51z" style="fill: #fff;" fill-rule="nonzero"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1">
+    <title>复选框/对勾</title>
+    <g id="复选框/对勾" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M1024,0 L1024,1024 L0,1024 L0,0 L1024,0 Z M805.82251,218 L398.529,625.294 L217.509668,444.27417 L127,534.783838 L308.02,715.803 L398.529004,806.312842 L896.332178,308.509668 L805.82251,218 Z" id="形状结合" fill="#999999"/>
+    </g>
+</svg>
