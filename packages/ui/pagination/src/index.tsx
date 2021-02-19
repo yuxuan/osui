@@ -27,7 +27,7 @@ export const customPaginationProps = (brand: 'osc'|'icloud'|undefined) => {
     };
     const icloud = {
         itemRender,
-        locale: {'jump_to': '跳转至', 'page': ''},
+        locale: {'jump_to': '跳转至', 'page': '页'},
     };
     return brand === 'osc' ? osc : icloud;
 };
