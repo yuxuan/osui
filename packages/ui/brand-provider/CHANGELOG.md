@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 补齐antd组件, 补齐文档 ([b6c76a8](https://gitee.com/gitee-fe/osui/tree/master/commits/b6c76a864b121479e151a97e926546f3370d0aed))
+* 调整brand-provider, 默认为undefined而不是osc ([46b1774](https://gitee.com/gitee-fe/osui/tree/master/commits/46b177404089ee38112a0347fe1c36d458672e5c))
+
+
+### Features
+
+* 增加BrandProvider组件, collapse使用BrandProvider组件 ([95a1cb1](https://gitee.com/gitee-fe/osui/tree/master/commits/95a1cb1f9f1aa56706ae171937fe6fc1255a644c))
+
+
+
+
+
 # [0.10.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/brand-provider@0.10.0-beta.0...@osui/brand-provider@0.10.0) (2021-01-04)
 
 **Note:** Version bump only for package @osui/brand-provider

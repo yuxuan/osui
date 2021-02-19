@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 补齐antd组件, 补齐文档 ([b6c76a8](https://gitee.com/gitee-fe/osui/tree/master/commits/b6c76a864b121479e151a97e926546f3370d0aed))
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+* tree ([c60b4c8](https://gitee.com/gitee-fe/osui/tree/master/commits/c60b4c8fd59cb8a78dc9fc72248003598330ca78))
+* tree ([4983dc2](https://gitee.com/gitee-fe/osui/tree/master/commits/4983dc24407762c7400a1d241052756a39ca3c5a))
+* tree 样式调整 ([c70e2ff](https://gitee.com/gitee-fe/osui/tree/master/commits/c70e2ffa5762e1159acfeb4e1159e21458dc1bb2))
+* tree样式的更新 ([f75be55](https://gitee.com/gitee-fe/osui/tree/master/commits/f75be55449a1d5f1d1e38aaa9c9649dafc83f67b))
+
+
+
+
+
 ## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tree@0.10.1...@osui/tree@0.10.2) (2021-02-03)
 
 

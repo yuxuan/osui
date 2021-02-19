@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 补齐antd组件, 补齐文档 ([b6c76a8](https://gitee.com/gitee-fe/osui/tree/master/commits/b6c76a864b121479e151a97e926546f3370d0aed))
+* 调整breadcrumb icloud样式 ([af29cbc](https://gitee.com/gitee-fe/osui/tree/master/commits/af29cbc361f62da1b1679a4ed73e4c1362c36ee0))
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+* breadcrumb icloud实现 ([91bc001](https://gitee.com/gitee-fe/osui/tree/master/commits/91bc001e812cda04df956b42d01c6d1766dfd47e))
+* breadcrumb补充demo文档 ([9a0ec54](https://gitee.com/gitee-fe/osui/tree/master/commits/9a0ec54b769dfea4025fefbdb66edf1c927c65c1))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/breadcrumb@0.10.0...@osui/breadcrumb@0.10.1) (2021-01-27)
 
 

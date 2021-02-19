@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 补齐antd组件, 补齐文档 ([b6c76a8](https://gitee.com/gitee-fe/osui/tree/master/commits/b6c76a864b121479e151a97e926546f3370d0aed))
+* 调整menu dropdown osc主题样式 ([7d4868c](https://gitee.com/gitee-fe/osui/tree/master/commits/7d4868c6b47fdbf024b06300d6d3064c94fb6f8e))
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+* dropdown满足osui和icloud调整 ([2026476](https://gitee.com/gitee-fe/osui/tree/master/commits/202647660b178deb4141b6684cc302fef854cb8b))
+* dropdown下拉menu设置最小宽度 ([8898c23](https://gitee.com/gitee-fe/osui/tree/master/commits/8898c2378ca47ddeb330e48b43c9190b4f656e27))
+* menu-dropdown osc 样式修复 ([b5f7ea8](https://gitee.com/gitee-fe/osui/tree/master/commits/b5f7ea8d2e8df8f7468fa969c20102fcce03bbe6))
+
+
+
+
+
 ## [0.10.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/dropdown@0.10.1...@osui/dropdown@0.10.4) (2021-01-22)
 
 

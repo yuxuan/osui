@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+*  table header border 颜色调整 ([34eaccc](https://gitee.com/gitee-fe/osui/tree/master/commits/34eacccd7f83063517a420ecaf37c132a086eaa4))
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 调整table ([24a19d1](https://gitee.com/gitee-fe/osui/tree/master/commits/24a19d1e54af67256912c9565c2a0c927349ea4a))
+* 调整table,pagination 增加brand context, 来展示对应的分页 ([e0be858](https://gitee.com/gitee-fe/osui/tree/master/commits/e0be858d681867a793570807ff93674c53ef3682))
+* 解决冲突 ([d602c0e](https://gitee.com/gitee-fe/osui/tree/master/commits/d602c0ecaae95988d4c7d4b0c04e4dada9eb6e8f))
+* 解决icon冲突 ([297269b](https://gitee.com/gitee-fe/osui/tree/master/commits/297269bc9b980efba87e5759b82a4f5fbea04052))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 修复table pagination hardcode antPrefix的问题 ([f904964](https://gitee.com/gitee-fe/osui/tree/master/commits/f904964108ec0903a45d531934e08be5eab30d17))
+* 修复table switch ([29c9ba8](https://gitee.com/gitee-fe/osui/tree/master/commits/29c9ba8b79904566ea84e010dd5ffa62c8e75ab4))
+* 修复table, radio样式问题 ([da66f88](https://gitee.com/gitee-fe/osui/tree/master/commits/da66f88f6744c34bfca87a980979661001a5dcc4))
+* 修复table里面pagination的样式 ([1b096a2](https://gitee.com/gitee-fe/osui/tree/master/commits/1b096a2c4bbb6f1f3099f336724b9dae6e46adaa))
+* 移除OSUI组件名前缀, 修复Table类型 ([72312fd](https://gitee.com/gitee-fe/osui/tree/master/commits/72312fd966309c8879c0ad283f435e9f3f4e0b29))
+* antd prefix 调整 ([bbcffc6](https://gitee.com/gitee-fe/osui/tree/master/commits/bbcffc66f779b7232c933ad61054d3c18926ea5c))
+* input pagination table ([9a5a199](https://gitee.com/gitee-fe/osui/tree/master/commits/9a5a199381628308778d6d98906c6b6200ee892b))
+* list, pagination/table, popover, switch, timeline, tooltip ([2f08302](https://gitee.com/gitee-fe/osui/tree/master/commits/2f08302a6e008c3039175a9ef283181ac3e62d31))
+* pagination调整 ([a14fd74](https://gitee.com/gitee-fe/osui/tree/master/commits/a14fd743d6f39de58e9e8493b972f98383806b62))
+* table ([ce77dff](https://gitee.com/gitee-fe/osui/tree/master/commits/ce77dff3ecdb5fc8ac3699a621d078c9f8f49523))
+* table ([a8909d1](https://gitee.com/gitee-fe/osui/tree/master/commits/a8909d176377e734e4d8864fce87696c75a2bb32))
+* table icloud-theme样式修复 ([3f0d5e3](https://gitee.com/gitee-fe/osui/tree/master/commits/3f0d5e36838640cf65145b5f489dfbb629f0ac8f))
+* table pagination可以设置为false, 修复pagination disabled样式问题 ([7b0100c](https://gitee.com/gitee-fe/osui/tree/master/commits/7b0100c6f23ad8d1c97ef8b7ee84f6d5a8bb11e3))
+* table调整增加no border的用法 ([ddee425](https://gitee.com/gitee-fe/osui/tree/master/commits/ddee42577d4feb343c5044c2df71481cf030d945))
+* table加上import React ([5b4c513](https://gitee.com/gitee-fe/osui/tree/master/commits/5b4c51342e570dfeb33328fcac29e47b8df87c59))
+
+
+### Features
+
+* 新增分页组件 ([c24133f](https://gitee.com/gitee-fe/osui/tree/master/commits/c24133f72fc5b3f00584e26f62daaa1a23083eac))
+* 新增table组件 ([eb0b2e7](https://gitee.com/gitee-fe/osui/tree/master/commits/eb0b2e70c2a8fa16dc4f6d30fc90bdf3f0a0e004))
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+
+
+
+
+
 ## [0.10.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.10.6...@osui/table@0.10.7) (2021-02-03)
 
 

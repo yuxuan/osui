@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 调整message ([173bd04](https://gitee.com/gitee-fe/osui/tree/master/commits/173bd0407040bfc9f00758b53fe76d8b0a7be8e3))
+* 调整message icloud theme ([45e0e6a](https://gitee.com/gitee-fe/osui/tree/master/commits/45e0e6ac48b01f0a5c1f2a6a9fabb6192d0ee937))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 修复message和alert代码调整 ([f0fbac7](https://gitee.com/gitee-fe/osui/tree/master/commits/f0fbac740c0a124b7b2801cfffb70847f28fa74a))
+* 修复message样式 ([9705008](https://gitee.com/gitee-fe/osui/tree/master/commits/970500865ebdd7d0d9636e12e0c53e0f733d8d9b))
+* message 调整 ([32cf5f7](https://gitee.com/gitee-fe/osui/tree/master/commits/32cf5f75966bd7ddd1e19ebe3db33c85f19a9d57))
+* message 添加对config的patch ([f04051e](https://gitee.com/gitee-fe/osui/tree/master/commits/f04051e10501cda931cd84c9ea83eae80474dc72))
+* message closeicon 位置调整 ([4a7601b](https://gitee.com/gitee-fe/osui/tree/master/commits/4a7601b6249904d74ca649269ed9051eb3fb91bb))
+* message prefix 修复 ([337cc0e](https://gitee.com/gitee-fe/osui/tree/master/commits/337cc0e3364d3b71ba1c206f8b42769d48775671))
+* message单独引入lodash.partial ([f1bb806](https://gitee.com/gitee-fe/osui/tree/master/commits/f1bb806df8756692941059af6fc445d70a6a36e1))
+* popover padding; chore：默认开发icloud-theme ([356cc34](https://gitee.com/gitee-fe/osui/tree/master/commits/356cc34992918ffb6c3d30283b2810fed8e18e79))
+* **message:** message组件props默认值修改 ([258658e](https://gitee.com/gitee-fe/osui/tree/master/commits/258658e64c477371216f8d01e114eb632b3a7f2d))
+
+
+### Features
+
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+* **message:** 新增message组件 ([6507e80](https://gitee.com/gitee-fe/osui/tree/master/commits/6507e8000aeb1671b4fbfbfb41269e79fcfbc95e))
+
+
+
+
+
 ## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/message@0.10.1...@osui/message@0.10.2) (2021-02-03)
 
 

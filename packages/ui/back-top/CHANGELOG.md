@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 调整Badge icloud主题样式 ([d93b3d2](https://gitee.com/gitee-fe/osui/tree/master/commits/d93b3d22fa6944e2ced97e53d3f0c8f01c341fe1))
+* 调整drawer icloud样式 ([7ce38a4](https://gitee.com/gitee-fe/osui/tree/master/commits/7ce38a4406014d384a432be4c74bb9d49a05e072))
+* 返回顶部组件代码 ([abd4c4c](https://gitee.com/gitee-fe/osui/tree/master/commits/abd4c4c0ee60e2c7f4e478b71cdf3341bbbdf5b8))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 样式修复 ([896665a](https://gitee.com/gitee-fe/osui/tree/master/commits/896665a45f52be9a2896157f20125f8a77809e34))
+* back-top icloud主题调整 ([3ef1dfa](https://gitee.com/gitee-fe/osui/tree/master/commits/3ef1dfaa94864794c3f415a956dd4dc1c9e4925b))
+* back-top icon ([694588c](https://gitee.com/gitee-fe/osui/tree/master/commits/694588cbad1cb7adbaa33641d284df864299e2e8))
+* back-top样式调整 ([6360ac7](https://gitee.com/gitee-fe/osui/tree/master/commits/6360ac7476b739d90e091a771186338d0aecf0a0))
+* backtop: ([ebc6018](https://gitee.com/gitee-fe/osui/tree/master/commits/ebc6018be3be68a7315208902a2f703e557b9834))
+* ue样式修复 ([b96ad12](https://gitee.com/gitee-fe/osui/tree/master/commits/b96ad1267689dd649f0a8bf82bedcbeff7e60983))
+
+
+### Features
+
+* 添加@osui/icons, 并在back-top组件中使用 ([28092fa](https://gitee.com/gitee-fe/osui/tree/master/commits/28092fa3d54a91b116ffe5fc05f43a628fc376c0))
+* 新增返回顶部组件库 ([c042ac6](https://gitee.com/gitee-fe/osui/tree/master/commits/c042ac610bcec3ed618e07e28439708a8f63e205))
+* back-top 新增悬浮状态 ([8f242bb](https://gitee.com/gitee-fe/osui/tree/master/commits/8f242bbdc35462bd7bbdd6faf8df05a79289212a))
+
+
+
+
+
 ## [0.10.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/back-top@0.10.2...@osui/back-top@0.10.3) (2021-02-03)
 
 **Note:** Version bump only for package @osui/back-top

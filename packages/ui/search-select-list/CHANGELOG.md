@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 调整Button,popover,search-select-list的样式 ([aa66478](https://gitee.com/gitee-fe/osui/tree/master/commits/aa66478c36f1b271c008b8ce71e923f218b68fb7))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 修复样式 ([a43ed79](https://gitee.com/gitee-fe/osui/tree/master/commits/a43ed793f7b01e40526ba3b0917d8ac902ec2eb7))
+* 样式修复 ([896665a](https://gitee.com/gitee-fe/osui/tree/master/commits/896665a45f52be9a2896157f20125f8a77809e34))
+* 优化 SeacrhSelectListProps 的传入类型 ([78dee7c](https://gitee.com/gitee-fe/osui/tree/master/commits/78dee7c3473e25e4cf762d78dcaf3a7bb1458a73))
+
+
+### Features
+
+* **search-select-list:** 增加input输入框可清除功能 ([ed9ed80](https://gitee.com/gitee-fe/osui/tree/master/commits/ed9ed80753b7e89b25d0d00b62e3a846be7e0881))
+* **search-select-list:** 支持自由扩展下拉菜单，修复空数组时反显为0的问题 ([4b8ca3f](https://gitee.com/gitee-fe/osui/tree/master/commits/4b8ca3f0f0012ea8762d154f804fd22830f3fad0))
+* **search-select-list:** render方法改为传入数据，导出LiItem自定义render ([4e7d13e](https://gitee.com/gitee-fe/osui/tree/master/commits/4e7d13ecd6a9c0c74275dc552a1b81d30016e4d4))
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+* **select-search-list:** 新增select-search-list组件 ([dfb8652](https://gitee.com/gitee-fe/osui/tree/master/commits/dfb8652356a64fd13c17559d040cd6b35ae773bc))
+
+
+
+
+
 ## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/search-select-list@0.11.0...@osui/search-select-list@0.11.1) (2021-02-03)
 
 **Note:** Version bump only for package @osui/search-select-list

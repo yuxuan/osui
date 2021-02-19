@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 调整Button,popover,search-select-list的样式 ([aa66478](https://gitee.com/gitee-fe/osui/tree/master/commits/aa66478c36f1b271c008b8ce71e923f218b68fb7))
+* 调整menu-dropdpwn; 添加文档 ([43014b7](https://gitee.com/gitee-fe/osui/tree/master/commits/43014b7b6e860729398cd8ead30cd47953b76af7))
+* 调整modal icloud样式 ([38d2e4d](https://gitee.com/gitee-fe/osui/tree/master/commits/38d2e4dc4dee2829061d4083bec0dbc584ddb0e3))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 修复modal.confirm有title时内容padding的问题 ([d0356e4](https://gitee.com/gitee-fe/osui/tree/master/commits/d0356e4a3484fbda39b4a402e13279f75d6ac7dd))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/gitee-fe/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+* 样式修复 ([4d6a435](https://gitee.com/gitee-fe/osui/tree/master/commits/4d6a435d8619434d977ea4988b2aa8474f90ce59))
+* 样式修复 ([896665a](https://gitee.com/gitee-fe/osui/tree/master/commits/896665a45f52be9a2896157f20125f8a77809e34))
+* form输入框样式、标题样式修复，Modal异步确认样式修复 ([6e92879](https://gitee.com/gitee-fe/osui/tree/master/commits/6e92879a3dcae165145af0493614dce7d44531f9))
+* modal ([ad2fcdb](https://gitee.com/gitee-fe/osui/tree/master/commits/ad2fcdb4bdd38017c451dbb428742b9917fb0df6))
+* modal ([38fc259](https://gitee.com/gitee-fe/osui/tree/master/commits/38fc259d2c9cfa2ec0b55be6b9e7d7c3057c9405))
+* modal 调整 ([3e92aa4](https://gitee.com/gitee-fe/osui/tree/master/commits/3e92aa40204994ce2b8ed6bcb85d7006aa297710))
+* modal confirm button调整 ([e408724](https://gitee.com/gitee-fe/osui/tree/master/commits/e40872414fd7d5d12df48e5ef9f736adb8a1cc6a))
+* modal icloud theme 调整 ([c8e0598](https://gitee.com/gitee-fe/osui/tree/master/commits/c8e059806876a3154c23b629008a9e27cae01caa))
+* modal icloud theme 调整 ([7c56388](https://gitee.com/gitee-fe/osui/tree/master/commits/7c563884ea60f84489c56aa018d67a8e892fc5f4))
+* modal overflow auto ([c80d97c](https://gitee.com/gitee-fe/osui/tree/master/commits/c80d97c08401b35d8960f78f675f42e05b92b0e6))
+* modal title设置max-width ([7193e07](https://gitee.com/gitee-fe/osui/tree/master/commits/7193e079247eafc40dd4c78d3c8117af54120ea0))
+* modal, switch icloud-theme样式修复 ([d1eea7d](https://gitee.com/gitee-fe/osui/tree/master/commits/d1eea7d5984887a7bec2fd8fa59dcf867b6564c4))
+* modal样式修复 ([18b79ce](https://gitee.com/gitee-fe/osui/tree/master/commits/18b79cec00f20aa8cd65c18fcccbbc24d139f2a4))
+* popover padding; chore：默认开发icloud-theme ([356cc34](https://gitee.com/gitee-fe/osui/tree/master/commits/356cc34992918ffb6c3d30283b2810fed8e18e79))
+* **modal:** 修改Modal api模式 ([40852fc](https://gitee.com/gitee-fe/osui/tree/master/commits/40852fc0014d0e330dc3df0492d1eb26dca59a6e))
+
+
+### Features
+
+* 增加BrandProvider组件, collapse使用BrandProvider组件 ([95a1cb1](https://gitee.com/gitee-fe/osui/tree/master/commits/95a1cb1f9f1aa56706ae171937fe6fc1255a644c))
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+* **modal:** 新增modal组件 ([768209d](https://gitee.com/gitee-fe/osui/tree/master/commits/768209d0307f553e3ecab54d51a70dba98230239))
+* **modal:** 新增modal组件 ([8cd8e4a](https://gitee.com/gitee-fe/osui/tree/master/commits/8cd8e4ae2de4373ae6c0caf932c66e8a089af10c))
+
+
+
+
+
 ## [0.10.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.10.6...@osui/modal@0.10.7) (2021-02-03)
 
 

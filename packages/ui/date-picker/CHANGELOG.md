@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 修复date-picker RangePicker的className ([b227b8d](https://gitee.com/gitee-fe/osui/tree/master/commits/b227b8deaccb8dc4335c371675f3ccbebcf55b10))
+* 修复date-picker suffix color ([fa1ff3c](https://gitee.com/gitee-fe/osui/tree/master/commits/fa1ff3cd4cbf3e9f77cfce0850e28048f1d2dbcd))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/gitee-fe/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+* 样式修复 ([4d6a435](https://gitee.com/gitee-fe/osui/tree/master/commits/4d6a435d8619434d977ea4988b2aa8474f90ce59))
+* 增加author ([dabbc23](https://gitee.com/gitee-fe/osui/tree/master/commits/dabbc23ddf453a1184833f6d784c36f567b2532e))
+* slider, date-picker icloud样式调整 ([c8983d9](https://gitee.com/gitee-fe/osui/tree/master/commits/c8983d9dbe90af5406e528e6b68f52677d320408))
+
+
+### Features
+
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+* **datepicker:** 新增日期组件 ([33a831d](https://gitee.com/gitee-fe/osui/tree/master/commits/33a831dee8c0e6f46eef039e1abe160c7147cbdc))
+
+
+
+
+
 ## [0.10.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/date-picker@0.10.0...@osui/date-picker@0.10.4) (2021-01-22)
 
 

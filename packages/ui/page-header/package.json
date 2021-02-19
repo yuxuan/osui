@@ -1,6 +1,6 @@
 {
     "name": "@osui/page-header",
-    "version": "0.10.2",
+    "version": "0.11.0",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -71,6 +71,6 @@
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
-        "@osui/icons": "^0.10.2"
+        "@osui/icons": "^0.11.0"
     }
 }

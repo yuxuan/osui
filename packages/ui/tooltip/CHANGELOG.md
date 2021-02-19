@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 调整menu-dropdpwn; 添加文档 ([43014b7](https://gitee.com/gitee-fe/osui/tree/master/commits/43014b7b6e860729398cd8ead30cd47953b76af7))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 修复样式 ([9979e55](https://gitee.com/gitee-fe/osui/tree/master/commits/9979e556048898e5182851e9cfde7f464b1c749d))
+* 增加TextOverflowTooltip，只在text overflow的时候展示 ([b1df65d](https://gitee.com/gitee-fe/osui/tree/master/commits/b1df65d1a62e3fff3fb7f8735631a24b0cb5d587))
+* less-functions-override ([6f1f4c0](https://gitee.com/gitee-fe/osui/tree/master/commits/6f1f4c055f5701044f95a97ac3e7585a772e314a))
+* list, pagination/table, popover, switch, timeline, tooltip ([2f08302](https://gitee.com/gitee-fe/osui/tree/master/commits/2f08302a6e008c3039175a9ef283181ac3e62d31))
+
+
+### Features
+
+* 调整alert功能和icloud theme ([1b7d15b](https://gitee.com/gitee-fe/osui/tree/master/commits/1b7d15b741841378951a69d72db03ed334ab287e))
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+
+
+
+
+
 ## [0.10.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tooltip@0.10.0...@osui/tooltip@0.10.3) (2021-01-22)
 
 

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 补齐antd组件, 补齐文档 ([b6c76a8](https://gitee.com/gitee-fe/osui/tree/master/commits/b6c76a864b121479e151a97e926546f3370d0aed))
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+* cascader ([42f3524](https://gitee.com/gitee-fe/osui/tree/master/commits/42f3524da71b6d4617626c39f2b99acfc6c984b4))
+* cascader 调整 ([d7d7e09](https://gitee.com/gitee-fe/osui/tree/master/commits/d7d7e09d48feecefaea7762b6a1c4e1b948f111d))
+* cascader级联icloud样式调整 ([f952eb9](https://gitee.com/gitee-fe/osui/tree/master/commits/f952eb91e6195118aa2c727e0ff08e0be4bb96f9))
+* list, pagination/table, popover, switch, timeline, tooltip ([2f08302](https://gitee.com/gitee-fe/osui/tree/master/commits/2f08302a6e008c3039175a9ef283181ac3e62d31))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/cascader@0.10.0...@osui/cascader@0.10.1) (2021-02-03)
 
 

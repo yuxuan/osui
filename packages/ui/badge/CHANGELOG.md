@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 调整徽标 ([5fbd1a5](https://gitee.com/gitee-fe/osui/tree/master/commits/5fbd1a5f77fab7174b8d85b9bf6767eb0a29c8c2))
+* 调整Badge icloud主题样式 ([d93b3d2](https://gitee.com/gitee-fe/osui/tree/master/commits/d93b3d22fa6944e2ced97e53d3f0c8f01c341fe1))
+* 调整drawer icloud样式 ([7ce38a4](https://gitee.com/gitee-fe/osui/tree/master/commits/7ce38a4406014d384a432be4c74bb9d49a05e072))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 移除OSUI组件名前缀, 修复Table类型 ([72312fd](https://gitee.com/gitee-fe/osui/tree/master/commits/72312fd966309c8879c0ad283f435e9f3f4e0b29))
+* 增加button default border高亮, success, error, warning 状态 ([32dfd0f](https://gitee.com/gitee-fe/osui/tree/master/commits/32dfd0f8ef987a3e0a3adc724f75c07f5d6c9a2a))
+* badge样式调整 ([eca4382](https://gitee.com/gitee-fe/osui/tree/master/commits/eca438216df53e1eb58f7d39ebf557ee04548061))
+* collapse 样式修复调整 ([c925d84](https://gitee.com/gitee-fe/osui/tree/master/commits/c925d844003621bc4afb9f8e2a1a74a87cb17b1e))
+
+
+### Features
+
+* 新增avatar，badge组件 ([f6db4a8](https://gitee.com/gitee-fe/osui/tree/master/commits/f6db4a8575c347ffe1aa3b1c575590ae8a844567))
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+
+
+
+
+
 ## [0.10.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/badge@0.10.0...@osui/badge@0.10.1) (2021-01-27)
 
 

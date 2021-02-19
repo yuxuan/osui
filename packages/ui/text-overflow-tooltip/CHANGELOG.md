@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* 调整table,pagination 增加brand context, 来展示对应的分页 ([e0be858](https://gitee.com/gitee-fe/osui/tree/master/commits/e0be858d681867a793570807ff93674c53ef3682))
+* 增加TextOverflowTooltip，只在text overflow的时候展示 ([b1df65d](https://gitee.com/gitee-fe/osui/tree/master/commits/b1df65d1a62e3fff3fb7f8735631a24b0cb5d587))
+* text-overflow-tooltip支持maxWidth和style props ([a85faa0](https://gitee.com/gitee-fe/osui/tree/master/commits/a85faa0425d0eca6f5d7d1398089a04004fc3899))
+
+
+
+
+
 ## 0.10.3 (2021-01-22)
 
 

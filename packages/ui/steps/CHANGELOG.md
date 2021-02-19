@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 补齐antd组件, 补齐文档 ([b6c76a8](https://gitee.com/gitee-fe/osui/tree/master/commits/b6c76a864b121479e151a97e926546f3370d0aed))
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+* 增加steps compact模式 ([ff34bba](https://gitee.com/gitee-fe/osui/tree/master/commits/ff34bba1121d4c6434f32579eef046240d0b8806))
+* steps ([c0a192b](https://gitee.com/gitee-fe/osui/tree/master/commits/c0a192b9b76bc92d31cb129912b18efb3d486ad1))
+* steps ([ad5f6e7](https://gitee.com/gitee-fe/osui/tree/master/commits/ad5f6e798690a5872d1fc08e74807dd370d07d9f))
+* steps调整 ([61c1125](https://gitee.com/gitee-fe/osui/tree/master/commits/61c1125bf08b45e35ad1453d74349e735c871a0e))
+* steps样式调整 ([f672a60](https://gitee.com/gitee-fe/osui/tree/master/commits/f672a60ab9bb86f97796a54f2779c65abdad394e))
+
+
+### Features
+
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+
+
+
+
+
 ## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/steps@0.10.1...@osui/steps@0.10.2) (2021-02-03)
 
 

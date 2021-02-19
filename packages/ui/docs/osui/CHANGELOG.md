@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 补齐antd组件, 补齐文档 ([b6c76a8](https://gitee.com/gitee-fe/osui/tree/master/commits/b6c76a864b121479e151a97e926546f3370d0aed))
+* 调整button icloud样式 ([924aef2](https://gitee.com/gitee-fe/osui/tree/master/commits/924aef2dec2fb1303f77d5fd032f73268b7dab7e))
+* 调整form,select,input focus,hover 样式 ([c54a8d0](https://gitee.com/gitee-fe/osui/tree/master/commits/c54a8d018d42e6a6b2c2f85826db8d9a53339ccc))
+* 调整menu dropdown osc主题样式 ([7d4868c](https://gitee.com/gitee-fe/osui/tree/master/commits/7d4868c6b47fdbf024b06300d6d3064c94fb6f8e))
+* 调整message icloud theme ([45e0e6a](https://gitee.com/gitee-fe/osui/tree/master/commits/45e0e6ac48b01f0a5c1f2a6a9fabb6192d0ee937))
+* 调整table,pagination 增加brand context, 来展示对应的分页 ([e0be858](https://gitee.com/gitee-fe/osui/tree/master/commits/e0be858d681867a793570807ff93674c53ef3682))
+* 添加ActionMenuDropdown组件 ([77e399a](https://gitee.com/gitee-fe/osui/tree/master/commits/77e399a0a6fe464578c26aeae96a0b370882cd65))
+* 添加version组件 ([076c9f6](https://gitee.com/gitee-fe/osui/tree/master/commits/076c9f62cad981177ca1dc60dcbf88816cab0347))
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+* 移除OSUI组件名前缀, 修复Table类型 ([72312fd](https://gitee.com/gitee-fe/osui/tree/master/commits/72312fd966309c8879c0ad283f435e9f3f4e0b29))
+* 增加button default border高亮, success, error, warning 状态 ([32dfd0f](https://gitee.com/gitee-fe/osui/tree/master/commits/32dfd0f8ef987a3e0a3adc724f75c07f5d6c9a2a))
+* 增加TextOverflowTooltip，只在text overflow的时候展示 ([b1df65d](https://gitee.com/gitee-fe/osui/tree/master/commits/b1df65d1a62e3fff3fb7f8735631a24b0cb5d587))
+* button添加flexCenter属性, 调整为anchor时样式的问题, demo展示ButtonGroup的用法 ([7043f07](https://gitee.com/gitee-fe/osui/tree/master/commits/7043f0764924da745ffcedcf769524fe62e15eb0))
+* checkbox, radio, input-number ([64f36e6](https://gitee.com/gitee-fe/osui/tree/master/commits/64f36e6b6eb46a333a044a9452207866682d8df4))
+* collapse 样式修复调整 ([c925d84](https://gitee.com/gitee-fe/osui/tree/master/commits/c925d844003621bc4afb9f8e2a1a74a87cb17b1e))
+* drawer close icon修复 ([98129b6](https://gitee.com/gitee-fe/osui/tree/master/commits/98129b6238e9213885b6e201747f65d5ce500880))
+* dropdown满足osui和icloud调整 ([2026476](https://gitee.com/gitee-fe/osui/tree/master/commits/202647660b178deb4141b6684cc302fef854cb8b))
+* form输入框样式、标题样式修复，Modal异步确认样式修复 ([6e92879](https://gitee.com/gitee-fe/osui/tree/master/commits/6e92879a3dcae165145af0493614dce7d44531f9))
+* modal 调整 ([3e92aa4](https://gitee.com/gitee-fe/osui/tree/master/commits/3e92aa40204994ce2b8ed6bcb85d7006aa297710))
+* modal样式修复 ([18b79ce](https://gitee.com/gitee-fe/osui/tree/master/commits/18b79cec00f20aa8cd65c18fcccbbc24d139f2a4))
+* table page-header typography ([7630db0](https://gitee.com/gitee-fe/osui/tree/master/commits/7630db06b79589004950e7527cf63f020d0677a7))
+* table调整增加no border的用法 ([ddee425](https://gitee.com/gitee-fe/osui/tree/master/commits/ddee42577d4feb343c5044c2df71481cf030d945))
+* text-overflow-tooltip支持maxWidth和style props ([a85faa0](https://gitee.com/gitee-fe/osui/tree/master/commits/a85faa0425d0eca6f5d7d1398089a04004fc3899))
+
+
+### Features
+
+* 调整alert功能和icloud theme ([1b7d15b](https://gitee.com/gitee-fe/osui/tree/master/commits/1b7d15b741841378951a69d72db03ed334ab287e))
+
+
+
+
+
 # [0.10.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/osui-docs@0.10.0-beta.1...@osui/osui-docs@0.10.0) (2021-01-04)
 
 **Note:** Version bump only for package @osui/osui-docs

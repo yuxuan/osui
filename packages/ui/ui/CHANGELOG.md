@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* @osui/ui package导出错误 ([8deea4e](https://gitee.com/gitee-fe/osui/tree/master/commits/8deea4ef603fda3ba5c46e72065096c2c8dfdfe5))
+* 调整example，@osui/ui 修复导出命名出错的问题 ([ac26bce](https://gitee.com/gitee-fe/osui/tree/master/commits/ac26bcef52231792e77658c7a85e5694c53cb42e))
+* 添加version组件 ([076c9f6](https://gitee.com/gitee-fe/osui/tree/master/commits/076c9f62cad981177ca1dc60dcbf88816cab0347))
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+* 修复ui引入空local local-provider组件的问题 ([7fd6cd4](https://gitee.com/gitee-fe/osui/tree/master/commits/7fd6cd40d28e315a5fc200e523f38e18782fb60a))
+* 增加TextOverflowTooltip，只在text overflow的时候展示 ([b1df65d](https://gitee.com/gitee-fe/osui/tree/master/commits/b1df65d1a62e3fff3fb7f8735631a24b0cb5d587))
+* message导出名字错误 ([09d3959](https://gitee.com/gitee-fe/osui/tree/master/commits/09d3959a351e42a235c42432e1174bf987d0a036))
+* ui导出BrandProvider ([3313c16](https://gitee.com/gitee-fe/osui/tree/master/commits/3313c16a418d0434d6bf9543d428713383e01128))
+* ui添加gap ([8b35637](https://gitee.com/gitee-fe/osui/tree/master/commits/8b3563775457250a3ec414f24ef22137c802a183))
+
+
+### Features
+
+* 添加@osui/icons, 并在back-top组件中使用 ([28092fa](https://gitee.com/gitee-fe/osui/tree/master/commits/28092fa3d54a91b116ffe5fc05f43a628fc376c0))
+* 增加Space组件, 增加button group形式的demo ([39eaa10](https://gitee.com/gitee-fe/osui/tree/master/commits/39eaa104cda0bd352b1a2c791856db98e673a7fb))
+* **ui:** ui包导出所有组件 ([5ef63db](https://gitee.com/gitee-fe/osui/tree/master/commits/5ef63db89de00ff92a703e9e99d5e6aa1ed3bfde))
+
+
+
+
+
 ## [0.10.10](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.10.9...@osui/ui@0.10.10) (2021-02-03)
 
 **Note:** Version bump only for package @osui/ui

@@ -2,12 +2,15 @@
     "packages": [
         "packages/*"
     ],
-    "version": "0.10.0",
+    "version": "0.11.0",
     "npmClient": "yarn",
     "useWorkspaces": true,
     "command": {
         "version": {
-            "allowBranch": ["master", "hot-fix"],
+            "allowBranch": [
+                "master",
+                "hot-fix"
+            ],
             "ignoreChanges": [
                 "**/*.md",
                 "**/stories/**",
@@ -18,10 +21,12 @@
             ]
         },
         "publish": {
-            "ignoreChanges": ["*.md"],
+            "ignoreChanges": [
+                "*.md"
+            ],
             "verifyAccess": false,
             "verifyRegistry": false,
-            "message":"chore: publish"
+            "message": "chore: publish"
         }
     }
 }

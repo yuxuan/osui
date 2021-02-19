@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 补齐antd组件, 补齐文档 ([b6c76a8](https://gitee.com/gitee-fe/osui/tree/master/commits/b6c76a864b121479e151a97e926546f3370d0aed))
+* 调整button icloud样式 ([924aef2](https://gitee.com/gitee-fe/osui/tree/master/commits/924aef2dec2fb1303f77d5fd032f73268b7dab7e))
+* 调整button颜色实现 ([bc17800](https://gitee.com/gitee-fe/osui/tree/master/commits/bc178004aa4d80a5c3f4276556dd7a118cb0125d))
+* 调整form,select,input focus,hover 样式 ([c54a8d0](https://gitee.com/gitee-fe/osui/tree/master/commits/c54a8d018d42e6a6b2c2f85826db8d9a53339ccc))
+* 调整message icloud theme ([45e0e6a](https://gitee.com/gitee-fe/osui/tree/master/commits/45e0e6ac48b01f0a5c1f2a6a9fabb6192d0ee937))
+* 调整table,pagination 增加brand context, 来展示对应的分页 ([e0be858](https://gitee.com/gitee-fe/osui/tree/master/commits/e0be858d681867a793570807ff93674c53ef3682))
+* 新增Breadcrumb, Steps, Tree, Empty, AutoComplete, Cascader, Col, Dropdown, InputNumber, List, Menu, Row, Spon, TimePicker, TreeSelect 组件 ([2c4a9df](https://gitee.com/gitee-fe/osui/tree/master/commits/2c4a9df6af2a0283da7027a20043b0ccebceb2c4))
+* 修复alert 由于antd升级导致的bug ([f759cad](https://gitee.com/gitee-fe/osui/tree/master/commits/f759cadaa7266f4d1b033b2d511b7d677b2c3c79))
+* 修复babel问题 ([d2c34d7](https://gitee.com/gitee-fe/osui/tree/master/commits/d2c34d73e63fb6500057e8e93cabf036b6339a04))
+* 修复switch icloud主题样式 ([191f21f](https://gitee.com/gitee-fe/osui/tree/master/commits/191f21f582aecb7a893f0cb166d77604829a42e0))
+* back-top样式调整 ([6360ac7](https://gitee.com/gitee-fe/osui/tree/master/commits/6360ac7476b739d90e091a771186338d0aecf0a0))
+* badge样式调整 ([eca4382](https://gitee.com/gitee-fe/osui/tree/master/commits/eca438216df53e1eb58f7d39ebf557ee04548061))
+* breadcrumb icloud实现 ([91bc001](https://gitee.com/gitee-fe/osui/tree/master/commits/91bc001e812cda04df956b42d01c6d1766dfd47e))
+* button调整 ([e31370a](https://gitee.com/gitee-fe/osui/tree/master/commits/e31370a2f9e514b8bfa239a1b76e0906874aed69))
+* button添加flexCenter属性, 调整为anchor时样式的问题, demo展示ButtonGroup的用法 ([7043f07](https://gitee.com/gitee-fe/osui/tree/master/commits/7043f0764924da745ffcedcf769524fe62e15eb0))
+* checkbox, radio, input-number ([64f36e6](https://gitee.com/gitee-fe/osui/tree/master/commits/64f36e6b6eb46a333a044a9452207866682d8df4))
+* collapse 样式修复调整 ([c925d84](https://gitee.com/gitee-fe/osui/tree/master/commits/c925d844003621bc4afb9f8e2a1a74a87cb17b1e))
+* drawer close icon修复 ([98129b6](https://gitee.com/gitee-fe/osui/tree/master/commits/98129b6238e9213885b6e201747f65d5ce500880))
+* drawer icloud 主题调整 ([db269c4](https://gitee.com/gitee-fe/osui/tree/master/commits/db269c4bc44f95b209d4ce9f1c4ab1b032fe63fc))
+* form 使用BrandProvider控制label的align ([09c5c66](https://gitee.com/gitee-fe/osui/tree/master/commits/09c5c668a831d3b03180c1b453861f6b1a21a791))
+* list, pagination/table, popover, switch, timeline, tooltip ([2f08302](https://gitee.com/gitee-fe/osui/tree/master/commits/2f08302a6e008c3039175a9ef283181ac3e62d31))
+* modal 调整 ([3e92aa4](https://gitee.com/gitee-fe/osui/tree/master/commits/3e92aa40204994ce2b8ed6bcb85d7006aa297710))
+* modal, switch icloud-theme样式修复 ([d1eea7d](https://gitee.com/gitee-fe/osui/tree/master/commits/d1eea7d5984887a7bec2fd8fa59dcf867b6564c4))
+* popover icloud theme调整 ([ceaa52a](https://gitee.com/gitee-fe/osui/tree/master/commits/ceaa52ac3f5057b8f644938dd5e722c2676827ef))
+* progress icloud主题调整 ([2277631](https://gitee.com/gitee-fe/osui/tree/master/commits/22776314f1a6aab7431b344da86864a9230f3811))
+* slider, date-picker icloud样式调整 ([c8983d9](https://gitee.com/gitee-fe/osui/tree/master/commits/c8983d9dbe90af5406e528e6b68f52677d320408))
+* table调整增加no border的用法 ([ddee425](https://gitee.com/gitee-fe/osui/tree/master/commits/ddee42577d4feb343c5044c2df71481cf030d945))
+* tabs icloud theme 调整 ([a0815ba](https://gitee.com/gitee-fe/osui/tree/master/commits/a0815baa516af2c799ad982538868ec6fed88d9c))
+* timeline icloud 主题调整 ([bd36bdc](https://gitee.com/gitee-fe/osui/tree/master/commits/bd36bdce939ca9f1f03e62ebd6b298ffa2b63205))
+
+
+### Features
+
+* 调整alert功能和icloud theme ([1b7d15b](https://gitee.com/gitee-fe/osui/tree/master/commits/1b7d15b741841378951a69d72db03ed334ab287e))
+* form icloud theme调整 ([b90c6e4](https://gitee.com/gitee-fe/osui/tree/master/commits/b90c6e4f86dd65f3270afb3627fe7baf9811a615))
+
+
+
+
+
 # [0.10.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-docs@0.10.0-beta.0...@osui/icloud-docs@0.10.0) (2021-01-04)
 
 **Note:** Version bump only for package @osui/icloud-docs

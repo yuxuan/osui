@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 调整brand-provider, 默认为undefined而不是osc ([46b1774](https://gitee.com/gitee-fe/osui/tree/master/commits/46b177404089ee38112a0347fe1c36d458672e5c))
+* 调整collapse icloud样式 ([2b99f10](https://gitee.com/gitee-fe/osui/tree/master/commits/2b99f10fd49b4e5bd016a6de38ea79101543616b))
+* 调整collapse icloud样式 ([02c65fd](https://gitee.com/gitee-fe/osui/tree/master/commits/02c65fd9c7b6c500b7644ce1065f73bc54bf42d2))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 修复collapse箭头位置不居中的问题 ([a68a84f](https://gitee.com/gitee-fe/osui/tree/master/commits/a68a84f240afa4297b9556c4188587e64cdbc1dc))
+* 修复collapse样式 ([f76ea21](https://gitee.com/gitee-fe/osui/tree/master/commits/f76ea21bc8046c3265d2554bc1aed20698041219))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/gitee-fe/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+* collapse ([9d54b37](https://gitee.com/gitee-fe/osui/tree/master/commits/9d54b375c620ce19085af10119416b29a5f1738f))
+* collapse 箭头位置 ([cc662b0](https://gitee.com/gitee-fe/osui/tree/master/commits/cc662b0e57d8f12360660eb4a1275503b61c0e66))
+* collapse 样式修复调整 ([c925d84](https://gitee.com/gitee-fe/osui/tree/master/commits/c925d844003621bc4afb9f8e2a1a74a87cb17b1e))
+* collapse arrow样式修复 ([e11a745](https://gitee.com/gitee-fe/osui/tree/master/commits/e11a745d0579586fc70380b8b12ec7be3fb17ed9))
+* collapse expand icon ([dc54078](https://gitee.com/gitee-fe/osui/tree/master/commits/dc540782052978791dd5ad1c5a91244b6794fdbd))
+* collapse, drawer, progress 样式调整 ([c2b594b](https://gitee.com/gitee-fe/osui/tree/master/commits/c2b594b8b0ecf13c6d5afa8afdd0938b11a6467f))
+* collpase border ([1730740](https://gitee.com/gitee-fe/osui/tree/master/commits/17307405e4b055a2a8eb8439b776213308bd54f4))
+* slider调整 ([e3d5dff](https://gitee.com/gitee-fe/osui/tree/master/commits/e3d5dff0702ca23a4bfebcea39e7d0640e948d6f))
+* ue样式修复 ([b96ad12](https://gitee.com/gitee-fe/osui/tree/master/commits/b96ad1267689dd649f0a8bf82bedcbeff7e60983))
+* **collapse:** 折叠面板ghost默认值修改 ([a82d187](https://gitee.com/gitee-fe/osui/tree/master/commits/a82d1871c14013485cb60b8ba19d2370d7dce805))
+* **collapse&progress:** collapse&progress问题修改 ([7c0c692](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0c6921ee99234df9f618b9200a9013623985e6))
+
+
+### Features
+
+* 增加BrandProvider组件, collapse使用BrandProvider组件 ([95a1cb1](https://gitee.com/gitee-fe/osui/tree/master/commits/95a1cb1f9f1aa56706ae171937fe6fc1255a644c))
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+* **collapse:** 新增collapse组件 ([4b69b4b](https://gitee.com/gitee-fe/osui/tree/master/commits/4b69b4bd0aaa9cbfd778657b7a207c104f990f35))
+
+
+
+
+
 ## [0.10.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/collapse@0.10.4...@osui/collapse@0.10.5) (2021-02-03)
 
 

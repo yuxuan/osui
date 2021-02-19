@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 调整progress icloud样式 ([0010445](https://gitee.com/gitee-fe/osui/tree/master/commits/00104454d543ad66dab8260b52a404a5f43d9c34))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* collapse, drawer, progress 样式调整 ([c2b594b](https://gitee.com/gitee-fe/osui/tree/master/commits/c2b594b8b0ecf13c6d5afa8afdd0938b11a6467f))
+* progress icloud主题调整 ([2277631](https://gitee.com/gitee-fe/osui/tree/master/commits/22776314f1a6aab7431b344da86864a9230f3811))
+* **collapse:** 折叠面板ghost默认值修改 ([a82d187](https://gitee.com/gitee-fe/osui/tree/master/commits/a82d1871c14013485cb60b8ba19d2370d7dce805))
+* **collapse&progress:** collapse&progress问题修改 ([7c0c692](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0c6921ee99234df9f618b9200a9013623985e6))
+* **progress:** progress lint fix ([d183b83](https://gitee.com/gitee-fe/osui/tree/master/commits/d183b830490b86e8a64ca1e05f4b599a833e1f9e))
+
+
+### Features
+
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+* **progress:** 新增progress组件 ([0ade9b7](https://gitee.com/gitee-fe/osui/tree/master/commits/0ade9b7a2f58bf4c0ba6e75af462bde5d6cb1196))
+
+
+
+
+
 ## [0.10.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/progress@0.10.1...@osui/progress@0.10.2) (2021-02-03)
 
 

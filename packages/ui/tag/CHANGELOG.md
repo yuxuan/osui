@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 文档title调整; icloud-theme调整; 组件size调整 ([7453a43](https://gitee.com/gitee-fe/osui/tree/master/commits/7453a437fb419db875709b32f934ba9e3454f895))
+* 修复样式 ([94c5450](https://gitee.com/gitee-fe/osui/tree/master/commits/94c545078c2b4c05dee48b880f32bed2d11459ea))
+* 颜色调整, radio调整 ([385419f](https://gitee.com/gitee-fe/osui/tree/master/commits/385419f7bad6483fcef158f6afce33b846d084b9))
+* 样式修复 ([896665a](https://gitee.com/gitee-fe/osui/tree/master/commits/896665a45f52be9a2896157f20125f8a77809e34))
+* steps ([ad5f6e7](https://gitee.com/gitee-fe/osui/tree/master/commits/ad5f6e798690a5872d1fc08e74807dd370d07d9f))
+* tag ([edf4918](https://gitee.com/gitee-fe/osui/tree/master/commits/edf491896b5ab81bad217735c572879911987d49))
+* tag icloud ([3c58fee](https://gitee.com/gitee-fe/osui/tree/master/commits/3c58feec4ab531520d611499b0c4eeff49824fbb))
+* tag icloud 主题修复 ([3b414d4](https://gitee.com/gitee-fe/osui/tree/master/commits/3b414d49b8b04a6d51bb52ab18e5c6768be81703))
+* ue样式修复 ([b96ad12](https://gitee.com/gitee-fe/osui/tree/master/commits/b96ad1267689dd649f0a8bf82bedcbeff7e60983))
+
+
+### Features
+
+* less支持ant-prefix变量 ([7c0bfee](https://gitee.com/gitee-fe/osui/tree/master/commits/7c0bfee0ef97d48d62cd58c448c26d146101c6c7))
+
+
+
+
+
 ## [0.10.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tag@0.10.2...@osui/tag@0.10.3) (2021-02-03)
 
 **Note:** Version bump only for package @osui/tag
