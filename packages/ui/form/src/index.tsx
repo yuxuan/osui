@@ -52,6 +52,7 @@ interface FormInterface extends InternalFormType {
     Item: typeof InternalFormItem;
     List: typeof List;
     Provider: typeof FormProvider;
+    ErrorList: typeof AntdForm.ErrorList;
 
     /** @deprecated Only for warning usage. Do not use. */
     create: () => void;
@@ -64,6 +65,7 @@ Form.List = List;
 Form.useForm = useForm;
 Form.Provider = FormProvider;
 Form.create = AntdForm.create;
+Form.ErrorList = AntdForm.ErrorList;
 
 export type Rule = AntdRule;
 export type RuleObject = AntdRuleObject;
