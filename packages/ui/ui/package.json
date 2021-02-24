@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "0.11.1",
+    "version": "0.11.2",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -78,7 +78,7 @@
         "@osui/dropdown": "^0.11.0",
         "@osui/empty": "^0.11.0",
         "@osui/flex-centered": "^0.11.0",
-        "@osui/form": "^0.11.0",
+        "@osui/form": "^0.11.1",
         "@osui/gap": "^0.11.0",
         "@osui/grid": "^0.11.0",
         "@osui/image": "^0.11.0",
