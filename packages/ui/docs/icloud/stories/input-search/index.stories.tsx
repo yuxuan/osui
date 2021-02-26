@@ -45,6 +45,15 @@ export const Demo = () => {
                 enterButton="搜索"
                 onSearch={onSearch}
             />
+            <br />
+            <br />
+            <Input.Search
+                style={{ width: 400 }}
+                placeholder="input search text"
+                allowClear
+                enterButton="搜索"
+                disabled
+            />
         </>
     );
 };

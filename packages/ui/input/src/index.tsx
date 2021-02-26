@@ -1,6 +1,10 @@
 import React, {useCallback, useState} from 'react';
 import {Input as AntdInput} from 'antd';
-import {InputProps as AntdInputProps, TextAreaProps as AntdTextAreaProps} from 'antd/es/input';
+import {
+    InputProps as AntdInputProps,
+    TextAreaProps as AntdTextAreaProps,
+    SearchProps as AntdSearchProps,
+} from 'antd/es/input';
 import classNames from 'classnames';
 import './index.less';
 
@@ -56,6 +60,36 @@ Input.TextArea = React.forwardRef<any, AntdTextAreaProps>((props, ref) => {
 });
 
 Input.Group = AntdInput.Group;
-Input.Search = AntdInput.Search;
+Input.Search = React.forwardRef<any, AntdSearchProps>(({className, disabled, onBlur, onFocus, ...props}, ref) => {
+    const [focused, setFocused] = useState(false);
+
+    const innerClassNames = classNames(clsPrefix, className, {
+        [`${clsPrefix}-focused`]: focused,
+        [`${clsPrefix}-disabled`]: disabled,
+    });
+    const handleFocus = useCallback(
+        e => {
+            onFocus && onFocus(e);
+            setFocused(true);
+        },
+        [onFocus]
+    );
+    const handleBlur = useCallback(
+        e => {
+            onBlur && onBlur(e);
+            setFocused(false);
+        },
+        [onBlur]
+    );
+    return (
+        <AntdInput.Search
+            ref={ref}
+            {...props}
+            className={classNames(clsPrefix, innerClassNames)}
+            disabled={disabled}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
+        />);
+});
 
 export default Input;

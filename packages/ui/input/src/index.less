@@ -7,57 +7,116 @@
     &.@{ant-prefix}-input:focus,
     &.@{ant-prefix}-input-focused {
         background: var(--input-focus-background-color);
-        border-color: var(--theme-border-focus-color);
+        border-color: var(--theme-primary-color-active);
 
         input.@{ant-prefix}-input {
             background: var(--input-focus-background-color);
         }
     }
 
-    &.@{ant-prefix}-input-group-wrapper {
-        input {
+    .@{ant-prefix}-input-wrapper {
+        // 只有是第二个child时左右的border才全都隐藏掉，[prefix][input][suffix]
+        input:nth-child(2) {
             border-right: 0;
             border-left: 0;
         }
     }
 
-    // input group hover
-    &:hover,
-    .@{ant-prefix}-input-group {
-        &:hover {
-            .@{ant-prefix}-input-group-addon,
-            input {
-                border-color: var(--theme-primary-color-hover);
-            }
-        }
-    }
-
+    // input group focused
     &-focused {
         .@{ant-prefix}-input-group {
             .@{ant-prefix}-input-group-addon,
-            input {
+            input,
+            .@{ant-prefix}-input-search-button {
                 border-color: var(--theme-primary-color-active);
+            }
+
+            input:first-child {
+                background-color: var(--input-focus-background-color);
+                border: 1px solid var(--theme-primary-color-active);
             }
         }
     }
 
-    &-disabled {
-        .@{ant-prefix}-input-group {
-            .@{ant-prefix}-input-group-addon {
-                background: var(--theme-border-color-disabled);
+    // input group hover
+    .@{ant-prefix}-input-group {
+        &:hover {
+            .@{ant-prefix}-input-group-addon,
+            input,
+            .@{ant-prefix}-input-search-button {
+                border-color: var(--theme-primary-color-hover);
             }
 
+            input:first-child {
+                border: 1px solid var(--theme-primary-color-hover);
+            }
+        }
+    }
+
+    // input group disabled
+    &-disabled {
+        .@{ant-prefix}-input-group {
             .@{ant-prefix}-input-group-addon,
             input {
+                background: var(--theme-border-color-disabled);
                 border-color: var(--theme-border-color-disabled);
             }
 
+            // disabled时hover
             &:hover {
                 .@{ant-prefix}-input-group-addon,
                 input {
                     border-color: var(--theme-border-color-disabled);
                 }
+
+                // 作为第一个input时的border，如search
+                input:first-child,
+                .@{ant-prefix}-input-search-button {
+                    border: 1px solid var(--theme-border-color-disabled);
+                }
             }
+
+            input:first-child,
+            .@{ant-prefix}-input-search-button {
+                border-color: var(--theme-border-color-disabled) !important;
+            }
+        }
+
+        &,
+        &.@{ant-prefix}-input-disabled,
+        &.@{ant-prefix}-input-search {
+            border-color: var(--theme-border-color-disabled);
+
+            &:hover {
+                border-color: var(--theme-border-color-disabled);
+            }
+        }
+    }
+
+    // affix
+    &.@{ant-prefix}-input-affix-wrapper-disabled {
+        &,
+        &:hover {
+            border-color: var(--theme-border-color-disabled);
+        }
+    }
+
+    .@{ant-prefix}-input-affix-wrapper {
+        > input {
+            border: 0 !important;
+        }
+
+        > input:focus {
+            background-color: var(--input-focus-background-color);
+        }
+
+        &.@{ant-prefix}-input-affix-wrapper-focused {
+            background-color: var(--input-focus-background-color);
+            border-color: var(--theme-primary-color-active);
+        }
+
+        &.@{ant-prefix}-input-affix-wrapper-disabled {
+            border-color: var(--theme-border-color-disabled);
         }
     }
 
