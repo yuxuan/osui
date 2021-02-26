@@ -1,5 +1,4 @@
 import React from 'react';
-import {IconSearchOutlined} from '@osui/icons';
 import Select from '@osui/select';
 import Divider from '@osui/divider';
 import Gap from '@osui/gap';
@@ -7,7 +6,7 @@ import Input from '@osui/input';
 const { TextArea } = Input;
 
 export default {
-    title: '通过验收/Input 输入框',
+    title: '数据录入/Input 输入框',
 };
 
 export const Demo = () => {
@@ -15,15 +14,6 @@ export const Demo = () => {
         <>
             <h2></h2>
             <Input style={{ width: 200 }} placeholder="请输入" />
-            <br />
-            <br />
-            <Input
-                style={{ width: 200 }}
-                placeholder="请输入搜索关键字"
-                suffix={
-                    <IconSearchOutlined />
-                }
-            />
             <br />
             <br />
             <Input
@@ -44,7 +34,6 @@ export const Demo = () => {
             <TextArea style={{ width: 500, height: 150 }} placeholder="请输入" />
             <br />
             <br />
-            <Input.Password style={{ width: 500 }} placeholder="请输入" />
         </>);
 };
 

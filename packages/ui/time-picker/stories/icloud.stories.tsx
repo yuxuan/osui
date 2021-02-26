@@ -3,7 +3,7 @@ import Divider from '@osui/divider';
 import TimePicker from '../src';
 
 export default {
-    title: '通过验收/TimePicker 时间选择框',
+    title: '数据录入/TimePicker 时间选择框',
     component: TimePicker,
 };
 
@@ -23,4 +23,4 @@ export const Demo2 = () => {
             <RangePicker />
         </>
     );
-}
+};

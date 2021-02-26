@@ -2,7 +2,7 @@ import React from 'react';
 import ConfigProvider from '../src';
 
 export default {
-    title: '通过验收/ConfigProvider',
+    title: 'FE/ConfigProvider',
     component: ConfigProvider,
 };
 

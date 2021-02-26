@@ -3,7 +3,7 @@ import {Space} from 'antd';
 import Select from '../src';
 
 export default {
-    title: '通过验收/Select 选择器',
+    title: '数据录入/Select 选择器',
 };
 
 export const Demo = () => {

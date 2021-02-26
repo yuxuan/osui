@@ -2,7 +2,7 @@ import React from 'react';
 import Divider from '@osui/divider';
 
 export default {
-    title: '未实现/Divider 分割线',
+    title: '布局/Divider 分割线',
     component: Divider,
 };
 

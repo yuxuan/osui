@@ -2,7 +2,7 @@ import React from 'react';
 import PageHeader from '../src';
 
 export default {
-    title: '未实现/PageHeader 页头',
+    title: '导航/PageHeader 页头',
     component: PageHeader,
 };
 

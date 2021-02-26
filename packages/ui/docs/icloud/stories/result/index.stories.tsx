@@ -3,7 +3,7 @@ import Button from '@osui/button';
 import Result from '@osui/result';
 
 export default {
-    title: '未实现/Result 结果',
+    title: '数据展示/Result 结果',
     component: Result,
 };
 

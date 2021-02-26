@@ -2,7 +2,7 @@ import React from 'react';
 import Rate from '@osui/rate';
 
 export default {
-    title: '未实现/Rate 评分',
+    title: '数据录入/Rate 评分',
     component: Rate,
 };
 

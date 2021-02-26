@@ -1,11 +1,10 @@
 import React from 'react';
 import Button from '@osui/button';
-import Space from '@osui/space';
 import Gap from '@osui/gap';
 import Tooltip from '../src';
 
 export default {
-    title: '通过验收/Tooltip 文字提示',
+    title: '反馈/Tooltip 文字提示',
 };
 
 export const Demo = () => {

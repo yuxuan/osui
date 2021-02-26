@@ -3,7 +3,7 @@ import { ForkOutlined } from '@ant-design/icons';
 import Tabs from '@osui/tabs';
 
 export default {
-    title: '通过验收/Tabs 标签页',
+    title: '数据展示/Tabs 标签页',
 };
 
 export const Demo = () => {
@@ -139,7 +139,7 @@ export const PanelClosableDemo = () => {
         remove = targetKey => {
             const { panes, activeKey } = this.state;
             let newActiveKey = activeKey;
-            let lastIndex;
+            let lastIndex = 0;
             panes.forEach((pane, i) => {
                 if (pane.key === targetKey) {
                     lastIndex = i - 1;

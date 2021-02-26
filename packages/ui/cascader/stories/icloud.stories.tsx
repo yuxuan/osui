@@ -2,7 +2,7 @@ import React from 'react';
 import Cascader from '../src';
 
 export default {
-    title: '验收中/Cascader 级联选择',
+    title: '数据录入/Cascader 级联选择',
     component: Cascader,
 };
 
@@ -102,4 +102,4 @@ export const Load = () => {
         return <Cascader options={options} loadData={loadData} onChange={onChange} changeOnSelect />;
     };
     return (<LazyOptions />);
-}
+};

@@ -4,7 +4,7 @@ import Checkbox from '@osui/checkbox';
 const Group = Checkbox.Group;
 
 export default {
-    title: '通过验收/Checkbox 多选框',
+    title: '数据录入/Checkbox 复选框',
 };
 
 export const Demo = () => {

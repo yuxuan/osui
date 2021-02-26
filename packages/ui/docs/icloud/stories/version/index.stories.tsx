@@ -2,7 +2,7 @@ import React from 'react';
 import version from '@osui/version';
 
 export default {
-    title: '通过验收/version',
+    title: 'FE/version',
 };
 
 export const Demo = () => {

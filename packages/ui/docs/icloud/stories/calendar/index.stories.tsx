@@ -2,7 +2,7 @@ import React from 'react';
 import Calendar from '@osui/calendar';
 
 export default {
-    title: '未实现/Calendar 日历',
+    title: '数据展示/Calendar 日历',
     component: Calendar,
 };
 

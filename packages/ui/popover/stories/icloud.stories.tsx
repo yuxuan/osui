@@ -5,7 +5,7 @@ import Divider from '@osui/divider';
 import Popover from '../src';
 
 export default {
-    title: '通过验收/Popover 气泡卡片',
+    title: '数据展示/Popover 气泡卡片',
 };
 
 export const Demo1 = () => {

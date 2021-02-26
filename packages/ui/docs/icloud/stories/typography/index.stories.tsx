@@ -2,7 +2,7 @@ import React from 'react';
 import Typography from '@osui/typography';
 
 export default {
-    title: '未实现/Typography 排版',
+    title: '布局/Typography 排版',
     component: Typography,
 };
 

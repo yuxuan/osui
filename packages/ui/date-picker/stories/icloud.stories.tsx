@@ -8,7 +8,7 @@ import DatePicker from '../src';
 const {RangePicker} = DatePicker;
 
 export default {
-    title: '验收中/DatePicker 日期选择框',
+    title: '数据录入/DatePicker 日期选择框',
 };
 
 export const Demo = () => {

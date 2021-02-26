@@ -4,7 +4,7 @@ import {IconSwitchTick, IconSwitchCross} from '@osui/icons';
 import Switch from '@osui/switch';
 
 export default {
-    title: '通过验收/Switch 开关',
+    title: '数据录入/Switch 开关',
 };
 
 export const Demo = () => {

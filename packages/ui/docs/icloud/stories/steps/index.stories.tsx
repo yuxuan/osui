@@ -4,7 +4,7 @@ import Space from '@osui/space';
 import Steps from '@osui/steps';
 
 export default {
-    title: '验收中/Steps 步骤条',
+    title: '导航/Steps 步骤条',
 };
 
 export const Demo = () => {

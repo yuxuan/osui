@@ -5,7 +5,7 @@ import ClockCircleOutlined from '@ant-design/icons/ClockCircleOutlined';
 import Tag from '@osui/tag';
 
 export default {
-    title: '验收中/Tag 标签',
+    title: '数据展示/Tag 标签',
 };
 
 export const Demo = () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import {Col} from 'antd';
 
 export default {
-    title: '通过验收/Col',
+    title: '布局/Col',
     component: Col,
 };
 

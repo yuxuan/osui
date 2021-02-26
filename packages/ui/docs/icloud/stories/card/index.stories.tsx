@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '@osui/card';
 
 export default {
-    title: '未实现/Card',
+    title: '数据展示/Card 卡片',
     component: Card,
 };
 

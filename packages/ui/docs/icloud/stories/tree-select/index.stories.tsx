@@ -1,13 +1,48 @@
 import React from 'react';
-import {TreeSelect} from 'antd';
+import TreeSelect from '@osui/tree-select';
 
 export default {
-    title: '验收中/TreeSelect 树选择',
+    title: '数据展示/TreeSelect 树选择',
     component: TreeSelect,
 };
 
 export const Demo = () => {
-    return (
-        <TreeSelect />
-    );
+    const { TreeNode } = TreeSelect;
+    class Demo extends React.Component {
+        state = {
+            value: undefined,
+        };
+
+        onChange = value => {
+            console.log(value);
+            this.setState({ value });
+        };
+
+        render() {
+            return (
+                <TreeSelect
+                    showSearch
+                    style={{ width: '100%' }}
+                    value={this.state.value}
+                    dropdownStyle={{ maxHeight: 400, overflow: 'auto' }}
+                    placeholder="Please select"
+                    allowClear
+                    treeDefaultExpandAll
+                    onChange={this.onChange}
+                >
+                    <TreeNode value="parent 1" title="parent 1">
+                        <TreeNode value="parent 1-0" title="parent 1-0">
+                            <TreeNode value="leaf1" title="my leaf" />
+                            <TreeNode value="leaf2" title="your leaf" />
+                        </TreeNode>
+                        <TreeNode value="parent 1-1" title="parent 1-1">
+                            <TreeNode value="sss" title={<b style={{ color: '#08c' }}>sss</b>} />
+                        </TreeNode>
+                    </TreeNode>
+                </TreeSelect>
+            );
+        }
+    }
+
+    return <Demo />;
 };

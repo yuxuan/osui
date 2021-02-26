@@ -5,7 +5,7 @@ import BrandProvider from '@osui/brand-provider';
 import Pagination from '../src';
 
 export default {
-    title: '通过验收/Pagination 分页',
+    title: '导航/Pagination 分页',
 };
 
 export const Demo = () => {

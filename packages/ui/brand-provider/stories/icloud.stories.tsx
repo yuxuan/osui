@@ -1,9 +1,10 @@
 import React from 'react';
 import Collapse from '@osui/collapse';
+import Divider from '@osui/divider';
 import BrandProvider, {useBrandContext} from '@osui/brand-provider';
 
 export default {
-    title: '通过验收/BrandProvider',
+    title: 'FE/BrandProvider',
     component: BrandProvider,
 };
 
@@ -15,6 +16,8 @@ const BrandApp = () => {
 export const Demo = () => {
     return (
         <>
+            <p>用于全局控制品牌，在App入口添加</p>
+            <Divider>展示</Divider>
             <BrandProvider brand="osc">
                 <BrandApp />
             </BrandProvider>
@@ -41,6 +44,7 @@ export const BrandProviderCollapse = () => {
     );
     return (
         <>
+            <p>举个例子</p>
             <p>OSC主题的话，Collapse应该默认是ghost模式</p>
             <BrandProvider brand="osc">
                 <App />

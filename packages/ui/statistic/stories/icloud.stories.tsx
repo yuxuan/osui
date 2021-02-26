@@ -5,7 +5,7 @@ import Button from '@osui/button';
 import Statistic from '../src';
 
 export default {
-    title: '未实现/Statistic 统计数值',
+    title: '数据展示/Statistic 统计数值',
     component: Statistic,
 };
 

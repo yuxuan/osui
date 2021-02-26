@@ -6,7 +6,7 @@ import moment from 'moment';
 import Comment from '@osui/comment';
 
 export default {
-    title: '未实现/Comment 评论',
+    title: '数据展示/Comment 评论',
     component: Comment,
 };
 

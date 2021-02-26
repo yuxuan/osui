@@ -2,7 +2,7 @@ import React from 'react';
 import Skeleton from '../src';
 
 export default {
-    title: '未实现/Skeleton 骨架屏',
+    title: '数据展示/Skeleton 骨架屏',
     component: Skeleton,
 };
 

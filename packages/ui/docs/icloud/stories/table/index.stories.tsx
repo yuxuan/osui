@@ -8,7 +8,7 @@ import BrandProvider from '@osui/brand-provider';
 import Table from '@osui/table';
 
 export default {
-    title: '验收中/Table 表格',
+    title: '数据展示/Table 表格',
 };
 
 export const Demo = () => {

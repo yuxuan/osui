@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Transfer from '@osui/transfer';
 
 export default {
-    title: '未实现/Transfer 穿梭框',
+    title: '数据录入/Transfer 穿梭框',
     component: Transfer,
 };
 

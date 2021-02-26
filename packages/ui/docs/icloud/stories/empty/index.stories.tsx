@@ -2,7 +2,7 @@ import React from 'react';
 import Empty from '@osui/empty';
 
 export default {
-    title: '验收中/Empty 空状态',
+    title: '数据展示/Empty 空状态',
     component: Empty,
 };
 

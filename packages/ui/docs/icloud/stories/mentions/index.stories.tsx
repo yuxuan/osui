@@ -2,7 +2,7 @@ import React from 'react';
 import Mentions from '@osui/mentions';
 
 export default {
-    title: '未实现/Mentions 提及',
+    title: '数据录入/Mentions 提及',
     component: Mentions,
 };
 

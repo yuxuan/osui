@@ -4,7 +4,7 @@ import Button from '@osui/button';
 import Popconfirm from '../src';
 
 export default {
-    title: '未实现/Popconfirm 气泡确认框',
+    title: '反馈/Popconfirm 气泡确认框',
     component: Popconfirm,
 };
 

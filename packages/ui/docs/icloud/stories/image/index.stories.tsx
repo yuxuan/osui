@@ -2,7 +2,7 @@ import React from 'react';
 import Image from '@osui/image';
 
 export default {
-    title: '未实现/Image 图片',
+    title: '数据展示/Image 图片',
     component: Image,
 };
 

@@ -2,15 +2,18 @@ import React from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
 import Menu from '@osui/menu';
 import TextOverflowTooltip from '@osui/text-overflow-tooltip';
+import Divider from '@osui/divider';
 import Breadcrumb from '../src';
 
 export default {
-    title: '验收中/Breadcrumb 面包屑',
+    title: '导航/Breadcrumb 面包屑',
 };
 
 export const Demo = () => {
     return (
         <>
+            <p>产品页面层级较多，用户路径较长，无法仅通过使用返回按钮解决回到首页/列表页诉求，建议层级≥3时全局使用，用户可通过面包屑返回/到达目标页面</p>
+            <Divider>展示</Divider>
             <p>如果需要蓝色hover，放个<code>a</code>标签</p>
             <Breadcrumb>
                 <Breadcrumb.Item>
@@ -55,9 +58,11 @@ export const Demo = () => {
 export const Ellipsis = () => {
     return (
         <>
+            <h3>一、使用场景</h3>
+            <p>面包屑能够作为用户路径的记录，可点击切换至对应页面，至多展示5级面包屑内容，超过部分展示一级与末尾2级，中间省略号显示，可从后之前逐级展开内容</p>
             <p>当showEllipsis为true，且长度超过5个时，展示【...】</p>
             <p>点击【...】可以从后面展示被隐藏的面包屑</p>
-            <p>Demo: </p>
+            <Divider>展示</Divider>
             <br />
             <Breadcrumb showEllipsis>
                 <Breadcrumb.Item>一级页面名称</Breadcrumb.Item>
@@ -183,6 +188,7 @@ export const Dropdown = () => {
 export const EllipsisText = () => {
     return (
         <>
+            <p>单层级字符数超过20个时省略文字内容，可hover展示详情：</p>
             <p>当使用TextOverflowTooltip的时候，需要调整一下a标签的布局居中</p>
             <Breadcrumb>
                 <Breadcrumb.Item>
@@ -207,5 +213,4 @@ export const EllipsisText = () => {
             </Breadcrumb>
         </>
     );
-
-}
+};

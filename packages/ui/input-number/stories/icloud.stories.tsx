@@ -4,7 +4,7 @@ import Divider from '@osui/divider';
 import InputNumber from '../src';
 
 export default {
-    title: '通过验收/InputNumber 数字输入框',
+    title: '数据录入/InputNumber 数字输入框',
     component: InputNumber,
 };
 

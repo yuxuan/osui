@@ -7,7 +7,7 @@ import BrandProvider from '@osui/brand-provider';
 import Form from '../src';
 
 export default {
-    title: '验收中/Form 表单',
+    title: '数据录入/Form 表单',
 };
 
 export const Demo = () => {
@@ -23,8 +23,8 @@ export const Demo = () => {
     const tailLayout = {
         wrapperCol: {
             offset: 4,
-            span: 18
-        }
+            span: 18,
+        },
     };
 
     const onFinish = values => {

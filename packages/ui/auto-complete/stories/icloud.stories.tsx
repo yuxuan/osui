@@ -3,7 +3,7 @@ import Divider from '@osui/divider';
 import AutoComplete from '../src';
 
 export default {
-    title: '通过验收/AutoComplete 自动完成',
+    title: '数据录入/AutoComplete 自动完成',
     component: AutoComplete,
 };
 
@@ -50,8 +50,12 @@ export const Demo1 = () => {
 
     return (
         <>
-            <p>AutoComplete的场景是，输入内容即为value，本质是Input，下拉展示的内容可以设置自动完成的数据源。</p>
-            <p>和Select Search的区别是，Select Search只是筛选select里面的内容，最终还是要选中某个选项的</p>
+            <p>通过输入关键信息即时联想，选择选项后即完成</p>
+            <h3>使用场景</h3>
+            <p>需要自动完成时，使用该输入框，用户输入内容，联想相关结果，点击即可选择</p>
+            <p><strong>FE说明：</strong>AutoComplete的场景是，输入内容即为value，本质是Input，下拉展示的内容可以设置自动完成的数据源。</p>
+            <p><strong>FE说明：</strong>和Select Search的区别是，Select Search只是筛选select里面的内容，最终还是要选中某个选项的</p>
+            <Divider>展示</Divider>
             <Divider orientation="left">含推荐功能的输入框</Divider>
             <p>支持输入，同时支持选择推荐内容</p>
             <p>推荐的内容，就是默认的options</p>
@@ -115,6 +119,7 @@ export const Demo2 = () => {
 
     return (
         <>
+            <Divider>展示</Divider>
             <Divider orientation="left">含搜索联想功能的输入框</Divider>
             <p>就是没有defaultOptions</p>
             <p>通过onSearch来展示选项</p>

@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from '../src';
 
 export default {
-    title: '未实现/Carousel 走马灯',
+    title: '数据展示/Carousel 走马灯',
     component: Carousel,
 };
 

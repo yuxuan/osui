@@ -4,7 +4,7 @@ import Divider from '@osui/divider';
 import Drawer from '@osui/drawer';
 
 export default {
-    title: '验收中/Drawer 抽屉',
+    title: '反馈/Drawer 抽屉',
 };
 
 export const Demo = () => {

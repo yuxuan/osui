@@ -5,7 +5,7 @@ import { UploadOutlined } from '@ant-design/icons';
 import Upload from '../src';
 
 export default {
-    title: '未实现/Upload 上传',
+    title: '数据录入/Upload 上传',
     component: Upload,
 };
 

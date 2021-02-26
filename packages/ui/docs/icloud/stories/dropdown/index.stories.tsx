@@ -4,7 +4,7 @@ import {IconDownOutlined} from '@osui/icons';
 import Dropdown from '@osui/dropdown';
 
 export default {
-    title: '通过验收/Dropdown 下拉菜单',
+    title: '数据录入/Dropdown 下拉菜单',
     component: Dropdown,
 };
 

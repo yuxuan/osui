@@ -5,7 +5,7 @@ import {IconExclamationCircleFilled} from '@osui/icons';
 import Modal from '@osui/modal';
 
 export default {
-    title: '验收中/Modal 对话框',
+    title: '反馈/Modal 对话框',
 };
 
 export const Demo = () => {

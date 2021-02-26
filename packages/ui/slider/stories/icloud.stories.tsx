@@ -6,7 +6,7 @@ import Divider from '@osui/divider';
 import Slider from '../src';
 
 export default {
-    title: '验收中/Slider 滑动输入条',
+    title: '数据录入/Slider 滑动输入条',
     component: Slider,
 };
 

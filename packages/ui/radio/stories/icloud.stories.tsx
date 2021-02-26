@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Radio from '../src';
 
 export default {
-    title: '验收中/Radio 单选框',
+    title: '数据录入/Radio 单选框',
 };
 
 const Group = Radio.Group;

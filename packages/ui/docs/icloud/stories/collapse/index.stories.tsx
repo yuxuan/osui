@@ -5,7 +5,7 @@ import Collapse from '@osui/collapse';
 const { Panel } = Collapse;
 
 export default {
-    title: '验收中/Collapse 折叠面板',
+    title: '数据展示/Collapse 折叠面板',
 };
 
 export const Demo = () => {

@@ -3,7 +3,7 @@ import Col from '@osui/col';
 import Row from '@osui/row';
 
 export default {
-    title: '通过验收/Grid',
+    title: '布局/Grid',
 };
 
 export const Demo = () => {
