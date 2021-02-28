@@ -2,6 +2,12 @@
 
 .@{osui-checkbox-class-prefix},
 .@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
+    .ant-checkbox:not(.ant-checkbox-checked) {
+        .ant-checkbox-inner {
+            border-color: var(--checkbox-border-color);
+        }
+    }
+
     // 没选中时hover的效果 normal + hover
     &.@{ant-prefix}-checkbox-wrapper:hover .@{ant-prefix}-checkbox-inner,
     .@{ant-prefix}-checkbox:hover .@{ant-prefix}-checkbox-inner,
@@ -80,4 +86,8 @@
         padding-right: var(--checkbox-padding-horizontal);
         padding-left: var(--checkbox-padding-horizontal);
     }
+}
+
+.@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
+    margin-right: var(--checkbox-group-item-margin-right);
 }
