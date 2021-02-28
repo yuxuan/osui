@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@0.10.4...@osui/button@0.11.1) (2021-02-28)
+
+
+### Bug Fixes
+
+* button调整icon类型, 仅用icon来处理 ([33bede0](https://gitee.com/gitee-fe/osui/tree/master/commits/33bede0b9cb46c0030ac8da4f59c31e84fa319dc))
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+
+
+
 # 0.11.0 (2021-02-19)
 
 

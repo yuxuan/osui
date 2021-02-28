@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@0.10.0...@osui/input@0.11.1) (2021-02-28)
+
+
+### Bug Fixes
+
+* input disabled border color ([3559e1b](https://gitee.com/gitee-fe/osui/tree/master/commits/3559e1b273f049dac0ff2642bdb730115a1a944d))
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 补齐antd组件, 补齐文档 ([b6c76a8](https://gitee.com/gitee-fe/osui/tree/master/commits/b6c76a864b121479e151a97e926546f3370d0aed))
+* alert input popover ([9abbeb5](https://gitee.com/gitee-fe/osui/tree/master/commits/9abbeb5e19acebdb41f93b7abc683f6c541295d3))
+* antd prefix 调整 ([bf58fe1](https://gitee.com/gitee-fe/osui/tree/master/commits/bf58fe1e76e1b2fbd8c953dde5b22ee81379e3ad))
+* input ([fc81038](https://gitee.com/gitee-fe/osui/tree/master/commits/fc81038dcb2581a07821490431b524ade9aaf3e0))
+* modal 调整 ([3e92aa4](https://gitee.com/gitee-fe/osui/tree/master/commits/3e92aa40204994ce2b8ed6bcb85d7006aa297710))
+
+
+
+
+
 # 0.11.0 (2021-02-19)
 
 

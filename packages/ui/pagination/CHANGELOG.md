@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@0.10.7...@osui/pagination@0.11.1) (2021-02-28)
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* antd prefix 调整 ([bbcffc6](https://gitee.com/yuxuanhuo/osui/tree/master/commits/bbcffc66f779b7232c933ad61054d3c18926ea5c))
+* input pagination table ([9a5a199](https://gitee.com/yuxuanhuo/osui/tree/master/commits/9a5a199381628308778d6d98906c6b6200ee892b))
+* list, pagination/table, popover, switch, timeline, tooltip ([2f08302](https://gitee.com/yuxuanhuo/osui/tree/master/commits/2f08302a6e008c3039175a9ef283181ac3e62d31))
+* pagination ([fa1c639](https://gitee.com/yuxuanhuo/osui/tree/master/commits/fa1c639961c0cc708580e146baca6cf556e28d37))
+* pagination ([c366c67](https://gitee.com/yuxuanhuo/osui/tree/master/commits/c366c671fafb037f1037a6aa8de65ef4c5e674b0))
+
+
+
+
+
 # 0.11.0 (2021-02-19)
 
 

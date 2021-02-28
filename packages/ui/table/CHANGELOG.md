@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.10.7...@osui/table@0.11.1) (2021-02-28)
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* antd prefix 调整 ([bbcffc6](https://gitee.com/gitee-fe/osui/tree/master/commits/bbcffc66f779b7232c933ad61054d3c18926ea5c))
+* input pagination table ([9a5a199](https://gitee.com/gitee-fe/osui/tree/master/commits/9a5a199381628308778d6d98906c6b6200ee892b))
+* list, pagination/table, popover, switch, timeline, tooltip ([2f08302](https://gitee.com/gitee-fe/osui/tree/master/commits/2f08302a6e008c3039175a9ef283181ac3e62d31))
+* table ([ce77dff](https://gitee.com/gitee-fe/osui/tree/master/commits/ce77dff3ecdb5fc8ac3699a621d078c9f8f49523))
+* table ([a8909d1](https://gitee.com/gitee-fe/osui/tree/master/commits/a8909d176377e734e4d8864fce87696c75a2bb32))
+
+
+
+
+
 # 0.11.0 (2021-02-19)
 
 

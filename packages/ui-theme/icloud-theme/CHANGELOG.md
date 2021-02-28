@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.1...@osui/icloud-theme@0.11.2) (2021-02-28)
+
+
+### Bug Fixes
+
+* modal滚动条margin换padding ([80c3e64](https://gitee.com/gitee-fe/osui/tree/master/commits/80c3e6471ce501533b85af50110f950332490104))
+
+
+
+
+
 ## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.10.8...@osui/icloud-theme@0.11.1) (2021-02-19)
 
 
