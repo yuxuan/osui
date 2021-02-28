@@ -1,8 +1,8 @@
 import React from 'react';
-import {Button as AntdButton} from 'antd';
-import {ButtonProps as AntdButtonProps, ButtonType} from 'antd/es/button';
+import { Button as AntdButton } from 'antd';
+import { ButtonProps as AntdButtonProps, ButtonType } from 'antd/es/button';
 import classNames from 'classnames';
-import {IconLoading3QuartersOutlined} from '@osui/icons';
+import { IconLoading3QuartersOutlined } from '@osui/icons';
 import './index.less';
 
 const clsPrefix = 'osui-button';
@@ -33,11 +33,35 @@ export interface ButtonInterface extends React.ForwardRefExoticComponent<ButtonP
     __ANT_BUTTON: boolean;
 }
 
+const PureIconButton: React.FC<ButtonProps> = props => {
+    const Icon = props.icon;
+    const innerClassName = classNames(props.className, `${clsPrefix}-btn-icon`);
+    if (props.loading) {
+        return React.cloneElement(
+            <IconLoading3QuartersOutlined spin />,
+            {
+                ...props,
+                disabled: true,
+                className: classNames(
+                    props.className,
+                    `${clsPrefix}-btn-icon ${clsPrefix}-icon-spinner ${clsPrefix}-keep-children`
+                ),
+            }
+        );
+    }
+    return React.cloneElement(Icon as React.ReactElement, {...props, className: innerClassName});
+};
+
+/* eslint-disable complexity */
 const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
-    {type = 'default', loading, icon, disabled, flexCenter, ...props}, ref
+    { type = 'default', loading, icon, disabled, flexCenter, ...props }, ref
 ) => {
     let innerIcon = icon;
     let shouldMinWidth = true;
+
+    if (type === 'icon') {
+        return (<PureIconButton loading={loading} icon={icon} disabled={disabled} {...props} />);
+    }
 
     // 当loading且有icon的button时，icon替换成spinner，不论什么情况都要保持后面的chidlren
     if (loading && icon) {
@@ -54,11 +78,11 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
         innerIcon = <IconLoading3QuartersOutlined spin className={`${clsPrefix}-icon-spinner`} />;
     }
     // 当类型为icon或者button仅有icon属性时，不保留最小宽度
-    if (type === 'icon' || icon) {
+    if (icon) {
         shouldMinWidth = false;
     }
 
-    const {success, error, danger, warning} = props;
+    const { success, error, danger, warning } = props;
 
     return (
         <AntdButton

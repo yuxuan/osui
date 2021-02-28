@@ -120,6 +120,8 @@
 .generate-face();
 
 .@{osui-button-class-prefix} {
+    line-height: 20px;
+
     &-min-width {
         min-width: var(--button-min-width);
     }
@@ -129,7 +131,7 @@
         align-items: center;
     }
 
-    & > .osui-icon + span {
+    & > svg + span {
         margin-left: 4px;
     }
 
@@ -162,6 +164,65 @@
     // 去掉primary的box-shadow
     &.@{ant-prefix}-btn-primary {
         box-shadow: none;
+    }
+}
+
+// 仅icon形式
+.@{osui-button-class-prefix}-btn-icon {
+    cursor: pointer;
+
+    .button-color-mixin(
+        ~'var(--btn-icon-color)';
+        ~'var(--btn-icon-bg)';
+        ~'var(--btn-icon-border-color)';
+    );
+
+    &:hover {
+        .button-color-mixin(
+            ~'var(--btn-icon-hover-color)';
+            ~'var(--btn-icon-hover-bg)';
+            ~'var(--btn-icon-hover-border-color)';
+        );
+    }
+
+    &:focus {
+        .button-color-mixin(
+            ~'var(--btn-icon-focus-color)';
+            ~'var(--btn-icon-focus-bg)';
+            ~'var(--btn-icon-focus-border-color)';
+        );
+
+        box-shadow: var(--theme-component-focus-box-shadow);
+    }
+
+    &:active {
+        .button-color-mixin(
+            ~'var(--btn-icon-active-color)';
+            ~'var(--btn-icon-active-bg)';
+            ~'var(--btn-icon-active-border-color)';
+        );
+    }
+
+    &[disabled] {
+        cursor: not-allowed;
+
+        &.@{osui-button-class-prefix}-icon-spinner {
+            color: var(--theme-primary-color);
+        }
+
+        .button-color-mixin(
+            ~'var(--btn-icon-disable-color)';
+            transparent;
+            ~'var(--btn-icon-disable-border-color)';
+        );
+    }
+
+    &.@{osui-button-class-prefix}-loading {
+        .button-color-mixin(
+            ~'var(--btn-icon-loading-color)';
+            ~'var(--btn-icon-loading-bg)';
+            ~'var(--btn-icon-loading-border-color)';
+        );
     }
 }
 

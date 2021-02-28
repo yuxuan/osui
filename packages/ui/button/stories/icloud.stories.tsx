@@ -1,5 +1,6 @@
 import React from 'react';
-import { IconSearchOutlined, IconHomeOutlined, IconPlusOutlined } from '@osui/icons';
+import {IconHomeOutlined, IconPlusOutlined} from '@osui/icons';
+import Divider from '@osui/divider';
 import Space from '@osui/space';
 import Button from '../src';
 
@@ -11,35 +12,66 @@ export default {
 export const Demo = () => {
     return (
         <>
+            <Divider>展示</Divider>
+            <h3>1、普通按钮</h3>
+            <p>重要样式</p>
             <div>
-                <Button type="primary" style={{ 'margin': '0 20px 20px 0' }}>主要按钮</Button>
-                <Button type="primary" loading style={{ 'margin': '0 20px 20px 0' }}>主要按钮</Button>
-                <Button type="primary" disabled style={{ 'margin': '0 20px 20px 0' }}>主要按钮</Button>
+                <Button type="primary" style={{ 'margin': '0 20px 20px 0' }}>重要样式</Button>
+                <Button type="primary" loading style={{ 'margin': '0 20px 20px 0' }}>重要样式</Button>
+                <Button type="primary" disabled style={{ 'margin': '0 20px 20px 0' }}>重要样式</Button>
+            </div>
+            <p>加强样式</p>
+            <div>
+                <Button type="strong" style={{ 'margin': '0 20px 20px 0' }}>加强样式</Button>
+                <Button type="strong" loading style={{ 'margin': '0 20px 20px 0' }}>加强样式</Button>
+                <Button type="strong" disabled style={{ 'margin': '0 20px 20px 0' }}>加强样式</Button>
+            </div>
+            <p>普通样式</p>
+            <div>
+                <Button type="default" style={{ 'margin': '0 20px 20px 0' }}>普通样式</Button>
+                <Button type="default" loading style={{ 'margin': '0 20px 20px 0' }}>普通样式</Button>
+                <Button type="default" disabled style={{ 'margin': '0 20px 20px 0' }}>普通样式</Button>
+            </div>
+            <h3>文字按钮</h3>
+            <p>文字链接按钮</p>
+            <div>
+                <Button type="link" style={{ 'margin': '0 20px 20px 0' }}>文字链接按钮</Button>
+                <Button type="link" loading style={{ 'margin': '0 20px 20px 0' }}>文字链接按钮</Button>
+                <Button type="link" disabled style={{ 'margin': '0 20px 20px 0' }}>文字链接按钮</Button>
+            </div>
+            <p>文字按钮</p>
+            <p><strong>FE说明</strong>没有在规范内，但是有使用到过，样式是否符合</p>
+            <div>
+                <Button type="text" style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
+                <Button type="text" loading style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
+                <Button type="text" disabled style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
+            </div>
+            <h3>图标按钮</h3>
+            <p><strong>FE说明：</strong>注意图标按钮需要用icon属性，而不是children内放入图标</p>
+            <p>
+                <strong>FE说明：</strong>
+                有两种形式：一种是没有type=&quot;icon&quot;，另一种是加了type=&quot;icon&quot;的，区别是加了type的是不会有其它类似于primary的这种用法，只是单独一个icon
+            </p>
+            <div>
+                <Button type="primary" icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button type="primary" loading icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button type="primary" disabled icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
             </div>
             <div>
-                <Button type="strong" style={{ 'margin': '0 20px 20px 0' }}>次要按钮</Button>
-                <Button type="strong" loading style={{ 'margin': '0 20px 20px 0' }}>次要按钮</Button>
-                <Button type="strong" disabled style={{ 'margin': '0 20px 20px 0' }}>次要按钮</Button>
-            </div>
-            <div>
-                <Button type="default" style={{ 'margin': '0 20px 20px 0' }}>次要按钮</Button>
-                <Button type="default" loading style={{ 'margin': '0 20px 20px 0' }}>次要按钮</Button>
-                <Button type="default" disabled style={{ 'margin': '0 20px 20px 0' }}>次要按钮</Button>
-            </div>
-            <div>
-                <Button type="link" style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
-                <Button type="link" loading style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
-                <Button type="link" disabled style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
+                <Button type="strong" icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button type="strong" loading icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button type="strong" disabled icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
             </div>
             <div>
                 <Button icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                <Button loading icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                <Button disabled icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button loading icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button disabled icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
             </div>
+            <p>纯图标按钮</p>
             <div>
                 <Button type="icon" icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                <Button type="icon" loading icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                <Button type="icon" disabled icon={<IconSearchOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button type="icon" loading icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button type="icon" disabled icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
             </div>
             <div>
                 <p>当icon和文字一起的时候，如果对不齐，可以添加flexCenter属性，如果导致同行不齐，外面包裹div display: flex</p>
