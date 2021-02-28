@@ -34,6 +34,7 @@ export const Demo = () => {
             <TextArea style={{ width: 500, height: 150 }} placeholder="请输入" />
             <br />
             <br />
+            <Input.Password style={{ width: 500 }} placeholder="请输入" />
         </>);
 };
 

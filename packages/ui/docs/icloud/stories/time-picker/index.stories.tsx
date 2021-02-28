@@ -24,5 +24,3 @@ export const Demo2 = () => {
         </>
     );
 };
-
-
