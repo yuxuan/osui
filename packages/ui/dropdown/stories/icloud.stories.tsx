@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from '@osui/menu';
 import {IconDownOutlined} from '@osui/icons';
+import FlexCentered from '@osui/flex-centered';
 import Dropdown from '../src';
 
 export default {
@@ -33,8 +34,10 @@ export const Demo = () => {
     return (
         <Dropdown overlay={menu}>
             <a className="ant-dropdown-link" onClick={e => e.preventDefault()} style={{display: 'flex'}}>
-                Hover me
-                <IconDownOutlined style={{paddingLeft: '5px'}} />
+                <FlexCentered>
+                    Hover me
+                    <IconDownOutlined style={{paddingLeft: '5px'}} />
+                </FlexCentered>
             </a>
         </Dropdown>
     );

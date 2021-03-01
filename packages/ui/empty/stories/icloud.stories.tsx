@@ -14,7 +14,7 @@ export const Demo1 = () => {
 
 export const Demo2 = () => {
     return (
-        <Empty type="404" />
+        <Empty type="error" description="404 Not Found" />
     );
 };
 

@@ -1,6 +1,16 @@
 @osui-input-number-class-prefix: osui-input-number;
 
 .@{osui-input-number-class-prefix} {
+    width: var(--input-number-width);
+
+    .ant-input-number-handler {
+        transition: none;
+    }
+
+    .ant-input-number-input {
+        height: var(--input-number-input-height);
+    }
+
     .@{ant-prefix}-input-number-handler-up-inner,
     .@{ant-prefix}-input-number-handler-down-inner {
         // 修复箭头不居中的问题

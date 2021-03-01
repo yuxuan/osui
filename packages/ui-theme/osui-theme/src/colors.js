@@ -387,6 +387,8 @@ exports.presetColors = {
     '--input-error-focus-background-color': 'var(--theme-component-bg)',
     '--input-focus-background-color': 'var(--theme-component-bg)',
     '--input-warning-focus-background-color': 'var(--theme-component-bg)',
+    '--input-number-input-height': '28px',
+    '--input-number-width': '90px',
     '--item-hover-bg': 'var(--color-gray-3)',
     '--link-active-color': 'var(--color-brand-7)',
     '--link-color': 'var(--color-brand-7)',
@@ -407,6 +409,7 @@ exports.presetColors = {
     '--select-item-selected-bg': 'var(--color-brand-1)',
     '--select-disabled-bg': 'transparent',
     '--select-check-icon-size': '16px',
+    '--select-arrow-top': '43%',
     '--shadow-1': '0 4px 8px -2px rgba(9, 30, 66, 0.25), 0 0 1px 0 rgba(9, 30, 66, 0.31)', // 和antd的shadow-1的不一样，用于气泡
     '--shadow-2': '0 8px 16px -4px rgba(9, 30, 66, 0.25)',
     '--space-large': '24px',
@@ -453,6 +456,7 @@ exports.presetColors = {
     '--tag-icon-maring-horizontal': '4px',
     '--tooltip-bg': 'var(--color-gray-9)',
     '--tooltip-color': 'var(--color-gray-1)',
+    '--tooltip-min-height': '32px',
     '--pagination-item-border-color': 'var(--color-gray-5)',
     '--pagination-item-hover-bg': 'var(--color-gray-3)',
     '--pagination-item-hover-color': 'var(--theme-text-color)',
@@ -538,6 +542,7 @@ exports.presetColors = {
     '--drawer-footer-border-top-color': 'var(--theme-border-color-split)',
     '--drawer-close-icon-line-height': '1',
     '--tree-switcher-width': '18px',
+    '--empty-image-margin-bottom': '8px',
     ...buttonColors,
     '--osui-icon-size': '16px',
 };
