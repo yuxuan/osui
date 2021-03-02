@@ -1,5 +1,9 @@
 # Change log
 
+# 0.11.2
+
+BrandProvider需要在antd的ConfigProvider外面
+
 # 0.11.1
 Form
 - 添加 Form.ErrorList
