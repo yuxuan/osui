@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.10.8...@osui/theme@0.11.1) (2021-03-02)
+
+
+### Bug Fixes
+
+* checkbox ([2e348a9](https://gitee.com/gitee-fe/osui/tree/master/commits/2e348a9edaa7be7fa08be9d215175d8fc693414e))
+* dropdown demo, empty, input-number, modal icon, select icon, tooltip, popover ([3ab7eee](https://gitee.com/gitee-fe/osui/tree/master/commits/3ab7eee77916171ded5a00e2ff2c2b200b98f21a))
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* backtop: ([ebc6018](https://gitee.com/gitee-fe/osui/tree/master/commits/ebc6018be3be68a7315208902a2f703e557b9834))
+* checkbox ([0beafbd](https://gitee.com/gitee-fe/osui/tree/master/commits/0beafbdf3d0c58a661e1a350a1b8135fc4fb541d))
+* collapse ([9d54b37](https://gitee.com/gitee-fe/osui/tree/master/commits/9d54b375c620ce19085af10119416b29a5f1738f))
+* drawer ([3e6ff50](https://gitee.com/gitee-fe/osui/tree/master/commits/3e6ff5019414d76549e09b498b9c3fc2f2e6138c))
+* input pagination table ([9a5a199](https://gitee.com/gitee-fe/osui/tree/master/commits/9a5a199381628308778d6d98906c6b6200ee892b))
+* list, pagination/table, popover, switch, timeline, tooltip ([2f08302](https://gitee.com/gitee-fe/osui/tree/master/commits/2f08302a6e008c3039175a9ef283181ac3e62d31))
+* modal ([38fc259](https://gitee.com/gitee-fe/osui/tree/master/commits/38fc259d2c9cfa2ec0b55be6b9e7d7c3057c9405))
+* pagination ([fa1c639](https://gitee.com/gitee-fe/osui/tree/master/commits/fa1c639961c0cc708580e146baca6cf556e28d37))
+* select ([dd3d8c5](https://gitee.com/gitee-fe/osui/tree/master/commits/dd3d8c5f5fcdc665d6f6010912a7dbb69f2c44c4))
+* tabs ([8c7552f](https://gitee.com/gitee-fe/osui/tree/master/commits/8c7552fe719a47f6f1b5ad9a9ca76d41e9405f0f))
+* tree ([c60b4c8](https://gitee.com/gitee-fe/osui/tree/master/commits/c60b4c8fd59cb8a78dc9fc72248003598330ca78))
+
+
+
+
+
 # 0.11.0 (2021-02-19)
 
 

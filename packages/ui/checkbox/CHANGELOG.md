@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/checkbox@0.10.5...@osui/checkbox@0.11.1) (2021-03-02)
+
+
+### Bug Fixes
+
+* checkbox ([2e348a9](https://gitee.com/gitee-fe/osui/tree/master/commits/2e348a9edaa7be7fa08be9d215175d8fc693414e))
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* antd prefix 调整 ([bbcffc6](https://gitee.com/gitee-fe/osui/tree/master/commits/bbcffc66f779b7232c933ad61054d3c18926ea5c))
+* checkbox ([0beafbd](https://gitee.com/gitee-fe/osui/tree/master/commits/0beafbdf3d0c58a661e1a350a1b8135fc4fb541d))
+
+
+
+
+
 # 0.11.0 (2021-02-19)
 
 

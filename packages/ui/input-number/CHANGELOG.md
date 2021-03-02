@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input-number@0.10.4...@osui/input-number@0.11.1) (2021-03-02)
+
+
+### Bug Fixes
+
+* dropdown demo, empty, input-number, modal icon, select icon, tooltip, popover ([3ab7eee](https://gitee.com/gitee-fe/osui/tree/master/commits/3ab7eee77916171ded5a00e2ff2c2b200b98f21a))
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* antd prefix 调整 ([bbcffc6](https://gitee.com/gitee-fe/osui/tree/master/commits/bbcffc66f779b7232c933ad61054d3c18926ea5c))
+* input pagination table ([9a5a199](https://gitee.com/gitee-fe/osui/tree/master/commits/9a5a199381628308778d6d98906c6b6200ee892b))
+* input-number ([564f0b9](https://gitee.com/gitee-fe/osui/tree/master/commits/564f0b9d9638ed73d3dffc951dc564004ec31bf4))
+
+
+
+
+
 # 0.11.0 (2021-02-19)
 
 

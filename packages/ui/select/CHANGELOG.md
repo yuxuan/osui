@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@0.10.2...@osui/select@0.11.1) (2021-03-02)
+
+
+### Bug Fixes
+
+* 调整empty, brand-provider增加对antd configProvider 默认的覆盖 ([83a0b9b](https://gitee.com/gitee-fe/osui/tree/master/commits/83a0b9ba55f30dfe3cddcf06d4f1f47fec158a90))
+* dropdown demo, empty, input-number, modal icon, select icon, tooltip, popover ([3ab7eee](https://gitee.com/gitee-fe/osui/tree/master/commits/3ab7eee77916171ded5a00e2ff2c2b200b98f21a))
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* select ([dd3d8c5](https://gitee.com/gitee-fe/osui/tree/master/commits/dd3d8c5f5fcdc665d6f6010912a7dbb69f2c44c4))
+
+
+
+
+
 # 0.11.0 (2021-02-19)
 
 
