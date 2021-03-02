@@ -1,7 +1,13 @@
 @osui-empty-class-prefix: osui-empty;
 
 .@{osui-empty-class-prefix} {
-    .ant-empty-image {
+    .@{ant-prefix}-empty-image {
         margin-bottom: var(--empty-image-margin-bottom);
+    }
+}
+
+.@{osui-empty-class-prefix}-small {
+    .@{ant-prefix}-empty-image {
+        height: 40px;
     }
 }
