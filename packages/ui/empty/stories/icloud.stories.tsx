@@ -15,7 +15,7 @@ export const Demo1 = () => {
 
 export const Demo2 = () => {
     return (
-        <Empty type="error" description="404 Not Found" />
+        <Empty type="error" description="404 Not Found" imageStyle={{height: 362}} />
     );
 };
 
@@ -24,7 +24,7 @@ export const Demo3 = () => {
         <>
             <p>可以通过imageStyle来调整图片高度</p>
             <Divider>展示</Divider>
-            <Empty type="error" imageStyle={{height: 200}} />
+            <Empty type="error" imageStyle={{height: 362}} />
         </>
     );
 };

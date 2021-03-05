@@ -17,7 +17,7 @@ const iCloudConfigs: ConfigProviderProps = {
             case 'Cascader':
             case 'Transfer':
             case 'Mentions':
-                return <Empty className="osui-empty-small" />;
+                return <Empty small />;
             default:
                 return <Empty />;
         }
