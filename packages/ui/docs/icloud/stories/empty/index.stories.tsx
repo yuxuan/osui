@@ -1,4 +1,5 @@
 import React from 'react';
+import Divider from '@osui/divider';
 import Empty from '@osui/empty';
 
 export default {
@@ -8,18 +9,22 @@ export default {
 
 export const Demo1 = () => {
     return (
-        <Empty />
+        <Empty className="osui-empty-small" />
     );
 };
 
 export const Demo2 = () => {
     return (
-        <Empty type="404" />
+        <Empty type="error" description="404 Not Found" />
     );
 };
 
 export const Demo3 = () => {
     return (
-        <Empty type="error" />
+        <>
+            <p>可以通过imageStyle来调整图片高度</p>
+            <Divider>展示</Divider>
+            <Empty type="error" imageStyle={{height: 200}} />
+        </>
     );
 };

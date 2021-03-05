@@ -19,7 +19,7 @@ export const Demo = () => {
                 <ConfigProvider locale={zhCN}>
                     <Pagination showQuickJumper defaultCurrent={2} total={500} onChange={onChange} />
                     <br />
-                    <Pagination size="small" total={50} />
+                    <Pagination size="small" showQuickJumper defaultCurrent={2} total={500} onChange={onChange} />
                     <br />
                     <Pagination showQuickJumper defaultCurrent={2} total={500} onChange={onChange} disabled />
                 </ConfigProvider>
