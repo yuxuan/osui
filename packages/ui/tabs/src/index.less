@@ -60,8 +60,13 @@
         & > div > .@{ant-prefix}-tabs-nav .@{ant-prefix}-tabs-tab {
             border: 1px solid var(--color-gray-3);
 
+            &.@{ant-prefix}-tabs-tab-active {
+                border-bottom: 1px solid transparent;
+            }
+
             &:not(.@{ant-prefix}-tabs-tab-active) {
                 background: var(--color-gray-3);
+                border-bottom: var(--tabs-border-bottom);
             }
         }
 
@@ -81,6 +86,20 @@
             color: var(--color-gray-8);
             background: var(--color-gray-3);
             border: 1px solid var(--color-gray-6);
+        }
+
+        &.@{ant-prefix}-tabs-editable {
+            .@{ant-prefix}-tabs-tab-remove {
+                display: inline-flex;
+                align-items: center;
+                color: var(--tag-icon-color);
+            }
+
+            .@{ant-prefix}-tabs-nav-add {
+                display: inline-flex;
+                align-items: center;
+                color: var(--theme-text-color);
+            }
         }
     }
 }

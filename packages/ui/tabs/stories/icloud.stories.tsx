@@ -1,9 +1,11 @@
 import React from 'react';
 import { ForkOutlined } from '@ant-design/icons';
+import { IconCloseOutlined } from '@osui/icons';
+import Divider from '@osui/divider';
 import Tabs from '../src';
 
 export default {
-    title: '数据展示/Tabs 标签页',
+    title: '数据展示/T2abs 标签页',
 };
 
 export const Demo = () => {
@@ -169,7 +171,12 @@ export const PanelClosableDemo = () => {
                     onEdit={this.onEdit}
                 >
                     {panes.map(pane => (
-                        <TabPane tab={pane.title} key={pane.key} closable={pane.closable}>
+                        <TabPane
+                            tab={pane.title}
+                            key={pane.key}
+                            closable
+                            closeIcon={<IconCloseOutlined />}
+                        >
                             {pane.content}
                         </TabPane>
                     ))}
@@ -178,5 +185,10 @@ export const PanelClosableDemo = () => {
         }
     }
 
-    return (<Demo />);
+    return (
+        <>
+            <p><strong>FE说明：</strong>closeIcon无法从组件内部调整，需要外面传入。如果UE走查有问题，按照示例代码书写即可</p>
+            <Divider>展示</Divider>
+            <Demo />
+        </>);
 };
