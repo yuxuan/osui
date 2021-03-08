@@ -1,6 +1,5 @@
 import React from 'react';
 import Divider from '@osui/divider';
-import Select from '@osui/select';
 import Empty from '@osui/empty';
 
 export default {
@@ -10,21 +9,13 @@ export default {
 
 export const Demo1 = () => {
     return (
-        <>
-            <p>下拉内的空状态</p>
-            <Divider>展示</Divider>
-            <Select notFoundContent={<Empty small />} style={{width: 150}} />
-        </>
+        <Empty className="osui-empty-small" />
     );
 };
 
 export const Demo2 = () => {
     return (
-        <>
-            <p>可以通过imageStyle来调整图片高度</p>
-            <Divider>展示</Divider>
-            <Empty type="error" description="404 Not Found" imageStyle={{ height: 362 }} />
-        </>
+        <Empty type="error" description="404 Not Found" imageStyle={{height: 362}} />
     );
 };
 
@@ -33,7 +24,7 @@ export const Demo3 = () => {
         <>
             <p>可以通过imageStyle来调整图片高度</p>
             <Divider>展示</Divider>
-            <Empty type="error" imageStyle={{ height: 362 }} />
+            <Empty type="error" imageStyle={{height: 362}} />
         </>
     );
 };

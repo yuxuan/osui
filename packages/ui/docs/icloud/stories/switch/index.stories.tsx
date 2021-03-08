@@ -1,5 +1,5 @@
 import React from 'react';
-import {Space} from 'antd';
+import { Space } from 'antd';
 import { IconCheckOutlined, IconCloseOutlined } from '@osui/icons';
 import Switch from '@osui/switch';
 

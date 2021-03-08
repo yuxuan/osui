@@ -5,7 +5,7 @@ import Divider from '@osui/divider';
 import Tabs from '../src';
 
 export default {
-    title: '数据展示/T2abs 标签页',
+    title: '数据展示/Tabs 标签页',
 };
 
 export const Demo = () => {
