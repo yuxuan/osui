@@ -1,7 +1,8 @@
 import React from 'react';
-import { IconHomeOutlined, IconPlusOutlined } from '@osui/icons';
+import { IconHomeOutlined, IconPlusOutlined, IconLeftOutlined } from '@osui/icons';
 import Divider from '@osui/divider';
 import Space from '@osui/space';
+import FlexCentered from '@osui/flex-centered';
 import { ConfigProvider } from 'antd';
 import Button from '../src';
 import './index.less';
@@ -98,6 +99,35 @@ export const Demo = () => {
                 <Button flexCenter disabled icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }}>
                     图文按钮
                 </Button>
+                <br />
+                <Button flexCenter type="primary" icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }}>
+                    图文按钮
+                </Button>
+                <Button
+                    flexCenter
+                    loading
+                    type="primary"
+                    icon={<IconHomeOutlined />}
+                    style={{ 'margin': '0 20px 20px 0' }}
+                >
+                    图文按钮
+                </Button>
+                <Button
+                    flexCenter
+                    disabled
+                    type="primary"
+                    icon={<IconHomeOutlined />}
+                    style={{ 'margin': '0 20px 20px 0' }}
+                >
+                    图文按钮
+                </Button>
+                <p>图文按钮跳转</p>
+                <a href="www.baidu.com" className="text-link">
+                    <FlexCentered>
+                        <IconLeftOutlined />
+                        返回ECI资源管理
+                    </FlexCentered>
+                </a>
             </div>
         </>
     );
