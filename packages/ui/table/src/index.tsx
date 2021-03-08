@@ -1,5 +1,5 @@
 /* eslint-disable complexity */
-import React, {useContext} from 'react';
+import React, {useContext, useMemo} from 'react';
 import {Table as AntdTable} from 'antd';
 import {ConfigContext} from 'antd/es/config-provider';
 import {
@@ -100,27 +100,37 @@ function Table<RecordType extends Record<string, any>>(
 
     // ==================== pagination ====================
     // 允许传入null
-    let innerPagination: boolean | PaginationProps = !(pagination === false || pagination === null);
-
-    if (innerPagination) {
-        innerPagination = {
-            ...pagination,
-            className: classNames(
-                `${antPrefix}-pagination`,
-                `${antPrefix}-pagination-${paginationPostion(pagination && pagination.position || ['bottomRight'])}`,
-                'osui-pagination',
-                pagination && pagination.className
-            ),
-            itemRender: customPaginationProps(brand).itemRender,
-            locale: customPaginationProps(brand).locale,
-        };
-    }
+    const innerPagination: PaginationProps = useMemo(
+        () => {
+            if (!(pagination === false || pagination === null)) {
+                return {
+                    ...pagination,
+                    className: classNames(
+                        `${antPrefix}-pagination`,
+                        /* eslint-disable-next-line max-len */
+                        `${antPrefix}-pagination-${paginationPostion(pagination && pagination.position || ['bottomRight'])}`,
+                        'osui-pagination',
+                        pagination && pagination.className
+                    ),
+                    itemRender: customPaginationProps(brand).itemRender,
+                    locale: customPaginationProps(brand).locale,
+                };
+            }
+            return pagination as PaginationProps;
+        },
+        [pagination, antPrefix, brand]
+    );
 
     // ==================== expandable ====================
-    let innerExpandable = expandable;
-    if (brand === 'icloud') {
-        innerExpandable = expandable && expandableConfig(expandable, props.rowSelection);
-    }
+    const innerExpandable = useMemo(
+        () => {
+            if (brand === 'icloud') {
+                return expandable && expandableConfig(expandable, props.rowSelection);
+            }
+            return expandable;
+        },
+        [expandable, brand, props.rowSelection]
+    );
 
     return (
         <AntdTable<RecordType>
