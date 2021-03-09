@@ -1,7 +1,20 @@
 # Change log
 
+# 0.11.6
+【iCloud】
+
+Select
+- 修复Multip没有arrow时，clear icon位置不对的问题
+
+Upload
+- demo中icon使用@osui/icons-icloud
+
+@osui/icons-icloud
+- 调整upload icon
+
 # 0.11.5
 【iCloud】
+
 Breadcrumb
 - 导出props的interface
 
