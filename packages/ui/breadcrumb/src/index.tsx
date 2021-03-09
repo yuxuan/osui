@@ -54,7 +54,7 @@ const getChildrenWithEllipsis = (children: React.ReactNode | React.ReactNode[], 
     ];
 };
 
-interface BreadcrumbProps extends AntdBrandcrumbProps {
+export interface BreadcrumbProps extends AntdBrandcrumbProps {
     /**
      * @description 是否展示 ...
      */
@@ -65,7 +65,7 @@ interface BreadcrumbProps extends AntdBrandcrumbProps {
     maxItemLength?: number;
 }
 
-interface BreadcrumbDecorator extends React.FC<BreadcrumbProps> {
+export interface BreadcrumbDecorator extends React.FC<BreadcrumbProps> {
     Item: typeof AntdBreadcrumb.Item;
     Separator: typeof AntdBreadcrumb.Separator;
 }
