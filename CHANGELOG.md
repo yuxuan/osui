@@ -1,8 +1,68 @@
 # Change log
 
-# 0.11.2
+# 0.11.5
+【iCloud】
+Breadcrumb
+- 导出props的interface
 
-BrandProvider需要在antd的ConfigProvider外面
+Button
+- 补充交互文档
+
+Table
+- 增加memo
+
+Tabs
+- 样式调整
+
+Switch
+- 替换icon
+
+# 0.11.4
+【iCloud】
+
+Button
+- 调整最小宽度 由68px减小到56px
+- 调整line-height为20px
+
+Checkbox
+- 调整border color
+
+Dropdown
+- 调整demo对齐问题
+
+Empty
+- 调整error.svg
+
+InputNumber
+- 调整样式
+
+Modal
+- 调整关闭按钮颜色
+
+Select
+- 调整箭头位置
+
+Tooltip
+- 调整min-height
+
+BrandProvider
+- 调整支持antd autoInsertSpaceInButton， renderEmpty的覆盖
+- 注意：需要用在antd ConfigProvider里面
+
+# 0.11.3
+【iCloud】
+
+Modal
+- 修复滚动条，margin换padding
+
+Button
+- 调整icon类型，仅用icon来处理
+
+Input
+- 调整disable border颜色
+
+# 0.11.2
+【iCloud】
 
 # 0.11.1
 Form
