@@ -367,6 +367,8 @@ exports.presetColors = {
     '--input-warning-focus-background-color': 'var(--color-warning-1)',
     '--input-number-input-height': '30px',
     '--input-number-width': '80px',
+    '--input-suffix-icon-size': '16px',
+    '--input-affix-wrapper-padding-horizontal': '10px',
     '--link-active-color': 'var(--color-brand-7)',
     '--link-color': 'var(--color-brand-6)',
     '--link-hover-color': 'var(--color-brand-5)',
