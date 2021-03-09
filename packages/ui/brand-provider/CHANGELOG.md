@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/brand-provider@0.11.1...@osui/brand-provider@0.11.2) (2021-03-09)
+
+
+### Bug Fixes
+
+* empty, brand-provider调整 ([8c72419](https://gitee.com/gitee-fe/osui/tree/master/commits/8c724197cbbbb31ad3e5f39f59ddf98e2f310439))
+
+
+
+
+
 ## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/brand-provider@0.10.0...@osui/brand-provider@0.11.1) (2021-03-02)
 
 

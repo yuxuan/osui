@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/tabs@0.10.0...@osui/tabs@0.11.1) (2021-03-09)
+
+
+### Bug Fixes
+
+* tabs 调整, switch demo调整 ([cf49708](https://gitee.com/yuxuanhuo/osui/tree/master/commits/cf49708576758e136486dd05ebfc4df1a69f623c))
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/yuxuanhuo/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* antd prefix 调整 ([bbcffc6](https://gitee.com/yuxuanhuo/osui/tree/master/commits/bbcffc66f779b7232c933ad61054d3c18926ea5c))
+* tabs ([8c7552f](https://gitee.com/yuxuanhuo/osui/tree/master/commits/8c7552fe719a47f6f1b5ad9a9ca76d41e9405f0f))
+
+
+
+
+
 # 0.11.0 (2021-02-19)
 
 

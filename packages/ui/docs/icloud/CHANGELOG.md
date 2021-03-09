@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-docs@0.10.0...@osui/icloud-docs@0.11.1) (2021-03-09)
+
+
+### Bug Fixes
+
+* empty, brand-provider调整 ([8c72419](https://gitee.com/gitee-fe/osui/tree/master/commits/8c724197cbbbb31ad3e5f39f59ddf98e2f310439))
+* input disabled border color ([3559e1b](https://gitee.com/gitee-fe/osui/tree/master/commits/3559e1b273f049dac0ff2642bdb730115a1a944d))
+* tabs 调整, switch demo调整 ([cf49708](https://gitee.com/gitee-fe/osui/tree/master/commits/cf49708576758e136486dd05ebfc4df1a69f623c))
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* 补齐antd组件, 补齐文档 ([b6c76a8](https://gitee.com/gitee-fe/osui/tree/master/commits/b6c76a864b121479e151a97e926546f3370d0aed))
+* 调整table,pagination 增加brand context, 来展示对应的分页 ([e0be858](https://gitee.com/gitee-fe/osui/tree/master/commits/e0be858d681867a793570807ff93674c53ef3682))
+* button调整 ([e31370a](https://gitee.com/gitee-fe/osui/tree/master/commits/e31370a2f9e514b8bfa239a1b76e0906874aed69))
+* checkbox, radio, input-number ([64f36e6](https://gitee.com/gitee-fe/osui/tree/master/commits/64f36e6b6eb46a333a044a9452207866682d8df4))
+* list, pagination/table, popover, switch, timeline, tooltip ([2f08302](https://gitee.com/gitee-fe/osui/tree/master/commits/2f08302a6e008c3039175a9ef283181ac3e62d31))
+* modal 调整 ([3e92aa4](https://gitee.com/gitee-fe/osui/tree/master/commits/3e92aa40204994ce2b8ed6bcb85d7006aa297710))
+
+
+
+
+
 # 0.11.0 (2021-02-19)
 
 

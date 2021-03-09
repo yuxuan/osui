@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/collapse@0.11.1...@osui/collapse@0.11.2) (2021-03-09)
+
+**Note:** Version bump only for package @osui/collapse
+
+
+
+
+
 ## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/collapse@0.10.5...@osui/collapse@0.11.1) (2021-03-02)
 
 
