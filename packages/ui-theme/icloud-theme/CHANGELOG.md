@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.3...@osui/icloud-theme@0.11.4) (2021-03-09)
+
+
+### Bug Fixes
+
+* input search icon大小修复 ([30548f9](https://gitee.com/gitee-fe/osui/tree/master/commits/30548f91a380d45add949d378b1e9c5a7c448ba7))
+
+
+
+
+
 ## [0.11.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.2...@osui/icloud-theme@0.11.3) (2021-03-02)
 
 

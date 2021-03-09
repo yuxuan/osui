@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://gitee.com/gitee-fe/osui/compare/@osui/icons@0.10.2...@osui/icons@0.11.1) (2021-03-09)
+
+
+### Bug Fixes
+
+* 增加upload icon ([5fb8577](https://gitee.com/gitee-fe/osui/commits/5fb85779d6d4838ed164b1eec3a2ab77fa3e1b0f))
+* upload icon调整 ([58f90f7](https://gitee.com/gitee-fe/osui/commits/58f90f70dfda470c6e33adc20cf44c134bec2f92))
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+
+
+
 # 0.11.0 (2021-02-19)
 
 
