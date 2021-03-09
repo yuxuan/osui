@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>按钮/上传</title>
+    <g id="按钮/上传" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M192,589 L192,799 L832,799 L832,589 L960,589 L960,927 L64,927 L64,589 L192,589 Z M506.294393,66.745166 L596.806834,157.254834 L743.846393,304.297166 L653.336725,394.806834 L570,311.469166 L570,748 L442,748 L442,312.059166 L359.254834,394.806834 L268.745166,304.297166 L415.787,157.257 L506.294393,66.745166 Z" id="形状结合" fill="#999999" fill-rule="nonzero"></path>
+    </g>
+</svg>

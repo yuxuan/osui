@@ -120,6 +120,9 @@ export default function Title() {
                                                         <img width="16" height="16" src="./svg/up-outlined.svg"/>
                                                         <br/><sub>IconUpOutlined</sub>
                                                         </td></tr><tr><td align="center">
+                                                        <img width="16" height="16" src="./svg/upload-outlined.svg"/>
+                                                        <br/><sub>IconUploadOutlined</sub>
+                                                        </td><td align="center">
                                                         <img width="16" height="16" src="./svg/vertical-align-top-outlined.svg"/>
                                                         <br/><sub>IconVerticalAlignTopOutlined</sub>
-                                                        </td><td align="center"></td><td align="center"></td></tr></tbody></table>
+                                                        </td><td align="center"></td></tr></tbody></table>

@@ -32,4 +32,5 @@ export const IconSwitchCross: IconComponent;
 export const IconSwitchTick: IconComponent;
 export const IconTableSortOutlined: IconComponent;
 export const IconUpOutlined: IconComponent;
+export const IconUploadOutlined: IconComponent;
 export const IconVerticalAlignTopOutlined: IconComponent;
