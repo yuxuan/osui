@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.4...@osui/icloud-theme@0.11.5) (2021-03-12)
+
+
+### Bug Fixes
+
+* button line-height 调整为1.5 ([df668b5](https://gitee.com/gitee-fe/osui/tree/master/commits/df668b59946d032a72b69a837ea77c79257d10a6))
+
+
+
+
+
 ## [0.11.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.3...@osui/icloud-theme@0.11.4) (2021-03-09)
 
 
