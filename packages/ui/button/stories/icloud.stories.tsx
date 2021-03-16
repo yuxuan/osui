@@ -2,6 +2,7 @@ import React from 'react';
 import { IconHomeOutlined, IconPlusOutlined, IconLeftOutlined } from '@osui/icons';
 import Divider from '@osui/divider';
 import Space from '@osui/space';
+import Gap from '@osui/gap';
 import FlexCentered from '@osui/flex-centered';
 import { ConfigProvider } from 'antd';
 import Button from '../src';
@@ -128,6 +129,43 @@ export const Demo = () => {
                         返回ECI资源管理
                     </FlexCentered>
                 </a>
+                <br />
+                <FlexCentered>
+                    <a href="www.baidu.com" className="text-link">
+                        <FlexCentered>
+                            <IconHomeOutlined />
+                            <Gap factor={1} base={4} orientation="horizontal" />
+                            图文按钮
+                        </FlexCentered>
+                    </a>
+                    <Gap factor={2} base={4} orientation="horizontal" />
+                    <a href="www.baidu.com" className="text-link" disabled>
+                        <FlexCentered>
+                            <IconHomeOutlined />
+                            <Gap factor={1} base={4} orientation="horizontal" />
+                            图文按钮 disabled
+                        </FlexCentered>
+                    </a>
+                </FlexCentered>
+
+                <br />
+                <FlexCentered>
+                    <a href="www.baidu.com">
+                        <FlexCentered>
+                            <IconHomeOutlined />
+                            <Gap factor={1} base={4} orientation="horizontal" />
+                            图文按钮
+                        </FlexCentered>
+                    </a>
+                    <Gap factor={2} base={4} orientation="horizontal" />
+                    <a href="www.baidu.com" disabled>
+                        <FlexCentered>
+                            <IconHomeOutlined />
+                            <Gap factor={1} base={4} orientation="horizontal" />
+                            图文按钮 disabled
+                        </FlexCentered>
+                    </a>
+                </FlexCentered>
             </div>
         </>
     );
@@ -221,5 +259,18 @@ export const Face = () => {
                 <Button warning type="primary">失败按钮</Button>
             </Space>
         </>
+    );
+};
+
+export const DisabledReasonDemo = () => {
+    return (
+        <Button
+            type="primary"
+            disabled
+            disabledReason="您没有权限使用这个功能"
+            icon={<IconPlusOutlined />}
+        >
+            申请创建资源账户
+        </Button>
     );
 };

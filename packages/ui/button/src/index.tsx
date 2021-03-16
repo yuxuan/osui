@@ -3,6 +3,7 @@ import { Button as AntdButton } from 'antd';
 import { ButtonProps as AntdButtonProps, ButtonType } from 'antd/es/button';
 import classNames from 'classnames';
 import { IconLoading3QuartersOutlined } from '@osui/icons';
+import Tooltip from '@osui/tooltip';
 import './index.less';
 
 const clsPrefix = 'osui-button';
@@ -25,6 +26,10 @@ export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
      * @description 当button带icon时，vertical-align尝尝会有问题，flexCenter: true 添加display: flex; align-items: center;
      */
     flexCenter?: boolean;
+    /**
+     * @description 当disabled时展示disabledReason
+     */
+    disabledReason?: string;
 }
 
 // eslint-disable-next-line max-len
@@ -54,7 +59,15 @@ const PureIconButton: React.FC<ButtonProps> = props => {
 
 /* eslint-disable complexity */
 const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
-    { type = 'default', loading, icon, disabled, flexCenter, ...props }, ref
+    {
+        type = 'default',
+        loading,
+        icon,
+        disabled,
+        flexCenter,
+        disabledReason,
+        ...props
+    }, ref
 ) => {
     let innerIcon = icon;
     let shouldMinWidth = true;
@@ -84,7 +97,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
 
     const { success, error, danger, warning } = props;
 
-    return (
+    const PatchedButton = (
         <AntdButton
             ref={ref as any}
             {...props}
@@ -108,6 +121,16 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
             disabled={!!loading || disabled}
         />
     );
+
+    if (disabledReason && disabled) {
+        return (
+            <Tooltip placement="top" title={disabledReason}>
+                {PatchedButton}
+            </Tooltip>
+        );
+    }
+
+    return PatchedButton;
 };
 
 const Button = React.forwardRef<unknown, ButtonProps>(InternalButton) as ButtonInterface;
