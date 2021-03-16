@@ -1,4 +1,10 @@
 # Change log
+# 0.11.7
+【iCloud】
+
+Button
+- 增加disabledReason属性
+- 调整文档内容
 
 # 0.11.6
 【iCloud】
