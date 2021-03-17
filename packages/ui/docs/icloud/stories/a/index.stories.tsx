@@ -19,6 +19,10 @@ export const Demo = () => {
     .text-link:active {
         color: var(--link-active-color);
     }
+
+    .text-link:disabled {
+        color: var(--theme-disabled-color);
+    }
     `;
 
     return (
@@ -33,7 +37,10 @@ export const Demo = () => {
             <br />
             <h3>加强样式</h3>
             <a href="www.baidu.com">www.baidu.com</a>
-
+            <br />
+            <br />
+            <h3>disabled样式</h3>
+            <a href="www.baidu.com" disabled>www.baidu.com</a>
             <Divider>普通样式css代码</Divider>
             <pre>
                 {/* eslint-disable-next-line react/no-danger */}

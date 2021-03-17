@@ -9,3 +9,7 @@
 .text-link:active {
     color: var(--link-active-color);
 }
+
+.text-link:disabled {
+    color: var(--theme-disabled-color);
+}

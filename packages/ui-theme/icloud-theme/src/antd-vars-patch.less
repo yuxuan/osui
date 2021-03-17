@@ -103,6 +103,10 @@
 @menu-item-group-title-color: var(--menu-item-group-title-color);
 @menu-icon-size: @font-size-base;
 @menu-icon-size-lg: @font-size-lg;
+// 这个颜色不在色盘里，由于menu我们目前没有规范，所以menu需要保持与antd一致
+// 而我们调整了@background-color-light这个变量，会改变menu的背景颜色
+// 因此在这里覆盖回去，以保证和antd一致
+@menu-inline-submenu-bg: #fafafa;
 
 // Collapse
 // ---
