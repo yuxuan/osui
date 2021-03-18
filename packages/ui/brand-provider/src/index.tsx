@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { ConfigProvider } from 'antd';
 import Empty from '@osui/empty';
+import zhCN from 'antd/es/locale/zh_CN';
 import { ConfigProviderProps } from 'antd/es/config-provider';
 export interface BrandContextValue {
     brand: 'osc' | 'icloud' | undefined;
@@ -22,6 +23,7 @@ const iCloudConfigs: ConfigProviderProps = {
                 return <Empty />;
         }
     },
+    locale: zhCN,
 };
 
 const BrandProvider: React.FC<{ brand?: 'osc' | 'icloud' }> = ({ brand, children }) => {
