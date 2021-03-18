@@ -56,8 +56,10 @@
         }
     }
 
+    // 只有在arrow后面时，偏移30px
     .@{ant-prefix}-select-arrow + .@{ant-prefix}-select-clear {
-        right: 30px;
+        right: var(--select-clear-icon-right);
+        opacity: var(--select-clear-icon-opacity);
     }
 
     .@{ant-prefix}-select-clear {
@@ -65,10 +67,16 @@
         width: 14px;
         height: 14px;
         color: var(--color-gray-6);
-        opacity: 1;
+        opacity: var(--select-clear-icon-opacity);
 
         &:hover {
             color: var(--color-gray-6);
+        }
+    }
+
+    &:hover {
+        .@{ant-prefix}-select-clear {
+            opacity: 1 !important; // hover时显示clearIcon，符合antd的效果，也符合osui需要效果
         }
     }
 

@@ -388,6 +388,9 @@ exports.presetColors = {
     '--select-disabled-bg': 'var(--theme-disabled-bg)',
     '--select-check-icon-size': '12px',
     '--select-arrow-top': '50%',
+    '--select-clear-icon-right': '11px',
+    '--select-clear-icon-opacity': '0',
+    '--select-clear-icon-opacity-hover': '1',
     '--space-large': '30px',
     '--space-middle': '20px',
     '--space-small': '10px',
@@ -518,7 +521,7 @@ exports.presetColors = {
     '--drawer-footer-border-top-color': 'var(--color-gray-4)',
     '--drawer-close-icon-line-height': '1.5',
     '--tree-switcher-width': '10px',
-    '--empty-image-margin-bottom': '20px',
+    '--empty-image-margin-bottom': '10px',
     ...buttonColors,
     '--osui-icon-size': '14px',
 };

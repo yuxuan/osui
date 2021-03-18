@@ -411,6 +411,9 @@ exports.presetColors = {
     '--select-disabled-bg': 'transparent',
     '--select-check-icon-size': '16px',
     '--select-arrow-top': '43%',
+    '--select-clear-icon-right': '30px',
+    '--select-clear-icon-opacity': '1',
+    '--select-clear-icon-opacity-hover': '1',
     '--shadow-1': '0 4px 8px -2px rgba(9, 30, 66, 0.25), 0 0 1px 0 rgba(9, 30, 66, 0.31)', // 和antd的shadow-1的不一样，用于气泡
     '--shadow-2': '0 8px 16px -4px rgba(9, 30, 66, 0.25)',
     '--space-large': '24px',
