@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.5...@osui/icloud-theme@0.11.6) (2021-03-19)
+
+
+### Bug Fixes
+
+* 调整input-number高度,调整menu inline展开后的背景颜色, 添加链接disabled的示例文档 ([ee1b971](https://gitee.com/gitee-fe/osui/tree/master/commits/ee1b9711ee598915512f5a7b970619902e730edb))
+* select的clear icon icloud主题与下拉位置重合 ([6d7ad0d](https://gitee.com/gitee-fe/osui/tree/master/commits/6d7ad0d3936e1838ca17101e1050b0e5a62a0e05))
+
+
+
+
+
 ## [0.11.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.4...@osui/icloud-theme@0.11.5) (2021-03-12)
 
 

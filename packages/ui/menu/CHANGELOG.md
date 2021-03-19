@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/menu@0.10.3...@osui/menu@0.11.1) (2021-03-19)
+
+
+### Bug Fixes
+
+* 调整input-number高度,调整menu inline展开后的背景颜色, 添加链接disabled的示例文档 ([ee1b971](https://gitee.com/gitee-fe/osui/tree/master/commits/ee1b9711ee598915512f5a7b970619902e730edb))
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+
+
+
 # 0.11.0 (2021-02-19)
 
 

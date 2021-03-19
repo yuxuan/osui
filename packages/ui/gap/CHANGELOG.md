@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/gap@0.11.2...@osui/gap@0.11.3) (2021-03-19)
+
+**Note:** Version bump only for package @osui/gap
+
+
+
+
+
 ## [0.11.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/gap@0.11.1...@osui/gap@0.11.2) (2021-03-09)
 
 **Note:** Version bump only for package @osui/gap
