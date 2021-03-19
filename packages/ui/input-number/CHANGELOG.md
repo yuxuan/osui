@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input-number@0.11.2...@osui/input-number@0.11.3) (2021-03-19)
+
+
+### Bug Fixes
+
+* input-number hover动效取消 ([fac049e](https://gitee.com/gitee-fe/osui/tree/master/commits/fac049eb964391d7b755c56479e7e6a9b154896f))
+
+
+
+
+
 ## [0.11.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input-number@0.11.1...@osui/input-number@0.11.2) (2021-03-09)
 
 
