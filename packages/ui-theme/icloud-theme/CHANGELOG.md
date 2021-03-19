@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.6...@osui/icloud-theme@0.11.7) (2021-03-19)
+
+
+### Bug Fixes
+
+* input在form中error时，显示红色背景 ([be844db](https://gitee.com/gitee-fe/osui/tree/master/commits/be844db163221fa6eadf0bec6f5148c14caf64d2))
+
+
+
+
+
 ## [0.11.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.5...@osui/icloud-theme@0.11.6) (2021-03-19)
 
 
