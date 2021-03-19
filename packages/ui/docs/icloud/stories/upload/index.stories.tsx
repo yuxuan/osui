@@ -1,7 +1,7 @@
 import React from 'react';
 import message from '@osui/message';
 import Button from '@osui/button';
-import { UploadOutlined } from '@ant-design/icons';
+import { IconUploadOutlined } from '@osui/icons';
 import Upload from '@osui/upload';
 
 export default {
@@ -30,7 +30,7 @@ export const Demo = () => {
 
     return (
         <Upload {...props}>
-            <Button icon={<UploadOutlined />}>Click to Upload</Button>
+            <Button icon={<IconUploadOutlined />}>Click to Upload</Button>
         </Upload>
     );
 };

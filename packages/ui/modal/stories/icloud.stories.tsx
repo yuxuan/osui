@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Button from '@osui/button';
 import Space from '@osui/space';
-import {IconExclamationCircleFilled} from '@osui/icons';
+import { IconExclamationCircleFilled } from '@osui/icons';
+import BrandProvider from '@osui/brand-provider';
 import Modal from '../src';
 
 export default {
@@ -12,19 +13,21 @@ export const Demo = () => {
     const [visible, setVisible] = useState(false);
     return (
         <div style={{ padding: 30 }}>
-            <Button type="primary" onClick={() => setVisible(true)}>
-                打开基础modal
-            </Button>
-            <Modal
-                title="我是标题我是标题"
-                visible={visible}
-                onOk={() => setVisible(false)}
-                onCancel={() => setVisible(false)}
-            >
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-            </Modal>
+            <BrandProvider brand="icloud">
+                <Button type="primary" onClick={() => setVisible(true)}>
+                    打开基础modal
+                </Button>
+                <Modal
+                    title="我是标题我是标题"
+                    visible={visible}
+                    onOk={() => setVisible(false)}
+                    onCancel={() => setVisible(false)}
+                >
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                </Modal>
+            </BrandProvider>
         </div>);
 };
 
@@ -34,51 +37,53 @@ export const Size = () => {
     const [visibleC, setVisibleC] = useState(false);
     return (
         <div style={{ padding: 30 }}>
-            <Button type="primary" onClick={() => setVisibleA(true)}>
-                Size Small
-            </Button>
-            <Modal
-                size="small"
-                title="我是标题我是标题"
-                visible={visibleA}
-                onOk={() => setVisibleA(false)}
-                onCancel={() => setVisibleA(false)}
-            >
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-            </Modal>
-            <p></p>
-            <Button type="primary" onClick={() => setVisibleB(true)}>
-                Size Default
-            </Button>
-            <Modal
-                size="default"
-                title="我是标题我是标题"
-                visible={visibleB}
-                onOk={() => setVisibleB(false)}
-                onCancel={() => setVisibleB(false)}
-            >
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-            </Modal>
-            <p />
-            <Button type="primary" onClick={() => setVisibleC(true)}>
-                Size Large
-            </Button>
-            <Modal
-                size="large"
-                title="我是标题我是标题"
-                visible={visibleC}
-                onOk={() => setVisibleC(false)}
-                onCancel={() => setVisibleC(false)}
-            >
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-            </Modal>
-            <p></p>
+            <BrandProvider brand="icloud">
+                <Button type="primary" onClick={() => setVisibleA(true)}>
+                    Size Small
+                </Button>
+                <Modal
+                    size="small"
+                    title="我是标题我是标题"
+                    visible={visibleA}
+                    onOk={() => setVisibleA(false)}
+                    onCancel={() => setVisibleA(false)}
+                >
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                </Modal>
+                <p></p>
+                <Button type="primary" onClick={() => setVisibleB(true)}>
+                    Size Default
+                </Button>
+                <Modal
+                    size="default"
+                    title="我是标题我是标题"
+                    visible={visibleB}
+                    onOk={() => setVisibleB(false)}
+                    onCancel={() => setVisibleB(false)}
+                >
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                </Modal>
+                <p />
+                <Button type="primary" onClick={() => setVisibleC(true)}>
+                    Size Large
+                </Button>
+                <Modal
+                    size="large"
+                    title="我是标题我是标题"
+                    visible={visibleC}
+                    onOk={() => setVisibleC(false)}
+                    onCancel={() => setVisibleC(false)}
+                >
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                </Modal>
+                <p></p>
+            </BrandProvider>
         </div>);
 };
 
@@ -162,28 +167,30 @@ export const AutoHeight = () => {
     const [visibleA, setVisibleA] = useState(false);
     return (
         <div style={{ padding: 30 }}>
-            <Button type="primary" onClick={() => setVisibleA(true)}>
-                Auto Height
-            </Button>
-            <Modal
-                autoHeight
-                title="我是标题我是标题"
-                visible={visibleA}
-                onOk={() => setVisibleA(false)}
-                onCancel={() => setVisibleA(false)}
-            >
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-            </Modal>
+            <BrandProvider>
+                <Button type="primary" onClick={() => setVisibleA(true)}>
+                    Auto Height
+                </Button>
+                <Modal
+                    autoHeight
+                    title="我是标题我是标题"
+                    visible={visibleA}
+                    onOk={() => setVisibleA(false)}
+                    onCancel={() => setVisibleA(false)}
+                >
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                </Modal>
+            </BrandProvider>
         </div>
     );
 };
