@@ -1,0 +1,40 @@
+@osui-joyride-class-prefix: osui-joyride;
+
+.@{osui-joyride-class-prefix} {
+    &-tooltip {
+        min-width: 240px;
+        max-width: 400px;
+        padding: 10px;
+        color: var(--color-gray-1);
+        background: var(--theme-primary-color);
+    }
+
+    &-close {
+        cursor: pointer;
+    }
+
+    &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--color-gray-1);
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    &-next-button {
+        background: var(--color-gray-1);
+    }
+
+    &-back-link {
+        margin-right: 8px;
+        color: var(--color-gray-1);
+    }
+
+    &-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}

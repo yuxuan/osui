@@ -1502,7 +1502,7 @@
   dependencies:
     "@huse/methods" "^1.2.0"
 
-"@huse/derived-state@^1.0.1":
+"@huse/derived-state@^1.0.1", "@huse/derived-state@^1.0.3":
   version "1.0.3"
   resolved "https://registry.npm.taobao.org/@huse/derived-state/download/@huse/derived-state-1.0.3.tgz#d8062e5d9bf4a742dae4cf081e69932a67e0a5e8"
   integrity sha1-2AYuXZv0p0La5M8IHmmTKmfgpeg=
@@ -3437,6 +3437,13 @@
   version "7.0.7"
   resolved "https://registry.npm.taobao.org/@types/json-schema/download/@types/json-schema-7.0.7.tgz?cache=0&sync_timestamp=1613378919536&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fjson-schema%2Fdownload%2F%40types%2Fjson-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
   integrity sha1-mKmTUWyFnrDVxMjwmDF6nqaNua0=
+
+"@types/lodash.merge@^4.6.6":
+  version "4.6.6"
+  resolved "https://registry.npm.taobao.org/@types/lodash.merge/download/@types/lodash.merge-4.6.6.tgz#b84b403c1d31bc42d51772d1cd5557fa008cd3d6"
+  integrity sha1-uEtAPB0xvELVF3LRzVVX+gCM09Y=
+  dependencies:
+    "@types/lodash" "*"
 
 "@types/lodash.partial@^4.2.6":
   version "4.2.6"
@@ -6628,6 +6635,11 @@ dedent@0.7.0, dedent@^0.7.0:
   resolved "https://registry.npm.taobao.org/dedent/download/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
   integrity sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=
 
+deep-diff@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/deep-diff/download/deep-diff-1.0.2.tgz#afd3d1f749115be965e89c63edc7abb1506b9c26"
+  integrity sha1-r9PR90kRW+ll6Jxj7cersVBrnCY=
+
 deep-extend@^0.6.0:
   version "0.6.0"
   resolved "https://registry.npm.taobao.org/deep-extend/download/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
@@ -6650,6 +6662,11 @@ deep-rename-keys@^0.2.1:
   dependencies:
     kind-of "^3.0.2"
     rename-keys "^1.1.2"
+
+deepmerge@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.npm.taobao.org/deepmerge/download/deepmerge-4.2.2.tgz?cache=0&sync_timestamp=1572279556265&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdeepmerge%2Fdownload%2Fdeepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
+  integrity sha1-RNLqNnm49NT/ujPwPYZfwee/SVU=
 
 defaults@^1.0.3:
   version "1.0.3"
@@ -7540,6 +7557,11 @@ execall@^2.0.0:
   dependencies:
     clone-regexp "^2.1.0"
 
+exenv@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npm.taobao.org/exenv/download/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
+  integrity sha1-KueOhdmJQVhnCwPUe+wfA72Ru50=
+
 expand-brackets@^2.1.4:
   version "2.1.4"
   resolved "https://registry.npm.taobao.org/expand-brackets/download/expand-brackets-2.1.4.tgz#b77735e315ce30f6b6eff0f83b04151a22449622"
@@ -7659,7 +7681,7 @@ extsprintf@^1.2.0:
   resolved "https://registry.npm.taobao.org/extsprintf/download/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
-fast-deep-equal@^3.1.1:
+fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npm.taobao.org/fast-deep-equal/download/fast-deep-equal-3.1.3.tgz?cache=0&sync_timestamp=1591599675178&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffast-deep-equal%2Fdownload%2Ffast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha1-On1WtVnWy8PrUSMlJE5hmmXGxSU=
@@ -9660,6 +9682,16 @@ is-installed-globally@^0.3.1:
     global-dirs "^2.0.1"
     is-path-inside "^3.0.1"
 
+is-lite@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.npm.taobao.org/is-lite/download/is-lite-0.6.0.tgz#806b7c967f1d75b5f4121d6ce93107c427b542eb"
+  integrity sha1-gGt8ln8ddbX0Eh1s6TEHxCe1Qus=
+
+is-lite@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.npm.taobao.org/is-lite/download/is-lite-0.8.0.tgz#0b8c169efbbe0c9005f60a55747a5acd21394410"
+  integrity sha1-C4wWnvu+DJAF9gpVdHpazSE5RBA=
+
 is-map@^2.0.2:
   version "2.0.2"
   resolved "https://registry.npm.taobao.org/is-map/download/is-map-2.0.2.tgz#00922db8c9bf73e81b7a335827bc2a43f2b91127"
@@ -10550,6 +10582,11 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npm.taobao.org/lodash.memoize/download/lodash.memoize-4.1.2.tgz?cache=0&sync_timestamp=1589682725270&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash.memoize%2Fdownload%2Flodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
+
+lodash.merge@^4.6.2:
+  version "4.6.2"
+  resolved "https://registry.npm.taobao.org/lodash.merge/download/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
+  integrity sha1-VYqlO0O2YeGSWgr9+japoQhf5Xo=
 
 lodash.omit@^4.5.0:
   version "4.5.0"
@@ -11467,6 +11504,16 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npm.taobao.org/nested-error-stacks/download/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha1-D73PPhP+SZR4EoBST4uWsM3/nGE=
+
+nested-property@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/nested-property/download/nested-property-1.0.1.tgz#2001105b5c69413411b876bba9b86f4316af613f"
+  integrity sha1-IAEQW1xpQTQRuHa7qbhvQxavYT8=
+
+nested-property@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/nested-property/download/nested-property-4.0.0.tgz#a67b5a31991e701e03cdbaa6453bc5b1011bb88d"
+  integrity sha1-pntaMZkecB4DzbqmRTvFsQEbuI0=
 
 nice-try@^1.0.4:
   version "1.0.5"
@@ -12452,6 +12499,11 @@ polished@^3.4.4:
   integrity sha1-0a3ch+4W61tBPGFl7aN2AMzLnBE=
   dependencies:
     "@babel/runtime" "^7.12.5"
+
+popper.js@^1.16.0:
+  version "1.16.1"
+  resolved "https://registry.npm.taobao.org/popper.js/download/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
+  integrity sha1-KiI8s9x7YhPXQOQDcr5A3kPmWxs=
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
@@ -13804,6 +13856,18 @@ react-fast-compare@^3.0.1, react-fast-compare@^3.2.0:
   resolved "https://registry.npm.taobao.org/react-fast-compare/download/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
   integrity sha1-ZBqdqBtqYyDycOiXJPtFoLOeQ7s=
 
+react-floater@^0.7.2:
+  version "0.7.2"
+  resolved "https://registry.npm.taobao.org/react-floater/download/react-floater-0.7.2.tgz#c0c7ddab18a955b1c4a3934890fa804b3d2a4801"
+  integrity sha1-wMfdqxipVbHEo5NIkPqASz0qSAE=
+  dependencies:
+    deepmerge "^4.2.2"
+    exenv "^1.2.2"
+    is-lite "^0.6.0"
+    popper.js "^1.16.0"
+    react-proptype-conditional-require "^1.0.4"
+    tree-changes "^0.5.1"
+
 react-helmet-async@^1.0.2:
   version "1.0.7"
   resolved "https://registry.npm.taobao.org/react-helmet-async/download/react-helmet-async-1.0.7.tgz#b988fbc3abdc4b704982bb74b9cb4a08fcf062c1"
@@ -13831,6 +13895,22 @@ react-is@^17.0.1:
   version "17.0.1"
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha1-WzUxvXamRaTJ+25pPtNkGeMwEzk=
+
+react-joyride@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npm.taobao.org/react-joyride/download/react-joyride-2.3.0.tgz#d18f7af8f6e7d4c7409426d43e5f6513d70b3e00"
+  integrity sha1-0Y96+Pbn1MdAlCbUPl9lE9cLPgA=
+  dependencies:
+    deep-diff "^1.0.2"
+    deepmerge "^4.2.2"
+    exenv "^1.2.2"
+    is-lite "^0.8.0"
+    nested-property "^4.0.0"
+    react-floater "^0.7.2"
+    react-is "^16.13.1"
+    scroll "^3.0.1"
+    scrollparent "^2.0.1"
+    tree-changes "^0.6.1"
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
@@ -13863,6 +13943,11 @@ react-popper@^2.2.4:
   dependencies:
     react-fast-compare "^3.0.1"
     warning "^4.0.2"
+
+react-proptype-conditional-require@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npm.taobao.org/react-proptype-conditional-require/download/react-proptype-conditional-require-1.0.4.tgz#69c2d5741e6df5e08f230f36bbc2944ee1222555"
+  integrity sha1-acLVdB5t9eCPIw82u8KUTuEiJVU=
 
 react-refresh@^0.8.3:
   version "0.8.3"
@@ -13936,6 +14021,14 @@ react@^16.13.1, react@^16.4.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
+
+"react@^16.8.0 || ^17.0.0":
+  version "17.0.1"
+  resolved "https://registry.npm.taobao.org/react/download/react-17.0.1.tgz#6e0600416bd57574e3f86d92edba3d9008726127"
+  integrity sha1-bgYAQWvVdXTj+G2S7bo9kAhyYSc=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 reactcss@^1.2.0:
   version "1.2.3"
@@ -14868,6 +14961,16 @@ scroll-into-view-if-needed@^2.2.25:
   integrity sha1-5JF9oMggE1/2Wtb35LfXr1aMTxM=
   dependencies:
     compute-scroll-into-view "^1.0.16"
+
+scroll@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npm.taobao.org/scroll/download/scroll-3.0.1.tgz#d5afb59fb3592ee3df31c89743e78b39e4cd8a26"
+  integrity sha1-1a+1n7NZLuPfMciXQ+eLOeTNiiY=
+
+scrollparent@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/scrollparent/download/scrollparent-2.0.1.tgz#715d5b9cc57760fb22bdccc3befb5bfe06b1a317"
+  integrity sha1-cV1bnMV3YPsivczDvvtb/gaxoxc=
 
 select@^1.1.2:
   version "1.1.2"
@@ -16237,6 +16340,24 @@ tr46@^1.0.1:
   integrity sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=
   dependencies:
     punycode "^2.1.0"
+
+tree-changes@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.npm.taobao.org/tree-changes/download/tree-changes-0.5.1.tgz#e31cc8a0f56c8c401f0a88243d9165dbea4f570c"
+  integrity sha1-4xzIoPVsjEAfCogkPZFl2+pPVww=
+  dependencies:
+    deep-diff "^1.0.2"
+    nested-property "1.0.1"
+
+tree-changes@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.npm.taobao.org/tree-changes/download/tree-changes-0.6.1.tgz#64fc8ba2499c2b1245840f841bb2fc9227d0bb16"
+  integrity sha1-ZPyLokmcKxJFhA+EG7L8kifQuxY=
+  dependencies:
+    fast-deep-equal "^3.1.3"
+    is-lite "^0.8.0"
+  optionalDependencies:
+    react "^16.8.0 || ^17.0.0"
 
 trim-newlines@^1.0.0:
   version "1.0.0"
