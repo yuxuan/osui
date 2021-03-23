@@ -33,6 +33,7 @@ export {default as Grid} from '@osui/grid';
 export {default as Image} from '@osui/image';
 export {default as Input} from '@osui/input';
 export {default as InputNumber} from '@osui/input-number';
+export {default as Joyride} from '@osui/joyride';
 export {default as Layout} from '@osui/layout';
 export {default as List} from '@osui/list';
 export {default as Markdown} from '@osui/markdown';
