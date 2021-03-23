@@ -1,4 +1,31 @@
 # Change log
+
+# 0.11.10
+
+Joyride
+- 新增joyride组件
+
+Dropdown
+- 下拉菜单最大宽度为100px
+
+# 0.11.9
+【iCloud】
+
+InputNumber
+- 去掉hover箭头的大小变化
+
+# 0.11.8
+【iCloud】
+
+Select
+- clear icon位置调整
+
+BrandProvider
+- 增加locale=zhCN的默认配置，这样table内的pagination不需要单独配置
+
+InputNumber
+- 调整高度
+
 # 0.11.7
 【iCloud】
 
