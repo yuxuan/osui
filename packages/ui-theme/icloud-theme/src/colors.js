@@ -493,7 +493,7 @@ exports.presetColors = {
     '--popover-line-height': '20px',
     '--popover-inner-content-padding': '5px 10px',
     '--popover-title-padding': '10px 10px 0 10px',
-    '--dropdown-menu-min-width': '137px',
+    '--dropdown-menu-min-width': '100px',
     '--dropdown-menu-item-padding': '5px 12px',
     '--dropdown-menu-item-group-title-padding': '5px 12px',
     '--back-top-bg': 'var(--btn-primary-bg)',
