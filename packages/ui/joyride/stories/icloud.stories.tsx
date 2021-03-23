@@ -1,9 +1,11 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Button from '@osui/button';
+import Divider from '@osui/divider';
+import Markdown from '@osui/markdown';
 import Joyride from '../src';
 
 export default {
-    title: 'joyride',
+    title: '场景/Joyride 新功能点引导',
 };
 
 export const Demo = () => {
@@ -24,19 +26,32 @@ export const Demo = () => {
             content: 'This another awesome feature!',
         },
     ];
-    console.log(run);
+
     return (
-        <div className="app">
-            <Joyride
-                steps={steps}
-                run={run}
-                onFinish={() => setRun(false)} // 如果需要restart，需要onFinish 设置setRun(false)
+        <>
+            <p><strong>FE说明：</strong>实现基于<a href="https://docs.react-joyride.com/" target="_blank" rel="noreferrer">react-joyride</a>。api可查看它的文档</p>
+            <Divider>展示</Divider>
+            <div className="app">
+                <Joyride
+                    shouldRestart
+                    steps={steps}
+                    run={run}
+                    onFinish={() => setRun(false)} // 如果需要restart，需要onFinish 设置setRun(false)
+                />
+                <div className="my-1-step" style={{ height: 50 }}>DEMO1</div>
+                <div className="my-2-step" style={{ height: 50 }}>DEMO2</div>
+                <div className="my-3-step" style={{ height: 50 }}>DEMO3</div>
+                <Button onClick={() => setRun(true)}>Run</Button>
+            </div>
+            <Divider>新增参数</Divider>
+            <Markdown content={`
+| 参数 | 说明 | 类型 | 默认值
+| --- | --- | --- | --- |
+| shouldRestart | 结束之后是否可以restart| boolean | - |
+| onFinish | 展示结束之后的回调，如果是受控的run方式，并且支持restart的话，需要onFinish内把run设置成false，见demo | function | - |
+            `}
             />
-            <div className="my-1-step" style={{height: 50}}>DEMO1</div>
-            <div className="my-2-step" style={{height: 50}}>DEMO2</div>
-            <div className="my-3-step" style={{height: 50}}>DEMO3</div>
-            <Button onClick={() => setRun(true)}>Run</Button>
-        </div>
+        </>
     );
 };
 
