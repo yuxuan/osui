@@ -36,7 +36,7 @@ export const Demo = () => {
                     shouldRestart
                     steps={steps}
                     run={run}
-                    onFinish={() => setRun(false)} // 如果需要restart，需要onFinish 设置setRun(false)
+                    onFinish={() => setRun(false)}
                 />
                 <div className="my-1-step" style={{ height: 50 }}>DEMO1</div>
                 <div className="my-2-step" style={{ height: 50 }}>DEMO2</div>
