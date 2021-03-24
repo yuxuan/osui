@@ -36,11 +36,14 @@ export const Demo = () => {
                     shouldRestart
                     steps={steps}
                     run={run}
-                    onFinish={() => setRun(false)} // 如果需要restart，需要onFinish 设置setRun(false)
+                    onFinish={() => setRun(false)}
                 />
-                <div className="my-1-step" style={{ height: 50 }}>DEMO1</div>
-                <div className="my-2-step" style={{ height: 50 }}>DEMO2</div>
-                <div className="my-3-step" style={{ height: 50 }}>DEMO3</div>
+                <div className="my-1-step" style={{ height: 50, width: 100, background: 'blue' }}>DEMO1</div>
+                <div style={{ height: 50 }}></div>
+                <div className="my-2-step" style={{ height: 50, width: 100, background: 'red' }}>DEMO2</div>
+                <div style={{ height: 50 }}></div>
+                <div className="my-3-step" style={{ height: 50, background: 'yellow' }}>DEMO3</div>
+                <div style={{ height: 50 }}></div>
                 <Button onClick={() => setRun(true)}>Run</Button>
             </div>
             <Divider>新增参数</Divider>
