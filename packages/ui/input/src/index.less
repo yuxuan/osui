@@ -16,7 +16,8 @@
 
     .@{ant-prefix}-input-wrapper {
         // 只有是第二个child时左右的border才全都隐藏掉，[prefix][input][suffix]
-        input:nth-child(2) {
+        // 不是第一个，也不是最后一个，因为[prefix][input]，[input][suffix]需要保留input的border
+        input:not(:first-child):not(:last-child) {
             border-right: 0;
             border-left: 0;
         }
