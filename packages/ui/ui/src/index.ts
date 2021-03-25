@@ -30,6 +30,7 @@ export {default as FlexCentered} from '@osui/flex-centered';
 export {default as Form} from '@osui/form';
 export {default as Gap} from '@osui/gap';
 export {default as Grid} from '@osui/grid';
+export {default as HighlightText} from '@osui/highlight-text';
 export {default as Image} from '@osui/image';
 export {default as Input} from '@osui/input';
 export {default as InputNumber} from '@osui/input-number';

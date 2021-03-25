@@ -1507,6 +1507,11 @@
   resolved "https://registry.npm.taobao.org/@huse/derived-state/download/@huse/derived-state-1.0.3.tgz#d8062e5d9bf4a742dae4cf081e69932a67e0a5e8"
   integrity sha1-2AYuXZv0p0La5M8IHmmTKmfgpeg=
 
+"@huse/input-value@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npm.taobao.org/@huse/input-value/download/@huse/input-value-1.0.3.tgz#ff9a4515a13955817040e75a77296ca6565a9edc"
+  integrity sha1-/5pFFaE5VYFwQOdadylsplZantw=
+
 "@huse/methods@^1.2.0":
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/@huse/methods/download/@huse/methods-1.2.0.tgz#4946483199458c819a7399d96b30b2dd5fcdddf8"

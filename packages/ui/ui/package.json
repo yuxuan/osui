@@ -81,6 +81,7 @@
         "@osui/form": "^0.11.4",
         "@osui/gap": "^0.11.3",
         "@osui/grid": "^0.11.0",
+        "@osui/highlight-text": "0.10.0",
         "@osui/image": "^0.11.0",
         "@osui/input": "^0.11.2",
         "@osui/input-number": "^0.11.3",
