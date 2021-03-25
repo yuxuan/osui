@@ -4,8 +4,8 @@ const Empty = () => {
     return (
         <svg
             className="osui-empty-img"
-            width="64px"
-            height="100px"
+            width="140"
+            height="100"
             viewBox="0 0 140 100"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"

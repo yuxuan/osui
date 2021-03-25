@@ -10,10 +10,14 @@ const clsPrefix = 'osui-empty';
 
 export interface EmptyProps extends AntdEmptyProps {
     type?: 'empty' | 'error' | '404';
-    small?: boolean;
+    size?: 'small' | 'large';
 }
-const Empty: React.FC<EmptyProps> = ({className, image, type, small, ...props}) => {
-    const innerClassName = classNames(className, clsPrefix, {[`${clsPrefix}-small`]: small});
+const Empty: React.FC<EmptyProps> = ({className, image, type, size, ...props}) => {
+    const innerClassName = classNames(
+        className,
+        clsPrefix,
+        {[`${clsPrefix}-${size}`]: size}
+    );
     let Image = ImageEmpty;
     switch (type) {
         case 'empty':

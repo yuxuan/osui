@@ -5,8 +5,8 @@ const Error = () => {
     return (
         <svg
             className="osui-empty-error-img"
-            width="600px"
-            height="362px"
+            width="600"
+            height="362"
             viewBox="0 0 600 362"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"

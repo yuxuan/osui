@@ -9,13 +9,13 @@ export default {
 
 export const Demo1 = () => {
     return (
-        <Empty className="osui-empty-small" />
+        <Empty size="small" />
     );
 };
 
 export const Demo2 = () => {
     return (
-        <Empty type="error" description="404 Not Found" imageStyle={{height: 362}} />
+        <Empty type="error" description="404 Not Found" size="large" />
     );
 };
 
@@ -24,7 +24,7 @@ export const Demo3 = () => {
         <>
             <p>可以通过imageStyle来调整图片高度</p>
             <Divider>展示</Divider>
-            <Empty type="error" imageStyle={{height: 362}} />
+            <Empty type="error" size="large" />
         </>
     );
 };

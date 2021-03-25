@@ -546,7 +546,6 @@ exports.presetColors = {
     '--drawer-footer-border-top-color': 'var(--theme-border-color-split)',
     '--drawer-close-icon-line-height': '1',
     '--tree-switcher-width': '18px',
-    '--empty-image-margin-bottom': '8px',
     ...buttonColors,
     '--osui-icon-size': '16px',
 };
