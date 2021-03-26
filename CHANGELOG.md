@@ -1,12 +1,25 @@
 # Change log
 
+# 0.11.11
+AutoComplete
+- 使用HighlightText高亮Options
+
+HighlightText
+- 新增HighlightText组件
+
+Empty
+- 增加size small|large
+
+Input
+- addOn时修复border的问题
+
 # 0.11.10
 
 Joyride
 - 新增joyride组件
 
 Dropdown
-- 下拉菜单最大宽度为100px
+- 下拉菜单最小宽度为100px
 
 # 0.11.9
 【iCloud】

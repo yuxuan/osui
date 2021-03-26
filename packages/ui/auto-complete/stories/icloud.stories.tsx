@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Divider from '@osui/divider';
+import Markdown from '@osui/markdown';
 import AutoComplete from '../src';
 
 export default {
@@ -136,3 +137,25 @@ export const Demo2 = () => {
         </>
     );
 };
+
+export const NewProps = () => {
+    const content = `
+| 参数 | 说明 | 类型 | 默认值
+| --- | --- | --- | --- |
+| highlightKeyword | 是否在搜索结果内高亮搜索的keyword | boolean | - |
+`;
+    const content2 = `
+### 说明：
+\`highlightKeyword\`只能使用在AutoComplete使用options属性的方式，如果使用children的方式，需要自行根据HighlightText组件使用
+`;
+    return (
+        <>
+            <h3>新增参数</h3>
+            <Markdown content={content} />
+            <br />
+            <br />
+            <Markdown content={content2} />
+        </>
+    );
+};
+

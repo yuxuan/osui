@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Divider from '@osui/divider';
+import Markdown from '@osui/markdown';
 import AutoComplete from '@osui/auto-complete';
 
 export default {
@@ -60,6 +61,7 @@ export const Demo1 = () => {
             <p>支持输入，同时支持选择推荐内容</p>
             <p>推荐的内容，就是默认的options</p>
             <AutoComplete
+                highlightKeyword
                 options={options}
                 style={{
                     width: 200,
@@ -88,7 +90,7 @@ export const Demo1 = () => {
 
 
 export const Demo2 = () => {
-    const [options, setOptions] = useState([]);
+    const [options, setOptions] = useState<Array<{ value: string}>>([]);
 
     const mockVal = (str, repeat = '一') => {
         return {
@@ -135,3 +137,25 @@ export const Demo2 = () => {
         </>
     );
 };
+
+export const NewProps = () => {
+    const content = `
+| 参数 | 说明 | 类型 | 默认值
+| --- | --- | --- | --- |
+| highlightKeyword | 是否在搜索结果内高亮搜索的keyword | boolean | - |
+`;
+    const content2 = `
+### 说明：
+\`highlightKeyword\`只能使用在AutoComplete使用options属性的方式，如果使用children的方式，需要自行根据HighlightText组件使用
+`;
+    return (
+        <>
+            <h3>新增参数</h3>
+            <Markdown content={content} />
+            <br />
+            <br />
+            <Markdown content={content2} />
+        </>
+    );
+};
+

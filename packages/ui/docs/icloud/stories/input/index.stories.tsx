@@ -96,6 +96,12 @@ export const Complete = () => {
             <p>见Select多选</p>
             <Divider orientation="left">5. 组合输入框</Divider>
             <Input addonBefore={selectBefore} addonAfter={selectAfter} defaultValue="mysite" />
+            <br />
+            <br />
+            <Input addonBefore={selectBefore} defaultValue="mysite" />
+            <br />
+            <br />
+            <Input addonAfter={selectAfter} defaultValue="mysite" />
             <Gap orientation="vertical" factor={2} />
             <p>注意，用组合的时候，disabled需要自己加在addonBefore和addonAfter组件上</p>
             <Input disabled addonBefore={selectBeforeDisabled} addonAfter={selectAfterDisabled} defaultValue="mysite" />
