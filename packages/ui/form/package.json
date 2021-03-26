@@ -1,6 +1,6 @@
 {
     "name": "@osui/form",
-    "version": "0.11.4",
+    "version": "0.11.5",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -71,6 +71,6 @@
     },
     "gitHead": "904178b6c0bb86963017122daa529580decb66e8",
     "dependencies": {
-        "@osui/brand-provider": "^0.11.3"
+        "@osui/brand-provider": "^0.11.4"
     }
 }

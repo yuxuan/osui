@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/empty@0.11.2...@osui/empty@0.11.3) (2021-03-26)
+
+
+### Bug Fixes
+
+* empty增加small/large size, brandProvider调整empty ([9cd198f](https://gitee.com/gitee-fe/osui/tree/master/commits/9cd198ffd408d3b09ddab27fbb0cefbfaf1641ea))
+
+
+
+
+
 ## [0.11.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/empty@0.11.1...@osui/empty@0.11.2) (2021-03-09)
 
 

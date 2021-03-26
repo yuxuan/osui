@@ -1,6 +1,6 @@
 {
     "name": "@osui/brand-provider",
-    "version": "0.11.3",
+    "version": "0.11.4",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -71,6 +71,6 @@
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
-        "@osui/empty": "^0.11.2"
+        "@osui/empty": "^0.11.3"
     }
 }

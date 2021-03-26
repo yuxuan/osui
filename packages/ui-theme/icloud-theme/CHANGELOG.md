@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.9](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.8...@osui/icloud-theme@0.11.9) (2021-03-26)
+
+
+### Bug Fixes
+
+* empty增加small/large size, brandProvider调整empty ([9cd198f](https://gitee.com/gitee-fe/osui/tree/master/commits/9cd198ffd408d3b09ddab27fbb0cefbfaf1641ea))
+
+
+
+
+
 ## [0.11.8](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.7...@osui/icloud-theme@0.11.8) (2021-03-23)
 
 

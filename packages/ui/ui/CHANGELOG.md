@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.11](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.11.10...@osui/ui@0.11.11) (2021-03-26)
+
+
+### Features
+
+* 新增highlight-text组件 ([7c655eb](https://gitee.com/gitee-fe/osui/tree/master/commits/7c655ebec50e226c240aabca62667d264fa00e5a))
+
+
+
+
+
 ## [0.11.10](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.11.9...@osui/ui@0.11.10) (2021-03-23)
 
 
