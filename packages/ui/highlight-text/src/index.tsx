@@ -11,11 +11,11 @@ export interface MarkProps {
 
 export interface Props {
     children: string;
-    mark: string;
+    mark?: string;
     markProps?: MarkProps;
 }
 
-const breakWordsByMark = (input: string, mark: string, props?: MarkProps) => {
+const breakWordsByMark = (input: string, mark?: string, props?: MarkProps) => {
     const className = props && props.className || '';
 
     if (typeof input !== 'string' || typeof mark !== 'string') {
@@ -23,13 +23,22 @@ const breakWordsByMark = (input: string, mark: string, props?: MarkProps) => {
     }
 
     const parts = input.split(new RegExp(`(${mark})`, 'gi'));
-    return parts.map(part => {
+    return parts.map((part, index) => {
         if (!part) {
             return null;
         }
 
         if (part.toLowerCase() === mark.toLowerCase()) {
-            return <span {...props} className={classNames(`${clsPrefix}-mark`, className)}>{part}</span>;
+            return (
+                <span
+                    // eslint-disable-next-line react/no-array-index-key
+                    key={`${part}-${index}`}
+                    {...props}
+                    className={classNames(`${clsPrefix}-mark`, className)}
+                >
+                    {part}
+                </span>
+            );
         } else {
             return part;
         }
@@ -41,9 +50,12 @@ const HighlightText: React.FC<Props> = ({ children, mark, markProps }) => {
 
     React.useLayoutEffect(
         () => {
-            requestAnimationFrame(() => {
+            const requestId = window.requestAnimationFrame(() => {
                 setText(breakWordsByMark(children, mark, markProps));
             });
+            return () => {
+                window.cancelAnimationFrame(requestId);
+            };
         },
         // eslint-disable-next-line react-hooks/exhaustive-deps
         [children, mark]

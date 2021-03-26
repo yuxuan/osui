@@ -69,5 +69,9 @@
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
+    },
+    "dependencies": {
+        "@huse/derived-state": "^1.0.3",
+        "@osui/highlight-text": "0.10.0"
     }
 }

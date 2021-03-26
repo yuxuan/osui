@@ -71,5 +71,7 @@
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "dependencies": {}
+    "dependencies": {
+        "classnames": "^2.2.6"
+    }
 }

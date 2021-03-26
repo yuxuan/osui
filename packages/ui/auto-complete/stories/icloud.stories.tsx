@@ -60,6 +60,7 @@ export const Demo1 = () => {
             <p>支持输入，同时支持选择推荐内容</p>
             <p>推荐的内容，就是默认的options</p>
             <AutoComplete
+                highlightKeyword
                 options={options}
                 style={{
                     width: 200,
