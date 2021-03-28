@@ -66,7 +66,9 @@
         }
     },
     "dependencies": {
-        "classnames": "^2.2.6"
+        "@osui/brand-provider": "^0.11.4",
+        "classnames": "^2.2.6",
+        "rc-util": "^5.9.8"
     },
     "publishConfig": {
         "access": "public",
