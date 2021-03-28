@@ -1,5 +1,9 @@
 # Change log
 
+# 0.11.12
+Input
+- 增加withSuffixIcon属性，当属性为true时，如果没有给suffix icon，那么会用默认的IconSearchOutline作为图标，且图标的使用方式与按钮的方式相同
+
 # 0.11.11
 AutoComplete
 - 使用HighlightText高亮Options

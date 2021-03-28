@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@0.11.3...@osui/input@0.11.4) (2021-03-28)
+
+
+### Bug Fixes
+
+* input增加Input.Search支持icon的形式 ([f9c297c](https://gitee.com/gitee-fe/osui/tree/master/commits/f9c297ca96c3a02bca934f2e4c40b80feaf8fb29))
+
+
+
+
+
 ## [0.11.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@0.11.2...@osui/input@0.11.3) (2021-03-26)
 
 
