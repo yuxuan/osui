@@ -39,7 +39,7 @@
         "@storybook/react": "^6.0.26",
         "@types/classnames": "^2.2.10",
         "@types/react-dom": "^16.9.8",
-        "antd": "^4.11.3",
+        "antd": "^4.15.0",
         "babel-loader": "^8.1.0",
         "cpy-cli": "^3.1.1",
         "husky": "^4.2.5",
@@ -51,7 +51,7 @@
         "typescript": "^3.9.6"
     },
     "peerDependencies": {
-        "antd": "4.4.0 - 4.11.3",
+        "antd": "4.4.0 - 4.15.0",
         "react": ">=16.9.0",
         "react-dom": ">=16.9.0"
     },
