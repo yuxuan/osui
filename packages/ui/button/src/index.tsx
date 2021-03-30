@@ -70,7 +70,6 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     }, ref
 ) => {
     let innerIcon = icon;
-    let shouldMinWidth = true;
 
     if (type === 'icon') {
         return (<PureIconButton loading={loading} icon={icon} disabled={disabled} {...props} />);
@@ -89,10 +88,6 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     // osc的文字按钮loading时，文字替换成loading icon；而icloud主题则是保留icon和文字
     if (loading && !icon) {
         innerIcon = <IconLoading3QuartersOutlined spin className={`${clsPrefix}-icon-spinner`} />;
-    }
-    // 当类型为icon或者button仅有icon属性时，不保留最小宽度
-    if (icon) {
-        shouldMinWidth = false;
     }
 
     const { success, error, danger, warning } = props;
@@ -113,7 +108,6 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
                         [`${clsPrefix}-face-error`]: error || danger,
                         [`${clsPrefix}-face-warning`]: warning,
                         [`${clsPrefix}-flex-center`]: flexCenter,
-                        [`${clsPrefix}-min-width`]: shouldMinWidth,
                     }
                 )
             }

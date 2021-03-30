@@ -511,7 +511,6 @@ exports.presetColors = {
     '--back-top-icon-size': '16px',
     '--badge-count-padding': '0 4px',
     '--breadcrumb-last-child-font-weight': '600',
-    '--button-min-width': '56px',
     '--timeline-dot-size': '8px',
     '--timeline-item-content-margin-left': '18px',
     '--steps-item-title-height': '24px',
