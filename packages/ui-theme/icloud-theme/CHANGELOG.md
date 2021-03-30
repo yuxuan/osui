@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.10](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.9...@osui/icloud-theme@0.11.10) (2021-03-30)
+
+
+### Bug Fixes
+
+* breadcrumb 面包屑颜色为text-color-secondary, /间距调整为4px ([edf62f6](https://gitee.com/gitee-fe/osui/tree/master/commits/edf62f69377de0ad97a77e9180b5bb230cd00533))
+* tabs 支持antd4.14+ ([bcc5d05](https://gitee.com/gitee-fe/osui/tree/master/commits/bcc5d052f4ddca177b37690396030e4baa1aa722))
+
+
+
+
+
 ## [0.11.9](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.8...@osui/icloud-theme@0.11.9) (2021-03-26)
 
 

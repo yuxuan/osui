@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/tabs@0.11.1...@osui/tabs@0.11.2) (2021-03-30)
+
+
+### Bug Fixes
+
+* tabs 支持antd4.14+ ([bcc5d05](https://gitee.com/yuxuanhuo/osui/tree/master/commits/bcc5d052f4ddca177b37690396030e4baa1aa722))
+
+
+
+
+
 ## [0.11.1](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/tabs@0.10.0...@osui/tabs@0.11.1) (2021-03-09)
 
 
