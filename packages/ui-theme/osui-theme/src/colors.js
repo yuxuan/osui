@@ -435,6 +435,7 @@ exports.presetColors = {
     '--tabs-card-bg': 'transparent',
     '--tabs-card-nav-list-padding': '0',
     '--tabs-tab-active-font-weight': 'normal',
+    '--tabs-horizontal-margin': '0 0 0 32px',
     '--tag-check-border': 'var(--color-brand-4)',
     '--tag-default-bg': 'var(--color-gray-3)',
     '--tag-font-color': 'var(--color-gray-9)',

@@ -14,7 +14,8 @@
     }
 
     .@{ant-prefix}-tabs-tab.@{ant-prefix}-tabs-tab-active .@{ant-prefix}-tabs-tab-btn {
-        font-weight: var(--tabs-tab-active-font-weight);
+        font-weight: normal;
+        text-shadow: 0 0 .25px currentColor;
 
         em.num {
             color: var(--link-color);
@@ -43,6 +44,14 @@
                 background: var(--color-brand-1);
             }
         }
+    }
+
+    .ant-tabs-tab + .ant-tabs-tab {
+        margin: var(--tabs-horizontal-margin);
+    }
+
+    .ant-tabs-tab {
+        margin: 0;
     }
 
     // card 模式 // 以下覆盖没有考虑osc的样式
