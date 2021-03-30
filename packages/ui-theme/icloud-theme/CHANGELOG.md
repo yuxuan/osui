@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.11](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.10...@osui/icloud-theme@0.11.11) (2021-03-30)
+
+
+### Bug Fixes
+
+* 调整input search的clear icon距离和前后padding, 调整dropdown menu item的高度 ([3653711](https://gitee.com/gitee-fe/osui/tree/master/commits/3653711ecb7e18ec2a62d2d4e4ac1715e0be210b))
+
+
+
+
+
 ## [0.11.10](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.9...@osui/icloud-theme@0.11.10) (2021-03-30)
 
 
