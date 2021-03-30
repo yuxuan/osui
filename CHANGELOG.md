@@ -1,5 +1,13 @@
 # Change log
 
+# 0.11.13
+
+Breadcrumb
+- 调整字体颜色， 调整/间距为4px
+
+Tabs
+- 修复antd 4.14 margin的问题
+
 # 0.11.12
 Input
 - 增加withSuffixIcon属性，当属性为true时，如果没有给suffix icon，那么会用默认的IconSearchOutline作为图标，且图标的使用方式与按钮的方式相同
