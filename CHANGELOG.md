@@ -1,5 +1,13 @@
 # Change log
 
+# 0.11.14
+
+Input
+- 调整affix、suffix padding距离为8px
+- 调整clearIcon padding为8px
+
+Dropdown
+- 调整menu item line-height 为 20px
 # 0.11.13
 
 Breadcrumb
