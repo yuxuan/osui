@@ -390,6 +390,7 @@ exports.presetColors = {
     '--input-number-width': '90px',
     '--input-suffix-icon-size': '16px',
     '--input-affix-wrapper-padding-horizontal': '11px',
+    '--input-affix-margin': '4px',
     '--item-hover-bg': 'var(--color-gray-3)',
     '--link-active-color': 'var(--color-brand-7)',
     '--link-color': 'var(--color-brand-7)',
