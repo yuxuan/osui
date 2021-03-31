@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://gitee.com/gitee-fe/osui/compare/@osui/icons-icloud@0.11.1...@osui/icons-icloud@0.11.2) (2021-03-31)
+
+**Note:** Version bump only for package @osui/icons-icloud
+
+
+
+
+
 ## [0.11.1](https://gitee.com/gitee-fe/osui/compare/@osui/icons-icloud@0.10.2...@osui/icons-icloud@0.11.1) (2021-03-09)
 
 

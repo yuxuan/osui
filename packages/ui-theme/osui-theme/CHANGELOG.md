@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.11.6...@osui/theme@0.11.7) (2021-03-31)
+
+
+### Bug Fixes
+
+* button去掉min-width ([f59b929](https://gitee.com/gitee-fe/osui/tree/master/commits/f59b929414d3877db1b22cc9402b222d0706b64c))
+* input addon背景颜色调整 ([1cdc0bc](https://gitee.com/gitee-fe/osui/tree/master/commits/1cdc0bcac766dccc22348051ccdbdf84fc8fe915))
+
+
+
+
+
 ## [0.11.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.11.5...@osui/theme@0.11.6) (2021-03-30)
 
 

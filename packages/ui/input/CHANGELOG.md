@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@0.11.6...@osui/input@0.11.7) (2021-03-31)
+
+
+### Bug Fixes
+
+* input addon背景颜色调整 ([1cdc0bc](https://gitee.com/gitee-fe/osui/tree/master/commits/1cdc0bcac766dccc22348051ccdbdf84fc8fe915))
+* input 调整 addon 样式和交互 ([277f2b1](https://gitee.com/gitee-fe/osui/tree/master/commits/277f2b191045f83ba277686a4f043d5a9f9f3185))
+
+
+
+
+
 ## [0.11.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@0.11.5...@osui/input@0.11.6) (2021-03-30)
 
 
