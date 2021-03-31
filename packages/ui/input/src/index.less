@@ -17,6 +17,14 @@
     .@{ant-prefix}-input-wrapper {
         // 只有是第二个child时左右的border才全都隐藏掉，[prefix][input][suffix]
         // 不是第一个，也不是最后一个，因为[prefix][input]，[input][suffix]需要保留input的border
+        .@{ant-prefix}-input-group-addon + input {
+            border-left: 0;
+        }
+
+        input:first-child {
+            border-right: 0 !important;
+        }
+
         input:not(:first-child):not(:last-child) {
             border-right: 0;
             border-left: 0;
@@ -27,13 +35,17 @@
     &-focused {
         .@{ant-prefix}-input-group {
             .@{ant-prefix}-input-group-addon,
-            input,
             .@{ant-prefix}-input-search-button {
+                background-color: rgba(16, 140, 238, .05);
+                border-color: var(--theme-primary-color-active);
+            }
+
+            input {
+                background-color: var(--input-focus-background-color);
                 border-color: var(--theme-primary-color-active);
             }
 
             input:first-child {
-                background-color: var(--input-focus-background-color);
                 border: 1px solid var(--theme-primary-color-active);
             }
         }
@@ -43,8 +55,12 @@
     .@{ant-prefix}-input-group {
         &:hover {
             .@{ant-prefix}-input-group-addon,
-            input,
             .@{ant-prefix}-input-search-button {
+                background-color: rgba(16, 140, 238, .05);
+                border-color: var(--theme-primary-color-hover);
+            }
+
+            input {
                 border-color: var(--theme-primary-color-hover);
             }
 
@@ -67,6 +83,7 @@
             &:hover {
                 .@{ant-prefix}-input-group-addon,
                 input {
+                    background: var(--theme-border-color-disabled);
                     border-color: var(--theme-border-color-disabled);
                 }
 
