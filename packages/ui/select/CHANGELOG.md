@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* dropdown demo, empty, input-number, modal icon, select icon, tooltip, popover ([3ab7eee](https://gitee.com/gitee-fe/osui/tree/master/commits/3ab7eee77916171ded5a00e2ff2c2b200b98f21a))
+* select 修复multip时没有arrow, clear icon位置不对的问题 ([3324cb7](https://gitee.com/gitee-fe/osui/tree/master/commits/3324cb737d9beaeeab95dc91b0af55300f182f59))
+* select的clear icon icloud主题与下拉位置重合 ([6d7ad0d](https://gitee.com/gitee-fe/osui/tree/master/commits/6d7ad0d3936e1838ca17101e1050b0e5a62a0e05))
+* 调整empty, brand-provider增加对antd configProvider 默认的覆盖 ([83a0b9b](https://gitee.com/gitee-fe/osui/tree/master/commits/83a0b9ba55f30dfe3cddcf06d4f1f47fec158a90))
+
+
+
+
+
 ## [0.11.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@0.11.3...@osui/select@0.11.4) (2021-03-19)
 
 

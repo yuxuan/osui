@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* breadcrumb 面包屑颜色为text-color-secondary, /间距调整为4px ([edf62f6](https://gitee.com/gitee-fe/osui/tree/master/commits/edf62f69377de0ad97a77e9180b5bb230cd00533))
+* button line-height 调整为1.5 ([df668b5](https://gitee.com/gitee-fe/osui/tree/master/commits/df668b59946d032a72b69a837ea77c79257d10a6))
+* button 最小宽度调整 ([8d55cbe](https://gitee.com/gitee-fe/osui/tree/master/commits/8d55cbec7b4b4fde10d3c9c3ea2e5b1499f39b48))
+* button去掉min-width ([f59b929](https://gitee.com/gitee-fe/osui/tree/master/commits/f59b929414d3877db1b22cc9402b222d0706b64c))
+* checkbox ([2e348a9](https://gitee.com/gitee-fe/osui/tree/master/commits/2e348a9edaa7be7fa08be9d215175d8fc693414e))
+* dropdown demo, empty, input-number, modal icon, select icon, tooltip, popover ([3ab7eee](https://gitee.com/gitee-fe/osui/tree/master/commits/3ab7eee77916171ded5a00e2ff2c2b200b98f21a))
+* dropdown menu 下拉最小宽度设置为100px ([fef7279](https://gitee.com/gitee-fe/osui/tree/master/commits/fef72798a566db0fe6c3079714bfd714951c6cc4))
+* empty增加small/large size, brandProvider调整empty ([9cd198f](https://gitee.com/gitee-fe/osui/tree/master/commits/9cd198ffd408d3b09ddab27fbb0cefbfaf1641ea))
+* input addon背景颜色调整 ([1cdc0bc](https://gitee.com/gitee-fe/osui/tree/master/commits/1cdc0bcac766dccc22348051ccdbdf84fc8fe915))
+* input search icon大小修复 ([30548f9](https://gitee.com/gitee-fe/osui/tree/master/commits/30548f91a380d45add949d378b1e9c5a7c448ba7))
+* input 调整 addon 样式和交互 ([277f2b1](https://gitee.com/gitee-fe/osui/tree/master/commits/277f2b191045f83ba277686a4f043d5a9f9f3185))
+* input在form中error时，显示红色背景 ([be844db](https://gitee.com/gitee-fe/osui/tree/master/commits/be844db163221fa6eadf0bec6f5148c14caf64d2))
+* modal滚动条margin换padding ([80c3e64](https://gitee.com/gitee-fe/osui/tree/master/commits/80c3e6471ce501533b85af50110f950332490104))
+* select的clear icon icloud主题与下拉位置重合 ([6d7ad0d](https://gitee.com/gitee-fe/osui/tree/master/commits/6d7ad0d3936e1838ca17101e1050b0e5a62a0e05))
+* tabs 支持antd4.14+ ([bcc5d05](https://gitee.com/gitee-fe/osui/tree/master/commits/bcc5d052f4ddca177b37690396030e4baa1aa722))
+* 调整button line-height 20 ([33cb952](https://gitee.com/gitee-fe/osui/tree/master/commits/33cb9526cdb6e3a6061cafc23937c9019911eb09))
+* 调整input search的clear icon距离和前后padding, 调整dropdown menu item的高度 ([3653711](https://gitee.com/gitee-fe/osui/tree/master/commits/3653711ecb7e18ec2a62d2d4e4ac1715e0be210b))
+* 调整input-number高度,调整menu inline展开后的背景颜色, 添加链接disabled的示例文档 ([ee1b971](https://gitee.com/gitee-fe/osui/tree/master/commits/ee1b9711ee598915512f5a7b970619902e730edb))
+
+
+
+
+
 ## [0.11.12](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.11...@osui/icloud-theme@0.11.12) (2021-03-31)
 
 

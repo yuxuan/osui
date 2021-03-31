@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* button 最小宽度调整 ([8d55cbe](https://gitee.com/gitee-fe/osui/tree/master/commits/8d55cbec7b4b4fde10d3c9c3ea2e5b1499f39b48))
+* button 调整文档,增加disabledReason属性 ([1a98c47](https://gitee.com/gitee-fe/osui/tree/master/commits/1a98c47ba87ce436f158ee981bccf91b01038028))
+* button去掉min-width ([f59b929](https://gitee.com/gitee-fe/osui/tree/master/commits/f59b929414d3877db1b22cc9402b222d0706b64c))
+* button调整icon类型, 仅用icon来处理 ([33bede0](https://gitee.com/gitee-fe/osui/tree/master/commits/33bede0b9cb46c0030ac8da4f59c31e84fa319dc))
+* 调整button line-height 20 ([33cb952](https://gitee.com/gitee-fe/osui/tree/master/commits/33cb9526cdb6e3a6061cafc23937c9019911eb09))
+
+
+
+
+
 ## [0.11.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@0.11.3...@osui/button@0.11.4) (2021-03-31)
 
 

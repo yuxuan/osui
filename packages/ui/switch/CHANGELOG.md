@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* tabs 调整, switch demo调整 ([cf49708](https://gitee.com/gitee-fe/osui/tree/master/commits/cf49708576758e136486dd05ebfc4df1a69f623c))
+
+
+
+
+
 # 0.11.0 (2021-02-19)
 
 

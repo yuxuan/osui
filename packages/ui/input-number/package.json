@@ -1,6 +1,6 @@
 {
     "name": "@osui/input-number",
-    "version": "0.11.3",
+    "version": "0.12.0",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",

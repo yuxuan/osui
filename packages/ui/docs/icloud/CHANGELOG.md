@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* button 调整文档,增加disabledReason属性 ([1a98c47](https://gitee.com/gitee-fe/osui/tree/master/commits/1a98c47ba87ce436f158ee981bccf91b01038028))
+* empty, brand-provider调整 ([8c72419](https://gitee.com/gitee-fe/osui/tree/master/commits/8c724197cbbbb31ad3e5f39f59ddf98e2f310439))
+* input disabled border color ([3559e1b](https://gitee.com/gitee-fe/osui/tree/master/commits/3559e1b273f049dac0ff2642bdb730115a1a944d))
+* input增加Input.Search支持icon的形式 ([f9c297c](https://gitee.com/gitee-fe/osui/tree/master/commits/f9c297ca96c3a02bca934f2e4c40b80feaf8fb29))
+* joyride添加到ui内,添加demo ([d9f6cf8](https://gitee.com/gitee-fe/osui/tree/master/commits/d9f6cf808082346d33a5a3225e49d224da5a3aa0))
+* tabs 调整, switch demo调整 ([cf49708](https://gitee.com/gitee-fe/osui/tree/master/commits/cf49708576758e136486dd05ebfc4df1a69f623c))
+* 调整input-number高度,调整menu inline展开后的背景颜色, 添加链接disabled的示例文档 ([ee1b971](https://gitee.com/gitee-fe/osui/tree/master/commits/ee1b9711ee598915512f5a7b970619902e730edb))
+
+
+
+
+
 ## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-docs@0.10.0...@osui/icloud-docs@0.11.1) (2021-03-09)
 
 

@@ -1,6 +1,6 @@
 {
     "name": "@osui/gap",
-    "version": "0.11.4",
+    "version": "0.12.0",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -72,6 +72,6 @@
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
-        "@osui/brand-provider": "^0.11.4"
+        "@osui/brand-provider": "^0.12.0"
     }
 }

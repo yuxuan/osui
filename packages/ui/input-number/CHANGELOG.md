@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* dropdown demo, empty, input-number, modal icon, select icon, tooltip, popover ([3ab7eee](https://gitee.com/gitee-fe/osui/tree/master/commits/3ab7eee77916171ded5a00e2ff2c2b200b98f21a))
+* input-number hover动效取消 ([fac049e](https://gitee.com/gitee-fe/osui/tree/master/commits/fac049eb964391d7b755c56479e7e6a9b154896f))
+* tabs 调整, switch demo调整 ([cf49708](https://gitee.com/gitee-fe/osui/tree/master/commits/cf49708576758e136486dd05ebfc4df1a69f623c))
+
+
+
+
+
 ## [0.11.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input-number@0.11.2...@osui/input-number@0.11.3) (2021-03-19)
 
 

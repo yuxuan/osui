@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* joyride添加到ui内,添加demo ([d9f6cf8](https://gitee.com/gitee-fe/osui/tree/master/commits/d9f6cf808082346d33a5a3225e49d224da5a3aa0))
+
+
+### Features
+
+* 新增highlight-text组件 ([7c655eb](https://gitee.com/gitee-fe/osui/tree/master/commits/7c655ebec50e226c240aabca62667d264fa00e5a))
+
+
+
+
+
 ## [0.11.15](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/ui@0.11.14...@osui/ui@0.11.15) (2021-03-31)
 
 **Note:** Version bump only for package @osui/ui

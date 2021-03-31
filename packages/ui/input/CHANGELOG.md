@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* input addon背景颜色调整 ([1cdc0bc](https://gitee.com/gitee-fe/osui/tree/master/commits/1cdc0bcac766dccc22348051ccdbdf84fc8fe915))
+* input disabled border color ([3559e1b](https://gitee.com/gitee-fe/osui/tree/master/commits/3559e1b273f049dac0ff2642bdb730115a1a944d))
+* input search icon大小修复 ([30548f9](https://gitee.com/gitee-fe/osui/tree/master/commits/30548f91a380d45add949d378b1e9c5a7c448ba7))
+* input 调整 addon 样式和交互 ([277f2b1](https://gitee.com/gitee-fe/osui/tree/master/commits/277f2b191045f83ba277686a4f043d5a9f9f3185))
+* input增加Input.Search支持icon的形式 ([f9c297c](https://gitee.com/gitee-fe/osui/tree/master/commits/f9c297ca96c3a02bca934f2e4c40b80feaf8fb29))
+* 修复input有addOn时border的问题 ([f89defa](https://gitee.com/gitee-fe/osui/tree/master/commits/f89defa65656406af54bbef6bc067c81fc8276c8))
+* 调整input search的clear icon距离和前后padding, 调整dropdown menu item的高度 ([3653711](https://gitee.com/gitee-fe/osui/tree/master/commits/3653711ecb7e18ec2a62d2d4e4ac1715e0be210b))
+
+
+
+
+
 ## [0.11.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@0.11.6...@osui/input@0.11.7) (2021-03-31)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://gitee.com/gitee-fe/osui/compare/v0.11.0...v0.12.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* 增加upload icon ([5fb8577](https://gitee.com/gitee-fe/osui/commits/5fb85779d6d4838ed164b1eec3a2ab77fa3e1b0f))
+
+
+
+
+
 ## [0.11.2](https://gitee.com/gitee-fe/osui/compare/@osui/icons-icloud@0.11.1...@osui/icons-icloud@0.11.2) (2021-03-31)
 
 **Note:** Version bump only for package @osui/icons-icloud

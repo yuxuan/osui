@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* auto-complete增加highlightKeyword属性 ([d10db83](https://gitee.com/gitee-fe/osui/tree/master/commits/d10db83a6aa2896d24dc5df5d1191a1770a95017))
+
+
+
+
+
 ## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/auto-complete@0.10.0...@osui/auto-complete@0.11.1) (2021-03-26)
 
 

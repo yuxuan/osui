@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* select的clear icon icloud主题与下拉位置重合 ([6d7ad0d](https://gitee.com/gitee-fe/osui/tree/master/commits/6d7ad0d3936e1838ca17101e1050b0e5a62a0e05))
+* table增加memo ([e6c2549](https://gitee.com/gitee-fe/osui/tree/master/commits/e6c2549136648eec1418a4508c3d6bb586e420df))
+
+
+
+
+
 ## [0.11.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.11.4...@osui/table@0.11.5) (2021-03-31)
 
 

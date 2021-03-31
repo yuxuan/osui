@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* brand-provider增加locale=zhCN, 增加对empty的依赖 ([61b52ae](https://gitee.com/gitee-fe/osui/tree/master/commits/61b52aea3f695ac5169eefc40514de1085eeca3c))
+* empty, brand-provider调整 ([8c72419](https://gitee.com/gitee-fe/osui/tree/master/commits/8c724197cbbbb31ad3e5f39f59ddf98e2f310439))
+* empty增加small/large size, brandProvider调整empty ([9cd198f](https://gitee.com/gitee-fe/osui/tree/master/commits/9cd198ffd408d3b09ddab27fbb0cefbfaf1641ea))
+* 调整empty, brand-provider增加对antd configProvider 默认的覆盖 ([83a0b9b](https://gitee.com/gitee-fe/osui/tree/master/commits/83a0b9ba55f30dfe3cddcf06d4f1f47fec158a90))
+
+
+
+
+
 ## [0.11.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/brand-provider@0.11.3...@osui/brand-provider@0.11.4) (2021-03-26)
 
 

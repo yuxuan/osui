@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* 导出breadcrumbprops ([f06f8bd](https://gitee.com/gitee-fe/osui/tree/master/commits/f06f8bd78606d49c25e09fcac060eba286824a7b))
+
+
+
+
+
 ## [0.11.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/breadcrumb@0.10.1...@osui/breadcrumb@0.11.1) (2021-03-09)
 
 
