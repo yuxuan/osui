@@ -1,5 +1,11 @@
 # Change log
 
+# 0.11.15
+Button
+- 去掉最小宽度
+
+Input
+- 调整addon样式和交互
 # 0.11.14
 
 Input
