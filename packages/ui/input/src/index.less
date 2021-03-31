@@ -31,26 +31,6 @@
         }
     }
 
-    // input group focused
-    &-focused {
-        .@{ant-prefix}-input-group {
-            .@{ant-prefix}-input-group-addon,
-            .@{ant-prefix}-input-search-button {
-                background-color: rgba(16, 140, 238, .05);
-                border-color: var(--theme-primary-color-active);
-            }
-
-            input {
-                background-color: var(--input-focus-background-color);
-                border-color: var(--theme-primary-color-active);
-            }
-
-            input:first-child {
-                border: 1px solid var(--theme-primary-color-active);
-            }
-        }
-    }
-
     // input group hover
     .@{ant-prefix}-input-group {
         &:hover {
@@ -66,6 +46,27 @@
 
             input:first-child {
                 border: 1px solid var(--theme-primary-color-hover);
+            }
+        }
+    }
+
+    // input group focused
+    &-focused {
+        .@{ant-prefix}-input-group,
+        .@{ant-prefix}-input-group:hover {
+            .@{ant-prefix}-input-group-addon,
+            .@{ant-prefix}-input-search-button {
+                background-color: var(--input-group-addon-focus-bg);
+                border-color: var(--theme-primary-color-active);
+            }
+
+            input {
+                background-color: var(--input-focus-background-color);
+                border-color: var(--theme-primary-color-active);
+            }
+
+            input:first-child {
+                border: 1px solid var(--theme-primary-color-active);
             }
         }
     }

@@ -391,6 +391,7 @@ exports.presetColors = {
     '--input-suffix-icon-size': '16px',
     '--input-affix-wrapper-padding-horizontal': '11px',
     '--input-affix-margin': '4px',
+    '--input-group-addon-focus-bg': 'var(--theme-component-bg)',
     '--item-hover-bg': 'var(--color-gray-3)',
     '--link-active-color': 'var(--color-brand-7)',
     '--link-color': 'var(--color-brand-7)',
