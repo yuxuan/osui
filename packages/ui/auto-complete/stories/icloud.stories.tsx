@@ -75,9 +75,7 @@ export const Demo1 = () => {
             <AutoComplete
                 value={value}
                 options={options}
-                style={{
-                    width: 200,
-                }}
+                style={{width: 200}}
                 onSelect={onSelect}
                 onSearch={onSearch}
                 onChange={onChange}

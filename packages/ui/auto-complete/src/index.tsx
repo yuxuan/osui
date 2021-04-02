@@ -1,8 +1,8 @@
-import React, {useMemo, useCallback} from 'react';
+import React, {useMemo} from 'react';
 import {AutoComplete as AntdAutoComplete} from 'antd';
-import {AutoCompleteProps as AntdAutoCompleteProps} from 'antd/es/';
+import {AutoCompleteProps as AntdAutoCompleteProps} from 'antd/es/auto-complete';
+import {RefSelectProps, OptionType} from 'antd/es/select';
 import HighlightText from '@osui/highlight-text';
-import {useDerivedState} from '@huse/derived-state';
 import classNames from 'classnames';
 
 const clsPrefix = 'osui-auto-complete';
@@ -11,12 +11,11 @@ export interface AutoCompleteProps extends AntdAutoCompleteProps {
     highlightKeyword?: boolean;
 }
 
-const AutoComplete: React.FC<AutoCompleteProps> = ({
-    className, options, highlightKeyword = true, value: valueProp, onSearch, ...props
-}) => {
+const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteProps> = (
+    {className, options, highlightKeyword = true, value: keyword, ...props},
+    ref
+) => {
     const innerClassName = classNames(className, clsPrefix);
-    // const [innerOptions, setInnerOptions] = useDerivedState(options);
-    const [keyword, setKeyword] = useDerivedState(valueProp);
     const innerOptions = useMemo(
         () => {
             if (highlightKeyword) {
@@ -38,22 +37,23 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({
         [options, highlightKeyword, keyword]
     );
 
-    const handleSearch = useCallback(
-        value => {
-            setKeyword(value);
-            onSearch && onSearch(value);
-        },
-        [setKeyword, onSearch]
-    );
     return (
         <AntdAutoComplete
+            ref={ref}
             className={innerClassName}
             options={innerOptions}
-            onSearch={handleSearch}
             value={keyword}
             {...props}
         />
     );
 };
 
-export default AutoComplete;
+const RefAutoComplete = React.forwardRef<RefSelectProps, AutoCompleteProps>(AutoComplete);
+
+type RefAutoCompleteWithOption = typeof RefAutoComplete & {
+    Option: OptionType;
+};
+
+(RefAutoComplete as RefAutoCompleteWithOption).Option = AntdAutoComplete.Option;
+
+export default RefAutoComplete as RefAutoCompleteWithOption;
