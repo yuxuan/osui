@@ -1,7 +1,7 @@
 @osui-breadcrumb-class-prefix: osui-breadcrumb;
 
 .@{osui-breadcrumb-class-prefix} {
-    &.@{ant-prefix}-breadcrumb > span:last-child {
+    &.@{ant-prefix}-breadcrumb > span:last-child:not(:first-child) {
         font-weight: var(--breadcrumb-last-child-font-weight);
     }
 
