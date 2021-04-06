@@ -1,11 +1,16 @@
 /* eslint-disable max-len */
 import * as React from 'react';
-const Empty = () => {
+interface Props {
+    width?: number | string;
+    height?: number | string;
+}
+
+const Empty = ({width = 140, height = 'auto'}: Props) => {
     return (
         <svg
             className="osui-empty-img"
-            width="140"
-            height="100"
+            width={width}
+            height={height}
             viewBox="0 0 140 100"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"

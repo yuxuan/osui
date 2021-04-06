@@ -18,9 +18,9 @@ const iCloudConfigs: ConfigProviderProps = {
             case 'Cascader':
             case 'Transfer':
             case 'Mentions':
-                return <Empty />;
+                return <Empty size="small" />;
             default:
-                return <Empty size="large" />;
+                return <Empty />;
         }
     },
     locale: zhCN,

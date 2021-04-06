@@ -7,7 +7,7 @@
     &.@{ant-prefix}-input:focus,
     &.@{ant-prefix}-input-focused {
         background: var(--input-focus-background-color);
-        border-color: var(--theme-primary-color-active);
+        border-color: var(--theme-border-focus-color) !important;
 
         input.@{ant-prefix}-input {
             background: var(--input-focus-background-color);
@@ -34,8 +34,7 @@
     // input group hover
     .@{ant-prefix}-input-group {
         &:hover {
-            .@{ant-prefix}-input-group-addon,
-            .@{ant-prefix}-input-search-button {
+            .@{ant-prefix}-input-group-addon {
                 background-color: rgba(16, 140, 238, .05);
                 border-color: var(--theme-primary-color-hover);
             }
@@ -54,8 +53,7 @@
     &-focused {
         .@{ant-prefix}-input-group,
         .@{ant-prefix}-input-group:hover {
-            .@{ant-prefix}-input-group-addon,
-            .@{ant-prefix}-input-search-button {
+            .@{ant-prefix}-input-group-addon {
                 background-color: var(--input-group-addon-focus-bg);
                 border-color: var(--theme-primary-color-active);
             }
@@ -74,24 +72,19 @@
     // input group disabled
     &-disabled {
         .@{ant-prefix}-input-group {
-            .@{ant-prefix}-input-group-addon,
+            .@{ant-prefix}-input-group-addon {
+                background: var(--theme-border-color-disabled) !important;
+                border-color: var(--theme-border-color-disabled) !important;
+            }
+
             input {
-                background: var(--theme-border-color-disabled);
-                border-color: var(--theme-border-color-disabled);
+                border-color: var(--theme-border-color-disabled) !important;
             }
 
             // disabled时hover
             &:hover {
-                .@{ant-prefix}-input-group-addon,
-                input {
-                    background: var(--theme-border-color-disabled);
+                .@{ant-prefix}-input-group-addon {
                     border-color: var(--theme-border-color-disabled);
-                }
-
-                // 作为第一个input时的border，如search
-                input:first-child,
-                .@{ant-prefix}-input-search-button {
-                    border: 1px solid var(--theme-border-color-disabled);
                 }
             }
 
