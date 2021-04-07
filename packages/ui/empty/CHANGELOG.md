@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/empty@0.11.3...@osui/empty@0.12.1) (2021-04-07)
+
+
+### Bug Fixes
+
+* input select empty 调整 ([8e146c4](https://gitee.com/gitee-fe/osui/tree/master/commits/8e146c422b78b2c40b6dbe7a6c87d82fe85561ed))
+
+
+
+# 0.12.0 (2021-03-31)
+
+
+
+
+
 # [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
 
 
