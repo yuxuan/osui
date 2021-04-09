@@ -69,19 +69,18 @@ export interface SearchProps extends AntdSearchProps {
 }
 
 const Search = React.forwardRef<any, SearchProps>(
-    ({
-        className,
-        disabled,
-        onBlur,
-        onFocus,
-        onChange,
-        onSearch,
-        withSuffixIcon,
-        suffix,
-        ...props
-    },
-    ref
-    ) => {
+    (props, ref) => {
+        const {
+            className,
+            disabled,
+            onBlur,
+            onFocus,
+            onChange,
+            onSearch,
+            // withSuffixIcon会与enterButton相冲突，不能同时使用
+            withSuffixIcon,
+            suffix,
+        } = props;
         const inputRef = useRef(null);
         const {brand} = useBrandContext();
 
@@ -165,7 +164,7 @@ const Search = React.forwardRef<any, SearchProps>(
         }
         return (
             <AntdInput.Search
-                ref={ref}
+                ref={composeRef(inputRef, ref)}
                 {...props}
                 className={classNames(clsPrefix, innerClassNames)}
                 disabled={disabled}

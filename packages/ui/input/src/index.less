@@ -103,6 +103,17 @@
                 border-color: var(--theme-border-color-disabled);
             }
         }
+
+        // search icon disabled, clear icon
+        .@{osui-input-class-prefix}-search-icon,
+        .@{ant-prefix}-input-clear-icon {
+            color: var(--theme-disabled-color);
+            cursor: pointer;
+
+            &:hover {
+                color: var(--theme-disabled-color);
+            }
+        }
     }
 
     // affix
@@ -146,8 +157,14 @@
         padding-left: var(--input-affix-wrapper-padding-horizontal);
     }
     // search icon
-    &-search-icon {
+    &-search-icon,
+    .@{ant-prefix}-input-clear-icon {
+        color: var(--color-gray-7);
         cursor: pointer;
+
+        &:hover {
+            color: var(--color-gray-8);
+        }
     }
 
     .@{ant-prefix}-input-clear-icon {
