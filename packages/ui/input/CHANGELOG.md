@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@0.12.1...@osui/input@0.12.2) (2021-04-09)
+
+
+### Bug Fixes
+
+* input search icon clear icon颜色, onSearch callback修复 ([d75f772](https://gitee.com/gitee-fe/osui/tree/master/commits/d75f7722779fb175093a0011b50bcda3a40ecfd6))
+
+
+
+
+
 ## [0.12.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@0.11.7...@osui/input@0.12.1) (2021-04-07)
 
 
