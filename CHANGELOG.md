@@ -1,8 +1,28 @@
 # Change Log
 
+# 0.12.4
+Input
+- 修复Input.Search有addonBefore时样式错误的问题
+
+# 0.12.3
+Input
+- Input搜索和清除icon颜色
+- onSearch callback修复
+
+# 0.12.2
+Input
+- active的边框样式调整
+
+BrandProvider, Select
+- Empty的调整
+
+
 # 0.12.1
 AutoComplete
 - 修复受控时内部状态依然会更新的问题
+
+Breadcrumb
+- 只有一级时不加粗
 
 # 0.12.0
 支持 antd 4.15.0
