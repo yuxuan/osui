@@ -104,6 +104,9 @@ export const Complete = () => {
             <Input addonBefore={selectBefore} defaultValue="mysite" />
             <br />
             <br />
+            <Input.Search withSuffixIcon addonBefore={selectBefore} defaultValue="mysite" />
+            <br />
+            <br />
             <Input addonAfter={selectAfter} defaultValue="mysite" />
             <Gap orientation="vertical" factor={2} />
             <p>注意，用组合的时候，disabled需要自己加在addonBefore和addonAfter组件上</p>

@@ -159,6 +159,8 @@ const Search = React.forwardRef<any, SearchProps>(
                     suffix={innerSuffix}
                     onPressEnter={handleSearch}
                     onChange={handleChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                 />
             );
         }
