@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/switch@0.10.1...@osui/switch@0.12.1) (2021-04-14)
+
+
+### Bug Fixes
+
+* switch圆点超出距离 ([3cd142c](https://gitee.com/gitee-fe/osui/tree/master/commits/3cd142cc8c92e403e34d6e717cfbcab7b03d0a50))
+
+
+
+# 0.12.0 (2021-03-31)
+
+
+### Bug Fixes
+
+* tabs 调整, switch demo调整 ([cf49708](https://gitee.com/gitee-fe/osui/tree/master/commits/cf49708576758e136486dd05ebfc4df1a69f623c))
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* list, pagination/table, popover, switch, timeline, tooltip ([2f08302](https://gitee.com/gitee-fe/osui/tree/master/commits/2f08302a6e008c3039175a9ef283181ac3e62d31))
+
+
+
+
+
 # [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
 
 
