@@ -13,6 +13,7 @@ import {FormItemProps as AntdFormItemProps} from 'antd/es/form/FormItem';
 import {FormProvider} from 'antd/es/form/context';
 import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';
+import useLabelLayout from './useLabelLayout';
 import './index.less';
 
 const clsPrefix = 'osui-form';
@@ -38,10 +39,19 @@ function InternalFormItem(
     const itemClassName = classNames(
         props.className,
         `${clsPrefix}-validate-message-${validateMessageLayout}`,
-        {[`${clsPrefix}-validate-message-has-hint`]: hasHint}
+        {
+            [`${clsPrefix}-validate-message-has-hint`]: hasHint,
+        }
     );
 
-    return <AntdForm.Item {...props} className={itemClassName} extra={extra} labelAlign={internalLableAlign} />;
+    return (
+        <AntdForm.Item
+            {...props}
+            className={itemClassName}
+            extra={extra}
+            labelAlign={internalLableAlign}
+        />
+    );
 }
 
 // ==== 完善Form类型 ====
@@ -56,6 +66,7 @@ interface FormInterface extends InternalFormType {
 
     /** @deprecated Only for warning usage. Do not use. */
     create: () => void;
+    useLabelLayout: (formName: string, maxWidth?: number) => void;
 }
 
 const Form = React.forwardRef<any, AntdFormProps>(InternalForm) as unknown as FormInterface;
@@ -67,10 +78,13 @@ Form.Provider = FormProvider;
 Form.create = AntdForm.create;
 Form.ErrorList = AntdForm.ErrorList;
 
+Form.useLabelLayout = useLabelLayout;
+
 export type Rule = AntdRule;
 export type RuleObject = AntdRuleObject;
 export type RuleRender = AntdRuleRender;
 export type FormInstance = AntdFormInstance;
 export type FormProps = AntdFormProps;
+
 
 export default Form;

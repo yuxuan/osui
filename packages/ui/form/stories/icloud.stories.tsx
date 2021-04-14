@@ -11,6 +11,7 @@ export default {
 };
 
 export const Demo = () => {
+    Form.useLabelLayout('basic');
     const layout = {
         labelCol: {
             span: 4,
@@ -21,9 +22,8 @@ export const Demo = () => {
     };
 
     const tailLayout = {
-        wrapperCol: {
-            offset: 4,
-            span: 18,
+        labelCol: {
+            span: 4,
         },
     };
 
@@ -62,7 +62,6 @@ export const Demo = () => {
                     >
                         <Input />
                     </Form.Item>
-
                     <Form.Item
                         label="密码"
                         name="password"
@@ -87,18 +86,14 @@ export const Demo = () => {
 };
 
 export const BasicDemo = () => {
+    Form.useLabelLayout('myForm', 106);
+
     const formItemLayout = {
         labelCol: {
             span: 5,
         },
         wrapperCol: {
             span: 12,
-        },
-    };
-    const tailLayout = {
-        wrapperCol: {
-            offset: 6,
-            span: 18,
         },
     };
     const onFinish = values => {
@@ -109,7 +104,7 @@ export const BasicDemo = () => {
     };
     return (
         <BrandProvider brand="icloud">
-            <Form {...formItemLayout} onFinish={onFinish} onFinishFailed={onFinishFailed}>
+            <Form name="myForm" {...formItemLayout} onFinish={onFinish} onFinishFailed={onFinishFailed}>
                 <Form.Item
                     label="主题(topic)"
                     name="topic"
@@ -163,7 +158,7 @@ export const BasicDemo = () => {
                     <Input placeholder="请输入ACL账户名" />
                 </Form.Item>
                 <Form.Item
-                    label={<><div>ACL账户密码</div><div>账户密码</div></>}
+                    label="ACL账户密码账户密码"
                     name="password"
                     extra="字符需满足大于6位"
                     validateMessageLayout="inline"
@@ -217,7 +212,7 @@ export const BasicDemo = () => {
                 >
                     <InputNumber defaultValue={6} />
                 </Form.Item>
-                <Form.Item {...tailLayout}>
+                <Form.Item>
                     <Button type="primary" htmlType="submit">
                         Submit
                     </Button>
@@ -228,6 +223,8 @@ export const BasicDemo = () => {
 };
 
 export const ValidateMessageDemo = () => {
+    Form.useLabelLayout('basic');
+
     const formItemLayout = {
         labelCol: {
             span: 5,
@@ -250,7 +247,7 @@ export const ValidateMessageDemo = () => {
     };
     return (
         <BrandProvider brand="icloud">
-            <Form {...formItemLayout} onFinish={onFinish} onFinishFailed={onFinishFailed}>
+            <Form name="basic" {...formItemLayout} onFinish={onFinish} onFinishFailed={onFinishFailed}>
                 <Form.Item
                     label="Username"
                     name="username"
