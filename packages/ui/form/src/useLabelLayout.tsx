@@ -35,7 +35,7 @@ export default (formName: string, maxWidth?: number) => React.useLayoutEffect(
         else {
             actualLabel.forEach(element => {
                 if (element.clientWidth > innerMaxWidth) {
-                    innerMaxWidth = element.clientWidth;
+                    innerMaxWidth = element.clientWidth - 8; // 减去冒号后面的8px margin
                 }
             });
         }
