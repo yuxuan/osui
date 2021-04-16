@@ -19,7 +19,16 @@ import './index.less';
 const clsPrefix = 'osui-form';
 
 const InternalForm: React.ForwardRefRenderFunction<any, AntdFormProps> = (props, ref) => {
-    return <AntdForm ref={ref} {...props} className={classNames(clsPrefix, props.className)} />;
+    const {brand} = useBrandContext();
+    const internalLableAlign = props.labelAlign ?? (brand === 'icloud' ? 'left' : 'right');
+    return (
+        <AntdForm
+            ref={ref}
+            {...props}
+            className={classNames(clsPrefix, props.className)}
+            labelAlign={internalLableAlign}
+        />
+    );
 };
 
 // ==== 对Form.Item的覆盖 ====
@@ -30,12 +39,10 @@ export interface FormItemProps extends AntdFormItemProps {
 }
 
 function InternalFormItem(
-    {validateMessageLayout = 'default', extra, labelAlign, ...props}: FormItemProps
+    {validateMessageLayout = 'default', extra, ...props}: FormItemProps
 ): React.ReactElement {
-    const {brand} = useBrandContext();
     // 对extra的样式修改
     const hasHint = !!extra;
-    const internalLableAlign = labelAlign ?? (brand === 'icloud' ? 'left' : 'right');
     const itemClassName = classNames(
         props.className,
         `${clsPrefix}-validate-message-${validateMessageLayout}`,
@@ -49,7 +56,6 @@ function InternalFormItem(
             {...props}
             className={itemClassName}
             extra={extra}
-            labelAlign={internalLableAlign}
         />
     );
 }
