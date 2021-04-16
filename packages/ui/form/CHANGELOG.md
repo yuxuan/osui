@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.12.3...@osui/form@0.12.4) (2021-04-16)
+
+
+### Bug Fixes
+
+* form layout减少侵入性，不要重设margin ([2b89133](https://gitee.com/gitee-fe/osui/tree/master/commits/2b891339128b0d815240f8c55967c7396e963a27))
+
+
+
+
+
 ## [0.12.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.12.2...@osui/form@0.12.3) (2021-04-16)
 
 
