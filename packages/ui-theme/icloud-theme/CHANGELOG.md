@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.12.1...@osui/icloud-theme@0.12.2) (2021-04-16)
+
+
+### Bug Fixes
+
+* form修复表单align冲突的问题 ([4ec064c](https://gitee.com/gitee-fe/osui/tree/master/commits/4ec064cd5a2167d9a4eb60af36d04276f05944c3))
+
+
+
+
+
 ## [0.12.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.12...@osui/icloud-theme@0.12.1) (2021-04-16)
 
 
