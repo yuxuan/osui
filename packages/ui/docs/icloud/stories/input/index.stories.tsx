@@ -35,6 +35,9 @@ export const Demo = () => {
             <br />
             <br />
             <Input.Password style={{ width: 500 }} placeholder="请输入" />
+            <br />
+            <br />
+            <Input.Search allowClear withSuffixIcon style={{ width: 500 }} placeholder="请输入" />
         </>);
 };
 
@@ -99,6 +102,9 @@ export const Complete = () => {
             <br />
             <br />
             <Input addonBefore={selectBefore} defaultValue="mysite" />
+            <br />
+            <br />
+            <Input.Search withSuffixIcon addonBefore={selectBefore} defaultValue="mysite" />
             <br />
             <br />
             <Input addonAfter={selectAfter} defaultValue="mysite" />

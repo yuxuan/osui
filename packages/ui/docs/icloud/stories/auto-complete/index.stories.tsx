@@ -75,9 +75,7 @@ export const Demo1 = () => {
             <AutoComplete
                 value={value}
                 options={options}
-                style={{
-                    width: 200,
-                }}
+                style={{width: 200}}
                 onSelect={onSelect}
                 onSearch={onSearch}
                 onChange={onChange}
@@ -90,7 +88,7 @@ export const Demo1 = () => {
 
 
 export const Demo2 = () => {
-    const [options, setOptions] = useState<Array<{ value: string}>>([]);
+    const [options, setOptions] = useState([]);
 
     const mockVal = (str, repeat = '一') => {
         return {
