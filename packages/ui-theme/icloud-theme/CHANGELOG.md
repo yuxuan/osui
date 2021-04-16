@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.11.12...@osui/icloud-theme@0.12.1) (2021-04-16)
+
+
+### Bug Fixes
+
+* form提供layout解决方案 ([310f5e2](https://gitee.com/gitee-fe/osui/tree/master/commits/310f5e21f61f18e429ae74a4d2251610ce942c71))
+
+
+
+# 0.12.0 (2021-03-31)
+
+
+
+
+
 # [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
 
 
