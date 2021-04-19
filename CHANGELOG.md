@@ -1,5 +1,19 @@
 # Change Log
 
+# 0.12.9
+Switch
+- 修复small size圆点偏移的问题
+
+Input
+- 修复表单内error时，focus下样式不对的问题
+
+# 0.12.5 0.12.6 0.12.7 0.12.8
+Form
+- 调整form layout
+
+Switch
+- 调整Switch的圆点偏移问题
+
 # 0.12.4
 Input
 - 修复Input.Search有addonBefore时样式错误的问题
