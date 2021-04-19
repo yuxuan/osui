@@ -1,8 +1,6 @@
 @osui-switch-class-prefix: osui-switch;
 
-@switch-height: 22px;
 @switch-padding: 2px;
-@switch-pin-size: @switch-height - 4px;
 
 .@{osui-switch-class-prefix} {
     &.@{ant-prefix}-switch {
@@ -48,6 +46,10 @@
     }
 
     &.@{ant-prefix}-switch-checked .@{ant-prefix}-switch-handle {
-        left: ~'calc(100% - @{switch-pin-size} - @{switch-padding})';
+        left: ~'calc(100% - 18px - @{switch-padding})';
+    }
+
+    &.ant-switch-small.osui-switch.ant-switch-checked .ant-switch-handle {
+        left: ~'calc(100% - 12px - @{switch-padding})';
     }
 }
