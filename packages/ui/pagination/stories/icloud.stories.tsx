@@ -26,3 +26,12 @@ export const Demo = () => {
             </BrandProvider>
         </div>);
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/pagination-cn/">Antd Pagination API</a>
+        </>
+    );
+};
+

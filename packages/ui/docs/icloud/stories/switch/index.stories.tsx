@@ -44,3 +44,12 @@ export const Size = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/switch-cn/">Antd Switch API</a>
+        </>
+    );
+};
+

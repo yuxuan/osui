@@ -31,3 +31,12 @@ export const Demo = () => {
         </Mentions>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/mentions-cn/">Antd Mentions API</a>
+        </>
+    );
+};
+

@@ -50,3 +50,12 @@ export const Demo = () => {
             </Space>
         </div>);
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/message-cn/">Antd Message API</a>
+        </>
+    );
+};
+

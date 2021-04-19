@@ -56,3 +56,12 @@ export const Demo = () => {
             </div>
         </BrandProvider>);
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/collapse-cn/">Antd Collapse API</a>
+        </>
+    );
+};
+

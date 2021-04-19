@@ -57,3 +57,12 @@ export const Demo = () => {
 
     return (<Sider />);
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/menu-cn/">Antd Menu API</a>
+        </>
+    );
+};
+

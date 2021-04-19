@@ -410,3 +410,12 @@ export const SearchDemo = () => {
     return <SearchTree />;
 };
 
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/tree-cn/">Antd Tree API</a>
+        </>
+    );
+};
+

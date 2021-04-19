@@ -53,3 +53,12 @@ export const Demo = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/tag-cn/">Antd Tag API</a>
+        </>
+    );
+};
+

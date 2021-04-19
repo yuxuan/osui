@@ -103,3 +103,12 @@ export const Load = () => {
     };
     return (<LazyOptions />);
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/cascader-cn/">Antd Cascader API</a>
+        </>
+    );
+};
+

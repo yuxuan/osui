@@ -24,3 +24,12 @@ export const Demo2 = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/time-picker-cn/">Antd TimePicker API</a>
+        </>
+    );
+};
+

@@ -89,3 +89,12 @@ export const AdvanceDemo = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/slider-cn/">Antd Slider API</a>
+        </>
+    );
+};
+

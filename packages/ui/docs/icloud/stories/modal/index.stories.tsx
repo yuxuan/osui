@@ -272,3 +272,12 @@ export const confirmWithPromise = () => {
         </Space>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/modal-cn/">Antd Modal API</a>
+        </>
+    );
+};
+

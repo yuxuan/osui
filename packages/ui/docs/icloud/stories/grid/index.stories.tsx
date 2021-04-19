@@ -46,3 +46,12 @@ export const Demo = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/grid-cn/">Antd Grid API</a>
+        </>
+    );
+};
+

@@ -116,3 +116,12 @@ export const ProgressAction = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/progress-cn/">Antd Progress API</a>
+        </>
+    );
+};
+

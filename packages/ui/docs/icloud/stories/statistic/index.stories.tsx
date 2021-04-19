@@ -28,3 +28,12 @@ export const Demo = () => {
         </Row>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/statistic-cn/">Antd Statistic API</a>
+        </>
+    );
+};
+

@@ -64,3 +64,11 @@ export const Demo = () => {
 
     return (<Demo />);
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/affix-cn/">Antd Affix API</a>
+        </>
+    );
+};

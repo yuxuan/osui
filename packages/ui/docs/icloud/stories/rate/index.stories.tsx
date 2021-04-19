@@ -9,3 +9,12 @@ export default {
 export const Demo = () => {
     return (<Rate allowHalf defaultValue={2.5} />);
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/rate-cn/">Antd Rate API</a>
+        </>
+    );
+};
+

@@ -30,3 +30,12 @@ export const Demo = () => {
         </Button>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/notification-cn/">Antd Notification API</a>
+        </>
+    );
+};
+

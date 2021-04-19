@@ -46,3 +46,12 @@ export const Demo = () => {
 
     return <Demo />;
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/tree-select-cn/">Antd TreeSelect API</a>
+        </>
+    );
+};
+

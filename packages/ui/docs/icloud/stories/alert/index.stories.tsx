@@ -64,3 +64,12 @@ export const CountDownDemo = () => {
         />
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/alert-cn/">Antd Alert API</a>
+        </>
+    );
+};
+

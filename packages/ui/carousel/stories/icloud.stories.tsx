@@ -37,3 +37,12 @@ export const Demo = () => {
         </Carousel>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/carousel-cn/">Antd Carousel API</a>
+        </>
+    );
+};
+

@@ -19,3 +19,12 @@ export const Demo = () => {
         </Descriptions>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/descriptions-cn/">Antd Descriptions API</a>
+        </>
+    );
+};
+

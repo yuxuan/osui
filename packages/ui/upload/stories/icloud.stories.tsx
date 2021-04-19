@@ -34,3 +34,12 @@ export const Demo = () => {
         </Upload>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/upload-cn/">Antd Upload API</a>
+        </>
+    );
+};
+

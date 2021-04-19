@@ -101,3 +101,12 @@ export const Demo = () => {
         </div>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/popconfirm-cn/">Antd Popconfirm API</a>
+        </>
+    );
+};
+

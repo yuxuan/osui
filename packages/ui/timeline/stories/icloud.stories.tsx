@@ -37,3 +37,12 @@ export const Link = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/timeline-cn/">Antd Timeline API</a>
+        </>
+    );
+};
+

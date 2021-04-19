@@ -121,3 +121,12 @@ export const TypeDemo = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/badge-cn/">Antd Badge API</a>
+        </>
+    );
+};
+

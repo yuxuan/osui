@@ -45,3 +45,12 @@ export const Group = () => {
         </Avatar.Group>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/avatar-cn/">Antd Avatar API</a>
+        </>
+    );
+};
+

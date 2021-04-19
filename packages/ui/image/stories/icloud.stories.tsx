@@ -18,3 +18,12 @@ export const Demo = () => {
 
     return (<ImageDemo />);
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/image-cn/">Antd Image API</a>
+        </>
+    );
+};
+

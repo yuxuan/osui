@@ -26,3 +26,12 @@ export const Demo = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/divider-cn/">Antd Divider API</a>
+        </>
+    );
+};
+

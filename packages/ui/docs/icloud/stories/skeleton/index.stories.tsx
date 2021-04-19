@@ -11,3 +11,12 @@ export const Demo = () => {
         <Skeleton />
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/skeleton-cn/">Antd Skeleton API</a>
+        </>
+    );
+};
+

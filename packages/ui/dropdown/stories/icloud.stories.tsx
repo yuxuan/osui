@@ -42,3 +42,12 @@ export const Demo = () => {
         </Dropdown>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/dropdown-cn/">Antd Dropdown API</a>
+        </>
+    );
+};
+

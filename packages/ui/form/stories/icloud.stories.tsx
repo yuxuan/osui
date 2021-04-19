@@ -4,6 +4,7 @@ import Button from '@osui/button';
 import Radio from '@osui/radio';
 import InputNumber from '@osui/input-number';
 import BrandProvider from '@osui/brand-provider';
+import Divider from '@osui/divider';
 import Form from '../src';
 
 export default {
@@ -38,8 +39,11 @@ export const Demo = () => {
     return (
         <>
             <strong>注意: BrandProvider应该是App级别的，不是组件级别的</strong>
+            <p>表单视觉规范要求：label左对齐，与右边内容间距20px；右边自适应，左边保持不动；左边需要以最宽的内容为主</p>
+            <p>前端提供了Form.useLabelLayout hook来方便布局。注意：Form.useLabelLayout的侵入性比较强，只满足视觉需求，比如如果你需要align: right，就不要使用了</p>
             <br />
             <br />
+            <Divider>展示</Divider>
             <BrandProvider brand="icloud">
                 <Form
                     {...layout}
@@ -282,3 +286,12 @@ export const ValidateMessageDemo = () => {
         </BrandProvider>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/form-cn/">Antd Form API</a>
+        </>
+    );
+};
+

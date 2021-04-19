@@ -55,3 +55,12 @@ export const Demo = () => {
 
     return (<App />);
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/transfer-cn/">Antd Transfer API</a>
+        </>
+    );
+};
+

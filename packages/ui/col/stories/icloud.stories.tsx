@@ -11,3 +11,12 @@ export const Demo = () => {
         <Col />
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/col-cn/">Antd Col API</a>
+        </>
+    );
+};
+

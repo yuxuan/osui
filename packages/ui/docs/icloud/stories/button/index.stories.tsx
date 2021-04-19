@@ -274,3 +274,12 @@ export const DisabledReasonDemo = () => {
         </Button>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/button-cn/">Antd Button API</a>
+        </>
+    );
+};
+

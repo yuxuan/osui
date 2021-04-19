@@ -4,7 +4,7 @@ import Input from '@osui/input';
 import HighlightText from '@osui/highlight-text';
 
 export default {
-    title: 'highlight-text',
+    title: 'FE/highlight-text',
 };
 
 export function Demo() {

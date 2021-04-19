@@ -214,3 +214,12 @@ export const EllipsisText = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/breadcrumb-cn/">Antd Breadcrumb API</a>
+        </>
+    );
+};
+

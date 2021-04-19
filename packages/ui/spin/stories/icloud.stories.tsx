@@ -11,3 +11,12 @@ export const Demo = () => {
         <Spin />
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/spin-cn/">Antd Spin API</a>
+        </>
+    );
+};
+

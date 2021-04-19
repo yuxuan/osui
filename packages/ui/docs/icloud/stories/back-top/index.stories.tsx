@@ -22,3 +22,12 @@ export const Demo = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/back-top-cn/">Antd BackTop API</a>
+        </>
+    );
+};
+

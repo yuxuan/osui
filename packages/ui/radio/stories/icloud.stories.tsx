@@ -43,3 +43,12 @@ export const Demo = () => {
             </Group>
         </div>);
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/radio-cn/">Antd Radio API</a>
+        </>
+    );
+};
+

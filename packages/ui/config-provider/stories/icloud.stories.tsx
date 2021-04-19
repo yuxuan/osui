@@ -11,3 +11,12 @@ export const Demo = () => {
         <ConfigProvider />
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/config-provider-cn/">Antd ConfigProvider API</a>
+        </>
+    );
+};
+

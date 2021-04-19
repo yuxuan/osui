@@ -103,3 +103,12 @@ export const CompactDemo = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/steps-cn/">Antd Steps API</a>
+        </>
+    );
+};
+

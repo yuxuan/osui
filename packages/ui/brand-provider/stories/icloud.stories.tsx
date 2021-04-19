@@ -56,3 +56,12 @@ export const BrandProviderCollapse = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/brand-provider-cn/">Antd BrandProvider API</a>
+        </>
+    );
+};
+

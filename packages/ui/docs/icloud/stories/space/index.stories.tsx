@@ -14,3 +14,12 @@ export const Demo = () => {
         </Space>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/space-cn/">Antd Space API</a>
+        </>
+    );
+};
+

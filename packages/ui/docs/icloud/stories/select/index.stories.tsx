@@ -134,3 +134,12 @@ export const MultipleDemo = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/select-cn/">Antd Select API</a>
+        </>
+    );
+};
+

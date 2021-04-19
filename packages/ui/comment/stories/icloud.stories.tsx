@@ -72,3 +72,12 @@ export const Demo = () => {
 
     return (<Demo />);
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/comment-cn/">Antd Comment API</a>
+        </>
+    );
+};
+

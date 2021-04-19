@@ -46,3 +46,12 @@ export const Demo = () => {
             />
         </div>);
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/checkbox-cn/">Antd Checkbox API</a>
+        </>
+    );
+};
+

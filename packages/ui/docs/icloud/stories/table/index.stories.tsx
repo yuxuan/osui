@@ -492,3 +492,12 @@ export const CompleteDemo = () => {
 
     return <Demo />;
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/table-cn/">Antd Table API</a>
+        </>
+    );
+};
+

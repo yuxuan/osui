@@ -11,3 +11,12 @@ export const Demo = () => {
         <Card />
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/card-cn/">Antd Card API</a>
+        </>
+    );
+};
+

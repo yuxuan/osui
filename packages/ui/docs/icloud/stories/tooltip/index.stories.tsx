@@ -70,3 +70,12 @@ export const Demo = () => {
         </div>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/tooltip-cn/">Antd Tooltip API</a>
+        </>
+    );
+};
+

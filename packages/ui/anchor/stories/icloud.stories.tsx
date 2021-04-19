@@ -30,3 +30,12 @@ export const Demo = () => {
         </>
     );
 };
+
+export const Api = () => {
+    return (
+        <>
+            <a href="https://ant.design/components/anchor-cn/">Antd Anchor API</a>
+        </>
+    );
+};
+
