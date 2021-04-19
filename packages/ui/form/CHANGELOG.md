@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.12.4...@osui/form@0.12.5) (2021-04-19)
+
+
+### Bug Fixes
+
+* input form error状态样式调整 ([84530fb](https://gitee.com/gitee-fe/osui/tree/master/commits/84530fb9f64fdb7835df47765a5571fdc13d8373))
+
+
+
+
+
 ## [0.12.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.12.3...@osui/form@0.12.4) (2021-04-16)
 
 

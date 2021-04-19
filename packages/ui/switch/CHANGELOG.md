@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/switch@0.12.1...@osui/switch@0.12.2) (2021-04-19)
+
+
+### Bug Fixes
+
+* 修复switch small的圆点位置 ([deaa266](https://gitee.com/gitee-fe/osui/tree/master/commits/deaa266bb6017057714d258fada6370803e2f2a7))
+
+
+
+
+
 ## [0.12.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/switch@0.10.1...@osui/switch@0.12.1) (2021-04-14)
 
 
