@@ -1,6 +1,6 @@
 {
     "name": "@osui/directory-navigator",
-    "version": "0.12.0",
+    "version": "0.12.1",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",

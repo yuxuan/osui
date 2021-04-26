@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tree@0.10.2...@osui/tree@0.12.1) (2021-04-26)
+
+
+
+# 0.12.0 (2021-03-31)
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* tree ([c60b4c8](https://gitee.com/gitee-fe/osui/tree/master/commits/c60b4c8fd59cb8a78dc9fc72248003598330ca78))
+* tree ([4983dc2](https://gitee.com/gitee-fe/osui/tree/master/commits/4983dc24407762c7400a1d241052756a39ca3c5a))
+
+
+
+
+
 # [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
 
 **Note:** Version bump only for package @osui/tree

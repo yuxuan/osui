@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.12.3...@osui/icloud-theme@0.12.4) (2021-04-26)
+
+**Note:** Version bump only for package @osui/icloud-theme
+
+
+
+
+
 ## [0.12.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.12.2...@osui/icloud-theme@0.12.3) (2021-04-16)
 
 

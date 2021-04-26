@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/cascader@0.10.1...@osui/cascader@0.12.1) (2021-04-26)
+
+
+
+# 0.12.0 (2021-03-31)
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* cascader ([42f3524](https://gitee.com/gitee-fe/osui/tree/master/commits/42f3524da71b6d4617626c39f2b99acfc6c984b4))
+* list, pagination/table, popover, switch, timeline, tooltip ([2f08302](https://gitee.com/gitee-fe/osui/tree/master/commits/2f08302a6e008c3039175a9ef283181ac3e62d31))
+
+
+
+
+
 # [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
 
 **Note:** Version bump only for package @osui/cascader

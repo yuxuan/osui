@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/popover@0.10.0...@osui/popover@0.12.1) (2021-04-26)
+
+
+
+# 0.12.0 (2021-03-31)
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* @osui/icons调整icon名称，如下： ([8b9033a](https://gitee.com/gitee-fe/osui/tree/master/commits/8b9033af14f14ebae853692523739ca22c64123a))
+* alert input popover ([9abbeb5](https://gitee.com/gitee-fe/osui/tree/master/commits/9abbeb5e19acebdb41f93b7abc683f6c541295d3))
+* list, pagination/table, popover, switch, timeline, tooltip ([2f08302](https://gitee.com/gitee-fe/osui/tree/master/commits/2f08302a6e008c3039175a9ef283181ac3e62d31))
+
+
+
+
+
 # [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
 
 **Note:** Version bump only for package @osui/popover

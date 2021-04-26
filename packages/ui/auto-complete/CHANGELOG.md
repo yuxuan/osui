@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/auto-complete@0.11.1...@osui/auto-complete@0.12.2) (2021-04-26)
+
+
+
+## 0.12.1 (2021-04-02)
+
+
+### Bug Fixes
+
+* auto-complete 修复受控时内部状态依然会更新的问题 ([d682174](https://gitee.com/gitee-fe/osui/tree/master/commits/d6821745cabacdc57bf08bc6ee33959a9b367f28))
+
+
+
+# 0.12.0 (2021-03-31)
+
+
+
+
+
 ## [0.12.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.12.0...v0.12.1) (2021-04-02)
 
 

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tag@0.10.3...@osui/tag@0.12.1) (2021-04-26)
+
+
+
+# 0.12.0 (2021-03-31)
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* tag ([edf4918](https://gitee.com/gitee-fe/osui/tree/master/commits/edf491896b5ab81bad217735c572879911987d49))
+
+
+
+
+
 # [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
 
 **Note:** Version bump only for package @osui/tag

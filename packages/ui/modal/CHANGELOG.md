@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.12.1...@osui/modal@0.12.2) (2021-04-26)
+
+**Note:** Version bump only for package @osui/modal
+
+
+
+
+
 ## [0.12.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@0.11.4...@osui/modal@0.12.1) (2021-04-16)
 
 

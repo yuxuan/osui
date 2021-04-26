@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@0.12.1...@osui/pagination@0.12.2) (2021-04-26)
+
+**Note:** Version bump only for package @osui/pagination
+
+
+
+
+
 ## [0.12.1](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@0.11.5...@osui/pagination@0.12.1) (2021-04-16)
 
 

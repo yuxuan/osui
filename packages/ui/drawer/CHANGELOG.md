@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/drawer@0.10.3...@osui/drawer@0.12.1) (2021-04-26)
+
+
+
+# 0.12.0 (2021-03-31)
+
+
+
+# 0.11.0 (2021-02-19)
+
+
+### Bug Fixes
+
+* drawer ([3e6ff50](https://gitee.com/gitee-fe/osui/tree/master/commits/3e6ff5019414d76549e09b498b9c3fc2f2e6138c))
+
+
+
+
+
 # [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
 
 **Note:** Version bump only for package @osui/drawer

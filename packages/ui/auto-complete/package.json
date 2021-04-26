@@ -1,6 +1,6 @@
 {
     "name": "@osui/auto-complete",
-    "version": "0.12.1",
+    "version": "0.12.2",
     "description": "",
     "main": "es/index.js",
     "module": "es/index.js",
@@ -72,6 +72,6 @@
     },
     "dependencies": {
         "@huse/derived-state": "^1.0.3",
-        "@osui/highlight-text": "^0.12.0"
+        "@osui/highlight-text": "^0.12.1"
     }
 }
