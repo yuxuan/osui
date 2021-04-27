@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.12.4...@osui/icloud-theme@0.12.5) (2021-04-27)
+
+
+### Bug Fixes
+
+* 色盘颜色revert ([975c245](https://gitee.com/gitee-fe/osui/tree/master/commits/975c2453d1db7fbb517c6c743e0e0b99a5559afb))
+
+
+
+
+
 ## [0.12.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.12.3...@osui/icloud-theme@0.12.4) (2021-04-26)
 
 **Note:** Version bump only for package @osui/icloud-theme
