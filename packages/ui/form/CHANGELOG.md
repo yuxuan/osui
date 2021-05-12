@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.12.6...@osui/form@0.12.7) (2021-05-12)
+
+
+### Bug Fixes
+
+* 调整Form.useLabelLayout ([32f4721](https://gitee.com/gitee-fe/osui/tree/master/commits/32f47217d6babe2a37768425034a03ba459d990e))
+
+
+
+
+
 ## [0.12.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.12.5...@osui/form@0.12.6) (2021-04-26)
 
 **Note:** Version bump only for package @osui/form

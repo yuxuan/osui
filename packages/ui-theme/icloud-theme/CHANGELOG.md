@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.12.5...@osui/icloud-theme@0.12.6) (2021-05-12)
+
+
+### Bug Fixes
+
+* colors 暴露tagColors, uiColors, rotatingColors ([c37b3fe](https://gitee.com/gitee-fe/osui/tree/master/commits/c37b3fe49f0764162825fec5de18a790c9b5dc77))
+
+
+
+
+
 ## [0.12.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@0.12.4...@osui/icloud-theme@0.12.5) (2021-04-27)
 
 
