@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@0.11.7...@osui/theme@0.13.0) (2021-05-12)
+
+
+### Bug Fixes
+
+* 调整osui色盘 ([b50d39b](https://gitee.com/gitee-fe/osui/tree/master/commits/b50d39bc66d3725cb8bf711fa0773bdcc003aec8))
+
+
+
+# 0.12.0 (2021-03-31)
+
+
+
+
+
 # [0.12.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.11.0...v0.12.0) (2021-03-31)
 
 
