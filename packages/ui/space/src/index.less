@@ -1,21 +1,39 @@
 @osui-space-class-prefix: osui-space;
 
 .@{osui-space-class-prefix} {
-    &-small {
+    &-small.@{ant-prefix}-space-horizontal {
         .@{ant-prefix}-space-item:not(:last-child) {
             margin-right: var(--space-small) !important;
         }
     }
 
-    &-middle {
+    &-middle.@{ant-prefix}-space-horizontal {
         .@{ant-prefix}-space-item:not(:last-child) {
             margin-right: var(--space-middle) !important;
         }
     }
 
-    &-large {
+    &-large.@{ant-prefix}-space-horizontal {
         .@{ant-prefix}-space-item:not(:last-child) {
             margin-right: var(--space-large) !important;
+        }
+    }
+
+    &-small.@{ant-prefix}-space-vertical {
+        .@{ant-prefix}-space-item:not(:last-child) {
+            margin-bottom: var(--space-small) !important;
+        }
+    }
+
+    &-middle.@{ant-prefix}-space-vertical {
+        .@{ant-prefix}-space-item:not(:last-child) {
+            margin-bottom: var(--space-middle) !important;
+        }
+    }
+
+    &-large.@{ant-prefix}-space-vertical {
+        .@{ant-prefix}-space-item:not(:last-child) {
+            margin-bottom: var(--space-large) !important;
         }
     }
 }
