@@ -1,5 +1,15 @@
 # Change Log
 
+# 0.12.12
+Space
+- 修复垂直模式下，padding-right的问题
+
+# 0.12.11
+Form
+- 修复useLabelLayout在动态加载的Form.Item不生效的问题
+
+# 0.12.10
+升级antd依赖到 >=4.40 <4.16.0
 # 0.12.9
 Switch
 - 修复small size圆点偏移的问题
@@ -495,3 +505,17 @@ fix: dropdown满足osui和icloud调整
 - 支持Antd@4.10.0
 - 支持less@4.0.0
 - 支持`ant-prefix`
+
+
+# OSUI THEME
+
+## 0.13.0
+- 调整为新色盘
+
+# iCloud Theme
+
+## 0.12.6
+- js暴露颜色变量
+
+## 0.12.5
+- 颜色调整还没有最终确认，调整回来
