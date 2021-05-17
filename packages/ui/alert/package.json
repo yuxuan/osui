@@ -2,11 +2,12 @@
     "name": "@osui/alert",
     "version": "0.12.1",
     "description": "",
-    "main": "es/index.js",
+    "main": "lib/index.js",
     "module": "es/index.js",
     "types": "es/index.d.ts",
-    "files": [
+        "files": [
         "es",
+        "lib",
         "src",
         "README.md",
         "CHANGELOG.md"
@@ -41,6 +42,7 @@
         "@types/react-dom": "^16.9.8",
         "antd": "^4.15.0",
         "babel-loader": "^8.1.0",
+        "babel-merge": "^3.0.0",
         "cpy-cli": "^3.1.1",
         "husky": "^4.2.5",
         "prop-types": "^15.7.2",

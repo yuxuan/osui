@@ -32,5 +32,6 @@ echo "$DEPENDENCIES" ) # while 是 subshell， 括号来group subshell
 
 # build index
 $(npm bin)/tsc
+$(npm bin)/tsc -p tsconfig.cjs.json
 
 echo "build success"

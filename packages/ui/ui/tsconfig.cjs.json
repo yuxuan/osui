@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es2018",
+        "module": "commonjs",
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "jsx": "react",
+        "allowJs": true,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "strict": true,
+        "noUnusedLocals": false,
+        "noFallthroughCasesInSwitch": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "declaration":true,
+        "allowSyntheticDefaultImports": true,
+        "rootDir": "./src",
+        "outDir": "lib"
+    },
+    "include": ["src"]
+}
