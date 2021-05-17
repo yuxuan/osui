@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.12.1...v1.0.0-beta.0) (2021-05-17)
+
+
+### Bug Fixes
+
+* input select empty 调整 ([8e146c4](https://gitee.com/gitee-fe/osui/tree/master/commits/8e146c422b78b2c40b6dbe7a6c87d82fe85561ed))
+
+
+
+
+
 ## [0.12.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/brand-provider@0.12.1...@osui/brand-provider@0.12.2) (2021-04-26)
 
 **Note:** Version bump only for package @osui/brand-provider

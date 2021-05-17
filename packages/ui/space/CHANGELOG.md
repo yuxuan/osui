@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.12.1...v1.0.0-beta.0) (2021-05-17)
+
+
+### Bug Fixes
+
+* space vertical间距修复 ([ae04fe4](https://gitee.com/gitee-fe/osui/tree/master/commits/ae04fe483c67654a102e210b88cd3860349113a7))
+
+
+
+
+
 ## [0.12.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/space@0.12.1...@osui/space@0.12.2) (2021-05-13)
 
 

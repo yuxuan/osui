@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.12.1...v1.0.0-beta.0) (2021-05-17)
+
+
+### Bug Fixes
+
+* 调整Form.useLabelLayout ([32f4721](https://gitee.com/gitee-fe/osui/tree/master/commits/32f47217d6babe2a37768425034a03ba459d990e))
+* form layout减少侵入性，不要重设margin ([2b89133](https://gitee.com/gitee-fe/osui/tree/master/commits/2b891339128b0d815240f8c55967c7396e963a27))
+* form提供layout解决方案 ([310f5e2](https://gitee.com/gitee-fe/osui/tree/master/commits/310f5e21f61f18e429ae74a4d2251610ce942c71))
+* form修复表单align冲突的问题 ([4ec064c](https://gitee.com/gitee-fe/osui/tree/master/commits/4ec064cd5a2167d9a4eb60af36d04276f05944c3))
+* input form error状态样式调整 ([84530fb](https://gitee.com/gitee-fe/osui/tree/master/commits/84530fb9f64fdb7835df47765a5571fdc13d8373))
+
+
+
+
+
 ## [0.12.7](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.12.6...@osui/form@0.12.7) (2021-05-12)
 
 

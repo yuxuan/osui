@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.12.1...v1.0.0-beta.0) (2021-05-17)
+
+
+### Bug Fixes
+
+* input form error状态样式调整 ([84530fb](https://gitee.com/gitee-fe/osui/tree/master/commits/84530fb9f64fdb7835df47765a5571fdc13d8373))
+* input search icon clear icon颜色, onSearch callback修复 ([d75f772](https://gitee.com/gitee-fe/osui/tree/master/commits/d75f7722779fb175093a0011b50bcda3a40ecfd6))
+* input select empty 调整 ([8e146c4](https://gitee.com/gitee-fe/osui/tree/master/commits/8e146c422b78b2c40b6dbe7a6c87d82fe85561ed))
+* input.Search加addon的样式 ([a198a04](https://gitee.com/gitee-fe/osui/tree/master/commits/a198a04952d5a7b7c8ec76d1d096daf44ccceaac))
+
+
+
+
+
 ## [0.12.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@0.12.5...@osui/input@0.12.6) (2021-04-26)
 
 **Note:** Version bump only for package @osui/input
