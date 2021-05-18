@@ -28,3 +28,6 @@ tmp/
 output/
 es/
 lib/
+
+# 先不加docs
+docs
