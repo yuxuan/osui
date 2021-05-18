@@ -1,6 +1,6 @@
 import React from 'react';
 import {Tree as AntdTree} from 'antd';
-import {TreeProps as AntdTreeProps} from 'antd/es/tree';
+import {TreeProps as AntdTreeProps} from 'antd/lib/tree';
 import classNames from 'classnames';
 import './index.less';
 

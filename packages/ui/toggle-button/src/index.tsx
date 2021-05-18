@@ -4,7 +4,7 @@
  */
 import React, {useCallback} from 'react';
 import {Button} from 'antd';
-import {ButtonProps} from 'antd/es/button';
+import {ButtonProps} from 'antd/lib/button';
 import {IconDownOutlined, IconMoreOutlined} from '@osui/icons';
 import classNames from 'classnames';
 import {useDerivedState} from '@huse/derived-state';

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { ConfigProvider } from 'antd';
 import Empty from '@osui/empty';
-import zhCN from 'antd/es/locale/zh_CN';
-import { ConfigProviderProps } from 'antd/es/config-provider';
+import zhCN from 'antd/lib/locale/zh_CN';
+import { ConfigProviderProps } from 'antd/lib/config-provider';
 export interface BrandContextValue {
     brand: 'osc' | 'icloud' | undefined;
 }

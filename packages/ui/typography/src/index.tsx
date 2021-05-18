@@ -1,6 +1,6 @@
 import React from 'react';
 import {Typography as AntdTypography} from 'antd';
-import {TypographyProps as AntdTypographyProps} from 'antd/es/typography/Typography';
+import {TypographyProps as AntdTypographyProps} from 'antd/lib/typography/Typography';
 import classNames from 'classnames';
 import './index.less';
 

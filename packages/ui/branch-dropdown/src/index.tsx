@@ -1,5 +1,5 @@
 import React from 'react';
-import {DropDownProps as AntdDropDownProps} from 'antd/es/dropdown';
+import {DropDownProps as AntdDropDownProps} from 'antd/lib/dropdown';
 import {Menu, Dropdown} from 'antd';
 import Button from '@osui/button';
 import {IconBranchDropdown, IconDownOutlined} from '@osui/icons';

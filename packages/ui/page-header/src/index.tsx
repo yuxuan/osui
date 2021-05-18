@@ -1,6 +1,6 @@
 import React from 'react';
 import {PageHeader as AntdPageHeader} from 'antd';
-import {PageHeaderProps as AntdPageHeaderProps} from 'antd/es/page-header';
+import {PageHeaderProps as AntdPageHeaderProps} from 'antd/lib/page-header';
 import classNames from 'classnames';
 import {IconArrowLeftOutlined} from '@osui/icons';
 import './index.less';

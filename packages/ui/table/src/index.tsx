@@ -1,17 +1,17 @@
 /* eslint-disable complexity */
 import React, {useContext, useMemo} from 'react';
 import {Table as AntdTable} from 'antd';
-import {ConfigContext} from 'antd/es/config-provider';
+import {ConfigContext} from 'antd/lib/config-provider';
 import {
     TableProps as AntdTableProps,
     TablePaginationConfig as AntdTablePaginationConfig,
-} from 'antd/es/table';
-import { ExpandableConfig, TableRowSelection } from 'antd/es/table/interface';
+} from 'antd/lib/table';
+import { ExpandableConfig, TableRowSelection } from 'antd/lib/table/interface';
 import classNames from 'classnames';
 import {customPaginationProps, PaginationProps} from '@osui/pagination';
 import {useBrandContext} from '@osui/brand-provider';
 import {IconDownOutlined, IconRightOutlined} from '@osui/icons';
-import '@osui/pagination/es/index.less';
+import '@osui/pagination/lib/index.less';
 import './index.less';
 
 const clsPrefix = 'osui-table';

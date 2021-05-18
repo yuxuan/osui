@@ -1,6 +1,6 @@
 import React from 'react';
 import {Drawer as AntdDrawer} from 'antd';
-import {DrawerProps as AntdDrawerProps} from 'antd/es/drawer';
+import {DrawerProps as AntdDrawerProps} from 'antd/lib/drawer';
 import {IconCloseOutlined} from '@osui/icons';
 import classNames from 'classnames';
 import './index.less';

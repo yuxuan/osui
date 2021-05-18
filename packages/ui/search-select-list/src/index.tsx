@@ -1,6 +1,6 @@
 import React, {useMemo} from 'react';
 import {Popover, Menu} from 'antd';
-import {PopoverProps as AntdPooverProps} from 'antd/es/popover';
+import {PopoverProps as AntdPooverProps} from 'antd/lib/popover';
 import classNames from 'classnames';
 import {IconSearchOutlined} from '@osui/icons';
 import Input from '@osui/input';

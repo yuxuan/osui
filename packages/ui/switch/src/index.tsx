@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch as AntdSwitch } from 'antd';
-import { SwitchProps as AntdSwitchProps } from 'antd/es/switch';
+import { SwitchProps as AntdSwitchProps } from 'antd/lib/switch';
 import classNames from 'classnames';
 import './index.less';
 

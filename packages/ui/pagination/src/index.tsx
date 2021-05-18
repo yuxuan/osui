@@ -1,6 +1,6 @@
 import React from 'react';
 import {Pagination as AntdPagination} from 'antd';
-import {PaginationProps as AntdPaginationProps} from 'antd/es/pagination';
+import {PaginationProps as AntdPaginationProps} from 'antd/lib/pagination';
 import classNames from 'classnames';
 import {IconRightOutlined, IconLeftOutlined} from '@osui/icons';
 import {useBrandContext} from '@osui/brand-provider';

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Dropdown as AntdDropdown} from 'antd';
 import classNames from 'classnames';
-import {DropDownProps as AntdCheckboxProps} from 'antd/es/dropdown';
+import {DropDownProps as AntdCheckboxProps} from 'antd/lib/dropdown';
 import './index.less';
 
 const clsPrefix = 'osui-dropdown';

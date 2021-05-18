@@ -6,11 +6,11 @@ import {
     RuleRender as AntdRuleRender,
     FormInstance as AntdFormInstance,
     FormProps as AntdFormProps,
-} from 'antd/es/form';
-import {useForm} from 'antd/es/form/Form';
-import List from 'antd/es/form/FormList';
-import {FormItemProps as AntdFormItemProps} from 'antd/es/form/FormItem';
-import {FormProvider} from 'antd/es/form/context';
+} from 'antd/lib/form';
+import {useForm} from 'antd/lib/form/Form';
+import List from 'antd/lib/form/FormList';
+import {FormItemProps as AntdFormItemProps} from 'antd/lib/form/FormItem';
+import {FormProvider} from 'antd/lib/form/context';
 import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';
 import useLabelLayout from './useLabelLayout';

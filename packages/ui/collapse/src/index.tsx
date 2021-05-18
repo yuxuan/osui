@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react';
 import {Collapse as AntdCollapse} from 'antd';
-import {CollapseProps as AntdCollapseProps, CollapsePanelProps as AntdCollapsePanelProps} from 'antd/es/collapse';
+import {CollapseProps as AntdCollapseProps, CollapsePanelProps as AntdCollapsePanelProps} from 'antd/lib/collapse';
 import {IconRightOutlined, IconDownOutlined} from '@osui/icons';
 import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';

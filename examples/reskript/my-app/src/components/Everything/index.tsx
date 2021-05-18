@@ -1,7 +1,7 @@
 /* eslint-disable no-console, max-len, max-lines, react/jsx-no-bind */
 import {useState} from 'react';
 import {Space, Row, ConfigProvider} from 'antd';
-import zhCN from 'antd/es/locale/zh_CN';
+import zhCN from 'antd/lib/locale/zh_CN';
 import {
     IconPlusOutlined,
     IconSearchOutlined,

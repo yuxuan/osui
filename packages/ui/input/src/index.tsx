@@ -7,7 +7,7 @@ import {
     InputProps as AntdInputProps,
     TextAreaProps as AntdTextAreaProps,
     SearchProps as AntdSearchProps,
-} from 'antd/es/input';
+} from 'antd/lib/input';
 import classNames from 'classnames';
 import './index.less';
 

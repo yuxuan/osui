@@ -1,6 +1,6 @@
 import React from 'react';
 import {Select as AntdSelect} from 'antd';
-import {SelectProps as AntdSelectProps} from 'antd/es/select';
+import {SelectProps as AntdSelectProps} from 'antd/lib/select';
 import classNames from 'classnames';
 import {IconDownOutlined, IconCheckSquareFilled} from '@osui/icons';
 import {adjustAntdProps} from './utils';

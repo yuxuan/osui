@@ -8,7 +8,7 @@ import {
     MessageApi as AntdMessageApi,
     ArgsProps as AntdMessageArgsProps,
     ConfigOptions,
-} from 'antd/es/message';
+} from 'antd/lib/message';
 import Alert, {AlertProps} from '@osui/alert';
 import {
     IconCheckCircleFilled,

@@ -1,7 +1,7 @@
 import React, {useMemo} from 'react';
 import {AutoComplete as AntdAutoComplete} from 'antd';
-import {AutoCompleteProps as AntdAutoCompleteProps} from 'antd/es/auto-complete';
-import {RefSelectProps, OptionType} from 'antd/es/select';
+import {AutoCompleteProps as AntdAutoCompleteProps} from 'antd/lib/auto-complete';
+import {RefSelectProps, OptionType} from 'antd/lib/select';
 import HighlightText from '@osui/highlight-text';
 import classNames from 'classnames';
 

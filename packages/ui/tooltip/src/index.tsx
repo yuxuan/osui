@@ -9,7 +9,7 @@ import {
     TooltipProps as AntdTooltipProps,
     TooltipPropsWithTitle as AntdTooltipPropsWithTitle,
     TooltipPropsWithOverlay as AntdTooltipPropsWithOverlay,
-} from 'antd/es/tooltip';
+} from 'antd/lib/tooltip';
 import classNames from 'classnames';
 import './index.less';
 

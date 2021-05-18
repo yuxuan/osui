@@ -3,7 +3,7 @@ import {Steps as AntdSteps} from 'antd';
 import {
     StepsProps as AntdStepsProps,
     StepProps as AntdStepProps,
-} from 'antd/es/steps';
+} from 'antd/lib/steps';
 import classNames from 'classnames';
 import './index.less';
 

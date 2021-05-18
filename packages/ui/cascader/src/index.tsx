@@ -1,6 +1,6 @@
 import React from 'react';
 import { Cascader as AntdCascader } from 'antd';
-import { CascaderProps as AntdCascaderProps } from 'antd/es/cascader';
+import { CascaderProps as AntdCascaderProps } from 'antd/lib/cascader';
 import classNames from 'classnames';
 import { IconDownOutlined, IconRightOutlined } from '@osui/icons';
 import './index.less';

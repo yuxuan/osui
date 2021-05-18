@@ -1,6 +1,6 @@
 import React, {FC, useCallback, useReducer} from 'react';
 import {Alert as AntdAlert} from 'antd';
-import {AlertProps as AntdAlertProps} from 'antd/es/alert';
+import {AlertProps as AntdAlertProps} from 'antd/lib/alert';
 import {
     IconCheckCircleFilled,
     IconExclamationCircleFilled,
@@ -29,6 +29,53 @@ const typeToIcon: Record<iconTypes, React.ReactNode> = {
     success: <IconCheckCircleFilled className={`${clsPrefix}-successIcon`} />,
     error: <IconCloseCircleFilled className={`${clsPrefix}-errorIcon`} />,
     warning: <IconExclamationCircleFilled className={`${clsPrefix}-warningIcon`} />,
+};
+
+interface ActionExpandProps {
+    expanded: boolean;
+    open(): void;
+    close(): void;
+}
+
+const ActionExpand: FC<ActionExpandProps> = ({expanded, open, close}) => {
+    const handleClick = useCallback(
+        () => {
+            if (expanded) {
+                close();
+            }
+            else {
+                open();
+            }
+        },
+        [expanded, open, close]
+    );
+    return (
+        <a onClick={handleClick} className={classNames({ [`${clsPrefix}-action-expand-open`]: expanded })}>
+            {expanded ? '收起' : '展开'} <IconDownOutlined />
+        </a>
+    );
+};
+
+interface ActionCountDownCloseProps {
+    countDown: number;
+    onTimeout(): void;
+}
+
+const ActionCountDownClose: FC<ActionCountDownCloseProps> = ({countDown, onTimeout}) => {
+    const [timer, reduce] = useReducer<(arg: number) => number>(state => state - 1, countDown);
+    // 每秒调用一次
+    useInterval(reduce, 1 * 1000);
+
+    if (countDown <= 0) {
+        return null;
+    }
+
+    if (timer === 0) {
+        onTimeout();
+        return null;
+    }
+
+    return <span className={`${clsPrefix}-count-down-close`}>({timer}s)</span>;
 };
 
 const Alert: React.FC<AlertProps> = props => {
@@ -116,53 +163,6 @@ const Alert: React.FC<AlertProps> = props => {
             closable={patchedClosable}
         />
     );
-};
-
-interface ActionExpandProps {
-    expanded: boolean;
-    open(): void;
-    close(): void;
-}
-
-const ActionExpand: FC<ActionExpandProps> = ({expanded, open, close}) => {
-    const handleClick = useCallback(
-        () => {
-            if (expanded) {
-                close();
-            }
-            else {
-                open();
-            }
-        },
-        [expanded, open, close]
-    );
-    return (
-        <a onClick={handleClick} className={classNames({ [`${clsPrefix}-action-expand-open`]: expanded })}>
-            {expanded ? '收起' : '展开'} <IconDownOutlined />
-        </a>
-    );
-};
-
-interface ActionCountDownCloseProps {
-    countDown: number;
-    onTimeout(): void;
-}
-
-const ActionCountDownClose: FC<ActionCountDownCloseProps> = ({countDown, onTimeout}) => {
-    const [timer, reduce] = useReducer<(arg: number) => number>(state => state - 1, countDown);
-    // 每秒调用一次
-    useInterval(reduce, 1 * 1000);
-
-    if (countDown <= 0) {
-        return null;
-    }
-
-    if (timer === 0) {
-        onTimeout();
-        return null;
-    }
-
-    return <span className={`${clsPrefix}-count-down-close`}>({timer}s)</span>;
 };
 
 export default Alert;

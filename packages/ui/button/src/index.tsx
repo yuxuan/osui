@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button as AntdButton } from 'antd';
-import { ButtonProps as AntdButtonProps, ButtonType } from 'antd/es/button';
+import { ButtonProps as AntdButtonProps, ButtonType } from 'antd/lib/button';
 import classNames from 'classnames';
 import { IconLoading3QuartersOutlined } from '@osui/icons';
 import Tooltip from '@osui/tooltip';

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Avatar as AntdAvatar} from 'antd';
-import {AvatarProps as AntdAvatarProps} from 'antd/es/avatar';
+import {AvatarProps as AntdAvatarProps} from 'antd/lib/avatar';
 import {IconCheckCircleFilled} from '@osui/icons';
 import classNames from 'classnames';
 import './index.less';

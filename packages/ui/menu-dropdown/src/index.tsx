@@ -6,8 +6,8 @@
 import React, {useState, useCallback} from 'react';
 import Dropdown from '@osui/dropdown';
 import Menu from '@osui/menu';
-import {DropDownProps as AntdDropdownProps} from 'antd/es/dropdown';
-import {MenuItemProps} from 'antd/es/menu/MenuItem';
+import {DropDownProps as AntdDropdownProps} from 'antd/lib/dropdown';
+import {MenuItemProps} from 'antd/lib/menu/MenuItem';
 import classNames from 'classnames';
 import {IconRightOutlined} from '@osui/icons';
 import {ActionToggleButton} from '@osui/toggle-button';
