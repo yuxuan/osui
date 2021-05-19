@@ -16693,6 +16693,11 @@ typescript@^3.9.6, typescript@^3.9.7:
   resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.9.9.tgz#e69905c54bc0681d0518bd4d587cc6f2d0b1a674"
   integrity sha1-5pkFxUvAaB0FGL1NWHzG8tCxpnQ=
 
+typescript@^4.2.4:
+  version "4.2.4"
+  resolved "https://registry.nlark.com/typescript/download/typescript-4.2.4.tgz?cache=0&sync_timestamp=1621322949574&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftypescript%2Fdownload%2Ftypescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
+  integrity sha1-hhC1l0feAo/aiYqK7w4QPxVtCWE=
+
 uglify-js@^3.1.4:
   version "3.12.8"
   resolved "https://registry.npm.taobao.org/uglify-js/download/uglify-js-3.12.8.tgz?cache=0&sync_timestamp=1613235543946&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuglify-js%2Fdownload%2Fuglify-js-3.12.8.tgz#a82e6e53c9be14f7382de3d068ef1e26e7d4aaf8"

@@ -5,8 +5,15 @@ echo "npm $(npm -v)"
 echo "yarn $(yarn -v)"
 
 rm -rf dist
+rm -rf vars
 mkdir -p dist/theme
-cp -r src/* dist
+mkdir -p vars
+
+$(npm bin)/tsc
+echo 'tsc done'
+node scripts/build.js
+
+cp -r patches/* dist
 cp -r vars/* dist/theme
 
 echo "build success"
