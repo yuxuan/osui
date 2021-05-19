@@ -1,0 +1,20 @@
+export default {
+    '--alert-error-bg-color': 'var(--color-error-1)',
+    '--alert-error-border-color': 'var(--theme-error-color)',
+    '--alert-error-icon-color': 'var(--theme-error-color)',
+    '--alert-info-bg-color': 'var(--color-brand-2)',
+    '--alert-info-border-color': 'var(--color-brand-5)',
+    '--alert-info-icon-color': 'var(--color-brand-5)',
+    '--alert-success-bg-color': 'var(--color-success-1)',
+    '--alert-success-border-color': 'var(--theme-success-color)',
+    '--alert-success-icon-color': 'var(--theme-success-color)',
+    '--alert-warning-bg-color': 'var(--color-warning-1)',
+    '--alert-warning-border-color': 'var(--theme-warning-color)',
+    '--alert-warning-icon-color': 'var(--theme-warning-color)',
+    '--alert-with-description-icon-top': '24px',
+    '--alert-with-description-padding': '8px 15px 8px 39px',
+    '--alert-padding': '8px 20px 8px 37px', // antd 默认值
+    '--alert-no-icon-padding': '8px 15px',
+    '--alert-icon-padding-right': '8px',
+    '--alert-close-icon-margin-left': '8px',
+};

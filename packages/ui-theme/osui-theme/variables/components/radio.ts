@@ -1,0 +1,16 @@
+export default {
+    '--radio-border-color': 'var(--theme-border-color-base)',
+    '--radio-hover-border-color': 'var(--theme-border-color-base)',
+    '--radio-hover-bg': 'var(--color-gray-3)',
+    '--radio-checked-color': 'var(--color-brand-5)',
+    '--radio-disabled-bg': 'var(--color-gray-1)',
+    '--radio-disabled-dot-color': 'var(--color-gray-6)',
+    '--radio-disabled-border-color': 'var(--theme-border-color-disabled)',
+    '--radio-button-disabled-color': 'var(--theme-disabled-color)',
+    '--radio-button-disabled-border-color': 'var(--color-gray-4)',
+    '--radio-button-disabled-bg': 'var(--color-gray-1)',
+    '--radio-button-hover-color': 'var(--theme-primary-color-hover)',
+    '--radio-hover-border-zindex': '0',
+    '--radio-span-padding-horizontal': '8px',
+    '--radio-wrapper-margin-right': '8px',
+};
