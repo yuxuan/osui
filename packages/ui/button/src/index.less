@@ -1,6 +1,6 @@
 @osui-button-class-prefix: osui-button;
 
-@button-types: default, strong, primary, link, icon;
+@button-types: default, strong, primary, link, text, icon;
 
 .button-color-mixin(@color; @background; @border-color) {
     color: @color;
@@ -139,7 +139,8 @@
         display: var(--btn-loading-text-display);
     }
 
-    &.@{ant-prefix}-btn-link {
+    &.@{ant-prefix}-btn-link,
+    &.@{ant-prefix}-btn-text {
         margin: var(--btn-link-margin);
         padding: var(--btn-link-padding);
 
@@ -223,7 +224,7 @@
 // revert antd不太正常的修复 https://github.com/ant-design/ant-design/issues/12978
 a.@{osui-button-class-prefix} {
     &.@{ant-prefix}-btn {
-        padding-top: 3.5px;
-        line-height: 21px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }

@@ -27,17 +27,22 @@
 @heading-color: var(--theme-heading-color);
 @text-color: var(--theme-text-color);
 @text-color-secondary: var(--theme-text-color-secondary);
+
 @font-variant-base: normal; // https://github.com/ant-design/ant-design/issues/12690
 @font-size-sm: 12px;
-@font-size-base: 12px;
-@font-size-lg: 14px;
-@font-size-xl: 16px;
+@font-size-base: 12px; // 目前云上百度规范是12px的
+@font-size-lg: 16px;
+
 @line-height-base: 1.5;
+
 @border-radius-base: 0;
 @border-radius-sm: 0;
+
 @height-base: 30px;
 @height-lg: 40px;
 @height-sm: 24px;
+
+@icon-size-base: 16px;
 
 // The background colors for active and hover states for things like
 // list items or table cells.
@@ -103,7 +108,7 @@
 @menu-item-active-border-width: 3px;
 @menu-item-group-title-color: var(--menu-item-group-title-color);
 @menu-icon-size: @font-size-base;
-@menu-icon-size-lg: @font-size-lg;
+@menu-icon-size-lg: 14px;
 // 这个颜色不在色盘里，由于menu我们目前没有规范，所以menu需要保持与antd一致
 // 而我们调整了@background-color-light这个变量，会改变menu的背景颜色
 // 因此在这里覆盖回去，以保证和antd一致
@@ -164,8 +169,10 @@
 @btn-disable-bg: var(--btn-disable-bg);
 @btn-disable-border: var(--btn-disable-border);
 @btn-font-size-lg: 16px;
-@btn-padding-horizontal-base: 15px;
-@btn-padding-horizontal-lg: 20px;
+@btn-font-size-sm: 12px;
+@btn-padding-horizontal-base: 16px;
+@btn-padding-horizontal-lg: 24px;
+@btn-padding-horizontal-sm: 12px;
 
 // Tooltip
 // ---
@@ -276,7 +283,7 @@
 // ---
 @steps-icon-margin: 0 10px 0 0;
 @steps-small-icon-margin: 0 10px 0 0;
-@steps-icon-font-size: @font-size-lg;
+@steps-icon-font-size: 14px;
 @steps-icon-size: 30px;
 
 // Tree

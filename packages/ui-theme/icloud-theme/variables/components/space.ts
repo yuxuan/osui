@@ -1,5 +1,5 @@
 export default {
-    '--space-large': '30px',
-    '--space-middle': '20px',
-    '--space-small': '10px',
+    '--space-small': '8px',
+    '--space-middle': '12px',
+    '--space-large': '20px',
 };
