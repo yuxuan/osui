@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@0.12.2...@osui/button@1.0.0-beta.2) (2021-05-21)
+
+
+### Bug Fixes
+
+* button 调整 ([5531fec](https://gitee.com/gitee-fe/osui/tree/master/commits/5531fecc42a755ce002960fd93df102d30fb2cb9))
+
+
+
+# 1.0.0-beta.1 (2021-05-18)
+
+
+
+# 1.0.0-beta.0 (2021-05-17)
+
+
+
+
+
 # [1.0.0-beta.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.0...v1.0.0-beta.1) (2021-05-18)
 
 **Note:** Version bump only for package @osui/button

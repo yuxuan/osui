@@ -1,6 +1,6 @@
 {
     "name": "@osui/table",
-    "version": "1.0.0-beta.1",
+    "version": "1.0.0-beta.2",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -68,7 +68,7 @@
         }
     },
     "dependencies": {
-        "@osui/pagination": "^1.0.0-beta.1",
+        "@osui/pagination": "^1.0.0-beta.2",
         "classnames": "^2.2.6"
     },
     "publishConfig": {
