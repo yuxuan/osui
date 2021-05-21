@@ -5,12 +5,13 @@
  */
 
 import * as React from 'react';
+import classNames from 'classnames';
 import Joyride, {
     Props as DefaultJoyrideProps,
     TooltipRenderProps,
 } from 'react-joyride';
-import { IconCloseOutlined } from '@osui/icons';
 import Button from '@osui/button';
+import { IconCloseOutlined } from '@osui/icons';
 import merge from 'lodash.merge';
 import './index.less';
 
@@ -32,11 +33,13 @@ const floater = {
 
 interface TooltipProps extends TooltipRenderProps {
     close: () => any;
+    hideStepsSize?: boolean;
 }
 
 const JoyrideTooltip: React.FC<TooltipProps> = props => {
     const {
         isLastStep,
+        hideStepsSize,
         size,
         index,
         step,
@@ -59,6 +62,7 @@ const JoyrideTooltip: React.FC<TooltipProps> = props => {
         },
         [isLastStep, close, primaryProps]
     );
+
     return (
         <div className={`${clsPrefix}-tooltip`} {...tooltipProps}>
             <h4 className={`${clsPrefix}-header`}>
@@ -67,7 +71,11 @@ const JoyrideTooltip: React.FC<TooltipProps> = props => {
             </h4>
             <div className={`${clsPrefix}-content`}>{step.content}</div>
             <footer className={`${clsPrefix}-footer`}>
-                <span>{`${index + 1}/${size}`}</span>
+                <span
+                    className={classNames({[`${clsPrefix}-hideStepsSize`]: hideStepsSize})}
+                >
+                    {`${index + 1}/${size}`}
+                </span>
                 <div>
                     {
                         (
@@ -76,7 +84,7 @@ const JoyrideTooltip: React.FC<TooltipProps> = props => {
                             </a>
                         )
                     }
-                    <Button className={`${clsPrefix}-next-button`} {...primaryProps} onClick={handlePrimaryClick}>
+                    <Button className={`${clsPrefix}-next-button`} onClick={handlePrimaryClick}>
                         {isLastStep ? '知道啦' : '下一个' }
                     </Button>
                 </div>
@@ -94,10 +102,11 @@ const defaultStyles = {
 export interface JoyrideProps extends DefaultJoyrideProps {
     shouldRestart?: boolean;
     onFinish?: () => any;
+    hideStepsSize?: boolean;
 }
 
 const OSUIJoyride: React.FC<JoyrideProps> = props => {
-    const {shouldRestart, run, onFinish, getHelpers, disableOverlayClose} = props;
+    const {shouldRestart, run, onFinish, getHelpers, disableOverlayClose, hideStepsSize} = props;
     const [helpers, setHelpers] = React.useState<any>();
     // props的一些调整
     const steps = props.steps.map(step => ({ ...stepDefaults, ...step }));
@@ -120,9 +129,9 @@ const OSUIJoyride: React.FC<JoyrideProps> = props => {
 
     const Tooltip = React.useMemo(
         () => {
-            return (props: TooltipProps) => (<JoyrideTooltip {...props} close={close} />);
+            return (props: TooltipProps) => (<JoyrideTooltip {...props} close={close} hideStepsSize={hideStepsSize} />);
         },
-        [close]
+        [close, hideStepsSize]
     ) as React.ElementType<TooltipRenderProps>;
 
     const handleGetHelpers = React.useCallback(
