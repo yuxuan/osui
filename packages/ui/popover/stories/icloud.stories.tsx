@@ -271,7 +271,7 @@ export const Demo3 = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/popover-cn/">Antd Popover API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/popover-cn/">Antd Popover API</a>
         </>
     );
 };

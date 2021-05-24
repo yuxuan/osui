@@ -49,7 +49,7 @@ export const Group = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/avatar-cn/">Antd Avatar API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/avatar-cn/">Antd Avatar API</a>
         </>
     );
 };

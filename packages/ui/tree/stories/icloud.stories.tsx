@@ -414,7 +414,7 @@ export const SearchDemo = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/tree-cn/">Antd Tree API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/tree-cn/">Antd Tree API</a>
         </>
     );
 };

@@ -112,7 +112,7 @@ export const Size = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/drawer-cn/">Antd Drawer API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/drawer-cn/">Antd Drawer API</a>
         </>
     );
 };

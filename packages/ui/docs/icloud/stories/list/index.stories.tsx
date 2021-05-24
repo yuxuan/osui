@@ -33,7 +33,7 @@ export const Demo = () => {
                 <List.Item>
                     <List.Item.Meta
                         avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                        title={<a href="https://ant.design">{item.title}</a>}
+                        title={<a target="_blank" rel="noreferrer" href="https://ant.design">{item.title}</a>}
                         description="列表示例"
                     />
                 </List.Item>

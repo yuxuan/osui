@@ -76,7 +76,7 @@ export const Demo = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/comment-cn/">Antd Comment API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/comment-cn/">Antd Comment API</a>
         </>
     );
 };

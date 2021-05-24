@@ -385,7 +385,7 @@ export const Api = () => {
     return (
         <>
             <h2>Antd Props</h2>
-            <a href="https://ant.design/components/button-cn/">Antd Button API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/button-cn/">Antd Button API</a>
             <br />
             <br />
             <h2>OSUI增加的Props</h2>

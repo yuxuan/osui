@@ -46,7 +46,7 @@ export const Demo = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/dropdown-cn/">Antd Dropdown API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/dropdown-cn/">Antd Dropdown API</a>
         </>
     );
 };

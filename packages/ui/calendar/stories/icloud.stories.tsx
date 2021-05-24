@@ -18,7 +18,7 @@ export const Demo = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/calendar-cn/">Antd Calendar API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/calendar-cn/">Antd Calendar API</a>
         </>
     );
 };

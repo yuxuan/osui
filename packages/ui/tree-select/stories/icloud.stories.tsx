@@ -50,7 +50,7 @@ export const Demo = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/tree-select-cn/">Antd TreeSelect API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/tree-select-cn/">Antd TreeSelect API</a>
         </>
     );
 };

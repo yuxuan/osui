@@ -32,7 +32,7 @@ export const Demo = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/statistic-cn/">Antd Statistic API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/statistic-cn/">Antd Statistic API</a>
         </>
     );
 };

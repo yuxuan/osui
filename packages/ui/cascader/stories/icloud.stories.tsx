@@ -107,7 +107,7 @@ export const Load = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/cascader-cn/">Antd Cascader API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/cascader-cn/">Antd Cascader API</a>
         </>
     );
 };

@@ -120,7 +120,7 @@ export const Complete = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/input-cn/">Antd Input API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/input-cn/">Antd Input API</a>
         </>
     );
 };

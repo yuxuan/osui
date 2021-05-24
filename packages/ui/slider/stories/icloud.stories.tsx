@@ -93,7 +93,7 @@ export const AdvanceDemo = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/slider-cn/">Antd Slider API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/slider-cn/">Antd Slider API</a>
         </>
     );
 };

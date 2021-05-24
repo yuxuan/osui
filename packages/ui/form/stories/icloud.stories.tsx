@@ -290,7 +290,7 @@ export const ValidateMessageDemo = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/form-cn/">Antd Form API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/form-cn/">Antd Form API</a>
         </>
     );
 };

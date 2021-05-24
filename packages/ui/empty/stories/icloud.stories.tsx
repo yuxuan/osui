@@ -32,7 +32,7 @@ export const Demo3 = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/empty-cn/">Antd Empty API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/empty-cn/">Antd Empty API</a>
         </>
     );
 };

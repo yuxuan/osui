@@ -47,7 +47,7 @@ export const Demo = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/date-picker-cn/">Antd DatePicker API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/date-picker-cn/">Antd DatePicker API</a>
         </>
     );
 };

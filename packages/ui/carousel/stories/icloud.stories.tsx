@@ -41,7 +41,7 @@ export const Demo = () => {
 export const Api = () => {
     return (
         <>
-            <a href="https://ant.design/components/carousel-cn/">Antd Carousel API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/carousel-cn/">Antd Carousel API</a>
         </>
     );
 };
