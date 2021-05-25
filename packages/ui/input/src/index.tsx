@@ -80,6 +80,7 @@ const Search = React.forwardRef<any, SearchProps>(
             // withSuffixIcon会与enterButton相冲突，不能同时使用
             withSuffixIcon,
             suffix,
+            ...inputProps
         } = props;
         const inputRef = useRef(null);
         const {brand} = useBrandContext();
@@ -153,7 +154,7 @@ const Search = React.forwardRef<any, SearchProps>(
             return (
                 <AntdInput
                     ref={composeRef(inputRef, ref)}
-                    {...props}
+                    {...inputProps}
                     className={classNames(clsPrefix, innerClassNames)}
                     disabled={disabled}
                     suffix={innerSuffix}
