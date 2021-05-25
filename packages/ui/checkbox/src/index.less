@@ -1,90 +1,137 @@
+/* stylelint-disable no-duplicate-selectors */
 @osui-checkbox-class-prefix: osui-checkbox;
+@ant-checkbox: ~'@{ant-prefix}-checkbox';
 
+// 全局
 .@{osui-checkbox-class-prefix},
 .@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
-    .@{ant-prefix}-checkbox:not(.@{ant-prefix}-checkbox-checked) {
-        .@{ant-prefix}-checkbox-inner {
-            border-color: var(--checkbox-border-color);
-        }
-    }
-
-    // 没选中时hover的效果 normal + hover
-    &.@{ant-prefix}-checkbox-wrapper:hover .@{ant-prefix}-checkbox-inner,
-    .@{ant-prefix}-checkbox:hover .@{ant-prefix}-checkbox-inner,
-    .@{ant-prefix}-checkbox-input:focus + .@{ant-prefix}-checkbox-inner {
-        background-color: var(--checkbox-hover-bg);
-        border-color: var(--checkbox-hover-border-color);
-    }
-    // 没选中且focus时的hover效果 normal + focus + hover
-    &.@{ant-prefix}-checkbox-wrapper:hover :not(.@{ant-prefix}-checkbox-checked) .@{ant-prefix}-checkbox-input:focus + .@{ant-prefix}-checkbox-inner,
-    .@{ant-prefix}-checkbox:not(.@{ant-prefix}-checkbox-checked):hover .@{ant-prefix}-checkbox-input:focus + .@{ant-prefix}-checkbox-inner {
-        background-color: var(--checkbox-hover-bg);
-    }
-    // focus时的效果
-    .@{ant-prefix}-checkbox-input:focus + .@{ant-prefix}-checkbox-inner {
-        background-color: var(--checkbox-focus-bg);
-        box-shadow: var(--checkbox-checked-focus-box-shadow);
-    }
-    // 选中focus时的效果
-    .@{ant-prefix}-checkbox-checked .@{ant-prefix}-checkbox-input:focus + .@{ant-prefix}-checkbox-inner {
-        box-shadow: var(--checkbox-checked-focus-box-shadow);
-    }
-
-    // 选中hover且focus时的效果
-    &.@{ant-prefix}-checkbox-wrapper:hover .@{ant-prefix}-checkbox-checked .@{ant-prefix}-checkbox-inner,
-    .@{ant-prefix}-checkbox-checked:hover .@{ant-prefix}-checkbox-inner,
-    .@{ant-prefix}-checkbox-checked .@{ant-prefix}-checkbox-input:focus + .@{ant-prefix}-checkbox-inner {
-        background-color: var(--checkbox-checked-focus-bg);
-        border-color: transparent;
-    }
-
-    .@{ant-prefix}-checkbox-inner,
-    .@{ant-prefix}-checkbox-checked::after {
+    .@{ant-checkbox}-inner,
+    .@{ant-checkbox}-checked::after {
+        border-radius: var(--checkbox-border-radius);
         transition: none;
         animation: none;
         animation-fill-mode: none;
     }
 
-    .@{ant-prefix}-checkbox-disabled .@{ant-prefix}-checkbox-inner {
-        background-color: var(--checkbox-disabled-bg);
-
-        &::after {
-            border-color: var(--checkbox-disabled-color);
-        }
-    }
-
-    &.@{ant-prefix}-checkbox-wrapper:hover .@{ant-prefix}-checkbox-disabled .@{ant-prefix}-checkbox-inner,
-    .@{ant-prefix}-checkbox-disabled:hover .@{ant-prefix}-checkbox-inner {
-        background-color: var(--checkbox-disabled-bg);
-    }
-
-    &-group {
-        .@{ant-prefix}-checkbox-inner,
-        .@{ant-prefix}-checkbox-checked::after {
-            border-radius: @border-radius-base;
-            animation: none;
-            animation-fill-mode: none;
-        }
-
-        .@{ant-prefix}-checkbox-disabled .@{ant-prefix}-checkbox-inner {
-            background-color: var(--checkbox-disabled-bg);
-
-            &::after {
-                color: var(--checkbox-disabled-color);
-            }
-        }
-    }
-
-    .@{ant-prefix}-checkbox-checked,
-    .@{ant-prefix}-checkbox {
-        &.@{ant-prefix}-checkbox-disabled .@{ant-prefix}-checkbox-inner {
-            border-color: var(--checkbox-disabled-border-color) !important;
-        }
-    }
-
-    .@{ant-prefix}-checkbox + span {
+    .@{ant-checkbox} + span {
         padding-right: var(--checkbox-padding-horizontal);
         padding-left: var(--checkbox-padding-horizontal);
+    }
+}
+
+// 一般状态
+.@{osui-checkbox-class-prefix},
+.@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
+    // 默认边框颜色
+    .@{ant-checkbox}-inner {
+        border-color: var(--checkbox-border-color);
+    }
+    // focus时box-shadow的效果
+    .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
+        box-shadow: var(--checkbox-checked-focus-box-shadow);
+    }
+    // hover
+    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-inner,
+    .@{ant-checkbox}:hover .@{ant-checkbox}-inner,
+    .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
+        background-color: var(--checkbox-hover-bg);
+        border-color: var(--checkbox-hover-border-color);
+    }
+    // active focus
+    &.@{ant-checkbox}-wrapper:active .@{ant-checkbox}-inner,
+    .@{ant-checkbox}:active .@{ant-checkbox}-inner,
+    .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
+        background-color: var(--checkbox-hover-bg);
+        border-color: var(--checkbox-active-border-color);
+    }
+
+    // disabled
+    .@{ant-checkbox}-disabled .@{ant-checkbox}-inner {
+        background-color: var(--checkbox-disabled-bg);
+        border-color: var(--checkbox-disabled-border-color) !important;
+
+        &::after {
+            border-color: var(--checkbox-disabled-border-color);
+        }
+    }
+
+    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-disabled .@{ant-checkbox}-inner,
+    .@{ant-checkbox}-disabled:hover .@{ant-checkbox}-inner {
+        background-color: var(--checkbox-disabled-bg);
+    }
+}
+
+// 选中状态
+.@{osui-checkbox-class-prefix},
+.@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
+    // hover
+    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-checked .@{ant-checkbox}-inner,
+    .@{ant-checkbox}-checked:hover .@{ant-checkbox}-inner {
+        background-color: var(--checkbox-checked-hover-bg);
+        border-color: var(--checkbox-checked-hover-border-color);
+    }
+
+    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-checked::after,
+    .@{ant-checkbox}-checked .@{ant-checkbox}-inner {
+        border-color: var(--checkbox-checked-border-color);
+    }
+
+    // focus时的效果
+    .@{ant-checkbox}-checked .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
+        background-color: var(--checkbox-checked-focus-bg);
+        border-color: var(--checkbox-checked-border-color);
+        box-shadow: var(--checkbox-checked-focus-box-shadow);
+    }
+
+    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-checked.@{ant-checkbox}-disabled .@{ant-checkbox}-inner,
+    .@{ant-checkbox}-disabled:hover.@{ant-checkbox}-checked .@{ant-checkbox}-inner,
+    .@{ant-checkbox}-checked.@{ant-checkbox}-disabled .@{ant-checkbox}-inner {
+        background-color: var(--checkbox-checked-disabled-bg);
+        border-color: var(--checkbox-checked-disabled-border-color) !important;
+
+        &::after {
+            border-color: var(--checkbox-checked-disabled-border-color);
+        }
+    }
+}
+
+// 半选状态
+.@{osui-checkbox-class-prefix},
+.@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
+    .@{ant-checkbox}-indeterminate .@{ant-checkbox}-inner {
+        background-color: var(--checkbox-checked-bg);
+        border-color: var(--checkbox-checked-border-color);
+
+        &::after {
+            width: 10px;
+            height: 2px;
+            background-color: var(--color-gray-1);
+        }
+    }
+
+    // hover
+    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-indeterminate .@{ant-checkbox}-inner,
+    .@{ant-checkbox}-indeterminate:hover .@{ant-checkbox}-inner {
+        background-color: var(--checkbox-checked-hover-bg);
+        border-color: var(--checkbox-checked-hover-border-color);
+    }
+
+    // focus时的效果
+    .@{ant-checkbox}-indeterminate .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
+        background-color: var(--checkbox-checked-focus-bg);
+        border-color: var(--checkbox-checked-border-color);
+        box-shadow: var(--checkbox-checked-focus-box-shadow);
+    }
+
+    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-indeterminate.@{ant-checkbox}-disabled .@{ant-checkbox}-inner,
+    .@{ant-checkbox}-disabled:hover.@{ant-checkbox}-indeterminate .@{ant-checkbox}-inner,
+    .@{ant-checkbox}-indeterminate.@{ant-checkbox}-disabled .@{ant-checkbox}-inner {
+        background-color: var(--checkbox-checked-disabled-bg);
+        border-color: var(--checkbox-checked-disabled-border-color) !important;
+
+        &::after {
+            border-color: var(--checkbox-checked-disabled-border-color);
+        }
     }
 }
 

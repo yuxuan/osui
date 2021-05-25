@@ -25,13 +25,20 @@ export const Demo = () => {
     ];
     return (
         <div style={{ padding: 30 }}>
-            <p>基础示例</p>
+            <h3>1、基础用法</h3>
+            <p>默认状态</p>
             <Checkbox >Checkbox</Checkbox>
-            <Checkbox defaultChecked >Checkbox</Checkbox>
             <Checkbox disabled>Checkbox</Checkbox>
+            <p />
+            <p>选中状态</p>
+            <Checkbox defaultChecked >Checkbox</Checkbox>
             <Checkbox defaultChecked disabled>Checkbox</Checkbox>
-            <p></p>
-            <p>Checkbox组</p>
+            <p />
+            <p>部分选中状态</p>
+            <Checkbox indeterminate >Checkbox</Checkbox>
+            <Checkbox indeterminate disabled >Checkbox</Checkbox>
+            <p />
+            <h3>2、组合</h3>
             <Group options={plainOptions} defaultValue={['Apple']} onChange={onChange} />
             <br />
             <br />
