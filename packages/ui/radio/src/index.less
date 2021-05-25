@@ -1,81 +1,95 @@
 @osui-radio-class-prefix: osui-radio;
 
+@ant-radio: ~'@{ant-prefix}-radio';
+
 .@{osui-radio-class-prefix} {
-    &.@{ant-prefix}-radio-wrapper {
+    &.@{ant-radio}-wrapper {
         margin-right: var(--radio-wrapper-margin-right);
     }
 
-    span.@{ant-prefix}-radio + * {
+    span.@{ant-radio} + * {
         padding-right: var(--radio-span-padding-horizontal);
         padding-left: var(--radio-span-padding-horizontal);
     }
 
-    .@{ant-prefix}-radio-inner {
+    .@{ant-radio}-inner {
         border-color: var(--radio-border-color);
     }
 
-    .@{ant-prefix}-radio-checked .@{ant-prefix}-radio-inner {
+    .@{ant-radio}-checked .@{ant-radio}-inner {
         border-color: var(--theme-primary-color);
     }
 
     // 没选中时hover的效果
-    .@{ant-prefix}-radio-wrapper:hover .@{ant-prefix}-radio,
-    .@{ant-prefix}-radio:hover .@{ant-prefix}-radio-inner {
+    .@{ant-radio}-wrapper:hover .@{ant-radio},
+    .@{ant-radio}:hover .@{ant-radio}-inner {
         background: var(--radio-hover-bg);
         border-color: var(--radio-hover-border-color);
     }
 
+    // 没选中时active的效果
+    .@{ant-radio}-wrapper:active .@{ant-radio},
+    .@{ant-radio}:active .@{ant-radio}-inner {
+        background: var(--radio-hover-bg);
+        border-color: var(--radio-active-border-color);
+    }
+
     // checked时hover border的颜色
-    .@{ant-prefix}-radio-wrapper:hover .@{ant-prefix}-radio-checked.@{ant-prefix}-radio,
-    .@{ant-prefix}-radio-checked.@{ant-prefix}-radio:hover .@{ant-prefix}-radio-inner {
+    .@{ant-radio}-wrapper:hover .@{ant-radio}-checked.@{ant-radio},
+    .@{ant-radio}-checked.@{ant-radio}:hover .@{ant-radio}-inner {
         border-color: var(--radio-checked-color);
     }
 
     // checked时hover border的颜色
-    .@{ant-prefix}-radio-checked:not(.@{ant-prefix}-radio-disabled):hover::after {
+    .@{ant-radio}-checked:not(.@{ant-radio}-disabled):hover::after {
         border-color: var(--radio-checked-color);
     }
 
     // checked时hover里面点的颜色
-    .@{ant-prefix}-radio-checked:not(.@{ant-prefix}-radio-disabled):hover .@{ant-prefix}-radio-inner::after {
+    .@{ant-radio}-checked:not(.@{ant-radio}-disabled):hover .@{ant-radio}-inner::after {
         background-color: var(--radio-checked-color);
     }
 
     // disable时hover的效果
-    .@{ant-prefix}-radio-disabled:hover .@{ant-prefix}-radio-inner,
-    .@{ant-prefix}-radio-disabled .@{ant-prefix}-radio-inner,
-    .@{ant-prefix}-radio-button-disabled {
+    .@{ant-radio}-disabled:hover .@{ant-radio}-inner,
+    .@{ant-radio}-disabled .@{ant-radio}-inner,
+    .@{ant-radio}-button-disabled {
         background-color: var(--radio-disabled-bg);
         border-color: var(--radio-disabled-border-color) !important;
     }
 
     // disable时checked的效果
-    .@{ant-prefix}-radio-disabled .@{ant-prefix}-radio-inner::after {
+    .@{ant-radio}-disabled .@{ant-radio}-inner::after {
         background-color: var(--radio-disabled-dot-color);
     }
 
-    .@{ant-prefix}-radio-disabled.@{ant-prefix}-radio-checked::after {
-        border-color: var(--radio-disabled-border-color);
+    .@{ant-radio}-disabled.@{ant-radio}-checked .@{ant-radio}-inner,
+    .@{ant-radio}-disabled.@{ant-radio}-checked::after {
+        border-color: var(--radio-checked-disabled-border-color) !important;
     }
 
-    .@{ant-prefix}-radio.@{ant-prefix}-radio-checked:not(.@{ant-prefix}-radio-disabled):focus .@{ant-prefix}-radio-inner {
+    .@{ant-radio}.@{ant-radio}-checked:not(.@{ant-radio}-disabled):focus .@{ant-radio}-inner {
         box-shadow: var(--theme-component-focus-box-shadow);
     }
 
+    .@{ant-radio}-input:focus + .@{ant-radio}-inner {
+        box-shadow: none;
+    }
+
     // 去除动画
-    .@{ant-prefix}-radio-checked .@{ant-prefix}-radio-inner::after,
-    .@{ant-prefix}-radio-inner::after {
+    .@{ant-radio}-checked .@{ant-radio}-inner::after,
+    .@{ant-radio}-inner::after {
         transition: none;
     }
 
-    .@{ant-prefix}-radio-checked::after {
+    .@{ant-radio}-checked::after {
         animation: none;
     }
 
     // group
     &-group {
-        .@{ant-prefix}-radio-button-wrapper {
-            &:not(.@{ant-prefix}-radio-button-wrapper-disabled):not(.@{ant-prefix}-radio-button-wrapper-checked) {
+        .@{ant-radio}-button-wrapper {
+            &:not(.@{ant-radio}-button-wrapper-disabled):not(.@{ant-radio}-button-wrapper-checked) {
                 &:hover {
                     // 这里是hover时左侧border的颜色，osui需要与button边框颜色一致，而icloud需要变色
                     z-index: var(--radio-hover-border-zindex);
@@ -89,8 +103,8 @@
             }
         }
         // 第一个元素默认border-left和hover的效果
-        .@{ant-prefix}-radio-button-wrapper:first-child {
-            &:not(.@{ant-prefix}-radio-button-wrapper-disabled):not(.@{ant-prefix}-radio-button-wrapper-checked) {
+        .@{ant-radio}-button-wrapper:first-child {
+            &:not(.@{ant-radio}-button-wrapper-disabled):not(.@{ant-radio}-button-wrapper-checked) {
                 border-left: 1px solid var(--theme-border-color-base);
 
                 &:hover {
@@ -99,13 +113,19 @@
             }
         }
 
-        .@{ant-prefix}-radio-button-wrapper-disabled {
+        .@{ant-radio}-button-wrapper-disabled {
             color: var(--radio-button-disabled-color);
             background: var(--radio-button-disabled-bg);
             border-color: var(--radio-button-disabled-border-color);
         }
 
-        .@{ant-prefix}-radio-button-wrapper-checked:not(.@{ant-prefix}-radio-button-wrapper-disabled):focus-within {
+        .@{ant-radio}-button-wrapper-disabled.@{ant-radio}-button-wrapper-checked {
+            color: var(--radio-button-checked-disabled-color); // 这个颜色没有在色盘里面
+            background: var(--radio-checked-disabled-bg);
+            border-color: var(--radio-checked-disabled-border-color);
+        }
+
+        .@{ant-radio}-button-wrapper-checked:not(.@{ant-radio}-button-wrapper-disabled):focus-within {
             box-shadow: none;
         }
     }
