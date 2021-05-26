@@ -353,6 +353,12 @@ export const Danger = () => {
                 <Button danger>失败按钮</Button>
                 <Button danger type="primary">失败按钮</Button>
             </Space>
+            <br />
+            <br />
+            <Space>
+                <Button danger disabled>失败按钮</Button>
+                <Button danger type="primary" disabled>失败按钮</Button>
+            </Space>
         </>
     );
 };

@@ -90,6 +90,12 @@
             background-color: ~"var(--color-@{face}-1)";
             border-color: ~"var(--theme-@{face}-color-hover)";
         }
+
+        &[disabled] {
+            color: ~"var(--color-@{face}-3)";
+            background-color: ~"var(--color-@{face}-1)";
+            border-color: ~"var(--color-@{face}-2)";
+        }
     }
 
     .@{osui-button-class-prefix}.@{ant-prefix}-btn-primary.@{osui-button-class-prefix}-face-@{face} {
@@ -111,6 +117,12 @@
             color: var(--color-gray-1);
             background-color: ~"var(--theme-@{face}-color-active)";
             border-color: ~"var(--theme-@{face}-color-active)";
+        }
+
+        &[disabled] {
+            color: ~"var(--color-gray-1)";
+            background-color: ~"var(--color-@{face}-2)";
+            border-color: ~"var(--color-@{face}-2)";
         }
     }
 
