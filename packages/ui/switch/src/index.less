@@ -9,16 +9,22 @@
         &.@{ant-prefix}-switch-small {
             min-width: 28px;
         }
+
+        &-checked {
+            background-color: var(--switch-bg-color);
+        }
     }
 
     &.@{ant-prefix}-switch-disabled {
-        background-color: var(--switch-disable-bg);
-        opacity: 1;
+        opacity: var(--switch-disabled-opacity);
 
         .@{ant-prefix}-switch-handle::before {
-            background-color: var(--switch-handle-disable-bg);
             box-shadow: none;
         }
+    }
+
+    &.@{ant-prefix}-switch-disabled.@{ant-prefix}-switch-checked {
+        opacity: var(--switch-checked-disabled-opacity);
     }
 
     .@{ant-prefix}-switch-inner .osui-icon {
@@ -37,11 +43,21 @@
 
     &.@{ant-prefix}-switch.@{ant-prefix}-switch-checked:not(.@{ant-prefix}-switch-disabled) {
         &:hover {
-            background: var(--theme-primary-color-hover);
+            background: var(--switch-checked-hover-bg);
         }
 
         &:active {
-            background: var(--theme-primary-color-active);
+            background: var(--switch-checked-active-bg);
+        }
+    }
+
+    &.@{ant-prefix}-switch:not(.@{ant-prefix}-switch-disabled) {
+        &:hover {
+            background: var(--switch-hover-bg);
+        }
+
+        &:active {
+            background: var(--switch-active-bg);
         }
     }
 

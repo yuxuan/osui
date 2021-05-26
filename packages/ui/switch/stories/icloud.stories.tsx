@@ -10,9 +10,16 @@ export default {
 export const Demo = () => {
     return (
         <>
+            <h3>基础开关</h3>
             <Space>
                 <Switch />
                 <Switch defaultChecked />
+            </Space>
+            <br />
+            <br />
+            <Space>
+                <Switch loading />
+                <Switch defaultChecked loading />
             </Space>
             <br />
             <br />
@@ -22,6 +29,7 @@ export const Demo = () => {
             </Space>
             <br />
             <br />
+            <h3>含图标和文字的开关</h3>
             <Space>
                 <Switch checkedChildren="开" unCheckedChildren="关" />
                 <Switch
