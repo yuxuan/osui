@@ -28,5 +28,6 @@ const SubMenu: React.FC<AntdSubMenuProps> = ({popupClassName, ...props}) => {
 Menu.Item = AntdMenu.Item;
 Menu.SubMenu = SubMenu;
 Menu.ItemGroup = AntdMenu.ItemGroup;
+Menu.Divider = AntdMenu.Divider;
 
 export default Menu;
