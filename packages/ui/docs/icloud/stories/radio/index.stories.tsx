@@ -13,13 +13,13 @@ export const Demo = () => {
     const [valueButton, setValueButton] = useState('a');
     return (
         <div style={{ padding: 30 }}>
-            <p>基础示例</p>
-            <Radio >Radio</Radio>
-            <Radio defaultChecked >Radio</Radio>
-            <Radio disabled>Radio</Radio>
-            <Radio defaultChecked disabled>Radio</Radio>
+            <h3>1、普通单选</h3>
+            <Radio >单选选项</Radio>
+            <Radio disabled>单选选项</Radio>
+            <Radio defaultChecked >单选选项</Radio>
+            <Radio defaultChecked disabled>单选选项</Radio>
             <p></p>
-            <p>单选组合</p>
+            <h3>2、组合</h3>
             <Group onChange={e => setValue(e.target.value)} value={value}>
                 <Radio value={1}>A</Radio>
                 <Radio value={2}>B</Radio>
@@ -28,6 +28,7 @@ export const Demo = () => {
                 <Radio value={5} disabled>E</Radio>
             </Group>
             <p></p>
+            <h3>3、加强单选</h3>
             <p>按钮样式单选组合</p>
             <Group onChange={e => setValueButton(e.target.value)} value={valueButton}>
                 <RadioButton value="a">Hangzhou</RadioButton>
@@ -36,10 +37,16 @@ export const Demo = () => {
                 <RadioButton value="d">Chengdu</RadioButton>
                 <RadioButton value="e" disabled>guangzhou</RadioButton>
             </Group>
-            <p>hover的效果需要确认</p>
+            <p />
             <Group onChange={e => setValueButton(e.target.value)} value={valueButton} buttonStyle="solid">
                 <RadioButton type="primary" value="a">Hangzhou</RadioButton>
                 <RadioButton value="b">Shanghai</RadioButton>
+                <RadioButton type="primary" disabled value="c" checked>Shanghai</RadioButton>
+            </Group>
+            <p />
+            <Group buttonStyle="solid" value="c">
+                <RadioButton value="b" disabled>Shanghai</RadioButton>
+                <RadioButton type="primary" disabled value="c">Shanghai</RadioButton>
             </Group>
         </div>);
 };

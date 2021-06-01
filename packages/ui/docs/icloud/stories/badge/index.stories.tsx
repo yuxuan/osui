@@ -24,11 +24,6 @@ export const Demo = () => {
                 </Badge>
             </Space>
             <br />
-            <p><strong>FE说明：</strong>Icon可以自由替换，颜色需要用class</p>
-            <Badge count={<ClockCircleOutlined style={{ color: '#f5222d' }} />}>
-                <a href="#" style={{ width: 76, height: 30, background: '#ddd', display: 'inline-block' }} />
-            </Badge>
-            <br />
             <br />
             <h3>红点徽标</h3>
             <Badge dot>
@@ -39,6 +34,11 @@ export const Demo = () => {
             <h3>自定义徽标</h3>
             <p>提示用户某种属性状态。</p>
             <Badge count={99} type="success">
+                <a href="#" style={{ width: 76, height: 30, background: '#ddd', display: 'inline-block' }} />
+            </Badge>
+
+            <p><strong>FE说明：</strong>Icon可以自由替换，颜色需要用class</p>
+            <Badge count={<ClockCircleOutlined style={{ color: '#f5222d' }} />}>
                 <a href="#" style={{ width: 76, height: 30, background: '#ddd', display: 'inline-block' }} />
             </Badge>
         </>
