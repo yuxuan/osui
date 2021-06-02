@@ -17,7 +17,7 @@
     "dist"
   ],
   "sideEffects": [
-    "dist/*"
+    "dist/**"
   ],
   "devDependencies": {
     "@babel/cli": "^7.10.5",
