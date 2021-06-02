@@ -1,4 +1,17 @@
 # Change Log
+# 0.12.15
+只是版本的提升，把1.0.0-beta.x覆盖过去
+
+# 0.12.14
+Menu
+- 导出Menu.Divider
+
+@osui/theme @osui/icloud-theme
+- 调整sideEffects为 dist/** 解决被treeshaking掉的问题
+
+# 0.12.13
+Input
+- 修复onSearch被放到Input上
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
