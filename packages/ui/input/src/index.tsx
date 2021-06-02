@@ -18,7 +18,7 @@ export type InputProps = AntdInputProps;
 interface InputInterface extends React.FC<InputProps> {
     Group: typeof AntdInput.Group;
     Search: typeof Search;
-    TextArea: any;
+    TextArea: typeof AntdInput.TextArea;
     Password: typeof AntdInput.Password;
 }
 

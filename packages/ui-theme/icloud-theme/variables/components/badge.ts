@@ -1,3 +1,3 @@
 export default {
-    '--badge-count-padding': '0 4px',
+    '--badge-count-padding': '0 6px',
 };

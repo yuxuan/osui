@@ -16,8 +16,10 @@ export default {
     '--checkbox-checked-focus-box-shadow': 'var(--theme-component-focus-box-shadow)',
     '--checkbox-checked-disabled-bg': 'var(--color-gray-1)',
     '--checkbox-checked-disabled-border-color': 'var(--theme-border-color-disabled)',
+    '--checkbox-checked-disabled-inner-color': 'var(--theme-border-color-disabled)',
 
     '--checkbox-padding-horizontal': '8px',
     '--checkbox-group-item-margin-right': '8px',
     '--checkbox-border-radius': '4px',
+    '--checkbox-top': '0.2em',
 };

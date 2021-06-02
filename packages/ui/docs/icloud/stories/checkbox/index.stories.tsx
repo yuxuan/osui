@@ -27,12 +27,16 @@ export const Demo = () => {
         <div style={{ padding: 30 }}>
             <h3>1、基础用法</h3>
             <p>默认状态</p>
-            <Checkbox >Checkbox</Checkbox>
-            <Checkbox disabled>Checkbox</Checkbox>
+            <section>
+                <Checkbox >Checkbox</Checkbox>
+                <Checkbox disabled>Checkbox</Checkbox>
+            </section>
             <p />
             <p>选中状态</p>
-            <Checkbox defaultChecked >Checkbox</Checkbox>
-            <Checkbox defaultChecked disabled>Checkbox</Checkbox>
+            <section>
+                <Checkbox defaultChecked >Checkbox</Checkbox>
+                <Checkbox defaultChecked disabled>Checkbox</Checkbox>
+            </section>
             <p />
             <p>部分选中状态</p>
             <Checkbox indeterminate >Checkbox</Checkbox>

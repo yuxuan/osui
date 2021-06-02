@@ -4,6 +4,13 @@
     padding: var(--tag-padding);
     border: 1px solid transparent;
 
+    &.@{ant-prefix}-tag > .anticon + span,
+    &.@{ant-prefix}-tag > span + .anticon,
+    &.@{ant-prefix}-tag > .osui-icon + span,
+    &.@{ant-prefix}-tag > span + .osui-icon {
+        margin-left: 4px;
+    }
+
     > svg.osui-icon {
         height: 12px;
         margin-right: var(--tag-icon-maring-horizontal);
@@ -16,7 +23,7 @@
     }
 
     .@{ant-prefix}-tag-close-icon {
-        margin-left: var(--tag-icon-maring-horizontal);
+        margin-left: 4px;
         color: var(--tag-icon-color);
         line-height: 14px;
         vertical-align: middle;
@@ -95,9 +102,9 @@
 
 .@{osui-tag-class-prefix}-round {
     &.@{ant-prefix}-tag {
-        height: 20px;
-        padding: 0 10px;
-        line-height: 1.5;
+        height: 24px;
+        padding: 0 8px;
+        line-height: 24px;
         border-radius: 14px;
     }
 }

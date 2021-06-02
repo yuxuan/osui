@@ -1,5 +1,5 @@
 export default {
-    '--link-active-color': 'var(--color-brand-7)',
-    '--link-color': 'var(--color-brand-6)',
-    '--link-hover-color': 'var(--color-brand-5)',
+    '--link-color': 'var(--theme-primary-color)',
+    '--link-hover-color': 'var(--theme-primary-color-hover)',
+    '--link-active-color': 'var(--theme-primary-color-active)',
 };

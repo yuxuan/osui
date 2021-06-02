@@ -1,6 +1,6 @@
 import React from 'react';
 import {Divider} from 'antd';
-import {IconPlusOutlined} from '@osui/icons';
+import {IconPlusOutlined} from '@osui/icons-icloud';
 import ClockCircleOutlined from '@ant-design/icons/ClockCircleOutlined';
 import Tag from '@osui/tag';
 

@@ -10,4 +10,6 @@ export default {
     '--pagination-disabled-bg': 'transparent',
     '--pagination-prev-next-icon-color': 'var(--color-gray-7)',
     '--pagination-prev-next-icon-color-disabled': 'var(--color-gray-6)',
+    '--pagination-item-margin-right': '0px',
+    '--pagination-prev-next-border': '0',
 };

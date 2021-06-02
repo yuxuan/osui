@@ -6,8 +6,8 @@ export default {
     '--radio-disabled-bg': 'var(--color-gray-1)',
     '--radio-disabled-dot-color': 'var(--color-gray-6)',
     '--radio-disabled-border-color': 'var(--theme-border-color-disabled)',
-    '--radio-checked-disabled-border-color': 'var(--theme-border-color-disabled)',
-    '--radio-checked-disabled-bg': 'var(--color-gray-1)',
+    '--radio-button-checked-disabled-border-color': 'var(--theme-border-color-disabled)',
+    '--radio-button-checked-disabled-bg': 'var(--color-gray-1)',
     '--radio-button-checked-disabled-color': 'var(--theme-disabled-color)',
     '--radio-button-disabled-color': 'var(--theme-disabled-color)',
     '--radio-button-disabled-border-color': 'var(--color-gray-4)',
@@ -17,4 +17,5 @@ export default {
     '--radio-hover-border-zindex': '0',
     '--radio-span-padding-horizontal': '8px',
     '--radio-wrapper-margin-right': '8px',
+    '--radio-top': '0.2em',
 };

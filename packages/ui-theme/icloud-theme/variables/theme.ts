@@ -17,7 +17,7 @@ export default {
     '--theme-error-color': 'var(--color-error-6)',
     '--theme-heading-color': 'var(--color-gray-9)',
     '--theme-highlight-color': 'var(--color-error-5)',
-    '--theme-icon-color': 'var(--color-gray-7)',
+    '--theme-icon-color': 'var(--color-gray-8)',
     '--theme-info-color-active': 'var(--color-info-7)',
     '--theme-info-color-hover': 'var(--color-info-5)',
     '--theme-info-color': 'var(--color-info-6)',
@@ -38,5 +38,5 @@ export default {
     '--theme-warning-color-active': 'var(--color-warning-7)',
     '--theme-warning-color-hover': 'var(--color-warning-5)',
     '--theme-warning-color': 'var(--color-warning-6)',
-    '--osui-icon-size': '14px',
+    '--osui-icon-size': '16px',
 };

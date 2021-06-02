@@ -7,11 +7,13 @@
     &.@{ant-prefix}-input:focus,
     &.@{ant-prefix}-input-focused {
         background-color: var(--input-focus-background-color) !important;
-        border-color: var(--theme-border-focus-color) !important;
+        border-color: var(--input-focus-border-color) !important;
 
         input.@{ant-prefix}-input {
             background-color: var(--input-focus-background-color) !important;
         }
+
+        box-shadow: var(--input-focus-box-shadow);
     }
 
     .@{ant-prefix}-input-wrapper {

@@ -295,10 +295,7 @@ export const Size = () => {
                 <br />
                 <br />
                 <h3>两个字时没有间距：</h3>
-                <Space>
-                    <Button type="primary">确定</Button>
-                    <Button type="text">取消</Button>
-                </Space>
+                <Button type="primary">确定</Button>
             </ConfigProvider>
         </>
     );
@@ -311,19 +308,19 @@ export const Group = () => {
                 <Blockquote>当有两个以上Button共同出现使用时，考虑用Button Group</Blockquote>
                 <p>Button Group的的几种用法</p>
                 <p>1. 中间有间隔的，可以使用Space，可以参考Space的参数</p>
-                <Space>
+                <Space size="small">
                     <Button size="small">取消</Button>
                     <Button type="primary" size="small">确定</Button>
                 </Space>
                 <br />
                 <br />
-                <Space>
+                <Space size="middle">
                     <Button>取消</Button>
                     <Button type="primary">确定</Button>
                 </Space>
                 <br />
                 <br />
-                <Space>
+                <Space size="large">
                     <Button size="large">取消</Button>
                     <Button size="large" type="primary">确定</Button>
                 </Space>
@@ -366,13 +363,15 @@ export const Danger = () => {
 export const DisabledReasonDemo = () => {
     return (
         <Button
-            type="primary"
+            flexCenter
             disabled
+            type="primary"
             disabledReason="您没有权限使用这个功能"
             icon={<IconPlusOutlined />}
         >
             申请创建资源账户
         </Button>
+
     );
 };
 

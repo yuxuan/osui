@@ -65,7 +65,7 @@
 
     .@{ant-radio}-disabled.@{ant-radio}-checked .@{ant-radio}-inner,
     .@{ant-radio}-disabled.@{ant-radio}-checked::after {
-        border-color: var(--radio-checked-disabled-border-color) !important;
+        border-color: var(--radio-button-checked-disabled-border-color) !important;
     }
 
     .@{ant-radio}.@{ant-radio}-checked:not(.@{ant-radio}-disabled):focus .@{ant-radio}-inner {
@@ -121,12 +121,16 @@
 
         .@{ant-radio}-button-wrapper-disabled.@{ant-radio}-button-wrapper-checked {
             color: var(--radio-button-checked-disabled-color); // 这个颜色没有在色盘里面
-            background: var(--radio-checked-disabled-bg);
-            border-color: var(--radio-checked-disabled-border-color);
+            background: var(--radio-button-checked-disabled-bg);
+            border-color: var(--radio-button-checked-disabled-border-color);
         }
 
         .@{ant-radio}-button-wrapper-checked:not(.@{ant-radio}-button-wrapper-disabled):focus-within {
             box-shadow: none;
         }
+    }
+
+    .@{ant-radio} {
+        top: var(--radio-top);
     }
 }

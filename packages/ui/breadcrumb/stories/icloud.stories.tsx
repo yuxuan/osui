@@ -33,24 +33,6 @@ export const Demo = () => {
                 </Breadcrumb.Item>
             </Breadcrumb>
             <br />
-            <p>不同的<code>font-size</code> 12px </p>
-            <Breadcrumb style={{fontSize: '12px'}}>
-                <Breadcrumb.Item>
-                    <a href="">一级页面名称</a>
-                </Breadcrumb.Item>
-                <Breadcrumb.Item>
-                    <a href="">二级页面名称</a>
-                </Breadcrumb.Item>
-                <Breadcrumb.Item>
-                    <a href="">三级页面名称</a>
-                </Breadcrumb.Item>
-                <Breadcrumb.Item>
-                    <a href="">四级页面名称</a>
-                </Breadcrumb.Item>
-                <Breadcrumb.Item>
-                    <a href="">末级页面名称</a>
-                </Breadcrumb.Item>
-            </Breadcrumb>
         </>
     );
 };
@@ -188,7 +170,7 @@ export const Dropdown = () => {
 export const EllipsisText = () => {
     return (
         <>
-            <p>单层级字符数超过20个时省略文字内容，可hover展示详情：</p>
+            <p>单层级字符数超过154px时省略文字内容，可hover展示详情：</p>
             <p>当使用TextOverflowTooltip的时候，需要调整一下a标签的布局居中</p>
             <Breadcrumb>
                 <Breadcrumb.Item>
@@ -196,7 +178,7 @@ export const EllipsisText = () => {
                 </Breadcrumb.Item>
                 <Breadcrumb.Item>
                     <a href="" style={{display: 'inline-flex', 'alignItems': 'center'}}>
-                        <TextOverflowTooltip maxWidth={50} title="名字特别长的时候需要hover上去才显示">
+                        <TextOverflowTooltip maxWidth={154} title="名字特别长的时候需要hover上去才显示">
                             名字特别长的时候需要hover上去才显示
                         </TextOverflowTooltip>
                     </a>

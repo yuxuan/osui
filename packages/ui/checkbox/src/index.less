@@ -17,6 +17,10 @@
         padding-right: var(--checkbox-padding-horizontal);
         padding-left: var(--checkbox-padding-horizontal);
     }
+
+    .@{ant-checkbox} {
+        top: var(--checkbox-top);
+    }
 }
 
 // 一般状态
@@ -51,7 +55,7 @@
         border-color: var(--checkbox-disabled-border-color) !important;
 
         &::after {
-            border-color: var(--checkbox-disabled-border-color);
+            border-color: var(--checkbox-checked-disabled-inner-color);
         }
     }
 
@@ -90,7 +94,7 @@
         border-color: var(--checkbox-checked-disabled-border-color) !important;
 
         &::after {
-            border-color: var(--checkbox-checked-disabled-border-color);
+            border-color: var(--checkbox-checked-disabled-inner-color);
         }
     }
 }

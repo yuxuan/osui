@@ -1,11 +1,23 @@
 @osui-breadcrumb-class-prefix: osui-breadcrumb;
 
 .@{osui-breadcrumb-class-prefix} {
+    font-size: 14px; // 设计需求，固定面包屑字号为14px
+
     &.@{ant-prefix}-breadcrumb > span:last-child:not(:first-child) {
         font-weight: var(--breadcrumb-last-child-font-weight);
     }
 
     &-ellipsis {
         cursor: pointer;
+    }
+
+    &.@{ant-prefix}-breadcrumb a {
+        &:hover {
+            color: var(--link-hover-color);
+        }
+
+        &:active {
+            color: var(--link-active-color);
+        }
     }
 }

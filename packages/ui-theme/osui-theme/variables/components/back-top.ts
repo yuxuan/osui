@@ -6,5 +6,4 @@ export default {
     '--back-top-transparent-hover-bg': 'rgba(0,0,0,.5)',
     '--back-top-transparent-active-bg': 'rgba(0,0,0,.7)',
     '--back-top-icon-size': '24px',
-    '--badge-count-padding': '0 6px',
 };

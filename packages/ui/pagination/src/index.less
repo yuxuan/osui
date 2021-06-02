@@ -1,9 +1,8 @@
 @osui-pagination-class-prefix: osui-pagination;
 
 .@{osui-pagination-class-prefix} {
-    .@{ant-prefix}-pagination-item,
-    .@{ant-prefix}-pagination-next,
-    .@{ant-prefix}-pagination-prev {
+    .@{ant-prefix}-pagination-item {
+        margin-right: var(--pagination-item-margin-right);
         border: 1px solid var(--pagination-item-border-color);
 
         &:hover {
@@ -18,6 +17,24 @@
 
     .@{ant-prefix}-pagination-next,
     .@{ant-prefix}-pagination-prev {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: var(--pagination-item-margin-right);
+        border: var(--pagination-prev-next-border);
+
+        &:hover {
+            svg {
+                color: var(--theme-primary-color-hover);
+            }
+        }
+
+        &:active {
+            svg {
+                color: var(--theme-primary-color-active);
+            }
+        }
+
         svg {
             color: var(--pagination-prev-next-icon-color);
         }
@@ -118,5 +135,18 @@
         color: var(--theme-disabled-color);
         background: var(--theme-disabled-bg);
         border-color: var(--theme-border-color-disabled);
+    }
+
+    .@{ant-prefix}-select-single:not(.@{ant-prefix}-select-customize-input) .@{ant-prefix}-select-selector {
+        padding: 0 8px;
+    }
+
+    .@{ant-prefix}-pagination-options {
+        margin-left: 5px;
+    }
+
+    .@{ant-prefix}-select-single.@{ant-prefix}-select-show-arrow .@{ant-prefix}-select-selection-item,
+    .@{ant-prefix}-select-single.@{ant-prefix}-select-show-arrow .@{ant-prefix}-select-selection-placeholder {
+        padding-right: 23px;
     }
 }

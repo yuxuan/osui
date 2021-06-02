@@ -2,20 +2,27 @@
 
 @button-types: default, strong, primary, link, text, icon;
 
-.button-color-mixin(@color; @background; @border-color) {
+.button-color-mixin(@color; @background; @border-color; @icon-color) {
     color: @color;
     background: @background;
     border-color: @border-color;
+
+    svg {
+        color: @icon-color;
+    }
 }
 
 .generate(@i: length(@button-types)) when (@i > 0) {
     @type: extract(@button-types, @i);
 
-    .@{osui-button-class-prefix}.@{ant-prefix}-btn-@{type} {
+    .@{osui-button-class-prefix}.@{ant-prefix}-btn-@{type},
+    .@{osui-button-class-prefix} .@{ant-prefix}-btn-@{type} {
+
         .button-color-mixin(
             ~'var(--btn-@{type}-color)';
             ~'var(--btn-@{type}-bg)';
             ~'var(--btn-@{type}-border-color)';
+            ~'var(--btn-@{type}-icon-color)';
         );
 
         &:hover {
@@ -23,6 +30,7 @@
                 ~'var(--btn-@{type}-hover-color)';
                 ~'var(--btn-@{type}-hover-bg)';
                 ~'var(--btn-@{type}-hover-border-color)';
+                ~'var(--btn-@{type}-hover-color)';
             );
         }
 
@@ -31,6 +39,7 @@
                 ~'var(--btn-@{type}-focus-color)';
                 ~'var(--btn-@{type}-focus-bg)';
                 ~'var(--btn-@{type}-focus-border-color)';
+                ~'var(--btn-@{type}-focus-color)';
             );
 
             box-shadow: var(--theme-component-focus-box-shadow);
@@ -41,6 +50,7 @@
                 ~'var(--btn-@{type}-active-color)';
                 ~'var(--btn-@{type}-active-bg)';
                 ~'var(--btn-@{type}-active-border-color)';
+                ~'var(--btn-@{type}-active-color)';
             );
         }
 
@@ -49,6 +59,7 @@
                 ~'var(--btn-@{type}-disable-color)';
                 ~'var(--btn-@{type}-disable-bg)';
                 ~'var(--btn-@{type}-disable-border-color)';
+                ~'var(--btn-@{type}-disable-color)';
             );
         }
 
@@ -57,6 +68,7 @@
                 ~'var(--btn-@{type}-loading-color)';
                 ~'var(--btn-@{type}-loading-bg)';
                 ~'var(--btn-@{type}-loading-border-color)';
+                ~'var(--btn-@{type}-loading-color)';
             );
         }
     }
@@ -132,12 +144,13 @@
 .generate-face();
 
 .@{osui-button-class-prefix} {
-    &-flex-center {
+    &-flex-center,
+    &-flex-center .@{ant-prefix}-btn {
         display: inline-flex;
         align-items: center;
     }
 
-    & > svg + span {
+    & .osui-icon + span {
         margin-left: 4px;
     }
 
@@ -153,8 +166,10 @@
 
     &.@{ant-prefix}-btn-link,
     &.@{ant-prefix}-btn-text {
+        height: auto;
         margin: var(--btn-link-margin);
         padding: var(--btn-link-padding);
+        border: 0;
 
         & span:hover {
             text-decoration: var(--btn-link-text-decoration);
@@ -182,6 +197,7 @@
         ~'var(--btn-icon-color)';
         ~'var(--btn-icon-bg)';
         ~'var(--btn-icon-border-color)';
+        ~'var(--btn-icon-color)';
     );
 
     &:hover {
@@ -189,6 +205,7 @@
             ~'var(--btn-icon-hover-color)';
             ~'var(--btn-icon-hover-bg)';
             ~'var(--btn-icon-hover-border-color)';
+            ~'var(--btn-icon-hover-color)';
         );
     }
 
@@ -197,6 +214,7 @@
             ~'var(--btn-icon-focus-color)';
             ~'var(--btn-icon-focus-bg)';
             ~'var(--btn-icon-focus-border-color)';
+            ~'var(--btn-icon-focus-color)';
         );
 
         box-shadow: var(--theme-component-focus-box-shadow);
@@ -207,6 +225,7 @@
             ~'var(--btn-icon-active-color)';
             ~'var(--btn-icon-active-bg)';
             ~'var(--btn-icon-active-border-color)';
+            ~'var(--btn-icon-active-color)';
         );
     }
 
@@ -221,6 +240,7 @@
             ~'var(--btn-icon-disable-color)';
             transparent;
             ~'var(--btn-icon-disable-border-color)';
+            ~'var(--btn-icon-disable-color)';
         );
     }
 
@@ -229,6 +249,7 @@
             ~'var(--btn-icon-loading-color)';
             ~'var(--btn-icon-loading-bg)';
             ~'var(--btn-icon-loading-border-color)';
+            ~'var(--btn-icon-loading-color)';
         );
     }
 }

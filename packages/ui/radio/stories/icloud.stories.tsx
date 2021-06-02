@@ -38,15 +38,17 @@ export const Demo = () => {
                 <RadioButton value="e" disabled>guangzhou</RadioButton>
             </Group>
             <p />
-            <Group onChange={e => setValueButton(e.target.value)} value={valueButton} buttonStyle="solid">
-                <RadioButton type="primary" value="a">Hangzhou</RadioButton>
-                <RadioButton value="b">Shanghai</RadioButton>
-                <RadioButton type="primary" disabled value="c" checked>Shanghai</RadioButton>
+            <Group onChange={e => setValueButton(e.target.value)} value={valueButton}>
+                <RadioButton value="a">Hangzhou</RadioButton>
+                <RadioButton value="b" disabled>Shanghai</RadioButton>
+                <RadioButton value="c">Beijing</RadioButton>
+                <RadioButton value="d">Chengdu</RadioButton>
+                <RadioButton value="e" disabled>guangzhou</RadioButton>
             </Group>
             <p />
             <Group buttonStyle="solid" value="c">
                 <RadioButton value="b" disabled>Shanghai</RadioButton>
-                <RadioButton type="primary" disabled value="c">Shanghai</RadioButton>
+                <RadioButton disabled value="c">Shanghai</RadioButton>
             </Group>
         </div>);
 };

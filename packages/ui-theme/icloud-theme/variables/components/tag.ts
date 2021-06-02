@@ -19,7 +19,7 @@ export default {
     '--tag-yellow-bg-color': 'var(--color-warning-1)',
     '--tag-yellow-font-color': 'var(--color-warning-6)',
     '--tag-yellow-solid-bg-color': 'var(--color-warning-6)',
-    '--tag-padding': '0 5px',
-    '--tag-icon-maring-horizontal': '10px',
+    '--tag-padding': '0 8px',
+    '--tag-icon-maring-horizontal': '0px',
     '--tag-icon-color': 'var(--color-gray-7)',
 };

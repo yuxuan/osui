@@ -15,10 +15,11 @@ export default {
     '--checkbox-checked-focus-border-color': 'var(--theme-primary-color-active)',
     '--checkbox-checked-focus-box-shadow': 'var(--theme-component-focus-box-shadow)',
     '--checkbox-checked-disabled-bg': 'var(--color-brand-2)',
-    '--checkbox-checked-disabled-border-color': 'var(--color-gray-1)',
+    '--checkbox-checked-disabled-border-color': 'var(--color-brand-2)',
+    '--checkbox-checked-disabled-inner-color': 'var(--color-gray-1)',
 
-    '--checkbox-padding-horizontal': '5px',
-    '--checkbox-group-item-margin-right': '15px',
+    '--checkbox-padding-horizontal': '8px',
+    '--checkbox-group-item-margin-right': '12px',
     '--checkbox-border-radius': '0px',
-
+    '--checkbox-top': '3px',
 };
