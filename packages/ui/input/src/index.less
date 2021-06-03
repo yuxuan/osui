@@ -1,156 +1,32 @@
 @osui-input-class-prefix: osui-input;
 
+// affix select
+.osui-select {
+    &.@{ant-prefix}-select-single.@{ant-prefix}-select-open .@{ant-prefix}-select-selection-item {
+        color: var(--theme-primary-color-active);
+    }
+
+    &.@{ant-prefix}-select-focused {
+        .@{ant-prefix}-select-selection-item {
+            color: var(--theme-primary-color-active);
+        }
+    }
+}
+
+.@{osui-input-class-prefix} {
+    .@{ant-prefix}-select-single.@{ant-prefix}-select-open .@{ant-prefix}-select-selection-item {
+        color: var(--theme-primary-color-active);
+    }
+}
+
+/* stylelint-disable no-duplicate-selectors */
 .@{osui-input-class-prefix} {
     // focus
     &.@{ant-prefix}-input-affix-wrapper:focus,
     &.@{ant-prefix}-input-affix-wrapper-focused,
     &.@{ant-prefix}-input:focus,
     &.@{ant-prefix}-input-focused {
-        background-color: var(--input-focus-background-color) !important;
-        border-color: var(--input-focus-border-color) !important;
-
-        input.@{ant-prefix}-input {
-            background-color: var(--input-focus-background-color) !important;
-        }
-
         box-shadow: var(--input-focus-box-shadow);
-    }
-
-    .@{ant-prefix}-input-wrapper {
-        // 只有是第二个child时左右的border才全都隐藏掉，[prefix][input][suffix]
-        // 不是第一个，也不是最后一个，因为[prefix][input]，[input][suffix]需要保留input的border
-        .@{ant-prefix}-input-group-addon + input {
-            border-left: 0;
-        }
-
-        input:first-child {
-            border-right: 0 !important;
-        }
-
-        input:not(:first-child):not(:last-child) {
-            border-right: 0;
-            border-left: 0;
-        }
-    }
-
-    // input group hover
-    .@{ant-prefix}-input-group {
-        &:hover {
-            .@{ant-prefix}-input-group-addon {
-                background-color: rgba(16, 140, 238, .05);
-                border-color: var(--theme-primary-color-hover);
-            }
-
-            input {
-                border-color: var(--theme-primary-color-hover);
-            }
-
-            input:first-child {
-                border: 1px solid var(--theme-primary-color-hover);
-            }
-        }
-    }
-
-    // input group focused
-    &-focused {
-        .@{ant-prefix}-input-group,
-        .@{ant-prefix}-input-group:hover {
-            .@{ant-prefix}-input-group-addon {
-                background-color: var(--input-group-addon-focus-bg);
-                border-color: var(--theme-primary-color-active);
-            }
-
-            input {
-                background-color: var(--input-focus-background-color);
-                border-color: var(--theme-primary-color-active);
-            }
-
-            input:first-child {
-                border: 1px solid var(--theme-primary-color-active);
-            }
-        }
-    }
-
-    // input group disabled
-    &-disabled {
-        .@{ant-prefix}-input-group {
-            .@{ant-prefix}-input-group-addon {
-                background-color: var(--theme-border-color-disabled) !important;
-                border-color: var(--theme-border-color-disabled) !important;
-            }
-
-            input {
-                border-color: var(--theme-border-color-disabled) !important;
-            }
-
-            // disabled时hover
-            &:hover {
-                .@{ant-prefix}-input-group-addon {
-                    border-color: var(--theme-border-color-disabled);
-                }
-            }
-
-            input:first-child,
-            .@{ant-prefix}-input-search-button {
-                border-color: var(--theme-border-color-disabled) !important;
-            }
-        }
-
-        &,
-        &.@{ant-prefix}-input-disabled,
-        &.@{ant-prefix}-input-search {
-            border-color: var(--theme-border-color-disabled);
-
-            &:hover {
-                border-color: var(--theme-border-color-disabled);
-            }
-        }
-
-        // search icon disabled, clear icon
-        .@{osui-input-class-prefix}-search-icon,
-        .@{ant-prefix}-input-clear-icon {
-            color: var(--theme-disabled-color);
-            cursor: pointer;
-
-            &:hover {
-                color: var(--theme-disabled-color);
-            }
-        }
-    }
-
-    // affix
-    &.@{ant-prefix}-input-affix-wrapper-disabled {
-        &,
-        &:hover {
-            border-color: var(--theme-border-color-disabled);
-        }
-    }
-
-    .@{ant-prefix}-input-group-addon + .@{ant-prefix}-input-affix-wrapper {
-        border-left: 0;
-    }
-
-    .@{ant-prefix}-input-affix-wrapper {
-        > input {
-            border: 0 !important;
-        }
-
-        > input:focus {
-            background-color: var(--input-focus-background-color);
-        }
-
-        &.@{ant-prefix}-input-affix-wrapper-focused {
-            background-color: var(--input-focus-background-color);
-            border-color: var(--theme-primary-color-active);
-        }
-
-        &.@{ant-prefix}-input-affix-wrapper-disabled {
-            border-color: var(--theme-border-color-disabled);
-        }
-    }
-
-    .@{ant-prefix}-select-single.@{ant-prefix}-select-open .@{ant-prefix}-select-selection-item {
-        color: var(--theme-primary-color-active);
     }
 
     .@{ant-prefix}-input-suffix > svg {
@@ -158,7 +34,52 @@
         height: var(--input-suffix-icon-size);
     }
 
-    &.@{ant-prefix}-input-affix-wrapper {
+    &-disabled {
+        .@{ant-prefix}-input-group-addon {
+            background: var(--theme-disabled-bg);
+        }
+    }
+
+    &:not(&-disabled) {
+        .@{ant-prefix}-input-group-addon {
+            background: var(--theme-component-bg);
+
+            &:hover {
+                border-color: var(--theme-primary-color-hover);
+            }
+
+            &:active {
+                border-color: var(--theme-primary-color-active);
+            }
+
+            &:first-child {
+                border-right: 1px solid transparent;
+
+                &:hover {
+                    border-right: 1px solid var(--theme-primary-color-hover);
+                }
+
+                &:active {
+                    border-right: 1px solid var(--theme-primary-color-active);
+                }
+            }
+
+            &:last-child {
+                border-left: 1px solid transparent;
+
+                &:hover {
+                    border-left: 1px solid var(--theme-primary-color-hover);
+                }
+
+                &:active {
+                    border-right: 1px solid var(--theme-primary-color-active);
+                }
+            }
+        }
+    }
+
+    &.@{ant-prefix}-input-affix-wrapper,
+    & .@{ant-prefix}-input-affix-wrapper {
         padding-right: var(--input-affix-wrapper-padding-horizontal);
         padding-left: var(--input-affix-wrapper-padding-horizontal);
     }
@@ -175,5 +96,43 @@
 
     .@{ant-prefix}-input-clear-icon {
         margin: 0 var(--input-affix-margin);
+    }
+
+    // 表单内报错样式覆盖
+    .@{ant-prefix}-form-item-has-error & {
+        .@{ant-prefix}-input-group-addon {
+            border-color: var(--theme-error-color) !important;
+
+            &:first-child {
+                border-right: 1px solid transparent !important;
+            }
+
+            &:last-child {
+                border-left: 1px solid transparent !important;
+            }
+        }
+
+        &.@{ant-prefix}-input-affix-wrapper:not(.@{ant-prefix}-input-affix-wrapper-disabled) {
+            border-color: var(--theme-error-color) !important;
+        }
+    }
+
+    &[disabled],
+    &-disabled {
+        &,
+        &.@{ant-prefix}-input,
+        .@{ant-prefix}-input,
+        .@{ant-prefix}-input-group-addon {
+            border-color: var(--theme-border-color-disabled) !important;
+
+            &:hover,
+            &:active {
+                border-color: var(--theme-border-color-disabled) !important;
+            }
+        }
+    }
+
+    .@{ant-prefix}-input-group .@{ant-prefix}-input-suffix .@{ant-prefix}-input-clear-icon {
+        margin-right: 0;
     }
 }

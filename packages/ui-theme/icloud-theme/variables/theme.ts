@@ -6,7 +6,7 @@ export default {
     '--theme-border-color-disabled': 'var(--color-gray-5)',
     '--theme-border-color-inverse': '#fff',
     '--theme-border-color-split': 'var(--color-gray-4)',
-    '--theme-border-focus-color': 'var(--theme-primary-color-active)',
+    '--theme-border-focus-color': 'var(--theme-primary-color)',
     '--theme-color-text': 'var(--color-gray-8)',
     '--theme-component-bg': 'var(--color-gray-1)',
     '--theme-component-focus-box-shadow': 'none',

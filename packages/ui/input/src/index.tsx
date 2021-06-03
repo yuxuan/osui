@@ -2,6 +2,7 @@ import React, { useCallback, useState, useRef, useMemo } from 'react';
 import { Input as AntdInput } from 'antd';
 import {composeRef} from 'rc-util/lib/ref';
 import {useBrandContext} from '@osui/brand-provider';
+import Button from '@osui/button';
 import {IconSearchOutlined} from '@osui/icons';
 import {
     InputProps as AntdInputProps,
@@ -79,6 +80,8 @@ const Search = React.forwardRef<any, SearchProps>(
             onSearch,
             // withSuffixIcon会与enterButton相冲突，不能同时使用
             withSuffixIcon,
+            enterButton,
+            loading,
             suffix,
             ...inputProps
         } = props;
@@ -150,7 +153,17 @@ const Search = React.forwardRef<any, SearchProps>(
             },
             [suffix, innerWithSuffixIcon, handleClick]
         );
-        if (innerWithSuffixIcon) {
+
+        const innerEnterButton = useMemo(
+            () => {
+                if (typeof enterButton === 'string') {
+                    return <Button flexCenter loading={loading} type="primary">{enterButton}</Button>;
+                }
+                return enterButton;
+            },
+            [enterButton, loading]
+        );
+        if (innerWithSuffixIcon && !enterButton) {
             return (
                 <AntdInput
                     ref={composeRef(inputRef, ref)}
@@ -173,6 +186,8 @@ const Search = React.forwardRef<any, SearchProps>(
                 disabled={disabled}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                enterButton={innerEnterButton}
+                loading={loading}
             />);
     }
 );

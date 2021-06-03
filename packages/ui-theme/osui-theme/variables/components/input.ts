@@ -2,6 +2,7 @@ export default {
     '--input-error-focus-background-color': 'var(--theme-component-bg)',
     '--input-focus-background-color': 'var(--theme-component-bg)',
     '--input-warning-focus-background-color': 'var(--theme-component-bg)',
+    '--input-focus-border-color': 'var(--theme-border-focus-color)',
     '--input-number-input-height': '28px',
     '--input-number-width': '90px',
     '--input-suffix-icon-size': '16px',
