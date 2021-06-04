@@ -29,6 +29,7 @@ import tag from './tag';
 import timeline from './timeline';
 import tooltip from './tooltip';
 import tree from './tree';
+import treeselect from './tree-select';
 
 export default {
     ...alert,
@@ -62,5 +63,6 @@ export default {
     ...timeline,
     ...tooltip,
     ...tree,
+    ...treeselect,
 };
 

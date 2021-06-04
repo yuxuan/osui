@@ -36,7 +36,7 @@ export const Demo = () => {
                             <TreeNode value="leaf2" title="your leaf" />
                         </TreeNode>
                         <TreeNode value="parent 1-1" title="parent 1-1">
-                            <TreeNode value="sss" title={<b style={{ color: '#08c' }}>sss</b>} />
+                            <TreeNode value="sss" title="sss" />
                         </TreeNode>
                     </TreeNode>
                 </TreeSelect>
