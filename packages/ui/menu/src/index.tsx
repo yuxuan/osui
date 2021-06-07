@@ -1,5 +1,6 @@
 import React from 'react';
 import {Menu as AntdMenu} from 'antd';
+import hoistNonReactStatics from 'hoist-non-react-statics';
 import {MenuProps as AntdMenuProps} from 'antd/lib/menu';
 import {SubMenuProps as AntdSubMenuProps} from 'antd/lib/menu/SubMenu';
 import classNames from 'classnames';
@@ -9,9 +10,7 @@ import './index.less';
 const clsPrefix = 'osui-menu';
 
 export interface MenuInterface extends React.FC<AntdMenuProps> {
-    Item: typeof AntdMenu.Item;
     SubMenu: typeof SubMenu;
-    ItemGroup: typeof AntdMenu.ItemGroup;
 }
 
 const Menu: MenuInterface = ({className, expandIcon, ...props}) => {
@@ -25,9 +24,7 @@ const SubMenu: React.FC<AntdSubMenuProps> = ({popupClassName, ...props}) => {
     return <AntdMenu.SubMenu popupClassName={innerPopupClassName} {...props} />;
 };
 
-Menu.Item = AntdMenu.Item;
+hoistNonReactStatics(Menu, AntdMenu);
 Menu.SubMenu = SubMenu;
-Menu.ItemGroup = AntdMenu.ItemGroup;
-Menu.Divider = AntdMenu.Divider;
 
-export default Menu;
+export default Menu as unknown as typeof AntdMenu;

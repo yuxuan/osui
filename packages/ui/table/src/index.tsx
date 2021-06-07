@@ -144,6 +144,6 @@ function Table<RecordType extends Record<string, any>>(
     );
 }
 
-const hoisted = hoistNonReactStatics(Table, AntdTable) as typeof AntdTable & typeof Table;
+hoistNonReactStatics(Table, AntdTable);
 
-export default hoisted;
+export default Table as unknown as typeof AntdTable & typeof Table;

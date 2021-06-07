@@ -1,3 +1,4 @@
+/* eslint-disable react/no-multi-comp */
 import React from 'react';
 import Switch from '@osui/switch';
 import Radio from '@osui/radio';
@@ -187,6 +188,7 @@ export const ExpandableDemo = () => {
 };
 
 export const CheckboxDemo = () => {
+
     const columns = [
         {
             title: 'Name',
@@ -195,56 +197,80 @@ export const CheckboxDemo = () => {
         {
             title: 'Age',
             dataIndex: 'age',
-            sorter: (a, b) => a.age - b.age,
         },
         {
             title: 'Address',
             dataIndex: 'address',
-            filters: [
-                {
-                    text: 'London',
-                    value: 'London',
-                },
-                {
-                    text: 'New York',
-                    value: 'New York',
-                },
-            ],
-            onFilter: (value, record) => record.address.indexOf(value) === 0,
-        },
-        {
-            title: 'Action',
-            key: 'action',
-            sorter: true,
-            render: () => (
-                <Space size="small">
-                    <a>Delete</a>
-                </Space>
-            ),
         },
     ];
 
     const data = [];
-    for (let i = 1; i <= 100; i++) {
+    for (let i = 0; i < 46; i++) {
         data.push({
             key: i,
-            name: 'John Brown',
-            age: `${i}2`,
-            address: `New York No. ${i} Lake Park`,
-            description: `My name is John Brown, I am ${i}2 years old, living in New York No. ${i} Lake Park.`,
+            name: `Edward King ${i}`,
+            age: 32,
+            address: `London, Park Lane no. ${i}`,
         });
     }
 
+    class App extends React.Component {
+        state = {
+            selectedRowKeys: [], // Check here to configure the default column
+        };
+
+        onSelectChange = selectedRowKeys => {
+            console.log('selectedRowKeys changed: ', selectedRowKeys);
+            this.setState({ selectedRowKeys });
+        };
+
+        render() {
+            const { selectedRowKeys } = this.state;
+            const rowSelection = {
+                selectedRowKeys,
+                onChange: this.onSelectChange,
+                selections: [
+                    Table.SELECTION_ALL,
+                    Table.SELECTION_INVERT,
+                    Table.SELECTION_NONE,
+                    {
+                        key: 'odd',
+                        text: 'Select Odd Row',
+                        onSelect: changableRowKeys => {
+                            let newSelectedRowKeys = [];
+                            newSelectedRowKeys = changableRowKeys.filter((key, index) => {
+                                if (index % 2 !== 0) {
+                                    return false;
+                                }
+                                return true;
+                            });
+                            this.setState({ selectedRowKeys: newSelectedRowKeys });
+                        },
+                    },
+                    {
+                        key: 'even',
+                        text: 'Select Even Row',
+                        onSelect: changableRowKeys => {
+                            let newSelectedRowKeys = [];
+                            newSelectedRowKeys = changableRowKeys.filter((key, index) => {
+                                if (index % 2 !== 0) {
+                                    return true;
+                                }
+                                return false;
+                            });
+                            this.setState({ selectedRowKeys: newSelectedRowKeys });
+                        },
+                    },
+                ],
+            };
+            return <Table rowSelection={rowSelection} columns={columns} dataSource={data} />;
+        }
+    }
+
     return (
-        <>
-            <BrandProvider brand="icloud">
-                <Table
-                    columns={columns}
-                    dataSource={data}
-                    rowSelection={{type: 'checkbox'}}
-                />
-            </BrandProvider>
-        </>
+        <BrandProvider brand="icloud">
+            <App />
+        </BrandProvider>
     );
 };
 

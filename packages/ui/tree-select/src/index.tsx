@@ -15,4 +15,6 @@ const TreeSelect: TreeSelectFC = ({className, dropdownClassName, ...props}) => {
     return <AntdTreeSelect className={innerClassName} dropdownClassName={innerDropdownClassName} {...props} />;
 };
 
-export default hoistNonReactStatics(TreeSelect, AntdTreeSelect) as TreeSelectFC;
+hoistNonReactStatics(TreeSelect, AntdTreeSelect);
+
+export default TreeSelect;
