@@ -1,6 +1,7 @@
 /* eslint-disable complexity */
 import React, {useContext, useMemo} from 'react';
 import {Table as AntdTable} from 'antd';
+import hoistNonReactStatics from 'hoist-non-react-statics';
 import {ConfigContext} from 'antd/lib/config-provider';
 import {
     TableProps as AntdTableProps,
@@ -143,10 +144,6 @@ function Table<RecordType extends Record<string, any>>(
     );
 }
 
-Table.SELECTION_ALL = AntdTable.SELECTION_ALL;
-Table.SELECTION_INVERT = AntdTable.SELECTION_INVERT;
-Table.Column = AntdTable.Column;
-Table.ColumnGroup = AntdTable.ColumnGroup;
-Table.Summary = AntdTable.Summary;
+const hoisted = hoistNonReactStatics(Table, AntdTable) as typeof AntdTable & typeof Table;
 
-export default Table;
+export default hoisted;

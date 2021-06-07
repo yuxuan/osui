@@ -69,7 +69,8 @@
     },
     "dependencies": {
         "@osui/pagination": "^1.0.0-beta.2",
-        "classnames": "^2.2.6"
+        "classnames": "^2.2.6",
+        "hoist-non-react-statics": "^3.3.2"
     },
     "publishConfig": {
         "access": "public",
