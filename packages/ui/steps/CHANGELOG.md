@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/steps@0.12.1...@osui/steps@1.0.0) (2021-06-07)
+
+
+
+# 1.0.0-beta.1 (2021-05-18)
+
+
+
+# 1.0.0-beta.0 (2021-05-17)
+
+**Note:** Version bump only for package @osui/steps
+
+
+
+
+
 # [1.0.0-beta.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.0...v1.0.0-beta.1) (2021-05-18)
 
 **Note:** Version bump only for package @osui/steps

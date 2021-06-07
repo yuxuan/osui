@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@1.0.0-beta.2...@osui/theme@1.0.0) (2021-06-07)
+
+
+### Bug Fixes
+
+* 冻结规范样式调整 ([8d795b8](https://gitee.com/gitee-fe/osui/tree/master/commits/8d795b8ebc6355ae8094f4c1e3252b6c50989c2f))
+* 修复tree-select选中颜色 ([6000504](https://gitee.com/gitee-fe/osui/tree/master/commits/6000504f550ff71b716c4b5b246be720bfbfa56d))
+* checkbox 样式调整 ([0ce34ad](https://gitee.com/gitee-fe/osui/tree/master/commits/0ce34ad7c94f5c230ebd8266cf896224ece3d158))
+* input 样式 ([27571ed](https://gitee.com/gitee-fe/osui/tree/master/commits/27571ed46443ff32db3b195a8a4bc45749c4f2e5))
+* radio disabled border ([7856860](https://gitee.com/gitee-fe/osui/tree/master/commits/78568607c53b6c082288850a17c2fffafc0e9848))
+* radio样式调整 ([a32b9d0](https://gitee.com/gitee-fe/osui/tree/master/commits/a32b9d0b5b3e75052e64b5d87844e066516a4401))
+* switch 调整 ([3e29a3e](https://gitee.com/gitee-fe/osui/tree/master/commits/3e29a3eb7aea8f8953204b1d780f62c135cf2475))
+
+
+
+
+
 # [1.0.0-beta.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@1.0.0-beta.1...@osui/theme@1.0.0-beta.2) (2021-05-21)
 
 

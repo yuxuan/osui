@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/radio@0.12.1...@osui/radio@1.0.0) (2021-06-07)
+
+
+### Bug Fixes
+
+* 冻结规范样式调整 ([8d795b8](https://gitee.com/gitee-fe/osui/tree/master/commits/8d795b8ebc6355ae8094f4c1e3252b6c50989c2f))
+* radio样式调整 ([a32b9d0](https://gitee.com/gitee-fe/osui/tree/master/commits/a32b9d0b5b3e75052e64b5d87844e066516a4401))
+
+
+
+# 1.0.0-beta.1 (2021-05-18)
+
+
+
+# 1.0.0-beta.0 (2021-05-17)
+
+
+
+
+
 # [1.0.0-beta.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.0...v1.0.0-beta.1) (2021-05-18)
 
 **Note:** Version bump only for package @osui/radio

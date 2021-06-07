@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://gitee.com/gitee-fe/osui/compare/@osui/icons@0.11.2...@osui/icons@1.0.0) (2021-06-07)
+
+
+
+# 0.12.0 (2021-03-31)
+
+**Note:** Version bump only for package @osui/icons
+
+
+
+
+
 # [0.12.0](https://gitee.com/gitee-fe/osui/compare/v0.11.0...v0.12.0) (2021-03-31)
 
 

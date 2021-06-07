@@ -1,6 +1,6 @@
 {
   "name": "@osui/icloud-theme",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/theme/index.js",
   "module": "dist/theme/index.js",
@@ -53,6 +53,6 @@
   },
   "gitHead": "904178b6c0bb86963017122daa529580decb66e8",
   "dependencies": {
-    "@osui/icons-icloud": "^0.12.0"
+    "@osui/icons-icloud": "^1.0.0"
   }
 }

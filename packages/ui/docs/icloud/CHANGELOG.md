@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-docs@0.12.2...@osui/icloud-docs@1.0.0) (2021-06-07)
+
+
+### Bug Fixes
+
+* 冻结规范样式调整 ([8d795b8](https://gitee.com/gitee-fe/osui/tree/master/commits/8d795b8ebc6355ae8094f4c1e3252b6c50989c2f))
+* input 样式 ([27571ed](https://gitee.com/gitee-fe/osui/tree/master/commits/27571ed46443ff32db3b195a8a4bc45749c4f2e5))
+* Menu Table TreeSelect用hoistNonReactStatic提升属性 ([2030784](https://gitee.com/gitee-fe/osui/tree/master/commits/2030784a48712ed5b442e4d819fe55933ae46a9e))
+
+
+
+# 1.0.0-beta.0 (2021-05-17)
+
+
+
+
+
 # [1.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v0.12.1...v1.0.0-beta.0) (2021-05-17)
 
 **Note:** Version bump only for package @osui/icloud-docs

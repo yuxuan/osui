@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@1.0.0-beta.2...@osui/table@1.0.0) (2021-06-07)
+
+
+### Bug Fixes
+
+* Menu Table TreeSelect用hoistNonReactStatic提升属性 ([2030784](https://gitee.com/gitee-fe/osui/tree/master/commits/2030784a48712ed5b442e4d819fe55933ae46a9e))
+* table调整 ([8b38be6](https://gitee.com/gitee-fe/osui/tree/master/commits/8b38be69b6dd7af4c4f4266b80706a6451504ab3))
+
+
+
+
+
 # [1.0.0-beta.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@0.12.2...@osui/table@1.0.0-beta.2) (2021-05-21)
 
 

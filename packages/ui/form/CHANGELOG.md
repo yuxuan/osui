@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.12.7...@osui/form@1.0.0) (2021-06-07)
+
+
+### Bug Fixes
+
+* input 样式 ([27571ed](https://gitee.com/gitee-fe/osui/tree/master/commits/27571ed46443ff32db3b195a8a4bc45749c4f2e5))
+
+
+
+# 1.0.0-beta.1 (2021-05-18)
+
+
+
+# 1.0.0-beta.0 (2021-05-17)
+
+
+
+
+
 # [1.0.0-beta.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.0...v1.0.0-beta.1) (2021-05-18)
 
 **Note:** Version bump only for package @osui/form

@@ -1,6 +1,6 @@
 {
     "name": "@osui/message",
-    "version": "1.0.0-beta.1",
+    "version": "1.0.0",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -64,7 +64,7 @@
     "author": "huoyuxuan,liushaozhen",
     "license": "MIT",
     "dependencies": {
-        "@osui/alert": "^1.0.0-beta.1",
+        "@osui/alert": "^1.0.0",
         "classnames": "^2.2.6",
         "lodash.partial": "^4.2.1"
     },

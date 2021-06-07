@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@1.0.0-beta.2...@osui/pagination@1.0.0) (2021-06-07)
+
+
+### Bug Fixes
+
+* 冻结规范样式调整 ([8d795b8](https://gitee.com/yuxuanhuo/osui/tree/master/commits/8d795b8ebc6355ae8094f4c1e3252b6c50989c2f))
+
+
+
+
+
 # [1.0.0-beta.2](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/pagination@0.12.2...@osui/pagination@1.0.0-beta.2) (2021-05-21)
 
 

@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/menu@0.12.1...@osui/menu@1.0.0) (2021-06-07)
+
+
+### Bug Fixes
+
+* Menu Table TreeSelect用hoistNonReactStatic提升属性 ([2030784](https://gitee.com/gitee-fe/osui/tree/master/commits/2030784a48712ed5b442e4d819fe55933ae46a9e))
+* re-export Menu.Divider ([6d05acc](https://gitee.com/gitee-fe/osui/tree/master/commits/6d05accc934649f9a4a2d3959880e7fbead7e130))
+
+
+
+# 1.0.0-beta.1 (2021-05-18)
+
+
+
+# 1.0.0-beta.0 (2021-05-17)
+
+
+
+
+
 # [1.0.0-beta.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.0...v1.0.0-beta.1) (2021-05-18)
 
 **Note:** Version bump only for package @osui/menu

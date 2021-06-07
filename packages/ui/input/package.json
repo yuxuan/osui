@@ -1,6 +1,6 @@
 {
     "name": "@osui/input",
-    "version": "1.0.0-beta.1",
+    "version": "1.0.0",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -68,7 +68,7 @@
         }
     },
     "dependencies": {
-        "@osui/brand-provider": "^1.0.0-beta.1",
+        "@osui/brand-provider": "^1.0.0",
         "classnames": "^2.2.6",
         "rc-util": "^5.9.8"
     },
