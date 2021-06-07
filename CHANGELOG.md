@@ -1,4 +1,19 @@
 # Change Log
+
+# 1.0.0
+## Chore
+- 增加了commonjs的build产出
+- css variables拆分
+
+## 样式调整
+Button、Table、TreeSelect、Input、Radio、Checkbox、Pagination、BackTop、Switch、Timeline、Badge、Tag
+
+## 功能修复
+- Joyride 修复primaryButton卡住滚动, 增加hideStepSize属性
+- Input onsearch透传的问题
+- Table、TreeSelect、Menu使用hostiNonReactStatic提升静态属性
+
+
 # 0.12.15
 只是版本的提升，把1.0.0-beta.x覆盖过去
 
@@ -15,50 +30,6 @@ Input
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
-
-
-**Note:** Version bump only for package osui-monorepo
-
-
-
-
-
-# [1.0.0-beta.1](https://gitee.com/gitee-fe/osui/compare/v1.0.0-beta.0...v1.0.0-beta.1) (2021-05-18)
-
-**Note:** Version bump only for package osui-monorepo
-
-
-
-
-
-# [1.0.0-beta.0](https://gitee.com/gitee-fe/osui/compare/v0.12.1...v1.0.0-beta.0) (2021-05-17)
-
-
-### Bug Fixes
-
-* 调整Form.useLabelLayout ([32f4721](https://gitee.com/gitee-fe/osui/commits/32f47217d6babe2a37768425034a03ba459d990e))
-* 调整osui色盘 ([b50d39b](https://gitee.com/gitee-fe/osui/commits/b50d39bc66d3725cb8bf711fa0773bdcc003aec8))
-* 色盘颜色revert ([975c245](https://gitee.com/gitee-fe/osui/commits/975c2453d1db7fbb517c6c743e0e0b99a5559afb))
-* 修复switch small的圆点位置 ([deaa266](https://gitee.com/gitee-fe/osui/commits/deaa266bb6017057714d258fada6370803e2f2a7))
-* breadcrumb只有一个面包屑时不加粗 ([907e600](https://gitee.com/gitee-fe/osui/commits/907e6006a0215a9a89541266125c4824909d1259))
-* button 依赖修复 ([1ea3cb3](https://gitee.com/gitee-fe/osui/commits/1ea3cb3072ca6a528d5f7a7a071b43e447e30f82))
-* colors 暴露tagColors, uiColors, rotatingColors ([c37b3fe](https://gitee.com/gitee-fe/osui/commits/c37b3fe49f0764162825fec5de18a790c9b5dc77))
-* form layout减少侵入性，不要重设margin ([2b89133](https://gitee.com/gitee-fe/osui/commits/2b891339128b0d815240f8c55967c7396e963a27))
-* form提供layout解决方案 ([310f5e2](https://gitee.com/gitee-fe/osui/commits/310f5e21f61f18e429ae74a4d2251610ce942c71))
-* form修复表单align冲突的问题 ([4ec064c](https://gitee.com/gitee-fe/osui/commits/4ec064cd5a2167d9a4eb60af36d04276f05944c3))
-* input form error状态样式调整 ([84530fb](https://gitee.com/gitee-fe/osui/commits/84530fb9f64fdb7835df47765a5571fdc13d8373))
-* input search icon clear icon颜色, onSearch callback修复 ([d75f772](https://gitee.com/gitee-fe/osui/commits/d75f7722779fb175093a0011b50bcda3a40ecfd6))
-* input select empty 调整 ([8e146c4](https://gitee.com/gitee-fe/osui/commits/8e146c422b78b2c40b6dbe7a6c87d82fe85561ed))
-* input.Search加addon的样式 ([a198a04](https://gitee.com/gitee-fe/osui/commits/a198a04952d5a7b7c8ec76d1d096daf44ccceaac))
-* space vertical间距修复 ([ae04fe4](https://gitee.com/gitee-fe/osui/commits/ae04fe483c67654a102e210b88cd3860349113a7))
-* switch圆点超出距离 ([3cd142c](https://gitee.com/gitee-fe/osui/commits/3cd142cc8c92e403e34d6e717cfbcab7b03d0a50))
-
-
-
-
-
-# Change Log
 
 # 0.12.12
 Space
