@@ -17,6 +17,16 @@
             margin: 0;
         }
     }
+
+    .@{ant-prefix}-dropdown-menu-item-active:not(.@{ant-prefix}-dropdown-menu-item-disabled) {
+        &:hover {
+            background-color: var(--select-item-active-bg);
+        }
+
+        &:active {
+            background-color: var(--color-gray-4);
+        }
+    }
 }
 
 .osui-menu-submenu {

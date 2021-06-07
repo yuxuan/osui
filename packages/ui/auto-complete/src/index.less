@@ -1,0 +1,13 @@
+@osui-auto-complete-class-prefix: osui-auto-complete;
+
+.@{osui-auto-complete-class-prefix}-dropdown {
+    .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+        &:hover {
+            background-color: var(--select-item-active-bg);
+        }
+
+        &:active {
+            background-color: var(--color-gray-4);
+        }
+    }
+}

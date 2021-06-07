@@ -135,3 +135,15 @@
         height: var(--select-check-icon-size);
     }
 }
+
+.@{osui-select-class-prefix}-dropdown {
+    .@{ant-prefix}-select-item-option-active:not(.@{ant-prefix}-select-item-option-disabled) {
+        &:hover {
+            background-color: var(--select-item-active-bg);
+        }
+
+        &:active {
+            background-color: var(--color-gray-4);
+        }
+    }
+}

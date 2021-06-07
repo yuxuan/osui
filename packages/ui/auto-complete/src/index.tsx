@@ -4,6 +4,7 @@ import {AutoCompleteProps as AntdAutoCompleteProps} from 'antd/lib/auto-complete
 import {RefSelectProps, OptionType} from 'antd/lib/select';
 import HighlightText from '@osui/highlight-text';
 import classNames from 'classnames';
+import './index.less';
 
 const clsPrefix = 'osui-auto-complete';
 
@@ -12,10 +13,11 @@ export interface AutoCompleteProps extends AntdAutoCompleteProps {
 }
 
 const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteProps> = (
-    {className, options, highlightKeyword = true, value: keyword, ...props},
+    {className, options, highlightKeyword = true, value: keyword, dropdownClassName, ...props},
     ref
 ) => {
     const innerClassName = classNames(className, clsPrefix);
+    const innerDropdownClassName = classNames(dropdownClassName, `${clsPrefix}-dropdown`);
     const innerOptions = useMemo(
         () => {
             if (highlightKeyword) {
@@ -43,6 +45,7 @@ const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteP
             className={innerClassName}
             options={innerOptions}
             value={keyword}
+            dropdownClassName={innerDropdownClassName}
             {...props}
         />
     );

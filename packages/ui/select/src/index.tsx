@@ -34,8 +34,12 @@ function InternalSelect<R, T>(props: SelectProps<T>, ref: React.Ref<R>): React.R
         },
         {
             targetProp: 'dropdownClassName',
-            shouldOverride: isMultiple, // 只有在多选时，加上dropdownClassName
-            override: classNames(`${clsPrefix}-multiple-dropdown`, dropdownClassName),
+            shouldOverride: true, // 只有在多选时，加上dropdownClassName
+            override: (
+                isMultiple
+                    ? classNames(`${clsPrefix}-multiple-dropdown`, `${clsPrefix}-dropdown`, dropdownClassName)
+                    : classNames(`${clsPrefix}-dropdown`, dropdownClassName)
+            ),
             alwaysOverride: true,
         },
         {
