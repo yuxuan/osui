@@ -14,9 +14,11 @@ export const Demo = () => {
     }
 
     return (
-        <BrandProvider brand="icloud">
-            <Space>
-                <Select placeholder="请选择" style={{ width: 120 }} onChange={handleChange}>
+        <>
+            <BrandProvider brand="icloud">
+                <h2>基础下拉</h2>
+                <p>placeholder</p>
+                <Select placeholder="请选择" style={{ width: 240 }} onChange={handleChange}>
                     <Option value="jack">Jack</Option>
                     <Option value="lucy">Lucy</Option>
                     <Option value="disabled" disabled>
@@ -24,7 +26,10 @@ export const Demo = () => {
                     </Option>
                     <Option value="Yiminghe">yiminghe</Option>
                 </Select>
-                <Select defaultValue="lucy" style={{ width: 120 }} onChange={handleChange}>
+                <br />
+                <br />
+                <p>有默认值</p>
+                <Select defaultValue="lucy" style={{ width: 240 }} onChange={handleChange}>
                     <Option value="jack">Jack</Option>
                     <Option value="lucy">Lucy</Option>
                     <Option value="disabled" disabled>
@@ -32,18 +37,30 @@ export const Demo = () => {
                     </Option>
                     <Option value="Yiminghe">yiminghe</Option>
                 </Select>
-                <Select defaultValue="lucy" style={{ width: 120 }} disabled>
+                <br />
+                <br />
+                <p>disabled</p>
+                <Select defaultValue="lucy" style={{ width: 240 }} disabled>
                     <Option value="lucy">Lucy</Option>
                 </Select>
-                <Select defaultValue="lucy" style={{ width: 120 }} loading>
+                <br />
+                <br />
+                <p>loading</p>
+                <Select defaultValue="lucy" style={{ width: 240 }} loading>
                     <Option value="lucy">Lucy</Option>
                 </Select>
-                <Select defaultValue="lucy" style={{ width: 120 }} noBorder>
+                <br />
+                <br />
+                <p>无边框样式</p>
+                <Select defaultValue="lucy" style={{ width: 240 }} noBorder>
                     <Option value="lucy">Lucy</Option>
                 </Select>
-                <Select defaultValue="lucy" style={{ width: 120 }} />
-            </Space>
-        </BrandProvider>
+                <br />
+                <br />
+                <p>内容为空</p>
+                <Select defaultValue="lucy" style={{ width: 240 }} />
+            </BrandProvider>
+        </>
     );
 };
 
@@ -56,10 +73,10 @@ export const Size = () => {
 
     return (
         <Space>
-            <Select placeholder="small size" style={{ width: 120 }} size="small">
+            <Select placeholder="small size" style={{ width: 240 }} size="small">
                 <Option value="lucy">Lucy</Option>
             </Select>
-            <Select placeholder="default size" style={{ width: 120 }} onChange={handleChange}>
+            <Select placeholder="default size" style={{ width: 240 }} onChange={handleChange}>
                 <Option value="jack">Jack</Option>
                 <Option value="lucy">Lucy</Option>
                 <Option value="disabled" disabled>
@@ -67,7 +84,7 @@ export const Size = () => {
                 </Option>
                 <Option value="Yiminghe">yiminghe</Option>
             </Select>
-            <Select placeholder="large size" style={{ width: 120 }} onChange={handleChange} size="large">
+            <Select placeholder="large size" style={{ width: 240 }} onChange={handleChange} size="large">
                 <Option value="jack">Jack</Option>
                 <Option value="lucy">Lucy</Option>
                 <Option value="disabled" disabled>
@@ -87,50 +104,65 @@ export const MultipleDemo = () => {
 
     return (
         <>
-            <p>默认多选使用方式：</p>
-            <Select mode="multiple" defaultValue="lucy" style={{ width: 560 }} onChange={handleChange} allowClear>
-                <Option value="jack">Jack</Option>
-                <Option value="lucy">Lucy</Option>
-                <Option value="disabled" disabled>
-                    Disabled
-                </Option>
-                <Option value="Yiminghe">yiminghe</Option>
-            </Select>
-            <br />
-            <br />
-            <p>不带allowClear的做法：</p>
-            <Select
-                mode="multiple"
-                defaultValue="lucy"
-                style={{ width: 560 }}
-                onChange={handleChange}
-                allowClear={false}
-            >
-                <Option value="jack">Jack</Option>
-                <Option value="lucy">Lucy</Option>
-                <Option value="disabled" disabled>
-                    Disabled
-                </Option>
-                <Option value="Yiminghe">yiminghe</Option>
-            </Select>
-            <br />
-            <br />
-            <p>不带下拉箭头的做法：</p>
-            <Select
-                mode="multiple"
-                defaultValue="lucy"
-                style={{ width: 560 }}
-                onChange={handleChange}
-                allowClear={false}
-                showArrow={false}
-            >
-                <Option value="jack">Jack</Option>
-                <Option value="lucy">Lucy</Option>
-                <Option value="disabled" disabled>
-                    Disabled
-                </Option>
-                <Option value="Yiminghe">yiminghe</Option>
-            </Select>
+            <BrandProvider>
+                <h2>无限制下拉多选</h2>
+                <p>默认多选使用方式：</p>
+                <Select mode="multiple" placeholder="请选择" style={{ width: 240 }} onChange={handleChange}>
+                    <Option value="jack">Jack</Option>
+                    <Option value="lucy">Lucy</Option>
+                    <Option value="disabled" disabled>
+                        Disabled
+                    </Option>
+                    <Option value="Yiminghe">yiminghe</Option>
+                </Select>
+                <br />
+                <br />
+                <p>有默认值</p>
+                <Select
+                    allowClear={false}
+                    mode="multiple"
+                    defaultValue="lucy"
+                    style={{ width: 240 }}
+                    onChange={handleChange}
+                >
+                    <Option value="jack">Jack</Option>
+                    <Option value="lucy">Lucy</Option>
+                    <Option value="disabled" disabled>
+                        Disabled
+                    </Option>
+                    <Option value="Yiminghe">yiminghe</Option>
+                    <Option value="a">a</Option>
+                    <Option value="b">b</Option>
+                    <Option value="c">c</Option>
+                </Select>
+                <br />
+                <br />
+                <p>可清除样式</p>
+                <Select
+                    allowClear
+                    mode="multiple"
+                    defaultValue="lucy"
+                    style={{ width: 240 }}
+                    onChange={handleChange}
+                >
+                    <Option value="jack">Jack</Option>
+                    <Option value="lucy">Lucy</Option>
+                    <Option value="disabled" disabled>
+                        Disabled
+                    </Option>
+                    <Option value="Yiminghe">yiminghe</Option>
+                </Select>
+                <br />
+                <br />
+                <p>有限制下拉多选</p>
+                <p>待补充</p>
+                <p>含搜索功能的下拉多选</p>
+                <p>待补充</p>
+                <p>复合内容选择器</p>
+                <p>待补充</p>
+                <p>含搜索功能下拉单选</p>
+                <p>待补充</p>
+            </BrandProvider>
         </>
     );
 };

@@ -5,7 +5,8 @@ export default {
     '--select-item-selected-bg': 'var(--color-gray-1)',
     '--select-disabled-bg': 'var(--theme-disabled-bg)',
     '--select-check-icon-size': '12px',
-    '--select-arrow-top': '48%',
+    '--select-arrow-top': '14px', // 固定位置
+    '--select-clear-icon-top': '16px',
     '--select-clear-icon-right': '30px',
     '--select-clear-icon-opacity': '0',
     '--select-clear-icon-opacity-hover': '1',

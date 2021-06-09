@@ -73,7 +73,9 @@
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
-        "@huse/derived-state": "^1.0.3",
-        "@osui/highlight-text": "^1.0.0"
+        "@huse/derived-state": "^1.1.0",
+        "@osui/highlight-text": "^1.0.0",
+        "@osui/select": "^1.0.0",
+        "hoist-non-react-statics": "^3.3.2"
     }
 }

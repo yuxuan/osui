@@ -6,6 +6,7 @@ export default {
     '--select-disabled-bg': 'transparent',
     '--select-check-icon-size': '16px',
     '--select-arrow-top': '43%',
+    '--select-clear-icon-top': '43%',
     '--select-clear-icon-right': '30px',
     '--select-clear-icon-opacity': '1',
     '--select-clear-icon-opacity-hover': '1',

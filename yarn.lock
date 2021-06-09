@@ -1518,6 +1518,11 @@
   resolved "https://registry.npm.taobao.org/@huse/derived-state/download/@huse/derived-state-1.0.3.tgz#d8062e5d9bf4a742dae4cf081e69932a67e0a5e8"
   integrity sha1-2AYuXZv0p0La5M8IHmmTKmfgpeg=
 
+"@huse/derived-state@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.nlark.com/@huse/derived-state/download/@huse/derived-state-1.1.0.tgz#f224604a676a2f4662a2ba9a261fe35b1865bf6f"
+  integrity sha1-8iRgSmdqL0ZiorqaJh/jWxhlv28=
+
 "@huse/input-value@^1.0.3":
   version "1.0.3"
   resolved "https://registry.npm.taobao.org/@huse/input-value/download/@huse/input-value-1.0.3.tgz#ff9a4515a13955817040e75a77296ca6565a9edc"

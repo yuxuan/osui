@@ -32,14 +32,17 @@ export const Demo = () => {
     );
 
     return (
-        <Dropdown overlay={menu}>
-            <a className="ant-dropdown-link" onClick={e => e.preventDefault()} style={{display: 'flex'}}>
-                <FlexCentered>
-                    Hover me
-                    <IconDownOutlined style={{paddingLeft: '5px'}} />
-                </FlexCentered>
-            </a>
-        </Dropdown>
+        <>
+            <p>文字下拉</p>
+            <Dropdown overlay={menu}>
+                <a onClick={e => e.preventDefault()}>
+                    <FlexCentered>
+                        请选择
+                        <IconDownOutlined style={{paddingLeft: '5px'}} />
+                    </FlexCentered>
+                </a>
+            </Dropdown>
+        </>
     );
 };
 
