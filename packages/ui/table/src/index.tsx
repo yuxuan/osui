@@ -7,7 +7,7 @@ import {
     TableProps as AntdTableProps,
     TablePaginationConfig as AntdTablePaginationConfig,
 } from 'antd/lib/table';
-import { ExpandableConfig, TableRowSelection } from 'antd/lib/table/interface';
+import {ExpandableConfig, ExpandType} from 'antd/lib/table/interface';
 import classNames from 'classnames';
 import {customPaginationProps, PaginationProps} from '@osui/pagination';
 import {useBrandContext} from '@osui/brand-provider';
@@ -40,17 +40,14 @@ const paginationPostion = (position: AntdTablePaginationConfig['position']) => {
 
 // 用于控制expandable
 const expandableConfig = (
-    expandable: ExpandableConfig<any>,
-    rowSelection?: TableRowSelection<any>
+    expandable: ExpandableConfig<any> = {}
 ): ExpandableConfig<any> => (
     {
         ...expandable,
-        // 如果有rowSelect，expand放在rowSelection后面
-        expandIconColumnIndex: expandable.expandIconColumnIndex ?? (rowSelection && 1),
         columnWidth: '12px',
         expandIcon: (
             expandable.expandIcon ?? (
-                ({expanded, onExpand, record }) => (
+                ({expanded, onExpand, record}) => (
                     expanded
                         ? (
                             <IconDownOutlined
@@ -71,7 +68,7 @@ const expandableConfig = (
     }
 );
 
-function Table<RecordType extends Record<string, any>>(
+const Table = <RecordType extends Record<string, any>>(
     {
         className,
         bordered,
@@ -83,7 +80,7 @@ function Table<RecordType extends Record<string, any>>(
         expandable,
         ...props
     }: TableProps<RecordType>
-) {
+) => {
     const {brand} = useBrandContext();
     const {getPrefixCls} = useContext(ConfigContext);
     const antPrefix = getPrefixCls('table');
@@ -123,14 +120,34 @@ function Table<RecordType extends Record<string, any>>(
     );
 
     // ==================== expandable ====================
+    const childrenColumnName = 'children';
+    // 判断是不是treeData，ref：https://github.com/ant-design/ant-design/blob/master/components/table/Table.tsx#L167
+    const expandType: ExpandType = useMemo<ExpandType>(
+        () => {
+            const rawData = props.dataSource || [];
+            if (rawData.some(item => (item as any)?.[childrenColumnName])) {
+                return 'nest';
+            }
+
+            if (props.expandedRowRender || (expandable && expandable.expandedRowRender)) {
+                return 'row';
+            }
+
+            return null;
+        },
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        [props.dataSource]
+    );
     const innerExpandable = useMemo(
         () => {
             if (brand === 'icloud') {
-                return expandable && expandableConfig(expandable, props.rowSelection);
+                if (expandable || expandType === 'nest') {
+                    return expandableConfig(expandable, props.rowSelection);
+                }
             }
             return expandable;
         },
-        [expandable, brand, props.rowSelection]
+        [expandable, brand, props.rowSelection, expandType]
     );
 
     return (
@@ -142,7 +159,7 @@ function Table<RecordType extends Record<string, any>>(
             expandable={innerExpandable}
         />
     );
-}
+};
 
 hoistNonReactStatics(Table, AntdTable);
 
