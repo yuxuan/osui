@@ -1,0 +1,58 @@
+@osui-quick-edit-class-prefix: osui-quick-edit;
+
+.as-link() {
+    color: var(--theme-text-color);
+    cursor: pointer;
+
+    &:hover {
+        color: var(--link-hover-color);
+    }
+
+    &:active {
+        color: var(--link-active-color);
+    }
+}
+
+.@{osui-quick-edit-class-prefix}-wrapper {
+    width: max-content;
+    line-height: 30px;
+}
+
+.@{osui-quick-edit-class-prefix}-input {
+    &-display {
+        .as-link();
+
+        display: inline-flex;
+        align-self: center;
+        cursor: pointer;
+
+        &-edit-icon {
+            display: inline-flex;
+            align-items: center;
+            padding-left: 4px;
+
+            svg {
+                width: var(--osui-icon-size);
+                height: var(--osui-icon-size);
+            }
+        }
+    }
+}
+
+.@{osui-quick-edit-class-prefix}-confirm-input {
+    display: flex;
+    align-items: center;
+
+    .osui-input {
+        flex: 1;
+    }
+
+    &-action {
+        .as-link();
+
+        &:first-of-type {
+            margin-right: 8px;
+            margin-left: 12px;
+        }
+    }
+}
