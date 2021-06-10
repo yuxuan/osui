@@ -101,6 +101,7 @@
         "@osui/popconfirm": "^1.0.0",
         "@osui/popover": "^1.0.0",
         "@osui/progress": "^1.0.0",
+        "@osui/quick-edit": "1.0.0",
         "@osui/radio": "^1.0.0",
         "@osui/rate": "^1.0.0",
         "@osui/result": "^1.0.0",

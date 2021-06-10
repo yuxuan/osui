@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {QuickEditInput, QuickEditSelect} from '../src';
 
 export default {
-    title: '数据录入/快速编辑QuickEdit',
+    title: '数据录入/QuickEdit 快速编辑',
 };
 
 export const Demo = () => {

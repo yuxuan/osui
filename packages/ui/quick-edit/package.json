@@ -1,6 +1,6 @@
 {
     "name": "@osui/quick-edit",
-    "version": "0.8.1",
+    "version": "1.0.0",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",

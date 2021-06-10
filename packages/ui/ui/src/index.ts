@@ -67,6 +67,7 @@ export {default as Breadcrumb} from '@osui/breadcrumb';
 export {default as Modal} from '@osui/modal';
 export {default as Space} from '@osui/space';
 export {default as Timeline} from '@osui/timeline';
+export {default as QuickEdit} from '@osui/quick-edit';
 export {default as TextOverflowTooltip} from '@osui/text-overflow-tooltip';
 export {default as Tag} from '@osui/tag';
 export {default as Affix} from '@osui/affix';
