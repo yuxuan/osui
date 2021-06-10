@@ -12,9 +12,9 @@ import './index.less';
 const clsPrefix = 'osui-picker';
 
 export interface DatePickerInterface extends React.FC<AntdDatePickerProps> {
-    MonthPicker: React.FC<AntdMonthPickerProps>;
-    WeekPicker: React.FC<AntdWeekPickerProps>;
-    RangePicker: React.FC<AntdRangePickerProps>;
+    MonthPicker: typeof AntdDatePicker.MonthPicker;
+    WeekPicker: typeof AntdDatePicker.WeekPicker;
+    RangePicker: typeof AntdDatePicker.RangePicker;
 }
 
 const DatePicker: DatePickerInterface = React.forwardRef<any, AntdDatePickerProps>(
