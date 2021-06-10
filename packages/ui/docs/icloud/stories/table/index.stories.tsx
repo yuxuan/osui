@@ -6,7 +6,22 @@ import Form from '@osui/form';
 import Space from '@osui/space';
 import {IconDownOutlined} from '@osui/icons';
 import BrandProvider from '@osui/brand-provider';
+import {TableProps} from 'antd/lib/table';
 import Table from '@osui/table';
+
+const Blockquote = ({children}) => (
+    <blockquote style={{
+        background: 'var(--color-brand-1)',
+        borderRadius: '3px',
+        borderLeft: '5px solid var(--color-brand-6)',
+        margin: '30px 0',
+        padding: '30px',
+    }}
+    >
+        {children}
+    </blockquote>
+);
+
 
 export default {
     title: '数据展示/Table 表格',
@@ -126,6 +141,9 @@ export const ExpandableDemo = () => {
         {
             title: 'Name',
             dataIndex: 'name',
+            render(text) {
+                return (<div>{text}</div>);
+            },
         },
         {
             title: 'Age',
@@ -184,6 +202,131 @@ export const ExpandableDemo = () => {
                 />
             </BrandProvider>
         </>
+    );
+};
+
+export const TreeTableDemo = () => {
+
+    const columns = [
+        {
+            title: 'Name',
+            dataIndex: 'name',
+            key: 'name',
+            render(text) {
+                return (<div>{text}</div>);
+            },
+        },
+        {
+            title: 'Age',
+            dataIndex: 'age',
+            key: 'age',
+            width: '12%',
+        },
+        {
+            title: 'Address',
+            dataIndex: 'address',
+            width: '30%',
+            key: 'address',
+        },
+    ];
+
+    const data = [
+        {
+            key: 1,
+            name: 'John Brown sr.',
+            age: 60,
+            address: 'New York No. 1 Lake Park',
+            children: [
+                {
+                    key: 11,
+                    name: 'John Brown',
+                    age: 42,
+                    address: 'New York No. 2 Lake Park',
+                },
+                {
+                    key: 12,
+                    name: 'John Brown jr.',
+                    age: 30,
+                    address: 'New York No. 3 Lake Park',
+                    children: [
+                        {
+                            key: 121,
+                            name: 'Jimmy Brown',
+                            age: 16,
+                            address: 'New York No. 3 Lake Park',
+                        },
+                    ],
+                },
+                {
+                    key: 13,
+                    name: 'Jim Green sr.',
+                    age: 72,
+                    address: 'London No. 1 Lake Park',
+                    children: [
+                        {
+                            key: 131,
+                            name: 'Jim Green',
+                            age: 42,
+                            address: 'London No. 2 Lake Park',
+                            children: [
+                                {
+                                    key: 1311,
+                                    name: 'Jim Green jr.',
+                                    age: 25,
+                                    address: 'London No. 3 Lake Park',
+                                },
+                                {
+                                    key: 1312,
+                                    name: 'Jimmy Green sr.',
+                                    age: 18,
+                                    address: 'London No. 4 Lake Park',
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
+        {
+            key: 2,
+            name: 'Joe Black',
+            age: 32,
+            address: 'Sidney No. 1 Lake Park',
+        },
+    ];
+
+    // rowSelection objects indicates the need for row selection
+    const rowSelection = {
+        onChange: (selectedRowKeys, selectedRows) => {
+            console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+        },
+        onSelect: (record, selected, selectedRows) => {
+            console.log(record, selected, selectedRows);
+        },
+        onSelectAll: (selected, selectedRows, changeRows) => {
+            console.log(selected, selectedRows, changeRows);
+        },
+    };
+
+    function TreeData() {
+        const [checkStrictly, setCheckStrictly] = React.useState(false);
+        return (
+            <>
+                <BrandProvider brand="icloud">
+                    <Space align="center" style={{ marginBottom: 16 }}>
+                        CheckStrictly: <Switch checked={checkStrictly} onChange={setCheckStrictly} />
+                    </Space>
+                    <Table
+                        columns={columns}
+                        rowSelection={{ ...rowSelection, checkStrictly }}
+                        dataSource={data}
+                    />
+                </BrandProvider>
+            </>
+        );
+    }
+    return (
+        <TreeData />
     );
 };
 
@@ -336,11 +479,11 @@ export const CompleteDemo = () => {
     const pagination = { position: 'bottom', showQuickJumper: true };
 
     class Demo extends React.Component {
-        state = {
+        state: TableProps<any> = {
             bordered: false,
             loading: false,
             pagination,
-            size: 'default',
+            size: 'default' as TableProps<any>['size'],
             expandable,
             title: undefined,
             showHeader,
@@ -421,6 +564,11 @@ export const CompleteDemo = () => {
             return (
                 <>
                     <BrandProvider brand="icloud">
+                        <Blockquote>
+                            以下表头控制区域，纯粹为了前端功能展示，不是设计规范内容。
+                            <br />
+                            说明： 规范要求expandIcon在checkbox后面，需要用户使用时自行添加expandIconColumnIndex=1，组件库无法内置
+                        </Blockquote>
                         <Form
                             layout="inline"
                             className="components-table-demo-control-bar"
@@ -505,10 +653,14 @@ export const CompleteDemo = () => {
                         </Form>
                         <Table
                             {...this.state}
-                            pagination={{ position: [this.state.top, this.state.bottom], showQuickJumper: true }}
+                            pagination={{
+                                position: [this.state.top, this.state.bottom],
+                                showQuickJumper: true,
+                            }}
                             columns={tableColumns}
                             dataSource={state.hasData ? data : null}
                             scroll={scroll}
+                            expandIconColumnIndex={1}
                         />
                     </BrandProvider>
                 </>
