@@ -1,24 +1,18 @@
 @osui-input-class-prefix: osui-input;
 
 .@{osui-input-class-prefix} {
-    .@{ant-prefix}-select-single.@{ant-prefix}-select-open .@{ant-prefix}-select-selection-item {
-        color: var(--theme-primary-color-active);
-    }
-
     .@{ant-prefix}-input-group-addon {
         // affix select
         .osui-select {
             padding-top: 2px;
             padding-bottom: 2px;
+        }
 
-            &.@{ant-prefix}-select-single.@{ant-prefix}-select-open .@{ant-prefix}-select-selection-item {
-                color: var(--theme-primary-color-active);
-            }
-
-            &.@{ant-prefix}-select-focused {
-                .@{ant-prefix}-select-selection-item {
-                    color: var(--theme-primary-color-active);
-                }
+        .@{ant-prefix}-select-focused,
+        .@{ant-prefix}-select-open {
+            // focus selector color
+            .@{ant-prefix}-select-selector {
+                color: var(--theme-text-color);
             }
         }
     }
