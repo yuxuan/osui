@@ -4,6 +4,7 @@ import {CollapseProps as AntdCollapseProps, CollapsePanelProps as AntdCollapsePa
 import {IconRightOutlined, IconDownOutlined} from '@osui/icons';
 import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';
+import hoistNonReactStatics from 'hoist-non-react-statics';
 import './index.less';
 
 const clsPrefix = 'osui-collapse';
@@ -66,6 +67,8 @@ const CollapsePanel: React.FC<CollapsePanelProps> = ({className, level, ...props
 
     return <AntdCollapse.Panel className={classes} {...props} />;
 };
+
+hoistNonReactStatics(Collapse, AntdCollapse);
 
 Collapse.Panel = CollapsePanel;
 

@@ -2,17 +2,18 @@
 
 .@{osui-collapse-class-prefix} {
     &:not(.@{ant-prefix}-collapse-ghost) {
-        &.@{ant-prefix}-collapse > .@{ant-prefix}-collapse-item {
-            border-bottom: 1px solid var(--collapse-border-color);
+        &.@{ant-prefix}-collapse {
+            background: var(--collapse-bg);
+            border: var(--collapse-border);
         }
 
-        &.@{ant-prefix}-collapse {
-            border: 1px solid var(--collapse-border-color);
-            border-bottom: 0;
+        &.@{ant-prefix}-collapse > .@{ant-prefix}-collapse-item {
+            background: var(--collapse-bg);
+            border-bottom: var(--collapse-border);
         }
 
         .@{ant-prefix}-collapse-content {
-            border-top: 1px solid var(--collapse-border-color);
+            border-top: var(--collapse-border);
         }
     }
 
@@ -21,12 +22,14 @@
             display: flex;
             align-items: center;
             height: var(--collapse-header-height);
+            margin-top: var(--collpase-item-header-margin-bottom);
             padding-top: 0;
             padding-bottom: 0;
             color: var(--theme-text-color);
             font-weight: var(--collapse-header-font-weight);
             font-size: var(--collapse-header-font-size);
             line-height: var(--collapse-header-height);
+            background: var(--collapse-header-bg);
 
             .icon-wrapper {
                 top: auto;
@@ -47,7 +50,7 @@
 
     .@{ant-prefix}-collapse-item.@{ant-prefix}-collapse-item-disabled {
         .@{ant-prefix}-collapse-header {
-            background-color: var(--collapse-content-bg);
+            background-color: var(--collapse-header-bg);
         }
 
         .@{ant-prefix}-collapse-header,
