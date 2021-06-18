@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@1.0.0...@osui/theme@1.0.1) (2021-06-18)
+
+
+### Bug Fixes
+
+* collapse调整 ([6bd5bd5](https://gitee.com/gitee-fe/osui/tree/master/commits/6bd5bd5f1e9093363209faf748e8220f08792798))
+* select dropdown autocomplete ([8ff54b2](https://gitee.com/gitee-fe/osui/tree/master/commits/8ff54b2b749c16e0887a155827f121ac0b4811f1))
+
+
+
+
+
 # [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@1.0.0-beta.2...@osui/theme@1.0.0) (2021-06-07)
 
 

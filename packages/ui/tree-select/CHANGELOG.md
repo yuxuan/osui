@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tree-select@1.0.0...@osui/tree-select@1.0.1) (2021-06-18)
+
+
+### Bug Fixes
+
+* tree-select type ([fcdfa4d](https://gitee.com/gitee-fe/osui/tree/master/commits/fcdfa4d4102216c882be245a1a715f5ecaaf849e))
+
+
+
+
+
 # [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tree-select@0.12.1...@osui/tree-select@1.0.0) (2021-06-07)
 
 

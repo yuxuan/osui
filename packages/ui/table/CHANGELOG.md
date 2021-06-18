@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@1.0.0...@osui/table@1.0.1) (2021-06-18)
+
+
+### Bug Fixes
+
+* table expand icon 修复 ([e20476b](https://gitee.com/gitee-fe/osui/tree/master/commits/e20476ba6ffb56424e59b47533613b7ff9f71ccf))
+
+
+
+
+
 # [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@1.0.0-beta.2...@osui/table@1.0.0) (2021-06-07)
 
 

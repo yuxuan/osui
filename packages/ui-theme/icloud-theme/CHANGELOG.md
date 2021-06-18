@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@1.0.0...@osui/icloud-theme@1.0.1) (2021-06-18)
+
+
+### Bug Fixes
+
+* 调整tab ([9835c5e](https://gitee.com/gitee-fe/osui/tree/master/commits/9835c5e6326ebd23f943940e3dc08ee602af71aa))
+* collapse调整 ([6bd5bd5](https://gitee.com/gitee-fe/osui/tree/master/commits/6bd5bd5f1e9093363209faf748e8220f08792798))
+* select dropdown autocomplete ([8ff54b2](https://gitee.com/gitee-fe/osui/tree/master/commits/8ff54b2b749c16e0887a155827f121ac0b4811f1))
+* select dropdown autocomplete 下拉样式调整 ([55651a1](https://gitee.com/gitee-fe/osui/tree/master/commits/55651a11096aa057592d5fb9806a1b2e20698a45))
+
+
+
+
+
 # [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@1.0.0-beta.2...@osui/icloud-theme@1.0.0) (2021-06-07)
 
 

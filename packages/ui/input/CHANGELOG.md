@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@1.0.0...@osui/input@1.0.1) (2021-06-18)
+
+
+### Bug Fixes
+
+* button loading 添加flexcentered ([1646429](https://gitee.com/gitee-fe/osui/tree/master/commits/164642960e04da7f8dd2b96036af8485a2f978c6))
+* input去掉select时高亮 ([f1f9724](https://gitee.com/gitee-fe/osui/tree/master/commits/f1f97240aaaef618e8432fb5997b667c348ec158))
+* select dropdown autocomplete 下拉样式调整 ([55651a1](https://gitee.com/gitee-fe/osui/tree/master/commits/55651a11096aa057592d5fb9806a1b2e20698a45))
+
+
+
+
+
 # [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@0.12.6...@osui/input@1.0.0) (2021-06-07)
 
 
