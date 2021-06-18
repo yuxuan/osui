@@ -1,18 +1,87 @@
 # Change Log
+---
+sidebar_position: 1
+---
 
-# 1.0.0
-## Chore
+# 组件更新
+
+以`@osui/ui`主版本为主，包含各组件单包发布情况
+
+## 1.0.1
+### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.1/)
+Tabs、Collapse、Rate、AutoComplete、Rate、Select
+
+### 功能修复
+- Button
+  - loading默认添加flexcentered
+- Space
+  - 修复space vertical horizontal混用的问题
+- Table
+  - checkbox expand icon 修复
+- TreeSelect
+  - build修复
+
+### 组件更新
+
+- @osui/icloud-theme@1.0.1
+- @osui/theme@1.0.1
+- @osui/auto-complete@1.0.1
+- @osui/branch-dropdown@1.0.1
+- @osui/button@1.0.1
+- @osui/collapse@1.0.1
+- @osui/date-picker@1.0.1
+- @osui/dropdown@1.0.1
+- @osui/input@1.0.1
+- @osui/menu-dropdown@1.0.1
+- @osui/modal@1.0.1
+- @osui/pagination@1.0.1
+- @osui/quick-edit@1.0.1
+- @osui/rate@1.0.1
+- @osui/select@1.0.1
+- @osui/table@1.0.1
+- @osui/tabs@1.0.1
+- @osui/tree-select@1.0.1
+- @osui/ui@1.0.1
+
+## 1.0.0
+
+> 2021-6-7
+
+### Chore
 - 增加了commonjs的build产出
 - css variables拆分
 
-## 样式调整
+### 样式调整[对比](http://eefe.baidu-int.com/sites/icloud@diffReport/)
 Button、Table、TreeSelect、Input、Radio、Checkbox、Pagination、BackTop、Switch、Timeline、Badge、Tag
 
-## 功能修复
+### 功能修复
 - Joyride 修复primaryButton卡住滚动, 增加hideStepSize属性
 - Input onsearch透传的问题
-- Table、TreeSelect、Menu使用hostiNonReactStatic提升静态属性
+- Table、TreeSelect、Menu、Datepicker使用hostiNonReactStatic提升静态属性
+- 增加QuickEdit
 
+### 组件更新
+所有组件更新到1.0.0
+
+
+## 1.0.0-beta.2
+
+> 2021-5-21
+
+- Button `@osui/button@1.0.0-beta.2`
+  - 样式调整
+
+- Joyride `@osui/joyride@1.0.0-beta.1`
+  - 修复滚动时，footer内按钮卡住的问题
+
+- BranchDropdown `@osui/branch-dropdown@1.0.0-beta.2`
+  - 依赖Button升级
+
+- Modal `@osui/modal@1.0.0-beta.2`
+  - 依赖Button升级
+
+- Pagination `@osui/pagination@1.0.0-beta.2`
+  - 依赖Button升级
 
 # 0.12.15
 只是版本的提升，把1.0.0-beta.x覆盖过去
