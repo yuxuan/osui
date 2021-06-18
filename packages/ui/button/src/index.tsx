@@ -107,7 +107,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
                         [`${clsPrefix}-face-success`]: success,
                         [`${clsPrefix}-face-error`]: error || danger,
                         [`${clsPrefix}-face-warning`]: warning,
-                        [`${clsPrefix}-flex-center`]: flexCenter,
+                        [`${clsPrefix}-flex-center`]: flexCenter || loading,
                     }
                 )
             }
