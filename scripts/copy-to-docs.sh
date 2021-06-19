@@ -46,3 +46,8 @@ else
     cp packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}.stories.mdx packages/ui/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/index.stories.mdx
     sed -i.bak "s|../src|@osui/${COMPONENT_NAME_ARG}|" packages/ui/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/index.stories.tsx && rm -- "packages/ui/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/index.stories.tsx.bak"
 fi
+
+
+# 替换掉修改的mdx import from './index.tsx'
+find packages/ui/docs/${TARGET}/stories/ -type f -name "*.mdx" |xargs sed -i.bk "s|import \* as stories from \'\./${TARGET}\.stories';|import * as stories from './index.stories';|"
+find packages/ui/docs/${TARGET}/stories/ -type f -name "*.bk" |xargs rm
