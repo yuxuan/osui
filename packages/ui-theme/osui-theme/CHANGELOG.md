@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@1.0.1...@osui/theme@1.0.2) (2021-06-19)
+
+
+### Bug Fixes
+
+* 修复select箭头和清除按钮位置错位的问题 ([17e1194](https://gitee.com/gitee-fe/osui/tree/master/commits/17e1194ad81405fd5f058a6d46f7672e42342f1c))
+
+
+
+
+
 ## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/theme@1.0.0...@osui/theme@1.0.1) (2021-06-18)
 
 

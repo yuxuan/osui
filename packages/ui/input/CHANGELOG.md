@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@1.0.1...@osui/input@1.0.2) (2021-06-19)
+
+
+### Bug Fixes
+
+* input组合select放小到28px ([94bc966](https://gitee.com/gitee-fe/osui/tree/master/commits/94bc9660e5fa90315e5190f3861df68f5da3e7b8))
+
+
+
+
+
 ## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@1.0.0...@osui/input@1.0.1) (2021-06-18)
 
 
