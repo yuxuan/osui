@@ -33,6 +33,26 @@
         }
     }
 
+    &.ant-select-sm {
+        .@{ant-prefix}-select-arrow {
+            top: var(--select-arrow-top-small);
+        }
+
+        .@{ant-prefix}-select-arrow + .@{ant-prefix}-select-clear {
+            top: var(--select-clear-icon-top-small);
+        }
+    }
+
+    &.ant-select-lg {
+        .@{ant-prefix}-select-arrow {
+            top: var(--select-arrow-top-large);
+        }
+
+        .@{ant-prefix}-select-arrow + .@{ant-prefix}-select-clear {
+            top: var(--select-clear-icon-top-large);
+        }
+    }
+
     &.@{ant-prefix}-select-open .@{ant-prefix}-select-arrow:not(.@{ant-prefix}-select-arrow-loading) > svg {
         transform: var(--select-arrow-open-transform-rotate);
     }
