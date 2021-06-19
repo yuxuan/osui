@@ -7,7 +7,32 @@ sidebar_position: 1
 
 以`@osui/ui`主版本为主，包含各组件单包发布情况
 
+## 1.0.2
+
+> 2021-6-19
+
+### 功能修复
+
+- Select
+  - 调整clear icon和arrow 在不同尺寸下的位置错位问题
+- Input
+  - 修复input组合用法报错时边框样式出错的问题
+
+### 组件更新
+
+```
+- @osui/icloud-theme@1.0.2
+- @osui/theme@1.0.2
+- @osui/auto-complete@1.0.2
+- @osui/input@1.0.2
+- @osui/select@1.0.2
+- @osui/ui@1.0.2
+```
+
 ## 1.0.1
+
+> 2021-6-18
+
 ### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.1/)
 Tabs、Collapse、Rate、AutoComplete、Rate、Select
 
