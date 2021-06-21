@@ -1,13 +1,16 @@
 {
     "name": "@osui/tree-select",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
     "types": "es/index.d.ts",
     "files": [
         "es",
-        "src"
+        "lib",
+        "src",
+        "README.md",
+        "CHANGELOG.md"
     ],
     "scripts": {
         "lint": "skr lint",
