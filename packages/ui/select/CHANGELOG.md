@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@1.0.2...@osui/select@1.0.3) (2021-06-23)
+
+
+### Bug Fixes
+
+* 修复Treeselect.TreeNode丢失的问题 ([ff546bb](https://gitee.com/gitee-fe/osui/tree/master/commits/ff546bb6be9f978268ce181266765966e64e5056))
+
+
+
+
+
 ## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@1.0.1...@osui/select@1.0.2) (2021-06-19)
 
 

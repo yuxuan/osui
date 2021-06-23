@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@1.0.0...@osui/form@1.0.2) (2021-06-23)
+
+
+### Bug Fixes
+
+* form svg变成inline的在less中 ([0eac47e](https://gitee.com/gitee-fe/osui/tree/master/commits/0eac47ec2aeebc37a4c02a5f2970cb8fead62aa6))
+
+
+
+
+
 # [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@0.12.7...@osui/form@1.0.0) (2021-06-07)
 
 
