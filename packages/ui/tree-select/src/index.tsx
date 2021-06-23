@@ -29,7 +29,7 @@ const TreeSelectRef = React.forwardRef(InternalTreeSelect) as <T extends Default
 ) => React.ReactElement;
 
 // 提升TreeSelect属性
-hoistNonReactStatics(TreeSelectRef, TreeSelectRef);
+hoistNonReactStatics(TreeSelectRef, AntdTreeSelect);
 
 // 类型定义
 type InternalTreeSelectType = typeof TreeSelectRef;
