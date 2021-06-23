@@ -7,6 +7,21 @@ sidebar_position: 1
 
 以`@osui/ui`主版本为主，包含各组件单包发布情况
 
+## 1.0.3
+
+> 2021-6-23
+
+### 功能修复
+
+- TreeSelect
+  - 修复TreeSelect.TreeNode丢失的问题
+  - build cjs 修复
+- Form
+  - Form less中引用svg换成inline的形式，这样nextjs构建的时候不需要在server端配置svg loader
+- 其它
+  - 修复less统一使用.@{ant-prefix}
+
+
 ## 1.0.2
 
 > 2021-6-19
