@@ -99,7 +99,6 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
             type={type as AntdButtonProps['type']} // 因为不兼容，做了强制类型转换
             className={
                 classNames(
-                    props.className,
                     clsPrefix,
                     {
                         [`${clsPrefix}-loading`]: loading,
@@ -108,7 +107,8 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
                         [`${clsPrefix}-face-error`]: error || danger,
                         [`${clsPrefix}-face-warning`]: warning,
                         [`${clsPrefix}-flex-center`]: flexCenter || loading,
-                    }
+                    },
+                    props.className
                 )
             }
             icon={innerIcon}
