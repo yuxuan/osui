@@ -1,6 +1,19 @@
 @osui-form-class-prefix: osui-form;
 
 .@{osui-form-class-prefix} {
+    .@{ant-prefix}-form-item:not(.osui-form-validate-message-inline) {
+        .@{ant-prefix}-form-item-explain {
+            margin-top: 8px;
+        }
+    }
+
+    .@{ant-prefix}-form-item-with-help {
+        margin-bottom: 20px;
+    }
+}
+
+/* stylelint-disable no-duplicate-selectors */
+.@{osui-form-class-prefix} {
     .@{ant-prefix}-form-item-explain {
         font-size: 12px;
 
@@ -60,7 +73,7 @@
     }
 
     .@{ant-prefix}-form-item-extra {
-        margin-top: 6px;
+        margin-top: 8px;
         color: var(--theme-placeholder-color);
         font-size: 12px;
     }
@@ -76,7 +89,7 @@
             left: 100%;
             width: 50%;
             max-width: 200px;
-            padding-left: 10px;
+            padding-left: 8px;
         }
     }
 

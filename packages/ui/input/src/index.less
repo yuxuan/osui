@@ -12,7 +12,7 @@
         .@{ant-prefix}-select-focused,
         .@{ant-prefix}-select-open {
             // focus selector color
-            .@{ant-prefix}-select-selector {
+            .@{ant-prefix}-select-selector .@{ant-prefix}-select-selection-item {
                 color: var(--theme-text-color);
             }
         }
@@ -37,6 +37,15 @@
     &-disabled {
         .@{ant-prefix}-input-group-addon {
             background: var(--theme-disabled-bg);
+        }
+
+        .@{osui-input-class-prefix}-search-icon {
+            color: var(--theme-disabled-color);
+            cursor: not-allowed;
+
+            &:hover {
+                color: var(--theme-disabled-color);
+            }
         }
     }
 
@@ -78,11 +87,6 @@
         }
     }
 
-    &.@{ant-prefix}-input-affix-wrapper,
-    & .@{ant-prefix}-input-affix-wrapper {
-        padding-right: var(--input-affix-wrapper-padding-horizontal);
-        padding-left: var(--input-affix-wrapper-padding-horizontal);
-    }
     // search icon
     &-search-icon,
     .@{ant-prefix}-input-clear-icon {
@@ -90,12 +94,24 @@
         cursor: pointer;
 
         &:hover {
-            color: var(--color-gray-8);
+            color: var(--theme-primary-color-hover);
+        }
+
+        &:active {
+            color: var(--theme-primary-color-active);
         }
     }
 
+    // clear icon 处理
     .@{ant-prefix}-input-clear-icon {
-        margin: 0 var(--input-affix-margin);
+        opacity: 0;
+    }
+
+    &:hover,
+    &&-focused {
+        .@{ant-prefix}-input-clear-icon {
+            opacity: 1;
+        }
     }
 
     // 表单内报错样式覆盖
@@ -122,7 +138,8 @@
         &,
         &.@{ant-prefix}-input,
         .@{ant-prefix}-input,
-        .@{ant-prefix}-input-group-addon {
+        .@{ant-prefix}-input-group-addon,
+        .@{ant-prefix}-input-affix-wrapper-disabled {
             border-color: var(--theme-border-color-disabled) !important;
 
             &:hover,

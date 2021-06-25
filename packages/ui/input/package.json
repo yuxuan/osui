@@ -70,6 +70,7 @@
     "dependencies": {
         "@osui/brand-provider": "^1.0.0",
         "classnames": "^2.2.6",
+        "hoist-non-react-statics": "^3.3.2",
         "rc-util": "^5.9.8"
     },
     "publishConfig": {

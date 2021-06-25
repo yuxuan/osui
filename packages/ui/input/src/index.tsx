@@ -1,6 +1,7 @@
 import React, { useCallback, useState, useRef, useMemo } from 'react';
 import { Input as AntdInput } from 'antd';
 import {composeRef} from 'rc-util/lib/ref';
+import hoistNonReactStatics from 'hoist-non-react-statics';
 import {useBrandContext} from '@osui/brand-provider';
 import Button from '@osui/button';
 import {IconSearchOutlined} from '@osui/icons';
@@ -55,6 +56,8 @@ const Input = React.forwardRef<any, AntdInputProps>(({ className, onFocus, onBlu
     );
 }) as unknown as InputInterface;
 
+hoistNonReactStatics(Input, AntdInput);
+
 Input.Password = React.forwardRef<any, AntdInputProps>((props, ref) => {
     return <AntdInput.Password ref={ref} {...props} className={classNames(clsPrefix, props.className)} />;
 });
@@ -90,10 +93,14 @@ const Search = React.forwardRef<any, SearchProps>(
 
         const [focused, setFocused] = useState(false);
 
-        const innerClassNames = classNames(clsPrefix, className, {
-            [`${clsPrefix}-focused`]: focused,
-            [`${clsPrefix}-disabled`]: disabled,
-        });
+        const innerClassNames = classNames(
+            clsPrefix,
+            {
+                [`${clsPrefix}-focused`]: focused,
+                [`${clsPrefix}-disabled`]: disabled,
+            },
+            className
+        );
         const innerWithSuffixIcon = withSuffixIcon ?? brand === 'icloud';
         const handleFocus = useCallback(
             e => {
@@ -157,11 +164,19 @@ const Search = React.forwardRef<any, SearchProps>(
         const innerEnterButton = useMemo(
             () => {
                 if (typeof enterButton === 'string') {
-                    return <Button flexCenter loading={loading} type="primary">{enterButton}</Button>;
+                    return (
+                        <Button
+                            loading={loading}
+                            disabled={disabled}
+                            type="primary"
+                        >
+                            {enterButton}
+                        </Button>
+                    );
                 }
                 return enterButton;
             },
-            [enterButton, loading]
+            [enterButton, loading, disabled]
         );
         if (innerWithSuffixIcon && !enterButton) {
             return (

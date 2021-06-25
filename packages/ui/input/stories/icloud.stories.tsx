@@ -33,6 +33,7 @@ export const Demo = () => {
         <>
             <BrandProvider brand="icloud">
                 <h3>基础输入框展示形式</h3>
+                <p>默认样式</p>
                 <Input
                     style={{
                         width: 360,
@@ -41,6 +42,7 @@ export const Demo = () => {
                 />
                 <br />
                 <br />
+                <p>禁用</p>
                 <Input
                     disabled
                     style={{
@@ -50,6 +52,7 @@ export const Demo = () => {
                 />
                 <br />
                 <br />
+                <p>TextArea</p>
                 <TextArea
                     style={{
                         width: 360,
@@ -211,15 +214,17 @@ export const Size = () => {
 
 export const Complete = () => {
     const { Option } = Select;
+    // eslint-disable-next-line comma-dangle
+    const selectStyle = { width: '78px', };
 
     const selectBefore = (
-        <Select defaultValue="http://" className="select-before">
+        <Select defaultValue="http://" className="select-before" style={selectStyle}>
             <Option value="http://">http://</Option>
             <Option value="https://">https://</Option>
         </Select>
     );
     const selectAfter = (
-        <Select defaultValue=".com" className="select-after">
+        <Select defaultValue=".com" className="select-after" style={selectStyle}>
             <Option value=".com">.com</Option>
             <Option value=".jp">.jp</Option>
             <Option value=".cn">.cn</Option>
@@ -228,13 +233,13 @@ export const Complete = () => {
     );
 
     const selectBeforeDisabled = (
-        <Select disabled defaultValue="http://" className="select-before">
+        <Select disabled defaultValue="http://" className="select-before" style={selectStyle}>
             <Option value="http://">http://</Option>
             <Option value="https://">https://</Option>
         </Select>
     );
     const selectAfterDisabled = (
-        <Select disabled defaultValue=".com" className="select-after">
+        <Select disabled defaultValue=".com" className="select-after" style={selectStyle}>
             <Option value=".com">.com</Option>
             <Option value=".jp">.jp</Option>
             <Option value=".cn">.cn</Option>
@@ -252,6 +257,9 @@ export const Complete = () => {
             <Divider orientation="left">4. 含搜索联想功能且支持多选的输入框</Divider>
             <p>见Select多选</p>
             <Divider orientation="left">5. 组合输入框</Divider>
+            <Blockquote>
+                下面使用addonBefore，和addonAfter来实现的，这种目前视觉规范实现还不完善，规范中select宽度为78px
+            </Blockquote>
             <Input allowClear addonBefore={selectBefore} addonAfter={selectAfter} defaultValue="mysite" />
             <br />
             <br />
@@ -262,15 +270,17 @@ export const Complete = () => {
             <br />
             <br />
             <Input addonAfter={selectAfter} defaultValue="mysite" />
+            <br />
+            <br />
+            <p>注意，用组合的时候，disabled需要自己加在addonBefore和addonAfter组件上</p>
+            <Input disabled addonBefore={selectBeforeDisabled} addonAfter={selectAfterDisabled} defaultValue="mysite" />
+
             <Blockquote>
-                上面是使用addonBefore，和addonAfter来实现的，而下面是Input.Group的方式
+                下面是Input.Group的方式
             </Blockquote>
             <Input.Group compact>
                 <Select
                     defaultValue="Sign Up"
-                    style={{
-                        width: '80px',
-                    }}
                 >
                     <Option value="Sign Up">Sign Up</Option>
                     <Option value="Sign In">Sign In</Option>
@@ -284,9 +294,6 @@ export const Complete = () => {
                 />
             </Input.Group>
 
-            <Gap orientation="vertical" factor={2} />
-            <p>注意，用组合的时候，disabled需要自己加在addonBefore和addonAfter组件上</p>
-            <Input disabled addonBefore={selectBeforeDisabled} addonAfter={selectAfterDisabled} defaultValue="mysite" />
             <Divider orientation="left">5. 组合输入框 宽度自适应：待补充</Divider>
             <Divider orientation="left">5. 组合输入框 高度自适应：待补充</Divider>
             <h2>报错样式</h2>
@@ -392,6 +399,7 @@ export const Search = () => {
                         disabled
                         withSuffixIcon
                         placeholder="搜索提示文案"
+                        value="请输入产品线名称，这个是value的disable状态"
                         style={{
                             width: 240,
                         }}
@@ -401,6 +409,7 @@ export const Search = () => {
                         disabled
                         enterButton={<Button disabled type="primary">搜索</Button>}
                         placeholder="搜索提示文案"
+                        value="请输入产品线名称，这个是value的disable状态"
                         style={{
                             width: 240,
                         }}
@@ -437,3 +446,90 @@ export const Api = () => {
     );
 };
 
+
+export const TestCase = () => {
+    return (
+        <>
+            <Blockquote>
+                说明：记录走查问题的测试case。 不需要走查
+            </Blockquote>
+            <p>hover，focus时才显示clearicon</p>
+            <Input
+                allowClear
+                placeholder="搜索提示文案"
+                style={{
+                    width: 240,
+                }}
+            />
+            <p />
+            <Input.Search
+                allowClear
+                enterButton="搜索"
+                placeholder="搜索提示文案"
+                style={{
+                    width: 240,
+                }}
+            />
+            <p />
+            <p>disabled，allowClear不会影响，直接传入disabled应该是好的</p>
+            <Input.Search
+                disabled
+                allowClear
+                enterButton="搜索"
+                value="测试"
+                style={{
+                    width: 240,
+                }}
+            />
+            <p />
+            <Input.Search
+                disabled
+                allowClear
+                withSuffixIcon
+                value="测试"
+                style={{
+                    width: 240,
+                }}
+            />
+            <p />
+            <p>左右边距是8px</p>
+            <Input
+                value="测试测试测试测试测试测试测试测试测试测试"
+                placeholder="搜索提示文案"
+                style={{
+                    width: 240,
+                }}
+            />
+            <p />
+            <Input
+                value="测试测试测试测试测试测试测试测试测试测试"
+                allowClear
+                placeholder="搜索提示文案"
+                style={{
+                    width: 240,
+                }}
+            />
+            <p />
+            <Input.Search
+                value="测试测试测试测试测试测试测试测试测试测试"
+                withSuffixIcon
+                allowClear
+                placeholder="搜索提示文案"
+                style={{
+                    width: 240,
+                }}
+            />
+            <p />
+            <p>输入框disabled，并且有placeholder时，placeholder的颜色</p>
+            <Input.Search
+                disabled
+                withSuffixIcon
+                allowClear
+                placeholder="搜索提示文案"
+                style={{
+                    width: 240,
+                }}
+            />
+        </>
+    );
+};
