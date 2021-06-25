@@ -7,6 +7,43 @@ sidebar_position: 1
 
 以`@osui/ui`主版本为主，包含各组件单包发布情况
 
+## 1.0.4
+
+> 2021-6-25
+
+### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.4/)
+Input、Select、Form的报错样式
+
+### 功能修复
+
+- Modal
+  - 修复footer的button错位的问题
+- Button
+  - 修复className的问题
+  - loading默认增加flexcentered会导致与同行组件对齐错位，增加说明
+- Input
+  - hostiNonReactStatic提升静态属性
+  - 替换SearchIcon
+
+### 组件更新
+
+```
+- @osui/icons-icloud@1.0.1
+- @osui/icloud-theme@1.0.3
+- @osui/theme@1.0.3
+- @osui/auto-complete@1.0.4
+- @osui/branch-dropdown@1.0.2
+- @osui/button@1.0.2
+- @osui/form@1.0.3
+- @osui/input@1.0.3
+- @osui/modal@1.0.2
+- @osui/pagination@1.0.2
+- @osui/select@1.0.4
+- @osui/table@1.0.2
+- @osui/ui@1.0.4
+
+```
+
 ## 1.0.3
 
 > 2021-6-23
