@@ -4,6 +4,7 @@ export default {
     '--select-item-active-bg': 'var(--color-gray-3)',
     '--select-item-selected-bg': 'var(--color-gray-1)',
     '--select-disabled-bg': 'var(--theme-disabled-bg)',
+    '--select-arrow-color': 'var(--color-gray-7)',
     '--select-check-icon-size': '12px',
     '--select-arrow-top': '14px', // 固定位置
     '--select-arrow-top-small': '11px',

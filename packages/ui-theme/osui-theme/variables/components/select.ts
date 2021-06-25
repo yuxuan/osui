@@ -4,6 +4,7 @@ export default {
     '--select-item-active-bg': 'var(--theme-secondary-color-hover)',
     '--select-item-selected-bg': 'var(--color-brand-1)',
     '--select-disabled-bg': 'transparent',
+    '--select-arrow-color': 'var(--theme-disabled-color)',
     '--select-check-icon-size': '16px',
     '--select-arrow-top': '43%',
     '--select-arrow-top-small': '43%',
