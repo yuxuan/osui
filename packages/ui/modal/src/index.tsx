@@ -79,8 +79,17 @@ const OriginModal: ModalInterface = ({className, bodyBorder, size, ...props}) =>
         className
     );
 
+    const footerStyle = React.useMemo(
+        () => ({
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+        }),
+        []
+    );
+
     const footer = (
-        <div>
+        <div style={footerStyle}>
             <Button onClick={onCancel} {...cancelButtonProps}>{cancelText}</Button>
             <Button type="primary" onClick={onOk} loading={confirmLoading} {...okButtonProps}>{okText}</Button>
         </div>

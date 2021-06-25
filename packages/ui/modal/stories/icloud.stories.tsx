@@ -281,3 +281,46 @@ export const Api = () => {
     );
 };
 
+export const TestCase = () => {
+    const [visible, setVisible] = useState(false);
+    const {confirm} = Modal;
+    function showConfirm() {
+        confirm({
+            title: 'Do you Want to delete these items?',
+            icon: <IconExclamationCircleFilled />,
+            content: 'Some descriptions',
+            okButtonProps: {loading: true},
+            onOk() {
+                console.log('确定');
+            },
+            onCancel() {
+                console.log('取消');
+            },
+
+        });
+    }
+    return (
+        <div style={{ padding: 30 }}>
+            <p>footer错位了</p>
+            <BrandProvider brand="icloud">
+                <Button type="primary" onClick={() => setVisible(true)}>
+                    打开基础modal
+                </Button>
+                <Modal
+                    confirmLoading
+                    title="我是标题我是标题"
+                    visible={visible}
+                    onOk={() => setVisible(false)}
+                    onCancel={() => setVisible(false)}
+                >
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                </Modal>
+                <br />
+                <br />
+                <p>Modal.confirm不在Context内，而使用antd提供的Modal.useModal的方式，目前还没兼容</p>
+                <Button type="primary" onClick={() => {showConfirm();}}>Confirm</Button>
+            </BrandProvider>
+        </div>);
+};
