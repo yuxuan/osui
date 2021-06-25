@@ -8,6 +8,7 @@ export default {
 
 export const Demo = () => {
     const { TreeNode } = TreeSelect;
+
     class Demo extends React.Component {
         state = {
             value: undefined,

@@ -3,6 +3,7 @@ import { IconHomeOutlined, IconPlusOutlined, IconLeftOutlined } from '@osui/icon
 import Markdown from '@osui/markdown';
 import Divider from '@osui/divider';
 import Space from '@osui/space';
+import FlexCentered from '@osui/flex-centered';
 import { ConfigProvider } from 'antd';
 import Button from '@osui/button';
 import './index.less';
@@ -29,28 +30,30 @@ export const Demo = () => {
     return (
         <>
             <Blockquote >
-                UE要求两个字时中间没有空格，通过antd ConfigProvider来配置autoInsertSpaceInButton: false
+                UE要求两个字时中间没有空格，通过antd ConfigProvider来配置autoInsertSpaceInButton: false。
+                <br />
+                <strong>注意</strong>Button loading自动添加了flexedCenter，当作为button组时，需要外面裹一下div flex center
             </Blockquote>
             <Divider>展示</Divider>
             <h3><b>1、普通按钮</b></h3>
             <p>普通样式</p>
-            <div>
+            <FlexCentered>
                 <Button type="default" style={{ 'margin': '0 20px 20px 0' }}>普通样式</Button>
                 <Button type="default" disabled style={{ 'margin': '0 20px 20px 0' }}>普通样式</Button>
                 <Button type="default" loading style={{ 'margin': '0 20px 20px 0' }}>普通样式</Button>
-            </div>
+            </FlexCentered>
             <p>加强样式</p>
-            <div>
+            <FlexCentered>
                 <Button type="strong" style={{ 'margin': '0 20px 20px 0' }}>加强样式</Button>
                 <Button type="strong" disabled style={{ 'margin': '0 20px 20px 0' }}>加强样式</Button>
                 <Button type="strong" loading style={{ 'margin': '0 20px 20px 0' }}>加强样式</Button>
-            </div>
+            </FlexCentered>
             <p>重要样式</p>
-            <div>
+            <FlexCentered>
                 <Button type="primary" style={{ 'margin': '0 20px 20px 0' }}>重要样式</Button>
                 <Button type="primary" disabled style={{ 'margin': '0 20px 20px 0' }}>重要样式</Button>
                 <Button type="primary" loading style={{ 'margin': '0 20px 20px 0' }}>重要样式</Button>
-            </div>
+            </FlexCentered>
             <h3><b>2、纯文字按钮</b></h3>
             <Blockquote>
                 <p>文字形态的按钮，普通状态（默认黑字hover上变蓝）是用Button type text， 而加强状态（默认蓝色）是使用type link</p>
@@ -64,17 +67,17 @@ export const Demo = () => {
                 </p>
             </Blockquote>
             <p>普通样式</p>
-            <div>
+            <FlexCentered>
                 <Button type="text" style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
                 <Button type="text" disabled style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
                 <Button type="text" loading style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
-            </div>
+            </FlexCentered>
             <p>加强样式</p>
-            <div>
+            <FlexCentered>
                 <Button type="link" style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
                 <Button type="link" disabled style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
                 <Button type="link" loading style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
-            </div>
+            </FlexCentered>
             <h3><strong>3、图文按钮</strong></h3>
             <Blockquote>当icon和文字一起的时候，如果对不齐，可以添加flexCenter属性，如果导致同行不齐，外面包裹div display: flex</Blockquote>
             <p>加强样式</p>

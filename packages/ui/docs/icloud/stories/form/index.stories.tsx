@@ -295,3 +295,82 @@ export const Api = () => {
     );
 };
 
+
+export const TestCase = () => {
+    Form.useLabelLayout('basic');
+    const layout = {
+        labelCol: {
+            span: 4,
+        },
+        wrapperCol: {
+            span: 18,
+        },
+    };
+
+    const tailLayout = {
+        labelCol: {
+            span: 4,
+        },
+    };
+
+    const onFinish = values => {
+        console.log('Success:', values);
+    };
+
+    const onFinishFailed = errorInfo => {
+        console.log('Failed:', errorInfo);
+    };
+
+    return (
+        <>
+            <strong>注意: BrandProvider应该是App级别的，不是组件级别的</strong>
+            <p>表单视觉规范要求：label左对齐，与右边内容间距20px；右边自适应，左边保持不动；左边需要以最宽的内容为主</p>
+            <p>前端提供了Form.useLabelLayout hook来方便布局。注意：Form.useLabelLayout的侵入性比较强，只满足视觉需求，比如如果你需要align: right，就不要使用了</p>
+            <br />
+            <br />
+            <Divider>展示</Divider>
+            <BrandProvider brand="icloud">
+                <Form
+                    {...layout}
+                    name="basic"
+                    initialValues={{
+                        remember: true,
+                    }}
+                    onFinish={onFinish}
+                    onFinishFailed={onFinishFailed}
+                >
+                    <Form.Item
+                        label="用户名"
+                        name="username"
+                        extra="支持以大小写字母数字开头和结尾，可包含短横线的组合，不支持汉字与特殊字符，创建后不可更改"
+                        rules={[
+                            {
+                                required: true,
+                                message: '请输入用户名',
+                            },
+                        ]}
+                    >
+                        <Input />
+                    </Form.Item>
+                    <Form.Item
+                        label="密码"
+                        name="password"
+                        rules={[
+                            {
+                                required: true,
+                                message: '请输入密码',
+                            },
+                        ]}
+                    >
+                        <Input.Password />
+                    </Form.Item>
+                    <Form.Item {...tailLayout}>
+                        <Button type="primary" htmlType="submit">
+                            提交
+                        </Button>
+                    </Form.Item>
+                </Form>
+            </BrandProvider>
+        </>
+    );
+};
