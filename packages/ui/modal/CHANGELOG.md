@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@1.0.1...@osui/modal@1.0.2) (2021-06-25)
+
+
+### Bug Fixes
+
+* Modal footer错位问题修复 ([bff550a](https://gitee.com/gitee-fe/osui/tree/master/commits/bff550a6e9d94b9dfa3507081a01f25c7c30b4b9))
+
+
+
+
+
 ## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@1.0.0...@osui/modal@1.0.1) (2021-06-18)
 
 **Note:** Version bump only for package @osui/modal

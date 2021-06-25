@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@1.0.3...@osui/select@1.0.4) (2021-06-25)
+
+
+### Bug Fixes
+
+* select样是调整 ([102c8c3](https://gitee.com/gitee-fe/osui/tree/master/commits/102c8c36656423ac8795fe6645a1ef99516f2f06))
+
+
+
+
+
 ## [1.0.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@1.0.2...@osui/select@1.0.3) (2021-06-23)
 
 

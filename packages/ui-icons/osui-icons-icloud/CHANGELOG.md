@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://gitee.com/gitee-fe/osui/compare/@osui/icons-icloud@1.0.0...@osui/icons-icloud@1.0.1) (2021-06-25)
+
+
+### Bug Fixes
+
+* searchIcon替换, 主题变量调整 ([10f58ab](https://gitee.com/gitee-fe/osui/commits/10f58abe9c84598e92c69ac63f16d3e52d97308c))
+
+
+
+
+
 # [1.0.0](https://gitee.com/gitee-fe/osui/compare/@osui/icons-icloud@0.11.2...@osui/icons-icloud@1.0.0) (2021-06-07)
 
 
