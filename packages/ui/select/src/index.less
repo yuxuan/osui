@@ -1,6 +1,10 @@
 @osui-select-class-prefix: osui-select;
 
 .@{osui-select-class-prefix} {
+    &.ant-select-single .@{ant-prefix}-select-selector {
+        margin-right: 8px;
+    }
+
     // placeholder
     .@{ant-prefix}-select-selection-placeholder {
         color: var(--color-gray-7);
@@ -15,8 +19,8 @@
             border-color: var(--theme-border-color-disabled);
         }
 
-        .@{ant-prefix}-select-arrow svg {
-            color: var(--color-gray-6);
+        .@{ant-prefix}-select-arrow {
+            color: var(--theme-disabled-color);
         }
     }
 
@@ -25,14 +29,19 @@
         top: var(--select-arrow-top);
         width: 14px;
         height: 14px;
+        color: var(--color-gray-7);
 
         svg {
-            color: var(--theme-disabled-color);
             font-size: 14px;
             transition: var(--select-arrow-transition);
         }
     }
 
+    &.@{ant-prefix}-select-single.@{ant-prefix}-select-open .@{ant-prefix}-select-selection-item {
+        color: var(--theme-text-color);
+    }
+
+    // size
     &.@{ant-prefix}-select-sm {
         .@{ant-prefix}-select-arrow {
             top: var(--select-arrow-top-small);
