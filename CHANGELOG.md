@@ -7,6 +7,25 @@ sidebar_position: 1
 
 以`@osui/ui`主版本为主，包含各组件单包发布情况
 
+## 1.0.5
+
+> 2021-6-28
+
+### 功能修复
+
+- Input
+  - 删除Input.Group clear icon margin-right: 0; 的调整
+- Table
+  - treeData时，没有chidlren不展示展开icon
+
+### 组件更新
+
+```
+ - @osui/input@1.0.4
+ - @osui/table@1.0.3
+ - @osui/ui@1.0.5
+ ```
+
 ## 1.0.4
 
 > 2021-6-25
