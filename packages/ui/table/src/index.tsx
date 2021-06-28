@@ -47,8 +47,14 @@ const expandableConfig = (
         columnWidth: '12px',
         expandIcon: (
             expandable.expandIcon ?? (
-                ({expanded, onExpand, record}) => (
-                    expanded
+                ({expanded, onExpand, record, expandable}) => {
+                    // 参考 rc-table 的判断
+                    // https://github.com/react-component/table/blob/e0bab6985a67ddb11affd056dd5cbb0503f671f4/src/Body/BodyRow.tsx#L80
+                    if (!expandable) {
+                        return;
+                    }
+
+                    return expanded
                         ? (
                             <IconDownOutlined
                                 className={`${clsPrefix}-icloud-expandableIcon`}
@@ -62,8 +68,8 @@ const expandableConfig = (
                                 // eslint-disable-next-line react/jsx-no-bind
                                 onClick={(e: any) => onExpand(record, e)}
                             />
-                        )
-                ))
+                        );
+                })
         ),
     }
 );
@@ -120,7 +126,7 @@ const Table = <RecordType extends Record<string, any>>(
     );
 
     // ==================== expandable ====================
-    const childrenColumnName = 'children';
+    const {childrenColumnName = 'children'} = props;
     // 判断是不是treeData，ref：https://github.com/ant-design/ant-design/blob/master/components/table/Table.tsx#L167
     const expandType: ExpandType = useMemo<ExpandType>(
         () => {
@@ -136,18 +142,18 @@ const Table = <RecordType extends Record<string, any>>(
             return null;
         },
         // eslint-disable-next-line react-hooks/exhaustive-deps
-        [props.dataSource]
+        [props.dataSource, childrenColumnName]
     );
     const innerExpandable = useMemo(
         () => {
             if (brand === 'icloud') {
                 if (expandable || expandType === 'nest') {
-                    return expandableConfig(expandable, props.rowSelection);
+                    return expandableConfig(expandable);
                 }
             }
             return expandable;
         },
-        [expandable, brand, props.rowSelection, expandType]
+        [expandable, brand, expandType]
     );
 
     return (
