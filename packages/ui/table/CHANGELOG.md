@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@1.0.2...@osui/table@1.0.3) (2021-06-28)
+
+
+### Bug Fixes
+
+* 当treeData格式的table没有children时,不展示expandIcon ([2ebe438](https://gitee.com/gitee-fe/osui/tree/master/commits/2ebe43817933d3d954cb8e04f9c942e9a767caaf))
+* 调整input, 增加table的testcase ([e3d9551](https://gitee.com/gitee-fe/osui/tree/master/commits/e3d9551289e6c5158574b1f5a30bdd7dc57e8a26))
+
+
+
+
+
 ## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@1.0.1...@osui/table@1.0.2) (2021-06-25)
 
 **Note:** Version bump only for package @osui/table

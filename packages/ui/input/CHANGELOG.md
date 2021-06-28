@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@1.0.3...@osui/input@1.0.4) (2021-06-28)
+
+
+### Bug Fixes
+
+* 调整input, 增加table的testcase ([e3d9551](https://gitee.com/gitee-fe/osui/tree/master/commits/e3d9551289e6c5158574b1f5a30bdd7dc57e8a26))
+
+
+
+
+
 ## [1.0.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@1.0.2...@osui/input@1.0.3) (2021-06-25)
 
 
