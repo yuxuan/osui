@@ -530,6 +530,28 @@ export const TestCase = () => {
                     width: 240,
                 }}
             />
+            <p />
+            <p>Input.Group allow clear</p>
+            <Input.Group compact>
+                <Select
+                    defaultValue="RMB"
+                    style={{
+                        width: '80px',
+                    }}
+                >
+                    <Select.Option value="RMB">RMB</Select.Option>
+                    <Select.Option value="JPY">JPY</Select.Option>
+                </Select>
+                <Input.Search
+                    allowClear
+                    withSuffixIcon
+                    style={{
+                        width: '280px',
+                    }}
+                    placeholder="Email"
+                />
+
+            </Input.Group>
         </>
     );
 };
