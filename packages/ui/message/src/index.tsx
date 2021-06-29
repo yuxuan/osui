@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect, useReducer} from 'react';
 import partial from 'lodash.partial';
 import classNames from 'classnames';
 import {message as AntdMessage} from 'antd';
@@ -9,32 +9,34 @@ import {
     ArgsProps as AntdMessageArgsProps,
     ConfigOptions,
 } from 'antd/lib/message';
-import Alert, {AlertProps} from '@osui/alert';
+import {useInterval} from '@huse/timeout';
 import {
     IconCheckCircleFilled,
     IconCloseCircleFilled,
     IconInfoCircleFilled,
     IconExclamationCircleFilled,
+    IconCloseOutlined,
 } from '@osui/icons';
 import './index.less';
 
 const clsPrefix = 'osui-message';
 
-// eslint-disable-next-line init-declarations
-let localOptions: ConfigOptions;
-
-type NoticeType = AntdMessageArgsProps['type'];
-type JointContent = React.ReactNode | string | AntdMessageArgsProps;
+type NoticeType = AntdMessageArgsProps['type'] | 'notify' ;
 type iconTypes = 'info' | 'success' | 'error' | 'warning'; // 不覆盖loading
 
 export type MessageInstance = AntdMessageInstance;
 export interface MessageArgsProps extends AntdMessageArgsProps {
     original?: boolean;
     showCountDown?: boolean;
+    showClose?: boolean;
+    title?: string | React.ReactNode;
 }
+
+type JointContent = React.ReactNode | string | MessageArgsProps;
 
 export interface MessageApi extends Omit<AntdMessageApi, 'open'> {
     open(args: MessageArgsProps): AntdMessageType;
+    notify(content: JointContent, duration?: number, onClose?: () => void): AntdMessageType;
 }
 
 const typeToIcon: Record<iconTypes, React.ReactNode> = {
@@ -44,11 +46,111 @@ const typeToIcon: Record<iconTypes, React.ReactNode> = {
     warning: <IconExclamationCircleFilled className={`${clsPrefix}-warningIcon`} />,
 };
 
-function isArgsProps(content: JointContent): boolean {
-    return (
-        Object.prototype.toString.call(content) === '[object Object]' && !!(content as AntdMessageArgsProps).content
-    );
+function isObject(content: JointContent): boolean {
+    return Object.prototype.toString.call(content) === '[object Object]';
 }
+
+const CountDownClose: React.FC<{countDown: number, onTimeout: () => void}> = ({countDown, onTimeout}) => {
+    const [timer, reduce] = useReducer<(arg: number) => number>(state => state - 1, countDown);
+    const [show, setShow] = useState(true);
+    // 每秒调用一次
+    useInterval(reduce, 1 * 1000);
+    useEffect(
+        () => {
+            if (timer < 0) {
+                // onTimeout();
+                setShow(false);
+            }
+        },
+        [timer, countDown, onTimeout]
+    );
+
+    if (countDown <= 0) {
+        return null;
+    }
+
+    return (show && <span className={`${clsPrefix}-count-down-close`}>({timer}s)</span> || null);
+};
+
+let localInnerKey = 0; // 用来记录message destory的
+interface MessageContentProps {
+    content: JointContent;
+    className: string;
+    localInnerKey: number | string;
+    onClose?: MessageArgsProps['onClose'];
+    duration?: MessageArgsProps['duration'];
+}
+// eslint-disable-next-line complexity
+const getMessageContent = ({content, className, localInnerKey, onClose, duration}: MessageContentProps) => {
+    const {
+        title = '',
+        showClose = false,
+        showCountDown = true,
+        duration: innerDuration = (duration || 5),
+        key: innerKey = localInnerKey,
+        onClose: innerOnClose = onClose,
+    } = isObject(content) ? (content as MessageArgsProps) : {};
+
+    const realContent = isObject(content) ? (content as MessageArgsProps).content ?? null : content;
+    let innerContent = null;
+
+    const handleClose = () => {
+        AntdMessage.destroy(innerKey);
+        innerOnClose && innerOnClose();
+    };
+
+    const countDown = (
+        showCountDown && (
+            <CountDownClose
+                countDown={innerDuration || -1}
+                // eslint-disable-next-line react/jsx-no-bind
+                onTimeout={handleClose}
+            />
+        )
+    );
+
+    const closeIcon = (
+        showClose && (
+            // eslint-disable-next-line react/jsx-no-bind
+            <span className="close-icon" onClick={handleClose}>
+                <IconCloseOutlined />
+            </span>
+        )
+    );
+
+    if (title) {
+        // content with title;
+        innerContent = (
+            <div className={`${clsPrefix}-message-content`}>
+                <div className={`${clsPrefix}-message-content-title`}>
+                    <span className={`${clsPrefix}-message-content-title-text`}>{title}</span>
+                    {countDown}
+                    {closeIcon}
+                </div>
+                <div>
+                    {realContent}
+                </div>
+            </div>
+        );
+    }
+    else {
+        innerContent = (
+            <div className={classNames(`${clsPrefix}-message-content`, `${clsPrefix}-message-content-inline`)}>
+                {realContent}
+                {countDown}
+                {closeIcon}
+            </div>
+        );
+    }
+
+    return {
+        content: innerContent,
+        className,
+        key: localInnerKey,
+        duration: innerDuration,
+        onClose: innerOnClose,
+    };
+};
 
 // 对antd message args的调整
 const getPatchedArgs = (args: MessageArgsProps) => {
@@ -58,7 +160,7 @@ const getPatchedArgs = (args: MessageArgsProps) => {
 
     if (getPropFromConfig('original')) {
         // 如果传入original为true则只覆盖icon和className
-        const contentConfig = isArgsProps(args.content) ? args.content : {};
+        const contentConfig = isObject(args.content) ? args.content : {};
         return {
             ...args,
             ...contentConfig, // 当content是config时，要覆盖部分args的参数
@@ -67,29 +169,27 @@ const getPatchedArgs = (args: MessageArgsProps) => {
         };
     }
     // 如果传入original为false，则使用Alert作为content，使用Alert作为content时，className加上`${clsPrefix}-alert`
+
+    const content = args.content;
+    const type = getPropFromConfig('type');
+    const icon = getPropFromConfig('icon') || typeToIcon[args.type as iconTypes]; // icon直接覆盖掉，用alert里面的icon
+
     const className = classNames(
         clsPrefix,
-        getPropFromConfig('className'),
-        `${clsPrefix}-alert`
+        `${clsPrefix}-message-${type}`,
+        getPropFromConfig('className')
     );
-    const content = getPropFromConfig('content');
-    const countDown = getPropFromConfig('duration') as AlertProps['countDown'];
-    const type = getPropFromConfig('type');
-    const icon = <span />; // icon直接覆盖掉，用alert里面的icon
 
     // 这里对countDown做了处理，duration不能直接透传给countDown，考虑到有可能有自动关闭，但是不想显示倒计时的场景
-    const alertProps: AlertProps = {
-        message: content,
-        type: type as AlertProps['type'],
-        className: `${clsPrefix}-alert`,
-    };
-    if (args.showCountDown) {
-        alertProps.countDown = countDown;
-    }
     return {
         ...args,
-        className,
-        content: <Alert showIcon {...alertProps} prefixCls={localOptions && localOptions.prefixCls} />,
+        ...getMessageContent({
+            content,
+            className,
+            localInnerKey: (args as any).localInnerKey,
+            onClose: args.onClose,
+            duration: args.duration,
+        }),
         icon,
     };
 };
@@ -100,12 +200,14 @@ const messageBuilder = (
     duration?: number,
     onClose?: () => void
 ) => {
+    localInnerKey++;
     return AntdMessage.open(
         getPatchedArgs({
             type,
             content,
             duration,
             onClose,
+            localInnerKey, // 这个是额外加的，只内部使用
         } as MessageArgsProps));
 };
 
@@ -119,11 +221,13 @@ export default Object.assign({}, AntdMessage, {
     warning: partial(messageBuilder, 'warning'),
     info: partial(messageBuilder, 'info'),
     warn: partial(messageBuilder, 'warning'),
-    loading: AntdMessage.loading,
+    loading: partial(messageBuilder, 'loading'),
+    notify: partial(messageBuilder, 'notify'),
     open: openMessageBuilder,
     config: (options: ConfigOptions) => {
         // 对antd message config的patch，注意还不支持context的方式
-        localOptions = options;
         AntdMessage.config(options);
     },
+    destroy: AntdMessage.destroy,
+    useMessage: AntdMessage.useMessage,
 }) as MessageApi;

@@ -1,30 +1,113 @@
+/* stylelint-disable no-duplicate-selectors */
 @osui-message-class-prefix: osui-message;
 
 .@{osui-message-class-prefix} {
-    &-alert {
-        .@{ant-prefix}-message-notice-content {
-            padding: 0;
+    padding: var(--message-content-padding);
+
+    // 是否message从右面出来
+    &.ant-message-notice {
+        text-align: var(--message-text-align);
+    }
+
+    // 对original的样式patch
+    .@{ant-prefix}-message-custom-content {
+        display: flex;
+        max-width: 400px;
+        color: var(--theme-color-text);
+        text-align: left;
+
+        > svg.osui-icon {
+            flex-shrink: 0;
+            margin-top: .15em; // font-size 14px和12px的平均值
+            padding-right: var(--alert-icon-padding-right);
+        }
+
+        .close-icon {
+            margin-left: 8px;
+            cursor: pointer;
         }
     }
 
-    .@{ant-prefix}-alert-success {
-        background: var(--message-alert-success-bg-color);
-        border-color: var(--message-alert-success-border-color);
+    &-message-content {
+        text-align: left;
+
+        &-inline {
+            display: flex;
+        }
+
+        &-title {
+            display: flex;
+            margin-bottom: 4px;
+
+            &-text {
+                flex: 1;
+                font-family: "PingFangSC-Medium";
+            }
+        }
+
+        .close-icon {
+            svg {
+                width: 14px;
+                height: 14px;
+                color: var(--color-gray-7);
+            }
+        }
     }
 
-    .@{ant-prefix}-alert-warning {
-        background: var(--message-alert-warning-bg-color);
-        border-color: var(--message-alert-warning-border-color);
+    &-count-down-close {
+        margin-left: 8px;
+        color: var(--color-gray-7);
     }
 
-    .@{ant-prefix}-alert-error {
-        background: var(--message-alert-error-bg-color);
-        border-color: var(--message-alert-error-border-color);
+    &-message-notify {
+        .@{osui-message-class-prefix}-message-content-title-text {
+            color: var(--color-gray-7);
+            font-family: var(--theme-font-family);
+
+            &::before {
+                content: '[';
+            }
+
+            &::after {
+                content: ']';
+            }
+        }
     }
 
-    .@{ant-prefix}-alert-info {
-        background: var(--message-alert-info-bg-color);
-        border-color: var(--message-alert-info-border-color);
+    // 颜色
+    &-message-success {
+        .ant-message-notice-content {
+            background: var(--message-alert-success-bg-color);
+            border: 1px solid var(--message-alert-success-border-color);
+        }
+    }
+
+    &-message-warning {
+        .ant-message-notice-content {
+            background: var(--message-alert-warning-bg-color);
+            border: 1px solid var(--message-alert-warning-border-color);
+        }
+    }
+
+    &-message-error {
+        .ant-message-notice-content {
+            background: var(--message-alert-error-bg-color);
+            border: 1px solid var(--message-alert-error-border-color);
+        }
+    }
+
+    &-message-info,
+    &-message-loading {
+        .ant-message-notice-content {
+            background: var(--message-alert-info-bg-color);
+            border: 1px solid var(--message-alert-info-border-color);
+        }
+    }
+
+    &-message-notify {
+        .ant-message-notice-content {
+            border: 1px solid var(--theme-border-color-base);
+        }
     }
 
     &-infoIcon {
@@ -41,19 +124,5 @@
 
     &-warningIcon {
         color: var(--theme-warning-color);
-    }
-
-    .@{ant-prefix}-alert-close-icon {
-        right: 10px;
-    }
-
-    // 对original的样式patch
-    .@{ant-prefix}-message-custom-content {
-        display: flex;
-        align-items: center;
-
-        > svg {
-            padding-right: var(--alert-icon-padding-right);
-        }
     }
 }

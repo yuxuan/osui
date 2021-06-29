@@ -7,4 +7,6 @@ export default {
     '--message-alert-warning-border-color': 'var(--theme-component-bg)',
     '--message-alert-error-border-color': 'var(--theme-component-bg)',
     '--message-alert-info-border-color': 'var(--theme-component-bg)',
+    '--message-content-padding': '8px 16px',
+    '--message-text-align': 'center',
 };

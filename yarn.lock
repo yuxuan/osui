@@ -1553,6 +1553,11 @@
   resolved "https://registry.npm.taobao.org/@huse/timeout/download/@huse/timeout-1.0.3.tgz#c61ad86dcd5472aef25bcc247766bb0cfd1ada4e"
   integrity sha1-xhrYbc1Ucq7yW8wkd2a7DP0a2k4=
 
+"@huse/timeout@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.nlark.com/@huse/timeout/download/@huse/timeout-1.1.0.tgz#9daf8fe1deb511fbd9b515552081969c019f954d"
+  integrity sha1-na+P4d61EfvZtRVVIIGWnAGflU0=
+
 "@icons/material@^0.2.4":
   version "0.2.4"
   resolved "https://registry.npm.taobao.org/@icons/material/download/@icons/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"

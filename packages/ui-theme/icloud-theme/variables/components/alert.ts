@@ -14,7 +14,7 @@ export default {
     '--alert-warning-icon-color': 'var(--theme-warning-color)',
     /* Metrics */
     '--alert-close-icon-margin-left': '10px',
-    '--alert-icon-padding-right': '10px',
+    '--alert-icon-padding-right': '8px',
     '--alert-no-icon-padding': '8px 20px',
     '--alert-padding': '8px 10px 8px 40px',
     '--alert-with-description-icon-top': '24px',
