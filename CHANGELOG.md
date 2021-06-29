@@ -7,7 +7,7 @@ sidebar_position: 1
 
 以`@osui/ui`主版本为主，包含各组件单包发布情况
 
-## 1.0.5
+## 1.0.6
 
 > 2021-6-29
 
@@ -20,6 +20,18 @@ sidebar_position: 1
   - 下拉展示10条内容
 - message
   - 一次比较大的重构，出现位置调整到右侧，里面不在使用Alert
+
+### 组件更新
+
+```
+- @osui/icloud-theme@1.0.4
+- @osui/theme@1.0.4
+- @osui/auto-complete@1.0.5
+- @osui/input@1.0.5
+- @osui/message@1.0.1
+- @osui/select@1.0.5
+- @osui/ui@1.0.6
+```
 
 ## 1.0.5
 
