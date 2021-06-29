@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/message@1.0.0...@osui/message@1.0.1) (2021-06-29)
+
+
+### Bug Fixes
+
+* 调整select, autocomplete的样式问题 ([dd86eae](https://gitee.com/gitee-fe/osui/tree/master/commits/dd86eae06efc0c3629a8e41d05f861bbd24320dd))
+* 重构message组件 ([544bd7f](https://gitee.com/gitee-fe/osui/tree/master/commits/544bd7f8dd023809bf694d5fb0d5c268b237198b))
+
+
+
+
+
 # [1.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/message@0.12.1...@osui/message@1.0.0) (2021-06-07)
 
 

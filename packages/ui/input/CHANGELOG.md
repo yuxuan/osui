@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@1.0.4...@osui/input@1.0.5) (2021-06-29)
+
+
+### Bug Fixes
+
+* 调整select, autocomplete的样式问题 ([dd86eae](https://gitee.com/gitee-fe/osui/tree/master/commits/dd86eae06efc0c3629a8e41d05f861bbd24320dd))
+
+
+
+
+
 ## [1.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@1.0.3...@osui/input@1.0.4) (2021-06-28)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@osui/theme",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/theme/index.js",
   "module": "dist/theme/index.js",
