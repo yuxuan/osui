@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@osui/button';
-import Space from '@osui/space';
+import Markdown from '@osui/markdown';
 import message from '@osui/message';
 
 export default {
@@ -25,37 +25,195 @@ export const Demo = () => {
         message.loading('This is a loading message');
     };
 
-    const open = () => {
-        message.open({type: 'success', content: 'This is a loading message', duration: 200, showCountDown: true});
+    const success2 = () => {
+        message.success({content: 'This is a success message', showClose: true});
     };
 
-    const original = () => {
-        message.open({
-            type: 'success',
-            content: '弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。',
-            original: true,
-            duration: 3,
+    const success3 = () => {
+        message.success({title: '创建成功', content: '后续您可在列表中操作'});
+    };
+
+    const success4 = () => {
+        message.success({
+            title: '创建成功',
+            content: (
+                <>
+                    <div>
+                        订单接口返回异常，您可尝试联系集团云值班同学解决，<a>查看集团云值班表</a>
+                    </div>
+                    <div>错误码：ewrfjji-ejjkfnjkbjk-wfjhjjkn-fhihg11</div>
+                </>),
+            showClose: true,
         });
     };
+
+    const notify = () => {
+        message.notify({
+            title: '产品消息',
+            content: '关于集团云api鉴权认证安全升级的通知',
+        });
+    };
+
     return (
         <div style={{ padding: 30 }}>
-            <Space>
-                <Button onClick={success}>Success</Button>
-                <Button onClick={error}>Error</Button>
-                <Button onClick={info}>Info</Button>
-                <Button onClick={warning}>Warning</Button>
-                <Button onClick={loading}>Loading</Button>
-                <Button onClick={open}>open success</Button>
-                <Button onClick={original}>open Antd Original Message</Button>
-            </Space>
+            <h3>1、成功提示</h3>
+            <p>基础样式</p>
+            <Button onClick={success}>Success</Button>
+            <p />
+            <p>关闭&倒计时</p>
+            <Button onClick={success2}>Success</Button>
+            <p />
+            <p>标题&内容</p>
+            <Button onClick={success3}>Success</Button>
+            <p />
+            <p>带操作项</p>
+            <Button onClick={success4}>Success</Button>
+            <h3>2、错误提示</h3>
+            <Button onClick={error}>Error</Button>
+            <h3>3、警示样式</h3>
+            <Button onClick={warning}>Warning</Button>
+            <h3>4、通知样式</h3>
+            <Button onClick={info}>Info</Button>
+            <h3>5、加载样式</h3>
+            <Button onClick={loading}>Loading</Button>
+            <h3>6、消息提醒</h3>
+            <Button onClick={notify}>notify</Button>
         </div>);
 };
 
 export const Api = () => {
+    const content = `
+| 参数 | 说明 | 类型 | 默认值
+| --- | --- | --- | --- |
+| title | message的title部分 | ReactNode、string | '' |
+| content | message的content部分 | ReactNode、string | '' |
+| showClose | 是否展示关闭icon | boolean | false |
+| showCountDown | 是否展示倒计时 | boolean | true |
+| original | 当传入original为true时，返回默认的antd message| boolean | undefined |
+`;
+
     return (
         <>
             <a target="_blank" rel="noreferrer" href="https://ant.design/components/message-cn/">Antd Message API</a>
+            <h2>新增参数</h2>
+            <p>主要是content为config的用法，一下列出config新增的参数</p>
+            <Markdown content={content} />
         </>
     );
 };
 
+
+export const TestCase = () => {
+    const success = () => {
+        // eslint-disable-next-line max-len
+        message.success('This is a success messageThis is a success messageThis is a success messageThis is a success messageThis is a success messageThis is a success message');
+    };
+
+    const success2 = () => {
+        message.success('ok');
+    };
+
+    const success3 = () => {
+        message.success({content: 'ok', showClose: true});
+    };
+
+    const success4 = () => {
+        message.success({
+            content: (
+                <>
+                    <div>订单接口返回异常，您可尝试联系集团云值班同学解决，查看集团云值班表</div>
+                    <div>错误码：ewrfjji-ejjkfnjkbjk-wfjhjjkn-fhihg11</div>
+                </>
+            ),
+            title: '创建成功',
+        });
+    };
+
+    const success5 = () => {
+        message.success({
+            content: (
+                <>
+                    { /* eslint-disable-next-line max-len */ }
+                    <div>订单接口返回异常，您可尝试联系集团云值班同学解决，查看集团云值班表订单接口返回异常，您可尝试联系集团云值班同学解决，查看集团云值班表订单接口返回异常，您可尝试联系集团云值班同学解决，查看集团云值班表</div>
+                    <div>错误码：ewrfjji-ejjkfnjkbjk-wfjhjjkn-fhihg11</div>
+                </>
+            ),
+            title: '创建成功',
+        });
+    };
+
+    const success6 = () => {
+        message.success({
+            title: '创建成功',
+        });
+    };
+    const success7 = () => {
+        message.success({
+            title: (
+                <div style={{display: 'flex' }}>
+                    <div>创建成功</div>
+                    <a style={{cssFloat: 'right', marginLeft: '8px' }}>
+                        查看详情
+                    </a>
+                </div>
+            ),
+        });
+    };
+    const success8 = () => {
+        message.success({
+            showCountDown: false,
+            showClose: true,
+            duration: 6000,
+            title: (
+                <div style={{display: 'flex' }}>
+                    <div>创建成功</div>
+                    <a style={{cssFloat: 'right', marginLeft: '8px' }}>
+                        查看详情
+                    </a>
+                </div>
+            ),
+        });
+    };
+
+    const success9 = () => {
+        message.success({
+            title: '创建成功',
+            onClose: () => console.log('closed'),
+        });
+    };
+
+    const success10 = () => {
+        message.success('创建成功', 10, () => console.log('closed'));
+    };
+
+    const success11 = () => {
+        message.success({
+            title: '创建成功',
+            onClose: () => console.log('closed'),
+            showClose: true,
+        });
+    };
+
+    return (
+        <div style={{ padding: 30 }}>
+            <p>max-width测试</p>
+            <Button onClick={success}>Success</Button>
+            <Button onClick={success5}>Success</Button>
+            <p>很短测试</p>
+            <Button onClick={success2}>Success</Button>
+            <p>有close</p>
+            <Button onClick={success3}>Success</Button>
+            <p>title</p>
+            <Button onClick={success4}>Success</Button>
+            <p>title only</p>
+            <Button onClick={success6}>Success</Button>
+            <p>title里面有链接</p>
+            <Button onClick={success7}>Success</Button>
+            <p>永久显示，时间设置一个很长的时间，showClose: true, showCountDown: false</p>
+            <Button onClick={success8}>Success</Button>
+            <p>onClose测试</p>
+            <Button onClick={success9}>content配置</Button>
+            <Button onClick={success10}>函数第三个参数</Button>
+            <Button onClick={success11}>点击关闭时调用</Button>
+        </div>);
+};
