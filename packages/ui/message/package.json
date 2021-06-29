@@ -65,7 +65,6 @@
     "license": "MIT",
     "dependencies": {
         "@huse/timeout": "^1.1.0",
-        "@osui/alert": "^1.0.0",
         "classnames": "^2.2.6",
         "lodash.partial": "^4.2.1"
     },

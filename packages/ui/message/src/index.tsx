@@ -168,11 +168,11 @@ const getPatchedArgs = (args: MessageArgsProps) => {
             icon: getPropFromConfig('icon') || typeToIcon[args.type as iconTypes],
         };
     }
-    // 如果传入original为false，则使用Alert作为content，使用Alert作为content时，className加上`${clsPrefix}-alert`
+    // 如果传入original为false，则使用自定义组件作为content，使用自定义组件作为content时
 
     const content = args.content;
     const type = getPropFromConfig('type');
-    const icon = getPropFromConfig('icon') || typeToIcon[args.type as iconTypes]; // icon直接覆盖掉，用alert里面的icon
+    const icon = getPropFromConfig('icon') || typeToIcon[args.type as iconTypes];
 
     const className = classNames(
         clsPrefix,
