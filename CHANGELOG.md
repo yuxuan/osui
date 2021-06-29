@@ -9,6 +9,20 @@ sidebar_position: 1
 
 ## 1.0.5
 
+> 2021-6-29
+
+### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.6/)
+- Input、Search、Select、AutoComplete 调整了icon的颜色。
+- 调整了theme-icon-color为gray-7
+
+### 功能修复
+- Select
+  - 下拉展示10条内容
+- message
+  - 一次比较大的重构，出现位置调整到右侧，里面不在使用Alert
+
+## 1.0.5
+
 > 2021-6-28
 
 ### 功能修复
