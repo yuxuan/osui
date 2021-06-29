@@ -1,7 +1,7 @@
 @osui-select-class-prefix: osui-select;
 
 .@{osui-select-class-prefix} {
-    &.ant-select-single .@{ant-prefix}-select-selector {
+    &.@{ant-prefix}-select-single .@{ant-prefix}-select-selector {
         margin-right: 8px;
     }
 
@@ -29,7 +29,7 @@
         top: var(--select-arrow-top);
         width: 14px;
         height: 14px;
-        color: var(--color-gray-7);
+        color: var(--theme-icon-color);
 
         svg {
             font-size: 14px;
@@ -96,11 +96,15 @@
         right: 11px;
         width: 14px;
         height: 14px;
-        color: var(--color-gray-6);
+        color: var(--theme-icon-color);
         opacity: var(--select-clear-icon-opacity);
 
         &:hover {
-            color: var(--color-gray-6);
+            color: var(--color-gray-8);
+        }
+
+        &:active {
+            color: var(--color-gray-9);
         }
     }
 
@@ -176,5 +180,10 @@
         &:active {
             background-color: var(--color-gray-4);
         }
+    }
+
+    // 修复 select item 不居中
+    .@{ant-prefix}-select-item {
+        line-height: 22px;
     }
 }

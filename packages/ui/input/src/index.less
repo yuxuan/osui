@@ -88,9 +88,8 @@
     }
 
     // search icon
-    &-search-icon,
-    .@{ant-prefix}-input-clear-icon {
-        color: var(--color-gray-7);
+    &-search-icon {
+        color: var(--theme-icon-color);
         cursor: pointer;
 
         &:hover {
@@ -104,7 +103,17 @@
 
     // clear icon 处理
     .@{ant-prefix}-input-clear-icon {
+        color: var(--theme-icon-color);
+        cursor: pointer;
         opacity: 0;
+
+        &:hover {
+            color: var(--color-gray-8);
+        }
+
+        &:active {
+            color: var(--color-gray-9);
+        }
     }
 
     &:hover,

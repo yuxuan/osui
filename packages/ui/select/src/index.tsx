@@ -3,6 +3,7 @@ import {Select as AntdSelect} from 'antd';
 import {SelectProps as AntdSelectProps} from 'antd/lib/select';
 import classNames from 'classnames';
 import {IconDownOutlined, IconCheckSquareFilled} from '@osui/icons';
+import {useBrandContext} from '@osui/brand-provider';
 import {adjustAntdProps} from './utils';
 import './index.less';
 
@@ -20,7 +21,8 @@ export interface SelectType extends SelectFC {
 }
 
 function InternalSelect<R, T>(props: SelectProps<T>, ref: React.Ref<R>): React.ReactElement | null {
-    const {className, noBorder, loading, ...restProps} = props;
+    const {className, noBorder, loading, listHeight, ...restProps} = props;
+    const {brand} = useBrandContext();
     // 暂时用，后面需要透传下去
     const {mode, dropdownClassName} = restProps;
 
@@ -59,6 +61,8 @@ function InternalSelect<R, T>(props: SelectProps<T>, ref: React.Ref<R>): React.R
         },
     ]);
 
+    const innerListHeight = listHeight ?? (brand === 'icloud' ? 320 : 256);
+
     return (
         <AntdSelect
             ref={ref}
@@ -68,6 +72,7 @@ function InternalSelect<R, T>(props: SelectProps<T>, ref: React.Ref<R>): React.R
                 className
             )}
             loading={loading}
+            listHeight={innerListHeight}
             {...adjustedProps}
         />
     );

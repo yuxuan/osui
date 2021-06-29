@@ -5,7 +5,7 @@
     padding: var(--message-content-padding);
 
     // 是否message从右面出来
-    &.ant-message-notice {
+    &.@{ant-prefix}-message-notice {
         text-align: var(--message-text-align);
     }
 
@@ -49,19 +49,19 @@
             svg {
                 width: 14px;
                 height: 14px;
-                color: var(--color-gray-7);
+                color: var(--theme-icon-color);
             }
         }
     }
 
     &-count-down-close {
         margin-left: 8px;
-        color: var(--color-gray-7);
+        color: var(--theme-icon-color);
     }
 
     &-message-notify {
         .@{osui-message-class-prefix}-message-content-title-text {
-            color: var(--color-gray-7);
+            color: var(--theme-icon-color);
             font-family: var(--theme-font-family);
 
             &::before {
@@ -76,21 +76,21 @@
 
     // 颜色
     &-message-success {
-        .ant-message-notice-content {
+        .@{ant-prefix}-message-notice-content {
             background: var(--message-alert-success-bg-color);
             border: 1px solid var(--message-alert-success-border-color);
         }
     }
 
     &-message-warning {
-        .ant-message-notice-content {
+        .@{ant-prefix}-message-notice-content {
             background: var(--message-alert-warning-bg-color);
             border: 1px solid var(--message-alert-warning-border-color);
         }
     }
 
     &-message-error {
-        .ant-message-notice-content {
+        .@{ant-prefix}-message-notice-content {
             background: var(--message-alert-error-bg-color);
             border: 1px solid var(--message-alert-error-border-color);
         }
@@ -98,14 +98,14 @@
 
     &-message-info,
     &-message-loading {
-        .ant-message-notice-content {
+        .@{ant-prefix}-message-notice-content {
             background: var(--message-alert-info-bg-color);
             border: 1px solid var(--message-alert-info-border-color);
         }
     }
 
     &-message-notify {
-        .ant-message-notice-content {
+        .@{ant-prefix}-message-notice-content {
             border: 1px solid var(--theme-border-color-base);
         }
     }

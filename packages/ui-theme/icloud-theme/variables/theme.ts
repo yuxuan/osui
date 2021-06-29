@@ -19,7 +19,7 @@ export default {
     '--theme-error-color': 'var(--color-error-6)',
     '--theme-heading-color': 'var(--color-gray-9)',
     '--theme-highlight-color': 'var(--color-error-5)',
-    '--theme-icon-color': 'var(--color-gray-8)',
+    '--theme-icon-color': 'var(--color-gray-7)',
     '--theme-info-color-active': 'var(--color-info-7)',
     '--theme-info-color-hover': 'var(--color-info-5)',
     '--theme-info-color': 'var(--color-info-6)',
