@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/toggle-button@1.0.0...@osui/toggle-button@1.0.1) (2021-07-07)
+
+**Note:** Version bump only for package @osui/toggle-button
+
+
+
+
+
 # [1.0.0](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/toggle-button@0.12.1...@osui/toggle-button@1.0.0) (2021-06-07)
 
 

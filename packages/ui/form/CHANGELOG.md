@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@1.0.3...@osui/form@1.0.4) (2021-07-07)
+
+
+### Bug Fixes
+
+* form 报错时不在添加额外的margin-top ([76835a7](https://gitee.com/gitee-fe/osui/tree/master/commits/76835a780ec605dc919ec322d86ec5b2e6e492e9))
+
+
+
+
+
 ## [1.0.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@1.0.2...@osui/form@1.0.3) (2021-06-25)
 
 

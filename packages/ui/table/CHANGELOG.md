@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@1.0.3...@osui/table@1.0.4) (2021-07-07)
+
+
+### Bug Fixes
+
+* 调整collapse,table可以适配antd4.16.6 ([7c5fbb3](https://gitee.com/gitee-fe/osui/tree/master/commits/7c5fbb37c89eae4e22499b388aef2b4311b21fff))
+
+
+
+
+
 ## [1.0.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@1.0.2...@osui/table@1.0.3) (2021-06-28)
 
 

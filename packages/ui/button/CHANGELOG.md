@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@1.0.2...@osui/button@1.0.3) (2021-07-07)
+
+
+### Bug Fixes
+
+* 修复space 4.16.6的支持 ([73a2b9e](https://gitee.com/gitee-fe/osui/tree/master/commits/73a2b9e9c596a9a9b060b5c7cb552e67c19a80dd))
+
+
+
+
+
 ## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@1.0.1...@osui/button@1.0.2) (2021-06-25)
 
 
