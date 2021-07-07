@@ -8,6 +8,7 @@ import Space from '@osui/space';
 import {IconDownOutlined} from '@osui/icons';
 import BrandProvider from '@osui/brand-provider';
 import {TableProps} from 'antd/lib/table';
+import {version} from 'antd';
 import Table from '@osui/table';
 
 const Blockquote = ({children}) => (
@@ -72,7 +73,6 @@ export const Demo = () => {
 
     return (
         <div style={{ padding: 30 }}>
-            {version}
             <BrandProvider brand="icloud">
                 <Table columns={columns} dataSource={data} />
                 <br />
@@ -800,6 +800,7 @@ export const TestCase = () => {
     }
     return (
         <BrandProvider brand="icloud">
+            {version}
             <TreeData />
         </BrandProvider>
     );
