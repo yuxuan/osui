@@ -7,6 +7,70 @@ sidebar_position: 1
 
 以`@osui/ui`主版本为主，包含各组件单包发布情况
 
+## 1.0.7
+
+### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.7/)
+- 升级了Antd@4.16.6，确保没有break
+- Collapse，Table有稍微调整，为了支持4.16.6和之前的版本
+
+### 功能调整
+- Form
+  - 报错时错误信息不加margin-top，否则会带来页面抖动
+- Collapse
+  - 兼容antd@4.16.6和之前的版本样式
+- Table
+  - 修复了fix时border的问题
+  - 调整了checkbox和expandicon的margin，单独一列显示
+
+### 组件更新
+```
+- @osui/icloud-theme@1.0.5
+- @osui/theme@1.0.5
+- @osui/affix@1.0.1
+- @osui/alert@1.0.1
+- @osui/anchor@1.0.1
+- @osui/auto-complete@1.0.6
+- @osui/avatar@1.0.1
+- @osui/back-top@1.0.1
+- @osui/badge@1.0.1
+- @osui/branch-dropdown@1.0.3
+- @osui/brand-provider@1.0.1
+- @osui/breadcrumb@1.0.1
+- @osui/button@1.0.3
+- @osui/calendar@1.0.1
+- @osui/card@1.0.1
+- @osui/carousel@1.0.1
+- @osui/cascader@1.0.1
+- @osui/checkbox@1.0.1
+- @osui/col@1.0.1
+- @osui/collapse@1.0.2
+- @osui/comment@1.0.1
+- @osui/config-provider@1.0.1
+- @osui/date-picker@1.0.2
+- @osui/descriptions@1.0.1
+- @osui/directory-navigator@1.0.1
+- @osui/divider@1.0.1
+- @osui/drawer@1.0.1
+- @osui/dropdown@1.0.2
+- @osui/empty@1.0.1
+- @osui/flex-centered@1.0.1
+- @osui/form@1.0.4
+- @osui/gap@1.0.1
+- @osui/grid@1.0.1
+- @osui/highlight-text@1.0.1
+- @osui/image@1.0.1
+- @osui/input-number@1.0.1
+- @osui/input@1.0.6
+- @osui/joyride@1.0.1
+- @osui/layout@1.0.1
+- @osui/list@1.0.1
+- @osui/markdown@1.0.1
+- @osui/mentions@1.0.1
+- @osui/menu-dropdown@1.0.2
+- @osui/menu@1.0.1
+- @osui/message@1.0.2
+```
+
 ## 1.0.6
 
 > 2021-6-29
