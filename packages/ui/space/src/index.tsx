@@ -3,6 +3,7 @@ import {Space as AntdSpace} from 'antd';
 import {SpaceProps} from 'antd/lib/space';
 import classNames from 'classnames';
 import './index.less';
+import './patch.less';
 
 const clsPrefix = 'osui-space';
 

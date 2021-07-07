@@ -1,5 +1,6 @@
 import React from 'react';
 import BrandProvider from '@osui/brand-provider';
+import {version} from 'antd';
 import Collapse from '../src';
 
 const { Panel } = Collapse;
@@ -12,7 +13,6 @@ export const Demo = () => {
     const text = '百度（纳斯达克：BIDU），全球最大的中文搜索引擎、最大的中文网站。百度愿景是：成为最懂用户，并能帮助人们成长的全球顶级高科技公司。';
     return (
         <BrandProvider brand="icloud">
-            {version}
             <div style={{ padding: 30 }}>
                 <p>基础折叠面板</p>
                 <Collapse defaultActiveKey={['1']}>
@@ -66,3 +66,10 @@ export const Api = () => {
     );
 };
 
+export const TestCase = () => {
+    return (
+        <>
+            {version}
+        </>
+    );
+};
