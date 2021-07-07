@@ -71,7 +71,8 @@ export const Demo = () => {
 
 
     return (
-        <div style={{ padding: 30, }}>
+        <div style={{ padding: 30 }}>
+            {version}
             <BrandProvider brand="icloud">
                 <Table columns={columns} dataSource={data} />
                 <br />
@@ -123,14 +124,14 @@ export const Border = () => {
     ];
 
     return (
-        <div style={{ padding: 30, }}>
+        <div style={{ padding: 30 }}>
             <BrandProvider brand="icloud">
                 <div>Antd的bordered=false，没有列border</div>
                 <Table columns={columns} dataSource={data} bordered={false} />
-                <div style={{ paddingBottom: 30, }} />
+                <div style={{ paddingBottom: 30 }} />
                 <div>noRowBorder，head保留border</div>
                 <Table columns={columns} dataSource={data} noRowBorder />
-                <div style={{ paddingBottom: 30, }} />
+                <div style={{ paddingBottom: 30 }} />
                 <div>noBorder，全部没有border</div>
                 <Table columns={columns} dataSource={data} noBorder />
             </BrandProvider>
@@ -314,7 +315,7 @@ export const TreeTableDemo = () => {
         return (
             <>
                 <BrandProvider brand="icloud">
-                    <Space align="center" style={{ marginBottom: 16, }}>
+                    <Space align="center" style={{ marginBottom: 16 }}>
                         CheckStrictly: <Switch checked={checkStrictly} onChange={setCheckStrictly} />
                     </Space>
                     <Table
@@ -573,7 +574,7 @@ export const CompleteDemo = () => {
                         <Form
                             layout="inline"
                             className="components-table-demo-control-bar"
-                            style={{ marginBottom: 16, }}
+                            style={{ marginBottom: 16 }}
                         >
                             <Form.Item label="Bordered">
                                 <Switch checked={state.bordered} onChange={this.handleToggle('bordered')} />
@@ -788,7 +789,7 @@ export const TestCase = () => {
     };
 
     function TreeData() {
-        const [checkStrictly, setCheckStrictly] = React.useState(false);
+        const [checkStrictly] = React.useState(false);
         return (
             <Table
                 columns={columns}

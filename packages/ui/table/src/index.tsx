@@ -14,6 +14,7 @@ import {useBrandContext} from '@osui/brand-provider';
 import {IconDownOutlined, IconRightOutlined} from '@osui/icons';
 import '@osui/pagination/lib/index.less';
 import './index.less';
+import './patch.less';
 
 const clsPrefix = 'osui-table';
 

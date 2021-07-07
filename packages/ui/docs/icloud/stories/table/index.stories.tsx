@@ -72,6 +72,7 @@ export const Demo = () => {
 
     return (
         <div style={{ padding: 30 }}>
+            {version}
             <BrandProvider brand="icloud">
                 <Table columns={columns} dataSource={data} />
                 <br />

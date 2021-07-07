@@ -6,6 +6,7 @@ import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import './index.less';
+import './patch.less';
 
 const clsPrefix = 'osui-collapse';
 

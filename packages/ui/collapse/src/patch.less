@@ -1,0 +1,13 @@
+// fix 4.16.6 osui升级大版本之后，antd依赖>4.16.6可以删除以下适配
+
+.osui-collapse {
+    .ant-collapse-item .ant-collapse-header .icon-wrapper {
+        position: static;
+        margin-right: 12px;
+        padding: 0;
+    }
+
+    &.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+        padding-left: 12px;
+    }
+}

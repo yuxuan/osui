@@ -16,8 +16,9 @@
         margin: var(--table-pagination-margin);
     }
 
-    .@{ant-prefix}-table-thead .@{ant-prefix}-table-cell:not(:last-child) {
-        border-right: var(--table-header-cell-border-right);
+    .@{ant-prefix}-table-thead > tr > th:not(:last-child):not(.@{ant-prefix}-table-selection-column):not(.@{ant-prefix}-table-row-expand-icon-cell):not([colspan])::before {
+        height: 100%;
+        background: var(--color-gray-1);
     }
 
     &-no-row-border {
@@ -45,36 +46,6 @@
 
     // ===== 以下用class来patch，因为侵入性比较强 ======
     &-icloud {
-        .@{ant-prefix}-table-thead,
-        .@{ant-prefix}-table-tbody {
-            .@{ant-prefix}-table-cell.@{ant-prefix}-table-row-expand-icon-cell {
-                padding-right: 0;
-                padding-left: 10px;
-                border-right: 0 !important; // 强制没有右侧border
-                border-left: 0;
-            }
-
-            .@{ant-prefix}-table-cell.@{ant-prefix}-table-selection-column {
-                padding-right: 10px;
-                padding-left: 10px;
-                border-right: 0 !important; // 强制没有右侧border
-                border-left: 0;
-            }
-        }
-
-        .@{ant-prefix}-table-thead,
-        .@{ant-prefix}-table-row {
-            .@{ant-prefix}-table-cell.@{ant-prefix}-table-row-expand-icon-cell:first-child {
-                // padding-right: 0;
-                padding-left: 20px;
-            }
-
-            .@{ant-prefix}-table-cell.@{ant-prefix}-table-selection-column:first-child {
-                // padding-right: 0;
-                padding-left: 20px;
-            }
-        }
-
         &-expandableIcon {
             color: var(--theme-icon-color);
             cursor: pointer;

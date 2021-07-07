@@ -36,14 +36,9 @@
                 width: 16px;
                 height: 16px;
                 color: var(--collapse-expand-icon-color);
+                line-height: 0;
                 background: var(--collapse-expand-icon-bg);
                 border-radius: 50%;
-
-                svg {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                }
             }
         }
     }
@@ -60,18 +55,20 @@
     }
 
     .@{ant-prefix}-collapse-item > .@{ant-prefix}-collapse-content > .@{ant-prefix}-collapse-content-box {
-        .content-padding(42px);
+        .content-padding(40px);
     }
 }
 
-.content-padding(@content-padding-left) {
+@arrow-gap: 28px;
+
+.content-padding(@content-padding-left, @gap:0) {
     padding-top: var(--collapse-content-box-padding-top);
     padding-bottom: var(--collapse-content-box-padding-bottom);
-    padding-left: @content-padding-left;
+    padding-left: calc(~'@{content-padding-left} + @{gap}');
 }
 
 // 对层级的控制
-.nest(@level, @content-padding, @icon-padding) {
+.nest(@level, @content-padding) {
     .@{osui-collapse-class-prefix}-level-@{level} {
         .@{ant-prefix}-collapse:not(.@{ant-prefix}-collapse-ghost) {
             border-top: 0;
@@ -89,19 +86,15 @@
 
         .@{osui-collapse-class-prefix}-level-child {
             .@{ant-prefix}-collapse-item > .@{ant-prefix}-collapse-content > .@{ant-prefix}-collapse-content-box {
-                .content-padding(@content-padding);
+                .content-padding(@content-padding, @arrow-gap);
             }
 
             .@{ant-prefix}-collapse-header {
                 padding-left: @content-padding !important;
-
-                .icon-wrapper.@{ant-prefix}-collapse-arrow {
-                    left: @icon-padding;
-                }
             }
         }
     }
 }
 
-.nest(1, 64px, 42px);
-.nest(2, 86px, 64px);
+.nest(1, 40px);
+.nest(2, 68px);
