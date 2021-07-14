@@ -72,8 +72,5 @@
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
-    },
-    "dependencies": {
-        "@osui/brand-provider": "^1.0.1"
     }
 }

@@ -1,39 +1,98 @@
 @osui-space-class-prefix: osui-space;
 
 .@{osui-space-class-prefix} {
-    &-small.@{ant-prefix}-space-horizontal {
+    &-small,
+    &-middle,
+    &-large {
+        gap: 0 !important;
+    }
+
+    &.@{osui-space-class-prefix}-use-gap {
+        &.@{osui-space-class-prefix}-small {
+            gap: var(--space-small) !important;
+        }
+
+        &.@{osui-space-class-prefix}-middle {
+            gap: var(--space-middle) !important;
+        }
+
+        &.@{osui-space-class-prefix}-large {
+            gap: var(--space-large) !important;
+        }
+    }
+}
+
+// 这个不支持 垂直 + 水平 + 垂直这种
+.@{osui-space-class-prefix}:not(.@{osui-space-class-prefix}-use-gap) {
+    &.@{osui-space-class-prefix}-small.@{ant-prefix}-space-horizontal {
         .@{ant-prefix}-space-item:not(:last-child) {
             margin-right: var(--space-small) !important;
         }
+        // 水平里面的垂直不要margin-right
+        .@{ant-prefix}-space-vertical {
+            .@{ant-prefix}-space-item {
+                margin-right: 0 !important;
+            }
+        }
     }
 
-    &-middle.@{ant-prefix}-space-horizontal {
+    &.@{osui-space-class-prefix}-middle.@{ant-prefix}-space-horizontal {
         .@{ant-prefix}-space-item:not(:last-child) {
             margin-right: var(--space-middle) !important;
         }
+
+        .@{ant-prefix}-space-vertical {
+            .@{ant-prefix}-space-item {
+                margin-right: 0 !important;
+            }
+        }
     }
 
-    &-large.@{ant-prefix}-space-horizontal {
+    &.@{osui-space-class-prefix}-large.@{ant-prefix}-space-horizontal {
         .@{ant-prefix}-space-item:not(:last-child) {
             margin-right: var(--space-large) !important;
         }
+
+        .@{ant-prefix}-space-vertical {
+            .@{ant-prefix}-space-item {
+                margin-right: 0 !important;
+            }
+        }
     }
 
-    &-small.@{ant-prefix}-space-vertical {
+    &.@{osui-space-class-prefix}-small.@{ant-prefix}-space-vertical {
         .@{ant-prefix}-space-item:not(:last-child) {
             margin-bottom: var(--space-small) !important;
         }
-    }
-
-    &-middle.@{ant-prefix}-space-vertical {
-        .@{ant-prefix}-space-item:not(:last-child) {
-            margin-bottom: var(--space-middle) !important;
+        // 垂直里面的水平不要margin-bottom
+        .@{ant-prefix}-space-horizontal {
+            .@{ant-prefix}-space-item {
+                margin-bottom: 0 !important;
+            }
         }
     }
 
-    &-large.@{ant-prefix}-space-vertical {
+    &.@{osui-space-class-prefix}-middle.@{ant-prefix}-space-vertical {
+        .@{ant-prefix}-space-item:not(:last-child) {
+            margin-bottom: var(--space-middle) !important;
+        }
+
+        .@{ant-prefix}-space-horizontal {
+            .@{ant-prefix}-space-item {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+
+    &.@{osui-space-class-prefix}-large.@{ant-prefix}-space-vertical {
         .@{ant-prefix}-space-item:not(:last-child) {
             margin-bottom: var(--space-large) !important;
+        }
+
+        .@{ant-prefix}-space-horizontal {
+            .@{ant-prefix}-space-item {
+                margin-bottom: 0 !important;
+            }
         }
     }
 }

@@ -1,5 +1,4 @@
 import React, {FC} from 'react';
-import {useBrandContext} from '@osui/brand-provider';
 
 interface FactorProps {
     /**
@@ -24,19 +23,22 @@ interface GapProps extends FactorProps {
 }
 
 const Gap: FC<GapProps> & Nested = ({orientation, factor, base}) => {
-    const {brand} = useBrandContext();
     // 如果BrandProvider是osc，为4，否则为5
-    const innerBase = base ?? (brand === 'osc' ? 4 : 5);
+    const innerBase = base ?? 4;
     return (
         <div style={{[orientation === 'horizontal' ? 'width' : 'height']: factor * innerBase}} />
     );
 };
 
-const HorizontalGap: Nested['Horizontal'] = ({factor}) => <Gap orientation="horizontal" factor={factor} />;
+const HorizontalGap: Nested['Horizontal'] = ({factor}) => (
+    <Gap orientation="horizontal" factor={factor} />
+);
 
-const VerticalGap: Nested['Vertical'] = ({factor}) => <Gap orientation="vertical" factor={factor} />;
+const VerticalGap: Nested['Vertical'] = ({factor}) => (
+    <Gap orientation="vertical" factor={factor} />
+);
 
-const FlexFitGap: FC = () => <div style={{flex: 1}} />;
+const FlexFitGap: Nested['FlexFit'] = () => <div style={{flex: 1}} />;
 
 Gap.Horizontal = HorizontalGap;
 Gap.Vertical = VerticalGap;
