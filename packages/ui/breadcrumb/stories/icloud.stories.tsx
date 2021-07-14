@@ -3,6 +3,7 @@ import {BrowserRouter, Link} from 'react-router-dom';
 import Menu from '@osui/menu';
 import TextOverflowTooltip from '@osui/text-overflow-tooltip';
 import Divider from '@osui/divider';
+import Markdown from '@osui/markdown';
 import Breadcrumb from '../src';
 
 export default {
@@ -219,6 +220,15 @@ export const EllipsisText = () => {
 };
 
 export const Api = () => {
+    const content = `
+| 参数 | 说明 | 类型 | 默认值
+| --- | --- | --- | --- |
+| showEllipsis | 是否展示 ... 当为true时，超过maxItemLength个数时，会展示... | boolean, undefined | undefined |
+| maxItemLength | 做多显示的面包屑个数 | number, undefined | 5 |
+| headItemLength | 头部显示面包屑个数 | number, undefined | 2 |
+| tailItemLength | 尾部显示面包屑个数 | number, undefined | 2 |
+
+    `;
     return (
         <>
             <a
@@ -228,6 +238,8 @@ export const Api = () => {
             >
                 Antd Breadcrumb API
             </a>
+            <h2>新增参数</h2>
+            <Markdown content={content} />
         </>
     );
 };

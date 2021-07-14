@@ -7,6 +7,18 @@ sidebar_position: 1
 
 以`@osui/ui`主版本为主，包含各组件单包发布情况
 
+## 1.0.8
+
+### 功能调整
+- Breadcrumb
+  -  面包屑支持`headItemLength`，`tailItemLength`，超过5个时，可以通过设置这两个属性，显示头部面包屑个数，和尾部面包屑个数，默认是头部2个尾部2个
+
+### 组件更新
+```
+- @osui/breadcrumb: 1.0.1 => 1.0.2
+- @osui/ui: 1.0.7 => 1.0.8
+```
+
 ## 1.0.7
 
 ### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.7/)
