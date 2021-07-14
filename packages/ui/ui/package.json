@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -60,7 +60,7 @@
         "@osui/badge": "^1.0.1",
         "@osui/branch-dropdown": "^1.0.3",
         "@osui/brand-provider": "^1.0.1",
-        "@osui/breadcrumb": "^1.0.1",
+        "@osui/breadcrumb": "^1.0.2",
         "@osui/button": "^1.0.3",
         "@osui/calendar": "^1.0.1",
         "@osui/card": "^1.0.1",

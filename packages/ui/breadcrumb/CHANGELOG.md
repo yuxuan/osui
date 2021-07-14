@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/breadcrumb@1.0.1...@osui/breadcrumb@1.0.2) (2021-07-14)
+
+
+### Bug Fixes
+
+* 面包屑展示前两个item ([f379497](https://gitee.com/gitee-fe/osui/tree/master/commits/f379497a9cd8580c6f37cedb14323a87f89d4cec))
+
+
+
+
+
 ## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/breadcrumb@1.0.0...@osui/breadcrumb@1.0.1) (2021-07-07)
 
 **Note:** Version bump only for package @osui/breadcrumb
