@@ -18,7 +18,7 @@
         "build-all": "sh scripts/build.sh",
         "storybook": "start-storybook -p 8700",
         "clean": "rm -rf node_modules && rm -rf es",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "jest --config jest.config.js",
         "sb-upgrade": "sb upgrade"
     },
     "sideEffects": [
@@ -31,7 +31,13 @@
         "@reskript/config-babel": "^0.9.0",
         "@reskript/config-lint": "^0.12.3",
         "@reskript/config-webpack": "^0.11.2",
+        "@types/jest": "^26.0.24",
+        "@types/react-test-renderer": "^17.0.1",
         "cpy-cli": "^3.1.1",
+        "jest": "^27.0.6",
+        "react-test-renderer": "^17.0.2",
+        "resolve": "^1.20.0",
+        "ts-jest": "^27.0.3",
         "typescript": "^3.9.6"
     },
     "peerDependencies": {

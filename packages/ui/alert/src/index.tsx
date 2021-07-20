@@ -12,6 +12,7 @@ import {
 import classNames from 'classnames';
 import {useBoolean} from '@huse/boolean';
 import {useInterval} from '@huse/timeout';
+import hoistNonReactStatics from 'hoist-non-react-statics';
 import './index.less';
 
 const clsPrefix = 'osui-alert';
@@ -78,7 +79,11 @@ const ActionCountDownClose: FC<ActionCountDownCloseProps> = ({countDown, onTimeo
     return <span className={`${clsPrefix}-count-down-close`}>({timer}s)</span>;
 };
 
-const Alert: React.FC<AlertProps> = props => {
+export interface AlertInterface extends React.FC<AlertProps> {
+    ErrorBoundary: typeof AntdAlert.ErrorBoundary;
+}
+
+const Alert: AlertInterface = props => {
     const {
         icon,
         closeText,
@@ -164,5 +169,9 @@ const Alert: React.FC<AlertProps> = props => {
         />
     );
 };
+
+hoistNonReactStatics(Alert, AntdAlert);
+
+Alert.ErrorBoundary = AntdAlert.ErrorBoundary;
 
 export default Alert;

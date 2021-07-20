@@ -30,9 +30,11 @@
         "@storybook/cli": "^6.0.26",
         "commitizen": "^4.1.2",
         "cz-conventional-changelog": "^3.2.0",
+        "enzyme-adapter-react-16": "^1.15.6",
         "husky": "^4.2.5",
         "lerna": "^3.22.1",
         "mkdirp": "^1.0.4",
+        "mockdate": "^3.0.5",
         "rimraf": "^3.0.2",
         "stylelint-config-rational-order": "^0.1.2",
         "typescript": "^3.9.7"

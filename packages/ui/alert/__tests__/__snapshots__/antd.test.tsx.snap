@@ -1,0 +1,1392 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert action of Alert custom action 1`] = `
+LoadedCheerio {
+  "0": Node {
+    "attribs": Object {
+      "class": "ant-alert ant-alert-success osui-alert",
+      "data-show": "true",
+      "role": "alert",
+    },
+    "children": Array [
+      Node {
+        "attribs": Object {
+          "class": "osui-icon ant-alert-icon osui-alert-successIcon",
+          "focusable": "false",
+          "height": "1024",
+          "viewBox": "0 0 1024 1024",
+          "width": "1024",
+        },
+        "children": Array [
+          Node {
+            "attribs": Object {
+              "d": "M512 64c247.4 0 448 200.6 448 448S759.4 960 512 960 64 759.4 64 512 264.6 64 512 64zm239.95 271.88c-21.401-21.173-55.992-21.173-77.393 0l-239.95 237.399-85.164-84.26c-21.4-21.173-55.992-21.173-77.393 0-21.4 21.174-21.4 55.451 0 76.57l123.861 122.545C406.584 698.694 420.596 704 434.608 704c14.011 0 27.968-5.307 38.696-15.866L751.95 412.45a53.685 53.685 0 000-76.57z",
+              "fill": "currentColor",
+              "fill-rule": "evenodd",
+            },
+            "children": Array [],
+            "name": "path",
+            "namespace": "http://www.w3.org/2000/svg",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "d": undefined,
+              "fill": undefined,
+              "fill-rule": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "d": undefined,
+              "fill": undefined,
+              "fill-rule": undefined,
+            },
+          },
+        ],
+        "name": "svg",
+        "namespace": "http://www.w3.org/2000/svg",
+        "next": Node {
+          "attribs": Object {
+            "class": "ant-alert-content",
+          },
+          "children": Array [
+            Node {
+              "attribs": Object {
+                "class": "ant-alert-message",
+              },
+              "children": Array [
+                Node {
+                  "data": "Success Tips",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Node {
+                "attribs": Object {
+                  "class": "ant-alert-description",
+                },
+                "children": Array [],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            Node {
+              "attribs": Object {
+                "class": "ant-alert-description",
+              },
+              "children": Array [],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": Node {
+                "attribs": Object {
+                  "class": "ant-alert-message",
+                },
+                "children": Array [
+                  Node {
+                    "data": "Success Tips",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+          ],
+          "name": "div",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": Node {
+            "attribs": Object {
+              "class": "ant-alert-action",
+            },
+            "children": Array [
+              Node {
+                "attribs": Object {
+                  "class": "ant-btn ant-btn-text ant-btn-sm osui-button",
+                  "type": "button",
+                },
+                "children": Array [
+                  Node {
+                    "attribs": Object {},
+                    "children": Array [
+                      Node {
+                        "data": "UNDO",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "span",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {},
+                    "x-attribsPrefix": Object {},
+                  },
+                ],
+                "name": "button",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "type": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "type": undefined,
+                },
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Node {
+              "attribs": Object {
+                "class": "ant-alert-close-icon",
+                "tabindex": "0",
+                "type": "button",
+              },
+              "children": Array [
+                Node {
+                  "attribs": Object {
+                    "class": "ant-alert-close-text",
+                  },
+                  "children": Array [
+                    Node {
+                      "attribs": Object {
+                        "class": "osui-icon osui-alert-icon-cross",
+                        "focusable": "false",
+                        "height": "1024",
+                        "viewBox": "0 0 1024 1024",
+                        "width": "1024",
+                      },
+                      "children": Array [
+                        Node {
+                          "attribs": Object {
+                            "d": "M224.266 171.66l287.77 287.83 288.52-288.532c14.513-14.513 38.043-14.513 52.557 0 13.183 13.184 14.512 34.056 3.339 48.738l-4.041 4.57-287.83 287.77 288.532 288.52c13.183 13.183 14.512 34.055 3.339 48.737l-4.041 4.57c-12.482 12.433-33.354 13.762-48.036 2.589l-4.57-4.041-287.77-287.83-288.52 288.532c-13.183 13.183-34.055 14.512-48.737 3.339l-4.57-4.041c-12.433-12.482-13.763-33.354-2.589-48.036l4.041-4.57 287.83-287.77-288.532-288.52c-13.183-13.183-14.513-34.055-3.339-48.737l4.041-4.57c12.482-12.433 33.354-13.763 48.036-2.589l4.57 4.041z",
+                            "fill": "currentColor",
+                            "fill-rule": "evenodd",
+                          },
+                          "children": Array [],
+                          "name": "path",
+                          "namespace": "http://www.w3.org/2000/svg",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "d": undefined,
+                            "fill": undefined,
+                            "fill-rule": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "d": undefined,
+                            "fill": undefined,
+                            "fill-rule": undefined,
+                          },
+                        },
+                      ],
+                      "name": "svg",
+                      "namespace": "http://www.w3.org/2000/svg",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                        "focusable": undefined,
+                        "height": undefined,
+                        "viewBox": undefined,
+                        "width": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                        "focusable": undefined,
+                        "height": undefined,
+                        "viewBox": undefined,
+                        "width": undefined,
+                      },
+                    },
+                  ],
+                  "name": "span",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+              ],
+              "name": "button",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "tabindex": undefined,
+                "type": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "tabindex": undefined,
+                "type": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": [Circular],
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+          "focusable": undefined,
+          "height": undefined,
+          "viewBox": undefined,
+          "width": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+          "focusable": undefined,
+          "height": undefined,
+          "viewBox": undefined,
+          "width": undefined,
+        },
+      },
+      Node {
+        "attribs": Object {
+          "class": "ant-alert-content",
+        },
+        "children": Array [
+          Node {
+            "attribs": Object {
+              "class": "ant-alert-message",
+            },
+            "children": Array [
+              Node {
+                "data": "Success Tips",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Node {
+              "attribs": Object {
+                "class": "ant-alert-description",
+              },
+              "children": Array [],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+          Node {
+            "attribs": Object {
+              "class": "ant-alert-description",
+            },
+            "children": Array [],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": Node {
+              "attribs": Object {
+                "class": "ant-alert-message",
+              },
+              "children": Array [
+                Node {
+                  "data": "Success Tips",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+        ],
+        "name": "div",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Node {
+          "attribs": Object {
+            "class": "ant-alert-action",
+          },
+          "children": Array [
+            Node {
+              "attribs": Object {
+                "class": "ant-btn ant-btn-text ant-btn-sm osui-button",
+                "type": "button",
+              },
+              "children": Array [
+                Node {
+                  "attribs": Object {},
+                  "children": Array [
+                    Node {
+                      "data": "UNDO",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "span",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {},
+                  "x-attribsPrefix": Object {},
+                },
+              ],
+              "name": "button",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "type": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "type": undefined,
+              },
+            },
+          ],
+          "name": "div",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": Node {
+            "attribs": Object {
+              "class": "ant-alert-close-icon",
+              "tabindex": "0",
+              "type": "button",
+            },
+            "children": Array [
+              Node {
+                "attribs": Object {
+                  "class": "ant-alert-close-text",
+                },
+                "children": Array [
+                  Node {
+                    "attribs": Object {
+                      "class": "osui-icon osui-alert-icon-cross",
+                      "focusable": "false",
+                      "height": "1024",
+                      "viewBox": "0 0 1024 1024",
+                      "width": "1024",
+                    },
+                    "children": Array [
+                      Node {
+                        "attribs": Object {
+                          "d": "M224.266 171.66l287.77 287.83 288.52-288.532c14.513-14.513 38.043-14.513 52.557 0 13.183 13.184 14.512 34.056 3.339 48.738l-4.041 4.57-287.83 287.77 288.532 288.52c13.183 13.183 14.512 34.055 3.339 48.737l-4.041 4.57c-12.482 12.433-33.354 13.762-48.036 2.589l-4.57-4.041-287.77-287.83-288.52 288.532c-13.183 13.183-34.055 14.512-48.737 3.339l-4.57-4.041c-12.433-12.482-13.763-33.354-2.589-48.036l4.041-4.57 287.83-287.77-288.532-288.52c-13.183-13.183-14.513-34.055-3.339-48.737l4.041-4.57c12.482-12.433 33.354-13.763 48.036-2.589l4.57 4.041z",
+                          "fill": "currentColor",
+                          "fill-rule": "evenodd",
+                        },
+                        "children": Array [],
+                        "name": "path",
+                        "namespace": "http://www.w3.org/2000/svg",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "d": undefined,
+                          "fill": undefined,
+                          "fill-rule": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "d": undefined,
+                          "fill": undefined,
+                          "fill-rule": undefined,
+                        },
+                      },
+                    ],
+                    "name": "svg",
+                    "namespace": "http://www.w3.org/2000/svg",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "focusable": undefined,
+                      "height": undefined,
+                      "viewBox": undefined,
+                      "width": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "focusable": undefined,
+                      "height": undefined,
+                      "viewBox": undefined,
+                      "width": undefined,
+                    },
+                  },
+                ],
+                "name": "span",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+            ],
+            "name": "button",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": [Circular],
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "tabindex": undefined,
+              "type": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "tabindex": undefined,
+              "type": undefined,
+            },
+          },
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": Node {
+          "attribs": Object {
+            "class": "osui-icon ant-alert-icon osui-alert-successIcon",
+            "focusable": "false",
+            "height": "1024",
+            "viewBox": "0 0 1024 1024",
+            "width": "1024",
+          },
+          "children": Array [
+            Node {
+              "attribs": Object {
+                "d": "M512 64c247.4 0 448 200.6 448 448S759.4 960 512 960 64 759.4 64 512 264.6 64 512 64zm239.95 271.88c-21.401-21.173-55.992-21.173-77.393 0l-239.95 237.399-85.164-84.26c-21.4-21.173-55.992-21.173-77.393 0-21.4 21.174-21.4 55.451 0 76.57l123.861 122.545C406.584 698.694 420.596 704 434.608 704c14.011 0 27.968-5.307 38.696-15.866L751.95 412.45a53.685 53.685 0 000-76.57z",
+                "fill": "currentColor",
+                "fill-rule": "evenodd",
+              },
+              "children": Array [],
+              "name": "path",
+              "namespace": "http://www.w3.org/2000/svg",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "d": undefined,
+                "fill": undefined,
+                "fill-rule": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "d": undefined,
+                "fill": undefined,
+                "fill-rule": undefined,
+              },
+            },
+          ],
+          "name": "svg",
+          "namespace": "http://www.w3.org/2000/svg",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": null,
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+            "focusable": undefined,
+            "height": undefined,
+            "viewBox": undefined,
+            "width": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+            "focusable": undefined,
+            "height": undefined,
+            "viewBox": undefined,
+            "width": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+      Node {
+        "attribs": Object {
+          "class": "ant-alert-action",
+        },
+        "children": Array [
+          Node {
+            "attribs": Object {
+              "class": "ant-btn ant-btn-text ant-btn-sm osui-button",
+              "type": "button",
+            },
+            "children": Array [
+              Node {
+                "attribs": Object {},
+                "children": Array [
+                  Node {
+                    "data": "UNDO",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "span",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {},
+                "x-attribsPrefix": Object {},
+              },
+            ],
+            "name": "button",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "type": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "type": undefined,
+            },
+          },
+        ],
+        "name": "div",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Node {
+          "attribs": Object {
+            "class": "ant-alert-close-icon",
+            "tabindex": "0",
+            "type": "button",
+          },
+          "children": Array [
+            Node {
+              "attribs": Object {
+                "class": "ant-alert-close-text",
+              },
+              "children": Array [
+                Node {
+                  "attribs": Object {
+                    "class": "osui-icon osui-alert-icon-cross",
+                    "focusable": "false",
+                    "height": "1024",
+                    "viewBox": "0 0 1024 1024",
+                    "width": "1024",
+                  },
+                  "children": Array [
+                    Node {
+                      "attribs": Object {
+                        "d": "M224.266 171.66l287.77 287.83 288.52-288.532c14.513-14.513 38.043-14.513 52.557 0 13.183 13.184 14.512 34.056 3.339 48.738l-4.041 4.57-287.83 287.77 288.532 288.52c13.183 13.183 14.512 34.055 3.339 48.737l-4.041 4.57c-12.482 12.433-33.354 13.762-48.036 2.589l-4.57-4.041-287.77-287.83-288.52 288.532c-13.183 13.183-34.055 14.512-48.737 3.339l-4.57-4.041c-12.433-12.482-13.763-33.354-2.589-48.036l4.041-4.57 287.83-287.77-288.532-288.52c-13.183-13.183-14.513-34.055-3.339-48.737l4.041-4.57c12.482-12.433 33.354-13.763 48.036-2.589l4.57 4.041z",
+                        "fill": "currentColor",
+                        "fill-rule": "evenodd",
+                      },
+                      "children": Array [],
+                      "name": "path",
+                      "namespace": "http://www.w3.org/2000/svg",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "d": undefined,
+                        "fill": undefined,
+                        "fill-rule": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "d": undefined,
+                        "fill": undefined,
+                        "fill-rule": undefined,
+                      },
+                    },
+                  ],
+                  "name": "svg",
+                  "namespace": "http://www.w3.org/2000/svg",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "focusable": undefined,
+                    "height": undefined,
+                    "viewBox": undefined,
+                    "width": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "focusable": undefined,
+                    "height": undefined,
+                    "viewBox": undefined,
+                    "width": undefined,
+                  },
+                },
+              ],
+              "name": "span",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+          ],
+          "name": "button",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": null,
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+            "tabindex": undefined,
+            "type": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+            "tabindex": undefined,
+            "type": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": Node {
+          "attribs": Object {
+            "class": "ant-alert-content",
+          },
+          "children": Array [
+            Node {
+              "attribs": Object {
+                "class": "ant-alert-message",
+              },
+              "children": Array [
+                Node {
+                  "data": "Success Tips",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Node {
+                "attribs": Object {
+                  "class": "ant-alert-description",
+                },
+                "children": Array [],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            Node {
+              "attribs": Object {
+                "class": "ant-alert-description",
+              },
+              "children": Array [],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": Node {
+                "attribs": Object {
+                  "class": "ant-alert-message",
+                },
+                "children": Array [
+                  Node {
+                    "data": "Success Tips",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+          ],
+          "name": "div",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": Node {
+            "attribs": Object {
+              "class": "osui-icon ant-alert-icon osui-alert-successIcon",
+              "focusable": "false",
+              "height": "1024",
+              "viewBox": "0 0 1024 1024",
+              "width": "1024",
+            },
+            "children": Array [
+              Node {
+                "attribs": Object {
+                  "d": "M512 64c247.4 0 448 200.6 448 448S759.4 960 512 960 64 759.4 64 512 264.6 64 512 64zm239.95 271.88c-21.401-21.173-55.992-21.173-77.393 0l-239.95 237.399-85.164-84.26c-21.4-21.173-55.992-21.173-77.393 0-21.4 21.174-21.4 55.451 0 76.57l123.861 122.545C406.584 698.694 420.596 704 434.608 704c14.011 0 27.968-5.307 38.696-15.866L751.95 412.45a53.685 53.685 0 000-76.57z",
+                  "fill": "currentColor",
+                  "fill-rule": "evenodd",
+                },
+                "children": Array [],
+                "name": "path",
+                "namespace": "http://www.w3.org/2000/svg",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "d": undefined,
+                  "fill": undefined,
+                  "fill-rule": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "d": undefined,
+                  "fill": undefined,
+                  "fill-rule": undefined,
+                },
+              },
+            ],
+            "name": "svg",
+            "namespace": "http://www.w3.org/2000/svg",
+            "next": [Circular],
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "focusable": undefined,
+              "height": undefined,
+              "viewBox": undefined,
+              "width": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "focusable": undefined,
+              "height": undefined,
+              "viewBox": undefined,
+              "width": undefined,
+            },
+          },
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+      Node {
+        "attribs": Object {
+          "class": "ant-alert-close-icon",
+          "tabindex": "0",
+          "type": "button",
+        },
+        "children": Array [
+          Node {
+            "attribs": Object {
+              "class": "ant-alert-close-text",
+            },
+            "children": Array [
+              Node {
+                "attribs": Object {
+                  "class": "osui-icon osui-alert-icon-cross",
+                  "focusable": "false",
+                  "height": "1024",
+                  "viewBox": "0 0 1024 1024",
+                  "width": "1024",
+                },
+                "children": Array [
+                  Node {
+                    "attribs": Object {
+                      "d": "M224.266 171.66l287.77 287.83 288.52-288.532c14.513-14.513 38.043-14.513 52.557 0 13.183 13.184 14.512 34.056 3.339 48.738l-4.041 4.57-287.83 287.77 288.532 288.52c13.183 13.183 14.512 34.055 3.339 48.737l-4.041 4.57c-12.482 12.433-33.354 13.762-48.036 2.589l-4.57-4.041-287.77-287.83-288.52 288.532c-13.183 13.183-34.055 14.512-48.737 3.339l-4.57-4.041c-12.433-12.482-13.763-33.354-2.589-48.036l4.041-4.57 287.83-287.77-288.532-288.52c-13.183-13.183-14.513-34.055-3.339-48.737l4.041-4.57c12.482-12.433 33.354-13.763 48.036-2.589l4.57 4.041z",
+                      "fill": "currentColor",
+                      "fill-rule": "evenodd",
+                    },
+                    "children": Array [],
+                    "name": "path",
+                    "namespace": "http://www.w3.org/2000/svg",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "d": undefined,
+                      "fill": undefined,
+                      "fill-rule": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "d": undefined,
+                      "fill": undefined,
+                      "fill-rule": undefined,
+                    },
+                  },
+                ],
+                "name": "svg",
+                "namespace": "http://www.w3.org/2000/svg",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "focusable": undefined,
+                  "height": undefined,
+                  "viewBox": undefined,
+                  "width": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "focusable": undefined,
+                  "height": undefined,
+                  "viewBox": undefined,
+                  "width": undefined,
+                },
+              },
+            ],
+            "name": "span",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+        ],
+        "name": "button",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": Node {
+          "attribs": Object {
+            "class": "ant-alert-action",
+          },
+          "children": Array [
+            Node {
+              "attribs": Object {
+                "class": "ant-btn ant-btn-text ant-btn-sm osui-button",
+                "type": "button",
+              },
+              "children": Array [
+                Node {
+                  "attribs": Object {},
+                  "children": Array [
+                    Node {
+                      "data": "UNDO",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "span",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {},
+                  "x-attribsPrefix": Object {},
+                },
+              ],
+              "name": "button",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "type": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "type": undefined,
+              },
+            },
+          ],
+          "name": "div",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": Node {
+            "attribs": Object {
+              "class": "ant-alert-content",
+            },
+            "children": Array [
+              Node {
+                "attribs": Object {
+                  "class": "ant-alert-message",
+                },
+                "children": Array [
+                  Node {
+                    "data": "Success Tips",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Node {
+                  "attribs": Object {
+                    "class": "ant-alert-description",
+                  },
+                  "children": Array [],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              Node {
+                "attribs": Object {
+                  "class": "ant-alert-description",
+                },
+                "children": Array [],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": Node {
+                  "attribs": Object {
+                    "class": "ant-alert-message",
+                  },
+                  "children": Array [
+                    Node {
+                      "data": "Success Tips",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": [Circular],
+            "parent": [Circular],
+            "prev": Node {
+              "attribs": Object {
+                "class": "osui-icon ant-alert-icon osui-alert-successIcon",
+                "focusable": "false",
+                "height": "1024",
+                "viewBox": "0 0 1024 1024",
+                "width": "1024",
+              },
+              "children": Array [
+                Node {
+                  "attribs": Object {
+                    "d": "M512 64c247.4 0 448 200.6 448 448S759.4 960 512 960 64 759.4 64 512 264.6 64 512 64zm239.95 271.88c-21.401-21.173-55.992-21.173-77.393 0l-239.95 237.399-85.164-84.26c-21.4-21.173-55.992-21.173-77.393 0-21.4 21.174-21.4 55.451 0 76.57l123.861 122.545C406.584 698.694 420.596 704 434.608 704c14.011 0 27.968-5.307 38.696-15.866L751.95 412.45a53.685 53.685 0 000-76.57z",
+                    "fill": "currentColor",
+                    "fill-rule": "evenodd",
+                  },
+                  "children": Array [],
+                  "name": "path",
+                  "namespace": "http://www.w3.org/2000/svg",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "d": undefined,
+                    "fill": undefined,
+                    "fill-rule": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "d": undefined,
+                    "fill": undefined,
+                    "fill-rule": undefined,
+                  },
+                },
+              ],
+              "name": "svg",
+              "namespace": "http://www.w3.org/2000/svg",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "focusable": undefined,
+                "height": undefined,
+                "viewBox": undefined,
+                "width": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "focusable": undefined,
+                "height": undefined,
+                "viewBox": undefined,
+                "width": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+          "tabindex": undefined,
+          "type": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+          "tabindex": undefined,
+          "type": undefined,
+        },
+      },
+    ],
+    "name": "div",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": Node {
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+    },
+    "prev": null,
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+      "data-show": undefined,
+      "role": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+      "data-show": undefined,
+      "role": undefined,
+    },
+  },
+  "_root": LoadedCheerio {
+    "0": Node {
+      "children": Array [
+        Node {
+          "attribs": Object {},
+          "children": Array [
+            Node {
+              "attribs": Object {},
+              "children": Array [],
+              "name": "head",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Node {
+                "attribs": Object {},
+                "children": Array [],
+                "name": "body",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {},
+                "x-attribsPrefix": Object {},
+              },
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {},
+              "x-attribsPrefix": Object {},
+            },
+            Node {
+              "attribs": Object {},
+              "children": Array [],
+              "name": "body",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": Node {
+                "attribs": Object {},
+                "children": Array [],
+                "name": "head",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {},
+                "x-attribsPrefix": Object {},
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {},
+              "x-attribsPrefix": Object {},
+            },
+          ],
+          "name": "html",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": null,
+          "parent": [Circular],
+          "prev": null,
+          "type": "tag",
+          "x-attribsNamespace": Object {},
+          "x-attribsPrefix": Object {},
+        },
+      ],
+      "name": "root",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-mode": "quirks",
+    },
+    "_root": [Circular],
+    "length": 1,
+    "options": Object {
+      "decodeEntities": true,
+      "xml": false,
+    },
+  },
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "xml": false,
+  },
+}
+`;
+
+exports[`Alert could accept none react element icon 1`] = `ReactWrapper {}`;
