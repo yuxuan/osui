@@ -9,4 +9,5 @@ export default {
     '--message-alert-info-border-color': 'var(--color-info-6)',
     '--message-content-padding': '4px 20px',
     '--message-text-align': 'right',
+    '--message-margin-top': '51px', // icloud 头部高度
 };

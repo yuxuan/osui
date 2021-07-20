@@ -84,7 +84,7 @@ interface MessageContentProps {
 const getMessageContent = ({content, className, localInnerKey, onClose, duration}: MessageContentProps) => {
     const {
         title = '',
-        showClose = false,
+        showClose = true,
         showCountDown = true,
         duration: innerDuration = (duration || 5),
         key: innerKey = localInnerKey,
@@ -160,7 +160,7 @@ const getPatchedArgs = (args: MessageArgsProps) => {
 
     if (getPropFromConfig('original')) {
         // 如果传入original为true则只覆盖icon和className
-        const contentConfig = isObject(args.content) ? args.content : {};
+        const contentConfig = isObject(args.content) ? args.content as MessageArgsProps : {};
         return {
             ...args,
             ...contentConfig, // 当content是config时，要覆盖部分args的参数
