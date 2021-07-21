@@ -7,7 +7,9 @@ import './index.less';
 
 const clsPrefix = 'osui-breadcrumb';
 
-const Ellipsis = ({onClick}: {onClick: () => void}) => (
+type onEllipsisClickType = () => void;
+
+const Ellipsis = ({onClick}: {onClick: onEllipsisClickType}) => (
     <span className={`${clsPrefix}-ellipsis`} onClick={onClick}>
         ...
     </span>
@@ -15,7 +17,7 @@ const Ellipsis = ({onClick}: {onClick: () => void}) => (
 
 interface EllipsisConfig {
     shownLastItems: number; // 已经展示出来的最后的items数
-    onEllipsisClick: () => void;
+    onEllipsisClick: onEllipsisClickType;
     maxItemLength: number;
     headItemLength: number;
     tailItemLength: number;
@@ -121,7 +123,13 @@ const Breadcrumb: BreadcrumbInterface = props => {
             || (children && Array.isArray(children) && children.length > maxItemLength)
         );
 
-    const config = {shownLastItems, onEllipsisClick: doPop, maxItemLength, headItemLength, tailItemLength};
+    const config = {
+        shownLastItems,
+        onEllipsisClick: (doPop as onEllipsisClickType),
+        maxItemLength,
+        headItemLength,
+        tailItemLength,
+    };
 
     return (
         <AntdBreadcrumb

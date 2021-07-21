@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collapse could override default openMotion 1`] = `
+<div
+  class="ant-collapse ant-collapse-icon-position-left osui-collapse"
+>
+  <div
+    class="ant-collapse-item ant-collapse-item-active"
+  >
+    <div
+      aria-expanded="true"
+      class="ant-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="icon-wrapper ant-collapse-arrow"
+      >
+        <svg
+          class="osui-icon "
+          focusable="false"
+          height="1024"
+          viewBox="0 0 1024 1024"
+          width="1024"
+        >
+          <path
+            d="M830.447 394.225c14.996-13.633 39.31-13.633 54.306 0 14.996 13.632 14.996 35.736 0 49.369l-345.6 314.181c-14.996 13.633-39.31 13.633-54.306 0l-345.6-314.181c-14.996-13.633-14.996-35.737 0-49.37 14.996-13.632 39.31-13.632 54.306 0L512 683.723l318.447-289.497z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+         
+      </span>
+      This is panel header 1
+    </div>
+    <div
+      class="ant-collapse-content ant-collapse-content-active"
+    >
+      <div
+        class="ant-collapse-content-box"
+      >
+        content
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Collapse should render extra node of panel 1`] = `
+<div
+  class="ant-collapse ant-collapse-icon-position-left osui-collapse"
+>
+  <div
+    class="ant-collapse-item"
+  >
+    <div
+      aria-expanded="false"
+      class="ant-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="icon-wrapper ant-collapse-arrow"
+      >
+        <svg
+          class="osui-icon "
+          focusable="false"
+          height="1024"
+          viewBox="0 0 1024 1024"
+          width="1024"
+        >
+          <path
+            d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </span>
+      header
+      <div
+        class="ant-collapse-extra"
+      >
+        <button
+          type="button"
+        >
+          action
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ant-collapse-item"
+  >
+    <div
+      aria-expanded="false"
+      class="ant-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="icon-wrapper ant-collapse-arrow"
+      >
+        <svg
+          class="osui-icon "
+          focusable="false"
+          height="1024"
+          viewBox="0 0 1024 1024"
+          width="1024"
+        >
+          <path
+            d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </span>
+      header
+      <div
+        class="ant-collapse-extra"
+      >
+        <button
+          type="button"
+        >
+          action
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Collapse should support remove expandIcon 1`] = `
+<div
+  class="ant-collapse ant-collapse-icon-position-left osui-collapse"
+>
+  <div
+    class="ant-collapse-item"
+  >
+    <div
+      aria-expanded="false"
+      class="ant-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      header
+    </div>
+  </div>
+</div>
+`;

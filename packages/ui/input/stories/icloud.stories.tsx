@@ -552,6 +552,13 @@ export const TestCase = () => {
                 />
 
             </Input.Group>
+
+            <p>在form中可以有大小</p>
+            <Form size="large">
+                <Form.Item>
+                    <Input />
+                </Form.Item>
+            </Form>
         </>
     );
 };

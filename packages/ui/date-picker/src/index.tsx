@@ -16,14 +16,16 @@ type ComponentType = typeof AntdDatePicker
 
 function attachOSUIClassName<T extends ComponentType>(Component: T) {
     const ComponentOut = React.forwardRef<any, any>(
-        (props, ref) => (
-            <Component
-                ref={ref}
-                {...props}
-                className={classNames(clsPrefix, props.className)}
-                dropdownClassName={classNames(`${clsPrefix}-dropdown`, props.dropdownClassName)}
-            />
-        )
+        (props, ref) => {
+            return (
+                <Component
+                    ref={ref}
+                    {...props}
+                    className={classNames(clsPrefix, props.className)}
+                    dropdownClassName={classNames(`${clsPrefix}-dropdown`, props.dropdownClassName)}
+                />
+            );
+        }
     );
     return ComponentOut as unknown as T;
 }

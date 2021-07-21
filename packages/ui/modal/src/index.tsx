@@ -1,7 +1,7 @@
 import React from 'react';
 import {Modal as AntdModal} from 'antd';
 import {ModalProps as AntdModalProps, ModalFuncProps} from 'antd/lib/modal';
-import {globalConfig} from 'antd/lib/modal/confirm';
+import {modalGlobalConfig} from 'antd/lib/modal/confirm';
 import classNames from 'classnames';
 import {
     IconCloseOutlined,
@@ -10,7 +10,7 @@ import {
     IconInfoCircleFilled,
     IconExclamationCircleFilled,
 } from '@osui/icons';
-import Button from '@osui/button';
+import Button, {ButtonProps} from '@osui/button';
 import './index.less';
 
 const {destroyAll, config} = AntdModal;
@@ -57,6 +57,7 @@ interface ModalInterface extends React.FC<ModalProps> {
 const OriginModal: ModalInterface = ({className, bodyBorder, size, ...props}) => {
     const {
         okText = '确定',
+        okType,
         cancelText = '取消',
         onOk,
         onCancel,
@@ -90,8 +91,20 @@ const OriginModal: ModalInterface = ({className, bodyBorder, size, ...props}) =>
 
     const footer = (
         <div style={footerStyle}>
-            <Button onClick={onCancel} {...cancelButtonProps}>{cancelText}</Button>
-            <Button type="primary" onClick={onOk} loading={confirmLoading} {...okButtonProps}>{okText}</Button>
+            <Button
+                onClick={onCancel}
+                {...cancelButtonProps}
+            >
+                {cancelText}
+            </Button>
+            <Button
+                type={okType as ButtonProps['type'] ?? 'primary'}
+                onClick={onOk}
+                loading={confirmLoading}
+                {...okButtonProps}
+            >
+                {okText}
+            </Button>
         </div>
     );
     const innerCentered = centered ?? true;
@@ -127,7 +140,8 @@ export interface ModalStaticFunctions {
     confirm: ModalFunc;
 }
 
-type ModalType = typeof OriginModal & ModalStaticFunctions & { destroyAll: () => void, config: typeof globalConfig };
+type ModalType = typeof OriginModal &
+    ModalStaticFunctions & { destroyAll: () => void, config: typeof modalGlobalConfig };
 
 const Modal = OriginModal as ModalType;
 
@@ -154,6 +168,7 @@ const getConfirmConfig = (
     });
 
     return {
+        ...baseConfig,
         width: width ?? getModalSize(size ?? 500),
         okText: okText ?? '确定',
         cancelText: cancelText ?? '取消',
@@ -165,7 +180,6 @@ const getConfirmConfig = (
             ...cancelButtonProps,
             className: classNames(okButtonProps?.className, 'osui-button', 'osui-button-min-width'),
         },
-        ...baseConfig,
         className: classNames(`${clsPrefix}-confirm`, config.className),
     };
 };

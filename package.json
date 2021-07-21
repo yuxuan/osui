@@ -22,7 +22,8 @@
         "copy-to-docs": "sh scripts/copy-to-docs.sh",
         "publish": "lerna publish from-package",
         "publishWithDocs": "lerna publish from-package && yarn build-docs",
-        "build-docs": "sh scripts/build-docs.sh osui && sh scripts/build-docs.sh icloud"
+        "build-docs": "sh scripts/build-docs.sh osui && sh scripts/build-docs.sh icloud",
+        "test": "yarn workspaces run test"
     },
     "devDependencies": {
         "@commitlint/cli": "^9.1.1",
@@ -31,10 +32,12 @@
         "commitizen": "^4.1.2",
         "cz-conventional-changelog": "^3.2.0",
         "enzyme-adapter-react-16": "^1.15.6",
+        "enzyme-to-json": "^3.6.2",
         "husky": "^4.2.5",
         "lerna": "^3.22.1",
         "mkdirp": "^1.0.4",
         "mockdate": "^3.0.5",
+        "moment": "^2.29.1",
         "rimraf": "^3.0.2",
         "stylelint-config-rational-order": "^0.1.2",
         "typescript": "^3.9.7"

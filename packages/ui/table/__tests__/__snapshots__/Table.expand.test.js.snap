@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table.expand click to expand 1`] = `
+<div
+  class="ant-table-wrapper osui-table"
+>
+  <div
+    class="ant-spin-nested-loading"
+  >
+    <div
+      class="ant-spin-container"
+    >
+      <div
+        class="ant-table"
+      >
+        <div
+          class="ant-table-container"
+        >
+          <div
+            class="ant-table-content"
+          >
+            <table
+              style="table-layout: auto;"
+            >
+              <colgroup />
+              <thead
+                class="ant-table-thead"
+              >
+                <tr>
+                  <th
+                    class="ant-table-cell"
+                  >
+                    Name
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="ant-table-tbody"
+              >
+                <tr
+                  class="ant-table-row ant-table-row-level-0"
+                  data-row-key="1"
+                >
+                  <td
+                    class="ant-table-cell ant-table-cell-with-append"
+                  >
+                    <span
+                      class="ant-table-row-indent indent-level-0"
+                      style="padding-left: 0px;"
+                    />
+                    <button
+                      aria-label="Collapse row"
+                      class="ant-table-row-expand-icon ant-table-row-expand-icon-expanded"
+                      type="button"
+                    />
+                  </td>
+                </tr>
+                <tr
+                  class="ant-table-row ant-table-row-level-1"
+                  data-row-key="2"
+                >
+                  <td
+                    class="ant-table-cell ant-table-cell-with-append"
+                  >
+                    <span
+                      class="ant-table-row-indent indent-level-1"
+                      style="padding-left: 15px;"
+                    />
+                    <button
+                      aria-label="Expand row"
+                      class="ant-table-row-expand-icon ant-table-row-expand-icon-spaced"
+                      type="button"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <ul
+        class="ant-pagination ant-table-pagination ant-table-pagination-right osui-pagination"
+        unselectable="unselectable"
+      >
+        <li
+          aria-disabled="true"
+          class="ant-pagination-prev ant-pagination-disabled"
+          title="Previous Page"
+        >
+          <svg
+            class="osui-icon "
+            disabled=""
+            focusable="false"
+            height="1024"
+            viewBox="0 0 1024 1024"
+            width="1024"
+          >
+            <path
+              d="M693.775 830.447c13.633 14.996 13.633 39.31 0 54.306-13.632 14.996-35.736 14.996-49.369 0l-314.181-345.6c-13.633-14.996-13.633-39.31 0-54.306l314.181-345.6c13.633-14.996 35.737-14.996 49.37 0 13.632 14.996 13.632 39.31 0 54.306L404.277 512l289.497 318.447z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </li>
+        <li
+          class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+          tabindex="0"
+          title="1"
+        >
+          <a
+            rel="nofollow"
+          >
+            1
+          </a>
+        </li>
+        <li
+          aria-disabled="true"
+          class="ant-pagination-next ant-pagination-disabled"
+          title="Next Page"
+        >
+          <svg
+            class="osui-icon "
+            disabled=""
+            focusable="false"
+            height="1024"
+            viewBox="0 0 1024 1024"
+            width="1024"
+          >
+            <path
+              d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

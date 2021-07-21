@@ -1,0 +1,1183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cascader can be selected 1`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu"
+    style="opacity:0;pointer-events:none"
+  >
+    <div>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand ant-cascader-menu-item-active"
+          role="menuitem"
+          title="Zhejiang"
+        >
+          Zhejiang
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand"
+          role="menuitem"
+          title="Jiangsu"
+        >
+          Jiangsu
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand"
+          role="menuitem"
+          title="Hangzhou"
+        >
+          Hangzhou
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader can be selected 2`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu"
+    style="opacity:0;pointer-events:none"
+  >
+    <div>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand ant-cascader-menu-item-active"
+          role="menuitem"
+          title="Zhejiang"
+        >
+          Zhejiang
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand"
+          role="menuitem"
+          title="Jiangsu"
+        >
+          Jiangsu
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand ant-cascader-menu-item-active"
+          role="menuitem"
+          title="Hangzhou"
+        >
+          Hangzhou
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item"
+          role="menuitem"
+          title="West Lake"
+        >
+          West Lake
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader can be selected 3`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu ant-cascader-menus-hidden"
+    style="pointer-events:none"
+  >
+    <div>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand ant-cascader-menu-item-active"
+          role="menuitem"
+          title="Zhejiang"
+        >
+          Zhejiang
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand"
+          role="menuitem"
+          title="Jiangsu"
+        >
+          Jiangsu
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand ant-cascader-menu-item-active"
+          role="menuitem"
+          title="Hangzhou"
+        >
+          Hangzhou
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-active"
+          role="menuitem"
+          title="West Lake"
+        >
+          West Lake
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader can be selected in RTL direction 1`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu ant-cascader-menu-rtl"
+    style="opacity:0;pointer-events:none"
+  >
+    <div>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand ant-cascader-menu-item-active"
+          role="menuitem"
+          title="Zhejiang"
+        >
+          Zhejiang
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand"
+          role="menuitem"
+          title="Jiangsu"
+        >
+          Jiangsu
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand"
+          role="menuitem"
+          title="Hangzhou"
+        >
+          Hangzhou
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader can be selected in RTL direction 2`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu ant-cascader-menu-rtl"
+    style="opacity:0;pointer-events:none"
+  >
+    <div>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand ant-cascader-menu-item-active"
+          role="menuitem"
+          title="Zhejiang"
+        >
+          Zhejiang
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand"
+          role="menuitem"
+          title="Jiangsu"
+        >
+          Jiangsu
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand ant-cascader-menu-item-active"
+          role="menuitem"
+          title="Hangzhou"
+        >
+          Hangzhou
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item"
+          role="menuitem"
+          title="West Lake"
+        >
+          West Lake
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader have a notFoundContent that fit trigger input width 1`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
+    style="opacity: 0; pointer-events: none;"
+  >
+    <div>
+      <ul
+        class="ant-cascader-menu"
+        style="height: auto;"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-disabled"
+          role="menuitem"
+          title=""
+        >
+          <div
+            class="ant-empty ant-empty-normal ant-empty-small"
+          >
+            <div
+              class="ant-empty-image"
+            >
+              <svg
+                class="ant-empty-img-simple"
+                height="41"
+                viewBox="0 0 64 41"
+                width="64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  transform="translate(0 1)"
+                >
+                  <ellipse
+                    class="ant-empty-img-simple-ellipse"
+                    cx="32"
+                    cy="33"
+                    rx="32"
+                    ry="7"
+                  />
+                  <g
+                    class="ant-empty-img-simple-g"
+                    fill-rule="nonzero"
+                  >
+                    <path
+                      d="M55 12.76L44.854 1.258C44.367.474 43.656 0 42.907 0H21.093c-.749 0-1.46.474-1.947 1.257L9 12.761V22h46v-9.24z"
+                    />
+                    <path
+                      class="ant-empty-img-simple-path"
+                      d="M41.613 15.931c0-1.605.994-2.93 2.227-2.931H55v18.137C55 33.26 53.68 35 52.05 35h-40.1C10.32 35 9 33.259 9 31.137V13h11.16c1.233 0 2.227 1.323 2.227 2.928v.022c0 1.605 1.005 2.901 2.237 2.901h14.752c1.232 0 2.237-1.308 2.237-2.913v-.007z"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div
+              class="ant-empty-description"
+            >
+              No Data
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader popup correctly when panel is hidden 1`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu ant-cascader-menus-empty ant-cascader-menus-hidden"
+    style="pointer-events:none"
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`Cascader popup correctly when panel is open 1`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu"
+    style="opacity:0;pointer-events:none"
+  >
+    <div>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand"
+          role="menuitem"
+          title="Zhejiang"
+        >
+          Zhejiang
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand"
+          role="menuitem"
+          title="Jiangsu"
+        >
+          Jiangsu
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader popup correctly with defaultValue 1`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu"
+    style="opacity:0;pointer-events:none"
+  >
+    <div>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand ant-cascader-menu-item-active"
+          role="menuitem"
+          title="Zhejiang"
+        >
+          Zhejiang
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand"
+          role="menuitem"
+          title="Jiangsu"
+        >
+          Jiangsu
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand ant-cascader-menu-item-active"
+          role="menuitem"
+          title="Hangzhou"
+        >
+          Hangzhou
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item"
+          role="menuitem"
+          title="West Lake"
+        >
+          West Lake
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader popup correctly with defaultValue RTL 1`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu ant-cascader-menu-rtl"
+    style="opacity:0;pointer-events:none"
+  >
+    <div>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand ant-cascader-menu-item-active"
+          role="menuitem"
+          title="Zhejiang"
+        >
+          Zhejiang
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand"
+          role="menuitem"
+          title="Jiangsu"
+        >
+          Jiangsu
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-expand ant-cascader-menu-item-active"
+          role="menuitem"
+          title="Hangzhou"
+        >
+          Hangzhou
+          <span
+            class="ant-cascader-menu-item-expand-icon"
+          >
+            <svg
+              class="osui-icon "
+              focusable="false"
+              height="1024"
+              viewBox="0 0 1024 1024"
+              width="1024"
+            >
+              <path
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="ant-cascader-menu"
+      >
+        <li
+          class="ant-cascader-menu-item"
+          role="menuitem"
+          title="West Lake"
+        >
+          West Lake
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader rtl render component should be rendered correctly in RTL direction 1`] = `
+<span
+  class="ant-cascader-picker ant-cascader-picker-rtl osui-cascader"
+  tabindex="0"
+>
+  <span
+    class="ant-cascader-picker-label"
+  />
+  <input
+    autocomplete="off"
+    class="ant-input ant-input-rtl ant-cascader-input "
+    placeholder="Please select"
+    readonly=""
+    tabindex="-1"
+    type="text"
+    value=""
+  />
+  <svg
+    class="osui-icon ant-cascader-picker-arrow"
+    focusable="false"
+    height="1024"
+    viewBox="0 0 1024 1024"
+    width="1024"
+  >
+    <path
+      d="M830.447 394.225c14.996-13.633 39.31-13.633 54.306 0 14.996 13.632 14.996 35.736 0 49.369l-345.6 314.181c-14.996 13.633-39.31 13.633-54.306 0l-345.6-314.181c-14.996-13.633-14.996-35.737 0-49.37 14.996-13.632 39.31-13.632 54.306 0L512 683.723l318.447-289.497z"
+      fill="currentColor"
+      fill-rule="evenodd"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Cascader should highlight keyword and filter when search in Cascader 1`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
+    style="opacity: 0; pointer-events: none;"
+  >
+    <div>
+      <ul
+        class="ant-cascader-menu"
+        style="width: 0px;"
+      >
+        <li
+          class="ant-cascader-menu-item"
+          role="menuitem"
+          title=""
+        >
+          Jiangsu / Nanjing / Zhong Hua Men
+        </li>
+        <li
+          class="ant-cascader-menu-item"
+          role="menuitem"
+          title=""
+        >
+          Zhejiang / Hang
+          <span
+            class="ant-cascader-menu-item-keyword"
+          >
+            z
+          </span>
+          hou / West Lake
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader should highlight keyword and filter when search in Cascader with same field name of label and value 1`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
+    style="opacity: 0; pointer-events: none;"
+  >
+    <div>
+      <ul
+        class="ant-cascader-menu"
+        style="width: 0px;"
+      >
+        <li
+          class="ant-cascader-menu-item"
+          role="menuitem"
+          title=""
+        >
+          Zhejiang / Hang
+          <span
+            class="ant-cascader-menu-item-keyword"
+          >
+            z
+          </span>
+          hou / West Lake
+        </li>
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-disabled"
+          role="menuitem"
+          title=""
+        >
+          Zhejiang / Hang
+          <span
+            class="ant-cascader-menu-item-keyword"
+          >
+            z
+          </span>
+          hou / Xia Sha
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader should render not found content 1`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu ant-cascader-menu-empty ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
+    style="opacity: 0; pointer-events: none;"
+  >
+    <div>
+      <ul
+        class="ant-cascader-menu"
+        style="height: auto; width: 0px;"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-disabled"
+          role="menuitem"
+          title=""
+        >
+          <div
+            class="ant-empty ant-empty-normal ant-empty-small"
+          >
+            <div
+              class="ant-empty-image"
+            >
+              <svg
+                class="ant-empty-img-simple"
+                height="41"
+                viewBox="0 0 64 41"
+                width="64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  transform="translate(0 1)"
+                >
+                  <ellipse
+                    class="ant-empty-img-simple-ellipse"
+                    cx="32"
+                    cy="33"
+                    rx="32"
+                    ry="7"
+                  />
+                  <g
+                    class="ant-empty-img-simple-g"
+                    fill-rule="nonzero"
+                  >
+                    <path
+                      d="M55 12.76L44.854 1.258C44.367.474 43.656 0 42.907 0H21.093c-.749 0-1.46.474-1.947 1.257L9 12.761V22h46v-9.24z"
+                    />
+                    <path
+                      class="ant-empty-img-simple-path"
+                      d="M41.613 15.931c0-1.605.994-2.93 2.227-2.931H55v18.137C55 33.26 53.68 35 52.05 35h-40.1C10.32 35 9 33.259 9 31.137V13h11.16c1.233 0 2.227 1.323 2.227 2.928v.022c0 1.605 1.005 2.901 2.237 2.901h14.752c1.232 0 2.237-1.308 2.237-2.913v-.007z"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div
+              class="ant-empty-description"
+            >
+              No Data
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader should show not found content when options.length is 0 1`] = `
+<div>
+  <div
+    class="ant-cascader-menus osui-cascader-menu ant-cascader-menu-empty ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
+    style="opacity: 0; pointer-events: none;"
+  >
+    <div>
+      <ul
+        class="ant-cascader-menu"
+        style="height: auto; width: 0px;"
+      >
+        <li
+          class="ant-cascader-menu-item ant-cascader-menu-item-disabled"
+          role="menuitem"
+          title=""
+        >
+          <div
+            class="ant-empty ant-empty-normal ant-empty-small"
+          >
+            <div
+              class="ant-empty-image"
+            >
+              <svg
+                class="ant-empty-img-simple"
+                height="41"
+                viewBox="0 0 64 41"
+                width="64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  transform="translate(0 1)"
+                >
+                  <ellipse
+                    class="ant-empty-img-simple-ellipse"
+                    cx="32"
+                    cy="33"
+                    rx="32"
+                    ry="7"
+                  />
+                  <g
+                    class="ant-empty-img-simple-g"
+                    fill-rule="nonzero"
+                  >
+                    <path
+                      d="M55 12.76L44.854 1.258C44.367.474 43.656 0 42.907 0H21.093c-.749 0-1.46.474-1.947 1.257L9 12.761V22h46v-9.24z"
+                    />
+                    <path
+                      class="ant-empty-img-simple-path"
+                      d="M41.613 15.931c0-1.605.994-2.93 2.227-2.931H55v18.137C55 33.26 53.68 35 52.05 35h-40.1C10.32 35 9 33.259 9 31.137V13h11.16c1.233 0 2.227 1.323 2.227 2.928v.022c0 1.605 1.005 2.901 2.237 2.901h14.752c1.232 0 2.237-1.308 2.237-2.913v-.007z"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div
+              class="ant-empty-description"
+            >
+              No Data
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader support controlled mode 1`] = `
+<span
+  class="ant-cascader-picker osui-cascader"
+  tabindex="0"
+>
+  <span
+    class="ant-cascader-picker-label"
+  >
+    <span>
+      Zhejiang
+    </span>
+    <svg
+      class="osui-icon osui-cascader-label-divider-icon"
+      focusable="false"
+      height="1024"
+      viewBox="0 0 1024 1024"
+      width="1024"
+    >
+      <path
+        d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+        fill="currentColor"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span>
+      Hangzhou
+    </span>
+    <svg
+      class="osui-icon osui-cascader-label-divider-icon"
+      focusable="false"
+      height="1024"
+      viewBox="0 0 1024 1024"
+      width="1024"
+    >
+      <path
+        d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+        fill="currentColor"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span>
+      West Lake
+    </span>
+  </span>
+  <input
+    autocomplete="off"
+    class="ant-input ant-cascader-input "
+    readonly=""
+    tabindex="-1"
+    type="text"
+    value=""
+  />
+  <span
+    aria-label="close-circle"
+    class="anticon anticon-close-circle ant-cascader-picker-clear"
+    role="img"
+    tabindex="-1"
+  >
+    <svg
+      aria-hidden="true"
+      data-icon="close-circle"
+      fill="currentColor"
+      focusable="false"
+      height="1em"
+      viewBox="64 64 896 896"
+      width="1em"
+    >
+      <path
+        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 01-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+      />
+    </svg>
+  </span>
+  <svg
+    class="osui-icon ant-cascader-picker-arrow"
+    focusable="false"
+    height="1024"
+    viewBox="0 0 1024 1024"
+    width="1024"
+  >
+    <path
+      d="M830.447 394.225c14.996-13.633 39.31-13.633 54.306 0 14.996 13.632 14.996 35.736 0 49.369l-345.6 314.181c-14.996 13.633-39.31 13.633-54.306 0l-345.6-314.181c-14.996-13.633-14.996-35.737 0-49.37 14.996-13.632 39.31-13.632 54.306 0L512 683.723l318.447-289.497z"
+      fill="currentColor"
+      fill-rule="evenodd"
+    />
+  </svg>
+</span>
+`;

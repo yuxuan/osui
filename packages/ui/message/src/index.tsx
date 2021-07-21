@@ -24,6 +24,8 @@ const clsPrefix = 'osui-message';
 type NoticeType = AntdMessageArgsProps['type'] | 'notify' ;
 type iconTypes = 'info' | 'success' | 'error' | 'warning'; // 不覆盖loading
 
+const DEFAULT_DURATION = 5;
+
 export type MessageInstance = AntdMessageInstance;
 export interface MessageArgsProps extends AntdMessageArgsProps {
     original?: boolean;
@@ -76,18 +78,19 @@ let localInnerKey = 0; // 用来记录message destory的
 interface MessageContentProps {
     content: JointContent;
     className: string;
-    localInnerKey: number | string;
+    key?: MessageArgsProps['key'];
     onClose?: MessageArgsProps['onClose'];
+    onClick?: MessageArgsProps['onClick'];
     duration?: MessageArgsProps['duration'];
 }
 // eslint-disable-next-line complexity
-const getMessageContent = ({content, className, localInnerKey, onClose, duration}: MessageContentProps) => {
+const getMessageContent = ({content, className, key, onClose, duration, onClick}: MessageContentProps) => {
     const {
         title = '',
         showClose = true,
         showCountDown = true,
-        duration: innerDuration = (duration || 5),
-        key: innerKey = localInnerKey,
+        duration: innerDuration = (duration ?? DEFAULT_DURATION), // 允许传入0，0表示需要手动关闭
+        key: innerKey = key,
         onClose: innerOnClose = onClose,
     } = isObject(content) ? (content as MessageArgsProps) : {};
 
@@ -146,16 +149,17 @@ const getMessageContent = ({content, className, localInnerKey, onClose, duration
     return {
         content: innerContent,
         className,
-        key: localInnerKey,
+        key: innerKey,
         duration: innerDuration,
         onClose: innerOnClose,
+        onClick,
     };
 };
 
 // 对antd message args的调整
-const getPatchedArgs = (args: MessageArgsProps) => {
+const getPatchedArgs = (args: MessageArgsProps & {localInnerKey?: number}) => {
     const getPropFromConfig = (prop: keyof MessageArgsProps) => {
-        return (args.content as MessageArgsProps)[prop] || args[prop];
+        return (args.content && (args.content as MessageArgsProps)[prop]) || args[prop];
     };
 
     if (getPropFromConfig('original')) {
@@ -173,6 +177,10 @@ const getPatchedArgs = (args: MessageArgsProps) => {
     const content = args.content;
     const type = getPropFromConfig('type');
     const icon = getPropFromConfig('icon') || typeToIcon[args.type as iconTypes];
+    const key = (getPropFromConfig('key') || args.localInnerKey) as MessageArgsProps['key'];
+    const duration = getPropFromConfig('duration') as MessageArgsProps['duration'];
+    const onClose = getPropFromConfig('onClose') as MessageArgsProps['onClose'];
+    const onClick = getPropFromConfig('onClick') as MessageArgsProps['onClick'];
 
     const className = classNames(
         clsPrefix,
@@ -186,9 +194,10 @@ const getPatchedArgs = (args: MessageArgsProps) => {
         ...getMessageContent({
             content,
             className,
-            localInnerKey: (args as any).localInnerKey,
-            onClose: args.onClose,
-            duration: args.duration,
+            key,
+            duration,
+            onClose,
+            onClick,
         }),
         icon,
     };
@@ -201,6 +210,17 @@ const messageBuilder = (
     onClose?: () => void
 ) => {
     localInnerKey++;
+    if (typeof duration === 'function') { // 为了支持第二个参数是onClose
+        return AntdMessage.open(
+            getPatchedArgs({
+                type,
+                content,
+                duration: DEFAULT_DURATION,
+                onClose: duration,
+                localInnerKey, // 这个是额外加的，只内部使用
+            } as MessageArgsProps)
+        );
+    }
     return AntdMessage.open(
         getPatchedArgs({
             type,
@@ -208,7 +228,8 @@ const messageBuilder = (
             duration,
             onClose,
             localInnerKey, // 这个是额外加的，只内部使用
-        } as MessageArgsProps));
+        } as MessageArgsProps)
+    );
 };
 
 const openMessageBuilder = (args: MessageArgsProps) => {

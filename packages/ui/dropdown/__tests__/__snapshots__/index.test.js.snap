@@ -1,0 +1,777 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown overlay is function and has custom transitionName 1`] = `
+<OSUIDropdown
+  overlay={[Function]}
+  transitionName="move-up"
+  visible={true}
+>
+  <Dropdown
+    mouseEnterDelay={0.15}
+    mouseLeaveDelay={0.1}
+    overlay={[Function]}
+    overlayClassName="osui-dropdown"
+    transitionName="move-up"
+    visible={true}
+  >
+    <ForwardRef(Dropdown)
+      mouseEnterDelay={0.15}
+      mouseLeaveDelay={0.1}
+      overlay={[Function]}
+      overlayClassName="osui-dropdown"
+      placement="bottomLeft"
+      prefixCls="ant-dropdown"
+      transitionName="move-up"
+      visible={true}
+    >
+      <Trigger
+        action={
+          Array [
+            "hover",
+          ]
+        }
+        afterPopupVisibleChange={[Function]}
+        autoDestroy={false}
+        blurDelay={0.15}
+        builtinPlacements={
+          Object {
+            "bottomCenter": Object {
+              "offset": Array [
+                0,
+                4,
+              ],
+              "overflow": Object {
+                "adjustX": 1,
+                "adjustY": 1,
+              },
+              "points": Array [
+                "tc",
+                "bc",
+              ],
+              "targetOffset": Array [
+                0,
+                0,
+              ],
+            },
+            "bottomLeft": Object {
+              "offset": Array [
+                0,
+                4,
+              ],
+              "overflow": Object {
+                "adjustX": 1,
+                "adjustY": 1,
+              },
+              "points": Array [
+                "tl",
+                "bl",
+              ],
+              "targetOffset": Array [
+                0,
+                0,
+              ],
+            },
+            "bottomRight": Object {
+              "offset": Array [
+                0,
+                4,
+              ],
+              "overflow": Object {
+                "adjustX": 1,
+                "adjustY": 1,
+              },
+              "points": Array [
+                "tr",
+                "br",
+              ],
+              "targetOffset": Array [
+                0,
+                0,
+              ],
+            },
+            "topCenter": Object {
+              "offset": Array [
+                0,
+                -4,
+              ],
+              "overflow": Object {
+                "adjustX": 1,
+                "adjustY": 1,
+              },
+              "points": Array [
+                "bc",
+                "tc",
+              ],
+              "targetOffset": Array [
+                0,
+                0,
+              ],
+            },
+            "topLeft": Object {
+              "offset": Array [
+                0,
+                -4,
+              ],
+              "overflow": Object {
+                "adjustX": 1,
+                "adjustY": 1,
+              },
+              "points": Array [
+                "bl",
+                "tl",
+              ],
+              "targetOffset": Array [
+                0,
+                0,
+              ],
+            },
+            "topRight": Object {
+              "offset": Array [
+                0,
+                -4,
+              ],
+              "overflow": Object {
+                "adjustX": 1,
+                "adjustY": 1,
+              },
+              "points": Array [
+                "br",
+                "tr",
+              ],
+              "targetOffset": Array [
+                0,
+                0,
+              ],
+            },
+          }
+        }
+        defaultPopupVisible={false}
+        destroyPopupOnHide={false}
+        focusDelay={0}
+        getDocument={[Function]}
+        getPopupClassNameFromAlign={[Function]}
+        hideAction={Array []}
+        mask={false}
+        maskClosable={true}
+        mouseEnterDelay={0.15}
+        mouseLeaveDelay={0.1}
+        onPopupAlign={[Function]}
+        onPopupVisibleChange={[Function]}
+        overlay={[Function]}
+        popup={[Function]}
+        popupAlign={Object {}}
+        popupClassName="osui-dropdown"
+        popupPlacement="bottomLeft"
+        popupStyle={Object {}}
+        popupTransitionName="move-up"
+        popupVisible={true}
+        prefixCls="ant-dropdown"
+        showAction={Array []}
+        stretch="minWidth"
+      >
+        <button
+          className="ant-dropdown-trigger"
+          key="trigger"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          type="button"
+        >
+          button
+        </button>
+        <ForwardRef
+          didUpdate={[Function]}
+          getContainer={[Function]}
+          key="portal"
+        >
+          <Portal
+            containerInfo={
+              <div
+                style="position: absolute; top: 0px; left: 0px; width: 100%;"
+              >
+                <div>
+                  <div
+                    class="ant-dropdown osui-dropdown move-up-appear move-up-appear-prepare move-up"
+                    style="opacity: 0; pointer-events: none;"
+                  >
+                    <div>
+                      menu
+                    </div>
+                  </div>
+                </div>
+              </div>
+            }
+          >
+            <Popup
+              align={
+                Object {
+                  "offset": Array [
+                    0,
+                    4,
+                  ],
+                  "overflow": Object {
+                    "adjustX": 1,
+                    "adjustY": 1,
+                  },
+                  "points": Array [
+                    "tl",
+                    "bl",
+                  ],
+                  "targetOffset": Array [
+                    0,
+                    0,
+                  ],
+                }
+              }
+              className="osui-dropdown"
+              destroyPopupOnHide={false}
+              getClassNameFromAlign={[Function]}
+              getRootDomNode={[Function]}
+              mask={false}
+              onAlign={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onTouchStart={[Function]}
+              prefixCls="ant-dropdown"
+              stretch="minWidth"
+              style={Object {}}
+              transitionName="move-up"
+              visible={true}
+            >
+              <div>
+                <Mask
+                  align={
+                    Object {
+                      "offset": Array [
+                        0,
+                        4,
+                      ],
+                      "overflow": Object {
+                        "adjustX": 1,
+                        "adjustY": 1,
+                      },
+                      "points": Array [
+                        "tl",
+                        "bl",
+                      ],
+                      "targetOffset": Array [
+                        0,
+                        0,
+                      ],
+                    }
+                  }
+                  className="osui-dropdown"
+                  destroyPopupOnHide={false}
+                  getClassNameFromAlign={[Function]}
+                  getRootDomNode={[Function]}
+                  mask={false}
+                  onAlign={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onTouchStart={[Function]}
+                  prefixCls="ant-dropdown"
+                  stretch="minWidth"
+                  style={Object {}}
+                  transitionName="move-up"
+                  visible={true}
+                />
+                <PopupInner
+                  align={
+                    Object {
+                      "offset": Array [
+                        0,
+                        4,
+                      ],
+                      "overflow": Object {
+                        "adjustX": 1,
+                        "adjustY": 1,
+                      },
+                      "points": Array [
+                        "tl",
+                        "bl",
+                      ],
+                      "targetOffset": Array [
+                        0,
+                        0,
+                      ],
+                    }
+                  }
+                  className="osui-dropdown"
+                  destroyPopupOnHide={false}
+                  getClassNameFromAlign={[Function]}
+                  getRootDomNode={[Function]}
+                  mask={false}
+                  onAlign={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onTouchStart={[Function]}
+                  prefixCls="ant-dropdown"
+                  stretch="minWidth"
+                  style={Object {}}
+                  transitionName="move-up"
+                  visible={true}
+                >
+                  <CSSMotion
+                    leavedClassName="ant-dropdown-hidden"
+                    motionName="move-up"
+                    onAppearEnd={[Function]}
+                    onAppearPrepare={[Function]}
+                    onEnterEnd={[Function]}
+                    onEnterPrepare={[Function]}
+                    onLeaveEnd={[Function]}
+                    removeOnLeave={false}
+                    visible={true}
+                  >
+                    <DomWrapper>
+                      <Align
+                        align={
+                          Object {
+                            "offset": Array [
+                              0,
+                              4,
+                            ],
+                            "overflow": Object {
+                              "adjustX": 1,
+                              "adjustY": 1,
+                            },
+                            "points": Array [
+                              "tl",
+                              "bl",
+                            ],
+                            "targetOffset": Array [
+                              0,
+                              0,
+                            ],
+                          }
+                        }
+                        disabled={true}
+                        key="popup"
+                        monitorWindowResize={true}
+                        onAlign={[Function]}
+                        target={[Function]}
+                      >
+                        <div
+                          className="ant-dropdown osui-dropdown move-up-appear move-up-appear-prepare move-up"
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          style={
+                            Object {
+                              "opacity": 0,
+                              "pointerEvents": "none",
+                              "zIndex": undefined,
+                            }
+                          }
+                        >
+                          <div
+                            onClick={[Function]}
+                          >
+                            menu
+                          </div>
+                        </div>
+                      </Align>
+                    </DomWrapper>
+                  </CSSMotion>
+                </PopupInner>
+              </div>
+            </Popup>
+          </Portal>
+        </ForwardRef>
+      </Trigger>
+    </ForwardRef(Dropdown)>
+  </Dropdown>
+</OSUIDropdown>
+`;
+
+exports[`Dropdown overlay is string 1`] = `
+<OSUIDropdown
+  overlay="string"
+  visible={true}
+>
+  <Dropdown
+    mouseEnterDelay={0.15}
+    mouseLeaveDelay={0.1}
+    overlay="string"
+    overlayClassName="osui-dropdown"
+    visible={true}
+  >
+    <ForwardRef(Dropdown)
+      mouseEnterDelay={0.15}
+      mouseLeaveDelay={0.1}
+      overlay={[Function]}
+      overlayClassName="osui-dropdown"
+      placement="bottomLeft"
+      prefixCls="ant-dropdown"
+      transitionName="ant-slide-up"
+      visible={true}
+    >
+      <Trigger
+        action={
+          Array [
+            "hover",
+          ]
+        }
+        afterPopupVisibleChange={[Function]}
+        autoDestroy={false}
+        blurDelay={0.15}
+        builtinPlacements={
+          Object {
+            "bottomCenter": Object {
+              "offset": Array [
+                0,
+                4,
+              ],
+              "overflow": Object {
+                "adjustX": 1,
+                "adjustY": 1,
+              },
+              "points": Array [
+                "tc",
+                "bc",
+              ],
+              "targetOffset": Array [
+                0,
+                0,
+              ],
+            },
+            "bottomLeft": Object {
+              "offset": Array [
+                0,
+                4,
+              ],
+              "overflow": Object {
+                "adjustX": 1,
+                "adjustY": 1,
+              },
+              "points": Array [
+                "tl",
+                "bl",
+              ],
+              "targetOffset": Array [
+                0,
+                0,
+              ],
+            },
+            "bottomRight": Object {
+              "offset": Array [
+                0,
+                4,
+              ],
+              "overflow": Object {
+                "adjustX": 1,
+                "adjustY": 1,
+              },
+              "points": Array [
+                "tr",
+                "br",
+              ],
+              "targetOffset": Array [
+                0,
+                0,
+              ],
+            },
+            "topCenter": Object {
+              "offset": Array [
+                0,
+                -4,
+              ],
+              "overflow": Object {
+                "adjustX": 1,
+                "adjustY": 1,
+              },
+              "points": Array [
+                "bc",
+                "tc",
+              ],
+              "targetOffset": Array [
+                0,
+                0,
+              ],
+            },
+            "topLeft": Object {
+              "offset": Array [
+                0,
+                -4,
+              ],
+              "overflow": Object {
+                "adjustX": 1,
+                "adjustY": 1,
+              },
+              "points": Array [
+                "bl",
+                "tl",
+              ],
+              "targetOffset": Array [
+                0,
+                0,
+              ],
+            },
+            "topRight": Object {
+              "offset": Array [
+                0,
+                -4,
+              ],
+              "overflow": Object {
+                "adjustX": 1,
+                "adjustY": 1,
+              },
+              "points": Array [
+                "br",
+                "tr",
+              ],
+              "targetOffset": Array [
+                0,
+                0,
+              ],
+            },
+          }
+        }
+        defaultPopupVisible={false}
+        destroyPopupOnHide={false}
+        focusDelay={0}
+        getDocument={[Function]}
+        getPopupClassNameFromAlign={[Function]}
+        hideAction={Array []}
+        mask={false}
+        maskClosable={true}
+        mouseEnterDelay={0.15}
+        mouseLeaveDelay={0.1}
+        onPopupAlign={[Function]}
+        onPopupVisibleChange={[Function]}
+        overlay={[Function]}
+        popup={[Function]}
+        popupAlign={Object {}}
+        popupClassName="osui-dropdown"
+        popupPlacement="bottomLeft"
+        popupStyle={Object {}}
+        popupTransitionName="ant-slide-up"
+        popupVisible={true}
+        prefixCls="ant-dropdown"
+        showAction={Array []}
+        stretch="minWidth"
+      >
+        <button
+          className="ant-dropdown-trigger"
+          key="trigger"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          type="button"
+        >
+          button
+        </button>
+        <ForwardRef
+          didUpdate={[Function]}
+          getContainer={[Function]}
+          key="portal"
+        >
+          <Portal
+            containerInfo={
+              <div
+                style="position: absolute; top: 0px; left: 0px; width: 100%;"
+              >
+                <div>
+                  <div
+                    class="ant-dropdown osui-dropdown ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
+                    style="opacity: 0; pointer-events: none;"
+                  >
+                    <span>
+                      string
+                    </span>
+                  </div>
+                </div>
+              </div>
+            }
+          >
+            <Popup
+              align={
+                Object {
+                  "offset": Array [
+                    0,
+                    4,
+                  ],
+                  "overflow": Object {
+                    "adjustX": 1,
+                    "adjustY": 1,
+                  },
+                  "points": Array [
+                    "tl",
+                    "bl",
+                  ],
+                  "targetOffset": Array [
+                    0,
+                    0,
+                  ],
+                }
+              }
+              className="osui-dropdown"
+              destroyPopupOnHide={false}
+              getClassNameFromAlign={[Function]}
+              getRootDomNode={[Function]}
+              mask={false}
+              onAlign={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onTouchStart={[Function]}
+              prefixCls="ant-dropdown"
+              stretch="minWidth"
+              style={Object {}}
+              transitionName="ant-slide-up"
+              visible={true}
+            >
+              <div>
+                <Mask
+                  align={
+                    Object {
+                      "offset": Array [
+                        0,
+                        4,
+                      ],
+                      "overflow": Object {
+                        "adjustX": 1,
+                        "adjustY": 1,
+                      },
+                      "points": Array [
+                        "tl",
+                        "bl",
+                      ],
+                      "targetOffset": Array [
+                        0,
+                        0,
+                      ],
+                    }
+                  }
+                  className="osui-dropdown"
+                  destroyPopupOnHide={false}
+                  getClassNameFromAlign={[Function]}
+                  getRootDomNode={[Function]}
+                  mask={false}
+                  onAlign={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onTouchStart={[Function]}
+                  prefixCls="ant-dropdown"
+                  stretch="minWidth"
+                  style={Object {}}
+                  transitionName="ant-slide-up"
+                  visible={true}
+                />
+                <PopupInner
+                  align={
+                    Object {
+                      "offset": Array [
+                        0,
+                        4,
+                      ],
+                      "overflow": Object {
+                        "adjustX": 1,
+                        "adjustY": 1,
+                      },
+                      "points": Array [
+                        "tl",
+                        "bl",
+                      ],
+                      "targetOffset": Array [
+                        0,
+                        0,
+                      ],
+                    }
+                  }
+                  className="osui-dropdown"
+                  destroyPopupOnHide={false}
+                  getClassNameFromAlign={[Function]}
+                  getRootDomNode={[Function]}
+                  mask={false}
+                  onAlign={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onTouchStart={[Function]}
+                  prefixCls="ant-dropdown"
+                  stretch="minWidth"
+                  style={Object {}}
+                  transitionName="ant-slide-up"
+                  visible={true}
+                >
+                  <CSSMotion
+                    leavedClassName="ant-dropdown-hidden"
+                    motionName="ant-slide-up"
+                    onAppearEnd={[Function]}
+                    onAppearPrepare={[Function]}
+                    onEnterEnd={[Function]}
+                    onEnterPrepare={[Function]}
+                    onLeaveEnd={[Function]}
+                    removeOnLeave={false}
+                    visible={true}
+                  >
+                    <DomWrapper>
+                      <Align
+                        align={
+                          Object {
+                            "offset": Array [
+                              0,
+                              4,
+                            ],
+                            "overflow": Object {
+                              "adjustX": 1,
+                              "adjustY": 1,
+                            },
+                            "points": Array [
+                              "tl",
+                              "bl",
+                            ],
+                            "targetOffset": Array [
+                              0,
+                              0,
+                            ],
+                          }
+                        }
+                        disabled={true}
+                        key="popup"
+                        monitorWindowResize={true}
+                        onAlign={[Function]}
+                        target={[Function]}
+                      >
+                        <div
+                          className="ant-dropdown osui-dropdown ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onTouchStart={[Function]}
+                          style={
+                            Object {
+                              "opacity": 0,
+                              "pointerEvents": "none",
+                              "zIndex": undefined,
+                            }
+                          }
+                        >
+                          <span
+                            onClick={[Function]}
+                          >
+                            string
+                          </span>
+                        </div>
+                      </Align>
+                    </DomWrapper>
+                  </CSSMotion>
+                </PopupInner>
+              </div>
+            </Popup>
+          </Portal>
+        </ForwardRef>
+      </Trigger>
+    </ForwardRef(Dropdown)>
+  </Dropdown>
+</OSUIDropdown>
+`;
+
+exports[`Dropdown rtl render component should be rendered correctly in RTL direction 1`] = `
+<span
+  class="ant-dropdown-trigger ant-dropdown-rtl"
+/>
+`;

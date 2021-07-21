@@ -6,7 +6,7 @@ import './index.less';
 
 const clsPrefix = 'osui-input-number';
 
-const InputNumber = React.forwardRef<unknown, AntdInputNumberProps>(({className, ...props}, ref) => {
+const InputNumber = React.forwardRef<HTMLInputElement, AntdInputNumberProps>(({className, ...props}, ref) => {
     const innerClassName = classNames(className, clsPrefix);
     return <AntdInputNumber ref={ref} className={innerClassName} {...props} />;
 });

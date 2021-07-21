@@ -24,7 +24,7 @@ interface InputInterface extends React.FC<InputProps> {
     Password: typeof AntdInput.Password;
 }
 
-const Input = React.forwardRef<any, AntdInputProps>(({ className, onFocus, onBlur, disabled, ...props }, ref) => {
+const OSUIInput = React.forwardRef<any, AntdInputProps>(({ className, onFocus, onBlur, disabled, ...props }, ref) => {
     const [focused, setFocused] = useState(false);
     const innerClassNames = classNames(clsPrefix, className, {
         [`${clsPrefix}-focused`]: focused,
@@ -56,17 +56,17 @@ const Input = React.forwardRef<any, AntdInputProps>(({ className, onFocus, onBlu
     );
 }) as unknown as InputInterface;
 
-hoistNonReactStatics(Input, AntdInput);
+hoistNonReactStatics(OSUIInput, AntdInput);
 
-Input.Password = React.forwardRef<any, AntdInputProps>((props, ref) => {
+OSUIInput.Password = React.forwardRef<any, AntdInputProps>((props, ref) => {
     return <AntdInput.Password ref={ref} {...props} className={classNames(clsPrefix, props.className)} />;
 });
 
-Input.TextArea = React.forwardRef<any, AntdTextAreaProps>((props, ref) => {
+OSUIInput.TextArea = React.forwardRef<any, AntdTextAreaProps>((props, ref) => {
     return <AntdInput.TextArea ref={ref} {...props} className={classNames(clsPrefix, props.className)} />;
 });
 
-Input.Group = AntdInput.Group;
+OSUIInput.Group = AntdInput.Group;
 
 export interface SearchProps extends AntdSearchProps {
     withSuffixIcon?: boolean;
@@ -207,6 +207,6 @@ const Search = React.forwardRef<any, SearchProps>(
     }
 );
 
-Input.Search = Search;
+OSUIInput.Search = Search;
 
-export default Input;
+export default OSUIInput;

@@ -11,18 +11,20 @@ const clsPrefix = 'osui-radio';
 export type RadioProps = AntdRadioProps;
 export type RadioGroupProps = AntdRadioGroupProps;
 
-const RadioGroup: React.FC<RadioGroupProps> = ({ className, ...restProps }) => {
-    return <AntdRadioGroup className={classNames(`${clsPrefix}-group`, className)} {...restProps} />;
-};
+const RadioGroup = React.forwardRef<HTMLDivElement, RadioGroupProps>(({ className, ...restProps }, ref) => {
+    return <AntdRadioGroup ref={ref} className={classNames(`${clsPrefix}-group`, className)} {...restProps} />;
+});
 
-interface RadioInterface extends React.FC<RadioProps> {
+interface RadioInterface extends React.ForwardRefExoticComponent<RadioProps & React.RefAttributes<HTMLElement>> {
     Group: typeof RadioGroup;
     Button: typeof AntdRadio.Button;
 }
 
-const Radio: RadioInterface = ({ className, ...restProps }) => {
-    return <AntdRadio className={classNames(clsPrefix, className)} {...restProps} />;
+const RefRadio: React.ForwardRefRenderFunction<HTMLElement, AntdRadioProps> = ({ className, ...restProps }, ref) => {
+    return <AntdRadio ref={ref} className={classNames(clsPrefix, className)} {...restProps} />;
 };
+
+const Radio = React.forwardRef(RefRadio) as RadioInterface;
 
 Radio.Group = RadioGroup;
 Radio.Button = AntdRadio.Button;

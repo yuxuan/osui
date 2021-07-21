@@ -407,9 +407,36 @@ export const Api = () => {
 };
 
 export const TestCase = () => {
+    class DefaultButton extends React.Component {
+        state = {
+            loading: false,
+        };
+
+        enterLoading = () => {
+            this.setState({loading: {delay: 1000}});
+        };
+
+        render() {
+            const {loading} = this.state;
+            return (
+                <>
+                    <Button loading={loading} onClick={this.enterLoading}>
+                        Button
+                    </Button>
+                    <p />
+                    <Button loading>
+                        Button
+                    </Button>
+                </>
+            );
+        }
+    }
     return (
         <>
             {version}
+            <p />
+            <p>使用delay的方式</p>
+            <DefaultButton />
         </>
     );
 };

@@ -798,6 +798,7 @@ export const TestCase = () => {
             />
         );
     }
+
     return (
         <BrandProvider brand="icloud">
             {version}
@@ -805,3 +806,39 @@ export const TestCase = () => {
         </BrandProvider>
     );
 };
+
+export const TestCase2 = () => {
+    const columns = [
+        {
+            title: 'Name',
+            dataIndex: 'name',
+            filters: [{text: '1', value: 'name'}],
+            filterDropdownVisible: true,
+        },
+    ];
+
+    const dynamicData = [];
+    for (let i = 0; i < 15; i += 1) {
+        dynamicData.push({
+            key: i,
+            name: i,
+        });
+    }
+    // 会有一个warning
+    const pagination = { total: 100, pageSize: 10, current: 2 };
+    return (
+        <Table
+            columns={columns}
+            dataSource={dynamicData}
+            pagination={pagination}
+            getPopupContainer={
+                node => {
+                    // 这个会被调用
+                    console.log(1);
+                    return node.parentNode as HTMLElement;
+                }
+            }
+        />
+    );
+};
+

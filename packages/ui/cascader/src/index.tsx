@@ -7,16 +7,19 @@ import './index.less';
 
 const clsPrefix = 'osui-cascader';
 
-const Cascader: React.FC<AntdCascaderProps> = ({
-    className,
-    popupClassName,
-    expandIcon,
-    suffixIcon,
-    displayRender,
-    ...props
-}) => {
-    const innerClassName = classNames(className, clsPrefix);
-    const innerPopupClassName = classNames(popupClassName, `${clsPrefix}-menu`);
+const OSUICascader: React.ForwardRefRenderFunction<unknown, AntdCascaderProps> = (
+    {
+        className,
+        popupClassName,
+        expandIcon,
+        suffixIcon,
+        displayRender,
+        ...props
+    },
+    ref
+) => {
+    const innerClassName = classNames(clsPrefix, className);
+    const innerPopupClassName = classNames(`${clsPrefix}-menu`, popupClassName);
     const innerDisplayRender = displayRender ?? (
         (label: string[]) => label.map(
             (item, index) => (
@@ -34,6 +37,7 @@ const Cascader: React.FC<AntdCascaderProps> = ({
     const innerSuffixIcon = suffixIcon ?? <IconDownOutlined />;
     return (
         <AntdCascader
+            ref={ref as any}
             className={innerClassName}
             displayRender={innerDisplayRender}
             popupClassName={innerPopupClassName}
@@ -44,4 +48,4 @@ const Cascader: React.FC<AntdCascaderProps> = ({
     );
 };
 
-export default Cascader;
+export default React.forwardRef<unknown, AntdCascaderProps>(OSUICascader) as unknown as typeof AntdCascader;

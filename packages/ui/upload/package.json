@@ -18,7 +18,7 @@
         "prepublishOnly": "yarn run build",
         "storybook": "start-storybook -p 8700",
         "clean": "rm -rf node_modules && rm -rf es",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "jest --config jest.config.js",
         "sb-upgrade": "sb upgrade"
     },
     "sideEffects": [
@@ -39,18 +39,27 @@
         "@storybook/client-api": "^6.0.26",
         "@storybook/react": "^6.0.26",
         "@types/classnames": "^2.2.10",
+        "@types/enzyme": "^3.10.9",
+        "@types/jest": "^26.0.24",
         "@types/react-dom": "^16.9.8",
-        "antd": "^4.16.0",
+        "@types/react-test-renderer": "^17.0.1",
+        "antd": "^4.16.9",
         "babel-loader": "^8.1.0",
         "babel-merge": "^3.0.0",
         "cpy-cli": "^3.1.1",
+        "enzyme": "^3.11.0",
         "husky": "^4.2.5",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^27.0.6",
         "prop-types": "^15.7.2",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-is": "^16.13.1",
         "react-router-dom": "^5.2.0",
-        "typescript": "^3.9.6"
+        "react-test-renderer": "^17.0.2",
+        "ts-jest": "^27.0.3",
+        "typescript": "^3.9.6",
+        "xhr-mock": "^2.5.1"
     },
     "peerDependencies": {
         "antd": ">=4.4.0 <4.17.0",

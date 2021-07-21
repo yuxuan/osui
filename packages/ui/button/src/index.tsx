@@ -40,7 +40,7 @@ export interface ButtonInterface extends React.ForwardRefExoticComponent<ButtonP
 
 const PureIconButton: React.FC<ButtonProps> = props => {
     const Icon = props.icon;
-    const innerClassName = classNames(props.className, `${clsPrefix}-btn-icon`);
+    const innerClassName = classNames(`${clsPrefix}-btn-icon`, props.className);
     if (props.loading) {
         return React.cloneElement(
             <IconLoading3QuartersOutlined spin />,
@@ -70,13 +70,15 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     }, ref
 ) => {
     let innerIcon = icon;
+    const loadingProp = (typeof loading === 'object') ? {loading} : {};
+    const isLoading = typeof loading === 'boolean' && loading;
 
     if (type === 'icon') {
-        return (<PureIconButton loading={loading} icon={icon} disabled={disabled} {...props} />);
+        return (<PureIconButton loading={isLoading} icon={icon} disabled={disabled} {...props} />);
     }
 
     // 当loading且有icon的button时，icon替换成spinner，不论什么情况都要保持后面的chidlren
-    if (loading && icon) {
+    if (isLoading && icon) {
         innerIcon = (
             <IconLoading3QuartersOutlined
                 spin
@@ -86,7 +88,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     }
     // 当loading但没有icon时，children替换成spinner，根据主题保留或者隐藏children。
     // osc的文字按钮loading时，文字替换成loading icon；而icloud主题则是保留icon和文字
-    if (loading && !icon) {
+    if (isLoading && !icon) {
         innerIcon = <IconLoading3QuartersOutlined spin className={`${clsPrefix}-icon-spinner`} />;
     }
 
@@ -101,18 +103,19 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
                 classNames(
                     clsPrefix,
                     {
-                        [`${clsPrefix}-loading`]: loading,
-                        [`${clsPrefix}-disabled`]: loading || disabled,
+                        [`${clsPrefix}-loading`]: isLoading,
+                        [`${clsPrefix}-disabled`]: isLoading || disabled,
                         [`${clsPrefix}-face-success`]: success,
                         [`${clsPrefix}-face-error`]: error || danger,
                         [`${clsPrefix}-face-warning`]: warning,
-                        [`${clsPrefix}-flex-center`]: flexCenter || loading,
+                        [`${clsPrefix}-flex-center`]: flexCenter || isLoading,
                     },
                     props.className
                 )
             }
             icon={innerIcon}
-            disabled={!!loading || disabled}
+            disabled={isLoading || disabled}
+            {...loadingProp}
         />
     );
 

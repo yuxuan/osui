@@ -1,5 +1,6 @@
 import React from 'react';
 import {Dropdown as AntdDropdown} from 'antd';
+import hoistNonReactStatics from 'hoist-non-react-statics';
 import classNames from 'classnames';
 import {DropDownProps as AntdCheckboxProps} from 'antd/lib/dropdown';
 import './index.less';
@@ -7,13 +8,25 @@ import './index.less';
 const clsPrefix = 'osui-dropdown';
 
 interface DropdownInterface extends React.FC<AntdCheckboxProps> {
-    Button: typeof AntdDropdown.Button;
+    Button: typeof OSUIDropdownButton;
 }
 
-const Dropdown: DropdownInterface = ({overlayClassName, ...props}) => (
-    <AntdDropdown overlayClassName={classNames(overlayClassName, clsPrefix)} {...props} />
+const OSUIDropdown: DropdownInterface = ({overlayClassName, ...props}) => (
+    <AntdDropdown overlayClassName={classNames(clsPrefix, overlayClassName)} {...props} />
 );
 
-Dropdown.Button = AntdDropdown.Button;
+hoistNonReactStatics(OSUIDropdown, AntdDropdown);
 
-export default Dropdown;
+const OSUIDropdownButton: React.FC<React.ComponentProps<typeof AntdDropdown.Button>> = (
+    {overlayClassName, ...props}
+) => {
+    return (
+        <AntdDropdown.Button overlayClassName={classNames(clsPrefix, overlayClassName)} {...props} />
+    );
+};
+
+hoistNonReactStatics(OSUIDropdownButton, AntdDropdown.Button);
+
+OSUIDropdown.Button = OSUIDropdownButton;
+
+export default OSUIDropdown;

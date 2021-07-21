@@ -1,7 +1,7 @@
 import React from 'react';
 import Space from '@osui/space';
 import Divider from '@osui/divider';
-
+import Tooltip from '@osui/tooltip';
 import Badge from '../src';
 
 export default {
@@ -88,6 +88,14 @@ export const Api = () => {
         <>
             <a target="_blank" rel="noreferrer" href="https://ant.design/components/badge-cn/">Antd Badge API</a>
         </>
+    );
+};
+
+export const TestCase = () => {
+    return (
+        <Tooltip title="Fix the error">
+            <Badge status="error" />
+        </Tooltip>
     );
 };
 

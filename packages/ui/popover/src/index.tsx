@@ -8,8 +8,8 @@ const clsPrefix = 'osui-popover';
 
 export type PopoverProps = AntdPopoverProps;
 
-const Popover: React.FC<PopoverProps> = props => {
-    return (<AntdPopover {...props} overlayClassName={classNames(clsPrefix, props.overlayClassName)} />);
+const Popover: React.ForwardRefRenderFunction<HTMLElement, AntdPopoverProps> = (props, ref) => {
+    return (<AntdPopover ref={ref} {...props} overlayClassName={classNames(clsPrefix, props.overlayClassName)} />);
 };
 
-export default Popover;
+export default React.forwardRef(Popover) as unknown as typeof AntdPopover;

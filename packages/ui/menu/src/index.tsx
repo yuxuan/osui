@@ -14,13 +14,13 @@ export interface MenuInterface extends React.FC<AntdMenuProps> {
 }
 
 const Menu: MenuInterface = ({className, expandIcon, ...props}) => {
-    const innerClassName = classNames(className, clsPrefix);
+    const innerClassName = classNames(clsPrefix, className);
     const innerExpandIcon = expandIcon ?? <IconRightOutlined />;
     return <AntdMenu className={innerClassName} expandIcon={innerExpandIcon} {...props} />;
 };
 
 const SubMenu: React.FC<AntdSubMenuProps> = ({popupClassName, ...props}) => {
-    const innerPopupClassName = classNames(popupClassName, `${clsPrefix}-submenu`);
+    const innerPopupClassName = classNames(`${clsPrefix}-submenu`, popupClassName);
     return <AntdMenu.SubMenu popupClassName={innerPopupClassName} {...props} />;
 };
 

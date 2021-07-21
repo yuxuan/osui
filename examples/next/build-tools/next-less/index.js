@@ -25,6 +25,9 @@ module.exports = (nextConfig = {}) => {
             options: lessLoaderOptions,
           },
           {
+            loader: 'less-safe-loader'
+          },
+          {
             loader: 'style-resources-loader',
             options: {
               patterns: [
@@ -40,6 +43,11 @@ module.exports = (nextConfig = {}) => {
       if (cssModules) {
         options.defaultLoaders.less.unshift('@ecomfe/class-names-loader');
       }
+
+      config.module.rules.push({
+        test: /\.less$/,
+        use: options.defaultLoaders.less,
+      });
 
       config.module.rules.push({
         test: /\.less$/,

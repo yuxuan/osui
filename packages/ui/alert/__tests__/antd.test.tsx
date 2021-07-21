@@ -1,3 +1,5 @@
+/* eslint-disable */
+// @ts-nocheck
 import React from 'react';
 import {mount, render} from 'enzyme';
 import Button from '@osui/button';
@@ -77,15 +79,12 @@ describe('Alert', () => {
     });
 
     it('ErrorBoundary', () => {
-        // @ts-expect-error
-        // eslint-disable-next-line react/jsx-no-undef
         const ThrowError = () => <NotExisted />;
         const wrapper = mount(
             <ErrorBoundary>
                 <ThrowError />
             </ErrorBoundary>
         );
-        // eslint-disable-next-line jest/no-standalone-expect
         expect(wrapper.text()).toContain(
             'ReferenceError: NotExisted is not defined'
         );

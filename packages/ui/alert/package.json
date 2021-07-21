@@ -43,7 +43,7 @@
         "@types/jest": "^26.0.24",
         "@types/react-dom": "^16.9.8",
         "@types/react-test-renderer": "^17.0.1",
-        "antd": "^4.16.0",
+        "antd": "^4.16.9",
         "babel-loader": "^8.1.0",
         "babel-merge": "^3.0.0",
         "cpy-cli": "^3.1.1",
@@ -74,6 +74,7 @@
     "dependencies": {
         "@huse/boolean": "^1.0.3",
         "@huse/timeout": "^1.0.2",
+        "@types/hoist-non-react-statics": "^3.3.1",
         "classnames": "^2.2.6",
         "hoist-non-react-statics": "^3.3.2"
     },

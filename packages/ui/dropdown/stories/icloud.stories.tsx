@@ -10,21 +10,32 @@ export default {
 };
 
 export const Demo = () => {
-
     const menu = (
         <Menu>
             <Menu.Item>
-                <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="http://www.alipay.com/"
+                >
                     1st
                 </a>
             </Menu.Item>
             <Menu.Item>
-                <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="http://www.taobao.com/"
+                >
                     2nd
                 </a>
             </Menu.Item>
             <Menu.Item>
-                <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="http://www.tmall.com/"
+                >
                     3rd
                 </a>
             </Menu.Item>
@@ -35,7 +46,7 @@ export const Demo = () => {
         <>
             <p>文字下拉</p>
             <Dropdown overlay={menu}>
-                <a onClick={e => e.preventDefault()}>
+                <a onClick={(e) => e.preventDefault()}>
                     <FlexCentered>
                         请选择
                         <IconDownOutlined style={{paddingLeft: '5px'}} />
@@ -49,8 +60,29 @@ export const Demo = () => {
 export const Api = () => {
     return (
         <>
-            <a target="_blank" rel="noreferrer" href="https://ant.design/components/dropdown-cn/">Antd Dropdown API</a>
+            <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://ant.design/components/dropdown-cn/"
+            >
+                Antd Dropdown API
+            </a>
         </>
     );
 };
 
+export const TestCase = () => {
+    const menu = (
+        <Menu>
+            <Menu.Item key="1">foo</Menu.Item>
+        </Menu>
+    );
+    return (
+        <Dropdown.Button
+            overlayClassName="className"
+            overlayStyle={{color: 'red'}}
+            overlay={menu}
+            visible
+        />
+    );
+};

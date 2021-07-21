@@ -56,3 +56,7 @@ export const Api = () => {
     );
 };
 
+export const TestCase = () => {
+    return (<TreeSelect style={{ width: '100%' }} open notFoundContent="notFoundContent" />);
+};
+
