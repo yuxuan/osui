@@ -7,6 +7,27 @@ sidebar_position: 1
 
 以`@osui/ui`主版本为主，包含各组件单包发布情况
 
+## 1.0.10
+
+### 功能调整
+- Form
+  - 修复webpack@5.46.0 svg inline格式错误的问题
+- Modal
+  - 修复modal-confirm内加载带icon的组件时样式错乱问题
+- Message
+  - message 距离顶部51px确保在内容区域内
+
+### 组件更新
+```
+- @osui/icloud-theme@1.0.6
+- @osui/theme@1.0.6
+- @osui/form@1.0.5
+- @osui/message@1.0.3
+- @osui/modal@1.0.4
+- @osui/ui@1.0.10
+```
+
+
 ## 1.0.9
 
 ### 功能调整
