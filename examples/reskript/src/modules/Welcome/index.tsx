@@ -1,5 +1,5 @@
 import {VFC} from 'react';
-import Button from '@osui/button';
+import {Button} from '@osui/ui';
 import {ReactComponent as Beer} from './assets/beer.svg';
 import c from './index.less';
 

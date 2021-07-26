@@ -2501,6 +2501,11 @@
   dependencies:
     "@octokit/openapi-types" "^5.0.0"
 
+"@osui/brand-provider@0.8.4":
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/@osui/brand-provider/-/brand-provider-0.8.4.tgz#2cb2af5cd25426531366b8b72dd7ef01852a7d3a"
+  integrity sha512-EYcc5rpGFd8BDQFOOaR3UkuZm1a/PNPACM/lyaKM3P8I3e7YoC/Ec3lxmpHzHEVmUsaO8bnbAIMeX73RFxbopQ==
+
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.2":
   version "0.4.3"
   resolved "https://registry.npm.taobao.org/@pmmmwh/react-refresh-webpack-plugin/download/@pmmmwh/react-refresh-webpack-plugin-0.4.3.tgz#1eec460596d200c0236bf195b078a5d1df89b766"
