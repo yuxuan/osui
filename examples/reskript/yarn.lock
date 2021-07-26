@@ -1504,10 +1504,10 @@
   resolved "http://registry.npm.baidu-int.com/@osui%2fflex-centered/-/flex-centered-1.0.1.tgz#f08d24b567d7547df09e2e703d7dcd8cf9c6ca44"
   integrity sha1-8I0ktWfXVH3wni5wPX3NjPnGykQ=
 
-"@osui/form@^1.0.4":
-  version "1.0.4"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fform/-/form-1.0.4.tgz#20026938399708e36efbdc34155a040879347f4d"
-  integrity sha1-IAJpODmXCONu+9w0FVoECHk0f00=
+"@osui/form@^1.0.5":
+  version "1.0.5"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fform/-/form-1.0.5.tgz#d684df6125402ed33403d443852af6bd5a65a223"
+  integrity sha1-1oTfYSVALtM0A9RDhSr2vVploiM=
   dependencies:
     "@osui/brand-provider" "^1.0.1"
 
@@ -1621,19 +1621,19 @@
   dependencies:
     hoist-non-react-statics "^3.3.2"
 
-"@osui/message@^1.0.2":
-  version "1.0.2"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fmessage/-/message-1.0.2.tgz#e95ba57c2775f6b90b7560a9be3d4998993631a4"
-  integrity sha1-6VulfCd19rkLdWCpvj1JmJk2MaQ=
+"@osui/message@^1.0.3":
+  version "1.0.3"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fmessage/-/message-1.0.3.tgz#7bb1da040905ce58bbaddeba838f48eb5890cb3b"
+  integrity sha1-e7HaBAkFzli7rd66g49I61iQyzs=
   dependencies:
     "@huse/timeout" "^1.1.0"
     classnames "^2.2.6"
     lodash.partial "^4.2.1"
 
-"@osui/modal@^1.0.3":
-  version "1.0.3"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fmodal/-/modal-1.0.3.tgz#3c9475c443fc0f8a23ca4a77799f6c4278a40d75"
-  integrity sha1-PJR1xEP8D4ojykp3eZ9sQnikDXU=
+"@osui/modal@^1.0.4":
+  version "1.0.4"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fmodal/-/modal-1.0.4.tgz#c09e2bbfb2bd854760de29dbf510d7233032c13c"
+  integrity sha1-wJ4rv7K9hUdg3inb9RDXIzAywTw=
   dependencies:
     "@osui/button" "^1.0.3"
     classnames "^2.2.6"
@@ -1838,10 +1838,10 @@
   resolved "http://registry.npm.baidu-int.com/@osui%2ftypography/-/typography-1.0.1.tgz#324438366ae9da2eed95cbc362a659cdb81a565c"
   integrity sha1-MkQ4Nmrp2i7tlcvDYqZZzbgaVlw=
 
-"@osui/ui@^1.0.9":
-  version "1.0.9"
-  resolved "http://registry.npm.baidu-int.com/@osui%2fui/-/ui-1.0.9.tgz#dda0c64e6860f5f3be4ff3a75700c166671c040c"
-  integrity sha1-3aDGTmhg9fO+T/OnVwDBZmccBAw=
+"@osui/ui@^1.0.10":
+  version "1.0.10"
+  resolved "http://registry.npm.baidu-int.com/@osui%2fui/-/ui-1.0.10.tgz#d05a787d227eecd1492e3acea7fec3c7d981d7f6"
+  integrity sha1-0Fp4fSJ+7NFJLjrOp/7Dx9mB1/Y=
   dependencies:
     "@osui/affix" "^1.0.1"
     "@osui/alert" "^1.0.1"
@@ -1871,7 +1871,7 @@
     "@osui/dropdown" "^1.0.2"
     "@osui/empty" "^1.0.1"
     "@osui/flex-centered" "^1.0.1"
-    "@osui/form" "^1.0.4"
+    "@osui/form" "^1.0.5"
     "@osui/gap" "^1.0.2"
     "@osui/grid" "^1.0.1"
     "@osui/highlight-text" "^1.0.1"
@@ -1885,8 +1885,8 @@
     "@osui/mentions" "^1.0.1"
     "@osui/menu" "^1.0.1"
     "@osui/menu-dropdown" "^1.0.2"
-    "@osui/message" "^1.0.2"
-    "@osui/modal" "^1.0.3"
+    "@osui/message" "^1.0.3"
+    "@osui/modal" "^1.0.4"
     "@osui/notification" "^1.0.1"
     "@osui/page-header" "^1.0.1"
     "@osui/pagination" "^1.0.3"
