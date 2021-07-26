@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@1.0.3...@osui/modal@1.0.4) (2021-07-26)
+
+
+### Bug Fixes
+
+* 修复modal-confirm内加载带icon的组件时样式错乱问题 ([832f14b](https://gitee.com/gitee-fe/osui/tree/master/commits/832f14b9eed769f1a71c34aafabe39e6ef0c2322))
+
+
+
+
+
 ## [1.0.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@1.0.2...@osui/modal@1.0.3) (2021-07-07)
 
 **Note:** Version bump only for package @osui/modal

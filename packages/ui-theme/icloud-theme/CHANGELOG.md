@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@1.0.5...@osui/icloud-theme@1.0.6) (2021-07-26)
+
+
+### Bug Fixes
+
+* message 距离顶部51px确保在内容区域内 ([5c578fd](https://gitee.com/gitee-fe/osui/tree/master/commits/5c578fd2b4ec4132bfaf6ea1ff2fdc666fe9b76f))
+
+
+
+
+
 ## [1.0.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@1.0.4...@osui/icloud-theme@1.0.5) (2021-07-07)
 
 

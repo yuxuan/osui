@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@1.0.4...@osui/form@1.0.5) (2021-07-26)
+
+
+### Bug Fixes
+
+* 修复webpack@5.46.0 svg inline格式错误的问题 ([9936ac5](https://gitee.com/gitee-fe/osui/tree/master/commits/9936ac5a5a219725ec4fd0c4c4dfdde11b1ff9bc))
+
+
+
+
+
 ## [1.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@1.0.3...@osui/form@1.0.4) (2021-07-07)
 
 
