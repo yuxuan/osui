@@ -150,11 +150,7 @@ const getConfirmConfig = (
     const baseConfig = config;
     // 对confirm图表的样式调整处理
     Object.assign(baseConfig, {
-        icon: (
-            <span className={classNames(`${clsPrefix}-confirm-icon`)}>
-                {config.icon ?? confirmIconMap[type]}
-            </span>
-        ),
+        icon: config.hasOwnProperty('icon') ? config.icon : confirmIconMap[type],
     });
 
     return {
