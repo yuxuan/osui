@@ -50,46 +50,45 @@
 }
 
 .@{osui-modal-class-prefix}-confirm {
-    &-icon svg.osui-icon {
-        float: left;
-        width: 36px;
-        height: 36px;
-        margin-right: 20px;
-        font-size: 14px;
-    }
-
     .@{ant-prefix}-modal-confirm-body {
         min-height: 76px;
         border-bottom: var(--modal-body-border-bottom);
+
+        & > svg.osui-icon {
+            float: left;
+            width: 36px;
+            height: 36px;
+            margin-right: 20px;
+            font-size: 14px;
+        }
     }
 
     .@{ant-prefix}-modal-confirm-content {
         margin-bottom: 40px;
-        margin-left: 55px;
     }
 
     .@{ant-prefix}-modal-confirm-btns {
         margin-top: 15px;
     }
 
-    &.@{ant-prefix}-modal-confirm-warning .@{ant-prefix}-modal-confirm-body &-icon svg.osui-icon,
-    &.@{ant-prefix}-modal-confirm-confirm .@{ant-prefix}-modal-confirm-body &-icon svg.osui-icon {
+    &.@{ant-prefix}-modal-confirm-warning .@{ant-prefix}-modal-confirm-body > svg.osui-icon,
+    &.@{ant-prefix}-modal-confirm-confirm .@{ant-prefix}-modal-confirm-body > svg.osui-icon {
         color: var(--theme-warning-color);
     }
 
-    &.@{ant-prefix}-modal-confirm-success .@{ant-prefix}-modal-confirm-body &-icon svg.osui-icon {
+    &.@{ant-prefix}-modal-confirm-success .@{ant-prefix}-modal-confirm-body > svg.osui-icon {
         color: var(--theme-success-color);
     }
 
-    &.@{ant-prefix}-modal-confirm-info .@{ant-prefix}-modal-confirm-body &-icon svg.osui-icon {
+    &.@{ant-prefix}-modal-confirm-info .@{ant-prefix}-modal-confirm-body > svg.osui-icon {
         color: var(--theme-info-color);
     }
 
-    &.@{ant-prefix}-modal-confirm-error .@{ant-prefix}-modal-confirm-body &-icon svg.osui-icon {
+    &.@{ant-prefix}-modal-confirm-error .@{ant-prefix}-modal-confirm-body > svg.osui-icon {
         color: var(--theme-error-color);
     }
 
-    .@{ant-prefix}-modal-confirm-body > .osui-modal-confirm-icon + .@{ant-prefix}-modal-confirm-title + .@{ant-prefix}-modal-confirm-content {
+    .@{ant-prefix}-modal-confirm-body > svg.osui-icon + .@{ant-prefix}-modal-confirm-title + .@{ant-prefix}-modal-confirm-content {
         margin-bottom: 40px;
         margin-left: 55px;
     }
