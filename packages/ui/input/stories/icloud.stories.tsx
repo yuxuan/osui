@@ -7,6 +7,7 @@ import BrandProvider from '@osui/brand-provider';
 import Button from '@osui/button';
 import Form from '@osui/form';
 import Gap from '@osui/gap';
+import version from '@osui/version';
 import Input from '../src';
 const { TextArea } = Input;
 
@@ -450,6 +451,7 @@ export const Api = () => {
 export const TestCase = () => {
     return (
         <>
+            {version}
             <Blockquote>
                 说明：记录走查问题的测试case。 不需要走查
             </Blockquote>

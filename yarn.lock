@@ -1753,6 +1753,11 @@
   resolved "https://registry.nlark.com/@huse/document-event/download/@huse/document-event-1.1.0.tgz#03fae7378f879825348c3b4437c8c1f68fc40b18"
   integrity sha1-A/rnN4+HmCU0jDtEN8jB9o/ECxg=
 
+"@huse/input-value@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.nlark.com/@huse/input-value/download/@huse/input-value-1.1.1.tgz#acc39ded8f8e3342f6849792826824f726838f3b"
+  integrity sha1-rMOd7Y+OM0L2hJeSgmgk9yaDjzs=
+
 "@huse/methods@^1.2.0":
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/@huse/methods/download/@huse/methods-1.2.0.tgz#4946483199458c819a7399d96b30b2dd5fcdddf8"
@@ -4112,6 +4117,11 @@
   resolved "https://registry.npm.taobao.org/@types/unist/download/@types/unist-2.0.3.tgz?cache=0&sync_timestamp=1613385489487&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Funist%2Fdownload%2F%40types%2Funist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha1-nAiGeYdvN061mD8VDUeHqm+zLX4=
 
+"@types/uri-templates@^0.1.30":
+  version "0.1.31"
+  resolved "https://registry.nlark.com/@types/uri-templates/download/@types/uri-templates-0.1.31.tgz#ff5b8cb34459177afa45ba9780f530f65a146118"
+  integrity sha1-/1uMs0RZF3r6RbqXgPUw9loUYRg=
+
 "@types/vfile-message@*":
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/@types/vfile-message/download/@types/vfile-message-2.0.0.tgz#690e46af0fdfc1f9faae00cd049cc888957927d5"
@@ -4704,10 +4714,10 @@ ansi-to-html@^0.6.11:
   dependencies:
     entities "^1.1.2"
 
-antd@4.16.9, antd@^4.16.9:
-  version "4.16.9"
-  resolved "https://registry.nlark.com/antd/download/antd-4.16.9.tgz#88fb529960704c79a57f011845691fc633438083"
-  integrity sha1-iPtSmWBwTHmlfwEYRWkfxjNDgIM=
+antd@^4.16.10:
+  version "4.16.10"
+  resolved "https://registry.nlark.com/antd/download/antd-4.16.10.tgz?cache=0&sync_timestamp=1627913159619&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fantd%2Fdownload%2Fantd-4.16.10.tgz#d785741413a1875d9e526a09b8f5388cc29677e9"
+  integrity sha1-14V0FBOhh12eUmoJuPU4jMKWd+k=
   dependencies:
     "@ant-design/colors" "^6.0.0"
     "@ant-design/icons" "^4.6.2"
@@ -12176,6 +12186,11 @@ lodash.merge@^4.6.2:
   resolved "https://registry.npm.taobao.org/lodash.merge/download/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha1-VYqlO0O2YeGSWgr9+japoQhf5Xo=
 
+lodash.omit@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.npm.taobao.org/lodash.omit/download/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
+  integrity sha1-brGa5aHuHdnfC5aeZs4Lf6MLXmA=
+
 lodash.partial@^4.2.1:
   version "4.2.1"
   resolved "https://registry.npm.taobao.org/lodash.partial/download/lodash.partial-4.2.1.tgz#49f3d8cfdaa3bff8b3a91d127e923245418961d4"
@@ -15753,6 +15768,16 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.npm.taobao.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha1-TxonOv38jzSIqMUWv9p4+HI1I2I=
 
+react-omni-link@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.nlark.com/react-omni-link/download/react-omni-link-2.1.1.tgz#2948513088eacee7d238cedafa1aee7c6c7b92ee"
+  integrity sha1-KUhRMIjqzufSOM7a+hrufGx7ku4=
+  dependencies:
+    "@types/uri-templates" "^0.1.30"
+    lodash.omit "^4.5.0"
+    prop-types "^15.6.2"
+    uri-templates "^0.2.0"
+
 react-popper-tooltip@^3.1.1:
   version "3.1.1"
   resolved "https://registry.npm.taobao.org/react-popper-tooltip/download/react-popper-tooltip-3.1.1.tgz#329569eb7b287008f04fcbddb6370452ad3f9eac"
@@ -18860,6 +18885,11 @@ uri-js@^4.2.2:
   integrity sha1-mxpSWVIlhZ5V9mnZKPiMbFfyp34=
   dependencies:
     punycode "^2.1.0"
+
+uri-templates@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npm.taobao.org/uri-templates/download/uri-templates-0.2.0.tgz#2b5784511cc909868731e9233c268097d10b499f"
+  integrity sha1-K1eEURzJCYaHMekjPCaAl9ELSZ8=
 
 urix@^0.1.0:
   version "0.1.0"

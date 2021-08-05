@@ -87,16 +87,16 @@ exports[`Form Form.Item should support data-*、aria-* and custom attribute 1`] 
 
 exports[`Form rtl render component should be rendered correctly in RTL direction 1`] = `
 <form
-  class="ant-form ant-form-horizontal ant-form-rtl osui-form"
+  class="ant-form ant-form-horizontal osui-form"
 />
 `;
 
 exports[`Form rtl render component should be rendered correctly in RTL direction 2`] = `
 <div
-  class="ant-row ant-row-rtl ant-form-item osui-form-validate-message-default"
+  class="ant-row ant-form-item osui-form-validate-message-default"
 >
   <div
-    class="ant-col ant-form-item-control ant-col-rtl"
+    class="ant-col ant-form-item-control"
   >
     <div
       class="ant-form-item-control-input"
