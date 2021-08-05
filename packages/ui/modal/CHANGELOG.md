@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 修复modal-confirm内不带icon加载时样式错乱问题 ([8134581](https://gitee.com/gitee-fe/osui/tree/master/commits/8134581a14e2aa20ec24ee2639d43ba380d981b3))
+* 修复modal-confirm内加载带icon的组件时样式错乱问题 ([832f14b](https://gitee.com/gitee-fe/osui/tree/master/commits/832f14b9eed769f1a71c34aafabe39e6ef0c2322))
+* Modal footer错位问题修复 ([bff550a](https://gitee.com/gitee-fe/osui/tree/master/commits/bff550a6e9d94b9dfa3507081a01f25c7c30b4b9))
+
+
+
+
+
 ## [1.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/modal@1.0.3...@osui/modal@1.0.4) (2021-07-26)
 
 

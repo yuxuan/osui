@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 增加rate的调整 ([7f4ad04](https://gitee.com/gitee-fe/osui/tree/master/commits/7f4ad042882e6f2eaf5598c6555b98dbb18c64f1))
+
+
+
+
+
 ## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/rate@1.0.1...@osui/rate@1.0.2) (2021-07-07)
 
 **Note:** Version bump only for package @osui/rate

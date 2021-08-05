@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 冻结规范样式调整 ([8d795b8](https://gitee.com/gitee-fe/osui/tree/master/commits/8d795b8ebc6355ae8094f4c1e3252b6c50989c2f))
+* checkbox 样式调整 ([0ce34ad](https://gitee.com/gitee-fe/osui/tree/master/commits/0ce34ad7c94f5c230ebd8266cf896224ece3d158))
+
+
+
+
+
 ## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/checkbox@1.0.0...@osui/checkbox@1.0.1) (2021-07-07)
 
 **Note:** Version bump only for package @osui/checkbox

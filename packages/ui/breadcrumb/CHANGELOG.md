@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 冻结规范样式调整 ([8d795b8](https://gitee.com/gitee-fe/osui/tree/master/commits/8d795b8ebc6355ae8094f4c1e3252b6c50989c2f))
+* 面包屑展示前两个item ([f379497](https://gitee.com/gitee-fe/osui/tree/master/commits/f379497a9cd8580c6f37cedb14323a87f89d4cec))
+
+
+
+
+
 ## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/breadcrumb@1.0.1...@osui/breadcrumb@1.0.2) (2021-07-14)
 
 

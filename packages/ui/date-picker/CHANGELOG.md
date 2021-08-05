@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* datepicker导出完整属性 ([7349e2a](https://gitee.com/gitee-fe/osui/tree/master/commits/7349e2a7287e730ed7f73353162ff01bd9eb968e))
+* Datepicker类型修复 ([f0439f1](https://gitee.com/gitee-fe/osui/tree/master/commits/f0439f1edbadecec5ec4305b9309485db1b63ed7))
+
+
+
+
+
 ## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/date-picker@1.0.1...@osui/date-picker@1.0.2) (2021-07-07)
 
 **Note:** Version bump only for package @osui/date-picker

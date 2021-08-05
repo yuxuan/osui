@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 调整select, autocomplete的样式问题 ([dd86eae](https://gitee.com/gitee-fe/osui/tree/master/commits/dd86eae06efc0c3629a8e41d05f861bbd24320dd))
+* 修复select箭头和清除按钮位置错位的问题 ([17e1194](https://gitee.com/gitee-fe/osui/tree/master/commits/17e1194ad81405fd5f058a6d46f7672e42342f1c))
+* 修复Treeselect.TreeNode丢失的问题 ([ff546bb](https://gitee.com/gitee-fe/osui/tree/master/commits/ff546bb6be9f978268ce181266765966e64e5056))
+* button 调整 ([5531fec](https://gitee.com/gitee-fe/osui/tree/master/commits/5531fecc42a755ce002960fd93df102d30fb2cb9))
+* select dropdown autocomplete ([8ff54b2](https://gitee.com/gitee-fe/osui/tree/master/commits/8ff54b2b749c16e0887a155827f121ac0b4811f1))
+* select dropdown autocomplete 下拉样式调整 ([55651a1](https://gitee.com/gitee-fe/osui/tree/master/commits/55651a11096aa057592d5fb9806a1b2e20698a45))
+* select样是调整 ([102c8c3](https://gitee.com/gitee-fe/osui/tree/master/commits/102c8c36656423ac8795fe6645a1ef99516f2f06))
+
+
+
+
+
 ## [1.0.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/select@1.0.5...@osui/select@1.0.6) (2021-07-07)
 
 **Note:** Version bump only for package @osui/select

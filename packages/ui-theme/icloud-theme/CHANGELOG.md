@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 调整collapse,table可以适配antd4.16.6 ([7c5fbb3](https://gitee.com/gitee-fe/osui/tree/master/commits/7c5fbb37c89eae4e22499b388aef2b4311b21fff))
+* 调整select, autocomplete的样式问题 ([dd86eae](https://gitee.com/gitee-fe/osui/tree/master/commits/dd86eae06efc0c3629a8e41d05f861bbd24320dd))
+* 调整tab ([9835c5e](https://gitee.com/gitee-fe/osui/tree/master/commits/9835c5e6326ebd23f943940e3dc08ee602af71aa))
+* 冻结规范样式调整 ([8d795b8](https://gitee.com/gitee-fe/osui/tree/master/commits/8d795b8ebc6355ae8094f4c1e3252b6c50989c2f))
+* 修复select箭头和清除按钮位置错位的问题 ([17e1194](https://gitee.com/gitee-fe/osui/tree/master/commits/17e1194ad81405fd5f058a6d46f7672e42342f1c))
+* 修复tree-select选中颜色 ([6000504](https://gitee.com/gitee-fe/osui/tree/master/commits/6000504f550ff71b716c4b5b246be720bfbfa56d))
+* 重构message组件 ([544bd7f](https://gitee.com/gitee-fe/osui/tree/master/commits/544bd7f8dd023809bf694d5fb0d5c268b237198b))
+* back-top调整 ([197c1b8](https://gitee.com/gitee-fe/osui/tree/master/commits/197c1b8a54c5ed692408d9451ea5cabfff852e0e))
+* button 调整 ([5531fec](https://gitee.com/gitee-fe/osui/tree/master/commits/5531fecc42a755ce002960fd93df102d30fb2cb9))
+* checkbox 样式调整 ([0ce34ad](https://gitee.com/gitee-fe/osui/tree/master/commits/0ce34ad7c94f5c230ebd8266cf896224ece3d158))
+* collapse调整 ([6bd5bd5](https://gitee.com/gitee-fe/osui/tree/master/commits/6bd5bd5f1e9093363209faf748e8220f08792798))
+* input 样式 ([27571ed](https://gitee.com/gitee-fe/osui/tree/master/commits/27571ed46443ff32db3b195a8a4bc45749c4f2e5))
+* message 距离顶部51px确保在内容区域内 ([5c578fd](https://gitee.com/gitee-fe/osui/tree/master/commits/5c578fd2b4ec4132bfaf6ea1ff2fdc666fe9b76f))
+* radio disabled border ([7856860](https://gitee.com/gitee-fe/osui/tree/master/commits/78568607c53b6c082288850a17c2fffafc0e9848))
+* radio样式调整 ([a32b9d0](https://gitee.com/gitee-fe/osui/tree/master/commits/a32b9d0b5b3e75052e64b5d87844e066516a4401))
+* searchIcon替换, 主题变量调整 ([10f58ab](https://gitee.com/gitee-fe/osui/tree/master/commits/10f58abe9c84598e92c69ac63f16d3e52d97308c))
+* select dropdown autocomplete ([8ff54b2](https://gitee.com/gitee-fe/osui/tree/master/commits/8ff54b2b749c16e0887a155827f121ac0b4811f1))
+* select dropdown autocomplete 下拉样式调整 ([55651a1](https://gitee.com/gitee-fe/osui/tree/master/commits/55651a11096aa057592d5fb9806a1b2e20698a45))
+* switch 调整 ([3e29a3e](https://gitee.com/gitee-fe/osui/tree/master/commits/3e29a3eb7aea8f8953204b1d780f62c135cf2475))
+
+
+
+
+
 ## [1.0.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-theme@1.0.5...@osui/icloud-theme@1.0.6) (2021-07-26)
 
 

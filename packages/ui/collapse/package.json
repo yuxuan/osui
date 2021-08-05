@@ -1,6 +1,6 @@
 {
     "name": "@osui/collapse",
-    "version": "1.0.2",
+    "version": "1.1.1",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -72,7 +72,7 @@
     "author": "huoyuxuan,liushaozhen",
     "license": "MIT",
     "dependencies": {
-        "@osui/brand-provider": "^1.0.1",
+        "@osui/brand-provider": "^1.1.1",
         "classnames": "^2.2.6"
     },
     "publishConfig": {

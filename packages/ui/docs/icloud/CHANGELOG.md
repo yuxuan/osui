@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 调整collapse,table可以适配antd4.16.6 ([7c5fbb3](https://gitee.com/gitee-fe/osui/tree/master/commits/7c5fbb37c89eae4e22499b388aef2b4311b21fff))
+* 调整tab ([9835c5e](https://gitee.com/gitee-fe/osui/tree/master/commits/9835c5e6326ebd23f943940e3dc08ee602af71aa))
+* 冻结规范样式调整 ([8d795b8](https://gitee.com/gitee-fe/osui/tree/master/commits/8d795b8ebc6355ae8094f4c1e3252b6c50989c2f))
+* 修复select箭头和清除按钮位置错位的问题 ([17e1194](https://gitee.com/gitee-fe/osui/tree/master/commits/17e1194ad81405fd5f058a6d46f7672e42342f1c))
+* 修复space 4.16.6的支持 ([73a2b9e](https://gitee.com/gitee-fe/osui/tree/master/commits/73a2b9e9c596a9a9b060b5c7cb552e67c19a80dd))
+* input 样式 ([27571ed](https://gitee.com/gitee-fe/osui/tree/master/commits/27571ed46443ff32db3b195a8a4bc45749c4f2e5))
+* Menu Table TreeSelect用hoistNonReactStatic提升属性 ([2030784](https://gitee.com/gitee-fe/osui/tree/master/commits/2030784a48712ed5b442e4d819fe55933ae46a9e))
+
+
+
+
+
 ## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/icloud-docs@1.0.0...@osui/icloud-docs@1.0.1) (2021-07-07)
 
 

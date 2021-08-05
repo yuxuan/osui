@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 调整tab ([9835c5e](https://gitee.com/yuxuanhuo/osui/tree/master/commits/9835c5e6326ebd23f943940e3dc08ee602af71aa))
+* 修复less统一使用@{ant-prefix} ([3a48dbf](https://gitee.com/yuxuanhuo/osui/tree/master/commits/3a48dbf9f9da18e242e3a162208b4469da6f760b))
+
+
+
+
+
 ## [1.0.3](https://gitee.com/yuxuanhuo/osui/tree/master/compare/@osui/tabs@1.0.2...@osui/tabs@1.0.3) (2021-07-07)
 
 **Note:** Version bump only for package @osui/tabs

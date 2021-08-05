@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* gap默认为4px, space修复nest时候的间距 ([00cf204](https://gitee.com/gitee-fe/osui/tree/master/commits/00cf2045fbaf9bf4190f12851b45fd3602fb8b1a))
+
+
+
+
+
 ## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/gap@1.0.1...@osui/gap@1.0.2) (2021-07-14)
 
 

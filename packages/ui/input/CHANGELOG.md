@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 调整input, 增加table的testcase ([e3d9551](https://gitee.com/gitee-fe/osui/tree/master/commits/e3d9551289e6c5158574b1f5a30bdd7dc57e8a26))
+* 调整select, autocomplete的样式问题 ([dd86eae](https://gitee.com/gitee-fe/osui/tree/master/commits/dd86eae06efc0c3629a8e41d05f861bbd24320dd))
+* 冻结规范样式调整 ([8d795b8](https://gitee.com/gitee-fe/osui/tree/master/commits/8d795b8ebc6355ae8094f4c1e3252b6c50989c2f))
+* button loading 添加flexcentered ([1646429](https://gitee.com/gitee-fe/osui/tree/master/commits/164642960e04da7f8dd2b96036af8485a2f978c6))
+* input 样式 ([27571ed](https://gitee.com/gitee-fe/osui/tree/master/commits/27571ed46443ff32db3b195a8a4bc45749c4f2e5))
+* input onsearch透传的问题 ([1e0666a](https://gitee.com/gitee-fe/osui/tree/master/commits/1e0666aecebbda4c9fae20dbf8d4ce578cebf6b6))
+* input去掉select时高亮 ([f1f9724](https://gitee.com/gitee-fe/osui/tree/master/commits/f1f97240aaaef618e8432fb5997b667c348ec158))
+* input样式问题调整 ([eb4855a](https://gitee.com/gitee-fe/osui/tree/master/commits/eb4855abed35e439d34ac1b6c83b7db9bb452018))
+* input组合select放小到28px ([94bc966](https://gitee.com/gitee-fe/osui/tree/master/commits/94bc9660e5fa90315e5190f3861df68f5da3e7b8))
+* select dropdown autocomplete 下拉样式调整 ([55651a1](https://gitee.com/gitee-fe/osui/tree/master/commits/55651a11096aa057592d5fb9806a1b2e20698a45))
+
+
+
+
+
 ## [1.0.6](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/input@1.0.5...@osui/input@1.0.6) (2021-07-07)
 
 **Note:** Version bump only for package @osui/input

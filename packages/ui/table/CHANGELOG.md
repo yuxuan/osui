@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 当treeData格式的table没有children时,不展示expandIcon ([2ebe438](https://gitee.com/gitee-fe/osui/tree/master/commits/2ebe43817933d3d954cb8e04f9c942e9a767caaf))
+* 调整collapse,table可以适配antd4.16.6 ([7c5fbb3](https://gitee.com/gitee-fe/osui/tree/master/commits/7c5fbb37c89eae4e22499b388aef2b4311b21fff))
+* 调整input, 增加table的testcase ([e3d9551](https://gitee.com/gitee-fe/osui/tree/master/commits/e3d9551289e6c5158574b1f5a30bdd7dc57e8a26))
+* Menu Table TreeSelect用hoistNonReactStatic提升属性 ([2030784](https://gitee.com/gitee-fe/osui/tree/master/commits/2030784a48712ed5b442e4d819fe55933ae46a9e))
+* table expand icon 修复 ([e20476b](https://gitee.com/gitee-fe/osui/tree/master/commits/e20476ba6ffb56424e59b47533613b7ff9f71ccf))
+* table调整 ([8b38be6](https://gitee.com/gitee-fe/osui/tree/master/commits/8b38be69b6dd7af4c4f4266b80706a6451504ab3))
+
+
+
+
+
 ## [1.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/table@1.0.3...@osui/table@1.0.4) (2021-07-07)
 
 

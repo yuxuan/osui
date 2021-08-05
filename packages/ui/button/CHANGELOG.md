@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 冻结规范样式调整 ([8d795b8](https://gitee.com/gitee-fe/osui/tree/master/commits/8d795b8ebc6355ae8094f4c1e3252b6c50989c2f))
+* 修复space 4.16.6的支持 ([73a2b9e](https://gitee.com/gitee-fe/osui/tree/master/commits/73a2b9e9c596a9a9b060b5c7cb552e67c19a80dd))
+* button 调整 ([5531fec](https://gitee.com/gitee-fe/osui/tree/master/commits/5531fecc42a755ce002960fd93df102d30fb2cb9))
+* Button classname修复, flexcenter增加说明 ([f9b4474](https://gitee.com/gitee-fe/osui/tree/master/commits/f9b44748933bbde83a6f0a5f2e73bede60d261e0))
+* button face disabled样式调整 ([347f570](https://gitee.com/gitee-fe/osui/tree/master/commits/347f5704a097bbb014fe6ca4dc57dcf2ec3ac571))
+* button loading 添加flexcentered ([1646429](https://gitee.com/gitee-fe/osui/tree/master/commits/164642960e04da7f8dd2b96036af8485a2f978c6))
+* Modal footer错位问题修复 ([bff550a](https://gitee.com/gitee-fe/osui/tree/master/commits/bff550a6e9d94b9dfa3507081a01f25c7c30b4b9))
+
+
+
+
+
 ## [1.0.3](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/button@1.0.2...@osui/button@1.0.3) (2021-07-07)
 
 

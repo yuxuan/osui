@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* joyride修复primaryButton卡住滚动, 增加hideStepSize属性 ([1cd40aa](https://gitee.com/gitee-fe/osui/tree/master/commits/1cd40aa4c984901898d58a121de741a35966d12b))
+
+
+
+
+
 ## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/joyride@1.0.0...@osui/joyride@1.0.1) (2021-07-07)
 
 **Note:** Version bump only for package @osui/joyride

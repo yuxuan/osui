@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 调整collapse,table可以适配antd4.16.6 ([7c5fbb3](https://gitee.com/gitee-fe/osui/tree/master/commits/7c5fbb37c89eae4e22499b388aef2b4311b21fff))
+* 修复space 4.16.6的支持 ([73a2b9e](https://gitee.com/gitee-fe/osui/tree/master/commits/73a2b9e9c596a9a9b060b5c7cb552e67c19a80dd))
+* collapse调整 ([6bd5bd5](https://gitee.com/gitee-fe/osui/tree/master/commits/6bd5bd5f1e9093363209faf748e8220f08792798))
+
+
+
+
+
 ## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/collapse@1.0.1...@osui/collapse@1.0.2) (2021-07-07)
 
 

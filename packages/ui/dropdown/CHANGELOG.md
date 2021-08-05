@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* select dropdown autocomplete ([8ff54b2](https://gitee.com/gitee-fe/osui/tree/master/commits/8ff54b2b749c16e0887a155827f121ac0b4811f1))
+* select dropdown autocomplete 下拉样式调整 ([55651a1](https://gitee.com/gitee-fe/osui/tree/master/commits/55651a11096aa057592d5fb9806a1b2e20698a45))
+
+
+
+
+
 ## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/dropdown@1.0.1...@osui/dropdown@1.0.2) (2021-07-07)
 
 **Note:** Version bump only for package @osui/dropdown

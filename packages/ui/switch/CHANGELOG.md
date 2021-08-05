@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 冻结规范样式调整 ([8d795b8](https://gitee.com/gitee-fe/osui/tree/master/commits/8d795b8ebc6355ae8094f4c1e3252b6c50989c2f))
+* 修复less统一使用@{ant-prefix} ([3a48dbf](https://gitee.com/gitee-fe/osui/tree/master/commits/3a48dbf9f9da18e242e3a162208b4469da6f760b))
+* switch 调整 ([3e29a3e](https://gitee.com/gitee-fe/osui/tree/master/commits/3e29a3eb7aea8f8953204b1d780f62c135cf2475))
+
+
+
+
+
 ## [1.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/switch@1.0.1...@osui/switch@1.0.2) (2021-07-07)
 
 **Note:** Version bump only for package @osui/switch

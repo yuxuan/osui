@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 修复tree-select build的问题 ([b40888b](https://gitee.com/gitee-fe/osui/tree/master/commits/b40888bc460526a558d7ced22f914f7161fd44b5))
+* 修复tree-select选中颜色 ([6000504](https://gitee.com/gitee-fe/osui/tree/master/commits/6000504f550ff71b716c4b5b246be720bfbfa56d))
+* 修复Treeselect.TreeNode丢失的问题 ([ff546bb](https://gitee.com/gitee-fe/osui/tree/master/commits/ff546bb6be9f978268ce181266765966e64e5056))
+* Menu Table TreeSelect用hoistNonReactStatic提升属性 ([2030784](https://gitee.com/gitee-fe/osui/tree/master/commits/2030784a48712ed5b442e4d819fe55933ae46a9e))
+* tree-select type ([fcdfa4d](https://gitee.com/gitee-fe/osui/tree/master/commits/fcdfa4d4102216c882be245a1a715f5ecaaf849e))
+
+
+
+
+
 ## [1.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/tree-select@1.0.3...@osui/tree-select@1.0.4) (2021-07-07)
 
 **Note:** Version bump only for package @osui/tree-select

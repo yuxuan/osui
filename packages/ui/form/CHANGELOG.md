@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* 修复webpack@5.46.0 svg inline格式错误的问题 ([9936ac5](https://gitee.com/gitee-fe/osui/tree/master/commits/9936ac5a5a219725ec4fd0c4c4dfdde11b1ff9bc))
+* form 报错时不在添加额外的margin-top ([76835a7](https://gitee.com/gitee-fe/osui/tree/master/commits/76835a780ec605dc919ec322d86ec5b2e6e492e9))
+* form svg变成inline的在less中 ([0eac47e](https://gitee.com/gitee-fe/osui/tree/master/commits/0eac47ec2aeebc37a4c02a5f2970cb8fead62aa6))
+* input 样式 ([27571ed](https://gitee.com/gitee-fe/osui/tree/master/commits/27571ed46443ff32db3b195a8a4bc45749c4f2e5))
+* input样式问题调整 ([eb4855a](https://gitee.com/gitee-fe/osui/tree/master/commits/eb4855abed35e439d34ac1b6c83b7db9bb452018))
+
+
+
+
+
 ## [1.0.5](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/form@1.0.4...@osui/form@1.0.5) (2021-07-26)
 
 

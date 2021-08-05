@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* back-top调整 ([197c1b8](https://gitee.com/gitee-fe/osui/tree/master/commits/197c1b8a54c5ed692408d9451ea5cabfff852e0e))
+
+
+
+
+
 ## [1.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/@osui/back-top@1.0.0...@osui/back-top@1.0.1) (2021-07-07)
 
 **Note:** Version bump only for package @osui/back-top
