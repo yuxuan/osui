@@ -1,70 +1,344 @@
 # Change Log
+---
+sidebar_position: 1
+---
+
+# 组件更新
+
+以`@osui/ui`主版本为主，包含各组件单包发布情况
+
+## 1.1.1
+
+- Chore:
+    - 增加了Antd所有组件的测试，确保OSUI不会对Antd组件的API造成破坏
+    - 22个组件基于测试修复了问题，用户无感知
+
+## 1.0.10
+
+### 功能调整
+- Form
+  - 修复webpack@5.46.0 svg inline格式错误的问题
+- Modal
+  - 修复modal-confirm内加载带icon的组件时样式错乱问题
+- Message
+  - message 距离顶部51px确保在内容区域内
+
+### 组件更新
+```
+- @osui/icloud-theme@1.0.6
+- @osui/theme@1.0.6
+- @osui/form@1.0.5
+- @osui/message@1.0.3
+- @osui/modal@1.0.4
+- @osui/ui@1.0.10
+```
+
+
+## 1.0.9
+
+### 功能调整
+- Gap
+  - 默认变成4px，不在通过brand来区分
+- Space
+  - 修复横纵混合使用时，对齐出现问题的bug
+
+### 组件更新
+```
+- @osui/gap@1.0.2
+- @osui/space@1.0.2
+- @osui/ui@1.0.9
+```
+
+## 1.0.8
+
+### 功能调整
+- Breadcrumb
+  -  面包屑支持`headItemLength`，`tailItemLength`，超过5个时，可以通过设置这两个属性，显示头部面包屑个数，和尾部面包屑个数，默认是头部2个尾部2个
+
+### 组件更新
+```
+- @osui/breadcrumb: 1.0.1 => 1.0.2
+- @osui/ui: 1.0.7 => 1.0.8
+```
+
+## 1.0.7
+
+### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.7/)
+- 升级了Antd@4.16.6，确保没有break
+- Collapse，Table有稍微调整，为了支持4.16.6和之前的版本
+
+### 功能调整
+- Form
+  - 报错时错误信息不加margin-top，否则会带来页面抖动
+- Collapse
+  - 兼容antd@4.16.6和之前的版本样式
+- Table
+  - 修复了fix时border的问题
+  - 调整了checkbox和expandicon的margin，单独一列显示
+
+### 组件更新
+```
+- @osui/icloud-theme@1.0.5
+- @osui/theme@1.0.5
+- @osui/affix@1.0.1
+- @osui/alert@1.0.1
+- @osui/anchor@1.0.1
+- @osui/auto-complete@1.0.6
+- @osui/avatar@1.0.1
+- @osui/back-top@1.0.1
+- @osui/badge@1.0.1
+- @osui/branch-dropdown@1.0.3
+- @osui/brand-provider@1.0.1
+- @osui/breadcrumb@1.0.1
+- @osui/button@1.0.3
+- @osui/calendar@1.0.1
+- @osui/card@1.0.1
+- @osui/carousel@1.0.1
+- @osui/cascader@1.0.1
+- @osui/checkbox@1.0.1
+- @osui/col@1.0.1
+- @osui/collapse@1.0.2
+- @osui/comment@1.0.1
+- @osui/config-provider@1.0.1
+- @osui/date-picker@1.0.2
+- @osui/descriptions@1.0.1
+- @osui/directory-navigator@1.0.1
+- @osui/divider@1.0.1
+- @osui/drawer@1.0.1
+- @osui/dropdown@1.0.2
+- @osui/empty@1.0.1
+- @osui/flex-centered@1.0.1
+- @osui/form@1.0.4
+- @osui/gap@1.0.1
+- @osui/grid@1.0.1
+- @osui/highlight-text@1.0.1
+- @osui/image@1.0.1
+- @osui/input-number@1.0.1
+- @osui/input@1.0.6
+- @osui/joyride@1.0.1
+- @osui/layout@1.0.1
+- @osui/list@1.0.1
+- @osui/markdown@1.0.1
+- @osui/mentions@1.0.1
+- @osui/menu-dropdown@1.0.2
+- @osui/menu@1.0.1
+- @osui/message@1.0.2
+```
+
+## 1.0.6
+
+> 2021-6-29
+
+### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.6/)
+- Input、Search、Select、AutoComplete 调整了icon的颜色。
+- 调整了theme-icon-color为gray-7
+
+### 功能修复
+- Select
+  - 下拉展示10条内容
+- message
+  - 一次比较大的重构，出现位置调整到右侧，里面不在使用Alert
+
+### 组件更新
+
+```
+- @osui/icloud-theme@1.0.4
+- @osui/theme@1.0.4
+- @osui/auto-complete@1.0.5
+- @osui/input@1.0.5
+- @osui/message@1.0.1
+- @osui/select@1.0.5
+- @osui/ui@1.0.6
+```
+
+## 1.0.5
+
+> 2021-6-28
+
+### 功能修复
+
+- Input
+  - 删除Input.Group clear icon margin-right: 0; 的调整
+- Table
+  - treeData时，没有chidlren不展示展开icon
+
+### 组件更新
+
+```
+ - @osui/input@1.0.4
+ - @osui/table@1.0.3
+ - @osui/ui@1.0.5
+ ```
+
+## 1.0.4
+
+> 2021-6-25
+
+### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.4/)
+Input、Select、Form的报错样式
+
+### 功能修复
+
+- Modal
+  - 修复footer的button错位的问题
+- Button
+  - 修复className的问题
+  - loading默认增加flexcentered会导致与同行组件对齐错位，增加说明
+- Input
+  - hostiNonReactStatic提升静态属性
+  - 替换SearchIcon
+
+### 组件更新
+
+```
+- @osui/icons-icloud@1.0.1
+- @osui/icloud-theme@1.0.3
+- @osui/theme@1.0.3
+- @osui/auto-complete@1.0.4
+- @osui/branch-dropdown@1.0.2
+- @osui/button@1.0.2
+- @osui/form@1.0.3
+- @osui/input@1.0.3
+- @osui/modal@1.0.2
+- @osui/pagination@1.0.2
+- @osui/select@1.0.4
+- @osui/table@1.0.2
+- @osui/ui@1.0.4
+
+```
+
+## 1.0.3
+
+> 2021-6-23
+
+### 功能修复
+
+- TreeSelect
+  - 修复TreeSelect.TreeNode丢失的问题
+  - build cjs 修复
+- Form
+  - Form less中引用svg换成inline的形式，这样nextjs构建的时候不需要在server端配置svg loader
+- 其它
+  - 修复less统一使用.@{ant-prefix}
+
+
+## 1.0.2
+
+> 2021-6-19
+
+### 功能修复
+
+- Select
+  - 调整clear icon和arrow 在不同尺寸下的位置错位问题
+- Input
+  - 修复input组合用法报错时边框样式出错的问题
+
+### 组件更新
+
+```
+- @osui/icloud-theme@1.0.2
+- @osui/theme@1.0.2
+- @osui/auto-complete@1.0.2
+- @osui/input@1.0.2
+- @osui/select@1.0.2
+- @osui/ui@1.0.2
+```
+
+## 1.0.1
+
+> 2021-6-18
+
+### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.1/)
+Tabs、Collapse、Rate、AutoComplete、Rate、Select
+
+### 功能修复
+- Button
+  - loading默认添加flexcentered
+- Space
+  - 修复space vertical horizontal混用的问题
+- Table
+  - checkbox expand icon 修复
+- TreeSelect
+  - build修复
+
+### 组件更新
+
+- @osui/icloud-theme@1.0.1
+- @osui/theme@1.0.1
+- @osui/auto-complete@1.0.1
+- @osui/branch-dropdown@1.0.1
+- @osui/button@1.0.1
+- @osui/collapse@1.0.1
+- @osui/date-picker@1.0.1
+- @osui/dropdown@1.0.1
+- @osui/input@1.0.1
+- @osui/menu-dropdown@1.0.1
+- @osui/modal@1.0.1
+- @osui/pagination@1.0.1
+- @osui/quick-edit@1.0.1
+- @osui/rate@1.0.1
+- @osui/select@1.0.1
+- @osui/table@1.0.1
+- @osui/tabs@1.0.1
+- @osui/tree-select@1.0.1
+- @osui/ui@1.0.1
+
+## 1.0.0
+
+> 2021-6-7
+
+### Chore
+- 增加了commonjs的build产出
+- css variables拆分
+
+### 样式调整[对比](http://eefe.baidu-int.com/sites/icloud@diffReport/)
+Button、Table、TreeSelect、Input、Radio、Checkbox、Pagination、BackTop、Switch、Timeline、Badge、Tag
+
+### 功能修复
+- Joyride 修复primaryButton卡住滚动, 增加hideStepSize属性
+- Input onsearch透传的问题
+- Table、TreeSelect、Menu、Datepicker使用hostiNonReactStatic提升静态属性
+- 增加QuickEdit
+
+### 组件更新
+所有组件更新到1.0.0
+
+
+## 1.0.0-beta.2
+
+> 2021-5-21
+
+- Button `@osui/button@1.0.0-beta.2`
+  - 样式调整
+
+- Joyride `@osui/joyride@1.0.0-beta.1`
+  - 修复滚动时，footer内按钮卡住的问题
+
+- BranchDropdown `@osui/branch-dropdown@1.0.0-beta.2`
+  - 依赖Button升级
+
+- Modal `@osui/modal@1.0.0-beta.2`
+  - 依赖Button升级
+
+- Pagination `@osui/pagination@1.0.0-beta.2`
+  - 依赖Button升级
+
+# 0.12.15
+只是版本的提升，把1.0.0-beta.x覆盖过去
+
+# 0.12.14
+Menu
+- 导出Menu.Divider
+
+@osui/theme @osui/icloud-theme
+- 调整sideEffects为 dist/** 解决被treeshaking掉的问题
+
+# 0.12.13
+Input
+- 修复onSearch被放到Input上
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
-## [1.1.1](https://gitee.com/gitee-fe/osui/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
-
-
-### Bug Fixes
-
-* 当treeData格式的table没有children时,不展示expandIcon ([2ebe438](https://gitee.com/gitee-fe/osui/commits/2ebe43817933d3d954cb8e04f9c942e9a767caaf))
-* 调整collapse,table可以适配antd4.16.6 ([7c5fbb3](https://gitee.com/gitee-fe/osui/commits/7c5fbb37c89eae4e22499b388aef2b4311b21fff))
-* 调整input, 增加table的testcase ([e3d9551](https://gitee.com/gitee-fe/osui/commits/e3d9551289e6c5158574b1f5a30bdd7dc57e8a26))
-* 调整select, autocomplete的样式问题 ([dd86eae](https://gitee.com/gitee-fe/osui/commits/dd86eae06efc0c3629a8e41d05f861bbd24320dd))
-* 调整tab ([9835c5e](https://gitee.com/gitee-fe/osui/commits/9835c5e6326ebd23f943940e3dc08ee602af71aa))
-* 冻结规范样式调整 ([8d795b8](https://gitee.com/gitee-fe/osui/commits/8d795b8ebc6355ae8094f4c1e3252b6c50989c2f))
-* 面包屑展示前两个item ([f379497](https://gitee.com/gitee-fe/osui/commits/f379497a9cd8580c6f37cedb14323a87f89d4cec))
-* 修复less统一使用@{ant-prefix} ([3a48dbf](https://gitee.com/gitee-fe/osui/commits/3a48dbf9f9da18e242e3a162208b4469da6f760b))
-* 修复modal-confirm内不带icon加载时样式错乱问题 ([8134581](https://gitee.com/gitee-fe/osui/commits/8134581a14e2aa20ec24ee2639d43ba380d981b3))
-* 修复modal-confirm内加载带icon的组件时样式错乱问题 ([832f14b](https://gitee.com/gitee-fe/osui/commits/832f14b9eed769f1a71c34aafabe39e6ef0c2322))
-* 修复quickedit build的问题 ([7ea81e1](https://gitee.com/gitee-fe/osui/commits/7ea81e1b046d4705cb4eb8c4d3f4ad8b74430aab))
-* 修复select箭头和清除按钮位置错位的问题 ([17e1194](https://gitee.com/gitee-fe/osui/commits/17e1194ad81405fd5f058a6d46f7672e42342f1c))
-* 修复space 4.16.6的支持 ([73a2b9e](https://gitee.com/gitee-fe/osui/commits/73a2b9e9c596a9a9b060b5c7cb552e67c19a80dd))
-* 修复tree-select build的问题 ([b40888b](https://gitee.com/gitee-fe/osui/commits/b40888bc460526a558d7ced22f914f7161fd44b5))
-* 修复tree-select选中颜色 ([6000504](https://gitee.com/gitee-fe/osui/commits/6000504f550ff71b716c4b5b246be720bfbfa56d))
-* 修复Treeselect.TreeNode丢失的问题 ([ff546bb](https://gitee.com/gitee-fe/osui/commits/ff546bb6be9f978268ce181266765966e64e5056))
-* 修复webpack@5.46.0 svg inline格式错误的问题 ([9936ac5](https://gitee.com/gitee-fe/osui/commits/9936ac5a5a219725ec4fd0c4c4dfdde11b1ff9bc))
-* 增加quick-edit ([d35ffb7](https://gitee.com/gitee-fe/osui/commits/d35ffb72d6ec4a3499de111462880d4444138c3b))
-* 增加rate的调整 ([7f4ad04](https://gitee.com/gitee-fe/osui/commits/7f4ad042882e6f2eaf5598c6555b98dbb18c64f1))
-* 重构message组件 ([544bd7f](https://gitee.com/gitee-fe/osui/commits/544bd7f8dd023809bf694d5fb0d5c268b237198b))
-* back-top调整 ([197c1b8](https://gitee.com/gitee-fe/osui/commits/197c1b8a54c5ed692408d9451ea5cabfff852e0e))
-* button 调整 ([5531fec](https://gitee.com/gitee-fe/osui/commits/5531fecc42a755ce002960fd93df102d30fb2cb9))
-* Button classname修复, flexcenter增加说明 ([f9b4474](https://gitee.com/gitee-fe/osui/commits/f9b44748933bbde83a6f0a5f2e73bede60d261e0))
-* button face disabled样式调整 ([347f570](https://gitee.com/gitee-fe/osui/commits/347f5704a097bbb014fe6ca4dc57dcf2ec3ac571))
-* button loading 添加flexcentered ([1646429](https://gitee.com/gitee-fe/osui/commits/164642960e04da7f8dd2b96036af8485a2f978c6))
-* checkbox 样式调整 ([0ce34ad](https://gitee.com/gitee-fe/osui/commits/0ce34ad7c94f5c230ebd8266cf896224ece3d158))
-* collapse调整 ([6bd5bd5](https://gitee.com/gitee-fe/osui/commits/6bd5bd5f1e9093363209faf748e8220f08792798))
-* datepicker导出完整属性 ([7349e2a](https://gitee.com/gitee-fe/osui/commits/7349e2a7287e730ed7f73353162ff01bd9eb968e))
-* Datepicker类型修复 ([f0439f1](https://gitee.com/gitee-fe/osui/commits/f0439f1edbadecec5ec4305b9309485db1b63ed7))
-* form 报错时不在添加额外的margin-top ([76835a7](https://gitee.com/gitee-fe/osui/commits/76835a780ec605dc919ec322d86ec5b2e6e492e9))
-* form svg变成inline的在less中 ([0eac47e](https://gitee.com/gitee-fe/osui/commits/0eac47ec2aeebc37a4c02a5f2970cb8fead62aa6))
-* gap默认为4px, space修复nest时候的间距 ([00cf204](https://gitee.com/gitee-fe/osui/commits/00cf2045fbaf9bf4190f12851b45fd3602fb8b1a))
-* input 样式 ([27571ed](https://gitee.com/gitee-fe/osui/commits/27571ed46443ff32db3b195a8a4bc45749c4f2e5))
-* input onsearch透传的问题 ([1e0666a](https://gitee.com/gitee-fe/osui/commits/1e0666aecebbda4c9fae20dbf8d4ce578cebf6b6))
-* input去掉select时高亮 ([f1f9724](https://gitee.com/gitee-fe/osui/commits/f1f97240aaaef618e8432fb5997b667c348ec158))
-* input样式问题调整 ([eb4855a](https://gitee.com/gitee-fe/osui/commits/eb4855abed35e439d34ac1b6c83b7db9bb452018))
-* input组合select放小到28px ([94bc966](https://gitee.com/gitee-fe/osui/commits/94bc9660e5fa90315e5190f3861df68f5da3e7b8))
-* joyride修复primaryButton卡住滚动, 增加hideStepSize属性 ([1cd40aa](https://gitee.com/gitee-fe/osui/commits/1cd40aa4c984901898d58a121de741a35966d12b))
-* Menu Table TreeSelect用hoistNonReactStatic提升属性 ([2030784](https://gitee.com/gitee-fe/osui/commits/2030784a48712ed5b442e4d819fe55933ae46a9e))
-* message 距离顶部51px确保在内容区域内 ([5c578fd](https://gitee.com/gitee-fe/osui/commits/5c578fd2b4ec4132bfaf6ea1ff2fdc666fe9b76f))
-* message移出alert的依赖 ([025b550](https://gitee.com/gitee-fe/osui/commits/025b550a5daac6d07b5c3c6e5ebaa7aca0ed45e6))
-* Modal footer错位问题修复 ([bff550a](https://gitee.com/gitee-fe/osui/commits/bff550a6e9d94b9dfa3507081a01f25c7c30b4b9))
-* radio disabled border ([7856860](https://gitee.com/gitee-fe/osui/commits/78568607c53b6c082288850a17c2fffafc0e9848))
-* radio样式调整 ([a32b9d0](https://gitee.com/gitee-fe/osui/commits/a32b9d0b5b3e75052e64b5d87844e066516a4401))
-* re-export Menu.Divider ([6d05acc](https://gitee.com/gitee-fe/osui/commits/6d05accc934649f9a4a2d3959880e7fbead7e130))
-* searchIcon替换, 主题变量调整 ([10f58ab](https://gitee.com/gitee-fe/osui/commits/10f58abe9c84598e92c69ac63f16d3e52d97308c))
-* select dropdown autocomplete ([8ff54b2](https://gitee.com/gitee-fe/osui/commits/8ff54b2b749c16e0887a155827f121ac0b4811f1))
-* select dropdown autocomplete 下拉样式调整 ([55651a1](https://gitee.com/gitee-fe/osui/commits/55651a11096aa057592d5fb9806a1b2e20698a45))
-* select样是调整 ([102c8c3](https://gitee.com/gitee-fe/osui/commits/102c8c36656423ac8795fe6645a1ef99516f2f06))
-* switch 调整 ([3e29a3e](https://gitee.com/gitee-fe/osui/commits/3e29a3eb7aea8f8953204b1d780f62c135cf2475))
-* table expand icon 修复 ([e20476b](https://gitee.com/gitee-fe/osui/commits/e20476ba6ffb56424e59b47533613b7ff9f71ccf))
-* table调整 ([8b38be6](https://gitee.com/gitee-fe/osui/commits/8b38be69b6dd7af4c4f4266b80706a6451504ab3))
-* tree-select type ([fcdfa4d](https://gitee.com/gitee-fe/osui/commits/fcdfa4d4102216c882be245a1a715f5ecaaf849e))
-
-
-
-
 
 # 0.12.12
 Space
