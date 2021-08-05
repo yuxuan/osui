@@ -51,6 +51,7 @@ export const Demo = () => {
             options={options}
             onChange={onChange}
             placeholder="Please select"
+            showSearch
         />
     );
 };

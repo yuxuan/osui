@@ -145,6 +145,8 @@ export const TestCase = () => {
     const success6 = () => {
         message.success({
             title: '创建成功',
+        }).then(() => {
+            console.log(2112);
         });
     };
     const success7 = () => {
@@ -191,7 +193,22 @@ export const TestCase = () => {
             title: '创建成功',
             onClose: () => console.log('closed'),
             showClose: true,
+            onClick: () => console.log('clicked'),
         });
+    };
+
+    const success12 = () => {
+        const key = 'updatable';
+        message.loading({ content: 'Loading...', key });
+        // Testing that content of the message should be updated.
+        setTimeout(() => message.success({ content: 'Loaded', key }), 1000);
+        setTimeout(() => message.destroy(), 3000);
+    };
+
+    const success13 = () => {
+        // 这个不好用了，因为我们覆盖了duration
+        message.config({duration: 3});
+        message.info('test');
     };
 
     return (
@@ -215,5 +232,10 @@ export const TestCase = () => {
             <Button onClick={success9}>content配置</Button>
             <Button onClick={success10}>函数第三个参数</Button>
             <Button onClick={success11}>点击关闭时调用</Button>
-        </div>);
+            <p>同一个message key内容替换</p>
+            <Button onClick={success12}>message</Button>
+            <p>config 测试</p>
+            <Button onClick={success13}>message</Button>
+        </div>
+    );
 };

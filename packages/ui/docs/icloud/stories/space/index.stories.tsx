@@ -76,6 +76,70 @@ export const TestCase = () => {
     return (
         <>
             {version}
+            <p>水平+垂直</p>
+            <Space direction="horizontal">
+                <Button>1</Button>
+                <Button>2</Button>
+                <Button>3</Button>
+                <Space direction="vertical">
+                    <Button>4</Button>
+                    <Button>5</Button>
+                    <Button>6</Button>
+                </Space>
+            </Space>
+            <p />
+            <p>水平+垂直</p>
+            <Space direction="horizontal">
+                <Button>1</Button>
+                <Button>2</Button>
+                <Space direction="vertical">
+                    <Button>4</Button>
+                    <Button>5</Button>
+                    <Button>6</Button>
+                </Space>
+                <Button>3</Button>
+            </Space>
+            <p />
+            <p>垂直+水平</p>
+            <Space direction="vertical">
+                <Button>1</Button>
+                <Button>2</Button>
+                <Button>3</Button>
+                <Space direction="horizontal">
+                    <Button>4</Button>
+                    <Button>5</Button>
+                    <Button>6</Button>
+                </Space>
+            </Space>
+            <p />
+            <p>垂直+水平</p>
+            <Space direction="vertical">
+                <Button>1</Button>
+                <Button>2</Button>
+                <Space direction="horizontal">
+                    <Button>4</Button>
+                    <Button>5</Button>
+                    <Button>6</Button>
+                </Space>
+                <Button>3</Button>
+            </Space>
+
+            <p>垂直+水平+垂直</p>
+            <Space direction="vertical">
+                <Button>1</Button>
+                <Button>2</Button>
+                <Button>3</Button>
+                <Space direction="horizontal">
+                    <Button>4</Button>
+                    <Button>5</Button>
+                    <Button>6</Button>
+                    <Space direction="vertical">
+                        <Button>7</Button>
+                        <Button>8</Button>
+                        <Button>9</Button>
+                    </Space>
+                </Space>
+            </Space>
         </>
     );
 };

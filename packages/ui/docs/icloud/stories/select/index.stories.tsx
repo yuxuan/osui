@@ -224,6 +224,31 @@ export const TestCase = () => {
                     <Option value="lucy12">Lucy12</Option>
                 </Select>
             </BrandProvider>
+
+            <p>多选</p>
+            <p>antd issue: https://github.com/ant-design/ant-design/issues/19828</p>
+            <Select
+                showSearch
+                mode="multiple"
+                showArrow={false}
+                placeholder="筛选代码库"
+                maxTagCount={0}
+                maxTagPlaceholder={() => null}
+                style={{width: 240 }}
+            >
+                <Option value="lucy1">Lucy221</Option>
+                <Option value="lucy2">Lucy2</Option>
+                <Option value="lucy3">Lucy3</Option>
+                <Option value="lucy4">Lucy4</Option>
+                <Option value="lucy5">Lucy5</Option>
+                <Option value="lucy6">Lucy6</Option>
+                <Option value="lucy7">Lucy7</Option>
+                <Option value="lucy8">Lucy8</Option>
+                <Option value="lucy9">Lucy9</Option>
+                <Option value="lucy10">Lucy10</Option>
+                <Option value="lucy11">Lucy11</Option>
+                <Option value="lucy12">Lucy12</Option>
+            </Select>
         </>
     );
 

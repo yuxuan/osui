@@ -9,7 +9,8 @@
     "build": "yarn workspace @osui/icons-builder generate osui && sh scripts/build.sh",
     "build-icons-only": "sh scripts/build.sh",
     "prepublishOnly": "npm run build",
-    "clean": "rm -rf dist && rm -rf node_modules"
+    "clean": "rm -rf dist && rm -rf node_modules",
+    "test": "echo 'none'"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",

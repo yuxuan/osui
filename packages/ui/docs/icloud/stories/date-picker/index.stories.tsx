@@ -2,8 +2,10 @@ import React from 'react';
 import {Row} from 'antd';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
+import ConfigProvider from 'antd/lib/config-provider';
 import zhCN from 'antd/lib/locale/zh_CN';
-import ConfigProvider from '@osui/config-provider';
+import jaJP from 'antd/lib/locale/ja_JP';
+import locale from 'antd/lib/date-picker/locale/zh_TW';
 import DatePicker from '@osui/date-picker';
 const {RangePicker} = DatePicker;
 
@@ -52,3 +54,11 @@ export const Api = () => {
     );
 };
 
+
+export const TestCase = () => {
+    return (
+        <ConfigProvider locale={jaJP}>
+            <DatePicker locale={locale} />
+        </ConfigProvider>
+    );
+};

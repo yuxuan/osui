@@ -6,25 +6,35 @@ import Dropdown from '@osui/dropdown';
 
 export default {
     title: '数据录入/Dropdown 下拉菜单',
-    component: Dropdown,
 };
 
 export const Demo = () => {
-
     const menu = (
         <Menu>
             <Menu.Item>
-                <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="http://www.alipay.com/"
+                >
                     1st
                 </a>
             </Menu.Item>
             <Menu.Item>
-                <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="http://www.taobao.com/"
+                >
                     2nd
                 </a>
             </Menu.Item>
             <Menu.Item>
-                <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="http://www.tmall.com/"
+                >
                     3rd
                 </a>
             </Menu.Item>
@@ -49,8 +59,29 @@ export const Demo = () => {
 export const Api = () => {
     return (
         <>
-            <a target="_blank" rel="noreferrer" href="https://ant.design/components/dropdown-cn/">Antd Dropdown API</a>
+            <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://ant.design/components/dropdown-cn/"
+            >
+                Antd Dropdown API
+            </a>
         </>
     );
 };
 
+export const TestCase = () => {
+    const menu = (
+        <Menu>
+            <Menu.Item key="1">foo</Menu.Item>
+        </Menu>
+    );
+    return (
+        <Dropdown.Button
+            overlayClassName="className"
+            overlayStyle={{color: 'red'}}
+            overlay={menu}
+            visible
+        />
+    );
+};

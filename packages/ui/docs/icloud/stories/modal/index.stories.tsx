@@ -324,3 +324,31 @@ export const TestCase = () => {
             </BrandProvider>
         </div>);
 };
+
+export const TestCase2 = () => {
+    const Context = React.createContext('light');
+    const Demo = () => {
+        const [modal, contextHolder] = Modal.useModal();
+        return (
+            <Context.Provider value="bamboo">
+                <Button
+                    onClick={
+                        () => {
+                            modal.confirm({
+                                content: (
+                                    <Context.Consumer>
+                                        {name => <div className="test-hook">{name}</div>}
+                                    </Context.Consumer>
+                                ),
+                            });
+                        }
+                    }
+                >
+                    click me
+                </Button>
+                {contextHolder}
+            </Context.Provider>
+        );
+    };
+    return <Demo />;
+};

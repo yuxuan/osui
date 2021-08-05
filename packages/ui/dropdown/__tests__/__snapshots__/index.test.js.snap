@@ -772,6 +772,6 @@ exports[`Dropdown overlay is string 1`] = `
 
 exports[`Dropdown rtl render component should be rendered correctly in RTL direction 1`] = `
 <span
-  class="ant-dropdown-trigger"
+  class="ant-dropdown-trigger ant-dropdown-rtl"
 />
 `;
