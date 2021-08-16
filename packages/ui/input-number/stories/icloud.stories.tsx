@@ -1,5 +1,6 @@
 import React from 'react';
-import Divider from '@osui/divider';
+import Form from '@osui/form';
+import Input from '@osui/input';
 import InputNumber from '../src';
 
 export default {
@@ -13,11 +14,53 @@ export const Demo = () => {
     };
     return (
         <>
+            <h3>基础数字输入框</h3>
             <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />
             <br />
             <br />
-            <Divider orientation="left">禁用样式</Divider>
+            <p>禁用样式</p>
             <InputNumber disabled min={1} max={10} defaultValue={3} onChange={onChange} />
+            <p></p>
+            <h3>加强数组输入框</h3>
+            <p>待补充</p>
+            <p></p>
+            <h3>格式化数组输入框</h3>
+            <InputNumber
+                defaultValue={1000}
+                formatter={value => `¥ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+                parser={value => value!.replace(/\$\s?|(,*)/g, '')}
+                onChange={onChange}
+            />
+            <p></p>
+            <InputNumber
+                defaultValue={100}
+                min={0}
+                max={100}
+                formatter={value => `${value}%`}
+                parser={value => value!.replace('%', '')}
+                onChange={onChange}
+            />
+            <p></p>
+            <h3>报错</h3>
+            <p>需要确认报错是右侧对齐还是紧挨着组件</p>
+            <Form wrapperCol={{span: 12}}>
+                <Form.Item
+                    validateMessageLayout="inline"
+                    label="磁盘大小"
+                    validateStatus="error"
+                    help={'格式错误，请按提示规则录入'}
+                >
+                    <InputNumber /> GB
+                </Form.Item>
+                <Form.Item
+                    validateMessageLayout="inline"
+                    label="测试测试"
+                    validateStatus="error"
+                    help={'格式错误，请按提示规则录入'}
+                >
+                    <Input />
+                </Form.Item>
+            </Form>
         </>
     );
 };

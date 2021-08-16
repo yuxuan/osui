@@ -6,15 +6,17 @@ export default {
     component: Cascader,
 };
 
+const han = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
+
 export const Demo = () => {
     const options = [
         {
-            value: 'zhejiang',
-            label: 'Zhejiang',
+            value: '操作命令一',
+            label: '操作命令一',
             children: [
                 {
-                    value: 'hangzhou',
-                    label: 'Hangzhou',
+                    value: '操作命令一',
+                    label: '操作命令一',
                     children: [
                         {
                             value: 'xihu',
@@ -25,8 +27,8 @@ export const Demo = () => {
             ],
         },
         {
-            value: 'jiangsu',
-            label: 'Jiangsu',
+            value: '操作命令二',
+            label: '操作命令二',
             children: [
                 {
                     value: 'nanjing',
@@ -47,30 +49,33 @@ export const Demo = () => {
     }
 
     return (
-        <Cascader
-            options={options}
-            onChange={onChange}
-            placeholder="Please select"
-            showSearch
-        />
+        <>
+            <p>基本样式</p>
+            <Cascader
+                options={options}
+                onChange={onChange}
+                placeholder="Please select"
+                showSearch
+            />
+            <p></p>
+            <p>禁用状态</p>
+            <Cascader
+                disabled
+                options={options}
+                onChange={onChange}
+                placeholder="Please select"
+                showSearch
+            />
+        </>
     );
 };
 
-
 export const Load = () => {
-
-    const optionLists = [
-        {
-            value: 'zhejiang',
-            label: 'Zhejiang',
-            isLeaf: false,
-        },
-        {
-            value: 'jiangsu',
-            label: 'Jiangsu',
-            isLeaf: false,
-        },
-    ];
+    const optionLists = han.map(index => ({
+        value: `操作命令${index}`,
+        label: `操作命令${index}`,
+        isLeaf: false,
+    }));
 
     const LazyOptions = () => {
         const [options, setOptions] = React.useState(optionLists);
@@ -88,11 +93,11 @@ export const Load = () => {
                 targetOption.loading = false;
                 targetOption.children = [
                     {
-                        label: `${targetOption.label} Dynamic 1`,
+                        label: '操作命令一',
                         value: 'dynamic1',
                     },
                     {
-                        label: `${targetOption.label} Dynamic 2`,
+                        label: '操作命令二',
                         value: 'dynamic2',
                     },
                 ];

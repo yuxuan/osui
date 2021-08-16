@@ -1,9 +1,5 @@
-const {
-    getBabelConfig
-} = require('@reskript/config-babel');
-const {
-    loaders
-} = require('@reskript/config-webpack');
+const {getBabelConfig} = require('@reskript/config-babel');
+const {loaders} = require('@reskript/config-webpack');
 const path = require('path');
 const process = require('process');
 
@@ -36,15 +32,9 @@ module.exports = {
         '../stories/**/*.stories.[tj]s{,x}',
         '../stories/**/*.stories.mdx'
     ],
-    addons: [{
-            name: '@storybook/addon-docs',
-            options: {
-                configureJSX: true,
-                babelOptions: {},
-                sourceLoaderOptions: null,
-            },
-        },
-        '@storybook/addon-storysource', // https://github.com/storybookjs/storybook/tree/master/addons/storysource
+    addons: [
+        '@storybook/addon-docs',
+        '@storybook/addon-storysource',
         '@storybook/addon-a11y/register', // https://github.com/storybookjs/storybook/tree/master/addons/a11y
         '@storybook/addon-viewport/register', // https://github.com/storybookjs/storybook/tree/master/addons/viewport
     ],
@@ -52,10 +42,12 @@ module.exports = {
         config.module.rules.push({
             test: /\.(js|jsx|ts|tsx)$/,
             exclude: /node_modules/,
-            use: [{
-                loader: 'babel-loader',
-                options: getBabelConfig(),
-            }, ],
+            use: [
+                {
+                    loader: 'babel-loader',
+                    options: getBabelConfig(),
+                },
+            ],
         });
         config.module.rules.push({
             test: /\.less$/,
@@ -81,6 +73,7 @@ module.exports = {
 
         config.resolve.extensions.push('.ts', '.tsx');
         config.resolve.alias['@'] = path.resolve(__dirname, '../src');
+        config.resolve.alias['@osui/icons'] = '@osui/icons-icloud';
         return config;
     },
 };

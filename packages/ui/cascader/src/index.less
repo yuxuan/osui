@@ -6,6 +6,7 @@
     &-label-divider-icon {
         margin: 0 5px;
         color: var(--color-gray-6);
+        vertical-align: -4px;
     }
 
     .@{ant-prefix}-cascader-picker-label {
@@ -20,13 +21,17 @@
     &-menu {
         &.@{ant-prefix}-cascader-menu,
         &.@{ant-prefix}-cascader-menus .@{ant-prefix}-cascader-menu {
-            min-width: 100px;
+            min-width: 112px;
+            min-height: 308px;
+        }
+
+        .@{ant-prefix}-cascader-menu-item:not(.@{ant-prefix}-cascader-menu-item-disabled):hover {
+            background-color: var(--color-gray-3);
         }
 
         .@{ant-prefix}-cascader-menu-item-active:not(.@{ant-prefix}-cascader-menu-item-disabled),
         .@{ant-prefix}-cascader-menu-item-active:not(.@{ant-prefix}-cascader-menu-item-disabled):hover {
             color: var(--theme-primary-color);
-            background-color: var(--theme-component-bg);
 
             .@{ant-prefix}-cascader-menu-item-expand-icon {
                 color: var(--theme-primary-color);

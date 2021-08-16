@@ -11,10 +11,15 @@
     }
 
     .@{ant-prefix}-popover-title {
-        margin-bottom: -8px;
         padding: var(--popover-title-padding);
         font-size: 16px;
         border: none;
+
+        & + .@{ant-prefix}-popover-inner-content {
+            padding: var(--popover-title-padding);
+            padding-top: 0;
+            padding-bottom: 16px;
+        }
     }
 
     .@{ant-prefix}-popover-inner-content {

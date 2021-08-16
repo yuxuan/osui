@@ -27,7 +27,7 @@ const OSUICascader: React.ForwardRefRenderFunction<unknown, AntdCascaderProps> =
                     ? (<span>{item}</span>)
                     : (
                         <>
-                            <span>{item}</span><IconRightOutlined className={`${clsPrefix}-label-divider-icon`} />
+                            <span>{item}</span>&nbsp;&gt;&nbsp;
                         </>
                     )
             )
