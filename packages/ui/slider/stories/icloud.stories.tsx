@@ -12,6 +12,7 @@ export default {
 
 export const Demo = () => {
     const [inputValue, setInputValue] = useState(0);
+    const [inputValue2, setInputValue2] = useState(0);
     const handleChange = value => {
         setInputValue(value);
     };
@@ -31,6 +32,44 @@ export const Demo = () => {
                 <div>
                     <InputNumber style={{width: 72}} value={inputValue} onChange={handleChange} />
                 </div>
+                <p></p>
+            </div>
+            <div style={{width: '50%'}}>
+                <p>分段式滑动条</p>
+                <Slider
+                    value={inputValue2}
+                    onChange={value => setInputValue2(value)}
+                    dots
+                    step={25}
+                    max={200}
+                    min={0}
+                    marks={{
+                        0: 'A',
+                        50: 'B',
+                        100: 'C',
+                        150: 'D',
+                        200: 'E',
+                    }}
+                />
+            </div>
+            <div style={{width: '50%'}}>
+                <p>禁用样式</p>
+                <Slider
+                    disabled
+                    value={inputValue2}
+                    onChange={value => setInputValue2(value)}
+                    dots
+                    step={25}
+                    max={200}
+                    min={0}
+                    marks={{
+                        0: 'A',
+                        50: 'B',
+                        100: 'C',
+                        150: 'D',
+                        200: 'E',
+                    }}
+                />
             </div>
         </>
     );
