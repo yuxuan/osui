@@ -65,6 +65,10 @@
         "react": ">=16.9.0",
         "react-dom": ">=16.9.0"
     },
+    "dependencies": {
+        "@osui/brand-provider": "^1.1.1",
+        "classnames": "^2.2.6"
+    },
     "repository": {
         "type": "git",
         "url": "https://gitee.com/gitee-fe/osui/tree/master"
