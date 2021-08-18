@@ -46,6 +46,11 @@
 
     // ===== 以下用class来patch，因为侵入性比较强 ======
     &-icloud {
+        // 用于固定expand-icon列宽度
+        .@{ant-prefix}-table-expand-icon-col {
+            width: 32px !important;
+        }
+
         &-expandableIcon {
             color: var(--theme-icon-color);
             cursor: pointer;
