@@ -4,6 +4,8 @@ export default {
     '--input-warning-focus-background-color': 'var(--theme-component-bg)',
     '--input-focus-border-color': 'var(--theme-primary-color)',
     '--input-number-input-height': '28px',
+    '--input-number-input-height-lg': '32px',
+    '--input-number-input-height-sm': '22px',
     '--input-number-width': '80px',
     '--input-suffix-icon-size': '16px',
     '--input-affix-wrapper-padding-horizontal': '8px',
