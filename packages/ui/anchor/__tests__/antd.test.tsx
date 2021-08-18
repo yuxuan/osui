@@ -2,7 +2,7 @@
 // @ts-nocheck
 import React from 'react';
 import {mount} from 'enzyme';
-import Anchor from '@osui/anchor';
+import Anchor from '../src';
 import {sleep} from '../../../tests/utils';
 
 const {Link} = Anchor;
