@@ -61,6 +61,7 @@
         "typescript": "^3.9.6"
     },
     "peerDependencies": {
+        "@osui/icons": "^1.1.1",
         "antd": ">=4.4.0 <4.17.0",
         "react": ">=16.9.0",
         "react-dom": ">=16.9.0"
@@ -84,6 +85,7 @@
         "@huse/derived-state": "^1.1.0",
         "@osui/highlight-text": "^1.1.1",
         "@osui/select": "^1.1.1",
+        "classnames": "^2.2.6",
         "hoist-non-react-statics": "^3.3.2"
     }
 }

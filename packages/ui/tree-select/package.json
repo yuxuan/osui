@@ -52,6 +52,7 @@
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.0.6",
         "prop-types": "^15.7.2",
+        "rc-tree-select": "^4.4.0-alpha.2",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-is": "^16.13.1",
@@ -81,6 +82,7 @@
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
+        "classnames": "^2.2.6",
         "hoist-non-react-statics": "^3.3.2"
     }
 }

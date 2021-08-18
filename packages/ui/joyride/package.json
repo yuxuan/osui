@@ -61,6 +61,7 @@
         "typescript": "^3.9.6"
     },
     "peerDependencies": {
+        "@osui/icons": "^1.1.1",
         "react": ">=16.9.0",
         "react-dom": ">=16.9.0"
     },
@@ -81,6 +82,8 @@
     },
     "dependencies": {
         "@huse/derived-state": "^1.0.3",
+        "@osui/button": "^1.1.1",
+        "classnames": "^2.2.6",
         "lodash.merge": "^4.6.2",
         "react-joyride": "^2.3.0"
     }
