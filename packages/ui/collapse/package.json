@@ -61,6 +61,7 @@
         "typescript": "^3.9.6"
     },
     "peerDependencies": {
+        "@osui/brand-provider": "^1.1.1",
         "@osui/icons": "^1.1.1",
         "antd": ">=4.4.0 <4.17.0",
         "react": ">=16.9.0",
@@ -73,7 +74,6 @@
     "author": "huoyuxuan,liushaozhen",
     "license": "MIT",
     "dependencies": {
-        "@osui/brand-provider": "^1.1.1",
         "classnames": "^2.2.6",
         "hoist-non-react-statics": "^3.3.2"
     },
