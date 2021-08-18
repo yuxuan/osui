@@ -1,23 +1,393 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+## 1.1.2
 
-## [1.1.2](https://gitee.com/gitee-fe/osui/compare/v1.1.1...v1.1.2) (2021-08-18)
+### 功能调整
+- Chore：
+  - 修复了所有组件的依赖 by otakustay
 
+### 样式调整
+- icloud规范样式调整
+  - slider, cascader, empty, input-number, popconfirm, popover
+- Table
+  - 修复expandIcon在table-layout为fix时宽度不对的问题
+- InputNumber
+  - 增加了大中小size
 
-### Bug Fixes
+### 组件更新
 
-* input-number增加大中小size ([9a6639b](https://gitee.com/gitee-fe/osui/commits/9a6639b79b71e198bbf57ca3636e0873a45ce125))
-* **deps:** 把brand-provider修改为peer依赖 ([6cd6eae](https://gitee.com/gitee-fe/osui/commits/6cd6eae24e27058db62a43d1dc481f09037c189d))
-* **deps:** 修复所有组件的依赖不全 ([3c0110f](https://gitee.com/gitee-fe/osui/commits/3c0110f6798e4fdbf75616a447a1a7660a05c678))
-* cascader, empty, input-number, popconfirm, popover调整 ([90c5735](https://gitee.com/gitee-fe/osui/commits/90c573563bd475048963581d3b06a828ff3b7ee2))
-* slider ([2191251](https://gitee.com/gitee-fe/osui/commits/2191251f2ff74b12c4ed7ba50faa59dfb37ceb8b))
-* table修复expandIcon ([e656531](https://gitee.com/gitee-fe/osui/commits/e656531654dc48ab4e5b7bd8e38cdf394458addc))
+```
+- @osui/icloud-theme@1.1.2
+- @osui/theme@1.1.2
+- @osui/alert@1.1.2
+- @osui/auto-complete@1.1.2
+- @osui/avatar@1.1.2
+- @osui/back-top@1.1.2
+- @osui/branch-dropdown@1.1.2
+- @osui/brand-provider@1.1.2
+- @osui/breadcrumb@1.1.2
+- @osui/button@1.1.2
+- @osui/cascader@1.1.2
+- @osui/collapse@1.1.2
+- @osui/drawer@1.1.2
+- @osui/dropdown@1.1.2
+- @osui/empty@1.1.2
+- @osui/form@1.1.2
+- @osui/input-number@1.1.2
+- @osui/input@1.1.2
+- @osui/joyride@1.1.2
+- @osui/menu-dropdown@1.1.2
+- @osui/menu@1.1.2
+- @osui/message@1.1.2
+- @osui/modal@1.1.2
+- @osui/page-header@1.1.2
+- @osui/pagination@1.1.2
+- @osui/popconfirm@1.1.2
+- @osui/popover@1.1.2
+- @osui/progress@1.1.2
+- @osui/quick-edit@1.1.2
+- @osui/rate@1.1.2
+- @osui/search-select-list@1.1.2
+- @osui/select@1.1.2
+- @osui/slider@1.1.2
+- @osui/space@1.1.2
+- @osui/steps@1.1.2
+- @osui/table@1.1.2
+- @osui/tabs@1.1.2
+- @osui/tag@1.1.2
+- @osui/text-overflow-tooltip@1.1.2
+- @osui/toggle-button@1.1.2
+- @osui/tree-select@1.1.2
+- @osui/tree@1.1.2
+- @osui/typography@1.1.2
+- @osui/ui@1.1.2
+```
 
+## 1.1.1
 
+- Chore:
+    - 增加了Antd所有组件的测试，确保OSUI不会对Antd组件的API造成破坏
+    - 22个组件基于测试修复了问题，用户无感知
 
+## 1.0.10
 
+### 功能调整
+- Form
+  - 修复webpack@5.46.0 svg inline格式错误的问题
+- Modal
+  - 修复modal-confirm内加载带icon的组件时样式错乱问题
+- Message
+  - message 距离顶部51px确保在内容区域内
+
+### 组件更新
+```
+- @osui/icloud-theme@1.0.6
+- @osui/theme@1.0.6
+- @osui/form@1.0.5
+- @osui/message@1.0.3
+- @osui/modal@1.0.4
+- @osui/ui@1.0.10
+```
+
+## 1.0.9
+
+### 功能调整
+- Gap
+  - 默认变成4px，不在通过brand来区分
+- Space
+  - 修复横纵混合使用时，对齐出现问题的bug
+
+### 组件更新
+```
+- @osui/gap@1.0.2
+- @osui/space@1.0.2
+- @osui/ui@1.0.9
+```
+
+## 1.0.8
+
+### 功能调整
+- Breadcrumb
+  -  面包屑支持`headItemLength`，`tailItemLength`，超过5个时，可以通过设置这两个属性，显示头部面包屑个数，和尾部面包屑个数，默认是头部2个尾部2个
+
+### 组件更新
+```
+- @osui/breadcrumb: 1.0.1 => 1.0.2
+- @osui/ui: 1.0.7 => 1.0.8
+```
+
+## 1.0.7
+
+### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.7/)
+- 升级了Antd@4.16.6，确保没有break
+- Collapse，Table有稍微调整，为了支持4.16.6和之前的版本
+
+### 功能调整
+- Form
+  - 报错时错误信息不加margin-top，否则会带来页面抖动
+- Collapse
+  - 兼容antd@4.16.6和之前的版本样式
+- Table
+  - 修复了fix时border的问题
+  - 调整了checkbox和expandicon的margin，单独一列显示
+
+### 组件更新
+```
+- @osui/icloud-theme@1.0.5
+- @osui/theme@1.0.5
+- @osui/affix@1.0.1
+- @osui/alert@1.0.1
+- @osui/anchor@1.0.1
+- @osui/auto-complete@1.0.6
+- @osui/avatar@1.0.1
+- @osui/back-top@1.0.1
+- @osui/badge@1.0.1
+- @osui/branch-dropdown@1.0.3
+- @osui/brand-provider@1.0.1
+- @osui/breadcrumb@1.0.1
+- @osui/button@1.0.3
+- @osui/calendar@1.0.1
+- @osui/card@1.0.1
+- @osui/carousel@1.0.1
+- @osui/cascader@1.0.1
+- @osui/checkbox@1.0.1
+- @osui/col@1.0.1
+- @osui/collapse@1.0.2
+- @osui/comment@1.0.1
+- @osui/config-provider@1.0.1
+- @osui/date-picker@1.0.2
+- @osui/descriptions@1.0.1
+- @osui/directory-navigator@1.0.1
+- @osui/divider@1.0.1
+- @osui/drawer@1.0.1
+- @osui/dropdown@1.0.2
+- @osui/empty@1.0.1
+- @osui/flex-centered@1.0.1
+- @osui/form@1.0.4
+- @osui/gap@1.0.1
+- @osui/grid@1.0.1
+- @osui/highlight-text@1.0.1
+- @osui/image@1.0.1
+- @osui/input-number@1.0.1
+- @osui/input@1.0.6
+- @osui/joyride@1.0.1
+- @osui/layout@1.0.1
+- @osui/list@1.0.1
+- @osui/markdown@1.0.1
+- @osui/mentions@1.0.1
+- @osui/menu-dropdown@1.0.2
+- @osui/menu@1.0.1
+- @osui/message@1.0.2
+```
+
+## 1.0.6
+
+> 2021-6-29
+
+### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.6/)
+- Input、Search、Select、AutoComplete 调整了icon的颜色。
+- 调整了theme-icon-color为gray-7
+
+### 功能修复
+- Select
+  - 下拉展示10条内容
+- message
+  - 一次比较大的重构，出现位置调整到右侧，里面不在使用Alert
+
+### 组件更新
+
+```
+- @osui/icloud-theme@1.0.4
+- @osui/theme@1.0.4
+- @osui/auto-complete@1.0.5
+- @osui/input@1.0.5
+- @osui/message@1.0.1
+- @osui/select@1.0.5
+- @osui/ui@1.0.6
+```
+
+## 1.0.5
+
+> 2021-6-28
+
+### 功能修复
+
+- Input
+  - 删除Input.Group clear icon margin-right: 0; 的调整
+- Table
+  - treeData时，没有chidlren不展示展开icon
+
+### 组件更新
+
+```
+ - @osui/input@1.0.4
+ - @osui/table@1.0.3
+ - @osui/ui@1.0.5
+ ```
+
+## 1.0.4
+
+> 2021-6-25
+
+### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.4/)
+Input、Select、Form的报错样式
+
+### 功能修复
+
+- Modal
+  - 修复footer的button错位的问题
+- Button
+  - 修复className的问题
+  - loading默认增加flexcentered会导致与同行组件对齐错位，增加说明
+- Input
+  - hostiNonReactStatic提升静态属性
+  - 替换SearchIcon
+
+### 组件更新
+
+```
+- @osui/icons-icloud@1.0.1
+- @osui/icloud-theme@1.0.3
+- @osui/theme@1.0.3
+- @osui/auto-complete@1.0.4
+- @osui/branch-dropdown@1.0.2
+- @osui/button@1.0.2
+- @osui/form@1.0.3
+- @osui/input@1.0.3
+- @osui/modal@1.0.2
+- @osui/pagination@1.0.2
+- @osui/select@1.0.4
+- @osui/table@1.0.2
+- @osui/ui@1.0.4
+
+```
+
+## 1.0.3
+
+> 2021-6-23
+
+### 功能修复
+
+- TreeSelect
+  - 修复TreeSelect.TreeNode丢失的问题
+  - build cjs 修复
+- Form
+  - Form less中引用svg换成inline的形式，这样nextjs构建的时候不需要在server端配置svg loader
+- 其它
+  - 修复less统一使用.@{ant-prefix}
+
+### 组件更新
+
+```
+ - @osui/auto-complete@1.0.3
+ - @osui/form@1.0.2
+ - @osui/select@1.0.3
+ - @osui/switch@1.0.1
+ - @osui/tabs@1.0.2
+ - @osui/tree-select@1.0.3
+ - @osui/ui@1.0.3
+```
+
+## 1.0.2
+
+> 2021-6-19
+
+### 功能修复
+
+- Select
+  - 调整clear icon和arrow 在不同尺寸下的位置错位问题
+- Input
+  - 修复input组合用法报错时边框样式出错的问题
+
+### 组件更新
+
+```
+- @osui/icloud-theme@1.0.2
+- @osui/theme@1.0.2
+- @osui/auto-complete@1.0.2
+- @osui/input@1.0.2
+- @osui/select@1.0.2
+- @osui/ui@1.0.2
+```
+
+## 1.0.1
+
+> 2021-6-18
+
+### 样式调整[对比](https://baidu-ee-fe-sites.cdn.bcebos.com/icloud@diffReport@1.0.1/)
+Tabs、Collapse、Rate、AutoComplete、Rate、Select
+
+### 功能修复
+- Button
+  - loading默认添加flexcentered
+- Space
+  - 修复space vertical horizontal混用的问题
+- Table
+  - checkbox expand icon 修复
+- TreeSelect
+  - build修复
+
+### 组件更新
+
+```
+@osui/icloud-theme@1.0.1
+@osui/theme@1.0.1
+@osui/auto-complete@1.0.1
+@osui/branch-dropdown@1.0.1
+@osui/button@1.0.1
+@osui/collapse@1.0.1
+@osui/date-picker@1.0.1
+@osui/dropdown@1.0.1
+@osui/input@1.0.1
+@osui/menu-dropdown@1.0.1
+@osui/modal@1.0.1
+@osui/pagination@1.0.1
+@osui/quick-edit@1.0.1
+@osui/rate@1.0.1
+@osui/select@1.0.1
+@osui/table@1.0.1
+@osui/tabs@1.0.1
+@osui/tree-select@1.0.1
+@osui/ui@1.0.1
+```
+## 1.0.0
+
+> 2021-6-7
+
+### Chore
+- 增加了commonjs的build产出
+- css variables拆分
+
+### 样式调整[对比](http://eefe.baidu-int.com/sites/icloud@diffReport/)
+Button、Table、TreeSelect、Input、Radio、Checkbox、Pagination、BackTop、Switch、Timeline、Badge、Tag
+
+### 功能修复
+- Joyride 修复primaryButton卡住滚动, 增加hideStepSize属性
+- Input onsearch透传的问题
+- Table、TreeSelect、Menu、Datepicker使用hostiNonReactStatic提升静态属性
+- 增加QuickEdit
+
+### 组件更新
+所有组件更新到1.0.0
+
+## 1.0.0-beta.2
+
+> 2021-5-21
+
+- Button `@osui/button@1.0.0-beta.2`
+  - 样式调整
+
+- Joyride `@osui/joyride@1.0.0-beta.1`
+  - 修复滚动时，footer内按钮卡住的问题
+
+- BranchDropdown `@osui/branch-dropdown@1.0.0-beta.2`
+  - 依赖Button升级
+
+- Modal `@osui/modal@1.0.0-beta.2`
+  - 依赖Button升级
+
+- Pagination `@osui/pagination@1.0.0-beta.2`
+  - 依赖Button升级
 
 # 0.12.12
 Space
