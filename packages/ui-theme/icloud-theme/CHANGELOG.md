@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.1...v1.1.2) (2021-08-18)
+
+
+### Bug Fixes
+
+* cascader, empty, input-number, popconfirm, popover调整 ([90c5735](https://gitee.com/gitee-fe/osui/tree/master/commits/90c573563bd475048963581d3b06a828ff3b7ee2))
+* input-number增加大中小size ([9a6639b](https://gitee.com/gitee-fe/osui/tree/master/commits/9a6639b79b71e198bbf57ca3636e0873a45ce125))
+* slider ([2191251](https://gitee.com/gitee-fe/osui/tree/master/commits/2191251f2ff74b12c4ed7ba50faa59dfb37ceb8b))
+
+
+
+
+
 ## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
 
 

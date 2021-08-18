@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.1...v1.1.2) (2021-08-18)
+
+
+### Bug Fixes
+
+* **deps:** 修复所有组件的依赖不全 ([3c0110f](https://gitee.com/gitee-fe/osui/tree/master/commits/3c0110f6798e4fdbf75616a447a1a7660a05c678))
+
+
+
+
+
 ## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
 
 **Note:** Version bump only for package @osui/typography

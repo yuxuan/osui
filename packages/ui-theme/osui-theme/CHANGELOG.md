@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.1...v1.1.2) (2021-08-18)
+
+
+### Bug Fixes
+
+* input-number增加大中小size ([9a6639b](https://gitee.com/gitee-fe/osui/tree/master/commits/9a6639b79b71e198bbf57ca3636e0873a45ce125))
+
+
+
+
+
 ## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
 
 

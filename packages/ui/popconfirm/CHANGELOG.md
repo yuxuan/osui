@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.1...v1.1.2) (2021-08-18)
+
+
+### Bug Fixes
+
+* cascader, empty, input-number, popconfirm, popover调整 ([90c5735](https://gitee.com/gitee-fe/osui/tree/master/commits/90c573563bd475048963581d3b06a828ff3b7ee2))
+
+
+
+
+
 ## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
 
 **Note:** Version bump only for package @osui/popconfirm

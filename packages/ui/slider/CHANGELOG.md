@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.1...v1.1.2) (2021-08-18)
+
+
+### Bug Fixes
+
+* **deps:** 把brand-provider修改为peer依赖 ([6cd6eae](https://gitee.com/gitee-fe/osui/tree/master/commits/6cd6eae24e27058db62a43d1dc481f09037c189d))
+* **deps:** 修复所有组件的依赖不全 ([3c0110f](https://gitee.com/gitee-fe/osui/tree/master/commits/3c0110f6798e4fdbf75616a447a1a7660a05c678))
+* slider ([2191251](https://gitee.com/gitee-fe/osui/tree/master/commits/2191251f2ff74b12c4ed7ba50faa59dfb37ceb8b))
+
+
+
+
+
 ## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
 
 **Note:** Version bump only for package @osui/slider
