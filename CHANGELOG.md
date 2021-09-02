@@ -1,22 +1,21 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+## 1.1.3
 
-## [1.1.3](https://gitee.com/gitee-fe/osui/compare/v1.1.2...v1.1.3) (2021-09-02)
+### 功能调整
 
+- Gap
+  - 增加了className
+- Form
+  - 修复form errorlist的问题
 
-### Bug Fixes
+### 组件更新
 
-* 修复form errorlist的问题 ([d3747c6](https://gitee.com/gitee-fe/osui/commits/d3747c62d0c46a9f736003d4f46533e72d9a4e6e))
-* Gap组件增加className ([4c3bfce](https://gitee.com/gitee-fe/osui/commits/4c3bfcefd55befebf5297a01a64e7493fa6f5e7a))
-
-
-
-
-
-# Change Log
-
+```
+- @osui/form@1.1.3
+- @osui/gap@1.1.3
+- @osui/ui@1.1.3
+```
 ## 1.1.2
 
 ### 功能调整
