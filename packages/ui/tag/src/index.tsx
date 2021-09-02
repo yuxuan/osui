@@ -24,13 +24,14 @@ interface TagInterface extends React.FC<TagProps> {
 }
 
 const Tag: TagInterface = props => {
-    const {closeIcon} = props;
+    const {closeIcon, color} = props;
     const patchedIcon = closeIcon ?? <IconCloseOutlined />;
     const classnames = classNames(
         clsPrefix,
-        props.className,
         {[`${clsPrefix}-solid`]: props.solid},
-        {[`${clsPrefix}-round`]: props.round}
+        {[`${clsPrefix}-round`]: props.round},
+        {[`${clsPrefix}-${color}`]: props.color},
+        props.className
     );
 
     return <AntdTag {...props} closeIcon={patchedIcon} className={classnames} />;
