@@ -1,6 +1,6 @@
 import React from 'react';
 import {Form as AntdForm} from 'antd';
-import {
+import type {
     FormInstance,
     FormProps,
     ErrorListProps,
@@ -9,10 +9,7 @@ import {
     RuleRender,
     FormListProps,
 } from 'antd/lib/form';
-import {useForm} from 'antd/lib/form/Form';
-import List from 'antd/lib/form/FormList';
-import {FormItemProps} from 'antd/lib/form/FormItem';
-import {FormProvider} from 'antd/lib/form/context';
+import type {FormItemProps} from 'antd/lib/form/FormItem';
 import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';
 import useLabelLayout from './useLabelLayout';
@@ -64,10 +61,10 @@ function InternalFormItem<Values = any>(props: FormItemProps<Values> & {
 // ==== 完善Form类型 ====
 type InternalFormType = typeof InternalForm;
 interface FormInterface extends InternalFormType {
-    useForm: typeof useForm;
+    useForm: typeof AntdForm.useForm;
     Item: typeof InternalFormItem;
-    List: typeof List;
-    Provider: typeof FormProvider;
+    List: typeof AntdForm.List;
+    Provider: typeof AntdForm.Provider;
     ErrorList: typeof AntdForm.ErrorList;
 
     /** @deprecated Only for warning usage. Do not use. */
@@ -78,15 +75,15 @@ interface FormInterface extends InternalFormType {
 const Form = InternalForm as FormInterface;
 
 Form.Item = InternalFormItem;
-Form.List = List;
-Form.useForm = useForm;
-Form.Provider = FormProvider;
+Form.List = AntdForm.List;
+Form.useForm = AntdForm.useForm;
+Form.Provider = AntdForm.Provider;
 Form.create = AntdForm.create;
 Form.ErrorList = AntdForm.ErrorList;
 // osui added
 Form.useLabelLayout = useLabelLayout;
 
-export {
+export type {
     FormInstance,
     FormProps,
     ErrorListProps,
