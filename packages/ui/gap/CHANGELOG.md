@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.2...v1.1.3) (2021-09-02)
+
+
+### Bug Fixes
+
+* Gap组件增加className ([4c3bfce](https://gitee.com/gitee-fe/osui/tree/master/commits/4c3bfcefd55befebf5297a01a64e7493fa6f5e7a))
+
+
+
+
+
 ## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
 
 

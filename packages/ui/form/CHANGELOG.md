@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.2...v1.1.3) (2021-09-02)
+
+
+### Bug Fixes
+
+* 修复form errorlist的问题 ([d3747c6](https://gitee.com/gitee-fe/osui/tree/master/commits/d3747c62d0c46a9f736003d4f46533e72d9a4e6e))
+
+
+
+
+
 ## [1.1.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.1...v1.1.2) (2021-08-18)
 
 
