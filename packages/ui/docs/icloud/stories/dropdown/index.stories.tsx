@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Menu from '@osui/menu';
 import {IconDownOutlined} from '@osui/icons';

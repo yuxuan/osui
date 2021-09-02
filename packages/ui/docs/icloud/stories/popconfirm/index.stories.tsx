@@ -1,7 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import message from '@osui/message';
 import Button from '@osui/button';
-import Popconfirm from '@osui/popconfirm';
+import Popconfirm, {ConfirmContentWithTitle} from '@osui/popconfirm';
 
 export default {
     title: '反馈/Popconfirm 气泡确认框',
@@ -10,7 +11,7 @@ export default {
 
 export const Demo = () => {
 
-    const text = 'Are you sure to delete this task?';
+    const text = '确定同意请求吗？';
 
     function confirm() {
         message.info('Clicked on Yes.');
@@ -18,8 +19,15 @@ export const Demo = () => {
 
     return (
         <div className="demo">
+            <p></p>
             <div style={{ marginLeft: 70, whiteSpace: 'nowrap' }}>
-                <Popconfirm placement="topLeft" title={text} onConfirm={confirm} okText="Yes" cancelText="No">
+                <Popconfirm
+                    placement="topLeft"
+                    title={text}
+                    onConfirm={confirm}
+                    okText="Yes"
+                    cancelText="No"
+                >
                     <Button>TL</Button>
                 </Popconfirm>
                 <Popconfirm placement="top" title={text} onConfirm={confirm} okText="Yes" cancelText="No">
@@ -98,6 +106,24 @@ export const Demo = () => {
                     <Button>BR</Button>
                 </Popconfirm>
             </div>
+            <p></p>
+            <p>带标题的popconfirm</p>
+            <p>注意：要使用ConfirmContentWithTitle，icon要设置为null</p>
+            <Popconfirm
+                placement="topLeft"
+                title={
+                    <ConfirmContentWithTitle
+                        title="卡片标题"
+                        content="内容内容内容"
+                    />
+                }
+                onConfirm={confirm}
+                okText="Yes"
+                cancelText="No"
+                icon={null}
+            >
+                <Button>带标题的</Button>
+            </Popconfirm>
         </div>
     );
 };
