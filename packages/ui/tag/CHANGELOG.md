@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.3...v1.1.4) (2021-09-02)
+
+
+### Bug Fixes
+
+* tag增加两种颜色 ([8d4a118](https://gitee.com/gitee-fe/osui/tree/master/commits/8d4a118cb50a825015ea5ad170934fff84c6075d))
+
+
+
+
+
 ## [1.1.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.1...v1.1.2) (2021-08-18)
 
 
