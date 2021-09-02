@@ -10,35 +10,39 @@ interface FactorProps {
      * @default: icloud时为5，osc时为4
      */
     base?: number;
+    /**
+     * @description className
+     */
+    className?: string;
 }
 
 interface Nested {
     Horizontal: FC<FactorProps>;
     Vertical: FC<FactorProps>;
-    FlexFit: FC;
+    FlexFit: FC<{className?: string}>;
 }
 
 interface GapProps extends FactorProps {
     orientation: 'horizontal' | 'vertical';
 }
 
-const Gap: FC<GapProps> & Nested = ({orientation, factor, base}) => {
+const Gap: FC<GapProps> & Nested = ({orientation, factor, base, className}) => {
     // 如果BrandProvider是osc，为4，否则为5
     const innerBase = base ?? 4;
     return (
-        <div style={{[orientation === 'horizontal' ? 'width' : 'height']: factor * innerBase}} />
+        <div className={className} style={{[orientation === 'horizontal' ? 'width' : 'height']: factor * innerBase}} />
     );
 };
 
-const HorizontalGap: Nested['Horizontal'] = ({factor}) => (
-    <Gap orientation="horizontal" factor={factor} />
+const HorizontalGap: Nested['Horizontal'] = ({factor, className}) => (
+    <Gap className={className} orientation="horizontal" factor={factor} />
 );
 
-const VerticalGap: Nested['Vertical'] = ({factor}) => (
-    <Gap orientation="vertical" factor={factor} />
+const VerticalGap: Nested['Vertical'] = ({factor, className}) => (
+    <Gap className={className} orientation="vertical" factor={factor} />
 );
 
-const FlexFitGap: Nested['FlexFit'] = () => <div style={{flex: 1}} />;
+const FlexFitGap: Nested['FlexFit'] = ({className}) => <div className={className} style={{flex: 1}} />;
 
 Gap.Horizontal = HorizontalGap;
 Gap.Vertical = VerticalGap;
