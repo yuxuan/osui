@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.6](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.5...v1.1.6) (2021-09-03)
+
+
+### Bug Fixes
+
+* 对组件增加类型导出 ([36160d1](https://gitee.com/gitee-fe/osui/tree/master/commits/36160d14e8fee068f34d363d529345d95cfbd39e))
+
+
+
+
+
 ## [1.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
 
 **Note:** Version bump only for package @osui/anchor
