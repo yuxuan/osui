@@ -2,8 +2,8 @@ import React, {useMemo, useCallback} from 'react';
 import {AutoComplete as AntdAutoComplete} from 'antd';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import {useDerivedState} from '@huse/derived-state';
-import {AutoCompleteProps as AntdAutoCompleteProps} from 'antd/lib/auto-complete';
-import {RefSelectProps} from 'antd/lib/select';
+import type {AutoCompleteProps as AntdAutoCompleteProps} from 'antd/lib/auto-complete';
+import type {RefSelectProps, OptionType} from 'antd/lib/select';
 import HighlightText from '@osui/highlight-text';
 import {adjustAntdProps} from '@osui/select/lib/utils';
 import {IconDownOutlined} from '@osui/icons';
@@ -92,4 +92,9 @@ const RefAutoComplete = React.forwardRef<RefSelectProps, AutoCompleteProps>(Auto
 
 hoistNonReactStatics(RefAutoComplete, AntdAutoComplete);
 
-export default RefAutoComplete as typeof AntdAutoComplete & typeof RefAutoComplete;
+type RefAutoCompleteWithOption = typeof RefAutoComplete & {
+    Option: OptionType;
+};
+
+export default RefAutoComplete as RefAutoCompleteWithOption;
+

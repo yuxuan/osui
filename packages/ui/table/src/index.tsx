@@ -171,10 +171,10 @@ const Table = <RecordType extends Record<string, any>>(
 hoistNonReactStatics(Table, AntdTable);
 
 export type {
-    ColumnProps,
-    ColumnsType,
-    ColumnType,
-    ColumnGroupType,
+    ColumnProps as TableColumnProps,
+    ColumnsType as TableColumnsType,
+    ColumnType as TableColumnType,
+    ColumnGroupType as TableColumnGroupType,
     TableProps,
     TablePaginationConfig,
 } from 'antd/lib/table';

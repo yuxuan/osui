@@ -20,4 +20,5 @@ const Space: FC<SpaceProps> = ({className, size = 'small', ...props}) => {
     );
 };
 
+export type { SpaceProps } from 'antd';
 export default Space;

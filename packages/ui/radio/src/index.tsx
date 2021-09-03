@@ -29,4 +29,5 @@ const Radio = React.forwardRef(RefRadio) as RadioInterface;
 Radio.Group = RadioGroup;
 Radio.Button = AntdRadio.Button;
 
+export type { RadioChangeEvent } from 'antd';
 export default Radio;

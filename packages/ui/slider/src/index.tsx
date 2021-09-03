@@ -32,5 +32,6 @@ const Slider = React.forwardRef<unknown, AntdSliderSingleProps | AntdSliderRange
     }
 );
 
+export type { SliderSingleProps } from 'antd';
 export default Slider;
 

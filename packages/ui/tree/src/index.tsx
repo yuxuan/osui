@@ -28,4 +28,5 @@ const Tree = React.forwardRef<any, TreeProps>(({className, size, blockNode, ...p
 Tree.TreeNode = AntdTree.TreeNode;
 Tree.DirectoryTree = AntdTree.DirectoryTree;
 
+export type { TreeNodeProps, TreeDataNode } from 'antd';
 export default Tree;

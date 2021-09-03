@@ -27,4 +27,5 @@ const SubMenu: React.FC<AntdSubMenuProps> = ({popupClassName, ...props}) => {
 hoistNonReactStatics(Menu, AntdMenu);
 Menu.SubMenu = SubMenu;
 
+export type { MenuProps, MenuTheme, SubMenuProps, MenuItemProps } from 'antd';
 export default Menu as unknown as typeof AntdMenu;

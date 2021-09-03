@@ -29,4 +29,5 @@ hoistNonReactStatics(OSUIDropdownButton, AntdDropdown.Button);
 
 OSUIDropdown.Button = OSUIDropdownButton;
 
+export type { DropDownProps } from 'antd';
 export default OSUIDropdown;

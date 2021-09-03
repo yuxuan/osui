@@ -41,4 +41,5 @@ export interface TreeSelectInterface extends InternalTreeSelectType {
 }
 const TreeSelect = TreeSelectRef as TreeSelectInterface;
 
+export type { TreeSelectProps } from 'antd';
 export default TreeSelect;

@@ -34,4 +34,5 @@ Typography.Title = AntdTypography.Title;
 Typography.Paragraph = AntdTypography.Paragraph;
 Typography.PageTitle = PageTitle;
 
+export type { TypographyProps } from 'antd';
 export default Typography;

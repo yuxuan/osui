@@ -194,4 +194,5 @@ Modal.confirm = (config: ConfirmProps) => AntdModal.confirm(getConfirmConfig(con
 Modal.destroyAll = destroyAll;
 Modal.config = config;
 
+export type { ModalFuncProps } from 'antd';
 export default Modal;

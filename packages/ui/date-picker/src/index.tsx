@@ -53,4 +53,5 @@ DatePicker.TimePicker = attachOSUIClassName(AntdDatePicker.TimePicker);
 DatePicker.RangePicker = attachOSUIClassName(AntdDatePicker.RangePicker);
 
 
+export type { DatePickerProps } from 'antd';
 export default DatePicker;

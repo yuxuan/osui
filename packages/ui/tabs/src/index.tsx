@@ -9,6 +9,7 @@ const clsPrefix = 'osui-tabs';
 
 export type TabsProps = AntdTabsProps;
 export type TabPaneProps = AntdTabPaneProps;
+
 interface TabInterface extends React.FC<TabsProps> {
     TabPane: typeof AntdTabs.TabPane;
 }

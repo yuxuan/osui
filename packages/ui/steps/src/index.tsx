@@ -46,4 +46,5 @@ ProcessOnlySteps.Step = ProcessOnlyStep;
 
 Steps.ProcessOnlySteps = ProcessOnlySteps;
 
+export type { StepsProps } from 'antd';
 export default Steps;

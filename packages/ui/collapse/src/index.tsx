@@ -10,7 +10,7 @@ import './patch.less';
 
 const clsPrefix = 'osui-collapse';
 
-interface CollapseProps extends AntdCollapseProps {
+export interface CollapseProps extends AntdCollapseProps {
     /**
      * @description 嵌套的场景下，用于标记Collapse是Panel的子，
      */
@@ -73,4 +73,5 @@ hoistNonReactStatics(Collapse, AntdCollapse);
 
 Collapse.Panel = CollapsePanel;
 
+export type { CollapsePanelProps } from 'antd';
 export default Collapse;

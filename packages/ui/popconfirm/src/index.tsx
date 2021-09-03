@@ -18,4 +18,5 @@ export const ConfirmContentWithTitle = ({title, content}: Props) => {
 };
 
 
+export type { PopconfirmProps } from 'antd';
 export default Popconfirm;

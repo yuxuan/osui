@@ -11,4 +11,5 @@ const InputNumber = React.forwardRef<HTMLInputElement, AntdInputNumberProps>(({c
     return <AntdInputNumber ref={ref} className={innerClassName} {...props} />;
 });
 
+export type { InputNumberProps } from 'antd';
 export default InputNumber;

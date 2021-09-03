@@ -48,4 +48,5 @@ const OSUICascader: React.ForwardRefRenderFunction<unknown, AntdCascaderProps> =
     );
 };
 
+export type { CascaderProps } from 'antd';
 export default React.forwardRef<unknown, AntdCascaderProps>(OSUICascader) as unknown as typeof AntdCascader;

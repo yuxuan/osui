@@ -164,7 +164,16 @@ yarn new-component 组件名
 
 **注意：**
 
-组件名小写字母，多个词用`-`分割，例如`app-layout`
+组件名为CamelCase（就是React组件的命名），例如`AppLayout`
+
+#### 步骤
+
+1. clone osui代码库
+2. 在osui代码库根目录运行 yarn new-component ComponentName
+3. cd osui/packages/ui/component-name
+4. yarn storybook
+5. 在src下面改组件的源码
+6. 在 stories/ 下写组件如何使用
 
 ##### `yarn new-component` 不好用？
 
@@ -178,7 +187,7 @@ yarn new-component 组件名
 
 组件开发代码在组件文件夹`src/`目录下。开发时可以通过storybook进行调试：
 
-1. 在`stories/`目录下创建`index.stories.tsx`
+1. 在`stories/`目录下已经有了xxx.stories.tsx
 2. 从`src`中引入组件， 仿照`alert`
 3. `yarn`
 4. `yarn storybook`

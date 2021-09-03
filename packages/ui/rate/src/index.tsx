@@ -16,5 +16,6 @@ const RateRef = React.forwardRef<unknown, AntdRateProps>(Rate);
 
 hoistNonReactStatics(Rate, AntdRate);
 
+export type { RateProps } from 'antd';
 export default RateRef;
 
