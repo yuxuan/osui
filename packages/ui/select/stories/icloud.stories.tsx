@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Space from '@osui/space';
 import BrandProvider from '@osui/brand-provider';
@@ -248,6 +249,28 @@ export const TestCase = () => {
                 <Option value="lucy10">Lucy10</Option>
                 <Option value="lucy11">Lucy11</Option>
                 <Option value="lucy12">Lucy12</Option>
+            </Select>
+
+            <p></p>
+            <p>可选择时，里面内容的颜色应该是placeholder</p>
+            <Select
+                showSearch
+                style={{ width: 200 }}
+                placeholder="Search to Select"
+                optionFilterProp="children"
+                filterOption={(input, option) =>
+                    option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                }
+                filterSort={(optionA, optionB) =>
+                    optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
+                }
+            >
+                <Option value="1">Not Identified</Option>
+                <Option value="2">Closed</Option>
+                <Option value="3">Communicated</Option>
+                <Option value="4">Identified</Option>
+                <Option value="5">Resolved</Option>
+                <Option value="6">Cancelled</Option>
             </Select>
         </>
     );

@@ -36,8 +36,8 @@
             transition: var(--select-arrow-transition);
         }
     }
-
-    &.@{ant-prefix}-select-single.@{ant-prefix}-select-open .@{ant-prefix}-select-selection-item {
+    // 在search时open之后颜色不能为text-color，把search排除
+    &:not(.@{ant-prefix}-select-show-search).@{ant-prefix}-select-single.@{ant-prefix}-select-open .@{ant-prefix}-select-selection-item {
         color: var(--theme-text-color);
     }
 
