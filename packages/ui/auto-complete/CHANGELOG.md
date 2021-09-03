@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.4...v1.1.5) (2021-09-03)
+
+**Note:** Version bump only for package @osui/auto-complete
+
+
+
+
+
 ## [1.1.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.1...v1.1.2) (2021-08-18)
 
 

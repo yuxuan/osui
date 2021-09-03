@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://gitee.com/gitee-fe/osui/compare/v1.1.4...v1.1.5) (2021-09-03)
+
+
+### Bug Fixes
+
+* select search text color ([3779599](https://gitee.com/gitee-fe/osui/commits/37795997075076a75a27ee0271d2028e480c4710))
+
+
+
+
+
 ## [1.1.4](https://gitee.com/gitee-fe/osui/compare/v1.1.3...v1.1.4) (2021-09-02)
 
 
