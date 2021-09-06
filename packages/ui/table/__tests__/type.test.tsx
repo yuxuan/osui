@@ -1,7 +1,7 @@
 /* eslint-disable */
 import * as React from 'react';
 import Table from '../src';
-import { ColumnProps } from '../src';
+import { TableColumnProps } from '../src';
 
 const { Column, ColumnGroup } = Table;
 
@@ -37,7 +37,7 @@ describe('Table.typescript types', () => {
       name: string;
     }
 
-    const columns: ColumnProps<User>[] = [
+    const columns: TableColumnProps<User>[] = [
       {
         title: 'Name',
         dataIndex: 'name',
