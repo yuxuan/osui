@@ -1,42 +1,39 @@
 # Change Log
+## 1.1.6
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+### 功能调整
 
-## [1.1.6](https://gitee.com/gitee-fe/osui/compare/v1.1.5...v1.1.6) (2021-09-03)
+补充所有组件的导出类型
 
+## 1.1.5
 
-### Bug Fixes
+### 功能调整
 
-* 对组件增加类型导出 ([36160d1](https://gitee.com/gitee-fe/osui/commits/36160d14e8fee068f34d363d529345d95cfbd39e))
+- Select
+  - 修复了Search时focus字体颜色有歧义的问题，Search时输入框字体颜色为placeholder颜色
 
+### 组件更新
 
+```
+ - @osui/auto-complete: 1.1.4 => 1.1.5
+ - @osui/quick-edit: 1.1.4 => 1.1.5
+ - @osui/select: 1.1.4 => 1.1.5
+ - @osui/ui: 1.1.4 => 1.1.5
+```
 
+## 1.1.4
 
+### 功能调整
 
-## [1.1.5](https://gitee.com/gitee-fe/osui/compare/v1.1.4...v1.1.5) (2021-09-03)
+- Tag
+  - 增加了灰色和紫色两种颜色的tag
 
+### 组件更新
 
-### Bug Fixes
-
-* select search text color ([3779599](https://gitee.com/gitee-fe/osui/commits/37795997075076a75a27ee0271d2028e480c4710))
-
-
-
-
-
-## [1.1.4](https://gitee.com/gitee-fe/osui/compare/v1.1.3...v1.1.4) (2021-09-02)
-
-
-### Bug Fixes
-
-* tag增加两种颜色 ([8d4a118](https://gitee.com/gitee-fe/osui/commits/8d4a118cb50a825015ea5ad170934fff84c6075d))
-
-
-
-
-
-# Change Log
+```
+- @osui/tag@1.1.4
+- @osui/ui@1.1.4
+```
 
 ## 1.1.3
 
