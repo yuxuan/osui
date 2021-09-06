@@ -66,6 +66,7 @@
         "react-dom": ">=16.9.0"
     },
     "dependencies": {
+        "@osui/icons": "^1.1.1",
         "classnames": "^2.2.6"
     },
     "repository": {

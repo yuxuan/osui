@@ -1,7 +1,12 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React, { useState } from 'react';
 import Button from '@osui/button';
 import Gap from '@osui/gap';
 import Divider from '@osui/divider';
+import Markdown from '@osui/markdown';
+import Form from '@osui/form';
+import Input from '@osui/input';
+import BrandProvider from '@osui/brand-provider';
 import Popover from '@osui/popover';
 
 export default {
@@ -66,6 +71,9 @@ export const Demo1 = () => {
                     <Button>Focus</Button>
                 </Popover>
             </div>
+            <Divider orientation="left">Tips文字提示</Divider>
+            <h3>Tips文字提示</h3>
+            <Popover content={<div>{content}</div>}>文字位置</Popover>
         </div>
     );
 };
@@ -237,10 +245,6 @@ export const Demo2 = () => {
 export const Demo3 = () => {
     const [clicked, setClicked] = useState(false);
 
-    const hide = () => {
-        setClicked(false);
-    };
-
     const handleClickChange = () => {
         setClicked((visible: boolean) => !visible);
     };
@@ -250,11 +254,12 @@ export const Demo3 = () => {
     return (
         <>
             <Divider orientation="left">可以从内部关闭的气泡卡片</Divider>
+            <p>注意。showCloseIcon要配合onVisibleChange一起使用</p>
             <Popover
+                showCloseIcon
                 content={
                     <div>
                         {clickContent}
-                        <a onClick={hide}>关闭</a>
                     </div>
                 }
                 title="卡片标题"
@@ -268,10 +273,53 @@ export const Demo3 = () => {
     );
 };
 
+export const FormItemPopover = () => {
+
+    const FormItem = () => {
+        return (
+            <>
+                <BrandProvider brand="icloud">
+                    <Form layout="inline" size="small">
+                        <Form.Item style={{width: 180}}>
+                            <Input placeholder="输入名称" />
+                        </Form.Item>
+                        <Form.Item style={{marginRight: 0}}>
+                            <div style={{display: 'flex', alignItems: 'center'}}>
+                                <Button>取消</Button>
+                                <Gap orientation="horizontal" factor={2} />
+                                <Button type="primary">确认</Button>
+                            </div>
+                        </Form.Item>
+                    </Form>
+                    <div style={{fontSize: 12, color: 'var(--color-gray-7)', marginTop: 8}}>
+                        {'支持大小写字母，数字和"-_/.”以字母开头，不超过65'}
+                    </div>
+                </BrandProvider>
+            </>
+        );
+    };
+
+    return (
+        <>
+            <Popover content={FormItem}>
+                Form Item Demo
+            </Popover>
+        </>
+    );
+};
+
+
 export const Api = () => {
+    const content = `
+    | 参数 | 说明 | 类型 | 默认值
+    | --- | --- | --- | --- |
+    | showCloseIcon | 是否展示关闭icon | boolean | undefined |
+    `;
     return (
         <>
             <a target="_blank" rel="noreferrer" href="https://ant.design/components/popover-cn/">Antd Popover API</a>
+            <h2>新增参数</h2>
+            <Markdown content={content} />
         </>
     );
 };

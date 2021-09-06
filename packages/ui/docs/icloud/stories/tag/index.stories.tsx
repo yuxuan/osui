@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import {Divider} from 'antd';
 import {IconPlusOutlined} from '@osui/icons-icloud';
@@ -50,6 +51,8 @@ export const Demo = () => {
             <Tag color="green" round>标签</Tag>
             <Tag color="yellow" round>标签</Tag>
             <Tag color="red" round>标签</Tag>
+            <Tag color="gray" round>标签</Tag>
+            <Tag color="purple" round>标签</Tag>
         </>
     );
 };
