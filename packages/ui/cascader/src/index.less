@@ -1,5 +1,17 @@
 @osui-cascader-class-prefix: osui-cascader;
 
+.minHeightMixin() {
+    @iterations: 10;
+    .loop (@i) when (@i > 0) {
+        &.@{osui-cascader-class-prefix}-menu-@{i} .@{ant-prefix}-cascader-menu {
+            height: ~"calc(@{i} * 30px + 8px)";
+            min-height: ~"calc(@{i} * 30px + 8px)";
+        }
+        .loop(@i - 1);
+    }
+    .loop (@iterations);
+}
+
 .@{osui-cascader-class-prefix} {
     min-width: 240px;
 
@@ -19,10 +31,11 @@
 
     // ==================== Menu ====================
     &-menu {
+        .minHeightMixin();
+
         &.@{ant-prefix}-cascader-menu,
         &.@{ant-prefix}-cascader-menus .@{ant-prefix}-cascader-menu {
             min-width: 112px;
-            min-height: 308px;
         }
 
         .@{ant-prefix}-cascader-menu-item:not(.@{ant-prefix}-cascader-menu-item-disabled):hover {
@@ -41,7 +54,7 @@
         .@{ant-prefix}-cascader-menu-item-expand .@{ant-prefix}-cascader-menu-item-expand-icon,
         .@{ant-prefix}-cascader-menu-item-loading-icon {
             right: 7px;
-            color: var(--color-gray-9);
+            color: var(--color-gray-6);
             font-size: 14px;
         }
     }

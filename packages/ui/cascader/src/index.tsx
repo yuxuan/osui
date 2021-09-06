@@ -1,6 +1,6 @@
 import React from 'react';
 import { Cascader as AntdCascader } from 'antd';
-import { CascaderProps as AntdCascaderProps } from 'antd/lib/cascader';
+import { CascaderProps as AntdCascaderProps, CascaderOptionType } from 'antd/lib/cascader';
 import classNames from 'classnames';
 import { IconDownOutlined, IconRightOutlined } from '@osui/icons';
 import './index.less';
@@ -19,7 +19,6 @@ const OSUICascader: React.ForwardRefRenderFunction<unknown, AntdCascaderProps> =
     ref
 ) => {
     const innerClassName = classNames(clsPrefix, className);
-    const innerPopupClassName = classNames(`${clsPrefix}-menu`, popupClassName);
     const innerDisplayRender = displayRender ?? (
         (label: string[]) => label.map(
             (item, index) => (
@@ -33,6 +32,30 @@ const OSUICascader: React.ForwardRefRenderFunction<unknown, AntdCascaderProps> =
             )
         )
     );
+
+    const maxChildrenLength = React.useMemo(
+        () => {
+            const result: number[] = [];
+            const getLength = (options?: CascaderOptionType[]) => {
+                if (!options) {
+                    return;
+                }
+                result.push(options.length);
+                options.forEach(i => getLength(i.children));
+            };
+            getLength(props.options);
+            return Math.max(...result);
+        },
+        [props.options]
+    );
+    // 计算最多子数，不超过10，然后算最小高度 子数 * 30(item高度) + 8px(上下padding)，通过className处理
+    // 因为style写不到
+    const cascaderMinHeight = Math.min(maxChildrenLength, 10);
+    const innerPopupClassName = classNames(
+        `${clsPrefix}-menu`,
+        `${clsPrefix}-menu-${cascaderMinHeight}`,
+        popupClassName
+    );
     const innerExpandIcon = expandIcon ?? <IconRightOutlined />;
     const innerSuffixIcon = suffixIcon ?? <IconDownOutlined />;
     return (
@@ -43,6 +66,7 @@ const OSUICascader: React.ForwardRefRenderFunction<unknown, AntdCascaderProps> =
             popupClassName={innerPopupClassName}
             expandIcon={innerExpandIcon}
             suffixIcon={innerSuffixIcon}
+            style={{...props.style, minHeight: cascaderMinHeight}}
             {...props}
         />
     );
