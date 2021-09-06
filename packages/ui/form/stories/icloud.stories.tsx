@@ -90,7 +90,7 @@ export const Demo = () => {
 };
 
 export const BasicDemo = () => {
-    Form.useLabelLayout('myForm', 106);
+    Form.useLabelLayout('myForm');
 
     const formItemLayout = {
         labelCol: {

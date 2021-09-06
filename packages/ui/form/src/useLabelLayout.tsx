@@ -6,7 +6,7 @@ const labelMarginRight = 20;
  * @param maxWidth 可选，设置最大宽度
  *
  */
-export default (formName: string, maxWidth?: number) => {
+export default (formName: string, maxWidth: number = 80) => {
     const labelRef = useRef<NodeListOf<Element> | undefined >(undefined);
     const antdFormLabelRef = useRef<NodeListOf<Element> | undefined >(undefined);
     const antdFormItemControlRef = useRef<NodeListOf<Element> | undefined >(undefined);
