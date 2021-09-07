@@ -11,7 +11,7 @@ const themeEnv = process.env.THEME;
 const isOsuiTheme = themeEnv === 'osui';
 
 const styleResources = isOsuiTheme ? (
-     [require.resolve('@osui/theme/dist/antd-vars-patch.less')]
+    [require.resolve('@osui/theme/dist/antd-vars-patch.less')]
 ) : (
     [require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less')]
 );
@@ -81,6 +81,7 @@ module.exports = {
 
         config.resolve.extensions.push('.ts', '.tsx');
         config.resolve.alias['@'] = path.resolve(__dirname, '../src');
+        config.resolve.alias['@osui/icons'] = '@osui/icons-icloud';
         return config;
     },
 };

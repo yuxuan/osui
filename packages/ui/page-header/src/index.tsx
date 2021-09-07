@@ -2,7 +2,7 @@ import React from 'react';
 import {PageHeader as AntdPageHeader} from 'antd';
 import {PageHeaderProps as AntdPageHeaderProps} from 'antd/lib/page-header';
 import classNames from 'classnames';
-import {IconArrowLeftOutlined} from '@osui/icons';
+import {IconLeftOutlined} from '@osui/icons';
 import './index.less';
 
 const clsPrefix = 'osui-page-header';
@@ -19,7 +19,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({className, noPadding, backIcon, 
             [`${clsPrefix}-no-padding`]: noPadding,
         }
     );
-    const innerBackIcon = backIcon ?? <IconArrowLeftOutlined />;
+    const innerBackIcon = backIcon ?? <IconLeftOutlined />;
     return <AntdPageHeader className={innerClassName} {...props} backIcon={innerBackIcon} />;
 };
 

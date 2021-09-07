@@ -82,6 +82,7 @@
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
+        "@osui/icons-icloud": "^1.1.1",
         "classnames": "^2.2.6"
     }
 }
