@@ -93,4 +93,5 @@ export type {
     FormListProps,
 };
 
+export type {FormItemProps} from 'antd/lib/form';
 export default Form;

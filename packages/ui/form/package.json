@@ -88,6 +88,7 @@
     },
     "gitHead": "904178b6c0bb86963017122daa529580decb66e8",
     "dependencies": {
+        "@osui/brand-provider": "^1.1.2",
         "classnames": "^2.2.6"
     }
 }

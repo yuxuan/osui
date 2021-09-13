@@ -34,6 +34,9 @@ find $ROOT -maxdepth 1 -type d | grep -v -E $EXCLUDE_FOLDER | ( while IFS= read 
 done
 echo "$DEPENDENCIES" ) # while 是 subshell， 括号来group subshell
 
+echo "Add interfaces"
+cat ./src/props.d.ts >> ./src/index.ts
+
 # build index
 $(npm bin)/tsc
 $(npm bin)/tsc -p tsconfig.cjs.json

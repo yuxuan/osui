@@ -43,4 +43,5 @@ const CheckableTag: React.FC<CheckableTagProps> = props => {
 
 Tag.CheckableTag = CheckableTag;
 
+export type {TagType} from 'antd/lib/tag';
 export default Tag;
