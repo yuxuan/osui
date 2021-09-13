@@ -31,3 +31,6 @@ lib/
 
 # 先不加docs
 /docs
+
+# yarn
+.yarn/*

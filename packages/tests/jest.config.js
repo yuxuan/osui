@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
     verbose: true,
+    bail: true,
     testEnvironment: 'jsdom',
     preset: 'ts-jest/presets/js-with-ts',
     moduleNameMapper: {

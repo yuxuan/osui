@@ -23,11 +23,13 @@
         "publish": "lerna publish from-package",
         "publishWithDocs": "lerna publish from-package && yarn build-docs",
         "build-docs": "sh scripts/build-docs.sh osui && sh scripts/build-docs.sh icloud",
-        "test": "yarn workspaces run test"
+        "test": "lerna exec --no-private --concurrency 10 -- yarn test -u"
     },
     "devDependencies": {
         "@commitlint/cli": "^9.1.1",
         "@commitlint/config-conventional": "^9.1.1",
+        "@reskript/cli": "^2.2.2",
+        "@reskript/cli-lint": "^2.2.2",
         "@storybook/cli": "^6.0.26",
         "commitizen": "^4.1.2",
         "cz-conventional-changelog": "^3.2.0",

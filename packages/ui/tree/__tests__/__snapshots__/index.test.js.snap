@@ -103,24 +103,21 @@ exports[`Tree icon and switcherIcon of Tree with showLine should render correctl
               class="ant-tree-switcher ant-tree-switcher_close"
             >
               <span
-                aria-label="plus-square"
-                class="anticon anticon-plus-square ant-tree-switcher-line-icon"
+                aria-label="caret-down"
+                class="ant-tree-switcher-icon"
                 role="img"
               >
                 <svg
-                  aria-hidden="true"
-                  data-icon="plus-square"
-                  fill="currentColor"
+                  class="osui-icon osui-tree-switcherIcon"
                   focusable="false"
-                  height="1em"
-                  viewBox="64 64 896 896"
-                  width="1em"
+                  height="1024"
+                  viewBox="0 0 1024 1024"
+                  width="1024"
                 >
                   <path
-                    d="M328 544h152v152c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V544h152c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H544V328c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v152H328c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8z"
-                  />
-                  <path
-                    d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"
+                    d="M830.447 394.225c14.996-13.633 39.31-13.633 54.306 0 14.996 13.632 14.996 35.736 0 49.369l-345.6 314.181c-14.996 13.633-39.31 13.633-54.306 0l-345.6-314.181c-14.996-13.633-14.996-35.737 0-49.37 14.996-13.632 39.31-13.632 54.306 0L512 683.723l318.447-289.497z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
                   />
                 </svg>
               </span>
@@ -195,24 +192,21 @@ exports[`Tree showLine is object type should render correctly 1`] = `
               class="ant-tree-switcher ant-tree-switcher_open"
             >
               <span
-                aria-label="minus-square"
-                class="anticon anticon-minus-square ant-tree-switcher-line-icon"
+                aria-label="caret-down"
+                class="ant-tree-switcher-icon"
                 role="img"
               >
                 <svg
-                  aria-hidden="true"
-                  data-icon="minus-square"
-                  fill="currentColor"
+                  class="osui-icon osui-tree-switcherIcon"
                   focusable="false"
-                  height="1em"
-                  viewBox="64 64 896 896"
-                  width="1em"
+                  height="1024"
+                  viewBox="0 0 1024 1024"
+                  width="1024"
                 >
                   <path
-                    d="M328 544h368c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H328c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8z"
-                  />
-                  <path
-                    d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"
+                    d="M830.447 394.225c14.996-13.633 39.31-13.633 54.306 0 14.996 13.632 14.996 35.736 0 49.369l-345.6 314.181c-14.996 13.633-39.31 13.633-54.306 0l-345.6-314.181c-14.996-13.633-14.996-35.737 0-49.37 14.996-13.632 39.31-13.632 54.306 0L512 683.723l318.447-289.497z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
                   />
                 </svg>
               </span>
@@ -243,24 +237,21 @@ exports[`Tree showLine is object type should render correctly 1`] = `
               class="ant-tree-switcher ant-tree-switcher_open"
             >
               <span
-                aria-label="minus-square"
-                class="anticon anticon-minus-square ant-tree-switcher-line-icon"
+                aria-label="caret-down"
+                class="ant-tree-switcher-icon"
                 role="img"
               >
                 <svg
-                  aria-hidden="true"
-                  data-icon="minus-square"
-                  fill="currentColor"
+                  class="osui-icon osui-tree-switcherIcon"
                   focusable="false"
-                  height="1em"
-                  viewBox="64 64 896 896"
-                  width="1em"
+                  height="1024"
+                  viewBox="0 0 1024 1024"
+                  width="1024"
                 >
                   <path
-                    d="M328 544h368c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H328c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8z"
-                  />
-                  <path
-                    d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"
+                    d="M830.447 394.225c14.996-13.633 39.31-13.633 54.306 0 14.996 13.632 14.996 35.736 0 49.369l-345.6 314.181c-14.996 13.633-39.31 13.633-54.306 0l-345.6-314.181c-14.996-13.633-14.996-35.737 0-49.37 14.996-13.632 39.31-13.632 54.306 0L512 683.723l318.447-289.497z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
                   />
                 </svg>
               </span>
@@ -387,24 +378,21 @@ exports[`Tree showLine is object type should render correctly 1`] = `
               class="ant-tree-switcher ant-tree-switcher_close"
             >
               <span
-                aria-label="plus-square"
-                class="anticon anticon-plus-square ant-tree-switcher-line-icon"
+                aria-label="caret-down"
+                class="ant-tree-switcher-icon"
                 role="img"
               >
                 <svg
-                  aria-hidden="true"
-                  data-icon="plus-square"
-                  fill="currentColor"
+                  class="osui-icon osui-tree-switcherIcon"
                   focusable="false"
-                  height="1em"
-                  viewBox="64 64 896 896"
-                  width="1em"
+                  height="1024"
+                  viewBox="0 0 1024 1024"
+                  width="1024"
                 >
                   <path
-                    d="M328 544h152v152c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V544h152c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H544V328c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v152H328c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8z"
-                  />
-                  <path
-                    d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"
+                    d="M830.447 394.225c14.996-13.633 39.31-13.633 54.306 0 14.996 13.632 14.996 35.736 0 49.369l-345.6 314.181c-14.996 13.633-39.31 13.633-54.306 0l-345.6-314.181c-14.996-13.633-14.996-35.737 0-49.37 14.996-13.632 39.31-13.632 54.306 0L512 683.723l318.447-289.497z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
                   />
                 </svg>
               </span>
@@ -435,24 +423,21 @@ exports[`Tree showLine is object type should render correctly 1`] = `
               class="ant-tree-switcher ant-tree-switcher_close"
             >
               <span
-                aria-label="plus-square"
-                class="anticon anticon-plus-square ant-tree-switcher-line-icon"
+                aria-label="caret-down"
+                class="ant-tree-switcher-icon"
                 role="img"
               >
                 <svg
-                  aria-hidden="true"
-                  data-icon="plus-square"
-                  fill="currentColor"
+                  class="osui-icon osui-tree-switcherIcon"
                   focusable="false"
-                  height="1em"
-                  viewBox="64 64 896 896"
-                  width="1em"
+                  height="1024"
+                  viewBox="0 0 1024 1024"
+                  width="1024"
                 >
                   <path
-                    d="M328 544h152v152c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V544h152c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H544V328c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v152H328c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8z"
-                  />
-                  <path
-                    d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"
+                    d="M830.447 394.225c14.996-13.633 39.31-13.633 54.306 0 14.996 13.632 14.996 35.736 0 49.369l-345.6 314.181c-14.996 13.633-39.31 13.633-54.306 0l-345.6-314.181c-14.996-13.633-14.996-35.737 0-49.37 14.996-13.632 39.31-13.632 54.306 0L512 683.723l318.447-289.497z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
                   />
                 </svg>
               </span>

@@ -3,7 +3,7 @@
 exports[`Cascader can be selected 1`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-2"
     style="opacity:0;pointer-events:none"
   >
     <div>
@@ -27,8 +27,9 @@ exports[`Cascader can be selected 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -50,8 +51,9 @@ exports[`Cascader can be selected 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -77,8 +79,9 @@ exports[`Cascader can be selected 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -92,7 +95,7 @@ exports[`Cascader can be selected 1`] = `
 exports[`Cascader can be selected 2`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-2"
     style="opacity:0;pointer-events:none"
   >
     <div>
@@ -116,8 +119,9 @@ exports[`Cascader can be selected 2`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -139,8 +143,9 @@ exports[`Cascader can be selected 2`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -166,8 +171,9 @@ exports[`Cascader can be selected 2`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -192,7 +198,7 @@ exports[`Cascader can be selected 2`] = `
 exports[`Cascader can be selected 3`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu ant-cascader-menus-hidden"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-2 ant-cascader-menus-hidden"
     style="pointer-events:none"
   >
     <div>
@@ -216,8 +222,9 @@ exports[`Cascader can be selected 3`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -239,8 +246,9 @@ exports[`Cascader can be selected 3`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -266,8 +274,9 @@ exports[`Cascader can be selected 3`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -292,7 +301,7 @@ exports[`Cascader can be selected 3`] = `
 exports[`Cascader can be selected in RTL direction 1`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu ant-cascader-menu-rtl"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-2 ant-cascader-menu-rtl"
     style="opacity:0;pointer-events:none"
   >
     <div>
@@ -316,8 +325,9 @@ exports[`Cascader can be selected in RTL direction 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -339,8 +349,9 @@ exports[`Cascader can be selected in RTL direction 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -366,8 +377,9 @@ exports[`Cascader can be selected in RTL direction 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -381,7 +393,7 @@ exports[`Cascader can be selected in RTL direction 1`] = `
 exports[`Cascader can be selected in RTL direction 2`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu ant-cascader-menu-rtl"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-2 ant-cascader-menu-rtl"
     style="opacity:0;pointer-events:none"
   >
     <div>
@@ -405,8 +417,9 @@ exports[`Cascader can be selected in RTL direction 2`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -428,8 +441,9 @@ exports[`Cascader can be selected in RTL direction 2`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -455,8 +469,9 @@ exports[`Cascader can be selected in RTL direction 2`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -481,7 +496,7 @@ exports[`Cascader can be selected in RTL direction 2`] = `
 exports[`Cascader have a notFoundContent that fit trigger input width 1`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-0 ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
     style="opacity: 0; pointer-events: none;"
   >
     <div>
@@ -550,7 +565,7 @@ exports[`Cascader have a notFoundContent that fit trigger input width 1`] = `
 exports[`Cascader popup correctly when panel is hidden 1`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu ant-cascader-menus-empty ant-cascader-menus-hidden"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-2 ant-cascader-menus-empty ant-cascader-menus-hidden"
     style="pointer-events:none"
   >
     <div />
@@ -561,7 +576,7 @@ exports[`Cascader popup correctly when panel is hidden 1`] = `
 exports[`Cascader popup correctly when panel is open 1`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-2"
     style="opacity:0;pointer-events:none"
   >
     <div>
@@ -585,8 +600,9 @@ exports[`Cascader popup correctly when panel is open 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -608,8 +624,9 @@ exports[`Cascader popup correctly when panel is open 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -623,7 +640,7 @@ exports[`Cascader popup correctly when panel is open 1`] = `
 exports[`Cascader popup correctly with defaultValue 1`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-2"
     style="opacity:0;pointer-events:none"
   >
     <div>
@@ -647,8 +664,9 @@ exports[`Cascader popup correctly with defaultValue 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -670,8 +688,9 @@ exports[`Cascader popup correctly with defaultValue 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -697,8 +716,9 @@ exports[`Cascader popup correctly with defaultValue 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -723,7 +743,7 @@ exports[`Cascader popup correctly with defaultValue 1`] = `
 exports[`Cascader popup correctly with defaultValue RTL 1`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu ant-cascader-menu-rtl"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-2 ant-cascader-menu-rtl"
     style="opacity:0;pointer-events:none"
   >
     <div>
@@ -747,8 +767,9 @@ exports[`Cascader popup correctly with defaultValue RTL 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -770,8 +791,9 @@ exports[`Cascader popup correctly with defaultValue RTL 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -797,8 +819,9 @@ exports[`Cascader popup correctly with defaultValue RTL 1`] = `
               width="1024"
             >
               <path
-                d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
+                d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
                 fill="currentColor"
+                fill-rule="evenodd"
               />
             </svg>
           </span>
@@ -823,6 +846,7 @@ exports[`Cascader popup correctly with defaultValue RTL 1`] = `
 exports[`Cascader rtl render component should be rendered correctly in RTL direction 1`] = `
 <span
   class="ant-cascader-picker ant-cascader-picker-rtl osui-cascader"
+  style="min-height:-Infinitypx"
   tabindex="0"
 >
   <span
@@ -845,8 +869,9 @@ exports[`Cascader rtl render component should be rendered correctly in RTL direc
     width="1024"
   >
     <path
-      d="M798.255 256L512 563.2 225.745 256 128 358.4 512 768l384-409.6z"
+      d="M830.447 394.225c14.996-13.633 39.31-13.633 54.306 0 14.996 13.632 14.996 35.736 0 49.369l-345.6 314.181c-14.996 13.633-39.31 13.633-54.306 0l-345.6-314.181c-14.996-13.633-14.996-35.737 0-49.37 14.996-13.632 39.31-13.632 54.306 0L512 683.723l318.447-289.497z"
       fill="currentColor"
+      fill-rule="evenodd"
     />
   </svg>
 </span>
@@ -855,7 +880,7 @@ exports[`Cascader rtl render component should be rendered correctly in RTL direc
 exports[`Cascader should highlight keyword and filter when search in Cascader 1`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-2 ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
     style="opacity: 0; pointer-events: none;"
   >
     <div>
@@ -892,7 +917,7 @@ exports[`Cascader should highlight keyword and filter when search in Cascader 1`
 exports[`Cascader should highlight keyword and filter when search in Cascader with same field name of label and value 1`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-2 ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
     style="opacity: 0; pointer-events: none;"
   >
     <div>
@@ -935,7 +960,7 @@ exports[`Cascader should highlight keyword and filter when search in Cascader wi
 exports[`Cascader should render not found content 1`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu ant-cascader-menu-empty ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-2 ant-cascader-menu-empty ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
     style="opacity: 0; pointer-events: none;"
   >
     <div>
@@ -1004,7 +1029,7 @@ exports[`Cascader should render not found content 1`] = `
 exports[`Cascader should show not found content when options.length is 0 1`] = `
 <div>
   <div
-    class="ant-cascader-menus osui-cascader-menu ant-cascader-menu-empty ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
+    class="ant-cascader-menus osui-cascader-menu osui-cascader-menu-0 ant-cascader-menu-empty ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
     style="opacity: 0; pointer-events: none;"
   >
     <div>
@@ -1073,6 +1098,7 @@ exports[`Cascader should show not found content when options.length is 0 1`] = `
 exports[`Cascader support controlled mode 1`] = `
 <span
   class="ant-cascader-picker osui-cascader"
+  style="min-height: 2px;"
   tabindex="0"
 >
   <span
@@ -1126,8 +1152,9 @@ exports[`Cascader support controlled mode 1`] = `
     width="1024"
   >
     <path
-      d="M798.255 256L512 563.2 225.745 256 128 358.4 512 768l384-409.6z"
+      d="M830.447 394.225c14.996-13.633 39.31-13.633 54.306 0 14.996 13.632 14.996 35.736 0 49.369l-345.6 314.181c-14.996 13.633-39.31 13.633-54.306 0l-345.6-314.181c-14.996-13.633-14.996-35.737 0-49.37 14.996-13.632 39.31-13.632 54.306 0L512 683.723l318.447-289.497z"
       fill="currentColor"
+      fill-rule="evenodd"
     />
   </svg>
 </span>
