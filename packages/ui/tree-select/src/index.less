@@ -6,4 +6,37 @@
             color: var(--tree-select-selected-color);
         }
     }
+
+    svg&-switcherIcon {
+        width: 14px;
+        height: 14px;
+        color: var(--theme-icon-color);
+    }
+}
+
+.osui-tree-select-dropdown {
+    // == 调整箭头距离顶部位置 ==
+    .@{ant-prefix}-select-tree-switcher {
+        top: 3px;
+    }
+    // == 调整点击和hover的效果 ==
+    .@{ant-prefix}-select-treenode:not(.ant-select-tree-treenode-disabled) {
+        .@{ant-prefix}-select-tree-node-content-wrapper,
+        .@{ant-prefix}-select-tree-node-content-wrapper-normal {
+            &:not(.@{ant-prefix}-select-tree-node-selected):active {
+                background-color: var(--color-gray-4);
+            }
+        }
+    }
+
+    .@{ant-prefix}-select-tree-node-selected {
+        &:hover {
+            background: var(--color-brand-1);
+        }
+
+        &:active {
+            background: var(--color-brand-2);
+        }
+    }
+    // == 结束 ==
 }

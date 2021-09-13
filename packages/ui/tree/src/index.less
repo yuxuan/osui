@@ -5,6 +5,14 @@
         .@{ant-prefix}-tree-title {
             color: var(--theme-primary-color);
         }
+
+        &:hover {
+            background: var(--color-brand-1);
+        }
+
+        &:active {
+            background: var(--color-brand-2);
+        }
     }
 
     &-small {
@@ -36,27 +44,32 @@
             line-height: 40px;
         }
     }
-
+    // == 调整 switcher icon ==
     .@{ant-prefix}-tree-switcher {
+        top: 3px;
         width: var(--tree-switcher-width);
-
-        &.@{ant-prefix}-tree-switcher-noop + .@{ant-prefix}-tree-node-content-wrapper {
-            padding-left: 0;
-        }
     }
 
-    .@{ant-prefix}-tree-switcher .@{ant-prefix}-tree-switcher-icon,
-    .@{ant-prefix}-tree-switcher .@{ant-prefix}-select-tree-switcher-icon {
-        display: inline-block;
-        font-size: 12px;
-        vertical-align: -.125em;
+    svg&-switcherIcon {
+        width: 14px;
+        height: 14px;
+        color: var(--theme-icon-color);
     }
 
     &.@{ant-prefix}-tree .@{ant-prefix}-tree-node-content-wrapper {
-        padding: 0 10px;
+        margin: 0 10px;
     }
 
     &.@{ant-prefix}-tree .@{ant-prefix}-tree-treenode {
         padding-bottom: 0;
+    }
+
+    // == 调整tree node的点击效果 ==
+    .@{ant-prefix}-tree-treenode:not(.@{ant-prefix}-tree-treenode-disabled) .@{ant-prefix}-tree-node-content-wrapper {
+        &:not(.@{ant-prefix}-tree-node-selected) {
+            &:active {
+                background-color: var(--color-gray-4);
+            }
+        }
     }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import {Tree as AntdTree} from 'antd';
 import {TreeProps as AntdTreeProps} from 'antd/lib/tree';
 import classNames from 'classnames';
+import {IconDownOutlined} from '@osui/icons';
 import './index.less';
 
 const clsPrefix = 'osui-tree';
@@ -15,14 +16,27 @@ interface CompoundedComponent extends React.ForwardRefExoticComponent<TreeProps 
 }
 
 
-const Tree = React.forwardRef<any, TreeProps>(({className, size, blockNode, ...props}, ref) => {
+const Tree = React.forwardRef<any, TreeProps>(({className, size, blockNode, switcherIcon, ...props}, ref) => {
     const innerClassName = classNames(
         className,
         clsPrefix,
         {[`${clsPrefix}-${size}`]: size}
     );
-    const innterBlockNode = blockNode ?? true;
-    return <AntdTree ref={ref} className={innerClassName} blockNode={innterBlockNode} {...props} />;
+    const innerBlockNode = blockNode ?? true;
+    const innerSwitcherIcon = switcherIcon ?? (
+        <span role="img" aria-label="caret-down">
+            <IconDownOutlined className={classNames(`${clsPrefix}-switcherIcon`)} />
+        </span>
+    );
+    return (
+        <AntdTree
+            ref={ref}
+            className={innerClassName}
+            blockNode={innerBlockNode}
+            switcherIcon={innerSwitcherIcon}
+            {...props}
+        />
+    );
 }) as CompoundedComponent;
 
 Tree.TreeNode = AntdTree.TreeNode;

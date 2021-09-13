@@ -4,6 +4,7 @@ import {DefaultValueType} from 'rc-tree-select/lib/interface';
 import {TreeSelectProps as AntdTreeSelectProps, RefTreeSelectProps} from 'antd/lib/tree-select';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
+import {IconDownOutlined} from '@osui/icons';
 import './index.less';
 
 const clsPrefix = 'osui-tree-select';
@@ -14,12 +15,18 @@ const InternalTreeSelect = <T extends DefaultValueType>(
 ) => {
     const innerClassName = classNames(className, clsPrefix);
     const innerDropdownClassName = classNames(dropdownClassName, `${clsPrefix}-dropdown`);
+    const innerSwitcherIcon = props.switcherIcon ?? (
+        <span role="img" aria-label="caret-down">
+            <IconDownOutlined className={classNames(`${clsPrefix}-switcherIcon`)} />
+        </span>
+    );
     return (
         <AntdTreeSelect
             ref={ref}
             className={innerClassName}
             dropdownClassName={innerDropdownClassName}
             {...props}
+            switcherIcon={innerSwitcherIcon}
         />
     );
 };
