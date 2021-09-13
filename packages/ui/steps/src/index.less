@@ -1,6 +1,7 @@
 @osui-steps-class-prefix: osui-steps;
 
 .@{osui-steps-class-prefix} {
+    // == 对navigation模式下的调整，去掉了下划线 ==
     &.@{ant-prefix}-steps-navigation .@{ant-prefix}-steps-item-active {
         &::before {
             height: 0;
@@ -34,19 +35,32 @@
             mask-size: cover;
         }
     }
+    // == 结束 ==
 
-    .@{ant-prefix}-steps-item-title {
+    // == 对title调整字体行高 ==
+    .@{ant-prefix}-steps-item .@{ant-prefix}-steps-item-title {
+        font-size: 14px;
         line-height: var(--steps-item-title-height);
 
         &::after {
             top: 10px;
         }
     }
+    // == 结束 ==
 
-    &.@{ant-prefix}-steps-vertical > .@{ant-prefix}-steps-item > .@{ant-prefix}-steps-item-container > .@{ant-prefix}-steps-item-tail {
-        left: 11px;
+    // == 对description调整字体行高 ==
+    .@{ant-prefix}-steps-item .@{ant-prefix}-steps-item-description {
+        font-size: 12px;
     }
+    // == 结束 ==
 
+    // == 对垂直模式调整竖线位置 ==
+    &.@{ant-prefix}-steps-vertical > .@{ant-prefix}-steps-item > .@{ant-prefix}-steps-item-container > .@{ant-prefix}-steps-item-tail {
+        left: 14px;
+    }
+    // == 结束 ==
+
+    // == process 颜色调整 ==
     .@{ant-prefix}-steps-item-process > .@{ant-prefix}-steps-item-container > .@{ant-prefix}-steps-item-icon {
         color: var(--steps-item-active-icon-color);
         background: var(--steps-item-active-icon-bg-color);
@@ -66,41 +80,125 @@
             }
         }
     }
+    // == 结束 ==
+
+    // == icon内文字行高 ==
+    .@{ant-prefix}-steps-item-icon {
+        line-height: 26px;
+    }
+
+    // == 调整错误状态以及错误状态内行高 ==
+    .@{ant-prefix}-steps-item-error {
+        .@{ant-prefix}-steps-item-icon {
+            line-height: 28px;
+        }
+
+        // 当前错误状态
+        &.@{ant-prefix}-steps-item-active {
+            .@{ant-prefix}-steps-item-icon {
+                background-color: var(--theme-error-color);
+
+                .@{ant-prefix}-steps-icon {
+                    color: var(--theme-component-bg);
+                }
+            }
+        }
+    }
+
+    // == 调整已完成状态以及已完成状态内行高 ==
+    .@{ant-prefix}-steps-item-finish {
+        .@{ant-prefix}-steps-item-icon {
+            line-height: 28px;
+            border-color: var(--color-gray-7);
+
+            .@{ant-prefix}-steps-icon {
+                color: var(--color-gray-7);
+            }
+        }
+    }
 
     // ==================== hover ====================
     &.@{ant-prefix}-steps .@{ant-prefix}-steps-item {
-        &:not(.@{ant-prefix}-steps-item-active) {
-            & > .@{ant-prefix}-steps-item-container[role='button'] {
-                &:hover {
-                    .@{ant-prefix}-steps-item {
-                        &-title,
-                        &-subtitle,
-                        &-description {
-                            color: var(--steps-item-title-color);
-                        }
-                    }
+        .@{ant-prefix}-steps-item-finish {
+            &:hover {
+                border-color: var(--color-gray-7);
+            }
+        }
+    }
+    // 非active状态下的hover
+    &.@{ant-prefix}-steps .@{ant-prefix}-steps-item:not(.@{ant-prefix}-steps-item-active):not(.@{ant-prefix}-steps-item-process) {
+        &.@{ant-prefix}-steps-item-finish,
+        &.@{ant-prefix}-steps-item-wait {
+            > .@{ant-prefix}-steps-item-container[role='button'] {
+                &:hover .@{ant-prefix}-steps-item-icon {
+                    background-color: var(--color-brand-1);
+                    border-color: var(--color-brand-5);
+                }
+
+                &:active .@{ant-prefix}-steps-item-icon {
+                    background-color: var(--color-brand-2);
+                    border-color: var(--color-brand-7);
                 }
             }
         }
 
-        &:not(.@{ant-prefix}-steps-item-process) {
-            & > .@{ant-prefix}-steps-item-container[role='button']:hover {
-                .@{ant-prefix}-steps-item {
-                    &-icon {
-                        border-color: var(--steps-item-icon-color);
+        &.@{ant-prefix}-steps-item-error {
+            > .@{ant-prefix}-steps-item-container[role='button'] {
+                &:hover {
+                    .@{ant-prefix}-steps-item-icon {
+                        background-color: var(--color-error-1);
+                        border-color: var(--color-error-5);
 
                         .@{ant-prefix}-steps-icon {
-                            color: var(--steps-item-icon-color);
+                            color: var(--color-error-5);
                         }
+                    }
+
+                    .@{ant-prefix}-steps-item-title,
+                    .@{ant-prefix}-steps-item-description {
+                        color: var(--color-error-5);
+                    }
+                }
+
+                &:active .@{ant-prefix}-steps-item-icon {
+                    background-color: var(--color-error-2);
+                    border-color: var(--color-error-7);
+
+                    .@{ant-prefix}-steps-icon {
+                        color: var(--color-error-7);
                     }
                 }
             }
         }
     }
+    // == 结束hover调整 ==
+
+    // == dot状态 ==
+    &.@{ant-prefix}-steps.@{ant-prefix}-steps-dot {
+        .@{ant-prefix}-steps-item {
+            .@{ant-prefix}-steps-item-title,
+            .@{ant-prefix}-steps-item-description {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &.@{ant-prefix}-steps-dot .@{ant-prefix}-steps-item-tail,
+    &.@{ant-prefix}-steps-dot.@{ant-prefix}-steps-small .@{ant-prefix}-steps-item-tail {
+        top: 3px;
+
+        &::after {
+            height: 1px;
+        }
+    }
+
+    &.@{ant-prefix}-steps-vertical.@{ant-prefix}-steps-dot .@{ant-prefix}-steps-item > .@{ant-prefix}-steps-item-container > .@{ant-prefix}-steps-item-tail {
+        left: -9px;
+    }
+    // == 结束dot状态调整 ==
 }
 
 // ==================== Compact 模式 ====================
-
 .@{osui-steps-class-prefix}-compact {
     &.@{ant-prefix}-steps.@{ant-prefix}-steps-horizontal.osui-steps {
         display: block;
