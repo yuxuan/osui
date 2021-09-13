@@ -1,4 +1,5 @@
 /* eslint-disable react/no-multi-comp */
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { IconCloseOutlined, IconHomeOutlined, IconDownOutlined, IconPlusOutlined } from '@osui/icons';
 import Divider from '@osui/divider';

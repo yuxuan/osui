@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import message from '@osui/message';
 import Button from '@osui/button';

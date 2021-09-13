@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import {IconHomeOutlined, IconPlusOutlined, IconLeftOutlined} from '@osui/icons';
 import Markdown from '@osui/markdown';

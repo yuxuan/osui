@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
 import InputNumber from '@osui/input-number';

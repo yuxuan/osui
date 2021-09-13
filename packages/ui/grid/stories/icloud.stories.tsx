@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Col from '@osui/col';
 import Row from '@osui/row';

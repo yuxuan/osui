@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Menu from '@osui/menu';
 import {IconDownOutlined} from '@osui/icons';
@@ -6,7 +7,6 @@ import Dropdown from '../src';
 
 export default {
     title: '数据录入/Dropdown 下拉菜单',
-    component: Dropdown,
 };
 
 export const Demo = () => {
@@ -46,7 +46,7 @@ export const Demo = () => {
         <>
             <p>文字下拉</p>
             <Dropdown overlay={menu}>
-                <a onClick={(e) => e.preventDefault()}>
+                <a onClick={e => e.preventDefault()}>
                     <FlexCentered>
                         请选择
                         <IconDownOutlined style={{paddingLeft: '5px'}} />

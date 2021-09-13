@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import {
     MailOutlined,
@@ -15,7 +16,7 @@ export const Demo = () => {
     const {SubMenu} = Menu;
 
     class Sider extends React.Component {
-        handleClick = (e) => {
+        handleClick = e => {
             console.log('click ', e);
             this.setState({
                 current: e.key,

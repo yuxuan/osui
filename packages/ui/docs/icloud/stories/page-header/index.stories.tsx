@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import PageHeader from '@osui/page-header';
 
@@ -9,13 +10,7 @@ export default {
 export const Demo = () => {
     return (
         <>
-            <PageHeader
-                onBack={() => null}
-                title="Title"
-                subTitle="This is a subtitle"
-            />
-            <p>noPadding: padding可以根据排版需要自行设置</p>
-            <PageHeader noPadding title="Title" />
+            <p>请参考业务组件库icloud-ui</p>
         </>
     );
 };

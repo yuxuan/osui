@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Tooltip from '@osui/tooltip';
 import {Space} from 'antd';

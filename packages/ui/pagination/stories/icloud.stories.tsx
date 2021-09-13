@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import BrandProvider from '@osui/brand-provider';
 import Pagination from '../src';

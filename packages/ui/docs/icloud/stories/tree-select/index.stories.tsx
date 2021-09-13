@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import TreeSelect from '@osui/tree-select';
 
@@ -37,7 +38,7 @@ export const Demo = () => {
                             <TreeNode value="leaf2" title="your leaf" />
                         </TreeNode>
                         <TreeNode value="parent 1-1" title="parent 1-1">
-                            <TreeNode value="sss" title="sss" />
+                            <TreeNode value="sss" title="sss" disabled />
                         </TreeNode>
                     </TreeNode>
                 </TreeSelect>

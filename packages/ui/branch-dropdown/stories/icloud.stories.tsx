@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import BranchDropdown from '../src';
 // eslint-disable-next-line @reskript/import-order

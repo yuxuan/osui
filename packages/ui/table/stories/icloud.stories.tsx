@@ -1,5 +1,6 @@
 /* eslint-disable max-lines */
 /* eslint-disable react/no-multi-comp */
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Switch from '@osui/switch';
 import Radio from '@osui/radio';

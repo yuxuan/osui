@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Space from '@osui/space';
 import Divider from '@osui/divider';

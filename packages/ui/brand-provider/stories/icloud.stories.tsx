@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Collapse from '@osui/collapse';
 import Divider from '@osui/divider';

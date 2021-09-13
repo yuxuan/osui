@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { useInputValue } from '@huse/input-value';
 import Input from '@osui/input';

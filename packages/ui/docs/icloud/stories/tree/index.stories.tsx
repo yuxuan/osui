@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable @typescript-eslint/restrict-plus-operands */
 /* eslint-disable init-declarations */
 /* eslint-disable react/no-multi-comp, @typescript-eslint/prefer-for-of */
@@ -107,13 +108,14 @@ export const Demo = () => {
                         {
                             title: 'leaf',
                             key: '0-0-0-1',
+                            disabled: true,
                         },
                     ],
                 },
                 {
                     title: 'parent 1-1',
                     key: '0-0-1',
-                    children: [{ title: <span style={{ color: '#1890ff' }}>sss</span>, key: '0-0-1-0' }],
+                    children: [{ title: <span>sss</span>, key: '0-0-1-0' }],
                 },
             ],
         },

@@ -16,7 +16,7 @@ export const Demo = () => {
     const {SubMenu} = Menu;
 
     class Sider extends React.Component {
-        handleClick = (e: any) => {
+        handleClick = e => {
             console.log('click ', e);
             this.setState({
                 current: e.key,

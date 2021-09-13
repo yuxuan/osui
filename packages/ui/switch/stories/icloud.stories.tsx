@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { Space } from 'antd';
 import { IconCheckOutlined, IconCloseOutlined } from '@osui/icons';
