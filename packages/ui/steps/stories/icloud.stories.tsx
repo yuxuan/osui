@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Button from '@osui/button';
 import Space from '@osui/space';
 import Steps from '../src';
@@ -9,8 +9,8 @@ export default {
 };
 
 export const Demo = () => {
-    const { Step } = Steps;
-    const { Step: ProcessOnlyStep } = Steps.ProcessOnlySteps;
+    const {Step} = Steps;
+    const {Step: ProcessOnlyStep} = Steps.ProcessOnlySteps;
     const [current, setCurrent] = useState(-1);
     const onChange = current => {
         setCurrent(current);
@@ -38,7 +38,7 @@ export const Demo = () => {
             <p></p>
             <p></p>
             <h2>横向步骤条</h2>
-            <Steps current={2} >
+            <Steps current={2}>
                 <Step title="提交申请" description="描述文案" status="finish" />
                 <Step title="产品线分组审批人审批" description="描述文案" status="finish" />
                 <Step title="search-cost审核" description="描述文案" />
@@ -58,7 +58,7 @@ export const Demo = () => {
             <p></p>
             <h2>其它样式</h2>
             <p>可点击切换</p>
-            <Steps current={current} onChange={onChange} >
+            <Steps current={current} onChange={onChange}>
                 <Step title="已完成步骤" description="描述文案" status="finish" />
                 <Step title="当前步骤" description="描述文案" />
                 <Step title="出错步骤" description="描述文案" status="error" />
@@ -118,7 +118,7 @@ export const Demo = () => {
 };
 
 export const CompactDemo = () => {
-    const { Step: ProcessOnlyStep } = Steps.ProcessOnlySteps;
+    const {Step: ProcessOnlyStep} = Steps.ProcessOnlySteps;
     const [current, setCurrent] = useState(-1);
     return (
         <>

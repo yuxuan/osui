@@ -1,0 +1,15 @@
+{
+  "name": "@osui/storybookbase",
+  "private": true,
+  "version": "1.0.0",
+  "main": "main.js",
+  "file": [
+    "main.js"
+  ],
+  "author": "Yuxuan Huo",
+  "license": "MIT",
+  "dependencies": {
+    "@reskript/config-babel": "^2.2.2",
+    "@reskript/config-webpack": "^2.2.2"
+  }
+}
