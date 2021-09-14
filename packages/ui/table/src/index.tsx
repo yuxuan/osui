@@ -97,10 +97,10 @@ const Table = <RecordType extends Record<string, any>>(
     const internalClassNames = classNames(
         clsPrefix,
         className,
-        { [`${clsPrefix}-no-row-border`]: noRowBorder },
-        { [`${clsPrefix}-no-border`]: noBorder },
+        {[`${clsPrefix}-no-row-border`]: noRowBorder},
+        {[`${clsPrefix}-no-border`]: noBorder},
         // icloud-patch
-        { [`${clsPrefix}-icloud`]: brand === 'icloud'}
+        {[`${clsPrefix}-icloud`]: brand === 'icloud'}
     );
 
     // ==================== pagination ====================

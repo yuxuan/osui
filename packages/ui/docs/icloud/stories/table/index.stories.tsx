@@ -73,13 +73,14 @@ export const Demo = () => {
 
 
     return (
-        <div style={{ padding: 30 }}>
+        <div style={{padding: 30}}>
             <BrandProvider brand="icloud">
                 <Table columns={columns} dataSource={data} />
                 <br />
                 <Table columns={columns} />
             </BrandProvider>
-        </div>);
+        </div>
+    );
 };
 
 
@@ -125,18 +126,19 @@ export const Border = () => {
     ];
 
     return (
-        <div style={{ padding: 30 }}>
+        <div style={{padding: 30}}>
             <BrandProvider brand="icloud">
                 <div>Antd的bordered=false，没有列border</div>
                 <Table columns={columns} dataSource={data} bordered={false} />
-                <div style={{ paddingBottom: 30 }} />
+                <div style={{paddingBottom: 30}} />
                 <div>noRowBorder，head保留border</div>
                 <Table columns={columns} dataSource={data} noRowBorder />
-                <div style={{ paddingBottom: 30 }} />
+                <div style={{paddingBottom: 30}} />
                 <div>noBorder，全部没有border</div>
                 <Table columns={columns} dataSource={data} noBorder />
             </BrandProvider>
-        </div>);
+        </div>
+    );
 };
 
 export const ExpandableDemo = () => {
@@ -316,12 +318,12 @@ export const TreeTableDemo = () => {
         return (
             <>
                 <BrandProvider brand="icloud">
-                    <Space align="center" style={{ marginBottom: 16 }}>
+                    <Space align="center" style={{marginBottom: 16}}>
                         CheckStrictly: <Switch checked={checkStrictly} onChange={setCheckStrictly} />
                     </Space>
                     <Table
                         columns={columns}
-                        rowSelection={{ ...rowSelection, checkStrictly }}
+                        rowSelection={{...rowSelection, checkStrictly}}
                         dataSource={data}
                     />
                 </BrandProvider>
@@ -339,6 +341,7 @@ export const CheckboxDemo = () => {
         {
             title: 'Name',
             dataIndex: 'name',
+            fixed: true,
         },
         {
             title: 'Age',
@@ -367,11 +370,11 @@ export const CheckboxDemo = () => {
 
         onSelectChange = selectedRowKeys => {
             console.log('selectedRowKeys changed: ', selectedRowKeys);
-            this.setState({ selectedRowKeys });
+            this.setState({selectedRowKeys});
         };
 
         render() {
-            const { selectedRowKeys } = this.state;
+            const {selectedRowKeys} = this.state;
             const rowSelection = {
                 selectedRowKeys,
                 onChange: this.onSelectChange,
@@ -390,7 +393,7 @@ export const CheckboxDemo = () => {
                                 }
                                 return true;
                             });
-                            this.setState({ selectedRowKeys: newSelectedRowKeys });
+                            this.setState({selectedRowKeys: newSelectedRowKeys});
                         },
                     },
                     {
@@ -404,7 +407,7 @@ export const CheckboxDemo = () => {
                                 }
                                 return false;
                             });
-                            this.setState({ selectedRowKeys: newSelectedRowKeys });
+                            this.setState({selectedRowKeys: newSelectedRowKeys});
                         },
                     },
                 ],
@@ -479,7 +482,7 @@ export const CompleteDemo = () => {
     const title = () => 'Here is title';
     const showHeader = true;
     const footer = () => 'Here is footer';
-    const pagination = { position: 'bottom', showQuickJumper: true };
+    const pagination = {position: 'bottom', showQuickJumper: true};
 
     class Demo extends React.Component {
         state: TableProps<any> = {
@@ -500,55 +503,55 @@ export const CompleteDemo = () => {
         };
 
         handleToggle = prop => enable => {
-            this.setState({ [prop]: enable });
+            this.setState({[prop]: enable});
         };
 
         handleSizeChange = e => {
-            this.setState({ size: e.target.value });
+            this.setState({size: e.target.value});
         };
 
         handleTableLayoutChange = e => {
-            this.setState({ tableLayout: e.target.value });
+            this.setState({tableLayout: e.target.value});
         };
 
         handleExpandChange = enable => {
-            this.setState({ expandable: enable ? expandable : undefined });
+            this.setState({expandable: enable ? expandable : undefined});
         };
 
         handleEllipsisChange = enable => {
-            this.setState({ ellipsis: enable });
+            this.setState({ellipsis: enable});
         };
 
         handleTitleChange = enable => {
-            this.setState({ title: enable ? title : undefined });
+            this.setState({title: enable ? title : undefined});
         };
 
         handleHeaderChange = enable => {
-            this.setState({ showHeader: enable ? showHeader : false });
+            this.setState({showHeader: enable ? showHeader : false});
         };
 
         handleFooterChange = enable => {
-            this.setState({ footer: enable ? footer : undefined });
+            this.setState({footer: enable ? footer : undefined});
         };
 
         handleRowSelectionChange = enable => {
-            this.setState({ rowSelection: enable ? {} : undefined });
+            this.setState({rowSelection: enable ? {} : undefined});
         };
 
         handleYScrollChange = enable => {
-            this.setState({ yScroll: enable });
+            this.setState({yScroll: enable});
         };
 
         handleXScrollChange = e => {
-            this.setState({ xScroll: e.target.value });
+            this.setState({xScroll: e.target.value});
         };
 
         handleDataChange = hasData => {
-            this.setState({ hasData });
+            this.setState({hasData});
         };
 
         render() {
-            const { xScroll, yScroll, ...state } = this.state;
+            const {xScroll, yScroll, ...state} = this.state;
 
             const scroll = {};
             if (yScroll) {
@@ -558,7 +561,7 @@ export const CompleteDemo = () => {
                 scroll.x = '100vw';
             }
 
-            const tableColumns = columns.map(item => ({ ...item, ellipsis: state.ellipsis }));
+            const tableColumns = columns.map(item => ({...item, ellipsis: state.ellipsis}));
             if (xScroll === 'fixed') {
                 tableColumns[0].fixed = true;
                 tableColumns[tableColumns.length - 1].fixed = 'right';
@@ -575,7 +578,7 @@ export const CompleteDemo = () => {
                         <Form
                             layout="inline"
                             className="components-table-demo-control-bar"
-                            style={{ marginBottom: 16 }}
+                            style={{marginBottom: 16}}
                         >
                             <Form.Item label="Bordered">
                                 <Switch checked={state.bordered} onChange={this.handleToggle('bordered')} />
@@ -631,7 +634,7 @@ export const CompleteDemo = () => {
                                 <Radio.Group
                                     value={this.state.top}
                                     onChange={e => {
-                                        this.setState({ top: e.target.value });
+                                        this.setState({top: e.target.value});
                                     }}
                                 >
                                     <Radio.Button value="topLeft">TopLeft</Radio.Button>
@@ -644,7 +647,7 @@ export const CompleteDemo = () => {
                                 <Radio.Group
                                     value={this.state.bottom}
                                     onChange={e => {
-                                        this.setState({ bottom: e.target.value });
+                                        this.setState({bottom: e.target.value});
                                     }}
                                 >
                                     <Radio.Button value="bottomLeft">BottomLeft</Radio.Button>
@@ -794,7 +797,7 @@ export const TestCase = () => {
         return (
             <Table
                 columns={columns}
-                rowSelection={{ ...rowSelection, checkStrictly }}
+                rowSelection={{...rowSelection, checkStrictly}}
                 dataSource={data}
             />
         );
@@ -826,7 +829,7 @@ export const TestCase2 = () => {
         });
     }
     // 会有一个warning
-    const pagination = { total: 100, pageSize: 10, current: 2 };
+    const pagination = {total: 100, pageSize: 10, current: 2};
     return (
         <Table
             columns={columns}

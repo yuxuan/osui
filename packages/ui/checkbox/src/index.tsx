@@ -20,7 +20,7 @@ interface CompoundedComponent
     __ANT_CHECKBOX: boolean;
 }
 
-const Checkbox: CompoundedComponent = React.forwardRef(({className, ...props }, ref) => {
+const Checkbox: CompoundedComponent = React.forwardRef(({className, ...props}, ref) => {
     return <AntdCheckbox ref={ref} className={classNames(clsPrefix, className)} {...props} />;
 }) as CompoundedComponent;
 
@@ -28,5 +28,5 @@ Checkbox.Group = CheckboxGroup;
 // eslint-disable-next-line no-underscore-dangle
 Checkbox.__ANT_CHECKBOX = true;
 
-export type {CheckboxOptionType} from 'antd/lib/checkbox';
+export type {CheckboxOptionType, CheckboxChangeEvent} from 'antd/lib/checkbox';
 export default Checkbox;

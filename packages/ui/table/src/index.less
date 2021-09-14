@@ -43,6 +43,11 @@
             }
         }
     }
+    // 修复sticky时升高z-index，不然箭头会被挡住
+    .@{ant-prefix}-table-selection-column.@{ant-prefix}-table-cell-fix-left,
+    .@{ant-prefix}-table-selection-column.@{ant-prefix}-table-cell-fix-right {
+        z-index: 3;
+    }
 
     // ===== 以下用class来patch，因为侵入性比较强 ======
     &-icloud {

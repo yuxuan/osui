@@ -12,7 +12,7 @@ export type {CardProps} from '@osui/card';
 export type {CollapseProps, CollapsePanelProps} from '@osui/collapse';
 export type {CarouselProps} from '@osui/carousel';
 export type {CascaderProps} from '@osui/cascader';
-export type {CheckboxProps, CheckboxOptionType} from '@osui/checkbox';
+export type {CheckboxProps, CheckboxOptionType, CheckboxChangeEvent} from '@osui/checkbox';
 export type {ColProps} from '@osui/col';
 export type {CommentProps} from '@osui/comment';
 export type {DatePickerProps} from '@osui/date-picker';

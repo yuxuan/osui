@@ -98,7 +98,6 @@ export const Demo = () => {
                 {
                     title: 'parent 1-0',
                     key: '0-0-0',
-                    disabled: true,
                     children: [
                         {
                             title: 'leaf',
@@ -115,7 +114,7 @@ export const Demo = () => {
                 {
                     title: 'parent 1-1',
                     key: '0-0-1',
-                    children: [{ title: <span>sss</span>, key: '0-0-1-0' }],
+                    children: [{title: <span>sss</span>, key: '0-0-1-0'}],
                 },
             ],
         },
@@ -132,9 +131,9 @@ export const Demo = () => {
 
         return (
             <Tree
-                defaultExpandedKeys={['0-0-0', '0-0-1']}
-                defaultSelectedKeys={['0-0-0', '0-0-1']}
-                defaultCheckedKeys={['0-0-0', '0-0-1']}
+                defaultExpandedKeys={['0-0-0']}
+                defaultSelectedKeys={['0-0-0']}
+                defaultCheckedKeys={['0-0-0']}
                 onSelect={onSelect}
                 onCheck={onCheck}
                 treeData={treeData}
@@ -151,14 +150,14 @@ export const DraggableDemo = () => {
     const z = 1;
     const gData = [];
 
-    const generateData = (_level, _preKey, _tns) => {
+    const generateData = (_level, _preKey = 0, _tns = []) => {
         const preKey = _preKey || '0';
         const tns = _tns || gData;
 
         const children = [];
         for (let i = 0; i < x; i++) {
             const key = `${preKey}-${i}`;
-            tns.push({ title: key, key });
+            tns.push({title: key, key});
             if (i < y) {
                 children.push(key);
             }
@@ -234,8 +233,8 @@ export const DraggableDemo = () => {
                     // item to the tail of the children
                 });
             } else {
-                let ar;
-                let i;
+                let ar = [];
+                let i = 0;
                 loop(data, dropKey, (item, index, arr) => {
                     ar = arr;
                     i = index;
@@ -280,14 +279,14 @@ export const SearchDemo = () => {
     const z = 1;
     const gData = [];
 
-    const generateData = (_level, _preKey, _tns) => {
+    const generateData = (_level, _preKey = 0, _tns = []) => {
         const preKey = _preKey || '0';
         const tns = _tns || gData;
 
         const children = [];
         for (let i = 0; i < x; i++) {
             const key = `${preKey}-${i}`;
-            tns.push({ title: key, key });
+            tns.push({title: key, key});
             if (i < y) {
                 children.push(key);
             }
@@ -307,8 +306,8 @@ export const SearchDemo = () => {
     const generateList = data => {
         for (let i = 0; i < data.length; i++) {
             const node = data[i];
-            const { key } = node;
-            dataList.push({ key, title: key });
+            const {key} = node;
+            dataList.push({key, title: key});
             if (node.children) {
                 generateList(node.children);
             }
@@ -317,7 +316,7 @@ export const SearchDemo = () => {
     generateList(gData);
 
     const getParentKey = (key, tree) => {
-        let parentKey;
+        let parentKey = null;
         for (let i = 0; i < tree.length; i++) {
             const node = tree[i];
             if (node.children) {
@@ -346,7 +345,7 @@ export const SearchDemo = () => {
         };
 
         onChange = e => {
-            const { value } = e.target;
+            const {value} = e.target;
             const expandedKeys = dataList
                 .map(item => {
                     if (item.title.indexOf(value) > -1) {
@@ -363,7 +362,7 @@ export const SearchDemo = () => {
         };
 
         render() {
-            const { searchValue, expandedKeys, autoExpandParent } = this.state;
+            const {searchValue, expandedKeys, autoExpandParent} = this.state;
             const loop = data =>
                 data.map(item => {
                     const index = item.title.indexOf(searchValue);
@@ -380,7 +379,7 @@ export const SearchDemo = () => {
                             <span>{item.title}</span>
                         );
                     if (item.children) {
-                        return { title, key: item.key, children: loop(item.children) };
+                        return {title, key: item.key, children: loop(item.children)};
                     }
 
                     return {
@@ -421,3 +420,95 @@ export const Api = () => {
     );
 };
 
+export const TestCase = () => {
+    const treeData = [
+        {
+            title: 'parent 1',
+            key: '0-0',
+            children: [
+                {
+                    title: 'parent 1-0',
+                    key: '0-0-0',
+                    children: [
+                        {
+                            title: 'leaf',
+                            key: '0-0-0-0',
+                        },
+                        {
+                            title: 'leaf',
+                            key: '0-0-0-1',
+                        },
+                    ],
+                },
+                {
+                    title: 'parent 1-1',
+                    key: '0-0-1',
+                    children: [{title: <span>sss</span>, key: '0-0-1-0'}],
+                },
+            ],
+        },
+    ];
+
+    const generateTreeNode = (data: any[]) => {
+        if (!data) {
+            return [];
+        }
+        return data.map(d => (
+            <Tree.TreeNode
+                selectable={false}
+                key={d.key}
+                title={d.title}
+                className="osui-tree-tree-node-unselectable"
+            >
+                {generateTreeNode(d.children)}
+            </Tree.TreeNode>
+        ));
+    };
+
+    const Demo = () => {
+        const onSelect = (selectedKeys: React.Key[], info: any) => {
+            console.log('selected', selectedKeys, info);
+        };
+
+        const onCheck = (checkedKeys: React.Key[], info: any) => {
+            console.log('onCheck', checkedKeys, info);
+        };
+
+        return (
+            <>
+                <p>
+                    {`
+                    selectable={false}时，需要添加osui-tree-tree-node-unselectable这个className
+                    可以添加到treeData上，也可以在children里面的TreeNode上
+                    `}
+                </p>
+                <p>注意，osui-tree-tree-node-unselectable要结合selectable一起使用</p>
+                <Tree
+                    defaultExpandedKeys={['0-0-0']}
+                    defaultSelectedKeys={['0-0-0']}
+                    defaultCheckedKeys={['0-0-0']}
+                    onSelect={onSelect}
+                    onCheck={onCheck}
+                >
+                    {generateTreeNode(treeData)}
+                </Tree>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p>整棵树selectable为false的时候</p>
+                <p>这时，selected key 也不会高亮了</p>
+                <Tree
+                    defaultExpandedKeys={['0-0-0']}
+                    defaultSelectedKeys={['0-0-0']}
+                    defaultCheckedKeys={['0-0-0']}
+                    onSelect={onSelect}
+                    onCheck={onCheck}
+                    treeData={treeData}
+                    selectable={false}
+                />
+            </>
+        );
+    };
+
+    return <Demo />;
+};

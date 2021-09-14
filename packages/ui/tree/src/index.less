@@ -65,10 +65,24 @@
     }
 
     // == 调整tree node的点击效果 ==
-    .@{ant-prefix}-tree-treenode:not(.@{ant-prefix}-tree-treenode-disabled) .@{ant-prefix}-tree-node-content-wrapper {
+    .@{ant-prefix}-tree-node-content-wrapper {
         &:not(.@{ant-prefix}-tree-node-selected) {
             &:active {
                 background-color: var(--color-gray-4);
+            }
+        }
+    }
+    // unselectable 时的treenode效果
+    &.@{ant-prefix}-tree-unselectable .@{ant-prefix}-tree-treenode,
+    .@{ant-prefix}-tree-treenode-disabled,
+    .osui-tree-tree-node-unselectable {
+        .@{ant-prefix}-tree-node-content-wrapper {
+            background-color: transparent;
+            cursor: not-allowed;
+
+            &:hover,
+            &:active {
+                background-color: transparent;
             }
         }
     }
