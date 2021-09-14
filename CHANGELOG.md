@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.8](https://gitee.com/gitee-fe/osui/compare/v1.1.7...v1.1.8) (2021-09-14)
+
+
+### Bug Fixes
+
+* checkbox导出类型增加, table修复bug, tree修复unselectable ([bff5507](https://gitee.com/gitee-fe/osui/commits/bff5507daf985701bc5d859ba6aba4cd01733673))
+
+
+
+
+
 ## 1.1.7
 
 ### 功能调整
