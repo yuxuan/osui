@@ -1,4 +1,27 @@
 # Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [1.1.7](https://gitee.com/gitee-fe/osui/compare/v1.1.6...v1.1.7) (2021-09-14)
+
+
+### Bug Fixes
+
+* 调整tree, tree-select ([c10e05c](https://gitee.com/gitee-fe/osui/commits/c10e05c19ae8cfb974fda056d7d5097e6a6c170c))
+* 类型补充 ([3715bee](https://gitee.com/gitee-fe/osui/commits/3715bee406b59233ede86629c7d098b724ac5ee4))
+* 取消对page-header的调整 ([0df8cf3](https://gitee.com/gitee-fe/osui/commits/0df8cf3ef51e0745dbb172f548b69f25a0dd118b))
+* cascader最小高度调整 ([5a20320](https://gitee.com/gitee-fe/osui/commits/5a203207de9aa35debde4811ad3ccc6c4000b8e0))
+* form useLabelLayout默认80px宽 ([4ae7446](https://gitee.com/gitee-fe/osui/commits/4ae7446cd780b2ea93d4ab278b779602cdb08ba6))
+* page-header调整 ([e87549c](https://gitee.com/gitee-fe/osui/commits/e87549c9d19ef86542dd2c83f142ab640e13fb5a))
+* popover 关闭icon调整 ([211832f](https://gitee.com/gitee-fe/osui/commits/211832fabe95f62d43e52af780dfd9fae23ed4ab))
+* steps调整 ([29aee17](https://gitee.com/gitee-fe/osui/commits/29aee17b9e29c210bcbdcdb3bfd8d2d771b4cf2e))
+
+
+
+
+
+# Change Log
 ## 1.1.6
 
 ### 功能调整

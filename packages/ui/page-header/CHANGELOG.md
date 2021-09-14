@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.6...v1.1.7) (2021-09-14)
+
+
+### Bug Fixes
+
+* 取消对page-header的调整 ([0df8cf3](https://gitee.com/gitee-fe/osui/tree/master/commits/0df8cf3ef51e0745dbb172f548b69f25a0dd118b))
+* page-header调整 ([e87549c](https://gitee.com/gitee-fe/osui/tree/master/commits/e87549c9d19ef86542dd2c83f142ab640e13fb5a))
+
+
+
+
+
 ## [1.1.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.1...v1.1.2) (2021-08-18)
 
 

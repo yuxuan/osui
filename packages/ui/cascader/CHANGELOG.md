@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.6...v1.1.7) (2021-09-14)
+
+
+### Bug Fixes
+
+* cascader最小高度调整 ([5a20320](https://gitee.com/gitee-fe/osui/tree/master/commits/5a203207de9aa35debde4811ad3ccc6c4000b8e0))
+
+
+
+
+
 ## [1.1.6](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.5...v1.1.6) (2021-09-03)
 
 

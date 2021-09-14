@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.6...v1.1.7) (2021-09-14)
+
+
+### Bug Fixes
+
+* 调整tree, tree-select ([c10e05c](https://gitee.com/gitee-fe/osui/tree/master/commits/c10e05c19ae8cfb974fda056d7d5097e6a6c170c))
+
+
+
+
+
 ## [1.1.6](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.5...v1.1.6) (2021-09-03)
 
 

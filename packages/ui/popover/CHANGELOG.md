@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.6...v1.1.7) (2021-09-14)
+
+
+### Bug Fixes
+
+* popover 关闭icon调整 ([211832f](https://gitee.com/gitee-fe/osui/tree/master/commits/211832fabe95f62d43e52af780dfd9fae23ed4ab))
+
+
+
+
+
 ## [1.1.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.1...v1.1.2) (2021-08-18)
 
 
