@@ -2,17 +2,104 @@
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+## 1.1.8
 
-## [1.1.8](https://gitee.com/gitee-fe/osui/compare/v1.1.7...v1.1.8) (2021-09-14)
+### 功能调整
 
+- Storybook
+  - storybook升级，webpack5升级，reskript升级
+- @osui/ui
+  - 导出类型 CheckboxChangeEvent
+- Table
+  - 修复第一列fix时下拉箭头被挡住部分的问题
+- Tree
+  - 增加osui-tree-tree-node-unselectable class，用来给`selectable={false}`的TreeNode增加样式的区分
 
-### Bug Fixes
-
-* checkbox导出类型增加, table修复bug, tree修复unselectable ([bff5507](https://gitee.com/gitee-fe/osui/commits/bff5507daf985701bc5d859ba6aba4cd01733673))
-
-
-
-
+### 组件更新
+说明：这些更新都是依赖更新
+```
+- @osui/icloud-theme: 1.1.7 => 1.1.8
+ - @osui/theme: 1.1.7 => 1.1.8
+ - @osui/affix: 1.1.7 => 1.1.8
+ - @osui/alert: 1.1.7 => 1.1.8
+ - @osui/anchor: 1.1.7 => 1.1.8
+ - @osui/auto-complete: 1.1.7 => 1.1.8
+ - @osui/avatar: 1.1.7 => 1.1.8
+ - @osui/back-top: 1.1.7 => 1.1.8
+ - @osui/badge: 1.1.7 => 1.1.8
+ - @osui/branch-dropdown: 1.1.7 => 1.1.8
+ - @osui/brand-provider: 1.1.7 => 1.1.8
+ - @osui/breadcrumb: 1.1.7 => 1.1.8
+ - @osui/button: 1.1.7 => 1.1.8
+ - @osui/calendar: 1.1.7 => 1.1.8
+ - @osui/card: 1.1.7 => 1.1.8
+ - @osui/carousel: 1.1.7 => 1.1.8
+ - @osui/cascader: 1.1.7 => 1.1.8
+ - @osui/checkbox: 1.1.7 => 1.1.8
+ - @osui/col: 1.1.7 => 1.1.8
+ - @osui/collapse: 1.1.7 => 1.1.8
+ - @osui/comment: 1.1.7 => 1.1.8
+ - @osui/config-provider: 1.1.7 => 1.1.8
+ - @osui/date-picker: 1.1.7 => 1.1.8
+ - @osui/descriptions: 1.1.7 => 1.1.8
+ - @osui/directory-navigator: 1.1.7 => 1.1.8
+ - @osui/divider: 1.1.7 => 1.1.8
+ - @osui/drawer: 1.1.7 => 1.1.8
+ - @osui/dropdown: 1.1.7 => 1.1.8
+ - @osui/empty: 1.1.7 => 1.1.8
+ - @osui/flex-centered: 1.1.7 => 1.1.8
+ - @osui/form: 1.1.7 => 1.1.8
+ - @osui/gap: 1.1.7 => 1.1.8
+ - @osui/grid: 1.1.7 => 1.1.8
+ - @osui/highlight-text: 1.1.7 => 1.1.8
+ - @osui/image: 1.1.7 => 1.1.8
+ - @osui/input-number: 1.1.7 => 1.1.8
+ - @osui/input: 1.1.7 => 1.1.8
+ - @osui/joyride: 1.1.7 => 1.1.8
+ - @osui/layout: 1.1.7 => 1.1.8
+ - @osui/list: 1.1.7 => 1.1.8
+ - @osui/markdown: 1.1.7 => 1.1.8
+ - @osui/mentions: 1.1.7 => 1.1.8
+ - @osui/menu-dropdown: 1.1.7 => 1.1.8
+ - @osui/menu: 1.1.7 => 1.1.8
+ - @osui/message: 1.1.7 => 1.1.8
+ - @osui/modal: 1.1.7 => 1.1.8
+ - @osui/notification: 1.1.7 => 1.1.8
+ - @osui/page-header: 1.1.7 => 1.1.8
+ - @osui/pagination: 1.1.7 => 1.1.8
+ - @osui/popconfirm: 1.1.7 => 1.1.8
+ - @osui/popover: 1.1.7 => 1.1.8
+ - @osui/progress: 1.1.7 => 1.1.8
+ - @osui/quick-edit: 1.1.7 => 1.1.8
+ - @osui/radio: 1.1.7 => 1.1.8
+ - @osui/rate: 1.1.7 => 1.1.8
+ - @osui/result: 1.1.7 => 1.1.8
+ - @osui/row: 1.1.7 => 1.1.8
+ - @osui/search-select-list: 1.1.7 => 1.1.8
+ - @osui/select: 1.1.7 => 1.1.8
+ - @osui/skeleton: 1.1.7 => 1.1.8
+ - @osui/slider: 1.1.7 => 1.1.8
+ - @osui/space: 1.1.7 => 1.1.8
+ - @osui/spin: 1.1.7 => 1.1.8
+ - @osui/statistic: 1.1.7 => 1.1.8
+ - @osui/steps: 1.1.7 => 1.1.8
+ - @osui/switch: 1.1.7 => 1.1.8
+ - @osui/table: 1.1.7 => 1.1.8
+ - @osui/tabs: 1.1.7 => 1.1.8
+ - @osui/tag: 1.1.7 => 1.1.8
+ - @osui/text-overflow-tooltip: 1.1.7 => 1.1.8
+ - @osui/time-picker: 1.1.7 => 1.1.8
+ - @osui/timeline: 1.1.7 => 1.1.8
+ - @osui/toggle-button: 1.1.7 => 1.1.8
+ - @osui/tooltip: 1.1.7 => 1.1.8
+ - @osui/transfer: 1.1.7 => 1.1.8
+ - @osui/tree-select: 1.1.7 => 1.1.8
+ - @osui/tree: 1.1.7 => 1.1.8
+ - @osui/typography: 1.1.7 => 1.1.8
+ - @osui/ui: 1.1.7 => 1.1.8
+ - @osui/upload: 1.1.7 => 1.1.8
+ - @osui/version: 1.1.7 => 1.1.8
+```
 
 ## 1.1.7
 
