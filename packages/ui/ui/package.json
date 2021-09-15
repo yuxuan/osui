@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -19,7 +19,8 @@
         "storybook": "start-storybook -p 8700",
         "clean": "rm -rf node_modules && rm -rf es",
         "test": "jest --config jest.config.js",
-        "sb-upgrade": "sb upgrade"
+        "sb-upgrade": "sb upgrade",
+        "prepublishOnly": "yarn run build-all"
     },
     "sideEffects": [
         "es/**/*.less"
