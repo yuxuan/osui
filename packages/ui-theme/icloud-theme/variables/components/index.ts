@@ -1,4 +1,5 @@
 import alert from './alert';
+import anchor from './anchor';
 import backtop from './back-top';
 import badge from './badge';
 import breadcrumb from './breadcrumb';
@@ -33,6 +34,7 @@ import treeselect from './tree-select';
 
 export default {
     ...alert,
+    ...anchor,
     ...backtop,
     ...badge,
     ...breadcrumb,
