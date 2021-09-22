@@ -10,7 +10,7 @@ import Form from '@osui/form';
 import Gap from '@osui/gap';
 import version from '@osui/version';
 import Input from '../src';
-const { TextArea } = Input;
+const {TextArea} = Input;
 
 const Blockquote = ({children}) => (
     <blockquote style={{
@@ -162,7 +162,8 @@ export const Demo = () => {
                     </Form.Item>
                 </Form>
             </BrandProvider>
-        </>);
+        </>
+    );
 };
 
 export const Size = () => {
@@ -215,9 +216,9 @@ export const Size = () => {
 
 
 export const Complete = () => {
-    const { Option } = Select;
+    const {Option} = Select;
     // eslint-disable-next-line comma-dangle
-    const selectStyle = { width: '78px', };
+    const selectStyle = {width: '78px'};
 
     const selectBefore = (
         <Select defaultValue="http://" className="select-before" style={selectStyle}>
@@ -292,7 +293,7 @@ export const Complete = () => {
                         width: '70%',
                     }}
                     placeholder="Email"
-                    options={[{ value: 'text 1' }, { value: 'text 2' }]}
+                    options={[{value: 'text 1'}, {value: 'text 2'}]}
                 />
             </Input.Group>
 
@@ -359,7 +360,7 @@ export const Complete = () => {
                                 width: '70%',
                             }}
                             placeholder="Email"
-                            options={[{ value: 'text 1' }, { value: 'text 2' }]}
+                            options={[{value: 'text 1'}, {value: 'text 2'}]}
                         />
                     </Input.Group>
                 </Form.Item>

@@ -1,0 +1,44 @@
+@osui-time-picker-class-prefix: osui-time-picker;
+
+.@{osui-time-picker-class-prefix} {
+    // popup
+    &-dropdown {
+        // 普通状态
+        .@{ant-prefix}-picker-time-panel-column > li.@{ant-prefix}-picker-time-panel-cell:not(.@{ant-prefix}-picker-time-panel-cell-disabled) {
+            .@{ant-prefix}-picker-time-panel-cell-inner {
+                &:hover {
+                    background: var(--item-hover-bg);
+                }
+
+                &:active {
+                    color: var(--theme-primary-color);
+                    background: var(--color-gray-4);
+                }
+            }
+        }
+
+        .@{ant-prefix}-picker-time-panel-column > li.@{ant-prefix}-picker-time-panel-cell-disabled {
+            .@{ant-prefix}-picker-time-panel-cell-inner {
+                &:hover {
+                    background: var(--theme-component-bg);
+                }
+            }
+        }
+
+        // selected状态
+        .@{ant-prefix}-picker-time-panel-column > li.@{ant-prefix}-picker-time-panel-cell-selected {
+            .@{ant-prefix}-picker-time-panel-cell-inner {
+                color: var(--theme-primary-color);
+                background: var(--theme-component-bg);
+
+                &:hover {
+                    background: var(--item-hover-bg);
+                }
+
+                &:active {
+                    background: var(--color-gray-4);
+                }
+            }
+        }
+    }
+}

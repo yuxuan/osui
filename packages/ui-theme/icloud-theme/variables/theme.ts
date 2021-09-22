@@ -40,5 +40,6 @@ export default {
     '--theme-warning-color-active': 'var(--color-warning-7)',
     '--theme-warning-color-hover': 'var(--color-warning-5)',
     '--theme-warning-color': 'var(--color-warning-6)',
+    '--item-hover-bg': 'var(--color-gray-3)',
     '--osui-icon-size': '16px',
 };
