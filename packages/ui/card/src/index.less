@@ -1,0 +1,19 @@
+@osui-card-class-prefix: osui-card;
+
+.@{osui-card-class-prefix} {
+    &-compact {
+        .@{ant-prefix}-card-head {
+            font-size: 14px;
+            border-bottom: 0;
+
+            .@{ant-prefix}-card-head-title,
+            .@{ant-prefix}-card-extra {
+                padding: 20px 0 0 0;
+            }
+        }
+
+        .@{ant-prefix}-card-body {
+            padding-top: 12px;
+        }
+    }
+}

@@ -1,6 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import Button from '@osui/button';
 import Result from '../src';
 
 export default {
@@ -12,13 +11,13 @@ export const Demo = () => {
     return (
         <Result
             status="success"
-            title="Success!"
-            subTitle="Order number: 123456789."
+            title="订单支付成功!"
+            subTitle="请耐心等待产品线交付，如资源交付失败支付金额会退回至您的账户余额"
             extra={[
-                <Button type="primary" key="console">
-                    Go Console
-                </Button>,
-                <Button key="buy">Buy Again</Button>,
+                <a type="primary" key="console">
+                    返回管理实例
+                </a>,
+                <a key="buy">查看订单明细</a>,
             ]}
         />
     );
