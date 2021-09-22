@@ -9,7 +9,7 @@ export default {
 
 export const Demo = () => {
 
-    const { Option } = Mentions;
+    const {Option} = Mentions;
 
     function onChange(value) {
         console.log('Change:', value);
@@ -20,16 +20,22 @@ export const Demo = () => {
     }
 
     return (
-        <Mentions
-            style={{ width: '100%' }}
-            onChange={onChange}
-            onSelect={onSelect}
-            defaultValue="@afc163"
-        >
-            <Option value="afc163">afc163</Option>
-            <Option value="zombieJ">zombieJ</Option>
-            <Option value="yesmeck">yesmeck</Option>
-        </Mentions>
+        <>
+            <p>见业务组件库icloud-ui的用户选择器</p>
+            <p></p>
+            <p></p>
+            <p>以下为Antd原生demo</p>
+            <Mentions
+                style={{width: '100%'}}
+                onChange={onChange}
+                onSelect={onSelect}
+                defaultValue="@afc163"
+            >
+                <Option value="afc163">afc163</Option>
+                <Option value="zombieJ">zombieJ</Option>
+                <Option value="yesmeck">yesmeck</Option>
+            </Mentions>
+        </>
     );
 };
 

@@ -27,14 +27,12 @@ export const Demo = () => {
             <Form
                 name="demo"
                 labelAlign="left"
-                labelCol={{span: 4}}
                 wrapperCol={{span: 8}}
             >
                 <Form.Item
                     validateMessageLayout="inline"
                     validateStatus="error"
                     help={'格式错误，请按提示规则录入'}
-                    style={{width: 350}}
                 >
                     <TimePicker style={{width: 160}} />
                 </Form.Item>

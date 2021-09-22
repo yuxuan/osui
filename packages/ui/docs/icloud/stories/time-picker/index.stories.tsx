@@ -1,6 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Divider from '@osui/divider';
+import BrandProvider from '@osui/brand-provider';
+import Form from '@osui/form';
 import TimePicker from '@osui/time-picker';
 
 export default {
@@ -10,7 +12,32 @@ export default {
 
 export const Demo = () => {
     return (
-        <TimePicker />
+        <BrandProvider brand="icloud">
+            <TimePicker style={{width: 160}} />
+            <p></p>
+            <p></p>
+            <p>禁用状态</p>
+            <TimePicker disabled style={{width: 160}} />
+            <p></p>
+            <p>进制选择部分小时</p>
+            <TimePicker disabledHours={() => [0, 1, 2, 3]} style={{width: 160}} />
+            <p></p>
+            <p></p>
+            <p>报错</p>
+            <Form
+                name="demo"
+                labelAlign="left"
+                wrapperCol={{span: 8}}
+            >
+                <Form.Item
+                    validateMessageLayout="inline"
+                    validateStatus="error"
+                    help={'格式错误，请按提示规则录入'}
+                >
+                    <TimePicker style={{width: 160}} />
+                </Form.Item>
+            </Form>
+        </BrandProvider>
     );
 };
 
@@ -21,7 +48,9 @@ export const Demo2 = () => {
     return (
         <>
             <Divider orientation="left">支持选择时间段</Divider>
-            <RangePicker />
+            <BrandProvider brand="icloud">
+                <RangePicker />
+            </BrandProvider>
         </>
     );
 };

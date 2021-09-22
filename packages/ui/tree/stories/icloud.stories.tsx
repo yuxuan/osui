@@ -5,7 +5,7 @@
 import React from 'react';
 import Input from '@osui/input';
 import {IconSearchOutlined} from '@osui/icons';
-import Tree from '../src';
+import Tree, {TreeProps} from '../src';
 
 export default {
     title: '数据展示/Tree 树形组件',
@@ -40,11 +40,11 @@ export const SizeDemo = () => {
     ];
 
     const Demo = () => {
-        const onSelect = (selectedKeys: React.Key[], info: any) => {
+        const onSelect = (selectedKeys, info) => {
             console.log('selected', selectedKeys, info);
         };
 
-        const onCheck = (checkedKeys: React.Key[], info: any) => {
+        const onCheck: TreeProps['onCheck'] = (checkedKeys, info) => {
             console.log('onCheck', checkedKeys, info);
         };
 
@@ -125,7 +125,7 @@ export const Demo = () => {
             console.log('selected', selectedKeys, info);
         };
 
-        const onCheck = (checkedKeys: React.Key[], info: any) => {
+        const onCheck: TreeProps['onCheck'] = (checkedKeys, info) => {
             console.log('onCheck', checkedKeys, info);
         };
 
@@ -150,7 +150,7 @@ export const DraggableDemo = () => {
     const z = 1;
     const gData = [];
 
-    const generateData = (_level, _preKey = 0, _tns = []) => {
+    const generateData: (_level, _preKey?, _tns?) => void = (_level, _preKey, _tns) => {
         const preKey = _preKey || '0';
         const tns = _tns || gData;
 
@@ -251,7 +251,9 @@ export const DraggableDemo = () => {
             });
         };
 
+
         render() {
+            console.log(this.state.gData);
             return (
                 <>
                     <p>可拖拽</p>
@@ -279,7 +281,7 @@ export const SearchDemo = () => {
     const z = 1;
     const gData = [];
 
-    const generateData = (_level, _preKey = 0, _tns = []) => {
+    const generateData: (_level, _preKey?, _tns?) => void = (_level, _preKey, _tns) => {
         const preKey = _preKey || '0';
         const tns = _tns || gData;
 
@@ -470,7 +472,7 @@ export const TestCase = () => {
             console.log('selected', selectedKeys, info);
         };
 
-        const onCheck = (checkedKeys: React.Key[], info: any) => {
+        const onCheck = (checkedKeys, info) => {
             console.log('onCheck', checkedKeys, info);
         };
 
