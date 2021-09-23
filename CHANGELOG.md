@@ -3,22 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.1.10](https://gitee.com/gitee-fe/osui/compare/v1.1.8...v1.1.10) (2021-09-23)
+## 1.1.10
+### 功能调整
+- Table
+  - 导出`ExpandableConfig`类型
 
+### 样式调整
+- 规范样式调整： Card、DatePicker、TimePicker、Anchor
+- 文档调整： Metions、Calendar、Description、Result
 
-### Bug Fixes
+### 组件更新
 
-* 修复测试 ([e964e7c](https://gitee.com/gitee-fe/osui/commits/e964e7cfaa30d85d33357e26186c2fb803d9324d))
-* anchor ([d56d602](https://gitee.com/gitee-fe/osui/commits/d56d60243e25a68d42b277672285ba7238be4835))
-* card 调整 ([bd3ed0a](https://gitee.com/gitee-fe/osui/commits/bd3ed0a5e0866ebca70a1ce4cc5a3a53565c7e84))
-* datepicker调整 ([85b1ec6](https://gitee.com/gitee-fe/osui/commits/85b1ec62ddd111ad5ab37e63f3483520b156873b))
-* osui/ui 1.1.9 加上了prepublish ([933112e](https://gitee.com/gitee-fe/osui/commits/933112ea780b6c211392db24c54eb67913b5f29a))
-* table 类型导出 ([d5373fb](https://gitee.com/gitee-fe/osui/commits/d5373fb79f9c4ccf52902611532c2bb409cd350f))
-* time-picker 调整 ([8fabc34](https://gitee.com/gitee-fe/osui/commits/8fabc3465ae7f50becb3cf9720467bd815d763c1))
-
-
-
-
+```
+ - @osui/icloud-theme: 1.1.8 => 1.1.10
+ - @osui/theme: 1.1.8 => 1.1.10
+ - @osui/anchor: 1.1.8 => 1.1.10
+ - @osui/card: 1.1.8 => 1.1.10
+ - @osui/date-picker: 1.1.8 => 1.1.10
+ - @osui/table: 1.1.8 => 1.1.10
+ - @osui/time-picker: 1.1.8 => 1.1.10
+ - @osui/ui: 1.1.9 => 1.1.10
+```
 
 # 1.1.8
 
