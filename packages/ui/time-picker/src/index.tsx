@@ -7,21 +7,29 @@ import './index.less';
 
 const clsPrefix = 'osui-time-picker';
 
-const OSUITimePicker = ({popupClassName, ...props}: TimePickerProps) => {
-    const innerPopupClassName = classNames(`${clsPrefix}-dropdown`, popupClassName);
-    return (
-        <AntdTimePicker popupClassName={innerPopupClassName} {...props} />
-    );
+type OSUITimePickerInterface = typeof AntdTimePicker & {
+    RangePicker: typeof AntdTimePicker.RangePicker;
 };
+
+const OSUITimePicker = React.forwardRef(
+    ({popupClassName, ...props}: TimePickerProps, ref) => {
+        const innerPopupClassName = classNames(`${clsPrefix}-dropdown`, popupClassName);
+        return (
+            <AntdTimePicker ref={ref} popupClassName={innerPopupClassName} {...props} />
+        );
+    }
+) as OSUITimePickerInterface;
 
 hoistNonReactStatics(OSUITimePicker, AntdTimePicker);
 
-const OSUITimePickerRange = ({popupClassName, ...props}: TimeRangePickerProps) => {
-    const innerPopupClassName = classNames(`${clsPrefix}-dropdown`, popupClassName);
-    return (
-        <AntdTimePicker.RangePicker popupClassName={innerPopupClassName} {...props} />
-    );
-};
+const OSUITimePickerRange = React.forwardRef(
+    ({popupClassName, ...props}: TimeRangePickerProps, ref) => {
+        const innerPopupClassName = classNames(`${clsPrefix}-dropdown`, popupClassName);
+        return (
+            <AntdTimePicker.RangePicker ref={ref} popupClassName={innerPopupClassName} {...props} />
+        );
+    }
+);
 
 OSUITimePicker.RangePicker = OSUITimePickerRange;
 
