@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.8...v1.1.10) (2021-09-23)
+
+
+### Bug Fixes
+
+* anchor ([d56d602](https://gitee.com/gitee-fe/osui/tree/master/commits/d56d60243e25a68d42b277672285ba7238be4835))
+* card 调整 ([bd3ed0a](https://gitee.com/gitee-fe/osui/tree/master/commits/bd3ed0a5e0866ebca70a1ce4cc5a3a53565c7e84))
+* time-picker 调整 ([8fabc34](https://gitee.com/gitee-fe/osui/tree/master/commits/8fabc3465ae7f50becb3cf9720467bd815d763c1))
+
+
+
+
+
 ## [1.1.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.7...v1.1.8) (2021-09-14)
 
 **Note:** Version bump only for package @osui/icloud-theme

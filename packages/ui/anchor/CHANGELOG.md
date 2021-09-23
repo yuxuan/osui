@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.8...v1.1.10) (2021-09-23)
+
+
+### Bug Fixes
+
+* 修复测试 ([e964e7c](https://gitee.com/gitee-fe/osui/tree/master/commits/e964e7cfaa30d85d33357e26186c2fb803d9324d))
+* anchor ([d56d602](https://gitee.com/gitee-fe/osui/tree/master/commits/d56d60243e25a68d42b277672285ba7238be4835))
+
+
+
+
+
 ## [1.1.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.7...v1.1.8) (2021-09-14)
 
 **Note:** Version bump only for package @osui/anchor
