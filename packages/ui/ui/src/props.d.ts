@@ -55,6 +55,7 @@ export type {
     TableColumnType,
     TableColumnProps,
     TableColumnsType,
+    ExpandableConfig,
 } from '@osui/table';
 export type {TransferProps} from '@osui/transfer';
 export type {TreeProps, TreeNodeProps, TreeDataNode} from '@osui/tree';
