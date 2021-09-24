@@ -5,7 +5,7 @@ import CSSMotion from 'rc-motion';
 import { genCSSMotion } from 'rc-motion/lib/CSSMotion';
 import KeyCode from 'rc-util/lib/KeyCode';
 import { resetWarned } from 'rc-util/lib/warning';
-import { destroyFns } from 'antd/lib/modal/Modal';
+import destroyFns from 'antd/lib/modal/destroyFns';
 import Modal from '../src';
 import { sleep } from '../../../tests/utils';
 import ConfigProvider from 'antd/lib/config-provider';

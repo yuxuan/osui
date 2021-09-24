@@ -354,10 +354,10 @@ exports[`Dropdown overlay is function and has custom transitionName 1`] = `
                       >
                         <div
                           className="ant-dropdown osui-dropdown move-up-appear move-up-appear-prepare move-up"
-                          onMouseDown={[Function]}
+                          onMouseDownCapture={[Function]}
                           onMouseEnter={[Function]}
                           onMouseLeave={[Function]}
-                          onTouchStart={[Function]}
+                          onTouchStartCapture={[Function]}
                           style={
                             Object {
                               "opacity": 0,
@@ -738,10 +738,10 @@ exports[`Dropdown overlay is string 1`] = `
                       >
                         <div
                           className="ant-dropdown osui-dropdown ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
-                          onMouseDown={[Function]}
+                          onMouseDownCapture={[Function]}
                           onMouseEnter={[Function]}
                           onMouseLeave={[Function]}
-                          onTouchStart={[Function]}
+                          onTouchStartCapture={[Function]}
                           style={
                             Object {
                               "opacity": 0,

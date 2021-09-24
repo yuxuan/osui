@@ -14,7 +14,7 @@ export default function toMatchRenderedSnapshot(
         };
     } catch (e) {
         return {
-            message: () => `expected JSX to match snapshot: ${e.message}`,
+            message: () => `expected JSX to match snapshot: ${(e as any).message}`,
             pass: false,
         };
     }

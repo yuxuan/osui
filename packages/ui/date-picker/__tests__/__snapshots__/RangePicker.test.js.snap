@@ -2875,8 +2875,8 @@ exports[`RangePicker ranges RangePicker support presetted ranges with Tags 1`] =
                             >
                               <div
                                 className="ant-picker-dropdown osui-picker-dropdown ant-picker-dropdown-range ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up"
-                                onMouseDown={[Function]}
-                                onTouchStart={[Function]}
+                                onMouseDownCapture={[Function]}
+                                onTouchStartCapture={[Function]}
                                 style={
                                   Object {
                                     "opacity": 0,

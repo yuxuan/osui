@@ -55,6 +55,7 @@
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.0.6",
         "prop-types": "^15.7.2",
+        "rc-resize-observer": "^1.0.1",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-is": "^16.13.1",

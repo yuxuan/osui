@@ -60,8 +60,8 @@ describe('Anchor Render', () => {
 
         wrapper.find(`a[href="#${hash}"]`).simulate('click');
 
-        wrapper.instance().handleScroll();
-        expect(wrapper.instance().state).not.toBe(null);
+        wrapper.find('Anchor').instance().handleScroll();
+        expect(wrapper.find('Anchor').instance().state).not.toBe(null);
     });
 
     it('Anchor render perfectly for complete href - click', () => {
@@ -74,7 +74,7 @@ describe('Anchor Render', () => {
         wrapper
             .find(`a[href="http://www.example.com/#${hash}"]`)
             .simulate('click');
-        expect(wrapper.instance().state.activeLink).toBe(
+        expect(wrapper.find('Anchor').instance().state.activeLink).toBe(
             `http://www.example.com/#${hash}`
         );
     });
@@ -89,8 +89,8 @@ describe('Anchor Render', () => {
             </Anchor>
         );
 
-        wrapper.instance().handleScrollTo('/#/faq?locale=en#Q1');
-        expect(wrapper.instance().state.activeLink).toBe('/#/faq?locale=en#Q1');
+        wrapper.find('Anchor').instance().handleScrollTo('/#/faq?locale=en#Q1');
+        expect(wrapper.find('Anchor').instance().state.activeLink).toBe('/#/faq?locale=en#Q1');
         expect(scrollToSpy).not.toHaveBeenCalled();
         await sleep(1000);
         expect(scrollToSpy).toHaveBeenCalled();
@@ -105,8 +105,8 @@ describe('Anchor Render', () => {
                 <Link href={`http://www.example.com/#${hash}`} title={hash} />
             </Anchor>
         );
-        wrapper.instance().handleScroll();
-        expect(wrapper.instance().state.activeLink).toBe(
+        wrapper.find('Anchor').instance().handleScroll();
+        expect(wrapper.find('Anchor').instance().state.activeLink).toBe(
             `http://www.example.com/#${hash}`
         );
     });
@@ -121,8 +121,8 @@ describe('Anchor Render', () => {
                 <Link href={`##${hash}`} title={hash} />
             </Anchor>
         );
-        wrapper.instance().handleScrollTo(`##${hash}`);
-        expect(wrapper.instance().state.activeLink).toBe(`##${hash}`);
+        wrapper.find('Anchor').instance().handleScrollTo(`##${hash}`);
+        expect(wrapper.find('Anchor').instance().state.activeLink).toBe(`##${hash}`);
         const calls = scrollToSpy.mock.calls.length;
         await sleep(1000);
         expect(scrollToSpy.mock.calls.length).toBeGreaterThan(calls);
@@ -136,7 +136,7 @@ describe('Anchor Render', () => {
             </Anchor>
         );
         const removeListenerSpy = jest.spyOn(
-            (wrapper.instance() as any).scrollEvent,
+            (wrapper.find('Anchor').instance() as any).scrollEvent,
             'remove'
         );
         wrapper.unmount();
@@ -150,9 +150,9 @@ describe('Anchor Render', () => {
                 <Link href={`#${hash}`} title={hash} />
             </Anchor>
         );
-        expect((wrapper.instance() as any).links).toEqual([`#${hash}`]);
+        expect((wrapper.find('Anchor').instance() as any).links).toEqual([`#${hash}`]);
         wrapper.setProps({children: null});
-        expect((wrapper.instance() as any).links).toEqual([]);
+        expect((wrapper.find('Anchor').instance() as any).links).toEqual([]);
     });
 
     it('should update links when link href update', async () => {
@@ -202,7 +202,7 @@ describe('Anchor Render', () => {
 
         wrapper.find(`a[href="${href}"]`).simulate('click');
 
-        wrapper.instance().handleScroll();
+        wrapper.find('Anchor').instance().handleScroll();
         expect(event).not.toBe(undefined);
         expect(link).toEqual({href, title});
     });
@@ -220,7 +220,7 @@ describe('Anchor Render', () => {
             </Anchor>
         );
         const removeListenerSpy = jest.spyOn(
-            (wrapper.instance() as any).scrollEvent,
+            (wrapper.find('Anchor').instance() as any).scrollEvent,
             'remove'
         );
         await sleep(1000);
@@ -248,7 +248,7 @@ describe('Anchor Render', () => {
             </Anchor>
         );
         const removeListenerSpy = jest.spyOn(
-            (wrapper.instance() as any).scrollEvent,
+            (wrapper.find('Anchor').instance() as any).scrollEvent,
             'remove'
         );
         expect(removeListenerSpy).not.toHaveBeenCalled();
@@ -268,8 +268,8 @@ describe('Anchor Render', () => {
             </Anchor>
         );
         wrapper.find(`a[href="#${hash}"]`).simulate('click');
-        (wrapper.instance() as any).handleScroll();
-        expect(wrapper.instance().state).not.toBe(null);
+        (wrapper.find('Anchor').instance() as any).handleScroll();
+        expect(wrapper.find('Anchor').instance().state).not.toBe(null);
     });
 
     it('Same function returns different DOM', async () => {
@@ -299,7 +299,7 @@ describe('Anchor Render', () => {
             </Anchor>
         );
         const removeListenerSpy = jest.spyOn(
-            (wrapper.instance() as any).scrollEvent,
+            (wrapper.find('Anchor').instance() as any).scrollEvent,
             'remove'
         );
         expect(removeListenerSpy).not.toHaveBeenCalled();
@@ -319,7 +319,7 @@ describe('Anchor Render', () => {
                 <Link href={`#${hash2}`} title={hash2} />
             </Anchor>
         );
-        expect(wrapper.instance().state.activeLink).toBe(`#${hash2}`);
+        expect(wrapper.find('Anchor').instance().state.activeLink).toBe(`#${hash2}`);
     });
 
     it('Anchor targetOffset prop', async () => {
@@ -347,19 +347,19 @@ describe('Anchor Render', () => {
                 <Link href={`#${hash}`} title={hash} />
             </Anchor>
         );
-        wrapper.instance().handleScrollTo(`#${hash}`);
+        wrapper.find('Anchor').instance().handleScrollTo(`#${hash}`);
         await sleep(30);
         expect(scrollToSpy).toHaveBeenLastCalledWith(0, 1000);
         dateNowMock = dataNowMockFn();
 
         wrapper.setProps({offsetTop: 100});
-        wrapper.instance().handleScrollTo(`#${hash}`);
+        wrapper.find('Anchor').instance().handleScrollTo(`#${hash}`);
         await sleep(30);
         expect(scrollToSpy).toHaveBeenLastCalledWith(0, 900);
         dateNowMock = dataNowMockFn();
 
         wrapper.setProps({targetOffset: 200});
-        wrapper.instance().handleScrollTo(`#${hash}`);
+        wrapper.find('Anchor').instance().handleScrollTo(`#${hash}`);
         await sleep(30);
         expect(scrollToSpy).toHaveBeenLastCalledWith(0, 800);
 
@@ -377,7 +377,7 @@ describe('Anchor Render', () => {
             </Anchor>
         );
         expect(onChange).toHaveBeenCalledTimes(1);
-        wrapper.instance().handleScrollTo(hash2);
+        wrapper.find('Anchor').instance().handleScrollTo(hash2);
         expect(onChange).toHaveBeenCalledTimes(2);
         expect(onChange).toHaveBeenCalledWith(hash2);
     });
@@ -394,7 +394,7 @@ describe('Anchor Render', () => {
             </Anchor>
         );
         expect(onChange).toHaveBeenCalledTimes(1);
-        wrapper.instance().handleScrollTo(hash2);
+        wrapper.find('Anchor').instance().handleScrollTo(hash2);
         expect(onChange).toHaveBeenCalledTimes(2);
         expect(onChange).toHaveBeenCalledWith(hash2);
     });
@@ -408,8 +408,8 @@ describe('Anchor Render', () => {
 
         wrapper.find('a[href="notexsited"]').simulate('click');
 
-        wrapper.instance().handleScrollTo('notexsited');
-        expect(wrapper.instance().state).not.toBe(null);
+        wrapper.find('Anchor').instance().handleScrollTo('notexsited');
+        expect(wrapper.find('Anchor').instance().state).not.toBe(null);
     });
 
     it('test edge case when getBoundingClientRect return zero size', async () => {
@@ -442,19 +442,19 @@ describe('Anchor Render', () => {
                 <Link href={`#${hash}`} title={hash} />
             </Anchor>
         );
-        wrapper.instance().handleScrollTo(`#${hash}`);
+        wrapper.find('Anchor').instance().handleScrollTo(`#${hash}`);
         await sleep(30);
         expect(scrollToSpy).toHaveBeenLastCalledWith(0, 1000);
         dateNowMock = dataNowMockFn();
 
         wrapper.setProps({offsetTop: 100});
-        wrapper.instance().handleScrollTo(`#${hash}`);
+        wrapper.find('Anchor').instance().handleScrollTo(`#${hash}`);
         await sleep(30);
         expect(scrollToSpy).toHaveBeenLastCalledWith(0, 900);
         dateNowMock = dataNowMockFn();
 
         wrapper.setProps({targetOffset: 200});
-        wrapper.instance().handleScrollTo(`#${hash}`);
+        wrapper.find('Anchor').instance().handleScrollTo(`#${hash}`);
         await sleep(30);
         expect(scrollToSpy).toHaveBeenLastCalledWith(0, 800);
 
@@ -491,19 +491,19 @@ describe('Anchor Render', () => {
                 <Link href={`#${hash}`} title={hash} />
             </Anchor>
         );
-        wrapper.instance().handleScrollTo(`#${hash}`);
+        wrapper.find('Anchor').instance().handleScrollTo(`#${hash}`);
         await sleep(30);
         expect(scrollToSpy).toHaveBeenLastCalledWith(0, 800);
         dateNowMock = dataNowMockFn();
 
         wrapper.setProps({offsetTop: 100});
-        wrapper.instance().handleScrollTo(`#${hash}`);
+        wrapper.find('Anchor').instance().handleScrollTo(`#${hash}`);
         await sleep(30);
         expect(scrollToSpy).toHaveBeenLastCalledWith(0, 800);
         dateNowMock = dataNowMockFn();
 
         wrapper.setProps({targetOffset: 200});
-        wrapper.instance().handleScrollTo(`#${hash}`);
+        wrapper.find('Anchor').instance().handleScrollTo(`#${hash}`);
         await sleep(30);
         expect(scrollToSpy).toHaveBeenLastCalledWith(0, 800);
 

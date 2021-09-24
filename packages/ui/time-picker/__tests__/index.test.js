@@ -73,7 +73,7 @@ describe('TimePicker', () => {
         popupClassName={popupClassName}
       />,
     );
-    expect(wrapper.find('Picker').prop('dropdownClassName')).toEqual(popupClassName);
+    expect(wrapper.find('Picker').prop('dropdownClassName')).toEqual('osui-time-picker-dropdown '+popupClassName);
   });
 
   it('should pass popupClassName prop to RangePicker as dropdownClassName prop', () => {
@@ -84,7 +84,7 @@ describe('TimePicker', () => {
         popupClassName={popupClassName}
       />,
     );
-    expect(wrapper.find('RangePicker').at(1).prop('dropdownClassName')).toEqual(popupClassName);
+    expect(wrapper.find('RangePicker').at(1).prop('dropdownClassName')).toEqual('osui-time-picker-dropdown '+popupClassName);
   });
 
   it('should support bordered', () => {

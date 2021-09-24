@@ -4,8 +4,8 @@ import React from 'react';
 import Moment from 'moment';
 import momentGenerateConfig from 'rc-picker/lib/generate/moment';
 import { mount } from 'enzyme';
-import Select from '@osui/select';
-import Radio from '@osui/radio';
+import Select from '../../select';
+import Radio from '../../radio';
 import MockDate from 'mockdate';
 import Calendar from '../src';
 import Header from 'antd/lib/calendar/Header';
@@ -32,6 +32,7 @@ describe('Calendar', () => {
 
   // https://github.com/ant-design/ant-design/issues/30392
   it('should be able to set undefined or null', () => {
+    debugger;
     expect(() => {
       const wrapper = mount(<Calendar />);
       wrapper.setProps({ value: null });

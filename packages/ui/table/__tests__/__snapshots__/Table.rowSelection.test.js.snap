@@ -289,9 +289,8 @@ exports[`Table.rowSelection fix expand on th left when selection column fixed on
             width="1024"
           >
             <path
-              d="M693.775 830.447c13.633 14.996 13.633 39.31 0 54.306-13.632 14.996-35.736 14.996-49.369 0l-314.181-345.6c-13.633-14.996-13.633-39.31 0-54.306l314.181-345.6c13.633-14.996 35.737-14.996 49.37 0 13.632 14.996 13.632 39.31 0 54.306L404.277 512l289.497 318.447z"
+              d="M768 798.255L460.8 512 768 225.745 665.6 128 256 512l409.6 384z"
               fill="currentColor"
-              fill-rule="evenodd"
             />
           </svg>
         </li>
@@ -320,9 +319,8 @@ exports[`Table.rowSelection fix expand on th left when selection column fixed on
             width="1024"
           >
             <path
-              d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+              d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
               fill="currentColor"
-              fill-rule="evenodd"
             />
           </svg>
         </li>
@@ -565,9 +563,8 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
             width="1024"
           >
             <path
-              d="M693.775 830.447c13.633 14.996 13.633 39.31 0 54.306-13.632 14.996-35.736 14.996-49.369 0l-314.181-345.6c-13.633-14.996-13.633-39.31 0-54.306l314.181-345.6c13.633-14.996 35.737-14.996 49.37 0 13.632 14.996 13.632 39.31 0 54.306L404.277 512l289.497 318.447z"
+              d="M768 798.255L460.8 512 768 225.745 665.6 128 256 512l409.6 384z"
               fill="currentColor"
-              fill-rule="evenodd"
             />
           </svg>
         </li>
@@ -596,9 +593,8 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
             width="1024"
           >
             <path
-              d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+              d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
               fill="currentColor"
-              fill-rule="evenodd"
             />
           </svg>
         </li>
@@ -846,9 +842,8 @@ exports[`Table.rowSelection fix selection column on the left when any other colu
             width="1024"
           >
             <path
-              d="M693.775 830.447c13.633 14.996 13.633 39.31 0 54.306-13.632 14.996-35.736 14.996-49.369 0l-314.181-345.6c-13.633-14.996-13.633-39.31 0-54.306l314.181-345.6c13.633-14.996 35.737-14.996 49.37 0 13.632 14.996 13.632 39.31 0 54.306L404.277 512l289.497 318.447z"
+              d="M768 798.255L460.8 512 768 225.745 665.6 128 256 512l409.6 384z"
               fill="currentColor"
-              fill-rule="evenodd"
             />
           </svg>
         </li>
@@ -877,9 +872,8 @@ exports[`Table.rowSelection fix selection column on the left when any other colu
             width="1024"
           >
             <path
-              d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+              d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
               fill="currentColor"
-              fill-rule="evenodd"
             />
           </svg>
         </li>
@@ -889,59 +883,7 @@ exports[`Table.rowSelection fix selection column on the left when any other colu
 </div>
 `;
 
-exports[`Table.rowSelection render with default selection correctly 1`] = `
-<div>
-  <div
-    class="ant-dropdown ant-dropdown-hidden"
-    style="pointer-events:none"
-  >
-    <ul
-      class="ant-dropdown-menu ant-dropdown-menu-root ant-dropdown-menu-vertical ant-dropdown-menu-light"
-      data-menu-list="true"
-      role="menu"
-      tabindex="0"
-    >
-      <li
-        class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child"
-        role="menuitem"
-        tabindex="-1"
-      >
-        <span
-          class="ant-dropdown-menu-title-content"
-        >
-          Select all data
-        </span>
-      </li>
-      <li
-        class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child"
-        role="menuitem"
-        tabindex="-1"
-      >
-        <span
-          class="ant-dropdown-menu-title-content"
-        >
-          Invert current page
-        </span>
-      </li>
-      <li
-        class="ant-dropdown-menu-item ant-dropdown-menu-item-only-child"
-        role="menuitem"
-        tabindex="-1"
-      >
-        <span
-          class="ant-dropdown-menu-title-content"
-        >
-          Clear all data
-        </span>
-      </li>
-    </ul>
-    <div
-      aria-hidden="true"
-      style="display:none"
-    />
-  </div>
-</div>
-`;
+exports[`Table.rowSelection render with default selection correctly 1`] = `<div />`;
 
 exports[`Table.rowSelection should support getPopupContainer 1`] = `
 <div
@@ -1236,9 +1178,8 @@ exports[`Table.rowSelection should support getPopupContainer 1`] = `
             width="1024"
           >
             <path
-              d="M693.775 830.447c13.633 14.996 13.633 39.31 0 54.306-13.632 14.996-35.736 14.996-49.369 0l-314.181-345.6c-13.633-14.996-13.633-39.31 0-54.306l314.181-345.6c13.633-14.996 35.737-14.996 49.37 0 13.632 14.996 13.632 39.31 0 54.306L404.277 512l289.497 318.447z"
+              d="M768 798.255L460.8 512 768 225.745 665.6 128 256 512l409.6 384z"
               fill="currentColor"
-              fill-rule="evenodd"
             />
           </svg>
         </li>
@@ -1267,9 +1208,8 @@ exports[`Table.rowSelection should support getPopupContainer 1`] = `
             width="1024"
           >
             <path
-              d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+              d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
               fill="currentColor"
-              fill-rule="evenodd"
             />
           </svg>
         </li>
@@ -1572,9 +1512,8 @@ exports[`Table.rowSelection should support getPopupContainer from ConfigProvider
             width="1024"
           >
             <path
-              d="M693.775 830.447c13.633 14.996 13.633 39.31 0 54.306-13.632 14.996-35.736 14.996-49.369 0l-314.181-345.6c-13.633-14.996-13.633-39.31 0-54.306l314.181-345.6c13.633-14.996 35.737-14.996 49.37 0 13.632 14.996 13.632 39.31 0 54.306L404.277 512l289.497 318.447z"
+              d="M768 798.255L460.8 512 768 225.745 665.6 128 256 512l409.6 384z"
               fill="currentColor"
-              fill-rule="evenodd"
             />
           </svg>
         </li>
@@ -1603,9 +1542,8 @@ exports[`Table.rowSelection should support getPopupContainer from ConfigProvider
             width="1024"
           >
             <path
-              d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+              d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
               fill="currentColor"
-              fill-rule="evenodd"
             />
           </svg>
         </li>
@@ -1818,9 +1756,8 @@ exports[`Table.rowSelection use column as selection column when key is \`selecti
             width="1024"
           >
             <path
-              d="M693.775 830.447c13.633 14.996 13.633 39.31 0 54.306-13.632 14.996-35.736 14.996-49.369 0l-314.181-345.6c-13.633-14.996-13.633-39.31 0-54.306l314.181-345.6c13.633-14.996 35.737-14.996 49.37 0 13.632 14.996 13.632 39.31 0 54.306L404.277 512l289.497 318.447z"
+              d="M768 798.255L460.8 512 768 225.745 665.6 128 256 512l409.6 384z"
               fill="currentColor"
-              fill-rule="evenodd"
             />
           </svg>
         </li>
@@ -1849,9 +1786,8 @@ exports[`Table.rowSelection use column as selection column when key is \`selecti
             width="1024"
           >
             <path
-              d="M330.225 830.447c-13.633 14.996-13.633 39.31 0 54.306 13.632 14.996 35.736 14.996 49.369 0l314.181-345.6c13.633-14.996 13.633-39.31 0-54.306l-314.181-345.6c-13.633-14.996-35.737-14.996-49.37 0-13.632 14.996-13.632 39.31 0 54.306L619.723 512 330.225 830.447z"
+              d="M256 798.255L563.2 512 256 225.745 358.4 128 768 512 358.4 896z"
               fill="currentColor"
-              fill-rule="evenodd"
             />
           </svg>
         </li>

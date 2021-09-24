@@ -23,9 +23,10 @@
         "publish": "lerna publish from-package",
         "publishWithDocs": "lerna publish from-package && yarn build-docs",
         "build-docs": "sh scripts/build-docs.sh osui && sh scripts/build-docs.sh icloud",
-        "test": "lerna exec --no-private --concurrency 10 -- yarn test -u"
+        "test": "lerna exec --no-private --concurrency 10 -- yarn test"
     },
     "devDependencies": {
+        "@ant-design/tools": "^14.0.0-alpha.3",
         "@commitlint/cli": "^9.1.1",
         "@commitlint/config-conventional": "^9.1.1",
         "@reskript/cli": "^2.2.2",
@@ -37,6 +38,7 @@
         "enzyme-to-json": "^3.6.2",
         "eslint-plugin-import": "^2.24.0",
         "husky": "^4.2.5",
+        "jest": "^27.2.1",
         "lerna": "^3.22.1",
         "mkdirp": "^1.0.4",
         "mockdate": "^3.0.5",
