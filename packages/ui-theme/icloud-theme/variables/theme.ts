@@ -1,6 +1,6 @@
 export default {
     // eslint-disable-next-line max-len
-    '--theme-font-family': '"Helvetica Neue", "Helvetica", "Arial", "PingFangSC-Regular", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "sans-serif"',
+    '--theme-font-family': '-apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Arial", "PingFangSC-Regular", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "sans-serif", "Apple Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
     '--theme-bg-color-base': 'var(--color-gray-4)',
     '--theme-bg-color-light': 'var(--color-brand-1)',
     '--theme-body-bg': 'var(--color-gray-1)',
