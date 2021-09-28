@@ -2,7 +2,7 @@
 
 exports[`Upload rtl render component should be rendered correctly in RTL direction 1`] = `
 <span
-  class=""
+  class="osui-upload"
 >
   <div
     class="ant-upload ant-upload-select ant-upload-select-text ant-upload-rtl"

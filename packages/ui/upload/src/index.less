@@ -1,0 +1,34 @@
+@osui-upload-class-prefix: osui-upload;
+
+.@{osui-upload-class-prefix} {
+    &.@{ant-prefix}-upload.@{ant-prefix}-upload-drag,
+    .@{ant-prefix}-upload-list-picture-card .@{ant-prefix}-upload-list-item-uploading.@{ant-prefix}-upload-list-item,
+    .@{ant-prefix}-upload.@{ant-prefix}-upload-select-picture-card {
+        background-color: var(--theme-component-bg);
+        border: 1px solid var(--theme-border-color-base);
+
+        &:hover {
+            border-color: var(--theme-primary-color-hover);
+
+            span.@{ant-prefix}-upload {
+                color: var(--theme-primary-color-hover);
+            }
+        }
+
+        &:active {
+            border-color: var(--theme-primary-color-active);
+
+            span.@{ant-prefix}-upload {
+                color: var(--theme-primary-color-active);
+            }
+        }
+    }
+
+    &-dashedBorder {
+        &.@{ant-prefix}-upload.@{ant-prefix}-upload-drag,
+        .@{ant-prefix}-upload-list-picture-card .@{ant-prefix}-upload-list-item-uploading.@{ant-prefix}-upload-list-item,
+        .@{ant-prefix}-upload.@{ant-prefix}-upload-select-picture-card {
+            border: 1px dashed var(--theme-border-color-base);
+        }
+    }
+}

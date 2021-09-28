@@ -1805,6 +1805,11 @@
   resolved "https://registry.yarnpkg.com/@huse/document-event/-/document-event-1.1.1.tgz#d40e9a786b2cfe7def8d4a662b0fd027f9c85d72"
   integrity sha512-KKk0gBiZd7L7sg8h8BU+am/iG6Bx7IPGXc1/rUMX+of9X4OmLl/+igog5wt5c+MZOzetWks/oiulxxZg1/qmRg==
 
+"@huse/effect-ref@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.nlark.com/@huse/effect-ref/download/@huse/effect-ref-1.1.1.tgz#9ef2cecb688e6fa644f153c2c45f53f0e6afb68b"
+  integrity sha1-nvLOy2iOb6ZE8VPCxF9T8Oavtos=
+
 "@huse/input-value@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@huse/input-value/-/input-value-1.1.1.tgz#acc39ded8f8e3342f6849792826824f726838f3b"

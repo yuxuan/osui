@@ -44,5 +44,6 @@ export const Demo = () => {
                 list={list}
                 handleMenuItemClick={handleMenuItemClick}
             />
-        </div>);
+        </div>
+    );
 };

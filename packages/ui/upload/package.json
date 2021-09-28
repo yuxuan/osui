@@ -27,6 +27,7 @@
     ],
     "devDependencies": {
         "@babel/cli": "^7.10.5",
+        "@huse/effect-ref": "^1.1.1",
         "@reskript/cli": "^2.0.0",
         "@reskript/cli-lint": "^2.0.0",
         "@reskript/config-babel": "^2.0.0",
@@ -84,5 +85,9 @@
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
+    },
+    "dependencies": {
+        "classnames": "^2.3.1",
+        "hoist-non-react-statics": "^3.3.2"
     }
 }

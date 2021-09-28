@@ -7,7 +7,7 @@ import { act } from 'react-dom/test-utils';
 import produce from 'immer';
 import { cloneDeep } from 'lodash';
 import Upload from '../src';
-import Form from '@osui/form';
+import Form from '../../form';
 import { getFileItem, removeFileItem, isImageUrl } from 'antd/lib/upload/utils';
 import { setup, teardown } from './mock';
 import { resetWarned } from 'rc-util/lib/warning';
