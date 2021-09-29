@@ -1,0 +1,29 @@
+@osui-comment-class-prefix: osui-comment;
+
+.@{osui-comment-class-prefix} {
+    > .@{ant-prefix}-comment-nested:not(:empty) {
+        padding: 4px 20px;
+        background: var(--color-gray-3);
+
+        & .osui-form {
+            margin-top: 20px;
+        }
+    }
+
+    // nested内部的padding取消
+    .@{osui-comment-class-prefix} {
+        > .@{ant-prefix}-comment-nested {
+            padding: 0;
+
+            & .osui-form {
+                margin-top: 0;
+            }
+        }
+    }
+
+    // 让评论头部充满
+    .@{ant-prefix}-comment-content-author > a,
+    .@{ant-prefix}-comment-content-author > span {
+        width: 100%;
+    }
+}

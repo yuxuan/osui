@@ -2,7 +2,7 @@
 
 exports[`Comment rtl render component should be rendered correctly in RTL direction 1`] = `
 <div
-  class="ant-comment ant-comment-rtl"
+  class="ant-comment ant-comment-rtl osui-comment"
 >
   <div
     class="ant-comment-inner"
@@ -20,7 +20,7 @@ exports[`Comment rtl render component should be rendered correctly in RTL direct
 
 exports[`Comment should support empty actions 1`] = `
 <div
-  class="ant-comment"
+  class="ant-comment osui-comment"
 >
   <div
     class="ant-comment-inner"

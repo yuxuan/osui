@@ -27,6 +27,7 @@
     ],
     "devDependencies": {
         "@babel/cli": "^7.10.5",
+        "@huse/boolean": "^1.1.2",
         "@reskript/cli": "^2.0.0",
         "@reskript/cli-lint": "^2.0.0",
         "@reskript/config-babel": "^2.0.0",
@@ -49,8 +50,10 @@
         "antd": "^4.16.10",
         "babel-loader": "^8.1.0",
         "babel-merge": "^3.0.0",
+        "classnames": "^2.3.1",
         "cpy-cli": "^3.1.1",
         "enzyme": "^3.11.0",
+        "hoist-non-react-statics": "^3.3.2",
         "husky": "^4.2.5",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.0.6",
@@ -83,5 +86,9 @@
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
+    },
+    "dependencies": {
+        "classnames": "^2.3.1",
+        "hoist-non-react-statics": "^3.3.2"
     }
 }

@@ -1781,7 +1781,7 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@huse/boolean@^1.0.3":
+"@huse/boolean@^1.0.3", "@huse/boolean@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@huse/boolean/-/boolean-1.1.2.tgz#bc761d5a98b11af53fee940c384073f1de29cc89"
   integrity sha512-WeTJpS6AqZ1+N6hqTQSYiRT4yMDfsUzshBCzVXE9b1rbPsWIaHOxcBbP5XYDrtSqZN2iLwFJ/0DiQQQUjFKbuA==
@@ -11639,7 +11639,7 @@ hmac-drbg@^1.0.1:
 
 hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
-  resolved "https://registry.npm.taobao.org/hoist-non-react-statics/download/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  resolved "https://registry.nlark.com/hoist-non-react-statics/download/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=
   dependencies:
     react-is "^16.7.0"
