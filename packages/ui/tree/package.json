@@ -1,6 +1,6 @@
 {
     "name": "@osui/tree",
-    "version": "1.1.8",
+    "version": "1.1.12",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",

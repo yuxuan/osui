@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.12](https://gitee.com/gitee-fe/osui/compare/v1.1.10...v1.1.12) (2021-09-29)
+
+
+### Bug Fixes
+
+* 字体调整 ([8cbe2b1](https://gitee.com/gitee-fe/osui/commits/8cbe2b1abeca9fe7c1f7fbf05639a9c2dd97e613))
+* comments调整 ([1551a1a](https://gitee.com/gitee-fe/osui/commits/1551a1a049fe1258633a4d79d7585ab552421e1e))
+* tree 箭头调整位置 ([d8254d2](https://gitee.com/gitee-fe/osui/commits/d8254d2ac771ad3e3969519312f4ef57233db75f))
+* upload调整 ([4b38922](https://gitee.com/gitee-fe/osui/commits/4b38922942552f0ad963a497be764ebde3d0b452))
+
+
+
+
+
 ## [1.1.11](https://gitee.com/gitee-fe/osui/compare/v1.1.10...v1.1.11) (2021-09-26)
 
 
