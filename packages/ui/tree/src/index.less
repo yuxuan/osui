@@ -45,8 +45,15 @@
         }
     }
     // == 调整 switcher icon ==
+    span.@{ant-prefix}-tree-switcher .@{ant-prefix}-tree-switcher-icon,
+    span.@{ant-prefix}-tree-switcher .@{ant-prefix}-select-tree-switcher-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
     .@{ant-prefix}-tree-switcher {
-        top: 3px;
         width: var(--tree-switcher-width);
     }
 
