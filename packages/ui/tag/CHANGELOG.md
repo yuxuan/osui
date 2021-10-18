@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.13](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.12...v1.1.13) (2021-10-18)
+
+
+### Bug Fixes
+
+* tag forward ref ([a8b7657](https://gitee.com/gitee-fe/osui/tree/master/commits/a8b76575af334da63d683b89445c59474b09241c))
+
+
+
+
+
 ## [1.1.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.7...v1.1.8) (2021-09-14)
 
 **Note:** Version bump only for package @osui/tag
