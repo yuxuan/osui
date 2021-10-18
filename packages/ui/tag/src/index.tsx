@@ -17,13 +17,11 @@ export interface TagProps extends AntdTagProps {
     round?: boolean;
 }
 
-export type CheckableTagProps = AntdCheckableTagProps;
-
-interface TagInterface extends React.FC<TagProps> {
-    CheckableTag: typeof AntdTag.CheckableTag;
+export interface TagType extends React.ForwardRefExoticComponent<TagProps & React.RefAttributes<HTMLElement>> {
+    CheckableTag: typeof CheckableTag;
 }
 
-const Tag: TagInterface = props => {
+const Tag = React.forwardRef<HTMLSpanElement, TagProps>((props, ref) => {
     const {closeIcon, color} = props;
     const patchedIcon = closeIcon ?? <IconCloseOutlined />;
     const classnames = classNames(
@@ -34,14 +32,21 @@ const Tag: TagInterface = props => {
         props.className
     );
 
-    return <AntdTag {...props} closeIcon={patchedIcon} className={classnames} />;
-};
+    return <AntdTag ref={ref} {...props} closeIcon={patchedIcon} className={classnames} />;
+}) as TagType;
 
+export type CheckableTagProps = AntdCheckableTagProps;
+
+// antd 没有ref forward
 const CheckableTag: React.FC<CheckableTagProps> = props => {
-    return <AntdTag.CheckableTag className={classNames(`${clsPrefix}-checkable`, props.className)} {...props} />;
+    return (
+        <AntdTag.CheckableTag
+            className={classNames(`${clsPrefix}-checkable`, props.className)}
+            {...props}
+        />
+    );
 };
 
 Tag.CheckableTag = CheckableTag;
 
-export type {TagType} from 'antd/lib/tag';
 export default Tag;
