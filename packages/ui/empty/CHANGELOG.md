@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.14](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.13...v1.1.14) (2021-10-25)
+
+
+### Bug Fixes
+
+* svg height='auto'修复 ([6f6ef55](https://gitee.com/gitee-fe/osui/tree/master/commits/6f6ef5584b64c014a29d39e8f2bde18c233ae9ee))
+
+
+
+
+
 ## [1.1.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.7...v1.1.8) (2021-09-14)
 
 **Note:** Version bump only for package @osui/empty
