@@ -6,11 +6,14 @@ interface Props {
 }
 
 const Empty = ({width = 140, height = 'auto'}: Props) => {
+    const style = React.useMemo(
+        () => ({width, height}),
+        [width, height]
+    );
     return (
         <svg
             className="osui-empty-img"
-            width={width}
-            height={height}
+            style={style}
             viewBox="0 0 140 100"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
