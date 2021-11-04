@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button as AntdButton } from 'antd';
-import { ButtonProps as AntdButtonProps, ButtonType } from 'antd/lib/button';
+import {Button as AntdButton} from 'antd';
+import {ButtonProps as AntdButtonProps, ButtonType} from 'antd/lib/button';
 import classNames from 'classnames';
-import { IconLoading3QuartersOutlined } from '@osui/icons';
+import {IconLoading3QuartersOutlined} from '@osui/icons';
 import Tooltip from '@osui/tooltip';
 import './index.less';
 
@@ -92,7 +92,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
         innerIcon = <IconLoading3QuartersOutlined spin className={`${clsPrefix}-icon-spinner`} />;
     }
 
-    const { success, error, danger, warning } = props;
+    const {success, error, danger, warning} = props;
 
     const PatchedButton = (
         <AntdButton
