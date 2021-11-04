@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.10...v1.1.16) (2021-11-04)
+
+
+### Bug Fixes
+
+* button loading 带回来改动 ([66e3629](https://gitee.com/gitee-fe/osui/tree/master/commits/66e36293b1578371a4c7e835bccd319fa90020cf))
+
+
+
+
+
 ## [1.1.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.7...v1.1.8) (2021-09-14)
 
 **Note:** Version bump only for package @osui/button

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.16](https://gitee.com/gitee-fe/osui/compare/v1.1.10...v1.1.16) (2021-11-04)
+
+
+### Bug Fixes
+
+* 修复page-header整体字号不follow cssvar的问题 ([a0db1f6](https://gitee.com/gitee-fe/osui/commits/a0db1f6f6b50d8a609b9a3c946ffbebe35763c00))
+* 字体调整 ([8cbe2b1](https://gitee.com/gitee-fe/osui/commits/8cbe2b1abeca9fe7c1f7fbf05639a9c2dd97e613))
+* button loading 带回来改动 ([66e3629](https://gitee.com/gitee-fe/osui/commits/66e36293b1578371a4c7e835bccd319fa90020cf))
+* comments调整 ([4c71b2c](https://gitee.com/gitee-fe/osui/commits/4c71b2c98cd12a1de4cf08f7a9fa1157ffdbc74d))
+* font-family去掉重复的, button hover变量用theme变量 ([07d1ba2](https://gitee.com/gitee-fe/osui/commits/07d1ba2a964552eb9dd98e06910aaecb00751f63))
+* svg height='auto'修复 ([f686d8a](https://gitee.com/gitee-fe/osui/commits/f686d8a4ac4f37c5ad6a0ef045ca67402ad509d9))
+* tag forward ref ([29c78f5](https://gitee.com/gitee-fe/osui/commits/29c78f5e2366c131d77857d6e8428f296f0ec595))
+* tree 箭头调整位置 ([1352e87](https://gitee.com/gitee-fe/osui/commits/1352e87a0d90488fb2254c6bb566c34962f482b8))
+* upload调整 ([f9f5ed7](https://gitee.com/gitee-fe/osui/commits/f9f5ed78b91fbed80aa74cb5599985cc48741283))
+
+
+
+
+
 ## [1.1.15](https://gitee.com/gitee-fe/osui/compare/v1.1.10...v1.1.15) (2021-11-02)
 
 

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.10...v1.1.16) (2021-11-04)
+
+
+### Bug Fixes
+
+* 字体调整 ([8cbe2b1](https://gitee.com/gitee-fe/osui/tree/master/commits/8cbe2b1abeca9fe7c1f7fbf05639a9c2dd97e613))
+* comments调整 ([4c71b2c](https://gitee.com/gitee-fe/osui/tree/master/commits/4c71b2c98cd12a1de4cf08f7a9fa1157ffdbc74d))
+* font-family去掉重复的, button hover变量用theme变量 ([07d1ba2](https://gitee.com/gitee-fe/osui/tree/master/commits/07d1ba2a964552eb9dd98e06910aaecb00751f63))
+
+
+
+
+
 ## [1.1.15](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.10...v1.1.15) (2021-11-02)
 
 

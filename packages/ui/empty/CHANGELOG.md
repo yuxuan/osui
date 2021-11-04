@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.10...v1.1.16) (2021-11-04)
+
+
+### Bug Fixes
+
+* svg height='auto'修复 ([f686d8a](https://gitee.com/gitee-fe/osui/tree/master/commits/f686d8a4ac4f37c5ad6a0ef045ca67402ad509d9))
+
+
+
+
+
 ## [1.1.15](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.10...v1.1.15) (2021-11-02)
 
 

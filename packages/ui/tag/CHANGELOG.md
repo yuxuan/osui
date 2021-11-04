@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.10...v1.1.16) (2021-11-04)
+
+
+### Bug Fixes
+
+* tag forward ref ([29c78f5](https://gitee.com/gitee-fe/osui/tree/master/commits/29c78f5e2366c131d77857d6e8428f296f0ec595))
+
+
+
+
+
 ## [1.1.15](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.10...v1.1.15) (2021-11-02)
 
 
