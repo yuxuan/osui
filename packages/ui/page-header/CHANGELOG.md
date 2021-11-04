@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.15](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.10...v1.1.15) (2021-11-02)
+
+
+### Bug Fixes
+
+* 修复page-header整体字号不follow cssvar的问题 ([a0db1f6](https://gitee.com/gitee-fe/osui/tree/master/commits/a0db1f6f6b50d8a609b9a3c946ffbebe35763c00))
+
+
+
+
+
 ## [1.1.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.7...v1.1.8) (2021-09-14)
 
 **Note:** Version bump only for package @osui/page-header

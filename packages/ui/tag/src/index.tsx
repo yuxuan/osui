@@ -22,17 +22,17 @@ export interface TagType extends React.ForwardRefExoticComponent<TagProps & Reac
 }
 
 const Tag = React.forwardRef<HTMLSpanElement, TagProps>((props, ref) => {
-    const {closeIcon, color} = props;
+    const {closeIcon, color, solid, round, ...restProps} = props;
     const patchedIcon = closeIcon ?? <IconCloseOutlined />;
     const classnames = classNames(
         clsPrefix,
-        {[`${clsPrefix}-solid`]: props.solid},
-        {[`${clsPrefix}-round`]: props.round},
+        {[`${clsPrefix}-solid`]: solid},
+        {[`${clsPrefix}-round`]: round},
         {[`${clsPrefix}-${color}`]: props.color},
         props.className
     );
 
-    return <AntdTag ref={ref} {...props} closeIcon={patchedIcon} className={classnames} />;
+    return <AntdTag ref={ref} {...restProps} closeIcon={patchedIcon} className={classnames} />;
 }) as TagType;
 
 export type CheckableTagProps = AntdCheckableTagProps;
