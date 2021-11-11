@@ -69,9 +69,32 @@
 
         .@{ant-prefix}-table-cell-with-append {
             .osui-icon {
+                position: relative;
+                left: -2px;
                 float: left;
                 margin-right: 4px;
             }
         }
+    }
+
+    // Table Header 里面的icon贴着文字
+    .@{ant-prefix}-table-filter-column,
+    .@{ant-prefix}-table-column-sorters {
+        justify-content: initial;
+    }
+
+    .@{ant-prefix}-table-column-title {
+        flex: 0;
+    }
+
+    .@{ant-prefix}-table-column-sorter,
+    .@{ant-prefix}-table-filter-trigger {
+        flex: 1;
+        flex-grow: 0;
+        margin-left: 8px;
+    }
+
+    .@{ant-prefix}-table-filter-trigger:hover {
+        background: transparent;
     }
 }
