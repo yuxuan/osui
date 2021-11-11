@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.17](https://gitee.com/gitee-fe/osui/compare/v1.1.16...v1.1.17) (2021-11-11)
+
+
+### Bug Fixes
+
+* table header icon位置, 和展开时不对齐的问题 ([d90d53b](https://gitee.com/gitee-fe/osui/commits/d90d53b98c179937342c26cbf5519f80b0e4768a))
+
+
+
+
+
 ## [1.1.16](https://gitee.com/gitee-fe/osui/compare/v1.1.10...v1.1.16) (2021-11-04)
 
 

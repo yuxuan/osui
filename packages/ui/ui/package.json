@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "1.1.16",
+    "version": "1.1.17",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -123,7 +123,7 @@
         "@osui/statistic": "^1.1.8",
         "@osui/steps": "^1.1.8",
         "@osui/switch": "^1.1.8",
-        "@osui/table": "^1.1.16",
+        "@osui/table": "^1.1.17",
         "@osui/tabs": "^1.1.8",
         "@osui/tag": "^1.1.16",
         "@osui/text-overflow-tooltip": "^1.1.8",

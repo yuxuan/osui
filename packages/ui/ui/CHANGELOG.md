@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.17](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.16...v1.1.17) (2021-11-11)
+
+**Note:** Version bump only for package @osui/ui
+
+
+
+
+
 ## [1.1.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.10...v1.1.16) (2021-11-04)
 
 **Note:** Version bump only for package @osui/ui
