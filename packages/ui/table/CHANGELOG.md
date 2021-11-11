@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.18](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.17...v1.1.18) (2021-11-11)
+
+
+### Bug Fixes
+
+* table 对齐问题修复 ([3f8edb4](https://gitee.com/gitee-fe/osui/tree/master/commits/3f8edb4c4a85498b348c8fb44c021d88fa091ffd))
+
+
+
+
+
 ## [1.1.17](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.16...v1.1.17) (2021-11-11)
 
 
