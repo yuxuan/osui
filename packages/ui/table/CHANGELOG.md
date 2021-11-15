@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.19](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.18...v1.1.19) (2021-11-15)
+
+
+### Bug Fixes
+
+* table column icon挤掉title的问题 ([c8d2f7f](https://gitee.com/gitee-fe/osui/tree/master/commits/c8d2f7f8ebc7126f28b35afd49ed93f626750a02))
+
+
+
+
+
 ## [1.1.18](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.17...v1.1.18) (2021-11-11)
 
 
