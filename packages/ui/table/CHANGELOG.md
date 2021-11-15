@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.20](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.19...v1.1.20) (2021-11-15)
+
+
+### Bug Fixes
+
+* 去掉table icon上不需要的flex属性 ([56e0345](https://gitee.com/gitee-fe/osui/tree/master/commits/56e0345ad406b765dd06aba29ec7399782cfc3ad))
+
+
+
+
+
 ## [1.1.19](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.18...v1.1.19) (2021-11-15)
 
 
