@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.22](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.21...v1.1.22) (2021-11-18)
+
+
+### Bug Fixes
+
+* 修复empty文字的颜色 ([27729f5](https://gitee.com/gitee-fe/osui/tree/master/commits/27729f5be167d56c3bbdd115a64b8ed9df559d1d))
+
+
+
+
+
 ## [1.1.21](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.20...v1.1.21) (2021-11-18)
 
 
