@@ -1,19 +1,10 @@
 /* eslint-disable max-len */
 import * as React from 'react';
-interface Props {
-    width?: number | string;
-    height?: number | string;
-}
 
-const Empty = ({width = 140, height = 'auto'}: Props) => {
-    const style = React.useMemo(
-        () => ({width, height}),
-        [width, height]
-    );
+const Empty = () => {
     return (
         <svg
             className="osui-empty-img"
-            style={style}
             viewBox="0 0 140 100"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
