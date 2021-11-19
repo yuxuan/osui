@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.23](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.22...v1.1.23) (2021-11-19)
+
+
+### Bug Fixes
+
+* 从antd中import ConfigProvider从而得到ConfigContext ([5541a52](https://gitee.com/gitee-fe/osui/tree/master/commits/5541a52a4a0e240f475092089726c5114ef50c68))
+* space组件的size默认值优先从GlobalConfig取 ([5a1d80f](https://gitee.com/gitee-fe/osui/tree/master/commits/5a1d80fec4b727cdda7e8ae733629baaccb3e4ed))
+
+
+
+
+
 ## [1.1.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.7...v1.1.8) (2021-09-14)
 
 **Note:** Version bump only for package @osui/space

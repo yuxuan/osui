@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "1.1.22",
+    "version": "1.1.23",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -118,7 +118,7 @@
         "@osui/select": "^1.1.8",
         "@osui/skeleton": "^1.1.8",
         "@osui/slider": "^1.1.8",
-        "@osui/space": "^1.1.8",
+        "@osui/space": "^1.1.23",
         "@osui/spin": "^1.1.8",
         "@osui/statistic": "^1.1.8",
         "@osui/steps": "^1.1.8",
