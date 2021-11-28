@@ -6,6 +6,9 @@
   "file": [
     "main.js"
   ],
+  "scripts": {
+    "clean": "echo 'done'"
+  },
   "author": "Yuxuan Huo",
   "license": "MIT",
   "dependencies": {
