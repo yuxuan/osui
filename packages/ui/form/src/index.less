@@ -4,11 +4,6 @@
 .@{osui-form-class-prefix} {
     .@{ant-prefix}-form-item-explain {
         font-size: 12px;
-
-        [role="alert"] {
-            display: flex;
-            align-items: center;
-        }
     }
 
     .@{ant-prefix}-form-item-has-error .@{ant-prefix}-form-item-explain {
@@ -88,7 +83,7 @@
     }
 
     // 对齐Antd label
-    .has-required-item .@{ant-prefix}-form-item-label > label:not(.@{ant-prefix}-form-item-required)::before {
+    &.has-required-item .@{ant-prefix}-form-item-label > label:not(.@{ant-prefix}-form-item-required)::before {
         margin-left: 8px;
         content: ' ';
     }
