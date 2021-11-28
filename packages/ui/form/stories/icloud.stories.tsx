@@ -13,7 +13,7 @@ export default {
 };
 
 export const Demo = () => {
-    Form.useLabelLayout('basic');
+    Form.useLabelLayout('basic', 0);
     const layout = {
         labelCol: {
             span: 4,
@@ -228,7 +228,7 @@ export const BasicDemo = () => {
 };
 
 export const ValidateMessageDemo = () => {
-    Form.useLabelLayout('basic');
+    Form.useLabelLayout('basic', 0);
 
     const formItemLayout = {
         labelCol: {
@@ -378,18 +378,18 @@ export const TestCase = () => {
 
 const formItemLayout = {
     labelCol: {
-        xs: { span: 24 },
-        sm: { span: 4 },
+        xs: {span: 24},
+        sm: {span: 4},
     },
     wrapperCol: {
-        xs: { span: 24 },
-        sm: { span: 20 },
+        xs: {span: 24},
+        sm: {span: 20},
     },
 };
 const formItemLayoutWithOutLabel = {
     wrapperCol: {
-        xs: { span: 24, offset: 0 },
-        sm: { span: 20, offset: 4 },
+        xs: {span: 24, offset: 0},
+        sm: {span: 20, offset: 4},
     },
 };
 
@@ -409,7 +409,7 @@ export const TestCaseFormErrorList = () => {
                         },
                     ]}
                 >
-                    {(fields, { add }, { errors }) => (
+                    {(fields, {add}, {errors}) => (
                         <>
                             {fields.map((field, index) => (
                                 <Form.Item
@@ -435,7 +435,7 @@ export const TestCaseFormErrorList = () => {
                                     >
                                         <Input
                                             placeholder="passenger name"
-                                            style={{ width: '60%' }}
+                                            style={{width: '60%'}}
                                         />
                                     </Form.Item>
                                 </Form.Item>
@@ -444,7 +444,7 @@ export const TestCaseFormErrorList = () => {
                                 <Button
                                     type="dashed"
                                     onClick={() => add()}
-                                    style={{ width: '60%' }}
+                                    style={{width: '60%'}}
                                 >
                                     Add field
                                 </Button>
@@ -453,7 +453,7 @@ export const TestCaseFormErrorList = () => {
                                     onClick={() => {
                                         add('The head item', 0);
                                     }}
-                                    style={{ width: '60%', marginTop: '20px' }}
+                                    style={{width: '60%', marginTop: '20px'}}
                                 >
                                     Add field at head
                                 </Button>
