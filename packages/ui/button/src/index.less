@@ -1,6 +1,6 @@
 @osui-button-class-prefix: osui-button;
 
-@button-types: default, strong, primary, link, text, icon;
+@button-types: strong, primary, link, text, icon;
 
 .button-color-mixin(@color; @background; @border-color; @icon-color) {
     color: @color;
@@ -76,6 +76,55 @@
     .generate((@i - 1));
 }
 
+// antd 移除了default的样式，需要直接应用到ant-btn上，需要放到gengerate上面，确保有type的能覆盖它
+/* stylelint-disable no-duplicate-selectors */
+.@{osui-button-class-prefix}.@{ant-prefix}-btn {
+    .button-color-mixin(
+        ~'var(--btn-default-color)';
+        ~'var(--btn-default-bg)';
+        ~'var(--btn-default-border-color)';
+        ~'var(--btn-default-icon-color)';
+    );
+
+    &:hover {
+        .button-color-mixin(
+            ~'var(--btn-default-hover-color)';
+            ~'var(--btn-default-hover-bg)';
+            ~'var(--btn-default-hover-border-color)';
+            ~'var(--btn-default-hover-color)';
+        );
+    }
+
+    &:focus {
+        .button-color-mixin(
+            ~'var(--btn-default-focus-color)';
+            ~'var(--btn-default-focus-bg)';
+            ~'var(--btn-default-focus-border-color)';
+            ~'var(--btn-default-focus-color)';
+        );
+
+        box-shadow: var(--theme-component-focus-box-shadow);
+    }
+
+    &:active {
+        .button-color-mixin(
+            ~'var(--btn-default-active-color)';
+            ~'var(--btn-default-active-bg)';
+            ~'var(--btn-default-active-border-color)';
+            ~'var(--btn-default-active-color)';
+        );
+    }
+
+    &[disabled] {
+        .button-color-mixin(
+            ~'var(--btn-default-disable-color)';
+            ~'var(--btn-default-disable-bg)';
+            ~'var(--btn-default-disable-border-color)';
+            ~'var(--btn-default-disable-color)';
+        );
+    }
+}
+
 .generate();
 
 @osui-buttno-faces: success, error, warning;
@@ -83,7 +132,7 @@
 .generate-face(@i: length(@osui-buttno-faces)) when (@i > 0) {
     @face: extract(@osui-buttno-faces, @i);
 
-    .@{osui-button-class-prefix}.@{ant-prefix}-btn-default.@{osui-button-class-prefix}-face-@{face} {
+    .@{osui-button-class-prefix}.@{osui-button-class-prefix}-face-@{face} {
         color: ~"var(--theme-@{face}-color)";
         border-color: ~"var(--theme-@{face}-color)";
 
