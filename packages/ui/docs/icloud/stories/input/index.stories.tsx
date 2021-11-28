@@ -146,7 +146,7 @@ export const Demo = () => {
                         label="产品线名称"
                         validateStatus="error"
                         extra="输入3~10的正整数，数值越大，优先级越高"
-                        help={['最大值为***', '最小值为****']}
+                        help={[<div key="1">最大值为***</div>, <div key="2">最小值为****</div>]}
                     >
                         <Input defaultValue="11" />
                     </Form.Item>

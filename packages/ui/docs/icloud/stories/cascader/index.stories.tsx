@@ -106,7 +106,15 @@ export const Load = () => {
             }, 1000);
         };
 
-        return <Cascader options={options} loadData={loadData} onChange={onChange} changeOnSelect />;
+        return (
+            <Cascader
+                placeholder="Please select"
+                options={options}
+                loadData={loadData}
+                onChange={onChange}
+                changeOnSelect
+            />
+        );
     };
     return (<LazyOptions />);
 };
