@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://gitee.com/gitee-fe/osui/compare/v1.1.23...v1.2.0) (2021-11-29)
+
+
+### Bug Fixes
+
+*  form只有有required item时, 才对齐标题 ([ce09dba](https://gitee.com/gitee-fe/osui/commits/ce09dba099c2e577967af7aa283acf9b124c87e6))
+* 色盘调整 ([94e6db1](https://gitee.com/gitee-fe/osui/commits/94e6db1e9a276118237a8d0483d41d14a1a49d94))
+* 修复4.17 antd移除了ant-btn-default class的问题 ([1cadf2c](https://gitee.com/gitee-fe/osui/commits/1cadf2cfda61aa4cba5d4d5a50027fd03597454a))
+* 修复button danger primary时字体颜色问题 ([2349b0c](https://gitee.com/gitee-fe/osui/commits/2349b0c422c563ca39cd3e8c560ba474d4e979a7))
+* antd form alert的结构有调整,现在不是string[]了,可以是reactnode了,格式传入时控制 ([26b291f](https://gitee.com/gitee-fe/osui/commits/26b291f46c68dab840baa979ef019143181adad1))
+
+
+
+
+
 ## [1.1.23](https://gitee.com/gitee-fe/osui/compare/v1.1.22...v1.1.23) (2021-11-19)
 
 

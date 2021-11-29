@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.23...v1.2.0) (2021-11-29)
+
+
+### Bug Fixes
+
+* 修复4.17 antd移除了ant-btn-default class的问题 ([1cadf2c](https://gitee.com/gitee-fe/osui/tree/master/commits/1cadf2cfda61aa4cba5d4d5a50027fd03597454a))
+* 修复button danger primary时字体颜色问题 ([2349b0c](https://gitee.com/gitee-fe/osui/tree/master/commits/2349b0c422c563ca39cd3e8c560ba474d4e979a7))
+
+
+
+
+
 ## [1.1.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.10...v1.1.16) (2021-11-04)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.23...v1.2.0) (2021-11-29)
+
+
+### Bug Fixes
+
+*  form只有有required item时, 才对齐标题 ([ce09dba](https://gitee.com/gitee-fe/osui/tree/master/commits/ce09dba099c2e577967af7aa283acf9b124c87e6))
+* antd form alert的结构有调整,现在不是string[]了,可以是reactnode了,格式传入时控制 ([26b291f](https://gitee.com/gitee-fe/osui/tree/master/commits/26b291f46c68dab840baa979ef019143181adad1))
+
+
+
+
+
 ## [1.1.22](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.21...v1.1.22) (2021-11-18)
 
 **Note:** Version bump only for package @osui/form

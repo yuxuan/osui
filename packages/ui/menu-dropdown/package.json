@@ -1,6 +1,6 @@
 {
     "name": "@osui/menu-dropdown",
-    "version": "1.1.8",
+    "version": "1.2.0",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -82,9 +82,9 @@
         }
     },
     "dependencies": {
-        "@osui/dropdown": "^1.1.8",
-        "@osui/menu": "^1.1.8",
-        "@osui/toggle-button": "^1.1.8",
+        "@osui/dropdown": "^1.2.0",
+        "@osui/menu": "^1.2.0",
+        "@osui/toggle-button": "^1.2.0",
         "classnames": "^2.2.6"
     },
     "publishConfig": {
