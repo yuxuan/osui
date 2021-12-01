@@ -75,7 +75,7 @@ const expandableConfig = (
     }
 );
 
-const Table = <RecordType extends Record<string, any>>(
+function Table<RecordType extends Record<string, any>>(
     {
         className,
         bordered,
@@ -86,8 +86,9 @@ const Table = <RecordType extends Record<string, any>>(
         pagination,
         expandable,
         ...props
-    }: TableProps<RecordType>
-) => {
+    }: TableProps<RecordType>,
+    ref: React.Ref<HTMLDivElement> | undefined
+) {
     const {brand} = useBrandContext();
     const {getPrefixCls} = useContext(ConfigContext);
     const antPrefix = getPrefixCls('table');
@@ -159,6 +160,7 @@ const Table = <RecordType extends Record<string, any>>(
 
     return (
         <AntdTable<RecordType>
+            ref={ref}
             {...props}
             className={internalClassNames}
             bordered={internalBordered}
@@ -166,9 +168,11 @@ const Table = <RecordType extends Record<string, any>>(
             expandable={innerExpandable}
         />
     );
-};
+}
 
-hoistNonReactStatics(Table, AntdTable);
+const ForwardTable = React.forwardRef(Table);
+
+hoistNonReactStatics(ForwardTable, AntdTable);
 
 export type {
     TableColumnProps,
@@ -181,4 +185,16 @@ export type {
 
 export type {ExpandableConfig} from 'antd/lib/table/interface';
 
-export default Table as unknown as typeof AntdTable & typeof Table;
+type InternalTableType = typeof ForwardTable;
+
+interface TableInterface extends InternalTableType {
+    defaultProps?: Partial<TableProps<any>>;
+    SELECTION_ALL: 'SELECT_ALL';
+    SELECTION_INVERT: 'SELECT_INVERT';
+    SELECTION_NONE: 'SELECT_NONE';
+    Column: typeof AntdTable.Column;
+    ColumnGroup: typeof AntdTable.ColumnGroup;
+    Summary: typeof AntdTable.Summary;
+}
+
+export default ForwardTable as TableInterface;
