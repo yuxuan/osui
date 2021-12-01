@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://gitee.com/gitee-fe/osui/compare/v1.2.0...v1.2.1) (2021-12-01)
+
+
+### Bug Fixes
+
+* 修复table 类型的问题A ([cd41ed1](https://gitee.com/gitee-fe/osui/commits/cd41ed17851d50eb2e6664350b69977c826e78dc))
+
+
+
+
+
 # [1.2.0](https://gitee.com/gitee-fe/osui/compare/v1.1.23...v1.2.0) (2021-11-29)
 
 
