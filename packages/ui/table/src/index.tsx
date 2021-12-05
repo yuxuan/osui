@@ -170,7 +170,9 @@ function Table<RecordType extends Record<string, any>>(
     );
 }
 
-const ForwardTable = React.forwardRef(Table);
+const ForwardTable = React.forwardRef(Table) as <RecordType extends Record<string, any> = any>(
+    props: React.PropsWithChildren<TableProps<RecordType>> & { ref?: React.Ref<HTMLDivElement> },
+) => React.ReactElement;
 
 hoistNonReactStatics(ForwardTable, AntdTable);
 
