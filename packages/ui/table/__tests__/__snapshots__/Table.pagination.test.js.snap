@@ -83,7 +83,7 @@ exports[`Table.pagination Accepts pagination as true 1`] = `
         </div>
       </div>
       <ul
-        class="ant-pagination ant-table-pagination ant-table-pagination-right osui-pagination"
+        class="ant-pagination ant-table-pagination ant-table-pagination-right ant-table-pagination ant-table-pagination-right osui-pagination"
         unselectable="unselectable"
       >
         <li
@@ -204,7 +204,7 @@ exports[`Table.pagination renders pagination correctly 1`] = `
         </div>
       </div>
       <ul
-        class="ant-pagination ant-table-pagination ant-table-pagination-right osui-pagination my-page"
+        class="ant-pagination ant-table-pagination ant-table-pagination-right ant-table-pagination ant-table-pagination-right osui-pagination my-page"
         unselectable="unselectable"
       >
         <li
@@ -356,7 +356,7 @@ exports[`Table.pagination renders pagination topLeft and bottomRight 1`] = `
         </div>
       </div>
       <ul
-        class="ant-pagination ant-table-pagination ant-table-pagination-right osui-pagination"
+        class="ant-pagination ant-table-pagination ant-table-pagination-right ant-table-pagination ant-table-pagination-right osui-pagination"
         unselectable="unselectable"
       >
         <li

@@ -272,7 +272,7 @@ exports[`Table.rowSelection fix expand on th left when selection column fixed on
         </div>
       </div>
       <ul
-        class="ant-pagination ant-table-pagination ant-table-pagination-right osui-pagination"
+        class="ant-pagination ant-table-pagination ant-table-pagination-right ant-table-pagination ant-table-pagination-right osui-pagination"
         unselectable="unselectable"
       >
         <li
@@ -546,7 +546,7 @@ exports[`Table.rowSelection fix selection column on the left 1`] = `
         </div>
       </div>
       <ul
-        class="ant-pagination ant-table-pagination ant-table-pagination-right osui-pagination"
+        class="ant-pagination ant-table-pagination ant-table-pagination-right ant-table-pagination ant-table-pagination-right osui-pagination"
         unselectable="unselectable"
       >
         <li
@@ -825,7 +825,7 @@ exports[`Table.rowSelection fix selection column on the left when any other colu
         </div>
       </div>
       <ul
-        class="ant-pagination ant-table-pagination ant-table-pagination-right osui-pagination"
+        class="ant-pagination ant-table-pagination ant-table-pagination-right ant-table-pagination ant-table-pagination-right osui-pagination"
         unselectable="unselectable"
       >
         <li
@@ -1161,7 +1161,7 @@ exports[`Table.rowSelection should support getPopupContainer 1`] = `
         </div>
       </div>
       <ul
-        class="ant-pagination ant-table-pagination ant-table-pagination-right osui-pagination"
+        class="ant-pagination ant-table-pagination ant-table-pagination-right ant-table-pagination ant-table-pagination-right osui-pagination"
         unselectable="unselectable"
       >
         <li
@@ -1495,7 +1495,7 @@ exports[`Table.rowSelection should support getPopupContainer from ConfigProvider
         </div>
       </div>
       <ul
-        class="ant-pagination ant-table-pagination ant-table-pagination-right osui-pagination"
+        class="ant-pagination ant-table-pagination ant-table-pagination-right ant-table-pagination ant-table-pagination-right osui-pagination"
         unselectable="unselectable"
       >
         <li
@@ -1739,7 +1739,7 @@ exports[`Table.rowSelection use column as selection column when key is \`selecti
         </div>
       </div>
       <ul
-        class="ant-pagination ant-table-pagination ant-table-pagination-right osui-pagination"
+        class="ant-pagination ant-table-pagination ant-table-pagination-right ant-table-pagination ant-table-pagination-right osui-pagination"
         unselectable="unselectable"
       >
         <li
