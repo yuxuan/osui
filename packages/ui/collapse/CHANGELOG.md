@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.1...v1.2.2) (2021-12-06)
+
+
+### Bug Fixes
+
+* 修复collapse calc的问题 ([6f3edf7](https://gitee.com/gitee-fe/osui/tree/master/commits/6f3edf706141abdeb6c6f184eb2c71288f80c5ea))
+
+
+
+
+
 # [1.2.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.23...v1.2.0) (2021-11-29)
 
 **Note:** Version bump only for package @osui/collapse

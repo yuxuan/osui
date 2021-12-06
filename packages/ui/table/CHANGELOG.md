@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.1...v1.2.2) (2021-12-06)
+
+
+### Bug Fixes
+
+* 调整table configContext的来源 ([8433698](https://gitee.com/gitee-fe/osui/tree/master/commits/8433698673d22a42b4b78c2378a00d8e09185189))
+* 修复table的类型问题 ([a8c4a0f](https://gitee.com/gitee-fe/osui/tree/master/commits/a8c4a0f001ab903686009528c2fbacee2b16ded0))
+
+
+
+
+
 ## [1.2.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.0...v1.2.1) (2021-12-01)
 
 
