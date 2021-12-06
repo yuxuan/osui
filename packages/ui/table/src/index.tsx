@@ -1,8 +1,7 @@
 /* eslint-disable complexity */
 import React, {useContext, useMemo} from 'react';
-import {Table as AntdTable} from 'antd';
+import {Table as AntdTable, ConfigProvider} from 'antd';
 import hoistNonReactStatics from 'hoist-non-react-statics';
-import {ConfigContext} from 'antd/lib/config-provider';
 import {
     TableProps as AntdTableProps,
     TablePaginationConfig as AntdTablePaginationConfig,
@@ -90,7 +89,7 @@ function Table<RecordType extends Record<string, any>>(
     ref: React.Ref<HTMLDivElement> | undefined
 ) {
     const {brand} = useBrandContext();
-    const {getPrefixCls} = useContext(ConfigContext);
+    const {getPrefixCls} = useContext(ConfigProvider.ConfigContext);
     const antPrefix = getPrefixCls('table');
     // antd的bordered只控制column的border，当noBorder=true时，所有border都没有，包括头部
     // 当noRowBorder时，保留头部border，没有row的border

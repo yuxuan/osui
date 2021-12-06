@@ -818,6 +818,8 @@ export const TestCase2 = () => {
             dataIndex: 'name',
             filters: [{text: '1', value: 'name'}],
             filterDropdownVisible: true,
+            filterMode: 'tree' as 'tree',
+            filterSearch: true,
         },
     ];
 
