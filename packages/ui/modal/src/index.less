@@ -1,5 +1,7 @@
 @osui-modal-class-prefix: osui-modal;
 
+// 这个antd在4.17.2修复了，但是为了兼容之前的antd版本，保留
+// FIXME 大版本升级之后，去掉
 .@{ant-prefix}-modal-centered .@{osui-modal-class-prefix} {
     &.@{ant-prefix}-modal {
         padding-bottom: 0;

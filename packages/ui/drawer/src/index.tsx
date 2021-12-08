@@ -5,7 +5,7 @@ import {IconCloseOutlined} from '@osui/icons';
 import classNames from 'classnames';
 import './index.less';
 
-export interface DrawerProps extends AntdDrawerProps {
+export interface DrawerProps extends Omit<AntdDrawerProps, 'size'> {
     size?: 'large' | 'middle' | 'small';
     children: React.ReactNode;
 }
@@ -18,10 +18,17 @@ const sizeWidthMap: {[key in 'large' | 'middle' | 'small']: number} = {
     small: 200,
 };
 
-const OSUIDrawer = React.forwardRef<any, DrawerProps>(({closeIcon, size, className, ...props}, ref) => {
+const OSUIDrawer = React.forwardRef<any, DrawerProps>((
+    {closeIcon, size, className, closable = true, ...props},
+    ref
+) => {
     const innerCloseIcon = closeIcon || <IconCloseOutlined />;
     const innerWidth = props.width ?? (size && sizeWidthMap[size]);
-    const innerClassNames = classNames(clsPrefix, className);
+    const innerClassNames = classNames(
+        clsPrefix,
+        {[`${clsPrefix}-extra-with-close`]: closable && props.extra},
+        className
+    );
     return (
         <AntdDrawer
             // @ts-expect-error // 这里antd的types有问题

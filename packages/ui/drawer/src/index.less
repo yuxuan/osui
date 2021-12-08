@@ -1,8 +1,25 @@
 @osui-drawer-class-prefix: osui-drawer;
 
 .@{osui-drawer-class-prefix} {
+    // 当即有extra又是closable时
+    &-extra-with-close {
+        .@{ant-prefix}-drawer-header {
+            .ant-drawer-extra {
+                margin-right: 24px;
+            }
+        }
+    }
+
     .@{ant-prefix}-drawer-header {
         border-bottom: 1px solid transparent;
+
+        .@{ant-prefix}-drawer-header-title {
+            // 把关闭按钮挪到右边去
+            .@{ant-prefix}-drawer-close {
+                position: absolute;
+                right: 0;
+            }
+        }
 
         .@{ant-prefix}-drawer-title {
             font-size: var(--drawer-title-font-size);
