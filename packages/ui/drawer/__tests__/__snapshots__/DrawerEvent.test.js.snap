@@ -3,7 +3,7 @@
 exports[`Drawer render correctly 1`] = `
 <div>
   <button
-    class="ant-btn ant-btn-default osui-button"
+    class="ant-btn osui-button"
     type="button"
   >
     <span>
@@ -22,7 +22,7 @@ exports[`Drawer render correctly 1`] = `
       />
       <div
         class="ant-drawer-content-wrapper"
-        style="width: 256px;"
+        style="width: 378px;"
       >
         <div
           class="ant-drawer-content"
@@ -31,30 +31,33 @@ exports[`Drawer render correctly 1`] = `
             class="ant-drawer-wrapper-body"
           >
             <div
-              class="ant-drawer-header-no-title"
+              class="ant-drawer-header ant-drawer-header-close-only"
             >
-              <button
-                aria-label="Close"
-                class="ant-drawer-close"
-                style="--scroll-bar: 0px;"
-                type="button"
+              <div
+                class="ant-drawer-header-title"
               >
-                <svg
-                  class="osui-icon "
-                  focusable="false"
-                  height="1024"
-                  viewBox="0 0 1024 1024"
-                  width="1024"
+                <button
+                  aria-label="Close"
+                  class="ant-drawer-close"
+                  type="button"
                 >
-                  <path
-                    d="M829.077 150.255l45.255 45.255-316.784 316.783 316.784 316.784-45.255 45.255-316.784-316.784L195.51 874.332l-45.255-45.255 316.784-316.784L150.255 195.51l45.255-45.255 316.783 316.784 316.784-316.784z"
-                    fill="currentColor"
-                    fill-rule="evenodd"
-                    stroke="currentColor"
-                    stroke-width="64"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    class="osui-icon "
+                    focusable="false"
+                    height="1024"
+                    viewBox="0 0 1024 1024"
+                    width="1024"
+                  >
+                    <path
+                      d="M829.077 150.255l45.255 45.255-316.784 316.783 316.784 316.784-45.255 45.255-316.784-316.784L195.51 874.332l-45.255-45.255 316.784-316.784L150.255 195.51l45.255-45.255 316.783 316.784 316.784-316.784z"
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      stroke="currentColor"
+                      stroke-width="64"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
             <div
               class="ant-drawer-body"
