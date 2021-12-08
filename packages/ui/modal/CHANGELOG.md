@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.2...v1.2.3) (2021-12-08)
+
+
+### Bug Fixes
+
+* 调整modal的关闭icon位置 ([a3e9bd4](https://gitee.com/gitee-fe/osui/tree/master/commits/a3e9bd4906ac547e9cc45830cd041186f9a9dffd))
+
+
+
+
+
 # [1.2.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.23...v1.2.0) (2021-11-29)
 
 **Note:** Version bump only for package @osui/modal

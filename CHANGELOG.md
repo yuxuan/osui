@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://gitee.com/gitee-fe/osui/compare/v1.2.2...v1.2.3) (2021-12-08)
+
+
+### Bug Fixes
+
+* 调整modal的关闭icon位置 ([a3e9bd4](https://gitee.com/gitee-fe/osui/commits/a3e9bd4906ac547e9cc45830cd041186f9a9dffd))
+
+
+
+
+
 ## [1.2.2](https://gitee.com/gitee-fe/osui/compare/v1.2.1...v1.2.2) (2021-12-06)
 
 
