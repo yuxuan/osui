@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -83,7 +83,7 @@
         "@osui/descriptions": "^1.2.0",
         "@osui/directory-navigator": "^1.2.0",
         "@osui/divider": "^1.2.0",
-        "@osui/drawer": "^1.2.3",
+        "@osui/drawer": "^1.2.4",
         "@osui/dropdown": "^1.2.0",
         "@osui/empty": "^1.2.0",
         "@osui/flex-centered": "^1.2.0",

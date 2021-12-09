@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.4](https://gitee.com/gitee-fe/osui/compare/v1.2.3...v1.2.4) (2021-12-09)
+
+
+### Bug Fixes
+
+* 修复drawer closable没有传下去的问题 ([85edea2](https://gitee.com/gitee-fe/osui/commits/85edea24ad9c9d1b4439f70f0269e372ea148d73))
+
+
+
+
+
 ## [1.2.3](https://gitee.com/gitee-fe/osui/compare/v1.2.2...v1.2.3) (2021-12-08)
 
 
