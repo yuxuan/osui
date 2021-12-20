@@ -132,7 +132,7 @@
 .generate-face(@i: length(@osui-buttno-faces)) when (@i > 0) {
     @face: extract(@osui-buttno-faces, @i);
 
-    .@{osui-button-class-prefix}.@{osui-button-class-prefix}-face-@{face} {
+    .@{ant-prefix}-btn.@{osui-button-class-prefix}.@{osui-button-class-prefix}-face-@{face} {
         color: ~"var(--theme-@{face}-color)";
         border-color: ~"var(--theme-@{face}-color)";
 
@@ -192,6 +192,36 @@
 }
 
 .generate-face();
+
+// 对error text link 的button处理
+.@{ant-prefix}-btn.@{ant-prefix}-btn-text,
+.@{ant-prefix}-btn.@{ant-prefix}-btn-link {
+    &.@{osui-button-class-prefix}.@{osui-button-class-prefix}-face-error {
+        background: var(--theme-component-bg);
+    }
+}
+
+// ghost
+.@{ant-prefix}-btn.@{ant-prefix}-btn-background-ghost {
+    &.@{osui-button-class-prefix} {
+        color: var(--theme-component-bg);
+        background: transparent;
+        border-color: var(--theme-component-bg);
+
+        &:hover,
+        &:focus {
+            color: var(--btn-default-hover-color);
+            background: transparent;
+            border-color: var(--btn-default-hover-border-color);
+        }
+
+        &[disabled] {
+            color: var(--btn-default-disable-color);
+            background: transparent;
+            border-color: var(--btn-default-disable-border-color);
+        }
+    }
+}
 
 .@{osui-button-class-prefix} {
     &-flex-center,

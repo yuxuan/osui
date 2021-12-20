@@ -32,7 +32,7 @@ export const Demo = () => {
     return (
         <>
             <BrandProvider brand="icloud">
-                <Blockquote >
+                <Blockquote>
                     UE要求两个字时中间没有空格，通过antd ConfigProvider来配置autoInsertSpaceInButton: false。
                     <br />
                     <strong>注意</strong>Button loading自动添加了flexedCenter，当作为button组时，需要外面裹一下div flex center
@@ -41,21 +41,21 @@ export const Demo = () => {
                 <h3><b>1、普通按钮</b></h3>
                 <p>普通样式</p>
                 <FlexCentered>
-                    <Button type="default" style={{ 'margin': '0 20px 20px 0' }}>普通样式</Button>
-                    <Button type="default" disabled style={{ 'margin': '0 20px 20px 0' }}>普通样式</Button>
-                    <Button type="default" loading style={{ 'margin': '0 20px 20px 0' }}>普通样式</Button>
+                    <Button type="default" style={{'margin': '0 20px 20px 0'}}>普通样式</Button>
+                    <Button type="default" disabled style={{'margin': '0 20px 20px 0'}}>普通样式</Button>
+                    <Button type="default" loading style={{'margin': '0 20px 20px 0'}}>普通样式</Button>
                 </FlexCentered>
                 <p>加强样式</p>
                 <FlexCentered>
-                    <Button type="strong" style={{ 'margin': '0 20px 20px 0' }}>加强样式</Button>
-                    <Button type="strong" disabled style={{ 'margin': '0 20px 20px 0' }}>加强样式</Button>
-                    <Button type="strong" loading style={{ 'margin': '0 20px 20px 0' }}>加强样式</Button>
+                    <Button type="strong" style={{'margin': '0 20px 20px 0'}}>加强样式</Button>
+                    <Button type="strong" disabled style={{'margin': '0 20px 20px 0'}}>加强样式</Button>
+                    <Button type="strong" loading style={{'margin': '0 20px 20px 0'}}>加强样式</Button>
                 </FlexCentered>
                 <p>重要样式</p>
                 <FlexCentered>
-                    <Button type="primary" style={{ 'margin': '0 20px 20px 0' }}>重要样式</Button>
-                    <Button type="primary" disabled style={{ 'margin': '0 20px 20px 0' }}>重要样式</Button>
-                    <Button type="primary" loading style={{ 'margin': '0 20px 20px 0' }}>重要样式</Button>
+                    <Button type="primary" style={{'margin': '0 20px 20px 0'}}>重要样式</Button>
+                    <Button type="primary" disabled style={{'margin': '0 20px 20px 0'}}>重要样式</Button>
+                    <Button type="primary" loading style={{'margin': '0 20px 20px 0'}}>重要样式</Button>
                 </FlexCentered>
                 <h3><b>2、纯文字按钮</b></h3>
                 <Blockquote>
@@ -71,15 +71,15 @@ export const Demo = () => {
                 </Blockquote>
                 <p>普通样式</p>
                 <FlexCentered>
-                    <Button type="text" style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
-                    <Button type="text" disabled style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
-                    <Button type="text" loading style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
+                    <Button type="text" style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
+                    <Button type="text" disabled style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
+                    <Button type="text" loading style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
                 </FlexCentered>
                 <p>加强样式</p>
                 <FlexCentered>
-                    <Button type="link" style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
-                    <Button type="link" disabled style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
-                    <Button type="link" loading style={{ 'margin': '0 20px 20px 0' }}>文字按钮</Button>
+                    <Button type="link" style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
+                    <Button type="link" disabled style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
+                    <Button type="link" loading style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
                 </FlexCentered>
                 <h3><strong>3、图文按钮</strong></h3>
                 <Blockquote>当icon和文字一起的时候，如果对不齐，可以添加flexCenter属性，如果导致同行不齐，外面包裹div display: flex</Blockquote>
@@ -88,7 +88,7 @@ export const Demo = () => {
                     type="link"
                     flexCenter
                     icon={<IconHomeOutlined />}
-                    style={{ 'margin': '0 20px 20px 0' }}
+                    style={{'margin': '0 20px 20px 0'}}
                 >
                     图文按钮
                 </Button>
@@ -97,7 +97,7 @@ export const Demo = () => {
                     type="link"
                     flexCenter
                     icon={<IconHomeOutlined />}
-                    style={{ 'margin': '0 20px 20px 0' }}
+                    style={{'margin': '0 20px 20px 0'}}
                 >
                     图文按钮
                 </Button>
@@ -106,7 +106,7 @@ export const Demo = () => {
                     type="link"
                     flexCenter
                     icon={<IconHomeOutlined />}
-                    style={{ 'margin': '0 20px 20px 0' }}
+                    style={{'margin': '0 20px 20px 0'}}
                 >
                     图文按钮
                 </Button>
@@ -115,7 +115,7 @@ export const Demo = () => {
                     type="text"
                     flexCenter
                     icon={<IconHomeOutlined />}
-                    style={{ 'margin': '0 20px 20px 0' }}
+                    style={{'margin': '0 20px 20px 0'}}
                 >
                     图文按钮
                 </Button>
@@ -124,7 +124,7 @@ export const Demo = () => {
                     type="text"
                     flexCenter
                     icon={<IconHomeOutlined />}
-                    style={{ 'margin': '0 20px 20px 0' }}
+                    style={{'margin': '0 20px 20px 0'}}
                 >
                     图文按钮
                 </Button>
@@ -133,22 +133,22 @@ export const Demo = () => {
                     type="text"
                     flexCenter
                     icon={<IconHomeOutlined />}
-                    style={{ 'margin': '0 20px 20px 0' }}
+                    style={{'margin': '0 20px 20px 0'}}
                 >
                     图文按钮
                 </Button>
                 <p>按钮形式普通样式</p>
-                <Button flexCenter icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }}>
+                <Button flexCenter icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}}>
                     图文按钮
                 </Button>
-                <Button flexCenter disabled icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }}>
+                <Button flexCenter disabled icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}}>
                     图文按钮
                 </Button>
-                <Button flexCenter loading icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }}>
+                <Button flexCenter loading icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}}>
                     图文按钮
                 </Button>
                 <p>按钮形式重要样式</p>
-                <Button flexCenter type="primary" icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }}>
+                <Button flexCenter type="primary" icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}}>
                     图文按钮
                 </Button>
                 <Button
@@ -156,7 +156,7 @@ export const Demo = () => {
                     disabled
                     type="primary"
                     icon={<IconHomeOutlined />}
-                    style={{ 'margin': '0 20px 20px 0' }}
+                    style={{'margin': '0 20px 20px 0'}}
                 >
                     图文按钮
                 </Button>
@@ -165,7 +165,7 @@ export const Demo = () => {
                     loading
                     type="primary"
                     icon={<IconHomeOutlined />}
-                    style={{ 'margin': '0 20px 20px 0' }}
+                    style={{'margin': '0 20px 20px 0'}}
                 >
                     图文按钮
                 </Button>
@@ -175,7 +175,7 @@ export const Demo = () => {
                     flexCenter
                     type="text"
                     icon={<IconLeftOutlined />}
-                    style={{ 'margin': '0 20px 20px 0' }}
+                    style={{'margin': '0 20px 20px 0'}}
                 >
                     返回ECI资源管理
                 </Button>
@@ -186,27 +186,27 @@ export const Demo = () => {
                 </Blockquote>
                 <p>普通样式</p>
                 <div>
-                    <Button icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                    <Button disabled icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                    <Button loading icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                    <Button icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
+                    <Button disabled icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
+                    <Button loading icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
                 </div>
                 <p>加强样式</p>
                 <div>
-                    <Button type="strong" icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                    <Button type="strong" disabled icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                    <Button type="strong" loading icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                    <Button type="strong" icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
+                    <Button type="strong" disabled icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
+                    <Button type="strong" loading icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
                 </div>
                 <p>重要样式</p>
                 <div>
-                    <Button type="primary" icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                    <Button type="primary" disabled icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                    <Button type="primary" loading icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                    <Button type="primary" icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
+                    <Button type="primary" disabled icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
+                    <Button type="primary" loading icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
                 </div>
                 <p>纯图标按钮</p>
                 <div>
-                    <Button type="icon" icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                    <Button type="icon" disabled icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
-                    <Button type="icon" loading icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                    <Button type="icon" icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
+                    <Button type="icon" disabled icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
+                    <Button type="icon" loading icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
                 </div>
                 <p>纯图标按钮加强</p>
                 <Blockquote>颜色需要自己调整一下css</Blockquote>
@@ -214,16 +214,16 @@ export const Demo = () => {
                     type="icon"
                     icon={<IconHomeOutlined />}
                     className="icon-strong"
-                    style={{ 'margin': '0 20px 20px 0' }}
+                    style={{'margin': '0 20px 20px 0'}}
                 />
                 <Button
                     className="icon-strong"
                     type="icon"
                     disabled
                     icon={<IconHomeOutlined />}
-                    style={{ 'margin': '0 20px 20px 0' }}
+                    style={{'margin': '0 20px 20px 0'}}
                 />
-                <Button type="icon" loading icon={<IconHomeOutlined />} style={{ 'margin': '0 20px 20px 0' }} />
+                <Button type="icon" loading icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
             </BrandProvider>
         </>
     );
@@ -245,7 +245,7 @@ export const Size = () => {
                 <h3>按钮与按钮</h3>
                 <Space size="small">
                     <Button size="small" type="primary">普通样式</Button>
-                    <Button size="small" >普通样式</Button>
+                    <Button size="small">普通样式</Button>
                 </Space>
                 <br />
                 <br />
@@ -343,8 +343,8 @@ export const Group = () => {
                 <br />
                 <p>如果需要Group内的button等宽，需要自行设置min-width，例如：</p>
                 <Button.Group>
-                    <Button style={{ minWidth: 75 }}>Cancel</Button>
-                    <Button style={{ minWidth: 75 }}>Ok</Button>
+                    <Button style={{minWidth: 75}}>Cancel</Button>
+                    <Button style={{minWidth: 75}}>Ok</Button>
                 </Button.Group>
             </BrandProvider>
         </>
@@ -438,6 +438,105 @@ export const TestCase = () => {
             <p />
             <p>使用delay的方式</p>
             <DefaultButton />
+        </>
+    );
+};
+
+
+export const TestCase2 = () => {
+    return (
+        <>
+            <Space>
+                <Button type="primary" danger>
+                    Primary
+                </Button>
+                <Button danger>Default</Button>
+                <Button type="dashed" danger>
+                    Dashed
+                </Button>
+                <Button type="text" danger>
+                    Text
+                </Button>
+                <Button type="link" danger>
+                    Link
+                </Button>
+                <Button type="primary" danger size="small">
+                    Primary
+                </Button>
+                <Button danger size="small">Default</Button>
+                <Button type="dashed" danger size="small">
+                    Dashed
+                </Button>
+                <Button type="text" danger size="small">
+                    Text
+                </Button>
+                <Button type="link" danger size="small">
+                    Link
+                </Button>
+            </Space>
+        </>
+    );
+};
+
+export const TestCase3 = () => {
+    return (
+        <>
+            <Space>
+                <Button type="primary">Primary</Button>
+                <Button type="primary" disabled>
+                    Primary(disabled)
+                </Button>
+                <br />
+                <Button>Default</Button>
+                <Button disabled>Default(disabled)</Button>
+                <br />
+                <Button type="dashed">Dashed</Button>
+                <Button type="dashed" disabled>
+                    Dashed(disabled)
+                </Button>
+                <br />
+                <Button type="text">Text</Button>
+                <Button type="text" disabled>
+                    Text(disabled)
+                </Button>
+                <br />
+                <Button type="link">Link</Button>
+                <Button type="link" disabled>
+                    Link(disabled)
+                </Button>
+                <br />
+                <Button danger>Danger Default</Button>
+                <Button danger disabled>
+                    Danger Default(disabled)
+                </Button>
+                <br />
+                <Button danger type="text">
+                    Danger Text
+                </Button>
+                <Button danger type="text" disabled>
+                    Danger Text(disabled)
+                </Button>
+                <br />
+                <Button type="link" danger>
+                    Danger Link
+                </Button>
+                <Button type="link" danger disabled>
+                    Danger Link(disabled)
+                </Button>
+            </Space>
+            <br />
+            <br />
+            <div
+                className="site-button-ghost-wrapper"
+                style={{padding: '8px 8px 8px 8px', background: 'rgb(190, 200, 200)'}}
+            >
+                <Space>
+                    <Button ghost>Ghost</Button>
+                    <Button ghost disabled>
+                        Ghost(disabled)
+                    </Button>
+                </Space>
+            </div>
         </>
     );
 };
