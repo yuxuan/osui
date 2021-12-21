@@ -2,6 +2,7 @@
 import React from 'react';
 import Button from '@osui/button';
 import Divider from '@osui/divider';
+import Space from '@osui/space';
 import Drawer from '@osui/drawer';
 
 export default {
@@ -43,7 +44,8 @@ export const Demo = () => {
                 <p>Some contents...</p>
                 <p>Some contents...</p>
             </Drawer>
-        </div>);
+        </div>
+    );
 };
 
 
@@ -106,8 +108,75 @@ export const Size = () => {
                 <p>Some contents...</p>
                 <p>Some contents...</p>
             </Drawer>
+        </div>
+    );
+};
 
-        </div>);
+export const TestCaseExtraWithClose = () => {
+    const [visible, setVisible] = React.useState(false);
+    const footer = (
+        <div style={{display: 'flex', justifyContent: 'flex-end'}}><Button type="primary">确认</Button></div>
+    );
+    return (
+        <>
+            <Button type="primary" onClick={() => setVisible(true)}>
+                open
+            </Button>
+            <Drawer
+                title="Basic Drawer"
+                placement="right"
+                onClose={() => setVisible(false)}
+                visible={visible}
+                footer={footer}
+                extra={
+                    <Space>
+                        <Button>Cancel</Button>
+                        <Button type="primary">
+                            OK
+                        </Button>
+                    </Space>
+                }
+            >
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+            </Drawer>
+        </>
+    );
+};
+
+export const TestCaseExtraOnly = () => {
+    const [visible, setVisible] = React.useState(false);
+    const footer = (
+        <div style={{display: 'flex', justifyContent: 'flex-end'}}><Button type="primary">确认</Button></div>
+    );
+    return (
+        <>
+            <Button type="primary" onClick={() => setVisible(true)}>
+                open
+            </Button>
+            <Drawer
+                closable={false}
+                title="Basic Drawer"
+                placement="right"
+                onClose={() => setVisible(false)}
+                visible={visible}
+                footer={footer}
+                extra={
+                    <Space>
+                        <Button>Cancel</Button>
+                        <Button type="primary">
+                            OK
+                        </Button>
+                    </Space>
+                }
+            >
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+            </Drawer>
+        </>
+    );
 };
 
 export const Api = () => {
