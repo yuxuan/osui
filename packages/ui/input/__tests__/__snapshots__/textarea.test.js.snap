@@ -5,7 +5,7 @@ exports[`TextArea allowClear should change type when click 1`] = `
   class="ant-input-affix-wrapper ant-input-affix-wrapper-textarea-with-clear-btn"
 >
   <textarea
-    class="ant-input osui-input"
+    class="ant-input osui-input osui-input-textarea"
   >
     111
   </textarea>
@@ -37,7 +37,7 @@ exports[`TextArea allowClear should change type when click 2`] = `
   class="ant-input-affix-wrapper ant-input-affix-wrapper-textarea-with-clear-btn"
 >
   <textarea
-    class="ant-input osui-input"
+    class="ant-input osui-input osui-input-textarea"
   />
   <span
     aria-label="close-circle"
@@ -67,7 +67,7 @@ exports[`TextArea allowClear should not show icon if defaultValue is undefined, 
   class="ant-input-affix-wrapper ant-input-affix-wrapper-textarea-with-clear-btn"
 >
   <textarea
-    class="ant-input osui-input"
+    class="ant-input osui-input osui-input-textarea"
   />
   <span
     aria-label="close-circle"
@@ -97,7 +97,7 @@ exports[`TextArea allowClear should not show icon if defaultValue is undefined, 
   class="ant-input-affix-wrapper ant-input-affix-wrapper-textarea-with-clear-btn"
 >
   <textarea
-    class="ant-input osui-input"
+    class="ant-input osui-input osui-input-textarea"
   />
   <span
     aria-label="close-circle"
@@ -127,7 +127,7 @@ exports[`TextArea allowClear should not show icon if defaultValue is undefined, 
   class="ant-input-affix-wrapper ant-input-affix-wrapper-textarea-with-clear-btn"
 >
   <textarea
-    class="ant-input osui-input"
+    class="ant-input osui-input osui-input-textarea"
   />
   <span
     aria-label="close-circle"
@@ -157,7 +157,7 @@ exports[`TextArea allowClear should not show icon if value is undefined, null or
   class="ant-input-affix-wrapper ant-input-affix-wrapper-textarea-with-clear-btn"
 >
   <textarea
-    class="ant-input osui-input"
+    class="ant-input osui-input osui-input-textarea"
   />
   <span
     aria-label="close-circle"
@@ -187,7 +187,7 @@ exports[`TextArea allowClear should not show icon if value is undefined, null or
   class="ant-input-affix-wrapper ant-input-affix-wrapper-textarea-with-clear-btn"
 >
   <textarea
-    class="ant-input osui-input"
+    class="ant-input osui-input osui-input-textarea"
   />
   <span
     aria-label="close-circle"
@@ -217,7 +217,7 @@ exports[`TextArea allowClear should not show icon if value is undefined, null or
   class="ant-input-affix-wrapper ant-input-affix-wrapper-textarea-with-clear-btn"
 >
   <textarea
-    class="ant-input osui-input"
+    class="ant-input osui-input osui-input-textarea"
   />
   <span
     aria-label="close-circle"
@@ -244,19 +244,19 @@ exports[`TextArea allowClear should not show icon if value is undefined, null or
 
 exports[`TextArea maxLength should support maxLength 1`] = `
 <textarea
-  class="ant-input osui-input"
+  class="ant-input osui-input osui-input-textarea"
 />
 `;
 
 exports[`TextArea should support disabled 1`] = `
 <textarea
-  class="ant-input osui-input ant-input-disabled"
+  class="ant-input osui-input osui-input-textarea ant-input-disabled"
   disabled=""
 />
 `;
 
 exports[`TextArea should support size 1`] = `
 <textarea
-  class="ant-input osui-input ant-input-lg"
+  class="ant-input osui-input osui-input-textarea ant-input-lg"
 />
 `;

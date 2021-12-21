@@ -1,212 +1,36 @@
-import React, { useCallback, useState, useRef, useMemo } from 'react';
-import { Input as AntdInput } from 'antd';
-import {composeRef} from 'rc-util/lib/ref';
+import React from 'react';
+import {Input as AntdInput} from 'antd';
 import hoistNonReactStatics from 'hoist-non-react-statics';
-import {useBrandContext} from '@osui/brand-provider';
-import Button from '@osui/button';
-import {IconSearchOutlined} from '@osui/icons';
-import {
-    InputProps as AntdInputProps,
-    TextAreaProps as AntdTextAreaProps,
-    SearchProps as AntdSearchProps,
-} from 'antd/lib/input';
-import classNames from 'classnames';
+import InputWithCounter from './InputWithCounter';
+import Input, {InputProps} from './Input';
+import Password from './Password';
+import TextArea from './TextArea';
+import Search from './Search';
 import './index.less';
 
-const clsPrefix = 'osui-input';
-
-export type InputProps = AntdInputProps;
+export {SearchProps} from './Search';
+export {InputProps};
 
 interface InputInterface extends React.FC<InputProps> {
     Group: typeof AntdInput.Group;
     Search: typeof Search;
     TextArea: typeof AntdInput.TextArea;
     Password: typeof AntdInput.Password;
+    InputWithCounter: typeof InputWithCounter;
 }
 
-const OSUIInput = React.forwardRef<any, AntdInputProps>(({ className, onFocus, onBlur, disabled, ...props }, ref) => {
-    const [focused, setFocused] = useState(false);
-    const innerClassNames = classNames(clsPrefix, className, {
-        [`${clsPrefix}-focused`]: focused,
-        [`${clsPrefix}-disabled`]: disabled,
-    });
-    const handleFocus = useCallback(
-        e => {
-            onFocus && onFocus(e);
-            setFocused(true);
-        },
-        [onFocus]
-    );
-    const handleBlur = useCallback(
-        e => {
-            onBlur && onBlur(e);
-            setFocused(false);
-        },
-        [onBlur]
-    );
-    return (
-        <AntdInput
-            ref={ref}
-            className={innerClassNames}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
-            disabled={disabled}
-            {...props}
-        />
-    );
-}) as unknown as InputInterface;
+const OSUIInput = Input as unknown as InputInterface;
 
 hoistNonReactStatics(OSUIInput, AntdInput);
 
-OSUIInput.Password = React.forwardRef<any, AntdInputProps>((props, ref) => {
-    return <AntdInput.Password ref={ref} {...props} className={classNames(clsPrefix, props.className)} />;
-});
+OSUIInput.Password = Password;
 
-OSUIInput.TextArea = React.forwardRef<any, AntdTextAreaProps>((props, ref) => {
-    return <AntdInput.TextArea ref={ref} {...props} className={classNames(clsPrefix, props.className)} />;
-});
+OSUIInput.TextArea = TextArea;
 
 OSUIInput.Group = AntdInput.Group;
 
-export interface SearchProps extends AntdSearchProps {
-    withSuffixIcon?: boolean;
-}
-
-const Search = React.forwardRef<any, SearchProps>(
-    (props, ref) => {
-        const {
-            className,
-            disabled,
-            onBlur,
-            onFocus,
-            onChange,
-            onSearch,
-            // withSuffixIcon会与enterButton相冲突，不能同时使用
-            withSuffixIcon,
-            enterButton,
-            loading,
-            suffix,
-            ...inputProps
-        } = props;
-        const inputRef = useRef(null);
-        const {brand} = useBrandContext();
-
-        const [focused, setFocused] = useState(false);
-
-        const innerClassNames = classNames(
-            clsPrefix,
-            {
-                [`${clsPrefix}-focused`]: focused,
-                [`${clsPrefix}-disabled`]: disabled,
-            },
-            className
-        );
-        const innerWithSuffixIcon = withSuffixIcon ?? brand === 'icloud';
-        const handleFocus = useCallback(
-            e => {
-                onFocus && onFocus(e);
-                setFocused(true);
-            },
-            [onFocus]
-        );
-        const handleBlur = useCallback(
-            e => {
-                onBlur && onBlur(e);
-                setFocused(false);
-            },
-            [onBlur]
-        );
-        const handleSearch = useCallback(
-            e => {
-                onSearch && onSearch((inputRef.current as any).input.value, e);
-            },
-            [onSearch]
-        );
-        const handleClick = useCallback(
-            e => {
-                handleSearch(e);
-            },
-            [handleSearch]
-        );
-        const handleChange = useCallback(
-            e => {
-                // 点击清除时也要调用onSearch
-                if (e && e.target && e.type === 'click' && onSearch) {
-                    onSearch(e.target.value, e);
-                }
-                if (onChange) {
-                    onChange(e);
-                }
-            },
-            [onSearch, onChange]
-        );
-        // 处理搜索图标，如果没有传入的话，默认是搜索icon。TODO： loading的支持
-        const innerSuffix = useMemo(
-            () => {
-                let icon = suffix;
-                if (innerWithSuffixIcon && typeof icon === 'undefined') {
-                    icon = <IconSearchOutlined />;
-                }
-                if (React.isValidElement(icon)) {
-                    return React.cloneElement(
-                        icon,
-                        {
-                            className: `${clsPrefix}-search-icon`,
-                            onClick: handleClick,
-                        }
-                    );
-                }
-                return icon;
-            },
-            [suffix, innerWithSuffixIcon, handleClick]
-        );
-
-        const innerEnterButton = useMemo(
-            () => {
-                if (typeof enterButton === 'string') {
-                    return (
-                        <Button
-                            loading={loading}
-                            disabled={disabled}
-                            type="primary"
-                        >
-                            {enterButton}
-                        </Button>
-                    );
-                }
-                return enterButton;
-            },
-            [enterButton, loading, disabled]
-        );
-        if (innerWithSuffixIcon && !enterButton) {
-            return (
-                <AntdInput
-                    ref={composeRef(inputRef, ref)}
-                    {...inputProps}
-                    className={classNames(clsPrefix, innerClassNames)}
-                    disabled={disabled}
-                    suffix={innerSuffix}
-                    onPressEnter={handleSearch}
-                    onChange={handleChange}
-                    onFocus={handleFocus}
-                    onBlur={handleBlur}
-                />
-            );
-        }
-        return (
-            <AntdInput.Search
-                ref={composeRef(inputRef, ref)}
-                {...props}
-                className={classNames(clsPrefix, innerClassNames)}
-                disabled={disabled}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                enterButton={innerEnterButton}
-                loading={loading}
-            />);
-    }
-);
-
 OSUIInput.Search = Search;
+
+OSUIInput.InputWithCounter = InputWithCounter;
 
 export default OSUIInput;

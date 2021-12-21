@@ -158,3 +158,31 @@
         }
     }
 }
+
+// text count
+.@{osui-input-class-prefix}-textarea.@{ant-prefix}-input-textarea {
+    &.@{ant-prefix}-input-textarea-show-count::after {
+        position: relative;
+        right: 8px;
+        bottom: 22px;
+        color: var(--color-gray-7);
+    }
+}
+
+.@{osui-input-class-prefix}-show-count {
+    padding-right: 22px;
+
+    &-counter {
+        position: relative;
+        right: 21px;
+        display: inline-block;
+        color: var(--color-gray-7);
+        white-space: nowrap;
+        text-align: right;
+        pointer-events: none;
+    }
+
+    &-with-max-length {
+        padding-right: 51px;
+    }
+}

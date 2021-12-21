@@ -441,6 +441,51 @@ export const Search = () => {
     );
 };
 
+export const CounterDemo = () => {
+    return (
+        <>
+            <Input.InputWithCounter
+                showCount
+                style={{width: 360}}
+            />
+            <br />
+            <br />
+            <Input.InputWithCounter
+                showCount
+                maxLength={50}
+                style={{width: 360}}
+            />
+            <br />
+            <br />
+            <Input.TextArea
+                showCount
+                style={{
+                    width: 360,
+                    height: 150,
+                }}
+            />
+
+            <br />
+            <br />
+            <Input.TextArea
+                showCount
+                maxLength={50}
+                style={{
+                    width: 360,
+                    height: 150,
+                }}
+            />
+            <br />
+            <br />
+            <br />
+            <Input
+                allowClear
+                value="1111"
+            />
+        </>
+    );
+};
+
 export const Api = () => {
     return (
         <>
