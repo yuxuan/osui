@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.5](https://gitee.com/gitee-fe/osui/compare/v1.2.4...v1.2.5) (2021-12-21)
+
+
+### Bug Fixes
+
+* 修复button danger text的样式权重不够的问题 ([7c3e352](https://gitee.com/gitee-fe/osui/commits/7c3e352865bc0317057d40980e1503641194a801))
+
+
+
+
+
 ## [1.2.4](https://gitee.com/gitee-fe/osui/compare/v1.2.3...v1.2.4) (2021-12-09)
 
 

@@ -1,6 +1,6 @@
 {
     "name": "@osui/form",
-    "version": "1.2.0",
+    "version": "1.2.5",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -27,9 +27,9 @@
     ],
     "devDependencies": {
         "@babel/cli": "^7.10.5",
-        "@osui/button": "^1.2.0",
+        "@osui/button": "^1.2.5",
         "@osui/divider": "^1.2.0",
-        "@osui/input": "^1.2.0",
+        "@osui/input": "^1.2.5",
         "@osui/input-number": "^1.2.0",
         "@osui/radio": "^1.2.0",
         "@reskript/cli": "^2.0.0",

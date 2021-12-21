@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.5](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.4...v1.2.5) (2021-12-21)
+
+**Note:** Version bump only for package @osui/quick-edit
+
+
+
+
+
 # [1.2.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.23...v1.2.0) (2021-11-29)
 
 **Note:** Version bump only for package @osui/quick-edit
