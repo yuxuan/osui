@@ -447,16 +447,19 @@ export const CounterDemo = () => {
             <p>提供了一个简易的Input + showCount + maxLength的组件： InputWithCounter</p>
             <p>使用方式如下：</p>
             <p>注意：该方式可能不满足某些设计交互，如达到字数限制时允许用户继续输入，只展示表单错误</p>
+            <p>Search没有支持字数限制</p>
             <p>使用时必须结合style: width一起使用，counter的定位是根据width来定位的</p>
             <p>如果不符合可以自己根据Input + div实现Counter的效果</p>
             <p />
             <p />
+            <p>showCount</p>
             <Input.InputWithCounter
                 showCount
                 style={{width: 360}}
             />
             <br />
             <br />
+            <p>showCount + maxLength=50</p>
             <Input.InputWithCounter
                 showCount
                 maxLength={50}
@@ -464,6 +467,7 @@ export const CounterDemo = () => {
             />
             <br />
             <br />
+            <p>TextArea showCount</p>
             <Input.TextArea
                 showCount
                 style={{
@@ -471,9 +475,9 @@ export const CounterDemo = () => {
                     height: 150,
                 }}
             />
-
             <br />
             <br />
+            <p>TextArea showCount + maxLength=50</p>
             <Input.TextArea
                 showCount
                 maxLength={50}
@@ -484,10 +488,15 @@ export const CounterDemo = () => {
             />
             <br />
             <br />
-            <br />
-            <Input
+            <p>和allowClear一起使用</p>
+            <Input.InputWithCounter
+                showCount
                 allowClear
                 value="1111"
+                maxLength={50}
+                style={{
+                    width: 360,
+                }}
             />
         </>
     );
