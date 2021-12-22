@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.6](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.5...v1.2.6) (2021-12-22)
+
+
+### Bug Fixes
+
+* InputNumber增加InputNumberCompact模式 ([68bfd24](https://gitee.com/gitee-fe/osui/tree/master/commits/68bfd2437aa02cd3e8d919375bf4e6eef7e9c618))
+
+
+
+
+
 # [1.2.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.1.23...v1.2.0) (2021-11-29)
 
 **Note:** Version bump only for package @osui/input-number

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.6](https://gitee.com/gitee-fe/osui/compare/v1.2.5...v1.2.6) (2021-12-22)
+
+
+### Bug Fixes
+
+* Input调整allowClear的时候+showCount结合的样式 ([54c9471](https://gitee.com/gitee-fe/osui/commits/54c9471075a2b52af9297e952eeda4ddf9c8f9bd))
+* Input增加InputWithCounter ([5f12364](https://gitee.com/gitee-fe/osui/commits/5f123641887c4031bb551e0baab9b3d1ee849758))
+* InputNumber增加InputNumberCompact模式 ([68bfd24](https://gitee.com/gitee-fe/osui/commits/68bfd2437aa02cd3e8d919375bf4e6eef7e9c618))
+
+
+
+
+
 ## [1.2.5](https://gitee.com/gitee-fe/osui/compare/v1.2.4...v1.2.5) (2021-12-21)
 
 

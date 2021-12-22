@@ -1,6 +1,6 @@
 {
     "name": "@osui/input-number",
-    "version": "1.2.0",
+    "version": "1.2.6",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -72,7 +72,7 @@
     "dependencies": {
         "@huse/derived-state": "^1.1.1",
         "@osui/button": "^1.2.5",
-        "@osui/input": "^1.2.5",
+        "@osui/input": "^1.2.6",
         "classnames": "^2.2.6"
     },
     "repository": {
