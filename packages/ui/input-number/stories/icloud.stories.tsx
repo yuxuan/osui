@@ -2,6 +2,7 @@
 import React from 'react';
 import Form from '@osui/form';
 import Input from '@osui/input';
+import FlexCentered from '@osui/flex-centered';
 import InputNumber from '../src';
 
 export default {
@@ -65,6 +66,43 @@ export const Demo = () => {
         </>
     );
 };
+
+const InputNumberCompact = InputNumber.InputNumberCompact;
+
+export const InputNumberStrongDemo = () => {
+    return (
+        <>
+            <InputNumberCompact />
+            <br />
+            <br />
+            <InputNumberCompact disabled />
+            <p></p>
+            <h3>报错</h3>
+            <p>需要确认报错是右侧对齐还是紧挨着组件</p>
+            <Form wrapperCol={{span: 12}}>
+                <Form.Item
+                    validateMessageLayout="inline"
+                    label="磁盘大小"
+                    validateStatus="error"
+                    help={'格式错误，请按提示规则录入'}
+                >
+                    <FlexCentered>
+                        <InputNumberCompact /> GB
+                    </FlexCentered>
+                </Form.Item>
+                <Form.Item
+                    validateMessageLayout="inline"
+                    label="测试测试"
+                    validateStatus="error"
+                    help={'格式错误，请按提示规则录入'}
+                >
+                    <InputNumberCompact />
+                </Form.Item>
+            </Form>
+        </>
+    );
+};
+
 
 export const Api = () => {
     return (

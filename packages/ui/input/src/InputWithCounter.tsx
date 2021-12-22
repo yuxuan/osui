@@ -7,13 +7,19 @@ import OSUIInput from './Input';
 
 const clsPrefix = 'osui-input';
 
-type InputWithCounterProps = Omit<AntdInputProps, 'value'> & {showCount?: boolean, value?: string};
+type InputWithCounterProps = Omit<AntdInputProps, 'value'> & {
+    showCount?: boolean;
+    value?: string;
+    defaultValue?: string;
+};
 
+// eslint-disable-next-line complexity
 const InputWithCounter = React.forwardRef<any, InputWithCounterProps>((
-    {className, disabled, value, onChange, showCount, maxLength, ...props}
+    {className, disabled, defaultValue, value, onChange, showCount, maxLength, ...props}
     , ref
 ) => {
-    const [inputValue, setInputValue] = useDerivedState(value);
+    const initValue = defaultValue === undefined ? (value || '') : defaultValue;
+    const [inputValue, setInputValue] = useDerivedState(initValue);
     const innerClassNames = classNames(
         clsPrefix,
         {

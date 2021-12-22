@@ -1,15 +1,12 @@
-import React from 'react';
-import {InputNumber as AntdInputNumber} from 'antd';
-import {InputNumberProps as AntdInputNumberProps} from 'antd/lib/input-number';
-import classNames from 'classnames';
-import './index.less';
+import InputNumber, {InputNumberProps} from './InputNumber';
+import InputNumberCompact from './InputNumberCompact';
 
-const clsPrefix = 'osui-input-number';
+type InputNumberInterface = typeof InputNumber & {
+    InputNumberCompact: typeof InputNumberCompact;
+};
 
-const InputNumber = React.forwardRef<HTMLInputElement, AntdInputNumberProps>(({className, ...props}, ref) => {
-    const innerClassName = classNames(className, clsPrefix);
-    return <AntdInputNumber ref={ref} className={innerClassName} {...props} />;
-});
+const OSUIInputNumber = InputNumber as unknown as InputNumberInterface;
+OSUIInputNumber.InputNumberCompact = InputNumberCompact;
 
-export type { InputNumberProps } from 'antd';
-export default InputNumber;
+export type {InputNumberProps};
+export default OSUIInputNumber;

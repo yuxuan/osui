@@ -1,0 +1,61 @@
+@osui-input-number-class-prefix: osui-input-number-compact;
+
+.@{osui-input-number-class-prefix} {
+    &.@{ant-prefix}-input-group.@{ant-prefix}-input-group-compact {
+        display: inline-block;
+        width: auto;
+    }
+
+    &-input-number {
+        max-width: ~"calc(100% - 60px)";
+
+        &:hover,
+        &:focus,
+        &.@{ant-prefix}-input-number-focused {
+            z-index: 1;
+        }
+    }
+
+    &-minus-btn,
+    &-plus-btn {
+        &.osui-button {
+            color: var(--theme-color-text);
+        }
+
+        &:hover,
+        &:focus {
+            z-index: 1;
+        }
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        margin: 0;
+        -webkit-appearance: none;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+}
+
+.@{ant-prefix}-form-item-has-error {
+    .@{osui-input-number-class-prefix} {
+        &-input-number,
+        &-minus-btn,
+        &-plus-btn {
+            border-color: var(--color-error-6);
+
+            &:hover,
+            &:focus {
+                border-color: var(--color-error-6);
+            }
+
+            &[disabled] {
+                border-color: var(--theme-border-color-disabled);
+            }
+        }
+    }
+}
