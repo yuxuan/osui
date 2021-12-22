@@ -1,4 +1,4 @@
-const {dependenciesOnCDN} = require('@baidu/reskript-plugins');
+const {stableChunk} = require('@baidu/reskript-plugins');
 
 const enableTrack = process.env.DEPLOY_ENV === 'online';
 
@@ -17,9 +17,14 @@ exports.featureMatrix = {
 exports.build = {
     appTitle: 'Unknown',
     style: {
-        lessVariables: {'ant-prefix': 'ant'},
+        // 以下内容是需要添加配置的
+        lessVariables: {
+            'ant-prefix': 'ant',
+        }, // antd css class的前缀
         resources: [
+            // 对antd变量的覆盖
             require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less'),
+            // 使用less-functions-overrides覆盖less函数，让css variables通过less编译
             require.resolve('@osui/icloud-theme/dist/less-functions-overrides.less'),
         ],
     },
@@ -30,12 +35,11 @@ exports.build = {
 };
 
 exports.devServer = {
-    port: 8100, // TODO: 找一个不和其它系统冲突的端口
+    port: 8300, // TODO: 找一个不和其它系统冲突的端口
     apiPrefixes: ['/api'], // TODO: 设置后端API的URL前缀
     defaultProxyDomain: 'unknown-test.baidu.com', // TODO: 设置后端测试环境域名
-    hot: 'all',
 };
 
 exports.plugins = [
-    dependenciesOnCDN({polyfill: true}),
+    stableChunk(),
 ];

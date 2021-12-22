@@ -1,6 +1,6 @@
 import {VFC} from 'react';
 import {Button} from '@osui/ui';
-import {ReactComponent as Beer} from './assets/beer.svg';
+import Beer from './assets/beer.svg?react';
 import c from './index.less';
 
 const Welcome: VFC = () => (

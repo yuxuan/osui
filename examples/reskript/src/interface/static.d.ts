@@ -1,3 +1,4 @@
+
 /* eslint-disable init-declarations */
 declare module '*.less' {
     const content: {
@@ -13,9 +14,15 @@ declare module '*.png' {
 }
 
 declare module '*.svg' {
-    import {FC, HTMLAttributes} from 'react';
-
-    export const url: string;
-    export const ReactComponent: FC<HTMLAttributes<SVGElement>>;
+    const url: string;
     export default url;
+}
+
+declare module '*.svg?react' {
+    import {ComponentType, SVGAttributes} from 'react';
+
+    export type SVGComponent = ComponentType<SVGAttributes<SVGElement>>;
+
+    declare const Component: SVGComponent;
+    export default Component;
 }
