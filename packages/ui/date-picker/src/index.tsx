@@ -1,20 +1,13 @@
 import React from 'react';
 import {DatePicker as AntdDatePicker} from 'antd';
+import {PickerComponentClass} from 'antd/lib/date-picker/generatePicker/interface';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import './index.less';
 
 const clsPrefix = 'osui-picker';
 
-type ComponentType = typeof AntdDatePicker
-    | typeof AntdDatePicker.MonthPicker
-    | typeof AntdDatePicker.WeekPicker
-    | typeof AntdDatePicker.QuarterPicker
-    | typeof AntdDatePicker.YearPicker
-    | typeof AntdDatePicker.TimePicker
-    | typeof AntdDatePicker.RangePicker;
-
-function attachOSUIClassName<T extends ComponentType>(Component: T) {
+function attachOSUIClassName<T>(Component: PickerComponentClass<T>) {
     const ComponentOut = React.forwardRef<any, any>(
         (props, ref) => {
             return (
@@ -27,7 +20,7 @@ function attachOSUIClassName<T extends ComponentType>(Component: T) {
             );
         }
     );
-    return ComponentOut as unknown as T;
+    return ComponentOut as unknown as PickerComponentClass<T>;
 }
 
 type DatePickerInterface = typeof AntdDatePicker & {
@@ -53,5 +46,5 @@ DatePicker.TimePicker = attachOSUIClassName(AntdDatePicker.TimePicker);
 DatePicker.RangePicker = attachOSUIClassName(AntdDatePicker.RangePicker);
 
 
-export type { DatePickerProps } from 'antd';
+export type {DatePickerProps} from 'antd';
 export default DatePicker;
