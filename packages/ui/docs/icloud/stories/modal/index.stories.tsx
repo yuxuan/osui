@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Button from '@osui/button';
 import Space from '@osui/space';
-import { IconExclamationCircleFilled } from '@osui/icons';
+import {IconExclamationCircleFilled} from '@osui/icons';
 import BrandProvider from '@osui/brand-provider';
 import Modal from '@osui/modal';
 
@@ -12,7 +12,7 @@ export default {
 export const Demo = () => {
     const [visible, setVisible] = useState(false);
     return (
-        <div style={{ padding: 30 }}>
+        <div style={{padding: 30}}>
             <BrandProvider brand="icloud">
                 <Button type="primary" onClick={() => setVisible(true)}>
                     打开基础modal
@@ -28,7 +28,8 @@ export const Demo = () => {
                     何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
                 </Modal>
             </BrandProvider>
-        </div>);
+        </div>
+    );
 };
 
 export const Size = () => {
@@ -36,7 +37,7 @@ export const Size = () => {
     const [visibleB, setVisibleB] = useState(false);
     const [visibleC, setVisibleC] = useState(false);
     return (
-        <div style={{ padding: 30 }}>
+        <div style={{padding: 30}}>
             <BrandProvider brand="icloud">
                 <Button type="primary" onClick={() => setVisibleA(true)}>
                     Size Small
@@ -84,7 +85,8 @@ export const Size = () => {
                 </Modal>
                 <p></p>
             </BrandProvider>
-        </div>);
+        </div>
+    );
 };
 
 
@@ -166,7 +168,7 @@ export const Confirm = () => {
 export const AutoHeight = () => {
     const [visibleA, setVisibleA] = useState(false);
     return (
-        <div style={{ padding: 30 }}>
+        <div style={{padding: 30}}>
             <BrandProvider>
                 <Button type="primary" onClick={() => setVisibleA(true)}>
                     Auto Height
@@ -197,7 +199,7 @@ export const AutoHeight = () => {
 
 export const confirmWithPromise = () => {
 
-    const { confirm } = Modal;
+    const {confirm} = Modal;
 
     function showConfirm() {
         confirm({
@@ -273,6 +275,26 @@ export const confirmWithPromise = () => {
     );
 };
 
+export const FullSizeDemo = () => {
+    const [visible, setVisible] = useState(false);
+
+    return (
+        <>
+            <Button type="primary" onClick={() => setVisible(true)}>
+                全屏弹框
+            </Button>
+            <Modal
+                fullScreen
+                visible={visible}
+                onOk={() => setVisible(false)}
+                onCancel={() => setVisible(false)}
+            >
+                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+            </Modal>
+        </>
+    );
+};
+
 export const Api = () => {
     return (
         <>
@@ -300,7 +322,7 @@ export const TestCase = () => {
         });
     }
     return (
-        <div style={{ padding: 30 }}>
+        <div style={{padding: 30}}>
             <p>footer错位了</p>
             <BrandProvider brand="icloud">
                 <Button type="primary" onClick={() => setVisible(true)}>
@@ -322,7 +344,8 @@ export const TestCase = () => {
                 <p>Modal.confirm不在Context内，而使用antd提供的Modal.useModal的方式，目前还没兼容</p>
                 <Button type="primary" onClick={() => {showConfirm();}}>Confirm</Button>
             </BrandProvider>
-        </div>);
+        </div>
+    );
 };
 
 export const TestCase2 = () => {

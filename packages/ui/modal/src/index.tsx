@@ -48,6 +48,10 @@ export interface ModalProps extends AntdModalProps {
      * @deprecated 目前没有height的限制时，自动就是autoheight
      */
     autoHeight?: boolean;
+    /**
+     * 是否全屏展示modal
+     */
+    fullScreen?: boolean;
 }
 
 interface ModalInterface extends React.FC<ModalProps> {
@@ -67,6 +71,7 @@ const OriginModal: ModalInterface = ({className, bodyBorder, size, ...props}) =>
         autoHeight = false,
         centered,
         width: widthProp,
+        fullScreen,
     } = props;
 
     const width = getModalSize(size);
@@ -76,6 +81,7 @@ const OriginModal: ModalInterface = ({className, bodyBorder, size, ...props}) =>
         {
             [`${clsPrefix}-auto-height`]: autoHeight,
             [`${clsPrefix}-body-border`]: bodyBorder,
+            [`${clsPrefix}-full-screen`]: fullScreen,
         },
         className
     );
@@ -194,5 +200,5 @@ Modal.confirm = (config: ConfirmProps) => AntdModal.confirm(getConfirmConfig(con
 Modal.destroyAll = destroyAll;
 Modal.config = config;
 
-export type { ModalFuncProps } from 'antd';
+export type {ModalFuncProps} from 'antd';
 export default Modal;
