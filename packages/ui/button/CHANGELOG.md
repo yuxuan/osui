@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.7...v1.2.8) (2021-12-23)
+
+
+### Bug Fixes
+
+* button error text background transparent ([32d2ebc](https://gitee.com/gitee-fe/osui/tree/master/commits/32d2ebcc25cc4687eb3d2507200fba8130880c3d))
+
+
+
+
+
 ## [1.2.5](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.4...v1.2.5) (2021-12-21)
 
 
