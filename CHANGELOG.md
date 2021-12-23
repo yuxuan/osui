@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.7](https://gitee.com/gitee-fe/osui/compare/v1.2.6...v1.2.7) (2021-12-23)
+
+
+### Bug Fixes
+
+* 修复Datepicker的类型,build时失败 ([9c8ef2e](https://gitee.com/gitee-fe/osui/commits/9c8ef2eb0294b1f7bfe8d302bebaaaa4c94dd998))
+* Modal增加全屏模式 ([6597c63](https://gitee.com/gitee-fe/osui/commits/6597c63df3cbb384491cacdcbd55349888707d51))
+
+
+
+
+
 ## [1.2.6](https://gitee.com/gitee-fe/osui/compare/v1.2.5...v1.2.6) (2021-12-22)
 
 

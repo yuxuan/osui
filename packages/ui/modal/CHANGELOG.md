@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.6...v1.2.7) (2021-12-23)
+
+
+### Bug Fixes
+
+* Modal增加全屏模式 ([6597c63](https://gitee.com/gitee-fe/osui/tree/master/commits/6597c63df3cbb384491cacdcbd55349888707d51))
+
+
+
+
+
 ## [1.2.5](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.4...v1.2.5) (2021-12-21)
 
 **Note:** Version bump only for package @osui/modal
