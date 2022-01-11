@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.9](https://gitee.com/gitee-fe/osui/compare/v1.2.8...v1.2.9) (2022-01-11)
+
+
+### Bug Fixes
+
+* select disable 选中时样式不对的问题 ([781d0da](https://gitee.com/gitee-fe/osui/commits/781d0dabbdd44849a9767e41d22cfcb59e822157))
+
+
+
+
+
 ## [1.2.8](https://gitee.com/gitee-fe/osui/compare/v1.2.7...v1.2.8) (2021-12-23)
 
 
