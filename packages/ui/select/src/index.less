@@ -157,7 +157,7 @@
     }
 
     // 以下调整选中时的icon，外面可以进行替换
-    .@{ant-prefix}-select-item-option-selected:not(.@{ant-prefix}-select-item-option-disabled) {
+    .@{ant-prefix}-select-item-option-selected {
         .@{ant-prefix}-select-item-option-state {
             position: absolute;
             top: 17%;
@@ -168,6 +168,7 @@
     .@{osui-select-class-prefix}-check-icon {
         width: var(--select-check-icon-size);
         height: var(--select-check-icon-size);
+        border-radius: var(--theme-border-radius-base);
     }
 }
 
