@@ -72,7 +72,11 @@
         "react-dom": ">=16.9.0"
     },
     "dependencies": {
-        "classnames": "^2.2.6"
+        "@huse/derived-state": "^1.1.1",
+        "@osui/popover": "^1.2.0",
+        "@osui/tag": "^1.2.0",
+        "classnames": "^2.2.6",
+        "hoist-non-react-statics": "^3.3.2"
     },
     "repository": {
         "type": "git",
