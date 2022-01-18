@@ -1,5 +1,5 @@
 import {addParameters, addDecorator} from '@storybook/react';
-import {DocsPage, DocsContainer} from '@storybook/addon-docs/blocks';
+import {DocsPage, DocsContainer} from '@storybook/addon-docs';
 import {
     INITIAL_VIEWPORTS,
 } from '@storybook/addon-viewport';
