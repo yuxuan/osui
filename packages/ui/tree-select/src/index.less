@@ -15,11 +15,12 @@
 }
 
 .osui-tree-select-dropdown {
-    // == 调整箭头距离顶部位置 ==
+    // #region 调整箭头距离顶部位置
     .@{ant-prefix}-select-tree-switcher {
         top: 3px;
     }
-    // == 调整点击和hover的效果 ==
+    // #endregion
+    // #region 调整点击和hover的效果
     .@{ant-prefix}-select-treenode:not(.ant-select-tree-treenode-disabled) {
         .@{ant-prefix}-select-tree-node-content-wrapper,
         .@{ant-prefix}-select-tree-node-content-wrapper-normal {
@@ -38,5 +39,5 @@
             background: var(--color-brand-2);
         }
     }
-    // == 结束 ==
+    // #endregion
 }
