@@ -22,7 +22,7 @@ interface TableProps<T> extends AntdTableProps<T> {
     noBorder?: boolean;
 }
 
-const paginationPostion = (position: AntdTablePaginationConfig['position']) => {
+const paginationPosition = (position: AntdTablePaginationConfig['position']) => {
     if (position !== null && Array.isArray(position)) {
         const topPos = position.find(p => p.includes('top'));
         const bottomPos = position.find(p => p.includes('bottom'));
@@ -113,7 +113,7 @@ function Table<RecordType extends Record<string, any>>(
                     className: classNames(
                         `${antPrefix}-pagination`,
                         /* eslint-disable-next-line max-len */
-                        `${antPrefix}-pagination-${paginationPostion(pagination && pagination.position || ['bottomRight'])}`,
+                        `${antPrefix}-pagination-${paginationPosition(pagination && pagination.position || ['bottomRight'])}`,
                         'osui-pagination',
                         pagination && pagination.className
                     ),
@@ -190,6 +190,8 @@ type InternalTableType = typeof ForwardTable;
 
 interface TableInterface extends InternalTableType {
     defaultProps?: Partial<TableProps<any>>;
+    SELECTION_COLUMN: typeof AntdTable.SELECTION_COLUMN;
+    EXPAND_COLUMN: typeof AntdTable.EXPAND_COLUMN;
     SELECTION_ALL: 'SELECT_ALL';
     SELECTION_INVERT: 'SELECT_INVERT';
     SELECTION_NONE: 'SELECT_NONE';

@@ -1,17 +1,17 @@
 import React from 'react';
-import {TreeSelect as AntdTreeSelect} from 'antd';
-import {DefaultValueType} from 'rc-tree-select/lib/interface';
-import {TreeSelectProps as AntdTreeSelectProps, RefTreeSelectProps} from 'antd/lib/tree-select';
+import {TreeSelect as AntdTreeSelect, TreeSelectProps as AntdTreeSelectProps} from 'antd';
 import classNames from 'classnames';
-import hoistNonReactStatics from 'hoist-non-react-statics';
 import {IconDownOutlined} from '@osui/icons';
+import hoistNonReactStatics from 'hoist-non-react-statics';
+import type {BaseSelectRef} from 'rc-select';
+import type {BaseOptionType, DefaultOptionType} from 'antd/lib/select';
 import './index.less';
 
 const clsPrefix = 'osui-tree-select';
 
-const InternalTreeSelect = <T extends DefaultValueType>(
-    {className, dropdownClassName, ...props}: AntdTreeSelectProps<T>,
-    ref: React.Ref<RefTreeSelectProps>
+const InternalTreeSelect = <OptionType extends BaseOptionType | DefaultOptionType = BaseOptionType>(
+    {className, dropdownClassName, ...props}: AntdTreeSelectProps<OptionType>,
+    ref: React.Ref<BaseSelectRef>
 ) => {
     const innerClassName = classNames(className, clsPrefix);
     const innerDropdownClassName = classNames(dropdownClassName, `${clsPrefix}-dropdown`);
@@ -31,8 +31,13 @@ const InternalTreeSelect = <T extends DefaultValueType>(
     );
 };
 
-const TreeSelectRef = React.forwardRef(InternalTreeSelect) as <T extends DefaultValueType>(
-    props: AntdTreeSelectProps<T> & { ref?: React.Ref<RefTreeSelectProps> },
+const TreeSelectRef = React.forwardRef(InternalTreeSelect) as <
+    ValueType = any,
+    OptionType extends BaseOptionType | DefaultOptionType = DefaultOptionType,
+>(
+    props: React.PropsWithChildren<AntdTreeSelectProps<ValueType, OptionType>> & {
+        ref?: React.Ref<BaseSelectRef>;
+    },
 ) => React.ReactElement;
 
 // 提升TreeSelect属性
@@ -48,5 +53,8 @@ export interface TreeSelectInterface extends InternalTreeSelectType {
 }
 const TreeSelect = TreeSelectRef as TreeSelectInterface;
 
-export type { TreeSelectProps } from 'antd';
+export type {TreeSelectProps} from 'antd';
+
 export default TreeSelect;
+
+export {highlightMatchText} from './helpers';

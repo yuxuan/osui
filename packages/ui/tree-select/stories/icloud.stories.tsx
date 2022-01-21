@@ -1,7 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import TreeSelect from '../src';
-import {highlightMatchText} from '../src/helpers';
+import TreeSelect, {highlightMatchText} from '../src';
 
 export default {
     title: '数据展示/TreeSelect 树选择',

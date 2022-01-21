@@ -1,7 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 import Space from '@osui/space';
 import BrandProvider from '@osui/brand-provider';
+import {Popover, Tag} from '@osui/ui';
 import Select from '@osui/select';
 
 export default {
@@ -19,7 +20,7 @@ export const Demo = () => {
             <BrandProvider brand="icloud">
                 <h2>基础下拉</h2>
                 <p>placeholder</p>
-                <Select placeholder="请选择" style={{ width: 240 }} onChange={handleChange}>
+                <Select placeholder="请选择" style={{width: 240}} onChange={handleChange}>
                     <Option value="jack">Jack</Option>
                     <Option value="lucy">Lucy</Option>
                     <Option value="disabled" disabled>
@@ -30,7 +31,7 @@ export const Demo = () => {
                 <br />
                 <br />
                 <p>有默认值</p>
-                <Select defaultValue="lucy" style={{ width: 240 }} onChange={handleChange}>
+                <Select defaultValue="lucy" style={{width: 240}} onChange={handleChange}>
                     <Option value="jack">Jack</Option>
                     <Option value="lucy">Lucy</Option>
                     <Option value="disabled" disabled>
@@ -41,25 +42,25 @@ export const Demo = () => {
                 <br />
                 <br />
                 <p>disabled</p>
-                <Select defaultValue="lucy" style={{ width: 240 }} disabled>
+                <Select defaultValue="lucy" style={{width: 240}} disabled>
                     <Option value="lucy">Lucy</Option>
                 </Select>
                 <br />
                 <br />
                 <p>loading</p>
-                <Select defaultValue="lucy" style={{ width: 240 }} loading>
+                <Select defaultValue="lucy" style={{width: 240}} loading>
                     <Option value="lucy">Lucy</Option>
                 </Select>
                 <br />
                 <br />
                 <p>无边框样式</p>
-                <Select defaultValue="lucy" style={{ width: 240 }} noBorder>
+                <Select defaultValue="lucy" style={{width: 240}} noBorder>
                     <Option value="lucy">Lucy</Option>
                 </Select>
                 <br />
                 <br />
                 <p>内容为空</p>
-                <Select defaultValue="lucy" style={{ width: 240 }} />
+                <Select defaultValue="lucy" style={{width: 240}} />
             </BrandProvider>
         </>
     );
@@ -74,10 +75,10 @@ export const Size = () => {
 
     return (
         <Space>
-            <Select placeholder="small size" style={{ width: 240 }} size="small">
+            <Select placeholder="small size" style={{width: 240}} size="small">
                 <Option value="lucy">Lucy</Option>
             </Select>
-            <Select placeholder="default size" style={{ width: 240 }} onChange={handleChange}>
+            <Select placeholder="default size" style={{width: 240}} onChange={handleChange}>
                 <Option value="jack">Jack</Option>
                 <Option value="lucy">Lucy</Option>
                 <Option value="disabled" disabled>
@@ -85,7 +86,7 @@ export const Size = () => {
                 </Option>
                 <Option value="Yiminghe">yiminghe</Option>
             </Select>
-            <Select placeholder="large size" style={{ width: 240 }} onChange={handleChange} size="large">
+            <Select placeholder="large size" style={{width: 240}} onChange={handleChange} size="large">
                 <Option value="jack">Jack</Option>
                 <Option value="lucy">Lucy</Option>
                 <Option value="disabled" disabled>
@@ -108,7 +109,7 @@ export const MultipleDemo = () => {
             <BrandProvider>
                 <h2>无限制下拉多选</h2>
                 <p>默认多选使用方式：</p>
-                <Select mode="multiple" placeholder="请选择" style={{ width: 240 }} onChange={handleChange}>
+                <Select mode="multiple" placeholder="请选择" style={{width: 240}} onChange={handleChange}>
                     <Option value="jack">Jack</Option>
                     <Option value="lucy">Lucy</Option>
                     <Option value="disabled" disabled>
@@ -123,7 +124,7 @@ export const MultipleDemo = () => {
                     allowClear={false}
                     mode="multiple"
                     defaultValue="lucy"
-                    style={{ width: 240 }}
+                    style={{width: 240}}
                     onChange={handleChange}
                 >
                     <Option value="jack">Jack</Option>
@@ -143,7 +144,7 @@ export const MultipleDemo = () => {
                     allowClear
                     mode="multiple"
                     defaultValue="lucy"
-                    style={{ width: 240 }}
+                    style={{width: 240}}
                     onChange={handleChange}
                 >
                     <Option value="jack">Jack</Option>
@@ -168,6 +169,114 @@ export const MultipleDemo = () => {
     );
 };
 
+export const MultipleDisplayInPopup = () => {
+    const Option = Select.Option;
+    console.log(Option);
+    function handleChange(value: string) {
+        console.log(`selected ${value}`);
+    }
+    return (
+        <>
+            <BrandProvider>
+                <Select
+                    displayTagsInPopover
+                    allowClear={false}
+                    mode="multiple"
+                    defaultValue="lucy"
+                    style={{width: 240}}
+                    onChange={handleChange}
+                >
+                    <Option value="jack">Jack</Option>
+                    <Option value="lucy">Lucy</Option>
+                    <Option value="disabled" disabled>
+                        Disabled
+                    </Option>
+                    <Option value="Yiminghe">yiminghe</Option>
+                    <Option value="a">a</Option>
+                    <Option value="b">b</Option>
+                    <Option value="c">c</Option>
+                </Select>
+            </BrandProvider>
+        </>
+    );
+};
+
+export const MulipleDisplayInPopupByHand = () => {
+    const Option = Select.Option;
+    const [selectedValue, setSelectedValue] = useState<string[]>([]);
+    const handleChange = useCallback(
+        value => {
+            setSelectedValue(value);
+        },
+        [setSelectedValue]
+    );
+    const handleClose = useCallback(
+        tag => {
+            const newSelectedValue = selectedValue.filter(v => v !== tag.value);
+            setSelectedValue(newSelectedValue);
+        },
+        [selectedValue, setSelectedValue]
+    );
+    const renderMaxTagPlaceholder = useCallback(
+        args => {
+            if (!args.length) {
+                return null;
+            }
+            const TagContent = (
+                // 点击关闭时不要触发select open
+                <div onMouseDown={e => e.stopPropagation()} onClick={e => e.stopPropagation()}>
+                    {
+                        args.map(
+                            (tag: any) => (
+                                <Tag
+                                    key={tag.key ?? tag.value}
+                                    closable
+                                    // eslint-disable-next-line react/jsx-no-bind
+                                    onClose={() => {
+                                        handleClose(tag);
+                                    }}
+                                >
+                                    {tag.value}
+                                </Tag>
+                            )
+                        )
+                    }
+                </div>
+            );
+            return (
+                <Popover content={TagContent}>
+                    {`${args.length}+...`}
+                </Popover>
+            );
+        },
+        [handleClose]
+    );
+    return (
+        <>
+            <p>不适用属性，直接手动实现方式</p>
+            <Select
+                allowClear
+                mode="multiple"
+                style={{width: 240}}
+                value={selectedValue}
+                onChange={handleChange}
+                maxTagCount="responsive"
+                maxTagPlaceholder={renderMaxTagPlaceholder}
+            >
+                <Option value="jack">Jack</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="disabled" disabled>
+                    Disabled
+                </Option>
+                <Option value="Yiminghe">yiminghe</Option>
+                <Option value="a">a</Option>
+                <Option value="b">b</Option>
+                <Option value="c">c</Option>
+            </Select>
+        </>
+    );
+};
+
 export const Api = () => {
     return (
         <>
@@ -181,7 +290,7 @@ export const TestCase = () => {
     return (
         <>
             <p>最短的时候</p>
-            <Select defaultValue="lucy" >
+            <Select defaultValue="lucy">
                 <Option value="jack">Jack</Option>
                 <Option value="lucy">Lucy</Option>
                 <Option value="disabled" disabled>
@@ -192,7 +301,7 @@ export const TestCase = () => {
 
             <p>下拉内容10条</p>
             <BrandProvider brand="icloud">
-                <Select defaultValue="lucy" style={{width: 240 }}>
+                <Select defaultValue="lucy" style={{width: 240}}>
                     <Option value="lucy1">Lucy1</Option>
                     <Option value="lucy2">Lucy2</Option>
                     <Option value="lucy3">Lucy3</Option>
@@ -210,7 +319,7 @@ export const TestCase = () => {
 
             <p>下拉内容10条 关闭virtual</p>
             <BrandProvider brand="icloud">
-                <Select defaultValue="lucy" style={{width: 240 }} virtual={false}>
+                <Select defaultValue="lucy" style={{width: 240}} virtual={false}>
                     <Option value="lucy1">Lucy1</Option>
                     <Option value="lucy2">Lucy2</Option>
                     <Option value="lucy3">Lucy3</Option>
@@ -235,7 +344,7 @@ export const TestCase = () => {
                 placeholder="筛选代码库"
                 maxTagCount={0}
                 maxTagPlaceholder={() => null}
-                style={{width: 240 }}
+                style={{width: 240}}
             >
                 <Option value="lucy1">Lucy221</Option>
                 <Option value="lucy2">Lucy2</Option>
@@ -255,7 +364,7 @@ export const TestCase = () => {
             <p>可选择时，里面内容的颜色应该是placeholder</p>
             <Select
                 showSearch
-                style={{ width: 200 }}
+                style={{width: 200}}
                 placeholder="Search to Select"
                 optionFilterProp="children"
                 filterOption={(input, option) =>
