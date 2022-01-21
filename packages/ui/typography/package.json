@@ -1,6 +1,6 @@
 {
     "name": "@osui/typography",
-    "version": "1.2.10",
+    "version": "1.2.11",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",

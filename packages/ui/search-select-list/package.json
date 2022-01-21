@@ -1,6 +1,6 @@
 {
     "name": "@osui/search-select-list",
-    "version": "1.2.10",
+    "version": "1.2.11",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -83,7 +83,7 @@
     },
     "dependencies": {
         "@osui/button": "^1.2.10",
-        "@osui/input": "^1.2.10",
+        "@osui/input": "^1.2.11",
         "classnames": "^2.2.6"
     },
     "publishConfig": {

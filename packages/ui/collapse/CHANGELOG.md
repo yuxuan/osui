@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.11](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.10...v1.2.11) (2022-01-21)
+
+
+### Bug Fixes
+
+* 导出组件类型 ([4c39219](https://gitee.com/gitee-fe/osui/tree/master/commits/4c3921907367349892ecf79631d2ad7f606deb74))
+
+
+
+
+
 ## [1.2.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.9...v1.2.10) (2022-01-21)
 
 

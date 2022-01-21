@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.11](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.10...v1.2.11) (2022-01-21)
+
+
+### Bug Fixes
+
+* 调整autocomplelete,cascader type ([7ddbfb0](https://gitee.com/gitee-fe/osui/tree/master/commits/7ddbfb034869598d6f692ef9d0767fc93b93440c))
+
+
+
+
+
 ## [1.2.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.9...v1.2.10) (2022-01-21)
 
 
