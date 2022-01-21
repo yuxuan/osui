@@ -10,7 +10,7 @@ const clsPrefix = 'osui-tree';
 export interface TreeProps extends AntdTreeProps {
     size?: 'small' | 'middle' | 'large';
 }
-interface CompoundedComponent extends React.ForwardRefExoticComponent<TreeProps & React.RefAttributes<any>> {
+export interface CompoundedComponent extends React.ForwardRefExoticComponent<TreeProps & React.RefAttributes<any>> {
     TreeNode: typeof AntdTree.TreeNode;
     DirectoryTree: typeof AntdTree.DirectoryTree;
 }

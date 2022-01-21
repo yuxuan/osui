@@ -17,12 +17,12 @@ export interface CollapseProps extends AntdCollapseProps {
     levelChild?: boolean;
 }
 
-interface CollapseInterface extends React.FC<CollapseProps> {
+export interface CollapseInterface extends React.FC<CollapseProps> {
     Panel: typeof CollapsePanel;
 }
 
 const Collapse: CollapseInterface = ({className, levelChild, ghost, expandIcon, ...restProps}) => {
-    const { brand } = useBrandContext();
+    const {brand} = useBrandContext();
 
     const defaultProps = {
         className: classNames(
@@ -73,5 +73,5 @@ hoistNonReactStatics(Collapse, AntdCollapse);
 
 Collapse.Panel = CollapsePanel;
 
-export type { CollapsePanelProps } from 'antd';
+export type {CollapsePanelProps} from 'antd';
 export default Collapse;

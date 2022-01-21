@@ -11,7 +11,7 @@ import './index.less';
 export {SearchProps} from './Search';
 export {InputProps};
 
-interface InputInterface extends React.FC<InputProps> {
+export interface InputInterface extends React.FC<InputProps> {
     Group: typeof AntdInput.Group;
     Search: typeof Search;
     TextArea: typeof AntdInput.TextArea;

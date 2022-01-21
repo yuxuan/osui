@@ -9,7 +9,7 @@ const clsPrefix = 'osui-timeline';
 export type TimelineProps = AntdTimelineProps;
 export type TimelineItemProps = AntdTimelineItemProps;
 
-interface TimelineType extends React.FC<TimelineProps> {
+export interface TimelineType extends React.FC<TimelineProps> {
     Item: React.FC<TimelineItemProps>;
 }
 

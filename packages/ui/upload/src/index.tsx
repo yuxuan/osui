@@ -8,7 +8,7 @@ import './index.less';
 
 const clsPrefix = 'osui-upload';
 
-interface CompoundedComponent
+export interface CompoundedComponent
   extends React.ForwardRefExoticComponent<
     React.PropsWithChildren<UploadProps> & React.RefAttributes<any>
   > {

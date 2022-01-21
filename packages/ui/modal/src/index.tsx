@@ -54,7 +54,7 @@ export interface ModalProps extends AntdModalProps {
     fullScreen?: boolean;
 }
 
-interface ModalInterface extends React.FC<ModalProps> {
+export interface ModalInterface extends React.FC<ModalProps> {
     useModal: typeof AntdModal.useModal;
 }
 

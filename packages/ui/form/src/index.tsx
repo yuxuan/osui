@@ -72,7 +72,7 @@ function InternalFormItem<Values = any>(props: FormItemProps<Values> & {
 
 // ==== 完善Form类型 ====
 type InternalFormType = typeof InternalForm;
-interface FormInterface extends InternalFormType {
+export interface FormInterface extends InternalFormType {
     useForm: typeof AntdForm.useForm;
     Item: typeof InternalFormItem;
     List: typeof AntdForm.List;

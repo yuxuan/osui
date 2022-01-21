@@ -188,7 +188,7 @@ export type {ExpandableConfig} from 'antd/lib/table/interface';
 
 type InternalTableType = typeof ForwardTable;
 
-interface TableInterface extends InternalTableType {
+export interface TableInterface extends InternalTableType {
     defaultProps?: Partial<TableProps<any>>;
     SELECTION_COLUMN: typeof AntdTable.SELECTION_COLUMN;
     EXPAND_COLUMN: typeof AntdTable.EXPAND_COLUMN;

@@ -13,7 +13,7 @@ export interface StepProps extends AntdStepsProps {
     compact?: boolean;
 }
 
-interface StepsInterface extends React.FC<StepProps> {
+export interface StepsInterface extends React.FC<StepProps> {
     Step: typeof AntdSteps.Step;
     ProcessOnlySteps: typeof ProcessOnlySteps;
 }
@@ -29,7 +29,7 @@ const Steps: StepsInterface = ({className, compact, ...props}) => {
 Steps.Step = AntdSteps.Step;
 
 // ==================== ProcessOnlyStep ====================
-interface ProcessOnlyStepsInterface extends React.FC<StepProps> {
+export interface ProcessOnlyStepsInterface extends React.FC<StepProps> {
     Step: typeof ProcessOnlyStep;
 }
 
@@ -46,5 +46,5 @@ ProcessOnlySteps.Step = ProcessOnlyStep;
 
 Steps.ProcessOnlySteps = ProcessOnlySteps;
 
-export type { StepsProps } from 'antd';
+export type {StepsProps} from 'antd';
 export default Steps;

@@ -152,6 +152,6 @@ const Breadcrumb: BreadcrumbInterface = props => {
 Breadcrumb.Item = AntdBreadcrumb.Item;
 Breadcrumb.Separator = AntdBreadcrumb.Separator;
 
-export type { BreadcrumbItemProps } from 'antd';
+export type {BreadcrumbItemProps} from 'antd';
 
 export default Breadcrumb;

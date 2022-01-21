@@ -16,7 +16,7 @@ interface FactorProps {
     className?: string;
 }
 
-interface Nested {
+export interface Nested {
     Horizontal: FC<FactorProps>;
     Vertical: FC<FactorProps>;
     FlexFit: FC<{className?: string}>;

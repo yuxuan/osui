@@ -7,7 +7,7 @@ import './index.less';
 
 const clsPrefix = 'osui-dropdown';
 
-interface DropdownInterface extends React.FC<AntdCheckboxProps> {
+export interface DropdownInterface extends React.FC<AntdCheckboxProps> {
     Button: typeof OSUIDropdownButton;
 }
 
@@ -29,5 +29,5 @@ hoistNonReactStatics(OSUIDropdownButton, AntdDropdown.Button);
 
 OSUIDropdown.Button = OSUIDropdownButton;
 
-export type { DropDownProps } from 'antd';
+export type {DropDownProps} from 'antd';
 export default OSUIDropdown;

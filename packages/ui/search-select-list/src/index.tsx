@@ -32,7 +32,6 @@ const LiItem: React.FC<LiItemProps> = props => {
             key={props.value}
             value={props.value}
         >
-            {/* {icon? icon : null}*/}
             <span>{props.label}</span>
         </li>
     );
@@ -65,7 +64,7 @@ export interface SeacrhSelectListProps extends AntdPooverProps {
     dropdownRender?: (selectlist: any[]) => React.ReactNode;
 }
 
-interface SeacrhSelectListInterface extends React.FC<SeacrhSelectListProps> {
+export interface SeacrhSelectListInterface extends React.FC<SeacrhSelectListProps> {
     LiItem: typeof LiItem;
 }
 

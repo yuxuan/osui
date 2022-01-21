@@ -6,7 +6,7 @@ import './index.less';
 
 const clsPrefix = 'osui-typography';
 
-interface TypographyInterface extends React.ForwardRefExoticComponent<AntdTypographyProps> {
+export interface TypographyInterface extends React.ForwardRefExoticComponent<AntdTypographyProps> {
     Text: typeof AntdTypography.Text;
     Link: typeof AntdTypography.Link;
     Title: typeof AntdTypography.Title;
@@ -34,5 +34,5 @@ Typography.Title = AntdTypography.Title;
 Typography.Paragraph = AntdTypography.Paragraph;
 Typography.PageTitle = PageTitle;
 
-export type { TypographyProps } from 'antd';
+export type {TypographyProps} from 'antd';
 export default Typography;

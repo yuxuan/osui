@@ -14,7 +14,7 @@ export type CheckboxGroupProps = AntdCheckboxGroupProps;
 const CheckboxGroup: React.FC<CheckboxGroupProps> = ({className, ...props}) => {
     return <AntdCheckboxGroup className={classNames(`${clsPrefix}-group`, className)} {...props} />;
 };
-interface CompoundedComponent
+export interface CompoundedComponent
     extends React.ForwardRefExoticComponent<CheckboxProps & React.RefAttributes<HTMLInputElement>> {
     Group: typeof CheckboxGroup;
     __ANT_CHECKBOX: boolean;
