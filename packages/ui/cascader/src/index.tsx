@@ -1,13 +1,14 @@
 import React from 'react';
-import { Cascader as AntdCascader } from 'antd';
-import { CascaderProps as AntdCascaderProps, CascaderOptionType } from 'antd/lib/cascader';
+import {Cascader as AntdCascader} from 'antd';
+import {CascaderProps as AntdCascaderProps, CascaderRef} from 'antd/lib/cascader';
+import hoistNonReactStatics from 'hoist-non-react-statics';
 import classNames from 'classnames';
-import { IconDownOutlined, IconRightOutlined } from '@osui/icons';
+import {IconDownOutlined, IconRightOutlined} from '@osui/icons';
 import './index.less';
 
 const clsPrefix = 'osui-cascader';
 
-const OSUICascader: React.ForwardRefRenderFunction<unknown, AntdCascaderProps> = (
+const OSUICascader = (
     {
         className,
         popupClassName,
@@ -15,8 +16,8 @@ const OSUICascader: React.ForwardRefRenderFunction<unknown, AntdCascaderProps> =
         suffixIcon,
         displayRender,
         ...props
-    },
-    ref
+    }: AntdCascaderProps<any>,
+    ref: React.Ref<CascaderRef>
 ) => {
     const innerClassName = classNames(clsPrefix, className);
     const innerDisplayRender = displayRender ?? (
@@ -36,7 +37,7 @@ const OSUICascader: React.ForwardRefRenderFunction<unknown, AntdCascaderProps> =
     const maxChildrenLength = React.useMemo(
         () => {
             const result: number[] = [];
-            const getLength = (options?: CascaderOptionType[]) => {
+            const getLength = (options?: any[]) => {
                 if (!options) {
                     return;
                 }
@@ -72,5 +73,10 @@ const OSUICascader: React.ForwardRefRenderFunction<unknown, AntdCascaderProps> =
     );
 };
 
-export type { CascaderProps } from 'antd';
-export default React.forwardRef<unknown, AntdCascaderProps>(OSUICascader) as unknown as typeof AntdCascader;
+const RefCastCascader = React.forwardRef(OSUICascader) as typeof AntdCascader;
+
+hoistNonReactStatics(RefCastCascader, AntdCascader);
+
+export type {CascaderProps} from 'antd';
+
+export default RefCastCascader;

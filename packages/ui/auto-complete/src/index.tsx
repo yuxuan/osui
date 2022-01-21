@@ -3,7 +3,8 @@ import {AutoComplete as AntdAutoComplete} from 'antd';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import {useDerivedState} from '@huse/derived-state';
 import type {AutoCompleteProps as AntdAutoCompleteProps} from 'antd/lib/auto-complete';
-import type {RefSelectProps, OptionType} from 'antd/lib/select';
+import type {RefSelectProps} from 'antd/lib/select';
+import type {BaseSelectRef} from 'rc-select';
 import HighlightText from '@osui/highlight-text';
 import {adjustAntdProps} from '@osui/select/lib/utils';
 import {IconDownOutlined} from '@osui/icons';
@@ -42,9 +43,9 @@ const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteP
                     ({label, value, key, ...option}) => (
                         // 如果传入了label还是会以传入的label为主
                         {
-                            label: label ?? (
-                                <HighlightText mark={derivedKeyword}>{value}</HighlightText>
-                            ),
+                            label: label ?? (value && (
+                                <HighlightText mark={derivedKeyword}>{String(value)}</HighlightText>
+                            )),
                             value,
                             ...option,
                         }
@@ -88,13 +89,17 @@ const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteP
     );
 };
 
-const RefAutoComplete = React.forwardRef<RefSelectProps, AutoCompleteProps>(AutoComplete);
+const RefAutoComplete = React.forwardRef<RefSelectProps, AutoCompleteProps>(
+    AutoComplete
+) as unknown as (
+    props: React.PropsWithChildren<AutoCompleteProps> & {
+      ref?: React.Ref<BaseSelectRef>;
+    },
+  ) => React.ReactElement & {
+    Option: typeof Option;
+  };
 
 hoistNonReactStatics(RefAutoComplete, AntdAutoComplete);
 
-type RefAutoCompleteWithOption = typeof RefAutoComplete & {
-    Option: OptionType;
-};
-
-export default RefAutoComplete as RefAutoCompleteWithOption;
+export default RefAutoComplete;
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Select as AntdSelect} from 'antd';
-import {RefSelectProps, SelectProps as AntdSelectProps, SelectValue} from 'antd/lib/select';
+import type {BaseOptionType, DefaultOptionType, SelectProps as AntdSelectProps} from 'antd/lib/select';
+import type {BaseSelectRef} from 'rc-select';
 import classNames from 'classnames';
 import {IconDownOutlined, IconCheckSquareFilled} from '@osui/icons';
 import {useBrandContext} from '@osui/brand-provider';
@@ -10,12 +11,15 @@ import './index.less';
 
 const clsPrefix = 'osui-select';
 
-export interface SelectProps<T> extends AntdSelectProps<T> {
+export interface SelectProps<ValueType, OptionType> extends AntdSelectProps<ValueType, OptionType> {
     noBorder?: boolean;
     displayTagsInPopover?: boolean;
 }
 
-function InternalSelect<R, T>(props: SelectProps<T>, ref: React.Ref<R>): React.ReactElement | null {
+function InternalSelect<ValueType = any, OptionType extends BaseOptionType | DefaultOptionType = DefaultOptionType>(
+    props: SelectProps<ValueType, OptionType>,
+    ref?: React.Ref<BaseSelectRef>
+): React.ReactElement | null {
     const {noBorder, className, loading, listHeight, ...restProps} = props;
     const {brand} = useBrandContext();
     // 暂时用，后面需要透传下去
@@ -73,17 +77,18 @@ function InternalSelect<R, T>(props: SelectProps<T>, ref: React.Ref<R>): React.R
     );
 }
 
-type InternalSelectType = <VT extends SelectValue = SelectValue>(props: SelectProps<VT> & {
-    ref?: React.Ref<RefSelectProps> | undefined;
-}) => React.ReactElement;
-
-export interface SelectInterface extends InternalSelectType {
+const Select = React.forwardRef(InternalSelect) as unknown as (<
+    ValueType = any,
+    OptionType extends BaseOptionType | DefaultOptionType = DefaultOptionType,
+>(
+    props: React.PropsWithChildren<SelectProps<ValueType, OptionType>> & {
+        ref?: React.Ref<BaseSelectRef>;
+    },
+) => React.ReactElement) & {
     SECRET_COMBOBOX_MODE_DO_NOT_USE: string;
     Option: typeof AntdSelect.Option;
     OptGroup: typeof AntdSelect.OptGroup;
-}
-
-const Select = React.forwardRef(InternalSelect) as unknown as SelectInterface;
+};
 
 hoistNonReactStatics(Select, AntdSelect);
 
