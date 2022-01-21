@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.9...v1.2.10) (2022-01-21)
+
+
+### Bug Fixes
+
+* 升级antd到4.18.4,但是现在table exapandable和rowSelection的顺序有问题 ([f7af7bb](https://gitee.com/gitee-fe/osui/tree/master/commits/f7af7bbad5ed53099f4cc4c97c5852e631846616))
+* select 增加了DisplayTagsInPopoverSelect模式 ([aaf4591](https://gitee.com/gitee-fe/osui/tree/master/commits/aaf4591f1cc92ee416e9068a0cfa2a0675bced9d))
+
+
+
+
+
 ## [1.2.9](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.8...v1.2.9) (2022-01-11)
 
 
