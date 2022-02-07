@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.12](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.11...v1.2.12) (2022-02-07)
+
+**Note:** Version bump only for package @osui/joyride
+
+
+
+
+
 ## [1.2.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.9...v1.2.10) (2022-01-21)
 
 
