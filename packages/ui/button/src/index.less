@@ -78,7 +78,8 @@
 
 // antd 移除了default的样式，需要直接应用到ant-btn上，需要放到gengerate上面，确保有type的能覆盖它
 /* stylelint-disable no-duplicate-selectors */
-.@{osui-button-class-prefix}.@{ant-prefix}-btn {
+.@{osui-button-class-prefix}.@{ant-prefix}-btn,
+.@{osui-button-class-prefix} .@{ant-prefix}-btn {
     .button-color-mixin(
         ~'var(--btn-default-color)';
         ~'var(--btn-default-bg)';

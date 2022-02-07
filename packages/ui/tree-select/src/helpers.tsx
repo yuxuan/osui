@@ -37,14 +37,12 @@ export function highlightMatchText(data: BasicItem[], target: string) {
             return {
                 ...item,
                 title,
-                key: item.key,
                 children: highlightMatchText(item.children, target),
             };
         }
         return {
             ...item,
             title,
-            key: item.key,
         };
     });
     return result;

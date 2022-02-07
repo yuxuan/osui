@@ -63,7 +63,7 @@ const generateTreeData = () => {
         const children = [];
         for (let i = 0; i < x; i++) {
             const key = `${preKey}-${i}`;
-            tns.push({title: key, key});
+            tns.push({title: key, key, value: key});
             if (i < y) {
                 children.push(key);
             }
@@ -85,7 +85,7 @@ const generateTreeData = () => {
         for (let i = 0; i < data.length; i++) {
             const node = data[i];
             const {key} = node;
-            dataList.push({key, title: key});
+            dataList.push({key, title: key, value: key});
             if (node.children) {
                 generateList(node.children);
             }
