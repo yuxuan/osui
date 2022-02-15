@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "1.2.12",
+    "version": "1.2.13",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -135,7 +135,7 @@
         "@osui/tree": "^1.2.11",
         "@osui/tree-select": "^1.2.12",
         "@osui/typography": "^1.2.11",
-        "@osui/upload": "^1.2.11",
+        "@osui/upload": "^1.2.13",
         "@osui/version": "^1.2.10",
         "classnames": "^2.2.6",
         "github-markdown-css": "^4.0.0",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.13](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.12...v1.2.13) (2022-02-15)
+
+
+### Bug Fixes
+
+* 修复upload dragger类型 ([3dfe989](https://gitee.com/gitee-fe/osui/tree/master/commits/3dfe9893a1702bea4a83acd714df51f876656482))
+
+
+
+
+
 ## [1.2.11](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.10...v1.2.11) (2022-01-21)
 
 
