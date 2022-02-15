@@ -8,19 +8,20 @@ import './index.less';
 
 const clsPrefix = 'osui-upload';
 
-export interface CompoundedComponent
-  extends React.ForwardRefExoticComponent<
+export interface CompoundedComponent extends React.ForwardRefExoticComponent<
     React.PropsWithChildren<UploadProps> & React.RefAttributes<any>
   > {
-  Dragger: typeof AntdUpload.Dragger;
+  Dragger: typeof OSUIUploadDragger;
   LIST_IGNORE: string;
 }
 
 export interface UploadProps extends AntdUploadProps {
   dashedBorder?: boolean;
 }
+
 export interface DraggerProps extends AntdDraggerProps {
   dashedBorder?: boolean;
+  children?: React.ReactNode;
 }
 
 const OSUIUpload = React.forwardRef(({className, dashedBorder, ...props}: UploadProps, ref) => {
