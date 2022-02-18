@@ -1,3 +1,7 @@
 const base = require('../../../../storybookbase/main');
-module.exports = base();
+
+const config = base();
+config.addons.push('storybook-dark-mode');
+
+module.exports = config;
 

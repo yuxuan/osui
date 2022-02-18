@@ -5,4 +5,4 @@ const formatToVariables = (variables, prefix) => {
     return content + '\n';
 };
 
-exports.default = formatToVariables;
+export default formatToVariables;

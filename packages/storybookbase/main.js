@@ -20,9 +20,11 @@ const loaderOptions = {
             style: {
                 resources: [
                     ...styleResources,
-                    require.resolve('@osui/theme/dist/less-functions-overrides.less'),
+                    require.resolve('@osui/icloud-theme/dist/less-functions-overrides.less'),
                 ],
-                lessVariables: {'ant-prefix': 'ant'},
+                lessVariables: {
+                    'ant-prefix': 'ant',
+                },
                 extractCSS: false,
             },
         },

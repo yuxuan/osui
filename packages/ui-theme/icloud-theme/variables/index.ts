@@ -1,10 +1,7 @@
-import components from './components';
-import colors from './colors';
-import theme from './theme';
+import light from './light';
+import dark from './dark';
 
-export default {
-    ...components,
-    ...colors,
-    ...theme,
+export {
+    dark,
+    light,
 };
-

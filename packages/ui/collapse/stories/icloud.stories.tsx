@@ -2,19 +2,22 @@
 import React from 'react';
 import BrandProvider from '@osui/brand-provider';
 import {version} from 'antd';
+import Select from '@osui/select';
+import {SettingOutlined} from '@ant-design/icons';
 import Collapse from '../src';
 
-const { Panel } = Collapse;
+const {Panel} = Collapse;
 
 export default {
     title: '数据展示/Collapse 折叠面板',
 };
 
 export const Demo = () => {
-    const text = '百度（纳斯达克：BIDU），全球最大的中文搜索引擎、最大的中文网站。百度愿景是：成为最懂用户，并能帮助人们成长的全球顶级高科技公司。';
+    const text =
+        '百度（纳斯达克：BIDU），全球最大的中文搜索引擎、最大的中文网站。百度愿景是：成为最懂用户，并能帮助人们成长的全球顶级高科技公司。';
     return (
         <BrandProvider brand="icloud">
-            <div style={{ padding: 30 }}>
+            <div style={{padding: 30}}>
                 <p>基础折叠面板</p>
                 <Collapse defaultActiveKey={['1']}>
                     <Panel header="可以折叠或展开的内容区域" key="1">
@@ -29,7 +32,9 @@ export const Demo = () => {
                 </Collapse>
                 <p></p>
                 <p>多层级折叠面板</p>
-                <strong color="red">为了满足UE设计，多层级时，需要加level属性，和levelChild属性</strong>
+                <strong color="red">
+                    为了满足UE设计，多层级时，需要加level属性，和levelChild属性
+                </strong>
                 <Collapse defaultActiveKey={['1']}>
                     <Panel header="内容标题 1" key="1" level={1}>
                         <Collapse defaultActiveKey="1" levelChild>
@@ -56,21 +61,105 @@ export const Demo = () => {
                     </Panel>
                 </Collapse>
             </div>
-        </BrandProvider>);
+        </BrandProvider>
+    );
 };
 
 export const Api = () => {
     return (
         <>
-            <a target="_blank" rel="noreferrer" href="https://ant.design/components/collapse-cn/">Antd Collapse API</a>
+            <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://ant.design/components/collapse-cn/"
+            >
+                Antd Collapse API
+            </a>
         </>
     );
 };
 
 export const TestCase = () => {
-    return (
-        <>
-            {version}
-        </>
+    return <>{version}</>;
+};
+
+export const TestCase2 = () => {
+    const {Panel} = Collapse;
+    const {Option} = Select;
+
+    function callback(key) {
+        console.log(key);
+    }
+
+    const text = `
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+`;
+
+    const genExtra = () => (
+        <SettingOutlined
+            onClick={event => {
+                // If you don't want click extra trigger collapse, you can prevent this:
+                event.stopPropagation();
+            }}
+        />
     );
+
+    class Demo extends React.Component {
+        state = {
+            expandIconPosition: 'left',
+        };
+
+        onPositionChange = expandIconPosition => {
+            this.setState({expandIconPosition});
+        };
+
+        render() {
+            const {expandIconPosition} = this.state;
+            return (
+                <>
+                    <Collapse
+                        defaultActiveKey={['1']}
+                        onChange={callback}
+                        expandIconPosition={expandIconPosition}
+                    >
+                        <Panel
+                            header="This is panel header 1"
+                            key="1"
+                            extra={genExtra()}
+                        >
+                            <div>{text}</div>
+                        </Panel>
+                        <Panel
+                            header="This is panel header 2"
+                            key="2"
+                            extra={genExtra()}
+                        >
+                            <div>{text}</div>
+                        </Panel>
+                        <Panel
+                            header="This is panel header 3"
+                            key="3"
+                            extra={genExtra()}
+                        >
+                            <div>{text}</div>
+                        </Panel>
+                    </Collapse>
+                    <br />
+                    <span>Expand Icon Position: </span>
+                    <Select
+                        value={expandIconPosition}
+                        style={{margin: '0 8px'}}
+                        onChange={this.onPositionChange}
+                    >
+                        <Option value="left">left</Option>
+                        <Option value="right">right</Option>
+                    </Select>
+                </>
+            );
+        }
+    }
+
+    return <Demo />;
 };

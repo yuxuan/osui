@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export const uiColors = {
     // 品牌色
     '--color-brand-1': '#ebf1ff',

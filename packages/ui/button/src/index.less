@@ -161,29 +161,30 @@
     }
 
     .@{osui-button-class-prefix}.@{ant-prefix}-btn-primary.@{osui-button-class-prefix}-face-@{face} {
-        color: ~"var(--theme-component-bg)";
+        color: ~"var(--btn-primary-color)";
         background-color: ~"var(--theme-@{face}-color)";
         border-color: ~"var(--theme-@{face}-color)";
 
         &:hover {
+            color: ~"var(--btn-primary-color)";
             background-color: ~"var(--theme-@{face}-color-hover)";
             border-color: ~"var(--theme-@{face}-color-hover)";
         }
 
         &:focus {
-            color: var(--color-gray-1);
+            color: ~"var(--btn-primary-color)";
             background-color: ~"var(--theme-@{face}-color)";
             border-color: ~"var(--theme-@{face}-color)";
         }
 
         &:active {
-            color: var(--color-gray-1);
+            color: ~"var(--btn-primary-color)";
             background-color: ~"var(--theme-@{face}-color-active)";
             border-color: ~"var(--theme-@{face}-color-active)";
         }
 
         &[disabled] {
-            color: ~"var(--color-gray-1)";
+            color: ~"var(--btn-primary-color)";
             background-color: ~"var(--color-@{face}-2)";
             border-color: ~"var(--color-@{face}-2)";
         }

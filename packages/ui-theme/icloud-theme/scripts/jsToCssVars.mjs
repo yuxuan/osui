@@ -3,4 +3,4 @@ const formatToCSS = (vars, scoped) => {
     return scoped ? `${scoped} {\n${content}\n}\n` : `:root {\n${content}\n}\n`;
 };
 
-exports.default = formatToCSS;
+export default formatToCSS;
