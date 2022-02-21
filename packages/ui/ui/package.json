@@ -127,6 +127,7 @@
         "@osui/tabs": "^1.2.11",
         "@osui/tag": "^1.2.10",
         "@osui/text-overflow-tooltip": "^1.2.10",
+        "@osui/theme-provider": "^1.2.14",
         "@osui/time-picker": "^1.2.10",
         "@osui/timeline": "^1.2.11",
         "@osui/toggle-button": "^1.2.10",
