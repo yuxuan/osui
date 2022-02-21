@@ -141,38 +141,38 @@ export const Demo3 = () => {
         {
             uid: '-1',
             name: 'image.png',
-            status: 'done',
+            status: 'done' as const,
             url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
         },
         {
             uid: '-2',
             name: 'image.png',
-            status: 'done',
+            status: 'done' as const,
             url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
         },
         {
             uid: '-3',
             name: 'image.png',
-            status: 'done',
+            status: 'done' as const,
             url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
         },
         {
             uid: '-4',
             name: 'image.png',
-            status: 'done',
+            status: 'done' as const,
             url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
         },
         {
             uid: '-xxx',
             percent: 50,
             name: 'image.png',
-            status: 'uploading',
+            status: 'uploading' as const,
             url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
         },
         {
             uid: '-5',
             name: 'image.png',
-            status: 'error',
+            status: 'error' as const,
         },
     ];
 
