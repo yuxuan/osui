@@ -12,7 +12,7 @@ export default {
     '--primary-6': '#177ddc',
     '--primary-7': '#388ed3',
     '--body-background': 'var(--theme-body-bg)',
-    '': 'var(--theme-border-color-base)',
+    '--border-color-base': 'var(--theme-border-color-base)',
     '--border-color-inverse': 'var(--theme-border-color-inverse)',
     '--border-color-split': 'var(--theme-border-color-split)',
     '--background-color-base': 'var(--theme-bg-color-base)',
@@ -30,4 +30,5 @@ export default {
     '--highlight-color': 'var(--red-5)',
     '--text-color-inverse': '#fff',
     '--item-hover-bg': 'rgba(255, 255, 255, 0.08)',
+
 };
