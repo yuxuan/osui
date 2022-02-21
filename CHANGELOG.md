@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.18](https://gitee.com/gitee-fe/osui/compare/v1.2.17...v1.2.18) (2022-02-21)
+
+
+### Bug Fixes
+
+* 修复暗模式border-color-base变量错误 ([7b26758](https://gitee.com/gitee-fe/osui/commits/7b26758298a36aaa6c6c26be4c1f2ee7c35c33cc))
+
+
+
+
+
 ## [1.2.17](https://gitee.com/gitee-fe/osui/compare/v1.2.16...v1.2.17) (2022-02-21)
 
 
