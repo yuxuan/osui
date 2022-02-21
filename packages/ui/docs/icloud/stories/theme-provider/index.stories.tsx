@@ -4,7 +4,7 @@ import {Button} from '@osui/ui';
 import ThemeProvider from '@osui/theme-provider';
 
 export default {
-    title: 'ThemeProvider',
+    title: 'FE/ThemeProvider',
 };
 
 export const Demo = () => {
