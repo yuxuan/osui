@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.17](https://gitee.com/gitee-fe/osui/compare/v1.2.16...v1.2.17) (2022-02-21)
+
+
+### Bug Fixes
+
+* 暗模式主题颜色调整 ([ae7a09e](https://gitee.com/gitee-fe/osui/commits/ae7a09e050f4cf68a626a9df978b31057229fdcd))
+
+
+
+
+
 ## [1.2.16](https://gitee.com/gitee-fe/osui/compare/v1.2.15...v1.2.16) (2022-02-21)
 
 
