@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.16](https://gitee.com/gitee-fe/osui/compare/v1.2.15...v1.2.16) (2022-02-21)
+
+
+### Bug Fixes
+
+* 修复颜色变量导出报错, 修复ThemeProvider使用方式 ([f345300](https://gitee.com/gitee-fe/osui/commits/f34530046011e9e39fbd1bdb9edb1e11856dfe96))
+
+
+
+
+
 ## [1.2.15](https://gitee.com/gitee-fe/osui/compare/v1.2.14...v1.2.15) (2022-02-21)
 
 
