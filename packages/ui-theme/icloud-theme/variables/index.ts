@@ -5,3 +5,5 @@ export {
     dark,
     light,
 };
+
+export default light;

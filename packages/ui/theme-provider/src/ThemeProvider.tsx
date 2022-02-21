@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useMemo, useContext, createContext, FC} from 'react';
+import React, {useState, useEffect, useMemo, useContext, createContext} from 'react';
 
 export enum ThemeEnum {
     light = 'light',
@@ -25,7 +25,7 @@ export interface ProviderProps {
 const ThemeContext = createContext<ThemeContextType>({theme: 'light', setTheme: () => {}});
 ThemeContext.displayName = 'ThemeContext';
 
-const ThemeProvider: FC<ProviderProps> = ({children, defaultTheme = ''}) => {
+function ThemeProvider({children, defaultTheme = ''}: ProviderProps) {
     const [theme, setTheme] = useState<ThemeType>(
         () => {
             const theme = (window.localStorage.getItem('osuiTheme') || defaultTheme) as ThemeType;
@@ -102,7 +102,7 @@ const ThemeProvider: FC<ProviderProps> = ({children, defaultTheme = ''}) => {
             {children}
         </ThemeContext.Provider>
     );
-};
+}
 
 export const useTheme = (): [ThemeType, SetTheme] => {
     const {theme, setTheme} = useContext(ThemeContext);

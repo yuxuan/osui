@@ -1,13 +1,14 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import {Button} from '@osui/ui';
-import ThemeProvider, {DarkModeSwitcher, useTheme} from '../src';
+import ThemeProvider from '../src';
 
 export default {
     title: 'ThemeProvider',
 };
 
 export const Demo = () => {
+    const {useTheme, DarkModeSwitcher} = ThemeProvider;
     const theme = useTheme();
     return (
         <ThemeProvider>
