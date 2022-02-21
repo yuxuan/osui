@@ -1,6 +1,6 @@
 {
     "name": "@osui/button",
-    "version": "1.2.12",
+    "version": "1.2.14",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
