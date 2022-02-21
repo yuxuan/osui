@@ -28,6 +28,7 @@ export {default as Popconfirm} from '@osui/popconfirm';
 export {default as Markdown} from '@osui/markdown';
 export {default as Skeleton} from '@osui/skeleton';
 export {default as Layout} from '@osui/layout';
+export {default as ThemeProvider} from '@osui/theme-provider';
 export {default as Cascader} from '@osui/cascader';
 export {default as Checkbox} from '@osui/checkbox';
 export {default as Transfer} from '@osui/transfer';

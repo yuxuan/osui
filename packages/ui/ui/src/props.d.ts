@@ -67,3 +67,4 @@ export type {TimelineProps, TimelineItemProps} from '@osui/timeline';
 export type {TooltipProps} from '@osui/tooltip';
 export type {TypographyProps} from '@osui/typography';
 export type {UploadProps} from '@osui/upload';
+export type {ThemeType, SetTheme, ThemeEnum, ThemeContextType} from '@osui/theme-provider';

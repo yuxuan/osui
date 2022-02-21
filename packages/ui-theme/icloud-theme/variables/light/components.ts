@@ -322,7 +322,7 @@ export default {
     '--list-header-background': 'transparent',
     '--mentions-dropdown-bg': 'var(--component-background)',
     '--mentions-dropdown-menu-item-hover-bg': 'var(--mentions-dropdown-bg)',
-    '--menu-bg': 'none',
+    '--menu-bg': 'var(--component-background)',
     '--menu-dark-arrow-color': 'var(--component-background)',
     '--menu-dark-bg': 'var(--layout-header-background)',
     '--menu-dark-color': 'var(--text-color-secondary-dark)',
