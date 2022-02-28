@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1">
-    <title>警告提示/提示</title>
-    <g id="警告提示/提示" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="矩形" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="1024" height="1024"/>
-        <path d="M512,64 C759.370667,64 960,264.629333 960,512 C960,759.370667 759.370667,960 512,960 C264.629333,960 64,759.370667 64,512 C64,264.629333 264.629333,64 512,64 Z M544,353 L480,353 L480,801 L544,801 L544,353 Z M544,224 L480,224 L480,288 L544,288 L544,224 Z" id="形状结合" fill="#979797"/>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="30" fill="currentColor"><path d="M512 64A448 448 0 1 1 512 960 448 448 0 0 1 512 64z m32 354.944h-64V768h64V418.944zM512 256a38.4 38.4 0 1 0-0.128 76.672A38.4 38.4 0 0 0 512 256z" fill="#080E1A"></path></svg>

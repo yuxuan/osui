@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>箭头/左</title>
-    <g id="箭头/左" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Shape" fill="#999999" fill-rule="nonzero" transform="translate(512.000000, 512.000000) rotate(-270.000000) translate(-512.000000, -512.000000) " points="798.254546 256 512 563.2 225.745454 256 128 358.4 512 768 896 358.4"></polygon>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="30" fill="currentColor"><path d="M273.490683 502.459627l318.012423 311.652174 44.521739-44.521739-267.130435-267.130435L636.024845 228.968944l-44.521739-44.521739z"></path></svg>

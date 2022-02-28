@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>箭头/下</title>
-    <g id="箭头/下" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Shape" fill="#999999" fill-rule="nonzero" points="798.254546 256 512 563.2 225.745454 256 128 358.4 512 768 896 358.4"></polygon>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="30" fill="currentColor"><path d="M511.681394 702.207841h0.637212l315.420037-315.420038-45.879278-45.242066L511.681394 611.723709 241.503423 341.545737l-45.242066 45.242066 315.420037 315.420038z"></path></svg>

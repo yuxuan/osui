@@ -124,6 +124,15 @@
             ~'var(--btn-default-disable-color)';
         );
     }
+
+    &.@{osui-button-class-prefix}-loading {
+        .button-color-mixin(
+            ~'var(--btn-default-loading-color)';
+            ~'var(--btn-default-loading-bg)';
+            ~'var(--btn-default-loading-border-color)';
+            ~'var(--btn-default-loading-color)';
+        );
+    }
 }
 
 .generate();

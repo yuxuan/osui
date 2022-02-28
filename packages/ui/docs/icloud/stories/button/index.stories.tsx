@@ -223,7 +223,13 @@ export const Demo = () => {
                     icon={<IconHomeOutlined />}
                     style={{'margin': '0 20px 20px 0'}}
                 />
-                <Button type="icon" loading icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
+                <Button
+                    className="icon-strong"
+                    type="icon"
+                    loading
+                    icon={<IconHomeOutlined />}
+                    style={{'margin': '0 20px 20px 0'}}
+                />
             </BrandProvider>
         </>
     );
