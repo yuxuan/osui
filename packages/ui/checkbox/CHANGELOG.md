@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+### Bug Fixes
+
+* 调整checkbox ([784a29a](https://gitee.com/gitee-fe/osui/tree/master/commits/784a29aa88746f50ba9529ce1e895a4444557d55))
+
+
+
+
+
 ## [1.2.11](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.10...v1.2.11) (2022-01-21)
 
 

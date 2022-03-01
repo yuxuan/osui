@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+**Note:** Version bump only for package @osui/theme-provider
+
+
+
+
+
 ## [1.2.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.15...v1.2.16) (2022-02-21)
 
 

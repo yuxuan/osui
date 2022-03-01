@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+**Note:** Version bump only for package @osui/icons-builder
+
+
+
+
+
 ## [1.1.1](https://gitee.com/gitee-fe/osui/compare/v1.0.0-beta.1...v1.1.1) (2021-08-05)
 
 **Note:** Version bump only for package @osui/icons-builder
