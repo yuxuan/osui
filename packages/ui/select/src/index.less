@@ -16,7 +16,6 @@
         .@{ant-prefix}-select-selector {
             color: var(--theme-disabled-color);
             background: var(--select-disabled-bg);
-            border-color: var(--theme-border-color-disabled);
         }
 
         .@{ant-prefix}-select-arrow {
@@ -96,7 +95,7 @@
         right: 11px;
         width: 14px;
         height: 14px;
-        color: var(--theme-icon-color);
+        color: var(--color-gray-4);
         opacity: var(--select-clear-icon-opacity);
 
         &:hover {
@@ -122,7 +121,16 @@
     }
 
     .@{ant-prefix}-select-selection-item {
-        border: 1px solid var(--color-gray-3);
+        border: 1px solid var(--theme-disabled-bg);
+        border-radius: var(--border-radius-2);
+    }
+
+    // disabled状态
+    &.@{ant-prefix}-select-disabled .@{ant-prefix}-select-selection-item,
+    .@{ant-prefix}-select-selection-item-disabled {
+        color: var(--theme-disabled-color);
+        background: var(--select-multiple-item-disabled-bg);
+        border: 1px solid var(--select-multiple-item-disabled-bg);
     }
 }
 
@@ -144,8 +152,8 @@
             display: table;
             width: @checkbox-size;
             height: @checkbox-size;
-            border: 1px solid var(--theme-border-color-base);
-            border-radius: @border-radius-base;
+            border: 1px solid var(--color-gray-4);
+            border-radius: var(--border-radius-2);
             content: '';
         }
     }
@@ -168,7 +176,7 @@
     .@{osui-select-class-prefix}-check-icon {
         width: var(--select-check-icon-size);
         height: var(--select-check-icon-size);
-        border-radius: var(--theme-border-radius-base);
+        border-radius: var(--border-radius-2);
     }
 }
 
