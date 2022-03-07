@@ -3,6 +3,7 @@
 .@{osui-tag-class-prefix} {
     padding: var(--tag-padding);
     border: 1px solid transparent;
+    border-radius: var(--tag-border-radius);
 
     &.@{ant-prefix}-tag > .anticon + span,
     &.@{ant-prefix}-tag > span + .anticon,
@@ -19,7 +20,7 @@
     }
 
     &:hover {
-        background: var(--theme-bg-color-base);
+        background: var(--tag-default-hover-bg);
     }
 
     .@{ant-prefix}-tag-close-icon {
