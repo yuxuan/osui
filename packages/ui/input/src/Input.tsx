@@ -8,7 +8,7 @@ const clsPrefix = 'osui-input';
 
 export type InputProps = AntdInputProps;
 
-const OSUIInput = React.forwardRef<any, InputProps>((
+const OSUIInput = React.forwardRef<HTMLInputElement, InputProps>((
     {className, onFocus, onBlur, disabled, ...props},
     ref
 ) => {
@@ -35,8 +35,10 @@ const OSUIInput = React.forwardRef<any, InputProps>((
         },
         [onBlur]
     );
+    // eslint-disable-next-line max-len
+    const TypeFixedAntdInput = AntdInput as unknown as React.ForwardRefExoticComponent<AntdInputProps & React.RefAttributes<HTMLInputElement>>;
     return (
-        <AntdInput
+        <TypeFixedAntdInput
             ref={ref}
             className={innerClassNames}
             onFocus={handleFocus}

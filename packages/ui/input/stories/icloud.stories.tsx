@@ -12,7 +12,7 @@ import version from '@osui/version';
 import Input from '../src';
 const {TextArea} = Input;
 
-const Blockquote = ({children}) => (
+const Blockquote = ({children}: {children: React.ReactNode}) => (
     <blockquote style={{
         background: 'var(--color-brand-1)',
         borderRadius: '3px',
@@ -31,6 +31,7 @@ export default {
 
 export const Demo = () => {
     Form.useLabelLayout('demo');
+    const inputRef = React.useRef(null);
     return (
         <>
             <BrandProvider brand="icloud">
@@ -86,6 +87,7 @@ export const Demo = () => {
                 <br />
                 <p>带有前后缀的输入框</p>
                 <Input
+                    ref={inputRef}
                     prefix="￥"
                     suffix="RMB"
                     style={{
@@ -293,7 +295,7 @@ export const Complete = () => {
                         width: '70%',
                     }}
                     placeholder="Email"
-                    options={[{value: 'text 1'}, {value: 'text 2'}]}
+                    options={[{value: 'text 1', label: 'text 1'}, {value: 'text 2', label: 'text 2'}]}
                 />
             </Input.Group>
 
@@ -360,7 +362,7 @@ export const Complete = () => {
                                 width: '70%',
                             }}
                             placeholder="Email"
-                            options={[{value: 'text 1'}, {value: 'text 2'}]}
+                            options={[{value: 'text 1', label: 'text 1'}, {value: 'text 2', label: 'text 2'}]}
                         />
                     </Input.Group>
                 </Form.Item>
