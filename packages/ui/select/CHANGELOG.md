@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.20](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.19...v1.2.20) (2022-03-09)
+
+
+### Bug Fixes
+
+* reverse select 关闭icon的修复 ([09ec787](https://gitee.com/gitee-fe/osui/tree/master/commits/09ec787dc0a1e7ad91c87b8e86049c9bc498c9f0))
+
+
+
+
+
 ## [1.2.19](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v1.2.19) (2022-03-09)
 
 
