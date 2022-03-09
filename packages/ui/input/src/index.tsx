@@ -1,4 +1,3 @@
-import React from 'react';
 import {Input as AntdInput} from 'antd';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import InputWithCounter from './InputWithCounter';
@@ -11,15 +10,15 @@ import './index.less';
 export {SearchProps} from './Search';
 export {InputProps};
 
-export interface InputInterface extends React.FC<InputProps> {
+export type InputInterface = typeof Input & {
     Group: typeof AntdInput.Group;
     Search: typeof Search;
     TextArea: typeof AntdInput.TextArea;
     Password: typeof AntdInput.Password;
     InputWithCounter: typeof InputWithCounter;
-}
+};
 
-const OSUIInput = Input as unknown as InputInterface;
+const OSUIInput = Input as InputInterface;
 
 hoistNonReactStatics(OSUIInput, AntdInput);
 
