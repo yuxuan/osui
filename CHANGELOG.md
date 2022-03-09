@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.19](https://gitee.com/gitee-fe/osui/compare/v1.2.18...v1.2.19) (2022-03-09)
+
+
+### Bug Fixes
+
+* 修复select tag的icon样式 ([c32f32c](https://gitee.com/gitee-fe/osui/commits/c32f32ca8372a22e5266f9486dd6d8dad8240b61))
+* input 类型修复 ([f92545d](https://gitee.com/gitee-fe/osui/commits/f92545d91c84a45321f3508efe4b31cff9dfd749))
+* popconfirm box-shadow修复 ([7099062](https://gitee.com/gitee-fe/osui/commits/7099062bf708996a1fa5ac6d52a710a30e50dd12))
+* popover box-shadow的问题 ([5cfd91c](https://gitee.com/gitee-fe/osui/commits/5cfd91cf8d1533d585001f797ae2f75e757fc973))
+
+
+
+
+
 ## [1.2.18](https://gitee.com/gitee-fe/osui/compare/v1.2.17...v1.2.18) (2022-02-21)
 
 

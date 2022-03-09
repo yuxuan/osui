@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.19](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v1.2.19) (2022-03-09)
+
+
+### Bug Fixes
+
+* input 类型修复 ([f92545d](https://gitee.com/gitee-fe/osui/tree/master/commits/f92545d91c84a45321f3508efe4b31cff9dfd749))
+
+
+
+
+
 ## [1.2.14](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.13...v1.2.14) (2022-02-21)
 
 **Note:** Version bump only for package @osui/input

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.19](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v1.2.19) (2022-03-09)
+
+
+### Bug Fixes
+
+* 修复select tag的icon样式 ([c32f32c](https://gitee.com/gitee-fe/osui/tree/master/commits/c32f32ca8372a22e5266f9486dd6d8dad8240b61))
+
+
+
+
+
 ## [1.2.11](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.10...v1.2.11) (2022-01-21)
 
 
