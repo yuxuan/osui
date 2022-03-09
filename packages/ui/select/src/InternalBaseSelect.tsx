@@ -3,7 +3,7 @@ import {Select as AntdSelect} from 'antd';
 import type {BaseOptionType, DefaultOptionType, SelectProps as AntdSelectProps} from 'antd/lib/select';
 import type {BaseSelectRef} from 'rc-select';
 import classNames from 'classnames';
-import {IconDownOutlined, IconCheckSquareFilled, IconCloseOutlined} from '@osui/icons';
+import {IconDownOutlined, IconCheckSquareFilled} from '@osui/icons';
 import {useBrandContext} from '@osui/brand-provider';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import {adjustAntdProps} from './utils';
@@ -57,11 +57,6 @@ function InternalSelect<ValueType = any, OptionType extends BaseOptionType | Def
             targetProp: 'allowClear',
             shouldOverride: isMultiple, // 只有在多选时，加上allowClear
             override: true,
-        },
-        {
-            targetProp: 'removeIcon',
-            shouldOverride: true, // 只有在多选时，加上removeIcon
-            override: <IconCloseOutlined className={`${clsPrefix}-remove-icon`} />,
         },
     ]);
 
