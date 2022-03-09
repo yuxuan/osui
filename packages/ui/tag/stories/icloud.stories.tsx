@@ -1,10 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 import {Divider, Input, Tooltip} from '@osui/ui';
 import {PlusOutlined} from '@ant-design/icons';
-
 import {IconPlusOutlined} from '@osui/icons-icloud';
 import ClockCircleOutlined from '@ant-design/icons/ClockCircleOutlined';
+import styled from '@emotion/styled';
 import Tag from '../src';
 
 export default {
@@ -53,149 +53,189 @@ export const Demo = () => {
             <Tag color="green" round>标签</Tag>
             <Tag color="yellow" round>标签</Tag>
             <Tag color="red" round>标签</Tag>
-            <Tag color="gray" round>标签</Tag>
             <Tag color="purple" round>标签</Tag>
+            <br />
+            <br />
+            <Tag color="blue" outlined>标签</Tag>
+            <Tag color="green" outlined>标签</Tag>
+            <Tag color="yellow" outlined>标签</Tag>
+            <Tag color="red" outlined>标签</Tag>
+            <Tag color="purple" outlined>标签</Tag>
+            <br />
+            <br />
+            <p>禁用</p>
+            <Tag outlined disabled>标签</Tag>
+            <Tag solid disabled>标签</Tag>
         </>
     );
 };
 
+const StyledInput = styled(Input)`
+    width: 60px;
+`;
+
 export const Add = () => {
-    class EditableTagGroup extends React.Component {
-        state = {
-            tags: ['Unremovable', 'Tag 2', 'Tag 3'],
-            inputVisible: false,
-            inputValue: '',
-            editInputIndex: -1,
-            editInputValue: '',
-        };
+    const [inputValue, setInputValue] = useState('');
+    const [editInputValue, setEditInputValue] = useState('');
+    const [inputVisible, setInputVisible] = useState(false);
+    const [tags, setTags] = useState(['Unremovable', 'Tag 2', 'Tag 3']);
+    const [editInputIndex, setEditInputIndex] = useState(-1);
 
-        handleClose = removedTag => {
-            const tags = this.state.tags.filter(tag => tag !== removedTag);
-            console.log(tags);
-            this.setState({tags});
-        };
+    const inputFocus = useCallback(
+        element => element && element.focus(),
+        []
+    );
 
-        showInput = () => {
-            this.setState({inputVisible: true}, () => this.input.focus());
-        };
+    const handleClose = useCallback(
+        removedTag => {
+            const localtags = tags.filter(tag => tag !== removedTag);
+            console.log(localtags);
+            setTags(localtags);
+        },
+        [tags]
+    );
 
-        handleInputChange = e => {
-            this.setState({inputValue: e.target.value});
-        };
+    const showInput = useCallback(() => {
+        setInputVisible(true);
+    }, []
+    );
 
-        handleInputConfirm = () => {
-            const {inputValue} = this.state;
-            let {tags} = this.state;
-            if (inputValue && !tags.includes(inputValue)) {
-                tags = [...tags, inputValue];
-            }
-            console.log(tags);
-            this.setState({
-                tags,
-                inputVisible: false,
-                inputValue: '',
-            });
-        };
+    const handleInputChange = useCallback(e => {
+        setInputValue(e.target.value);
+    }, []
+    );
 
-        handleEditInputChange = e => {
-            this.setState({editInputValue: e.target.value});
-        };
+    const handleInputConfirm = useCallback(() => {
+        if (inputValue && !tags.includes(inputValue)) {
+            setTags([...tags, inputValue]);
+        }
+        setInputVisible(false);
+        setInputValue('');
+    }, [inputValue, tags]
+    );
 
-        handleEditInputConfirm = () => {
-            this.setState(({tags, editInputIndex, editInputValue}) => {
-                const newTags = [...tags];
-                newTags[editInputIndex] = editInputValue;
+    const handleEditInputChange = useCallback(e => {
+        setEditInputValue(e.target.value);
+    }, []
+    );
 
-                return {
-                    tags: newTags,
-                    editInputIndex: -1,
-                    editInputValue: '',
-                };
-            });
-        };
+    const handleEditInputConfirm = useCallback(() => {
+        const newTags = [...tags];
+        newTags[editInputIndex] = editInputValue;
+        setTags(newTags);
+        setEditInputIndex(-1);
+        setEditInputValue('');
+    }, [editInputIndex, editInputValue, tags]
+    );
 
-        saveInputRef = input => {
-            this.input = input;
-        };
-
-        saveEditInputRef = input => {
-            this.editInput = input;
-        };
-
-        render() {
-            const {tags, inputVisible, inputValue, editInputIndex, editInputValue} = this.state;
-            return (
-                <>
-                    {tags.map((tag, index) => {
-                        if (editInputIndex === index) {
-                            return (
-                                <Input
-                                    ref={this.saveEditInputRef}
-                                    key={tag}
-                                    size="small"
-                                    className="tag-input"
-                                    value={editInputValue}
-                                    onChange={this.handleEditInputChange}
-                                    onBlur={this.handleEditInputConfirm}
-                                    onPressEnter={this.handleEditInputConfirm}
-                                />
-                            );
-                        }
-
-                        const isLongTag = tag.length > 20;
-
-                        const tagElem = (
-                            <Tag
-                                className="edit-tag"
-                                key={tag}
-                                closable={index !== 0}
-                                onClose={() => this.handleClose(tag)}
-                            >
-                                <span
-                                    onDoubleClick={e => {
-                                        if (index !== 0) {
-                                            this.setState({editInputIndex: index, editInputValue: tag}, () => {
-                                                this.editInput.focus();
-                                            });
-                                            e.preventDefault();
-                                        }
-                                    }}
-                                >
-                                    {isLongTag ? `${tag.slice(0, 20)}...` : tag}
-                                </span>
-                            </Tag>
-                        );
-                        return isLongTag ? (
-                            <Tooltip title={tag} key={tag}>
-                                {tagElem}
-                            </Tooltip>
-                        ) : (
-                            tagElem
-                        );
-                    })}
-                    {inputVisible && (
-                        <Input
-                            ref={this.saveInputRef}
-                            type="text"
+    return (
+        <>
+            {tags.map((tag, index) => {
+                if (editInputIndex === index) {
+                    return (
+                        <StyledInput
+                            ref={inputFocus}
+                            key={tag}
                             size="small"
                             className="tag-input"
-                            value={inputValue}
-                            onChange={this.handleInputChange}
-                            onBlur={this.handleInputConfirm}
-                            onPressEnter={this.handleInputConfirm}
+                            value={editInputValue}
+                            onChange={handleEditInputChange}
+                            onBlur={handleEditInputConfirm}
+                            onPressEnter={handleEditInputConfirm}
                         />
-                    )}
-                    {!inputVisible && (
-                        <Tag className="site-tag-plus" onClick={this.showInput}>
-                            <PlusOutlined /> New Tag
-                        </Tag>
-                    )}
+                    );
+                }
+
+                const isLongTag = tag.length > 20;
+
+                const tagElem = (
+                    <Tag
+                        className="edit-tag"
+                        key={tag}
+                        closable={index !== 0}
+                        onClose={() => handleClose(tag)}
+                    >
+                        <span
+                            onDoubleClick={e => {
+                                if (index !== 0) {
+                                    setEditInputIndex(index);
+                                    setEditInputValue(tag);
+                                    e.preventDefault();
+                                }
+                            }}
+                        >
+                            {isLongTag ? `${tag.slice(0, 20)}...` : tag}
+                        </span>
+                    </Tag>
+                );
+                return isLongTag ? (
+                    <Tooltip title={tag} key={tag}>
+                        {tagElem}
+                    </Tooltip>
+                ) : (
+                    tagElem
+                );
+            })}
+            {inputVisible && (
+                <StyledInput
+                    ref={inputFocus}
+                    type="text"
+                    size="small"
+                    className="tag-input"
+                    value={inputValue}
+                    onChange={handleInputChange}
+                    onBlur={handleInputConfirm}
+                    onPressEnter={handleInputConfirm}
+                />
+            )}
+            {!inputVisible && (
+                <Tag className="site-tag-plus" outlined color="blue" onClick={showInput}>
+                    <PlusOutlined /> 添加
+                </Tag>
+            )}
+        </>
+    );
+
+
+};
+
+export const Checkable = () => {
+    const {CheckableTag} = Tag;
+
+    const tagsData = ['Movies', 'Books', 'Music', 'Sports'];
+
+    class HotTags extends React.Component {
+        state = {
+            selectedTags: ['Books'],
+        };
+
+        handleChange(tag, checked) {
+            const {selectedTags} = this.state;
+            const nextSelectedTags = checked ? [...selectedTags, tag] : selectedTags.filter(t => t !== tag);
+            console.log('You are interested in: ', nextSelectedTags);
+            this.setState({selectedTags: nextSelectedTags});
+        }
+
+        render() {
+            const {selectedTags} = this.state;
+            return (
+                <>
+                    <span style={{marginRight: 8}}>Categories:</span>
+                    {tagsData.map(tag => (
+                        <CheckableTag
+                            key={tag}
+                            checked={selectedTags.includes(tag)}
+                            onChange={checked => this.handleChange(tag, checked)}
+                        >
+                            {tag}
+                        </CheckableTag>
+                    ))}
                 </>
             );
         }
     }
 
-    return <EditableTagGroup />;
+    return (<HotTags />);
 };
 
 export const Api = () => {

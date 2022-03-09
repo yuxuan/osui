@@ -15,20 +15,39 @@ const clsPrefix = 'osui-tag';
 export interface TagProps extends AntdTagProps {
     solid?: boolean;
     round?: boolean;
+    outlined?: boolean;
+    disabled?: boolean;
 }
 
 export interface TagType extends React.ForwardRefExoticComponent<TagProps & React.RefAttributes<HTMLElement>> {
     CheckableTag: typeof CheckableTag;
 }
 
+const colorMap = {
+    // by category
+    brand: 'blue',
+    info: 'blue',
+    success: 'green',
+    warning: 'yellow',
+    danger: 'red',
+    // by color
+    orange: 'yellow',
+    yellow: 'yellow',
+    blue: 'blue',
+    green: 'green',
+    red: 'red',
+};
+
 const Tag = React.forwardRef<HTMLSpanElement, TagProps>((props, ref) => {
-    const {closeIcon, color, solid, round, ...restProps} = props;
+    const {closeIcon, color, solid, round, outlined, disabled, ...restProps} = props;
     const patchedIcon = closeIcon ?? <IconCloseOutlined />;
     const classnames = classNames(
         clsPrefix,
         {[`${clsPrefix}-solid`]: solid},
         {[`${clsPrefix}-round`]: round},
-        {[`${clsPrefix}-${color}`]: props.color},
+        {[`${clsPrefix}-outlined`]: outlined},
+        {[`${clsPrefix}-disabled`]: disabled},
+        {[`${clsPrefix}-${color}`]: colorMap[props.color as keyof typeof colorMap] ?? props.color},
         props.className
     );
 

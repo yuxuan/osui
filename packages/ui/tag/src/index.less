@@ -42,6 +42,11 @@
             color: var(--theme-component-bg);
             background: var(--tag-blue-solid-bg-color);
         }
+
+        &.@{osui-tag-class-prefix}-outlined {
+            background: var(--theme-component-bg);
+            border-color: var(--tag-blue-font-color);
+        }
     }
 
     &.@{osui-tag-class-prefix}-green {
@@ -51,6 +56,11 @@
         &.@{osui-tag-class-prefix}-solid {
             color: var(--theme-component-bg);
             background: var(--tag-green-solid-bg-color);
+        }
+
+        &.@{osui-tag-class-prefix}-outlined {
+            background: var(--theme-component-bg);
+            border-color: var(--tag-green-font-color);
         }
     }
 
@@ -62,6 +72,11 @@
             color: var(--theme-component-bg);
             background: var(--tag-red-solid-bg-color);
         }
+
+        &.@{osui-tag-class-prefix}-outlined {
+            background: var(--theme-component-bg);
+            border-color: var(--tag-red-font-color);
+        }
     }
 
     &.@{osui-tag-class-prefix}-yellow {
@@ -72,26 +87,59 @@
             color: var(--theme-component-bg);
             background: var(--tag-yellow-solid-bg-color);
         }
+
+        &.@{osui-tag-class-prefix}-outlined {
+            background: var(--theme-component-bg);
+            border-color: var(--tag-yellow-font-color);
+        }
     }
 
     &.@{osui-tag-class-prefix}-purple {
         color: var(--color-purple-6);
         background: var(--tag-purple-color);
+
+        &.@{osui-tag-class-prefix}-outlined {
+            background: var(--theme-component-bg);
+            border-color: var(--color-purple-6);
+        }
     }
 
-    &.@{osui-tag-class-prefix}-gray {
-        color: var(--color-gray-9);
-        background: var(--color-gray-3) !important;
+    &.@{osui-tag-class-prefix}-disabled {
+        &.@{osui-tag-class-prefix}-outlined {
+            color: var(--theme-disabled-color);
+            background: var(--theme-component-bg);
+            border-color: var(--theme-disabled-color);
+        }
+
+        &.@{osui-tag-class-prefix}-solid {
+            color: var(--theme-disabled-color);
+        }
     }
 }
 
 .@{osui-tag-class-prefix}-checkable {
-    border: 2px solid transparent;
+    color: var(--text-color);
+    background: var(--tag-default-bg);
+    border: 1px solid transparent;
+    border-radius: var(--tag-border-radius);
+
+    &:not(.@{ant-prefix}-tag-checkable-checked):hover {
+        color: var(--text-color);
+    }
+
+    &.@{ant-prefix}-tag {
+        transition: none;
+    }
 
     &.@{ant-prefix}-tag-checkable-checked {
-        color: @text-color;
-        background: var(--color-brand-1);
-        border: 2px solid var(--color-brand-4);
+        color: var(--text-color-inverse);
+        background: var(--theme-primary-color);
+        border: 1px solid transparent;
+        transition: none;
+
+        &:hover {
+            background: var(--theme-primary-color-hover);
+        }
     }
 }
 
