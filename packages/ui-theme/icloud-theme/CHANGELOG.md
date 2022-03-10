@@ -3,13 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+## [1.2.21](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.20...v1.2.21) (2022-03-10)
 
 
 ### Bug Fixes
 
-* 调整checkbox ([784a29a](https://gitee.com/gitee-fe/osui/tree/master/commits/784a29aa88746f50ba9529ce1e895a4444557d55))
-* 公有云主题, 颜色,icon调整 ([ae5b8b0](https://gitee.com/gitee-fe/osui/tree/master/commits/ae5b8b0ab0d9cbf5646bcea3a74564d6b638ec2b))
+* icloud-theme 补充css vars ([b6393d0](https://gitee.com/gitee-fe/osui/tree/master/commits/b6393d0f4fc92af09d66f9f8c9bdad67567eef15))
 
 
 

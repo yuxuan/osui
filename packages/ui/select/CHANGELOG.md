@@ -3,12 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+## [1.2.20](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.19...v1.2.20) (2022-03-09)
 
 
 ### Bug Fixes
 
-* 公有云主题, 颜色,icon调整 ([ae5b8b0](https://gitee.com/gitee-fe/osui/tree/master/commits/ae5b8b0ab0d9cbf5646bcea3a74564d6b638ec2b))
+* reverse select 关闭icon的修复 ([09ec787](https://gitee.com/gitee-fe/osui/tree/master/commits/09ec787dc0a1e7ad91c87b8e86049c9bc498c9f0))
+
+
+
+
+
+## [1.2.19](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v1.2.19) (2022-03-09)
+
+
+### Bug Fixes
+
+* 修复select tag的icon样式 ([c32f32c](https://gitee.com/gitee-fe/osui/tree/master/commits/c32f32ca8372a22e5266f9486dd6d8dad8240b61))
 
 
 

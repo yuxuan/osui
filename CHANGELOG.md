@@ -3,14 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+## [1.2.22](https://gitee.com/gitee-fe/osui/compare/v1.2.21...v1.2.22) (2022-03-10)
 
 
 ### Bug Fixes
 
-* 调整checkbox ([784a29a](https://gitee.com/gitee-fe/osui/commits/784a29aa88746f50ba9529ce1e895a4444557d55))
-* 公有云主题, 颜色,icon调整 ([ae5b8b0](https://gitee.com/gitee-fe/osui/commits/ae5b8b0ab0d9cbf5646bcea3a74564d6b638ec2b))
-* 允许acud发布 ([39d889d](https://gitee.com/gitee-fe/osui/commits/39d889dbfa72b14d3b4f1647a3f37a0c17417583))
+* alert icon位置 ([9f8f49a](https://gitee.com/gitee-fe/osui/commits/9f8f49aa1376d9be97c214a5cd360996c55712a6))
+
+
+
+
+
+## [1.2.21](https://gitee.com/gitee-fe/osui/compare/v1.2.20...v1.2.21) (2022-03-10)
+
+
+### Bug Fixes
+
+* icloud-theme 补充css vars ([b6393d0](https://gitee.com/gitee-fe/osui/commits/b6393d0f4fc92af09d66f9f8c9bdad67567eef15))
+
+
+
+
+
+## [1.2.20](https://gitee.com/gitee-fe/osui/compare/v1.2.19...v1.2.20) (2022-03-09)
+
+
+### Bug Fixes
+
+* reverse select 关闭icon的修复 ([09ec787](https://gitee.com/gitee-fe/osui/commits/09ec787dc0a1e7ad91c87b8e86049c9bc498c9f0))
+
+
+
+
+
+## [1.2.19](https://gitee.com/gitee-fe/osui/compare/v1.2.18...v1.2.19) (2022-03-09)
+
+
+### Bug Fixes
+
+* 修复select tag的icon样式 ([c32f32c](https://gitee.com/gitee-fe/osui/commits/c32f32ca8372a22e5266f9486dd6d8dad8240b61))
+* input 类型修复 ([f92545d](https://gitee.com/gitee-fe/osui/commits/f92545d91c84a45321f3508efe4b31cff9dfd749))
+* popconfirm box-shadow修复 ([7099062](https://gitee.com/gitee-fe/osui/commits/7099062bf708996a1fa5ac6d52a710a30e50dd12))
+* popover box-shadow的问题 ([5cfd91c](https://gitee.com/gitee-fe/osui/commits/5cfd91cf8d1533d585001f797ae2f75e757fc973))
 
 
 

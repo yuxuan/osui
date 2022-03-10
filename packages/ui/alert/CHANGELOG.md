@@ -3,9 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+## [1.2.22](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.21...v1.2.22) (2022-03-10)
 
-**Note:** Version bump only for package @osui/alert
+
+### Bug Fixes
+
+* alert icon位置 ([9f8f49a](https://gitee.com/gitee-fe/osui/tree/master/commits/9f8f49aa1376d9be97c214a5cd360996c55712a6))
 
 
 

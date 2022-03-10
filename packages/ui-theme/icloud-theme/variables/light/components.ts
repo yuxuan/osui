@@ -250,7 +250,7 @@ export default {
     '--date-picker-suffix-color': 'var(--theme-placeholder-color)',
     '--descriptions-bg': '#fafafa',
     '--descriptions-extra-color': 'var(--text-color)',
-    '--disabled-active-bg': 'var(--disabled-active-bg)',
+    '--disabled-active-bg': '#e6e6e6',
     '--disabled-bg': 'var(--background-color-base)',
     '--disabled-color': 'rgba(0, 0, 0, 0.25)',
     '--disabled-color-dark': 'rgba(255, 255, 255, 0.35)',
@@ -339,7 +339,7 @@ export default {
     '--menu-highlight-danger-color': 'var(--error-color)',
     '--menu-inline-submenu-bg': 'var(--color-gray-2)',
     '--menu-item-active-bg': 'var(--theme-secondary-color-hover)',
-    '--menu-item-active-danger-bg': 'var(--red-1)',
+    '--menu-item-active-danger-bg': 'var(--color-error-1)',
     '--menu-item-color': 'var(--color-gray-9)',
     '--menu-item-group-title-color': 'var(--theme-text-color-secondary)',
     '--menu-popup-bg': 'var(--theme-component-bg)',
@@ -619,4 +619,5 @@ export default {
     '--tree-node-selected-bg': 'var(--theme-component-bg)',
     '--tree-select-selected-color': 'var(--theme-primary-color)',
     '--tree-switcher-width': '10px',
+    'upload-actions-color': 'var(--text-color-secondary)',
 };
