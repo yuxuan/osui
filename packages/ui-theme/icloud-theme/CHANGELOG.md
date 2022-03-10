@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.21](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.20...v1.2.21) (2022-03-10)
+
+
+### Bug Fixes
+
+* icloud-theme 补充css vars ([b6393d0](https://gitee.com/gitee-fe/osui/tree/master/commits/b6393d0f4fc92af09d66f9f8c9bdad67567eef15))
+
+
+
+
+
 ## [1.2.18](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.17...v1.2.18) (2022-02-21)
 
 
