@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.22](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.21...v1.2.22) (2022-03-10)
+
+
+### Bug Fixes
+
+* alert icon位置 ([9f8f49a](https://gitee.com/gitee-fe/osui/tree/master/commits/9f8f49aa1376d9be97c214a5cd360996c55712a6))
+
+
+
+
+
 ## [1.2.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.9...v1.2.10) (2022-01-21)
 
 

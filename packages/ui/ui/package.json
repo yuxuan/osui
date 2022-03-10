@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "1.2.20",
+    "version": "1.2.22",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -60,7 +60,7 @@
     },
     "dependencies": {
         "@osui/affix": "^1.2.10",
-        "@osui/alert": "^1.2.10",
+        "@osui/alert": "^1.2.22",
         "@osui/anchor": "^1.2.10",
         "@osui/auto-complete": "^1.2.20",
         "@osui/avatar": "^1.2.10",
