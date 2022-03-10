@@ -156,6 +156,49 @@ export const MultipleDemo = () => {
                 </Select>
                 <br />
                 <br />
+                <p>禁用</p>
+                <Select
+                    disabled
+                    closable
+                    allowClear={false}
+                    mode="multiple"
+                    value={['luck', 'jack']}
+                    style={{width: 240}}
+                    onChange={handleChange}
+                >
+                    <Option value="jack">Jack</Option>
+                    <Option value="lucy">Lucy</Option>
+                    <Option value="disabled" disabled>
+                        Disabled
+                    </Option>
+                    <Option value="Yiminghe">yiminghe</Option>
+                    <Option value="a">a</Option>
+                    <Option value="b">b</Option>
+                    <Option value="c">c</Option>
+                </Select>
+                <br />
+                <br />
+                <p>禁用</p>
+                <Select
+                    closable
+                    allowClear={false}
+                    mode="multiple"
+                    defaultValue={['lucy', 'jack']}
+                    style={{width: 240}}
+                    onChange={handleChange}
+                >
+                    <Option value="jack" disabled>Jack</Option>
+                    <Option value="lucy" disabled>Lucy</Option>
+                    <Option value="disabled" disabled>
+                        Disabled
+                    </Option>
+                    <Option value="Yiminghe">yiminghe</Option>
+                    <Option value="a">a</Option>
+                    <Option value="b">b</Option>
+                    <Option value="c">c</Option>
+                </Select>
+                <br />
+                <br />
                 <p>有限制下拉多选</p>
                 <p>待补充</p>
                 <p>含搜索功能的下拉多选</p>

@@ -60,14 +60,6 @@ export const Demo = () => {
                 <h3><b>2、纯文字按钮</b></h3>
                 <Blockquote>
                     <p>文字形态的按钮，普通状态（默认黑字hover上变蓝）是用Button type text， 而加强状态（默认蓝色）是使用type link</p>
-                    <p>
-                        如果是使用a实现，需要自己处理一下样式 <br />
-                        color: color-brand-6;
-                        hover: color-brand-5;
-                        focus: color-brand-7;
-                        active: color-brand-7;
-                        disabled: color-brand-3;
-                    </p>
                 </Blockquote>
                 <p>普通样式</p>
                 <FlexCentered>
