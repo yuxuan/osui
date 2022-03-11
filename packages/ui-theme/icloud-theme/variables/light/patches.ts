@@ -1,7 +1,7 @@
 // 把antd的css vars映射到osui theme的
 export default {
     '--primary-color': 'var(--theme-primary-color)',
-    '--primary-color-hover': 'var(--theme-primary-color)', // 这个颜色用在select选中的颜色，感觉不太对
+    '--primary-color-hover': 'var(--theme-primary-color-active)', // 因为antd的focus状态用的是hover color，见 input mixin
     '--primary-color-active': 'var(--theme-primary-color)', // 这两个都是antd自身的用法，我们会直接用css vars来使用，这里不区分active hover
     '--info-color': 'var(--theme-info-color)',
     '--success-color': 'var(--theme-success-color)',

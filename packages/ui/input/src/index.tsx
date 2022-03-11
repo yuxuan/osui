@@ -2,6 +2,7 @@ import {Input as AntdInput} from 'antd';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import InputWithCounter from './InputWithCounter';
 import Input, {InputProps} from './Input';
+import InputGroup from './InputGroup';
 import Password from './Password';
 import TextArea from './TextArea';
 import Search from './Search';
@@ -11,7 +12,7 @@ export {SearchProps} from './Search';
 export {InputProps};
 
 export type InputInterface = typeof Input & {
-    Group: typeof AntdInput.Group;
+    Group: typeof InputGroup;
     Search: typeof Search;
     TextArea: typeof AntdInput.TextArea;
     Password: typeof AntdInput.Password;
@@ -26,7 +27,7 @@ OSUIInput.Password = Password;
 
 OSUIInput.TextArea = TextArea;
 
-OSUIInput.Group = AntdInput.Group;
+OSUIInput.Group = InputGroup;
 
 OSUIInput.Search = Search;
 

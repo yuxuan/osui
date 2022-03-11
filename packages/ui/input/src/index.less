@@ -17,6 +17,10 @@
             }
         }
     }
+
+    .@{ant-prefix}-select-single.@{ant-prefix}-select-open .@{ant-prefix}-select-selection-item {
+        color: var(--theme-primary-color-active);
+    }
 }
 
 /* stylelint-disable no-duplicate-selectors */
@@ -26,7 +30,12 @@
     &.@{ant-prefix}-input-affix-wrapper-focused,
     &.@{ant-prefix}-input:focus,
     &.@{ant-prefix}-input-focused {
-        box-shadow: var(--input-focus-box-shadow);
+        background: var(--input-focus-background-color);
+        border-color: var(--theme-primary-color-active);
+
+        input.@{ant-prefix}-input {
+            background: var(--input-focus-background-color);
+        }
     }
 
     .@{ant-prefix}-input-suffix > svg {
@@ -34,128 +43,100 @@
         height: var(--input-suffix-icon-size);
     }
 
-    &-disabled {
-        .@{ant-prefix}-input-group-addon {
-            background: var(--theme-disabled-bg);
+    .@{ant-prefix}-input-wrapper {
+        // [prefix][input][suffix]
+        // [prefix][input]
+        // [input][suffix]
+        // 不是第一个input的话，border-left去掉
+        .@{ant-prefix}-input-affix-wrapper:not(:first-child),
+        input:not(:first-child) {
+            border-left: 0;
+        }
+        // 不是最后一个input的话，border-right去掉
+        .@{ant-prefix}-input-affix-wrapper:not(:last-child),
+        input:not(:last-child) {
+            border-right: 0;
         }
 
-        .@{osui-input-class-prefix}-search-icon {
-            color: var(--theme-disabled-color);
-            cursor: not-allowed;
-
-            &:hover {
-                color: var(--theme-disabled-color);
+        &:hover {
+            .@{ant-prefix}-input-group-addon,
+            .@{ant-prefix}-input-affix-wrapper,
+            input {
+                border-color: var(--theme-primary-color-hover);
             }
         }
     }
 
-    &:not(&-disabled) {
-        .@{ant-prefix}-input-group-addon {
-            background: var(--theme-component-bg);
+    // input group focused
+    &-focused {
+        .@{ant-prefix}-input-group-addon,
+        .@{ant-prefix}-input-search-button,
+        .@{ant-prefix}-input-affix-wrapper,
+        input {
+            border-color: var(--theme-primary-color-active);
+        }
+    }
+
+    // input group disabled
+    &-disabled {
+        .@{ant-prefix}-input-group {
+            // disabled时hover
+            &:hover {
+                .@{ant-prefix}-input-group-addon,
+                .@{ant-prefix}-input-affix-wrapper,
+                input {
+                    border-color: var(--theme-border-color-disabled);
+                }
+
+                // 作为第一个input时的border，如search
+                .@{ant-prefix}-input-search-button {
+                    border: 1px solid var(--theme-border-color-disabled);
+                }
+            }
+
+            input:first-child,
+            .@{ant-prefix}-input-search-button {
+                border-color: var(--theme-border-color-disabled) !important;
+            }
+        }
+
+        &,
+        &.@{ant-prefix}-input-disabled,
+        &.@{ant-prefix}-input-search {
+            border-color: var(--theme-border-color-disabled);
 
             &:hover {
-                border-color: var(--theme-primary-color-hover);
-            }
-
-            &:active {
-                border-color: var(--theme-primary-color-active);
-            }
-
-            &:first-child {
-                border-right: 1px solid transparent;
-
-                &:hover {
-                    border-right: 1px solid var(--theme-primary-color-hover);
-                }
-
-                &:active {
-                    border-right: 1px solid var(--theme-primary-color-active);
-                }
-            }
-
-            &:last-child {
-                border-left: 1px solid transparent;
-
-                &:hover {
-                    border-left: 1px solid var(--theme-primary-color-hover);
-                }
-
-                &:active {
-                    border-right: 1px solid var(--theme-primary-color-active);
-                }
+                border-color: var(--theme-border-color-disabled);
             }
         }
     }
 
     // search icon
     &-search-icon {
-        color: var(--theme-icon-color);
         cursor: pointer;
-
-        &:hover {
-            color: var(--theme-primary-color-hover);
-        }
-
-        &:active {
-            color: var(--theme-primary-color-active);
-        }
     }
 
-    // clear icon 处理
     .@{ant-prefix}-input-clear-icon {
-        color: var(--theme-icon-color);
-        cursor: pointer;
-        opacity: 0;
+        margin: 0 var(--input-affix-margin);
+    }
+}
 
-        &:hover {
-            color: var(--color-gray-8);
+// 表单内报错样式覆盖
+.@{ant-prefix}-form-item-has-error & {
+    .@{ant-prefix}-input-group-addon {
+        border-color: var(--theme-error-color) !important;
+
+        &:first-child {
+            border-right: 1px solid transparent !important;
         }
 
-        &:active {
-            color: var(--color-gray-9);
+        &:last-child {
+            border-left: 1px solid transparent !important;
         }
     }
 
-    &:hover,
-    &&-focused {
-        .@{ant-prefix}-input-clear-icon {
-            opacity: 1;
-        }
-    }
-
-    // 表单内报错样式覆盖
-    .@{ant-prefix}-form-item-has-error & {
-        .@{ant-prefix}-input-group-addon {
-            border-color: var(--theme-error-color) !important;
-
-            &:first-child {
-                border-right: 1px solid transparent !important;
-            }
-
-            &:last-child {
-                border-left: 1px solid transparent !important;
-            }
-        }
-
-        &.@{ant-prefix}-input-affix-wrapper:not(.@{ant-prefix}-input-affix-wrapper-disabled) {
-            border-color: var(--theme-error-color) !important;
-        }
-    }
-
-    &[disabled],
-    &-disabled {
-        &,
-        &.@{ant-prefix}-input,
-        .@{ant-prefix}-input,
-        .@{ant-prefix}-input-group-addon,
-        .@{ant-prefix}-input-affix-wrapper-disabled {
-            border-color: var(--theme-border-color-disabled) !important;
-
-            &:hover,
-            &:active {
-                border-color: var(--theme-border-color-disabled) !important;
-            }
-        }
+    &.@{ant-prefix}-input-affix-wrapper:not(.@{ant-prefix}-input-affix-wrapper-disabled) {
+        border-color: var(--theme-error-color) !important;
     }
 }
 
@@ -185,5 +166,46 @@
 
     &-with-max-length {
         padding-right: 51px;
+    }
+}
+
+// Input group
+.@{osui-input-class-prefix}-group-compact.@{osui-input-class-prefix}-group {
+    .@{ant-prefix}-input-group-addon {
+        width: 80px;
+        height: 30px;
+        padding-top: 5px;
+    }
+
+    // addon后面的input，select左边框设置为0
+    // osui-input例如search
+    .@{ant-prefix}-input-group-addon + .osui-input,
+    .@{ant-prefix}-input-group-addon + .@{ant-prefix}-input,
+    .@{ant-prefix}-input-group-addon + .@{ant-prefix}-select > .@{ant-prefix}-select-selector {
+        border-left: 0;
+    }
+    // input， select如果不是最后一个孩子，右边框设置为0
+    .@{ant-prefix}-select:not(:last-child) > .@{ant-prefix}-select-selector,
+    .@{ant-prefix}-input:not(:last-child),
+    .osui-input:not(:last-child) {
+        border-right: 0;
+    }
+
+    &-hover {
+        .@{ant-prefix}-input-group-addon,
+        .@{ant-prefix}-select > .@{ant-prefix}-select-selector,
+        .@{ant-prefix}-input,
+        .osui-input {
+            border-color: var(--theme-primary-color-hover);
+        }
+    }
+
+    &-focused {
+        .@{ant-prefix}-input-group-addon,
+        .@{ant-prefix}-select > .@{ant-prefix}-select-selector,
+        .@{ant-prefix}-input,
+        .osui-input {
+            border-color: var(--theme-primary-color-active);
+        }
     }
 }
