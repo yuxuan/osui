@@ -23,7 +23,8 @@
         "publish": "lerna publish from-package",
         "publishWithDocs": "lerna publish from-package && yarn build-docs",
         "build-docs": "sh scripts/build-docs.sh osui && sh scripts/build-docs.sh icloud",
-        "test": "lerna exec --no-private --concurrency 10 -- yarn test"
+        "test": "lerna exec --no-private --concurrency 10 -- yarn test",
+        "build-check": "node scripts/build-check.js"
     },
     "devDependencies": {
         "@ant-design/tools": "^14.0.0-alpha.3",

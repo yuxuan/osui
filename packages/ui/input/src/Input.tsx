@@ -35,8 +35,10 @@ const OSUIInput = React.forwardRef<HTMLInputElement, InputProps>((
         },
         [onBlur]
     );
-    // eslint-disable-next-line max-len
-    const TypeFixedAntdInput = AntdInput as unknown as React.ForwardRefExoticComponent<AntdInputProps & React.RefAttributes<HTMLInputElement>>;
+    // @ts-expect-error
+    const TypeFixedAntdInput: React.ForwardRefExoticComponent<
+        AntdInputProps & React.RefAttributes<HTMLInputElement>
+    > = AntdInput;
     return (
         <TypeFixedAntdInput
             ref={ref}
