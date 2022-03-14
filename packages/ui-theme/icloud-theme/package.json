@@ -11,7 +11,8 @@
     "prepack": "yarn build",
     "storybook": "start-storybook -p 8700",
     "clean": "rm -rf node_modules && rm -rf dist",
-    "test": "echo 'no tests yet'"
+    "test": "echo 'no tests yet'",
+    "watch": "find variables -name '*.ts' | entr scripts/watch.sh"
   },
   "files": [
     "dist"
