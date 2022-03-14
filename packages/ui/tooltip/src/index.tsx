@@ -4,7 +4,7 @@
  * */
 
 import React from 'react';
-import { Tooltip as AntdTooltip } from 'antd';
+import {Tooltip as AntdTooltip} from 'antd';
 import {
     TooltipProps as AntdTooltipProps,
     TooltipPropsWithTitle as AntdTooltipPropsWithTitle,
@@ -20,9 +20,9 @@ export type TooltipProps = AntdTooltipProps;
 // eslint-disable-next-line max-len
 export type TooltipInterface = React.ForwardRefExoticComponent<(AntdTooltipPropsWithTitle & React.RefAttributes<unknown>) | (AntdTooltipPropsWithOverlay & React.RefAttributes<unknown>)>;
 
-const OSUITooltip = React.forwardRef<unknown, TooltipProps>((props, ref) => {
+const OSUITooltip = React.forwardRef<unknown, TooltipProps>(({overlayClassName, ...props}, ref) => {
     return (
-        <AntdTooltip ref={ref} overlayClassName={classNames(clsPrefix, props.overlayClassName)} {...props} />
+        <AntdTooltip ref={ref} overlayClassName={classNames(clsPrefix, overlayClassName)} {...props} />
     );
 }) as TooltipInterface;
 
