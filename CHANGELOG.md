@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.23](https://gitee.com/gitee-fe/osui/compare/v1.2.22...v1.2.23) (2022-03-14)
+
+
+### Bug Fixes
+
+* 修复Input类型问题 ([6eada6e](https://gitee.com/gitee-fe/osui/commits/6eada6e264a3ff883d216c8ca0d03b1846c75f1d))
+* 修复tooltip overlayClassName被覆盖的问题 ([52774f6](https://gitee.com/gitee-fe/osui/commits/52774f603e84a82a4c53fe5b263a0c09b7c8dc84))
+
+
+
+
+
 ## [1.2.22](https://gitee.com/gitee-fe/osui/compare/v1.2.21...v1.2.22) (2022-03-10)
 
 
