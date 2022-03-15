@@ -1,6 +1,6 @@
 {
     "name": "@osui/branch-dropdown",
-    "version": "1.2.23",
+    "version": "1.2.25",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -82,7 +82,7 @@
         }
     },
     "dependencies": {
-        "@osui/button": "^1.2.23",
+        "@osui/button": "^1.2.25",
         "classnames": "^2.2.6"
     },
     "publishConfig": {

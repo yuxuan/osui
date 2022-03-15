@@ -1,6 +1,6 @@
 {
     "name": "@osui/popover",
-    "version": "1.2.19",
+    "version": "1.2.25",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",

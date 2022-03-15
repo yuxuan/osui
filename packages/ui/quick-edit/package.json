@@ -1,6 +1,6 @@
 {
     "name": "@osui/quick-edit",
-    "version": "1.2.23",
+    "version": "1.2.25",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -86,8 +86,8 @@
     },
     "dependencies": {
         "@huse/derived-state": "^1.1.0",
-        "@osui/input": "^1.2.23",
-        "@osui/select": "^1.2.20",
+        "@osui/input": "^1.2.25",
+        "@osui/select": "^1.2.25",
         "classnames": "^2.2.6",
         "hoist-non-react-statics": "^3.3.2",
         "react-abstract-quick-edit": "^0.0.7"
