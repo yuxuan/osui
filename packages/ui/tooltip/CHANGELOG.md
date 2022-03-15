@@ -3,9 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+## [1.2.25](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.24...v1.2.25) (2022-03-15)
 
-**Note:** Version bump only for package @osui/tooltip
+
+### Bug Fixes
+
+* tooltip popover 箭头阴影调整 ([6de477b](https://gitee.com/gitee-fe/osui/tree/master/commits/6de477bbc7cc74df8323e1017aa229a780e12d37))
+
+
+
+
+
+## [1.2.23](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.22...v1.2.23) (2022-03-14)
+
+
+### Bug Fixes
+
+* 修复tooltip overlayClassName被覆盖的问题 ([52774f6](https://gitee.com/gitee-fe/osui/tree/master/commits/52774f603e84a82a4c53fe5b263a0c09b7c8dc84))
 
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.25](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.24...v1.2.25) (2022-03-15)
+
+
+### Bug Fixes
+
+* tooltip popover 箭头阴影调整 ([6de477b](https://gitee.com/gitee-fe/osui/tree/master/commits/6de477bbc7cc74df8323e1017aa229a780e12d37))
+
+
+
+
+
 ## [1.2.19](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v1.2.19) (2022-03-09)
 
 

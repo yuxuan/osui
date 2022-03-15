@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.24](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.23...v1.2.24) (2022-03-15)
+
+
+### Bug Fixes
+
+* modal关闭按钮问题 ([02ea237](https://gitee.com/gitee-fe/osui/tree/master/commits/02ea23781ba3e7cf6841dda54b9a73ac6f466b3f))
+
+
+
+
+
 ## [1.2.21](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.20...v1.2.21) (2022-03-10)
 
 

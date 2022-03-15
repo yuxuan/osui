@@ -3,7 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+## [1.2.25](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.24...v1.2.25) (2022-03-15)
+
+**Note:** Version bump only for package @osui/search-select-list
+
+
+
+
+
+## [1.2.23](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.22...v1.2.23) (2022-03-14)
 
 **Note:** Version bump only for package @osui/search-select-list
 
