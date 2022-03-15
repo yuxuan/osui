@@ -368,7 +368,7 @@ export default {
     '--modal-footer-border-top': 'none',
     '--modal-header-bg': 'var(--color-gray-3)',
     '--modal-header-border-color-split': 'var(--modal-header-bg)',
-    '--modal-header-close-size': '14px',
+    '--modal-header-close-size': '10px',
     '--modal-heading-color': 'var(--text-color)',
     '--modal-mask-bg': 'rgba(0, 0, 0, 0.45)',
     '--modal-padding': '9px 20px',
