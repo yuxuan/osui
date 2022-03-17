@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Row from '@osui/row';
-import Col from '@osui/Col';
+import Col from '@osui/col';
 import Button from '@osui/button';
 import Statistic from '../src';
 

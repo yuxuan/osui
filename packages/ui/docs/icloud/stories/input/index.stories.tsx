@@ -1,14 +1,17 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import Select from '@osui/select';
-import Divider from '@osui/divider';
-import AutoComplete from '@osui/auto-complete';
-import FlexCentered from '@osui/flex-centered';
-import BrandProvider from '@osui/brand-provider';
-import Button from '@osui/button';
-import Form from '@osui/form';
-import Gap from '@osui/gap';
-import version from '@osui/version';
+import {
+    Select,
+    Divider,
+    AutoComplete,
+    FlexCentered,
+    BrandProvider,
+    Button,
+    Form,
+    Gap,
+    Cascader,
+    version,
+} from '@osui/ui';
 import Input from '@osui/input';
 const {TextArea} = Input;
 
@@ -104,6 +107,7 @@ export const Demo = () => {
                         placeholder="Email"
                     />
                     <Select
+                        className="input-group-addon"
                         defaultValue="RMB"
                         style={{
                             width: '80px',
@@ -281,10 +285,11 @@ export const Complete = () => {
             <Input disabled addonBefore={selectBeforeDisabled} addonAfter={selectAfterDisabled} defaultValue="mysite" />
 
             <Blockquote>
-                下面是Input.Group的方式
+                下面是Input.Group的方式，如果想使用和addon一样的效果，需要给传入的组件加上className=&quot;input-group-addon&quot;
             </Blockquote>
             <Input.Group compact>
                 <Select
+                    className="input-group-addon"
                     defaultValue="Sign Up"
                 >
                     <Option value="Sign Up">Sign Up</Option>
@@ -297,6 +302,85 @@ export const Complete = () => {
                     placeholder="Email"
                     options={[{value: 'text 1', label: 'text 1'}, {value: 'text 2', label: 'text 2'}]}
                 />
+            </Input.Group>
+            <br />
+            <br />
+            <Input.Group compact>
+                <Select
+                    className="input-group-addon"
+                    defaultValue="Sign Up"
+                >
+                    <Option value="Sign Up">Sign Up</Option>
+                    <Option value="Sign In">Sign In</Option>
+                </Select>
+                <Input
+                    style={{
+                        width: '70%',
+                    }}
+                    placeholder="Email"
+                />
+            </Input.Group>
+            <br />
+            <Input.Group compact>
+                <Select
+                    className="input-group-addon"
+                    defaultValue="Sign Up"
+                >
+                    <Option value="Sign Up">Sign Up</Option>
+                    <Option value="Sign In">Sign In</Option>
+                </Select>
+                <Input
+                    style={{
+                        width: '70%',
+                    }}
+                    placeholder="Email"
+                />
+                <Select
+                    className="input-group-addon"
+                    defaultValue="Sign Up"
+                >
+                    <Option value="Sign Up">Sign Up</Option>
+                    <Option value="Sign In">Sign In</Option>
+                </Select>
+            </Input.Group>
+            <br />
+            <Input.Group compact>
+                <Select
+                    className="input-group-addon"
+                    defaultValue="Sign Up"
+                >
+                    <Option value="Sign Up">Sign Up</Option>
+                    <Option value="Sign In">Sign In</Option>
+                </Select>
+                <Cascader
+                    style={{
+                        width: '70%',
+                    }}
+                    placeholder="Email"
+                />
+            </Input.Group>
+            <br />
+            <Input.Group compact>
+                <Select
+                    className="input-group-addon"
+                    defaultValue="Sign Up"
+                >
+                    <Option value="Sign Up">Sign Up</Option>
+                    <Option value="Sign In">Sign In</Option>
+                </Select>
+                <Cascader
+                    style={{
+                        width: '70%',
+                    }}
+                    placeholder="Email"
+                />
+                <Select
+                    className="input-group-addon"
+                    defaultValue="Sign Up"
+                >
+                    <Option value="Sign Up">Sign Up</Option>
+                    <Option value="Sign In">Sign In</Option>
+                </Select>
             </Input.Group>
 
             <Divider orientation="left">5. 组合输入框 宽度自适应：待补充</Divider>
@@ -349,6 +433,7 @@ export const Complete = () => {
                 >
                     <Input.Group compact>
                         <Select
+                            className="input-group-addon"
                             defaultValue="Sign Up"
                             style={{
                                 width: '80px',
@@ -601,6 +686,7 @@ export const TestCase = () => {
             <p>Input.Group allow clear</p>
             <Input.Group compact>
                 <Select
+                    className="input-group-addon"
                     defaultValue="RMB"
                     style={{
                         width: '80px',
