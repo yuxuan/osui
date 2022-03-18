@@ -95,3 +95,9 @@
         background: transparent;
     }
 }
+
+// Global
+// 这个是全局覆盖Antd的tooltip box shadow，因为table里面的没有osui前缀
+.@{ant-prefix}-tooltip-arrow-content {
+    box-shadow: var(--tooltip-arrow-content-box-shadow, 'none') !important;
+}

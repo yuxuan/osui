@@ -15,7 +15,7 @@
 
         .@{ant-prefix}-popover-arrow-content {
             // ref: https://github.com/ant-design/ant-design/pull/33710
-            box-shadow: 2px 2px 5px #00000012;
+            box-shadow: var(--tooltip-arrow-content-box-shadow);
         }
     }
 
@@ -42,4 +42,10 @@
         color: var(--theme-icon-color);
         cursor: pointer;
     }
+}
+
+// 当其他组件内置了tooltip是，全局覆盖
+// Global
+.@{ant-prefix}-popover-arrow-content {
+    box-shadow: var(--tooltip-arrow-content-box-shadow, 'none') !important;
 }

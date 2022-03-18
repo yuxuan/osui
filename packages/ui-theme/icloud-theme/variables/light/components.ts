@@ -615,5 +615,6 @@ export default {
     '--tree-node-selected-bg': 'var(--theme-component-bg)',
     '--tree-select-selected-color': 'var(--theme-primary-color)',
     '--tree-switcher-width': '10px',
-    'upload-actions-color': 'var(--text-color-secondary)',
+    '--upload-actions-color': 'var(--text-color-secondary)',
+    '--tooltip-arrow-content-box-shadow': '2px 2px 5px #00000012',
 };
