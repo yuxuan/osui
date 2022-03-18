@@ -19,7 +19,7 @@ export const Demo = () => {
             </Col>
             <Col span={12}>
                 <Statistic title="Account Balance (CNY)" value={112893} precision={2} />
-                <Button style={{ marginTop: 16 }} type="primary">
+                <Button style={{marginTop: 16}} type="primary">
                     Recharge
                 </Button>
             </Col>

@@ -43,3 +43,9 @@
         cursor: pointer;
     }
 }
+
+// 当其他组件内置了tooltip是，全局覆盖
+// Global
+.@{ant-prefix}-popover-arrow-content {
+    box-shadow: var(--tooltip-arrow-content-box-shadow, 'none') !important;
+}

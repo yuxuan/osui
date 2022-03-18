@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.26](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.25...v1.2.26) (2022-03-18)
+
+
+### Bug Fixes
+
+* popover,tooltip的箭头需要全局覆盖,因为在table中也有用到 ([47af60e](https://gitee.com/gitee-fe/osui/tree/master/commits/47af60e602f59053756f9aaf0b4b97cb38bd5d7d))
+
+
+
+
+
 ## [1.2.25](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.24...v1.2.25) (2022-03-15)
 
 **Note:** Version bump only for package @osui/table
