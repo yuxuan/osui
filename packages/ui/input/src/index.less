@@ -90,13 +90,16 @@
 
                 // 作为第一个input时的border，如search
                 .@{ant-prefix}-input-search-button {
+                    background: var(--color-gray-3);
                     border: 1px solid var(--theme-border-color-disabled);
+                    border-left: 0;
                 }
             }
 
-            input:first-child,
             .@{ant-prefix}-input-search-button {
-                border-color: var(--theme-border-color-disabled) !important;
+                background: var(--color-gray-3);
+                border-color: var(--theme-border-color-disabled);
+                border-left: 0;
             }
         }
 
