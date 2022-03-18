@@ -5,7 +5,7 @@ import FlexCentered from '@osui/flex-centered';
 import {IconRightOutlined} from '@osui/icons-icloud';
 import Markdown from '@osui/markdown';
 import Row from '@osui/row';
-import Col from '@osui/Col';
+import Col from '@osui/col';
 import Card from '../src';
 
 export default {

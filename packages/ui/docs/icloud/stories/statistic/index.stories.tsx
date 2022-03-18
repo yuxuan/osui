@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Row from '@osui/row';
-import Col from '@osui/Col';
+import Col from '@osui/col';
 import Button from '@osui/button';
 import Statistic from '@osui/statistic';
 
@@ -19,7 +19,7 @@ export const Demo = () => {
             </Col>
             <Col span={12}>
                 <Statistic title="Account Balance (CNY)" value={112893} precision={2} />
-                <Button style={{ marginTop: 16 }} type="primary">
+                <Button style={{marginTop: 16}} type="primary">
                     Recharge
                 </Button>
             </Col>

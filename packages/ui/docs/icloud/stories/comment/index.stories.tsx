@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import Form from '@osui/Form';
+import Form from '@osui/form';
 import Avatar from '@osui/avatar';
 import Input from '@osui/input';
 import Button from '@osui/button';
