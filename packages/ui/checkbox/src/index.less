@@ -136,3 +136,9 @@
 .@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
     margin-right: var(--checkbox-group-item-margin-right);
 }
+
+// 当其他组件内置了checkbox时，进行全局的覆盖
+// Global
+.@{ant-prefix}-checkbox-indeterminate .@{ant-prefix}-checkbox-inner {
+    border-color: var(--theme-primary-color);
+}
