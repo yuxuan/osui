@@ -13,7 +13,7 @@
     "license": "MIT",
     "scripts": {
         "lint": "yarn workspaces run lint",
-        "build": "lerna run --stream --sort build && yarn workspace @osui/ui run build-all",
+        "build": "lerna run --stream --sort build && yarn workspace @osui/ui run build-all && yarn build-check",
         "clean": "yarn workspaces run clean",
         "storybook": "start-storybook -p 8777 -s public",
         "version": "lerna version --conventional-commits --no-push",
