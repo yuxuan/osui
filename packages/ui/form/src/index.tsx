@@ -14,6 +14,8 @@ import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';
 import useLabelLayout from './useLabelLayout';
 import './index.less';
+import IconQuestionMark from './IconQuestionMark';
+import {toTooltipProps} from './utils';
 
 const clsPrefix = 'osui-form';
 
@@ -50,7 +52,7 @@ type ValidateMessageLayout = 'inline' | 'default';
 function InternalFormItem<Values = any>(props: FormItemProps<Values> & {
     validateMessageLayout?: ValidateMessageLayout;
 }): React.ReactElement {
-    const {validateMessageLayout = 'default', extra, ...restProps} = props;
+    const {validateMessageLayout = 'default', extra, tooltip, ...restProps} = props;
     // 对extra的样式修改
     const hasHint = !!extra;
     const itemClassName = classNames(
@@ -61,11 +63,19 @@ function InternalFormItem<Values = any>(props: FormItemProps<Values> & {
         }
     );
 
+    let innerTooltipProps = tooltip;
+    const tooltipProps = toTooltipProps(tooltip);
+    if (tooltipProps) {
+        const {icon = <IconQuestionMark />, ...restTooltipProps} = tooltipProps;
+        innerTooltipProps = {icon, ...restTooltipProps};
+    }
+
     return (
         <AntdForm.Item
             {...restProps}
             className={itemClassName}
             extra={extra}
+            tooltip={innerTooltipProps}
         />
     );
 }
