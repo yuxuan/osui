@@ -16,6 +16,7 @@
 
     .@{ant-prefix}-modal-header {
         padding: var(--modal-padding);
+        border-radius: var(--border-radius-4) var(--border-radius-4) 0 0;
     }
 
     .@{ant-prefix}-modal-body {
@@ -42,6 +43,8 @@
     }
 
     .@{ant-prefix}-modal-content {
+        border-radius: var(--border-radius-4);
+
         .@{ant-prefix}-modal-close {
             svg {
                 height: var(--modal-close-icon-height);
@@ -54,12 +57,12 @@
         width: 100vw !important;
         max-width: 100vw;
 
-        .@{ant-prefix}-modal-content{
-            height: 100vh;
+        .@{ant-prefix}-modal-content {
             width: 100vw;
+            height: 100vh;
         }
 
-        .@{ant-prefix}-modal-body{
+        .@{ant-prefix}-modal-body {
             height: ~"calc(100vh - 60px)";
             max-height: ~"calc(100vh - 60px)";
         }
