@@ -15,7 +15,7 @@
     }
 
     .@{ant-prefix}-modal-header {
-        padding: var(--modal-padding);
+        padding: var(--modal-header-padding);
         border-radius: var(--border-radius-4) var(--border-radius-4) 0 0;
     }
 
@@ -28,6 +28,7 @@
     }
 
     .@{ant-prefix}-modal-footer {
+        padding: var(--modal-footer-padding);
         border-top: var(--modal-footer-border-top);
     }
 
@@ -60,11 +61,13 @@
         .@{ant-prefix}-modal-content {
             width: 100vw;
             height: 100vh;
+            border-radius: 0;
         }
 
         .@{ant-prefix}-modal-body {
             height: ~"calc(100vh - 60px)";
             max-height: ~"calc(100vh - 60px)";
+            border-radius: 0;
         }
     }
 }
@@ -76,9 +79,9 @@
 
         & > svg.osui-icon {
             float: left;
-            width: 36px;
-            height: 36px;
-            margin-right: 20px;
+            width: var(--modal-confirm-icon-width, '22px');
+            height: var(--modal-confirm-icon-height, '22px');
+            margin-right: 12px;
             font-size: 14px;
         }
     }
@@ -110,6 +113,11 @@
 
     .@{ant-prefix}-modal-confirm-body > svg.osui-icon + .@{ant-prefix}-modal-confirm-title + .@{ant-prefix}-modal-confirm-content {
         margin-bottom: 40px;
-        margin-left: 55px;
+        margin-left: 32px;
+    }
+
+    .@{ant-prefix}-modal-close {
+        top: 24px;
+        right: 28px;
     }
 }

@@ -164,7 +164,7 @@ interface ConfirmProps extends ModalFuncProps {
     size?: Size;
 }
 const getConfirmConfig = (
-    {size, width, okText, cancelText, okButtonProps, cancelButtonProps, ...config}: ConfirmProps,
+    {size, width, okText, cancelText, okButtonProps, cancelButtonProps, closeIcon, ...config}: ConfirmProps,
     type: 'info'|'warning'|'success'|'error'|'confirm'
 ) => {
     const baseConfig = config;
@@ -178,6 +178,8 @@ const getConfirmConfig = (
         width: width ?? getModalSize(size ?? 500),
         okText: okText ?? '确定',
         cancelText: cancelText ?? '取消',
+        closable: Boolean(config.title && config.closable), // 只有有title的时候，closable为true，才展示关闭icon
+        closeIcon: closeIcon ?? <IconCloseOutlined />,
         okButtonProps: {
             ...okButtonProps,
             className: classNames(okButtonProps?.className, 'osui-button', 'osui-button-min-width'),

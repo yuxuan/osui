@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React, {useState} from 'react';
 import Button from '@osui/button';
 import Space from '@osui/space';
@@ -94,6 +95,21 @@ export const Confirm = () => {
 
     function showConfirm() {
         Modal.confirm({
+            closable: true,
+            content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
+            onOk() {
+                console.log('确定');
+            },
+            onCancel() {
+                console.log('取消');
+            },
+        });
+    }
+
+    function showConfirmWithTitle() {
+        Modal.confirm({
+            title: '注意标题',
+            closable: true,
             content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
             onOk() {
                 console.log('确定');
@@ -106,6 +122,21 @@ export const Confirm = () => {
 
     function showSuccessConfirm() {
         Modal.success({
+            closable: true,
+            content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
+            onOk() {
+                console.log('确定');
+            },
+            onCancel() {
+                console.log('取消');
+            },
+        });
+    }
+
+    function showSuccessConfirmWithTitle() {
+        Modal.success({
+            title: '成功标题',
+            closable: true,
             content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
             onOk() {
                 console.log('确定');
@@ -128,8 +159,36 @@ export const Confirm = () => {
         });
     }
 
+    function showErrorConfirmWithTitle() {
+        Modal.error({
+            title: '错误标题',
+            closable: true,
+            content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
+            onOk() {
+                console.log('确定');
+            },
+            onCancel() {
+                console.log('取消');
+            },
+        });
+    }
+
     function showWarningConfirm() {
         Modal.warning({
+            content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
+            onOk() {
+                console.log('确定');
+            },
+            onCancel() {
+                console.log('取消');
+            },
+        });
+    }
+
+    function showWarningConfirmWithTitle() {
+        Modal.warning({
+            title: '警告标题',
+            closable: true,
             content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
             onOk() {
                 console.log('确定');
@@ -152,14 +211,39 @@ export const Confirm = () => {
         });
     }
 
+    function showInfoConfirmWithTitle() {
+        Modal.info({
+            title: '通知标题',
+            closable: true,
+            content: '选中的安全组绑定了其他实例，安全组删除后无法恢复！请确定是否要删除安全组"test"',
+            onOk() {
+                console.log('确定');
+            },
+            onCancel() {
+                console.log('取消');
+            },
+        });
+    }
+
     return (
         <>
+            <p>没有title的样式</p>
             <Space direction="horizontal">
                 <Button type="primary" onClick={() => showConfirm()}>Confirm</Button>
                 <Button type="primary" onClick={() => showSuccessConfirm()}>Success</Button>
                 <Button type="primary" onClick={() => showErrorConfirm()}>Error</Button>
                 <Button type="primary" onClick={() => showWarningConfirm()}>Warning</Button>
                 <Button type="primary" onClick={() => showInfoConfirm()}>Info</Button>
+            </Space>
+            <br></br>
+            <br />
+            <p>有title的样式</p>
+            <Space direction="horizontal">
+                <Button type="primary" onClick={() => showConfirmWithTitle()}>Confirm</Button>
+                <Button type="primary" onClick={() => showSuccessConfirmWithTitle()}>Success</Button>
+                <Button type="primary" onClick={() => showErrorConfirmWithTitle()}>Error</Button>
+                <Button type="primary" onClick={() => showWarningConfirmWithTitle()}>Warning</Button>
+                <Button type="primary" onClick={() => showInfoConfirmWithTitle()}>Info</Button>
             </Space>
         </>
     );
