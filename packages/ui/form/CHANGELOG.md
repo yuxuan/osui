@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.27](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.26...v1.2.27) (2022-03-23)
+
+
+### Bug Fixes
+
+* Form调整tooltip的icon ([b09430b](https://gitee.com/gitee-fe/osui/tree/master/commits/b09430baf0fc42a4c3f04aaaa7aa9f3d67fa3c06))
+
+
+
+
+
 ## [1.2.26](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.25...v1.2.26) (2022-03-18)
 
 **Note:** Version bump only for package @osui/form
