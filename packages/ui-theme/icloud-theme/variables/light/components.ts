@@ -256,7 +256,7 @@ export default {
     '--drawer-bg': 'var(--theme-component-bg)',
     '--drawer-close-icon-line-height': '1.5',
     '--drawer-footer-border-top-color': 'var(--color-gray-4)',
-    '--drawer-title-font-size': '16px',
+    '--drawer-title-font-size': '14px',
     '--dropdown-menu-bg': 'var(--theme-component-bg)',
     '--dropdown-menu-item-group-title-padding': '5px 12px',
     '--dropdown-menu-item-padding': '5px 12px',
