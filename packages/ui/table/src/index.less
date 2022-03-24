@@ -94,6 +94,31 @@
     .@{ant-prefix}-table-filter-trigger:hover {
         background: transparent;
     }
+
+    // Go button 样式
+    .@{ant-prefix}-pagination-options-quick-jumper {
+        display: inline-flex;
+
+        input {
+            &:focus,
+            &:hover {
+                z-index: 2;
+            }
+
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .osui-pagination-go-button {
+            margin-left: -9px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+
+            &[disabled] {
+                border: 1px solid var(--theme-border-color-disabled);
+            }
+        }
+    }
 }
 
 // Global

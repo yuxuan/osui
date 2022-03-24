@@ -108,27 +108,6 @@
         }
     }
 
-    .@{ant-prefix}-pagination-options-quick-jumper {
-        display: inline-flex;
-
-        input {
-            &:focus,
-            &:hover {
-                z-index: 2;
-            }
-            // 只有跟在input后面的需要往前移动
-            & + span {
-                .@{osui-pagination-class-prefix}-icloud-jumper {
-                    margin-left: -9px;
-                }
-
-                .@{osui-pagination-class-prefix}-osc-jumper {
-                    margin-left: 10px;
-                }
-            }
-        }
-    }
-
     &.@{ant-prefix}-pagination-disabled .@{ant-prefix}-pagination-item.@{ant-prefix}-pagination-item-active,
     .@{ant-prefix}-select-disabled.@{ant-prefix}-select:not(.@{ant-prefix}-select-customize-input) .@{ant-prefix}-select-selector,
     .@{ant-prefix}-pagination-options-quick-jumper input[disabled] {
@@ -148,5 +127,30 @@
     .@{ant-prefix}-select-single.@{ant-prefix}-select-show-arrow .@{ant-prefix}-select-selection-item,
     .@{ant-prefix}-select-single.@{ant-prefix}-select-show-arrow .@{ant-prefix}-select-selection-placeholder {
         padding-right: 23px;
+    }
+
+    // Go button 样式
+    .@{ant-prefix}-pagination-options-quick-jumper {
+        display: inline-flex;
+
+        input {
+            &:focus,
+            &:hover {
+                z-index: 2;
+            }
+
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .@{osui-pagination-class-prefix}-go-button {
+            margin-left: -9px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+
+            &[disabled] {
+                border: 1px solid var(--theme-border-color-disabled);
+            }
+        }
     }
 }

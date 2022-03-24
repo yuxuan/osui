@@ -11,6 +11,7 @@ import classNames from 'classnames';
 import {customPaginationProps, PaginationProps} from '@osui/pagination';
 import {useBrandContext} from '@osui/brand-provider';
 import {IconDownOutlined, IconRightOutlined} from '@osui/icons';
+import Button from '@osui/button';
 import '@osui/pagination/lib/index.less';
 import './index.less';
 import './patch.less';
@@ -119,11 +120,22 @@ function Table<RecordType extends Record<string, any>>(
                     ),
                     itemRender: customPaginationProps(brand).itemRender,
                     locale: customPaginationProps(brand).locale,
+                    showQuickJumper: {
+                        goButton: (
+                            <Button
+                                className="osui-pagination-go-button"
+                                size={props.size}
+                                disabled={pagination?.disabled}
+                            >
+                                Go
+                            </Button>
+                        ),
+                    },
                 };
             }
             return pagination as PaginationProps;
         },
-        [pagination, antPrefix, brand]
+        [pagination, antPrefix, brand, props.size]
     );
 
     // ==================== expandable ====================

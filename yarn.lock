@@ -3125,6 +3125,21 @@
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
+"@osui/button@^1.2.26":
+  version "1.2.26"
+  resolved "https://registry.yarnpkg.com/@osui/button/-/button-1.2.26.tgz#5bb5e63ddbcec31c192ae2b4b08a1144a87b1c0e"
+  integrity sha512-5M/NslsWkh4Ge9UGRkThCYJpyuXX/LF01UteeCxkXta8Mc3f/CUgJ0/CtDxlGQCoin0NzJ4a0pW1zQS19edXcw==
+  dependencies:
+    "@osui/tooltip" "^1.2.26"
+    classnames "^2.2.6"
+
+"@osui/tooltip@^1.2.26":
+  version "1.2.26"
+  resolved "https://registry.yarnpkg.com/@osui/tooltip/-/tooltip-1.2.26.tgz#f2d00f9ced3e15c011c51e998dbd008a993beb07"
+  integrity sha512-4aPr8Qxrvgc9MkOMx0RMPfxkGzjkIwBsdqQYB+NVfzHQSt8YJbtb5C5apuvwrL/l9VxtGCK0k/cOvNeXaMPNlA==
+  dependencies:
+    classnames "^2.2.6"
+
 "@pmmmwh/react-refresh-webpack-plugin@^0.5.3":
   version "0.5.4"
   resolved "https://registry.npmmirror.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.5.4.tgz#df0d0d855fc527db48aac93c218a0bf4ada41f99"
