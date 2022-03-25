@@ -3,6 +3,7 @@
 .@{osui-alert-class-prefix} {
     display: flex;
     align-items: center;
+    line-height: 24px;
 
     .@{ant-prefix}-alert-close-icon {
         height: 14px;
@@ -19,8 +20,8 @@
 
     .@{ant-prefix}-alert-icon {
         position: absolute;
-        top: 9px;
-        left: 16px;
+        top: 8px;
+        left: 14px;
     }
 
     &.@{ant-prefix}-alert-with-description {
@@ -71,15 +72,26 @@
         }
 
         &-actions {
+            display: flex;
+
             & > *:not(:last-child) {
                 margin-right: 20px;
             }
         }
     }
 
-    &-action-expand-open {
+    &-action-expand {
+        display: flex;
+
         svg {
-            transform: rotate(180deg);
+            margin-top: 4px;
+        }
+
+        &-open {
+            svg {
+                // 不能用align-items center，因为会跑到中间去
+                transform: rotate(180deg);
+            }
         }
     }
 

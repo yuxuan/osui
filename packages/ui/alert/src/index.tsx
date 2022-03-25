@@ -51,7 +51,10 @@ const ActionExpand: FC<ActionExpandProps> = ({expanded, open, close}) => {
         [expanded, open, close]
     );
     return (
-        <a onClick={handleClick} className={classNames({ [`${clsPrefix}-action-expand-open`]: expanded })}>
+        <a
+            onClick={handleClick}
+            className={classNames(`${clsPrefix}-action-expand`, {[`${clsPrefix}-action-expand-open`]: expanded})}
+        >
             {expanded ? '收起' : '展开'} <IconDownOutlined />
         </a>
     );
@@ -97,7 +100,7 @@ const Alert: AlertInterface = props => {
         onClose,
     } = props;
     const [expanded, {on, off}] = useBoolean(false);
-    const [isDestory, {on: destory}] = useBoolean(false);
+    const [isDestroy, {on: destroy}] = useBoolean(false);
 
     const patchedIcon = icon || typeToIcon[type as iconTypes];
     const patchedClosable = closable === true || countDown! > 0;
@@ -121,7 +124,7 @@ const Alert: AlertInterface = props => {
             internalActions = (
                 <>
                     {internalActions}
-                    <ActionCountDownClose countDown={countDown!} onTimeout={destory} />
+                    <ActionCountDownClose countDown={countDown!} onTimeout={destroy} />
                 </>
             );
         }
@@ -135,7 +138,7 @@ const Alert: AlertInterface = props => {
                     <div className={
                         classNames(
                             `${clsPrefix}-message-content`,
-                            { [`${clsPrefix}-message-content-expanded-close`]: expandable && !expanded}
+                            {[`${clsPrefix}-message-content-expanded-close`]: expandable && !expanded}
                         )}
                     >
                         {message}
@@ -151,7 +154,7 @@ const Alert: AlertInterface = props => {
 
     const patchedMessage = renderActions() || message;
 
-    if (isDestory) {
+    if (isDestroy) {
         // @ts-ignore
         // 这里调用一下onClose但是没有click事件
         onClose && onClose();
