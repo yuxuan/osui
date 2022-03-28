@@ -17,6 +17,7 @@ import {
     IconExclamationCircleFilled,
     IconCloseOutlined,
 } from '@osui/icons';
+import {getGlobalConfig} from '@osui/config-provider';
 import './index.less';
 
 const clsPrefix = 'osui-message';
@@ -138,7 +139,12 @@ const getMessageContent = ({content, className, key, onClose, duration, onClick}
     }
     else {
         innerContent = (
-            <div className={classNames(`${clsPrefix}-message-content`, `${clsPrefix}-message-content-inline`)}>
+            <div className={
+                classNames(
+                    `${clsPrefix}-message-content`,
+                    `${clsPrefix}-message-content-inline`
+                )}
+            >
                 {realContent}
                 {countDown}
                 {closeIcon}
@@ -182,9 +188,11 @@ const getPatchedArgs = (args: MessageArgsProps & {localInnerKey?: number}) => {
     const onClose = getPropFromConfig('onClose') as MessageArgsProps['onClose'];
     const onClick = getPropFromConfig('onClick') as MessageArgsProps['onClick'];
 
+    const {messagePosition} = getGlobalConfig();
     const className = classNames(
         clsPrefix,
         `${clsPrefix}-message-${type}`,
+        `${clsPrefix}-message-at-${messagePosition}`,
         getPropFromConfig('className')
     );
 

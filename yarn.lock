@@ -3133,6 +3133,11 @@
     "@osui/tooltip" "^1.2.26"
     classnames "^2.2.6"
 
+"@osui/config-provider@^1.2.10":
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/@osui/config-provider/-/config-provider-1.2.10.tgz#9115e54340af76ced6eda0ef3f01fcad8800182c"
+  integrity sha512-XJHKXZkn1odVuN4LIygvGWkN3hNag9O+OA8aro7+oi/gEJbIRyOJbc3TNoCjI7UYR+fp4LFT+Ix0k7GoI0Nkiw==
+
 "@osui/tooltip@^1.2.26":
   version "1.2.26"
   resolved "https://registry.yarnpkg.com/@osui/tooltip/-/tooltip-1.2.26.tgz#f2d00f9ced3e15c011c51e998dbd008a993beb07"

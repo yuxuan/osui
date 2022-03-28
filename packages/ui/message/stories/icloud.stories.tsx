@@ -10,7 +10,7 @@ export default {
 
 export const Demo = () => {
     const success = () => {
-        message.success('This is a success message');
+        message.success('This is a success message', 200);
     };
     const error = () => {
         message.error('This is an error message');
@@ -56,7 +56,12 @@ export const Demo = () => {
     };
 
     return (
-        <div style={{ padding: 30 }}>
+        <div style={{padding: 30}}>
+            <p>如果message从中间展示，在app入口处，使用config-provder。可以全局配置message的展示位置</p>
+            <code>
+                {"setGlobalConfig({messagePosition: 'center'})"}
+            </code>
+            <p></p>
             <h3>1、成功提示</h3>
             <p>基础样式</p>
             <Button onClick={success}>Success</Button>
@@ -79,7 +84,8 @@ export const Demo = () => {
             <Button onClick={loading}>Loading</Button>
             <h3>6、消息提醒</h3>
             <Button onClick={notify}>notify</Button>
-        </div>);
+        </div>
+    );
 };
 
 export const Api = () => {
@@ -153,9 +159,9 @@ export const TestCase = () => {
     const success7 = () => {
         message.success({
             title: (
-                <div style={{display: 'flex' }}>
+                <div style={{display: 'flex'}}>
                     <div>创建成功</div>
-                    <a style={{cssFloat: 'right', marginLeft: '8px' }}>
+                    <a style={{float: 'right', marginLeft: '8px'}}>
                         查看详情
                     </a>
                 </div>
@@ -168,9 +174,9 @@ export const TestCase = () => {
             showClose: true,
             duration: 6000,
             title: (
-                <div style={{display: 'flex' }}>
+                <div style={{display: 'flex'}}>
                     <div>创建成功</div>
-                    <a style={{cssFloat: 'right', marginLeft: '8px' }}>
+                    <a style={{float: 'right', marginLeft: '8px'}}>
                         查看详情
                     </a>
                 </div>
@@ -200,9 +206,9 @@ export const TestCase = () => {
 
     const success12 = () => {
         const key = 'updatable';
-        message.loading({ content: 'Loading...', key });
+        message.loading({content: 'Loading...', key});
         // Testing that content of the message should be updated.
-        setTimeout(() => message.success({ content: 'Loaded', key }), 1000);
+        setTimeout(() => message.success({content: 'Loaded', key}), 1000);
         setTimeout(() => message.destroy(), 3000);
     };
 
@@ -213,7 +219,7 @@ export const TestCase = () => {
     };
 
     return (
-        <div style={{ padding: 30 }}>
+        <div style={{padding: 30}}>
             <p>max-width测试</p>
             <Button onClick={success}>Success</Button>
             <Button onClick={success5}>Success</Button>

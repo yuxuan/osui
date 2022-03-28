@@ -1,13 +1,13 @@
-import React, { useContext } from 'react';
-import { ConfigProvider } from 'antd';
+import React, {useContext} from 'react';
+import {ConfigProvider} from 'antd';
 import Empty from '@osui/empty';
 import zhCN from 'antd/lib/locale/zh_CN';
-import { ConfigProviderProps } from 'antd/lib/config-provider';
+import {ConfigProviderProps} from 'antd/lib/config-provider';
 export interface BrandContextValue {
     brand: 'osc' | 'icloud' | undefined;
 }
 
-export const BrandContext = React.createContext<BrandContextValue>({ brand: undefined });
+export const BrandContext = React.createContext<BrandContextValue>({brand: undefined});
 
 const iCloudConfigs: ConfigProviderProps = {
     autoInsertSpaceInButton: false,
@@ -26,8 +26,8 @@ const iCloudConfigs: ConfigProviderProps = {
     locale: zhCN,
 };
 
-const BrandProvider: React.FC<{ brand?: 'osc' | 'icloud' }> = ({ brand, children }) => {
-    const context: BrandContextValue = { brand };
+const BrandProvider: React.FC<{ brand?: 'osc' | 'icloud' }> = ({brand, children}) => {
+    const context: BrandContextValue = {brand};
     if (brand === 'icloud') {
         return (
             <BrandContext.Provider value={context}>

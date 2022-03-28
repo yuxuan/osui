@@ -7,26 +7,51 @@
     }
 }
 
-@keyframes MessageMoveOut {
+@keyframes MessageMoveRightIn {
     0% {
-        max-height: 150px;
-        padding: var(--message-content-padding);
+        transform: translateX(100%);
+        transform-origin: 0 0;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        transform-origin: 0 0;
+        opacity: 1;
+    }
+}
+
+@keyframes MessageMoveRightOut {
+    0% {
+        transform: translateX(0%);
+        transform-origin: 0 0;
         opacity: 1;
     }
 
     100% {
-        max-height: 0;
-        padding: 0;
+        transform: translateX(100%);
+        transform-origin: 0 0;
         opacity: 0;
     }
 }
 
 .@{osui-message-class-prefix} {
-    padding: var(--message-content-padding);
+    // message在右侧
+    &-message-at-right {
+        // 是否message从右面出来
+        &.@{ant-prefix}-message-notice {
+            text-align: right;
+        }
 
-    // 是否message从右面出来
-    &.@{ant-prefix}-message-notice {
-        text-align: var(--message-text-align);
+        &.@{ant-prefix}-message-notice {
+            animation-name: MessageMoveRightIn;
+            animation-duration: .3;
+        }
+
+        &.@{ant-prefix}-message-notice.@{ant-prefix}-move-up-leave.@{ant-prefix}-move-up-leave-active {
+            animation-name: MessageMoveRightOut;
+            animation-duration: .3s;
+        }
     }
 
     // 对original的样式patch
