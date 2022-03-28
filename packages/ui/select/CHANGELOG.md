@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.26...v2.0.0) (2022-03-28)
+
+
+### Bug Fixes
+
+* [acud]调整select checkbox样式 ([917023f](https://gitee.com/gitee-fe/osui/tree/master/commits/917023fe1a33c9ad7a21b02de4ef20f18e0b56b2))
+* 修复select tag的icon样式 ([8021468](https://gitee.com/gitee-fe/osui/tree/master/commits/80214683516f8b223d7f41ed4f608d6053ca3a85))
+* select调整acud ([9661d88](https://gitee.com/gitee-fe/osui/tree/master/commits/9661d886823dd4f35d91b56d5082e6f1555d037a))
+
+
+
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+### Bug Fixes
+
+* 公有云主题, 颜色,icon调整 ([ae5b8b0](https://gitee.com/gitee-fe/osui/tree/master/commits/ae5b8b0ab0d9cbf5646bcea3a74564d6b638ec2b))
+
+
+
+
+
 ## [1.2.26](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.25...v1.2.26) (2022-03-18)
 
 **Note:** Version bump only for package @osui/select

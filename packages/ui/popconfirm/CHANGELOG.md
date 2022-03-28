@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.26...v2.0.0) (2022-03-28)
+
+
+### Bug Fixes
+
+* popconfirm box-shadow修复 ([3d14c20](https://gitee.com/gitee-fe/osui/tree/master/commits/3d14c20bf8f8d1c3c4f7e0fc0439d9777758ded0))
+
+
+
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+
+
+
 ## [1.2.19](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v1.2.19) (2022-03-09)
 
 

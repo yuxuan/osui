@@ -1,6 +1,6 @@
 {
     "name": "@osui/alert",
-    "version": "2.0.0-beta.0",
+    "version": "2.0.0",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -80,7 +80,7 @@
     "dependencies": {
         "@huse/boolean": "^1.0.3",
         "@huse/timeout": "^1.0.2",
-        "@osui/icons": "2.0.0-beta.0",
+        "@osui/icons": "^2.0.0",
         "@types/hoist-non-react-statics": "^3.3.1",
         "classnames": "^2.2.6",
         "hoist-non-react-statics": "^3.3.2"

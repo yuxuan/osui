@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.26...v2.0.0) (2022-03-28)
+
+
+### Bug Fixes
+
+* tag acud样式调整 ([6374141](https://gitee.com/gitee-fe/osui/tree/master/commits/637414178cbe380ab76a97202042f7ab49f0b9b9))
+* tag调整 ([44f305b](https://gitee.com/gitee-fe/osui/tree/master/commits/44f305b2139595258a59dec3f709aeb529427eb0))
+
+
+
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+
+
+
 # [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
 
 **Note:** Version bump only for package @osui/tag
