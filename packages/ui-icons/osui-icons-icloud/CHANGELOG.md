@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://gitee.com/gitee-fe/osui/compare/v1.2.26...v2.0.1) (2022-03-28)
+
+
+### Bug Fixes
+
+* [acud]一些样式的调整 ([2fcd67c](https://gitee.com/gitee-fe/osui/commits/2fcd67c7d79c24e3262a505d3f8433e0fa1c7339))
+
+
+
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+### Bug Fixes
+
+* 公有云主题, 颜色,icon调整 ([ae5b8b0](https://gitee.com/gitee-fe/osui/commits/ae5b8b0ab0d9cbf5646bcea3a74564d6b638ec2b))
+
+
+
+
+
 # [2.0.0](https://gitee.com/gitee-fe/osui/compare/v1.2.26...v2.0.0) (2022-03-28)
 
 
