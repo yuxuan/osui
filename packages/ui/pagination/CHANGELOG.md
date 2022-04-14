@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.28](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v1.2.27...v1.2.28) (2022-04-14)
+
+**Note:** Version bump only for package @osui/pagination
+
+
+
+
+
 ## [1.2.26](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v1.2.25...v1.2.26) (2022-03-18)
 
 **Note:** Version bump only for package @osui/pagination

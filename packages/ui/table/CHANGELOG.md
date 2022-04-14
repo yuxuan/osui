@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.28](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.27...v1.2.28) (2022-04-14)
+
+
+### Bug Fixes
+
+* arrow的黑色阴影换回用fade([@black](https://gitee.com/black)), [@black](https://gitee.com/black) [@white](https://gitee.com/white) 不用css vars ([b7c7040](https://gitee.com/gitee-fe/osui/tree/master/commits/b7c70404a9184f7df0d3a07f870e14453fa914eb))
+
+
+
+
+
 ## [1.2.26](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.25...v1.2.26) (2022-03-18)
 
 
