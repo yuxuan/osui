@@ -8,27 +8,4 @@
     .@{ant-prefix}-tooltip-inner {
         min-height: var(--tooltip-min-height);
     }
-
-    &.@{ant-prefix}-tooltip-placement-top .@{ant-prefix}-tooltip-arrow,
-    &.@{ant-prefix}-tooltip-placement-topLeft .@{ant-prefix}-tooltip-arrow,
-    &.@{ant-prefix}-tooltip-placement-topRight .@{ant-prefix}-tooltip-arrow,
-    &.@{ant-prefix}-tooltip-placement-right .@{ant-prefix}-tooltip-arrow,
-    &.@{ant-prefix}-tooltip-placement-rightTop .@{ant-prefix}-tooltip-arrow,
-    &.@{ant-prefix}-tooltip-placement-rightBottom .@{ant-prefix}-tooltip-arrow,
-    &.@{ant-prefix}-tooltip-placement-left .@{ant-prefix}-tooltip-arrow,
-    &.@{ant-prefix}-tooltip-placement-leftTop .@{ant-prefix}-tooltip-arrow,
-    &.@{ant-prefix}-tooltip-placement-leftBottom .@{ant-prefix}-tooltip-arrow,
-    &.@{ant-prefix}-tooltip-placement-bottom .@{ant-prefix}-tooltip-arrow,
-    &.@{ant-prefix}-tooltip-placement-bottomLeft .@{ant-prefix}-tooltip-arrow,
-    &.@{ant-prefix}-tooltip-placement-bottomRight .@{ant-prefix}-tooltip-arrow {
-        &-content {
-            box-shadow: var(--tooltip-arrow-content-box-shadow, 'none');
-        }
-    }
-}
-
-// 当其他组件内置了tooltip是，全局覆盖
-// Global
-.@{ant-prefix}-tooltip-arrow-content {
-    box-shadow: var(--tooltip-arrow-content-box-shadow, 'none') !important;
 }
