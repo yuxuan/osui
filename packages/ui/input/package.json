@@ -85,7 +85,6 @@
     "dependencies": {
         "@huse/derived-state": "^1.1.1",
         "@osui/button": "^1.2.26",
-        "@osui/input": "^1.2.26",
         "classnames": "^2.2.6",
         "hoist-non-react-statics": "^3.3.2",
         "rc-util": "^5.9.8"
