@@ -53,11 +53,27 @@
         background-color: var(--theme-primary-color);
     }
 
+    .@{ant-prefix}-badge-status-active {
+        background-color: var(--theme-primary-color);
+    }
+
     .@{ant-prefix}-badge-status-default {
         background-color: var(--theme-disabled-color);
     }
 
     .@{ant-prefix}-badge-status-processing::after {
-        animation: none;
+        border: 0;
+        box-shadow: 0 0 0 2px var(--processing-color);
+        animation: flash 1s ease infinite;
+    }
+
+    @keyframes flash {
+        from {
+            transform: scale(.7);
+        }
+
+        to {
+            transform: scale(1);
+        }
     }
 }
