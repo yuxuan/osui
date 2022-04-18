@@ -31,7 +31,6 @@ const OSUIDrawer = React.forwardRef<any, DrawerProps>((
     );
     return (
         <AntdDrawer
-            // @ts-expect-error // 这里antd的types有问题
             ref={ref}
             {...props}
             closable={closable}
