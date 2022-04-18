@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v2.0.2) (2022-04-18)
+
+
+
+## [2.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.27...v2.0.1) (2022-03-28)
+
+
+### Bug Fixes
+
+* [acud]一些样式的调整 ([2fcd67c](https://gitee.com/gitee-fe/osui/tree/master/commits/2fcd67c7d79c24e3262a505d3f8433e0fa1c7339))
+* popover box-shadow的问题 ([46ecdd2](https://gitee.com/gitee-fe/osui/tree/master/commits/46ecdd2612a37ed2d4dd7386457ce8bac3a9ce45))
+
+
+
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+
+
+
 ## [2.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.26...v2.0.1) (2022-03-28)
 
 
