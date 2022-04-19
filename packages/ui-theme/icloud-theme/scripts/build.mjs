@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 import {fileURLToPath} from 'url';
-import {light, dark} from '../vars/index.js';
+import defaultVars, {v1, v2, acud, dark} from '../vars/index.js';
 import formatToCSS from './jsToCssVars.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -11,13 +11,15 @@ const destination = path.join(__dirname, '../vars');
 
 const generateCSSVars = scoped => {
     const cssFileName = scoped ? 'scoped-vars.css' : 'vars.css';
-    fs.writeFileSync(path.join(destination, cssFileName), formatToCSS(light, scoped));
+    fs.writeFileSync(path.join(destination, cssFileName), formatToCSS(defaultVars.default, scoped));
 };
 
-const generateDarkCSSVars = scoped => {
-    fs.writeFileSync(path.join(destination, 'dark-vars.css'), formatToCSS(dark, scoped));
+const generateDifferentCSSVars = () => {
+    fs.writeFileSync(path.join(destination, 'v1.vars.css'), formatToCSS(v1, false));
+    fs.writeFileSync(path.join(destination, 'v2.vars.css'), formatToCSS(v2, false));
+    fs.writeFileSync(path.join(destination, 'acud.vars.css'), formatToCSS(acud, false));
+    fs.writeFileSync(path.join(destination, 'dark.vars.css'), formatToCSS(dark, '[data-theme="dark"]'));
 };
 
 generateCSSVars();
-generateCSSVars('[data-theme="icloud"]');
-generateDarkCSSVars('[data-theme="dark"]');
+generateDifferentCSSVars();
