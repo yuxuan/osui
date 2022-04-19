@@ -8,4 +8,6 @@ export default {
     '--border-radius-6': '10px',
     '--border-radius-7': '16px',
     '--border-radius-8': '50%',
+    '--border-radius-base': 'var(--border-radius-3)',
+    '--border-radius-sm': 'var(--border-radius-2)',
 };
