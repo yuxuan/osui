@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.20](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v1.2.20) (2022-04-25)
+
+
+### Bug Fixes
+
+* 调整Input类型,去掉不必要的expect-error ([110bd56](https://gitee.com/gitee-fe/osui/tree/master/commits/110bd56ce0997c4990f2437d140c53eb8a8ebc2d))
+* 修复drawer一个antd覆盖没有用前缀的问题 ([d401153](https://gitee.com/gitee-fe/osui/tree/master/commits/d401153f547298b3a3f7a905bbf9d2646f856fba))
+
+
+
+
+
 ## [1.2.19](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v1.2.19) (2022-04-25)
 
 

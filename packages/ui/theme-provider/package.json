@@ -1,6 +1,6 @@
 {
     "name": "@osui/theme-provider",
-    "version": "1.2.19",
+    "version": "1.2.20",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -85,8 +85,8 @@
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
-        "@osui/dropdown": "^1.2.19",
-        "@osui/menu": "^1.2.19",
+        "@osui/dropdown": "^1.2.20",
+        "@osui/menu": "^1.2.20",
         "classname": "^0.0.0",
         "classnames": "^2.3.1"
     }

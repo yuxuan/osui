@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.20](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v1.2.20) (2022-04-25)
+
+
+### Bug Fixes
+
+* 修复arrow-border-radius导致编译不通过的问题 ([a065df8](https://gitee.com/gitee-fe/osui/tree/master/commits/a065df8f2ef3509a8fd96a42841a0c90fae5e0bb))
+* icloud主题border-radius-base变量 ([66c09f5](https://gitee.com/gitee-fe/osui/tree/master/commits/66c09f5ae9fc32511abf4b6157d2c48b70e57204))
+
+
+
+
+
 ## [1.2.19](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v1.2.19) (2022-04-25)
 
 
