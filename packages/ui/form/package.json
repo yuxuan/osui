@@ -1,6 +1,6 @@
 {
     "name": "@osui/form",
-    "version": "1.2.20",
+    "version": "1.2.30",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -27,11 +27,11 @@
     ],
     "devDependencies": {
         "@babel/cli": "^7.10.5",
-        "@osui/button": "^1.2.20",
-        "@osui/divider": "^1.2.20",
-        "@osui/input": "^1.2.20",
-        "@osui/input-number": "^1.2.20",
-        "@osui/radio": "^1.2.20",
+        "@osui/button": "^1.2.30",
+        "@osui/divider": "^1.2.30",
+        "@osui/input": "^1.2.30",
+        "@osui/input-number": "^1.2.30",
+        "@osui/radio": "^1.2.30",
         "@reskript/cli": "^2.0.0",
         "@reskript/cli-lint": "^2.0.0",
         "@reskript/config-babel": "^2.0.0",
@@ -92,7 +92,7 @@
     },
     "gitHead": "904178b6c0bb86963017122daa529580decb66e8",
     "dependencies": {
-        "@osui/brand-provider": "^1.2.20",
+        "@osui/brand-provider": "^1.2.30",
         "classnames": "^2.2.6"
     }
 }

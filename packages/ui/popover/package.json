@@ -1,6 +1,6 @@
 {
     "name": "@osui/popover",
-    "version": "1.2.20",
+    "version": "1.2.30",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -70,7 +70,7 @@
         "react-dom": ">=16.9.0"
     },
     "dependencies": {
-        "@osui/icons": "^1.2.20",
+        "@osui/icons": "^1.2.30",
         "classnames": "^2.2.6"
     },
     "repository": {

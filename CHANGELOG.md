@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.30](https://gitee.com/gitee-fe/osui/compare/v1.2.28...v1.2.30) (2022-04-25)
+
+
+### Bug Fixes
+
+* 调整Input类型,去掉不必要的expect-error ([110bd56](https://gitee.com/gitee-fe/osui/commits/110bd56ce0997c4990f2437d140c53eb8a8ebc2d))
+* 修复arrow-border-radius导致编译不通过的问题 ([a065df8](https://gitee.com/gitee-fe/osui/commits/a065df8f2ef3509a8fd96a42841a0c90fae5e0bb))
+* 修复drawer一个antd覆盖没有用前缀的问题 ([d401153](https://gitee.com/gitee-fe/osui/commits/d401153f547298b3a3f7a905bbf9d2646f856fba))
+* icloud主题border-radius-base变量 ([66c09f5](https://gitee.com/gitee-fe/osui/commits/66c09f5ae9fc32511abf4b6157d2c48b70e57204))
+
+
+
+
+
 ## [1.2.20](https://gitee.com/gitee-fe/osui/compare/v1.2.28...v1.2.20) (2022-04-25)
 
 
