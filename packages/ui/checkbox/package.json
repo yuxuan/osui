@@ -1,6 +1,6 @@
 {
     "name": "@osui/checkbox",
-    "version": "1.2.11",
+    "version": "1.2.19",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",

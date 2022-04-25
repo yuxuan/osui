@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.19](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v1.2.28...v1.2.19) (2022-04-25)
+
+**Note:** Version bump only for package @osui/tabs
+
+
+
+
+
 ## [1.2.11](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v1.2.10...v1.2.11) (2022-01-21)
 
 

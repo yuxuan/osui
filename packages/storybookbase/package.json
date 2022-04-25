@@ -1,7 +1,7 @@
 {
   "name": "@osui/storybookbase",
   "private": true,
-  "version": "1.2.14",
+  "version": "1.2.19",
   "main": "main.js",
   "file": [
     "main.js"

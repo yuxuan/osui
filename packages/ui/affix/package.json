@@ -1,6 +1,6 @@
 {
     "name": "@osui/affix",
-    "version": "1.2.10",
+    "version": "1.2.19",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
