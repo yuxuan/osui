@@ -25,15 +25,6 @@
             ~'var(--btn-@{type}-icon-color)';
         );
 
-        &:hover {
-            .button-color-mixin(
-                ~'var(--btn-@{type}-hover-color)';
-                ~'var(--btn-@{type}-hover-bg)';
-                ~'var(--btn-@{type}-hover-border-color)';
-                ~'var(--btn-@{type}-hover-color)';
-            );
-        }
-
         &:focus {
             .button-color-mixin(
                 ~'var(--btn-@{type}-focus-color)';
@@ -43,6 +34,15 @@
             );
 
             box-shadow: var(--theme-component-focus-box-shadow);
+        }
+
+        &:hover {
+            .button-color-mixin(
+                ~'var(--btn-@{type}-hover-color)';
+                ~'var(--btn-@{type}-hover-bg)';
+                ~'var(--btn-@{type}-hover-border-color)';
+                ~'var(--btn-@{type}-hover-color)';
+            );
         }
 
         &:active {
@@ -87,15 +87,6 @@
         ~'var(--btn-default-icon-color)';
     );
 
-    &:hover {
-        .button-color-mixin(
-            ~'var(--btn-default-hover-color)';
-            ~'var(--btn-default-hover-bg)';
-            ~'var(--btn-default-hover-border-color)';
-            ~'var(--btn-default-hover-color)';
-        );
-    }
-
     &:focus {
         .button-color-mixin(
             ~'var(--btn-default-focus-color)';
@@ -105,6 +96,15 @@
         );
 
         box-shadow: var(--theme-component-focus-box-shadow);
+    }
+
+    &:hover {
+        .button-color-mixin(
+            ~'var(--btn-default-hover-color)';
+            ~'var(--btn-default-hover-bg)';
+            ~'var(--btn-default-hover-border-color)';
+            ~'var(--btn-default-hover-color)';
+        );
     }
 
     &:active {
@@ -146,14 +146,14 @@
         color: ~"var(--theme-@{face}-color)";
         border-color: ~"var(--theme-@{face}-color)";
 
-        &:hover {
-            color: ~"var(--theme-@{face}-color-hover)";
-            border-color: ~"var(--theme-@{face}-color-hover)";
-        }
-
         &:focus {
             color: ~"var(--theme-@{face}-color)";
             border-color: ~"var(--theme-@{face}-color)";
+        }
+
+        &:hover {
+            color: ~"var(--theme-@{face}-color-hover)";
+            border-color: ~"var(--theme-@{face}-color-hover)";
         }
 
         &:active {
@@ -174,16 +174,16 @@
         background-color: ~"var(--theme-@{face}-color)";
         border-color: ~"var(--theme-@{face}-color)";
 
-        &:hover {
-            color: ~"var(--btn-primary-color)";
-            background-color: ~"var(--theme-@{face}-color-hover)";
-            border-color: ~"var(--theme-@{face}-color-hover)";
-        }
-
         &:focus {
             color: ~"var(--btn-primary-color)";
             background-color: ~"var(--theme-@{face}-color)";
             border-color: ~"var(--theme-@{face}-color)";
+        }
+
+        &:hover {
+            color: ~"var(--btn-primary-color)";
+            background-color: ~"var(--theme-@{face}-color-hover)";
+            border-color: ~"var(--theme-@{face}-color-hover)";
         }
 
         &:active {
@@ -219,8 +219,8 @@
         background: transparent;
         border-color: var(--theme-component-bg);
 
-        &:hover,
-        &:focus {
+        &:focus,
+        &:hover {
             color: var(--btn-default-hover-color);
             background: transparent;
             border-color: var(--btn-default-hover-border-color);
@@ -295,15 +295,6 @@
         ~'var(--btn-icon-color)';
     );
 
-    &:hover {
-        .button-color-mixin(
-            ~'var(--btn-icon-hover-color)';
-            ~'var(--btn-icon-hover-bg)';
-            ~'var(--btn-icon-hover-border-color)';
-            ~'var(--btn-icon-hover-color)';
-        );
-    }
-
     &:focus {
         .button-color-mixin(
             ~'var(--btn-icon-focus-color)';
@@ -313,6 +304,15 @@
         );
 
         box-shadow: var(--theme-component-focus-box-shadow);
+    }
+
+    &:hover {
+        .button-color-mixin(
+            ~'var(--btn-icon-hover-color)';
+            ~'var(--btn-icon-hover-bg)';
+            ~'var(--btn-icon-hover-border-color)';
+            ~'var(--btn-icon-hover-color)';
+        );
     }
 
     &:active {
