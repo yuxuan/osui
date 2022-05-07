@@ -1,7 +1,7 @@
 /* eslint-disable complexity */
 import React, {useContext, useMemo} from 'react';
-import {Table as AntdTable, ConfigProvider} from 'antd';
 import hoistNonReactStatics from 'hoist-non-react-statics';
+import {ConfigProvider} from 'antd';
 import {
     TableProps as AntdTableProps,
     TablePaginationConfig as AntdTablePaginationConfig,
@@ -12,7 +12,9 @@ import {customPaginationProps, PaginationProps} from '@osui/pagination';
 import {useBrandContext} from '@osui/brand-provider';
 import {IconDownOutlined, IconRightOutlined} from '@osui/icons';
 import Button from '@osui/button';
+import 'antd/es/table/style';
 import '@osui/pagination/lib/index.less';
+import AntdTable from './antd-table';
 import './index.less';
 import './patch.less';
 

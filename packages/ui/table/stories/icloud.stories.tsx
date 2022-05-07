@@ -385,9 +385,9 @@ export const CheckboxDemo = () => {
                     {
                         key: 'odd',
                         text: 'Select Odd Row',
-                        onSelect: changableRowKeys => {
+                        onSelect: changeableRowKeys => {
                             let newSelectedRowKeys = [];
-                            newSelectedRowKeys = changableRowKeys.filter((key, index) => {
+                            newSelectedRowKeys = changeableRowKeys.filter((key, index) => {
                                 if (index % 2 !== 0) {
                                     return false;
                                 }
@@ -399,9 +399,9 @@ export const CheckboxDemo = () => {
                     {
                         key: 'even',
                         text: 'Select Even Row',
-                        onSelect: changableRowKeys => {
+                        onSelect: changeableRowKeys => {
                             let newSelectedRowKeys = [];
-                            newSelectedRowKeys = changableRowKeys.filter((key, index) => {
+                            newSelectedRowKeys = changeableRowKeys.filter((key, index) => {
                                 if (index % 2 !== 0) {
                                     return true;
                                 }
@@ -448,6 +448,7 @@ export const CompleteDemo = () => {
                     value: 'New York',
                 },
             ],
+            filterMultiple: false,
             onFilter: (value, record) => record.address.indexOf(value) === 0,
         },
         {

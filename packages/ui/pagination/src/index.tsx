@@ -1,11 +1,12 @@
 import React from 'react';
-import {Pagination as AntdPagination} from 'antd';
 import {PaginationProps as AntdPaginationProps} from 'antd/lib/pagination';
 import classNames from 'classnames';
 import {IconRightOutlined, IconLeftOutlined} from '@osui/icons';
 import {useBrandContext} from '@osui/brand-provider';
 import Button from '@osui/button';
 import {SizeType} from 'antd/es/config-provider/SizeContext';
+import 'antd/es/pagination/style';
+import AntdPagination from './antd-pagination';
 import './index.less';
 
 const clsPrefix = 'osui-pagination';
