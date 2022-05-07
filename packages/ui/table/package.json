@@ -1,6 +1,6 @@
 {
     "name": "@osui/table",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -84,7 +84,7 @@
     },
     "dependencies": {
         "@osui/button": "^1.2.26",
-        "@osui/pagination": "^2.0.4",
+        "@osui/pagination": "^2.0.5",
         "classnames": "^2.2.6",
         "hoist-non-react-statics": "^3.3.2",
         "lodash": "^4.17.21",
