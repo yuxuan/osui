@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.6](https://gitee.com/gitee-fe/osui/compare/v2.0.5...v2.0.6) (2022-05-10)
+
+
+### Bug Fixes
+
+* less function fadeout ([00b70be](https://gitee.com/gitee-fe/osui/commits/00b70be3c9df04e4be3ad1eb6028c8d97b44ff0b))
+
+
+
+
+
 ## [2.0.5](https://gitee.com/gitee-fe/osui/compare/v2.0.4...v2.0.5) (2022-05-07)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.6](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.5...v2.0.6) (2022-05-10)
+
+
+### Bug Fixes
+
+* less function fadeout ([00b70be](https://gitee.com/gitee-fe/osui/tree/master/commits/00b70be3c9df04e4be3ad1eb6028c8d97b44ff0b))
+
+
+
+
+
 ## [2.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.3...v2.0.4) (2022-04-29)
 
 **Note:** Version bump only for package @osui/icloud-theme
