@@ -137,6 +137,7 @@
         "@osui/tree-select": "^1.2.30",
         "@osui/typography": "^1.2.30",
         "@osui/upload": "^1.2.30",
+        "@osui/segmented": "^1.2.30",
         "@osui/version": "^1.2.30",
         "classnames": "^2.2.6",
         "github-markdown-css": "^4.0.0",
