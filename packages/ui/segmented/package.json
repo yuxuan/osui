@@ -1,11 +1,11 @@
 {
     "name": "@osui/segmented",
-    "version": "1.2.30",
+    "version": "1.2.31",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
     "types": "es/index.d.ts",
-        "files": [
+    "files": [
         "es",
         "lib",
         "src",
@@ -83,7 +83,5 @@
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
-    },
-    "dependencies": {
     }
 }

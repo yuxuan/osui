@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+
+
+**Note:** Version bump only for package osui-monorepo
+
+
+
+
+
 ## [1.2.31](https://gitee.com/gitee-fe/osui/compare/v1.2.30...v1.2.31) (2022-05-18)
 
 
