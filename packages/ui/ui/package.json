@@ -115,6 +115,7 @@
         "@osui/result": "^2.0.2",
         "@osui/row": "^2.0.2",
         "@osui/search-select-list": "^2.0.4",
+        "@osui/segmented": "^2.0.4",
         "@osui/select": "^2.0.2",
         "@osui/skeleton": "^2.0.2",
         "@osui/slider": "^2.0.2",

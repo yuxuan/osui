@@ -28,6 +28,7 @@ export {default as Popconfirm} from '@osui/popconfirm';
 export {default as Markdown} from '@osui/markdown';
 export {default as Skeleton} from '@osui/skeleton';
 export {default as Layout} from '@osui/layout';
+export {default as Segmented} from '@osui/segmented';
 export {default as ThemeProvider} from '@osui/theme-provider';
 export {default as Cascader} from '@osui/cascader';
 export {default as Checkbox} from '@osui/checkbox';
@@ -148,3 +149,5 @@ export type {TooltipProps} from '@osui/tooltip';
 export type {TypographyProps} from '@osui/typography';
 export type {UploadProps} from '@osui/upload';
 export type {ThemeType, SetTheme, ThemeEnum, ThemeContextType} from '@osui/theme-provider';
+export type {SegmentedProps} from '@osui/segmented';
+
