@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.33](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.32...v1.2.33) (2022-06-06)
+
+
+### Bug Fixes
+
+* 修复BrandProvider children, Popconfirm导出ConfirmContentWithTitle ([a8badf6](https://gitee.com/gitee-fe/osui/tree/master/commits/a8badf6bcef26eb2f1e0a4fa148b5b00988e6adb))
+
+
+
+
+
 ## [1.2.30](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v1.2.30) (2022-04-25)
 
 **Note:** Version bump only for package @osui/brand-provider

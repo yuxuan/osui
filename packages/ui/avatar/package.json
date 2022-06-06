@@ -1,6 +1,6 @@
 {
     "name": "@osui/avatar",
-    "version": "1.2.30",
+    "version": "1.2.33",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
