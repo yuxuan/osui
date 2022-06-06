@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import Menu from '@osui/menu';
+import {Menu, Button, Space} from '@osui/ui';
 import {IconDownOutlined} from '@osui/icons';
 import FlexCentered from '@osui/flex-centered';
 import Dropdown from '@osui/dropdown';
@@ -86,3 +86,52 @@ export const TestCase = () => {
         />
     );
 };
+
+export function TestCase2() {
+    const menu = (
+        <Menu>
+            <Menu.Item>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+                    1st menu item
+                </a>
+            </Menu.Item>
+            <Menu.Item>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
+                    2nd menu item
+                </a>
+            </Menu.Item>
+            <Menu.Item>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
+                    3rd menu item
+                </a>
+            </Menu.Item>
+        </Menu>
+    );
+
+    return (
+        <Space direction="vertical">
+            <Space wrap>
+                <Dropdown overlay={menu} placement="bottomLeft">
+                    <Button>bottomLeft</Button>
+                </Dropdown>
+                {/* <Dropdown overlay={menu} placement="bottom">
+                    <Button>bottom</Button>
+                </Dropdown> */}
+                <Dropdown overlay={menu} placement="bottomRight">
+                    <Button>bottomRight</Button>
+                </Dropdown>
+            </Space>
+            <Space wrap>
+                <Dropdown arrow overlay={menu} placement="topLeft">
+                    <Button>topLeft</Button>
+                </Dropdown>
+                {/* <Dropdown arrow overlay={menu} placement="top">
+                    <Button>top</Button>
+                </Dropdown> */}
+                <Dropdown arrow overlay={menu} placement="topRight">
+                    <Button>topRight</Button>
+                </Dropdown>
+            </Space>
+        </Space>
+    );
+}
