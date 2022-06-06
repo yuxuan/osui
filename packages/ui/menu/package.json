@@ -15,7 +15,7 @@
     "scripts": {
         "lint": "skr lint",
         "build": "sh scripts/build.sh",
-
+        "prepublishOnly": "yarn run build",
         "storybook": "start-storybook -p 8700",
         "clean": "rm -rf node_modules && rm -rf es",
         "test": "jest --config jest.config.js",
