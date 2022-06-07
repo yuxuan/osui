@@ -71,7 +71,7 @@
     },
     "peerDependencies": {
         "@osui/brand-provider": "^1.1.1",
-        "antd": ">=4.4.0 <=4.20.7",
+        "antd": ">=4.4.0 <=4.21.0",
         "react": ">=16.9.0",
         "react-dom": ">=16.9.0"
     },
