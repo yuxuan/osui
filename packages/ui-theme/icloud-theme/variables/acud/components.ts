@@ -466,7 +466,7 @@ export default {
     '--select-arrow-transition': 'transform .3s, -webkit-transform .3s',
     '--select-background': 'var(--theme-component-bg)',
     '--select-border-color': 'var(--theme-border-color-base)',
-    '--select-check-icon-size': '17px',
+    '--select-check-icon-size': '13px',
     '--select-clear-background': 'var(--theme-component-bg)',
     '--select-clear-icon-opacity': '0',
     '--select-clear-icon-opacity-hover': '1',

@@ -143,6 +143,8 @@
 .@{osui-select-class-prefix}-multiple-dropdown {
     .@{ant-prefix}-select-item.@{ant-prefix}-select-item-option,
     .@{ant-prefix}-select-item-option-selected {
+        display: flex;
+        align-items: center;
         padding-left: 40px;
     }
 
@@ -173,8 +175,9 @@
     .@{ant-prefix}-select-item-option-selected {
         .@{ant-prefix}-select-item-option-state {
             position: absolute;
-            top: 20%;
-            left: 15px;
+            left: 17px;
+            display: inline-flex;
+            align-items: center;
         }
     }
 
