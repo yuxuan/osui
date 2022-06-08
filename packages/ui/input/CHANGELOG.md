@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.33...v2.0.7) (2022-06-08)
+
+
+
+## [2.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.30...v2.0.4) (2022-04-29)
+
+
+
+## [2.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v2.0.2) (2022-04-18)
+
+
+
+## [2.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.27...v2.0.1) (2022-03-28)
+
+
+### Bug Fixes
+
+* [acud] modal调整 ([7ca1730](https://gitee.com/gitee-fe/osui/tree/master/commits/7ca1730bda3278acff9499dd4cffa5c82c46936b))
+* [acud]调整gray颜色 ([47b00fb](https://gitee.com/gitee-fe/osui/tree/master/commits/47b00fba3f09a428e250d44cca05d58774ac19b9))
+* [acud]调整input样式 ([c422dec](https://gitee.com/gitee-fe/osui/tree/master/commits/c422dec58dc7a39524f77b40fed215209b1179d2))
+* input 类型修复 ([d41191d](https://gitee.com/gitee-fe/osui/tree/master/commits/d41191d91c1b705350d5015f400eb42f7257cd0a))
+
+
+
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+
+
+
 ## [2.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.3...v2.0.4) (2022-04-29)
 
 **Note:** Version bump only for package @osui/input

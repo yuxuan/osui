@@ -3,6 +3,43 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.33...v2.0.7) (2022-06-08)
+
+
+### Bug Fixes
+
+* 支持antd@4.21.0 ([8397faa](https://gitee.com/gitee-fe/osui/tree/master/commits/8397faa4f3ef7ba289a718ffab3852c8b97adcb8))
+
+
+
+## [2.0.3](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.2...v2.0.3) (2022-04-24)
+
+
+### Bug Fixes
+
+* [acud] 增加主题变量, 多个版本主题变量共存 ([e8c2427](https://gitee.com/gitee-fe/osui/tree/master/commits/e8c24271770ad1eaf2c243b4a2b22215b164fcbc))
+
+
+
+## [2.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v2.0.2) (2022-04-18)
+
+
+
+## [2.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.27...v2.0.1) (2022-03-28)
+
+
+
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+### Bug Fixes
+
+* 公有云主题, 颜色,icon调整 ([ae5b8b0](https://gitee.com/gitee-fe/osui/tree/master/commits/ae5b8b0ab0d9cbf5646bcea3a74564d6b638ec2b))
+
+
+
+
+
 ## [2.0.3](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.2...v2.0.3) (2022-04-24)
 
 

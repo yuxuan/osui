@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.33...v2.0.7) (2022-06-08)
+
+
+
+## [2.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v2.0.2) (2022-04-18)
+
+
+### Bug Fixes
+
+* 调整Badge进行中样式 ([70aed85](https://gitee.com/gitee-fe/osui/tree/master/commits/70aed853e93ac6393ef5079962b4bb26fc5559ab))
+
+
+
+## [2.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.27...v2.0.1) (2022-03-28)
+
+
+
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+
+
+
 ## [2.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v2.0.2) (2022-04-18)
 
 

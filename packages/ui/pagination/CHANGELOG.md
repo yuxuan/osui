@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v1.2.33...v2.0.7) (2022-06-08)
+
+
+
+## [2.0.5](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v2.0.4...v2.0.5) (2022-05-07)
+
+
+### Bug Fixes
+
+* pagination 调整 ([00a4426](https://gitee.com/yuxuanhuo/osui/tree/master/commits/00a4426ad60c12baa71eb9f8448976d870a2837d))
+
+
+
+## [2.0.4](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v1.2.30...v2.0.4) (2022-04-29)
+
+
+
+## [2.0.2](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v1.2.28...v2.0.2) (2022-04-18)
+
+
+
+## [2.0.1](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v1.2.27...v2.0.1) (2022-03-28)
+
+
+### Bug Fixes
+
+* [acud] Pagination调整 ([842be61](https://gitee.com/yuxuanhuo/osui/tree/master/commits/842be61dd10547d20859b541edbb6664884bdbcd))
+
+
+
+# [2.0.0-beta.0](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+
+
+
 ## [2.0.5](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v2.0.4...v2.0.5) (2022-05-07)
 
 

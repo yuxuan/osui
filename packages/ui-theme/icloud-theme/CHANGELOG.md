@@ -3,6 +3,80 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.33...v2.0.7) (2022-06-08)
+
+
+### Bug Fixes
+
+* 修复osui select checkbox大小的问题 ([620245d](https://gitee.com/gitee-fe/osui/tree/master/commits/620245dcc1a42dd240b35cff962e7722a0b1334b))
+
+
+
+## [2.0.6](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.5...v2.0.6) (2022-05-10)
+
+
+### Bug Fixes
+
+* less function fadeout ([00b70be](https://gitee.com/gitee-fe/osui/tree/master/commits/00b70be3c9df04e4be3ad1eb6028c8d97b44ff0b))
+
+
+
+## [2.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.30...v2.0.4) (2022-04-29)
+
+
+
+## [2.0.3](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.2...v2.0.3) (2022-04-24)
+
+
+### Bug Fixes
+
+* [acud] 增加主题变量, 多个版本主题变量共存 ([e8c2427](https://gitee.com/gitee-fe/osui/tree/master/commits/e8c24271770ad1eaf2c243b4a2b22215b164fcbc))
+* [acud] icloud主题border-radius-base变量 ([34ccda9](https://gitee.com/gitee-fe/osui/tree/master/commits/34ccda9a5f430d3f0ab597daea4eb001c2480c16))
+
+
+
+## [2.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v2.0.2) (2022-04-18)
+
+
+### Bug Fixes
+
+* 调整Badge进行中样式 ([70aed85](https://gitee.com/gitee-fe/osui/tree/master/commits/70aed853e93ac6393ef5079962b4bb26fc5559ab))
+* 修复arrow-border-radius导致编译不通过的问题 ([138f424](https://gitee.com/gitee-fe/osui/tree/master/commits/138f424193f600c0d24b0a1b7b449ca808b36447))
+
+
+
+## [2.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.27...v2.0.1) (2022-03-28)
+
+
+### Bug Fixes
+
+* [acud] Alert调整 ([4edeade](https://gitee.com/gitee-fe/osui/tree/master/commits/4edeade06af36cf91d26d793e569c2a670f74d3a))
+* [acud] Drawer调整 ([36e852b](https://gitee.com/gitee-fe/osui/tree/master/commits/36e852bb46b6d023948ed36783afcbbdff024203))
+* [acud] message调整 ([2bc7cda](https://gitee.com/gitee-fe/osui/tree/master/commits/2bc7cda331b2831385ccf5ccf8c219c8f1b51b16))
+* [acud] modal调整 ([7ca1730](https://gitee.com/gitee-fe/osui/tree/master/commits/7ca1730bda3278acff9499dd4cffa5c82c46936b))
+* [acud]调整gray颜色 ([48bb450](https://gitee.com/gitee-fe/osui/tree/master/commits/48bb450c35ca520304da26639c74febaa4c4459c))
+* [acud]调整gray颜色 ([47b00fb](https://gitee.com/gitee-fe/osui/tree/master/commits/47b00fba3f09a428e250d44cca05d58774ac19b9))
+* [acud]调整input样式 ([c422dec](https://gitee.com/gitee-fe/osui/tree/master/commits/c422dec58dc7a39524f77b40fed215209b1179d2))
+* [acud]调整select checkbox样式 ([917023f](https://gitee.com/gitee-fe/osui/tree/master/commits/917023fe1a33c9ad7a21b02de4ef20f18e0b56b2))
+* [acud]一些样式的调整 ([2fcd67c](https://gitee.com/gitee-fe/osui/tree/master/commits/2fcd67c7d79c24e3262a505d3f8433e0fa1c7339))
+* select调整acud ([9661d88](https://gitee.com/gitee-fe/osui/tree/master/commits/9661d886823dd4f35d91b56d5082e6f1555d037a))
+* tag acud样式调整 ([6374141](https://gitee.com/gitee-fe/osui/tree/master/commits/637414178cbe380ab76a97202042f7ab49f0b9b9))
+* tag调整 ([44f305b](https://gitee.com/gitee-fe/osui/tree/master/commits/44f305b2139595258a59dec3f709aeb529427eb0))
+
+
+
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+### Bug Fixes
+
+* 调整checkbox ([784a29a](https://gitee.com/gitee-fe/osui/tree/master/commits/784a29aa88746f50ba9529ce1e895a4444557d55))
+* 公有云主题, 颜色,icon调整 ([ae5b8b0](https://gitee.com/gitee-fe/osui/tree/master/commits/ae5b8b0ab0d9cbf5646bcea3a74564d6b638ec2b))
+
+
+
+
+
 ## [2.0.6](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.5...v2.0.6) (2022-05-10)
 
 

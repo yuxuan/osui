@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.33...v2.0.7) (2022-06-08)
+
+
+
+## [2.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v2.0.2) (2022-04-18)
+
+
+### Bug Fixes
+
+* 调整Input类型,去掉不必要的expect-error ([2e0ef26](https://gitee.com/gitee-fe/osui/tree/master/commits/2e0ef26047ce511e9c3aacc1da6aa19341c3bd5e))
+* 修复drawer一个antd覆盖没有用前缀的问题 ([965b776](https://gitee.com/gitee-fe/osui/tree/master/commits/965b776e7b5966d823bf97cb6a2181be50447ad9))
+
+
+
+## [2.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.27...v2.0.1) (2022-03-28)
+
+
+### Bug Fixes
+
+* [acud] Drawer调整 ([36e852b](https://gitee.com/gitee-fe/osui/tree/master/commits/36e852bb46b6d023948ed36783afcbbdff024203))
+
+
+
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+
+
+
 ## [2.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v2.0.2) (2022-04-18)
 
 

@@ -1,6 +1,6 @@
 {
     "name": "@osui/message",
-    "version": "2.0.2",
+    "version": "2.0.7",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -79,7 +79,7 @@
     "license": "MIT",
     "dependencies": {
         "@huse/timeout": "^1.1.0",
-        "@osui/config-provider": "^2.0.2",
+        "@osui/config-provider": "^2.0.7",
         "classnames": "^2.2.6",
         "lodash.partial": "^4.2.1"
     },

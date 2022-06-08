@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.33...v2.0.7) (2022-06-08)
+
+
+### Bug Fixes
+
+* 增加segmented组件 ([fa42106](https://gitee.com/gitee-fe/osui/tree/master/commits/fa42106508d3136647d2c4139e37fb9e1c8a6d8a))
+
+
+
+## [2.0.5](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.4...v2.0.5) (2022-05-07)
+
+
+
+## [2.0.4](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.30...v2.0.4) (2022-04-29)
+
+
+
+## [2.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v2.0.2) (2022-04-18)
+
+
+
+## [2.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.27...v2.0.1) (2022-03-28)
+
+
+
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+
+
+
 ## [2.0.5](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.4...v2.0.5) (2022-05-07)
 
 **Note:** Version bump only for package @osui/ui

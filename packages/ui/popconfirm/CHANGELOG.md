@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.33...v2.0.7) (2022-06-08)
+
+
+### Bug Fixes
+
+* 支持antd@4.21.0 ([8397faa](https://gitee.com/gitee-fe/osui/tree/master/commits/8397faa4f3ef7ba289a718ffab3852c8b97adcb8))
+
+
+### Reverts
+
+* Revert "dev: 只发布不build" ([22cd177](https://gitee.com/gitee-fe/osui/tree/master/commits/22cd17762124b85b23bc3c7450582ce86be103fe))
+
+
+
+## [2.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v2.0.2) (2022-04-18)
+
+
+
+## [2.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.27...v2.0.1) (2022-03-28)
+
+
+### Bug Fixes
+
+* popconfirm box-shadow修复 ([3d14c20](https://gitee.com/gitee-fe/osui/tree/master/commits/3d14c20bf8f8d1c3c4f7e0fc0439d9777758ded0))
+
+
+
+# [2.0.0-beta.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.18...v2.0.0-beta.0) (2022-03-01)
+
+
+
+
+
 ## [2.0.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.28...v2.0.2) (2022-04-18)
 
 

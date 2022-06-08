@@ -1,6 +1,6 @@
 {
     "name": "@osui/page-header",
-    "version": "2.0.2",
+    "version": "2.0.7",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -86,7 +86,7 @@
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
-        "@osui/icons-icloud": "^2.0.2",
+        "@osui/icons-icloud": "^2.0.7",
         "classnames": "^2.2.6"
     }
 }
