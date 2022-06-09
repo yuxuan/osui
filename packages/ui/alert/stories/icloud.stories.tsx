@@ -47,7 +47,6 @@ export const Demo = () => {
             />
             <br />
             <Alert
-                banner
                 message="弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。"
                 type="info"
                 showIcon
