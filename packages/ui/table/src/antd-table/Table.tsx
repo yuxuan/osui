@@ -2,47 +2,51 @@ import * as React from 'react';
 import classNames from 'classnames';
 import omit from 'rc-util/lib/omit';
 import RcTable, { Summary } from 'rc-table';
-import { TableProps as RcTableProps, INTERNAL_HOOKS } from 'rc-table/lib/Table';
+import type { TableProps as RcTableProps } from 'rc-table/lib/Table';
+import { INTERNAL_HOOKS } from 'rc-table/lib/Table';
 import { convertChildrenToColumns } from 'rc-table/lib/hooks/useColumns';
-import Spin, { SpinProps } from 'antd/es/spin';
-import Pagination from '@osui/pagination';
-import { TooltipProps } from 'antd/es/tooltip';
+import type { SpinProps } from 'antd/es/spin';
+import Spin from 'antd/es/spin';
+import Pagination from 'antd/es/pagination';
+import type { TooltipProps } from 'antd/es/tooltip';
 import { ConfigContext } from 'antd/es/config-provider/context';
 import usePagination, { DEFAULT_PAGE_SIZE, getPaginationParam } from './hooks/usePagination';
 import useLazyKVMap from './hooks/useLazyKVMap';
-import { Breakpoint } from 'antd/es/_util/responsiveObserve';
-import {
+import type { Breakpoint } from 'antd/es/_util/responsiveObserve';
+import type {
   TableRowSelection,
   GetRowKey,
   ColumnType,
-  ColumnsType,
   TableCurrentDataSource,
   SorterResult,
   GetPopupContainer,
   ExpandableConfig,
   ExpandType,
-  TablePaginationConfig,
   SortOrder,
   TableLocale,
   TableAction,
   FilterValue,
 } from './interface';
+import { ColumnsType, TablePaginationConfig } from './interface';
 import useSelection, {
   SELECTION_ALL,
   SELECTION_COLUMN,
   SELECTION_INVERT,
   SELECTION_NONE,
 } from './hooks/useSelection';
-import useSorter, { getSortData, SortState } from './hooks/useSorter';
-import useFilter, { getFilterData, FilterState } from './hooks/useFilter';
+import type { SortState } from './hooks/useSorter';
+import useSorter, { getSortData } from './hooks/useSorter';
+import type { FilterState } from './hooks/useFilter';
+import useFilter, { getFilterData } from './hooks/useFilter';
 import useTitleColumns from './hooks/useTitleColumns';
 import renderExpandIcon from './ExpandIcon';
 import scrollTo from 'antd/es/_util/scrollTo';
 import defaultLocale from 'antd/es/locale/en_US';
-import SizeContext, { SizeType } from 'antd/es/config-provider/SizeContext';
+import type { SizeType } from 'antd/es/config-provider/SizeContext';
+import SizeContext from 'antd/es/config-provider/SizeContext';
 import Column from './Column';
 import ColumnGroup from './ColumnGroup';
-import devWarning from 'antd/es/_util/devWarning';
+import warning from 'antd/es/_util/devWarning';
 import useBreakpoint from 'antd/es/grid/hooks/useBreakpoint';
 
 export { ColumnsType, TablePaginationConfig };
@@ -102,7 +106,7 @@ export interface TableProps<RecordType>
 
 function InternalTable<RecordType extends object = any>(
   props: TableProps<RecordType>,
-  ref: React.MutableRefObject<HTMLDivElement>,
+  ref: React.ForwardedRef<HTMLDivElement>,
 ) {
   const {
     prefixCls: customizePrefixCls,
@@ -133,7 +137,7 @@ function InternalTable<RecordType extends object = any>(
     showSorterTooltip = true,
   } = props;
 
-  devWarning(
+  warning(
     !(typeof rowKey === 'function' && rowKey.length > 1),
     'Table',
     '`index` parameter of `rowKey` function is deprecated. There is no guarantee that it will work as expected.',
@@ -151,7 +155,7 @@ function InternalTable<RecordType extends object = any>(
   const screens = useBreakpoint(needResponsive);
 
   const mergedColumns = React.useMemo(() => {
-    const matched = new Set(Object.keys(screens).filter((m: Breakpoint) => screens[m]));
+    const matched = new Set(Object.keys(screens).filter(m => screens[m as Breakpoint]));
 
     return baseColumns.filter(
       c => !c.responsive || c.responsive.some((r: Breakpoint) => matched.has(r)),
@@ -288,7 +292,7 @@ function InternalTable<RecordType extends object = any>(
 
   // ============================ Filter ============================
   const onFilterChange = (
-    filters: Record<string, FilterValue>,
+    filters: Record<string, FilterValue | null>,
     filterStates: FilterState<RecordType>[],
   ) => {
     triggerOnChange(
@@ -351,12 +355,12 @@ function InternalTable<RecordType extends object = any>(
     }
 
     const { current = 1, total, pageSize = DEFAULT_PAGE_SIZE } = mergedPagination;
-    devWarning(current > 0, 'Table', '`current` should be positive number.');
+    warning(current > 0, 'Table', '`current` should be positive number.');
 
     // Dynamic table data
     if (mergedData.length < total!) {
       if (mergedData.length > pageSize) {
-        devWarning(
+        warning(
           false,
           'Table',
           '`dataSource` length is less than `pagination.total` but large than `pagination.pageSize`. Please make sure your config correct data with async mode.',
@@ -517,7 +521,7 @@ function InternalTable<RecordType extends object = any>(
           // Internal
           internalHooks={INTERNAL_HOOKS}
           internalRefs={internalRefs as any}
-          transformColumns={transformColumns as RcTableProps<RecordType>['transformColumns']}
+          transformColumns={transformColumns as unknown as RcTableProps<RecordType>['transformColumns']}
         />
         {bottomPaginationNode}
       </Spin>

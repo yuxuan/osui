@@ -7,11 +7,11 @@
         transition: none;
     }
 
-    &.ant-input-number-sm input {
+    &.@{ant-prefix}-input-number-sm input {
         height: var(--input-number-input-height-sm);
     }
 
-    &.ant-input-number-lg input {
+    &.@{ant-prefix}-input-number-lg input {
         height: var(--input-number-input-height-lg);
     }
 
@@ -45,5 +45,11 @@
 
     &.@{ant-prefix}-input-number.@{ant-prefix}-input-number-disabled {
         border-color: var(--theme-border-color-disabled);
+    }
+
+    &-compact {
+        .@{ant-prefix}-btn-default.osui-button-disabled {
+            border: 1px solid var(--theme-border-color-disabled);
+        }
     }
 }

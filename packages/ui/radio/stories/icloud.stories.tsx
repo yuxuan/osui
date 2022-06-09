@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Radio from '../src';
 
 export default {
@@ -12,11 +12,11 @@ export const Demo = () => {
     const [value, setValue] = useState(1);
     const [valueButton, setValueButton] = useState('a');
     return (
-        <div style={{ padding: 30 }}>
+        <div style={{padding: 30}}>
             <h3>1、普通单选</h3>
-            <Radio >单选选项</Radio>
+            <Radio>单选选项</Radio>
             <Radio disabled>单选选项</Radio>
-            <Radio defaultChecked >单选选项</Radio>
+            <Radio defaultChecked>单选选项</Radio>
             <Radio defaultChecked disabled>单选选项</Radio>
             <p></p>
             <h3>2、组合</h3>
@@ -50,7 +50,8 @@ export const Demo = () => {
                 <RadioButton value="b" disabled>Shanghai</RadioButton>
                 <RadioButton disabled value="c">Shanghai</RadioButton>
             </Group>
-        </div>);
+        </div>
+    );
 };
 
 export const Api = () => {

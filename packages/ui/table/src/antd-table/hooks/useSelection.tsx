@@ -4,16 +4,17 @@ import DownOutlined from '@ant-design/icons/DownOutlined';
 import { convertDataToEntities } from 'rc-tree/lib/utils/treeUtil';
 import { conductCheck } from 'rc-tree/lib/utils/conductUtil';
 import { arrAdd, arrDel } from 'rc-tree/lib/util';
-import { DataNode, GetCheckDisabled } from 'rc-tree/lib/interface';
+import type { DataNode, GetCheckDisabled } from 'rc-tree/lib/interface';
 import { INTERNAL_COL_DEFINE } from 'rc-table';
-import { FixedType } from 'rc-table/lib/interface';
+import type { FixedType } from 'rc-table/lib/interface';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
-import Checkbox, { CheckboxProps } from 'antd/es/checkbox';
+import type { CheckboxProps } from 'antd/es/checkbox';
+import Checkbox from 'antd/es/checkbox';
 import Dropdown from 'antd/es/dropdown';
 import Menu from 'antd/es/menu';
 import Radio from 'antd/es/radio';
 import devWarning from 'antd/es/_util/devWarning';
-import {
+import type {
   TableRowSelection,
   Key,
   ColumnsType,
@@ -24,6 +25,7 @@ import {
   TransformColumns,
   ExpandType,
   GetPopupContainer,
+  RowSelectMethod,
 } from '../interface';
 
 // TODO: warning if use ajax!!!
@@ -222,7 +224,7 @@ export default function useSelection<RecordType>(
   }, [!!rowSelection]);
 
   const setSelectedKeys = useCallback(
-    (keys: Key[]) => {
+    (keys: Key[], method: RowSelectMethod) => {
       let availableKeys: Key[];
       let records: RecordType[];
 
@@ -247,7 +249,7 @@ export default function useSelection<RecordType>(
 
       setMergedSelectedKeys(availableKeys);
 
-      onSelectionChange?.(availableKeys, records);
+      onSelectionChange?.(availableKeys, records, { type: method });
     },
     [setMergedSelectedKeys, getRecordByKey, onSelectionChange, preserveSelectedRowKeys],
   );
@@ -261,7 +263,7 @@ export default function useSelection<RecordType>(
         onSelect(getRecordByKey(key), selected, rows, event);
       }
 
-      setSelectedKeys(keys);
+      setSelectedKeys(keys, 'single');
     },
     [onSelect, getRecordByKey, setSelectedKeys],
   );
@@ -287,6 +289,7 @@ export default function useSelection<RecordType>(
                   const checkProps = checkboxPropsMap.get(key);
                   return !checkProps?.disabled || derivedSelectedKeySet.has(key);
                 }),
+              'all',
             );
           },
         };
@@ -320,7 +323,7 @@ export default function useSelection<RecordType>(
               onSelectInvert(keys);
             }
 
-            setSelectedKeys(keys);
+            setSelectedKeys(keys, 'invert');
           },
         };
       }
@@ -335,6 +338,7 @@ export default function useSelection<RecordType>(
                 const checkProps = checkboxPropsMap.get(key);
                 return checkProps?.disabled;
               }),
+              'none',
             );
           },
         };
@@ -395,7 +399,7 @@ export default function useSelection<RecordType>(
           changeKeys.map(k => getRecordByKey(k)),
         );
 
-        setSelectedKeys(keys);
+        setSelectedKeys(keys, 'all');
       };
 
       // ===================== Render =====================
@@ -572,7 +576,7 @@ export default function useSelection<RecordType>(
                       changedKeys.map(recordKey => getRecordByKey(recordKey)),
                     );
 
-                    setSelectedKeys(keys);
+                    setSelectedKeys(keys, 'multiple');
                   } else {
                     // Single record selected
                     const originCheckedKeys = derivedSelectedKeys;

@@ -30,6 +30,10 @@
     .@{ant-prefix}-modal-footer {
         padding: var(--modal-footer-padding);
         border-top: var(--modal-footer-border-top);
+
+        .@{ant-prefix}-btn + .@{ant-prefix}-btn:not(.@{ant-prefix}-dropdown-trigger) {
+            margin-left: var(--modal-footer-button-group-gap);
+        }
     }
 
     &-body-border {
@@ -41,6 +45,7 @@
 
     .@{ant-prefix}-modal-title {
         max-width: 95%;
+        font-weight: 600;
     }
 
     .@{ant-prefix}-modal-content {
@@ -79,8 +84,8 @@
 
         & > svg.osui-icon {
             float: left;
-            width: var(--modal-confirm-icon-width, '22px');
-            height: var(--modal-confirm-icon-height, '22px');
+            width: var(--modal-confirm-icon-width, 20px);
+            height: var(--modal-confirm-icon-height, 20px);
             margin-right: 12px;
             font-size: 14px;
         }

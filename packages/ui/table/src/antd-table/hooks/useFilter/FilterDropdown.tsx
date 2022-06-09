@@ -12,7 +12,7 @@ import type { CheckboxChangeEvent } from 'antd/es/checkbox';
 import Radio from 'antd/es/radio';
 import Dropdown from 'antd/es/dropdown';
 import Empty from 'antd/es/empty';
-import {
+import type {
   ColumnType,
   ColumnFilterItem,
   Key,
@@ -22,9 +22,13 @@ import {
 } from '../../interface';
 import FilterDropdownMenuWrapper from './FilterWrapper';
 import FilterSearch from './FilterSearch';
-import { FilterState, flattenKeys } from '.';
+import type { FilterState } from '.';
+import type { FieldDataNode } from 'rc-tree';
+import { flattenKeys } from '.';
 import useSyncState from 'antd/es/_util/hooks/useSyncState';
 import { ConfigContext } from 'antd/es/config-provider/context';
+
+type FilterTreeDataNode = FieldDataNode<{ title: React.ReactNode; key: React.Key }>;
 
 interface FilterRestProps {
   confirm?: Boolean;
@@ -159,7 +163,11 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
     setFilteredKeysSync(selectedKeys);
   };
 
-  const onCheck = (keys: Key[], { node, checked }: { node: EventDataNode; checked: boolean }) => {
+  const onCheck = (
+    keys: Key[],
+    // @ts-expect-error
+    { node, checked }: { node: EventDataNode<FilterTreeDataNode>; checked: boolean },
+  ) => {
     if (!filterMultiple) {
       onSelectKeys({ selectedKeys: checked && node.key ? [node.key] : [] });
     } else {
@@ -285,7 +293,7 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
   const getTreeData = ({ filters }: { filters?: ColumnFilterItem[] }) =>
     (filters || []).map((filter, index) => {
       const key = String(filter.value);
-      const item: DataNode = {
+      const item: FilterTreeDataNode = {
         title: filter.text,
         key: filter.value !== undefined ? key : index,
       };
@@ -350,7 +358,8 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
                   {locale.filterCheckall}
                 </Checkbox>
               ) : null}
-              <Tree
+              {/* @ts-expect-error */}
+              <Tree<FilterTreeDataNode>
                 checkable
                 selectable={false}
                 blockNode
@@ -384,6 +393,7 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
             locale={locale}
           />
           <Menu
+            selectable
             multiple={filterMultiple}
             prefixCls={`${dropdownPrefixCls}-menu`}
             className={dropdownMenuClass}

@@ -369,24 +369,26 @@ export const Danger = () => {
 export const DisabledReasonDemo = () => {
     return (
         <>
-            <Button
-                flexCenter
-                disabled
-                type="primary"
-                disabledReason="您没有权限使用这个功能"
-                icon={<IconPlusOutlined />}
-            >
-                申请创建资源账户
-            </Button>
+            <Space>
+                <Button
+                    flexCenter
+                    disabled
+                    type="primary"
+                    disabledReason="您没有权限使用这个功能"
+                    icon={<IconPlusOutlined />}
+                >
+                    申请创建资源账户
+                </Button>
 
-            <Button
-                flexCenter
-                disabled
-                disabledReason="您没有权限使用这个功能"
-                icon={<IconPlusOutlined />}
-            >
-                申请创建资源账户
-            </Button>
+                <Button
+                    flexCenter
+                    disabled
+                    disabledReason="您没有权限使用这个功能"
+                    icon={<IconPlusOutlined />}
+                >
+                    申请创建资源账户
+                </Button>
+            </Space>
         </>
 
     );

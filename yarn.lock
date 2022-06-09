@@ -19313,16 +19313,16 @@ rc-tree-select@~5.3.0:
     rc-tree "~5.5.0"
     rc-util "^5.16.1"
 
-rc-tree@^5.6.1:
-  version "5.6.1"
-  resolved "https://registry.npmmirror.com/rc-tree/-/rc-tree-5.6.1.tgz#85c545188826a73151c41473930fd2696130399e"
-  integrity sha512-kjxdI2jiYT2dWFT3NZ9FIR6L5Hf+LVXP0zUUr7e0vX/KVwC9cZ1l8PO//u5tvmzky9z7EC6ENx7TK7i+PNANAw==
+rc-tree@^5.6.5:
+  version "5.6.5"
+  resolved "https://registry.npmmirror.com/rc-tree/-/rc-tree-5.6.5.tgz#1947337fc48f3fe20fabaafb1aed3e4ff1ce71b4"
+  integrity sha512-Bnyen46B251APyRZ9D/jYeTnSqbSEvK2AkU5B4vWkNYgUJNPrxO+VMgcDRedP/8N7YcsgdDT9hxqVvNOq7oCAQ==
   dependencies:
     "@babel/runtime" "^7.10.1"
     classnames "2.x"
     rc-motion "^2.0.1"
     rc-util "^5.16.1"
-    rc-virtual-list "^3.4.2"
+    rc-virtual-list "^3.4.8"
 
 rc-tree@~5.3.0:
   version "5.3.8"
@@ -19388,6 +19388,15 @@ rc-virtual-list@^3.2.0, rc-virtual-list@^3.4.1, rc-virtual-list@^3.4.2:
   version "3.4.6"
   resolved "https://registry.npmmirror.com/rc-virtual-list/-/rc-virtual-list-3.4.6.tgz#af34235915221173dd42d9f25b32e95d4c0f5698"
   integrity sha512-wMJ7Bl+AxgIDojp0VxuQxjpNulKodwxGXSsTyxA9Mwzwemj5vKAgTbkPT64ZW5ORf8FOQAaPRlMiTADrPEo3sQ==
+  dependencies:
+    classnames "^2.2.6"
+    rc-resize-observer "^1.0.0"
+    rc-util "^5.15.0"
+
+rc-virtual-list@^3.4.8:
+  version "3.4.8"
+  resolved "https://registry.npmmirror.com/rc-virtual-list/-/rc-virtual-list-3.4.8.tgz#c24c10c6940546b7e2a5e9809402c6716adfd26c"
+  integrity sha512-qSN+Rv4i/E7RCTvTMr1uZo7f3crJJg/5DekoCagydo9zsXrxj07zsFSxqizqW+ldGA16lwa8So/bIbV9Ofjddg==
   dependencies:
     classnames "^2.2.6"
     rc-resize-observer "^1.0.0"
