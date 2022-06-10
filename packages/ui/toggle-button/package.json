@@ -1,6 +1,6 @@
 {
     "name": "@osui/toggle-button",
-    "version": "2.0.7",
+    "version": "2.0.8",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -82,7 +82,7 @@
     },
     "dependencies": {
         "@huse/derived-state": "^1.0.1",
-        "@osui/icons": "^2.0.7",
+        "@osui/icons": "^2.0.8",
         "classnames": "^2.2.6"
     },
     "publishConfig": {

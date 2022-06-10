@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.7...v2.0.8) (2022-06-10)
+
+
+### Bug Fixes
+
+* 修复一些样式问题,升级table ([a628102](https://gitee.com/gitee-fe/osui/tree/master/commits/a628102a4ee5ce4326961c03e40bfbcf895931a0))
+
+
+
+
+
 ## [2.0.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v1.2.33...v2.0.7) (2022-06-08)
 
 
