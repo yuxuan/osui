@@ -1,7 +1,8 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import CaretDownOutlined from '@ant-design/icons/CaretDownOutlined';
-import CaretUpOutlined from '@ant-design/icons/CaretUpOutlined';
+import ArrowDownOutlined from '@ant-design/icons/ArrowDownOutlined';
+import ArrowUpOutlined from '@ant-design/icons/ArrowUpOutlined';
+import UpdownIcon from './UpdownIcon';
 import KeyCode from 'rc-util/lib/KeyCode';
 import type {
   TransformColumns,
@@ -128,19 +129,22 @@ function injectSorter<RecordType>(
       const sorterOrder = sorterState ? sorterState.sortOrder : null;
       const nextSortOrder = nextSortDirection(sortDirections, sorterOrder);
       const upNode: React.ReactNode = sortDirections.includes(ASCEND) && (
-        <CaretUpOutlined
+        <ArrowUpOutlined
           className={classNames(`${prefixCls}-column-sorter-up`, {
             active: sorterOrder === ASCEND,
           })}
         />
       );
       const downNode: React.ReactNode = sortDirections.includes(DESCEND) && (
-        <CaretDownOutlined
+        <ArrowDownOutlined
           className={classNames(`${prefixCls}-column-sorter-down`, {
             active: sorterOrder === DESCEND,
           })}
         />
       );
+      const updownNode: React.ReactNode = (
+        <UpdownIcon width="16px" height="16px" />
+      )
       const { cancelSort, triggerAsc, triggerDesc } = tableLocale || {};
       let sortTip: string | undefined = cancelSort;
       if (nextSortOrder === DESCEND) {
@@ -165,8 +169,7 @@ function injectSorter<RecordType>(
                 })}
               >
                 <span className={`${prefixCls}-column-sorter-inner`}>
-                  {upNode}
-                  {downNode}
+                  {sorterOrder === ASCEND ? upNode : sorterOrder === DESCEND ? downNode : updownNode}
                 </span>
               </span>
             </div>
