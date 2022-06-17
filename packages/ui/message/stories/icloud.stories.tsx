@@ -133,7 +133,8 @@ export const TestCase = () => {
                 </>
             ),
             title: '创建成功',
-        });
+        },
+        200000);
     };
 
     const success5 = () => {
@@ -152,7 +153,8 @@ export const TestCase = () => {
     const success6 = () => {
         message.success({
             title: '创建成功',
-        }).then(() => {
+        },
+        20000).then(() => {
             console.log(2112);
         });
     };

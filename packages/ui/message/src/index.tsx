@@ -35,11 +35,17 @@ export interface MessageArgsProps extends AntdMessageArgsProps {
     title?: string | React.ReactNode;
 }
 
-type JointContent = React.ReactNode | string | MessageArgsProps;
+// content是可选的
+type JointContent = React.ReactNode | string | Omit<MessageArgsProps, 'content'> & {content?: any};
 
 export interface MessageApi extends Omit<AntdMessageApi, 'open'> {
     open(args: MessageArgsProps): AntdMessageType;
     notify(content: JointContent, duration?: number, onClose?: () => void): AntdMessageType;
+    info(content: JointContent, duration?: number, onClose?: () => void): AntdMessageType;
+    success(content: JointContent, duration?: number, onClose?: () => void): AntdMessageType;
+    error(content: JointContent, duration?: number, onClose?: () => void): AntdMessageType;
+    warning(content: JointContent, duration?: number, onClose?: () => void): AntdMessageType;
+    loading(content: JointContent, duration?: number, onClose?: () => void): AntdMessageType;
 }
 
 const typeToIcon: Record<iconTypes, React.ReactNode> = {
@@ -193,7 +199,9 @@ const getPatchedArgs = (args: MessageArgsProps & {localInnerKey?: number}) => {
         clsPrefix,
         `${clsPrefix}-message-${type}`,
         `${clsPrefix}-message-at-${messagePosition}`,
-        getPropFromConfig('className')
+        getPropFromConfig('className'),
+        {[`${clsPrefix}-message-with-title`]: getPropFromConfig('title')},
+        {[`${clsPrefix}-message-with-title-only`]: !args.content?.content}
     );
 
     // 这里对countDown做了处理，duration不能直接透传给countDown，考虑到有可能有自动关闭，但是不想显示倒计时的场景

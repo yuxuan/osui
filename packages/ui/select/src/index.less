@@ -1,10 +1,6 @@
 @osui-select-class-prefix: osui-select;
 
 .@{osui-select-class-prefix} {
-    &.@{ant-prefix}-select-single .@{ant-prefix}-select-selector {
-        margin-right: 8px;
-    }
-
     // placeholder
     .@{ant-prefix}-select-selection-placeholder {
         color: var(--theme-placeholder-color);
@@ -145,17 +141,17 @@
     .@{ant-prefix}-select-item-option-selected {
         display: flex;
         align-items: center;
-        padding-left: 40px;
+        padding-left: 36px;
     }
 
     // 以下通过使用::before画出来未选中时的边框，border可以通过variables控制，TODO：大小也可以控制，但是position要相应调整
     .@{ant-prefix}-select-item.@{ant-prefix}-select-item-option {
         .@{ant-prefix}-select-item-option-content::before {
-            @checkbox-size: 13px;
+            @checkbox-size: 16px;
 
             position: absolute;
-            top: 27%;
-            left: 17px;
+            top: 25%;
+            left: 12px;
             display: table;
             width: @checkbox-size;
             height: @checkbox-size;
@@ -175,7 +171,7 @@
     .@{ant-prefix}-select-item-option-selected {
         .@{ant-prefix}-select-item-option-state {
             position: absolute;
-            left: 17px;
+            left: 12px;
             display: inline-flex;
             align-items: center;
         }

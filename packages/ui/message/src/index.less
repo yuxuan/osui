@@ -54,6 +54,18 @@
         }
     }
 
+    &-message-with-title {
+        .@{ant-prefix}-message-notice-content {
+            padding: 16px 16px;
+        }
+
+        &-only {
+            .osui-message-message-content-title {
+                margin-bottom: 0;
+            }
+        }
+    }
+
     // 对original的样式patch
     .@{ant-prefix}-message-custom-content {
         display: flex;
@@ -82,15 +94,23 @@
 
         &-title {
             display: flex;
-            margin-bottom: 4px;
+            align-items: center;
+            margin-bottom: 12px;
 
             &-text {
                 flex: 1;
-                font-family: "PingFangSC-Medium";
+                font-weight: 600;
+                font-size: 14px;
+
+                a {
+                    font-weight: 400;
+                }
             }
         }
 
         .close-icon {
+            display: flex;
+
             svg {
                 width: 14px;
                 height: 14px;
@@ -101,7 +121,7 @@
 
     &-count-down-close {
         margin-left: 8px;
-        color: var(--theme-icon-color);
+        color: var(--theme-placeholder-color);
     }
 
     &-message-notify {
