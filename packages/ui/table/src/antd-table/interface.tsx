@@ -109,6 +109,9 @@ export interface ColumnType<RecordType> extends Omit<RcColumnType<RecordType>, '
   filterDropdown?: React.ReactNode | ((props: FilterDropdownProps) => React.ReactNode);
   filterMultiple?: boolean;
   filteredValue?: FilterValue | null;
+  // === MODIFIED_BY_OSUI ===
+  filterDropdownTrigger?: ('click' | 'hover')[];
+  // === END_MODIFIED_BY_OSUI ===
   defaultFilteredValue?: FilterValue | null;
   filterIcon?: React.ReactNode | ((filtered: boolean) => React.ReactNode);
   filterMode?: 'menu' | 'tree';

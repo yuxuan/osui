@@ -75,6 +75,9 @@ function injectFilter<RecordType>(
   getPopupContainer: GetPopupContainer | undefined,
   locale: TableLocale,
   pos?: string,
+  // === MODIFIED_BY_OSUI ===
+  filterDropdownTrigger?: ('click' | 'hover')[]
+  // === END_MODIFIED_BY_OSUI ===
 ): ColumnsType<RecordType> {
   return columns.map((column, index) => {
     const columnPos = getColumnPos(index, pos);
@@ -102,6 +105,9 @@ function injectFilter<RecordType>(
             triggerFilter={triggerFilter}
             locale={locale}
             getPopupContainer={getPopupContainer}
+            // === MODIFIED_BY_OSUI ===
+            dropdownTrigger={filterDropdownTrigger}
+            // === END_MODIFIED_BY_OSUI ===
           >
             {renderColumnTitle(column.title, renderProps)}
           </FilterDropdown>
@@ -121,6 +127,9 @@ function injectFilter<RecordType>(
           getPopupContainer,
           locale,
           columnPos,
+          // === MODIFIED_BY_OSUI ===
+          filterDropdownTrigger
+          // === END_MODIFIED_BY_OSUI ===
         ),
       };
     }
@@ -186,6 +195,9 @@ interface FilterConfig<RecordType> {
   dropdownPrefixCls: string;
   mergedColumns: ColumnsType<RecordType>;
   locale: TableLocale;
+  // === MODIFIED_BY_OSUI ===
+  filterDropdownTrigger?: ('click' | 'hover')[];
+  // === END_MODIFIED_BY_OSUI ===
   onFilterChange: (
     filters: Record<string, FilterValue | null>,
     filterStates: FilterState<RecordType>[],
@@ -200,6 +212,9 @@ function useFilter<RecordType>({
   onFilterChange,
   getPopupContainer,
   locale: tableLocale,
+  // === MODIFIED_BY_OSUI ===
+  filterDropdownTrigger,
+  // === END_MODIFIED_BY_OSUI ===
 }: FilterConfig<RecordType>): [
   TransformColumns<RecordType>,
   FilterState<RecordType>[],
@@ -256,6 +271,10 @@ function useFilter<RecordType>({
       triggerFilter,
       getPopupContainer,
       tableLocale,
+      // === MODIFIED_BY_OSUI ===
+      undefined,
+      filterDropdownTrigger,
+      // === END_MODIFIED_BY_OSUI ===
     );
 
   return [transformColumns, mergedFilterStates, getFilters];

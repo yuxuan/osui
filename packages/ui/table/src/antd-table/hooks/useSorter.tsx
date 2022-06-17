@@ -2,7 +2,9 @@ import * as React from 'react';
 import classNames from 'classnames';
 import ArrowDownOutlined from '@ant-design/icons/ArrowDownOutlined';
 import ArrowUpOutlined from '@ant-design/icons/ArrowUpOutlined';
+// === MODIFIED_BY_OSUI ===
 import UpdownIcon from './UpdownIcon';
+// === END_MODIFIED_BY_OSUI ===
 import KeyCode from 'rc-util/lib/KeyCode';
 import type {
   TransformColumns,
@@ -142,9 +144,11 @@ function injectSorter<RecordType>(
           })}
         />
       );
+      // === MODIFIED_BY_OSUI ===
       const updownNode: React.ReactNode = (
         <UpdownIcon width="16px" height="16px" />
       )
+      // === END_MODIFIED_BY_OSUI ===
       const { cancelSort, triggerAsc, triggerDesc } = tableLocale || {};
       let sortTip: string | undefined = cancelSort;
       if (nextSortOrder === DESCEND) {
@@ -169,7 +173,9 @@ function injectSorter<RecordType>(
                 })}
               >
                 <span className={`${prefixCls}-column-sorter-inner`}>
+                  {/*  MODIFIED_BY_OSUI */}
                   {sorterOrder === ASCEND ? upNode : sorterOrder === DESCEND ? downNode : updownNode}
+                  {/* END_MODIFIED_BY_OSUI === */}
                 </span>
               </span>
             </div>

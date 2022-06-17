@@ -204,6 +204,7 @@ export const ExpandableDemo = () => {
                     columns={columns}
                     dataSource={data}
                     expandable={expandable}
+                    filterDropdownTrigger={['hover']}
                 />
             </BrandProvider>
         </>

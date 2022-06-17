@@ -87,6 +87,9 @@ export interface TableProps<RecordType>
   size?: SizeType;
   bordered?: boolean;
   locale?: TableLocale;
+  // === MODIFIED_BY_OSUI ===
+  filterDropdownTrigger?: ('click' | 'hover')[];
+  // === END_MODIFIED_BY_OSUI ===
 
   onChange?: (
     pagination: TablePaginationConfig,
@@ -109,33 +112,36 @@ function InternalTable<RecordType extends object = any>(
   ref: React.ForwardedRef<HTMLDivElement>,
 ) {
   const {
-    prefixCls: customizePrefixCls,
-    className,
-    style,
-    size: customizeSize,
-    bordered,
-    dropdownPrefixCls: customizeDropdownPrefixCls,
-    dataSource,
-    pagination,
-    rowSelection,
-    rowKey,
-    rowClassName,
-    columns,
-    children,
-    childrenColumnName: legacyChildrenColumnName,
-    onChange,
-    getPopupContainer,
-    loading,
-    expandIcon,
-    expandable,
-    expandedRowRender,
-    expandIconColumnIndex,
-    indentSize,
-    scroll,
-    sortDirections,
-    locale,
-    showSorterTooltip = true,
-  } = props;
+        dropdownPrefixCls: customizeDropdownPrefixCls,
+        dataSource,
+        columns,
+        pagination,
+        loading,
+        size: customizeSize,
+        bordered,
+        locale,
+        // === MODIFIED_BY_OSUI ===
+        filterDropdownTrigger,
+        // === END_MODIFIED_BY_OSUI ===
+        onChange,
+        rowSelection,
+        getPopupContainer,
+        scroll,
+        sortDirections,
+        showSorterTooltip = true,
+        prefixCls: customizePrefixCls,
+        className,
+        style,
+        rowKey,
+        rowClassName,
+        children,
+        childrenColumnName: legacyChildrenColumnName,
+        expandIcon,
+        expandable,
+        expandedRowRender,
+        expandIconColumnIndex,
+        indentSize,
+    } = props;
 
   warning(
     !(typeof rowKey === 'function' && rowKey.length > 1),
@@ -312,6 +318,9 @@ function InternalTable<RecordType extends object = any>(
     mergedColumns,
     onFilterChange,
     getPopupContainer,
+    // === MODIFIED_BY_OSUI ===
+    filterDropdownTrigger,
+    // === END_MODIFIED_BY_OSUI ===
   });
   const mergedData = getFilterData(sortedData, filterStates);
 

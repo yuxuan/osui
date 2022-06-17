@@ -116,6 +116,9 @@ export interface FilterDropdownProps<RecordType> {
   locale: TableLocale;
   getPopupContainer?: GetPopupContainer;
   filterResetToDefaultFilteredValue?: boolean;
+   // === MODIFIED_BY_OSUI ===
+  dropdownTrigger?: ('click' | 'hover')[];
+   // === END_MODIFIED_BY_OSUI ===
 }
 
 function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
@@ -133,6 +136,9 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
     locale,
     children,
     getPopupContainer,
+   // === MODIFIED_BY_OSUI ===
+    dropdownTrigger = ['click'],
+   // === END_MODIFIED_BY_OSUI ===
   } = props;
 
   const {
@@ -271,6 +277,13 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
     triggerVisible(newVisible);
 
     // Default will filter when closed
+    // === MODIFIED_BY_OSUI ===
+    // 如果是hover形式，不要过滤
+    if (dropdownTrigger.includes('hover')) {
+      return;
+    }
+    // === END_MODIFIED_BY_OSUI ===
+
     if (!newVisible && !column.filterDropdown) {
       onConfirm();
     }
@@ -465,7 +478,9 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
       <span className={`${tablePrefixCls}-column-title`}>{children}</span>
       <Dropdown
         overlay={menu}
-        trigger={['click']}
+        // === MODIFIED_BY_OSUI ===
+        trigger={dropdownTrigger}
+        // === END_MODIFIED_BY_OSUI ===
         visible={mergedVisible}
         onVisibleChange={onVisibleChange}
         getPopupContainer={getPopupContainer}
