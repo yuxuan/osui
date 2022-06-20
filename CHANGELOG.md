@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.9](https://gitee.com/gitee-fe/osui/compare/v2.0.8...v2.0.9) (2022-06-20)
+
+
+### Bug Fixes
+
+* 修复一波样式调整 ([b64f971](https://gitee.com/gitee-fe/osui/commits/b64f97199087113f5154ef64d50acc7ba85fa869))
+* 增加filter hover trigger ([523a8c0](https://gitee.com/gitee-fe/osui/commits/523a8c072bf3854449766ffb1433feac27ea6350))
+* table sorter 图标调整 ([7afe4b0](https://gitee.com/gitee-fe/osui/commits/7afe4b0cd778fd62a0acfaa5de298b870907c612))
+
+
+
+
+
 ## [2.0.8](https://gitee.com/gitee-fe/osui/compare/v2.0.7...v2.0.8) (2022-06-10)
 
 
