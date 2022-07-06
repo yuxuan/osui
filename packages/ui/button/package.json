@@ -1,6 +1,6 @@
 {
     "name": "@osui/button",
-    "version": "2.0.8",
+    "version": "2.0.10",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -82,7 +82,7 @@
         }
     },
     "dependencies": {
-        "@osui/tooltip": "^2.0.8",
+        "@osui/tooltip": "^2.0.10",
         "classnames": "^2.2.6"
     },
     "publishConfig": {

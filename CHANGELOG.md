@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.10](https://gitee.com/gitee-fe/osui/compare/v2.0.9...v2.0.10) (2022-07-06)
+
+
+### Bug Fixes
+
+* modal confirm 样式, steps嵌套时的bug, form props增加children类型 ([9cf8125](https://gitee.com/gitee-fe/osui/commits/9cf812541d3d4fa9afcd275b91d40850cd2d4233))
+* tooltip默认支持v1的变量 ([59297cd](https://gitee.com/gitee-fe/osui/commits/59297cd3838e3c528f09f0b2a8f15844b0176758))
+
+
+
+
+
 ## [2.0.9](https://gitee.com/gitee-fe/osui/compare/v2.0.8...v2.0.9) (2022-06-20)
 
 

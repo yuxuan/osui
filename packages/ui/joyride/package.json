@@ -1,6 +1,6 @@
 {
     "name": "@osui/joyride",
-    "version": "2.0.8",
+    "version": "2.0.10",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -86,7 +86,7 @@
     },
     "dependencies": {
         "@huse/derived-state": "^1.0.3",
-        "@osui/button": "^2.0.8",
+        "@osui/button": "^2.0.10",
         "classnames": "^2.2.6",
         "lodash.merge": "^4.6.2",
         "react-joyride": "^2.3.0"

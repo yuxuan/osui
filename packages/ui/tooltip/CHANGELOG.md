@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.9...v2.0.10) (2022-07-06)
+
+
+### Bug Fixes
+
+* tooltip默认支持v1的变量 ([59297cd](https://gitee.com/gitee-fe/osui/tree/master/commits/59297cd3838e3c528f09f0b2a8f15844b0176758))
+
+
+
+
+
 ## [2.0.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.7...v2.0.8) (2022-06-10)
 
 
