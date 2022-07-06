@@ -19,7 +19,7 @@ import {toTooltipProps} from './utils';
 
 const clsPrefix = 'osui-form';
 
-const InternalForm = React.forwardRef<FormInstance, FormProps>((props, ref) => {
+const InternalForm = React.forwardRef<FormInstance, React.PropsWithChildren<FormProps>>((props, ref) => {
     const {brand} = useBrandContext();
     // 检测是否有required的内容
     const [hasRequiredItem, setHasRequiredItem] = useState(0);

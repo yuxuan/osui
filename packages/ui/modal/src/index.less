@@ -1,13 +1,5 @@
 @osui-modal-class-prefix: osui-modal;
 
-// 这个antd在4.17.2修复了，但是为了兼容之前的antd版本，保留
-// FIXME 大版本升级之后，去掉
-.@{ant-prefix}-modal-centered .@{osui-modal-class-prefix} {
-    &.@{ant-prefix}-modal {
-        padding-bottom: 0;
-    }
-}
-
 .@{osui-modal-class-prefix} {
     .@{ant-prefix}-modal-close-x {
         margin-right: var(--modal-close-icon-margin-right);
@@ -79,7 +71,7 @@
 
 .@{osui-modal-class-prefix}-confirm {
     .@{ant-prefix}-modal-confirm-body {
-        min-height: 76px;
+        min-height: 80px;
         border-bottom: var(--modal-body-border-bottom);
 
         & > svg.osui-icon {
@@ -91,12 +83,9 @@
         }
     }
 
-    .@{ant-prefix}-modal-confirm-content {
-        margin-bottom: 40px;
-    }
-
-    .@{ant-prefix}-modal-confirm-btns {
-        margin-top: 15px;
+    .@{ant-prefix}-modal-confirm-body .@{ant-prefix}-modal-confirm-content {
+        margin-top: 0;
+        margin-left: 32px;
     }
 
     &.@{ant-prefix}-modal-confirm-warning .@{ant-prefix}-modal-confirm-body > svg.osui-icon,
@@ -117,7 +106,7 @@
     }
 
     .@{ant-prefix}-modal-confirm-body > svg.osui-icon + .@{ant-prefix}-modal-confirm-title + .@{ant-prefix}-modal-confirm-content {
-        margin-bottom: 40px;
+        margin-top: 8px;
         margin-left: 32px;
     }
 
