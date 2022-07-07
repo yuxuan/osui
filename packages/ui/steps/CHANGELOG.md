@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.12](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.11...v2.0.12) (2022-07-07)
+
+
+### Bug Fixes
+
+* steps嵌套颜色的问题 ([9063f7e](https://gitee.com/gitee-fe/osui/tree/master/commits/9063f7eb21832e9b7694ab1aba4142212c87bc5d))
+
+
+
+
+
 ## [2.0.11](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.10...v2.0.11) (2022-07-07)
 
 
