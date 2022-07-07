@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.13](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.12...v2.0.13) (2022-07-07)
+
+
+### Bug Fixes
+
+* 调整Spin的样式, 调整Select的Demo文档, 调整Table内Spin换成osui的 ([1729902](https://gitee.com/gitee-fe/osui/tree/master/commits/17299025d8b54951adb4075aacfc28472517f401))
+
+
+
+
+
 ## [2.0.9](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.8...v2.0.9) (2022-06-20)
 
 
