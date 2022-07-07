@@ -26,7 +26,7 @@ const iCloudConfigs: ConfigProviderProps = {
     locale: zhCN,
 };
 
-const BrandProvider: React.FC<{ brand?: 'osc' | 'icloud' }> = ({brand, children}) => {
+const BrandProvider: React.FC<React.PropsWithChildren<{ brand?: 'osc' | 'icloud' }>> = ({brand, children}) => {
     const context: BrandContextValue = {brand};
     if (brand === 'icloud') {
         return (

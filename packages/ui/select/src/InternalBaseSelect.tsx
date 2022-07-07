@@ -11,7 +11,10 @@ import './index.less';
 
 const clsPrefix = 'osui-select';
 
-export interface SelectProps<ValueType, OptionType> extends AntdSelectProps<ValueType, OptionType> {
+export interface SelectProps<
+    ValueType = any,
+    OptionType extends BaseOptionType | DefaultOptionType = DefaultOptionType
+> extends AntdSelectProps<ValueType, OptionType> {
     noBorder?: boolean;
     displayTagsInPopover?: boolean;
 }
@@ -20,7 +23,7 @@ function InternalSelect<ValueType = any, OptionType extends BaseOptionType | Def
     props: SelectProps<ValueType, OptionType>,
     ref?: React.Ref<BaseSelectRef>
 ): React.ReactElement | null {
-    const {noBorder, className, loading, listHeight, ...restProps} = props;
+    const {className, loading, listHeight, noBorder, ...restProps} = props;
     const {brand} = useBrandContext();
     // 暂时用，后面需要透传下去
     const {mode, dropdownClassName} = restProps;

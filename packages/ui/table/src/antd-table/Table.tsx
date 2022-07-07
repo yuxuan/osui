@@ -6,7 +6,7 @@ import type { TableProps as RcTableProps } from 'rc-table/lib/Table';
 import { INTERNAL_HOOKS } from 'rc-table/lib/Table';
 import { convertChildrenToColumns } from 'rc-table/lib/hooks/useColumns';
 import type { SpinProps } from 'antd/es/spin';
-import Spin from 'antd/es/spin';
+import Spin from '@osui/spin';
 import Pagination from '@osui/pagination';
 import type { TooltipProps } from 'antd/es/tooltip';
 import { ConfigContext } from 'antd/es/config-provider/context';

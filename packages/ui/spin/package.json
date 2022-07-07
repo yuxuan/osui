@@ -83,5 +83,8 @@
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
+    },
+    "dependencies": {
+        "classnames": "^2.3.1"
     }
 }

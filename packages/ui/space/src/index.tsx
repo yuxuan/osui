@@ -1,8 +1,8 @@
+import React, {FC, useContext} from 'react';
 import {ConfigProvider, Space as AntdSpace} from 'antd';
 import {SpaceProps} from 'antd/lib/space';
 import useFlexGapSupport from 'antd/lib/_util/hooks/useFlexGapSupport';
 import classNames from 'classnames';
-import React, {FC, useContext} from 'react';
 import './index.less';
 
 const clsPrefix = 'osui-space';

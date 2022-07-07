@@ -10,10 +10,11 @@ module.exports = {
         'import/no-extraneous-dependencies': 'error',
     },
     overrides: [{
-        'files': ['*.stories.tsx', '*.stories.jsx', '*.stories.mdx'],
+        'files': ['*.stories.tsx', '*.stories.jsx', '*.stories.mdx', '**/icloud-demo/*.tsx'],
         'rules': {
             'react/jsx-no-bind': 'off',
             'no-console': 'off',
+            'import/no-extraneous-dependencies': 'off',
         },
     }],
     root: true,

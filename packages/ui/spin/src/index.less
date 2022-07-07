@@ -1,0 +1,154 @@
+.@{loading-prefix-cls}-begin {
+    fill: var(--color-brand-6);
+    stroke: var(--color-brand-6);;
+}
+
+.@{loading-prefix-cls}-begin .circle1 {
+    animation: circle1 1.8s ease infinite;
+}
+.@{loading-prefix-cls}-begin .circle2 {
+    animation: circle2 1.8s ease infinite;
+}
+.@{loading-prefix-cls}-begin .circle3 {
+    animation: circle3 1.8s ease infinite;
+}
+.@{loading-prefix-cls}-begin .circle4 {
+    animation: circle4 1.8s ease infinite;
+}
+.@{loading-prefix-cls}-begin .circle5 {
+    animation: circle5 1.8s ease infinite;
+}
+.@{loading-prefix-cls}-begin .circle6 {
+    animation: circle6 1.8s ease infinite;
+}
+.@{loading-prefix-cls}-begin .frame {
+    stroke-dashoffset: 900;
+    stroke-dasharray: 900 2440;
+    animation: frame 1.8s ease infinite;
+}
+
+@keyframes circle1 {
+    0% {
+        transform: translate3d(0%, 40%, 0);
+    }
+
+    30% {
+        transform: translate3d(0%, 0%, 0);
+    }
+
+    70% {
+        transform: translate3d(0%, 0%, 0);
+    }
+
+    100% {
+        transform: translate3d(0%, 40%, 0);
+    }
+}
+
+@keyframes circle2 {
+    0% {
+        transform: translate3d(-35%, 20%, 0);
+    }
+
+    30% {
+        transform: translate3d(0%, 0%, 0);
+    }
+
+    70% {
+        transform: translate3d(0%, 0%, 0);
+    }
+
+    100% {
+        transform: translate3d(-35%, 20%, 0);
+    }
+}
+
+@keyframes circle3 {
+    0% {
+        transform: translate3d(-35%, -20%, 0);
+    }
+
+    30% {
+        transform: translate3d(0%, 0%, 0);
+    }
+
+    70% {
+        transform: translate3d(0%, 0%, 0);
+    }
+
+    100% {
+        transform: translate3d(-35%, -20%, 0);
+    }
+}
+
+@keyframes circle4 {
+    0% {
+        transform: translate3d(0%, -40%, 0);
+    }
+
+    30% {
+        transform: translate3d(0%, 0%, 0);
+    }
+
+    70% {
+        transform: translate3d(0%, 0%, 0);
+    }
+
+    100% {
+        transform: translate3d(0%, -40%, 0);
+    }
+}
+
+@keyframes circle5 {
+    0% {
+        transform: translate3d(35%, -20%, 0);
+    }
+
+    30% {
+        transform: translate3d(0%, 0%, 0);
+    }
+
+    70% {
+        transform: translate3d(0%, 0%, 0);
+    }
+
+    100% {
+        transform: translate3d(35%, -20%, 0);
+    }
+}
+
+@keyframes circle6 {
+    0% {
+        transform: translate3d(35%, 20%, 0);
+    }
+
+    30% {
+        transform: translate3d(0%, 0%, 0);
+    }
+
+    70% {
+        transform: translate3d(0%, 0%, 0);
+    }
+
+    100% {
+        transform: translate3d(35%, 20%, 0);
+    }
+}
+
+@keyframes frame {
+    24.99% {
+        stroke-dashoffset: 900;
+    }
+
+    25% {
+        stroke-dashoffset: 900;
+    }
+
+    75% {
+        stroke-dashoffset: -2440;
+    }
+
+    75.01% {
+        stroke-dashoffset: 900;
+    }
+}

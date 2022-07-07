@@ -54,6 +54,7 @@
         "husky": "^4.2.5",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.0.6",
+        "lodash": "^4.17.21",
         "prop-types": "^15.7.2",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
