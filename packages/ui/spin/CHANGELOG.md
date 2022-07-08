@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.14](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.13...v2.0.14) (2022-07-08)
+
+
+### Bug Fixes
+
+* 修复acud loading prefix ([cedf11b](https://gitee.com/gitee-fe/osui/tree/master/commits/cedf11b0ac227dec04c1ecee8a7130b9af9fb1ad))
+
+
+
+
+
 ## [2.0.13](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.12...v2.0.13) (2022-07-07)
 
 
