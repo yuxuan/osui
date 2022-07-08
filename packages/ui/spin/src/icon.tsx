@@ -11,9 +11,9 @@ export interface LoadingIconProps {
     className?: string;
 }
 
-const LoadingIcon: React.FC<React.PropsWithChildren<LoadingIconProps>> = ({prefixCls = 'acud-loading', className}) => {
+const LoadingIcon: React.FC<React.PropsWithChildren<LoadingIconProps>> = ({className}) => {
     const contextClassname = classNames(
-        [`${prefixCls}-begin`],
+        ['acud-loading-begin'],
         className
     );
     return (
