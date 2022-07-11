@@ -8,6 +8,7 @@ import './index.less';
 
 const clsPrefix = 'osui-button';
 
+type MinWidthProp = number|string|false;
 export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
     type?: ButtonType | 'strong' | 'icon';
     /**
@@ -30,6 +31,10 @@ export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
      * @description 当disabled时展示disabledReason
      */
     disabledReason?: string;
+    /**
+     * @description 设置button的最小宽度，设计需要两个字时有最小宽度
+     */
+    minWidth?: MinWidthProp;
 }
 
 // eslint-disable-next-line max-len
@@ -66,6 +71,8 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
         disabled,
         flexCenter,
         disabledReason,
+        style,
+        minWidth = 72,
         ...props
     }, ref
 ) => {
@@ -94,6 +101,9 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
 
     const {success, error, danger, warning} = props;
 
+    // 如果minWidth为falsy时，不要minWidth属性
+    const innerStyle = minWidth && {...style, minWidth} || style;
+
     const PatchedButton = (
         <AntdButton
             ref={ref as any}
@@ -115,6 +125,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
             }
             icon={innerIcon}
             disabled={isLoading || disabled}
+            style={innerStyle}
             {...loadingProp}
         />
     );
