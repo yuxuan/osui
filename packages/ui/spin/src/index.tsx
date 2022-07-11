@@ -6,7 +6,7 @@ import './index.less';
 
 const Spin: React.FC<React.PropsWithChildren<SpinProps>> = props => {
     const innerIndicator = props.indicator ?? <LoadingIcon />;
-    return <AntdSpin indicator={innerIndicator} {...props} />;
+    return <AntdSpin {...props} indicator={innerIndicator} />;
 };
 
 export default Spin;
