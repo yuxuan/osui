@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.15](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.14...v2.0.15) (2022-07-11)
+
+
+### Bug Fixes
+
+* 修复table依赖spin的问题 ([56c612a](https://gitee.com/gitee-fe/osui/tree/master/commits/56c612af6160e4fde8b4826193a93e2f2d1c331b))
+
+
+
+
+
 ## [2.0.13](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.12...v2.0.13) (2022-07-07)
 
 
