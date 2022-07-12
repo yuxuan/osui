@@ -3,7 +3,7 @@ import React from 'react';
 import Segmented from '@osui/segmented';
 
 export default {
-    title: 'Segmented',
+    title: '数据展示/Segmented',
 };
 
 export const Demo = () => {
