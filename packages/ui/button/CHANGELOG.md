@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.17](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.16...v2.0.17) (2022-07-14)
+
+
+### Bug Fixes
+
+* input-number调整类型,button使用icon时不要设置最小宽度 ([16a2343](https://gitee.com/gitee-fe/osui/tree/master/commits/16a2343e02914f9412a7c0502b1d1026fb35b88e))
+
+
+
+
+
 ## [2.0.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.15...v2.0.16) (2022-07-14)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.17](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v2.0.16...v2.0.17) (2022-07-14)
+
+**Note:** Version bump only for package @osui/branch-dropdown
+
+
+
+
+
 ## [2.0.16](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v2.0.15...v2.0.16) (2022-07-14)
 
 **Note:** Version bump only for package @osui/branch-dropdown
