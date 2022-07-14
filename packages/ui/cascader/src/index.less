@@ -58,4 +58,16 @@
             font-size: 14px;
         }
     }
+    // === 转动arrow ===
+    &.@{ant-prefix}-select-open .@{ant-prefix}-select-arrow:not(.@{ant-prefix}-select-arrow-loading) > svg {
+        transform: var(--select-arrow-open-transform-rotate);
+    }
+
+    // arrow icon
+    .@{ant-prefix}-select-arrow {
+        svg {
+            font-size: 14px;
+            transition: var(--select-arrow-transition);
+        }
+    }
 }

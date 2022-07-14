@@ -22,7 +22,7 @@ export default {
     '--disabled-color': 'var(--theme-disabled-color)',
     '--heading-color': 'var(--theme-heading-color)',
     '--item-active-bg': 'var(--theme-secondary-color-hover)',
-    '--label-color': 'var(--color-gray-9)',
+    '--label-color': 'var(--color-gray-8)',
     '--link-active-color': 'var(--theme-primary-color-active)',
     '--link-color': 'var(--theme-primary-color)',
     '--link-hover-color': 'var(--theme-primary-color-hover)',
