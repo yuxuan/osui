@@ -92,8 +92,11 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
 
     // icon在作为children
     const shouldMinWidth = () => {
-        if (minWidth) {
-            return true;
+        if (typeof minWidth === 'boolean') {
+            return minWidth;
+        }
+        if (type === 'link' || type === 'text') {
+            return false;
         }
         // 只有icon时不设置minWidth
         if (icon && !props.children) {
@@ -102,9 +105,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
         if (typeof props.children === 'string' && isOneTwoThreeCNChar(props.children)) {
             return true;
         }
-        if (type === 'link' || type === 'text') {
-            return false;
-        }
+
     };
 
     // 当loading且有icon的button时，icon替换成spinner，不论什么情况都要保持后面的chidlren

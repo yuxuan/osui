@@ -8,6 +8,7 @@ import FlexCentered from '@osui/flex-centered';
 import BrandProvider from '@osui/brand-provider';
 import {version} from 'antd';
 import Button from '../src';
+import {MinWidth} from './icloud-demo';
 import './index.less';
 
 const Blockquote = ({children}) => (
@@ -226,7 +227,7 @@ export const Demo = () => {
         </>
     );
 };
-
+export const MinWidthDemo = MinWidth;
 export const Size = () => {
     return (
         <>
