@@ -6,10 +6,23 @@ import './index.less';
 
 const clsPrefix = 'osui-input-number';
 
-const InputNumber = React.forwardRef<HTMLInputElement, AntdInputNumberProps>(({className, ...props}, ref) => {
-    const innerClassName = classNames(className, clsPrefix);
+type ValueType = string| number;
+
+function InputNumber<T extends ValueType=ValueType>(
+    {className, ...props}: AntdInputNumberProps<T>,
+    ref: React.Ref<HTMLInputElement> | undefined
+) {
+    const innerClassName = classNames(clsPrefix, className);
     return <AntdInputNumber ref={ref} className={innerClassName} {...props} />;
-});
+}
 
 export type {InputNumberProps} from 'antd';
-export default InputNumber;
+
+const ForwardedInputNumber = React.forwardRef(InputNumber);
+
+export default ForwardedInputNumber as (<T extends ValueType = ValueType>(
+    props: React.PropsWithChildren<AntdInputNumberProps<T>> & {
+    ref?: React.Ref<HTMLInputElement>;
+},
+) => React.ReactElement) & { displayName?: string };
+

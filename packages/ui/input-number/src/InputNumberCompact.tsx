@@ -9,11 +9,14 @@ import './inputNumber.less';
 
 const clsPrefix = 'osui-input-number-compact';
 
-export interface InputNumberCompactProps extends AntdInputNumberProps {
+type ValueType = string | number;
+export interface InputNumberCompactProps<T extends ValueType = ValueType> extends
+Omit<AntdInputNumberProps<T>, 'onChange'> {
     inputNumberClassName?: string;
+    onChange: (value: ValueType) => void;
 }
 
-function InputNumberCompact(
+function InputNumberCompact<T extends ValueType = ValueType>(
     {
         className,
         inputNumberClassName,
@@ -23,13 +26,13 @@ function InputNumberCompact(
         step = 1,
         disabled,
         ...props
-    }: InputNumberCompactProps,
+    }: React.PropsWithChildren<InputNumberCompactProps<T>>,
     ref: React.ForwardedRef<HTMLInputElement>
 ) {
-    const initValue = defaultValue === undefined ? (value || 0) : defaultValue;
-    const [inputValue, setInputValue] = useDerivedState(initValue);
+    const initValue: T = defaultValue === undefined ? (value || 0 as T) : defaultValue;
+    const [inputValue, setInputValue] = useDerivedState<T>(initValue);
     const handleChange = useCallback(
-        value => {
+        (value: T) => {
             setInputValue(value);
             onChange?.(value);
         },
@@ -37,13 +40,13 @@ function InputNumberCompact(
     );
     const handleMinus = useCallback(
         () => {
-            handleChange(inputValue !== undefined && Number(inputValue) - Number(step));
+            handleChange((Number(inputValue) - Number(step)) as T);
         },
         [handleChange, inputValue, step]
     );
     const handlePlus = useCallback(
         () => {
-            handleChange(inputValue !== undefined && Number(inputValue) + Number(step));
+            handleChange((Number(inputValue) + Number(step)) as T);
         },
         [handleChange, inputValue, step]
     );

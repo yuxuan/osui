@@ -8,7 +8,7 @@ import './index.less';
 
 const clsPrefix = 'osui-button';
 
-type MinWidthProp = number|string|false;
+type MinWidthProp = string|number|boolean;
 export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
     type?: ButtonType | 'strong' | 'icon';
     /**
@@ -62,6 +62,11 @@ const PureIconButton: React.FC<ButtonProps> = props => {
     return React.cloneElement(Icon as React.ReactElement, {...props, className: innerClassName});
 };
 
+const MIN_WIDTH = 72; // UE要求
+
+const rxOneTwoThreeCNChar = /^[\u4e00-\u9fa5]{1,3}$/;
+const isOneTwoThreeCNChar = rxOneTwoThreeCNChar.test.bind(rxOneTwoThreeCNChar);
+
 /* eslint-disable complexity */
 const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     {
@@ -72,7 +77,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
         flexCenter,
         disabledReason,
         style,
-        minWidth = 72,
+        minWidth,
         ...props
     }, ref
 ) => {
@@ -81,8 +86,26 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     const isLoading = typeof loading === 'boolean' && loading;
 
     if (type === 'icon') {
+        // icon作为button
         return (<PureIconButton loading={isLoading} icon={icon} disabled={disabled} {...props} />);
     }
+
+    // icon在作为children
+    const shouldMinWidth = () => {
+        if (minWidth) {
+            return true;
+        }
+        // 只有icon时不设置minWidth
+        if (icon && !props.children) {
+            return false;
+        }
+        if (typeof props.children === 'string' && isOneTwoThreeCNChar(props.children)) {
+            return true;
+        }
+        if (type === 'link' || type === 'text') {
+            return false;
+        }
+    };
 
     // 当loading且有icon的button时，icon替换成spinner，不论什么情况都要保持后面的chidlren
     if (isLoading && icon) {
@@ -102,7 +125,9 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     const {success, error, danger, warning} = props;
 
     // 如果minWidth为falsy时，不要minWidth属性
-    const innerStyle = minWidth && {...style, minWidth} || style;
+    const innerStyle: React.CSSProperties | undefined = (
+        shouldMinWidth() && {...style, minWidth: (typeof minWidth === 'boolean' ? MIN_WIDTH : (minWidth || MIN_WIDTH))}
+    ) || style;
 
     const PatchedButton = (
         <AntdButton
