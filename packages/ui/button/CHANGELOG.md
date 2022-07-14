@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.18](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.17...v2.0.18) (2022-07-14)
+
+
+### Bug Fixes
+
+* button调整minwidth属性 ([f3fae6f](https://gitee.com/gitee-fe/osui/tree/master/commits/f3fae6f5ce55ab53ec256b52b60d1228a66c67fb))
+
+
+
+
+
 ## [2.0.17](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.16...v2.0.17) (2022-07-14)
 
 
