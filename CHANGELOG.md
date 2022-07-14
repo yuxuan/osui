@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.16](https://gitee.com/gitee-fe/osui/compare/v2.0.15...v2.0.16) (2022-07-14)
+
+
+### Bug Fixes
+
+* button padding调整成12-1, 增加最小宽度 ([8eb779d](https://gitee.com/gitee-fe/osui/commits/8eb779dc6a3d58295437ca046b4ef2e8a4140ab8))
+* cascader箭头旋转, icloud-theme调整form-label color ([8f0caba](https://gitee.com/gitee-fe/osui/commits/8f0caba78bc476dcaff2ecaf57f36639c5f20826))
+* theme v1 border-raidus css variables错误 ([6990680](https://gitee.com/gitee-fe/osui/commits/6990680cd3de904781a5607fa63f4e37599ca0b7))
+
+
+
+
+
 ## [2.0.15](https://gitee.com/gitee-fe/osui/compare/v2.0.14...v2.0.15) (2022-07-11)
 
 

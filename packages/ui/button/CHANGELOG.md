@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.15...v2.0.16) (2022-07-14)
+
+
+### Bug Fixes
+
+* button padding调整成12-1, 增加最小宽度 ([8eb779d](https://gitee.com/gitee-fe/osui/tree/master/commits/8eb779dc6a3d58295437ca046b4ef2e8a4140ab8))
+
+
+
+
+
 ## [2.0.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.9...v2.0.10) (2022-07-06)
 
 **Note:** Version bump only for package @osui/button

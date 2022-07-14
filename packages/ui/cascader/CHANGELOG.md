@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.15...v2.0.16) (2022-07-14)
+
+
+### Bug Fixes
+
+* cascader箭头旋转, icloud-theme调整form-label color ([8f0caba](https://gitee.com/gitee-fe/osui/tree/master/commits/8f0caba78bc476dcaff2ecaf57f36639c5f20826))
+
+
+
+
+
 ## [2.0.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.0.7...v2.0.8) (2022-06-10)
 
 **Note:** Version bump only for package @osui/cascader
