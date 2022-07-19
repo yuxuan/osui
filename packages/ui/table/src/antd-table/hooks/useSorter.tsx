@@ -1,25 +1,25 @@
-import * as React from 'react';
-import classNames from 'classnames';
+// === MODIFIED_BY_OSUI ===
 import ArrowDownOutlined from '@ant-design/icons/ArrowDownOutlined';
 import ArrowUpOutlined from '@ant-design/icons/ArrowUpOutlined';
-// === MODIFIED_BY_OSUI ===
 import UpdownIcon from './UpdownIcon';
 // === END_MODIFIED_BY_OSUI ===
+import classNames from 'classnames';
 import KeyCode from 'rc-util/lib/KeyCode';
-import type {
-  TransformColumns,
-  ColumnsType,
-  Key,
-  ColumnType,
-  SortOrder,
-  CompareFn,
-  ColumnTitleProps,
-  SorterResult,
-  ColumnGroupType,
-  TableLocale,
-} from '../interface';
+import * as React from 'react';
 import type { TooltipProps } from 'antd/es/tooltip';
 import Tooltip from 'antd/es/tooltip';
+import type {
+  ColumnGroupType,
+  ColumnsType,
+  ColumnTitleProps,
+  ColumnType,
+  CompareFn,
+  Key,
+  SorterResult,
+  SortOrder,
+  TableLocale,
+  TransformColumns,
+} from '../interface';
 import { getColumnKey, getColumnPos, renderColumnTitle } from '../util';
 
 const ASCEND = 'ascend';

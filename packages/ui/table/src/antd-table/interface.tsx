@@ -4,13 +4,13 @@ import type {
   RenderedCell as RcRenderedCell,
   FixedType,
 } from 'rc-table/lib/interface';
-import { GetRowKey, ExpandableConfig } from 'rc-table/lib/interface';
+import { ExpandableConfig, GetRowKey } from 'rc-table/lib/interface';
 import type { TooltipProps } from 'antd/es/tooltip';
 import type { CheckboxProps } from 'antd/es/checkbox';
 import type { PaginationProps } from 'antd/es/pagination';
 import type { Breakpoint } from 'antd/es/_util/responsiveObserve';
-import type { INTERNAL_SELECTION_ITEM } from './hooks/useSelection';
 import { tuple } from 'antd/es/_util/type';
+import type { INTERNAL_SELECTION_ITEM } from './hooks/useSelection';
 // import { TableAction } from './Table';
 
 export { GetRowKey, ExpandableConfig };

@@ -46,7 +46,7 @@
         "@types/jest": "^26.0.24",
         "@types/react-dom": "^16.9.8",
         "@types/react-test-renderer": "^17.0.1",
-        "antd": "^4.18.0",
+        "antd": "^4.21.3",
         "babel-loader": "^8.1.0",
         "babel-merge": "^3.0.0",
         "cpy-cli": "^3.1.1",
@@ -67,7 +67,7 @@
     },
     "peerDependencies": {
         "@osui/icons": "^1.1.1",
-        "antd": ">=4.4.0 <=4.18.4",
+        "antd": ">=4.21.3",
         "react": ">=16.9.0",
         "react-dom": ">=16.9.0"
     },

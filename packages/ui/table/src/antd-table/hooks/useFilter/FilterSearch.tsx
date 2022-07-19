@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { IconSearchOutlined } from '@osui/icons-icloud';
 import Input from 'antd/es/input';
-import type { TableLocale, FilterSearchType } from '../../interface';
+import type { FilterSearchType, TableLocale } from '../../interface';
 
 interface FilterSearchProps {
   value: string;

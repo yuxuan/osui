@@ -18,6 +18,9 @@ const iCloudConfigs: ConfigProviderProps = {
             case 'Cascader':
             case 'Mentions':
                 return <div style={{display: 'flex', justifyContent: 'center'}}>未查到任何结果</div>;
+            case 'Table':
+            case 'List':
+                return (<Empty />);
             default:
                 return <Empty />;
         }

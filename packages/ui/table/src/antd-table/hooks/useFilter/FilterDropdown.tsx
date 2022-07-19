@@ -1,32 +1,33 @@
-import * as React from 'react';
 import classNames from 'classnames';
-import isEqual from 'lodash/isEqual';
-import { IconFilterOutlined } from '@osui/icons-icloud';
+import isEqual from 'lodash/isEqual'
+import { IconFilterOutlined } from '@osui/icons-icloud';;
+import type { FieldDataNode } from 'rc-tree';
+import * as React from 'react';
+import type { FilterState } from '.';
+import { flattenKeys } from '.';
 import Button from 'antd/es/button';
-import Menu from 'antd/es/menu';
-import type { MenuProps } from 'antd/es/menu';
-import Tree from 'antd/es/tree';
-import type { DataNode, EventDataNode } from 'antd/es/tree';
-import Checkbox from 'antd/es/checkbox';
 import type { CheckboxChangeEvent } from 'antd/es/checkbox';
-import Radio from 'antd/es/radio';
+import Checkbox from 'antd/es/checkbox';
+import { ConfigContext } from 'antd/es/config-provider/context';
 import Dropdown from 'antd/es/dropdown';
 import Empty from 'antd/es/empty';
+import type { MenuProps } from 'antd/es/menu';
+import Menu from 'antd/es/menu';
+import { OverrideProvider } from 'antd/es/menu/OverrideContext';
+import Radio from 'antd/es/radio';
+import type { EventDataNode } from 'antd/es/tree';
+import Tree from 'antd/es/tree';
+import useSyncState from 'antd/es/_util/hooks/useSyncState';
 import type {
-  ColumnType,
   ColumnFilterItem,
+  ColumnType,
+  FilterSearchType,
+  GetPopupContainer,
   Key,
   TableLocale,
-  GetPopupContainer,
-  FilterSearchType,
 } from '../../interface';
-import FilterDropdownMenuWrapper from './FilterWrapper';
 import FilterSearch from './FilterSearch';
-import type { FilterState } from '.';
-import type { FieldDataNode } from 'rc-tree';
-import { flattenKeys } from '.';
-import useSyncState from 'antd/es/_util/hooks/useSyncState';
-import { ConfigContext } from 'antd/es/config-provider/context';
+import FilterDropdownMenuWrapper from './FilterWrapper';
 
 type FilterTreeDataNode = FieldDataNode<{ title: React.ReactNode; key: React.Key }>;
 
@@ -116,9 +117,9 @@ export interface FilterDropdownProps<RecordType> {
   locale: TableLocale;
   getPopupContainer?: GetPopupContainer;
   filterResetToDefaultFilteredValue?: boolean;
-   // === MODIFIED_BY_OSUI ===
+  // === MODIFIED_BY_OSUI ===
   dropdownTrigger?: ('click' | 'hover')[];
-   // === END_MODIFIED_BY_OSUI ===
+  // === END_MODIFIED_BY_OSUI ===
 }
 
 function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
@@ -136,9 +137,9 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
     locale,
     children,
     getPopupContainer,
-   // === MODIFIED_BY_OSUI ===
+    // === MODIFIED_BY_OSUI ===
     dropdownTrigger = ['click'],
-   // === END_MODIFIED_BY_OSUI ===
+    // === END_MODIFIED_BY_OSUI ===
   } = props;
 
   const {
@@ -171,7 +172,6 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
 
   const onCheck = (
     keys: Key[],
-    // @ts-expect-error
     { node, checked }: { node: EventDataNode<FilterTreeDataNode>; checked: boolean },
   ) => {
     if (!filterMultiple) {
@@ -190,21 +190,9 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
 
   // ====================== Open Keys ======================
   const [openKeys, setOpenKeys] = React.useState<string[]>([]);
-  const openRef = React.useRef<number>();
   const onOpenChange = (keys: string[]) => {
-    openRef.current = window.setTimeout(() => {
-      setOpenKeys(keys);
-    });
+    setOpenKeys(keys);
   };
-  const onMenuClick = () => {
-    window.clearTimeout(openRef.current);
-  };
-  React.useEffect(
-    () => () => {
-      window.clearTimeout(openRef.current);
-    },
-    [],
-  );
 
   // search in tree mode column filter
   const [searchValue, setSearchValue] = React.useState('');
@@ -317,6 +305,7 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
     });
 
   let dropdownContent: React.ReactNode;
+
   if (typeof column.filterDropdown === 'function') {
     dropdownContent = column.filterDropdown({
       prefixCls: `${dropdownPrefixCls}-custom`,
@@ -371,7 +360,6 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
                   {locale.filterCheckall}
                 </Checkbox>
               ) : null}
-              {/* @ts-expect-error */}
               <Tree<FilterTreeDataNode>
                 checkable
                 selectable={false}
@@ -410,7 +398,6 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
             multiple={filterMultiple}
             prefixCls={`${dropdownPrefixCls}-menu`}
             className={dropdownMenuClass}
-            onClick={onMenuClick}
             onSelect={onSelectKeys}
             onDeselect={onSelectKeys}
             selectedKeys={selectedKeys}
@@ -454,6 +441,11 @@ function FilterDropdown<RecordType>(props: FilterDropdownProps<RecordType>) {
         </div>
       </>
     );
+  }
+
+  // We should not block customize Menu with additional props
+  if (column.filterDropdown) {
+    dropdownContent = <OverrideProvider selectable={undefined}>{dropdownContent}</OverrideProvider>;
   }
 
   const menu = (

@@ -1,33 +1,30 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import omit from 'rc-util/lib/omit';
 import RcTable, { Summary } from 'rc-table';
+import { convertChildrenToColumns } from 'rc-table/lib/hooks/useColumns';
 import type { TableProps as RcTableProps } from 'rc-table/lib/Table';
 import { INTERNAL_HOOKS } from 'rc-table/lib/Table';
-import { convertChildrenToColumns } from 'rc-table/lib/hooks/useColumns';
+import omit from 'rc-util/lib/omit';
+import { ConfigContext } from 'antd/es/config-provider/context';
+import defaultRenderEmpty from 'antd/es/config-provider/defaultRenderEmpty';
+import type { SizeType } from 'antd/es/config-provider/SizeContext';
+import SizeContext from 'antd/es/config-provider/SizeContext';
+import useBreakpoint from 'antd/es/grid/hooks/useBreakpoint';
+import defaultLocale from 'antd/es/locale/en_US';
 import type { SpinProps } from 'antd/es/spin';
-import Spin from '@osui/spin';
+import Spin from '@osui/spin';;
 import Pagination from '@osui/pagination';
 import type { TooltipProps } from 'antd/es/tooltip';
-import { ConfigContext } from 'antd/es/config-provider/context';
-import usePagination, { DEFAULT_PAGE_SIZE, getPaginationParam } from './hooks/usePagination';
-import useLazyKVMap from './hooks/useLazyKVMap';
 import type { Breakpoint } from 'antd/es/_util/responsiveObserve';
-import type {
-  TableRowSelection,
-  GetRowKey,
-  ColumnType,
-  TableCurrentDataSource,
-  SorterResult,
-  GetPopupContainer,
-  ExpandableConfig,
-  ExpandType,
-  SortOrder,
-  TableLocale,
-  TableAction,
-  FilterValue,
-} from './interface';
-import { ColumnsType, TablePaginationConfig } from './interface';
+import scrollTo from 'antd/es/_util/scrollTo';
+import warning from 'antd/es/_util/warning';
+import Column from './Column';
+import ColumnGroup from './ColumnGroup';
+import renderExpandIcon from './ExpandIcon';
+import type { FilterState } from './hooks/useFilter';
+import useFilter, { getFilterData } from './hooks/useFilter';
+import useLazyKVMap from './hooks/useLazyKVMap';
+import usePagination, { DEFAULT_PAGE_SIZE, getPaginationParam } from './hooks/usePagination';
 import useSelection, {
   SELECTION_ALL,
   SELECTION_COLUMN,
@@ -36,18 +33,22 @@ import useSelection, {
 } from './hooks/useSelection';
 import type { SortState } from './hooks/useSorter';
 import useSorter, { getSortData } from './hooks/useSorter';
-import type { FilterState } from './hooks/useFilter';
-import useFilter, { getFilterData } from './hooks/useFilter';
 import useTitleColumns from './hooks/useTitleColumns';
-import renderExpandIcon from './ExpandIcon';
-import scrollTo from 'antd/es/_util/scrollTo';
-import defaultLocale from 'antd/es/locale/en_US';
-import type { SizeType } from 'antd/es/config-provider/SizeContext';
-import SizeContext from 'antd/es/config-provider/SizeContext';
-import Column from './Column';
-import ColumnGroup from './ColumnGroup';
-import warning from 'antd/es/_util/devWarning';
-import useBreakpoint from 'antd/es/grid/hooks/useBreakpoint';
+import type {
+  ColumnType,
+  ExpandableConfig,
+  ExpandType,
+  FilterValue,
+  GetPopupContainer,
+  GetRowKey,
+  SorterResult,
+  SortOrder,
+  TableAction,
+  TableCurrentDataSource,
+  TableLocale,
+  TableRowSelection,
+} from './interface';
+import { ColumnsType, TablePaginationConfig } from './interface';
 
 export { ColumnsType, TablePaginationConfig };
 
@@ -109,7 +110,7 @@ export interface TableProps<RecordType>
 
 function InternalTable<RecordType extends object = any>(
   props: TableProps<RecordType>,
-  ref: React.ForwardedRef<HTMLDivElement>,
+  ref: React.MutableRefObject<HTMLDivElement>,
 ) {
   const {
         dropdownPrefixCls: customizeDropdownPrefixCls,
@@ -526,7 +527,7 @@ function InternalTable<RecordType extends object = any>(
           data={pageData}
           rowKey={getRowKey}
           rowClassName={internalRowClassName}
-          emptyText={(locale && locale.emptyText) || renderEmpty('Table')}
+          emptyText={(locale && locale.emptyText) || (renderEmpty || defaultRenderEmpty)('Table')}
           // Internal
           internalHooks={INTERNAL_HOOKS}
           internalRefs={internalRefs as any}

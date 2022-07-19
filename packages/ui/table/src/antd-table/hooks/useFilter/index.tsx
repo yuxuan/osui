@@ -1,18 +1,18 @@
 import * as React from 'react';
-import devWarning from 'antd/es/_util/devWarning';
+import warning from 'antd/es/_util/warning';
 import type {
-  TransformColumns,
+  ColumnFilterItem,
   ColumnsType,
-  ColumnType,
   ColumnTitleProps,
+  ColumnType,
+  FilterKey,
+  FilterValue,
+  GetPopupContainer,
   Key,
   TableLocale,
-  FilterValue,
-  FilterKey,
-  GetPopupContainer,
-  ColumnFilterItem,
+  TransformColumns,
 } from '../../interface';
-import { getColumnPos, renderColumnTitle, getColumnKey } from '../../util';
+import { getColumnKey, getColumnPos, renderColumnTitle } from '../../util';
 import FilterDropdown from './FilterDropdown';
 
 export interface FilterState<RecordType> {
@@ -241,7 +241,7 @@ function useFilter<RecordType>({
       return filterStates;
     }
 
-    devWarning(
+    warning(
       filteredKeysIsAllControlled,
       'Table',
       'Columns should all contain `filteredValue` or not contain `filteredValue`.',

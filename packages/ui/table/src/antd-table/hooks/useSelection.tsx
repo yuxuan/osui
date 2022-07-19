@@ -1,31 +1,31 @@
-import * as React from 'react';
-import { useState, useCallback, useMemo } from 'react';
 import DownOutlined from '@ant-design/icons/DownOutlined';
-import { convertDataToEntities } from 'rc-tree/lib/utils/treeUtil';
-import { conductCheck } from 'rc-tree/lib/utils/conductUtil';
-import { arrAdd, arrDel } from 'rc-tree/lib/util';
-import type { DataNode, GetCheckDisabled } from 'rc-tree/lib/interface';
 import { INTERNAL_COL_DEFINE } from 'rc-table';
 import type { FixedType } from 'rc-table/lib/interface';
+import type { DataNode, GetCheckDisabled } from 'rc-tree/lib/interface';
+import { arrAdd, arrDel } from 'rc-tree/lib/util';
+import { conductCheck } from 'rc-tree/lib/utils/conductUtil';
+import { convertDataToEntities } from 'rc-tree/lib/utils/treeUtil';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
+import * as React from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import type { CheckboxProps } from 'antd/es/checkbox';
 import Checkbox from 'antd/es/checkbox';
 import Dropdown from 'antd/es/dropdown';
 import Menu from 'antd/es/menu';
 import Radio from 'antd/es/radio';
-import devWarning from 'antd/es/_util/devWarning';
+import warning from 'antd/es/_util/warning';
 import type {
-  TableRowSelection,
-  Key,
   ColumnsType,
   ColumnType,
-  GetRowKey,
-  TableLocale,
-  SelectionItem,
-  TransformColumns,
   ExpandType,
   GetPopupContainer,
+  GetRowKey,
+  Key,
   RowSelectMethod,
+  SelectionItem,
+  TableLocale,
+  TableRowSelection,
+  TransformColumns,
 } from '../interface';
 
 // TODO: warning if use ajax!!!
@@ -172,16 +172,11 @@ export default function useSelection<RecordType>(
       const checkboxProps = (getCheckboxProps ? getCheckboxProps(record) : null) || {};
       map.set(key, checkboxProps);
 
-      if (
-        process.env.NODE_ENV !== 'production' &&
-        ('checked' in checkboxProps || 'defaultChecked' in checkboxProps)
-      ) {
-        devWarning(
-          false,
-          'Table',
-          'Do not set `checked` or `defaultChecked` in `getCheckboxProps`. Please use `selectedRowKeys` instead.',
-        );
-      }
+      warning(
+        !('checked' in checkboxProps || 'defaultChecked' in checkboxProps),
+        'Table',
+        'Do not set `checked` or `defaultChecked` in `getCheckboxProps`. Please use `selectedRowKeys` instead.',
+      );
     });
     return map;
   }, [flattedData, getRowKey, getCheckboxProps]);
@@ -276,75 +271,83 @@ export default function useSelection<RecordType>(
     const selectionList: INTERNAL_SELECTION_ITEM[] =
       selections === true ? [SELECTION_ALL, SELECTION_INVERT, SELECTION_NONE] : selections;
 
-    return selectionList.map((selection: INTERNAL_SELECTION_ITEM) => {
-      if (selection === SELECTION_ALL) {
-        return {
-          key: 'all',
-          text: tableLocale.selectionAll,
-          onSelect() {
-            setSelectedKeys(
-              data
-                .map((record, index) => getRowKey(record, index))
-                .filter(key => {
-                  const checkProps = checkboxPropsMap.get(key);
-                  return !checkProps?.disabled || derivedSelectedKeySet.has(key);
-                }),
-              'all',
-            );
-          },
-        };
-      }
-      if (selection === SELECTION_INVERT) {
-        return {
-          key: 'invert',
-          text: tableLocale.selectInvert,
-          onSelect() {
-            const keySet = new Set(derivedSelectedKeySet);
-            pageData.forEach((record, index) => {
-              const key = getRowKey(record, index);
-              const checkProps = checkboxPropsMap.get(key);
-
-              if (!checkProps?.disabled) {
-                if (keySet.has(key)) {
-                  keySet.delete(key);
-                } else {
-                  keySet.add(key);
-                }
-              }
-            });
-
-            const keys = Array.from(keySet);
-            if (onSelectInvert) {
-              devWarning(
-                false,
-                'Table',
-                '`onSelectInvert` will be removed in future. Please use `onChange` instead.',
+    return selectionList
+      .map((selection: INTERNAL_SELECTION_ITEM) => {
+        if (selection === SELECTION_ALL) {
+          return {
+            key: 'all',
+            text: tableLocale.selectionAll,
+            onSelect() {
+              setSelectedKeys(
+                data
+                  .map((record, index) => getRowKey(record, index))
+                  .filter(key => {
+                    const checkProps = checkboxPropsMap.get(key);
+                    return !checkProps?.disabled || derivedSelectedKeySet.has(key);
+                  }),
+                'all',
               );
-              onSelectInvert(keys);
-            }
-
-            setSelectedKeys(keys, 'invert');
-          },
-        };
-      }
-      if (selection === SELECTION_NONE) {
-        return {
-          key: 'none',
-          text: tableLocale.selectNone,
-          onSelect() {
-            onSelectNone?.();
-            setSelectedKeys(
-              Array.from(derivedSelectedKeySet).filter(key => {
+            },
+          };
+        }
+        if (selection === SELECTION_INVERT) {
+          return {
+            key: 'invert',
+            text: tableLocale.selectInvert,
+            onSelect() {
+              const keySet = new Set(derivedSelectedKeySet);
+              pageData.forEach((record, index) => {
+                const key = getRowKey(record, index);
                 const checkProps = checkboxPropsMap.get(key);
-                return checkProps?.disabled;
-              }),
-              'none',
-            );
-          },
-        };
-      }
-      return selection as SelectionItem;
-    });
+
+                if (!checkProps?.disabled) {
+                  if (keySet.has(key)) {
+                    keySet.delete(key);
+                  } else {
+                    keySet.add(key);
+                  }
+                }
+              });
+
+              const keys = Array.from(keySet);
+              if (onSelectInvert) {
+                warning(
+                  false,
+                  'Table',
+                  '`onSelectInvert` will be removed in future. Please use `onChange` instead.',
+                );
+                onSelectInvert(keys);
+              }
+
+              setSelectedKeys(keys, 'invert');
+            },
+          };
+        }
+        if (selection === SELECTION_NONE) {
+          return {
+            key: 'none',
+            text: tableLocale.selectNone,
+            onSelect() {
+              onSelectNone?.();
+              setSelectedKeys(
+                Array.from(derivedSelectedKeySet).filter(key => {
+                  const checkProps = checkboxPropsMap.get(key);
+                  return checkProps?.disabled;
+                }),
+                'none',
+              );
+            },
+          };
+        }
+        return selection as SelectionItem;
+      })
+      .map(selection => ({
+        ...selection,
+        onSelect: (...rest) => {
+          selection.onSelect?.(...rest);
+          setLastSelectedKey(null);
+        },
+      }));
   }, [selections, derivedSelectedKeySet, pageData, getRowKey, onSelectInvert, setSelectedKeys]);
 
   // ======================= Columns ========================
@@ -352,13 +355,11 @@ export default function useSelection<RecordType>(
     (columns: ColumnsType<RecordType>): ColumnsType<RecordType> => {
       // >>>>>>>>>>> Skip if not exists `rowSelection`
       if (!rowSelection) {
-        if (process.env.NODE_ENV !== 'production') {
-          devWarning(
-            !columns.includes(SELECTION_COLUMN),
-            'Table',
-            '`rowSelection` is not config but `SELECTION_COLUMN` exists in the `columns`.',
-          );
-        }
+        warning(
+          !columns.includes(SELECTION_COLUMN),
+          'Table',
+          '`rowSelection` is not config but `SELECTION_COLUMN` exists in the `columns`.',
+        );
 
         return columns.filter(col => col !== SELECTION_COLUMN);
       }
@@ -400,6 +401,7 @@ export default function useSelection<RecordType>(
         );
 
         setSelectedKeys(keys, 'all');
+        setLastSelectedKey(null);
       };
 
       // ===================== Render =====================
@@ -507,7 +509,7 @@ export default function useSelection<RecordType>(
           let mergedIndeterminate: boolean;
           if (expandType === 'nest') {
             mergedIndeterminate = indeterminate;
-            devWarning(
+            warning(
               typeof checkboxProps?.indeterminate !== 'boolean',
               'Table',
               'set `indeterminate` using `rowSelection.getCheckboxProps` is not allowed with tree structured dataSource.',
@@ -612,7 +614,11 @@ export default function useSelection<RecordType>(
                     }
                   }
 
-                  setLastSelectedKey(key);
+                  if (checked) {
+                    setLastSelectedKey(null);
+                  } else {
+                    setLastSelectedKey(key);
+                  }
                 }}
               />
             ),
@@ -649,12 +655,13 @@ export default function useSelection<RecordType>(
 
       // Deduplicate selection column
       const selectionColumnIndex = cloneColumns.indexOf(SELECTION_COLUMN);
-      if (
-        process.env.NODE_ENV !== 'production' &&
-        cloneColumns.filter(col => col === SELECTION_COLUMN).length > 1
-      ) {
-        devWarning(false, 'Table', 'Multiple `SELECTION_COLUMN` exist in `columns`.');
-      }
+
+      warning(
+        cloneColumns.filter(col => col === SELECTION_COLUMN).length <= 1,
+        'Table',
+        'Multiple `SELECTION_COLUMN` exist in `columns`.',
+      );
+
       cloneColumns = cloneColumns.filter(
         (column, index) => column !== SELECTION_COLUMN || index === selectionColumnIndex,
       );
