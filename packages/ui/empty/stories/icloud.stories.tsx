@@ -1,55 +1,16 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Divider from '@osui/divider';
-import Table from '@osui/table';
-import BrandProvider from '@osui/brand-provider';
-import Select from '@osui/select';
-import Popover from '@osui/popover';
-import Modal from '@osui/modal';
-import Button from '@osui/button';
 import Empty from '../src';
+import {Base, EmptyInComponents} from './icloud-demo';
 
 export default {
     title: '数据展示/Empty 空状态',
     component: Empty,
 };
 
-export const Demo1 = () => {
-    const style = {
-        width: 240,
-    };
-    const [visible, setVisible] = React.useState(false);
-    return (
-        <>
-            <BrandProvider brand="icloud">
-                <h3>Select</h3>
-                <Select style={style} />
-                <p />
-                <h3>Table</h3>
-                <Table dataSource={[]} />
-                <p />
-                <h3>Popover</h3>
-                <Popover content={<Empty size="small" />} title="卡片标题">
-                    <span>Hover me</span>
-                </Popover>
-                <p />
-                <h3>Modal</h3>
-                <Button type="primary" onClick={() => setVisible(true)}>
-                    Open Modal
-                </Button>
-                <Modal
-                    title="上传数据"
-                    visible={visible}
-                    onCancel={() => setVisible(false)}
-                    onOk={() => setVisible(false)}
-                >
-                    <Empty />
-                </Modal>
-            </BrandProvider>
-        </>
-    );
-};
-
+export const BaseDemo = Base;
+export const EmptyInComponentsDemo = EmptyInComponents;
 export const Demo2 = () => {
     return (
         <Empty type="error" description="404 Not Found" size="large" />

@@ -16,9 +16,8 @@ const iCloudConfigs: ConfigProviderProps = {
             case 'Select':
             case 'TreeSelect':
             case 'Cascader':
-            case 'Transfer':
             case 'Mentions':
-                return <Empty size="small" />;
+                return <div style={{display: 'flex', justifyContent: 'center'}}>未查到任何结果</div>;
             default:
                 return <Empty />;
         }
