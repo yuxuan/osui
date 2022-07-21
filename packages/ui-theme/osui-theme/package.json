@@ -1,6 +1,6 @@
 {
   "name": "@osui/theme",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "",
   "main": "dist/theme/index.js",
   "module": "dist/theme/index.js",
@@ -26,7 +26,6 @@
     "@reskript/config-babel": "^0.9.0",
     "@reskript/config-lint": "^0.12.3",
     "@reskript/config-webpack": "^0.11.2",
-
     "@types/react-dom": "^17.0.2",
     "antd": "^4.21.0",
     "cpy-cli": "^3.1.1",
@@ -54,6 +53,6 @@
   },
   "gitHead": "904178b6c0bb86963017122daa529580decb66e8",
   "dependencies": {
-    "@osui/icons": "^2.1.0"
+    "@osui/icons": "^2.1.1"
   }
 }

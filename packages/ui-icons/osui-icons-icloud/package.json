@@ -1,6 +1,6 @@
 {
   "name": "@osui/icons-icloud",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "OSUI icons icloud-theme",
   "author": {
     "name": "zhanglili01,huoyuxuan,lisiqi06,guyiling"
@@ -23,6 +23,7 @@
     "@rollup/plugin-alias": "^3.1.1",
     "@rollup/plugin-json": "^4.1.0",
     "babel-plugin-react-require": "^3.0.0",
+    "eslint": "^8.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rollup": "^1.12.3",
@@ -32,7 +33,6 @@
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-string": "^3.0.0",
     "styled-components": "~5.3.5",
-    "eslint": "^8.0.0",
     "stylelint": "^14.0.0"
   },
   "files": [
