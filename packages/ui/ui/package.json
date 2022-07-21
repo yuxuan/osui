@@ -27,12 +27,12 @@
     ],
     "devDependencies": {
         "@babel/cli": "^7.10.5",
-        "@reskript/cli": "^0.9.0",
-        "@reskript/cli-lint": "^0.9.9",
-        "@reskript/config-babel": "^0.9.0",
-        "@reskript/config-lint": "^0.12.3",
-        "@reskript/config-webpack": "^0.11.2",
-        "@types/jest": "^26.0.24",
+        "@reskript/cli": "^3.0.0",
+        "@reskript/cli-lint": "^3.0.0",
+        "@reskript/config-babel": "^3.0.0",
+        "@reskript/config-lint": "^3.0.0",
+        "@reskript/config-webpack": "^3.0.0",
+        "@types/jest": "^27.0.0",
         "@types/react-test-renderer": "^17.0.1",
         "cpy-cli": "^3.1.1",
         "jest": "^27.0.6",
@@ -40,12 +40,15 @@
         "resolve": "^1.20.0",
         "ts-jest": "^27.0.3",
         "typescript": "^4.4.3",
-        "webpack": "^5.52.1"
+        "webpack": "^5.52.1",
+        "styled-components": "~5.3.5",
+        "eslint": "^8.0.0",
+        "stylelint": "^14.0.0"
     },
     "peerDependencies": {
         "antd": ">=4.21.3",
-        "react": ">=16.9.0",
-        "react-dom": ">=16.9.0"
+        "react": ">=17.0.0",
+        "react-dom": ">=17.0.0"
     },
     "repository": {
         "type": "git",
@@ -134,7 +137,7 @@
         "@osui/typography": "^2.1.0",
         "@osui/upload": "^2.1.0",
         "@osui/version": "^2.1.0",
-        "classnames": "^2.2.6",
+        "classnames": "^2.3.1",
         "github-markdown-css": "^4.0.0",
         "lodash.partial": "^4.2.1",
         "remark": "^12.0.1",
