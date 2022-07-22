@@ -304,7 +304,7 @@ export default {
     '--input-warning-focus-background-color': 'var(--theme-component-bg)',
     '--label-color': 'var(--heading-color)',
     '--label-required-color': 'var(--highlight-color)',
-    '--layout-body-background': '#f0f2f5',
+    '--layout-body-background': 'var(--theme-body-bg)',
     '--layout-footer-background': 'var(--layout-body-background)',
     '--layout-header-background': '#001529',
     '--layout-header-color': 'var(--text-color)',
