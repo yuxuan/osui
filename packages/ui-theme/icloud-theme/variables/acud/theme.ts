@@ -3,7 +3,7 @@ export default {
     '--theme-font-family': '-apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Arial", "PingFangSC-Regular", "PingFangSC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
     '--theme-bg-color-base': 'var(--color-gray-4)',
     '--theme-bg-color-light': 'var(--color-brand-1)',
-    '--theme-body-bg': 'var(--color-gray-1)',
+    '--theme-body-bg': 'var(--color-gray-2)',
     '--theme-border-color-base': 'var(--color-gray-4)',
     '--theme-border-color-disabled': 'var(--color-gray-4)',
     '--theme-border-color-inverse': '#fff',

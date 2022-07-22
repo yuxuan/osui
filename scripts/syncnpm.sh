@@ -75,3 +75,4 @@ open https://npmmirror.com/sync/@osui/upload
 open https://npmmirror.com/sync/@osui/version
 open https://npmmirror.com/sync/@osui/ui
 open https://npmmirror.com/sync/@osui/icloud-theme
+open https://npmmirror.com/sync/@osui/icons-icloud
