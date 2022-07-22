@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.3](https://gitee.com/gitee-fe/osui/compare/v2.1.2...v2.1.3) (2022-07-22)
+
+
+### Bug Fixes
+
+* theme调整 ([58f6f1d](https://gitee.com/gitee-fe/osui/commits/58f6f1d9d51266f567a5e4760067f6f40ed5b0a4))
+
+
+
+
+
 ## [2.1.2](https://gitee.com/gitee-fe/osui/compare/v2.1.1...v2.1.2) (2022-07-22)
 
 
