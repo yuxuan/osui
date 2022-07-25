@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.4](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.1.3...v2.1.4) (2022-07-25)
+
+
+### Bug Fixes
+
+* form label调整 ([ee6e9d2](https://gitee.com/gitee-fe/osui/tree/master/commits/ee6e9d2fa3079715fb751c126630a8597d046fe8))
+
+
+
+
+
 ## [2.1.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.1.0...v2.1.1) (2022-07-21)
 
 **Note:** Version bump only for package @osui/form
