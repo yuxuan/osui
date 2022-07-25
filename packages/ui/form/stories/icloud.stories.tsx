@@ -13,7 +13,7 @@ export default {
 };
 
 export const Demo = () => {
-    Form.useLabelLayout('basic', 0);
+    Form.useLabelLayout('basic');
     const layout = {
         labelCol: {
             span: 4,
@@ -58,7 +58,7 @@ export const Demo = () => {
                     <Form.Item
                         label="用户名"
                         name="username"
-                        tooltip="helphelp"
+                        tooltip="helphelphelp"
                         rules={[
                             {
                                 required: true,

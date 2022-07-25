@@ -87,6 +87,31 @@
         margin-left: 8px;
         content: ' ';
     }
+
+    // tooltip
+    .@{ant-prefix}-form-item-label > label .@{ant-prefix}-form-item-tooltip {
+        position: absolute;
+        right: -8px;
+    }
+
+    // 水平表单，form-control前面空16px
+    &.@{ant-prefix}-form-horizontal .@{ant-prefix}-form-item-control {
+        margin-left: 16px;
+    }
+
+    .@{ant-prefix}-form-item-label > label {
+        &::after {
+            // 因为冒号我们自己实现了，margin会占位影响计算
+            margin: 0;
+        }
+
+        // 红星在顶部
+        &.multiple-line {
+            &::before {
+                align-self: flex-start;
+            }
+        }
+    }
 }
 
 @keyframes osui-icon-spin {
