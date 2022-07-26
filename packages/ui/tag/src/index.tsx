@@ -51,7 +51,7 @@ const Tag = React.forwardRef<HTMLSpanElement, TagProps>((props, ref) => {
         props.className
     );
 
-    return <AntdTag ref={ref} {...restProps} closeIcon={patchedIcon} className={classnames} />;
+    return <AntdTag ref={ref} {...restProps} color={color} closeIcon={patchedIcon} className={classnames} />;
 }) as TagType;
 
 export type CheckableTagProps = AntdCheckableTagProps;

@@ -35,6 +35,8 @@ export const Demo = () => {
             <Tag color="green">标签</Tag>
             <Tag color="yellow">标签</Tag>
             <Tag color="red">标签</Tag>
+            <Tag color="#108ee9">#108ee9</Tag>
+            <Tag color="#87d068">#87d068</Tag>
             <br />
             <br />
             <Tag color="blue" solid>标签</Tag>
