@@ -1,6 +1,6 @@
 {
     "name": "@osui/select",
-    "version": "2.1.1",
+    "version": "2.1.7",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -77,7 +77,7 @@
     "dependencies": {
         "@huse/derived-state": "^1.1.1",
         "@osui/popover": "^2.1.1",
-        "@osui/tag": "^2.1.1",
+        "@osui/tag": "^2.1.7",
         "classnames": "^2.3.1",
         "hoist-non-react-statics": "^3.3.2"
     },
