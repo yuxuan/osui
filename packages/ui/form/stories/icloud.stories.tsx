@@ -1,11 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import Input from '@osui/input';
-import Button from '@osui/button';
-import Radio from '@osui/radio';
-import InputNumber from '@osui/input-number';
-import BrandProvider from '@osui/brand-provider';
-import Divider from '@osui/divider';
+import {Switch, Radio, Button, Input, InputNumber, BrandProvider, Divider} from '@osui/ui';
 import Form from '../src';
 
 export default {
@@ -229,7 +224,7 @@ export const BasicDemo = () => {
 };
 
 export const ValidateMessageDemo = () => {
-    Form.useLabelLayout('basic', 0);
+    Form.useLabelLayout('basic');
 
     const formItemLayout = {
         labelCol: {
@@ -365,6 +360,41 @@ export const TestCase = () => {
                         ]}
                     >
                         <Input.Password />
+                    </Form.Item>
+                    <Form.Item
+                        label="密码"
+                        name="password"
+                        rules={[
+                            {
+                                required: true,
+                                message: '请输入密码',
+                            },
+                        ]}
+                    >
+                        <Form.Item
+                            wrapperCol={{pull: 2}}
+                            name="password"
+                            rules={[
+                                {
+                                    required: true,
+                                    message: '请输入密码',
+                                },
+                            ]}
+                        >
+                            <Switch />
+                        </Form.Item>
+                        <Form.Item
+                            wrapperCol={{pull: 2}}
+                            name="password"
+                            rules={[
+                                {
+                                    required: true,
+                                    message: '请输入密码',
+                                },
+                            ]}
+                        >
+                            <Switch />
+                        </Form.Item>
                     </Form.Item>
                     <Form.Item {...tailLayout}>
                         <Button type="primary" htmlType="submit">

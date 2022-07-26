@@ -95,7 +95,7 @@
     }
 
     // 水平表单，form-control前面空16px
-    &.@{ant-prefix}-form-horizontal .@{ant-prefix}-form-item-control {
+    &.@{ant-prefix}-form-horizontal > .@{ant-prefix}-row > .@{ant-prefix}-form-item-control {
         margin-left: 16px;
     }
 
@@ -109,6 +109,15 @@
         &.multiple-line {
             &::before {
                 align-self: flex-start;
+            }
+        }
+
+        .@{ant-prefix}-form-item-tooltip {
+            color: var(--color-gray-7);
+            cursor: default;
+
+            &:hover {
+                color: var(--theme-primary-color-hover);
             }
         }
     }
