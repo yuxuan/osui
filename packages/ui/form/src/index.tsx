@@ -61,7 +61,7 @@ function InternalFormItem<Values = any>(props: FormItemProps<Values> & {
         }
     );
 
-    const innerLabel = label && (colon ? label + '：' : label);
+    const innerLabel = label && (colon ? <>{label}：</> : label);
 
     return (
         <AntdForm.Item

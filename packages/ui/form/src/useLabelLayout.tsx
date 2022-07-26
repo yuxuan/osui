@@ -46,6 +46,12 @@ export default (formName: string, maxWidth: number = 104) => {
             if (!init && currentLabels.length === labelRef.current.length) {
                 return;
             }
+
+            // 如果没有最大宽度，不做调整
+            if (!maxWidth) {
+                return;
+            }
+
             // 异步处理计算数据
             setTimeout(
                 () => {
