@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.5](https://gitee.com/gitee-fe/osui/compare/v2.1.4...v2.1.5) (2022-07-26)
+
+
+### Bug Fixes
+
+* form label调整 ([b9bcb15](https://gitee.com/gitee-fe/osui/commits/b9bcb15b13517223a4e593df55d7c57b1c3fcf74))
+
+
+
+
+
 ## [2.1.4](https://gitee.com/gitee-fe/osui/compare/v2.1.3...v2.1.4) (2022-07-25)
 
 
