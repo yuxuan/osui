@@ -1,7 +1,7 @@
 {
     "name": "@osui/icloud-docs",
     "private": true,
-    "version": "2.1.7",
+    "version": "2.1.8",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -115,7 +115,7 @@
         "@osui/input-number": "^2.1.1",
         "@osui/joyride": "^2.1.1",
         "@osui/layout": "^2.1.1",
-        "@osui/list": "^2.1.1",
+        "@osui/list": "^2.1.8",
         "@osui/markdown": "^2.1.1",
         "@osui/mentions": "^2.1.1",
         "@osui/menu": "^2.1.1",
@@ -153,7 +153,7 @@
         "@osui/tree": "^2.1.1",
         "@osui/tree-select": "^2.1.1",
         "@osui/typography": "^2.1.1",
-        "@osui/ui": "^2.1.7",
+        "@osui/ui": "^2.1.8",
         "@osui/upload": "^2.1.1",
         "@osui/version": "^2.1.1",
         "classnames": "^2.3.1"
