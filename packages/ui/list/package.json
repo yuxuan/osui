@@ -85,5 +85,9 @@
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
+    },
+    "dependencies": {
+        "@osui/spin": "^2.1.0",
+        "hoist-non-react-statics": "^3.3.2"
     }
 }
