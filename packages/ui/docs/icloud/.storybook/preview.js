@@ -30,6 +30,6 @@ export const decorators = [
             },
             [isDarkMode]
         );
-        return <div style={{ padding: 30 }}><Story /></div>;
+        return <div style={{ padding: 30, 'background-color': 'white' }}><Story /></div>;
     }
 ];

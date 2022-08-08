@@ -93,7 +93,6 @@ module.exports = () => ({
             require.resolve('@emotion/babel-preset-css-prop'),
         ];
 
-
         return config;
     },
 });
