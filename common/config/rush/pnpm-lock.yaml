@@ -7,6 +7,8 @@ importers:
 
   ../../packages/ui-icons/icons-builder:
     specifiers:
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       classnames: ^2.3.1
       eslint: ^8.0.0
       esm: ^3.2.25
@@ -21,6 +23,8 @@ importers:
     dependencies:
       classnames: 2.3.1
     devDependencies:
+      '@osui/icons': 2.1.0
+      '@osui/icons-icloud': 2.1.0
       eslint: 8.20.0
       esm: 3.2.25
       lodash: 4.17.21
@@ -121,6 +125,7 @@ importers:
   ../../packages/ui-theme/icloud-theme:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
       '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
@@ -141,10 +146,10 @@ importers:
       stylelint: ^14.0.0
       typescript: ^4.4.3
       webpack: ^5.52.1
-    dependencies:
-      '@osui/icons-icloud': 2.1.0_react@17.0.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_ezo4wriceo6jyyjtpurlxqjpda
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -168,6 +173,8 @@ importers:
   ../../packages/ui/affix:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -209,6 +216,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -254,6 +263,8 @@ importers:
       '@babel/cli': ^7.10.5
       '@huse/boolean': ^1.1.2
       '@huse/timeout': ^1.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -304,6 +315,8 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -347,6 +360,8 @@ importers:
   ../../packages/ui/anchor:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -392,6 +407,8 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -435,8 +452,10 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/derived-state': ^1.1.1
-      '@osui/highlight-text': ^2.1.0
-      '@osui/select': ^2.1.0
+      '@osui/highlight-text': ^2.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
+      '@osui/select': ^2.1.7
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -479,12 +498,14 @@ importers:
       webpack: ^5.52.1
     dependencies:
       '@huse/derived-state': 1.1.1_react@17.0.2
-      '@osui/highlight-text': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
-      '@osui/select': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/highlight-text': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/select': 2.1.7_rcqlsp3iz4hco7gitmdu4l32dy
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -527,6 +548,8 @@ importers:
   ../../packages/ui/avatar:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -571,6 +594,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -615,6 +640,8 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@babel/core': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -660,6 +687,8 @@ importers:
     devDependencies:
       '@babel/cli': 7.18.9_@babel+core@7.18.9
       '@babel/core': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -703,6 +732,8 @@ importers:
   ../../packages/ui/badge:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -748,6 +779,8 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -790,7 +823,9 @@ importers:
   ../../packages/ui/brand-provider:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/empty': ^2.1.0
+      '@osui/empty': ^2.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -830,9 +865,11 @@ importers:
       typescript: ^4.4.3
       webpack: ^5.52.1
     dependencies:
-      '@osui/empty': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/empty': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -875,6 +912,8 @@ importers:
   ../../packages/ui/breadcrumb:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -918,6 +957,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -960,7 +1001,9 @@ importers:
   ../../packages/ui/button:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/tooltip': ^2.1.0
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
+      '@osui/tooltip': ^2.1.1
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1001,10 +1044,12 @@ importers:
       typescript: ^4.4.3
       webpack: ^5.52.1
     dependencies:
-      '@osui/tooltip': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/tooltip': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -1047,6 +1092,8 @@ importers:
   ../../packages/ui/calendar:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1091,6 +1138,8 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -1134,6 +1183,8 @@ importers:
   ../../packages/ui/card:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1179,6 +1230,8 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -1221,6 +1274,8 @@ importers:
   ../../packages/ui/carousel:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1261,6 +1316,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -1303,6 +1360,8 @@ importers:
   ../../packages/ui/cascader:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1348,6 +1407,8 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -1390,6 +1451,8 @@ importers:
   ../../packages/ui/checkbox:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1433,6 +1496,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -1475,6 +1540,8 @@ importers:
   ../../packages/ui/col:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1515,6 +1582,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -1557,7 +1626,9 @@ importers:
   ../../packages/ui/collapse:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^2.1.0
+      '@osui/brand-provider': ^2.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1603,7 +1674,9 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
-      '@osui/brand-provider': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/brand-provider': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -1647,6 +1720,8 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/boolean': ^1.1.2
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1693,6 +1768,8 @@ importers:
     devDependencies:
       '@babel/cli': 7.18.9
       '@huse/boolean': 1.1.2_react@17.0.2
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -1735,6 +1812,8 @@ importers:
   ../../packages/ui/config-provider:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1775,6 +1854,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -1817,6 +1898,8 @@ importers:
   ../../packages/ui/date-picker:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1862,6 +1945,8 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -1904,6 +1989,8 @@ importers:
   ../../packages/ui/descriptions:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1944,6 +2031,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -1986,6 +2075,8 @@ importers:
   ../../packages/ui/divider:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2026,6 +2117,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -2068,6 +2161,8 @@ importers:
   ../../packages/ui/drawer:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2111,6 +2206,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -2153,6 +2250,8 @@ importers:
   ../../packages/ui/dropdown:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2198,6 +2297,8 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -2240,6 +2341,8 @@ importers:
   ../../packages/ui/empty:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2283,6 +2386,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -2325,6 +2430,8 @@ importers:
   ../../packages/ui/flex-centered:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2365,6 +2472,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -2407,11 +2516,13 @@ importers:
   ../../packages/ui/form:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/button': ^2.1.0
-      '@osui/divider': ^2.1.0
-      '@osui/input': ^2.1.0
-      '@osui/input-number': ^2.1.0
-      '@osui/radio': ^2.1.0
+      '@osui/button': ^2.1.1
+      '@osui/divider': ^2.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
+      '@osui/input': ^2.1.1
+      '@osui/input-number': ^2.1.1
+      '@osui/radio': ^2.1.1
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2455,11 +2566,13 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
-      '@osui/button': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
-      '@osui/divider': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
-      '@osui/input': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
-      '@osui/input-number': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
-      '@osui/radio': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/button': 2.1.1_rcqlsp3iz4hco7gitmdu4l32dy
+      '@osui/divider': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
+      '@osui/input': 2.1.1_rcqlsp3iz4hco7gitmdu4l32dy
+      '@osui/input-number': 2.1.1_rcqlsp3iz4hco7gitmdu4l32dy
+      '@osui/radio': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -2502,6 +2615,8 @@ importers:
   ../../packages/ui/gap:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2542,6 +2657,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -2584,6 +2701,8 @@ importers:
   ../../packages/ui/grid:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2624,6 +2743,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -2667,6 +2788,8 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/input-value': ^1.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2711,6 +2834,8 @@ importers:
     devDependencies:
       '@babel/cli': 7.18.9
       '@huse/input-value': 1.1.1_react@17.0.2
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -2753,6 +2878,8 @@ importers:
   ../../packages/ui/image:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2793,6 +2920,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -2836,7 +2965,9 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/derived-state': ^1.1.1
-      '@osui/button': ^2.1.0
+      '@osui/button': ^2.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2880,12 +3011,14 @@ importers:
       webpack: ^5.52.1
     dependencies:
       '@huse/derived-state': 1.1.1_react@17.0.2
-      '@osui/button': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/button': 2.1.1_rcqlsp3iz4hco7gitmdu4l32dy
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
       rc-util: 5.23.0_sfoxds7t5ydpegc3knd667wn6m
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -2929,8 +3062,10 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/derived-state': ^1.1.1
-      '@osui/button': ^2.1.0
-      '@osui/input': ^2.1.0
+      '@osui/button': ^2.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
+      '@osui/input': ^2.1.1
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2972,11 +3107,13 @@ importers:
       webpack: ^5.52.1
     dependencies:
       '@huse/derived-state': 1.1.1_react@17.0.2
-      '@osui/button': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
-      '@osui/input': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/button': 2.1.1_rcqlsp3iz4hco7gitmdu4l32dy
+      '@osui/input': 2.1.1_rcqlsp3iz4hco7gitmdu4l32dy
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -3020,7 +3157,9 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/derived-state': ^1.1.1
-      '@osui/button': ^2.1.0
+      '@osui/button': ^2.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3064,12 +3203,14 @@ importers:
       webpack: ^5.52.1
     dependencies:
       '@huse/derived-state': 1.1.1_react@17.0.2
-      '@osui/button': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/button': 2.1.1_rcqlsp3iz4hco7gitmdu4l32dy
       classnames: 2.3.1
       lodash.merge: 4.6.2
       react-joyride: 2.5.0_oxfzelaz5ynxsop2v2nu2h2m64
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -3112,6 +3253,8 @@ importers:
   ../../packages/ui/layout:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3152,6 +3295,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -3194,6 +3339,9 @@ importers:
   ../../packages/ui/list:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
+      '@osui/spin': ^2.1.1
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3218,6 +3366,7 @@ importers:
       cpy-cli: ^3.1.1
       enzyme: ^3.11.0
       eslint: ^8.0.0
+      hoist-non-react-statics: ^3.3.2
       husky: ^4.2.5
       identity-obj-proxy: ^3.0.0
       jest: ^27.0.6
@@ -3232,8 +3381,13 @@ importers:
       ts-jest: ^27.0.3
       typescript: ^4.4.3
       webpack: ^5.52.1
+    dependencies:
+      '@osui/spin': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
+      hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.0_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -3276,6 +3430,8 @@ importers:
   ../../packages/ui/markdown:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3327,6 +3483,8 @@ importers:
       unist-util-visit: 2.0.3
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -3369,6 +3527,8 @@ importers:
   ../../packages/ui/mentions:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3409,6 +3569,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -3451,6 +3613,8 @@ importers:
   ../../packages/ui/menu:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3496,6 +3660,8 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -3539,7 +3705,9 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/timeout': ^1.1.1
-      '@osui/config-provider': ^2.1.0
+      '@osui/config-provider': ^2.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3583,11 +3751,13 @@ importers:
       webpack: ^5.52.1
     dependencies:
       '@huse/timeout': 1.1.1_react@17.0.2
-      '@osui/config-provider': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/config-provider': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
       classnames: 2.3.1
       lodash.partial: 4.2.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -3631,7 +3801,9 @@ importers:
   ../../packages/ui/modal:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/button': ^2.1.0
+      '@osui/button': ^2.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3672,10 +3844,12 @@ importers:
       typescript: ^4.4.3
       webpack: ^5.52.1
     dependencies:
-      '@osui/button': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/button': 2.1.1_rcqlsp3iz4hco7gitmdu4l32dy
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -3718,6 +3892,8 @@ importers:
   ../../packages/ui/notification:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3758,6 +3934,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -3800,6 +3978,7 @@ importers:
   ../../packages/ui/page-header:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
       '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
@@ -3841,10 +4020,11 @@ importers:
       typescript: ^4.4.3
       webpack: ^5.52.1
     dependencies:
-      '@osui/icons-icloud': 2.1.0_react@17.0.2
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -3887,7 +4067,9 @@ importers:
   ../../packages/ui/pagination:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/button': ^2.1.0
+      '@osui/button': ^2.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3928,10 +4110,12 @@ importers:
       typescript: ^4.4.3
       webpack: ^5.52.1
     dependencies:
-      '@osui/button': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/button': 2.1.1_rcqlsp3iz4hco7gitmdu4l32dy
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -3974,6 +4158,8 @@ importers:
   ../../packages/ui/popconfirm:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4014,6 +4200,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -4057,6 +4245,7 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4097,10 +4286,11 @@ importers:
       typescript: ^4.4.3
       webpack: ^5.52.1
     dependencies:
-      '@osui/icons': 2.1.0_react@17.0.2
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -4143,6 +4333,8 @@ importers:
   ../../packages/ui/progress:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4186,6 +4378,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -4229,8 +4423,10 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/derived-state': ^1.1.1
-      '@osui/input': ^2.1.0
-      '@osui/select': ^2.1.0
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
+      '@osui/input': ^2.1.1
+      '@osui/select': ^2.1.7
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4274,13 +4470,15 @@ importers:
       webpack: ^5.52.1
     dependencies:
       '@huse/derived-state': 1.1.1_react@17.0.2
-      '@osui/input': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
-      '@osui/select': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/input': 2.1.1_rcqlsp3iz4hco7gitmdu4l32dy
+      '@osui/select': 2.1.7_rcqlsp3iz4hco7gitmdu4l32dy
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
       react-abstract-quick-edit: 0.0.7_react@17.0.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -4323,6 +4521,8 @@ importers:
   ../../packages/ui/radio:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4366,6 +4566,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -4408,6 +4610,8 @@ importers:
   ../../packages/ui/rate:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4453,6 +4657,8 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -4495,6 +4701,8 @@ importers:
   ../../packages/ui/result:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4535,6 +4743,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -4577,6 +4787,8 @@ importers:
   ../../packages/ui/row:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4617,6 +4829,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -4659,6 +4873,8 @@ importers:
   ../../packages/ui/segmented:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4699,6 +4915,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -4742,8 +4960,10 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/derived-state': ^1.1.1
-      '@osui/popover': ^2.1.0
-      '@osui/tag': ^2.1.0
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
+      '@osui/popover': ^2.1.1
+      '@osui/tag': ^2.1.7
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4787,12 +5007,14 @@ importers:
       webpack: ^5.52.1
     dependencies:
       '@huse/derived-state': 1.1.1_react@17.0.2
-      '@osui/popover': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
-      '@osui/tag': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/popover': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/tag': 2.1.7_rcqlsp3iz4hco7gitmdu4l32dy
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -4836,6 +5058,8 @@ importers:
   ../../packages/ui/skeleton:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4876,6 +5100,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -4918,6 +5144,8 @@ importers:
   ../../packages/ui/slider:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4961,6 +5189,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -5003,6 +5233,8 @@ importers:
   ../../packages/ui/space:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5046,6 +5278,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -5088,6 +5322,8 @@ importers:
   ../../packages/ui/spin:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5131,6 +5367,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -5173,6 +5411,8 @@ importers:
   ../../packages/ui/statistic:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5213,6 +5453,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -5255,6 +5497,8 @@ importers:
   ../../packages/ui/steps:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5297,6 +5541,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -5338,6 +5584,8 @@ importers:
   ../../packages/ui/switch:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5381,6 +5629,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -5423,9 +5673,11 @@ importers:
   ../../packages/ui/table:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/button': ^2.1.0
-      '@osui/pagination': ^2.1.0
-      '@osui/spin': ^2.1.0
+      '@osui/button': ^2.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
+      '@osui/pagination': ^2.1.1
+      '@osui/spin': ^2.1.1
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5471,9 +5723,9 @@ importers:
       typescript: ^4.4.3
       webpack: ^5.52.1
     dependencies:
-      '@osui/button': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
-      '@osui/pagination': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
-      '@osui/spin': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/button': 2.1.1_apb7gux4xvmhl2vfc3gtzbiz2a
+      '@osui/pagination': 2.1.1_apb7gux4xvmhl2vfc3gtzbiz2a
+      '@osui/spin': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
       lodash: 4.17.21
@@ -5482,6 +5734,8 @@ importers:
       rc-util: 5.23.0_sfoxds7t5ydpegc3knd667wn6m
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -5524,6 +5778,8 @@ importers:
   ../../packages/ui/tabs:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5569,6 +5825,8 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -5614,6 +5872,8 @@ importers:
       '@emotion/babel-preset-css-prop': ^11.2.0
       '@emotion/react': ^11.8.1
       '@emotion/styled': ^11.8.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5663,6 +5923,8 @@ importers:
       '@emotion/babel-preset-css-prop': 11.2.0
       '@emotion/react': 11.9.3_react@17.0.2
       '@emotion/styled': 11.9.3_6gbh3mu672biaufra4tf4noafe
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -5708,7 +5970,9 @@ importers:
   ../../packages/ui/text-overflow-tooltip:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/tooltip': ^2.1.0
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
+      '@osui/tooltip': ^2.1.1
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5748,9 +6012,11 @@ importers:
       typescript: ^4.4.3
       webpack: ^5.52.1
     dependencies:
-      '@osui/tooltip': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/tooltip': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -5793,8 +6059,10 @@ importers:
   ../../packages/ui/theme-provider:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/dropdown': ^2.1.0
-      '@osui/menu': ^2.1.0
+      '@osui/dropdown': ^2.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
+      '@osui/menu': ^2.1.1
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5836,12 +6104,14 @@ importers:
       typescript: ^4.4.3
       webpack: ^5.52.1
     dependencies:
-      '@osui/dropdown': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
-      '@osui/menu': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/dropdown': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/menu': 2.1.1_apb7gux4xvmhl2vfc3gtzbiz2a
       classname: 0.0.0
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -5884,6 +6154,8 @@ importers:
   ../../packages/ui/time-picker:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5929,6 +6201,8 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -5971,6 +6245,8 @@ importers:
   ../../packages/ui/timeline:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6014,6 +6290,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -6056,6 +6334,8 @@ importers:
   ../../packages/ui/tooltip:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6099,6 +6379,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -6141,6 +6423,8 @@ importers:
   ../../packages/ui/transfer:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6181,6 +6465,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -6223,6 +6509,8 @@ importers:
   ../../packages/ui/tree:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6266,6 +6554,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -6308,6 +6598,8 @@ importers:
   ../../packages/ui/tree-select:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6354,6 +6646,8 @@ importers:
       hoist-non-react-statics: 3.3.2
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -6397,6 +6691,8 @@ importers:
   ../../packages/ui/typography:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6440,6 +6736,8 @@ importers:
       classnames: 2.3.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -6482,81 +6780,83 @@ importers:
   ../../packages/ui/ui:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/affix': ^2.1.0
-      '@osui/alert': ^2.1.0
-      '@osui/anchor': ^2.1.0
-      '@osui/auto-complete': ^2.1.0
-      '@osui/avatar': ^2.1.0
-      '@osui/back-top': ^2.1.0
-      '@osui/badge': ^2.1.0
-      '@osui/brand-provider': ^2.1.0
-      '@osui/breadcrumb': ^2.1.0
-      '@osui/button': ^2.1.0
-      '@osui/calendar': ^2.1.0
-      '@osui/card': ^2.1.0
-      '@osui/carousel': ^2.1.0
-      '@osui/cascader': ^2.1.0
-      '@osui/checkbox': ^2.1.0
-      '@osui/col': ^2.1.0
-      '@osui/collapse': ^2.1.0
-      '@osui/comment': ^2.1.0
-      '@osui/config-provider': ^2.1.0
-      '@osui/date-picker': ^2.1.0
-      '@osui/descriptions': ^2.1.0
-      '@osui/divider': ^2.1.0
-      '@osui/drawer': ^2.1.0
-      '@osui/dropdown': ^2.1.0
-      '@osui/empty': ^2.1.0
-      '@osui/flex-centered': ^2.1.0
-      '@osui/form': ^2.1.0
-      '@osui/gap': ^2.1.0
-      '@osui/grid': ^2.1.0
-      '@osui/highlight-text': ^2.1.0
-      '@osui/image': ^2.1.0
-      '@osui/input': ^2.1.0
-      '@osui/input-number': ^2.1.0
-      '@osui/joyride': ^2.1.0
-      '@osui/layout': ^2.1.0
-      '@osui/list': ^2.1.0
-      '@osui/markdown': ^2.1.0
-      '@osui/mentions': ^2.1.0
-      '@osui/menu': ^2.1.0
-      '@osui/message': ^2.1.0
-      '@osui/modal': ^2.1.0
-      '@osui/notification': ^2.1.0
-      '@osui/page-header': ^2.1.0
-      '@osui/pagination': ^2.1.0
-      '@osui/popconfirm': ^2.1.0
-      '@osui/popover': ^2.1.0
-      '@osui/progress': ^2.1.0
-      '@osui/quick-edit': ^2.1.0
-      '@osui/radio': ^2.1.0
-      '@osui/rate': ^2.1.0
-      '@osui/result': ^2.1.0
-      '@osui/row': ^2.1.0
-      '@osui/segmented': ^2.1.0
-      '@osui/select': ^2.1.0
-      '@osui/skeleton': ^2.1.0
-      '@osui/slider': ^2.1.0
-      '@osui/space': ^2.1.0
-      '@osui/spin': ^2.1.0
-      '@osui/statistic': ^2.1.0
-      '@osui/steps': ^2.1.0
-      '@osui/switch': ^2.1.0
-      '@osui/table': ^2.1.0
-      '@osui/tabs': ^2.1.0
-      '@osui/tag': ^2.1.0
-      '@osui/text-overflow-tooltip': ^2.1.0
-      '@osui/theme-provider': ^2.1.0
-      '@osui/time-picker': ^2.1.0
-      '@osui/timeline': ^2.1.0
-      '@osui/tooltip': ^2.1.0
-      '@osui/transfer': ^2.1.0
-      '@osui/tree': ^2.1.0
-      '@osui/tree-select': ^2.1.0
-      '@osui/typography': ^2.1.0
-      '@osui/upload': ^2.1.0
-      '@osui/version': ^2.1.0
+      '@osui/affix': ^2.1.1
+      '@osui/alert': ^2.1.1
+      '@osui/anchor': ^2.1.1
+      '@osui/auto-complete': ^2.1.7
+      '@osui/avatar': ^2.1.1
+      '@osui/back-top': ^2.1.1
+      '@osui/badge': ^2.1.1
+      '@osui/brand-provider': ^2.1.1
+      '@osui/breadcrumb': ^2.1.1
+      '@osui/button': ^2.1.1
+      '@osui/calendar': ^2.1.1
+      '@osui/card': ^2.1.1
+      '@osui/carousel': ^2.1.1
+      '@osui/cascader': ^2.1.1
+      '@osui/checkbox': ^2.1.1
+      '@osui/col': ^2.1.1
+      '@osui/collapse': ^2.1.1
+      '@osui/comment': ^2.1.1
+      '@osui/config-provider': ^2.1.1
+      '@osui/date-picker': ^2.1.1
+      '@osui/descriptions': ^2.1.1
+      '@osui/divider': ^2.1.1
+      '@osui/drawer': ^2.1.1
+      '@osui/dropdown': ^2.1.1
+      '@osui/empty': ^2.1.1
+      '@osui/flex-centered': ^2.1.1
+      '@osui/form': ^2.1.6
+      '@osui/gap': ^2.1.1
+      '@osui/grid': ^2.1.1
+      '@osui/highlight-text': ^2.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
+      '@osui/image': ^2.1.1
+      '@osui/input': ^2.1.1
+      '@osui/input-number': ^2.1.1
+      '@osui/joyride': ^2.1.1
+      '@osui/layout': ^2.1.1
+      '@osui/list': ^2.1.8
+      '@osui/markdown': ^2.1.1
+      '@osui/mentions': ^2.1.1
+      '@osui/menu': ^2.1.1
+      '@osui/message': ^2.1.1
+      '@osui/modal': ^2.1.1
+      '@osui/notification': ^2.1.1
+      '@osui/page-header': ^2.1.1
+      '@osui/pagination': ^2.1.1
+      '@osui/popconfirm': ^2.1.1
+      '@osui/popover': ^2.1.1
+      '@osui/progress': ^2.1.1
+      '@osui/quick-edit': ^2.1.7
+      '@osui/radio': ^2.1.1
+      '@osui/rate': ^2.1.1
+      '@osui/result': ^2.1.1
+      '@osui/row': ^2.1.1
+      '@osui/segmented': ^2.1.1
+      '@osui/select': ^2.1.7
+      '@osui/skeleton': ^2.1.1
+      '@osui/slider': ^2.1.1
+      '@osui/space': ^2.1.1
+      '@osui/spin': ^2.1.1
+      '@osui/statistic': ^2.1.1
+      '@osui/steps': ^2.1.1
+      '@osui/switch': ^2.1.1
+      '@osui/table': ^2.1.1
+      '@osui/tabs': ^2.1.1
+      '@osui/tag': ^2.1.7
+      '@osui/text-overflow-tooltip': ^2.1.1
+      '@osui/theme-provider': ^2.1.1
+      '@osui/time-picker': ^2.1.1
+      '@osui/timeline': ^2.1.1
+      '@osui/tooltip': ^2.1.1
+      '@osui/transfer': ^2.1.1
+      '@osui/tree': ^2.1.1
+      '@osui/tree-select': ^2.1.1
+      '@osui/typography': ^2.1.1
+      '@osui/upload': ^2.1.1
+      '@osui/version': ^2.1.1
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6580,81 +6880,81 @@ importers:
       typescript: ^4.4.3
       webpack: ^5.52.1
     dependencies:
-      '@osui/affix': 2.1.0
-      '@osui/alert': 2.1.0
-      '@osui/anchor': 2.1.0
-      '@osui/auto-complete': 2.1.0_@osui+brand-provider@2.1.0
-      '@osui/avatar': 2.1.0
-      '@osui/back-top': 2.1.0
-      '@osui/badge': 2.1.0
-      '@osui/brand-provider': 2.1.0
-      '@osui/breadcrumb': 2.1.0
-      '@osui/button': 2.1.0
-      '@osui/calendar': 2.1.0
-      '@osui/card': 2.1.0
-      '@osui/carousel': 2.1.0
-      '@osui/cascader': 2.1.0
-      '@osui/checkbox': 2.1.0
-      '@osui/col': 2.1.0
-      '@osui/collapse': 2.1.0_@osui+brand-provider@2.1.0
-      '@osui/comment': 2.1.0
-      '@osui/config-provider': 2.1.0
-      '@osui/date-picker': 2.1.0
-      '@osui/descriptions': 2.1.0
-      '@osui/divider': 2.1.0
-      '@osui/drawer': 2.1.0
-      '@osui/dropdown': 2.1.0
-      '@osui/empty': 2.1.0
-      '@osui/flex-centered': 2.1.0
-      '@osui/form': 2.1.0
-      '@osui/gap': 2.1.0
-      '@osui/grid': 2.1.0
-      '@osui/highlight-text': 2.1.0
-      '@osui/image': 2.1.0
-      '@osui/input': 2.1.0_@osui+brand-provider@2.1.0
-      '@osui/input-number': 2.1.0_@osui+brand-provider@2.1.0
-      '@osui/joyride': 2.1.0
-      '@osui/layout': 2.1.0
-      '@osui/list': 2.1.0
-      '@osui/markdown': 2.1.0
-      '@osui/mentions': 2.1.0
-      '@osui/menu': 2.1.0
-      '@osui/message': 2.1.0
-      '@osui/modal': 2.1.0
-      '@osui/notification': 2.1.0
-      '@osui/page-header': 2.1.0
-      '@osui/pagination': 2.1.0_@osui+brand-provider@2.1.0
-      '@osui/popconfirm': 2.1.0
-      '@osui/popover': 2.1.0
-      '@osui/progress': 2.1.0_@osui+brand-provider@2.1.0
-      '@osui/quick-edit': 2.1.0_@osui+brand-provider@2.1.0
-      '@osui/radio': 2.1.0
-      '@osui/rate': 2.1.0
-      '@osui/result': 2.1.0
-      '@osui/row': 2.1.0
-      '@osui/segmented': 2.1.0
-      '@osui/select': 2.1.0_@osui+brand-provider@2.1.0
-      '@osui/skeleton': 2.1.0
-      '@osui/slider': 2.1.0_@osui+brand-provider@2.1.0
-      '@osui/space': 2.1.0
-      '@osui/spin': 2.1.0
-      '@osui/statistic': 2.1.0
-      '@osui/steps': 2.1.0
-      '@osui/switch': 2.1.0
-      '@osui/table': 2.1.0_@osui+brand-provider@2.1.0
-      '@osui/tabs': 2.1.0
-      '@osui/tag': 2.1.0
-      '@osui/text-overflow-tooltip': 2.1.0
-      '@osui/theme-provider': 2.1.0
-      '@osui/time-picker': 2.1.0
-      '@osui/timeline': 2.1.0
-      '@osui/tooltip': 2.1.0
-      '@osui/transfer': 2.1.0
-      '@osui/tree': 2.1.0
-      '@osui/tree-select': 2.1.0
-      '@osui/typography': 2.1.0
-      '@osui/upload': 2.1.0
-      '@osui/version': 2.1.0
+      '@osui/affix': 2.1.1
+      '@osui/alert': 2.1.1_@osui+icons@2.1.1
+      '@osui/anchor': 2.1.1
+      '@osui/auto-complete': 2.1.7_nsow3qylfo3fvubkm2sg77mlke
+      '@osui/avatar': 2.1.1_@osui+icons@2.1.1
+      '@osui/back-top': 2.1.1_@osui+icons@2.1.1
+      '@osui/badge': 2.1.1
+      '@osui/brand-provider': 2.1.1
+      '@osui/breadcrumb': 2.1.1
+      '@osui/button': 2.1.1_@osui+icons@2.1.1
+      '@osui/calendar': 2.1.1
+      '@osui/card': 2.1.1
+      '@osui/carousel': 2.1.1
+      '@osui/cascader': 2.1.1_@osui+icons@2.1.1
+      '@osui/checkbox': 2.1.1
+      '@osui/col': 2.1.1
+      '@osui/collapse': 2.1.1_nsow3qylfo3fvubkm2sg77mlke
+      '@osui/comment': 2.1.1
+      '@osui/config-provider': 2.1.1
+      '@osui/date-picker': 2.1.1
+      '@osui/descriptions': 2.1.1
+      '@osui/divider': 2.1.1
+      '@osui/drawer': 2.1.1_@osui+icons@2.1.1
+      '@osui/dropdown': 2.1.1
+      '@osui/empty': 2.1.1
+      '@osui/flex-centered': 2.1.1
+      '@osui/form': 2.1.6_@osui+brand-provider@2.1.1
+      '@osui/gap': 2.1.1
+      '@osui/grid': 2.1.1
+      '@osui/highlight-text': 2.1.1
+      '@osui/image': 2.1.1
+      '@osui/input': 2.1.1_nsow3qylfo3fvubkm2sg77mlke
+      '@osui/input-number': 2.1.1_nsow3qylfo3fvubkm2sg77mlke
+      '@osui/joyride': 2.1.1_@osui+icons@2.1.1
+      '@osui/layout': 2.1.1
+      '@osui/list': 2.1.8
+      '@osui/markdown': 2.1.1
+      '@osui/mentions': 2.1.1
+      '@osui/menu': 2.1.1_@osui+icons@2.1.1
+      '@osui/message': 2.1.1_@osui+icons@2.1.1
+      '@osui/modal': 2.1.1_@osui+icons@2.1.1
+      '@osui/notification': 2.1.1
+      '@osui/page-header': 2.1.1_@osui+icons@2.1.1
+      '@osui/pagination': 2.1.1_nsow3qylfo3fvubkm2sg77mlke
+      '@osui/popconfirm': 2.1.1
+      '@osui/popover': 2.1.1
+      '@osui/progress': 2.1.1_@osui+brand-provider@2.1.1
+      '@osui/quick-edit': 2.1.7_nsow3qylfo3fvubkm2sg77mlke
+      '@osui/radio': 2.1.1
+      '@osui/rate': 2.1.1
+      '@osui/result': 2.1.1
+      '@osui/row': 2.1.1
+      '@osui/segmented': 2.1.1
+      '@osui/select': 2.1.7_nsow3qylfo3fvubkm2sg77mlke
+      '@osui/skeleton': 2.1.1
+      '@osui/slider': 2.1.1_@osui+brand-provider@2.1.1
+      '@osui/space': 2.1.1
+      '@osui/spin': 2.1.1
+      '@osui/statistic': 2.1.1
+      '@osui/steps': 2.1.1
+      '@osui/switch': 2.1.1
+      '@osui/table': 2.1.1_nsow3qylfo3fvubkm2sg77mlke
+      '@osui/tabs': 2.1.1_@osui+icons@2.1.1
+      '@osui/tag': 2.1.7_@osui+icons@2.1.1
+      '@osui/text-overflow-tooltip': 2.1.1
+      '@osui/theme-provider': 2.1.1_@osui+icons@2.1.1
+      '@osui/time-picker': 2.1.1
+      '@osui/timeline': 2.1.1
+      '@osui/tooltip': 2.1.1
+      '@osui/transfer': 2.1.1
+      '@osui/tree': 2.1.1_@osui+icons@2.1.1
+      '@osui/tree-select': 2.1.1_@osui+icons@2.1.1
+      '@osui/typography': 2.1.1
+      '@osui/upload': 2.1.1
+      '@osui/version': 2.1.1
       classnames: 2.3.1
       github-markdown-css: 4.0.0
       lodash.partial: 4.2.1
@@ -6662,6 +6962,8 @@ importers:
       remark-html: 12.0.0
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1
+      '@osui/icons-icloud': 2.1.1
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_67pmlz7ifotx66jahzpq7hwdsq
       '@reskript/config-babel': 3.0.6_u3vi2f4gnnghuabvanps7qtlvi
@@ -6684,6 +6986,8 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/effect-ref': ^1.1.1
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6731,6 +7035,8 @@ importers:
     devDependencies:
       '@babel/cli': 7.18.9
       '@huse/effect-ref': 1.1.1_react@17.0.2
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -6774,6 +7080,8 @@ importers:
   ../../packages/ui/version:
     specifiers:
       '@babel/cli': ^7.10.5
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6814,6 +7122,8 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@babel/cli': 7.18.9
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/icons-icloud': 2.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_mvbazscwojpsujluzrtrzhixou
       '@reskript/config-babel': 3.0.6_rlk7n4sh472iok2wspnxfu2jgi
@@ -6871,20 +7181,6 @@ packages:
   /@ant-design/icons-svg/4.2.1:
     resolution: {integrity: sha512-EB0iwlKDGpG93hW8f85CTJTs4SvMX7tt5ceupvhALp1IF44SeUFOMhKUOYqpsoYWQKAOuTRDMqn75rEaKDp0Xw==}
 
-  /@ant-design/icons/4.7.0:
-    resolution: {integrity: sha512-aoB4Z7JA431rt6d4u+8xcNPPCrdufSRMUOpxa1ab6mz1JCQZOEVolj2WVs/tDFmN62zzK30mNelEsprLYsSF3g==}
-    engines: {node: '>=8'}
-    peerDependencies:
-      react: '>=16.0.0'
-      react-dom: '>=16.0.0'
-    dependencies:
-      '@ant-design/colors': 6.0.0
-      '@ant-design/icons-svg': 4.2.1
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-util: 5.23.0
-    dev: false
-
   /@ant-design/icons/4.7.0_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-aoB4Z7JA431rt6d4u+8xcNPPCrdufSRMUOpxa1ab6mz1JCQZOEVolj2WVs/tDFmN62zzK30mNelEsprLYsSF3g==}
     engines: {node: '>=8'}
@@ -6899,18 +7195,6 @@ packages:
       rc-util: 5.23.0_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-
-  /@ant-design/react-slick/0.28.4:
-    resolution: {integrity: sha512-j9eAHTn7GxbXUFNknJoHS2ceAsqrQi2j8XykjZE1IXCD8kJF+t28EvhBLniDpbOsBk/3kjalnhriTfZcjBHNqg==}
-    peerDependencies:
-      react: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      json2mq: 0.2.0
-      lodash: 4.17.21
-      resize-observer-polyfill: 1.5.1
-    dev: false
 
   /@ant-design/react-slick/0.29.2_react@17.0.2:
     resolution: {integrity: sha512-kgjtKmkGHa19FW21lHnAfyyH9AAoh35pBdcJ53rHmQ3O+cfFHGHnUbj/HFrRNJ5vIts09FKJVAD8RpaC+RaWfA==}
@@ -10354,346 +10638,345 @@ packages:
       rimraf: 3.0.2
     dev: true
 
-  /@osui/affix/2.1.0:
-    resolution: {integrity: sha512-uW1lpZbYnuyr3dWGFUupohAGyAQo48r0WIwWgPrK/NMR7BCnLxm1k6L/JKU5d8UnH2w3ayA/xBCS+ZCkJ0r+Zg==}
+  /@osui/affix/2.1.1:
+    resolution: {integrity: sha512-OcGJOl1rLox+uVIcK4uv7zDJQsQ/z79rAm7CXJSM/3acjqsAcALGO/F5xIT3ZmGPIL1u7ahig9zO3vgJVN71bg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/alert/2.1.0:
-    resolution: {integrity: sha512-M4JXjqsJUdFbytzabhy6SAqBevMQe1cPyu4H0EG5ovJ2l5ezKdbUdWXNm55Glc9I2joNnNmNU09QZEbMlksigA==}
+  /@osui/alert/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-y5iMVTpzOuATjssdFs/DdpFHNnMFXgRqe0hVCOKNHdhX/v/ugADD5g8Ka0auugoVMYqDzYIlaYOrpRu+sOT6zA==}
     peerDependencies:
+      '@osui/icons': ^2.0.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       '@huse/boolean': 1.1.2
       '@huse/timeout': 1.1.1
-      '@osui/icons': 2.1.0
+      '@osui/icons': 2.1.1
       '@types/hoist-non-react-statics': 3.3.1
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/anchor/2.1.0:
-    resolution: {integrity: sha512-NsCtQkxuw5W+Xv0cpKWe007ikhacVht+ASfR9UatOb3EvtnsQrpYoMujYy9ftPkaj9HU+SzzAUHimvNFnMmo3w==}
+  /@osui/anchor/2.1.1:
+    resolution: {integrity: sha512-snl1xfBc3bSrn5rnQQwmQ2YdLHhuSsPFn5BjvxMlIo32S4G6R/PVymAhZF3OodwRAKsHYIIDsmZmGnZY1wkFdA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/auto-complete/2.1.0_@osui+brand-provider@2.1.0:
-    resolution: {integrity: sha512-AMdYyzWfKbIuHY/tMXoiEXE1oMdy5uRYg7WEaG6+d/1nCgf/TK7juwHN4/6LaGvTJ78odCAEFuwGA4qRnLLriA==}
+  /@osui/auto-complete/2.1.7_nsow3qylfo3fvubkm2sg77mlke:
+    resolution: {integrity: sha512-d5ubcJtEjrrBLQMWkRYtPRJ9Ac8xjLoLN9xOPxgETJ5Ljyr5bUVQQnpq2+G8UwTTh91mHoiKMD0BeX/PVdhrvg==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.1
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       '@huse/derived-state': 1.1.1
-      '@osui/highlight-text': 2.1.0
-      '@osui/select': 2.1.0_@osui+brand-provider@2.1.0
+      '@osui/highlight-text': 2.1.1
+      '@osui/icons': 2.1.1
+      '@osui/select': 2.1.7_nsow3qylfo3fvubkm2sg77mlke
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     transitivePeerDependencies:
       - '@osui/brand-provider'
     dev: false
 
-  /@osui/avatar/2.1.0:
-    resolution: {integrity: sha512-uqh8b0hzPHJWSYJM6bIEF5rX5DxfjNOZyPSx89D4JEK1Bg1rbGZ21c8LGnKZjoIfcZCAcv64gbLFzKm8AXDToA==}
+  /@osui/avatar/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-g9pQBA0ytMctqg6LjxljcAfP/8UW/RR4loRJWiXKQWV3lhRyzfOmULZ1bLrh3pviw91wHvWZWsB42KsgBI9XJQ==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.1
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
+      '@osui/icons': 2.1.1
       classnames: 2.3.1
     dev: false
 
-  /@osui/back-top/2.1.0:
-    resolution: {integrity: sha512-mr5h/cEbCQ4B0DrGDw0eeM7yw8lJ1QbhIEY8nqmi737M63R3SUJmCgvWIykzIzzpwODMNXsN5qF4rEbzC9MqGw==}
+  /@osui/back-top/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-0cXWdffQayg9hw7rGZG6AopR6WEV48JBMFVIobND+3j3mz2Z5qx4LViZpW9/JcCnpcsQk47EvTIl5bDix9ouig==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
+      '@osui/icons': 2.1.1
       classnames: 2.3.1
     dev: false
 
-  /@osui/badge/2.1.0:
-    resolution: {integrity: sha512-16VdzU2Z1fPrUUZGyyu0JHK6fTChhXR6148KksoLNkIy679cYFATvcKxYH7IdhfmNnubBlORQT3fCeZKpLOr+Q==}
+  /@osui/badge/2.1.1:
+    resolution: {integrity: sha512-RXizE+6bdz2U88Tu2xipUWULSLTmKKK9f94C+QZxZ6TspvY+KI+pZiF+prZBaSEZw3gf68Wz/Pa3i7lTpVYb8Q==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/brand-provider/2.1.0:
-    resolution: {integrity: sha512-mTSwrxrAigm1lEVsnQGedUp3/MaM2c6qgRneBoTSm7xbNk61SEBjqMe53KxF8cm0SJFGvhAqizh7pH2f3soyBA==}
+  /@osui/brand-provider/2.1.1:
+    resolution: {integrity: sha512-7nxKPTgxTQDYcdHgikxqCQR9ix3H4wEJtS9kuqhSdLw3ZudGgtswyfQoeD2iofnN/mZzJBd/nW07bJOPg4hg3g==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/empty': 2.1.0
+      '@osui/empty': 2.1.1
     dev: false
 
-  /@osui/brand-provider/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-mTSwrxrAigm1lEVsnQGedUp3/MaM2c6qgRneBoTSm7xbNk61SEBjqMe53KxF8cm0SJFGvhAqizh7pH2f3soyBA==}
+  /@osui/brand-provider/2.1.1_htlupqpbd3u7hyuic7cg2ag3bq:
+    resolution: {integrity: sha512-7nxKPTgxTQDYcdHgikxqCQR9ix3H4wEJtS9kuqhSdLw3ZudGgtswyfQoeD2iofnN/mZzJBd/nW07bJOPg4hg3g==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/empty': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/empty': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: true
 
-  /@osui/breadcrumb/2.1.0:
-    resolution: {integrity: sha512-E3dGw2GfDYx7WNNPq5/P7wkLkpTgoHu8ZkTW58Euk9FdadtFQw6qMMwQaYlju0gxiX9rL2WdQG3HZRkPu+IxyQ==}
+  /@osui/breadcrumb/2.1.1:
+    resolution: {integrity: sha512-esJud773mXJCwjH0bPGTvS1a8NljI025z1rjlUgYvcMap1mZ7a1vdYpJ5rmPRZVgiVM8i3nEDy4gjGaHZFvqqA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
     dev: false
 
-  /@osui/button/1.2.33_antd@4.21.0:
-    resolution: {integrity: sha512-aj0ycm5LCJKldpYYGp5/9hUtBbDV1vuC00feeCuBJNwdZrkRg5fzFgNq6cqkZLwAxsZZwmdnSOfxoO+IJbNvOA==}
+  /@osui/button/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-BeP8iFxAJJuBzgwUYPi+Cue2W2+bC3Lhlwy5uS2OmRu0/9OyWWJ7KyEcURsnOeCSpy40Y4PSU6ipOymQRlVSfw==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
-      antd: '>=4.4.0 <=4.20.7'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      '@osui/icons': ^2.1.0
+      antd: '>=4.21.3'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/tooltip': 1.2.33_antd@4.21.0
-      antd: 4.21.0
+      '@osui/icons': 2.1.1
+      '@osui/tooltip': 2.1.1
       classnames: 2.3.1
     dev: false
 
-  /@osui/button/2.1.0:
-    resolution: {integrity: sha512-YuEprtnJGysoP+dUbF+pRuXoaP0gPZtMOvXirzbE6SjSAXnlNKKmpNXFaRaPRGSiqszmxZ5IdQo8r1QPpBsikQ==}
+  /@osui/button/2.1.1_apb7gux4xvmhl2vfc3gtzbiz2a:
+    resolution: {integrity: sha512-BeP8iFxAJJuBzgwUYPi+Cue2W2+bC3Lhlwy5uS2OmRu0/9OyWWJ7KyEcURsnOeCSpy40Y4PSU6ipOymQRlVSfw==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/tooltip': 2.1.0
+      '@osui/icons': 2.1.1_react@17.0.2
+      '@osui/tooltip': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
+      antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@osui/button/2.1.0_antd@4.21.0:
-    resolution: {integrity: sha512-YuEprtnJGysoP+dUbF+pRuXoaP0gPZtMOvXirzbE6SjSAXnlNKKmpNXFaRaPRGSiqszmxZ5IdQo8r1QPpBsikQ==}
+  /@osui/button/2.1.1_rcqlsp3iz4hco7gitmdu4l32dy:
+    resolution: {integrity: sha512-BeP8iFxAJJuBzgwUYPi+Cue2W2+bC3Lhlwy5uS2OmRu0/9OyWWJ7KyEcURsnOeCSpy40Y4PSU6ipOymQRlVSfw==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/tooltip': 2.1.0_antd@4.21.0
-      antd: 4.21.0
-      classnames: 2.3.1
-    dev: false
-
-  /@osui/button/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-YuEprtnJGysoP+dUbF+pRuXoaP0gPZtMOvXirzbE6SjSAXnlNKKmpNXFaRaPRGSiqszmxZ5IdQo8r1QPpBsikQ==}
-    peerDependencies:
-      '@osui/icons': ^1.1.1
-      antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@osui/tooltip': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/tooltip': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /@osui/calendar/2.1.0:
-    resolution: {integrity: sha512-xdRwNsbakhVgDpTJt1AGooy64erDuRxprjhDfQwEDfv2s+NZY5qf/r1N1O0AXFvV8HVG8XKfUoA3XCjPiOb8Dg==}
+  /@osui/calendar/2.1.1:
+    resolution: {integrity: sha512-8/wjsFjMgjSBIpy6AOis7qsvp/Os2K1vZGByJtlsAjpIwYsjkWqMTZwxB9rn/sAbUiYHmmr5GkOqlGozbh3NaA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/card/2.1.0:
-    resolution: {integrity: sha512-CgjA4rwFItzAoC8X2Bkqw2agt7dTp78CJr/q/gDH4klOrYJ6Lwdf/UdcZg22dMDCe7tNFejZvWRZ//RF0g7brw==}
+  /@osui/card/2.1.1:
+    resolution: {integrity: sha512-YzH6c/0z/5M5XvstnQX5a3GACnxdCJjEbwbCm1Q/UMKrRj04bJLkyE8+wTOsNNnxu2fwD3mXYs1p9+6l2xeEOg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/carousel/2.1.0:
-    resolution: {integrity: sha512-UJjKOeNPJXgL2GgL8EQli3i1n1Bvwod0bqs4aoGvO+iA7gfn32f3/i4BLSZxhgynCrFpDAFlYfVamv3SeO9V5A==}
+  /@osui/carousel/2.1.1:
+    resolution: {integrity: sha512-/Yy15krDo8Dlf+MVddlyQheMF0AxPOxw+6JxKNsIvZoVsLuezp4JfbxR5+jLvp6IErX5OKH2etr+yD730zwcCg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/cascader/2.1.0:
-    resolution: {integrity: sha512-iDv8yKQOXmxlwRe4eu8CyrmqQXxR6aEmw5VjNZpi/Nw2sW8gYp5qVI/5s2J48RGOoK2KzOKZAxaAy3mOcahI5w==}
+  /@osui/cascader/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-x+yxu9DGZic8jzV0UA+tRtVYwhWz+8es1o+K1I42Bf+MVEmkg5fBkWDPyqvFsnhDlBgzgMBIUGP802mHmBJqIA==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    dependencies:
+      '@osui/icons': 2.1.1
+      classnames: 2.3.1
+      hoist-non-react-statics: 3.3.2
+    dev: false
+
+  /@osui/checkbox/2.1.1:
+    resolution: {integrity: sha512-AoZgwr869sMeTd+f4tzVEgliasXdKwax7yRsGcMvrF3eGWtytmeutxe46LKsmhnyk7e9quasMiKeTaJT8NsxrQ==}
+    peerDependencies:
+      antd: '>=4.21.3'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    dependencies:
+      classnames: 2.3.1
+    dev: false
+
+  /@osui/col/2.1.1:
+    resolution: {integrity: sha512-8XSPpwoMA4+td37ToqhFxY2r1SLeJ8MmUaAFs28JLL4ks4zbzl+Q8lMCOUZkm9hWXJ2/7ZSSb9zqV6+9y8P9Tw==}
+    peerDependencies:
+      antd: '>=4.21.3'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    dev: false
+
+  /@osui/collapse/2.1.1_nsow3qylfo3fvubkm2sg77mlke:
+    resolution: {integrity: sha512-kVSZ/rxC5h+/RzZCl0qj49p2zDSMFEazJCPrfFXGtMUGkMm/0HYiacjCcgG1oXd0/OYlJNScp26J58orl85hSQ==}
+    peerDependencies:
+      '@osui/brand-provider': ^2.1.0
+      '@osui/icons': ^2.1.0
+      antd: '>=4.21.3'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    dependencies:
+      '@osui/brand-provider': 2.1.1
+      '@osui/icons': 2.1.1
+      classnames: 2.3.1
+      hoist-non-react-statics: 3.3.2
+    dev: false
+
+  /@osui/comment/2.1.1:
+    resolution: {integrity: sha512-5MRKf7tnxSGprTMB84992L+KNMu5wUBC3n5tgemWb2xcNAr2fdzJ7Hanm4PAnvh/KMcMLmIZUIshuQJpp6iRVA==}
+    peerDependencies:
+      antd: '>=4.21.3'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/checkbox/2.1.0:
-    resolution: {integrity: sha512-qg7OXsbFjMvbI/y046Hsd695ucnX8WeWDIF8rXaVhN5VMi0Vd8/5CW5y/IbpqYF9uUn6w09mtz+rHexQ4Hu4wQ==}
+  /@osui/config-provider/2.1.1:
+    resolution: {integrity: sha512-qaHCEI9/j45/mBtdRSphSCNLCCnW9o0R0PoKyASSL7tMf4tSKRt/cmqHyLObCzwryWT6sL734WcLX3j6GVkuFg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      classnames: 2.3.1
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/col/2.1.0:
-    resolution: {integrity: sha512-g+vP015voa6zzHng1m+IlVcIvTenw+JovQoIUU78byRnxYIkwxYUalY/3vykv8lsdHNnGE5jP7xgxM8CF4ot+Q==}
+  /@osui/config-provider/2.1.1_htlupqpbd3u7hyuic7cg2ag3bq:
+    resolution: {integrity: sha512-qaHCEI9/j45/mBtdRSphSCNLCCnW9o0R0PoKyASSL7tMf4tSKRt/cmqHyLObCzwryWT6sL734WcLX3j6GVkuFg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dev: false
-
-  /@osui/collapse/2.1.0_@osui+brand-provider@2.1.0:
-    resolution: {integrity: sha512-dBRWj8Pn3pYrQosRGzQvl+DFkquNQQSxMMjf2qmw+ildf2e9+1qRT1DtfTGCnveM0BD/aHOklZ4sm7IbKcNHZw==}
-    peerDependencies:
-      '@osui/brand-provider': ^1.1.1
-      '@osui/icons': ^1.1.1
-      antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@osui/brand-provider': 2.1.0
-      classnames: 2.3.1
-      hoist-non-react-statics: 3.3.2
-    dev: false
-
-  /@osui/comment/2.1.0:
-    resolution: {integrity: sha512-smHlRmzWccLmPII/zrWRfgvMwSTmtLKkRkzUzo3W/uoctOz1VenWS1uH5U+no9CpiG/BsjrXVih41D4SNnD96Q==}
-    peerDependencies:
-      antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      classnames: 2.3.1
-      hoist-non-react-statics: 3.3.2
-    dev: false
-
-  /@osui/config-provider/2.1.0:
-    resolution: {integrity: sha512-aSXkeOCv2VhBboPoRB1DEAaWXxlcMtgO1BOZC0icyw6V0UECyc+q3Xz+YuG2QiH/M1FFu4SFRGzTNxpAxS8TaA==}
-    peerDependencies:
-      antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dev: false
-
-  /@osui/config-provider/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-aSXkeOCv2VhBboPoRB1DEAaWXxlcMtgO1BOZC0icyw6V0UECyc+q3Xz+YuG2QiH/M1FFu4SFRGzTNxpAxS8TaA==}
-    peerDependencies:
-      antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@osui/date-picker/2.1.0:
-    resolution: {integrity: sha512-kiYqEWxF+T1sZIM7wLkvRztWz0QmNC+PxcOL4sub8hRtBBqvFx1CqlG/byV3Cbeq8Qe0/e+D1wItyc5DuXbZQA==}
+  /@osui/date-picker/2.1.1:
+    resolution: {integrity: sha512-N9jSraQia3Trm1ZXBEAxlLkeHxAtyOEAxK+IsSRBCP1fHID6exRFhCm8lmeNlqJl4BF4HpSa+rVzThq0bcZbDg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/descriptions/2.1.0:
-    resolution: {integrity: sha512-Uw96BRhwJ0y57i7E6tNZhsGaa7klCiTU93CkLi2R7hw+Y8Ho3ZwlX1Rm6cffqrQ7KisrGk0uvJdgbANGGID7zA==}
+  /@osui/descriptions/2.1.1:
+    resolution: {integrity: sha512-xAB5y4mdELP301jOi5LitpphzAxkaa/SESU2Yd37R7Z0XTLDLXqkt+1jlxtt9U/M8f4mSBK1CG5EdhTo2AtgKQ==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/divider/2.1.0:
-    resolution: {integrity: sha512-FmMvdarXtQbfACtdvLzfYCu3V8K05OR15Fc3eRFaCRU8R92ZHYpIZatI/W+W79t2czf64lBvM7fqBg4T4J+keg==}
+  /@osui/divider/2.1.1:
+    resolution: {integrity: sha512-G59qCLVNIG6CvjhhOA+aslIg8D9YnXDSIEhsIZzLBcJ+Y68S+54dVyH35W4yX6NpexlC/pvRoWmS3E2zcWXsfA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/divider/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-FmMvdarXtQbfACtdvLzfYCu3V8K05OR15Fc3eRFaCRU8R92ZHYpIZatI/W+W79t2czf64lBvM7fqBg4T4J+keg==}
+  /@osui/divider/2.1.1_htlupqpbd3u7hyuic7cg2ag3bq:
+    resolution: {integrity: sha512-G59qCLVNIG6CvjhhOA+aslIg8D9YnXDSIEhsIZzLBcJ+Y68S+54dVyH35W4yX6NpexlC/pvRoWmS3E2zcWXsfA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: true
 
-  /@osui/drawer/2.1.0:
-    resolution: {integrity: sha512-bkhKUjPBdT+oq8xYb0B/Hi+nXr6SkH+r1UC4CCsFGkbO431FDIowU8kUsg12rLlpOwDV+Bv5aWkpk94ffp7Xnw==}
+  /@osui/drawer/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-oWU1RWNL+8Ak3RUIa3ES7qgIXxdBAkXpnKcDdHoY+VajQk9ayTssJLp3HnnepdLdLVvydOJCTp6fs+TzrO4EnQ==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
+      '@osui/icons': 2.1.1
       classnames: 2.3.1
     dev: false
 
-  /@osui/dropdown/2.1.0:
-    resolution: {integrity: sha512-ysw0hdy/tsZBzx4FC6SVmwLLYtXr3NnZYuw3YpmgLXjncNqCLA06G8x+aS0om76quyE8pD+fH2ixLD7z0lAaKw==}
+  /@osui/dropdown/2.1.1:
+    resolution: {integrity: sha512-PmxTAUgD92q55NkAcqnhir48NmGpsiQPYhyzmfgQWc1GA2k3zaGm2+pSMS9tmNQcyCKtef5+Q503S3Boq13fzA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/dropdown/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-ysw0hdy/tsZBzx4FC6SVmwLLYtXr3NnZYuw3YpmgLXjncNqCLA06G8x+aS0om76quyE8pD+fH2ixLD7z0lAaKw==}
+  /@osui/dropdown/2.1.1_htlupqpbd3u7hyuic7cg2ag3bq:
+    resolution: {integrity: sha512-PmxTAUgD92q55NkAcqnhir48NmGpsiQPYhyzmfgQWc1GA2k3zaGm2+pSMS9tmNQcyCKtef5+Q503S3Boq13fzA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
@@ -10702,79 +10985,80 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@osui/empty/2.1.0:
-    resolution: {integrity: sha512-lGQSqOk9iK5hru3LGoFwhU4XPpHMeJ1pwEARSABqgCxpln6ffywiiVsxtroqH8DpL5iaU9l4zAZBmX9ejKNRew==}
+  /@osui/empty/2.1.1:
+    resolution: {integrity: sha512-AOUwJWFNX9EBQzg+eD8tTwOKMFUS6WkCozulYpt3BPfkbvIizPIXXavQagLnA9rUnaS3Qswzt/Y9pQfWFyEXHg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
     dev: false
 
-  /@osui/empty/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-lGQSqOk9iK5hru3LGoFwhU4XPpHMeJ1pwEARSABqgCxpln6ffywiiVsxtroqH8DpL5iaU9l4zAZBmX9ejKNRew==}
+  /@osui/empty/2.1.1_htlupqpbd3u7hyuic7cg2ag3bq:
+    resolution: {integrity: sha512-AOUwJWFNX9EBQzg+eD8tTwOKMFUS6WkCozulYpt3BPfkbvIizPIXXavQagLnA9rUnaS3Qswzt/Y9pQfWFyEXHg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /@osui/flex-centered/2.1.0:
-    resolution: {integrity: sha512-NzNsKH/yXH55l5EjkEGROvGlkRDYdOncETKckH73J04qp+GT+aD82L1zPUS7mmSBLdbb09tLbhdc1gPgIf41Uw==}
+  /@osui/flex-centered/2.1.1:
+    resolution: {integrity: sha512-pwo0QREky4nrNPSA4LYVUahqADMNjH6Wvzg/ccIwMR7LE+2fQ/KvxIegYvURgoxSe73ZynA1vADUsGdZ+7OOKg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/form/2.1.0:
-    resolution: {integrity: sha512-pFL1KN1hg7aFzVhHRUqHMIgvNYBD3Iole5GL0gXTwF3KxiLB+WKKZMC7sGcKAaBlfoDhEc1Dv2q19bv7QM7krg==}
+  /@osui/form/2.1.6_@osui+brand-provider@2.1.1:
+    resolution: {integrity: sha512-HULgbrZKWs+7I0q+oaWiK+V6t64KjXEWJ2GTsD+U5LFEjBWx87R7yRZ9EbscO30LsSwyLDv8wu9+NXKCrBKolA==}
     peerDependencies:
+      '@osui/brand-provider': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/brand-provider': 2.1.0
+      '@osui/brand-provider': 2.1.1
       classnames: 2.3.1
     dev: false
 
-  /@osui/gap/2.1.0:
-    resolution: {integrity: sha512-1OmhGVi+x7RMYFN/86hIfOKStlPe2VPYrQGoDIQF1hcri+unqlusih/G3N7PpROJZv9eENiXANIl+LT/36Dm8A==}
+  /@osui/gap/2.1.1:
+    resolution: {integrity: sha512-LifEOyJWfo48MC2utrvd/adHN44/kl7jggiuRAOzedvOtGEavY9eLVf+nmsXrHtQF+8KpeecMlsZ+Rm/r5VUmA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/grid/2.1.0:
-    resolution: {integrity: sha512-PqwljrJfy2/o489nhenzoHyM60+K3R1qLzCPfMWeWOeUB0NARkKK/9f13HFde/ZcfvEGEjakeJLuzQ5SU7Gljg==}
+  /@osui/grid/2.1.1:
+    resolution: {integrity: sha512-N1BGiKrELBb17chZ/HAQSkP2DpgEnaiRliiyq4lNAL1J6VTeIihDk8IdpfuH41qiFRR0hprPvRR5mOZWivc8WA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/highlight-text/2.1.0:
-    resolution: {integrity: sha512-9IA3sJhOuK01JAa2Q0LhUJOJ9vE83o0FNLs7xwQh7hySu74ZZfgfRHI2zDSfzSYd1YvtQ6nj7c9+S2l+JldNkg==}
+  /@osui/highlight-text/2.1.1:
+    resolution: {integrity: sha512-hKR9Ogi5EJj7vRoQeAVQN9s1FJ1Q7NytD+0TN4IGaAwZb2u7Doalb4rr0tQMwIs+JVzwvcmmoAQ9xjgh8LlF3g==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
     dev: false
 
-  /@osui/highlight-text/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-9IA3sJhOuK01JAa2Q0LhUJOJ9vE83o0FNLs7xwQh7hySu74ZZfgfRHI2zDSfzSYd1YvtQ6nj7c9+S2l+JldNkg==}
+  /@osui/highlight-text/2.1.1_htlupqpbd3u7hyuic7cg2ag3bq:
+    resolution: {integrity: sha512-hKR9Ogi5EJj7vRoQeAVQN9s1FJ1Q7NytD+0TN4IGaAwZb2u7Doalb4rr0tQMwIs+JVzwvcmmoAQ9xjgh8LlF3g==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
@@ -10788,7 +11072,7 @@ packages:
       react: '>=16'
     dependencies:
       classnames: 2.3.1
-    dev: false
+    dev: true
 
   /@osui/icons-icloud/2.1.0_react@17.0.2:
     resolution: {integrity: sha512-LcWohRZdcvcAbcOCuyQgZlNExZvUGAQvB4+Pmr2jHD8ynwnUS57EiWG15LCFGfc4LmRUL/wHRaJc0q+ASR9CeA==}
@@ -10797,7 +11081,23 @@ packages:
     dependencies:
       classnames: 2.3.1
       react: 17.0.2
-    dev: false
+    dev: true
+
+  /@osui/icons-icloud/2.1.1:
+    resolution: {integrity: sha512-xfiD106zRIQdJdUdCDfYoS7pMnre0dOOw7aFBjUforV4WOtmi5jFn8zMJadl0Tz9oyRqS/vjQBGgxXsF1KGnyQ==}
+    peerDependencies:
+      react: '>=17'
+    dependencies:
+      classnames: 2.3.1
+
+  /@osui/icons-icloud/2.1.1_react@17.0.2:
+    resolution: {integrity: sha512-xfiD106zRIQdJdUdCDfYoS7pMnre0dOOw7aFBjUforV4WOtmi5jFn8zMJadl0Tz9oyRqS/vjQBGgxXsF1KGnyQ==}
+    peerDependencies:
+      react: '>=17'
+    dependencies:
+      classnames: 2.3.1
+      react: 17.0.2
+    dev: true
 
   /@osui/icons/2.1.0:
     resolution: {integrity: sha512-qYikLfAbz3A+N9ug3RRLOVVVWYboHEGEdNLRls1eeymMen66zqh3HE98PBnbLXSYSvruJt6VT9/Ycq/SD0XgGQ==}
@@ -10805,7 +11105,7 @@ packages:
       react: '>=16'
     dependencies:
       classnames: 2.3.1
-    dev: false
+    dev: true
 
   /@osui/icons/2.1.0_react@17.0.2:
     resolution: {integrity: sha512-qYikLfAbz3A+N9ug3RRLOVVVWYboHEGEdNLRls1eeymMen66zqh3HE98PBnbLXSYSvruJt6VT9/Ycq/SD0XgGQ==}
@@ -10814,42 +11114,56 @@ packages:
     dependencies:
       classnames: 2.3.1
       react: 17.0.2
-    dev: false
 
-  /@osui/image/2.1.0:
-    resolution: {integrity: sha512-wYwMHLSq9oDGO9UabmoxfoZyGt6SCCkuoSHpGDda3xwC06GWwWniA2Cytkn66wOJRzxqUU08BXDZtSchNK5Bog==}
+  /@osui/icons/2.1.1:
+    resolution: {integrity: sha512-Mc90lrHVcTZKC38K9RRS6PtJ/fmIdeTXtwr+syqNAaU0CUJO/Rocq5+IbiwW3IJFSsjSW5FvGdH9G2xVkFcmzA==}
+    peerDependencies:
+      react: '>=17'
+    dependencies:
+      classnames: 2.3.1
+
+  /@osui/icons/2.1.1_react@17.0.2:
+    resolution: {integrity: sha512-Mc90lrHVcTZKC38K9RRS6PtJ/fmIdeTXtwr+syqNAaU0CUJO/Rocq5+IbiwW3IJFSsjSW5FvGdH9G2xVkFcmzA==}
+    peerDependencies:
+      react: '>=17'
+    dependencies:
+      classnames: 2.3.1
+      react: 17.0.2
+
+  /@osui/image/2.1.1:
+    resolution: {integrity: sha512-OWDd1QHQ4AZByzdbUhf+MFhBjp0yDTumsQQvLGJ1hTG3FWpTv0lLUdN4JLz0hlqnm8/xpixfjgECpki29cZPFQ==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/input-number/2.1.0_@osui+brand-provider@2.1.0:
-    resolution: {integrity: sha512-ZEV6Nor2CK8EgfIDI6odNTk4+GhRhO+oNklsw6lxlzO2EelLzjuj8lznkZAG9OuR6vUrXmHY278mJR/K8KBkhg==}
+  /@osui/input-number/2.1.1_nsow3qylfo3fvubkm2sg77mlke:
+    resolution: {integrity: sha512-lnM96aUyqVGmV9sC2Wix4bCzoqcyP1EkAAFzIhQ1OOxnk2Bw585JskxQ6kZD2+gWi6uh+bW/tzay8tnrTC4dWg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       '@huse/derived-state': 1.1.1
-      '@osui/button': 2.1.0
-      '@osui/input': 2.1.0_@osui+brand-provider@2.1.0
+      '@osui/button': 2.1.1_@osui+icons@2.1.1
+      '@osui/input': 2.1.1_nsow3qylfo3fvubkm2sg77mlke
       classnames: 2.3.1
     transitivePeerDependencies:
       - '@osui/brand-provider'
       - '@osui/icons'
     dev: false
 
-  /@osui/input-number/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-ZEV6Nor2CK8EgfIDI6odNTk4+GhRhO+oNklsw6lxlzO2EelLzjuj8lznkZAG9OuR6vUrXmHY278mJR/K8KBkhg==}
+  /@osui/input-number/2.1.1_rcqlsp3iz4hco7gitmdu4l32dy:
+    resolution: {integrity: sha512-lnM96aUyqVGmV9sC2Wix4bCzoqcyP1EkAAFzIhQ1OOxnk2Bw585JskxQ6kZD2+gWi6uh+bW/tzay8tnrTC4dWg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       '@huse/derived-state': 1.1.1_react@17.0.2
-      '@osui/button': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
-      '@osui/input': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/button': 2.1.1_rcqlsp3iz4hco7gitmdu4l32dy
+      '@osui/input': 2.1.1_rcqlsp3iz4hco7gitmdu4l32dy
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
       react: 17.0.2
@@ -10859,34 +11173,36 @@ packages:
       - '@osui/icons'
     dev: true
 
-  /@osui/input/2.1.0_@osui+brand-provider@2.1.0:
-    resolution: {integrity: sha512-eRP/9CKvjDSff9V7ZJdxEQ0FZc8HsHSAYu5yindlgqZ6udpsBnMDuEcptH/klCVM1rth7ELH6JezvJi5+e8i0A==}
+  /@osui/input/2.1.1_nsow3qylfo3fvubkm2sg77mlke:
+    resolution: {integrity: sha512-q8gv2sfsVoO4Eg2WKwtDMYehMdjg2fBPnMEagzAlJwlD3M55ANgTkLlxYDIV/w//+BtkhDvPJTk1YBk7FI7bfA==}
     peerDependencies:
-      '@osui/brand-provider': ^1.1.1
-      '@osui/icons': ^1.1.1
+      '@osui/brand-provider': ^2.1.0
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       '@huse/derived-state': 1.1.1
-      '@osui/brand-provider': 2.1.0
-      '@osui/button': 2.1.0
+      '@osui/brand-provider': 2.1.1
+      '@osui/button': 2.1.1_@osui+icons@2.1.1
+      '@osui/icons': 2.1.1
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
       rc-util: 5.23.0
     dev: false
 
-  /@osui/input/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-eRP/9CKvjDSff9V7ZJdxEQ0FZc8HsHSAYu5yindlgqZ6udpsBnMDuEcptH/klCVM1rth7ELH6JezvJi5+e8i0A==}
+  /@osui/input/2.1.1_rcqlsp3iz4hco7gitmdu4l32dy:
+    resolution: {integrity: sha512-q8gv2sfsVoO4Eg2WKwtDMYehMdjg2fBPnMEagzAlJwlD3M55ANgTkLlxYDIV/w//+BtkhDvPJTk1YBk7FI7bfA==}
     peerDependencies:
-      '@osui/brand-provider': ^1.1.1
-      '@osui/icons': ^1.1.1
+      '@osui/brand-provider': ^2.1.0
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       '@huse/derived-state': 1.1.1_react@17.0.2
-      '@osui/button': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/button': 2.1.1_rcqlsp3iz4hco7gitmdu4l32dy
+      '@osui/icons': 2.1.0_react@17.0.2
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
@@ -10894,15 +11210,16 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /@osui/joyride/2.1.0:
-    resolution: {integrity: sha512-p+WKrFOtdzNttSVKHca8zGl/qyj7Hc2FIZ7ud0lgjql+QcT52c765E80VklSIHPno2q01dChITmWpFOvbAdSqw==}
+  /@osui/joyride/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-1axiG2XF8cpFHABNaTvoCJWg0f/a3U7KfsqxDsqXx6jWjr7Qs8DTG60ko722qRg9FYeqoX0KDBf/sXmEPQKu6Q==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      '@osui/icons': ^2.1.0
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       '@huse/derived-state': 1.1.1
-      '@osui/button': 2.1.0
+      '@osui/button': 2.1.1_@osui+icons@2.1.1
+      '@osui/icons': 2.1.1
       classnames: 2.3.1
       lodash.merge: 4.6.2
       react-joyride: 2.5.0
@@ -10911,28 +11228,31 @@ packages:
       - prop-types
     dev: false
 
-  /@osui/layout/2.1.0:
-    resolution: {integrity: sha512-LrgxtL602vWB6mFZ3ldxDrzuBuCXbuCv7dgH4KjwVMDJBKKp0kOJoB2mMSaVQGQyrjr8bQF65OzRdyjezgqrQA==}
+  /@osui/layout/2.1.1:
+    resolution: {integrity: sha512-L6PJI6F7v+BP3DMf75TC2dRJ+hrUZKu4MAn0Ajh43dcle3fMhCaBkm5X6NmLVARHeIQDCd+KGwSiwFmayk93Ig==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/list/2.1.0:
-    resolution: {integrity: sha512-9VZgOYZ8Sr8sV1qBA3ZjyDaJRbvh4c4f6hLJOGInPf9hCkN6DsqKOF3NgdJxZrna76U+UKES7P3C/hqNGukRfw==}
+  /@osui/list/2.1.8:
+    resolution: {integrity: sha512-OL+NLkoD7nt+qYPM3n81SqdxiPTai6Z73LQjq/zwaydgTqFjXdH4Ann/wZ9LYolsrt3iJTYlISECBkCZlBNX7A==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    dependencies:
+      '@osui/spin': 2.1.1
+      hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/markdown/2.1.0:
-    resolution: {integrity: sha512-UGNiSh7hu6dupJN1nr7U6K1yiUqw26oIO7LdkBjzuLE7pzUwFq/DRwru8IcC2wjIhUEEE+p8NW/hFq3GhM/0qg==}
+  /@osui/markdown/2.1.1:
+    resolution: {integrity: sha512-BBLp1pxWUnIQ8K+5DZt+k5YstbO86UlLW92Oddenp/lq6176Vyvodn4lOl/ysfBmDaqQi5ioTz2sbfbUjvnpLA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
       github-markdown-css: 4.0.0
@@ -10941,34 +11261,36 @@ packages:
       unist-util-visit: 2.0.3
     dev: false
 
-  /@osui/mentions/2.1.0:
-    resolution: {integrity: sha512-tKZbdpR1yW0A0zn+GsyeaNdoVAnc/5mRO9bn408kP0Lf/4WDsRkeUh/eW3SJM30bHgAc71TD/S598TBnhR1Fkw==}
+  /@osui/mentions/2.1.1:
+    resolution: {integrity: sha512-n4QyeAfsVRDcB0zFOkc3swaV9AmQ66YXOh5aoDgkb1rM5l6xjGqcDGmXn3EX9Iqw0IjQs8M5bv1Y/MUWrsd1Ug==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/menu/2.1.0:
-    resolution: {integrity: sha512-aVyKEfhD2LaUvA5YE8J25bfiRVoMTmSzSC7wpuNagmzEXkDF/0WxbBg/9yyBHIt/sd3rNlh3plau/ObhC+3i2w==}
+  /@osui/menu/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-15k/RwlPALPjg66Gf6/D9Vp+qm6JZG4cUsfPFvJVGFkMlZ4krE6GMxyTHzqwyHImVCrTj7DcHokPxzIt9cfiew==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
+      '@osui/icons': 2.1.1
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/menu/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-aVyKEfhD2LaUvA5YE8J25bfiRVoMTmSzSC7wpuNagmzEXkDF/0WxbBg/9yyBHIt/sd3rNlh3plau/ObhC+3i2w==}
+  /@osui/menu/2.1.1_apb7gux4xvmhl2vfc3gtzbiz2a:
+    resolution: {integrity: sha512-15k/RwlPALPjg66Gf6/D9Vp+qm6JZG4cUsfPFvJVGFkMlZ4krE6GMxyTHzqwyHImVCrTj7DcHokPxzIt9cfiew==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
+      '@osui/icons': 2.1.1_react@17.0.2
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
@@ -10976,152 +11298,142 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@osui/message/2.1.0:
-    resolution: {integrity: sha512-gXiBdyq9+rbbxgAo9oyJSg4+XdF6dbQhhUVF7GJuY09716mAAEhSgLvYQb9dnAODFX5aeJMattrdbW/4DEfpSg==}
+  /@osui/message/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-lAG3/PvyUXs6EYr7aQKVjdFkRCDI0zx7jTNK4EVC3jW422zYqLIwu5/YD4qtU25wubBS3UvO5MdX/DrPxg1U6g==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.1
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       '@huse/timeout': 1.1.1
-      '@osui/config-provider': 2.1.0
+      '@osui/config-provider': 2.1.1
+      '@osui/icons': 2.1.1
       classnames: 2.3.1
       lodash.partial: 4.2.1
     dev: false
 
-  /@osui/modal/2.1.0:
-    resolution: {integrity: sha512-Mf01Td4HM9N0NmG69WVbai2bi13ELl8zveIoj2mO8uvk27eKoiCTqViaiEWYX/IJ5NLJrBtm4qmi0yqEMvkgjQ==}
+  /@osui/modal/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-Wwe7be14zpI5g1S9ON9Tt7hzJpzvNS9cS3Wg0fqO4kusWk2asv1u5HlEhwYQzBjNgT6qvmW0DIfbc+urJbEonQ==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/button': 2.1.0
+      '@osui/button': 2.1.1_@osui+icons@2.1.1
+      '@osui/icons': 2.1.1
       classnames: 2.3.1
     dev: false
 
-  /@osui/notification/2.1.0:
-    resolution: {integrity: sha512-L6tTV4RaUHdVN/aKF6kzTVhOqE7Bv8lxj6xBqDL74+UVWJeMj+jYgVbeb4b1Y0b4r49VgQyT61yzVzLn1GnTRA==}
+  /@osui/notification/2.1.1:
+    resolution: {integrity: sha512-hUm7Rjx6ZJEOXF4+rvWS2+YEma5dfOEWU5MrkxBeSLPzzjuC3sgRWz+lN3ekQLB3FM/RZ1lznNEm2KuuAizfug==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/page-header/2.1.0:
-    resolution: {integrity: sha512-Bjn8PzA+qYIeh9DZkL5hkS0QOS3RfPqPiFQ6V7bl4t6GupMwXLfP99mPjLHIj+jAzt34N/N9sX8Dx5ODYZEWTw==}
+  /@osui/page-header/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-op5OAvqDADcnC0a1TVggQPFRJoS2Dq7ive8Dm4uBOlBDfMGCSsmp2rzcnv6OJYnxOJQ/h84Yga1/RmQFR+LpOg==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/icons-icloud': 2.1.0
+      '@osui/icons': 2.1.1
+      '@osui/icons-icloud': 2.1.1
       classnames: 2.3.1
     dev: false
 
-  /@osui/pagination/2.1.0_2nn77kg5jf3ridkupxktdxf4yu:
-    resolution: {integrity: sha512-EydYc5EPuPxqwzdoDfMKm4ul0HZt1KnUnVM4awOd/Un6Zirdxx5DOhlpwZaVZY/f4cYPTPjfWHQEkrezDcE59g==}
+  /@osui/pagination/2.1.1_apb7gux4xvmhl2vfc3gtzbiz2a:
+    resolution: {integrity: sha512-6LRiry7xYimihclnVu8HDZ/95kapNmupWZ/zNlBlukTKUzN4LiTSYDYzs6iAJgNF2hgrqAqj1KPMz/veZ8Jc+A==}
     peerDependencies:
-      '@osui/brand-provider': ^1.1.1
-      '@osui/icons': ^1.1.1
+      '@osui/brand-provider': ^2.1.0
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/brand-provider': 2.1.0
-      '@osui/button': 2.1.0_antd@4.21.0
-      antd: 4.21.0
-      classnames: 2.3.1
-    dev: false
-
-  /@osui/pagination/2.1.0_@osui+brand-provider@2.1.0:
-    resolution: {integrity: sha512-EydYc5EPuPxqwzdoDfMKm4ul0HZt1KnUnVM4awOd/Un6Zirdxx5DOhlpwZaVZY/f4cYPTPjfWHQEkrezDcE59g==}
-    peerDependencies:
-      '@osui/brand-provider': ^1.1.1
-      '@osui/icons': ^1.1.1
-      antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@osui/brand-provider': 2.1.0
-      '@osui/button': 2.1.0
-      classnames: 2.3.1
-    dev: false
-
-  /@osui/pagination/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-EydYc5EPuPxqwzdoDfMKm4ul0HZt1KnUnVM4awOd/Un6Zirdxx5DOhlpwZaVZY/f4cYPTPjfWHQEkrezDcE59g==}
-    peerDependencies:
-      '@osui/brand-provider': ^1.1.1
-      '@osui/icons': ^1.1.1
-      antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@osui/button': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/button': 2.1.1_apb7gux4xvmhl2vfc3gtzbiz2a
+      '@osui/icons': 2.1.1_react@17.0.2
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@osui/popconfirm/2.1.0:
-    resolution: {integrity: sha512-PKE+HWVDknfr2O7HHrCZph5n7vxymXIKOW2XtO8AMfO7YrPtJhQ5VhxO06wAyasKBCxJtq0xemk+lXYGoCW0qw==}
+  /@osui/pagination/2.1.1_nsow3qylfo3fvubkm2sg77mlke:
+    resolution: {integrity: sha512-6LRiry7xYimihclnVu8HDZ/95kapNmupWZ/zNlBlukTKUzN4LiTSYDYzs6iAJgNF2hgrqAqj1KPMz/veZ8Jc+A==}
     peerDependencies:
+      '@osui/brand-provider': ^2.1.0
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dev: false
-
-  /@osui/popover/2.1.0:
-    resolution: {integrity: sha512-I7r9dBxEoiEX6AKRyXEZJQpGlN2EijG6qJdn1kdn3DLJebjZDf3K1HHOSLcxitm7mLKR3jNpcRdz/UTkgs7yAQ==}
-    peerDependencies:
-      antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/icons': 2.1.0
+      '@osui/brand-provider': 2.1.1
+      '@osui/button': 2.1.1_@osui+icons@2.1.1
+      '@osui/icons': 2.1.1
       classnames: 2.3.1
     dev: false
 
-  /@osui/popover/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-I7r9dBxEoiEX6AKRyXEZJQpGlN2EijG6qJdn1kdn3DLJebjZDf3K1HHOSLcxitm7mLKR3jNpcRdz/UTkgs7yAQ==}
+  /@osui/popconfirm/2.1.1:
+    resolution: {integrity: sha512-oAN3YIy6VhZ0t2wwHW+qomtNo8LgsNMoBtNSvtsK2zJvr5/kExnh9shg4ZmkCWpndKSq87b+FSZY/qWieod74A==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    dev: false
+
+  /@osui/popover/2.1.1:
+    resolution: {integrity: sha512-bAREhFd1lnQzyeRyFJOdCzKik31Suph0M2bGS+M2iwQyvCIaQAiu6/IE92yXd/IqW/dVGuEZDGx9d8HZHMZRLg==}
+    peerDependencies:
+      antd: '>=4.21.3'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/icons': 2.1.1
+      classnames: 2.3.1
+    dev: false
+
+  /@osui/popover/2.1.1_htlupqpbd3u7hyuic7cg2ag3bq:
+    resolution: {integrity: sha512-bAREhFd1lnQzyeRyFJOdCzKik31Suph0M2bGS+M2iwQyvCIaQAiu6/IE92yXd/IqW/dVGuEZDGx9d8HZHMZRLg==}
+    peerDependencies:
+      antd: '>=4.21.3'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    dependencies:
+      '@osui/icons': 2.1.1_react@17.0.2
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@osui/progress/2.1.0_@osui+brand-provider@2.1.0:
-    resolution: {integrity: sha512-73jlXhsoG//b74+jEH0x7LO0FAjWTec9HKmWIjNUdIQcYvVxhNMVDGUTyBxdpdsaxdocKtrzdQdFPkOycEvI0g==}
+  /@osui/progress/2.1.1_@osui+brand-provider@2.1.1:
+    resolution: {integrity: sha512-ygKwV30h69mG7nCNixtfdTDrQL5PikLZmx6R4eSv1t1hSyUKypO1MbauEePSs6x2blzZkGUXsYoggEvWf89xlg==}
     peerDependencies:
-      '@osui/brand-provider': ^1.1.1
+      '@osui/brand-provider': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/brand-provider': 2.1.0
+      '@osui/brand-provider': 2.1.1
       classnames: 2.3.1
     dev: false
 
-  /@osui/quick-edit/2.1.0_@osui+brand-provider@2.1.0:
-    resolution: {integrity: sha512-qUEbOtMguGOTU3iLrNFf7gd5OBxR0urA3GmfbpS4iGjnhmlWcT3+tSSkNGX4D4PcLhSYOUw6MSfaCw/WRuzTUQ==}
+  /@osui/quick-edit/2.1.7_nsow3qylfo3fvubkm2sg77mlke:
+    resolution: {integrity: sha512-mac3PtxHOiNM/a+qLHT8XjYxy4uLB4giHTawlg1Nl95FjjatCgPbY78wllZXFgOg1GfnDis3eOQorsDV0w4i0g==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       '@huse/derived-state': 1.1.1
-      '@osui/input': 2.1.0_@osui+brand-provider@2.1.0
-      '@osui/select': 2.1.0_@osui+brand-provider@2.1.0
+      '@osui/input': 2.1.1_nsow3qylfo3fvubkm2sg77mlke
+      '@osui/select': 2.1.7_nsow3qylfo3fvubkm2sg77mlke
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
       react-abstract-quick-edit: 0.0.7
@@ -11130,22 +11442,22 @@ packages:
       - '@osui/icons'
     dev: false
 
-  /@osui/radio/2.1.0:
-    resolution: {integrity: sha512-S0fYEEyposPITt7Se3gFWf+NToD5vGjhiYCorEOdUYaNJYga7Bz3ZLJYUZLkvTw3rwCLaGmfZYlTxZu7v8mf0Q==}
+  /@osui/radio/2.1.1:
+    resolution: {integrity: sha512-n+/8xU2GBmMliqm3aSgVgw/8iHMv8UuJ4RXxs53oTFfGNsirc00mHhGh8nRduM73I+AdxUu16u+nnU7K+WL/Ag==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
     dev: false
 
-  /@osui/radio/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-S0fYEEyposPITt7Se3gFWf+NToD5vGjhiYCorEOdUYaNJYga7Bz3ZLJYUZLkvTw3rwCLaGmfZYlTxZu7v8mf0Q==}
+  /@osui/radio/2.1.1_htlupqpbd3u7hyuic7cg2ag3bq:
+    resolution: {integrity: sha512-n+/8xU2GBmMliqm3aSgVgw/8iHMv8UuJ4RXxs53oTFfGNsirc00mHhGh8nRduM73I+AdxUu16u+nnU7K+WL/Ag==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
@@ -11153,70 +11465,72 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: true
 
-  /@osui/rate/2.1.0:
-    resolution: {integrity: sha512-4ul40Y/cJcDLFbS38qGS+iR1ajs/gJ4VvQU6S3lvQoXQw33NQVXNUMDrI6XbVsyLcHG8Vzofys7cq7uQjPg9Ag==}
+  /@osui/rate/2.1.1:
+    resolution: {integrity: sha512-ezvyj5UAcvWheVRnEDsPUmHOXZ4cf5g8llaSSendD1CMszbcJLkjAS7LSgt9abd9tQAZkMIyA+ZwLboxgZmn1g==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/result/2.1.0:
-    resolution: {integrity: sha512-4ZhRDpQxv4qZounNeb1PjtvtHlYDCEExRw33AOYzrIPKoRp84b4YrebPbjddW8oQSirtUUsYQZ4TKU8FrjgPGA==}
+  /@osui/result/2.1.1:
+    resolution: {integrity: sha512-88YnLnBjMjIdwyi5TsQ9OzPNmYMjdiA4BoG4PALx+C6wl7UMsuLQhYNPWY+BmOmKPCVki6bOlmvxYmgEYRPHEg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/row/2.1.0:
-    resolution: {integrity: sha512-3OkMCewOoyAeb6zm90zvXiBur6CZ3FHKIuxr9rmAIgtpyZipTio9HnWYjvkCzTMhTuINQKvUDK/4AIP4GRwHow==}
+  /@osui/row/2.1.1:
+    resolution: {integrity: sha512-WsVn5FBUVDR1sWrn2MJV7E16WFUlejXoV6dQTudV4g4CwhVo9c+2P6lj4TXhMxPtWFNa8+VTKdQpBRs8aqdTuA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/segmented/2.1.0:
-    resolution: {integrity: sha512-Aafy9JS2Hv6loz1B2/02WHxxj+0ueGaWG18gibjlOCItZeujyRu+RdP7Ka/E+ru1qN1dgLjr08DH40v4gua4Yg==}
+  /@osui/segmented/2.1.1:
+    resolution: {integrity: sha512-x8BcebOAzHMlWc1MY/CYkruZxTFtttBobXkQ7ynSo6lRol/0+BkFKJluShGQgwCpBp9DMfSPanoHTe0ueSYBRQ==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/select/2.1.0_@osui+brand-provider@2.1.0:
-    resolution: {integrity: sha512-fmv1sf8js+jrmAb8Na5ApUXE/nf8cn/+DjS3r717+ZWljXZGRJxgr+9opK1aOdRic6fx9VZ6huZPuJw1w0M1Sg==}
+  /@osui/select/2.1.7_nsow3qylfo3fvubkm2sg77mlke:
+    resolution: {integrity: sha512-TvGQ1WGuT/47XEgg3DsS3lFpJ2eA13F8r6rxKVKWTdSX3fTwXxjQSPGokyOQGt5aGKKpAGnmoYmQ91SXqf8s0w==}
     peerDependencies:
-      '@osui/brand-provider': ^1.1.1
-      '@osui/icons': ^1.1.1
+      '@osui/brand-provider': ^2.1.0
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       '@huse/derived-state': 1.1.1
-      '@osui/brand-provider': 2.1.0
-      '@osui/popover': 2.1.0
-      '@osui/tag': 2.1.0
+      '@osui/brand-provider': 2.1.1
+      '@osui/icons': 2.1.1
+      '@osui/popover': 2.1.1
+      '@osui/tag': 2.1.7_@osui+icons@2.1.1
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/select/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-fmv1sf8js+jrmAb8Na5ApUXE/nf8cn/+DjS3r717+ZWljXZGRJxgr+9opK1aOdRic6fx9VZ6huZPuJw1w0M1Sg==}
+  /@osui/select/2.1.7_rcqlsp3iz4hco7gitmdu4l32dy:
+    resolution: {integrity: sha512-TvGQ1WGuT/47XEgg3DsS3lFpJ2eA13F8r6rxKVKWTdSX3fTwXxjQSPGokyOQGt5aGKKpAGnmoYmQ91SXqf8s0w==}
     peerDependencies:
-      '@osui/brand-provider': ^1.1.1
-      '@osui/icons': ^1.1.1
+      '@osui/brand-provider': ^2.1.0
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       '@huse/derived-state': 1.1.1_react@17.0.2
-      '@osui/popover': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
-      '@osui/tag': 2.1.0_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/icons': 2.1.0_react@17.0.2
+      '@osui/popover': 2.1.1_htlupqpbd3u7hyuic7cg2ag3bq
+      '@osui/tag': 2.1.7_rcqlsp3iz4hco7gitmdu4l32dy
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
@@ -11224,63 +11538,52 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@osui/skeleton/2.1.0:
-    resolution: {integrity: sha512-k9ONhGunaCzXtKopIYdyvnf9scI4LI2Qi2wd6nftBWQWI9JWKN5k3Gabc1wJjxtxV6Iw35PvAl9vKRqTDiBLNQ==}
+  /@osui/skeleton/2.1.1:
+    resolution: {integrity: sha512-f7tHHuNPfwft0C1vk5295zYDSvdGQbbcoDbUA93XQTuwjnPXgh2SvMqGicW+zWsRN+G2SKcFDKk8oGQDeI6BzQ==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/slider/2.1.0_@osui+brand-provider@2.1.0:
-    resolution: {integrity: sha512-0nek2ClfCxi3RmVbxMv6J9Olfu85cjp7XgqPGlx6JYG2NH1mlXVpTlYjlPui0b2MYPsdWrawABsy/qFTBB2wjQ==}
+  /@osui/slider/2.1.1_@osui+brand-provider@2.1.1:
+    resolution: {integrity: sha512-elKmI4xpFNcPIeBwvxFAYz9n5MvRH8EGw/oQS/mFRk/jkmlZVTg/eCkHWvnMv1ojtLYr3cMtnSUBwQHzBpfh3w==}
     peerDependencies:
-      '@osui/brand-provider': ^1.1.1
+      '@osui/brand-provider': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/brand-provider': 2.1.0
+      '@osui/brand-provider': 2.1.1
       classnames: 2.3.1
     dev: false
 
-  /@osui/space/2.1.0:
-    resolution: {integrity: sha512-pLgPkqnGSrZ2TcYS+Yqqc+tGKvT9AX48z3kzJrURzZ6HaOt+h5ulzHm5AhJajiY4F62GKOwAwowTL1+qX8Amvg==}
+  /@osui/space/2.1.1:
+    resolution: {integrity: sha512-lHBM95OP3q2gV8iX8sorXaG6whloA56hGPuXQzeiDuwluDa2Y/vZ1+jJdmCZLOoPHvwykAE9nzV5ZW+66Iz0bg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      classnames: 2.3.1
-    dev: false
-
-  /@osui/spin/2.1.0:
-    resolution: {integrity: sha512-0I8Ii6AADRI3NZWNnZEtS/y3QY8oKiFLD4LcJ3Z2jNvG3AmuvaYTyhQ870wJuf2addRxB5tQh7Kb3wLUmaM8Jg==}
-    peerDependencies:
-      antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
     dev: false
 
-  /@osui/spin/2.1.0_antd@4.21.0:
-    resolution: {integrity: sha512-0I8Ii6AADRI3NZWNnZEtS/y3QY8oKiFLD4LcJ3Z2jNvG3AmuvaYTyhQ870wJuf2addRxB5tQh7Kb3wLUmaM8Jg==}
+  /@osui/spin/2.1.1:
+    resolution: {integrity: sha512-wDbY0uprPtErvxkH30VVMesyz34USc0eKHJWdzYIF21bui7fcHnqQ/fWlH6YEAp5hEWYBm3NmIzG7Og51yKtww==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      antd: 4.21.0
       classnames: 2.3.1
     dev: false
 
-  /@osui/spin/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-0I8Ii6AADRI3NZWNnZEtS/y3QY8oKiFLD4LcJ3Z2jNvG3AmuvaYTyhQ870wJuf2addRxB5tQh7Kb3wLUmaM8Jg==}
+  /@osui/spin/2.1.1_htlupqpbd3u7hyuic7cg2ag3bq:
+    resolution: {integrity: sha512-wDbY0uprPtErvxkH30VVMesyz34USc0eKHJWdzYIF21bui7fcHnqQ/fWlH6YEAp5hEWYBm3NmIzG7Og51yKtww==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
@@ -11288,47 +11591,48 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@osui/statistic/2.1.0:
-    resolution: {integrity: sha512-QpsYLd3fNQI6Q7TX9yLP5x6rDd9Zb0DeKXERyuadeoVi7xb1ASg8wDkuio3Trlj2y3i3VlNvGATJr3H2qz9MoA==}
+  /@osui/statistic/2.1.1:
+    resolution: {integrity: sha512-TV9Jrn9Ts9FL952/D6h4XIYU5iwopr6EhXJRAG8wD5uff4ovi9V3j9PdTa36t/HF3Vq1q4xQr5FWAyeqY+GA4g==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/steps/2.1.0:
-    resolution: {integrity: sha512-cuKjQrx5yz7CfY91iNQl6DAe5XRMbdpvZ/fpJ3atkAnjezmwJZmw24aZhgp85rDpxpAM/zmP/skpLspZ08hBtg==}
+  /@osui/steps/2.1.1:
+    resolution: {integrity: sha512-zGCA4Q+rVDyElS2JvQBrN3In8naqCxnpYEyYMPqHPeoTxP0fBcOJ7r7BsifmVcLgsYQJvUebBgBLvYnXHIcVyg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
     dev: false
 
-  /@osui/switch/2.1.0:
-    resolution: {integrity: sha512-jY9Zyuqj+USzxhraWdAscWXAXMX2eQwDOZtHvnQM49yaZH2rTXmtmGpskxOoIz5pYwyhaO+ouCKEl/xCa1aGtA==}
+  /@osui/switch/2.1.1:
+    resolution: {integrity: sha512-jVu6MVOoLkPBhbSpcRS1u+0ZW+BEg6A9VNXrUzLdPTHWeMfEyC3wIudUQ1BAiA2nwhBV4scN0W3/mefNhP49QQ==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
     dev: false
 
-  /@osui/table/2.1.0_@osui+brand-provider@2.1.0:
-    resolution: {integrity: sha512-bRatzcqxW7TdJewBZOx02SvvhCUpGO4jpzQPmZ1OAXDTTnHoCk1zcUIX7glEs3g4N8fJxh2KK3XZ+l83b6HJng==}
+  /@osui/table/2.1.1_nsow3qylfo3fvubkm2sg77mlke:
+    resolution: {integrity: sha512-cZPw7/0G0n1by8Et0hC3ZYM96rX1tn1dhGZpPKlODLGTdECCG+xYQ6wv2vqVWNtIkoX4gEMRsJYJJGOKRkBYew==}
     peerDependencies:
-      '@osui/brand-provider': ^1.1.1
-      '@osui/icons': ^1.1.1
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      '@osui/brand-provider': ^2.1.0
+      '@osui/icons': ^2.1.0
+      antd: '>=4.21.3'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/brand-provider': 2.1.0
-      '@osui/button': 1.2.33_antd@4.21.0
-      '@osui/pagination': 2.1.0_2nn77kg5jf3ridkupxktdxf4yu
-      '@osui/spin': 2.1.0_antd@4.21.0
-      antd: 4.21.0
+      '@osui/brand-provider': 2.1.1
+      '@osui/button': 2.1.1_@osui+icons@2.1.1
+      '@osui/icons': 2.1.1
+      '@osui/pagination': 2.1.1_nsow3qylfo3fvubkm2sg77mlke
+      '@osui/spin': 2.1.1
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
       lodash: 4.17.21
@@ -11337,191 +11641,174 @@ packages:
       rc-util: 5.23.0
     dev: false
 
-  /@osui/tabs/2.1.0:
-    resolution: {integrity: sha512-6QmKXQ6VcQ/2rzIKL3Jte1D9d2w4gVFAg6qHA+QihGxg9yjfDatiHzj7Wd9sTKXiseBmb0tBIgovDxadY+Gkvg==}
+  /@osui/tabs/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-WUYF7n2WfdD85oGs3tpiN2F0Bert7rJdXoaITGQRxUawUa5blj5DGs2vE0Ms6qsqELqg4E2xOCNKo/UArCON1g==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
+      '@osui/icons': 2.1.1
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/tag/2.1.0:
-    resolution: {integrity: sha512-HjH/XdHXfA75Q5U8Q6AeZttSYwI9Py8xhk8541tCMIUUuc/atJuaDDYiZX3UtE3u5o2i2fJ6Ia1DZsaDXHszmQ==}
+  /@osui/tag/2.1.7_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-lC9xANw5k4+PeBv5ZfBmd7oiPsqSlF+lZPLAg+yJ67tfkpGY1ipNG2kU2erk+Gs3Wcmw8vauA7e4EIXBTN/cxw==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
+      '@osui/icons': 2.1.1
       classnames: 2.3.1
     dev: false
 
-  /@osui/tag/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-HjH/XdHXfA75Q5U8Q6AeZttSYwI9Py8xhk8541tCMIUUuc/atJuaDDYiZX3UtE3u5o2i2fJ6Ia1DZsaDXHszmQ==}
+  /@osui/tag/2.1.7_rcqlsp3iz4hco7gitmdu4l32dy:
+    resolution: {integrity: sha512-lC9xANw5k4+PeBv5ZfBmd7oiPsqSlF+lZPLAg+yJ67tfkpGY1ipNG2kU2erk+Gs3Wcmw8vauA7e4EIXBTN/cxw==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
+      '@osui/icons': 2.1.0_react@17.0.2
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@osui/text-overflow-tooltip/2.1.0:
-    resolution: {integrity: sha512-9jReHKExuqajTkSdG08txPKaAYGs6q1uyccWH6LViTM7nYNRTcAzmlviaa5YMnKJ6e41nP4d/QqTfNgInhFbcw==}
+  /@osui/text-overflow-tooltip/2.1.1:
+    resolution: {integrity: sha512-Kazv2I7Q8rk9LSWJ4WeSgt4fzbtknjrQAFSQ/vnTodCDZD7ItkFARqmlBvTStZt0grAlZtGAxAXJPPpeJXfOIQ==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/tooltip': 2.1.0
+      '@osui/tooltip': 2.1.1
     dev: false
 
-  /@osui/theme-provider/2.1.0:
-    resolution: {integrity: sha512-puCPOqHikwNnc/8ONQ19/FUJ7G2uR7pWCgheBCgRRo/a6IzlDZcFraPVIeEmdoR8EZqzwbKFw1U6B7yEwhEMgA==}
+  /@osui/theme-provider/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-JiYGhptZHwWhIG/oZ4eNTmQGCkGMUENXC75kzNyiBwaVpi0GI9K2T4bK0HO2AC6CEqE+Fnt7p8TjFSnJ6HDLcA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
-      '@osui/dropdown': 2.1.0
-      '@osui/menu': 2.1.0
+      '@osui/dropdown': 2.1.1
+      '@osui/menu': 2.1.1_@osui+icons@2.1.1
       classname: 0.0.0
       classnames: 2.3.1
     transitivePeerDependencies:
       - '@osui/icons'
     dev: false
 
-  /@osui/time-picker/2.1.0:
-    resolution: {integrity: sha512-qwQTZBJnCyxkCFnvrVPxWSFeuqrwZ68DnpiBw74fHKiPLT1K6XkY5ttImRlDt33rnB6uK6r5M3jy2LAJmWq1zw==}
+  /@osui/time-picker/2.1.1:
+    resolution: {integrity: sha512-GTrzSUCszadwxRgurh8g7k5/ZoHOInt0xw4uoqe5ZWat5yjsrgVSQzdWVMqfIAN1JwfVF+rpmmjqKPIR8LLBrg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/timeline/2.1.0:
-    resolution: {integrity: sha512-UfwJmwRptizPExKHTrO4ZXTw/9UbejkZpo2h7msq9fpSvY16PAToC835FaSxTwHF3CnyAZA2/OZV2Pc6z8DMhA==}
+  /@osui/timeline/2.1.1:
+    resolution: {integrity: sha512-7hBe3Y8CNyI9cZKbb6fbou/HqCQBLPMeJj7/Qhu2un2PBvTgs1TbhtVd8rScrR+BuwH3OFntGMGDPTjTayjRDw==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
     dev: false
 
-  /@osui/tooltip/1.2.33_antd@4.21.0:
-    resolution: {integrity: sha512-p7s4NwUFIEIiux72tYuZ8UEu0qiwx3FrcKykEmdRtlI2DeZjKdWCad4QUwJyIkxeMX77v5z+1v5Pwj9rboGv8g==}
-    peerDependencies:
-      antd: '>=4.4.0 <=4.20.7'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      antd: 4.21.0
-      classnames: 2.3.1
-    dev: false
-
-  /@osui/tooltip/2.1.0:
-    resolution: {integrity: sha512-If7CQHC5Dc7j69/vqB9VMHxy6nNnvDox6IcV0tfbu0YGk4w/Ae8QpEDjjRw1mFVhL/DUlmD4A+gHV5kfwJwwKQ==}
+  /@osui/tooltip/2.1.1:
+    resolution: {integrity: sha512-2W5foJjVtJeiVaqXhJoE94/hHtFVWu+z0PZDN9fZZK5zRYcw7bJaQT8Nx/O11WdNU+5MJxv2eclMaUWBh50zNg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
     dev: false
 
-  /@osui/tooltip/2.1.0_antd@4.21.0:
-    resolution: {integrity: sha512-If7CQHC5Dc7j69/vqB9VMHxy6nNnvDox6IcV0tfbu0YGk4w/Ae8QpEDjjRw1mFVhL/DUlmD4A+gHV5kfwJwwKQ==}
+  /@osui/tooltip/2.1.1_htlupqpbd3u7hyuic7cg2ag3bq:
+    resolution: {integrity: sha512-2W5foJjVtJeiVaqXhJoE94/hHtFVWu+z0PZDN9fZZK5zRYcw7bJaQT8Nx/O11WdNU+5MJxv2eclMaUWBh50zNg==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      antd: 4.21.0
-      classnames: 2.3.1
-    dev: false
-
-  /@osui/tooltip/2.1.0_htlupqpbd3u7hyuic7cg2ag3bq:
-    resolution: {integrity: sha512-If7CQHC5Dc7j69/vqB9VMHxy6nNnvDox6IcV0tfbu0YGk4w/Ae8QpEDjjRw1mFVhL/DUlmD4A+gHV5kfwJwwKQ==}
-    peerDependencies:
-      antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       antd: 4.21.7_sfoxds7t5ydpegc3knd667wn6m
       classnames: 2.3.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /@osui/transfer/2.1.0:
-    resolution: {integrity: sha512-wHQrpHh/s2TGEORybh/kRyjXodk/d70IVw3l3bJYj/uBDT5NqSysewXySFiiFilGNL4Xcrl6z0/PU9f8cGFbKQ==}
+  /@osui/transfer/2.1.1:
+    resolution: {integrity: sha512-xBH6xfRVw58HoYD2wJQgqA8YIbSQxafQiJ69KhsxGvvJr4HyxE80XZkcOH45UZOmI4m6q/0d/YOMGbkFVecZoA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
-  /@osui/tree-select/2.1.0:
-    resolution: {integrity: sha512-p28Msrf4PzL8WzP9L+kZbUDZZv2kO4w7CC/vCZCTkMGCs02pGwZ7gotMi2a7/Ytx+yyT679UIv1YagIFyIMwPQ==}
+  /@osui/tree-select/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-8Mxl52Mezk20usS0SgQ2gH/6L7Ul6o6MQrM9BR0NO+7v79nsKMoANgaAy6z6v4nK2sSxkRK73c+FqydsQiWmHQ==}
     peerDependencies:
-      '@osui/icons': ^1.1.1
+      '@osui/icons': ^2.1.0
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    dependencies:
+      '@osui/icons': 2.1.1
+      classnames: 2.3.1
+      hoist-non-react-statics: 3.3.2
+    dev: false
+
+  /@osui/tree/2.1.1_@osui+icons@2.1.1:
+    resolution: {integrity: sha512-DO5ukO9us9Xt3wURsgnUF7yHnGWpvkfH775TN7p6OTP5wg3djyk9iszjKVslJbG3nJSTxd5nH3hl5Zdxy/k2yA==}
+    peerDependencies:
+      '@osui/icons': ^2.1.0
+      antd: '>=4.21.3'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    dependencies:
+      '@osui/icons': 2.1.1
+      classnames: 2.3.1
+    dev: false
+
+  /@osui/typography/2.1.1:
+    resolution: {integrity: sha512-75KLE/8LGvuO7Lebn7Z+BUXN/uJEwayChJEj+ZKQ4cocvS1DYAFOH0CdhM1Czsur8okf5nsBrnAfSsf0dbUryw==}
+    peerDependencies:
+      antd: '>=4.21.3'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    dependencies:
+      classnames: 2.3.1
+    dev: false
+
+  /@osui/upload/2.1.1:
+    resolution: {integrity: sha512-PRZhyaU6jq0f4DkCNab0jihAUAw8Q2SDFiJQ91q0LN7BxHkP7iJcYFQmAhtLg7OOmvg+ihzevcq/n0QXb+xhKA==}
+    peerDependencies:
+      antd: '>=4.21.3'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dependencies:
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@osui/tree/2.1.0:
-    resolution: {integrity: sha512-IOoQ0Gtp3+dmmzd29kUZBiTQ4THUEIiOq7TdxtyAqt4JyBxg41CVPdE5Crv9XLbz802RDI2628siJ/lGnFH/zg==}
-    peerDependencies:
-      '@osui/icons': ^1.1.1
-      antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      classnames: 2.3.1
-    dev: false
-
-  /@osui/typography/2.1.0:
-    resolution: {integrity: sha512-r4NDYVx1VfrrXIIyZvGT1IH3+ZB4mccs1qj+3tr3D2pI7gYj8JR/X4q1sI+ktZEw6qZh6TazqUXcxdpKeYxVaw==}
+  /@osui/version/2.1.1:
+    resolution: {integrity: sha512-o5UNSwtC83j6u9jbQtIcRG6tWu2yr+O8l3LVDo0YglLMHg0bvB64P1otG3iQh/xgYff0nFlYqs+hes7vFes2GA==}
     peerDependencies:
       antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      classnames: 2.3.1
-    dev: false
-
-  /@osui/upload/2.1.0:
-    resolution: {integrity: sha512-hpn26M26gALQRjjP12LGEYTMMlcadZtT+8+Zm0uRwdCHzRdvbK4N1rK6UckUsIhN3XGRmPjVs0Xigp7wIN0XMw==}
-    peerDependencies:
-      antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      classnames: 2.3.1
-      hoist-non-react-statics: 3.3.2
-    dev: false
-
-  /@osui/version/2.1.0:
-    resolution: {integrity: sha512-MaCceRtHt3XZmc3RXjwoITZ3mMph0/sAFgGxeRwgEVg8nY+4GZIuqYnwg9UjtFcW7YcDoA0C9DiPY3dUH/S6eQ==}
-    peerDependencies:
-      antd: '>=4.21.3'
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
     dev: false
 
   /@pmmmwh/react-refresh-webpack-plugin/0.5.7_aumhct55s6lhceplyc622fxoum:
@@ -14687,58 +14974,6 @@ packages:
     dependencies:
       entities: 2.2.0
     dev: true
-
-  /antd/4.21.0:
-    resolution: {integrity: sha512-p8R5scejlWjAIF/NoJ5JF5OMjLbAlCA7u85cNwbtRQOP+14KQDXZyHMT4C5oc9nhz7xxD/Bry6HhPkUmsRuP7Q==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@ant-design/colors': 6.0.0
-      '@ant-design/icons': 4.7.0
-      '@ant-design/react-slick': 0.28.4
-      '@babel/runtime': 7.18.9
-      '@ctrl/tinycolor': 3.4.1
-      classnames: 2.3.1
-      copy-to-clipboard: 3.3.1
-      lodash: 4.17.21
-      memoize-one: 6.0.0
-      moment: 2.29.4
-      rc-cascader: 3.6.1
-      rc-checkbox: 2.3.2
-      rc-collapse: 3.3.1
-      rc-dialog: 8.8.2
-      rc-drawer: 4.4.3
-      rc-dropdown: 4.0.1
-      rc-field-form: 1.26.7
-      rc-image: 5.6.3
-      rc-input: 0.0.1-alpha.7
-      rc-input-number: 7.3.5
-      rc-mentions: 1.8.0
-      rc-menu: 9.6.0
-      rc-motion: 2.6.2
-      rc-notification: 4.6.0
-      rc-pagination: 3.1.17
-      rc-picker: 2.6.10
-      rc-progress: 3.3.3
-      rc-rate: 2.9.2
-      rc-resize-observer: 1.2.0
-      rc-segmented: 2.1.0
-      rc-select: 14.1.9
-      rc-slider: 10.0.1
-      rc-steps: 4.1.4
-      rc-switch: 3.2.2
-      rc-table: 7.24.3
-      rc-tabs: 11.16.1
-      rc-textarea: 0.3.7
-      rc-tooltip: 5.1.1
-      rc-tree: 5.6.5
-      rc-tree-select: 5.4.0
-      rc-trigger: 5.3.1
-      rc-upload: 4.3.4
-      rc-util: 5.23.0
-      scroll-into-view-if-needed: 2.2.29
-    dev: false
 
   /antd/4.21.7_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-rwPtY2tcMpckAbkQjI7EFtJoa13wog29vKcCJEcWUp8ePhszJI2JUVB67IJxs8ZdvwFmKijl0OSwOKnSkDOgJw==}
@@ -23888,20 +24123,6 @@ packages:
       webpack: 4.46.0
     dev: true
 
-  /rc-align/4.0.12:
-    resolution: {integrity: sha512-3DuwSJp8iC/dgHzwreOQl52soj40LchlfUHtgACOUtwGuoFIOVh6n/sCpfqCU8kO5+iz6qR0YKvjgB8iPdE3aQ==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      dom-align: 1.12.3
-      lodash: 4.17.21
-      rc-util: 5.23.0
-      resize-observer-polyfill: 1.5.1
-    dev: false
-
   /rc-align/4.0.12_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-3DuwSJp8iC/dgHzwreOQl52soj40LchlfUHtgACOUtwGuoFIOVh6n/sCpfqCU8kO5+iz6qR0YKvjgB8iPdE3aQ==}
     peerDependencies:
@@ -23916,20 +24137,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       resize-observer-polyfill: 1.5.1
-
-  /rc-cascader/3.6.1:
-    resolution: {integrity: sha512-+GmN2Z0IybKT45t0Z94jkjmsOHGxAliobR2tzt05/Gw0AKBYLHX5bdvsVXR7abPnarYyYzZ/cWe8CoFgDjAFNw==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      array-tree-filter: 2.1.0
-      classnames: 2.3.1
-      rc-select: 14.1.9
-      rc-tree: 5.6.5
-      rc-util: 5.23.0
-    dev: false
 
   /rc-cascader/3.6.1_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-+GmN2Z0IybKT45t0Z94jkjmsOHGxAliobR2tzt05/Gw0AKBYLHX5bdvsVXR7abPnarYyYzZ/cWe8CoFgDjAFNw==}
@@ -23946,16 +24153,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /rc-checkbox/2.3.2:
-    resolution: {integrity: sha512-afVi1FYiGv1U0JlpNH/UaEXdh6WUJjcWokj/nUN2TgG80bfG+MDdbfHKlLcNNba94mbjy2/SXJ1HDgrOkXGAjg==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-    dev: false
-
   /rc-checkbox/2.3.2_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-afVi1FYiGv1U0JlpNH/UaEXdh6WUJjcWokj/nUN2TgG80bfG+MDdbfHKlLcNNba94mbjy2/SXJ1HDgrOkXGAjg==}
     peerDependencies:
@@ -23966,19 +24163,6 @@ packages:
       classnames: 2.3.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-
-  /rc-collapse/3.3.1:
-    resolution: {integrity: sha512-cOJfcSe3R8vocrF8T+PgaHDrgeA1tX+lwfhwSj60NX9QVRidsILIbRNDLD6nAzmcvVC5PWiIRiR4S1OobxdhCg==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-motion: 2.6.2
-      rc-util: 5.23.0
-      shallowequal: 1.1.0
-    dev: false
 
   /rc-collapse/3.3.1_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-cOJfcSe3R8vocrF8T+PgaHDrgeA1tX+lwfhwSj60NX9QVRidsILIbRNDLD6nAzmcvVC5PWiIRiR4S1OobxdhCg==}
@@ -23994,30 +24178,6 @@ packages:
       react-dom: 17.0.2_react@17.0.2
       shallowequal: 1.1.0
 
-  /rc-dialog/8.8.2:
-    resolution: {integrity: sha512-n1waqBDDKqCCcPCDGycahfawF00WqgtXTXUwxrLStUpfQAo7nzkAvTq9voT78X2qN83UYvrMg1TWCuTueBp+sg==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-motion: 2.6.2
-      rc-util: 5.23.0
-    dev: false
-
-  /rc-dialog/8.9.0:
-    resolution: {integrity: sha512-Cp0tbJnrvPchJfnwIvOMWmJ4yjX3HWFatO6oBFD1jx8QkgsQCR0p8nUWAKdd3seLJhEC39/v56kZaEjwp9muoQ==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-motion: 2.6.2
-      rc-util: 5.23.0
-    dev: false
-
   /rc-dialog/8.9.0_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-Cp0tbJnrvPchJfnwIvOMWmJ4yjX3HWFatO6oBFD1jx8QkgsQCR0p8nUWAKdd3seLJhEC39/v56kZaEjwp9muoQ==}
     peerDependencies:
@@ -24031,17 +24191,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /rc-drawer/4.4.3:
-    resolution: {integrity: sha512-FYztwRs3uXnFOIf1hLvFxIQP9MiZJA+0w+Os8dfDh/90X7z/HqP/Yg+noLCIeHEbKln1Tqelv8ymCAN24zPcfQ==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-util: 5.23.0
-    dev: false
-
   /rc-drawer/4.4.3_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-FYztwRs3uXnFOIf1hLvFxIQP9MiZJA+0w+Os8dfDh/90X7z/HqP/Yg+noLCIeHEbKln1Tqelv8ymCAN24zPcfQ==}
     peerDependencies:
@@ -24053,18 +24202,6 @@ packages:
       rc-util: 5.23.0_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-
-  /rc-dropdown/4.0.1:
-    resolution: {integrity: sha512-OdpXuOcme1rm45cR0Jzgfl1otzmU4vuBVb+etXM8vcaULGokAKVpKlw8p6xzspG7jGd/XxShvq+N3VNEfk/l5g==}
-    peerDependencies:
-      react: '>=16.11.0'
-      react-dom: '>=16.11.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-trigger: 5.3.1
-      rc-util: 5.23.0
-    dev: false
 
   /rc-dropdown/4.0.1_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-OdpXuOcme1rm45cR0Jzgfl1otzmU4vuBVb+etXM8vcaULGokAKVpKlw8p6xzspG7jGd/XxShvq+N3VNEfk/l5g==}
@@ -24079,18 +24216,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /rc-field-form/1.26.7:
-    resolution: {integrity: sha512-CIb7Gw+DG9R+g4HxaDGYHhOjhjQoU2mGU4y+UM2+KQ3uRz9HrrNgTspGvNynn3UamsYcYcaPWZJmiJ6VklkT/w==}
-    engines: {node: '>=8.x'}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      async-validator: 4.2.5
-      rc-util: 5.23.0
-    dev: false
-
   /rc-field-form/1.26.7_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-CIb7Gw+DG9R+g4HxaDGYHhOjhjQoU2mGU4y+UM2+KQ3uRz9HrrNgTspGvNynn3UamsYcYcaPWZJmiJ6VklkT/w==}
     engines: {node: '>=8.x'}
@@ -24103,18 +24228,6 @@ packages:
       rc-util: 5.23.0_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-
-  /rc-image/5.6.3:
-    resolution: {integrity: sha512-co7D/3+S34S0QA/t+Zo8etMEt8FGHQDl9GyQoE3X+tHppCV0sFxit3OnAEmYl9HbqV583IY+J3rMDwhOt8ax4A==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-dialog: 8.9.0
-      rc-util: 5.23.0
-    dev: false
 
   /rc-image/5.7.0_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-v6dzSgYfYrH4liKmOZKZZO+x21sJ9KPXNinBfkAoQg2Ihcd5QZ+P/JjB7v60X981XTPGjegy8U17Z8VUX4V36g==}
@@ -24129,17 +24242,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /rc-input-number/7.3.5:
-    resolution: {integrity: sha512-SlHrW+Iw+NqpsPMUyCFR+h7BaGqby8/D1KB9qO1oKeQxgeV/Tbr20pmeF7qXCXq5slseMMqaHE2KbWbhCg7XAg==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-util: 5.23.0
-    dev: false
-
   /rc-input-number/7.3.5_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-SlHrW+Iw+NqpsPMUyCFR+h7BaGqby8/D1KB9qO1oKeQxgeV/Tbr20pmeF7qXCXq5slseMMqaHE2KbWbhCg7XAg==}
     peerDependencies:
@@ -24152,17 +24254,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /rc-input/0.0.1-alpha.7:
-    resolution: {integrity: sha512-eozaqpCYWSY5LBMwlHgC01GArkVEP+XlJ84OMvdkwUnJBSv83Yxa15pZpn7vACAj84uDC4xOA2CoFdbLuqB08Q==}
-    peerDependencies:
-      react: '>=16.0.0'
-      react-dom: '>=16.0.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-util: 5.23.0
-    dev: false
-
   /rc-input/0.0.1-alpha.7_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-eozaqpCYWSY5LBMwlHgC01GArkVEP+XlJ84OMvdkwUnJBSv83Yxa15pZpn7vACAj84uDC4xOA2CoFdbLuqB08Q==}
     peerDependencies:
@@ -24174,20 +24265,6 @@ packages:
       rc-util: 5.23.0_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-
-  /rc-mentions/1.8.0:
-    resolution: {integrity: sha512-ch7yfMMvx2UXy+EvE4axm0Vp6VlVZ30WLrZtLtV/Eb1ty7rQQRzNzCwAHAMyw6tNKTMs9t9sF68AVjAzQ0rvJw==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-menu: 9.6.0
-      rc-textarea: 0.3.7
-      rc-trigger: 5.3.1
-      rc-util: 5.23.0
-    dev: false
 
   /rc-mentions/1.9.0_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-CSC2t8WxK8daS8lylJcquzCgKz4bXLAVNrSHXlTI8fNUy4toot8Sv79wT4fcP/bYgdt07/e3RXzkZfX6xjYYow==}
@@ -24203,21 +24280,6 @@ packages:
       rc-util: 5.23.0_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-
-  /rc-menu/9.6.0:
-    resolution: {integrity: sha512-d26waws42U/rVwW/+rOE2FN9pX6wUc9bDy38vVQYoie6gE85auWIpl5oChGlnW6nE2epnTwUsgWl8ipOPgmnUA==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-motion: 2.6.2
-      rc-overflow: 1.2.6
-      rc-trigger: 5.3.1
-      rc-util: 5.23.0
-      shallowequal: 1.1.0
-    dev: false
 
   /rc-menu/9.6.0_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-d26waws42U/rVwW/+rOE2FN9pX6wUc9bDy38vVQYoie6gE85auWIpl5oChGlnW6nE2epnTwUsgWl8ipOPgmnUA==}
@@ -24258,19 +24320,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /rc-notification/4.6.0:
-    resolution: {integrity: sha512-xF3MKgIoynzjQAO4lqsoraiFo3UXNYlBfpHs0VWvwF+4pimen9/H1DYLN2mfRWhHovW6gRpla73m2nmyIqAMZQ==}
-    engines: {node: '>=8.x'}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-motion: 2.6.2
-      rc-util: 5.23.0
-    dev: false
-
   /rc-notification/4.6.0_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-xF3MKgIoynzjQAO4lqsoraiFo3UXNYlBfpHs0VWvwF+4pimen9/H1DYLN2mfRWhHovW6gRpla73m2nmyIqAMZQ==}
     engines: {node: '>=8.x'}
@@ -24285,18 +24334,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /rc-overflow/1.2.6:
-    resolution: {integrity: sha512-YqbocgzuQxfq2wZy72vdAgrgzzEuM/5d4gF9TBEodCpXPbUeXGrUXNm1J6G1MSkCU2N0ePIgCEu5qD/0Ldi63Q==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-resize-observer: 1.2.0
-      rc-util: 5.23.0
-    dev: false
-
   /rc-overflow/1.2.6_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-YqbocgzuQxfq2wZy72vdAgrgzzEuM/5d4gF9TBEodCpXPbUeXGrUXNm1J6G1MSkCU2N0ePIgCEu5qD/0Ldi63Q==}
     peerDependencies:
@@ -24310,16 +24347,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /rc-pagination/3.1.17:
-    resolution: {integrity: sha512-/BQ5UxcBnW28vFAcP2hfh+Xg15W0QZn8TWYwdCApchMH1H0CxiaUUcULP8uXcFM1TygcdKWdt3JqsL9cTAfdkQ==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-    dev: false
-
   /rc-pagination/3.1.17_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-/BQ5UxcBnW28vFAcP2hfh+Xg15W0QZn8TWYwdCApchMH1H0CxiaUUcULP8uXcFM1TygcdKWdt3JqsL9cTAfdkQ==}
     peerDependencies:
@@ -24330,23 +24357,6 @@ packages:
       classnames: 2.3.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-
-  /rc-picker/2.6.10:
-    resolution: {integrity: sha512-9wYtw0DFWs9FO92Qh2D76P0iojUr8ZhLOtScUeOit6ks/F+TBLrOC1uze3IOu+u9gbDAjmosNWLKbBzx/Yuv2w==}
-    engines: {node: '>=8.x'}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      date-fns: 2.28.0
-      dayjs: 1.11.4
-      moment: 2.29.4
-      rc-trigger: 5.3.1
-      rc-util: 5.23.0
-      shallowequal: 1.1.0
-    dev: false
 
   /rc-picker/2.6.10_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-9wYtw0DFWs9FO92Qh2D76P0iojUr8ZhLOtScUeOit6ks/F+TBLrOC1uze3IOu+u9gbDAjmosNWLKbBzx/Yuv2w==}
@@ -24366,17 +24376,6 @@ packages:
       react-dom: 17.0.2_react@17.0.2
       shallowequal: 1.1.0
 
-  /rc-progress/3.3.3:
-    resolution: {integrity: sha512-MDVNVHzGanYtRy2KKraEaWeZLri2ZHWIRyaE1a9MQ2MuJ09m+Wxj5cfcaoaR6z5iRpHpA59YeUxAlpML8N4PJw==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-util: 5.23.0
-    dev: false
-
   /rc-progress/3.3.3_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-MDVNVHzGanYtRy2KKraEaWeZLri2ZHWIRyaE1a9MQ2MuJ09m+Wxj5cfcaoaR6z5iRpHpA59YeUxAlpML8N4PJw==}
     peerDependencies:
@@ -24388,18 +24387,6 @@ packages:
       rc-util: 5.23.0_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-
-  /rc-rate/2.9.2:
-    resolution: {integrity: sha512-SaiZFyN8pe0Fgphv8t3+kidlej+cq/EALkAJAc3A0w0XcPaH2L1aggM8bhe1u6GAGuQNAoFvTLjw4qLPGRKV5g==}
-    engines: {node: '>=8.x'}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-util: 5.23.0
-    dev: false
 
   /rc-rate/2.9.2_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-SaiZFyN8pe0Fgphv8t3+kidlej+cq/EALkAJAc3A0w0XcPaH2L1aggM8bhe1u6GAGuQNAoFvTLjw4qLPGRKV5g==}
@@ -24439,18 +24426,6 @@ packages:
       react-dom: 17.0.2_react@17.0.2
       resize-observer-polyfill: 1.5.1
 
-  /rc-segmented/2.1.0:
-    resolution: {integrity: sha512-hUlonro+pYoZcwrH6Vm56B2ftLfQh046hrwif/VwLIw1j3zGt52p5mREBwmeVzXnSwgnagpOpfafspzs1asjGw==}
-    peerDependencies:
-      react: '>=16.0.0'
-      react-dom: '>=16.0.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-motion: 2.6.2
-      rc-util: 5.23.0
-    dev: false
-
   /rc-segmented/2.1.0_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-hUlonro+pYoZcwrH6Vm56B2ftLfQh046hrwif/VwLIw1j3zGt52p5mREBwmeVzXnSwgnagpOpfafspzs1asjGw==}
     peerDependencies:
@@ -24482,22 +24457,6 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: true
 
-  /rc-select/14.1.9:
-    resolution: {integrity: sha512-DK01+Q7oCWr5jVPiEp/BTQ8xCB4rI4LfXzZtSmBWJhOMuibyZD1Vlz/DlVKCUFmtBM4SzG4/SltGHoGlcbCqiw==}
-    engines: {node: '>=8.x'}
-    peerDependencies:
-      react: '*'
-      react-dom: '*'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-motion: 2.6.2
-      rc-overflow: 1.2.6
-      rc-trigger: 5.3.1
-      rc-util: 5.23.0
-      rc-virtual-list: 3.4.8
-    dev: false
-
   /rc-select/14.1.9_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-DK01+Q7oCWr5jVPiEp/BTQ8xCB4rI4LfXzZtSmBWJhOMuibyZD1Vlz/DlVKCUFmtBM4SzG4/SltGHoGlcbCqiw==}
     engines: {node: '>=8.x'}
@@ -24515,19 +24474,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /rc-slider/10.0.1:
-    resolution: {integrity: sha512-igTKF3zBet7oS/3yNiIlmU8KnZ45npmrmHlUUio8PNbIhzMcsh+oE/r2UD42Y6YD2D/s+kzCQkzQrPD6RY435Q==}
-    engines: {node: '>=8.x'}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-util: 5.23.0
-      shallowequal: 1.1.0
-    dev: false
-
   /rc-slider/10.0.1_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-igTKF3zBet7oS/3yNiIlmU8KnZ45npmrmHlUUio8PNbIhzMcsh+oE/r2UD42Y6YD2D/s+kzCQkzQrPD6RY435Q==}
     engines: {node: '>=8.x'}
@@ -24542,18 +24488,6 @@ packages:
       react-dom: 17.0.2_react@17.0.2
       shallowequal: 1.1.0
 
-  /rc-steps/4.1.4:
-    resolution: {integrity: sha512-qoCqKZWSpkh/b03ASGx1WhpKnuZcRWmvuW+ZUu4mvMdfvFzVxblTwUM+9aBd0mlEUFmt6GW8FXhMpHkK3Uzp3w==}
-    engines: {node: '>=8.x'}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-util: 5.23.0
-    dev: false
-
   /rc-steps/4.1.4_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-qoCqKZWSpkh/b03ASGx1WhpKnuZcRWmvuW+ZUu4mvMdfvFzVxblTwUM+9aBd0mlEUFmt6GW8FXhMpHkK3Uzp3w==}
     engines: {node: '>=8.x'}
@@ -24567,17 +24501,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /rc-switch/3.2.2:
-    resolution: {integrity: sha512-+gUJClsZZzvAHGy1vZfnwySxj+MjLlGRyXKXScrtCTcmiYNPzxDFOxdQ/3pK1Kt/0POvwJ/6ALOR8gwdXGhs+A==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-util: 5.23.0
-    dev: false
-
   /rc-switch/3.2.2_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-+gUJClsZZzvAHGy1vZfnwySxj+MjLlGRyXKXScrtCTcmiYNPzxDFOxdQ/3pK1Kt/0POvwJ/6ALOR8gwdXGhs+A==}
     peerDependencies:
@@ -24589,20 +24512,6 @@ packages:
       rc-util: 5.23.0_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-
-  /rc-table/7.24.3:
-    resolution: {integrity: sha512-3Z74jeIpQ2t0i/PQ3iSKXsl1WGT809yzq3KzIDzEB7SIA0zat+rqwI+OnrwfhJVRp7GTjeT7sJyCatXpw1YJdg==}
-    engines: {node: '>=8.x'}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-resize-observer: 1.2.0
-      rc-util: 5.23.0
-      shallowequal: 1.1.0
-    dev: false
 
   /rc-table/7.25.3:
     resolution: {integrity: sha512-McsLJ2rg8EEpRBRYN4Pf9gT7ZNYnjvF9zrBpUBBbUX/fxk+eGi5ff1iPIhMyiHsH71/BmTUzX9nc9XqupD0nMg==}
@@ -24633,21 +24542,6 @@ packages:
       react-dom: 17.0.2_react@17.0.2
       shallowequal: 1.1.0
 
-  /rc-tabs/11.16.1:
-    resolution: {integrity: sha512-bR7Dap23YyfzZQwtKomhiFEFzZuE7WaKWo+ypNRSGB9PDKSc6tM12VP8LWYkvmmQHthgwP0WRN8nFbSJWuqLYw==}
-    engines: {node: '>=8.x'}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-dropdown: 4.0.1
-      rc-menu: 9.6.0
-      rc-resize-observer: 1.2.0
-      rc-util: 5.23.0
-    dev: false
-
   /rc-tabs/11.16.1_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-bR7Dap23YyfzZQwtKomhiFEFzZuE7WaKWo+ypNRSGB9PDKSc6tM12VP8LWYkvmmQHthgwP0WRN8nFbSJWuqLYw==}
     engines: {node: '>=8.x'}
@@ -24664,19 +24558,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /rc-textarea/0.3.7:
-    resolution: {integrity: sha512-yCdZ6binKmAQB13hc/oehh0E/QRwoPP1pjF21aHBxlgXO3RzPF6dUu4LG2R4FZ1zx/fQd2L1faktulrXOM/2rw==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-resize-observer: 1.2.0
-      rc-util: 5.23.0
-      shallowequal: 1.1.0
-    dev: false
-
   /rc-textarea/0.3.7_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-yCdZ6binKmAQB13hc/oehh0E/QRwoPP1pjF21aHBxlgXO3RzPF6dUu4LG2R4FZ1zx/fQd2L1faktulrXOM/2rw==}
     peerDependencies:
@@ -24690,16 +24571,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       shallowequal: 1.1.0
-
-  /rc-tooltip/5.1.1:
-    resolution: {integrity: sha512-alt8eGMJulio6+4/uDm7nvV+rJq9bsfxFDCI0ljPdbuoygUscbsMYb6EQgwib/uqsXQUvzk+S7A59uYHmEgmDA==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      rc-trigger: 5.3.1
-    dev: false
 
   /rc-tooltip/5.2.2_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-jtQzU/18S6EI3lhSGoDYhPqNpWajMtS5VV/ld1LwyfrDByQpYmw/LW6U7oFXXLukjfDHQ7Ju705A82PRNFWYhg==}
@@ -24727,19 +24598,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: true
-
-  /rc-tree-select/5.4.0:
-    resolution: {integrity: sha512-reRbOqC7Ic/nQocJAJeCl4n6nJUY3NoqiwRXKvhjgZJU7NGr9vIccXEsY+Lghkw5UMpPoxGsIJB0jiAvM18XYA==}
-    peerDependencies:
-      react: '*'
-      react-dom: '*'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-select: 14.1.9
-      rc-tree: 5.6.5
-      rc-util: 5.23.0
-    dev: false
 
   /rc-tree-select/5.4.0_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-reRbOqC7Ic/nQocJAJeCl4n6nJUY3NoqiwRXKvhjgZJU7NGr9vIccXEsY+Lghkw5UMpPoxGsIJB0jiAvM18XYA==}
@@ -24800,20 +24658,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
 
-  /rc-trigger/5.3.1:
-    resolution: {integrity: sha512-5gaFbDkYSefZ14j2AdzucXzlWgU2ri5uEjkHvsf1ynRhdJbKxNOnw4PBZ9+FVULNGFiDzzlVF8RJnR9P/xrnKQ==}
-    engines: {node: '>=8.x'}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-align: 4.0.12
-      rc-motion: 2.6.2
-      rc-util: 5.23.0
-    dev: false
-
   /rc-trigger/5.3.1_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-5gaFbDkYSefZ14j2AdzucXzlWgU2ri5uEjkHvsf1ynRhdJbKxNOnw4PBZ9+FVULNGFiDzzlVF8RJnR9P/xrnKQ==}
     engines: {node: '>=8.x'}
@@ -24828,17 +24672,6 @@ packages:
       rc-util: 5.23.0_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-
-  /rc-upload/4.3.4:
-    resolution: {integrity: sha512-uVbtHFGNjHG/RyAfm9fluXB6pvArAGyAx8z7XzXXyorEgVIWj6mOlriuDm0XowDHYz4ycNK0nE0oP3cbFnzxiQ==}
-    peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      classnames: 2.3.1
-      rc-util: 5.23.0
-    dev: false
 
   /rc-upload/4.3.4_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-uVbtHFGNjHG/RyAfm9fluXB6pvArAGyAx8z7XzXXyorEgVIWj6mOlriuDm0XowDHYz4ycNK0nE0oP3cbFnzxiQ==}

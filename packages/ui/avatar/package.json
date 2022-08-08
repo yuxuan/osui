@@ -70,7 +70,7 @@
         "webpack": "^5.52.1"
     },
     "peerDependencies": {
-        "@osui/icons": "^2.1.1",
+        "@osui/icons": "^2.1.0",
         "antd": ">=4.21.3",
         "react": ">=17.0.0",
         "react-dom": ">=17.0.0"
@@ -81,12 +81,7 @@
     },
     "author": "zhangxingchang",
     "license": "MIT",
-    "husky": {
-        "hooks": {
-            "pre-commit": "skr lint ./src"
-        }
-    },
-    "dependencies": {
+   "dependencies": {
         "classnames": "^2.3.1"
     },
     "publishConfig": {

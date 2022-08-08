@@ -79,7 +79,7 @@
     },
     "author": "huoyuxuan",
     "license": "MIT",
-    "dependencies": {
+   "dependencies": {
         "@osui/affix": "^2.1.02.1.1",
         "@osui/alert": "^2.1.02.1.1",
         "@osui/anchor": "^2.1.02.1.1",

@@ -5,11 +5,12 @@ importers:
   .:
     specifiers:
       '@ant-design/tools': ^14.0.0-alpha.3
+      '@babel/core': ^7.10.5
       '@commitlint/cli': ^9.1.1
       '@commitlint/config-conventional': ^9.1.1
       '@emotion/babel-preset-css-prop': ^11.2.0
-      '@osui/icons': workspace:^
-      '@osui/icons-icloud': workspace:^
+      '@osui/icons': ^2.1.0
+      '@osui/icons-icloud': ^2.1.0
       '@reskript/cli': ^2.2.2
       '@reskript/cli-lint': ^2.2.2
       '@storybook/cli': ^6.0.26
@@ -21,7 +22,7 @@ importers:
       enzyme-adapter-react-16: ^1.15.6
       enzyme-to-json: ^3.6.2
       eslint-plugin-import: ^2.24.0
-      husky: '8'
+      husky: ^8.0.0
       jest: ^27.2.1
       lerna: ^3.22.1
       less: ^4.1.2
@@ -30,6 +31,7 @@ importers:
       mkdirp: ^1.0.4
       mockdate: ^3.0.5
       moment: ^2.29.1
+      require-from-string: ^2.0.2
       rimraf: ^3.0.2
       styled-components: ~5.3.5
       stylelint-config-rational-order: ^0.1.2
@@ -37,6 +39,7 @@ importers:
       webpack: ^5.52.1
     devDependencies:
       '@ant-design/tools': 14.1.0
+      '@babel/core': 7.18.10
       '@commitlint/cli': 9.1.2
       '@commitlint/config-conventional': 9.1.2
       '@emotion/babel-preset-css-prop': 11.10.0_@babel+core@7.18.10
@@ -62,6 +65,7 @@ importers:
       mkdirp: 1.0.4
       mockdate: 3.0.5
       moment: 2.29.4
+      require-from-string: 2.0.2
       rimraf: 3.0.2
       styled-components: 5.3.5_a7b7i3ycivfl5nfe5xs34epzw4
       stylelint-config-rational-order: 0.1.2

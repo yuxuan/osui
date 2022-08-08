@@ -13,7 +13,7 @@
     "license": "MIT",
     "scripts": {
         "lint": "pnpm workspaces run lint",
-        "build": "lerna run --stream --sort build && pnpm workspace @osui/ui run build-all && pnpm build-check",
+        "build": "lerna run --stream --sort build && pnpm --filter @osui/ui build-all  && pnpm build-check",
         "clean": "pnpm workspaces run clean",
         "storybook": "start-storybook -p 8777 -s public",
         "version": "lerna version --conventional-commits --no-push",
@@ -29,6 +29,7 @@
     },
     "devDependencies": {
         "@ant-design/tools": "^14.0.0-alpha.3",
+        "@babel/core": "^7.10.5",
         "@commitlint/cli": "^9.1.1",
         "@commitlint/config-conventional": "^9.1.1",
         "@emotion/babel-preset-css-prop": "^11.2.0",
@@ -54,6 +55,7 @@
         "mkdirp": "^1.0.4",
         "mockdate": "^3.0.5",
         "moment": "^2.29.1",
+        "require-from-string": "^2.0.2",
         "rimraf": "^3.0.2",
         "styled-components": "~5.3.5",
         "stylelint-config-rational-order": "^0.1.2",

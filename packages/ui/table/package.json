@@ -81,12 +81,7 @@
     },
     "author": "zhangxingchang",
     "license": "MIT",
-    "husky": {
-        "hooks": {
-            "pre-commit": "skr lint ./src"
-        }
-    },
-    "dependencies": {
+   "dependencies": {
         "@osui/button": "^2.1.1",
         "@osui/pagination": "^2.1.1",
         "@osui/spin": "^2.1.1",

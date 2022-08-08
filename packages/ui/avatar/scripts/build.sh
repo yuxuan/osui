@@ -7,7 +7,7 @@ echo "pnpm $(pnpm -v)"
 rm -rf es
 rm -rf lib
 
-pnpm install --production=false
+# pnpm install --production=false
 # # pnpm test
 
 $(npm bin)/cpy '**/*' '!**/*.ts' '!**/*.tsx' '!**/*.js' '!**/*.jsx' ../tmp/ --cwd=src/ --parents

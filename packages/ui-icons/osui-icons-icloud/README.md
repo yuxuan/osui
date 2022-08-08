@@ -7,7 +7,7 @@ npm i @osui/icons-icloud
 ```
 
 ```shell
-yarn add @osui/icons-icloud
+pnpm add @osui/icons-icloud
 ```
 
 ## Usage

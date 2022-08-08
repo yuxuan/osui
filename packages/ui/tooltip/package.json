@@ -79,12 +79,7 @@
     },
     "author": "huoyuxuan",
     "license": "MIT",
-    "husky": {
-        "hooks": {
-            "pre-commit": "skr lint ./src"
-        }
-    },
-    "dependencies": {
+   "dependencies": {
         "classnames": "^2.3.1"
     },
     "publishConfig": {

@@ -6,7 +6,7 @@
     "name": "zhanglili01,huoyuxuan,lisiqi06,guyiling"
   },
   "scripts": {
-    "build": "pnpm workspace @osui/icons-builder build icloud && sh scripts/build.sh",
+    "build": "pnpm --filter @osui/icons-builder build icloud && sh scripts/build.sh",
     "build-icons-only": "sh scripts/build.sh",
     "prepublishOnly": "npm run build",
     "clean": "rm -rf dist && rm -rf node_modules",
@@ -16,8 +16,6 @@
   "module": "dist/es/index.js",
   "types": "dist/index.d.ts",
   "devDependencies": {
-        "@osui/icons": "^2.1.0",
-        "@osui/icons-icloud": "^2.1.0",
     "@babel/core": "^7.10.5",
     "@babel/plugin-proposal-export-default-from": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
@@ -48,8 +46,7 @@
     "dls",
     "react"
   ],
-  "license": "MIT",
-  "peerDependencies": {
+  "license": "MIT",  "peerDependencies": {
     "react": ">=17"
   },
   "dependencies": {

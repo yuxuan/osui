@@ -7,7 +7,7 @@
     "src/"
   ],
   "scripts": {
-    "build": "node -r esm build/generate.js",
+    "build": "node build/generate.mjs",
     "clean": "rm -rf node_modules",
     "test": "echo 'none'"
   },
@@ -18,10 +18,9 @@
     "dls"
   ],
   "author": "Justineo <justice360@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-        "@osui/icons": "^2.1.0",
-        "@osui/icons-icloud": "^2.1.0",
+  "license": "MIT",  "devDependencies": {
+    "@osui/icons": "^2.1.0",
+    "@osui/icons-icloud": "^2.1.0",
     "eslint": "^8.0.0",
     "esm": "^3.2.25",
     "lodash": "^4.17.21",

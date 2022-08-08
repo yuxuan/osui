@@ -1,13 +1,17 @@
 /* eslint-disable complexity, no-console */
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import url from 'node:url';
+import path from 'node:path';
 import fetch from 'node-fetch';
 import mkdirp from 'mkdirp';
 import rimraf from 'rimraf';
-import svgson, { stringify } from 'svgson';
+import svgson from 'svgson';
 import stringifyObject from 'stringify-object';
-import { camelCase, upperFirst, flatten } from 'lodash';
+import _ from 'lodash';
 import Svgo from 'svgo';
+
+const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+
 const svgo = new Svgo({
     multipass: true,
     removeViewBox: false,
@@ -106,7 +110,7 @@ async function normalizeSVG(content, file, keepSvgFill) {
         return;
     }
 
-    const el = await svgson(data);
+    const el = await svgson.default(data);
     console.log(`Normalizing ${file}...`);
     const { attributes } = el;
     let { width, height } = attributes;
@@ -180,7 +184,7 @@ async function normalizeSVG(content, file, keepSvgFill) {
 
     return {
         el,
-        content: stringify(el),
+        content: svgson.stringify(el),
         width,
         height,
     };
@@ -200,19 +204,19 @@ async function generate() {
         await getSVGFiles(RAW_DIR, { keepSvgFill: false }),
         // await getSVGFiles(RAW_COLORFUL_DIR, { keepSvgFill: true }),
     ])
-        .then(svgs => flatten(svgs).map(
+        .then(svgs => _.flatten(svgs).map(
             async ({ slug, content, keepSvgFill }) => {
                 const file = `${slug}.svg`;
                 const { el, content: svg, width, height } = await normalizeSVG(content, file, keepSvgFill);
 
                 fs.writeFileSync(path.join(SVG_DIR, file), svg, 'utf8');
 
-                const name = upperFirst(camelCase(slug));
+                const name = _.upperFirst(_.camelCase(slug));
 
                 const iconCode = stringifyObject(
                     {
                         name: `icon-${slug}`,
-                        content: el.children.map(child => stringify(child)).join(''),
+                        content: el.children.map(child => svgson.stringify(child)).join(''),
                         width: Number(width),
                         height: Number(height),
                     },

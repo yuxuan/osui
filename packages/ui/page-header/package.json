@@ -80,17 +80,11 @@
     },
     "author": "huoyuxuan",
     "license": "MIT",
-    "husky": {
-        "hooks": {
-            "pre-commit": "skr lint ./src"
-        }
-    },
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
-        "@osui/icons-icloud": "^2.1.1",
         "classnames": "^2.3.1"
     }
 }

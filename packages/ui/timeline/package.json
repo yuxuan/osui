@@ -79,7 +79,7 @@
     },
     "author": "huoyuxuan",
     "license": "MIT",
-    "dependencies": {
+   "dependencies": {
         "classnames": "^2.3.1"
     },
     "publishConfig": {

@@ -3,7 +3,7 @@ echo "npm $(npm -v)"
 echo "pnpm $(pnpm -v)"
 
 rm -rf dist
-node -r esm rollup.js
+node rollup.mjs
 cp -R svg dist/svg
 cp -R raw dist/raw
 

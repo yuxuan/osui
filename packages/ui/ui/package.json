@@ -58,12 +58,7 @@
     },
     "author": "huoyuxuan",
     "license": "MIT",
-    "husky": {
-        "hooks": {
-            "pre-commit": "skr lint ./src"
-        }
-    },
-    "dependencies": {
+   "dependencies": {
         "@osui/affix": "^2.1.1",
         "@osui/alert": "^2.1.1",
         "@osui/anchor": "^2.1.1",

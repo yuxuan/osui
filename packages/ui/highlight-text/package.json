@@ -80,11 +80,6 @@
     },
     "author": "chenze03,huoyuxuan",
     "license": "MIT",
-    "husky": {
-        "hooks": {
-            "pre-commit": "skr lint ./src"
-        }
-    },
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.com"

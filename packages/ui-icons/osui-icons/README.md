@@ -7,7 +7,7 @@ npm i @osui/icons
 ```
 
 ```shell
-yarn add @osui/icons
+pnpm add @osui/icons
 ```
 
 ## Usage

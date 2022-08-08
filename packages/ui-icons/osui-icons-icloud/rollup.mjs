@@ -1,4 +1,5 @@
 import path from 'path';
+import url from 'url';
 import { rollup } from 'rollup';
 import json from '@rollup/plugin-json';
 import alias from '@rollup/plugin-alias';
@@ -7,6 +8,8 @@ import { string } from 'rollup-plugin-string';
 import autoExternal from 'rollup-plugin-auto-external';
 import resolve from 'rollup-plugin-node-resolve';
 import css from 'rollup-plugin-postcss';
+
+const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 const babelConfig = {
     presets: [
