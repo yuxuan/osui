@@ -15,7 +15,7 @@
     "scripts": {
         "lint": "skr lint",
         "build": "sh scripts/build.sh",
-        "prepublishOnly": "yarn run build",
+        "prepublishOnly": "pnpm run build",
         "storybook": "start-storybook -p 8700",
         "clean": "rm -rf node_modules && rm -rf es",
         "test": "jest --config jest.config.js",
@@ -26,6 +26,8 @@
         "es/*.less"
     ],
     "devDependencies": {
+        "@osui/icons": "workspace:^",
+        "@osui/icons-icloud": "workspace:^",
         "@babel/cli": "^7.10.5",
         "@emotion/babel-preset-css-prop": "^11.2.0",
         "@emotion/react": "^11.8.1",

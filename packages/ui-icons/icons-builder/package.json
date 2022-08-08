@@ -20,6 +20,8 @@
   "author": "Justineo <justice360@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+        "@osui/icons": "workspace:^",
+        "@osui/icons-icloud": "workspace:^",
     "eslint": "^8.0.0",
     "esm": "^3.2.25",
     "lodash": "^4.17.21",

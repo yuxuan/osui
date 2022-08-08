@@ -6,7 +6,7 @@
     "name": "zhanglili01,huoyuxuan,lisiqi06,guyiling"
   },
   "scripts": {
-    "build": "yarn workspace @osui/icons-builder build osui && sh scripts/build.sh",
+    "build": "pnpm workspace @osui/icons-builder build osui && sh scripts/build.sh",
     "build-icons-only": "sh scripts/build.sh",
     "prepublishOnly": "npm run build",
     "clean": "rm -rf dist && rm -rf node_modules",
@@ -16,6 +16,8 @@
   "module": "dist/es/index.js",
   "types": "dist/index.d.ts",
   "devDependencies": {
+        "@osui/icons": "workspace:^",
+        "@osui/icons-icloud": "workspace:^",
     "@babel/core": "^7.10.5",
     "@babel/plugin-proposal-export-default-from": "^7.10.4",
     "@babel/preset-env": "^7.10.4",

@@ -107,7 +107,7 @@ async function main() {
     if (diff.length) {
         diff.forEach(component => {
             const filePath = path.join(__dirname, '..', 'packages', 'ui', component);
-            exec(`cd ${filePath} && yarn build`).then(({stdout}) => {
+            exec(`cd ${filePath} && pnpm build`).then(({stdout}) => {
                 console.log(stdout);
             }).catch(e => console.error(e));
         });

@@ -1,5 +1,5 @@
-echo "yarn $(yarn -v)"
-yarn install --production=false
+echo "pnpm $(pnpm -v)"
+pnpm install --production=false
 
 rm -rf es
 $(npm bin)/cpy '**/*' '!**/*.ts' '!**/*.tsx' '!**/*.js' '!**/*.jsx' ../tmp/ --cwd=src/ --parents

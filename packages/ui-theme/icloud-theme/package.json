@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "skr lint",
     "build": "sh scripts/build.sh",
-    "prepack": "yarn build",
+    "prepack": "pnpm build",
     "storybook": "start-storybook -p 8700",
     "clean": "rm -rf node_modules && rm -rf dist",
     "test": "echo 'no tests yet'",
@@ -21,6 +21,8 @@
     "dist/**"
   ],
   "devDependencies": {
+        "@osui/icons": "workspace:^",
+        "@osui/icons-icloud": "workspace:^",
     "@babel/cli": "^7.10.5",
     "@reskript/cli": "^3.0.0",
     "@reskript/cli-lint": "^3.0.0",

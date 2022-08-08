@@ -1,6 +1,6 @@
 echo "node $(node -v)"
 echo "npm $(npm -v)"
-echo "yarn $(yarn -v)"
+echo "pnpm $(pnpm -v)"
 
 rm -rf dist
 rm -rf vars

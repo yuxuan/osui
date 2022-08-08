@@ -2,9 +2,9 @@
 
 # 将stories从组件文件夹复制到docs中
 # Example:
-# yarn copy-to-docs all osui
-# yarn copy-to-docs all icloud
-# yarn copy-to-docs all # 默认是osui
+# pnpm copy-to-docs all osui
+# pnpm copy-to-docs all icloud
+# pnpm copy-to-docs all # 默认是osui
 
 COMPONENT_NAME_ARG=$1
 TARGET=${2:-osui} # 默认值

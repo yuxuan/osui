@@ -2,13 +2,13 @@
 
 echo "node $(node -v)"
 echo "npm $(npm -v)"
-echo "yarn $(yarn -v)"
+echo "pnpm $(pnpm -v)"
 
 rm -rf es
 rm -rf lib
 
-yarn install --production=false
-# # yarn test
+pnpm install --production=false
+# # pnpm test
 
 $(npm bin)/cpy '**/*' '!**/*.ts' '!**/*.tsx' '!**/*.js' '!**/*.jsx' ../tmp/ --cwd=src/ --parents
 $(npm bin)/tsc
