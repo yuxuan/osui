@@ -16,8 +16,8 @@
   "module": "dist/es/index.js",
   "types": "dist/index.d.ts",
   "devDependencies": {
-        "@osui/icons": "workspace:^",
-        "@osui/icons-icloud": "workspace:^",
+        "@osui/icons": "^2.1.0",
+        "@osui/icons-icloud": "^2.1.0",
     "@babel/core": "^7.10.5",
     "@babel/plugin-proposal-export-default-from": "^7.10.4",
     "@babel/preset-env": "^7.10.4",

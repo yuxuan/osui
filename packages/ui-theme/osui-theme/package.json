@@ -20,8 +20,8 @@
     "dist/**"
   ],
   "devDependencies": {
-        "@osui/icons": "workspace:^",
-        "@osui/icons-icloud": "workspace:^",
+        "@osui/icons": "^2.1.0",
+        "@osui/icons-icloud": "^2.1.0",
     "@babel/cli": "^7.10.5",
     "@reskript/cli": "^0.9.0",
     "@reskript/cli-lint": "^0.9.9",
