@@ -1093,12 +1093,12 @@
         "versionPolicyName": "osui-acud"
     },
     {
-      "packageName": "@osui/icons-builder",
-      "projectFolder": "packages/ui-icons/icons-builder",
-      "reviewCategory": "production",
-      "tags": ["tools"],
-      "shouldPublish": false,
-      "versionPolicyName": "osui-acud"
+        "packageName": "@osui/icons-builder",
+        "projectFolder": "packages/ui-icons/icons-builder",
+        "reviewCategory": "production",
+        "tags": ["tools"],
+        "shouldPublish": false,
+        "versionPolicyName": "osui-acud"
     }
     ]
-  }
+}

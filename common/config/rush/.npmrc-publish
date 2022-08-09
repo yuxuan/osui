@@ -18,4 +18,6 @@
 #
 #   //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}
 #
+@osui:registry=https://registry.npmjs.org/
 registry=https://registry.npmjs.org/
+//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}
