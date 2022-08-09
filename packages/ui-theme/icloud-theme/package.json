@@ -1,6 +1,6 @@
 {
   "name": "@osui/icloud-theme",
-  "version": "2.1.3",
+  "version": "2.1.9",
   "description": "",
   "main": "dist/theme/index.js",
   "module": "dist/theme/index.js",
@@ -21,9 +21,9 @@
     "dist/**"
   ],
   "devDependencies": {
-    "@osui/icons": "^2.1.0",
-    "@osui/icons-icloud": "^2.1.0",
     "@babel/cli": "^7.10.5",
+    "@osui/icons": "^2.1.9",
+    "@osui/icons-icloud": "^2.1.9",
     "@reskript/cli": "^3.0.0",
     "@reskript/cli-lint": "^3.0.0",
     "@reskript/config-babel": "^3.0.0",
@@ -52,7 +52,8 @@
     "url": "https://gitee.com/gitee-fe/osui/tree/master"
   },
   "author": "huoyuxuan",
-  "license": "MIT",  "publishConfig": {
+  "license": "MIT",
+  "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.com"
   },
