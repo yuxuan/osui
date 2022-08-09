@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@osui/icons-builder",
-  "version": "2.1.1",
+  "version": "2.1.9",
   "description": "Icons for OSUI",
   "files": [
     "src/"
@@ -18,9 +18,10 @@
     "dls"
   ],
   "author": "Justineo <justice360@gmail.com>",
-  "license": "MIT",  "devDependencies": {
-    "@osui/icons": "^2.1.0",
-    "@osui/icons-icloud": "^2.1.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@osui/icons": "^2.1.9",
+    "@osui/icons-icloud": "^2.1.9",
     "eslint": "^8.0.0",
     "esm": "^3.2.25",
     "lodash": "^4.17.21",

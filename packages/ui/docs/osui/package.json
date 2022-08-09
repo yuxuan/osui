@@ -1,7 +1,7 @@
 {
     "name": "@osui/osui-docs",
     "private": true,
-    "version": "2.1.1",
+    "version": "2.1.9",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -27,9 +27,9 @@
         "es/*.less"
     ],
     "devDependencies": {
-        "@osui/icons": "^2.1.0",
-        "@osui/icons-icloud": "^2.1.0",
         "@babel/cli": "^7.10.5",
+        "@osui/icons": "^2.1.9",
+        "@osui/icons-icloud": "^2.1.9",
         "@reskript/cli": "^2.0.0",
         "@reskript/cli-lint": "^2.0.0",
         "@reskript/config-babel": "^2.0.0",
@@ -78,7 +78,7 @@
     },
     "author": "huoyuxuan",
     "license": "MIT",
-   "dependencies": {
+    "dependencies": {
         "classnames": "^2.2.6"
     }
 }

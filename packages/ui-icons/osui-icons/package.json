@@ -1,6 +1,6 @@
 {
   "name": "@osui/icons",
-  "version": "2.1.1",
+  "version": "2.1.9",
   "description": "OSUI icons",
   "author": {
     "name": "zhanglili01,huoyuxuan,lisiqi06,guyiling"
@@ -46,7 +46,8 @@
     "dls",
     "react"
   ],
-  "license": "MIT",  "peerDependencies": {
+  "license": "MIT",
+  "peerDependencies": {
     "react": ">=17"
   },
   "dependencies": {

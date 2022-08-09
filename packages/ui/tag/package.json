@@ -1,6 +1,6 @@
 {
     "name": "@osui/tag",
-    "version": "2.1.7",
+    "version": "2.1.9",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -26,12 +26,12 @@
         "es/*.less"
     ],
     "devDependencies": {
-        "@osui/icons": "^2.1.0",
-        "@osui/icons-icloud": "^2.1.0",
         "@babel/cli": "^7.10.5",
         "@emotion/babel-preset-css-prop": "^11.2.0",
         "@emotion/react": "^11.8.1",
         "@emotion/styled": "^11.8.1",
+        "@osui/icons": "^2.1.9",
+        "@osui/icons-icloud": "^2.1.9",
         "@reskript/cli": "^3.0.0",
         "@reskript/cli-lint": "^3.0.0",
         "@reskript/config-babel": "^3.0.0",
@@ -86,7 +86,7 @@
     },
     "author": "huoyuxuan",
     "license": "MIT",
-   "dependencies": {
+    "dependencies": {
         "classnames": "^2.3.1"
     },
     "publishConfig": {
