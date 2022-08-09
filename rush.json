@@ -53,7 +53,7 @@
       "pnpmStore": "local",
 
       /**
-       * If true, then Rush will add the "--strict-peer-dependencies" option when invoking PNPM.
+       * If true, then Rush will add the "--strict-peer-dependencies" option when invoking PNPM
        * This causes "rush install" to fail if there are unsatisfied peer dependencies, which is
        * an invalid state that can cause build failures or incompatible dependency versions.
        * (For historical reasons, JavaScript package managers generally do not treat this invalid
@@ -79,7 +79,7 @@
       // "resolutionStrategy": "fast",
 
       /**
-       * If true, then `rush install` will report an error if manual modifications
+       * If true, then `rush install` will report an error if manual modification
        * were made to the PNPM shrinkwrap file without running "rush update" afterwards.
        *
        * This feature protects against accidental inconsistencies that may be introduced
@@ -94,10 +94,10 @@
        *
        * The default value is false.
        */
-      // "preventManualShrinkwrapChanges": true,
+      // "preventManualShrinkwrapChanges": true
 
       /**
-       * If true, then `rush install` will use the PNPM workspaces feature to perform the
+       * If true, then `rush install` will use the PNPM workspaces feature to perform th
        * install.
        *
        * This feature uses PNPM to perform the entire monorepo install. When using workspaces, Rush will
@@ -150,7 +150,7 @@
      * version. In those cases, you will need to add an entry to the "allowedAlternativeVersions"
      * section of the common-versions.json.
      */
-    // "ensureConsistentVersions": true,
+    // "ensureConsistentVersions": true
 
     /**
      * Large monorepos can become intimidating for newcomers if project folder paths don't follow
@@ -189,7 +189,7 @@
      *
      * The default value is false.
      */
-    // "allowMostlyStandardPackageNames": true,
+    // "allowMostlyStandardPackageNames": true
 
     /**
      * This feature helps you to review and approve new packages before they are introduced
@@ -262,7 +262,7 @@
        * you might configure your system's trigger to look for a special string such as "[skip-ci]"
        * in the commit message, and then customize Rush's message to contain that string.
        */
-      // "versionBumpCommitMessage": "Bump versions [skip ci]",
+      "versionBumpCommitMessage": "Bump versions [skip ci]",
 
       /**
        * The commit message to use when committing changes during 'rush version'.
@@ -271,7 +271,7 @@
        * you might configure your system's trigger to look for a special string such as "[skip-ci]"
        * in the commit message, and then customize Rush's message to contain that string.
        */
-      // "changeLogUpdateCommitMessage": "Update changelogs [skip ci]"
+      "changeLogUpdateCommitMessage": "Update changelogs [skip ci]"
     },
 
     "repository": {
@@ -290,19 +290,19 @@
        * your PR branch, and in this situation "rush change" will also automatically invoke "git fetch"
        * to retrieve the latest activity for the remote main branch.
        */
-      "url": "https://github.com/yuxuan/osui"
+      "url": "https://github.com/yuxuan/osui",
 
       /**
        * The default branch name. This tells "rush change" which remote branch to compare against.
        * The default value is "main"
        */
-      // "defaultBranch": "main",
+      "defaultBranch": "main",
 
       /**
        * The default remote. This tells "rush change" which remote to compare against if the remote URL is
        * not set or if a remote matching the provided remote URL is not found.
        */
-      // "defaultRemote": "origin"
+      "defaultRemote": "origin"
     },
 
     /**
@@ -403,7 +403,8 @@
         // "packageName": "osui",
 
         /**
-         * The path to the project folder, relative to the rush.json config file.
+         * The path to the project folder, relative to the rush.json config file.,
+         "shouldPublish": true
          */
         // "projectFolder": "apps/my-app",
 
@@ -424,7 +425,7 @@
         // ],
 
         /**
-         * If true, then this project will be ignored by the "rush check" command.
+         * If true, then this project will be ignored by the "rush check" command
          * The default value is false.
          */
         // "skipRushCheck": false,
@@ -459,485 +460,645 @@
           */
         // "tags": ["apps", "web"]
       // },
-      {
+    {
         "packageName": "@osui/affix",
         "projectFolder": "packages/ui/affix",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/alert",
         "projectFolder": "packages/ui/alert",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/anchor",
         "projectFolder": "packages/ui/anchor",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/auto-complete",
         "projectFolder": "packages/ui/auto-complete",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/avatar",
         "projectFolder": "packages/ui/avatar",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/back-top",
         "projectFolder": "packages/ui/back-top",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/badge",
         "projectFolder": "packages/ui/badge",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/brand-provider",
         "projectFolder": "packages/ui/brand-provider",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/breadcrumb",
         "projectFolder": "packages/ui/breadcrumb",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/button",
         "projectFolder": "packages/ui/button",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/calendar",
         "projectFolder": "packages/ui/calendar",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/card",
         "projectFolder": "packages/ui/card",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/carousel",
         "projectFolder": "packages/ui/carousel",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/cascader",
         "projectFolder": "packages/ui/cascader",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/checkbox",
         "projectFolder": "packages/ui/checkbox",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/col",
         "projectFolder": "packages/ui/col",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/collapse",
         "projectFolder": "packages/ui/collapse",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/comment",
         "projectFolder": "packages/ui/comment",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/config-provider",
         "projectFolder": "packages/ui/config-provider",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/date-picker",
         "projectFolder": "packages/ui/date-picker",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/descriptions",
         "projectFolder": "packages/ui/descriptions",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/divider",
         "projectFolder": "packages/ui/divider",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/drawer",
         "projectFolder": "packages/ui/drawer",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/dropdown",
         "projectFolder": "packages/ui/dropdown",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/empty",
         "projectFolder": "packages/ui/empty",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/flex-centered",
         "projectFolder": "packages/ui/flex-centered",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/form",
         "projectFolder": "packages/ui/form",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/gap",
         "projectFolder": "packages/ui/gap",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/grid",
         "projectFolder": "packages/ui/grid",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/highlight-text",
         "projectFolder": "packages/ui/highlight-text",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/image",
         "projectFolder": "packages/ui/image",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/input",
         "projectFolder": "packages/ui/input",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/input-number",
         "projectFolder": "packages/ui/input-number",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/joyride",
         "projectFolder": "packages/ui/joyride",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/layout",
         "projectFolder": "packages/ui/layout",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/list",
         "projectFolder": "packages/ui/list",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/markdown",
         "projectFolder": "packages/ui/markdown",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/mentions",
         "projectFolder": "packages/ui/mentions",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/menu",
         "projectFolder": "packages/ui/menu",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/message",
         "projectFolder": "packages/ui/message",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/modal",
         "projectFolder": "packages/ui/modal",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/notification",
         "projectFolder": "packages/ui/notification",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/page-header",
         "projectFolder": "packages/ui/page-header",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/pagination",
         "projectFolder": "packages/ui/pagination",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/popconfirm",
         "projectFolder": "packages/ui/popconfirm",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/popover",
         "projectFolder": "packages/ui/popover",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/progress",
         "projectFolder": "packages/ui/progress",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/quick-edit",
         "projectFolder": "packages/ui/quick-edit",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/radio",
         "projectFolder": "packages/ui/radio",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/rate",
         "projectFolder": "packages/ui/rate",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/result",
         "projectFolder": "packages/ui/result",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/row",
         "projectFolder": "packages/ui/row",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/segmented",
         "projectFolder": "packages/ui/segmented",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/select",
         "projectFolder": "packages/ui/select",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/skeleton",
         "projectFolder": "packages/ui/skeleton",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/slider",
         "projectFolder": "packages/ui/slider",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/space",
         "projectFolder": "packages/ui/space",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/spin",
         "projectFolder": "packages/ui/spin",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/statistic",
         "projectFolder": "packages/ui/statistic",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/steps",
         "projectFolder": "packages/ui/steps",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/switch",
         "projectFolder": "packages/ui/switch",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/table",
         "projectFolder": "packages/ui/table",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/tabs",
         "projectFolder": "packages/ui/tabs",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/tag",
         "projectFolder": "packages/ui/tag",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/text-overflow-tooltip",
         "projectFolder": "packages/ui/text-overflow-tooltip",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/theme-provider",
         "projectFolder": "packages/ui/theme-provider",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/time-picker",
         "projectFolder": "packages/ui/time-picker",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/timeline",
         "projectFolder": "packages/ui/timeline",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/tooltip",
         "projectFolder": "packages/ui/tooltip",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/transfer",
         "projectFolder": "packages/ui/transfer",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/tree",
         "projectFolder": "packages/ui/tree",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/tree-select",
         "projectFolder": "packages/ui/tree-select",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/typography",
         "projectFolder": "packages/ui/typography",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/upload",
         "projectFolder": "packages/ui/upload",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/version",
         "projectFolder": "packages/ui/version",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/ui",
         "projectFolder": "packages/ui/ui",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/icloud-theme",
         "projectFolder": "packages/ui-theme/icloud-theme",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/icons-icloud",
         "projectFolder": "packages/ui-icons/osui-icons-icloud",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
         "packageName": "@osui/icons",
         "projectFolder": "packages/ui-icons/osui-icons",
         "reviewCategory": "production",
-        "tags": ["libraries"]
+        "tags": ["libraries"],
+        "shouldPublish": true,
+        "versionPolicyName": "osui-acud"
     },
     {
       "packageName": "@osui/icons-builder",
       "projectFolder": "packages/ui-icons/icons-builder",
       "reviewCategory": "production",
-      "tags": ["tools"]
+      "tags": ["tools"],
+      "shouldPublish": false,
+      "versionPolicyName": "osui-acud"
     }
     ]
   }
