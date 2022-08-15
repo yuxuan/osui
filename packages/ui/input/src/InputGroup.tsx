@@ -23,28 +23,28 @@ const OSUIInputGroup = (
         className
     );
     const handleFocus = useCallback(
-        e => {
+        (e: any) => {
             onFocus && onFocus(e);
             setFocused(true);
         },
         [onFocus]
     );
     const handleBlur = useCallback(
-        e => {
+        (e: any) => {
             onBlur && onBlur(e);
             setFocused(false);
         },
         [onBlur]
     );
     const handleMouseEnter = useCallback(
-        e => {
+        (e: any) => {
             onMouseEnter?.(e);
             setHover(true);
         },
         [onMouseEnter]
     );
     const handleMouseLeave = useCallback(
-        e => {
+        (e: any) => {
             onMouseLeave?.(e);
             setHover(false);
         },
