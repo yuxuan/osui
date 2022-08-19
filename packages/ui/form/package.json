@@ -1,6 +1,6 @@
 {
     "name": "@osui/form",
-    "version": "2.1.11",
+    "version": "2.1.12",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -33,7 +33,7 @@
         "@osui/icons": "^2.1.9",
         "@osui/icons-icloud": "^2.1.9",
         "@osui/input": "^2.1.12",
-        "@osui/input-number": "^2.1.9",
+        "@osui/input-number": "^2.1.10",
         "@osui/radio": "^2.1.9",
         "@reskript/cli": "^3.0.0",
         "@reskript/cli-lint": "^3.0.0",

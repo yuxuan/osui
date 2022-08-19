@@ -31,7 +31,7 @@
         "@osui/icloud-theme": "^2.1.9",
         "@osui/icons": "^2.1.9",
         "@osui/icons-icloud": "^2.1.9",
-        "@osui/ui": "^2.1.9",
+        "@osui/ui": "^2.1.10",
         "@reskript/cli": "^3.0.0",
         "@reskript/cli-lint": "^3.0.0",
         "@reskript/config-babel": "^3.0.0",

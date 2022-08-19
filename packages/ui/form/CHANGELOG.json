@@ -2,6 +2,23 @@
   "name": "@osui/form",
   "entries": [
     {
+      "version": "2.1.12",
+      "tag": "@osui/form_v2.1.12",
+      "date": "Fri, 19 Aug 2022 12:29:42 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@osui/input-number\" from `^2.1.9` to `^2.1.10`"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.11",
       "tag": "@osui/form_v2.1.11",
       "date": "Fri, 19 Aug 2022 12:11:40 GMT",

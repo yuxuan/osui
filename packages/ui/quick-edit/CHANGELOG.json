@@ -2,6 +2,18 @@
   "name": "@osui/quick-edit",
   "entries": [
     {
+      "version": "2.1.10",
+      "tag": "@osui/quick-edit_v2.1.10",
+      "date": "Fri, 19 Aug 2022 12:29:42 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.9",
       "tag": "@osui/quick-edit_v2.1.9",
       "date": "Tue, 09 Aug 2022 06:37:41 GMT",
