@@ -85,7 +85,7 @@
     },
     "dependencies": {
         "@huse/derived-state": "^1.1.1",
-        "@osui/input": "^2.1.11",
+        "@osui/input": "^2.1.12",
         "@osui/select": "^2.1.9",
         "classnames": "^2.3.1",
         "hoist-non-react-statics": "^3.3.2",

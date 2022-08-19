@@ -2,6 +2,18 @@
   "name": "@osui/input",
   "entries": [
     {
+      "version": "2.1.12",
+      "tag": "@osui/input_v2.1.12",
+      "date": "Fri, 19 Aug 2022 12:28:44 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.11",
       "tag": "@osui/input_v2.1.11",
       "date": "Fri, 19 Aug 2022 12:11:40 GMT",

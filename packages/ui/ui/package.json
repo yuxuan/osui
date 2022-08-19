@@ -90,7 +90,7 @@
         "@osui/grid": "^2.1.9",
         "@osui/highlight-text": "^2.1.9",
         "@osui/image": "^2.1.9",
-        "@osui/input": "^2.1.11",
+        "@osui/input": "^2.1.12",
         "@osui/input-number": "^2.1.9",
         "@osui/joyride": "^2.1.9",
         "@osui/layout": "^2.1.9",

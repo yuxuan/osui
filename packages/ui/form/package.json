@@ -32,7 +32,7 @@
         "@osui/divider": "^2.1.9",
         "@osui/icons": "^2.1.9",
         "@osui/icons-icloud": "^2.1.9",
-        "@osui/input": "^2.1.11",
+        "@osui/input": "^2.1.12",
         "@osui/input-number": "^2.1.9",
         "@osui/radio": "^2.1.9",
         "@reskript/cli": "^3.0.0",
