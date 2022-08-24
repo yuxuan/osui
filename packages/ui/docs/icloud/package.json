@@ -16,7 +16,7 @@
     "scripts": {
         "lint": "skr lint",
         "build": "echo 'done'",
-        "build-storybook": "node -r esm build-storybook -c .storybook -o dist",
+        "build-storybook": "build-storybook -c .storybook -o dist",
         "storybook": "start-storybook -p 8700",
         "clean": "rm -rf node_modules && rm -rf es",
         "test": "echo 'jest --config jest.config.js'",
