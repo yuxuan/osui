@@ -2,6 +2,18 @@
   "name": "@osui/icloud-theme",
   "entries": [
     {
+      "version": "2.1.10",
+      "tag": "@osui/icloud-theme_v2.1.10",
+      "date": "Wed, 24 Aug 2022 11:42:14 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "change large button font size"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.9",
       "tag": "@osui/icloud-theme_v2.1.9",
       "date": "Tue, 09 Aug 2022 06:37:41 GMT",

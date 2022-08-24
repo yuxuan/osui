@@ -1,6 +1,6 @@
 {
   "name": "@osui/icloud-theme",
-  "version": "2.1.9",
+  "version": "2.1.10",
   "description": "",
   "main": "dist/theme/index.js",
   "module": "dist/theme/index.js",
