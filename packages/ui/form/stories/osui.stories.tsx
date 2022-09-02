@@ -5,6 +5,7 @@ import Checkbox from '@osui/checkbox';
 import DatePicker from '@osui/date-picker';
 import Select from '@osui/select';
 import {Cascader, InputNumber} from 'antd';
+import {QuestionCircleOutlined} from '@ant-design/icons';
 import Form from '../src';
 
 export default {
@@ -28,6 +29,7 @@ const tailLayout = {
 };
 
 export const Demo = () => {
+    Form.useLabelLayout('basic', 100);
     const onFinish = values => {
         console.log('Success:', values);
     };
@@ -49,6 +51,7 @@ export const Demo = () => {
             <Form.Item
                 label="Username"
                 name="username"
+                tooltip={{title: '默认展示预警事件，支持选择下发至其他路径。', icon: <QuestionCircleOutlined />}}
                 rules={[
                     {
                         required: true,
@@ -86,7 +89,7 @@ export const Demo = () => {
 };
 
 export const StatusDemo = () => {
-    const { Option } = Select;
+    const {Option} = Select;
 
     return (
         <Form layout="vertical">
@@ -104,7 +107,6 @@ export const StatusDemo = () => {
 
             <Form.Item
                 label="Validating"
-
                 validateStatus="validating"
                 help="The information is being validated..."
             >
@@ -121,7 +123,6 @@ export const StatusDemo = () => {
 
             <Form.Item
                 label="Fail"
-
                 validateStatus="error"
                 help="Should be combination of numbers & alphabets"
             >
@@ -146,7 +147,6 @@ export const StatusDemo = () => {
 
             <Form.Item
                 label="Validating"
-
                 validateStatus="validating"
                 help="The information is being validated..."
             >
@@ -216,5 +216,6 @@ export const StatusDemo = () => {
             <Form.Item label="Error" validateStatus="error">
                 <Input.Password allowClear placeholder="with input password and allowClear" />
             </Form.Item>
-        </Form>);
+        </Form>
+    );
 };
