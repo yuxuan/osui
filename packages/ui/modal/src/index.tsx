@@ -11,6 +11,9 @@ import {
     IconExclamationCircleFilled,
 } from '@osui/icons';
 import Button, {ButtonProps} from '@osui/button';
+
+import useOsuiModal from './useModal';
+
 import './index.less';
 
 const {destroyAll, config} = AntdModal;
@@ -127,7 +130,7 @@ const OriginModal: ModalInterface = ({className, bodyBorder, size, ...props}) =>
     );
 };
 
-OriginModal.useModal = AntdModal.useModal;
+OriginModal.useModal = useOsuiModal;
 
 // Modal function component such as confirm
 export type ModalFunc = (
