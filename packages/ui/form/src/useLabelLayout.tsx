@@ -10,6 +10,7 @@ export default (formName: string, maxWidth: number = 104) => {
     const labelRef = useRef<NodeListOf<Element> | undefined >(undefined);
     const antdFormLabelRef = useRef<NodeListOf<Element> | undefined >(undefined);
     const antdFormItemControlRef = useRef<NodeListOf<Element> | undefined >(undefined);
+    const nestedAntdFormItemControlRef = useRef<NodeListOf<Element> | undefined >(undefined);
     const init = useRef(true);
 
     useLayoutEffect(
@@ -22,9 +23,15 @@ export default (formName: string, maxWidth: number = 104) => {
             antdFormLabelRef.current = document.querySelectorAll(
                 `#${formName} .ant-form-item > .ant-form-item-row > .ant-form-item-label`
             );
-            // form labelValue部分
+            // form labelValue部分，用于最后footer
             antdFormItemControlRef.current = document.querySelectorAll(
                 `#${formName} .ant-form-item > .ant-form-item-row > .ant-form-item-control:first-child`
+            );
+
+            // 嵌套内部的formItem且没有label的，没有margin
+            nestedAntdFormItemControlRef.current = document.querySelectorAll(
+                // eslint-disable-next-line max-len
+                `#${formName} .ant-form-item > .ant-form-item-row > .ant-form-item-control .ant-form-item-control:first-child`
             );
         },
         [formName]
@@ -108,6 +115,12 @@ export default (formName: string, maxWidth: number = 104) => {
                     antdFormItemControlRef.current?.forEach(
                         element => {
                             element.setAttribute('style', `margin-left: ${fullWidth}px;`);
+                        }
+                    );
+
+                    nestedAntdFormItemControlRef.current?.forEach(
+                        element => {
+                            element.setAttribute('style', 'margin-left: 0px;');
                         }
                     );
                 },
