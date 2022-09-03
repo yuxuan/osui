@@ -2,6 +2,18 @@
   "name": "@osui/modal",
   "entries": [
     {
+      "version": "2.1.10",
+      "tag": "@osui/modal_v2.1.10",
+      "date": "Sat, 03 Sep 2022 01:57:46 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "modal update"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.9",
       "tag": "@osui/modal_v2.1.9",
       "date": "Tue, 09 Aug 2022 06:37:41 GMT",

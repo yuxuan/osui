@@ -1,6 +1,13 @@
 # Change Log - @osui/form
 
-This log was last generated on Fri, 19 Aug 2022 12:29:42 GMT and should not be manually modified.
+This log was last generated on Sat, 03 Sep 2022 01:57:46 GMT and should not be manually modified.
+
+## 2.1.13
+Sat, 03 Sep 2022 01:57:46 GMT
+
+### Patches
+
+- form update
 
 ## 2.1.12
 Fri, 19 Aug 2022 12:29:42 GMT
