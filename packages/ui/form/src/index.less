@@ -91,7 +91,7 @@
     // tooltip
     .@{ant-prefix}-form-item-label > label .@{ant-prefix}-form-item-tooltip {
         position: absolute;
-        right: -8px;
+        right: 0;
     }
 
     // 水平表单，form-control前面空16px
@@ -100,6 +100,8 @@
     }
 
     .@{ant-prefix}-form-item-label > label {
+        margin-right: 8px;
+
         &::after {
             // 因为冒号我们自己实现了，margin会占位影响计算
             margin: 0;
