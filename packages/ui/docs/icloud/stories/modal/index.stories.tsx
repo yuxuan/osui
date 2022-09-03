@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React, {useState} from 'react';
+import React, {createContext, useState} from 'react';
 import Button from '@osui/button';
 import Space from '@osui/space';
 import {IconExclamationCircleFilled} from '@osui/icons';
@@ -10,25 +10,106 @@ export default {
     title: '反馈/Modal 对话框',
 };
 
+const ReachableContext = createContext<string | null>(null);
+const UnreachableContext = createContext<string | null>(null);
+
+const config = {
+    title: 'Use Hook!',
+    content: (
+        <>
+            <ReachableContext.Consumer>{name => `Reachable: ${name}!`}</ReachableContext.Consumer>
+            <br />
+            <UnreachableContext.Consumer>{name => `Unreachable: ${name}!`}</UnreachableContext.Consumer>
+        </>
+    ),
+};
+
 export const Demo = () => {
     const [visible, setVisible] = useState(false);
+    const [modal, modalContextHolder] = Modal.useModal();
+
     return (
         <div style={{padding: 30}}>
-            <BrandProvider brand="icloud">
-                <Button type="primary" onClick={() => setVisible(true)}>
-                    打开基础modal
-                </Button>
-                <Modal
-                    title="我是标题我是标题"
-                    visible={visible}
-                    onOk={() => setVisible(false)}
-                    onCancel={() => setVisible(false)}
-                >
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                </Modal>
-            </BrandProvider>
+            <Space>
+                <ReachableContext.Provider value="Light">
+                    {modalContextHolder}
+                    <Button
+                        type="primary"
+                        onClick={() => {
+                            modal.confirm(config);
+                        }}
+                    >
+                        Context Provider
+                    </Button>
+                    <UnreachableContext.Provider value="Bamboo" />
+                </ReachableContext.Provider>
+                <BrandProvider brand="icloud">
+                    <Space>
+                        <Button type="primary" onClick={() => setVisible(true)}>
+                            打开基础modal
+                        </Button>
+                        <Button
+                            type="primary"
+                            onClick={() => {
+                                modal.confirm({title: 'Confirm', closable: true, content: 'This is a Confirm Dialog.'});
+                            }}
+                        >
+                            Confirm
+                        </Button>
+                        <Button
+                            type="primary"
+                            onClick={() => {
+                                modal.confirm({
+                                    title: 'Warning',
+                                    content: 'This is a Warning Dialog.',
+                                    type: 'warning',
+                                });
+                            }}
+                        >
+                            Warning
+                        </Button>
+                        <Button
+                            type="primary"
+                            onClick={() => {
+                                modal.confirm({
+                                    title: 'Success',
+                                    content: 'This is a Success Dialog.',
+                                    type: 'success',
+                                });
+                            }}
+                        >
+                            Success
+                        </Button>
+                        <Button
+                            type="primary"
+                            onClick={() => {
+                                modal.confirm({title: 'Info', content: 'This is a Info Dialog.', type: 'info'});
+                            }}
+                        >
+                            Info
+                        </Button>
+                        <Button
+                            type="primary"
+                            onClick={() => {
+                                modal.confirm({title: 'Error', content: 'This is a Error Dialog.', type: 'error'});
+                            }}
+                        >
+                            Error
+                        </Button>
+                    </Space>
+
+                    <Modal
+                        title="我是标题我是标题"
+                        visible={visible}
+                        onOk={() => setVisible(false)}
+                        onCancel={() => setVisible(false)}
+                    >
+                        何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                        何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                        何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    </Modal>
+                </BrandProvider>
+            </Space>
         </div>
     );
 };
