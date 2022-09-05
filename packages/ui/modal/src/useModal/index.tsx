@@ -4,11 +4,11 @@
  */
 
 import * as React from 'react';
-import type {HookModalRef} from 'antd/lib/modal/useModal/HookModal';
-import HookModal from 'antd/lib/modal/useModal/HookModal';
-import type {ModalFuncProps} from 'antd/lib/modal';
-import usePatchElement from 'antd/lib/_util/hooks/usePatchElement';
-import {ModalStaticFunctions, withError, withInfo, withSuccess, withWarn, withConfirm} from 'antd/lib/modal/confirm';
+import type {HookModalRef} from 'antd/es/modal/useModal/HookModal';
+import HookModal from 'antd/es/modal/useModal/HookModal';
+import type {ModalFuncProps} from 'antd/es/modal';
+import usePatchElement from 'antd/es/_util/hooks/usePatchElement';
+import {ModalStaticFunctions, withError, withInfo, withSuccess, withWarn, withConfirm} from 'antd/es/modal/confirm';
 import {
     IconCheckCircleFilled,
     IconCloseCircleFilled,
@@ -44,6 +44,10 @@ export const confirmFunc = (
     return (config: ModalFuncProps) => {
         // 优先级：函数调用 > type配置 > confirm
         const type = confirmType || config.type || 'confirm';
+        // 自定义icon
+        if (typeof config.icon !== 'undefined') {
+            return {...func(config), type};
+        }
         let icon = <IconExclamationCircleFilled />;
 
         if (type === 'success') {
