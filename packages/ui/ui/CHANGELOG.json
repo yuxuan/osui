@@ -2,6 +2,18 @@
   "name": "@osui/ui",
   "entries": [
     {
+      "version": "2.1.13",
+      "tag": "@osui/ui_v2.1.13",
+      "date": "Tue, 06 Sep 2022 00:44:52 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.12",
       "tag": "@osui/ui_v2.1.12",
       "date": "Sat, 03 Sep 2022 03:38:24 GMT",
