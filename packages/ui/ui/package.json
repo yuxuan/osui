@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "2.1.13",
+    "version": "2.1.14",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -99,7 +99,7 @@
         "@osui/mentions": "^2.1.9",
         "@osui/menu": "^2.1.9",
         "@osui/message": "^2.1.9",
-        "@osui/modal": "^2.1.11",
+        "@osui/modal": "^2.1.12",
         "@osui/notification": "^2.1.9",
         "@osui/page-header": "^2.1.9",
         "@osui/pagination": "^2.1.9",

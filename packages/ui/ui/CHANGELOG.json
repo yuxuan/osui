@@ -2,6 +2,23 @@
   "name": "@osui/ui",
   "entries": [
     {
+      "version": "2.1.14",
+      "tag": "@osui/ui_v2.1.14",
+      "date": "Wed, 07 Sep 2022 02:28:40 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@osui/modal\" from `^2.1.11` to `^2.1.12`"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.13",
       "tag": "@osui/ui_v2.1.13",
       "date": "Tue, 06 Sep 2022 00:44:52 GMT",
