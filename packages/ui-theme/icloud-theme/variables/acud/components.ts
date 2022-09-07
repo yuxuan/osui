@@ -361,6 +361,8 @@ export default {
     '--modal-close-icon-height': '16px',
     '--modal-close-icon-line-height': '68px',
     '--modal-close-icon-margin-right': '24px',
+    '--modal-close-right': '28px',
+    '--modal-close-top': '26px',
     '--modal-content-bg': 'var(--component-background)',
     '--modal-footer-bg': 'transparent',
     '--modal-footer-border-color-split': 'var(--border-color-split)',
