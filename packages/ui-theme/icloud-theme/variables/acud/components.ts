@@ -404,7 +404,6 @@ export default {
     '--pagination-prev-next-icon-color': 'var(--color-gray-7)',
     '--pagination-prev-next-icon-color-disabled': 'var(--color-gray-6)',
     '--pagination-quick-jumper-margin-left': '0',
-    '--pagination-total-text-color': 'var(--color-gray-7)',
     '--picker-basic-cell-active-with-range-color': 'var(--color-brand-1)',
     '--picker-basic-cell-disabled-bg': 'rgba(0, 0, 0, 0.04)',
     '--picker-basic-cell-hover-color': 'var(--theme-bg-color-base)',
