@@ -2,6 +2,18 @@
   "name": "@osui/form",
   "entries": [
     {
+      "version": "2.1.14",
+      "tag": "@osui/form_v2.1.14",
+      "date": "Sat, 03 Sep 2022 03:38:24 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.13",
       "tag": "@osui/form_v2.1.13",
       "date": "Sat, 03 Sep 2022 01:57:46 GMT",

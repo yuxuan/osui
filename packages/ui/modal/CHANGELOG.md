@@ -1,6 +1,13 @@
 # Change Log - @osui/modal
 
-This log was last generated on Sat, 03 Sep 2022 01:57:46 GMT and should not be manually modified.
+This log was last generated on Tue, 06 Sep 2022 00:43:07 GMT and should not be manually modified.
+
+## 2.1.11
+Tue, 06 Sep 2022 00:43:07 GMT
+
+### Patches
+
+- update
 
 ## 2.1.10
 Sat, 03 Sep 2022 01:57:46 GMT
