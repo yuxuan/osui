@@ -14,6 +14,7 @@ import {
     IconCloseCircleFilled,
     IconExclamationCircleFilled,
     IconInfoCircleFilled,
+    IconCloseOutlined,
 } from '@osui/icons';
 
 let uuid = 0;
@@ -46,7 +47,7 @@ export const confirmFunc = (
         const type = confirmType || config.type || 'confirm';
         // 自定义icon
         if (typeof config.icon !== 'undefined') {
-            return {...func(config), type};
+            return {...func(config), type, closeIcon: <IconCloseOutlined />};
         }
         let icon = <IconExclamationCircleFilled />;
 
@@ -59,7 +60,7 @@ export const confirmFunc = (
         } else if (type === 'info') {
             icon = <IconInfoCircleFilled />;
         }
-        return {...func(config), icon, type};
+        return {...func(config), icon, type, closeIcon: <IconCloseOutlined />};
     };
 };
 
