@@ -33,6 +33,7 @@
     .@{ant-prefix}-modal-title {
         max-width: 95%;
         font-weight: 600;
+        font-size: var(--modal-title-font-size);
     }
 
     .@{ant-prefix}-modal-content {
@@ -68,6 +69,10 @@
 }
 
 .@{osui-modal-class-prefix}-confirm, .@{ant-prefix}-modal-confirm {
+    .@{ant-prefix}-modal-confirm-title {
+        font-size: var(--modal-title-font-size);
+    }
+
     .@{ant-prefix}-modal-confirm-body {
         min-height: 80px;
         border-bottom: var(--modal-body-border-bottom);
@@ -110,5 +115,13 @@
     .@{ant-prefix}-modal-close {
         top: var(--modal-close-top);
         right: var(--modal-close-right);
+    }
+
+    .@{ant-prefix}-modal-confirm-btns .@{ant-prefix}-btn {
+        width: var(--modal-footer-btn-width);
+    }
+
+    .@{ant-prefix}-modal-confirm-btns .@{ant-prefix}-btn + .@{ant-prefix}-btn {
+        margin-left: var(--modal-footer-button-group-gap);
     }
 }
