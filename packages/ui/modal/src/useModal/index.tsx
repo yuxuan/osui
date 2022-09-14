@@ -14,6 +14,7 @@ import {
     IconCloseCircleFilled,
     IconExclamationCircleFilled,
     IconInfoCircleFilled,
+    IconCloseOutlined,
 } from '@osui/icons';
 
 let uuid = 0;
@@ -37,16 +38,18 @@ export const ElementsHolder = React.memo(
     })
 );
 
+type ConfirmType = 'success' | 'warning' | 'error' | 'info' | 'confirm' | 'warn';
+type ReturnedType = (config: ModalFuncProps) => ModalFuncProps & {icon?: React.ReactNode, type: ConfirmType};
 export const confirmFunc = (
     func: (config: ModalFuncProps) => ModalFuncProps,
-    confirmType?: 'success' | 'warning' | 'error' | 'info' | 'confirm'
-) => {
+    confirmType?: ConfirmType
+): ReturnedType => {
     return (config: ModalFuncProps) => {
         // 优先级：函数调用 > type配置 > confirm
         const type = confirmType || config.type || 'confirm';
         // 自定义icon
         if (typeof config.icon !== 'undefined') {
-            return {...func(config), type};
+            return {closeIcon: <IconCloseOutlined />, ...func(config), type};
         }
         let icon = <IconExclamationCircleFilled />;
 
@@ -59,7 +62,7 @@ export const confirmFunc = (
         } else if (type === 'info') {
             icon = <IconInfoCircleFilled />;
         }
-        return {...func(config), icon, type};
+        return {closeIcon: <IconCloseOutlined />, ...func(config), icon, type};
     };
 };
 
