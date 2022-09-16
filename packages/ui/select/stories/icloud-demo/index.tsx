@@ -5,3 +5,4 @@ export {default as MulipleDisplayInPopupByHand} from './MulipleDisplayInPopupByH
 export {default as Size} from './Size';
 export {default as Basic} from './Basic';
 export {default as TestCase} from './TestCase';
+export {default as SelectAll} from './SelectAllDemo';
