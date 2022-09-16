@@ -1,6 +1,6 @@
 {
     "name": "@osui/table",
-    "version": "2.1.9",
+    "version": "2.1.10",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -83,7 +83,7 @@
     "license": "MIT",
     "dependencies": {
         "@osui/button": "^2.1.9",
-        "@osui/pagination": "^2.1.9",
+        "@osui/pagination": "^2.1.10",
         "@osui/spin": "^2.1.9",
         "classnames": "^2.3.1",
         "hoist-non-react-statics": "^3.3.2",
