@@ -22,6 +22,7 @@
   ],
   "devDependencies": {
     "@babel/cli": "^7.10.5",
+    "@osui/brand-provider": "^2.1.9",
     "@osui/icons": "^2.1.9",
     "@osui/icons-icloud": "^2.1.9",
     "@reskript/cli": "^3.0.0",
