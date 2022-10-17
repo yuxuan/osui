@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 import {fileURLToPath} from 'url';
-import defaultVars, {v1, v2, acud, dark} from '../vars/index.js';
+import defaultVars, {v1, acud, dark} from '../vars/index.js';
 import formatToCSS from './jsToCssVars.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
