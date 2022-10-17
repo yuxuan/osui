@@ -16,7 +16,6 @@ const generateCSSVars = scoped => {
 
 const generateDifferentCSSVars = () => {
     fs.writeFileSync(path.join(destination, 'v1.vars.css'), formatToCSS(v1, false));
-    fs.writeFileSync(path.join(destination, 'v2.vars.css'), formatToCSS(v2, false));
     fs.writeFileSync(path.join(destination, 'acud.vars.css'), formatToCSS(acud, false));
     fs.writeFileSync(path.join(destination, 'dark.vars.css'), formatToCSS(dark, '[data-theme="dark"]'));
 };
