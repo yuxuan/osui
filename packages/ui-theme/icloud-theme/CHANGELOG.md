@@ -1,6 +1,13 @@
 # Change Log - @osui/icloud-theme
 
-This log was last generated on Mon, 17 Oct 2022 07:41:25 GMT and should not be manually modified.
+This log was last generated on Mon, 17 Oct 2022 08:32:45 GMT and should not be manually modified.
+
+## 2.1.15
+Mon, 17 Oct 2022 08:32:45 GMT
+
+### Patches
+
+- update
 
 ## 2.1.14
 Mon, 17 Oct 2022 07:41:25 GMT
