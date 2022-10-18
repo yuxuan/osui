@@ -27,6 +27,8 @@
     ],
     "devDependencies": {
         "@babel/cli": "^7.10.5",
+        "@osui/brand-provider": "^2.1.9",
+        "@osui/ui": "^2.1.15",
         "@osui/icons": "^2.1.9",
         "@osui/icons-icloud": "^2.1.9",
         "@reskript/cli": "^3.0.0",
@@ -57,6 +59,7 @@
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.0.6",
         "lodash": "^4.17.21",
+        "lodash.difference": "^4.5.0",
         "prop-types": "^15.7.2",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
