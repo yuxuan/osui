@@ -33,7 +33,13 @@ export const Demo = () => {
             </Blockquote>
             <BrandProvider brand="icloud">
                 <p>默认状态</p>
-                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} />
+                <Pagination
+                    showQuickJumper
+                    defaultCurrent={2}
+                    total={70}
+                    showTotal={total => `共${total}条`}
+                    onChange={onChange}
+                />
                 <br />
                 <Pagination showQuickJumper defaultCurrent={2} total={80} onChange={onChange} />
                 <br />
@@ -50,7 +56,8 @@ export const Demo = () => {
                 <Pagination size="small" showQuickJumper defaultCurrent={2} total={500} onChange={onChange} />
                 <br />
             </BrandProvider>
-        </div>);
+        </div>
+    );
 };
 
 export const Api = () => {
