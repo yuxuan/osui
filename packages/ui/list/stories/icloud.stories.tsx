@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import Avatar from '@osui/avatar';
+import {Avatar} from '@osui/ui';
 import List from '../src';
 
 

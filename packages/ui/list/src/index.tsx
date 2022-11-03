@@ -10,7 +10,7 @@ function List<T>(props: React.PropsWithChildren<AntdListProps<T>>) {
         ...loading,
     } : {
         indicator: <Spin />,
-        loading,
+        spinning: loading ?? false,
     };
     return <AntdList {...props} loading={innerLoading} />;
 }
