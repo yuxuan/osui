@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/date-picker",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/date-picker"
+}

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/tooltip",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/tooltip"
+}

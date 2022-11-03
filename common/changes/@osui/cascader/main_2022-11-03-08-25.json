@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/cascader",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/cascader"
+}

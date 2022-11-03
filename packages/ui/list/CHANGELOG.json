@@ -2,6 +2,18 @@
   "name": "@osui/list",
   "entries": [
     {
+      "version": "2.1.10",
+      "tag": "@osui/list_v2.1.10",
+      "date": "Thu, 03 Nov 2022 08:25:33 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.9",
       "tag": "@osui/list_v2.1.9",
       "date": "Tue, 09 Aug 2022 06:37:41 GMT",

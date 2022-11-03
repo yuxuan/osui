@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/progress",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/progress"
+}

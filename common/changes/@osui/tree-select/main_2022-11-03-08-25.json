@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/tree-select",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/tree-select"
+}

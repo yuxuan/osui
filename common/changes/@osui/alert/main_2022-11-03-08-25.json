@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/alert",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/alert"
+}

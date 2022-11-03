@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/auto-complete",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/auto-complete"
+}

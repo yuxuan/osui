@@ -1,6 +1,6 @@
 {
     "name": "@osui/list",
-    "version": "2.1.9",
+    "version": "2.1.10",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -31,7 +31,7 @@
         "@osui/icloud-theme": "workspace:^2.1.15",
         "@osui/icons": "^2.1.9",
         "@osui/icons-icloud": "^2.1.9",
-        "@osui/ui": "^2.1.15",
+        "@osui/ui": "^2.1.16",
         "@reskript/cli": "^3.0.0",
         "@reskript/cli-lint": "^3.0.0",
         "@reskript/config-babel": "^3.0.0",

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/calendar",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/calendar"
+}

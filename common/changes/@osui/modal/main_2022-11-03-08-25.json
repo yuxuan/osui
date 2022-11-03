@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/modal",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/modal"
+}

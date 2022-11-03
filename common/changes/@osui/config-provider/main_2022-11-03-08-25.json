@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/config-provider",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/config-provider"
+}

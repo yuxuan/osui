@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/popover",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/popover"
+}

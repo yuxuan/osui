@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/text-overflow-tooltip",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/text-overflow-tooltip"
+}

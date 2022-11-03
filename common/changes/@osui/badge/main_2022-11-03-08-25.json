@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/badge",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/badge"
+}

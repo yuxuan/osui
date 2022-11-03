@@ -2,6 +2,26 @@
   "name": "@osui/ui",
   "entries": [
     {
+      "version": "2.1.16",
+      "tag": "@osui/ui_v2.1.16",
+      "date": "Thu, 03 Nov 2022 08:27:37 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@osui/ui\" from `^2.1.15` to `^2.1.16`"
+          },
+          {
+            "comment": "Updating dependency \"@osui/ui\" from `^2.1.15` to `^2.1.16`"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.15",
       "tag": "@osui/ui_v2.1.15",
       "date": "Fri, 16 Sep 2022 10:12:51 GMT",
