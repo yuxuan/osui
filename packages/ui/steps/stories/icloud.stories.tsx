@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, {useState} from 'react';
-import {Space, Button} from '@osui/ui';
+import Space from '@osui/space';
+import Button from '@osui/button';
 import Steps from '../src';
 
 export default {

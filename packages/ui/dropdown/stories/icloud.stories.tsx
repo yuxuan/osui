@@ -1,8 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import {Menu, Button, Space} from '@osui/ui';
 import {IconDownOutlined} from '@osui/icons';
 import FlexCentered from '@osui/flex-centered';
+import Menu from '@osui/menu';
+import Button from '@osui/button';
+import Space from '@osui/space';
 import Dropdown from '../src';
 
 export default {
