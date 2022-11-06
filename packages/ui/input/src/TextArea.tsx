@@ -1,6 +1,6 @@
 import React from 'react';
 import {Input as AntdInput} from 'antd';
-import {TextAreaProps as AntdTextAreaProps} from 'antd/lib/input';
+import {TextAreaProps as AntdTextAreaProps} from 'antd/es/input';
 import classNames from 'classnames';
 import './index.less';
 

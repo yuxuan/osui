@@ -7,7 +7,7 @@ import {
     SliderSingleProps as AntdSliderSingleProps,
     SliderRangeProps as AntdSliderRangeProps,
     Visibles as AntdVisibles,
-} from 'antd/lib/slider';
+} from 'antd/es/slider';
 import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';
 import './index.less';

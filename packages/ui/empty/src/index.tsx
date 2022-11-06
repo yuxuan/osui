@@ -1,6 +1,6 @@
 import React from 'react';
 import {Empty as AntdEmpty} from 'antd';
-import {EmptyProps as AntdEmptyProps} from 'antd/lib/empty';
+import {EmptyProps as AntdEmptyProps} from 'antd/es/empty';
 import classNames from 'classnames';
 import ImageEmpty from './empty';
 import ImageError from './error';

@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import {IconDownOutlined} from '@osui/icons';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import type {BaseSelectRef} from 'rc-select';
-import type {BaseOptionType, DefaultOptionType} from 'antd/lib/select';
+import type {BaseOptionType, DefaultOptionType} from 'antd/es/select';
 import './index.less';
 
 const clsPrefix = 'osui-tree-select';

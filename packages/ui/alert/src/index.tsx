@@ -1,6 +1,6 @@
 import React, {FC, useCallback, useReducer} from 'react';
 import {Alert as AntdAlert} from 'antd';
-import {AlertProps as AntdAlertProps} from 'antd/lib/alert';
+import {AlertProps as AntdAlertProps} from 'antd/es/alert';
 import {
     IconCheckCircleFilled,
     IconExclamationCircleFilled,

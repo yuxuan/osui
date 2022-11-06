@@ -1,5 +1,5 @@
 import React, {useCallback} from 'react';
-import {InputProps as AntdInputProps} from 'antd/lib/input';
+import {InputProps as AntdInputProps} from 'antd/es/input';
 import {useDerivedState} from '@huse/derived-state';
 import classNames from 'classnames';
 import './index.less';

@@ -8,7 +8,7 @@ import Form from '@osui/form';
 import Space from '@osui/space';
 import {IconDownOutlined} from '@osui/icons';
 import BrandProvider from '@osui/brand-provider';
-import {TableProps} from 'antd/lib/table';
+import {TableProps} from 'antd/es/table';
 import {version} from 'antd';
 import Table from '../src';
 

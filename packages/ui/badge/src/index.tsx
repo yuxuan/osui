@@ -1,6 +1,6 @@
 import React from 'react';
 import {Badge as AntdBadge} from 'antd';
-import {BadgeProps as AntdBadgeProps} from 'antd/lib/badge';
+import {BadgeProps as AntdBadgeProps} from 'antd/es/badge';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import './index.less';

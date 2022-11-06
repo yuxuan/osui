@@ -1,7 +1,7 @@
 import React from 'react';
 import {Modal as AntdModal} from 'antd';
-import {ModalProps as AntdModalProps, ModalFuncProps} from 'antd/lib/modal';
-import {modalGlobalConfig} from 'antd/lib/modal/confirm';
+import {ModalProps as AntdModalProps, ModalFuncProps} from 'antd/es/modal';
+import {modalGlobalConfig} from 'antd/es/modal/confirm';
 import classNames from 'classnames';
 import {
     IconCloseOutlined,

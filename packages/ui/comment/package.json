@@ -98,5 +98,6 @@
     "dependencies": {
         "classnames": "^2.3.1",
         "hoist-non-react-statics": "^3.3.2"
-    }
+    },
+    "packageManager": "pnpm@7.14.2"
 }

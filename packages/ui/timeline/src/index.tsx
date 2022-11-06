@@ -1,6 +1,6 @@
 import React from 'react';
 import {Timeline as AntdTimeline} from 'antd';
-import {TimelineProps as AntdTimelineProps, TimelineItemProps as AntdTimelineItemProps} from 'antd/lib/timeline';
+import {TimelineProps as AntdTimelineProps, TimelineItemProps as AntdTimelineItemProps} from 'antd/es/timeline';
 import classNames from 'classnames';
 import './index.less';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Tabs as AntdTabs} from 'antd';
-import {TabsProps as AntdTabsProps, TabPaneProps as AntdTabPaneProps} from 'antd/lib/tabs';
+import {TabsProps as AntdTabsProps, TabPaneProps as AntdTabPaneProps} from 'antd/es/tabs';
 import {IconPlusOutlined} from '@osui/icons';
 import classNames from 'classnames';
 import './index.less';

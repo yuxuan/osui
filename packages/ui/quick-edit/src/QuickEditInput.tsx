@@ -1,6 +1,6 @@
 import React, {useCallback, useRef} from 'react';
 import Input from '@osui/input';
-import {InputProps} from 'antd/lib/input';
+import {InputProps} from 'antd/es/input';
 import AbstractQuickEdit, {useQuickEdit, IAbstractQuickEdit} from 'react-abstract-quick-edit';
 import {useDerivedState} from '@huse/derived-state';
 import classNames from 'classnames';

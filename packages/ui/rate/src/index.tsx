@@ -1,6 +1,6 @@
 import React from 'react';
 import {Rate as AntdRate} from 'antd';
-import {RateProps as AntdRateProps} from 'antd/lib/rate';
+import {RateProps as AntdRateProps} from 'antd/es/rate';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import './index.less';

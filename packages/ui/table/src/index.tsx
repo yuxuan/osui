@@ -5,8 +5,8 @@ import {ConfigProvider} from 'antd';
 import {
     TableProps as AntdTableProps,
     TablePaginationConfig as AntdTablePaginationConfig,
-} from 'antd/lib/table';
-import {ExpandableConfig, ExpandType} from 'antd/lib/table/interface';
+} from 'antd/es/table';
+import {ExpandableConfig, ExpandType} from 'antd/es/table/interface';
 import classNames from 'classnames';
 import {customPaginationProps, PaginationProps} from '@osui/pagination';
 import {useBrandContext} from '@osui/brand-provider';
@@ -198,7 +198,7 @@ export type {
     TablePaginationConfig,
 } from 'antd';
 
-export type {ExpandableConfig} from 'antd/lib/table/interface';
+export type {ExpandableConfig} from 'antd/es/table/interface';
 
 type InternalTableType = typeof ForwardTable;
 

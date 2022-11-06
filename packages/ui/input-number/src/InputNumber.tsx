@@ -1,6 +1,6 @@
 import React from 'react';
 import {InputNumber as AntdInputNumber} from 'antd';
-import {InputNumberProps as AntdInputNumberProps} from 'antd/lib/input-number';
+import {InputNumberProps as AntdInputNumberProps} from 'antd/es/input-number';
 import classNames from 'classnames';
 import './index.less';
 

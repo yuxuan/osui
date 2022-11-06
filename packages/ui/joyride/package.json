@@ -92,5 +92,6 @@
         "classnames": "^2.3.1",
         "lodash.merge": "^4.6.2",
         "react-joyride": "^2.3.0"
-    }
+    },
+    "packageManager": "pnpm@7.14.2"
 }

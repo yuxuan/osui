@@ -1,6 +1,6 @@
 import React, {useCallback, useRef} from 'react';
 import Select from '@osui/select';
-import {SelectProps} from 'antd/lib/select';
+import {SelectProps} from 'antd/es/select';
 import AbstractQuickEdit, {IAbstractQuickEdit, useQuickEdit} from 'react-abstract-quick-edit';
 import classNames from 'classnames';
 import {useDerivedState} from '@huse/derived-state';

@@ -1,6 +1,6 @@
 import React from 'react';
 import {BackTop as AntdBackTop} from 'antd';
-import {BackTopProps as AntdBackTopProps} from 'antd/lib/back-top';
+import {BackTopProps as AntdBackTopProps} from 'antd/es/back-top';
 import classNames from 'classnames';
 import {IconVerticalAlignTopOutlined} from '@osui/icons';
 import './index.less';

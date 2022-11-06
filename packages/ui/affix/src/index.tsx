@@ -1,3 +1,3 @@
 import {Affix} from 'antd';
-export type {AffixProps, AffixState} from 'antd/lib/affix';
+export type {AffixProps, AffixState} from 'antd/es/affix';
 export default Affix;

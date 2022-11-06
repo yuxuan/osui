@@ -88,5 +88,6 @@
     },
     "dependencies": {
         "@osui/empty": "^2.1.9"
-    }
+    },
+    "packageManager": "pnpm@7.14.2"
 }

@@ -8,7 +8,7 @@ import {
     MessageApi as AntdMessageApi,
     ArgsProps as AntdMessageArgsProps,
     ConfigOptions,
-} from 'antd/lib/message';
+} from 'antd/es/message';
 import {useInterval} from '@huse/timeout';
 import {
     IconCheckCircleFilled,

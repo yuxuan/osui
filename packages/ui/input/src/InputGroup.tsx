@@ -1,6 +1,6 @@
 import React, {isValidElement, useCallback, useContext, useState} from 'react';
 import {Input as AntdInput, ConfigProvider} from 'antd';
-import {GroupProps as AntdInputGroupProps} from 'antd/lib/input';
+import {GroupProps as AntdInputGroupProps} from 'antd/es/input';
 import classNames from 'classnames';
 import './index.less';
 

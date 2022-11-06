@@ -2,7 +2,7 @@ import React from 'react';
 import {Dropdown as AntdDropdown} from 'antd';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import classNames from 'classnames';
-import {DropDownProps as AntdCheckboxProps} from 'antd/lib/dropdown';
+import {DropDownProps as AntdCheckboxProps} from 'antd/es/dropdown';
 import './index.less';
 
 const clsPrefix = 'osui-dropdown';

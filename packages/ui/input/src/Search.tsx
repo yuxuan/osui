@@ -4,7 +4,7 @@ import {composeRef} from 'rc-util/lib/ref';
 import {useBrandContext} from '@osui/brand-provider';
 import Button from '@osui/button';
 import {IconSearchOutlined} from '@osui/icons';
-import {SearchProps as AntdSearchProps} from 'antd/lib/input';
+import {SearchProps as AntdSearchProps} from 'antd/es/input';
 import classNames from 'classnames';
 import './index.less';
 

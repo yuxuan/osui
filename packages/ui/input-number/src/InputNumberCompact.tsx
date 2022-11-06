@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react';
 import classNames from 'classnames';
-import {InputNumberProps as AntdInputNumberProps} from 'antd/lib/input-number';
+import {InputNumberProps as AntdInputNumberProps} from 'antd/es/input-number';
 import {useDerivedState} from '@huse/derived-state';
 import Button from '@osui/button';
 import Input from '@osui/input';

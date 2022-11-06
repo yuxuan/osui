@@ -89,5 +89,6 @@
     "dependencies": {
         "@osui/spin": "^2.1.9",
         "hoist-non-react-statics": "^3.3.2"
-    }
+    },
+    "packageManager": "pnpm@7.14.2"
 }

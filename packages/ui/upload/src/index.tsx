@@ -1,7 +1,7 @@
 import React from 'react';
 import {Upload as AntdUpload} from 'antd';
 import type {UploadProps as AntdUploadProps} from 'antd';
-import type {DraggerProps as AntdDraggerProps} from 'antd/lib/upload/Dragger';
+import type {DraggerProps as AntdDraggerProps} from 'antd/es/upload/Dragger';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import './index.less';

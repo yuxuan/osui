@@ -8,8 +8,8 @@ import type {
     RuleObject,
     RuleRender,
     FormListProps,
-} from 'antd/lib/form';
-import type {FormItemProps} from 'antd/lib/form/FormItem';
+} from 'antd/es/form';
+import type {FormItemProps} from 'antd/es/form/FormItem';
 import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';
 import useLabelLayout from './useLabelLayout';
@@ -109,5 +109,5 @@ export type {
     FormListProps,
 };
 
-export type {FormItemProps} from 'antd/lib/form';
+export type {FormItemProps} from 'antd/es/form';
 export default Form;

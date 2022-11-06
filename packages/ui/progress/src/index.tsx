@@ -1,6 +1,6 @@
 import React from 'react';
 import {Progress as AntdProgress} from 'antd';
-import {ProgressProps as AntdProgressProps} from 'antd/lib/progress';
+import {ProgressProps as AntdProgressProps} from 'antd/es/progress';
 import classNames from 'classnames';
 import {useBrandContext} from '@osui/brand-provider';
 import './index.less';

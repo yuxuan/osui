@@ -1,6 +1,6 @@
 import React from 'react';
 import {DatePicker as AntdDatePicker} from 'antd';
-import {PickerComponentClass} from 'antd/lib/date-picker/generatePicker/interface';
+import {PickerComponentClass} from 'antd/es/date-picker/generatePicker/interface';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import './index.less';

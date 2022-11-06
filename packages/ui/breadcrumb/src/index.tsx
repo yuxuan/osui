@@ -1,6 +1,6 @@
 import React, {useReducer} from 'react';
 import {Breadcrumb as AntdBreadcrumb} from 'antd';
-import {BreadcrumbProps as AntdBrandcrumbProps} from 'antd/lib/breadcrumb';
+import {BreadcrumbProps as AntdBrandcrumbProps} from 'antd/es/breadcrumb';
 import classNames from 'classnames';
 
 import './index.less';

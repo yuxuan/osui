@@ -1,8 +1,8 @@
 import React from 'react';
 import {Menu as AntdMenu} from 'antd';
 import hoistNonReactStatics from 'hoist-non-react-statics';
-import {MenuProps as AntdMenuProps} from 'antd/lib/menu';
-import {SubMenuProps as AntdSubMenuProps} from 'antd/lib/menu/SubMenu';
+import {MenuProps as AntdMenuProps} from 'antd/es/menu';
+import {SubMenuProps as AntdSubMenuProps} from 'antd/es/menu/SubMenu';
 import classNames from 'classnames';
 import {IconRightOutlined} from '@osui/icons';
 import './index.less';

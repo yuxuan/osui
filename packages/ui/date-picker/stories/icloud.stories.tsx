@@ -3,11 +3,11 @@ import React from 'react';
 import {Row} from 'antd';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
-import ConfigProvider from 'antd/lib/config-provider';
+import ConfigProvider from 'antd/es/config-provider';
 import BrandProvider from '@osui/brand-provider';
-// import zhCN from 'antd/lib/locale/zh_CN';
-import jaJP from 'antd/lib/locale/ja_JP';
-import locale from 'antd/lib/date-picker/locale/zh_TW';
+// import zhCN from 'antd/es/locale/zh_CN';
+import jaJP from 'antd/es/locale/ja_JP';
+import locale from 'antd/es/date-picker/locale/zh_TW';
 import DatePicker from '../src';
 const {RangePicker, WeekPicker} = DatePicker;
 

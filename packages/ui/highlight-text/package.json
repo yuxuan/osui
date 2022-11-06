@@ -88,5 +88,6 @@
     },
     "dependencies": {
         "classnames": "^2.3.1"
-    }
+    },
+    "packageManager": "pnpm@7.14.2"
 }

@@ -98,5 +98,6 @@
     "gitHead": "904178b6c0bb86963017122daa529580decb66e8",
     "dependencies": {
         "classnames": "^2.3.1"
-    }
+    },
+    "packageManager": "pnpm@7.14.2"
 }
