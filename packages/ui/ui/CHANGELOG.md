@@ -1,6 +1,13 @@
 # Change Log - @osui/ui
 
-This log was last generated on Thu, 03 Nov 2022 08:27:37 GMT and should not be manually modified.
+This log was last generated on Fri, 11 Nov 2022 03:23:41 GMT and should not be manually modified.
+
+## 2.1.17
+Fri, 11 Nov 2022 03:23:41 GMT
+
+### Patches
+
+- update
 
 ## 2.1.16
 Thu, 03 Nov 2022 08:27:37 GMT

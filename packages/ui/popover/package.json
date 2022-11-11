@@ -34,7 +34,7 @@
         "@osui/gap": "workspace:^2.1.9",
         "@osui/icons": "^2.1.9",
         "@osui/icons-icloud": "^2.1.9",
-        "@osui/input": "workspace:^2.1.12",
+        "@osui/input": "workspace:^2.1.13",
         "@osui/markdown": "workspace:^2.1.9",
         "@reskript/cli": "^3.0.0",
         "@reskript/cli-lint": "^3.0.0",

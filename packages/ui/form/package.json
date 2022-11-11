@@ -35,7 +35,7 @@
         "@osui/divider": "workspace:^2.1.9",
         "@osui/icons": "^2.1.9",
         "@osui/icons-icloud": "^2.1.9",
-        "@osui/input": "workspace:^2.1.12",
+        "@osui/input": "workspace:^2.1.13",
         "@osui/input-number": "workspace:^2.1.10",
         "@osui/radio": "workspace:^2.1.9",
         "@osui/select": "workspace:^2.1.9",
