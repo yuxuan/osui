@@ -206,3 +206,23 @@
         }
     }
 }
+
+// V1 overrides 覆盖v1的样式，未来要删掉
+.osui-input {
+    .ant-input-group-addon {
+        // affix select
+        .osui-select {
+            .ant-select-selector {
+                height: 32px;
+            }
+        }
+    }
+
+    &:not(&-disabled) {
+        .ant-input-group-addon {
+            background: var(--input-addon-bg);
+        }
+    }
+}
+
+// END V1 overrides 覆盖v1的样式
