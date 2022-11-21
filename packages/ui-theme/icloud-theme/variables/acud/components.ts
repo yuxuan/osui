@@ -353,6 +353,7 @@ export default {
     '--message-margin-top': '51px',
     '--message-notice-content-bg': 'var(--component-background)',
     '--message-notice-content-padding': '6px 16px',
+    '--message-text-align': 'right',
     '--modal-body-border-bottom': 'none',
     '--modal-body-margin': '0px',
     '--modal-body-max-height': 'calc(100vh - 40px - 60px - 100px)',

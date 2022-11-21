@@ -37,6 +37,7 @@
         "@osui/icons-icloud": "^2.1.9",
         "@reskript/cli": "^2.5.4",
         "@reskript/cli-lint": "^2.5.4",
+        "@reskript/config-lint": "^5.7.1",
         "@storybook/cli": "^6.5.10",
         "@types/css": "^0.0.33",
         "@types/less": "^3.0.3",

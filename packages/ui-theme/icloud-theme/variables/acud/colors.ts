@@ -84,16 +84,16 @@ export const uiColors = {
 // 用于标签、图表等场景的色盘，100个颜色
 export const tagColors = {
     // 靛蓝 Blue
-    '--color-indigo-1': '#f2f8ff',
-    '--color-indigo-2': '#d4e9ff',
-    '--color-indigo-3': '#a4d3ff',
-    '--color-indigo-4': '#74beff',
-    '--color-indigo-5': '#42a7fb',
-    '--color-indigo-6': '#108cee',
-    '--color-indigo-7': '#0576c7',
-    '--color-indigo-8': '#0060a1',
-    '--color-indigo-9': '#004b7b',
-    '--color-indigo-10': '#003554',
+    '--color-indigo-1': '#E6F0FF',
+    '--color-indigo-2': '#D4E5FF',
+    '--color-indigo-3': '#A7C2F9',
+    '--color-indigo-4': '#A8CAFF',
+    '--color-indigo-5': '#528EFF',
+    '--color-indigo-6': '#2468F2',
+    '--color-indigo-7': '#144BCC',
+    '--color-indigo-8': '#153E91',
+    '--color-indigo-9': '#0E2960',
+    '--color-indigo-10': '#091A3C',
     // 绛紫 Purple
     '--color-purple-1': '#ebebff',
     '--color-purple-2': '#d7d8fa',
