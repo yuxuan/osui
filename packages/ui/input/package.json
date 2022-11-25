@@ -35,7 +35,7 @@
         "@osui/flex-centered": "workspace:^2.1.9",
         "@osui/form": "workspace:^2.1.14",
         "@osui/gap": "workspace:^2.1.9",
-        "@osui/icloud-theme": "workspace:^2.1.12",
+        "@osui/icloud-theme": "workspace:^2.1.16",
         "@osui/icons": "workspace:^2.1.9",
         "@osui/icons-icloud": "workspace:^2.1.9",
         "@osui/select": "workspace:^2.1.9",
