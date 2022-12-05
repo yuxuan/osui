@@ -385,7 +385,7 @@ export default {
     '--outline-color': 'var(--primary-color)',
     '--page-header-back-color': '#000',
     '--page-header-ghost-bg': 'inherit',
-    '--page-header-title-font-size': '14px',
+    '--page-header-title-font-size': '16px',
     '--page-header-title-font-weight': '600',
     '--pagination-disabled-bg': 'transparent',
     '--pagination-item-active-bg': 'var(--theme-component-bg)',
