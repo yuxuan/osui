@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@osui/input",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@osui/input"
+}

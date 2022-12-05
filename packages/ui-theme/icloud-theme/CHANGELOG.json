@@ -2,6 +2,18 @@
   "name": "@osui/icloud-theme",
   "entries": [
     {
+      "version": "2.1.17",
+      "tag": "@osui/icloud-theme_v2.1.17",
+      "date": "Mon, 05 Dec 2022 09:21:25 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.16",
       "tag": "@osui/icloud-theme_v2.1.16",
       "date": "Fri, 25 Nov 2022 07:59:14 GMT",
