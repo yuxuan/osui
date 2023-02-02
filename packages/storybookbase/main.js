@@ -87,11 +87,11 @@ module.exports = () => ({
         config.resolve.alias['@'] = path.resolve(__dirname, '../src');
         config.resolve.alias['@osui/icons'] = '@osui/icons-icloud';
 
-        config.module.rules[0].use[0].options.presets = [
-            require.resolve('@babel/preset-react'),
-            require.resolve('@babel/preset-env'),
-            require.resolve('@emotion/babel-preset-css-prop'),
-        ];
+        // config.module.rules[0].use[0].options.presets = [
+        //     require.resolve('@babel/preset-react'),
+        //     require.resolve('@babel/preset-env'),
+        //     require.resolve('@emotion/babel-preset-css-prop'),
+        // ];
 
         return config;
     },
