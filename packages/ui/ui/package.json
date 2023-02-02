@@ -1,6 +1,6 @@
 {
     "name": "@osui/ui",
-    "version": "2.1.17",
+    "version": "2.1.18",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -92,7 +92,7 @@
         "@osui/highlight-text": "^2.1.9",
         "@osui/image": "^2.1.9",
         "@osui/input": "^2.1.13",
-        "@osui/input-number": "^2.1.10",
+        "@osui/input-number": "^2.1.11",
         "@osui/joyride": "^2.1.9",
         "@osui/layout": "^2.1.9",
         "@osui/list": "^2.1.10",

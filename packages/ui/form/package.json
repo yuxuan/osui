@@ -36,7 +36,7 @@
         "@osui/icons": "^2.1.9",
         "@osui/icons-icloud": "^2.1.9",
         "@osui/input": "^2.1.13",
-        "@osui/input-number": "^2.1.10",
+        "@osui/input-number": "^2.1.11",
         "@osui/radio": "^2.1.9",
         "@osui/select": "^2.1.9",
         "@osui/switch": "^2.1.10",

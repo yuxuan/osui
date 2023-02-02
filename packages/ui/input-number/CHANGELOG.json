@@ -2,6 +2,18 @@
   "name": "@osui/input-number",
   "entries": [
     {
+      "version": "2.1.11",
+      "tag": "@osui/input-number_v2.1.11",
+      "date": "Thu, 02 Feb 2023 06:11:30 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.10",
       "tag": "@osui/input-number_v2.1.10",
       "date": "Fri, 19 Aug 2022 12:29:42 GMT",
