@@ -52,7 +52,7 @@ export const Demo = () => {
                     validateStatus="error"
                     help={'格式错误，请按提示规则录入'}
                 >
-                    <InputNumber /> GB
+                    <InputNumber tailLabel="GB" />
                 </Form.Item>
                 <Form.Item
                     validateMessageLayout="inline"
