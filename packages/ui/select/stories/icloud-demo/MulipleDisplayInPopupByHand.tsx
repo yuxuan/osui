@@ -1,6 +1,7 @@
 import React, {useCallback, useState} from 'react';
 import type {DisplayValueType} from 'rc-select/lib/BaseSelect';
-import {Popover, Tag} from '@osui/ui';
+import Popover from '@osui/popover';
+import Tag from '@osui/tag';
 import Select from '../../src';
 
 export default () => {

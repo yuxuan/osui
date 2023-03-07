@@ -14,7 +14,6 @@ export type {CarouselProps} from '@osui/carousel';
 export type {CascaderProps} from '@osui/cascader';
 export type {CheckboxProps, CheckboxOptionType, CheckboxChangeEvent} from '@osui/checkbox';
 export type {ColProps} from '@osui/col';
-export type {CommentProps} from '@osui/comment';
 export type {DatePickerProps} from '@osui/date-picker';
 export type {DescriptionsProps} from '@osui/descriptions';
 export type {DividerProps} from '@osui/divider';
@@ -32,7 +31,6 @@ export type {MenuProps, MenuTheme, SubMenuProps, MenuItemProps} from '@osui/menu
 export type {MentionProps} from '@osui/mentions';
 export type {ModalProps, ModalFuncProps} from '@osui/modal';
 export type {StatisticProps} from '@osui/statistic';
-export type {PageHeaderProps} from '@osui/page-header';
 export type {PaginationProps} from '@osui/pagination';
 export type {PopconfirmProps} from '@osui/popconfirm';
 export type {PopoverProps} from '@osui/popover';

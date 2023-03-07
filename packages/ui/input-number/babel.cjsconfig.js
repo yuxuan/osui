@@ -19,16 +19,16 @@ const overrides = {
             },
         ],
     ],
-    plugins: [
-        [
-            'import',
-            {
-                libraryName: 'antd',
-                libraryDirectory: 'lib',
-                style: true,
-            },
-        ],
-    ],
 };
 
-module.exports = merge(getTransformBabelConfig(options), overrides);
+const babelConfig = merge(getTransformBabelConfig(options), overrides);
+
+babelConfig.plugins = babelConfig.plugins.filter(plugin => {
+    if (Array.isArray(plugin) && plugin[0].includes('babel-plugin-import')) {
+        return false;
+    }
+    return true;
+});
+
+
+module.exports = babelConfig;

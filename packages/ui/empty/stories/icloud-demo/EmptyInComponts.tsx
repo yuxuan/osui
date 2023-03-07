@@ -1,5 +1,10 @@
 import React from 'react';
-import {Table, BrandProvider, Select, Popover, Modal, Button} from '@osui/ui';
+import Table from '@osui/table';
+import BrandProvider from '@osui/brand-provider';
+import Select from '@osui/select';
+import Popover from '@osui/popover';
+import Modal from '@osui/modal';
+import Button from '@osui/button';
 import Empty from '../../src';
 
 export default () => {

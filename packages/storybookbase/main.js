@@ -31,6 +31,15 @@ const loaderOptions = {
     },
 };
 
+const babelConfig = getBabelConfig();
+
+babelConfig.plugins = babelConfig.plugins.filter(plugin => {
+    if (Array.isArray(plugin) && plugin[0].includes('babel-plugin-import')) {
+        return false;
+    }
+    return true;
+});
+
 module.exports = () => ({
     core: {
         builder: 'webpack5',
@@ -58,7 +67,7 @@ module.exports = () => ({
             exclude: /node_modules/,
             use: [{
                 loader: 'babel-loader',
-                options: getBabelConfig(),
+                options: babelConfig,
             }],
         });
         config.module.rules.push({

@@ -2,7 +2,7 @@
 import React, {useMemo, useRef, useState} from 'react';
 import debounce from 'lodash/debounce';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import {Spin} from '@osui/ui';
+import Spin from '@osui/spin';
 import type {SelectProps} from '@osui/select';
 import Select from '@osui/select';
 

@@ -1,6 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import {Switch, Radio, Button, Input, InputNumber, BrandProvider, Divider} from '@osui/ui';
+import Switch from '@osui/switch';
+import Radio from '@osui/radio';
+import Button from '@osui/button';
+import Input from '@osui/input';
+import InputNumber from '@osui/input-number';
+import BrandProvider from '@osui/brand-provider';
+import Divider from '@osui/divider';
 import Form from '@osui/form';
 
 export default {

@@ -1,5 +1,6 @@
 const {getTransformBabelConfig} = require('@reskript/config-babel');
 
+
 const options = {
     browserSupport: {},
     usage: 'build',
@@ -8,4 +9,13 @@ const options = {
     hostType: 'library',
 };
 
-module.exports = getTransformBabelConfig(options);
+const babelConfig = getTransformBabelConfig(options);
+
+babelConfig.plugins = babelConfig.plugins.filter(plugin => {
+    if (Array.isArray(plugin) && plugin[0].includes('babel-plugin-import')) {
+        return false;
+    }
+    return true;
+});
+
+module.exports = babelConfig;

@@ -1,17 +1,15 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import {
-    Select,
-    Divider,
-    AutoComplete,
-    FlexCentered,
-    BrandProvider,
-    Button,
-    Form,
-    Gap,
-    Cascader,
-    version,
-} from '@osui/ui';
+import Select from '@osui/select';
+import Divider from '@osui/divider';
+import AutoComplete from '@osui/auto-complete';
+import FlexCentered from '@osui/flex-centered';
+import BrandProvider from '@osui/brand-provider';
+import Button from '@osui/button';
+import Form from '@osui/form';
+import Gap from '@osui/gap';
+import Cascader from '@osui/cascader';
+import version from '@osui/version';
 import Input from '@osui/input';
 const {TextArea} = Input;
 

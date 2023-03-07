@@ -1,5 +1,5 @@
 import React from 'react';
-import {Space} from '@osui/ui';
+import Space from '@osui/space';
 import {IconHomeOutlined} from '@osui/icons';
 import Button from '@osui/button';
 

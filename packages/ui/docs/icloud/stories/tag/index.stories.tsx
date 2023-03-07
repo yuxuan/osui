@@ -1,6 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, {useCallback, useState} from 'react';
-import {Divider, Input, Tooltip} from '@osui/ui';
+import Divider from '@osui/divider';
+import Input from '@osui/input';
+import Tooltip from '@osui/tooltip';
 import {PlusOutlined} from '@ant-design/icons';
 import {IconPlusOutlined} from '@osui/icons-icloud';
 import ClockCircleOutlined from '@ant-design/icons/ClockCircleOutlined';
