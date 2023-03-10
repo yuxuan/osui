@@ -1,8 +1,4 @@
-# export PATH=$NODEJS_BIN_LATEST:$YARN_BIN_LATEST:$PATH
 
-echo "node $(node -v)"
-echo "npm $(npm -v)"
-echo "pnpm $(pnpm -v)"
 
 rm -rf es
 rm -rf lib

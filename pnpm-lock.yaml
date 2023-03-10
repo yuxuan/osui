@@ -441,7 +441,6 @@ importers:
     dependencies:
       '@huse/boolean': 1.1.2_react@17.0.2
       '@huse/timeout': 1.1.1_react@17.0.2
-      '@types/hoist-non-react-statics': 3.3.1
       classnames: 2.3.1
       hoist-non-react-statics: 3.3.2
     devDependencies:
@@ -465,6 +464,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -512,6 +512,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -561,6 +562,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -611,6 +613,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -665,6 +668,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -908,6 +912,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -959,6 +964,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -1299,6 +1305,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -1346,6 +1353,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -1397,6 +1405,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -1450,6 +1459,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -1583,6 +1593,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -1631,6 +1642,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -1931,117 +1943,6 @@ importers:
       typescript: 4.7.4
       webpack: 5.74.0
 
-  packages/ui/comment:
-    specifiers:
-      '@babel/cli': ^7.10.5
-      '@huse/boolean': ^1.1.2
-      '@osui/avatar': ^2.1.9
-      '@osui/brand-provider': ^2.1.9
-      '@osui/button': ^2.1.9
-      '@osui/flex-centered': ^2.1.9
-      '@osui/form': ^2.1.14
-      '@osui/gap': ^2.1.9
-      '@osui/icons': ^2.1.9
-      '@osui/icons-icloud': ^2.1.9
-      '@osui/input': ^2.1.13
-      '@osui/rate': ^2.1.9
-      '@osui/space': ^2.1.9
-      '@reskript/cli': ^3.0.0
-      '@reskript/cli-lint': ^3.0.0
-      '@reskript/config-babel': ^3.0.0
-      '@reskript/config-lint': ^3.0.0
-      '@reskript/config-webpack': ^3.0.0
-      '@storybook/addon-a11y': 6.5.9
-      '@storybook/addon-docs': 6.5.9
-      '@storybook/addon-storysource': 6.5.9
-      '@storybook/addon-viewport': 6.5.9
-      '@storybook/addons': 6.5.9
-      '@storybook/builder-webpack5': 6.5.9
-      '@storybook/client-api': 6.5.9
-      '@storybook/manager-webpack5': 6.5.9
-      '@storybook/react': 6.5.9
-      '@types/enzyme': ^3.10.9
-      '@types/jest': ^27.0.0
-      '@types/react-dom': ^17.0.2
-      '@types/react-test-renderer': ^17.0.1
-      antd: ^5.3.0
-      babel-loader: ^8.1.0
-      babel-merge: ^3.0.0
-      classnames: ^2.3.1
-      cpy-cli: ^3.1.1
-      enzyme: ^3.11.0
-      eslint: ^8.0.0
-      hoist-non-react-statics: ^3.3.2
-      husky: ^4.2.5
-      identity-obj-proxy: ^3.0.0
-      jest: ^27.0.6
-      prop-types: ^15.7.2
-      react: ^17.0.2
-      react-dom: ^17.0.2
-      react-is: ^17.0.2
-      react-router-dom: ^5.2.0
-      react-test-renderer: ^17.0.2
-      styled-components: ~5.3.5
-      stylelint: ^14.0.0
-      ts-jest: ^27.0.3
-      typescript: ^4.4.3
-      webpack: ^5.52.1
-    dependencies:
-      classnames: 2.3.1
-      hoist-non-react-statics: 3.3.2
-    devDependencies:
-      '@babel/cli': 7.18.10
-      '@huse/boolean': 1.1.2_react@17.0.2
-      '@osui/avatar': link:../avatar
-      '@osui/brand-provider': link:../brand-provider
-      '@osui/button': link:../button
-      '@osui/flex-centered': link:../flex-centered
-      '@osui/form': link:../form
-      '@osui/gap': link:../gap
-      '@osui/icons': link:../../ui-icons/osui-icons
-      '@osui/icons-icloud': link:../../ui-icons/osui-icons-icloud
-      '@osui/input': link:../input
-      '@osui/rate': link:../rate
-      '@osui/space': link:../space
-      '@reskript/cli': 3.0.6
-      '@reskript/cli-lint': 3.0.6_jttlryelecqa7m53dlvkslu5fi
-      '@reskript/config-babel': 3.0.6_3p25lqz7xzw3wsguckln6idaoi
-      '@reskript/config-lint': 3.0.6_trjgzmoldxqktckpz4mshmgsyu
-      '@reskript/config-webpack': 3.0.6_trjgzmoldxqktckpz4mshmgsyu
-      '@storybook/addon-a11y': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
-      '@storybook/addon-docs': 6.5.9_qz7amlawsdeoebafumzh5yayea
-      '@storybook/addon-storysource': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
-      '@storybook/addon-viewport': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
-      '@storybook/addons': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
-      '@storybook/builder-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
-      '@storybook/client-api': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
-      '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
-      '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
-      '@types/enzyme': 3.10.12
-      '@types/jest': 27.5.2
-      '@types/react-dom': 17.0.17
-      '@types/react-test-renderer': 17.0.2
-      antd: 5.3.0_sfoxds7t5ydpegc3knd667wn6m
-      babel-loader: 8.2.5_webpack@5.74.0
-      babel-merge: 3.0.0
-      cpy-cli: 3.1.1
-      enzyme: 3.11.0
-      eslint: 8.21.0
-      husky: 4.3.8
-      identity-obj-proxy: 3.0.0
-      jest: 27.5.1
-      prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
-      react-is: 17.0.2
-      react-router-dom: 5.3.3_react@17.0.2
-      react-test-renderer: 17.0.2_react@17.0.2
-      styled-components: 5.3.5_fane7jikarojcev26y27hpbhu4
-      stylelint: 14.9.1
-      ts-jest: 27.1.5_mqaoisgizytgigbr3gbjwvnjie
-      typescript: 4.7.4
-      webpack: 5.74.0
-
   packages/ui/config-provider:
     specifiers:
       '@babel/cli': ^7.10.5
@@ -2151,6 +2052,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -2199,6 +2101,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -2855,6 +2758,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -2907,6 +2811,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -3626,6 +3531,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -3687,6 +3593,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -4027,6 +3934,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -4076,6 +3984,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -4308,6 +4217,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -4356,6 +4266,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -4629,97 +4540,6 @@ importers:
       '@babel/cli': 7.18.10
       '@osui/brand-provider': link:../brand-provider
       '@osui/button': link:../button
-      '@osui/icons': link:../../ui-icons/osui-icons
-      '@osui/icons-icloud': link:../../ui-icons/osui-icons-icloud
-      '@reskript/cli': 3.0.6
-      '@reskript/cli-lint': 3.0.6_jttlryelecqa7m53dlvkslu5fi
-      '@reskript/config-babel': 3.0.6_3p25lqz7xzw3wsguckln6idaoi
-      '@reskript/config-lint': 3.0.6_trjgzmoldxqktckpz4mshmgsyu
-      '@reskript/config-webpack': 3.0.6_trjgzmoldxqktckpz4mshmgsyu
-      '@storybook/addon-a11y': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
-      '@storybook/addon-docs': 6.5.9_qz7amlawsdeoebafumzh5yayea
-      '@storybook/addon-storysource': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
-      '@storybook/addon-viewport': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
-      '@storybook/addons': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
-      '@storybook/builder-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
-      '@storybook/client-api': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
-      '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
-      '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
-      '@types/enzyme': 3.10.12
-      '@types/jest': 27.5.2
-      '@types/react-dom': 17.0.17
-      '@types/react-test-renderer': 17.0.2
-      antd: 5.3.0_sfoxds7t5ydpegc3knd667wn6m
-      babel-loader: 8.2.5_webpack@5.74.0
-      babel-merge: 3.0.0
-      cpy-cli: 3.1.1
-      enzyme: 3.11.0
-      eslint: 8.21.0
-      husky: 4.3.8
-      identity-obj-proxy: 3.0.0
-      jest: 27.5.1
-      prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
-      react-is: 17.0.2
-      react-router-dom: 5.3.3_react@17.0.2
-      react-test-renderer: 17.0.2_react@17.0.2
-      styled-components: 5.3.5_fane7jikarojcev26y27hpbhu4
-      stylelint: 14.9.1
-      ts-jest: 27.1.5_mqaoisgizytgigbr3gbjwvnjie
-      typescript: 4.7.4
-      webpack: 5.74.0
-
-  packages/ui/page-header:
-    specifiers:
-      '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^2.1.9
-      '@osui/icons': ^2.1.9
-      '@osui/icons-icloud': ^2.1.9
-      '@reskript/cli': ^3.0.0
-      '@reskript/cli-lint': ^3.0.0
-      '@reskript/config-babel': ^3.0.0
-      '@reskript/config-lint': ^3.0.0
-      '@reskript/config-webpack': ^3.0.0
-      '@storybook/addon-a11y': 6.5.9
-      '@storybook/addon-docs': 6.5.9
-      '@storybook/addon-storysource': 6.5.9
-      '@storybook/addon-viewport': 6.5.9
-      '@storybook/addons': 6.5.9
-      '@storybook/builder-webpack5': 6.5.9
-      '@storybook/client-api': 6.5.9
-      '@storybook/manager-webpack5': 6.5.9
-      '@storybook/react': 6.5.9
-      '@types/enzyme': ^3.10.9
-      '@types/jest': ^27.0.0
-      '@types/react-dom': ^17.0.2
-      '@types/react-test-renderer': ^17.0.1
-      antd: ^5.3.0
-      babel-loader: ^8.1.0
-      babel-merge: ^3.0.0
-      classnames: ^2.3.1
-      cpy-cli: ^3.1.1
-      enzyme: ^3.11.0
-      eslint: ^8.0.0
-      husky: ^4.2.5
-      identity-obj-proxy: ^3.0.0
-      jest: ^27.0.6
-      prop-types: ^15.7.2
-      react: ^17.0.2
-      react-dom: ^17.0.2
-      react-is: ^17.0.2
-      react-router-dom: ^5.2.0
-      react-test-renderer: ^17.0.2
-      styled-components: ~5.3.5
-      stylelint: ^14.0.0
-      ts-jest: ^27.0.3
-      typescript: ^4.4.3
-      webpack: ^5.52.1
-    dependencies:
-      classnames: 2.3.1
-    devDependencies:
-      '@babel/cli': 7.18.10
-      '@osui/brand-provider': link:../brand-provider
       '@osui/icons': link:../../ui-icons/osui-icons
       '@osui/icons-icloud': link:../../ui-icons/osui-icons-icloud
       '@reskript/cli': 3.0.6
@@ -5164,6 +4984,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -5217,6 +5038,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -5353,6 +5175,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -5401,6 +5224,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -6471,6 +6295,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -6534,6 +6359,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -6585,6 +6411,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -6639,6 +6466,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -6993,6 +6821,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -7043,6 +6872,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -7455,6 +7285,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -7504,6 +7335,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -7850,6 +7682,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9
       '@storybook/react': 6.5.9
       '@types/enzyme': ^3.10.9
+      '@types/hoist-non-react-statics': ^3.3.1
       '@types/jest': ^27.0.0
       '@types/react-dom': ^17.0.2
       '@types/react-test-renderer': ^17.0.1
@@ -7907,6 +7740,7 @@ importers:
       '@storybook/manager-webpack5': 6.5.9_dxrqcwl5hktnwvawqvmvmvc3vq
       '@storybook/react': 6.5.9_rozogk5uyelwo4loymlwcu72zy
       '@types/enzyme': 3.10.12
+      '@types/hoist-non-react-statics': 3.3.1
       '@types/jest': 27.5.2
       '@types/react-dom': 17.0.17
       '@types/react-test-renderer': 17.0.2
@@ -19025,7 +18859,7 @@ packages:
     dependencies:
       '@types/react': 18.0.15
       hoist-non-react-statics: 3.3.2
-    dev: false
+    dev: true
 
   /@types/html-minifier-terser/5.1.2:
     resolution: {integrity: sha512-h4lTMgMJctJybDp8CQrxTUiiYmedihHWkjnF/8Pxseu2S6Nlfcy8kwboQ8yejh456rP2yWoEVm1sS/FVsfM48w==}
@@ -19165,6 +18999,7 @@ packages:
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+    dev: true
 
   /@types/q/1.5.5:
     resolution: {integrity: sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ==}
@@ -19218,6 +19053,7 @@ packages:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
       csstype: 3.1.0
+    dev: true
 
   /@types/resolve/0.0.8:
     resolution: {integrity: sha512-auApPaJf3NPfe18hSoJkp8EbZzer2ISk7o8mCC3M9he/a04+gbMF97NkpD2S8riMGvm4BMRI59/SZQSaLTKpsQ==}
@@ -19243,6 +19079,7 @@ packages:
 
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
+    dev: true
 
   /@types/serve-index/1.9.1:
     resolution: {integrity: sha512-d/Hs3nWDxNL2xAczmOVZNj92YZCS6RGxfBPjKzuu/XirCgXdpKEb88dYNbrYGint6IVWLNP+yonwVAuRC0T2Dg==}
@@ -23755,6 +23592,7 @@ packages:
 
   /csstype/3.1.0:
     resolution: {integrity: sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==}
+    dev: true
 
   /currently-unhandled/0.4.1:
     resolution: {integrity: sha512-/fITjgjGU50vjQ4FH6eUoYu+iUoUKIXws2hL15JJpIR+BbTxaXQsMuuyjtNh2WqsSBS5nsaZHFsFecyw5CCAng==}

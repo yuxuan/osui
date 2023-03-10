@@ -15,15 +15,15 @@ DEPENDENCIES=""
 
 # 把各个包包名从package.json中读取出来
 find $ROOT -maxdepth 1 -type d | grep -v -E $EXCLUDE_FOLDER | ( while IFS= read -r d; do
-    COMPONENT=`echo $d | gsed  's|../||'`
+    COMPONENT=`echo $d | sed  's|../||'`
     COMPONENT_NAME="$COMPONENT"
     # message 和 notification 和 version 需要保持小写
     if [[ "$COMPONENT_NAME" != "message" ]] && [[ "$COMPONENT_NAME" != "notification" ]] && [[ "$COMPONENT_NAME" != "version" ]]
     then
-        COMPONENT_NAME=`echo $(tr '[:lower:]' '[:upper:]' <<< ${COMPONENT:0:1})${COMPONENT:1} | gsed -E 's/-(.)/\U\1/g'`
+        COMPONENT_NAME=`echo $(tr '[:lower:]' '[:upper:]' <<< ${COMPONENT:0:1})${COMPONENT:1} | awk -F"-" '{for(i=1;i<=NF;i++){$i=toupper(substr($i,1,1)) substr($i,2)}} 1' OFS=""`
     fi
     echo "building $COMPONENT => $COMPONENT_NAME"
-    PACKAGE_NAME=`cat $d/package.json | grep '"name":' | gsed -E 's/"name": "(.*)",/\1/g' | gsed -E 's/^[[:space:]]*//'` ;
+    PACKAGE_NAME=`cat $d/package.json | grep '"name":' | sed -E 's/"name": "(.*)",/\1/g' | sed -E 's/^[[:space:]]*//'` ;
     echo $PACKAGE_NAME
     DEPENDENCIES+="$PACKAGE_NAME "
     # echo "export {default as $COMPONENT_NAME} from '$PACKAGE_NAME';" >> ./src/index.ts
