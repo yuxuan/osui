@@ -88,7 +88,6 @@ const all = [
     'osui-icons-icloud',
 ];
 
-
 async function main() {
     const packagesPath = path.join(__dirname, '..', 'packages');
     try {

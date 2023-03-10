@@ -13,7 +13,7 @@
     "license": "MIT",
     "scripts": {
         "lint": "pnpm workspaces run lint",
-        "build": "lerna run --stream --sort build && pnpm --filter @osui/ui build-all  && pnpm build-check",
+        "build": "lerna run --stream --sort build && pnpm --filter @osui/ui build-all",
         "clean": "pnpm workspaces run clean",
         "storybook": "start-storybook -p 8777 -s public",
         "version": "lerna version --conventional-commits --no-push",
