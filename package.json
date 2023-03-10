@@ -22,7 +22,7 @@
         "copy-to-docs": "sh scripts/copy-to-docs.sh",
         "publish": "lerna publish from-package",
         "publishWithDocs": "lerna publish from-package && pnpm build-docs",
-        "build-docs": "sh scripts/build-docs.sh osui && sh scripts/build-docs.sh icloud",
+        "build-docs": "sh scripts/build-docs.sh icloud",
         "test": "lerna exec --no-private --concurrency 10 -- pnpm test",
         "build-check": "node scripts/build-check.js",
         "prepare": "husky install"
