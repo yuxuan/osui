@@ -1,25 +1,24 @@
 Global:
-  tool: build_submitter
+  version: 2.0
+
 Default:
   profile: [build]
+
 Profiles:
   - profile:
     name: build
-    env: cmc_staging
-    command: sh ./scripts/build.sh
-    release: true
-  - profile:
-    name: deploy
-    env: cmc_staging
-    command: BCE_REGION=$BCE_REGION BCE_AK=$BCE_AK BCE_SK=$BCE_SK BOS_BUCKET=$BOS_BUCKET DIR=$DIR sh ./scripts/deploy.sh
-    release: true
-  - profile:
-    name: version_3
-    env: cmc_standard
-    command: sh ./scripts/build-3.x.sh
-    release: false
-  - profile:
-    name: version_4
-    env: cmc_standard
-    command: BCE_AK=$BCE_AK BCE_SK=$BCE_SK sh ./scripts/build-4.x-demo.sh
-    release: false
+    mode: AGENT
+    environment:
+      cluster: DECK_CENTOS7U5_K3
+      resourceType: MEDIUM
+      tools:
+        - nodejs: 18.3.0
+        - pnpm: 7.2.1
+    build:
+      command: sh ./scripts/build.sh
+      cache:
+          enable: true              # 开启缓存
+          paths:
+          - .pnpm-store
+    artifacts:
+      release: true
