@@ -1,6 +1,4 @@
 #!/bin/bash
-TARGET=$1
-
-cd packages/docs/$TARGET && pnpm build-storybook
+cd packages/demo && pnpm build-storybook
 
 echo "DONE"
