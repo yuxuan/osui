@@ -2523,13 +2523,6 @@ importers:
       typescript: ^4.8.2
       webpack: ^5.74.0
     dependencies:
-      classnames: 2.3.1
-    devDependencies:
-      '@ant-design/icons': 4.7.0_sfoxds7t5ydpegc3knd667wn6m
-      '@babel/cli': 7.18.10
-      '@emotion/styled': 11.10.0_react@17.0.2
-      '@huse/boolean': 1.1.2_react@17.0.2
-      '@huse/input-value': 1.1.1_react@17.0.2
       '@osui/affix': link:../../affix
       '@osui/alert': link:../../alert
       '@osui/anchor': link:../../anchor
@@ -2606,6 +2599,13 @@ importers:
       '@osui/typography': link:../../typography
       '@osui/upload': link:../../upload
       '@osui/version': link:../../version
+      classnames: 2.3.1
+    devDependencies:
+      '@ant-design/icons': 4.7.0_sfoxds7t5ydpegc3knd667wn6m
+      '@babel/cli': 7.18.10
+      '@emotion/styled': 11.10.0_react@17.0.2
+      '@huse/boolean': 1.1.2_react@17.0.2
+      '@huse/input-value': 1.1.1_react@17.0.2
       '@reskript/cli': 3.0.6
       '@reskript/cli-lint': 3.0.6_zkq42k7ybxy57v2idgz5yhn4ue
       '@reskript/config-babel': 3.0.6_z3yk7izmwsoahwplgcmcxkn2yu
@@ -11327,8 +11327,8 @@ packages:
       '@babel/core': 7.18.10
       '@babel/eslint-parser': 7.18.9_xqt7ek4fk233nrovqiamjvck4u
       '@babel/eslint-plugin': 7.18.10_nydfxhofap6opqwg3seb7aoezu
-      '@typescript-eslint/eslint-plugin': 5.32.0_n22t5ync3lmwpwna4sv6t73sfu
-      '@typescript-eslint/parser': 5.32.0_n6o7c4j52sqif4e7zyvkw23cty
+      '@typescript-eslint/eslint-plugin': 5.32.0_iosr3hrei2tubxveewluhu5lhy
+      '@typescript-eslint/parser': 5.32.0_qugx7qdu5zevzvxaiqyxfiwquq
       eslint: 8.21.0
       eslint-plugin-react: 7.30.1_eslint@8.21.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.21.0
@@ -22031,7 +22031,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1
+      promise-inflight: 1.0.1_bluebird@3.7.2
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -34024,6 +34024,17 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
+    dev: true
+
+  /promise-inflight/1.0.1_bluebird@3.7.2:
+    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
+    peerDependencies:
+      bluebird: '*'
+    peerDependenciesMeta:
+      bluebird:
+        optional: true
+    dependencies:
+      bluebird: 3.7.2
     dev: true
 
   /promise-retry/2.0.1:
