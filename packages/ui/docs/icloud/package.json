@@ -61,7 +61,7 @@
         "@osui/gap": "workspace:^2.1.9",
         "@osui/grid": "workspace:^2.1.9",
         "@osui/highlight-text": "workspace:^2.1.9",
-        "@osui/icloud-theme": "^2.1.17",
+        "@osui/icloud-theme": "workspace:^2.1.17",
         "@osui/icons": "workspace:^2.1.9",
         "@osui/icons-icloud": "workspace:^2.1.9",
         "@osui/image": "workspace:^2.1.9",

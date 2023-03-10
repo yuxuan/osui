@@ -2435,7 +2435,7 @@ importers:
       '@osui/gap': workspace:^2.1.9
       '@osui/grid': workspace:^2.1.9
       '@osui/highlight-text': workspace:^2.1.9
-      '@osui/icloud-theme': ^2.1.17
+      '@osui/icloud-theme': workspace:^2.1.17
       '@osui/icons': workspace:^2.1.9
       '@osui/icons-icloud': workspace:^2.1.9
       '@osui/image': workspace:^2.1.9
@@ -11327,8 +11327,8 @@ packages:
       '@babel/core': 7.18.10
       '@babel/eslint-parser': 7.18.9_xqt7ek4fk233nrovqiamjvck4u
       '@babel/eslint-plugin': 7.18.10_nydfxhofap6opqwg3seb7aoezu
-      '@typescript-eslint/eslint-plugin': 5.32.0_iosr3hrei2tubxveewluhu5lhy
-      '@typescript-eslint/parser': 5.32.0_qugx7qdu5zevzvxaiqyxfiwquq
+      '@typescript-eslint/eslint-plugin': 5.32.0_n22t5ync3lmwpwna4sv6t73sfu
+      '@typescript-eslint/parser': 5.32.0_n6o7c4j52sqif4e7zyvkw23cty
       eslint: 8.21.0
       eslint-plugin-react: 7.30.1_eslint@8.21.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.21.0
@@ -22031,7 +22031,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1_bluebird@3.7.2
+      promise-inflight: 1.0.1
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -34024,17 +34024,6 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
-    dev: true
-
-  /promise-inflight/1.0.1_bluebird@3.7.2:
-    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
-    peerDependencies:
-      bluebird: '*'
-    peerDependenciesMeta:
-      bluebird:
-        optional: true
-    dependencies:
-      bluebird: 3.7.2
     dev: true
 
   /promise-retry/2.0.1:

@@ -3,14 +3,8 @@ const {loaders} = require('@reskript/config-webpack');
 const path = require('path');
 const process = require('process');
 
-const themeEnv = process.env.THEME;
-const isOsuiTheme = themeEnv === 'osui';
-
-const styleResources = isOsuiTheme ? (
-    [require.resolve('@osui/theme/dist/antd-vars-patch.less')]
-) : (
-    [require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less')]
-);
+// const themeEnv = process.env.THEME;
+// const isOsuiThem = themeEnv === 'osui';
 
 const loaderOptions = {
     cwd: process.cwd(),
@@ -19,7 +13,7 @@ const loaderOptions = {
         build: {
             style: {
                 resources: [
-                    ...styleResources,
+                    require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less'),
                     require.resolve('@osui/icloud-theme/dist/less-functions-overrides.less'),
                 ],
                 lessVariables: {
