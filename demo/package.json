@@ -72,6 +72,7 @@
     "author": "huoyuxuan",
     "license": "MIT",
     "dependencies": {
+        "@emotion/react": "^11.10.6",
         "@osui/affix": "^2.1.9",
         "@osui/alert": "^2.1.9",
         "@osui/anchor": "^2.1.9",
@@ -148,7 +149,7 @@
         "@osui/typography": "^2.1.9",
         "@osui/upload": "^2.1.9",
         "@osui/version": "^2.1.9",
-        "antd": "^5.3.0",
+        "antd": "4.22.8",
         "classnames": "^2.3.1",
         "react": "^17.0.2",
         "react-dom": "^17.0.2"
