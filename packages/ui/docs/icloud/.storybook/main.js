@@ -5,7 +5,6 @@ const process = require('process');
 
 // const themeEnv = process.env.THEME;
 // const isOsuiThem = themeEnv === 'osui';
-console.log(path.resolve('../node_modules/@osui/icloud-theme/dist/antd-vars-patch.less'));
 const antdVarsPatchPath = path.join(__dirname, '..', 'node_modules', '@osui/icloud-theme/dist/antd-vars-patch.less')
 const lessFunctionsOverridesPath = path.join(__dirname, '..', 'node_modules', '@osui/icloud-theme/dist/less-functions-overrides.less')
 
