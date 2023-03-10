@@ -3,4 +3,3 @@ packages:
   - 'packages/ui/*'
   - 'packages/ui-icons/*'
   - 'packages/ui-theme/*'
-  - 'packages/docs/*'
