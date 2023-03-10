@@ -1,4 +1,4 @@
 #!/bin/bash
-cd demo && pnpm build-storybook
+cd demo && pnpm run build-storybook
 
 echo "DONE"
