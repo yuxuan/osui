@@ -6,6 +6,7 @@ const process = require('process');
 // const themeEnv = process.env.THEME;
 // const isOsuiThem = themeEnv === 'osui';
 console.log(path.resolve('../node_modules/@osui/icloud-theme/dist/antd-vars-patch.less'));
+console.log(require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less'));
 
 const loaderOptions = {
     cwd: process.cwd(),
@@ -14,8 +15,8 @@ const loaderOptions = {
         build: {
             style: {
                 resources: [
-                    path.resolve('../node_modules/@osui/icloud-theme/dist/antd-vars-patch.less'),
-                    path.resolve('../node_modules/@osui/icloud-theme/dist/less-functions-overrides.less'),
+                    require.resolve('@osui/icloud-theme/dist/antd-vars-patch.less'),
+                    require.resolve('@osui/icloud-theme/dist/less-functions-overrides.less'),
                 ],
                 lessVariables: {
                     'ant-prefix': 'ant',
