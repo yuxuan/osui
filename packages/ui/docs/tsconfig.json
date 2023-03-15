@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "jsx": "react",
+        "allowJs": true,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "strict": true,
+        "noUnusedLocals": false,
+        "noFallthroughCasesInSwitch": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "declaration":true,
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": ["commitlint.config.js"]
+}

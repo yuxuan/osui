@@ -17,7 +17,7 @@
         "lint": "skr lint",
         "build": "echo 'done'",
         "build-storybook": "build-storybook -c .storybook -o dist",
-        "storybook": "start-storybook -p 8700",
+        "storybook": "start-storybook -p 8800",
         "clean": "rm -rf node_modules && rm -rf es",
         "test": "echo 'jest --config jest.config.js'",
         "sb-upgrade": "sb upgrade"

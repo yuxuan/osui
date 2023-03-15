@@ -29,6 +29,6 @@ export const decorators = [
             },
             [isDarkMode]
         );
-        return <div style={{ 'background-color': 'var(--body-background);' }}><Story /></div>;
+        return <div style={{ padding: 30, 'background-color': 'white' }}><Story /></div>;
     }
 ];

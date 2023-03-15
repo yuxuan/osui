@@ -29,6 +29,6 @@ export const decorators = [
             },
             [isDarkMode]
         );
-        return <div style={{ 'background-color': 'var(--body-background);' }}><Story /></div>;
+        return <div><Story /></div>;
     }
 ];
