@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json.schemastore.org/swcrc",
+    "jsc": {
+      "parser": {
+        "syntax": "typescript"
+      }
+    },
+    "env": {
+        "targets": {
+          "chrome": "76",
+          "firefox": "64"
+        },
+        "coreJs": "3.29"
+    }
+}
