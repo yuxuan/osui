@@ -1,8 +1,9 @@
-import { useDarkMode } from 'storybook-dark-mode';
-import { useEffect } from 'react';
-import { themes } from '@storybook/theming';
+import {useDarkMode} from 'storybook-dark-mode';
+import {useEffect} from 'react';
+import {themes} from '@storybook/theming';
 import '@osui/icloud-theme/dist/theme/vars.css';
 import '@osui/icloud-theme/dist/antd4-styles-patch.css';
+import './global.css';
 
 export const parameters = {
     options: {
@@ -12,23 +13,23 @@ export const parameters = {
     },
     darkMode: {
         // Override the default dark theme
-        dark: { ...themes.dark },
+        dark: {...themes.dark},
         // Override the default light theme
-        light: { ...themes.normal},
-        stylePreview: true
-    }
+        light: {...themes.normal},
+        stylePreview: true,
+    },
 };
 
 
 export const decorators = [
-    (Story) => {
+    Story => {
         const isDarkMode = useDarkMode();
         useEffect(
             () => {
-                document.documentElement.dataset.theme = isDarkMode ? "dark" : "light";
+                document.documentElement.dataset.theme = isDarkMode ? 'dark' : 'light';
             },
             [isDarkMode]
         );
-        return <div style={{ padding: 30, 'background-color': 'white' }}><Story /></div>;
-    }
+        return <div style={{padding: 30, 'background-color': 'white'}}><Story /></div>;
+    },
 ];

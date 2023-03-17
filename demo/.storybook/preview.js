@@ -2,6 +2,7 @@ import { useDarkMode } from 'storybook-dark-mode';
 import { useEffect } from 'react';
 import { themes } from '@storybook/theming';
 import '@osui/icloud-theme/dist/theme/vars.css';
+import './global.css';
 import '@osui/icloud-theme/dist/antd4-styles-patch.css';
 
 export const parameters = {

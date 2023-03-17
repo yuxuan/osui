@@ -14,7 +14,7 @@
     "scripts": {
         "lint": "pnpm workspaces run lint",
         "build": "lerna run --stream --sort build && pnpm --filter @osui/ui build-all",
-        "clean": "pnpm workspaces run clean",
+        "clean": "lerna run clean",
         "storybook": "start-storybook -p 8777 -s public",
         "version": "lerna version --conventional-commits --no-push",
         "commit": "git-cz",

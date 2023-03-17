@@ -1,17 +1,15 @@
-
-
 rm -rf es
 rm -rf lib
 
-# pnpm install --production=false
-# # pnpm test
+tsc -p .
 
-$(npm bin)/cpy '**/*' '!**/*.ts' '!**/*.tsx' '!**/*.js' '!**/*.jsx' ../tmp/ --cwd=src/ --parents
-$(npm bin)/tsc
-# build es
-$(npm bin)/babel tmp --out-dir es --ignore "src/**/*.test.js" --copy-files --source-maps
-# build cjs
-$(npm bin)/babel tmp --out-dir lib --ignore "src/**/*.test.js" --copy-files --source-maps --config-file './babel.cjsconfig.js';
+$(npm bin)/swc src -d es --source-maps
+cp src/*.less es
+cp tmp/* es
+
+$(npm bin)/swc src -d lib --source-maps --config module.type=commonjs
+cp src/*.less lib
+cp tmp/* lib
 
 rm -rf tmp
 
