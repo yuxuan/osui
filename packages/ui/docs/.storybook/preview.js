@@ -4,6 +4,7 @@ import { themes } from '@storybook/theming';
 import '@osui/icloud-theme/dist/theme/vars.css';
 import './global.css';
 import '@osui/icloud-theme/dist/antd4-styles-patch.css';
+import BrandProvider from '@osui/brand-provider';
 
 export const parameters = {
     options: {
@@ -30,6 +31,6 @@ export const decorators = [
             },
             [isDarkMode]
         );
-        return <div style={{padding: 30, background: '#fff'}}><Story /></div>;
+        return <div style={{padding: 30, background: '#fff'}}><BrandProvider><Story /></BrandProvider></div>;
     }
 ];

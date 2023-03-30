@@ -86,3 +86,5 @@ lib/
 /test
 
 /docs
+
+storybook-static
