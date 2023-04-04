@@ -1,9 +1,18 @@
 @osui-menu-class-prefix: osui-menu;
 
-.ant-menu-vertical.ant-menu-sub,
-.ant-menu-vertical-left.ant-menu-sub,
-.ant-menu-vertical-right.ant-menu-sub {
+.@{ant-prefix}-menu-vertical.@{ant-prefix}-menu-sub,
+.@{ant-prefix}-menu-vertical-left.@{ant-prefix}-menu-sub,
+.@{ant-prefix}-menu-vertical-right.@{ant-prefix}-menu-sub {
     max-height: ~'calc(100vh - 100px)';
+}
+
+.@{ant-prefix}-menu-submenu.@{ant-prefix}-menu-submenu-inline .ant-menu-submenu-title svg.osui-icon.@{ant-prefix}-menu-submenu-expand-icon {
+    transition: transform .15s cubic-bezier(.215, .61, .355, 1), margin .3s cubic-bezier(.645, .045, .355, 1), color .3s;
+}
+
+.@{ant-prefix}-menu-submenu.@{ant-prefix}-menu-submenu-inline.@{ant-prefix}-menu-submenu-open > .ant-menu-submenu-title >  svg.osui-icon.@{ant-prefix}-menu-submenu-expand-icon {
+    transform: rotate(90deg) translateX(-50%);
+    transition: transform .15s cubic-bezier(.215, .61, .355, 1), margin .3s cubic-bezier(.645, .045, .355, 1), color .3s;
 }
 
 .@{osui-menu-class-prefix} {
