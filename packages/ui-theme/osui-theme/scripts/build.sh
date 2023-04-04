@@ -5,7 +5,7 @@ rm -rf vars
 mkdir -p dist/theme
 mkdir -p vars
 
-$(npm bin)/tsc
+tsc
 echo 'tsc done'
 node scripts/build.js
 

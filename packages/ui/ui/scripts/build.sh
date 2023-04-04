@@ -38,7 +38,7 @@ echo "Add interfaces"
 cat ./src/props.d.ts >> ./src/index.ts
 
 # build index
-$(npm bin)/tsc
-$(npm bin)/tsc -p tsconfig.cjs.json
+tsc
+tsc -p tsconfig.cjs.json
 
 echo "build success"

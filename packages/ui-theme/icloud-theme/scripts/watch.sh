@@ -1,6 +1,6 @@
 echo 'file changed...'
 
-$(npm bin)/tsc
+tsc
 echo 'tsc done'
 node scripts/build.mjs
 
