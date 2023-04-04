@@ -1,7 +1,14 @@
 rm -rf es
 rm -rf lib
 
-$(npm bin)/swc src -d es --source-maps
-$(npm bin)/swc src -d lib --source-maps --config module.type=commonjs
+tsc -p .
+
+swc src -d es --source-maps
+cp tmp/* es
+
+swc src -d lib --source-maps --config module.type=commonjs
+cp tmp/* lib
+
+rm -rf tmp
 
 echo "build success"

@@ -11,8 +11,6 @@ export default {
 
 export const Demo = () => {
     const containerStyle = {height: 1200};
-
-
     const Demo: React.FC = () => {
         const [top, setTop] = useState(10);
         const [bottom, setBottom] = useState(10);

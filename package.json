@@ -28,6 +28,7 @@
         "prepare": "husky install"
     },
     "devDependencies": {
+        "@ant-design/compatible": "^5.1.1",
         "@ant-design/tools": "^14.1.0",
         "@babel/core": "^7.18.10",
         "@commitlint/cli": "^9.1.2",

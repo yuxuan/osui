@@ -1,33 +1,34 @@
 {
-    "packages": [
-        "packages/*"
-    ],
-    "version": "2.1.9",
-    "npmClient": "pnpm",
-    "useWorkspaces": true,
-    "command": {
-        "version": {
-            "allowBranch": [
-                "master",
-                "hot-fix",
-                "acud"
-            ],
-            "ignoreChanges": [
-                "**/*.md",
-                "**/stories/**",
-                "**/__tests__/**",
-                "**/.eslintrc.js",
-                "**/jest.config.js",
-                "**/tsconfig.json"
-            ]
-        },
-        "publish": {
-            "ignoreChanges": [
-                "*.md"
-            ],
-            "verifyAccess": false,
-            "verifyRegistry": false,
-            "message": "chore: publish"
-        }
+  "packages": [
+    "packages/*"
+  ],
+  "version": "3.0.0",
+  "npmClient": "pnpm",
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "allowBranch": [
+        "master",
+        "hot-fix",
+        "acud",
+        "antd5"
+      ],
+      "ignoreChanges": [
+        "**/*.md",
+        "**/stories/**",
+        "**/__tests__/**",
+        "**/.eslintrc.js",
+        "**/jest.config.js",
+        "**/tsconfig.json"
+      ]
+    },
+    "publish": {
+      "ignoreChanges": [
+        "*.md"
+      ],
+      "verifyAccess": false,
+      "verifyRegistry": false,
+      "message": "chore: publish"
     }
+  }
 }
