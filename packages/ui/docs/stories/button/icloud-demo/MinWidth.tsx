@@ -1,11 +1,12 @@
 import React from 'react';
 import Space from '@osui/space';
+import BrandProvider from '@osui/brand-provider';
 import {IconHomeOutlined} from '@osui/icons';
 import Button from '@osui/button';
 
 export default function MinWidth() {
     return (
-        <>
+        <BrandProvider>
             <p>min-width会判断是不是一到三个字，这个是默认行为</p>
             <Space>
                 <Button>是</Button>
@@ -63,6 +64,6 @@ export default function MinWidth() {
             <Space>
                 <Button type="primary" minWidth={false}>取消</Button>
             </Space>
-        </>
+        </BrandProvider>
     );
 }

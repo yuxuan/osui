@@ -4,13 +4,12 @@
 # Example:
 # pnpm copy-to-docs all osui
 # pnpm copy-to-docs all icloud
-# pnpm copy-to-docs all # 默认是osui
+# pnpm copy-to-docs all # 默认是icloud
 
 COMPONENT_NAME_ARG=$1
-TARGET=${2:-osui} # 默认值
+TARGET=${2:-icloud} # 默认
 UI_FODER=./packages/ui/
 EXCLUDE_FOLDER='/$|ui$|/docs$|\.\.$'
-echo $TARGET
 
 ICLOUD_COMPONENTS="affix alert anchor auto-complete avatar back-top badge brand-provider breadcrumb button calendar card carousel cascader checkbox col collapse config-provider date-picker descriptions divider drawer dropdown empty form gap grid image input input-number layout list mentions menu message modal notification pagination popconfirm popover progress radio rate result row select skeleton slider space spin statistic steps switch table tabs tag time-picker timeline tooltip transfer tree tree-select typography upload version joyride highlight-text quick-edit theme-provider segmented"
 OSUI_COMPONENTS="alert avatar back-top badge branch-dropdown button checkbox collapse date-picker directory-navigator drawer form input input-number markdown menu-dropdown message modal pagination popover progress radio search-select-list select space switch table tabs tag timeline toggle-button tooltip text-overflow-tooltip"
@@ -30,37 +29,37 @@ then
         for var in $COMPONENT_LIST; do
             if [[ $COMPONENT_NAME =~ (^|[[:space:]])$var($|[[:space:]]) ]]
             then
-                mkdir -p packages/docs/${TARGET}/stories/${COMPONENT_NAME}
-                cp ${COMPONENT_DIR}/stories/${TARGET}.stories.tsx packages/docs/${TARGET}/stories/${COMPONENT_NAME}/index.stories.tsx
-                cp ${COMPONENT_DIR}/stories/${TARGET}.stories.mdx packages/docs/${TARGET}/stories/${COMPONENT_NAME}/index.stories.mdx
+                mkdir -p packages/ui/docs/stories/${COMPONENT_NAME}
+                cp ${COMPONENT_DIR}/stories/${TARGET}.stories.tsx packages/ui/docs/stories/${COMPONENT_NAME}/index.stories.tsx
+                cp ${COMPONENT_DIR}/stories/${TARGET}.stories.mdx packages/ui/docs/stories/${COMPONENT_NAME}/index.stories.mdx
                 ## Ubuntu ships with GNU sed, where the suffix for the -i option is optional. OS X ships with BSD sed, where the suffix is mandatory. Try sed -i ''
-                sed -i.bak "s|../src|@osui/${COMPONENT_NAME}|" packages/docs/${TARGET}/stories/${COMPONENT_NAME}/index.stories.tsx && rm -- "packages/docs/${TARGET}/stories/${COMPONENT_NAME}/index.stories.tsx.bak"
+                sed -i.bak "s|../src|@osui/${COMPONENT_NAME}|" packages/ui/docs/stories/${COMPONENT_NAME}/index.stories.tsx && rm -- "packages/ui/docs/stories/${COMPONENT_NAME}/index.stories.tsx.bak"
                 # 复制demo目录
                 if [[ -d "${COMPONENT_DIR}/stories/${TARGET}-demo" ]]
                 then
                     echo "${COMPONENT_DIR}/stories/${TARGET}-demo"
-                    rm -rf packages/docs/${TARGET}/stories/${COMPONENT_NAME}/${TARGET}-demo
-                    cp -r ${COMPONENT_DIR}/stories/${TARGET}-demo packages/docs/${TARGET}/stories/${COMPONENT_NAME}/${TARGET}-demo
-                    find packages/docs/${TARGET}/stories/${COMPONENT_NAME}/${TARGET}-demo/*.tsx -print0 |xargs -0 sed -i.bak "s|../../src|@osui/${COMPONENT_NAME}|"
-                    find packages/docs/${TARGET}/stories/${COMPONENT_NAME}/${TARGET}-demo/*.bak -print0 |xargs -0 rm -f
+                    rm -rf packages/ui/docs/stories/${COMPONENT_NAME}/${TARGET}-demo
+                    cp -r ${COMPONENT_DIR}/stories/${TARGET}-demo packages/ui/docs/stories/${COMPONENT_NAME}/${TARGET}-demo
+                    find packages/ui/docs/stories/${COMPONENT_NAME}/${TARGET}-demo/*.tsx -print0 |xargs -0 sed -i.bak "s|../../src|@osui/${COMPONENT_NAME}|"
+                    find packages/ui/docs/stories/${COMPONENT_NAME}/${TARGET}-demo/*.bak -print0 |xargs -0 rm -f
                 fi
             fi
         done
     done
 else
     # 单个组件复制
-    mkdir -p packages/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}
-    cp packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}.stories.tsx packages/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/index.stories.tsx
-    cp packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}.stories.mdx packages/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/index.stories.mdx
+    mkdir -p packages/ui/docs/stories/${COMPONENT_NAME_ARG}
+    cp packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}.stories.tsx packages/ui/docs/stories/${COMPONENT_NAME_ARG}/index.stories.tsx
+    cp packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}.stories.mdx packages/ui/docs/stories/${COMPONENT_NAME_ARG}/index.stories.mdx
     # 复制demo目录
-    rm -rf packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}-demo && cp -r packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}-demo packages/docs/${TARGET}/stories/${COMPONENT_NAME}/${TARGET}-demo
-    sed -i.bak "s|../src|@osui/${COMPONENT_NAME_ARG}|" packages/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/index.stories.tsx && rm -- "packages/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/index.stories.tsx.bak"
+    rm -rf packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}-demo && cp -r packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}-demo packages/ui/docs/stories/${COMPONENT_NAME}/${TARGET}-demo
+    sed -i.bak "s|../src|@osui/${COMPONENT_NAME_ARG}|" packages/ui/docs/stories/${COMPONENT_NAME_ARG}/index.stories.tsx && rm -- "packages/ui/docs/stories/${COMPONENT_NAME_ARG}/index.stories.tsx.bak"
     # 替换../../src并清理bak文件
-    find packages/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/${TARGET}-demo/*.tsx -print0 |xargs -0 sed -i.bak "s|../../src|@osui/${COMPONENT_NAME_ARG}|"
-    find packages/docs/${TARGET}/stories/${COMPONENT_NAME_ARG}/${TARGET}-demo/*.bak -print0 |xargs -0 rm -f
+    find packages/ui/docs/stories/${COMPONENT_NAME_ARG}/${TARGET}-demo/*.tsx -print0 |xargs -0 sed -i.bak "s|../../src|@osui/${COMPONENT_NAME_ARG}|"
+    find packages/ui/docs/stories/${COMPONENT_NAME_ARG}/${TARGET}-demo/*.bak -print0 |xargs -0 rm -f
 fi
 
 
 # 替换掉修改的mdx import from './index.tsx'
-find packages/docs/${TARGET}/stories/ -type f -name "*.mdx" |xargs sed -i.bk "s|import \* as stories from \'\./${TARGET}\.stories';|import * as stories from './index.stories';|"
-find packages/docs/${TARGET}/stories/ -type f -name "*.bk" |xargs rm
+find packages/ui/docs/stories/ -type f -name "*.mdx" |xargs sed -i.bk "s|import \* as stories from \'\./${TARGET}\.stories';|import * as stories from './index.stories';|"
+find packages/ui/docs/stories/ -type f -name "*.bk" |xargs rm

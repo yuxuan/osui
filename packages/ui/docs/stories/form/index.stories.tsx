@@ -378,8 +378,8 @@ export const TestCase = () => {
                         ]}
                     >
                         <Form.Item
-                            wrapperCol={{pull: 2}}
-                            name="password"
+                            style={{marginLeft: 0}}
+                            name="switch1"
                             rules={[
                                 {
                                     required: true,
@@ -390,8 +390,8 @@ export const TestCase = () => {
                             <Switch />
                         </Form.Item>
                         <Form.Item
-                            wrapperCol={{pull: 2}}
-                            name="password"
+                            style={{marginLeft: 0}}
+                            name="switch2"
                             rules={[
                                 {
                                     required: true,

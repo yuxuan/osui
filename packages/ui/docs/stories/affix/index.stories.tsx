@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Button from '@osui/button';
 import Divider from '@osui/divider';
 import Gap from '@osui/gap';
@@ -10,9 +10,7 @@ export default {
 };
 
 export const Demo = () => {
-    const containerStyle = { height: 1200 };
-
-
+    const containerStyle = {height: 1200};
     const Demo: React.FC = () => {
         const [top, setTop] = useState(10);
         const [bottom, setBottom] = useState(10);
@@ -28,7 +26,7 @@ export const Demo = () => {
                 <Divider>展示</Divider>
                 <p>往下滚动查看固钉效果</p>
                 <Affix offsetTop={top}>
-                    <div style={{ display: 'flex' }}>
+                    <div style={{display: 'flex'}}>
                         <Button type="primary" onClick={() => setTop(top + 10)}>
                             顶部固钉
                         </Button>
@@ -42,9 +40,9 @@ export const Demo = () => {
                         </Button>
                     </div>
                 </Affix>
-                <div style={{ height: 1200 }} />
+                <div style={{height: 1200}} />
                 <Affix offsetBottom={bottom}>
-                    <div style={{ display: 'flex' }}>
+                    <div style={{display: 'flex'}}>
                         <Button type="primary" onClick={() => setBottom(bottom + 10)}>
                             底部固钉
                         </Button>
