@@ -3,6 +3,7 @@ import {ConfigProvider} from 'antd';
 import Empty from '@osui/empty';
 import zhCN from 'antd/es/locale/zh_CN';
 import {ConfigProviderProps} from 'antd/es/config-provider';
+import {acud} from './overwriteAntdToken';
 // 目前只支持一个主题
 type Brand = 'icloud';
 
@@ -14,18 +15,22 @@ export const BrandContext = React.createContext<BrandContextValue>({brand: undef
 
 const theme = {
     token: {
-        colorPrimary: '#2468F2',
-        colorPrimaryHover: '#528EFF',
-        fontSize: 12,
-        // eslint-disable-next-line max-len
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-        fontFamilyCode: 'Consolas, Menlo, Courier, monospace',
-        borderRadius: 4,
+        // colorPrimary: '#2468F2',
+        // colorPrimaryHover: '#528EFF',
+        // fontSize: 12,
+        // // eslint-disable-next-line max-len
+        // fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+        // fontFamilyCode: 'Consolas, Menlo, Courier, monospace',
+        // borderRadius: 4,
+        ...acud,
     },
     components: {
-        Button: {
-            paddingContentHorizontal: 12,
-        },
+        // Button: {
+        //     paddingContentHorizontal: 12,
+        // },
+        Divider: {
+            colorSplit: 'rgba(0, 0, 0, 0.06)',
+        }
     },
 };
 
