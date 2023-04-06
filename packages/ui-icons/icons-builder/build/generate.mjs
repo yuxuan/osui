@@ -19,7 +19,7 @@ const svgo = new Svgo({
 });
 
 const ENDPOINT = process.env.DLS_ICONS_API;
-const TARGET = process.argv[2] === 'osui' ? 'osui-icons' : 'osui-icons-icloud';
+const TARGET = 'osui-icons';
 
 const RAW_DIR = path.resolve(__dirname, `../../${TARGET}`, 'raw');
 // const RAW_COLORFUL_DIR = path.resolve(__dirname, `../../${TARGET}`, 'colorfulRaw');
@@ -40,7 +40,7 @@ const DECLARE_TPL = fs.readFileSync(
     'utf8'
 );
 
-const ICON_PACKS = ['osui-icons', 'osui-icons-icloud'];
+const ICON_PACKS = ['osui-icons'];
 
 function getPackDir(name) {
     return path.resolve(__dirname, `../../${name}`);

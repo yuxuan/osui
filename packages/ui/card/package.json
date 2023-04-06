@@ -31,7 +31,6 @@
         "@osui/col": "^3.0.0",
         "@osui/flex-centered": "^3.0.0",
         "@osui/icons": "^3.0.0",
-        "@osui/icons-icloud": "^3.0.0",
         "@osui/markdown": "^3.0.0",
         "@osui/row": "^3.0.0",
         "@osui/table": "^3.0.0",

@@ -4,7 +4,7 @@ import Divider from '@osui/divider';
 import Input from '@osui/input';
 import Tooltip from '@osui/tooltip';
 import {PlusOutlined} from '@ant-design/icons';
-import {IconPlusOutlined} from '@osui/icons-icloud';
+import {IconPlusOutlined} from '@osui/icons';
 import ClockCircleOutlined from '@ant-design/icons/ClockCircleOutlined';
 import styled from '@emotion/styled';
 import Tag from '../src';

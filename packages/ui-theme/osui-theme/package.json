@@ -23,7 +23,6 @@
     "@babel/cli": "^7.10.5",
     "@osui/brand-provider": "^3.0.0",
     "@osui/icons": "^3.0.0",
-    "@osui/icons-icloud": "^3.0.0",
     "@reskript/cli": "^0.9.0",
     "@reskript/cli-lint": "^0.9.9",
     "@reskript/config-babel": "^0.9.0",

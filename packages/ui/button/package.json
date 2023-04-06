@@ -32,7 +32,6 @@
         "@osui/flex-centered": "^3.0.0",
         "@osui/gap": "workspace:^3.0.0",
         "@osui/icons": "^3.0.0",
-        "@osui/icons-icloud": "^3.0.0",
         "@osui/markdown": "^3.0.0",
         "@osui/space": "^3.0.0",
         "@reskript/cli": "^3.0.0",

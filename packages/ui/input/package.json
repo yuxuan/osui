@@ -37,7 +37,6 @@
         "@osui/gap": "^3.0.0",
         "@osui/icloud-theme": "^3.0.0",
         "@osui/icons": "^3.0.0",
-        "@osui/icons-icloud": "^3.0.0",
         "@osui/select": "^3.0.0",
         "@osui/version": "^3.0.0",
         "@reskript/cli": "^3.0.0",

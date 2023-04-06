@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>表格/表头/倒序</title>
-    <g id="表格/表头/倒序" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="倒序">
-            <rect id="矩形" x="0" y="0" width="12" height="12"></rect>
-            <polygon id="07icon/排序/倒序" fill="#108CEE" points="6 1 5.3 1.703 2.5 4.514 3.2 5.217 5.505 2.903 5.505 11 6.495 11 6.495 2.903 8.8 5.217 9.5 4.514 6.7 1.703"></polygon>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="30" fill="currentColor"><path d="M197.408339 509.514872l315.420037-315.420037 45.050902 45.050902-315.420037 315.420038z"></path><path d="M783.13379 553.482514l-315.356316-315.420037 45.050902-44.987181 315.420037 315.420037z"></path><path d="M544.179216 258.07094v637.212196h-63.72122v-637.212196z"></path></svg>

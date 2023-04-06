@@ -1,12 +1,12 @@
 {
   "name": "@osui/icons",
   "version": "3.0.0",
-  "description": "OSUI icons",
+  "description": "OSUI icons icloud-theme",
   "author": {
     "name": "zhanglili01,huoyuxuan,lisiqi06,guyiling"
   },
   "scripts": {
-    "build": "pnpm --filter @osui/icons-builder build osui && sh scripts/build.sh",
+    "build": "pnpm --filter @osui/icons-builder build && sh scripts/build.sh",
     "build-icons-only": "sh scripts/build.sh",
     "prepublishOnly": "npm run build",
     "clean": "rm -rf dist && rm -rf node_modules",

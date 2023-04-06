@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>表格/表头/筛选</title>
-    <g id="表格/表头/筛选" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M0,0 L4,4.999 L4.082,10 L8,12 L8,4.999 L12,0 L0,0 Z M5.0528196,9.05445227 L4.97933146,4.82735426 L4.97320745,4.49967969 L4.75580505,4.24311339 L2,1 L10,1 L7.24419495,4.24311339 L7.02066854,4.50640615 L7.02066854,4.84272902 L7.02066854,10 L5.0528196,9.05445227 Z" id="Page-1" fill="#999999"></path>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="16px" fill="currentColor"><path d="M128 128l288.832 319.936L422.08 768l187.008 128V447.936L896 128H128z m356.224 579.456l-4.736-270.528-0.384-20.928-13.888-16.448L256 192h512L560.64 399.552l-14.272 16.832V768l-62.144-60.544z"></path></svg>

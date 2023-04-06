@@ -30,7 +30,6 @@
         "@osui/brand-provider": "^3.0.0",
         "@osui/divider": "^3.0.0",
         "@osui/icons": "^3.0.0",
-        "@osui/icons-icloud": "^3.0.0",
         "@osui/markdown": "^3.0.0",
         "@osui/menu": "^3.0.0",
         "@osui/text-overflow-tooltip": "^3.0.0",

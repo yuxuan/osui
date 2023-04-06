@@ -29,7 +29,6 @@
         "@babel/cli": "^7.10.5",
         "@osui/brand-provider": "^3.0.0",
         "@osui/icons": "^3.0.0",
-        "@osui/icons-icloud": "^3.0.0",
         "@osui/input": "^3.0.0",
         "@reskript/cli": "^3.0.0",
         "@reskript/cli-lint": "^3.0.0",
@@ -73,8 +72,7 @@
         "webpack": "^5.52.1"
     },
     "peerDependencies": {
-        "@osui/icons": "^2.1.0",
-        "@osui/icons-icloud": "^2.1.0",
+        "@osui/icons": "^3.0.0",
         "antd": ">=4.21.3",
         "react": ">=17.0.0",
         "react-dom": ">=17.0.0"

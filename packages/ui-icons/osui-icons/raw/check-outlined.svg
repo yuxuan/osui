@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>进度环/完成</title>
-    <g id="进度环/完成" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="路径" fill="#5FB333" points="2.62132034 12.0710678 12.5201082 21.9698556 29.491378 5 31.6126984 7.12132034 12.5208153 26.2132034 0.5 14.1923882"></polygon>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="30" fill="currentColor"><path d="M395.708774 781.222153l495.623647-495.687368 45.050902 45.050903-495.623647 495.623646z"></path><path d="M169.880772 465.738395l315.420037 315.420037-45.114624 45.050902-315.420037-315.420037z"></path></svg>

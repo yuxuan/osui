@@ -11,7 +11,6 @@ import css from 'rollup-plugin-postcss';
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
-
 const babelConfig = {
     presets: [
         [

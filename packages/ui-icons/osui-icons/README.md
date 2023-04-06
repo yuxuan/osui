@@ -1,4 +1,4 @@
-# osui-icons
+# icloud-icons
 
 ## Installation
 

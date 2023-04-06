@@ -33,7 +33,6 @@
         "@osui/dropdown": "^3.0.0",
         "@osui/flex-centered": "^3.0.0",
         "@osui/icons": "^3.0.0",
-        "@osui/icons-icloud": "^3.0.0",
         "@osui/menu": "^3.0.0",
         "@osui/text-overflow-tooltip": "^3.0.0",
         "@reskript/cli": "^3.0.0",

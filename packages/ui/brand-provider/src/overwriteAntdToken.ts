@@ -2,6 +2,7 @@
 export const acud = {
     'colorPrimary': '#2468F2',
     'colorPrimaryActive': '#5971e7',
+    'colorTextPlaceholder': '#B8BABF',
     'colorInfo': '#2468F2',
     'colorInfoBg': ' var(--info-color-deprecated-bg);',
     'colorInfoBorder': ' var(--info-color-deprecated-border);',

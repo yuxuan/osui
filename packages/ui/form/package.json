@@ -34,7 +34,6 @@
         "@osui/date-picker": "^3.0.0",
         "@osui/divider": "^3.0.0",
         "@osui/icons": "^3.0.0",
-        "@osui/icons-icloud": "^3.0.0",
         "@osui/input": "^3.0.0",
         "@osui/input-number": "^3.0.0",
         "@osui/radio": "^3.0.0",
