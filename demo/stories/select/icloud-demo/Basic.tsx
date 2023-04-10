@@ -25,7 +25,7 @@ export default () => {
                 <br />
                 <br />
                 <p>有默认值</p>
-                <Select defaultValue="lucy" style={{width: 240}} onChange={handleChange}>
+                <Select defaultValue="lucy" style={{width: 240}} onChange={handleChange} open mode="multiple">
                     <Option value="jack">Jack</Option>
                     <Option value="lucy">Lucy</Option>
                     <Option value="disabled" disabled>

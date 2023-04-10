@@ -12,7 +12,7 @@ export const components: ThemeConfig['components'] = {
         controlPaddingHorizontal: 13,
         colorBgContainerDisabled: '#F7F7F9',
         colorFillAlter: '#F7F7F9',
-        colorTextPlaceholder: '#B8BABF'
+        colorTextPlaceholder: '#B8BABF',
     },
     Alert: {
         colorInfoBorder: '#E6F0FF',
@@ -24,7 +24,7 @@ export const components: ThemeConfig['components'] = {
         colorErrorBorder: '#FFE8E6',
         colorErrorBg: '#FFE8E6',
         lineHeight: 1.5,
-        fontSize: 12
+        fontSize: 12,
     },
     Modal: {
         paddingMD: 0,
@@ -32,8 +32,22 @@ export const components: ThemeConfig['components'] = {
         marginXS: 0,
         marginSM: 0,
         lineHeightHeading5: 1.375,
-        lineHeight:1.5,
+        lineHeight: 1.5,
         fontSize: 12,
         paddingLG: 24,
+        fontSizeLG: 16,
+        fontWeightStrong: 500,
     },
-}
+    Select: {
+        paddingSM: 13,
+        boxShadowSecondary: `0 3px 6px -4px rgba(0, 0, 0, 0.12),
+            0 6px 16px 0 rgba(0, 0, 0, 0.08),
+            0 9px 28px 8px rgba(0, 0, 0, 0.05)`,
+        fontWeightStrong: 400,
+        controlHeightSM: 20,
+    },
+    Anchor: {
+        fontSize: 12,
+        colorSplit: '#E8E9EB',
+    },
+};

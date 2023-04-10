@@ -48,9 +48,6 @@ export const Demo = () => {
             <Space>
                 <BrandProvider brand="icloud">
                     <Space>
-                        <Button type="primary" onClick={() => setVisible(true)}>
-                            打开基础modal
-                        </Button>
                         <ReachableContext.Provider value="Light">
                             {modalContextHolder}
                             <Button
@@ -59,10 +56,13 @@ export const Demo = () => {
                                     modal.confirm(config);
                                 }}
                             >
-                                测试Context Provider
+                                Context Provider
                             </Button>
                             <UnreachableContext.Provider value="Bamboo" />
                         </ReachableContext.Provider>
+                        <Button type="primary" onClick={() => setVisible(true)}>
+                            打开基础modal
+                        </Button>
                         <Button
                             type="primary"
                             onClick={() => {
@@ -74,7 +74,7 @@ export const Demo = () => {
                                 });
                             }}
                         >
-                            没有Icon
+                            Confirm
                         </Button>
                         <Button
                             type="primary"
