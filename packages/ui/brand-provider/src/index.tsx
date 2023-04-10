@@ -41,7 +41,7 @@ const iCloudConfigs: ConfigProviderProps = {
     locale: zhCN,
 };
 
-const BrandProvider: React.FC<React.PropsWithChildren<{ brand?: Brand, theme: ThemeConfig }>> = ({brand, theme: outerTheme, children}) => {
+const BrandProvider: React.FC<React.PropsWithChildren<{ brand?: Brand, theme?: ThemeConfig }>> = ({brand, theme: outerTheme, children}) => {
     const context: BrandContextValue = {brand};
     const finalTheme = useMemo(()=> mergeTheme(outerTheme, theme), [outerTheme]);
     return (
