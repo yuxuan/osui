@@ -10,7 +10,7 @@ interface Token extends AntdToken{
     boxShadowDrawerRight: string;
 }
 /* eslint-disable max-len */
-export const acu: Token = {
+export const acud: Token = {
     colorPrimary: '#2468F2',
     colorPrimaryActive: '#5971e7',
     colorInfo: '#2468F2',
