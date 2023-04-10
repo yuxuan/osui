@@ -1,26 +1,30 @@
-import React, {useLayoutEffect, useState} from 'react';
+import React, {useLayoutEffect, useState, useContext} from 'react';
 import {Form as AntdForm} from 'antd';
 import type {
     FormInstance,
-    FormProps,
+    FormProps as AntdFormProps,
     ErrorListProps,
     Rule,
     RuleObject,
     RuleRender,
     FormListProps,
 } from 'antd/es/form';
+import {FormContext} from 'antd/es/form/context';
 import type {FormItemProps} from 'antd/es/form/FormItem';
-import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';
 import useLabelLayout from './useLabelLayout';
 import './index.less';
 
 const clsPrefix = 'osui-form';
 
+type FormProps = AntdFormProps & {
+    labelMaxWidth?: number;
+}
+
 const InternalForm = React.forwardRef<FormInstance, React.PropsWithChildren<FormProps>>((props, ref) => {
-    const {brand} = useBrandContext();
     // 检测是否有required的内容
     const [hasRequiredItem, setHasRequiredItem] = useState(0);
+
     useLayoutEffect(
         () => {
             const formName = props.name;
@@ -31,7 +35,11 @@ const InternalForm = React.forwardRef<FormInstance, React.PropsWithChildren<Form
         },
         [props.name]
     );
-    const internalLableAlign = props.labelAlign ?? (brand === 'icloud' ? 'left' : 'right');
+
+    Form.useLabelLayout(props.name || '', props.labelMaxWidth, props.layout);
+
+    const internalLableAlign = props.labelAlign ?? 'left';
+
     return (
         <AntdForm
             ref={ref}
@@ -41,7 +49,7 @@ const InternalForm = React.forwardRef<FormInstance, React.PropsWithChildren<Form
         />
     );
 }) as <Values = any>(
-    props: React.PropsWithChildren<FormProps<Values>> & { ref?: React.Ref<FormInstance<Values>> },
+    props: React.PropsWithChildren<FormProps> & { ref?: React.Ref<FormInstance<Values>> },
 ) => React.ReactElement;
 
 // ==== 对Form.Item的覆盖 ====
@@ -50,6 +58,7 @@ type ValidateMessageLayout = 'inline' | 'default';
 function InternalFormItem<Values = any>(props: FormItemProps<Values> & {
     validateMessageLayout?: ValidateMessageLayout;
 }): React.ReactElement {
+    const formContext = useContext(FormContext);
     const {validateMessageLayout = 'default', extra, colon = true, label, ...restProps} = props;
     // 对extra的样式修改
     const hasHint = !!extra;
@@ -61,7 +70,9 @@ function InternalFormItem<Values = any>(props: FormItemProps<Values> & {
         }
     );
 
-    const innerLabel = label && (colon ? <>{label}：</> : label);
+    const mergedColon = formContext.colon ?? (formContext.vertical ? false : colon);
+
+    const innerLabel = label && (mergedColon ? <>{label}：</> : label);
 
     return (
         <AntdForm.Item
@@ -85,7 +96,7 @@ export interface FormInterface extends InternalFormType {
 
     /** @deprecated Only for warning usage. Do not use. */
     create: () => void;
-    useLabelLayout: (formName: string, maxWidth?: number) => void;
+    useLabelLayout: (formName: string, maxWidth?: number, layout?: FormProps['layout'] ) => void;
 }
 
 const Form = InternalForm as FormInterface;

@@ -1,4 +1,5 @@
 import {useLayoutEffect, useRef} from 'react';
+import {FormProps} from 'antd';
 /**
  * @description 用来实现icloud规范的布局，即label右侧间距20px，label不flex，内容区域flex，label以最长宽度内容或提供最长宽度为最长宽度。
  * @param formName 第一个参数为form的name属性值，必须
@@ -6,7 +7,7 @@ import {useLayoutEffect, useRef} from 'react';
  * // TODO:选择器有问题，Form表单内部带有网格布局，后续如有不带网格布局的记得兼容
  *
  */
-export default (formName: string, maxWidth: number = 104) => {
+export default (formName: string, maxWidth: number = 80, layout: FormProps['layout'] = 'horizontal') => {
     const labelRef = useRef<NodeListOf<Element> | undefined >(undefined);
     const antdFormLabelRef = useRef<NodeListOf<Element> | undefined >(undefined);
     const antdFormItemControlRef = useRef<NodeListOf<Element> | undefined >(undefined);
@@ -15,6 +16,9 @@ export default (formName: string, maxWidth: number = 104) => {
 
     useLayoutEffect(
         () => {
+            if (layout !== 'horizontal') {
+                return;
+            }
             // 所有底层label
             labelRef.current = document.querySelectorAll(
                 `#${formName} .ant-form-item > .ant-form-item-row > .ant-form-item-label > label`
@@ -39,6 +43,10 @@ export default (formName: string, maxWidth: number = 104) => {
 
     useLayoutEffect(
         () => {
+            if (layout !== 'horizontal') {
+                return;
+            }
+
             const currentLabels = document.querySelectorAll(
                 `#${formName} .ant-form-item > .ant-form-item-row > .ant-form-item-label > label`
             );
@@ -78,6 +86,7 @@ export default (formName: string, maxWidth: number = 104) => {
 
                     // 12是前面的required和后面的colon
                     const fullWidth = innerMaxWidth + 12;
+                    console.log('🚀 ~ fullWidth:', fullWidth)
 
                     // label宽度计算，考虑tooltip，padding-right容纳绝对定位的tooltip
                     labelRef.current.forEach(element => {
