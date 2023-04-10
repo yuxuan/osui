@@ -1,9 +1,13 @@
-import React, {useContext} from 'react';
+import React, {useContext, useMemo} from 'react';
 import {ConfigProvider} from 'antd';
 import Empty from '@osui/empty';
 import zhCN from 'antd/es/locale/zh_CN';
 import {ConfigProviderProps} from 'antd/es/config-provider';
 import {acud} from './overwriteAntdToken';
+import {mergeTheme} from './mergeTheme';
+import {ThemeConfig} from 'antd';
+import {components} from './themeComponents';
+
 // 目前只支持一个主题
 type Brand = 'icloud';
 
@@ -13,16 +17,9 @@ export interface BrandContextValue {
 
 export const BrandContext = React.createContext<BrandContextValue>({brand: undefined});
 
-const theme = {
+const theme: ThemeConfig = {
     token: acud,
-    components: {
-        Button: {
-            paddingContentHorizontal: 12,
-        },
-        Divider: {
-            colorSplit: 'rgba(0, 0, 0, 0.06)',
-        },
-    },
+    components,
 };
 
 const iCloudConfigs: ConfigProviderProps = {
@@ -44,11 +41,12 @@ const iCloudConfigs: ConfigProviderProps = {
     locale: zhCN,
 };
 
-const BrandProvider: React.FC<React.PropsWithChildren<{ brand?: Brand }>> = ({brand, children}) => {
+const BrandProvider: React.FC<React.PropsWithChildren<{ brand?: Brand, theme: ThemeConfig }>> = ({brand, theme: outerTheme, children}) => {
     const context: BrandContextValue = {brand};
+    const finalTheme = useMemo(()=> mergeTheme(outerTheme, theme), [outerTheme]);
     return (
         <BrandContext.Provider value={context}>
-            <ConfigProvider {...iCloudConfigs} theme={theme}>
+            <ConfigProvider {...iCloudConfigs} theme={finalTheme}>
                 {children}
             </ConfigProvider>
         </BrandContext.Provider>

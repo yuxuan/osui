@@ -1,8 +1,18 @@
+import {ThemeConfig} from 'antd';
+
+type AntdToken = Required<ThemeConfig>['token'];
+
+// 这四个应该是存在的但是不知道为啥打包出的文件没有包含这四个声明
+interface Token extends AntdToken{
+    boxShadowDrawerUp: string;
+    boxShadowDrawerDown: string;
+    boxShadowDrawerLeft: string;
+    boxShadowDrawerRight: string;
+}
 /* eslint-disable max-len */
-export const acud = {
+export const acud: Token = {
     'colorPrimary': '#2468F2',
     'colorPrimaryActive': '#5971e7',
-    'colorTextPlaceholder': '#B8BABF',
     'colorInfo': '#2468F2',
     'colorInfoBg': ' var(--info-color-deprecated-bg);',
     'colorInfoBorder': ' var(--info-color-deprecated-border);',
