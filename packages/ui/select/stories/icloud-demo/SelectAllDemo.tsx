@@ -1,4 +1,4 @@
-import React, {useState, useMemo} from "react";
+import React, {useState, useMemo} from 'react';
 import {difference, isEqual} from 'lodash';
 import Select from '../../src';
 
@@ -10,10 +10,10 @@ const options = [
     {label: '王二嘎', value: 'wangerga'},
     {label: '李三三', value: '李三三'},
     {label: '赵四生', value: '赵四生'},
-]
+];
 
 const Selector = ({onChange, value, ...props}) => {
-    const valueIn = value === 'all' ? ['all']: value;
+    const valueIn = value === 'all' ? ['all'] : value;
     const [valueState, setValueState] = useState(valueIn);
     const allValues = options?.map(i => i.value);
     const valueWithoutAll = excludeAll(allValues);
@@ -65,13 +65,13 @@ const Selector = ({onChange, value, ...props}) => {
             onDeselect={handleDeselect}
         />
     );
-}
+};
 
 export default () => {
     const [value, setState] = useState(['all']);
     const handleChange = value => {
         setState(value);
         console.log(value);
-    }
-    return (<Selector value={value} onChange={handleChange}/> )
-}
+    };
+    return (<Selector value={value} onChange={handleChange} />);
+};

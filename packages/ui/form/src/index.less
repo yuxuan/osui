@@ -74,11 +74,15 @@
             max-width: 200px;
             padding-left: 8px;
         }
-    }
 
-    &-validate-message-has-hint {
-        .@{ant-prefix}-form-item-explain {
-            top: 6px;
+        &.@{osui-form-class-prefix}-validate-message-has-hint {
+            .@{ant-prefix}-form-item-explain {
+                top: 6px;
+                // 调整当有hint的时候，校验信息有一个空位置
+                & + div {
+                    height: 0 !important;
+                }
+            }
         }
     }
 
