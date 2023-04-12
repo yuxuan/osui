@@ -19,6 +19,7 @@ const clsPrefix = 'osui-form';
 
 type FormProps = AntdFormProps & {
     labelMaxWidth?: number;
+    icloudLabelLayout?: boolean;
 }
 
 const InternalForm = React.forwardRef<FormInstance, React.PropsWithChildren<FormProps>>((props, ref) => {
@@ -36,7 +37,7 @@ const InternalForm = React.forwardRef<FormInstance, React.PropsWithChildren<Form
         [props.name]
     );
 
-    Form.useLabelLayout(props.name || '', props.labelMaxWidth, props.layout);
+    useLabelLayout(props.name || '', props.labelMaxWidth, props.layout, props.icloudLabelLayout);
 
     const internalLableAlign = props.labelAlign ?? 'left';
 

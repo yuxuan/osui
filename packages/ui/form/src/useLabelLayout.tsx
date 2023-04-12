@@ -4,10 +4,17 @@ import {FormProps} from 'antd';
  * @description 用来实现icloud规范的布局，即label右侧间距20px，label不flex，内容区域flex，label以最长宽度内容或提供最长宽度为最长宽度。
  * @param formName 第一个参数为form的name属性值，必须
  * @param maxWidth 可选，设置最大宽度，规范要求默认为80，如果知道内容没有超过80的，可以传入0，自动计算宽度
+ * @param layout 水平的时候才采用布局控制
+ * @param icloudLabelLayout 是否要使用icloud的label布局调整，不破坏antd之前的效果
  * // TODO:选择器有问题，Form表单内部带有网格布局，后续如有不带网格布局的记得兼容
  *
  */
-export default (formName: string, maxWidth: number = 80, layout: FormProps['layout'] = 'horizontal') => {
+export default (
+    formName: string = 'form',
+    maxWidth: number = 80,
+    layout: FormProps['layout'] = 'horizontal',
+    icloudLabelLayout: boolean = true,
+) => {
     const labelRef = useRef<NodeListOf<Element> | undefined >(undefined);
     const antdFormLabelRef = useRef<NodeListOf<Element> | undefined >(undefined);
     const antdFormItemControlRef = useRef<NodeListOf<Element> | undefined >(undefined);
@@ -16,7 +23,7 @@ export default (formName: string, maxWidth: number = 80, layout: FormProps['layo
 
     useLayoutEffect(
         () => {
-            if (layout !== 'horizontal') {
+            if (layout !== 'horizontal' || !icloudLabelLayout) {
                 return;
             }
             // 所有底层label
@@ -43,7 +50,7 @@ export default (formName: string, maxWidth: number = 80, layout: FormProps['layo
 
     useLayoutEffect(
         () => {
-            if (layout !== 'horizontal') {
+            if (layout !== 'horizontal' || !icloudLabelLayout) {
                 return;
             }
 

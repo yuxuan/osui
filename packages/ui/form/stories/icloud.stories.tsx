@@ -70,7 +70,7 @@ export const Demo = () => {
                             },
                         ]}
                     >
-                        <Input />
+                        <Input placeholder='请输入用户名' />
                     </Form.Item>
                     <Form.Item
                         label="密码"
