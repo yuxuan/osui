@@ -8,7 +8,7 @@ import {
     Size,
     Basic,
     TestCase,
-    SelectAll
+    SelectAll,
 } from './icloud-demo';
 
 export default {

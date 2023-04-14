@@ -12,9 +12,13 @@ type Brand = 'icloud';
 
 export interface BrandContextValue {
     brand: Brand | undefined;
+    designToken?: ThemeConfig;
 }
 
-export const BrandContext = React.createContext<BrandContextValue>({brand: undefined});
+export const BrandContext = React.createContext<BrandContextValue>({
+    brand: undefined,
+    designToken: undefined,
+});
 
 const theme: ThemeConfig = {
     token: acud,
@@ -40,18 +44,25 @@ const iCloudConfigs: ConfigProviderProps = {
     locale: zhCN,
 };
 
-const BrandProvider: React.FC<React.PropsWithChildren<{ brand?: Brand, theme?: Partial<ThemeConfig> }>> =
-    ({brand, theme: outerTheme, children}) => {
-        const context: BrandContextValue = {brand};
-        const finalTheme = useMemo(() => mergeTheme(outerTheme, theme), [outerTheme]);
-        return (
-            <BrandContext.Provider value={context}>
-                <ConfigProvider {...iCloudConfigs} theme={finalTheme}>
-                    {children}
-                </ConfigProvider>
-            </BrandContext.Provider>
-        );
+const BrandProvider: React.FC<React.PropsWithChildren<{ brand?: Brand, theme?: Partial<ThemeConfig> }>> = (
+    {brand, theme: outerTheme, children}
+) => {
+    const finalTheme = useMemo(
+        () => mergeTheme(outerTheme, theme),
+        [outerTheme]
+    );
+    const context: BrandContextValue = {
+        brand,
+        designToken: finalTheme,
     };
+    return (
+        <BrandContext.Provider value={context}>
+            <ConfigProvider {...iCloudConfigs} theme={finalTheme}>
+                {children}
+            </ConfigProvider>
+        </BrandContext.Provider>
+    );
+};
 
 export const useBrandContext = () => useContext(BrandContext);
 

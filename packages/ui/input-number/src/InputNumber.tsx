@@ -25,7 +25,7 @@ function InputNumber<T extends ValueType=ValueType>(
     );
 }
 
-export type {InputNumberProps} from 'antd';
+export type {InputNumberProps};
 
 const ForwardedInputNumber = React.forwardRef(InputNumber);
 
