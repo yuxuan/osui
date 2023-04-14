@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import {version} from 'antd';
 import Button from '@osui/button';
 import Markdown from '@osui/markdown';
 import message from '../src';
@@ -57,6 +58,7 @@ export const Demo = () => {
 
     return (
         <div style={{padding: 30}}>
+            {version}
             <p>如果message从中间展示，在app入口处，使用config-provder。可以全局配置message的展示位置</p>
             <code>
                 {"setGlobalConfig({messagePosition: 'center'})"}
