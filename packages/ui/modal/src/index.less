@@ -4,6 +4,7 @@
     .@{ant-prefix}-modal-header {
         padding: var(--modal-header-padding);
         border-radius: var(--border-radius-4) var(--border-radius-4) 0 0;
+        border-bottom: 1px solid #FFF;
     }
 
     .@{ant-prefix}-modal-body {
@@ -38,10 +39,17 @@
 
     .@{ant-prefix}-modal-content {
         border-radius: var(--border-radius-4);
+        padding: 0;
 
         .@{ant-prefix}-modal-close {
             top: var(--modal-close-top);
             right: var(--modal-close-right);
+            height: 10px;
+            width: 10px;
+
+            .ant-modal-close-x {
+                line-height: 10px;
+            }
 
             svg {
                 height: var(--modal-close-icon-height);
@@ -66,6 +74,10 @@
             border-radius: 0;
         }
     }
+
+    .@{ant-prefix}-modal-confirm-btns {
+        border-color: #D4D6D9;
+    }
 }
 
 .@{osui-modal-class-prefix}-confirm, .@{ant-prefix}-modal-confirm {
@@ -73,9 +85,14 @@
         font-size: var(--modal-title-font-size);
     }
 
+    .@{ant-prefix}-modal-body{
+        padding: 24px;
+    }
+
     .@{ant-prefix}-modal-confirm-body {
         min-height: 80px;
         border-bottom: var(--modal-body-border-bottom);
+        display: block; // 覆盖antd5的flex布局制式
 
         & > svg.osui-icon {
             float: left;
@@ -84,6 +101,10 @@
             margin-right: 12px;
             font-size: 14px;
         }
+    }
+
+    .@{ant-prefix}-modal-confirm-body .@{ant-prefix}-modal-confirm-title {
+        font-size: 16px;
     }
 
     .@{ant-prefix}-modal-confirm-body .@{ant-prefix}-modal-confirm-content {
@@ -115,6 +136,25 @@
     .@{ant-prefix}-modal-close {
         top: var(--modal-close-top);
         right: var(--modal-close-right);
+        height: 10px;
+        width: 10px;
+
+        .ant-modal-close-x {
+            line-height: 10px;
+        }
+    }
+
+    .@{ant-prefix}-modal-confirm-btns {
+        margin-top: 24px;
+
+        .@{ant-prefix}-btn-default {
+            border-color: #D4D6D9;
+        }
+
+        .@{ant-prefix}-btn-primary {
+            border-color: #2468F2;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+        }
     }
 
     .@{ant-prefix}-modal-confirm-btns .@{ant-prefix}-btn {

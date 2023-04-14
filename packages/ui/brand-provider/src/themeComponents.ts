@@ -35,5 +35,16 @@ export const components: ThemeConfig['components'] = {
         lineHeight: 1.5,
         fontSize: 12,
         paddingLG: 24,
+        fontSizeLG: 16,
+        fontWeightStrong: 500,
+    },
+    Select: {
+        paddingSM: 13,
+        fontWeightStrong: 400,
+        controlHeightSM: 20,
+    },
+    Anchor: {
+        fontSize: 12,
+        colorSplit: '#E8E9EB',
     },
 };

@@ -22,6 +22,7 @@
     // arrow icon
     .@{ant-prefix}-select-arrow {
         top: var(--select-arrow-top);
+        right: 11px;
         width: 14px;
         height: 14px;
         color: var(--theme-icon-color);
@@ -133,6 +134,20 @@
         background: var(--select-multiple-item-disabled-bg);
         border: 1px solid var(--select-multiple-item-disabled-bg);
     }
+
+    &.@{osui-select-class-prefix}.@{ant-prefix}-select.@{ant-prefix}-select-focused .@{ant-prefix}-select-selector{
+        border-color: var(--primary-color-hover);
+    }
+
+    .@{ant-prefix}-select-selection-item {
+        background: var(--select-selection-item-bg);
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .@{ant-prefix}-select-selector {
+        padding: 2px 24px 2px 6px
+    }
 }
 
 // 多选下拉移动到左边，
@@ -185,7 +200,14 @@
 }
 
 .@{osui-select-class-prefix}-dropdown {
-    .@{ant-prefix}-select-item-option-active:not(.@{ant-prefix}-select-item-option-disabled) {
+    padding: 4px 0;
+
+    .@{ant-prefix}-select-item-option-selected:not(.@{ant-prefix}-select-item-option-disabled){
+        background-color: var(--select-item-selected-bg);
+        color: var(--select-item-selected-color);
+    }
+
+    .@{ant-prefix}-select-item-option-active:not(.@{ant-prefix}-select-item-option-disabled){
         &:hover {
             background-color: var(--select-item-active-bg);
         }
@@ -198,5 +220,6 @@
     // 修复 select item 不居中
     .@{ant-prefix}-select-item {
         line-height: 22px;
+        padding: 5px 12px; // antd样式绑定，改token会影响其他
     }
 }
