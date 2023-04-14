@@ -7,8 +7,8 @@ import Input from '@osui/input';
 import InputNumber from '@osui/input-number';
 import BrandProvider from '@osui/brand-provider';
 import Divider from '@osui/divider';
+import {version} from 'antd';
 import Form from '../src';
-import {version, Form as AntdForm} from 'antd';
 
 export default {
     title: '数据录入/Form 表单',

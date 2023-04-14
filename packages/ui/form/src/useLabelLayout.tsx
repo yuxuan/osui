@@ -13,7 +13,7 @@ export default (
     formName: string = 'form',
     maxWidth: number = 80,
     layout: FormProps['layout'] = 'horizontal',
-    icloudLabelLayout: boolean = true,
+    icloudLabelLayout: boolean = true
 ) => {
     const labelRef = useRef<NodeListOf<Element> | undefined >(undefined);
     const antdFormLabelRef = useRef<NodeListOf<Element> | undefined >(undefined);
@@ -93,7 +93,6 @@ export default (
 
                     // 12是前面的required和后面的colon
                     const fullWidth = innerMaxWidth + 12;
-                    console.log('🚀 ~ fullWidth:', fullWidth)
 
                     // label宽度计算，考虑tooltip，padding-right容纳绝对定位的tooltip
                     labelRef.current.forEach(element => {

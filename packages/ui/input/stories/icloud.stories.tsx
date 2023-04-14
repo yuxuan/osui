@@ -705,7 +705,7 @@ export const TestCase = () => {
             </Input.Group>
 
             <p>在form中可以有大小</p>
-            <Form size="large">
+            <Form size="large" name="demo">
                 <Form.Item>
                     <Input />
                 </Form.Item>
