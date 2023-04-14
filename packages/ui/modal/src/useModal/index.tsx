@@ -47,6 +47,7 @@ export const confirmFunc = (
     return (config: ModalFuncProps) => {
         // 优先级：函数调用 > type配置 > confirm
         const type = confirmType || config.type || 'confirm';
+        const okCancel = config.okCancel || true;
         // 自定义icon
         if (typeof config.icon !== 'undefined') {
             return {closeIcon: <IconCloseOutlined />, ...func(config), type};
@@ -62,7 +63,7 @@ export const confirmFunc = (
         } else if (type === 'info') {
             icon = <IconInfoCircleFilled />;
         }
-        return {closeIcon: <IconCloseOutlined />, ...func(config), icon, type};
+        return {closeIcon: <IconCloseOutlined />, ...func(config), icon, type, okCancel};
     };
 };
 
