@@ -90,12 +90,15 @@
     // == icon内文字行高 ==
     .@{ant-prefix}-steps-item-icon {
         line-height: 26px;
+        height: 28px;
+        width: 28px;
     }
 
     // == 调整错误状态以及错误状态内行高 ==
     .@{ant-prefix}-steps-item-error {
         .@{ant-prefix}-steps-item-icon {
             line-height: 28px;
+            // background-color: #FFF;
         }
 
         // 当前错误状态
@@ -115,10 +118,10 @@
         > .@{ant-prefix}-steps-item-container {
             > .@{ant-prefix}-steps-item-icon {
                 line-height: 28px;
-                border-color: var(--color-brand-6);
+                border-color: var(--color-gray-7);
 
                 .@{ant-prefix}-steps-icon {
-                    color: var(--color-brand-6);
+                    color: var(--color-gray-7);
                 }
             }
         }
@@ -229,4 +232,18 @@
     .@{ant-prefix}-steps-navigation .@{ant-prefix}-steps-item::after {
         margin-left: -4px;
     }
+}
+
+.ant-steps-label-vertical:not(.ant-steps-dot) .ant-steps-item-container .ant-steps-item-tail {
+    margin-inline-start: 58px;
+    padding-top: 3.5px;
+}
+
+.ant-steps:not(.ant-steps-dot) .ant-steps-item .ant-steps-item-tail {
+    top: 12px;
+}
+
+.ant-steps.ant-steps-dot .ant-steps-item-icon {
+    height: 8px;
+    width: 8px;
 }

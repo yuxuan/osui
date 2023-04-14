@@ -137,6 +137,8 @@
     .@{ant-prefix}-pagination-options-quick-jumper {
         display: inline-flex;
         margin-left: var(--pagination-quick-jumper-margin-left, 0);
+        line-height: 32px;
+        align-items: center;
 
         input {
             &:focus,
@@ -144,6 +146,32 @@
                 z-index: 2;
             }
 
+            &:focus {
+                border-color: var(--primary-color-hover);
+                box-shadow: 0 0 0 0 var(--primary-color);
+                border-right-width: 1px;
+                outline: 0;
+            }
+
+            position: relative;
+            display: inline-block;
+            min-width: 0;
+            padding: 6px 12px;
+            color: var(--input-color);
+            font-size: 12px;
+            line-height: 1.5;
+            background-color: var(--input-bg);
+            background-image: none;
+            border: 1px solid var(--input-border-color);
+            border-radius: var(--border-radius-base);
+            transition: all 0.3s;
+            width: 50px;
+            height: 32px;
+            margin: 0 8px;
+        }
+
+        input {
+            // 避免和上面的相互覆盖
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
         }
@@ -158,4 +186,16 @@
             }
         }
     }
+
+    .@{ant-prefix}-pagination-jump-next,
+    .@{ant-prefix}-pagination-jump-prev {
+        margin-inline-end: 8px !important;
+    }
+
+
+}
+
+.@{osui-pagination-class-prefix} .@{ant-prefix}-pagination-jump-next
+.@{osui-pagination-class-prefix}.@{ant-prefix}-pagination.@{ant-prefix}-pagination-mini .@{ant-prefix}-pagination-jump-prev {
+    margin-inline-end: 10px;
 }
