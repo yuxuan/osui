@@ -1,5 +1,5 @@
 import React from 'react';
-import {Popover as AntdPopover } from 'antd';
+import {Popover as AntdPopover} from 'antd';
 import {PopoverProps as AntdPopoverProps} from 'antd/es/popover';
 import {IconCloseOutlined} from '@osui/icons';
 import classNames from 'classnames';
