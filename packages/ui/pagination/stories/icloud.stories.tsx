@@ -53,8 +53,12 @@ export const Demo = () => {
                 <p>size为small时</p>
                 <Pagination size="small" showQuickJumper defaultCurrent={2} total={500} onChange={onChange} />
                 <br />
-                <p>原生antd pageSize样式</p>
-                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} uiType="antd" />
+                <p>类型为simple时</p>
+                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} simple/>
+                <br />
+                <p>隐藏sizeChange和quickJump</p>
+                <Pagination showQuickJumper={false} defaultCurrent={2} total={70} onChange={onChange} showSizeChanger={false} />
+                <br />
             </BrandProvider>
         </div>);
 };

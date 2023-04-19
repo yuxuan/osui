@@ -1,20 +1,23 @@
-import React from 'react';
-import { Pagination as AntdPagination } from 'antd';
-import { Pagination as OsuiPagination, PaginationProps } from './OsuiPagination'
+import { Pagination as AntdPagination} from 'antd';
+import type { PaginationProps } from 'antd/es/Pagination';
+import React, {FC, useRef, useLayoutEffect, useEffect, useState} from 'react';
+import './index.less';
 
-const Pagination: React.FC<PaginationProps & { uiType?: 'osui' | 'antd' }> = ({uiType,...props}) => {
 
-    if (uiType === 'antd'){
-        return (<AntdPagination {...props} />);
-    }
+const icloudLocale =  { 'jump_to': '跳转至', 'page': '', jump_to_confirm: 'Go' };
+const Pagination: FC<PaginationProps> = (props) => {
+
+    const showQuickJumper = (props.showQuickJumper === true || props.showQuickJumper === undefined)
+        ? { goButton: true }
+        : props.showQuickJumper;
+
+    const showSizeChanger = !props.simple && (props.showSizeChanger !== false) && (props.showSizeChanger || props?.total > (props.totalBoundaryShowSizeChanger || 50));
 
     return (
-        <OsuiPagination {...props} />
-    );
+        <div className={`osui-pagination ${showQuickJumper?props.simple?'simple-showQuickJumper':'showQuickJumper' :''} ${showSizeChanger?'showSizeChanger':''}`}>
+            <AntdPagination {...props} locale={{ ...icloudLocale, ...props.locale }} showQuickJumper={showQuickJumper} />
+        </div>
+    )
 };
-
-if (process.env.NODE_ENV !== 'production') {
-  Pagination.displayName = 'Pagination';
-}
-
 export default Pagination;
+
