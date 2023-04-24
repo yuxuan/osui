@@ -74,8 +74,22 @@ export const Demo = () => {
 
     return (
         <div style={{padding: 30}}>
-            <BrandProvider brand="icloud">
-                <Table columns={columns} dataSource={data} />
+            <BrandProvider brand="icloud" >
+                <Table
+                    columns={columns}
+                    dataSource={data}
+                    pagination={{
+                        showSizeChanger: true,
+                        showQuickJumper: true,
+                        // showQuickJumper: {
+                        //     goButton:  <button>Go</button>
+                        // },
+                        defaultPageSize: 1,
+                        pageSizeOptions: [1, 2, 10, 100],
+                        position: ['bottomRight','topRight']
+                        // position: ['bottomLeft','topRight']
+                    }}
+                />
                 <br />
                 <Table columns={columns} />
             </BrandProvider>
