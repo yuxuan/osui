@@ -15,14 +15,15 @@ const Table: typeof AntdTable = (props) => {
     let locale = {
         ...icloudLocale,
     };
-    let showQuickJumper: false | { goButton: {} | null; } | undefined = { goButton: <button>Go</button> };
+    let showQuickJumper: false | { goButton: {} | null; } | undefined;
     if (pagination) {
         locale = {
             ...locale,
             ...(pagination && pagination.locale ? pagination.locale : {}),
         };
+        const goButton = <button>{locale.jump_to_confirm}</button>;
         showQuickJumper = pagination.showQuickJumper && {
-            ...showQuickJumper,
+            ...{goButton},
             ...(typeof pagination.showQuickJumper === 'boolean' ? {} : pagination.showQuickJumper),
         };
     }
