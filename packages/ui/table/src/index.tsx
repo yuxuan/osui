@@ -77,6 +77,8 @@ const Table: typeof AntdTable = (props) => {
     );
 }
 
+hoistNonReactStatics(Table, AntdTable);
+
 Table.SELECTION_COLUMN = AntdTable.SELECTION_COLUMN;
 Table.EXPAND_COLUMN = AntdTable.EXPAND_COLUMN;
 Table.SELECTION_ALL = AntdTable.SELECTION_ALL;
@@ -85,7 +87,5 @@ Table.SELECTION_NONE = AntdTable.SELECTION_NONE;
 Table.Column = AntdTable.Column;
 Table.ColumnGroup = AntdTable.ColumnGroup;
 Table.Summary = AntdTable.Summary;
-
-hoistNonReactStatics(Table, AntdTable);
 
 export default Table;
