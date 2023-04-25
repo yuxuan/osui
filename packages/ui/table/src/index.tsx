@@ -1,12 +1,22 @@
-import React, {useRef} from 'react';
-import { Table as AntdTable , } from 'antd';
+import React, {useRef, useContext} from 'react';
+import {Table as AntdTable ,ConfigProvider} from 'antd';
 import classNames from 'classnames';
-import { useBrandContext } from '@osui/brand-provider';
+import {useBrandContext} from '@osui/brand-provider';
 import useTablePaginationStylePatch from './useTablePaginationStylePatch';
+import {IconRightOutlined} from '@osui/icons';
+import useCustomSortForCustomIcons from './useCustomHeadIcons';
+import type { TableProps } from 'antd/es/table/InternalTable';
+import hoistNonReactStatics from 'hoist-non-react-statics';
 import './index.less';
 
 const clsPrefix = 'osui-table';
-const icloudLocale =  { 'jump_to': '跳转至', 'page': '', jump_to_confirm: 'Go' };
+const icloudLocale = { 'jump_to': '跳转至', 'page': '', jump_to_confirm: 'Go' };
+
+const osuiExpandIcon: TableProps<any>['expandIcon'] = ({ expanded, onExpand, record }) => expanded ? (
+    <IconRightOutlined onClick={(e:any) => onExpand(record, e)} style={{ transform: 'rotate(90deg)' }} />
+) : (
+    <IconRightOutlined onClick={(e:any) => onExpand(record, e)} />
+)
 
 const Table: typeof AntdTable = (props) => {
     const domRef = useRef<HTMLDivElement | null>(null);
@@ -28,20 +38,41 @@ const Table: typeof AntdTable = (props) => {
         };
     }
 
-    useTablePaginationStylePatch(domRef);
+    const antdContext = useContext(ConfigProvider.ConfigContext);
+    const prefixCls = antdContext.getPrefixCls()
+
+    useTablePaginationStylePatch(domRef, prefixCls);
 
     const className = classNames(
         clsPrefix,
         { [`${clsPrefix}-icloud`]: brand === 'icloud' },
     );
 
+    // 替换 antd 默认的 筛选 和 排序图标
+    const { columns, setSortedInfo } = useCustomSortForCustomIcons(props.columns || [], prefixCls);
+
+    const handleChange: TableProps<any>['onChange'] = (pagination, filters, sorter, extra) => {
+        if (Array.isArray(sorter)) setSortedInfo(sorter);
+        else setSortedInfo([sorter]);
+        if (props.onChange) {
+            props.onChange(pagination, filters, sorter, extra);
+        }
+    }
+
     return (
-        <div  className={className} >
-            <AntdTable {...props} ref={domRef} pagination={{
-                ...pagination,
-                locale,
-                showQuickJumper,
-            }} />
+        <div className={className} >
+            <AntdTable
+                {...props}
+                ref={domRef}
+                columns={columns}
+                pagination={{
+                    ...pagination,
+                    locale,
+                    showQuickJumper,
+                }}
+                expandIcon={props.expandIcon || osuiExpandIcon}
+                onChange={handleChange}
+            />
         </div>
     );
 }
@@ -54,4 +85,7 @@ Table.SELECTION_NONE = AntdTable.SELECTION_NONE;
 Table.Column = AntdTable.Column;
 Table.ColumnGroup = AntdTable.ColumnGroup;
 Table.Summary = AntdTable.Summary;
+
+hoistNonReactStatics(Table, AntdTable);
+
 export default Table;
