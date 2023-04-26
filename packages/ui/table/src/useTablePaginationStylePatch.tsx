@@ -2,117 +2,105 @@ import React, {useEffect} from 'react';
 import './index.less';
 
 const paginationClassName = '-table-pagination';
-const paginationOptionClassName = '.*-pagination-options';
-const quickJumperClassName = '.*-pagination-options-quick-jumper';
-const simplePagerClassName = '.*-pagination-simple-pager'
-const pageSizeClassName = '.*-pagination-options-size-changer';
+const paginationOptionClassName = '-pagination-options';
+const quickJumperClassName = '-pagination-options-quick-jumper';
+// simple 样式的分页器不需要调整布局
+// const simplePagerClassName = '-pagination-simple-pager'
+const pageSizeClassName = '-pagination-options-size-changer';
 
-// sizeChanger 和 quick-Jumper 在首尾显示，设置宽度留白
-const setPaginationOptionsWidth = (parentDom: HTMLElement) => {
-    let liDom: HTMLElement | undefined;
+// sizeChanger 和 quick-Jumper 在首尾显示，设置宽度为中间留白
+const setPaginationOptionsWidth = (parentDom: HTMLElement, prefixCls: string) => {
+    let paginationOptionDom: HTMLElement | undefined = undefined;
     const width = [...parentDom.childNodes as any].map((dom: HTMLElement) => {
-        if (dom.className.match(paginationOptionClassName)) {
-            liDom = dom;
-            return [...dom.childNodes as any].map((subDom: HTMLElement) => subDom.clientWidth).reduce((a, b) => a + b);
+        if (dom.className.includes(`${prefixCls}${paginationOptionClassName}`)) {
+            paginationOptionDom = dom;
+            return [...dom.childNodes as any]
+                .map((subDom: HTMLElement) => subDom.clientWidth)
+                .reduce((a, b) => a + b);
         }
         return dom.clientWidth;
-    }).reduce((a,b)=> a+b);
-    if(liDom) {
-        liDom.style.width = (width+6) + 'px';
+    }).reduce((a, b) => a + b);
+    if (paginationOptionDom) {
+        paginationOptionDom.style.width = (width + 6) + 'px';
     }
-    return liDom;
-}
+    return paginationOptionDom;
+};
 
 // 为 sizeChanger 和 quick-Jumper 在两侧留下空间
-const handleAddAndRemove: (nodes: NodeList, type: 'remove'|'add'|'set', parentDom: HTMLElement)=>void = (nodes, type, parentDom)=>{
-    const className = [...nodes as any].map(i => i.className);
-    const showQuickJumperClassName = className.find(item=> item.match(quickJumperClassName))?.match(quickJumperClassName)?.[0];
-    const showSimplePagerClassName = className.find(item=> item.match(simplePagerClassName))?.match(simplePagerClassName)?.[0];
-    const showPageSizeClassName = className.find(item => item.match(pageSizeClassName))?.match(pageSizeClassName)?.[0];
+const handleAddAndRemove: (
+    parentDom: HTMLElement,
+    prefixCls: string
+) => void = (parentDom, prefixCls) => {
+    const pageSizeDom = parentDom.querySelector(`.${prefixCls}${pageSizeClassName}`);
+    const quickJumperDom = parentDom.querySelector(`.${prefixCls}${quickJumperClassName}`);
+    // const simplePagerDom = parentDom.querySelector(`.${prefixCls}${simplePagerClassName}`);
 
-    const showPageSizeDom = parentDom.querySelector('.'+showPageSizeClassName);
-    const showQuickJumperDom = parentDom.querySelector('.' + showQuickJumperClassName);
-    const showSimplePagerDom = parentDom.querySelector('.' + showSimplePagerClassName);
-    const liDom = setPaginationOptionsWidth(parentDom);
-    const marginLeft = Number(liDom?.style?.marginInlineStart?.replace('px', '')) || 16;
-    if (type === 'set') {
-        parentDom.style.paddingRight = !!showQuickJumperDom
-            ? (
-                (showQuickJumperDom?.clientWidth || showSimplePagerDom?.clientWidth || 86)
-                + 'px'
-            )
-            : '0';
-        parentDom.style.paddingLeft = !!showPageSizeDom
-            ? (
-                (
-                    (showPageSizeDom?.clientWidth ?? 100) + marginLeft
-                ) + 'px'
-            )
-            : '0';
-    } else {
-        if (!!showQuickJumperClassName) {
-            parentDom.style.paddingRight = type === 'remove'
-                ? '0'
-                : (
-                    (showQuickJumperDom?.clientWidth || showSimplePagerDom?.clientWidth || 86)
-                    + 'px'
-                );
-        }
-        if (!!showPageSizeClassName ) {
-            parentDom.style.paddingLeft = type === 'remove'
-                ? '0'
-                : (((showPageSizeDom?.clientWidth ?? 100) + marginLeft)+ 'px');
-        }
-    }
-}
+    const paginationOptionDom = setPaginationOptionsWidth(parentDom, prefixCls);
+    const marginLeft = Number(paginationOptionDom?.style?.marginInlineStart?.replace('px', '')) || 16;
+    parentDom.style.paddingRight = quickJumperDom
+        ? (
+            (quickJumperDom?.clientWidth || 86) + 'px'
+        )
+        : '0';
+    parentDom.style.paddingLeft = pageSizeDom
+        ? (
+            (
+                (pageSizeDom?.clientWidth ?? 0) + marginLeft
+            ) + 'px'
+        )
+        : '0';
+};
 
-const mutationCallback: (list: Array<HTMLElement>)=>MutationCallback =(parentDomList)=> () => {
+const mutationCallback: (
+    list: HTMLElement[],
+    prefixCls: string
+) => MutationCallback = (parentDomList, prefixCls) => () => {
     // 可能存在两个分页器，此时两个需要同时改变，mutationList 不一定能同时触发两个分页器
     for (const parentDom of parentDomList) {
         const paginationOptionsDom = [...parentDom.childNodes as any]
-            .find(i => i.className.match(paginationOptionClassName));
+            .find(i => i.className.includes(`${prefixCls}${paginationOptionClassName}`));
         if (paginationOptionsDom) {
-            handleAddAndRemove(paginationOptionsDom.childNodes, 'set', parentDom);
+            handleAddAndRemove(parentDom, prefixCls);
         }
     }
 };
 
-const config = { attributes: true, childList: true, subtree: true };
+const mutationObserverConfig = {attributes: true, childList: true, subtree: true};
 
-const useTablePaginationStylePatch = (domRef: React.MutableRefObject<HTMLElement | null>, prefixCls: string) => {
-
+const useTablePaginationStylePatch = (
+    domRef: React.MutableRefObject<HTMLElement | null>,
+    prefixCls: string
+) => {
     useEffect(() => {
         if (!domRef?.current) {
             return;
         }
 
-        const paginationDomList: Array<HTMLElement> = [...domRef.current.querySelectorAll(`.${prefixCls}${paginationClassName}`) as any];
-
-        // const paginationDomList: Array<HTMLElement> = [...domRef.current.querySelectorAll('ul') as any]
-        //     .filter((dom: HTMLElement) => dom?.className?.match(paginationClassName));
+        const paginationDomList: HTMLElement[] = [
+            ...domRef.current.querySelectorAll(`.${prefixCls}${paginationClassName}`) as any,
+        ];
         if (!paginationDomList || paginationDomList.length === 0) {
             return;
         }
 
-        const observerList = paginationDomList.map((dom) => {
-            const observer = new MutationObserver(mutationCallback(paginationDomList));
+        const observerList = paginationDomList.map(dom => {
+            const observer = new MutationObserver(mutationCallback(paginationDomList, prefixCls));
             const paginationOptionsDom = [...dom.childNodes as any]
-                .find(i => i.className.match(paginationOptionClassName));
-
+                .find(i => i.className.includes(`${prefixCls}${paginationOptionClassName}`));
             // 初始化样式
             if (paginationOptionsDom) {
-                handleAddAndRemove(paginationOptionsDom.childNodes, 'set', dom)
-                setPaginationOptionsWidth(dom);
+                handleAddAndRemove(dom, prefixCls);
+                setPaginationOptionsWidth(dom, prefixCls);
             }
 
-            observer.observe(dom, config);
+            observer.observe(dom, mutationObserverConfig);
             return observer;
         });
 
         return () => {
-            observerList?.map(observer=> observer?.disconnect());
-        }
-    }, [])
+            observerList?.map(observer => observer?.disconnect());
+        };
+    }, []);
+};
 
-}
 export default useTablePaginationStylePatch;
