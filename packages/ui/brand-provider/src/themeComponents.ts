@@ -47,4 +47,10 @@ export const components: ThemeConfig['components'] = {
         fontSize: 12,
         colorSplit: '#E8E9EB',
     },
+    Table: {
+        colorFillAlter: '#F7F7F9',
+        padding: 10,
+        paddingContentVerticalLG: 11,
+        colorTextHeading: '#5C5F66'
+   },
 };
