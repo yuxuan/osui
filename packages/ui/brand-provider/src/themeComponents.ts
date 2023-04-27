@@ -3,6 +3,7 @@ import {ThemeConfig} from 'antd';
 export const components: ThemeConfig['components'] = {
     Button: {
         paddingContentHorizontal: 12,
+        borderRadiusSM: 4,
     },
     Divider: {
         colorSplit: 'rgba(0, 0, 0, 0.06)',
@@ -41,16 +42,36 @@ export const components: ThemeConfig['components'] = {
     Select: {
         paddingSM: 13,
         fontWeightStrong: 400,
-        controlHeightSM: 20,
+        controlHeightSM: 24,
+        borderRadiusSM: 4,
     },
     Anchor: {
         fontSize: 12,
         colorSplit: '#E8E9EB',
     },
+    DatePicker: {
+        paddingSM: 13,
+        boxShadowSecondary: `0 3px 6px -4px rgba(0, 0, 0, 0.12),
+            0 6px 16px 0 rgba(0, 0, 0, 0.08),
+            0 9px 28px 8px rgba(0, 0, 0, 0.05)`,
+    },
+    Pagination: {
+        marginXS: 0,
+        controlHeightSM: 32,
+    },
+    Steps: {
+        controlHeight: 26,
+        fontSize: 14,
+        controlItemBgActive: '#FFF',
+        colorTextDescription: '#5C5F66',
+        marginXS: 10,
+        controlHeightLG: 42,
+    },
     Table: {
         colorFillAlter: '#F7F7F9',
         padding: 10,
         paddingContentVerticalLG: 11,
-        colorTextHeading: '#5C5F66'
-   },
+        colorTextHeading: '#5C5F66',
+        paddingXS: 5.5,
+    },
 };

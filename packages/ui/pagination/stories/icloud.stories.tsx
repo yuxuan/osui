@@ -21,8 +21,12 @@ const Blockquote = ({children}) => (
 );
 
 export const Demo = () => {
-    function onChange(val) {
-        console.log(val);
+    function onChange(page, pageSize) {
+        console.log('page, pageSize', page, pageSize);
+    }
+
+    function onShowSizeChange(current, size) {
+        console.log('current, size: ', current, size);
     }
 
     return (
@@ -33,7 +37,7 @@ export const Demo = () => {
             </Blockquote>
             <BrandProvider brand="icloud">
                 <p>默认状态</p>
-                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} />
+                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} onShowSizeChange={onShowSizeChange} />
                 <br />
                 <Pagination showQuickJumper defaultCurrent={2} total={80} onChange={onChange} />
                 <br />
@@ -48,6 +52,12 @@ export const Demo = () => {
                 <br />
                 <p>size为small时</p>
                 <Pagination size="small" showQuickJumper defaultCurrent={2} total={500} onChange={onChange} />
+                <br />
+                <p>类型为simple时</p>
+                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} simple/>
+                <br />
+                <p>隐藏sizeChange和quickJump</p>
+                <Pagination showQuickJumper={false} defaultCurrent={2} total={70} onChange={onChange} showSizeChanger={false} />
                 <br />
             </BrandProvider>
         </div>);
