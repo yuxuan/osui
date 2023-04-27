@@ -51,6 +51,7 @@ export const components: ThemeConfig['components'] = {
         colorFillAlter: '#F7F7F9',
         padding: 10,
         paddingContentVerticalLG: 11,
-        colorTextHeading: '#5C5F66'
-   },
+        colorTextHeading: '#5C5F66',
+        paddingXS: 5.5,
+    },
 };
