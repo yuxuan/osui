@@ -75,8 +75,34 @@ export const Demo = () => {
     return (
         <div style={{padding: 30}}>
             <BrandProvider brand="icloud">
-                <Table columns={columns} dataSource={data} />
+                <Table
+                    columns={columns}
+                    dataSource={data}
+                    pagination={{
+                        showSizeChanger: true,
+                        showQuickJumper: true,
+                        defaultPageSize: 1,
+                        pageSizeOptions: [1, 2, 10, 100],
+                        position: ['bottomLeft','topRight']
+                    }}
+                />
                 <br />
+                <p>小表格</p>
+                <Table
+                    columns={columns}
+                    dataSource={data}
+                    pagination={{
+                        showSizeChanger: true,
+                        showQuickJumper: true,
+                        defaultPageSize: 1,
+                        simple: true,
+                        pageSizeOptions: [1, 2, 10, 100],
+                        position: ['bottomLeft','topRight']
+                    }}
+                    size='small'
+                />
+                <br />
+                <p>暂无数据</p>
                 <Table columns={columns} />
             </BrandProvider>
         </div>
@@ -153,7 +179,10 @@ export const ExpandableDemo = () => {
         {
             title: 'Age',
             dataIndex: 'age',
-            sorter: (a, b) => a.age - b.age,
+            sorter: {
+                compare: (a, b) => a.age - b.age,
+                multiple: 3
+            },
         },
         {
             title: 'Address',
@@ -173,7 +202,9 @@ export const ExpandableDemo = () => {
         {
             title: 'Action',
             key: 'action',
-            sorter: true,
+            sorter: {
+                multiple: true
+            },
             render: () => (
                 <Space size="small">
                     <a>Delete</a>
@@ -187,7 +218,7 @@ export const ExpandableDemo = () => {
         data.push({
             key: i,
             name: 'John Brown',
-            age: `${i}2`,
+            age: `${Math.floor(Math.random()*10)}2`,
             address: `New York No. ${i} Lake Park`,
             description: `My name is John Brown, I am ${i}2 years old, living in New York No. ${i} Lake Park.`,
         });

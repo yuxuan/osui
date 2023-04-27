@@ -66,5 +66,11 @@ export const components: ThemeConfig['components'] = {
         colorTextDescription: '#5C5F66',
         marginXS: 10,
         controlHeightLG: 42,
-    }
+    },
+    Table: {
+        colorFillAlter: '#F7F7F9',
+        padding: 10,
+        paddingContentVerticalLG: 11,
+        colorTextHeading: '#5C5F66'
+   },
 };
