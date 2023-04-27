@@ -167,7 +167,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     return PatchedButton;
 };
 
-const Button = React.forwardRef<unknown, ButtonProps>(InternalButton) as ButtonInterface;
+const Button = React.forwardRef<any, ButtonProps>(InternalButton) as ButtonInterface;
 
 Button.Group = AntdButton.Group;
 // eslint-disable-next-line no-underscore-dangle

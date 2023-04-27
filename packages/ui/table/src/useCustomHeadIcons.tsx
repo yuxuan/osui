@@ -1,5 +1,5 @@
-import React,{ useState, useMemo, useCallback } from 'react';
-import type { SorterResult, SortOrder, ColumnType } from 'antd/es/table/interface';
+import React, {useState, useMemo, useCallback} from 'react';
+import type {SorterResult, SortOrder, ColumnType} from 'antd/es/table/interface';
 import {
     IconFilterOutlined,
     IconTableSortOutlined,
@@ -14,115 +14,123 @@ const DESCEND = 'descend';
 
 type DataType = Record<string, string | number>;
 
-const getNextOrder: (isSorted: boolean, order: SortOrder | undefined) => SortOrder = (isSorted,order) => {
-    if (!isSorted) return ASCEND;
+const getNextOrder: (isSorted: boolean, order: SortOrder | undefined) => SortOrder = (isSorted, order) => {
+    if (!isSorted) {
+        return ASCEND;
+    }
     switch (order) {
         case null: return ASCEND;
         case ASCEND: return DESCEND;
         case DESCEND: return null;
         default: return ASCEND;
     }
-}
+};
 
-const getSortIcon: (order: SortOrder | undefined)=> any = (sortOrder) => {
+const getSortIcon: (order: SortOrder | undefined) => any = sortOrder => {
     switch (sortOrder) {
-        case ASCEND: return  ArrowUpOutlined;
+        case ASCEND: return ArrowUpOutlined;
         case DESCEND: return ArrowDownOutlined;
         default: return IconTableSortOutlined;
     }
-}
+};
 
 function getMultiplePriority<RecordType>(column: ColumnType<RecordType>): number | false {
     if (typeof column.sorter === 'object' && typeof column.sorter.multiple === 'number') {
-      return column.sorter.multiple;
+        return column.sorter.multiple;
     }
     return false;
 }
 
 type SortedInfoItem = SorterResult<DataType>;
-type SortedInfo = Array<SortedInfoItem>;
+type SortedInfo = SortedInfoItem[];
 
 const getIsSorted = (list: SortedInfo, column: any) => {
     return list.find(item => (item.field || item.columnKey) === column?.dataIndex);
-}
+};
 
 const useCustomHeadIcons: <T extends {
-    title?: string | number | null | boolean | {};
-    sorter?: boolean | any
-}>(columns: Array<T>, prefixCls: string) => {
-    columns: Array<T>,
-    sortedInfo: SortedInfo,
-    setSortedInfo: (sortInfo: SortedInfo) => void,
+    title?: React.ReactNode;
+    sorter?: boolean | any;
+}>(columns: T[], prefixCls: string) => {
+    columns: T[];
+    sortedInfo: SortedInfo;
+    setSortedInfo: (sortInfo: SortedInfo) => void;
 } = (columns, prefixCls) => {
     const [sortedInfo, setSortedInfo] = useState<SortedInfo>([{}]);
     const onClick = useCallback(
-        (column) => {
+        column => {
             const isSortedItem = getIsSorted(sortedInfo, column);
             const target = {
                 field: column.title,
-                order: getNextOrder(!!isSortedItem, null)
+                order: getNextOrder(!!isSortedItem, null),
             };
             if (sortedInfo.length === 0) {
-                setSortedInfo([target])
+                setSortedInfo([target]);
             } else {
                 const isMultipleSort = getMultiplePriority(column) && getMultiplePriority(sortedInfo[0].column || {});
                 if (isMultipleSort) {
                     // 此处偷懒，antd 会去重
                     setSortedInfo([target]);
                 } else {
-                    setSortedInfo(list=> ([...list,target ]))
+                    setSortedInfo(list => ([...list, target]));
                 }
             }
         },
         [sortedInfo]
-    )
+    );
 
     const newColumns = useMemo(
         () => columns.map(column => {
             const isSortedItem = getIsSorted(sortedInfo, column);
             const Icon = getSortIcon(isSortedItem ? isSortedItem?.order : undefined);
 
-            const title = <>
-                {column.title}
-                <span className={classNames(
-                    `${prefixCls}-table-column-sorter`,
-                    `${prefixCls}-table-column-sorter-full`,
-                    `${clsPrefix}-column-custom-sorter`
-                )} >
-                    <span className={`${prefixCls}-table-column-sorter-inner`} >
-                        {Icon && <Icon
-                            onClick={()=>onClick(column)}
-                            className={classNames(
-                                {
-                                    [`${prefixCls}-column-sorter-down`]: !!isSortedItem && isSortedItem.order === DESCEND
-                                },
-                                {
-                                    [`${prefixCls}-column-sorter-up`]: !!isSortedItem && isSortedItem.order === ASCEND
-                                },
-                                {
-                                    active: !!isSortedItem && isSortedItem.order,
-                                }
-                            )} />
-                        }
+            const title = (
+                <>
+                    {column.title}
+                    <span className={classNames(
+                        `${prefixCls}-table-column-sorter`,
+                        `${prefixCls}-table-column-sorter-full`,
+                        `${clsPrefix}-column-custom-sorter`
+                    )}
+                    >
+                        <span className={`${prefixCls}-table-column-sorter-inner`}>
+                            {Icon && <Icon
+                                onClick={() => onClick(column)}
+                                className={classNames(
+                                    {
+                                        // eslint-disable-next-line max-len
+                                        [`${prefixCls}-column-sorter-down`]: !!isSortedItem && isSortedItem.order === DESCEND,
+                                    },
+                                    {
+                                        // eslint-disable-next-line max-len
+                                        [`${prefixCls}-column-sorter-up`]: !!isSortedItem && isSortedItem.order === ASCEND,
+                                    },
+                                    {
+                                        active: !!isSortedItem && isSortedItem.order,
+                                    }
+                                )}
+                            />
+                            }
+                        </span>
                     </span>
-                </span>
-            </>;
+                </>
+            );
 
             return {
                 filterIcon: <IconFilterOutlined />,
                 ...column,
-                ...(column.sorter ? { title } : {}),
-            }
+                ...(column.sorter ? {title} : {}),
+            };
         }),
         [columns, sortedInfo]
-    )
+    );
 
     return {
         sortedInfo,
         setSortedInfo,
-        columns: newColumns
-    }
-}
+        columns: newColumns,
+    };
+};
 
 export default useCustomHeadIcons;
 

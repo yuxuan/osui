@@ -39,6 +39,7 @@ const InnerSelect = (props: InnerSelectProps) => {
     );
     const handleCancel = useCallback(
         () => {
+            // @ts-ignore
             switchEditStatus(false, {fireStateChange: originValue.current});
         },
         [switchEditStatus]
@@ -93,6 +94,7 @@ const QuickEditSelect = (props: QuickEditSelectProps) => {
     return (
         <QuickEditSelectAdapter
             {...restProps}
+            // @ts-ignore
             withConfirm={withConfirm}
             display={handleDisplay}
             wrapClassName={classNames(wrapClassName, `${clsPrefix}-wrapper`)}
@@ -102,4 +104,4 @@ const QuickEditSelect = (props: QuickEditSelectProps) => {
 
 hoistNonReactStatics(QuickEditSelect, Select);
 
-export default QuickEditSelect as (typeof Select & typeof InnerSelect & typeof QuickEditSelect);
+export default QuickEditSelect;

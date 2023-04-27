@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import BrandProvider from '@osui/brand-provider';
 import Divider from '@osui/divider';
 
 export default {
@@ -9,7 +10,7 @@ export default {
 
 export const Demo = () => {
     return (
-        <>
+        <BrandProvider brand="icloud">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
                 probare, quae sunt a te dicta? Refert tamen, quo modo.
@@ -20,11 +21,12 @@ export const Demo = () => {
                 probare, quae sunt a te dicta? Refert tamen, quo modo.
             </p>
             <Divider dashed />
+            <Divider>展示</Divider>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
                 probare, quae sunt a te dicta? Refert tamen, quo modo.
             </p>
-        </>
+        </BrandProvider>
     );
 };
 

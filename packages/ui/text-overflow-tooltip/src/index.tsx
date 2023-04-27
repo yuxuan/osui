@@ -1,5 +1,6 @@
 import React, {useRef, useState} from 'react';
-import Tooltip, {TooltipProps} from '@osui/tooltip';
+import Tooltip from '@osui/tooltip';
+import type {TooltipProps} from 'antd/es/tooltip';
 import './index.less';
 
 const clsPrefix = 'osui-text-overflow-tooltip';
@@ -14,7 +15,7 @@ interface ChildStyleProps {
     style?: any;
 }
 
-export const TextOverflowTooltip = React.forwardRef<unknown, TooltipProps & ChildStyleProps>(
+export const TextOverflowTooltip = React.forwardRef<any, TooltipProps & ChildStyleProps>(
     ({width, maxWidth, style, ...props}, ref) => {
         const textRef = useRef(null);
         // 控制展示

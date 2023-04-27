@@ -91,7 +91,7 @@ const Search = React.forwardRef<any, SearchProps>(
                 }
                 if (React.isValidElement(icon)) {
                     return React.cloneElement(
-                        icon,
+                        icon as any,
                         {
                             className: `${clsPrefix}-search-icon`,
                             onClick: handleClick,

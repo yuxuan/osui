@@ -57,7 +57,7 @@ const OSUIInputGroup = (
         }
         if (child.props.className?.includes('input-group-addon')) {
             const clonedChild = React.cloneElement(
-                child,
+                child as React.ReactElement,
                 {
                     onFocus: (e: any) => {
                         child.props?.onFocus(e);

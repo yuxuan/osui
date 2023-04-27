@@ -101,14 +101,14 @@ const OriginModal: ModalInterface = ({className, bodyBorder, size, ...props}) =>
     const footer = (
         <div style={footerStyle}>
             <Button
-                onClick={onCancel}
+                onClick={onCancel as any}
                 {...cancelButtonProps}
             >
                 {cancelText}
             </Button>
             <Button
                 type={okType as ButtonProps['type'] ?? 'primary'}
-                onClick={onOk}
+                onClick={onOk as any}
                 loading={confirmLoading}
                 {...okButtonProps}
             >

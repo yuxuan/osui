@@ -1,15 +1,17 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import {Row} from 'antd';
-import moment from 'moment';
-import 'moment/locale/zh-cn';
-import ConfigProvider from 'antd/es/config-provider';
+import dayjs from 'dayjs';
+import Space from '@osui/space';
 import BrandProvider from '@osui/brand-provider';
-// import zhCN from 'antd/es/locale/zh_CN';
-import jaJP from 'antd/es/locale/ja_JP';
-import locale from 'antd/es/date-picker/locale/zh_TW';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
 import DatePicker from '../src';
+
 const {RangePicker, WeekPicker} = DatePicker;
+
+dayjs.extend(customParseFormat);
+
+const dateFormat = 'YYYY-MM-DD';
 
 export default {
     title: '数据录入/DatePicker 日期选择框',
@@ -30,7 +32,7 @@ export const Demo = () => {
                 </Row>
                 <h4>日期禁用选择</h4>
                 <Row style={{marginBottom: 20}}>
-                    <DatePicker defaultValue={moment('2015-06-06')} disabled style={{width: 240}} />
+                    <DatePicker defaultValue={dayjs('2023-01-01', dateFormat)} disabled style={{width: 240}} />
                 </Row>
                 <h4>带有时分秒</h4>
                 <Row style={{marginBottom: 20}}>
@@ -59,6 +61,19 @@ export const Demo = () => {
                 <Row style={{marginBottom: 20}}>
                     <DatePicker picker="year" style={{width: 240}} />
                 </Row>
+                <h1>Disable</h1>
+                <Space direction="vertical" size={12}>
+                    <DatePicker defaultValue={dayjs('2015-06-06', dateFormat)} disabled />
+                    <DatePicker picker="month" defaultValue={dayjs('2015-06', 'YYYY-MM')} disabled />
+                    <RangePicker
+                        defaultValue={[dayjs('2015-06-06', dateFormat), dayjs('2015-06-06', dateFormat)]}
+                        disabled
+                    />
+                    <RangePicker
+                        defaultValue={[dayjs('2019-09-03', dateFormat), dayjs('2019-11-22', dateFormat)]}
+                        disabled={[false, true]}
+                    />
+                </Space>
             </div>
         </BrandProvider>
     );
@@ -69,14 +84,5 @@ export const Api = () => {
         <>
             <a target="_blank" rel="noreferrer" href="https://ant.design/components/date-picker-cn/">Antd DatePicker API</a>
         </>
-    );
-};
-
-
-export const TestCase = () => {
-    return (
-        <ConfigProvider locale={jaJP}>
-            <DatePicker locale={locale} />
-        </ConfigProvider>
     );
 };

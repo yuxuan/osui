@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import {version} from 'antd';
 import Button from '@osui/button';
 import Markdown from '@osui/markdown';
 import message from '@osui/message';
@@ -48,15 +49,9 @@ export const Demo = () => {
         });
     };
 
-    const notify = () => {
-        message.notify({
-            title: '产品消息',
-            content: '关于集团云api鉴权认证安全升级的通知',
-        });
-    };
-
     return (
         <div style={{padding: 30}}>
+            {version}
             <p>如果message从中间展示，在app入口处，使用config-provder。可以全局配置message的展示位置</p>
             <code>
                 {"setGlobalConfig({messagePosition: 'center'})"}
@@ -82,8 +77,6 @@ export const Demo = () => {
             <Button onClick={info}>Info</Button>
             <h3>5、加载样式</h3>
             <Button onClick={loading}>Loading</Button>
-            <h3>6、消息提醒</h3>
-            <Button onClick={notify}>notify</Button>
         </div>
     );
 };
@@ -108,7 +101,6 @@ export const Api = () => {
         </>
     );
 };
-
 
 export const TestCase = () => {
     const success = () => {
@@ -224,13 +216,13 @@ export const TestCase = () => {
         <div style={{padding: 30}}>
             <p>max-width测试</p>
             <Button onClick={success}>Success</Button>
-            <Button onClick={success5}>Success</Button>
             <p>很短测试</p>
             <Button onClick={success2}>Success</Button>
             <p>有close</p>
             <Button onClick={success3}>Success</Button>
             <p>title</p>
             <Button onClick={success4}>Success</Button>
+            <Button onClick={success5}>Success</Button>
             <p>title only</p>
             <Button onClick={success6}>Success</Button>
             <p>title里面有链接</p>

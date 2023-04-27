@@ -34,8 +34,8 @@ const getICodeRawFilePath = (relativePath: string, params: Params) => {
 };
 
 const createImagePlugin = (params: Params) => () => (tree: Node) => {
-    visit(tree, 'image', node => {
-        const url = node.url as string;
+    visit(tree, 'image', (node: any) => {
+        const url = node.url;
         if (REGEXP_FILE_PATH.test(url)) {
             // eslint-disable-next-line no-param-reassign
             node.url = getICodeRawFilePath(url, params);

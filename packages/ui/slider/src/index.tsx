@@ -6,7 +6,6 @@ import {
     SliderBaseProps as AntdSliderBaseProps,
     SliderSingleProps as AntdSliderSingleProps,
     SliderRangeProps as AntdSliderRangeProps,
-    Visibles as AntdVisibles,
 } from 'antd/es/slider';
 import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';
@@ -17,7 +16,6 @@ const clsPrefix = 'osui-slider';
 export type SliderMarks = AntdSliderMarks;
 export type HandleGeneratorFn = AntdHandleGeneratorFn;
 export type SliderBaseProps = AntdSliderBaseProps;
-export type Visibles = AntdVisibles;
 
 const Slider = React.forwardRef<unknown, AntdSliderSingleProps | AntdSliderRangeProps>(
     ({className, ...props}, ref: any) => {
@@ -32,6 +30,6 @@ const Slider = React.forwardRef<unknown, AntdSliderSingleProps | AntdSliderRange
     }
 );
 
-export type { SliderSingleProps } from 'antd';
+export type {SliderSingleProps} from 'antd';
 export default Slider;
 

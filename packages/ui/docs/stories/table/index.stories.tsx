@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
 /* eslint-disable react/no-multi-comp */
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import Switch from '@osui/switch';
 import Radio from '@osui/radio';
 import Form from '@osui/form';
@@ -31,6 +31,7 @@ export default {
 };
 
 export const Demo = () => {
+    const ref = useRef(null);
 
     const columns = [
         {
@@ -72,11 +73,62 @@ export const Demo = () => {
     ];
 
 
+    useEffect(
+        () => {
+            console.log('Demo table ref: ', ref.current);
+        }
+    );
+
     return (
         <div style={{padding: 30}}>
-            <BrandProvider brand="icloud">
-                <Table columns={columns} dataSource={data} />
+            <BrandProvider
+                brand="icloud"
+                theme={{
+                    components: {
+                        Table: {
+                            paddingXS: 5.5,
+                        },
+                    },
+                }}
+            >
+                <Table
+                    ref={ref}
+                    columns={columns}
+                    dataSource={data}
+                    pagination={{
+                        showSizeChanger: true,
+                        showQuickJumper: true,
+                        // showQuickJumper: {
+                        //     goButton:  <button>Go</button>
+                        // },
+                        // simple: true,
+                        defaultPageSize: 1,
+                        pageSizeOptions: [1, 2, 10, 100],
+                        // position: ['bottomRight', 'topRight']
+                        position: ['bottomLeft', 'topRight'],
+                    }}
+                />
                 <br />
+                <p>小表格</p>
+                <Table
+                    columns={columns}
+                    dataSource={data}
+                    pagination={{
+                        showSizeChanger: true,
+                        showQuickJumper: true,
+                        // showQuickJumper: {
+                        //     goButton:  <button>Go</button>
+                        // },
+                        simple: true,
+                        defaultPageSize: 1,
+                        pageSizeOptions: [1, 2, 10, 100],
+                        // position: ['bottomRight', 'topRight']
+                        position: ['bottomLeft', 'topRight'],
+                    }}
+                    size="small"
+                />
+                <br />
+                <p>暂无数据</p>
                 <Table columns={columns} />
             </BrandProvider>
         </div>
@@ -153,7 +205,10 @@ export const ExpandableDemo = () => {
         {
             title: 'Age',
             dataIndex: 'age',
-            sorter: (a, b) => a.age - b.age,
+            sorter: {
+                compare: (a, b) => a.age - b.age,
+                multiple: 3,
+            },
         },
         {
             title: 'Address',
@@ -169,11 +224,14 @@ export const ExpandableDemo = () => {
                 },
             ],
             onFilter: (value, record) => record.address.indexOf(value) === 0,
+            filterMultiple: true,
         },
         {
             title: 'Action',
             key: 'action',
-            sorter: true,
+            sorter: {
+                multiple: true,
+            },
             render: () => (
                 <Space size="small">
                     <a>Delete</a>
@@ -187,7 +245,7 @@ export const ExpandableDemo = () => {
         data.push({
             key: i,
             name: 'John Brown',
-            age: `${i}2`,
+            age: `${Math.floor(Math.random() * 10)}2`,
             address: `New York No. ${i} Lake Park`,
             description: `My name is John Brown, I am ${i}2 years old, living in New York No. ${i} Lake Park.`,
         });

@@ -35,7 +35,7 @@ const getICodePath = (relativePath: string, params: Params) => {
 
 // 传入 Router 中的参数 params
 const createLinkPlugin = (params: Params) => () => (tree: Node) => {
-    visit(tree, 'link', node => {
+    visit(tree, 'link', (node: any) => {
         const url = node.url as string;
         if (REGEXP_FILE_PATH.test(url)) {
             // eslint-disable-next-line no-param-reassign

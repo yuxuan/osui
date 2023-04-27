@@ -73,5 +73,8 @@
         "commitizen": {
             "path": "cz-conventional-changelog"
         }
+    },
+    "resolutions": {
+        "@types/react": "17.0.53"
     }
 }

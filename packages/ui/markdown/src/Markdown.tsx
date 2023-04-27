@@ -22,7 +22,7 @@ const getHtml = (content: string, plugins: any[]) => {
     plugins.forEach(plugin => {
         processor = processor.use(plugin);
     });
-    return processor.use(htmlPlugin).processSync(content).toString();
+    return processor.use(htmlPlugin as any).processSync(content).toString();
 };
 
 const Markdown: React.FC<Props> = ({content = '', className, plugins = []}) => {

@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Divider from '@osui/divider';
+import BrandProvider from '@osui/brand-provider';
 import Anchor from '@osui/anchor';
 
 export default {
@@ -9,9 +10,9 @@ export default {
 };
 
 export const Demo = () => {
-    const { Link } = Anchor;
+    const {Link} = Anchor;
     return (
-        <>
+        <BrandProvider brand="icloud">
             <p>通过点击锚点可快速找到某类信息在当前页面的位置。</p>
             <h3>一、使用场景</h3>
             <p>
@@ -28,7 +29,7 @@ export const Demo = () => {
                     <Link href="#Link-Props" title="Link Props" />
                 </Link>
             </Anchor>
-        </>
+        </BrandProvider>
     );
 };
 

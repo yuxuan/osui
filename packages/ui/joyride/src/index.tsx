@@ -11,7 +11,7 @@ import Joyride, {
     TooltipRenderProps,
 } from 'react-joyride';
 import Button from '@osui/button';
-import { IconCloseOutlined } from '@osui/icons';
+import {IconCloseOutlined} from '@osui/icons';
 import merge from 'lodash.merge';
 import './index.less';
 
@@ -109,7 +109,7 @@ const OSUIJoyride: React.FC<JoyrideProps> = props => {
     const {shouldRestart, run, onFinish, getHelpers, disableOverlayClose, hideStepsSize} = props;
     const [helpers, setHelpers] = React.useState<any>();
     // props的一些调整
-    const steps = props.steps.map(step => ({ ...stepDefaults, ...step }));
+    const steps = props.steps.map(step => ({...stepDefaults, ...step}));
     const innerFloaterProps = merge({}, floater, props.floaterProps);
     const innerStyles = merge({}, defaultStyles, props.styles);
 

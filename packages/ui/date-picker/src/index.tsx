@@ -1,13 +1,15 @@
+/* eslint-disable max-len */
 import React from 'react';
 import {DatePicker as AntdDatePicker} from 'antd';
-import {PickerComponentClass} from 'antd/es/date-picker/generatePicker/interface';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import './index.less';
 
 const clsPrefix = 'osui-picker';
 
-function attachOSUIClassName<T>(Component: PickerComponentClass<T>) {
+type BaseDatePickerType = typeof AntdDatePicker;
+
+function attachOSUIClassName(Component: any) {
     const ComponentOut = React.forwardRef<any, any>(
         (props, ref) => {
             return (
@@ -20,17 +22,17 @@ function attachOSUIClassName<T>(Component: PickerComponentClass<T>) {
             );
         }
     );
-    return ComponentOut as unknown as PickerComponentClass<T>;
+    return ComponentOut;
 }
 
-type DatePickerInterface = typeof AntdDatePicker & {
+interface DatePickerInterface extends BaseDatePickerType {
     MonthPicker: typeof AntdDatePicker.MonthPicker;
     WeekPicker: typeof AntdDatePicker.WeekPicker;
     QuarterPicker: typeof AntdDatePicker.QuarterPicker;
     YearPicker: typeof AntdDatePicker.YearPicker;
     TimePicker: typeof AntdDatePicker.TimePicker;
     RangePicker: typeof AntdDatePicker.RangePicker;
-};
+}
 
 const DatePicker = attachOSUIClassName(AntdDatePicker) as unknown as DatePickerInterface;
 
@@ -38,12 +40,12 @@ const DatePicker = attachOSUIClassName(AntdDatePicker) as unknown as DatePickerI
 hoistNonReactStatics(DatePicker, AntdDatePicker);
 
 // 覆盖
-DatePicker.MonthPicker = attachOSUIClassName(AntdDatePicker.MonthPicker);
-DatePicker.WeekPicker = attachOSUIClassName(AntdDatePicker.WeekPicker);
-DatePicker.QuarterPicker = attachOSUIClassName(AntdDatePicker.QuarterPicker);
-DatePicker.YearPicker = attachOSUIClassName(AntdDatePicker.YearPicker);
-DatePicker.TimePicker = attachOSUIClassName(AntdDatePicker.TimePicker);
-DatePicker.RangePicker = attachOSUIClassName(AntdDatePicker.RangePicker);
+DatePicker.MonthPicker = attachOSUIClassName(AntdDatePicker.MonthPicker) as unknown as typeof AntdDatePicker.MonthPicker;
+DatePicker.WeekPicker = attachOSUIClassName(AntdDatePicker.WeekPicker) as unknown as typeof AntdDatePicker.WeekPicker;
+DatePicker.YearPicker = attachOSUIClassName(AntdDatePicker.YearPicker) as unknown as typeof AntdDatePicker.YearPicker;
+DatePicker.QuarterPicker = attachOSUIClassName(AntdDatePicker.QuarterPicker) as unknown as typeof AntdDatePicker.QuarterPicker;
+DatePicker.TimePicker = attachOSUIClassName(AntdDatePicker.TimePicker) as unknown as typeof AntdDatePicker.TimePicker;
+DatePicker.RangePicker = attachOSUIClassName(AntdDatePicker.RangePicker) as unknown as typeof AntdDatePicker.RangePicker;
 
 
 export type {DatePickerProps} from 'antd';

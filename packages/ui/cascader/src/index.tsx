@@ -24,6 +24,7 @@ const OSUICascader = (
         (label: string[]) => label.map(
             (item, index) => (
                 index === label.length - 1 // 最后一个后面不加icon
+                    // eslint-disable-next-line react/jsx-key
                     ? (<span>{item}</span>)
                     : (
                         <>
@@ -73,7 +74,7 @@ const OSUICascader = (
     );
 };
 
-const RefCastCascader = React.forwardRef(OSUICascader) as typeof AntdCascader;
+const RefCastCascader = React.forwardRef(OSUICascader) as unknown as typeof AntdCascader;
 
 hoistNonReactStatics(RefCastCascader, AntdCascader);
 

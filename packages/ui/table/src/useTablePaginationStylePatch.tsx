@@ -10,7 +10,8 @@ const pageSizeClassName = '-pagination-options-size-changer';
 
 // sizeChanger 和 quick-Jumper 在首尾显示，设置宽度为中间留白
 const setPaginationOptionsWidth = (parentDom: HTMLElement, prefixCls: string) => {
-    let paginationOptionDom: HTMLElement | undefined = undefined;
+    // eslint-disable-next-line @typescript-eslint/init-declarations
+    let paginationOptionDom: HTMLElement | undefined;
     const width = [...parentDom.childNodes as any].map((dom: HTMLElement) => {
         if (dom.className.includes(`${prefixCls}${paginationOptionClassName}`)) {
             paginationOptionDom = dom;
@@ -100,7 +101,8 @@ const useTablePaginationStylePatch = (
         return () => {
             observerList?.map(observer => observer?.disconnect());
         };
-    }, []);
+    }, []
+    );
 };
 
 export default useTablePaginationStylePatch;

@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useReducer} from 'react';
 import classNames from 'classnames';
 import {message as AntdMessage} from 'antd';
-import { MessageType } from 'antd/es/message/interface';
 import {
+    MessageType,
     MessageInstance as AntdMessageInstance,
     ArgsProps as AntdMessageArgsProps,
     ConfigOptions,
@@ -35,7 +35,7 @@ export interface MessageArgsProps extends AntdMessageArgsProps {
 
 type JointContent = React.ReactNode | MessageArgsProps;
 
-type OSUITypeOpen =  (content: JointContent, duration?: number | VoidFunction, onClose?: VoidFunction) => MessageType;
+type OSUITypeOpen = (content: JointContent, duration?: number | VoidFunction, onClose?: VoidFunction) => MessageType;
 
 type AntdMessageType = typeof AntdMessage;
 
@@ -182,7 +182,7 @@ const getPatchedArgs = (argsProps: MessageArgsProps & {_localInnerKey?: number})
         className,
         title,
         onClose,
-        onClick
+        onClick,
     } = argsProps;
 
     const {messagePosition} = getGlobalConfig();
@@ -193,7 +193,7 @@ const getPatchedArgs = (argsProps: MessageArgsProps & {_localInnerKey?: number})
         `${clsPrefix}-message-at-${messagePosition}`,
         {[`${clsPrefix}-message-with-title`]: title},
         {[`${clsPrefix}-message-with-title-only`]: !argsProps.content},
-        className,
+        className
     );
 
     // 这里对countDown做了处理，duration不能直接透传给countDown，考虑到有可能有自动关闭，但是不想显示倒计时的场景
@@ -227,7 +227,7 @@ const genMessage = (type: NoticeType) => (
     let durationIn = duration;
     let onCloseIn = onClose;
 
-    let argsProps;
+    let argsProps = jointContent;
 
     if (jointContent && typeof jointContent === 'object' && ('content' in jointContent || 'title' in jointContent)) {
         argsProps = jointContent;

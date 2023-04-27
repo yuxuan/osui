@@ -1,10 +1,10 @@
 import React, {useCallback} from 'react';
-import hoistNonReactStatics from 'hoist-non-react-statics';
 import {RefSelectProps} from 'antd/es/select';
 import {Select as AntdSelect} from 'antd';
 import {useDerivedState} from '@huse/derived-state';
 import Tag from '@osui/tag';
 import Popover from '@osui/popover';
+import hoistNonReactStatics from 'hoist-non-react-statics';
 import Select from './InternalBaseSelect';
 
 const DisplayTagsInPopoverSelect = React.forwardRef((

@@ -23,12 +23,13 @@ const ConfirmInput = (props: InputProps & React.HTMLAttributes<HTMLDivElement>) 
     const [value, setValue] = useDerivedState(propValue);
     const handleConfirm = useCallback(
         () => {
-            onChangeValueByEffect(value);
+            onChangeValueByEffect(value as any);
         },
         [value, onChangeValueByEffect]
     );
     const handleCancel = useCallback(
         () => {
+            // @ts-ignore
             switchEditStatus(false, {fireStateChange: originValue.current});
         },
         [switchEditStatus]
@@ -95,6 +96,7 @@ const QuickEditInput = (props: Props) => {
     const InnerQuickEditInputAdapter = withConfirm ? QuickEditConfirmInputAdapter : QuickEditInputAdapter;
 
     return (
+        // @ts-ignore
         <InnerQuickEditInputAdapter
             {...restProps}
             display={handleDisplay}

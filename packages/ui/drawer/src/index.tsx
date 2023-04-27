@@ -18,10 +18,7 @@ const sizeWidthMap: {[key in 'large' | 'middle' | 'small']: number} = {
     small: 200,
 };
 
-const OSUIDrawer = React.forwardRef<any, DrawerProps>((
-    {closeIcon, size, className, closable = true, ...props},
-    ref
-) => {
+const OSUIDrawer = ({closeIcon, size, className, closable = true, ...props}: DrawerProps) => {
     const innerCloseIcon = closeIcon || <IconCloseOutlined />;
     const innerWidth = props.width ?? (size && sizeWidthMap[size]);
     const innerClassNames = classNames(
@@ -31,7 +28,6 @@ const OSUIDrawer = React.forwardRef<any, DrawerProps>((
     );
     return (
         <AntdDrawer
-            ref={ref}
             {...props}
             closable={closable}
             closeIcon={innerCloseIcon}
@@ -39,6 +35,6 @@ const OSUIDrawer = React.forwardRef<any, DrawerProps>((
             className={innerClassNames}
         />
     );
-});
+};
 
 export default OSUIDrawer;

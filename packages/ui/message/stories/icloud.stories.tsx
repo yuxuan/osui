@@ -77,8 +77,6 @@ export const Demo = () => {
             <Button onClick={info}>Info</Button>
             <h3>5、加载样式</h3>
             <Button onClick={loading}>Loading</Button>
-            <h3>6、消息提醒</h3>
-            <Button onClick={notify}>notify</Button>
         </div>
     );
 };

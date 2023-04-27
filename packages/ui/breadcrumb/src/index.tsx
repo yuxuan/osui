@@ -1,8 +1,9 @@
 import React, {useReducer} from 'react';
 import {Breadcrumb as AntdBreadcrumb} from 'antd';
-import {BreadcrumbProps as AntdBrandcrumbProps} from 'antd/es/breadcrumb';
+// import {BreadcrumbProps as AntdBrandcrumbProps} from 'antd/es/breadcrumb';
 import classNames from 'classnames';
 
+import {LegacyBreadcrumbProps} from 'antd/es/breadcrumb/Breadcrumb';
 import './index.less';
 
 const clsPrefix = 'osui-breadcrumb';
@@ -23,9 +24,9 @@ interface EllipsisConfig {
     tailItemLength: number;
 }
 type GetItemRenderWithEllipsis = (
-    render: AntdBrandcrumbProps['itemRender'],
+    render: LegacyBreadcrumbProps['itemRender'],
     config: EllipsisConfig,
-) => AntdBrandcrumbProps['itemRender'];
+) => LegacyBreadcrumbProps['itemRender'];
 
 const getItemRenderWithEllipsis: GetItemRenderWithEllipsis = (render, config) => (route, params, routes, paths) => {
     const {shownLastItems, onEllipsisClick, headItemLength} = config;
@@ -66,7 +67,7 @@ const getChildrenWithEllipsis = (
     ];
 };
 
-export interface BreadcrumbProps extends AntdBrandcrumbProps {
+export interface BreadcrumbProps extends LegacyBreadcrumbProps {
     /**
      * @description 是否展示 ...
      */
