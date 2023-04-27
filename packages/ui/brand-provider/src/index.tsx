@@ -45,7 +45,7 @@ const iCloudConfigs: ConfigProviderProps = {
 };
 
 const BrandProvider: React.FC<React.PropsWithChildren<{ brand?: Brand, theme?: Partial<ThemeConfig> }>> = (
-    {brand, theme: outerTheme, children, prefixCls}
+    {brand, theme: outerTheme, children}
 ) => {
     const finalTheme = useMemo(
         () => mergeTheme(outerTheme, theme),
@@ -57,7 +57,7 @@ const BrandProvider: React.FC<React.PropsWithChildren<{ brand?: Brand, theme?: P
     };
     return (
         <BrandContext.Provider value={context}>
-            <ConfigProvider {...iCloudConfigs} theme={finalTheme} prefixCls={prefixCls}>
+            <ConfigProvider {...iCloudConfigs} theme={finalTheme}>
                 {children}
             </ConfigProvider>
         </BrandContext.Provider>
