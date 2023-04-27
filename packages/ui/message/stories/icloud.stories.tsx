@@ -49,13 +49,6 @@ export const Demo = () => {
         });
     };
 
-    const notify = () => {
-        message.notify({
-            title: '产品消息',
-            content: '关于集团云api鉴权认证安全升级的通知',
-        });
-    };
-
     return (
         <div style={{padding: 30}}>
             {version}
@@ -110,7 +103,6 @@ export const Api = () => {
         </>
     );
 };
-
 
 export const TestCase = () => {
     const success = () => {
@@ -226,13 +218,13 @@ export const TestCase = () => {
         <div style={{padding: 30}}>
             <p>max-width测试</p>
             <Button onClick={success}>Success</Button>
-            <Button onClick={success5}>Success</Button>
             <p>很短测试</p>
             <Button onClick={success2}>Success</Button>
             <p>有close</p>
             <Button onClick={success3}>Success</Button>
             <p>title</p>
             <Button onClick={success4}>Success</Button>
+            <Button onClick={success5}>Success</Button>
             <p>title only</p>
             <Button onClick={success6}>Success</Button>
             <p>title里面有链接</p>

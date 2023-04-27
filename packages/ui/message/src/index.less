@@ -48,7 +48,7 @@
             animation-duration: .3;
         }
 
-        &.@{ant-prefix}-message-notice.@{ant-prefix}-move-up-leave.@{ant-prefix}-move-up-leave-active {
+        &.@{ant-prefix}-message-notice.@{ant-prefix}-message-move-up-leave.@{ant-prefix}-message-move-up-leave-active {
             animation-name: MessageMoveRightOut;
             animation-duration: .3s;
         }
@@ -69,17 +69,19 @@
     // 对original的样式patch
     .@{ant-prefix}-message-custom-content {
         display: flex;
+        align-items: flex-start;
         max-width: 400px;
         color: var(--theme-color-text);
         text-align: left;
 
         > svg.osui-icon {
             flex-shrink: 0;
-            margin-top: .15em; // font-size 14px和12px的平均值
+            margin-top: 4px;
             padding-right: var(--alert-icon-padding-right);
         }
 
         .close-icon {
+            margin-top: 5px;
             margin-left: 8px;
             cursor: pointer;
         }
@@ -90,11 +92,12 @@
 
         &-inline {
             display: flex;
+            align-items: flex-start;
         }
 
         &-title {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 12px;
 
             &-text {

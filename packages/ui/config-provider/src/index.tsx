@@ -1,5 +1,4 @@
 import {ConfigProvider} from 'antd';
-export default ConfigProvider;
 
 type MessagePosition = 'center' | 'right';
 
@@ -20,3 +19,5 @@ export const getGlobalConfig = () => {
         messagePosition: globalMessagePosition,
     };
 };
+
+export default ConfigProvider;
