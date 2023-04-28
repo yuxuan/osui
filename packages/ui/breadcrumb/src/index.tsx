@@ -1,9 +1,8 @@
 import React, {useReducer} from 'react';
 import {Breadcrumb as AntdBreadcrumb} from 'antd';
-// import {BreadcrumbProps as AntdBrandcrumbProps} from 'antd/es/breadcrumb';
+import {BreadcrumbProps as AntdBrandcrumbProps} from 'antd/es/breadcrumb';
 import classNames from 'classnames';
-
-import {LegacyBreadcrumbProps} from 'antd/es/breadcrumb/Breadcrumb';
+import {LegacyBreadcrumbProps, NewBreadcrumbProps} from 'antd/es/breadcrumb/Breadcrumb';
 import './index.less';
 
 const clsPrefix = 'osui-breadcrumb';
@@ -23,6 +22,7 @@ interface EllipsisConfig {
     headItemLength: number;
     tailItemLength: number;
 }
+
 type GetItemRenderWithEllipsis = (
     render: LegacyBreadcrumbProps['itemRender'],
     config: EllipsisConfig,
@@ -86,7 +86,7 @@ export interface BreadcrumbProps extends LegacyBreadcrumbProps {
     tailItemLength?: number;
 }
 
-export interface BreadcrumbInterface extends React.FC<BreadcrumbProps> {
+export interface BreadcrumbInterface extends React.FC<BreadcrumbProps | AntdBrandcrumbProps> {
     Item: typeof AntdBreadcrumb.Item;
     Separator: typeof AntdBreadcrumb.Separator;
 }
@@ -94,23 +94,32 @@ export interface BreadcrumbInterface extends React.FC<BreadcrumbProps> {
 const Breadcrumb: BreadcrumbInterface = props => {
     const {
         children,
+        className,
+        items,
+        // 为了迁移还在支持routes
         routes,
         itemRender,
         showEllipsis,
-        className,
         maxItemLength = 5,
         headItemLength = 2,
         tailItemLength = 2,
         ...restProps
-    } = props;
+    } = props as BreadcrumbProps & {items: NewBreadcrumbProps['items']};
+
+    const hasMoreThanXItem = (x: number) => (
+        // 使用children的情况
+        (children && Array.isArray(children) && children.length - x > 1)
+         // 使用routes的情况
+         || (routes && routes.length - x > 1)
+         // 使用items的情况
+         || (items && items.length - x > 1)
+    );
 
     const [shownLastItems, doPop] = useReducer<React.Reducer<number, void>>(
         (index: number) => {
-            // step
-            if (children && Array.isArray(children) && children.length - index > 1) {
-                return index + 1;
-            }
-            if (routes && routes.length - index > 1) {
+            const notLastItem = hasMoreThanXItem(1);
+
+            if (notLastItem) {
                 return index + 1;
             }
             return 0;
@@ -118,11 +127,7 @@ const Breadcrumb: BreadcrumbInterface = props => {
         tailItemLength
     );
 
-    const isShowEllipsis = showEllipsis
-        && (
-            (routes && routes.length > maxItemLength)
-            || (children && Array.isArray(children) && children.length > maxItemLength)
-        );
+    const isShowEllipsis = showEllipsis && hasMoreThanXItem(maxItemLength);
 
     const config = {
         shownLastItems,
@@ -140,7 +145,8 @@ const Breadcrumb: BreadcrumbInterface = props => {
                     ? getItemRenderWithEllipsis(itemRender, config)
                     : itemRender
             }
-            routes={routes}
+            // 如果有items用items如果没有用routes
+            {...(items ? {items} : {routes})}
             {...restProps}
         >
             {isShowEllipsis && children

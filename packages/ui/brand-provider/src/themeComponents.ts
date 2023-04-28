@@ -74,4 +74,12 @@ export const components: ThemeConfig['components'] = {
         colorTextHeading: '#5C5F66',
         paddingXS: 5.5,
     },
+    Tooltip: {
+        colorBgDefault: '#fff',
+        colorTextLightSolid: '#151B26',
+    },
+    Breadcrumb: {
+        colorBgTextHover: 'transparent',
+        colorTextDescription: '#5c5f66',
+    },
 };
