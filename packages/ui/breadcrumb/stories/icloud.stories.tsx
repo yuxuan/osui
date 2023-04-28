@@ -101,54 +101,54 @@ export const Routes = () => {
     const routes = [
         {
             path: 'index1',
-            breadcrumbName: 'home',
+            title: 'home',
         },
         {
             path: 'index2',
-            breadcrumbName: 'home2',
+            title: 'home2',
         },
         {
             path: 'index3',
-            breadcrumbName: 'home3',
+            title: 'home3',
         },
         {
             path: 'index4',
-            breadcrumbName: 'home4',
+            title: 'home4',
         },
         {
             path: 'index5',
-            breadcrumbName: 'home5',
+            title: 'home5',
         },
         {
             path: 'first6',
-            breadcrumbName: 'first',
+            title: 'first',
             children: [
                 {
                     path: '/general',
-                    breadcrumbName: 'General',
+                    title: 'General',
                 },
                 {
                     path: '/layout',
-                    breadcrumbName: 'Layout',
+                    title: 'Layout',
                 },
                 {
                     path: '/navigation',
-                    breadcrumbName: 'Navigation',
+                    title: 'Navigation',
                 },
             ],
         },
         {
             path: 'second',
-            breadcrumbName: 'second',
+            title: 'second',
         },
     ];
 
     function itemRender(route, params, routes, paths) {
         const last = routes.indexOf(route) === routes.length - 1;
         return last ? (
-            <span>{route.breadcrumbName}</span>
+            <span>{route.title}</span>
         ) : (
-            <Link to={paths.join('/')}>{route.breadcrumbName}</Link>
+            <Link to={paths.join('/')}>{route.title}</Link>
         );
     }
 
@@ -156,7 +156,7 @@ export const Routes = () => {
         <BrowserRouter>
             <p>支持routes</p>
             <p>注意：箭头icon目前无法覆盖</p>
-            <Breadcrumb itemRender={itemRender} routes={routes} showEllipsis />
+            <Breadcrumb itemRender={itemRender} items={routes} showEllipsis />
         </BrowserRouter>
     );
 };

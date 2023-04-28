@@ -31,109 +31,111 @@ export const Demo = () => {
     const [modal2, modalContextHolder2] = Modal.useModal();
 
     return (
-        <div style={{padding: 30}}>
-            <ConfigProvider prefixCls="meszhan">
-                {modalContextHolder2}
-                <Button
-                    type="primary"
-                    onClick={() => {
-                        modal2.confirm(config);
-                    }}
-                >
-                    测试ConfigProvider是否有效，在这里因为class前缀被更改，按钮和弹窗都没有样式
-                </Button>
-            </ConfigProvider>
-            <br></br>
-            <br></br>
-            <Space>
-                <BrandProvider brand="icloud">
-                    <Space>
-                        <ReachableContext.Provider value="Light">
-                            {modalContextHolder}
+        <BrandProvider>
+            <div style={{padding: 30}}>
+                <ConfigProvider prefixCls="meszhan">
+                    {modalContextHolder2}
+                    <Button
+                        type="primary"
+                        onClick={() => {
+                            modal2.confirm(config);
+                        }}
+                    >
+                        测试ConfigProvider是否有效，在这里因为class前缀被更改，按钮和弹窗都没有样式
+                    </Button>
+                </ConfigProvider>
+                <br></br>
+                <br></br>
+                <Space>
+                    <BrandProvider brand="icloud">
+                        <Space>
+                            <ReachableContext.Provider value="Light">
+                                {modalContextHolder}
+                                <Button
+                                    type="primary"
+                                    onClick={() => {
+                                        modal.confirm(config);
+                                    }}
+                                >
+                                    Context Provider
+                                </Button>
+                                <UnreachableContext.Provider value="Bamboo" />
+                            </ReachableContext.Provider>
+                            <Button type="primary" onClick={() => setVisible(true)}>
+                                打开基础modal
+                            </Button>
                             <Button
                                 type="primary"
                                 onClick={() => {
-                                    modal.confirm(config);
+                                    modal.confirm({
+                                        title: 'Confirm',
+                                        icon: null,
+                                        closable: true,
+                                        content: 'This is a Confirm Dialog.',
+                                    });
                                 }}
                             >
-                                Context Provider
+                                Confirm
                             </Button>
-                            <UnreachableContext.Provider value="Bamboo" />
-                        </ReachableContext.Provider>
-                        <Button type="primary" onClick={() => setVisible(true)}>
-                            打开基础modal
-                        </Button>
-                        <Button
-                            type="primary"
-                            onClick={() => {
-                                modal.confirm({
-                                    title: 'Confirm',
-                                    icon: null,
-                                    closable: true,
-                                    content: 'This is a Confirm Dialog.',
-                                });
-                            }}
-                        >
-                            Confirm
-                        </Button>
-                        <Button
-                            type="primary"
-                            onClick={() => {
-                                modal.confirm({
-                                    title: 'Warning',
-                                    content: 'This is a Warning Dialog.',
-                                    type: 'warning',
-                                });
-                            }}
-                        >
-                            Warning
-                        </Button>
-                        <Button
-                            type="primary"
-                            onClick={() => {
-                                modal.confirm({
-                                    title: 'Success',
-                                    content: 'This is a Success Dialog.',
-                                    type: 'success',
-                                });
-                            }}
-                        >
-                            Success
-                        </Button>
-                        <Button
-                            type="primary"
-                            onClick={() => {
-                                modal.confirm({title: 'Info', content: 'This is a Info Dialog.', type: 'info'});
-                            }}
-                        >
-                            Info
-                        </Button>
-                        <Button
-                            type="primary"
-                            onClick={() => {
-                                modal.confirm({title: 'Error', content: 'This is a Error Dialog.', type: 'error'});
-                            }}
-                        >
-                            Error
-                        </Button>
-                    </Space>
+                            <Button
+                                type="primary"
+                                onClick={() => {
+                                    modal.confirm({
+                                        title: 'Warning',
+                                        content: 'This is a Warning Dialog.',
+                                        type: 'warning',
+                                    });
+                                }}
+                            >
+                                Warning
+                            </Button>
+                            <Button
+                                type="primary"
+                                onClick={() => {
+                                    modal.confirm({
+                                        title: 'Success',
+                                        content: 'This is a Success Dialog.',
+                                        type: 'success',
+                                    });
+                                }}
+                            >
+                                Success
+                            </Button>
+                            <Button
+                                type="primary"
+                                onClick={() => {
+                                    modal.confirm({title: 'Info', content: 'This is a Info Dialog.', type: 'info'});
+                                }}
+                            >
+                                Info
+                            </Button>
+                            <Button
+                                type="primary"
+                                onClick={() => {
+                                    modal.confirm({title: 'Error', content: 'This is a Error Dialog.', type: 'error'});
+                                }}
+                            >
+                                Error
+                            </Button>
+                        </Space>
 
-                    <Modal
-                        title="我是标题我是标题"
-                        visible={visible}
-                        onOk={() => setVisible(false)}
-                        onCancel={() => setVisible(false)}
-                    >
-                        何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
-                        在当前页面正中打开一个浮层，承载相应的操作。
-                        何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
-                        在当前页面正中打开一个浮层，承载相应的操作。
-                        何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
-                        在当前页面正中打开一个浮层，承载相应的操作。
-                    </Modal>
-                </BrandProvider>
-            </Space>
-        </div>
+                        <Modal
+                            title="我是标题我是标题"
+                            visible={visible}
+                            onOk={() => setVisible(false)}
+                            onCancel={() => setVisible(false)}
+                        >
+                            何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                            在当前页面正中打开一个浮层，承载相应的操作。
+                            何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                            在当前页面正中打开一个浮层，承载相应的操作。
+                            何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                            在当前页面正中打开一个浮层，承载相应的操作。
+                        </Modal>
+                    </BrandProvider>
+                </Space>
+            </div>
+        </BrandProvider>
     );
 };
 
@@ -528,21 +530,6 @@ export const Api = () => {
 
 export const TestCase = () => {
     const [visible, setVisible] = useState(false);
-    const {confirm} = Modal;
-    function showConfirm() {
-        confirm({
-            title: 'Do you Want to delete these items?',
-            icon: <IconExclamationCircleFilled />,
-            content: 'Some descriptions',
-            okButtonProps: {loading: true},
-            onOk() {
-                console.log('确定');
-            },
-            onCancel() {
-                console.log('取消');
-            },
-        });
-    }
     return (
         <div style={{padding: 30}}>
             <p>footer错位了</p>
@@ -566,15 +553,6 @@ export const TestCase = () => {
                 </Modal>
                 <br />
                 <br />
-                <p>Modal.confirm不在Context内，而使用antd提供的Modal.useModal的方式，目前还没兼容</p>
-                <Button
-                    type="primary"
-                    onClick={() => {
-                        showConfirm();
-                    }}
-                >
-                    Confirm
-                </Button>
             </BrandProvider>
         </div>
     );

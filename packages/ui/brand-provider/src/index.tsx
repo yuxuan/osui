@@ -45,8 +45,8 @@ const iCloudConfigs: ConfigProviderProps = {
 };
 
 const BrandProvider: React.FC<React.PropsWithChildren<{
-    brand?: Brand,
-    theme?: Partial<ThemeConfig>,
+    brand?: Brand;
+    theme?: Partial<ThemeConfig>;
     ConfigProviderProps?: ConfigProviderProps;
 }>> = (
     {brand, theme: outerTheme, children, ...ConfigProviderProps}
