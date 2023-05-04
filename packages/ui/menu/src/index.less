@@ -1,8 +1,8 @@
 @osui-menu-class-prefix: osui-menu;
 
-.ant-menu-vertical.ant-menu-sub,
-.ant-menu-vertical-left.ant-menu-sub,
-.ant-menu-vertical-right.ant-menu-sub {
+.@{ant-prefix}-menu-vertical.@{ant-prefix}-menu-sub,
+.@{ant-prefix}-menu-vertical-left.@{ant-prefix}-menu-sub,
+.@{ant-prefix}-menu-vertical-right.@{ant-prefix}-menu-sub {
     max-height: ~'calc(100vh - 100px)';
 }
 
@@ -12,6 +12,10 @@
         .@{ant-prefix}-menu-submenu-title {
             &:hover {
                 background-color: @item-hover-bg;
+            }
+
+            .@{ant-prefix}-menu-submenu-expand-icon {
+                width: 16px !important;
             }
         }
     }

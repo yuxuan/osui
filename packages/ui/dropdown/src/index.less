@@ -1,36 +1,18 @@
 @osui-dropdown-class-prefix: osui-dropdown;
 
-.@{osui-dropdown-class-prefix} {
-    min-width: var(--dropdown-menu-min-width) !important; // 覆盖inline计算出来的style
+// 这个弹窗不在osui的scope之内，所以需要全局覆盖
 
-    .@{ant-prefix}-dropdown-menu {
-        &-item,
-        &-submenu-title {
-            padding: var(--dropdown-menu-item-padding);
-        }
+.@{ant-prefix}-dropdown-menu,
+.@{ant-prefix}-dropdown-menu-submenu {
+    margin-left: -4px !important;
+    margin-right: -4px !important;
 
-        &-item-group-title {
-            padding: var(--dropdown-menu-item-group-title-padding);
-        }
-
-        &-item-group-list {
-            margin: 0;
-        }
-    }
-
-    .@{ant-prefix}-dropdown-menu-item-active:not(.@{ant-prefix}-dropdown-menu-item-disabled) {
-        &:hover {
-            background-color: var(--select-item-active-bg);
-        }
-
-        &:active {
-            background-color: var(--color-gray-4);
-        }
+    li {
+        margin-left: -4px !important;
+        margin-right: -4px !important;
     }
 }
 
-.osui-menu-submenu {
-    .@{ant-prefix}-dropdown-menu-item-group-title {
-        padding: var(--dropdown-menu-item-group-title-padding);
-    }
+.@{osui-dropdown-class-prefix} {
+    min-width: var(--dropdown-menu-min-width) !important; // 覆盖inline计算出来的style
 }

@@ -17,7 +17,7 @@ function attachOSUIClassName(Component: any) {
                     ref={ref}
                     {...props}
                     className={classNames(clsPrefix, props.className)}
-                    dropdownClassName={classNames(`${clsPrefix}-dropdown`, props.dropdownClassName)}
+                    popupClassName={classNames(`${clsPrefix}-dropdown`, props.popupClassName)}
                 />
             );
         }

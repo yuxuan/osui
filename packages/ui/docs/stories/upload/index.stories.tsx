@@ -250,7 +250,7 @@ export const Demo3 = () => {
                 {
                     preview && (
                         <Modal
-                            visible={preview.previewVisible}
+                            open={preview.previewVisible}
                             title={preview.previewTitle}
                             footer={null}
                             onCancel={handleCancel}

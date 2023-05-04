@@ -10,11 +10,11 @@ import './index.less';
 const clsPrefix = 'osui-tree-select';
 
 const InternalTreeSelect = <OptionType extends BaseOptionType | DefaultOptionType = BaseOptionType>(
-    {className, dropdownClassName, ...props}: AntdTreeSelectProps<OptionType>,
+    {className, popupClassName, ...props}: AntdTreeSelectProps<OptionType>,
     ref: React.Ref<BaseSelectRef>
 ) => {
     const innerClassName = classNames(className, clsPrefix);
-    const innerDropdownClassName = classNames(dropdownClassName, `${clsPrefix}-dropdown`);
+    const innerPopupClassName = classNames(popupClassName, `${clsPrefix}-dropdown`);
     const innerSwitcherIcon = props.switcherIcon ?? (
         <span role="img" aria-label="caret-down">
             <IconDownOutlined className={classNames(`${clsPrefix}-switcherIcon`)} />
@@ -24,7 +24,7 @@ const InternalTreeSelect = <OptionType extends BaseOptionType | DefaultOptionTyp
         <AntdTreeSelect
             ref={ref}
             className={innerClassName}
-            dropdownClassName={innerDropdownClassName}
+            popupClassName={innerPopupClassName}
             {...props}
             switcherIcon={innerSwitcherIcon}
         />

@@ -26,6 +26,7 @@
         "es/*.less"
     ],
     "devDependencies": {
+        "@ant-design/icons": "^4.7.0",
         "@babel/cli": "^7.10.5",
         "@osui/brand-provider": "^3.0.0",
         "@osui/icons": "^3.0.0",

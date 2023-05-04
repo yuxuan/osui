@@ -82,4 +82,8 @@ export const components: ThemeConfig['components'] = {
         colorBgTextHover: 'transparent',
         colorTextDescription: '#5c5f66',
     },
+    Menu: {
+        colorItemTextHover: '#2468F2',
+        colorItemBgHover: 'transparent',
+    },
 };

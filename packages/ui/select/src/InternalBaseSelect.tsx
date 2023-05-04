@@ -26,7 +26,7 @@ function InternalSelect<ValueType = any, OptionType extends BaseOptionType | Def
     const {className, loading, listHeight, noBorder, ...restProps} = props;
     const {brand} = useBrandContext();
     // 暂时用，后面需要透传下去
-    const {mode, dropdownClassName} = restProps;
+    const {mode, popupClassName} = restProps;
 
     const isMultiple = mode === 'multiple' || mode === 'tags';
 
@@ -37,12 +37,12 @@ function InternalSelect<ValueType = any, OptionType extends BaseOptionType | Def
             override: <IconDownOutlined />,
         },
         {
-            targetProp: 'dropdownClassName',
-            shouldOverride: true, // 只有在多选时，加上dropdownClassName
+            targetProp: 'popupClassName',
+            shouldOverride: true, // 只有在多选时，加上popupClassName
             override: (
                 isMultiple
-                    ? classNames(`${clsPrefix}-multiple-dropdown`, `${clsPrefix}-dropdown`, dropdownClassName)
-                    : classNames(`${clsPrefix}-dropdown`, dropdownClassName)
+                    ? classNames(`${clsPrefix}-multiple-dropdown`, `${clsPrefix}-dropdown`, popupClassName)
+                    : classNames(`${clsPrefix}-dropdown`, popupClassName)
             ),
             alwaysOverride: true,
         },

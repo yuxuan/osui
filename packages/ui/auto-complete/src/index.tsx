@@ -25,7 +25,7 @@ const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteP
         options,
         highlightKeyword = true,
         value: keyword,
-        dropdownClassName,
+        popupClassName,
         onSearch,
         loading,
         ...props
@@ -35,7 +35,7 @@ const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteP
     const [derivedKeyword, setDerivedKeyword] = useDerivedState(keyword);
     // osui-select的className是因为，auto-complete实际上就是select
     const innerClassName = classNames(className, clsPrefix, 'osui-select');
-    const innerDropdownClassName = classNames(dropdownClassName, `${clsPrefix}-dropdown`);
+    const innerPopupClassName = classNames(popupClassName, `${clsPrefix}-dropdown`);
     const innerOptions = useMemo(
         () => {
             if (highlightKeyword) {
@@ -80,7 +80,7 @@ const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteP
             className={innerClassName}
             options={innerOptions}
             value={keyword}
-            dropdownClassName={innerDropdownClassName}
+            popupClassName={innerPopupClassName}
             onSearch={handleSearch}
             loading={loading}
             {...adjustedProps}

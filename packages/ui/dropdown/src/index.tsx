@@ -11,17 +11,25 @@ export interface DropdownInterface extends React.FC<AntdCheckboxProps> {
     Button: typeof OSUIDropdownButton;
 }
 
-const OSUIDropdown: DropdownInterface = ({overlayClassName, ...props}) => (
-    <AntdDropdown overlayClassName={classNames(clsPrefix, overlayClassName)} {...props} />
+const OSUIDropdown: DropdownInterface = ({overlayClassName, rootClassName, ...props}) => (
+    <AntdDropdown
+        overlayClassName={classNames(clsPrefix, overlayClassName)}
+        rootClassName={classNames(clsPrefix, rootClassName)}
+        {...props}
+    />
 );
 
 hoistNonReactStatics(OSUIDropdown, AntdDropdown);
 
 const OSUIDropdownButton: React.FC<React.ComponentProps<typeof AntdDropdown.Button>> = (
-    {overlayClassName, ...props}
+    {overlayClassName, rootClassName, ...props}
 ) => {
     return (
-        <AntdDropdown.Button overlayClassName={classNames(clsPrefix, overlayClassName)} {...props} />
+        <AntdDropdown.Button
+            overlayClassName={classNames(clsPrefix, overlayClassName)}
+            rootClassName={classNames(clsPrefix, rootClassName)}
+            {...props}
+        />
     );
 };
 

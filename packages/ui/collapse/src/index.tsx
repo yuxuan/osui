@@ -2,7 +2,6 @@ import React, {useCallback} from 'react';
 import {Collapse as AntdCollapse} from 'antd';
 import {CollapseProps as AntdCollapseProps, CollapsePanelProps as AntdCollapsePanelProps} from 'antd/es/collapse';
 import {IconRightOutlined, IconDownOutlined} from '@osui/icons';
-import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import './index.less';
@@ -22,8 +21,6 @@ export interface CollapseInterface extends React.FC<CollapseProps> {
 }
 
 const Collapse: CollapseInterface = ({className, levelChild, ghost, expandIcon, ...restProps}) => {
-    const {brand} = useBrandContext();
-
     const defaultProps = {
         className: classNames(
             clsPrefix,
@@ -34,7 +31,7 @@ const Collapse: CollapseInterface = ({className, levelChild, ghost, expandIcon, 
         ),
         // osc主题时ghost默认为true
         // eslint-disable-next-line no-negated-condition
-        ghost: ghost ?? brand === 'osc',
+        ghost: ghost,
         ...restProps,
     };
 
