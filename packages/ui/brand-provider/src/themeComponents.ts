@@ -66,6 +66,7 @@ export const components: ThemeConfig['components'] = {
         colorTextDescription: '#5C5F66',
         marginXS: 10,
         controlHeightLG: 42,
+        colorFillContent: '#FFF',
     },
     Table: {
         colorFillAlter: '#F7F7F9',
@@ -85,5 +86,16 @@ export const components: ThemeConfig['components'] = {
     Menu: {
         colorItemTextHover: '#2468F2',
         colorItemBgHover: 'transparent',
+    },
+    Tag: {
+        lineHeight: 1.8,
+        colorFillQuaternary: '#F7F7F9'
+    },
+    Result: {
+        fontSizeHeading3: 24,
+        colorTextDescription: '#5C5F66',
+        marginXS: 0,
+        lineHeightHeading3: 1.8,
+        lineHeight: 1.6,
     },
 };

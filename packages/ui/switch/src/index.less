@@ -8,6 +8,11 @@
 
     .@{ant-prefix}-switch-handle {
         height: 16px;
+        width: 18px;
+
+        &::before {
+            border-radius: 9px;
+        }
     }
 
     &.@{ant-prefix}-switch {
@@ -78,5 +83,15 @@
 
     &.@{ant-prefix}-switch-small.osui-switch.@{ant-prefix}-switch-checked .@{ant-prefix}-switch-handle {
         left: ~'calc(100% - 12px - @{switch-padding})';
+    }
+
+    .@{ant-prefix}-switch-inner {
+        padding-inline-start: 25px;
+        line-height: 19px;
+    }
+
+    &.@{ant-prefix}-switch-checked .@{ant-prefix}-switch-inner {
+        padding-inline-end: 25px;
+        line-height: 21px;
     }
 }

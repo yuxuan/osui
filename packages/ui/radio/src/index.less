@@ -18,6 +18,12 @@
 
     .@{ant-radio}-checked .@{ant-radio}-inner {
         border-color: var(--theme-primary-color);
+        background-color: var(--radio-button-bg);
+
+        &::after {
+            background-color: var(--radio-dot-color);
+            transform: scale(0.5);
+        }
     }
 
     // 没选中时hover的效果
