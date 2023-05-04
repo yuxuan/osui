@@ -7,7 +7,6 @@ import {
     SliderSingleProps as AntdSliderSingleProps,
     SliderRangeProps as AntdSliderRangeProps,
 } from 'antd/es/slider';
-import {useBrandContext} from '@osui/brand-provider';
 import classNames from 'classnames';
 import './index.less';
 
@@ -19,12 +18,9 @@ export type SliderBaseProps = AntdSliderBaseProps;
 
 const Slider = React.forwardRef<unknown, AntdSliderSingleProps | AntdSliderRangeProps>(
     ({className, ...props}, ref: any) => {
-        const {brand} = useBrandContext();
-
         const innerClassName = classNames(
-            className,
             clsPrefix,
-            {[`${clsPrefix}-icloud`]: brand === 'icloud'}
+            className
         );
         return <AntdSlider ref={ref} className={innerClassName} {...props} />;
     }
