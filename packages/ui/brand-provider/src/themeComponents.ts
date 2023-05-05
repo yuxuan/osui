@@ -89,7 +89,7 @@ export const components: ThemeConfig['components'] = {
     },
     Tag: {
         lineHeight: 1.8,
-        colorFillQuaternary: '#F7F7F9'
+        colorFillQuaternary: '#F7F7F9',
     },
     Result: {
         fontSizeHeading3: 24,
@@ -97,5 +97,8 @@ export const components: ThemeConfig['components'] = {
         marginXS: 0,
         lineHeightHeading3: 1.8,
         lineHeight: 1.6,
+    },
+    Upload: {
+        colorFillAlter: '#fff',
     },
 };

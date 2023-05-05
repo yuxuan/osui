@@ -44,7 +44,6 @@ const OSUIUploadDragger = React.forwardRef(({className, dashedBorder, ...props}:
         className
     );
     return (
-        // @ts-expect-error 这里antd导出的dragger类型有问题
         <AntdUpload.Dragger ref={ref} className={innerClassNames} {...props} />
     );
 });

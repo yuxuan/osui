@@ -1,10 +1,8 @@
-import {addParameters} from '@storybook/react';
+import {addParameters, addDecorator} from '@storybook/react';
 import {DocsPage, DocsContainer} from '@storybook/addon-docs';
-import {
-    INITIAL_VIEWPORTS,
-  } from '@storybook/addon-viewport';
-// import '@osui/theme/dist/theme/vars.css';
+import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import '@osui/icloud-theme/dist/theme/vars.css';
+import BrandProvider from '@osui/brand-provider';
 import './global.css';
 
 addParameters({
@@ -18,3 +16,5 @@ addParameters({
         }
     },
 });
+
+addDecorator(storyFn => <div style={{padding: 30, background: '#fff'}}><BrandProvider>{storyFn()}</BrandProvider></div>);
