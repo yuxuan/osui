@@ -18,3 +18,5 @@ addParameters({
         }
     },
 });
+
+addDecorator(storyFn => <div style={{padding: 30, background: '#fff'}}>{storyFn()}</div>);

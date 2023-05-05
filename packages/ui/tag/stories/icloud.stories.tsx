@@ -7,6 +7,7 @@ import {PlusOutlined} from '@ant-design/icons';
 import {IconPlusOutlined} from '@osui/icons';
 import ClockCircleOutlined from '@ant-design/icons/ClockCircleOutlined';
 import styled from '@emotion/styled';
+import BrandProvider from '@osui/brand-provider';
 import Tag from '../src';
 
 export default {
@@ -15,7 +16,7 @@ export default {
 
 export const Demo = () => {
     return (
-        <>
+        <BrandProvider brand="icloud">
             {/* success */}
             <Divider orientation="left">基本</Divider>
             <Tag>标签</Tag>
@@ -70,7 +71,7 @@ export const Demo = () => {
             <p>禁用</p>
             <Tag outlined disabled>标签</Tag>
             <Tag solid disabled>标签</Tag>
-        </>
+        </BrandProvider>
     );
 };
 
