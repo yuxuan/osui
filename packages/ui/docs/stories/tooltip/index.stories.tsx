@@ -16,7 +16,7 @@ export const Demo = () => {
 
     return (
         <div className="demo">
-            <div style={{ marginLeft: buttonWidth, whiteSpace: 'nowrap', display: 'flex' }}>
+            <div style={{marginLeft: buttonWidth, whiteSpace: 'nowrap', display: 'flex'}}>
                 <Tooltip placement="topLeft" title={text}>
                     <Button>TL</Button>
                 </Tooltip>
@@ -29,7 +29,7 @@ export const Demo = () => {
                     <Button>TR</Button>
                 </Tooltip>
             </div>
-            <div style={{ width: buttonWidth, float: 'left' }}>
+            <div style={{width: buttonWidth, float: 'left'}}>
                 <Tooltip placement="leftTop" title={text}>
                     <Button>LT</Button>
                 </Tooltip>
@@ -42,7 +42,7 @@ export const Demo = () => {
                     <Button>LB</Button>
                 </Tooltip>
             </div>
-            <div style={{ width: buttonWidth, marginLeft: buttonWidth * 4 + 24 }}>
+            <div style={{width: buttonWidth, marginLeft: buttonWidth * 4 + 24}}>
                 <Tooltip placement="rightTop" title={text}>
                     <Button>RT</Button>
                 </Tooltip>
@@ -55,7 +55,7 @@ export const Demo = () => {
                     <Button>RB</Button>
                 </Tooltip>
             </div>
-            <div style={{ marginLeft: buttonWidth, clear: 'both', whiteSpace: 'nowrap', display: 'flex' }}>
+            <div style={{marginLeft: buttonWidth, clear: 'both', whiteSpace: 'nowrap', display: 'flex'}}>
                 <Tooltip placement="bottomLeft" title={text}>
                     <Button>BL</Button>
                 </Tooltip>
