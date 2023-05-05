@@ -1,17 +1,22 @@
 @osui-tree-class-prefix: osui-tree;
 
 .@{osui-tree-class-prefix} {
+    .@{ant-prefix}-tree-node-content-wrapper.@{ant-prefix}-tree-node-selected,
+    .@{ant-prefix}-tree-checkbox+span.@{ant-prefix}-tree-node-selected {
+        background-color: var(--tree-node-selected-bg) !important;
+    }
+
     .@{ant-prefix}-tree-node-selected {
         .@{ant-prefix}-tree-title {
             color: var(--theme-primary-color);
         }
 
         &:hover {
-            background: var(--color-brand-1);
+            background-color: var(--color-brand-1) !important;
         }
 
         &:active {
-            background: var(--color-brand-2);
+            background-color: var(--color-brand-2) !important;
         }
     }
 
@@ -75,7 +80,7 @@
     .@{ant-prefix}-tree-node-content-wrapper {
         &:not(.@{ant-prefix}-tree-node-selected) {
             &:active {
-                background-color: var(--color-gray-4);
+                background-color: var(--color-brand-2);
             }
         }
     }
