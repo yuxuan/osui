@@ -92,5 +92,6 @@
         "classname": "^0.0.0",
         "classnames": "^2.3.1"
     },
-    "packageManager": "pnpm@7.14.2"
+    "packageManager": "pnpm@7.14.2",
+    "gitHead": "9a9d1815ebc63817063dec6f171668e0de0e8915"
 }

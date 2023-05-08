@@ -92,5 +92,6 @@
     "dependencies": {
         "@osui/empty": "^3.0.0-alpha.0"
     },
-    "packageManager": "pnpm@7.14.2"
+    "packageManager": "pnpm@7.14.2",
+    "gitHead": "9a9d1815ebc63817063dec6f171668e0de0e8915"
 }
