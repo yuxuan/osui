@@ -108,7 +108,7 @@ importers:
     dependencies:
       classnames: 2.3.2
     devDependencies:
-      '@osui/icons': link:../osui-icons
+      '@osui/icons': 3.0.0-alpha.0
       '@swc/cli': 0.1.62_@swc+core@1.3.56
       '@swc/core': 1.3.56
       eslint: 8.40.0
@@ -172,7 +172,7 @@ importers:
   packages/ui-theme/icloud-theme:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -222,8 +222,8 @@ importers:
   packages/ui-theme/osui-theme:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^0.9.0
       '@reskript/cli-lint': ^0.9.9
       '@reskript/config-babel': ^0.9.0
@@ -264,11 +264,11 @@ importers:
   packages/ui/affix:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/gap': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/gap': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -364,9 +364,9 @@ importers:
       '@babel/cli': ^7.10.5
       '@huse/boolean': ^1.1.2
       '@huse/timeout': ^1.1.1
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -467,9 +467,9 @@ importers:
   packages/ui/anchor:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -567,12 +567,12 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/derived-state': ^1.1.1
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/highlight-text': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/markdown': ^3.0.0-alpha.0
-      '@osui/select': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/highlight-text': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/markdown': ^3.0.0
+      '@osui/select': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -676,9 +676,9 @@ importers:
     specifiers:
       '@ant-design/icons': ^4.7.0
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/tooltip': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/tooltip': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -775,9 +775,9 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@babel/core': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -873,11 +873,11 @@ importers:
   packages/ui/badge:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/space': ^3.0.0-alpha.0
-      '@osui/tooltip': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/space': ^3.0.0
+      '@osui/tooltip': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -976,11 +976,11 @@ importers:
   packages/ui/brand-provider:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/collapse': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/empty': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/collapse': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/empty': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1075,12 +1075,12 @@ importers:
   packages/ui/breadcrumb:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/markdown': ^3.0.0-alpha.0
-      '@osui/menu': ^3.0.0-alpha.0
-      '@osui/text-overflow-tooltip': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/markdown': ^3.0.0
+      '@osui/menu': ^3.0.0
+      '@osui/text-overflow-tooltip': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1176,14 +1176,14 @@ importers:
   packages/ui/button:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/flex-centered': ^3.0.0-alpha.0
-      '@osui/gap': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/markdown': ^3.0.0-alpha.0
-      '@osui/space': ^3.0.0-alpha.0
-      '@osui/tooltip': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/flex-centered': ^3.0.0
+      '@osui/gap': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/markdown': ^3.0.0
+      '@osui/space': ^3.0.0
+      '@osui/tooltip': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1283,8 +1283,8 @@ importers:
   packages/ui/calendar:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1380,13 +1380,13 @@ importers:
   packages/ui/card:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/col': ^3.0.0-alpha.0
-      '@osui/flex-centered': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/markdown': ^3.0.0-alpha.0
-      '@osui/row': ^3.0.0-alpha.0
-      '@osui/table': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/col': ^3.0.0
+      '@osui/flex-centered': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/markdown': ^3.0.0
+      '@osui/row': ^3.0.0
+      '@osui/table': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1487,8 +1487,8 @@ importers:
   packages/ui/carousel:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1577,8 +1577,8 @@ importers:
   packages/ui/cascader:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1674,8 +1674,8 @@ importers:
   packages/ui/checkbox:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1767,8 +1767,8 @@ importers:
   packages/ui/col:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1858,9 +1858,9 @@ importers:
     specifiers:
       '@ant-design/icons': ^4.7.0
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/select': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/select': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -1958,8 +1958,8 @@ importers:
   packages/ui/config-provider:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2048,9 +2048,9 @@ importers:
   packages/ui/date-picker:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/space': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/space': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2149,8 +2149,8 @@ importers:
   packages/ui/descriptions:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2239,8 +2239,8 @@ importers:
   packages/ui/divider:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2576,11 +2576,11 @@ importers:
   packages/ui/drawer:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/space': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/space': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2675,12 +2675,12 @@ importers:
   packages/ui/dropdown:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/flex-centered': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/menu': ^3.0.0-alpha.0
-      '@osui/space': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/flex-centered': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/menu': ^3.0.0
+      '@osui/space': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2780,9 +2780,9 @@ importers:
   packages/ui/empty:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2875,11 +2875,11 @@ importers:
   packages/ui/flex-centered:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/gap': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/gap': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -2972,17 +2972,17 @@ importers:
     specifiers:
       '@ant-design/icons': ^4.7.0
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/checkbox': ^3.0.0-alpha.0
-      '@osui/date-picker': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/input': ^3.0.0-alpha.0
-      '@osui/input-number': ^3.0.0-alpha.0
-      '@osui/radio': ^3.0.0-alpha.0
-      '@osui/select': ^3.0.0-alpha.0
-      '@osui/switch': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/checkbox': ^3.0.0
+      '@osui/date-picker': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/input': ^3.0.0
+      '@osui/input-number': ^3.0.0
+      '@osui/radio': ^3.0.0
+      '@osui/select': ^3.0.0
+      '@osui/switch': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3084,9 +3084,9 @@ importers:
   packages/ui/gap:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3176,10 +3176,10 @@ importers:
   packages/ui/grid:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/col': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/row': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/col': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/row': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3271,9 +3271,9 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/input-value': ^1.1.1
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/input': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/input': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3367,8 +3367,8 @@ importers:
   packages/ui/image:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3458,18 +3458,18 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/derived-state': ^1.1.1
-      '@osui/auto-complete': ^3.0.0-alpha.0
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/cascader': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/flex-centered': ^3.0.0-alpha.0
-      '@osui/form': ^3.0.0-alpha.0
-      '@osui/gap': ^3.0.0-alpha.0
-      '@osui/icloud-theme': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/select': ^3.0.0-alpha.0
-      '@osui/version': ^3.0.0-alpha.0
+      '@osui/auto-complete': ^3.0.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/cascader': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/flex-centered': ^3.0.0
+      '@osui/form': ^3.0.0
+      '@osui/gap': ^3.0.0
+      '@osui/icloud-theme': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/select': ^3.0.0
+      '@osui/version': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3581,12 +3581,12 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/derived-state': ^1.1.1
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/flex-centered': ^3.0.0-alpha.0
-      '@osui/form': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/input': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/flex-centered': ^3.0.0
+      '@osui/form': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/input': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3684,11 +3684,11 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/derived-state': ^1.1.1
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/markdown': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/markdown': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3790,8 +3790,8 @@ importers:
   packages/ui/layout:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3880,11 +3880,11 @@ importers:
   packages/ui/list:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/avatar': ^3.0.0-alpha.0
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icloud-theme': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/spin': ^3.0.0-alpha.0
+      '@osui/avatar': ^3.0.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icloud-theme': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/spin': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -3981,8 +3981,8 @@ importers:
   packages/ui/markdown:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4084,8 +4084,8 @@ importers:
   packages/ui/mentions:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4175,8 +4175,8 @@ importers:
     specifiers:
       '@ant-design/icons': ^4.7.0
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4278,11 +4278,11 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/timeout': ^1.1.1
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/config-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/markdown': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/config-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/markdown': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4382,11 +4382,11 @@ importers:
   packages/ui/modal:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/config-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/space': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/config-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/space': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4481,9 +4481,9 @@ importers:
   packages/ui/notification:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4573,9 +4573,9 @@ importers:
   packages/ui/pagination:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4668,10 +4668,10 @@ importers:
   packages/ui/popconfirm:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/message': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/message': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4762,14 +4762,14 @@ importers:
   packages/ui/popover:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/form': ^3.0.0-alpha.0
-      '@osui/gap': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/input': ^3.0.0-alpha.0
-      '@osui/markdown': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/form': ^3.0.0
+      '@osui/gap': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/input': ^3.0.0
+      '@osui/markdown': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4867,8 +4867,8 @@ importers:
   packages/ui/progress:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -4961,10 +4961,10 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/derived-state': ^1.1.1
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/input': ^3.0.0-alpha.0
-      '@osui/select': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/input': ^3.0.0
+      '@osui/select': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5065,8 +5065,8 @@ importers:
   packages/ui/radio:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5158,8 +5158,8 @@ importers:
   packages/ui/rate:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5255,8 +5255,8 @@ importers:
   packages/ui/result:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5345,8 +5345,8 @@ importers:
   packages/ui/row:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5435,8 +5435,8 @@ importers:
   packages/ui/segmented:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5526,12 +5526,12 @@ importers:
     specifiers:
       '@babel/cli': ^7.10.5
       '@huse/derived-state': ^1.1.1
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/popover': ^3.0.0-alpha.0
-      '@osui/space': ^3.0.0-alpha.0
-      '@osui/spin': ^3.0.0-alpha.0
-      '@osui/tag': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/popover': ^3.0.0
+      '@osui/space': ^3.0.0
+      '@osui/spin': ^3.0.0
+      '@osui/tag': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5638,8 +5638,8 @@ importers:
   packages/ui/skeleton:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5728,11 +5728,11 @@ importers:
   packages/ui/slider:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/gap': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/input-number': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/gap': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/input-number': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5827,9 +5827,9 @@ importers:
   packages/ui/space:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -5922,8 +5922,8 @@ importers:
   packages/ui/spin:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6015,11 +6015,11 @@ importers:
   packages/ui/statistic:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/col': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/row': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/col': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/row': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6111,11 +6111,11 @@ importers:
   packages/ui/steps:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/icloud-theme': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/space': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/icloud-theme': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/space': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6210,8 +6210,8 @@ importers:
   packages/ui/switch:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6304,15 +6304,15 @@ importers:
     specifiers:
       '@ant-design/icons': ^4.7.0
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/form': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/pagination': ^3.0.0-alpha.0
-      '@osui/radio': ^3.0.0-alpha.0
-      '@osui/space': ^3.0.0-alpha.0
-      '@osui/spin': ^3.0.0-alpha.0
-      '@osui/switch': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/form': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/pagination': ^3.0.0
+      '@osui/radio': ^3.0.0
+      '@osui/space': ^3.0.0
+      '@osui/spin': ^3.0.0
+      '@osui/switch': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6424,14 +6424,14 @@ importers:
   packages/ui/tabs:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/dropdown': ^3.0.0-alpha.0
-      '@osui/flex-centered': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/menu': ^3.0.0-alpha.0
-      '@osui/text-overflow-tooltip': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/dropdown': ^3.0.0
+      '@osui/flex-centered': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/menu': ^3.0.0
+      '@osui/text-overflow-tooltip': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6537,11 +6537,11 @@ importers:
       '@emotion/babel-preset-css-prop': ^11.2.0
       '@emotion/react': ^11.8.1
       '@emotion/styled': ^11.8.1
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/input': ^3.0.0-alpha.0
-      '@osui/tooltip': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/input': ^3.0.0
+      '@osui/tooltip': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6648,10 +6648,10 @@ importers:
   packages/ui/text-overflow-tooltip:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/tooltip': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/tooltip': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6743,11 +6743,11 @@ importers:
   packages/ui/theme-provider:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/dropdown': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/menu': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/dropdown': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/menu': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6844,10 +6844,10 @@ importers:
   packages/ui/time-picker:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/form': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/form': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -6945,8 +6945,8 @@ importers:
   packages/ui/timeline:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -7038,10 +7038,10 @@ importers:
   packages/ui/tooltip:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/gap': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/gap': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -7135,8 +7135,8 @@ importers:
   packages/ui/transfer:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -7225,9 +7225,9 @@ importers:
   packages/ui/tree:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/input': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/input': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -7320,8 +7320,8 @@ importers:
   packages/ui/tree-select:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -7419,8 +7419,8 @@ importers:
   packages/ui/typography:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -7512,80 +7512,80 @@ importers:
   packages/ui/ui:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/affix': ^3.0.0-alpha.0
-      '@osui/alert': ^3.0.0-alpha.0
-      '@osui/anchor': ^3.0.0-alpha.0
-      '@osui/auto-complete': ^3.0.0-alpha.0
-      '@osui/avatar': ^3.0.0-alpha.0
-      '@osui/back-top': ^3.0.0-alpha.0
-      '@osui/badge': ^3.0.0-alpha.0
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/breadcrumb': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/calendar': ^3.0.0-alpha.0
-      '@osui/card': ^3.0.0-alpha.0
-      '@osui/carousel': ^3.0.0-alpha.0
-      '@osui/cascader': ^3.0.0-alpha.0
-      '@osui/checkbox': ^3.0.0-alpha.0
-      '@osui/col': ^3.0.0-alpha.0
-      '@osui/collapse': ^3.0.0-alpha.0
-      '@osui/config-provider': ^3.0.0-alpha.0
-      '@osui/date-picker': ^3.0.0-alpha.0
-      '@osui/descriptions': ^3.0.0-alpha.0
-      '@osui/divider': ^3.0.0-alpha.0
-      '@osui/drawer': ^3.0.0-alpha.0
-      '@osui/dropdown': ^3.0.0-alpha.0
-      '@osui/empty': ^3.0.0-alpha.0
-      '@osui/flex-centered': ^3.0.0-alpha.0
-      '@osui/form': ^3.0.0-alpha.0
-      '@osui/gap': ^3.0.0-alpha.0
-      '@osui/grid': ^3.0.0-alpha.0
-      '@osui/highlight-text': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/image': ^3.0.0-alpha.0
-      '@osui/input': ^3.0.0-alpha.0
-      '@osui/input-number': ^3.0.0-alpha.0
-      '@osui/joyride': ^3.0.0-alpha.0
-      '@osui/layout': ^3.0.0-alpha.0
-      '@osui/list': ^3.0.0-alpha.0
-      '@osui/markdown': ^3.0.0-alpha.0
-      '@osui/mentions': ^3.0.0-alpha.0
-      '@osui/menu': ^3.0.0-alpha.0
-      '@osui/message': ^3.0.0-alpha.0
-      '@osui/modal': ^3.0.0-alpha.0
-      '@osui/notification': ^3.0.0-alpha.0
-      '@osui/pagination': ^3.0.0-alpha.0
-      '@osui/popconfirm': ^3.0.0-alpha.0
-      '@osui/popover': ^3.0.0-alpha.0
-      '@osui/progress': ^3.0.0-alpha.0
-      '@osui/quick-edit': ^3.0.0-alpha.0
-      '@osui/radio': ^3.0.0-alpha.0
-      '@osui/rate': ^3.0.0-alpha.0
-      '@osui/result': ^3.0.0-alpha.0
-      '@osui/row': ^3.0.0-alpha.0
-      '@osui/segmented': ^3.0.0-alpha.0
-      '@osui/select': ^3.0.0-alpha.0
-      '@osui/skeleton': ^3.0.0-alpha.0
-      '@osui/slider': ^3.0.0-alpha.0
-      '@osui/space': ^3.0.0-alpha.0
-      '@osui/spin': ^3.0.0-alpha.0
-      '@osui/statistic': ^3.0.0-alpha.0
-      '@osui/steps': ^3.0.0-alpha.0
-      '@osui/switch': ^3.0.0-alpha.0
-      '@osui/table': ^3.0.0-alpha.0
-      '@osui/tabs': ^3.0.0-alpha.0
-      '@osui/tag': ^3.0.0-alpha.0
-      '@osui/text-overflow-tooltip': ^3.0.0-alpha.0
-      '@osui/theme-provider': ^3.0.0-alpha.0
-      '@osui/time-picker': ^3.0.0-alpha.0
-      '@osui/timeline': ^3.0.0-alpha.0
-      '@osui/tooltip': ^3.0.0-alpha.0
-      '@osui/transfer': ^3.0.0-alpha.0
-      '@osui/tree': ^3.0.0-alpha.0
-      '@osui/tree-select': ^3.0.0-alpha.0
-      '@osui/typography': ^3.0.0-alpha.0
-      '@osui/upload': ^3.0.0-alpha.0
-      '@osui/version': ^3.0.0-alpha.0
+      '@osui/affix': ^3.0.0
+      '@osui/alert': ^3.0.0
+      '@osui/anchor': ^3.0.0
+      '@osui/auto-complete': ^3.0.0
+      '@osui/avatar': ^3.0.0
+      '@osui/back-top': ^3.0.0
+      '@osui/badge': ^3.0.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/breadcrumb': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/calendar': ^3.0.0
+      '@osui/card': ^3.0.0
+      '@osui/carousel': ^3.0.0
+      '@osui/cascader': ^3.0.0
+      '@osui/checkbox': ^3.0.0
+      '@osui/col': ^3.0.0
+      '@osui/collapse': ^3.0.0
+      '@osui/config-provider': ^3.0.0
+      '@osui/date-picker': ^3.0.0
+      '@osui/descriptions': ^3.0.0
+      '@osui/divider': ^3.0.0
+      '@osui/drawer': ^3.0.0
+      '@osui/dropdown': ^3.0.0
+      '@osui/empty': ^3.0.0
+      '@osui/flex-centered': ^3.0.0
+      '@osui/form': ^3.0.0
+      '@osui/gap': ^3.0.0
+      '@osui/grid': ^3.0.0
+      '@osui/highlight-text': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/image': ^3.0.0
+      '@osui/input': ^3.0.0
+      '@osui/input-number': ^3.0.0
+      '@osui/joyride': ^3.0.0
+      '@osui/layout': ^3.0.0
+      '@osui/list': ^3.0.0
+      '@osui/markdown': ^3.0.0
+      '@osui/mentions': ^3.0.0
+      '@osui/menu': ^3.0.0
+      '@osui/message': ^3.0.0
+      '@osui/modal': ^3.0.0
+      '@osui/notification': ^3.0.0
+      '@osui/pagination': ^3.0.0
+      '@osui/popconfirm': ^3.0.0
+      '@osui/popover': ^3.0.0
+      '@osui/progress': ^3.0.0
+      '@osui/quick-edit': ^3.0.0
+      '@osui/radio': ^3.0.0
+      '@osui/rate': ^3.0.0
+      '@osui/result': ^3.0.0
+      '@osui/row': ^3.0.0
+      '@osui/segmented': ^3.0.0
+      '@osui/select': ^3.0.0
+      '@osui/skeleton': ^3.0.0
+      '@osui/slider': ^3.0.0
+      '@osui/space': ^3.0.0
+      '@osui/spin': ^3.0.0
+      '@osui/statistic': ^3.0.0
+      '@osui/steps': ^3.0.0
+      '@osui/switch': ^3.0.0
+      '@osui/table': ^3.0.0
+      '@osui/tabs': ^3.0.0
+      '@osui/tag': ^3.0.0
+      '@osui/text-overflow-tooltip': ^3.0.0
+      '@osui/theme-provider': ^3.0.0
+      '@osui/time-picker': ^3.0.0
+      '@osui/timeline': ^3.0.0
+      '@osui/tooltip': ^3.0.0
+      '@osui/transfer': ^3.0.0
+      '@osui/tree': ^3.0.0
+      '@osui/tree-select': ^3.0.0
+      '@osui/typography': ^3.0.0
+      '@osui/upload': ^3.0.0
+      '@osui/version': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -7713,14 +7713,14 @@ importers:
       '@ant-design/icons': ^4.7.0
       '@babel/cli': ^7.10.5
       '@huse/effect-ref': ^1.1.1
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/button': ^3.0.0-alpha.0
-      '@osui/gap': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
-      '@osui/markdown': ^3.0.0-alpha.0
-      '@osui/message': ^3.0.0-alpha.0
-      '@osui/modal': ^3.0.0-alpha.0
-      '@osui/progress': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/button': ^3.0.0
+      '@osui/gap': ^3.0.0
+      '@osui/icons': ^3.0.0
+      '@osui/markdown': ^3.0.0
+      '@osui/message': ^3.0.0
+      '@osui/modal': ^3.0.0
+      '@osui/progress': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -7826,8 +7826,8 @@ importers:
   packages/ui/version:
     specifiers:
       '@babel/cli': ^7.10.5
-      '@osui/brand-provider': ^3.0.0-alpha.0
-      '@osui/icons': ^3.0.0-alpha.0
+      '@osui/brand-provider': ^3.0.0
+      '@osui/icons': ^3.0.0
       '@reskript/cli': ^3.0.0
       '@reskript/cli-lint': ^3.0.0
       '@reskript/config-babel': ^3.0.0
@@ -12933,6 +12933,14 @@ packages:
       classnames: 2.3.2
     dev: true
 
+  /@osui/icons/3.0.0-alpha.0:
+    resolution: {integrity: sha512-FfC0xod9QGXHzyOiqK7j2W2nECqb15D4GjLCeJE6657/3j1FEXPUEvFPZuKeYmfliwRri0/G1bIgCnNdn+fGgA==}
+    peerDependencies:
+      react: '>=17'
+    dependencies:
+      classnames: 2.3.2
+    dev: true
+
   /@parcel/watcher/2.0.4:
     resolution: {integrity: sha512-cTDi+FUDBIUOBKEtj+nhiJ71AZVlkAsQFuGQTun5tV9mwQBQgZvhCzG+URPQc8myeN32yRVZEfVAPCs1RW+Jvg==}
     engines: {node: '>= 10.0.0'}
@@ -13585,7 +13593,7 @@ packages:
       lodash: 4.17.21
       react-refresh: 0.11.0
       resolve: 1.22.2
-      styled-components: 5.3.10_sfoxds7t5ydpegc3knd667wn6m
+      styled-components: 5.3.10_fane7jikarojcev26y27hpbhu4
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -18848,7 +18856,7 @@ packages:
       loader-utils: 2.0.4
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.82.0_@swc+core@1.3.56
+      webpack: 5.82.0
     dev: true
 
   /babel-merge/3.0.0:
@@ -19658,7 +19666,7 @@ packages:
       minipass-pipeline: 1.2.4
       mkdirp: 1.0.4
       p-map: 4.0.0
-      promise-inflight: 1.0.1
+      promise-inflight: 1.0.1_bluebird@3.7.2
       rimraf: 3.0.2
       ssri: 8.0.1
       tar: 6.1.14
@@ -23549,7 +23557,7 @@ packages:
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.1.2
-      webpack: 5.82.0_@swc+core@1.3.56
+      webpack: 5.82.0
     dev: true
 
   /file-system-cache/1.1.0:
@@ -35387,7 +35395,7 @@ packages:
       loader-utils: 2.0.4
       schema-utils: 2.7.1
       tslib: 2.5.0
-      webpack: 5.82.0_@swc+core@1.3.56
+      webpack: 5.82.0
     dev: true
 
   /style-search/0.1.0:
@@ -37223,7 +37231,7 @@ packages:
       loader-utils: 2.0.4
       mime-types: 2.1.35
       schema-utils: 3.1.2
-      webpack: 5.82.0_@swc+core@1.3.56
+      webpack: 5.82.0
     dev: true
 
   /url-loader/4.1.1_webpack@4.46.0:

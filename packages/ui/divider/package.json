@@ -1,6 +1,6 @@
 {
     "name": "@osui/divider",
-    "version": "3.0.0-alpha.0",
+    "version": "3.0.0",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -27,8 +27,8 @@
     ],
     "devDependencies": {
         "@babel/cli": "^7.10.5",
-        "@osui/brand-provider": "^3.0.0-alpha.0",
-        "@osui/icons": "^3.0.0-alpha.0",
+        "@osui/brand-provider": "^3.0.0",
+        "@osui/icons": "^3.0.0",
         "@reskript/cli": "^3.0.0",
         "@reskript/cli-lint": "^3.0.0",
         "@reskript/config-babel": "^3.0.0",
@@ -86,5 +86,5 @@
         "registry": "https://registry.npmjs.com"
     },
     "packageManager": "pnpm@7.14.2",
-    "gitHead": "9a9d1815ebc63817063dec6f171668e0de0e8915"
+    "gitHead": "10818c8b95cc9d33c7ff1e4a7e15391b9077e52d"
 }

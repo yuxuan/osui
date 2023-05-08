@@ -1,6 +1,6 @@
 {
   "name": "@osui/theme",
-  "version": "3.0.0-alpha.0",
+  "version": "3.0.0",
   "description": "",
   "main": "dist/theme/index.js",
   "module": "dist/theme/index.js",
@@ -21,8 +21,8 @@
   ],
   "devDependencies": {
     "@babel/cli": "^7.10.5",
-    "@osui/brand-provider": "^3.0.0-alpha.0",
-    "@osui/icons": "^3.0.0-alpha.0",
+    "@osui/brand-provider": "^3.0.0",
+    "@osui/icons": "^3.0.0",
     "@reskript/cli": "^0.9.0",
     "@reskript/cli-lint": "^0.9.9",
     "@reskript/config-babel": "^0.9.0",
@@ -53,5 +53,5 @@
     "access": "public",
     "registry": "https://registry.npmjs.com"
   },
-  "gitHead": "9a9d1815ebc63817063dec6f171668e0de0e8915"
+  "gitHead": "10818c8b95cc9d33c7ff1e4a7e15391b9077e52d"
 }
