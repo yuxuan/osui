@@ -24,7 +24,7 @@
 
     &.@{ant-prefix}-alert-with-description {
         // with-description时，不能display：flex
-        display: block;
+        // display: block;
 
         .@{ant-prefix}-alert-icon {
             // 由于alert-with-description的icon现在是小的，所以有description时，距离上面要和.@{ant-prefix}-alert-icon一样
@@ -38,7 +38,10 @@
 
         .@{ant-prefix}-alert-close-icon {
             // 由于alert-with-description的icon现在是小的，所以有description时，距离上面要和.@{ant-prefix}-alert-icon一样
-            top: 11px;
+            // top: 11px;
+            align-self: flex-start;
+            // 和 左侧 icon 水平对齐
+            margin-block-start: 4px;
         }
     }
 
