@@ -9,7 +9,7 @@ const clsPrefix = 'osui-progress';
 
 export type ProgressProps = AntdProgressProps;
 
-const Progress: React.FC<ProgressProps> = ({ className, strokeWidth, strokeLinecap, ...props }) => {
+const Progress: React.FC<ProgressProps> = ({className, strokeWidth, strokeLinecap, ...props}) => {
     const {brand} = useBrandContext();
     const innerStrokeWidth = strokeWidth ?? (brand === 'icloud' ? 8 : strokeWidth);
     const innerStrokeLinecap = strokeLinecap ?? (brand === 'icloud' ? 'square' : 'round');

@@ -2,6 +2,7 @@
 import React from 'react';
 import Col from '@osui/col';
 import Row from '@osui/row';
+import BrandProvider from '@osui/brand-provider';
 
 export default {
     title: '布局/Grid',
@@ -22,7 +23,7 @@ export const Demo = () => {
     };
 
     return (
-        <>
+        <BrandProvider>
             <Row style={style}>
                 <Col span={24} style={bgLighter}>col</Col>
             </Row>
@@ -44,7 +45,7 @@ export const Demo = () => {
                 <Col span={6} style={bgLighter}>col-6</Col>
                 <Col span={6} style={bgLight}>col-6</Col>
             </Row>
-        </>
+        </BrandProvider>
     );
 };
 

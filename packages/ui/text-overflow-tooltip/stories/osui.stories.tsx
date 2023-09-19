@@ -1,5 +1,6 @@
 import React from 'react';
 import Divider from '@osui/divider';
+import BrandProvider from '@osui/brand-provider';
 import TextOverflowTooltip from '../src';
 
 export default {
@@ -8,7 +9,7 @@ export default {
 
 export const Demo = () => {
     return (
-        <>
+        <BrandProvider>
             <Divider orientation="left">当内容超长时，展示Tooltip</Divider>
             <p style={{color: 'red'}}>注意：Tooltip内只能是字符串（string），不能有其他内容，请查看Demo</p>
             <p style={{color: 'red'}}>需传入width或maxWidth属性</p>
@@ -30,6 +31,6 @@ export const Demo = () => {
             <TextOverflowTooltip width={100} title="Click me" trigger="click">
                 Click me
             </TextOverflowTooltip>
-        </>
+        </BrandProvider>
     );
 };

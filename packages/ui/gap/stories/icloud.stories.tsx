@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Button from '@osui/button';
+import BrandProvider from '@osui/brand-provider';
 import Gap from '../src';
 
 export default {
@@ -10,7 +11,7 @@ export default {
 
 export const Demo = () => {
     return (
-        <>
+        <BrandProvider>
             <div style={{display: 'flex'}}>
                 <Button>确认</Button>
                 <Gap orientation="horizontal" factor={2} />
@@ -22,6 +23,6 @@ export const Demo = () => {
                 <Gap.FlexFit />
                 <Button>取消</Button>
             </div>
-        </>
+        </BrandProvider>
     );
 };

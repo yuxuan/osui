@@ -125,6 +125,9 @@
     .@{ant-prefix}-select-selection-item {
         border: 1px solid var(--theme-disabled-bg);
         border-radius: var(--border-radius-2);
+        background: var(--select-selection-item-bg);
+        margin-top: 3px;
+        margin-bottom: 3px;
     }
 
     // disabled状态
@@ -135,18 +138,12 @@
         border: 1px solid var(--select-multiple-item-disabled-bg);
     }
 
-    &.@{osui-select-class-prefix}.@{ant-prefix}-select.@{ant-prefix}-select-focused .@{ant-prefix}-select-selector{
+    &.@{osui-select-class-prefix}.@{ant-prefix}-select.@{ant-prefix}-select-focused .@{ant-prefix}-select-selector {
         border-color: var(--primary-color-hover);
     }
 
-    .@{ant-prefix}-select-selection-item {
-        background: var(--select-selection-item-bg);
-        margin-top: 3px;
-        margin-bottom: 3px;
-    }
-
     .@{ant-prefix}-select-selector {
-        padding: 2px 24px 2px 6px
+        padding: 2px 24px 2px 6px;
     }
 }
 
@@ -202,12 +199,12 @@
 .@{osui-select-class-prefix}-dropdown {
     padding: 4px 0;
 
-    .@{ant-prefix}-select-item-option-selected:not(.@{ant-prefix}-select-item-option-disabled){
+    .@{ant-prefix}-select-item-option-selected:not(.@{ant-prefix}-select-item-option-disabled) {
         background-color: var(--select-item-selected-bg);
         color: var(--select-item-selected-color);
     }
 
-    .@{ant-prefix}-select-item-option-active:not(.@{ant-prefix}-select-item-option-disabled){
+    .@{ant-prefix}-select-item-option-active:not(.@{ant-prefix}-select-item-option-disabled) {
         &:hover {
             background-color: var(--select-item-active-bg);
         }
@@ -224,7 +221,7 @@
     }
 }
 
-.@{ant-prefix}-select-multiple  {
+.@{ant-prefix}-select-multiple {
     .@{ant-prefix}-select-selection-item {
         line-height: 18px;
         height: 20px;

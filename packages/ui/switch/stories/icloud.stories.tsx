@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import { Space } from 'antd';
-import { IconCheckOutlined, IconCloseOutlined } from '@osui/icons';
+import {Space} from 'antd';
+import {IconCheckOutlined, IconCloseOutlined} from '@osui/icons';
 import BrandProvider from '@osui/brand-provider';
 import Switch from '../src';
 
@@ -47,11 +47,11 @@ export const Demo = () => {
 
 export const Size = () => {
     return (
-        <>
+        <BrandProvider>
             <Switch defaultChecked />
             <br />
             <Switch size="small" defaultChecked />
-        </>
+        </BrandProvider>
     );
 };
 

@@ -3,6 +3,7 @@ import React from 'react';
 import Table from '@osui/table';
 import FlexCentered from '@osui/flex-centered';
 import {IconRightOutlined} from '@osui/icons';
+import BrandProvider from '@osui/brand-provider';
 import Markdown from '@osui/markdown';
 import Row from '@osui/row';
 import Col from '@osui/col';
@@ -27,7 +28,7 @@ export const Demo = () => {
     const Grid = ({children}) => (<div style={gridStyle}>{children}</div>);
     const GrayBox = () => (<div style={grayboxStyle} />);
     return (
-        <>
+        <BrandProvider>
             <h2>自适应卡片</h2>
             <Grid>
                 <Card title="今日流量命中" compact><GrayBox /></Card>
@@ -46,7 +47,7 @@ export const Demo = () => {
                     <GrayBox />
                 </Grid>
             </Card>
-        </>
+        </BrandProvider>
 
     );
 };
@@ -116,7 +117,7 @@ export const Demo1 = () => {
         );
     };
     return (
-        <>
+        <BrandProvider>
             <p>下面demo是compact模式</p>
             <Row gutter={20}>
                 <Col span={12}>
@@ -148,20 +149,20 @@ export const Demo1 = () => {
                     </Card>
                 </Col>
             </Row>
-        </>
+        </BrandProvider>
     );
 };
 
 export const Demo3 = () => {
     return (
-        <>
+        <BrandProvider>
             <h2>其它样式</h2>
             <Card title="卡片标题" extra={<a>更多</a>}>
                 <p>内容一</p>
                 <p>内容二</p>
                 <p>内容三</p>
             </Card>
-        </>
+        </BrandProvider>
     );
 };
 

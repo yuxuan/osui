@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import BrandProvider from '@osui/brand-provider';
 import Descriptions from '../src';
 
 export default {
@@ -9,7 +10,7 @@ export default {
 
 export const Demo = () => {
     return (
-        <>
+        <BrandProvider>
             <p>规范用法见业务组件库icloud-ui Card组件</p>
             <p></p>
             <p></p>
@@ -23,7 +24,7 @@ export const Demo = () => {
                     No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China
                 </Descriptions.Item>
             </Descriptions>
-        </>
+        </BrandProvider>
     );
 };
 

@@ -36,7 +36,7 @@ function Table<RecordType extends Record<string, any>>(
     let locale = {
         ...icloudLocale,
     };
-    let showQuickJumper: false | { goButton: object | null } | undefined = false;
+    let showQuickJumper: false | { goButton: Record<string, any> | null } | undefined = false;
     if (pagination) {
         locale = {
             ...locale,

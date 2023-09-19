@@ -4,6 +4,7 @@ export const components: ThemeConfig['components'] = {
     Button: {
         paddingContentHorizontal: 12,
         borderRadiusSM: 4,
+        marginXS: 4,
     },
     Divider: {
         colorSplit: 'rgba(0, 0, 0, 0.06)',
@@ -100,5 +101,12 @@ export const components: ThemeConfig['components'] = {
     },
     Upload: {
         colorFillAlter: '#fff',
+    },
+    Avatar: {
+        controlHeightSM: 21,
+        // fontSize: 12,
+    },
+    Checkbox: {
+        marginXS: 0,
     },
 };

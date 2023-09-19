@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import BrandProvider from '@osui/brand-provider';
 import Mentions from '../src';
 
 export default {
@@ -20,7 +21,7 @@ export const Demo = () => {
     }
 
     return (
-        <>
+        <BrandProvider>
             <p>见业务组件库icloud-ui的用户选择器</p>
             <p></p>
             <p></p>
@@ -35,7 +36,7 @@ export const Demo = () => {
                 <Option value="zombieJ">zombieJ</Option>
                 <Option value="yesmeck">yesmeck</Option>
             </Mentions>
-        </>
+        </BrandProvider>
     );
 };
 

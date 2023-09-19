@@ -13,6 +13,7 @@
     "scripts": {
         "lint": "pnpm workspaces run lint",
         "build": "lerna run --stream --sort build && pnpm --filter @osui/ui build-all",
+        "lint:fix": "lerna run lint -- --fix",
         "clean": "lerna run clean",
         "storybook": "start-storybook -p 8777 -s public",
         "version": "lerna version --conventional-commits --no-push",
@@ -44,6 +45,7 @@
         "@types/css": "^0.0.33",
         "@types/less": "^3.0.3",
         "@types/react": "17.0.53",
+        "@typescript-eslint/parser": "^6.7.2",
         "commitizen": "^4.2.5",
         "css": "^3.0.0",
         "cz-conventional-changelog": "^3.3.0",

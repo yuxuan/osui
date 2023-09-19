@@ -39,7 +39,7 @@ export const Demo = () => {
     };
 
     return (
-        <>
+        <BrandProvider>
             {version}
             <strong>注意: BrandProvider应该是App级别的，不是组件级别的</strong>
             <p>表单视觉规范要求：label左对齐，与右边内容间距20px；右边自适应，左边保持不动；左边需要以最宽的内容为主</p>
@@ -47,51 +47,49 @@ export const Demo = () => {
             <br />
             <br />
             <Divider>展示</Divider>
-            <BrandProvider>
-                <Form
-                    {...layout}
-                    name="basic"
-                    initialValues={{
-                        remember: true,
-                    }}
-                    onFinish={onFinish}
-                    onFinishFailed={onFinishFailed}
-                    // 可以通过传入labelMaxWidth来控制label的宽度
-                    labelMaxWidth={80}
+            <Form
+                {...layout}
+                name="basic"
+                initialValues={{
+                    remember: true,
+                }}
+                onFinish={onFinish}
+                onFinishFailed={onFinishFailed}
+                // 可以通过传入labelMaxWidth来控制label的宽度
+                labelMaxWidth={80}
+            >
+                <Form.Item
+                    label="用户名"
+                    name="username"
+                    tooltip="helphelphelp"
+                    rules={[
+                        {
+                            required: true,
+                            message: '请输入用户名',
+                        },
+                    ]}
                 >
-                    <Form.Item
-                        label="用户名"
-                        name="username"
-                        tooltip="helphelphelp"
-                        rules={[
-                            {
-                                required: true,
-                                message: '请输入用户名',
-                            },
-                        ]}
-                    >
-                        <Input placeholder='请输入用户名' />
-                    </Form.Item>
-                    <Form.Item
-                        label="密码"
-                        name="password"
-                        rules={[
-                            {
-                                required: true,
-                                message: '请输入密码',
-                            },
-                        ]}
-                    >
-                        <Input.Password />
-                    </Form.Item>
-                    <Form.Item {...tailLayout}>
-                        <Button type="primary" htmlType="submit">
-                            提交
-                        </Button>
-                    </Form.Item>
-                </Form>
-            </BrandProvider>
-        </>
+                    <Input placeholder="请输入用户名" />
+                </Form.Item>
+                <Form.Item
+                    label="密码"
+                    name="password"
+                    rules={[
+                        {
+                            required: true,
+                            message: '请输入密码',
+                        },
+                    ]}
+                >
+                    <Input.Password />
+                </Form.Item>
+                <Form.Item {...tailLayout}>
+                    <Button type="primary" htmlType="submit">
+                        提交
+                    </Button>
+                </Form.Item>
+            </Form>
+        </BrandProvider>
     );
 };
 
@@ -322,40 +320,61 @@ export const TestCase = () => {
     };
 
     return (
-        <>
+        <BrandProvider brand="icloud">
             <strong>注意: BrandProvider应该是App级别的，不是组件级别的</strong>
             <p>表单视觉规范要求：label左对齐，与右边内容间距20px；右边自适应，左边保持不动；左边需要以最宽的内容为主</p>
             <p>前端提供了Form.useLabelLayout hook来方便布局。注意：Form.useLabelLayout的侵入性比较强，只满足视觉需求，比如如果你需要align: right，就不要使用了</p>
             <br />
             <br />
             <Divider>展示</Divider>
-            <BrandProvider brand="icloud">
-                <Form
-                    {...layout}
-                    name="basic"
-                    initialValues={{
-                        remember: true,
-                    }}
-                    onFinish={onFinish}
-                    onFinishFailed={onFinishFailed}
-                    labelMaxWidth={50}
+            <Form
+                {...layout}
+                name="basic"
+                initialValues={{
+                    remember: true,
+                }}
+                onFinish={onFinish}
+                onFinishFailed={onFinishFailed}
+                labelMaxWidth={50}
+            >
+                <Form.Item
+                    label="用户名"
+                    name="username"
+                    extra="支持以大小写字母数字开头和结尾，可包含短横线的组合，不支持汉字与特殊字符，创建后不可更改"
+                    rules={[
+                        {
+                            required: true,
+                            message: '请输入用户名',
+                        },
+                    ]}
+                >
+                    <Input />
+                </Form.Item>
+                <Form.Item
+                    label="密码"
+                    name="password"
+                    rules={[
+                        {
+                            required: true,
+                            message: '请输入密码',
+                        },
+                    ]}
+                >
+                    <Input.Password />
+                </Form.Item>
+                <Form.Item
+                    label="密码"
+                    name="password"
+                    rules={[
+                        {
+                            required: true,
+                            message: '请输入密码',
+                        },
+                    ]}
                 >
                     <Form.Item
-                        label="用户名"
-                        name="username"
-                        extra="支持以大小写字母数字开头和结尾，可包含短横线的组合，不支持汉字与特殊字符，创建后不可更改"
-                        rules={[
-                            {
-                                required: true,
-                                message: '请输入用户名',
-                            },
-                        ]}
-                    >
-                        <Input />
-                    </Form.Item>
-                    <Form.Item
-                        label="密码"
-                        name="password"
+                        style={{marginLeft: 0}}
+                        name="switch1"
                         rules={[
                             {
                                 required: true,
@@ -363,11 +382,11 @@ export const TestCase = () => {
                             },
                         ]}
                     >
-                        <Input.Password />
+                        <Switch />
                     </Form.Item>
                     <Form.Item
-                        label="密码"
-                        name="password"
+                        style={{marginLeft: 0}}
+                        name="switch2"
                         rules={[
                             {
                                 required: true,
@@ -375,39 +394,16 @@ export const TestCase = () => {
                             },
                         ]}
                     >
-                        <Form.Item
-                            style={{marginLeft: 0}}
-                            name="switch1"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: '请输入密码',
-                                },
-                            ]}
-                        >
-                            <Switch />
-                        </Form.Item>
-                        <Form.Item
-                            style={{marginLeft: 0}}
-                            name="switch2"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: '请输入密码',
-                                },
-                            ]}
-                        >
-                            <Switch />
-                        </Form.Item>
+                        <Switch />
                     </Form.Item>
-                    <Form.Item {...tailLayout}>
-                        <Button type="primary" htmlType="submit">
-                            提交
-                        </Button>
-                    </Form.Item>
-                </Form>
-            </BrandProvider>
-        </>
+                </Form.Item>
+                <Form.Item {...tailLayout}>
+                    <Button type="primary" htmlType="submit">
+                        提交
+                    </Button>
+                </Form.Item>
+            </Form>
+        </BrandProvider>
     );
 };
 
@@ -430,7 +426,7 @@ const formItemLayoutWithOutLabel = {
 
 export const TestCaseFormErrorList = () => {
     return (
-        <>
+        <BrandProvider>
             <Form name="dynamic_form_item" {...formItemLayoutWithOutLabel}>
                 <Form.List
                     name="names"
@@ -503,6 +499,6 @@ export const TestCaseFormErrorList = () => {
                     </Button>
                 </Form.Item>
             </Form>
-        </>
+        </BrandProvider>
     );
 };

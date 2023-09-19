@@ -1,3 +1,4 @@
 import {Carousel} from 'antd';
-export type { CarouselProps } from 'antd';
+import './index.less';
+export type {CarouselProps} from 'antd';
 export default Carousel;

@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Divider from '@osui/divider';
+import BrandProvider from '@osui/brand-provider';
 import Empty from '../src';
 import {Base, EmptyInComponents} from './icloud-demo';
 
@@ -13,17 +14,19 @@ export const BaseDemo = Base;
 export const EmptyInComponentsDemo = EmptyInComponents;
 export const Demo2 = () => {
     return (
-        <Empty type="error" description="404 Not Found" size="large" />
+        <BrandProvider>
+            <Empty type="error" description="404 Not Found" size="large" />
+        </BrandProvider>
     );
 };
 
 export const Demo3 = () => {
     return (
-        <>
+        <BrandProvider>
             <p>可以通过imageStyle来调整图片高度</p>
             <Divider>展示</Divider>
             <Empty type="error" size="large" />
-        </>
+        </BrandProvider>
     );
 };
 

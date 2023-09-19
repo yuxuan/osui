@@ -2,6 +2,7 @@ import React, {useCallback, useState} from 'react';
 import type {DisplayValueType} from 'rc-select/lib/BaseSelect';
 import Popover from '@osui/popover';
 import Tag from '@osui/tag';
+import BrandProvider from '@osui/brand-provider';
 import Select from '../../src';
 
 export default () => {
@@ -53,7 +54,7 @@ export default () => {
         [handleClose]
     );
     return (
-        <>
+        <BrandProvider>
             <p>不适用属性，直接手动实现方式</p>
             <Select
                 allowClear
@@ -74,6 +75,6 @@ export default () => {
                 <Option value="b">b</Option>
                 <Option value="c">c</Option>
             </Select>
-        </>
+        </BrandProvider>
     );
 };

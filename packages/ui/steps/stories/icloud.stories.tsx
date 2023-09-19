@@ -17,7 +17,7 @@ export const Demo = () => {
         setCurrent(current);
     };
     return (
-        <BrandProvider >
+        <BrandProvider>
             <h2>纵向步骤条</h2>
             <Steps direction="vertical" current={1}>
                 <Step title="已完成步骤" description="描述文案" status="finish" />
@@ -122,7 +122,7 @@ export const CompactDemo = () => {
     const {Step: ProcessOnlyStep} = Steps.ProcessOnlySteps;
     const [current, setCurrent] = useState(-1);
     return (
-        <>
+        <BrandProvider>
             <h2>紧凑型</h2>
             <p>当需要展示很多步时</p>
             <Steps.ProcessOnlySteps current={current} compact type="navigation">
@@ -143,7 +143,7 @@ export const CompactDemo = () => {
                 <Button onClick={() => setCurrent(step => step + 1)}>下一步</Button>
                 <Button onClick={() => setCurrent(step => step - 1)}>上一步</Button>
             </Space>
-        </>
+        </BrandProvider>
     );
 };
 

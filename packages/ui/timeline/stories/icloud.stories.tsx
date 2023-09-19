@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import BrandProvider from '@osui/brand-provider';
 import Timeline from '../src';
 
 export default {
@@ -8,9 +9,9 @@ export default {
 
 export const Demo = () => {
     return (
-        <>
+        <BrandProvider>
             <h3>纯展示的情况</h3>
-            <div style={{ padding: '50px' }}>
+            <div style={{padding: '50px'}}>
                 <Timeline>
                     <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
                     <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
@@ -18,16 +19,16 @@ export const Demo = () => {
                     <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
                 </Timeline>
             </div>
-        </>
+        </BrandProvider>
     );
 };
 
 
 export const Link = () => {
     return (
-        <>
+        <BrandProvider>
             <h3>可跳转link的情况</h3>
-            <div style={{ padding: '50px' }}>
+            <div style={{padding: '50px'}}>
                 <Timeline>
                     <Timeline.Item><a href="">Create a services site 2015-09-01</a></Timeline.Item>
                     <Timeline.Item><a href="">Create a services site 2015-09-01</a></Timeline.Item>
@@ -35,7 +36,7 @@ export const Link = () => {
                     <Timeline.Item><a href="">Create a services site 2015-09-01</a></Timeline.Item>
                 </Timeline>
             </div>
-        </>
+        </BrandProvider>
     );
 };
 

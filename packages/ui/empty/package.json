@@ -28,6 +28,11 @@
     "devDependencies": {
         "@babel/cli": "^7.10.5",
         "@osui/brand-provider": "^3.0.0",
+        "@osui/table": "^3.0.0",
+        "@osui/select": "^3.0.0",
+        "@osui/popover": "^3.0.0",
+        "@osui/modal": "^3.0.0",
+        "@osui/button": "^3.0.0",
         "@osui/divider": "^3.0.0",
         "@osui/icons": "^3.0.0",
         "@reskript/cli": "^3.0.0",
@@ -50,7 +55,7 @@
         "@types/jest": "^27.0.0",
         "@types/react-dom": "^17.0.2",
         "@types/react-test-renderer": "^17.0.1",
-        "antd": "^5.3.0",
+        "antd": "^5.8.6",
         "babel-loader": "^8.1.0",
         "babel-merge": "^3.0.0",
         "cpy-cli": "^3.1.1",
@@ -72,7 +77,7 @@
         "webpack": "^5.52.1"
     },
     "peerDependencies": {
-        "antd": ">=4.21.3",
+        "antd": "^5.0.0",
         "react": ">=17.0.0",
         "react-dom": ">=17.0.0"
     },

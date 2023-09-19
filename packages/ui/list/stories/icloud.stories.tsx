@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Avatar from '@osui/avatar';
+import BrandProvider from '@osui/brand-provider';
 import List from '../src';
 
 
@@ -27,19 +28,21 @@ export const Demo = () => {
     ];
 
     return (
-        <List
-            itemLayout="horizontal"
-            dataSource={data}
-            renderItem={item => (
-                <List.Item>
-                    <List.Item.Meta
-                        avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                        title={<a target="_blank" rel="noreferrer" href="https://ant.design">{item.title}</a>}
-                        description="列表示例"
-                    />
-                </List.Item>
-            )}
-        />
+        <BrandProvider>
+            <List
+                itemLayout="horizontal"
+                dataSource={data}
+                renderItem={item => (
+                    <List.Item>
+                        <List.Item.Meta
+                            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                            title={<a target="_blank" rel="noreferrer" href="https://ant.design">{item.title}</a>}
+                            description="列表示例"
+                        />
+                    </List.Item>
+                )}
+            />
+        </BrandProvider>
     );
 };
 

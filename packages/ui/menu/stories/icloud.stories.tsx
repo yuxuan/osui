@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, {useState} from 'react';
 import {AppstoreOutlined, MailOutlined, SettingOutlined} from '@ant-design/icons';
+import BrandProvider from '@osui/brand-provider';
 import Menu, {MenuProps} from '../src';
 
 export default {
@@ -72,8 +73,86 @@ export const Demo = () => {
 };
 
 export const Vertical = () => {
+    const items: MenuProps['items'] = [
+        {
+            label: 'Navigation One',
+            key: 'mail',
+            icon: <MailOutlined />,
+            children: [
+                {
+                    label: 'Option 1',
+                    key: 'setting:1',
+                },
+                {
+                    label: 'Option 2',
+                    key: 'setting:2',
+                    // children: [
+                    //     {
+                    //         label: 'Option 3',
+                    //         key: 'setting:3',
+                    //     },
+                    //     {
+                    //         label: 'Option 4',
+                    //         key: 'setting:4',
+                    //     },
+                    // ],
+                },
+                {
+                    label: 'Option 3',
+                    key: 'setting:3',
+                },
+                {
+                    label: 'Option 4',
+                    key: 'setting:4',
+                },
+            ],
+        },
+        {
+            label: 'Navigation Two',
+            key: 'app',
+            icon: <AppstoreOutlined />,
+            disabled: true,
+        },
+        {
+            label: 'Navigation Three - Submenu',
+            key: 'SubMenu',
+            icon: <SettingOutlined />,
+        },
+        {
+            label: (
+                <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
+                    Navigation Four - Link
+                </a>
+            ),
+            key: 'alipay',
+        },
+    ];
+
+    const App: React.FC = () => {
+        const [current, setCurrent] = useState('mail');
+
+        const onClick: MenuProps['onClick'] = e => {
+            console.log('click ', e);
+            setCurrent(e.key);
+        };
+
+        return (
+            <Menu
+                onClick={onClick}
+                selectedKeys={[current]}
+                mode="inline"
+                style={{width: 256}}
+                defaultOpenKeys={['mail']}
+                items={items}
+            />
+        );
+    };
+
     return (
-        <p>纵向测导航见：@baidu/icloud-ui-page-layout</p>
+        <BrandProvider>
+            <App />
+            <p>纵向测导航见：@baidu/icloud-ui-page-layout</p>
+        </BrandProvider>
     );
 };
 

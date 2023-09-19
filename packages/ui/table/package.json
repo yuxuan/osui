@@ -56,7 +56,7 @@
         "@types/jest": "^27.0.0",
         "@types/react-dom": "^17.0.2",
         "@types/react-test-renderer": "^17.0.1",
-        "antd": "^5.3.0",
+        "antd": "^5.8.6",
         "babel-loader": "^8.1.0",
         "babel-merge": "^3.0.0",
         "cpy-cli": "^3.1.1",
@@ -81,7 +81,7 @@
         "@ant-design/icons": "^4.7.0",
         "@osui/brand-provider": "^2.1.0",
         "@osui/icons": "^2.1.0",
-        "antd": ">=4.21.3",
+        "antd": "^5.0.0",
         "react": ">=17.0.0",
         "react-dom": ">=17.0.0"
     },

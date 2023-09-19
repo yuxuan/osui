@@ -37,7 +37,13 @@ export const Demo = () => {
             </Blockquote>
             <BrandProvider brand="icloud">
                 <p>默认状态</p>
-                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} onShowSizeChange={onShowSizeChange} />
+                <Pagination
+                    showQuickJumper
+                    defaultCurrent={2}
+                    total={70}
+                    onChange={onChange}
+                    onShowSizeChange={onShowSizeChange}
+                />
                 <br />
                 <Pagination showQuickJumper defaultCurrent={2} total={80} onChange={onChange} />
                 <br />
@@ -54,13 +60,26 @@ export const Demo = () => {
                 <Pagination size="small" showQuickJumper defaultCurrent={2} total={500} onChange={onChange} />
                 <br />
                 <p>类型为simple时</p>
-                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} simple/>
+                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} simple />
                 <br />
                 <p>隐藏sizeChange和quickJump</p>
-                <Pagination showQuickJumper={false} defaultCurrent={2} total={70} onChange={onChange} showSizeChanger={false} />
+                <Pagination
+                    showQuickJumper={false}
+                    defaultCurrent={2}
+                    total={70}
+                    onChange={onChange}
+                    showSizeChanger={false}
+                />
+                <br />
+                <p>只显示quickJump</p>
+                <Pagination onChange={onChange} defaultCurrent={4} total={40} />
+                <br />
+                <p>只显示sizeChange</p>
+                <Pagination onChange={onChange} defaultCurrent={4} total={51} showQuickJumper={false} />
                 <br />
             </BrandProvider>
-        </div>);
+        </div>
+    );
 };
 
 export const Api = () => {
