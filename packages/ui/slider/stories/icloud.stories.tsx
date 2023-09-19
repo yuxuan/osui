@@ -18,7 +18,7 @@ export const Demo = () => {
         setInputValue(value);
     };
     return (
-        <>
+        <BrandProvider>
             <h2>轻量/默认</h2>
             <p>说明：这个不是一个单独组件，Input的number可以按需调整</p>
             <p>注意：规范InputNumber的宽度为72px，需要自己添加style</p>
@@ -72,7 +72,7 @@ export const Demo = () => {
                     }}
                 />
             </div>
-        </>
+        </BrandProvider>
     );
 };
 

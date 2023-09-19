@@ -75,7 +75,7 @@ export const Api = () => {
 
 export const TestCase = () => {
     return (
-        <>
+        <BrandProvider>
             {version}
             <p>水平+垂直</p>
             <Space direction="horizontal">
@@ -141,6 +141,6 @@ export const TestCase = () => {
                     </Space>
                 </Space>
             </Space>
-        </>
+        </BrandProvider>
     );
 };

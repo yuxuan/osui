@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import BrandProvider from '@osui/brand-provider';
 import Rate from '../src';
 
 export default {
@@ -8,7 +9,11 @@ export default {
 };
 
 export const Demo = () => {
-    return (<Rate allowHalf defaultValue={2.5} />);
+    return (
+        <BrandProvider brand="icloud">
+            <Rate allowHalf defaultValue={2.5} />
+        </BrandProvider>
+    );
 };
 
 export const Api = () => {

@@ -1,4 +1,5 @@
 import React from 'react';
+import BrandProvider from '@osui/brand-provider';
 import Spin from '../src';
 import {Basic} from './icloud-demo';
 
@@ -11,9 +12,9 @@ export const BasicDemo = Basic;
 
 export const Api = () => {
     return (
-        <>
+        <BrandProvider>
             <a target="_blank" rel="noreferrer" href="https://ant.design/components/spin-cn/">Antd Spin API</a>
-        </>
+        </BrandProvider>
     );
 };
 

@@ -3,6 +3,7 @@ import React from 'react';
 import Space from '@osui/space';
 import Divider from '@osui/divider';
 import Tooltip from '@osui/tooltip';
+import BrandProvider from '@osui/brand-provider';
 import Badge from '../src';
 
 export default {
@@ -11,7 +12,7 @@ export default {
 
 export const Demo = () => {
     return (
-        <>
+        <BrandProvider>
             <p>通过醒目的视觉标注提醒用户重要的信息，如新消息或者新功能上线。一般出现在图标或文字的右上角。</p>
             <Divider>展示</Divider>
             <h3>主要样式</h3>
@@ -36,13 +37,13 @@ export const Demo = () => {
             <Badge count={99} type="success">
                 <a href="#" style={{width: 76, height: 30, background: '#ddd', display: 'inline-block'}} />
             </Badge>
-        </>
+        </BrandProvider>
     );
 };
 
 export const OverflowCount = () => {
     return (
-        <>
+        <BrandProvider>
             <Divider>展示</Divider>
             <h3>信息较多样式</h3>
             <Space size="large">
@@ -59,13 +60,13 @@ export const OverflowCount = () => {
                     <a href="#" style={{width: 76, height: 30, background: '#ddd', display: 'inline-block'}} />
                 </Badge>
             </Space>
-        </>
+        </BrandProvider>
     );
 };
 
 export const Status = () => {
     return (
-        <>
+        <BrandProvider>
             <h3>状态徽标</h3>
             <p>多用于表格或详情页中提示内容的状态。</p>
             <Divider>展示</Divider>
@@ -83,7 +84,7 @@ export const Status = () => {
                 <br />
                 <Badge status="processing" text="进行中" />
             </div>
-        </>
+        </BrandProvider>
     );
 };
 

@@ -3,6 +3,7 @@ import React from 'react';
 import Button from '@osui/button';
 import Divider from '@osui/divider';
 import Space from '@osui/space';
+import BrandProvider from '@osui/brand-provider';
 import Drawer from '../src';
 
 export default {
@@ -25,26 +26,28 @@ export const Demo = () => {
     );
 
     return (
-        <div style={{padding: 30}}>
-            <p>footer没有封装在组件内，按业务逻辑调整</p>
-            <Divider orientation="left">基础抽屉</Divider>
-            <Button type="primary" onClick={showDrawer}>
-                Open
-            </Button>
-            <p style={{margin: '20px 0 20px 0'}}>基础抽屉，点击触发按钮抽屉从右滑出，点击遮罩区关闭</p>
-            <Drawer
-                closable
-                title="Basic Drawer"
-                placement="right"
-                onClose={onClose}
-                visible={visible}
-                footer={footer}
-            >
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-            </Drawer>
-        </div>
+        <BrandProvider>
+            <div style={{padding: 30}}>
+                <p>footer没有封装在组件内，按业务逻辑调整</p>
+                <Divider orientation="left">基础抽屉</Divider>
+                <Button type="primary" onClick={showDrawer}>
+                    Open
+                </Button>
+                <p style={{margin: '20px 0 20px 0'}}>基础抽屉，点击触发按钮抽屉从右滑出，点击遮罩区关闭</p>
+                <Drawer
+                    closable
+                    title="Basic Drawer"
+                    placement="right"
+                    onClose={onClose}
+                    visible={visible}
+                    footer={footer}
+                >
+                    <p>Some contents...</p>
+                    <p>Some contents...</p>
+                    <p>Some contents...</p>
+                </Drawer>
+            </div>
+        </BrandProvider>
     );
 };
 
@@ -58,57 +61,59 @@ export const Size = () => {
     );
 
     return (
-        <div style={{padding: 30}}>
-            <p>footer没有封装在组件内，按业务逻辑调整</p>
-            <Divider orientation="left">small抽屉</Divider>
-            <Button type="primary" onClick={() => setSmallVisible(true)}>
-                Small
-            </Button>
-            <Drawer
-                title="Basic Drawer"
-                placement="right"
-                onClose={() => setSmallVisible(false)}
-                visible={smallVisible}
-                size="small"
-                footer={footer}
-            >
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-            </Drawer>
-            <Divider orientation="left">middle抽屉</Divider>
-            <Button type="primary" onClick={() => setMiddleVisible(true)}>
-                Middle
-            </Button>
-            <Drawer
-                title="Basic Drawer"
-                placement="right"
-                onClose={() => setMiddleVisible(false)}
-                visible={middleVisible}
-                size="middle"
-                footer={footer}
-            >
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-            </Drawer>
-            <Divider orientation="left">large抽屉</Divider>
-            <Button type="primary" onClick={() => setLargeVisible(true)}>
-                Large
-            </Button>
-            <Drawer
-                title="Basic Drawer"
-                placement="right"
-                onClose={() => setLargeVisible(false)}
-                visible={largeVisible}
-                size="large"
-                footer={footer}
-            >
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-            </Drawer>
-        </div>
+        <BrandProvider>
+            <div style={{padding: 30}}>
+                <p>footer没有封装在组件内，按业务逻辑调整</p>
+                <Divider orientation="left">small抽屉</Divider>
+                <Button type="primary" onClick={() => setSmallVisible(true)}>
+                    Small
+                </Button>
+                <Drawer
+                    title="Basic Drawer"
+                    placement="right"
+                    onClose={() => setSmallVisible(false)}
+                    visible={smallVisible}
+                    size="small"
+                    footer={footer}
+                >
+                    <p>Some contents...</p>
+                    <p>Some contents...</p>
+                    <p>Some contents...</p>
+                </Drawer>
+                <Divider orientation="left">middle抽屉</Divider>
+                <Button type="primary" onClick={() => setMiddleVisible(true)}>
+                    Middle
+                </Button>
+                <Drawer
+                    title="Basic Drawer"
+                    placement="right"
+                    onClose={() => setMiddleVisible(false)}
+                    visible={middleVisible}
+                    size="middle"
+                    footer={footer}
+                >
+                    <p>Some contents...</p>
+                    <p>Some contents...</p>
+                    <p>Some contents...</p>
+                </Drawer>
+                <Divider orientation="left">large抽屉</Divider>
+                <Button type="primary" onClick={() => setLargeVisible(true)}>
+                    Large
+                </Button>
+                <Drawer
+                    title="Basic Drawer"
+                    placement="right"
+                    onClose={() => setLargeVisible(false)}
+                    visible={largeVisible}
+                    size="large"
+                    footer={footer}
+                >
+                    <p>Some contents...</p>
+                    <p>Some contents...</p>
+                    <p>Some contents...</p>
+                </Drawer>
+            </div>
+        </BrandProvider>
     );
 };
 
@@ -118,7 +123,7 @@ export const TestCaseExtraWithClose = () => {
         <div style={{display: 'flex', justifyContent: 'flex-end'}}><Button type="primary">确认</Button></div>
     );
     return (
-        <>
+        <BrandProvider>
             <Button type="primary" onClick={() => setVisible(true)}>
                 open
             </Button>
@@ -141,7 +146,7 @@ export const TestCaseExtraWithClose = () => {
                 <p>Some contents...</p>
                 <p>Some contents...</p>
             </Drawer>
-        </>
+        </BrandProvider>
     );
 };
 
@@ -151,7 +156,7 @@ export const TestCaseExtraOnly = () => {
         <div style={{display: 'flex', justifyContent: 'flex-end'}}><Button type="primary">确认</Button></div>
     );
     return (
-        <>
+        <BrandProvider>
             <Button type="primary" onClick={() => setVisible(true)}>
                 open
             </Button>
@@ -175,7 +180,7 @@ export const TestCaseExtraOnly = () => {
                 <p>Some contents...</p>
                 <p>Some contents...</p>
             </Drawer>
-        </>
+        </BrandProvider>
     );
 };
 

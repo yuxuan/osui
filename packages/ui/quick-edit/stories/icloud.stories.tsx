@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import BrandProvider from '@osui/brand-provider';
 import {QuickEditInput, QuickEditSelect} from '../src';
 
 export default {
@@ -13,7 +14,7 @@ export const Demo = () => {
         const [selectValue, setSelectValue] = useState('Jack');
 
         return (
-            <>
+            <BrandProvider>
                 <h2>输入框的快速编辑</h2>
                 <QuickEditInput
                     withConfirm
@@ -35,7 +36,7 @@ export const Demo = () => {
                     <QuickEditSelect.Option value="Tom">Tom</QuickEditSelect.Option>
                 </QuickEditSelect>
 
-            </>
+            </BrandProvider>
         );
     };
 
@@ -51,7 +52,7 @@ export const FEDemo = () => {
         const [selectValue, setSelectValue] = useState('什么是快乐星球');
 
         return (
-            <>
+            <BrandProvider>
                 <h2>前端说明</h2>
                 <p>当没有内容的时候，可以加上showEditIcon</p>
                 <div style={{display: 'flex', alignItems: 'center'}}>
@@ -91,7 +92,7 @@ export const FEDemo = () => {
                     </QuickEditSelect>
                 </div>
 
-            </>
+            </BrandProvider>
         );
     };
 

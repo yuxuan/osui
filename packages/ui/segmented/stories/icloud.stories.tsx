@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import BrandProvider from '@osui/brand-provider';
 import Segmented from '../src';
 
 export default {
@@ -8,5 +9,9 @@ export default {
 
 export const Demo = () => {
 
-    return <Segmented options={['Daily', 'Weekly', 'Monthly', 'Quarterly', 'Yearly']} />;
+    return (
+        <BrandProvider>
+            <Segmented options={['Daily', 'Weekly', 'Monthly', 'Quarterly', 'Yearly']} />
+        </BrandProvider>
+    );
 };

@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import BrandProvider from '@osui/brand-provider';
 import Cascader from '../src';
 
 export default {
@@ -50,7 +51,7 @@ export const Demo = () => {
     }
 
     return (
-        <>
+        <BrandProvider>
             <p>基本样式</p>
             <Cascader
                 options={options}
@@ -67,7 +68,7 @@ export const Demo = () => {
                 placeholder="Please select"
                 showSearch
             />
-        </>
+        </BrandProvider>
     );
 };
 
@@ -116,7 +117,11 @@ export const Load = () => {
             />
         );
     };
-    return (<LazyOptions />);
+    return (
+        <BrandProvider>
+            <LazyOptions />
+        </BrandProvider>
+    );
 };
 
 export const Api = () => {

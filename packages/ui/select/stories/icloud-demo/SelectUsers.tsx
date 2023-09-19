@@ -3,6 +3,7 @@ import React, {useMemo, useRef, useState} from 'react';
 import debounce from 'lodash/debounce';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import Spin from '@osui/spin';
+import BrandProvider from '@osui/brand-provider';
 import type {SelectProps} from '../../src';
 import Select from '../../src';
 
@@ -78,16 +79,18 @@ const App: React.FC = () => {
     const [value, setValue] = useState<UserValue[]>([]);
 
     return (
-        <DebounceSelect
-            mode="multiple"
-            value={value}
-            placeholder="Select users"
-            fetchOptions={fetchUserList}
-            onChange={newValue => {
-                setValue(newValue as UserValue[]);
-            }}
-            style={{width: '100%'}}
-        />
+        <BrandProvider>
+            <DebounceSelect
+                mode="multiple"
+                value={value}
+                placeholder="Select users"
+                fetchOptions={fetchUserList}
+                onChange={newValue => {
+                    setValue(newValue as UserValue[]);
+                }}
+                style={{width: '100%'}}
+            />
+        </BrandProvider>
     );
 };
 

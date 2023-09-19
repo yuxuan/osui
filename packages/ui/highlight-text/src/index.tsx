@@ -45,7 +45,7 @@ const breakWordsByMark = (input: string, mark?: string, props?: MarkProps) => {
     });
 };
 
-const HighlightText: React.FC<Props> = ({ children, mark, markProps }) => {
+const HighlightText: React.FC<Props> = ({children, mark, markProps}) => {
     const [text, setText] = React.useState<React.ReactNode>(children);
 
     React.useLayoutEffect(

@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Button from '@osui/button';
 import Divider from '@osui/divider';
 import Markdown from '@osui/markdown';
+import BrandProvider from '@osui/brand-provider';
 import Joyride from '../src';
 
 export default {
@@ -35,7 +36,7 @@ export const Demo = () => {
     ];
 
     return (
-        <>
+        <BrandProvider>
             <p><strong>FE说明：</strong>实现基于<a href="https://docs.react-joyride.com/" target="_blank" rel="noreferrer">react-joyride</a>。api可查看它的文档</p>
             <Divider>展示</Divider>
             <Button onClick={() => setRun(true)}>Run</Button>
@@ -48,12 +49,12 @@ export const Demo = () => {
                     className="sidebar"
                     style={{position: 'sticky', top: 0}}
                 >
-                    <div className="my-1-step" style={{ height: 50, width: 100, background: 'blue' }}>DEMO1</div>
-                    <div style={{ height: 50 }}></div>
-                    <div className="my-2-step" style={{ height: 50, width: 100, background: 'red' }}>DEMO2</div>
-                    <div style={{ height: 50 }}></div>
-                    <div className="my-3-step" style={{ height: 50, background: 'yellow' }}>DEMO3</div>
-                    <div style={{ height: 50 }}></div>
+                    <div className="my-1-step" style={{height: 50, width: 100, background: 'blue'}}>DEMO1</div>
+                    <div style={{height: 50}}></div>
+                    <div className="my-2-step" style={{height: 50, width: 100, background: 'red'}}>DEMO2</div>
+                    <div style={{height: 50}}></div>
+                    <div className="my-3-step" style={{height: 50, background: 'yellow'}}>DEMO3</div>
+                    <div style={{height: 50}}></div>
                 </div>
                 <div
                     className="content"
@@ -65,7 +66,7 @@ export const Demo = () => {
                     }}
                 >
                     content
-                    <div className="my-4-step" style={{ height: 50, width: 50, background: 'green' }}>DEMO4</div>
+                    <div className="my-4-step" style={{height: 50, width: 50, background: 'green'}}>DEMO4</div>
                 </div>
             </div>
             <Joyride
@@ -83,7 +84,7 @@ export const Demo = () => {
                 onFinish={() => setRun(false)}
                 disableOverlay
             />
-        </>
+        </BrandProvider>
     );
 };
 
@@ -92,7 +93,7 @@ export const Api = () => {
     return (
         <>
             <h2>官方文档：</h2>
-            <a href="https://docs.react-joyride.com/" >React Joyrid</a>
+            <a href="https://docs.react-joyride.com/">React Joyrid</a>
             <br />
             <h2>新增参数：</h2>
             <Markdown content={`

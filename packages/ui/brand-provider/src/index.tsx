@@ -1,7 +1,7 @@
 import React, {useContext, useMemo} from 'react';
 import {ConfigProvider, ThemeConfig} from 'antd';
 import Empty from '@osui/empty';
-import zhCN from 'antd/es/locale/zh_CN';
+import zhCN from 'antd/locale/zh_CN';
 import {ConfigProviderProps} from 'antd/es/config-provider';
 import {acud} from './overwriteAntdToken';
 import {mergeTheme} from './mergeTheme';

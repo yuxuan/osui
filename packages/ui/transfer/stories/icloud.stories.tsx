@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
+import BrandProvider from '@osui/brand-provider';
 import Transfer from '../src';
 
 export default {
@@ -53,7 +54,11 @@ export const Demo = () => {
         );
     };
 
-    return (<App />);
+    return (
+        <BrandProvider>
+            <App />
+        </BrandProvider>
+    );
 };
 
 export const Api = () => {

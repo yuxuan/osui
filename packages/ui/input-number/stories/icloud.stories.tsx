@@ -3,6 +3,7 @@ import React from 'react';
 import Form from '@osui/form';
 import Input from '@osui/input';
 import FlexCentered from '@osui/flex-centered';
+import BrandProvider from '@osui/brand-provider';
 import InputNumber from '../src';
 
 export default {
@@ -15,7 +16,7 @@ export const Demo = () => {
         console.log('changed', value);
     };
     return (
-        <>
+        <BrandProvider>
             <h3>基础数字输入框</h3>
             <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />
             <br />
@@ -63,7 +64,7 @@ export const Demo = () => {
                     <Input />
                 </Form.Item>
             </Form>
-        </>
+        </BrandProvider>
     );
 };
 
@@ -71,7 +72,7 @@ const InputNumberCompact = InputNumber.InputNumberCompact;
 
 export const InputNumberStrongDemo = () => {
     return (
-        <>
+        <BrandProvider>
             <InputNumberCompact />
             <br />
             <br />
@@ -99,7 +100,7 @@ export const InputNumberStrongDemo = () => {
                     <InputNumberCompact />
                 </Form.Item>
             </Form>
-        </>
+        </BrandProvider>
     );
 };
 

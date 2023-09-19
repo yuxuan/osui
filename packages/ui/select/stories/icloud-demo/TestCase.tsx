@@ -5,7 +5,7 @@ import Select from '../../src';
 export default () => {
     const Option = Select.Option;
     return (
-        <>
+        <BrandProvider brand="icloud">
             <p>最短的时候</p>
             <Select defaultValue="lucy">
                 <Option value="jack">Jack</Option>
@@ -17,40 +17,37 @@ export default () => {
             </Select>
 
             <p>下拉内容10条</p>
-            <BrandProvider brand="icloud">
-                <Select defaultValue="lucy" style={{width: 240}}>
-                    <Option value="lucy1">Lucy1</Option>
-                    <Option value="lucy2">Lucy2</Option>
-                    <Option value="lucy3">Lucy3</Option>
-                    <Option value="lucy4">Lucy4</Option>
-                    <Option value="lucy5">Lucy5</Option>
-                    <Option value="lucy6">Lucy6</Option>
-                    <Option value="lucy7">Lucy7</Option>
-                    <Option value="lucy8">Lucy8</Option>
-                    <Option value="lucy9">Lucy9</Option>
-                    <Option value="lucy10">Lucy10</Option>
-                    <Option value="lucy11">Lucy11</Option>
-                    <Option value="lucy12">Lucy12</Option>
-                </Select>
-            </BrandProvider>
+            <Select defaultValue="lucy" style={{width: 240}}>
+                <Option value="lucy1">Lucy1</Option>
+                <Option value="lucy2">Lucy2</Option>
+                <Option value="lucy3">Lucy3</Option>
+                <Option value="lucy4">Lucy4</Option>
+                <Option value="lucy5">Lucy5</Option>
+                <Option value="lucy6">Lucy6</Option>
+                <Option value="lucy7">Lucy7</Option>
+                <Option value="lucy8">Lucy8</Option>
+                <Option value="lucy9">Lucy9</Option>
+                <Option value="lucy10">Lucy10</Option>
+                <Option value="lucy11">Lucy11</Option>
+                <Option value="lucy12">Lucy12</Option>
+            </Select>
+
 
             <p>下拉内容10条 关闭virtual</p>
-            <BrandProvider brand="icloud">
-                <Select defaultValue="lucy" style={{width: 240}} virtual={false}>
-                    <Option value="lucy1">Lucy1</Option>
-                    <Option value="lucy2">Lucy2</Option>
-                    <Option value="lucy3">Lucy3</Option>
-                    <Option value="lucy4">Lucy4</Option>
-                    <Option value="lucy5">Lucy5</Option>
-                    <Option value="lucy6">Lucy6</Option>
-                    <Option value="lucy7">Lucy7</Option>
-                    <Option value="lucy8">Lucy8</Option>
-                    <Option value="lucy9">Lucy9</Option>
-                    <Option value="lucy10">Lucy10</Option>
-                    <Option value="lucy11">Lucy11</Option>
-                    <Option value="lucy12">Lucy12</Option>
-                </Select>
-            </BrandProvider>
+            <Select defaultValue="lucy" style={{width: 240}} virtual={false}>
+                <Option value="lucy1">Lucy1</Option>
+                <Option value="lucy2">Lucy2</Option>
+                <Option value="lucy3">Lucy3</Option>
+                <Option value="lucy4">Lucy4</Option>
+                <Option value="lucy5">Lucy5</Option>
+                <Option value="lucy6">Lucy6</Option>
+                <Option value="lucy7">Lucy7</Option>
+                <Option value="lucy8">Lucy8</Option>
+                <Option value="lucy9">Lucy9</Option>
+                <Option value="lucy10">Lucy10</Option>
+                <Option value="lucy11">Lucy11</Option>
+                <Option value="lucy12">Lucy12</Option>
+            </Select>
 
             <p>多选</p>
             <p>antd issue: https://github.com/ant-design/ant-design/issues/19828</p>
@@ -96,6 +93,6 @@ export default () => {
                 <Option value="5">Resolved</Option>
                 <Option value="6">Cancelled</Option>
             </Select>
-        </>
+        </BrandProvider>
     );
 };

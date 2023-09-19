@@ -1,4 +1,5 @@
 import React, {useState, useMemo} from 'react';
+import BrandProvider from '@osui/brand-provider';
 import {difference, isEqual} from 'lodash';
 import Select from '../../src';
 
@@ -55,15 +56,17 @@ const Selector = ({onChange, value, ...props}) => {
         onChange(value);
     };
     return (
-        <Select
-            {...props}
-            mode="multiple"
-            value={innerValue}
-            onChange={handleChange}
-            options={options}
-            onSelect={handleSelect}
-            onDeselect={handleDeselect}
-        />
+        <BrandProvider>
+            <Select
+                {...props}
+                mode="multiple"
+                value={innerValue}
+                onChange={handleChange}
+                options={options}
+                onSelect={handleSelect}
+                onDeselect={handleDeselect}
+            />
+        </BrandProvider>
     );
 };
 

@@ -172,7 +172,7 @@ export const Demo = () => {
 
 export const Size = () => {
     return (
-        <>
+        <BrandProvider>
             <Blockquote>
                 <p>大小高度两种：1. small: 24px，2. default: 30px；默认为30px</p>
                 <p>宽度有三种： 160px，240px，320px。宽度没有给出默认设置，产品根据规范按需从这三个宽度选择合适的宽度</p>
@@ -214,7 +214,7 @@ export const Size = () => {
                 }}
                 placeholder="请输入"
             />
-        </>
+        </BrandProvider>
     );
 };
 
@@ -254,7 +254,7 @@ export const Complete = () => {
         </Select>
     );
     return (
-        <>
+        <BrandProvider>
             <Divider orientation="left">1. 含推荐功能的输入框</Divider>
             <p>见AutoComplete，支持输入，同时支持选择内容</p>
             <Divider orientation="left">2. 含搜索联想功能的输入框</Divider>
@@ -450,13 +450,13 @@ export const Complete = () => {
                     </Input.Group>
                 </Form.Item>
             </Form>
-        </>
+        </BrandProvider>
     );
 };
 
 export const Search = () => {
     return (
-        <>
+        <BrandProvider>
             <BrandProvider brand="icloud">
                 <Blockquote>
                     注意：使用enterButton时不可以和withSuffixIcon一起用，也不合理，enterButton会覆盖掉withSuffixIcon
@@ -522,13 +522,13 @@ export const Search = () => {
                     }}
                 />
             </BrandProvider>
-        </>
+        </BrandProvider>
     );
 };
 
 export const CounterDemo = () => {
     return (
-        <>
+        <BrandProvider>
             <p>提供了一个简易的Input + showCount + maxLength的组件： InputWithCounter</p>
             <p>使用方式如下：</p>
             <p>注意：该方式可能不满足某些设计交互，如达到字数限制时允许用户继续输入，只展示表单错误</p>
@@ -583,7 +583,7 @@ export const CounterDemo = () => {
                     width: 360,
                 }}
             />
-        </>
+        </BrandProvider>
     );
 };
 
@@ -598,7 +598,7 @@ export const Api = () => {
 
 export const TestCase = () => {
     return (
-        <>
+        <BrandProvider>
             {version}
             <Blockquote>
                 说明：记录走查问题的测试case。 不需要走查
@@ -710,6 +710,6 @@ export const TestCase = () => {
                     <Input />
                 </Form.Item>
             </Form>
-        </>
+        </BrandProvider>
     );
 };
