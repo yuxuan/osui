@@ -11,7 +11,8 @@
         "master",
         "hot-fix",
         "acud",
-        "antd5"
+        "antd5",
+        "v3"
       ],
       "ignoreChanges": [
         "**/*.md",
