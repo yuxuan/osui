@@ -2,7 +2,7 @@
   "packages": [
     "packages/*"
   ],
-  "version": "3.0.0",
+  "version": "3.0.1",
   "npmClient": "pnpm",
   "useWorkspaces": true,
   "command": {
@@ -29,7 +29,14 @@
       ],
       "verifyAccess": false,
       "verifyRegistry": false,
-      "message": "chore: publish"
+      "message": "chore: publish",
+      "allowBranch":[
+        "master",
+        "hot-fix",
+        "acud",
+        "antd5",
+        "v3"
+      ]
     }
   }
 }
