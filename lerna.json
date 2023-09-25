@@ -8,10 +8,8 @@
   "command": {
     "version": {
       "allowBranch": [
-        "master",
         "hot-fix",
-        "acud",
-        "antd5"
+        "v3"
       ],
       "ignoreChanges": [
         "**/*.md",
@@ -27,8 +25,7 @@
         "*.md"
       ],
       "verifyAccess": false,
-      "verifyRegistry": false,
-      "message": "chore: publish"
+      "verifyRegistry": false
     }
   }
 }

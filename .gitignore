@@ -88,3 +88,7 @@ lib/
 /docs
 
 storybook-static
+
+.pnpm-store
+
+.yarn
