@@ -8,18 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
+* button主题调整 ([cf33f3d](https://gitee.com/gitee-fe/osui/tree/master/commits/cf33f3d0840e5bf6145c0896f8a54c03bbed983b))
 * 修复typescript 类型错误 ([f18efab](https://gitee.com/gitee-fe/osui/tree/master/commits/f18efab2a15a47cc163dceba128b521c5522063f))
 * 调整dropdown和menu ([35d503f](https://gitee.com/gitee-fe/osui/tree/master/commits/35d503fb44fbc74c851809c07ea5695280e95bb1))
-
-
-
-
-
-# Change Log - @osui/menu
-
-This log was last generated on Tue, 09 Aug 2022 06:37:41 GMT and should not be manually modified.
-
-## 2.1.9
-Tue, 09 Aug 2022 06:37:41 GMT
-
-_Initial release_
+* 调整modal关闭位置,之前的用法关闭掉 ([ae0d210](https://gitee.com/gitee-fe/osui/tree/master/commits/ae0d2102776865959850109e18a47454901fd091))

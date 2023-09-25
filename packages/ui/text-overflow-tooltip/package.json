@@ -1,6 +1,6 @@
 {
     "name": "@osui/text-overflow-tooltip",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -27,9 +27,9 @@
     ],
     "devDependencies": {
         "@babel/cli": "^7.10.5",
-        "@osui/brand-provider": "^3.0.0",
-        "@osui/divider": "^3.0.0",
-        "@osui/icons": "^3.0.0",
+        "@osui/brand-provider": "^3.0.1",
+        "@osui/divider": "^3.0.1",
+        "@osui/icons": "^3.0.1",
         "@reskript/cli": "^3.0.0",
         "@reskript/cli-lint": "^3.0.0",
         "@reskript/config-babel": "^3.0.0",
@@ -87,7 +87,7 @@
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
-        "@osui/tooltip": "^3.0.0"
+        "@osui/tooltip": "^3.0.1"
     },
     "packageManager": "pnpm@7.14.2",
     "gitHead": "10818c8b95cc9d33c7ff1e4a7e15391b9077e52d"

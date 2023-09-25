@@ -1,3 +1,16 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [3.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.1.8...v3.0.1) (2023-09-25)
+
+**Note:** Version bump only for package @osui/ui
+
+
+
+
+
 # Change Log - @osui/ui
 
 This log was last generated on Thu, 02 Feb 2023 06:11:30 GMT and should not be manually modified.
@@ -69,4 +82,3 @@ Fri, 19 Aug 2022 12:29:42 GMT
 Tue, 09 Aug 2022 06:37:41 GMT
 
 _Initial release_
-

@@ -1,3 +1,19 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [3.0.1](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v2.1.8...v3.0.1) (2023-09-25)
+
+
+### Bug Fixes
+
+* 修复typescript 类型错误 ([f18efab](https://gitee.com/yuxuanhuo/osui/tree/master/commits/f18efab2a15a47cc163dceba128b521c5522063f))
+
+
+
+
+
 # Change Log - @osui/pagination
 
 This log was last generated on Fri, 16 Sep 2022 10:12:51 GMT and should not be manually modified.
@@ -13,4 +29,3 @@ Fri, 16 Sep 2022 10:12:51 GMT
 Tue, 09 Aug 2022 06:37:41 GMT
 
 _Initial release_
-

@@ -1,3 +1,20 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [3.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.1.8...v3.0.1) (2023-09-25)
+
+
+### Bug Fixes
+
+* form 调整嵌套时候的缩进 ([e35221e](https://gitee.com/gitee-fe/osui/tree/master/commits/e35221e812a49607ddcb6bf6ed96ab91d20b5c8d))
+* 修复typescript 类型错误 ([f18efab](https://gitee.com/gitee-fe/osui/tree/master/commits/f18efab2a15a47cc163dceba128b521c5522063f))
+
+
+
+
+
 # Change Log - @osui/form
 
 This log was last generated on Sat, 03 Sep 2022 03:38:24 GMT and should not be manually modified.
@@ -41,4 +58,3 @@ Fri, 19 Aug 2022 12:09:45 GMT
 Tue, 09 Aug 2022 06:37:41 GMT
 
 _Initial release_
-

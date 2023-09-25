@@ -1,3 +1,20 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [3.0.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.1.8...v3.0.1) (2023-09-25)
+
+
+### Bug Fixes
+
+* input number 增加tailLabel ([1ab91b1](https://gitee.com/gitee-fe/osui/tree/master/commits/1ab91b1b3d218854ce9a2b8a4cce1ab0453073d8))
+* 修复typescript 类型错误 ([f18efab](https://gitee.com/gitee-fe/osui/tree/master/commits/f18efab2a15a47cc163dceba128b521c5522063f))
+
+
+
+
+
 # Change Log - @osui/input-number
 
 This log was last generated on Thu, 02 Feb 2023 06:11:30 GMT and should not be manually modified.
@@ -20,4 +37,3 @@ Fri, 19 Aug 2022 12:29:42 GMT
 Tue, 09 Aug 2022 06:37:41 GMT
 
 _Initial release_
-

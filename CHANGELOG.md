@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/yuxuan/osui/compare/v2.1.8...v3.0.1) (2023-09-25)
+
+
+### Bug Fixes
+
+* button主题调整 ([cf33f3d](https://github.com/yuxuan/osui/commit/cf33f3d0840e5bf6145c0896f8a54c03bbed983b))
+* form 调整嵌套时候的缩进 ([e35221e](https://github.com/yuxuan/osui/commit/e35221e812a49607ddcb6bf6ed96ab91d20b5c8d))
+* icloud-theme large button字号调整 ([905983e](https://github.com/yuxuan/osui/commit/905983e57d3660fa81b164093d51d2131e715c91))
+* input number 增加tailLabel ([1ab91b1](https://github.com/yuxuan/osui/commit/1ab91b1b3d218854ce9a2b8a4cce1ab0453073d8))
+* input下拉框border focus时显示错位 ([11bb975](https://github.com/yuxuan/osui/commit/11bb9758d54aa741e095ef0ee2fda882d69612f2))
+* list修复loading的问题 ([121da21](https://github.com/yuxuan/osui/commit/121da21c5795ee2125528b60e0f209b9b1b4bdeb))
+* modal ([6550c59](https://github.com/yuxuan/osui/commit/6550c59106ae8d2a584833be9382aa672d52e467))
+* PageHeader title字号调整 ([15ef6fb](https://github.com/yuxuan/osui/commit/15ef6fb9557e0f303180c30e5e4d5152a61a779d))
+* 修复checkbox,tree,tree-select ([eb3dd7c](https://github.com/yuxuan/osui/commit/eb3dd7c4c00f68c702be3d0170dc2df8a2e01400))
+* 修复icloud-theme 构建出错 ([94c53a6](https://github.com/yuxuan/osui/commit/94c53a639db7d4af62522f13e168ce00d762fd6a))
+* 修复icloud-theme 构建出错 ([3b83276](https://github.com/yuxuan/osui/commit/3b832764395d324d116906f2106ab4380c63ba5b))
+* 修复input-group-addon样式v1 acud冲突的问题 ([0fb48b7](https://github.com/yuxuan/osui/commit/0fb48b7a92fd94fafb40da3934c5ffaada9b903f))
+* 修复typescript 类型错误 ([f18efab](https://github.com/yuxuan/osui/commit/f18efab2a15a47cc163dceba128b521c5522063f))
+* 处理radio、 switch、tag、 result、step样式 ([#23](https://github.com/yuxuan/osui/issues/23)) ([09242ac](https://github.com/yuxuan/osui/commit/09242acfa6f6f261e8336481d8177bd3f8de2497))
+* 调整dropdown和menu ([35d503f](https://github.com/yuxuan/osui/commit/35d503fb44fbc74c851809c07ea5695280e95bb1))
+* 调整message ([1d750c1](https://github.com/yuxuan/osui/commit/1d750c1252d0f7eee445ca160f70b80cea57a263))
+* 调整modal关闭位置,之前的用法关闭掉 ([ae0d210](https://github.com/yuxuan/osui/commit/ae0d2102776865959850109e18a47454901fd091))
+* 调整slider ([c489d31](https://github.com/yuxuan/osui/commit/c489d31d11fad85689798d2c400d4e1153a40fdb))
+* 调整timeline, upload ([b8ef6c6](https://github.com/yuxuan/osui/commit/b8ef6c628f7aab0e4229f23bacbfaef63a81a670))
+* 调整tooltip和breadcrumb ([2aee4a9](https://github.com/yuxuan/osui/commit/2aee4a987a1e585e00a7f7e66a990701eafd1d01))
+* 调整useMode confirmFunc类型 ([#7](https://github.com/yuxuan/osui/issues/7)) ([ace8554](https://github.com/yuxuan/osui/commit/ace85547750d990e2646f0e838cc2d12604349eb))
+
+
+
+
+
 ## [2.1.9](https://github.com/yuxuan/osui/compare/v2.1.8...v2.1.9) (2022-08-09)
 
 
