@@ -5,10 +5,11 @@
 
 import * as React from 'react';
 import type {HookModalRef} from 'antd/es/modal/useModal/HookModal';
-import HookModal from 'antd/es/modal/useModal/HookModal';
 import type {ModalFuncProps} from 'antd/es/modal';
+import HookModal from 'antd/es/modal/useModal/HookModal';
 import usePatchElement from 'antd/es/_util/hooks/usePatchElement';
-import {ModalStaticFunctions, withError, withInfo, withSuccess, withWarn, withConfirm} from 'antd/es/modal/confirm';
+import {withError, withInfo, withSuccess, withWarn, withConfirm} from 'antd/es/modal/confirm';
+import {HookAPI} from 'antd/es/modal/useModal';
 import {
     IconCheckCircleFilled,
     IconCloseCircleFilled,
@@ -67,7 +68,7 @@ export const confirmFunc = (
     };
 };
 
-export default function useOsuiModal(): [Omit<ModalStaticFunctions, 'warn'>, React.ReactElement] {
+export default function useOsuiModal() {
     const holderRef = React.useRef<ElementsHolderRef>(null as any);
 
     // ========================== Effect ==========================
@@ -143,6 +144,6 @@ export default function useOsuiModal(): [Omit<ModalStaticFunctions, 'warn'>, Rea
         [getConfirmFunc]
     );
 
-    // eslint-disable-next-line react/jsx-key
-    return [fns as Omit<ModalStaticFunctions, 'warn'>, <ElementsHolder ref={holderRef} />];
+    // eslint-disable-next-line react/jsx-key, max-len
+    return [fns as HookAPI, <ElementsHolder ref={holderRef} />] as readonly [instance: HookAPI, contextHolder: React.ReactElement];
 }

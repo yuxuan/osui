@@ -109,4 +109,7 @@ export const components: ThemeConfig['components'] = {
     Checkbox: {
         marginXS: 0,
     },
+    Layout: {
+        colorBgBody: '#F7F7F9',
+    },
 };

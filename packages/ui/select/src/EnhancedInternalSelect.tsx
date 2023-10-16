@@ -87,4 +87,4 @@ const EnhancedSelect = React.forwardRef(EnhancedInternalSelect);
 
 hoistNonReactStatics(EnhancedSelect, AntdSelect);
 
-export default EnhancedSelect as unknown as typeof Select;
+export default EnhancedSelect;

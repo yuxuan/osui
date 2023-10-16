@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {Ref} from 'react';
 import {Upload as AntdUpload} from 'antd';
 import type {UploadProps as AntdUploadProps} from 'antd';
 import type {DraggerProps as AntdDraggerProps} from 'antd/es/upload/Dragger';
 import classNames from 'classnames';
+import {UploadRef} from 'antd/es/upload/Upload';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import './index.less';
 
@@ -37,7 +38,10 @@ const OSUIUpload = React.forwardRef(({className, dashedBorder, ...props}: Upload
 
 hoistNonReactStatics(OSUIUpload, AntdUpload);
 
-const OSUIUploadDragger = React.forwardRef(({className, dashedBorder, ...props}: DraggerProps, ref) => {
+const OSUIUploadDragger = React.forwardRef((
+    {className, dashedBorder, ...props}: DraggerProps,
+    ref: Ref<UploadRef<any>>
+) => {
     const innerClassNames = classNames(
         clsPrefix,
         {[`${clsPrefix}-dashedBorder`]: dashedBorder},

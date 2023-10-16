@@ -52,7 +52,7 @@ const InnerSelect = (props: InnerSelectProps) => {
                     value={value}
                     onChange={handleChange}
                     // eslint-disable-next-line react/jsx-no-bind
-                    getPopupContainer={trigger => trigger.parentNode}
+                    getPopupContainer={(trigger: any) => trigger.parentNode}
                 />
                 <span className={`${clsPrefix}-confirm-input-action`} onClick={handleConfirm}>确定</span>
                 <span className={`${clsPrefix}-confirm-input-action`} onClick={handleCancel}>取消</span>
@@ -63,7 +63,7 @@ const InnerSelect = (props: InnerSelectProps) => {
         <Select
             {...selectProps}
             // eslint-disable-next-line react/jsx-no-bind
-            getPopupContainer={trigger => trigger.parentNode}
+            getPopupContainer={(trigger: any) => trigger.parentNode}
         />
     );
 };
