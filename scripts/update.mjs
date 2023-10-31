@@ -206,7 +206,8 @@ const update = (filename, fn) => {
 }
 
 
-const updateBatch = async () => {
+const updateBatch = async (callback) => {
+    if(!callback) return;
     try {
         const files = fs.readdirSync('./packages/ui');
         let idx = 0;
@@ -227,7 +228,7 @@ const updateBatch = async () => {
             }
             const filename = files[idx];
             idx++;
-            update(filename, fn)
+            callback(filename, fn)
         }
         fn();
     } catch (e) {
@@ -235,7 +236,7 @@ const updateBatch = async () => {
     }
 };
 
-// updateBatch();
+// updateBatch(update);
 
 const isPackageExist = (basePath, packageName) => {
     const packageJsonExists = fs.existsSync(`${basePath}/package.json`,);
