@@ -1,7 +1,7 @@
-import {Meta, Story, Preview} from '@storybook/addon-docs';
+import {Meta, Story, Canvas} from '@storybook/addon-docs';
 import * as stories from './osui.stories';
 
-<Meta title="设计文档/Select 选择器"  />
+<Meta title="设计文档/Select 选择器" />
 
 # Select
 
@@ -13,16 +13,16 @@ import * as stories from './osui.stories';
 
 **注意：** 不支持Select的allowClear在单选上使用
 
-<Preview>
+<Canvas>
   <Story name="Demo" story={stories.Demo} />
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
   <Story name="Size" story={stories.Size} />
-</Preview>
+</Canvas>
 
 ### 多选用法
 
-<Preview>
+<Canvas>
   <Story name="MultipleDemo" story={stories.MultipleDemo} />
-</Preview>
+</Canvas>

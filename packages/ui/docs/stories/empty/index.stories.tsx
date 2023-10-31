@@ -2,15 +2,16 @@
 import React from 'react';
 import Divider from '@osui/divider';
 import Empty from '@osui/empty';
-import {Base, EmptyInComponents} from './icloud-demo';
+import {EmptyInComponents} from './icloud-demo';
 
 export default {
     title: '数据展示/Empty 空状态',
     component: Empty,
 };
 
-export const BaseDemo = Base;
-export const EmptyInComponentsDemo = EmptyInComponents;
+// export const Demo1 = Base;
+export const Demo1 = EmptyInComponents;
+
 export const Demo2 = () => {
     return (
         <Empty type="error" description="404 Not Found" size="large" />

@@ -2,7 +2,7 @@ import React from 'react';
 import TextOverflowTooltip from '@osui/text-overflow-tooltip';
 
 export default {
-    title: '设计文档/TextOverflowTooltip',
+    title: '数据展示/TextOverflowTooltip',
 };
 
 export const Demo = () => {

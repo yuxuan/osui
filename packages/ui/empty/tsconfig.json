@@ -4,5 +4,8 @@
         "rootDir": "./src",
         "outDir": "./tmp"
     },
-    "include": ["src"]
+    "include": ["src"],
+    "paths": {
+        "@/*": ["./src/*"],
+    }
 }
