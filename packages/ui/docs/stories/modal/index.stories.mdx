@@ -1,4 +1,4 @@
-import {Meta, Story, Preview} from '@storybook/addon-docs';
+import {Meta, Story, Canvas} from '@storybook/addon-docs';
 import * as stories from './index.stories';
 
 <Meta title="设计文档/Modal 对话框"  />
@@ -19,28 +19,28 @@ import * as stories from './index.stories';
 
 ## 基本用法
 
-<Preview>
+<Canvas>
   <Story name="Demo" story={stories.Demo} />
-</Preview>
+</Canvas>
 
 ## 尺寸
 
 大、中、小三种尺寸
 
-<Preview>
+<Canvas>
   <Story name="Size" story={stories.Size} />
-</Preview>
+</Canvas>
 
 ## 确认弹窗
 
 二次确认型弹窗—所有需要用户进行二次确认动作时，可以使用此弹窗
 
-<Preview>
+<Canvas>
   <Story name="Confirm" story={stories.Confirm} />
-</Preview>
+</Canvas>
 
 ## 根据内容自适应高度
 
-<Preview>
+<Canvas>
   <Story name="Auto Height" story={stories.AutoHeight} />
-</Preview>
+</Canvas>

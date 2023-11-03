@@ -1,13 +1,16 @@
 import React from 'react';
 import Spin from '@osui/spin';
-import {Basic} from './icloud-demo';
 
 export default {
     title: '反馈/Spin 加载中',
     component: Spin,
 };
 
-export const BasicDemo = Basic;
+export function Demo() {
+    return (
+        <Spin />
+    );
+}
 
 export const Api = () => {
     return (

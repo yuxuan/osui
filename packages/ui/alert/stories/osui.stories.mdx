@@ -1,4 +1,4 @@
-import {Meta, Story, Preview} from '@storybook/addon-docs';
+import {Meta, Story, Canvas} from '@storybook/addon-docs';
 import * as stories from './osui.stories';
 
 <Meta title="设计文档/Alert 警告提示"/>
@@ -23,6 +23,6 @@ import * as stories from './osui.stories';
 - 若icon不传并且存在description,则会赋予默认的icon， 不会通过`shouldStopClose`控制，点击则关闭
 - 当`closeText`会裹一个span，通过`shouldStopClose`来控制，点击时是否关闭alert。
 
-<Preview>
+<Canvas>
   <Story name="Demo" story={stories.Demo} />
-</Preview>
+</Canvas>

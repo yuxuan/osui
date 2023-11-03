@@ -1,7 +1,7 @@
-import {Meta, Story, Preview} from '@storybook/addon-docs';
+import {Meta, Story, Canvas} from '@storybook/addon-docs';
 import * as stories from './osui.stories';
 
-<Meta title="设计文档/Form 表单"  />
+<Meta title="设计文档/Form 表单" />
 
 # OSUI Form
 
@@ -11,9 +11,9 @@ import * as stories from './osui.stories';
 
 支持所有antd属性：见[antd文档](https://ant.design/components/form-cn/)
 
-<Preview>
+<Canvas>
   <Story name="Demo" story={stories.Demo} />
-</Preview>
+</Canvas>
 
 ### 对antd的强制修改
 
@@ -21,6 +21,6 @@ import * as stories from './osui.stories';
 
 **注意**：这个不能使用antd`hasFeedback`属性，样式与UE要求不符
 
-<Preview>
+<Canvas>
   <Story name="StatusDemo" story={stories.StatusDemo} />
-</Preview>
+</Canvas>

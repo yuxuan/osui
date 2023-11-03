@@ -1,4 +1,4 @@
-import {Meta, Story, Preview} from '@storybook/addon-docs';
+import {Meta, Story, Canvas} from '@storybook/addon-docs';
 import * as stories from './index.stories';
 
 <Meta title="设计文档/Progress 进度条"  />
@@ -13,25 +13,25 @@ import * as stories from './index.stories';
 
 ## 主要样式
 
-<Preview>
+<Canvas>
   <Story name="Demo" story={stories.Demo} />
-</Preview>
+</Canvas>
 
 ### 2、含读数的进度条
 
 常用于有精准进度比例的场景。
 
-<Preview>
+<Canvas>
   <Story name="Status" story={stories.Status} />
-</Preview>
+</Canvas>
 
 ### 3、含图标的进度条
 
 通过醒目的视觉图标提醒用户进度。
 
-<Preview>
+<Canvas>
   <Story name="StatusIcon" story={stories.StatusIcon} />
-</Preview>
+</Canvas>
 
 ### 4、含操作的进度条
 
@@ -39,12 +39,12 @@ TODO
 
 ### 5、基础进度环
 
-<Preview>
+<Canvas>
   <Story name="Circle" story={stories.Circle} />
-</Preview>
+</Canvas>
 
 ### 6、含读数、图标进度环
 
-<Preview>
+<Canvas>
   <Story name="CircleInfo" story={stories.CircleInfo} />
-</Preview>
+</Canvas>

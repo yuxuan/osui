@@ -8,6 +8,8 @@ export default {
 
 export const Demo = () => {
     return (
-        <Popconfirm />
+        <Popconfirm title="卡片标题">
+            带标题的
+        </Popconfirm>
     );
 };

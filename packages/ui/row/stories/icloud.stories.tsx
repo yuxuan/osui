@@ -9,7 +9,7 @@ export default {
 
 export const Demo = () => {
     return (
-        <Row />
+        <Row>Demo</Row>
     );
 };
 

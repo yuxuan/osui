@@ -1,14 +1,25 @@
 import React from 'react';
 import BrandProvider from '@osui/brand-provider';
 import Spin from '../src';
-import {Basic} from './icloud-demo';
 
 export default {
     title: '反馈/Spin 加载中',
     component: Spin,
 };
 
-export const BasicDemo = Basic;
+export const Demo = () => {
+    return (
+        <>
+            <Spin size="small" />
+            <br />
+            <br />
+            <Spin />
+            <br />
+            <br />
+            <Spin size="large" />
+        </>
+    );
+};
 
 export const Api = () => {
     return (

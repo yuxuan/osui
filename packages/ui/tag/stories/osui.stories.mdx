@@ -1,7 +1,7 @@
-import {Meta, Story, Preview} from '@storybook/addon-docs';
+import {Meta, Story, Canvas} from '@storybook/addon-docs';
 import * as stories from './osui.stories';
 
-<Meta title="设计文档/Tag 标签"  />
+<Meta title="设计文档/Tag 标签" />
 
 # OSUI Alert
 
@@ -17,6 +17,6 @@ import * as stories from './osui.stories';
 |:---|:----:|:---:|------:|
 |color|标签色(OSUI已支持预设颜色：'blue、red、purple、green、yellow'，除之外颜色按原生显示)|string|-|
 
-<Preview>
+<Canvas>
   <Story name="Demo" story={stories.Demo} />
-</Preview>
+</Canvas>
