@@ -80,8 +80,8 @@ const useTablePaginationStylePatch = (
 
             let paginationDomList: HTMLElement[] = [];
             try {
-            // antd 5.9.4 更新了 ref 的结构，之后的版本这个获取方式会报错
-            // 增加了 rc-table 的 ref， 并多了nativeElement 嵌套结构
+                // antd 5.11.0 修改了 ref 传递方式
+                // 使用了 Proxy 代理，调用 querySelectorAll 方法会出错
                 paginationDomList = [
                     ...domRef.current?.querySelectorAll(`.${prefixCls}${paginationClassName}`) as any,
                 ];
