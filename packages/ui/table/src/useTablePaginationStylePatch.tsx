@@ -72,36 +72,60 @@ const useTablePaginationStylePatch = (
     domRef: React.MutableRefObject<HTMLElement | null>,
     prefixCls: string
 ) => {
-    useEffect(() => {
-        if (!domRef?.current) {
-            return;
-        }
-
-        const paginationDomList: HTMLElement[] = [
-            ...domRef.current.querySelectorAll(`.${prefixCls}${paginationClassName}`) as any,
-        ];
-        if (!paginationDomList || paginationDomList.length === 0) {
-            return;
-        }
-
-        const observerList = paginationDomList.map(dom => {
-            const observer = new MutationObserver(mutationCallback(paginationDomList, prefixCls));
-            const paginationOptionsDom = [...dom.childNodes as any]
-                .find(i => i.className.includes(`${prefixCls}${paginationOptionClassName}`));
-            // 初始化样式
-            if (paginationOptionsDom) {
-                handleAddAndRemove(dom, prefixCls);
-                setPaginationOptionsWidth(dom, prefixCls);
+    useEffect(
+        () => {
+            if (!domRef?.current) {
+                return;
             }
 
-            observer.observe(dom, mutationObserverConfig);
-            return observer;
-        });
+            let paginationDomList: HTMLElement[] = [];
+            try {
+                // antd 5.11.0 修改了 ref 传递方式
+                // 使用了 Proxy 代理，调用 querySelectorAll 方法会出错
+                paginationDomList = [
+                    ...domRef.current?.querySelectorAll(`.${prefixCls}${paginationClassName}`) as any,
+                ];
+            } catch (e: any) {
+                console.error(e?.message);
+            }
 
-        return () => {
-            observerList?.map(observer => observer?.disconnect());
-        };
-    }, []
+            try {
+                if (paginationDomList.length === 0) {
+                    const className = (domRef.current.className || '').split(' ').map(v => '.' + v).join(' ');
+                    const dom = document.querySelector(className);
+                    if (dom) {
+                        paginationDomList = [
+                            ...dom?.querySelectorAll(`.${prefixCls}${paginationClassName}`) as any,
+                        ];
+                    }
+                }
+            } catch (e: any) {
+                console.error(domRef.current.className, e?.message);
+            }
+
+            if (!paginationDomList || paginationDomList.length === 0) {
+                return;
+            }
+
+            const observerList = paginationDomList.map(dom => {
+                const observer = new MutationObserver(mutationCallback(paginationDomList, prefixCls));
+                const paginationOptionsDom = [...dom.childNodes as any]
+                    .find(i => i.className.includes(`${prefixCls}${paginationOptionClassName}`));
+                // 初始化样式
+                if (paginationOptionsDom) {
+                    handleAddAndRemove(dom, prefixCls);
+                    setPaginationOptionsWidth(dom, prefixCls);
+                }
+
+                observer.observe(dom, mutationObserverConfig);
+                return observer;
+            });
+
+            return () => {
+                observerList?.map(observer => observer?.disconnect());
+            };
+        },
+        []
     );
 };
 

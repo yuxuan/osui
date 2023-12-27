@@ -36,17 +36,18 @@ function Table<RecordType extends Record<string, any>>(
     let locale = {
         ...icloudLocale,
     };
-    let showQuickJumper: false | { goButton: Record<string, any> | null } | undefined = false;
+    let showQuickJumper: false | {
+        goButton?: React.ReactNode | Record<string, any> | null;
+    } | undefined = false;
     if (pagination) {
         locale = {
             ...locale,
             ...(pagination && pagination.locale ? pagination.locale : {}),
         };
         const goButton = <button>{locale.jump_to_confirm}</button>;
-        showQuickJumper = pagination.showQuickJumper && {
-            ...{goButton},
-            ...(typeof pagination.showQuickJumper === 'boolean' ? {} : pagination.showQuickJumper),
-        };
+        showQuickJumper = pagination.showQuickJumper === true || pagination.showQuickJumper === undefined
+            ? {goButton}
+            : pagination.showQuickJumper;
     }
 
     const antdContext = useContext(ConfigProvider.ConfigContext);
