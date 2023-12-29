@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React, {useCallback, forwardRef} from 'react';
 import {RefSelectProps} from 'antd/es/select';
 import {Select as AntdSelect} from 'antd';
 import {useDerivedState} from '@huse/derived-state';
@@ -7,11 +7,18 @@ import Popover from '@osui/popover';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import Select from './InternalBaseSelect';
 
-const DisplayTagsInPopoverSelect = React.forwardRef((
-    props: React.ComponentProps<typeof Select>,
+type ForwardRefReturn = React.ReactElement<
+    any,
+    string | React.JSXElementConstructor<any>
+> | null;
+
+type DefaultType = string[];
+
+const DisplayTagsInPopoverSelect = forwardRef(<T = DefaultType>(
+    props: React.ComponentProps<typeof Select<T>>,
     ref: React.Ref<RefSelectProps> | undefined
 ) => {
-    const [selectedValue, setSelectedValue] = useDerivedState<string[]>(props.value as string[]);
+    const [selectedValue, setSelectedValue] = useDerivedState<T | undefined>(props.value as T);
     const handleChange = useCallback(
         (value, option) => {
             setSelectedValue(value);
@@ -21,7 +28,11 @@ const DisplayTagsInPopoverSelect = React.forwardRef((
     );
     const handleClose = useCallback(
         tag => {
-            const newSelectedValue = selectedValue.filter(v => v !== tag.value);
+            const newSelectedValue = Array.isArray(selectedValue)
+                ? (selectedValue.filter(v => v !== tag.value) as T)
+                : selectedValue === tag.value
+                    ? selectedValue
+                    : undefined;
             setSelectedValue(newSelectedValue);
         },
         [selectedValue, setSelectedValue]
@@ -70,20 +81,26 @@ const DisplayTagsInPopoverSelect = React.forwardRef((
             maxTagPlaceholder={renderMaxTagPlaceholder}
         />
     );
-});
+}) as <T = DefaultType>(
+    props: React.ComponentProps<typeof Select<T>>,
+    ref: React.Ref<RefSelectProps> | undefined
+) => ForwardRefReturn;
 
-function EnhancedInternalSelect(
-    props: React.ComponentProps<typeof Select>,
+function EnhancedInternalSelect<T = DefaultType>(
+    props: React.ComponentProps<typeof Select<T>>,
     ref: React.Ref<RefSelectProps> | undefined
 ): React.ReactElement | null {
     const {displayTagsInPopover, ...restProps} = props;
     if (displayTagsInPopover) {
-        return <DisplayTagsInPopoverSelect {...restProps} ref={ref} />;
+        return <DisplayTagsInPopoverSelect<T> {...restProps} ref={ref} />;
     }
     return <Select {...restProps} ref={ref} />;
 }
 
-const EnhancedSelect = React.forwardRef(EnhancedInternalSelect);
+const EnhancedSelect = React.forwardRef(EnhancedInternalSelect) as <T = DefaultType>(
+    props: React.ComponentProps<typeof Select<T>>,
+    ref: React.Ref<RefSelectProps> | undefined
+) => ForwardRefReturn;
 
 hoistNonReactStatics(EnhancedSelect, AntdSelect);
 
