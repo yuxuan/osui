@@ -124,8 +124,8 @@ const useTablePaginationStylePatch = (
             return () => {
                 observerList?.map(observer => observer?.disconnect());
             };
-        },
-        []
+        }
+        // []
     );
 };
 
