@@ -182,8 +182,6 @@
         order: -10;
         position: absolute;
         width: 336px;
-        display: inline-flex;
-        justify-content: space-between;
     }
 
     .@{ant-prefix}-pagination-item,
@@ -203,6 +201,8 @@
     }
 
     .@{ant-prefix}-pagination-options-size-changer {
+        float: left;
+
         .@{ant-prefix}-select-selector {
             padding: 0 8px;
         }
@@ -215,6 +215,7 @@
     .@{ant-prefix}-pagination-options .@{ant-prefix}-pagination-options-quick-jumper,
     .@{ant-prefix}-pagination-simple-pager {
         color: var(--pagination-prev-next-icon-color);
+        float: right;
 
         input {
             margin: 0 8px;

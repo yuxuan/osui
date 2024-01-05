@@ -70,7 +70,8 @@ const mutationObserverConfig = {attributes: true, childList: true, subtree: true
 
 const useTablePaginationStylePatch = (
     domRef: React.MutableRefObject<HTMLElement | null>,
-    prefixCls: string
+    prefixCls: string,
+    containerDomRef: React.MutableRefObject<HTMLElement | null>
 ) => {
     useEffect(
         () => {
@@ -92,7 +93,7 @@ const useTablePaginationStylePatch = (
             try {
                 if (paginationDomList.length === 0) {
                     const className = (domRef.current.className || '').split(' ').map(v => '.' + v).join(' ');
-                    const dom = document.querySelector(className);
+                    const dom = (containerDomRef.current || document)?.querySelector(className);
                     if (dom) {
                         paginationDomList = [
                             ...dom?.querySelectorAll(`.${prefixCls}${paginationClassName}`) as any,
@@ -125,7 +126,6 @@ const useTablePaginationStylePatch = (
                 observerList?.map(observer => observer?.disconnect());
             };
         }
-        // []
     );
 };
 

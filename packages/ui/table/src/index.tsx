@@ -31,6 +31,7 @@ function Table<RecordType extends Record<string, any>>(
     ref: React.Ref<HTMLDivElement> | undefined
 ) {
     const domRef = useRef<HTMLDivElement>(null);
+    const containerDomRef = useRef<HTMLDivElement>(null);
     const {brand} = useBrandContext();
     const {pagination = {}} = props;
     let locale = {
@@ -53,7 +54,7 @@ function Table<RecordType extends Record<string, any>>(
     const antdContext = useContext(ConfigProvider.ConfigContext);
     const prefixCls = antdContext.getPrefixCls();
 
-    useTablePaginationStylePatch(domRef, prefixCls);
+    useTablePaginationStylePatch(domRef, prefixCls, containerDomRef);
 
     const className = classNames(
         clsPrefix,
@@ -81,7 +82,7 @@ function Table<RecordType extends Record<string, any>>(
     useImperativeHandle(ref, () => (domRef.current as HTMLDivElement));
 
     return (
-        <div className={className}>
+        <div className={className} ref={containerDomRef}>
             <AntdTable
                 {...props}
                 ref={domRef}
