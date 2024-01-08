@@ -47,9 +47,7 @@ function Table<RecordType extends Record<string, any>>(
                         ...icloudLocale,
                         ...(pagination && pagination.locale ? pagination.locale : {}),
                     },
-                    showQuickJumper: pagination.showQuickJumper === true
-                        ? {goButton}
-                        : pagination.showQuickJumper,
+                    showQuickJumper: pagination.showQuickJumper || {goButton},
                 };
             }
             return paginationIn;
