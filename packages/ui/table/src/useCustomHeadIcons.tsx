@@ -98,14 +98,11 @@ const useCustomHeadIcons: <T extends {
                                 onClick={() => onClick(column)}
                                 className={classNames(
                                     {
-                                        // eslint-disable-next-line max-len
-                                        [`${prefixCls}-column-sorter-down`]: !!isSortedItem && isSortedItem.order === DESCEND,
-                                    },
-                                    {
-                                        // eslint-disable-next-line max-len
-                                        [`${prefixCls}-column-sorter-up`]: !!isSortedItem && isSortedItem.order === ASCEND,
-                                    },
-                                    {
+                                        'osui-icon': true,
+                                        [`${prefixCls}-table-column-sorter-down`]:
+                                            !!isSortedItem && isSortedItem.order === DESCEND,
+                                        [`${prefixCls}-table-column-sorter-up`]:
+                                            !!isSortedItem && isSortedItem.order === ASCEND,
                                         active: !!isSortedItem && isSortedItem.order,
                                     }
                                 )}
