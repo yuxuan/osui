@@ -91,11 +91,8 @@ function Table<RecordType extends Record<string, any>>(
                 ref={domRef}
                 columns={columns}
                 pagination={mergePagination}
-                expandable={{
-                    expandIcon: osuiExpandIcon,
-                    ...(props.expandable ? {expandable: props.expandable} : {}),
-                }}
-                // expandIcon={}
+                // todo 新方式疑似添加了expandIcon，就必须设置 expandedRowRender
+                expandIcon={props.expandIcon || osuiExpandIcon}
                 onChange={handleChange}
             />
         </div>
