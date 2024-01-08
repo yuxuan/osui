@@ -34,7 +34,6 @@ const handleAddAndRemove: (
 ) => void = (parentDom, prefixCls) => {
     const pageSizeDom = parentDom.querySelector(`.${prefixCls}${pageSizeClassName}`);
     const quickJumperDom = parentDom.querySelector(`.${prefixCls}${quickJumperClassName}`);
-    // const simplePagerDom = parentDom.querySelector(`.${prefixCls}${simplePagerClassName}`);
 
     const paginationOptionDom = setPaginationOptionsWidth(parentDom, prefixCls);
     const marginLeft = Number(paginationOptionDom?.style?.marginInlineStart?.replace('px', '')) || 16;
