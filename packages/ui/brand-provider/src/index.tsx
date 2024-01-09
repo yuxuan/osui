@@ -47,8 +47,7 @@ const iCloudConfigs: ConfigProviderProps = {
 const BrandProvider: React.FC<React.PropsWithChildren<{
     brand?: Brand;
     theme?: Partial<ThemeConfig>;
-    ConfigProviderProps?: ConfigProviderProps;
-}>> = (
+} & ConfigProviderProps>> = (
     {brand, theme: outerTheme, children, ...ConfigProviderProps}
 ) => {
     const finalTheme = useMemo(
@@ -71,3 +70,5 @@ const BrandProvider: React.FC<React.PropsWithChildren<{
 export const useBrandContext = () => useContext(BrandContext);
 
 export default BrandProvider;
+
+export const osuiThemeConfig = theme;
