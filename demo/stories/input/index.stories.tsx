@@ -7,9 +7,9 @@ import FlexCentered from '@osui/flex-centered';
 import BrandProvider from '@osui/brand-provider';
 import Button from '@osui/button';
 import Form from '@osui/form';
-import Gap from '@osui/gap';
+import {version} from 'antd';
 import Cascader from '@osui/cascader';
-import version from '@osui/version';
+import Gap from '@osui/gap';
 import Input from '@osui/input';
 const {TextArea} = Input;
 
@@ -31,11 +31,11 @@ export default {
 };
 
 export const Demo = () => {
-    Form.useLabelLayout('demo');
     const inputRef = React.useRef(null);
     return (
         <>
-            <BrandProvider brand="icloud">
+            {version}
+            <BrandProvider>
                 <h3>基础输入框展示形式</h3>
                 <p>默认样式</p>
                 <Input
@@ -705,7 +705,7 @@ export const TestCase = () => {
             </Input.Group>
 
             <p>在form中可以有大小</p>
-            <Form size="large">
+            <Form size="large" name="demo">
                 <Form.Item>
                     <Input />
                 </Form.Item>

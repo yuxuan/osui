@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import BrandProvider from '@osui/brand-provider';
@@ -21,8 +22,12 @@ const Blockquote = ({children}) => (
 );
 
 export const Demo = () => {
-    function onChange(val) {
-        console.log(val);
+    function onChange(page, pageSize) {
+        console.log('page, pageSize', page, pageSize);
+    }
+
+    function onShowSizeChange(current, size) {
+        console.log('current, size: ', current, size);
     }
 
     return (
@@ -33,7 +38,7 @@ export const Demo = () => {
             </Blockquote>
             <BrandProvider brand="icloud">
                 <p>默认状态</p>
-                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} />
+                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} onShowSizeChange={onShowSizeChange} />
                 <br />
                 <Pagination showQuickJumper defaultCurrent={2} total={80} onChange={onChange} />
                 <br />
@@ -50,13 +55,14 @@ export const Demo = () => {
                 <Pagination size="small" showQuickJumper defaultCurrent={2} total={500} onChange={onChange} />
                 <br />
                 <p>类型为simple时</p>
-                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} simple/>
+                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} simple />
                 <br />
                 <p>隐藏sizeChange和quickJump</p>
                 <Pagination showQuickJumper={false} defaultCurrent={2} total={70} onChange={onChange} showSizeChanger={false} />
                 <br />
             </BrandProvider>
-        </div>);
+        </div>
+    );
 };
 
 export const Api = () => {

@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Button from '@osui/button';
 import Gap from '@osui/gap';
 import Divider from '@osui/divider';
@@ -21,7 +21,7 @@ export const Demo1 = () => {
     );
 
     return (
-        <div style={{ padding: 30 }}>
+        <div style={{padding: 30}}>
             <Divider orientation="left">带标题</Divider>
             <Popover
                 title="卡片标题"
@@ -87,10 +87,10 @@ export const Demo2 = () => {
     const buttonWidth = 60;
 
     return (
-        <div style={{ padding: 30 }}>
-            <p style={{ marginTop: 20 }}>气泡位置</p>
+        <div style={{padding: 30}}>
+            <p style={{marginTop: 20}}>气泡位置</p>
             <br />
-            <div style={{ marginLeft: buttonWidth + 32, whiteSpace: 'nowrap', display: 'flex' }}>
+            <div style={{marginLeft: buttonWidth + 32, whiteSpace: 'nowrap', display: 'flex'}}>
                 <Popover
                     content={
                         <div>
@@ -127,7 +127,7 @@ export const Demo2 = () => {
                     <Button>TR</Button>
                 </Popover>
             </div>
-            <div style={{ width: buttonWidth, float: 'left', textAlign: 'right' }}>
+            <div style={{width: buttonWidth, float: 'left', textAlign: 'right'}}>
                 <Popover
                     content={
                         <div>
@@ -164,7 +164,7 @@ export const Demo2 = () => {
                     <Button>LB</Button>
                 </Popover>
             </div>
-            <div style={{ width: buttonWidth, marginLeft: buttonWidth * 5 + 24 }}>
+            <div style={{width: buttonWidth, marginLeft: buttonWidth * 5 + 24}}>
                 <Popover
                     content={
                         <div>
@@ -201,7 +201,7 @@ export const Demo2 = () => {
                     <Button>RB</Button>
                 </Popover>
             </div>
-            <div style={{ marginLeft: buttonWidth + 25, clear: 'both', whiteSpace: 'nowrap', display: 'flex' }}>
+            <div style={{marginLeft: buttonWidth + 25, clear: 'both', whiteSpace: 'nowrap', display: 'flex'}}>
                 <Popover
                     content={
                         <div>

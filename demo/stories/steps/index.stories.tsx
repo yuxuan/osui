@@ -1,7 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, {useState} from 'react';
-import Button from '@osui/button';
 import Space from '@osui/space';
+import Button from '@osui/button';
+import BrandProvider from '@osui/brand-provider';
 import Steps from '@osui/steps';
 
 export default {
@@ -16,7 +17,7 @@ export const Demo = () => {
         setCurrent(current);
     };
     return (
-        <>
+        <BrandProvider>
             <h2>纵向步骤条</h2>
             <Steps direction="vertical" current={1}>
                 <Step title="已完成步骤" description="描述文案" status="finish" />
@@ -113,7 +114,7 @@ export const Demo = () => {
                 <Button onClick={() => setCurrent(step => step + 1)}>下一步</Button>
                 <Button onClick={() => setCurrent(step => step - 1)}>上一步</Button>
             </Space>
-        </>
+        </BrandProvider>
     );
 };
 

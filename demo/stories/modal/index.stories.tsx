@@ -2,6 +2,7 @@
 import React, {createContext, useState} from 'react';
 import Button from '@osui/button';
 import Space from '@osui/space';
+import ConfigProvider from '@osui/config-provider';
 import {IconExclamationCircleFilled} from '@osui/icons';
 import BrandProvider from '@osui/brand-provider';
 import Modal from '@osui/modal';
@@ -27,90 +28,110 @@ const config = {
 export const Demo = () => {
     const [visible, setVisible] = useState(false);
     const [modal, modalContextHolder] = Modal.useModal();
+    const [modal2, modalContextHolder2] = Modal.useModal();
 
     return (
-        <div style={{padding: 30}}>
-            <Space>
-                <ReachableContext.Provider value="Light">
-                    {modalContextHolder}
+        <BrandProvider>
+            <div style={{padding: 30}}>
+                <ConfigProvider prefixCls="meszhan">
+                    {modalContextHolder2}
                     <Button
                         type="primary"
                         onClick={() => {
-                            modal.confirm(config);
+                            modal2.confirm(config);
                         }}
                     >
-                        Context Provider
+                        测试ConfigProvider是否有效，在这里因为class前缀被更改，按钮和弹窗都没有样式
                     </Button>
-                    <UnreachableContext.Provider value="Bamboo" />
-                </ReachableContext.Provider>
-                <BrandProvider brand="icloud">
-                    <Space>
-                        <Button type="primary" onClick={() => setVisible(true)}>
-                            打开基础modal
-                        </Button>
+                </ConfigProvider>
+                <br></br>
+                <br></br>
+                <Space>
+                    <ReachableContext.Provider value="Light">
+                        {modalContextHolder}
                         <Button
                             type="primary"
                             onClick={() => {
-                                modal.confirm({title: 'Confirm', closable: true, content: 'This is a Confirm Dialog.'});
+                                modal.confirm(config);
                             }}
                         >
-                            Confirm
+                            Context Provider
                         </Button>
-                        <Button
-                            type="primary"
-                            onClick={() => {
-                                modal.confirm({
-                                    title: 'Warning',
-                                    content: 'This is a Warning Dialog.',
-                                    type: 'warning',
-                                });
-                            }}
-                        >
-                            Warning
-                        </Button>
-                        <Button
-                            type="primary"
-                            onClick={() => {
-                                modal.confirm({
-                                    title: 'Success',
-                                    content: 'This is a Success Dialog.',
-                                    type: 'success',
-                                });
-                            }}
-                        >
-                            Success
-                        </Button>
-                        <Button
-                            type="primary"
-                            onClick={() => {
-                                modal.confirm({title: 'Info', content: 'This is a Info Dialog.', type: 'info'});
-                            }}
-                        >
-                            Info
-                        </Button>
-                        <Button
-                            type="primary"
-                            onClick={() => {
-                                modal.confirm({title: 'Error', content: 'This is a Error Dialog.', type: 'error'});
-                            }}
-                        >
-                            Error
-                        </Button>
-                    </Space>
-
-                    <Modal
-                        title="我是标题我是标题"
-                        visible={visible}
-                        onOk={() => setVisible(false)}
-                        onCancel={() => setVisible(false)}
+                        <UnreachableContext.Provider value="Bamboo" />
+                    </ReachableContext.Provider>
+                    <Button type="primary" onClick={() => setVisible(true)}>
+                        打开基础modal
+                    </Button>
+                    <Button
+                        type="primary"
+                        onClick={() => {
+                            modal.confirm({
+                                title: 'Confirm',
+                                icon: null,
+                                closable: true,
+                                content: 'This is a Confirm Dialog.',
+                            });
+                        }}
                     >
-                        何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                        何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                        何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    </Modal>
-                </BrandProvider>
-            </Space>
-        </div>
+                        Confirm
+                    </Button>
+                    <Button
+                        type="primary"
+                        onClick={() => {
+                            modal.confirm({
+                                title: 'Warning',
+                                content: 'This is a Warning Dialog.',
+                                type: 'warning',
+                            });
+                        }}
+                    >
+                        Warning
+                    </Button>
+                    <Button
+                        type="primary"
+                        onClick={() => {
+                            modal.confirm({
+                                title: 'Success',
+                                content: 'This is a Success Dialog.',
+                                type: 'success',
+                            });
+                        }}
+                    >
+                        Success
+                    </Button>
+                    <Button
+                        type="primary"
+                        onClick={() => {
+                            modal.confirm({title: 'Info', content: 'This is a Info Dialog.', type: 'info'});
+                        }}
+                    >
+                        Info
+                    </Button>
+                    <Button
+                        type="primary"
+                        onClick={() => {
+                            modal.confirm({title: 'Error', content: 'This is a Error Dialog.', type: 'error'});
+                        }}
+                    >
+                        Error
+                    </Button>
+                </Space>
+
+                <Modal
+                    title="我是标题我是标题"
+                    visible={visible}
+                    onOk={() => setVisible(false)}
+                    onCancel={() => setVisible(false)}
+                >
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                </Modal>
+            </div>
+        </BrandProvider>
     );
 };
 
@@ -131,9 +152,12 @@ export const Size = () => {
                     onOk={() => setVisibleA(false)}
                     onCancel={() => setVisibleA(false)}
                 >
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
                 </Modal>
                 <p></p>
                 <Button type="primary" onClick={() => setVisibleB(true)}>
@@ -146,9 +170,12 @@ export const Size = () => {
                     onOk={() => setVisibleB(false)}
                     onCancel={() => setVisibleB(false)}
                 >
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
                 </Modal>
                 <p />
                 <Button type="primary" onClick={() => setVisibleC(true)}>
@@ -161,9 +188,12 @@ export const Size = () => {
                     onOk={() => setVisibleC(false)}
                     onCancel={() => setVisibleC(false)}
                 >
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
                 </Modal>
                 <p></p>
             </BrandProvider>
@@ -171,9 +201,7 @@ export const Size = () => {
     );
 };
 
-
 export const Confirm = () => {
-
     function showConfirm() {
         Modal.confirm({
             closable: true,
@@ -310,21 +338,41 @@ export const Confirm = () => {
         <>
             <p>没有title的样式</p>
             <Space direction="horizontal">
-                <Button type="primary" onClick={() => showConfirm()}>Confirm</Button>
-                <Button type="primary" onClick={() => showSuccessConfirm()}>Success</Button>
-                <Button type="primary" onClick={() => showErrorConfirm()}>Error</Button>
-                <Button type="primary" onClick={() => showWarningConfirm()}>Warning</Button>
-                <Button type="primary" onClick={() => showInfoConfirm()}>Info</Button>
+                <Button type="primary" onClick={() => showConfirm()}>
+                    Confirm
+                </Button>
+                <Button type="primary" onClick={() => showSuccessConfirm()}>
+                    Success
+                </Button>
+                <Button type="primary" onClick={() => showErrorConfirm()}>
+                    Error
+                </Button>
+                <Button type="primary" onClick={() => showWarningConfirm()}>
+                    Warning
+                </Button>
+                <Button type="primary" onClick={() => showInfoConfirm()}>
+                    Info
+                </Button>
             </Space>
             <br></br>
             <br />
             <p>有title的样式</p>
             <Space direction="horizontal">
-                <Button type="primary" onClick={() => showConfirmWithTitle()}>Confirm</Button>
-                <Button type="primary" onClick={() => showSuccessConfirmWithTitle()}>Success</Button>
-                <Button type="primary" onClick={() => showErrorConfirmWithTitle()}>Error</Button>
-                <Button type="primary" onClick={() => showWarningConfirmWithTitle()}>Warning</Button>
-                <Button type="primary" onClick={() => showInfoConfirmWithTitle()}>Info</Button>
+                <Button type="primary" onClick={() => showConfirmWithTitle()}>
+                    Confirm
+                </Button>
+                <Button type="primary" onClick={() => showSuccessConfirmWithTitle()}>
+                    Success
+                </Button>
+                <Button type="primary" onClick={() => showErrorConfirmWithTitle()}>
+                    Error
+                </Button>
+                <Button type="primary" onClick={() => showWarningConfirmWithTitle()}>
+                    Warning
+                </Button>
+                <Button type="primary" onClick={() => showInfoConfirmWithTitle()}>
+                    Info
+                </Button>
             </Space>
         </>
     );
@@ -345,17 +393,28 @@ export const AutoHeight = () => {
                     onOk={() => setVisibleA(false)}
                     onCancel={() => setVisibleA(false)}
                 >
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
                 </Modal>
             </BrandProvider>
         </div>
@@ -363,7 +422,6 @@ export const AutoHeight = () => {
 };
 
 export const confirmWithPromise = () => {
-
     const {confirm} = Modal;
 
     function showConfirm() {
@@ -448,13 +506,9 @@ export const FullSizeDemo = () => {
             <Button type="primary" onClick={() => setVisible(true)}>
                 全屏弹框
             </Button>
-            <Modal
-                fullScreen
-                visible={visible}
-                onOk={() => setVisible(false)}
-                onCancel={() => setVisible(false)}
-            >
-                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+            <Modal fullScreen visible={visible} onOk={() => setVisible(false)} onCancel={() => setVisible(false)}>
+                何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                在当前页面正中打开一个浮层，承载相应的操作。
             </Modal>
         </>
     );
@@ -463,29 +517,15 @@ export const FullSizeDemo = () => {
 export const Api = () => {
     return (
         <>
-            <a target="_blank" rel="noreferrer" href="https://ant.design/components/modal-cn/">Antd Modal API</a>
+            <a target="_blank" rel="noreferrer" href="https://ant.design/components/modal-cn/">
+                Antd Modal API
+            </a>
         </>
     );
 };
 
 export const TestCase = () => {
     const [visible, setVisible] = useState(false);
-    const {confirm} = Modal;
-    function showConfirm() {
-        confirm({
-            title: 'Do you Want to delete these items?',
-            icon: <IconExclamationCircleFilled />,
-            content: 'Some descriptions',
-            okButtonProps: {loading: true},
-            onOk() {
-                console.log('确定');
-            },
-            onCancel() {
-                console.log('取消');
-            },
-
-        });
-    }
     return (
         <div style={{padding: 30}}>
             <p>footer错位了</p>
@@ -500,14 +540,15 @@ export const TestCase = () => {
                     onOk={() => setVisible(false)}
                     onCancel={() => setVisible(false)}
                 >
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
-                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
+                    何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
+                    在当前页面正中打开一个浮层，承载相应的操作。
                 </Modal>
                 <br />
                 <br />
-                <p>Modal.confirm不在Context内，而使用antd提供的Modal.useModal的方式，目前还没兼容</p>
-                <Button type="primary" onClick={() => {showConfirm();}}>Confirm</Button>
             </BrandProvider>
         </div>
     );
@@ -520,17 +561,13 @@ export const TestCase2 = () => {
         return (
             <Context.Provider value="bamboo">
                 <Button
-                    onClick={
-                        () => {
-                            modal.confirm({
-                                content: (
-                                    <Context.Consumer>
-                                        {name => <div className="test-hook">{name}</div>}
-                                    </Context.Consumer>
-                                ),
-                            });
-                        }
-                    }
+                    onClick={() => {
+                        modal.confirm({
+                            content: (
+                                <Context.Consumer>{name => <div className="test-hook">{name}</div>}</Context.Consumer>
+                            ),
+                        });
+                    }}
                 >
                     click me
                 </Button>

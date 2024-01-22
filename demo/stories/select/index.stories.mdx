@@ -1,4 +1,4 @@
-import {Meta, Story, Preview} from '@storybook/addon-docs';
+import {Meta, Story, Canvas} from '@storybook/addon-docs';
 import * as stories from './index.stories';
 
 <Meta title="设计文档/Select 选择器"  />
@@ -13,16 +13,40 @@ import * as stories from './index.stories';
 
 **注意：** 不支持Select的allowClear在单选上使用
 
-<Preview>
-  <Story name="Demo" story={stories.Demo} />
-</Preview>
+<Canvas>
+  <Story name="Demo" story={stories.BasicDemo} />
+</Canvas>
 
-<Preview>
-  <Story name="Size" story={stories.Size} />
-</Preview>
+<Canvas>
+  <Story name="Size" story={stories.SizeDemo} />
+</Canvas>
 
 ### 多选用法
 
-<Preview>
+<Canvas>
   <Story name="MultipleDemo" story={stories.MultipleDemo} />
-</Preview>
+</Canvas>
+
+<Canvas>
+    <Story name="MultipleDisplayInPopupDemo" story={stories.MultipleDisplayInPopupDemo} />
+</Canvas>
+
+<Canvas>
+    <Story name="MulipleDisplayInPopupByHandDemo" story={stories.MulipleDisplayInPopupByHandDemo} />
+</Canvas>
+
+<Canvas>
+    <Story name="SelectUsersDemo" story={stories.SelectUsersDemo} />
+</Canvas>
+
+<Canvas>
+    <Story name="TestCaseDemo" story={stories.TestCaseDemo} />
+</Canvas>
+
+<Canvas>
+    <Story name="SelectAllDemo" story={stories.SelectAllDemo} />
+</Canvas>
+
+<Canvas>
+    <Story name="Api" story={stories.Api} />
+</Canvas>

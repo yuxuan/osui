@@ -1,4 +1,4 @@
-import {Meta, Story, Preview} from '@storybook/addon-docs';
+import {Meta, Story, Canvas} from '@storybook/addon-docs';
 import * as stories from './index.stories';
 
 <Meta title="设计文档/Breadcrumb 面包屑"  />
@@ -11,18 +11,18 @@ import * as stories from './index.stories';
 
 ## a.小于等于5级时：
 
-<Preview>
+<Canvas>
   <Story name="Demo" story={stories.Demo} />
-</Preview>
+</Canvas>
 
 ## b.超过5级时（超过5级时，可从末尾逐级点击展开上一级）：
 
-<Preview>
+<Canvas>
   <Story name="Ellipsis" story={stories.Ellipsis} />
-</Preview>
+</Canvas>
 
 ## 部分功能中，需切换如代码库、流水线，可根据业务诉求在面包屑中增加切换功能：
 
-<Preview>
+<Canvas>
   <Story name="Dropdown" story={stories.Dropdown} />
-</Preview>
+</Canvas>

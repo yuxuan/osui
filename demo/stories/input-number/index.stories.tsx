@@ -35,7 +35,7 @@ export const Demo = () => {
             />
             <p></p>
             <InputNumber
-                defaultValue={100}
+                defaultValue={'100'}
                 min={0}
                 max={100}
                 formatter={value => `${value}%`}
@@ -45,14 +45,14 @@ export const Demo = () => {
             <p></p>
             <h3>报错</h3>
             <p>需要确认报错是右侧对齐还是紧挨着组件</p>
-            <Form wrapperCol={{span: 12}}>
+            <Form name="demo" wrapperCol={{span: 12}}>
                 <Form.Item
                     validateMessageLayout="inline"
                     label="磁盘大小"
                     validateStatus="error"
                     help={'格式错误，请按提示规则录入'}
                 >
-                    <InputNumber /> GB
+                    <InputNumber tailLabel="GB" />
                 </Form.Item>
                 <Form.Item
                     validateMessageLayout="inline"
@@ -79,7 +79,7 @@ export const InputNumberStrongDemo = () => {
             <p></p>
             <h3>报错</h3>
             <p>需要确认报错是右侧对齐还是紧挨着组件</p>
-            <Form wrapperCol={{span: 12}}>
+            <Form name="demo" wrapperCol={{span: 12}}>
                 <Form.Item
                     validateMessageLayout="inline"
                     label="磁盘大小"
@@ -87,7 +87,7 @@ export const InputNumberStrongDemo = () => {
                     help={'格式错误，请按提示规则录入'}
                 >
                     <FlexCentered>
-                        <InputNumberCompact /> GB
+                        <InputNumberCompact tailLabel="GB" />
                     </FlexCentered>
                 </Form.Item>
                 <Form.Item

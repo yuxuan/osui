@@ -1,4 +1,4 @@
-import {Meta, Story, Preview} from '@storybook/addon-docs';
+import {Meta, Story, Canvas} from '@storybook/addon-docs';
 import * as stories from './index.stories';
 
 <Meta title="设计文档/Popover 气泡卡片"  />
@@ -7,14 +7,14 @@ import * as stories from './index.stories';
 
 一些给UE看的文档说明，可以放在这里
 
-<Preview>
+<Canvas>
   <Story name="基本" story={stories.Demo1} />
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
   <Story name="不同方位" story={stories.Demo2} />
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
   <Story name="内容可关闭" story={stories.Demo3} />
-</Preview>
+</Canvas>

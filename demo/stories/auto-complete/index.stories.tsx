@@ -1,6 +1,7 @@
 import React, {useState, useCallback} from 'react';
 import Divider from '@osui/divider';
 import Markdown from '@osui/markdown';
+import BrandProvider from '@osui/brand-provider';
 import AutoComplete from '@osui/auto-complete';
 
 const Blockquote = ({children}) => (
@@ -113,7 +114,7 @@ export const Demo1 = () => {
     };
 
     return (
-        <>
+        <BrandProvider brand="icloud">
             <p>通过输入关键信息即时联想，选择选项后即完成</p>
             <h3>使用场景</h3>
             <p>需要自动完成时，使用该输入框，用户输入内容，联想相关结果，点击即可选择</p>
@@ -186,7 +187,7 @@ export const Demo1 = () => {
                 }}
                 placeholder="input here"
             />
-        </>
+        </BrandProvider>
     );
 };
 

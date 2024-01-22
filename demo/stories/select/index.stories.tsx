@@ -8,6 +8,7 @@ import {
     Size,
     Basic,
     TestCase,
+    SelectAll,
 } from './icloud-demo';
 
 export default {
@@ -21,6 +22,7 @@ export const MultipleDisplayInPopupDemo = MultipleDisplayInPopup;
 export const MulipleDisplayInPopupByHandDemo = MulipleDisplayInPopupByHand;
 export const SelectUsersDemo = SelectUsers;
 export const TestCaseDemo = TestCase;
+export const SelectAllDemo = SelectAll;
 
 export const Api = () => {
     return (

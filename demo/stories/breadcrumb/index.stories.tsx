@@ -3,6 +3,7 @@ import React from 'react';
 import {BrowserRouter, Link} from 'react-router-dom';
 import Menu from '@osui/menu';
 import TextOverflowTooltip from '@osui/text-overflow-tooltip';
+import BrandProvider from '@osui/brand-provider';
 import Divider from '@osui/divider';
 import Markdown from '@osui/markdown';
 import Breadcrumb from '@osui/breadcrumb';
@@ -11,13 +12,38 @@ export default {
     title: '导航/Breadcrumb 面包屑',
 };
 
-export const Demo = () => {
+export const Antd5Demo = () => {
     return (
-        <>
+        <BrandProvider>
+            <h1>新用法</h1>
             <p>
                 产品页面层级较多，用户路径较长，无法仅通过使用返回按钮解决回到首页/列表页诉求，建议层级≥3时全局使用，用户可通过面包屑返回/到达目标页面
             </p>
-            <Divider>展示</Divider>
+            <p>
+                如果需要蓝色hover，放个<code>a</code>标签
+            </p>
+            <Breadcrumb
+                separator=">"
+                items={[
+                    {title: '一级页面名称', href: ''},
+                    {title: '二级页面名称', href: ''},
+                    {title: '三级页面名称', href: ''},
+                    {title: '四级页面名称', href: ''},
+                    {title: '末级页面名称'},
+                ]}
+            />
+            <br />
+        </BrandProvider>
+    );
+};
+
+export const Demo = () => {
+    return (
+        <BrandProvider>
+            <h1>旧的用法</h1>
+            <p>
+                产品页面层级较多，用户路径较长，无法仅通过使用返回按钮解决回到首页/列表页诉求，建议层级≥3时全局使用，用户可通过面包屑返回/到达目标页面
+            </p>
             <p>
                 如果需要蓝色hover，放个<code>a</code>标签
             </p>
@@ -39,7 +65,7 @@ export const Demo = () => {
                 </Breadcrumb.Item>
             </Breadcrumb>
             <br />
-        </>
+        </BrandProvider>
     );
 };
 
@@ -75,54 +101,54 @@ export const Routes = () => {
     const routes = [
         {
             path: 'index1',
-            breadcrumbName: 'home',
+            title: 'home',
         },
         {
             path: 'index2',
-            breadcrumbName: 'home2',
+            title: 'home2',
         },
         {
             path: 'index3',
-            breadcrumbName: 'home3',
+            title: 'home3',
         },
         {
             path: 'index4',
-            breadcrumbName: 'home4',
+            title: 'home4',
         },
         {
             path: 'index5',
-            breadcrumbName: 'home5',
+            title: 'home5',
         },
         {
             path: 'first6',
-            breadcrumbName: 'first',
+            title: 'first',
             children: [
                 {
                     path: '/general',
-                    breadcrumbName: 'General',
+                    title: 'General',
                 },
                 {
                     path: '/layout',
-                    breadcrumbName: 'Layout',
+                    title: 'Layout',
                 },
                 {
                     path: '/navigation',
-                    breadcrumbName: 'Navigation',
+                    title: 'Navigation',
                 },
             ],
         },
         {
             path: 'second',
-            breadcrumbName: 'second',
+            title: 'second',
         },
     ];
 
     function itemRender(route, params, routes, paths) {
         const last = routes.indexOf(route) === routes.length - 1;
         return last ? (
-            <span>{route.breadcrumbName}</span>
+            <span>{route.title}</span>
         ) : (
-            <Link to={paths.join('/')}>{route.breadcrumbName}</Link>
+            <Link to={paths.join('/')}>{route.title}</Link>
         );
     }
 
@@ -130,7 +156,7 @@ export const Routes = () => {
         <BrowserRouter>
             <p>支持routes</p>
             <p>注意：箭头icon目前无法覆盖</p>
-            <Breadcrumb itemRender={itemRender} routes={routes} showEllipsis />
+            <Breadcrumb itemRender={itemRender} items={routes} showEllipsis />
         </BrowserRouter>
     );
 };
@@ -249,54 +275,54 @@ export const TestCase = () => {
     const routes = [
         {
             path: 'index1',
-            breadcrumbName: 'home',
+            title: 'home',
         },
         {
             path: 'index2',
-            breadcrumbName: 'home2',
+            title: 'home2',
         },
         {
             path: 'index3',
-            breadcrumbName: 'home3',
+            title: 'home3',
         },
         {
             path: 'index4',
-            breadcrumbName: 'home4',
+            title: 'home4',
         },
         {
             path: 'index5',
-            breadcrumbName: 'home5',
+            title: 'home5',
         },
         {
             path: 'first6',
-            breadcrumbName: 'first',
+            title: 'first',
             children: [
                 {
                     path: '/general',
-                    breadcrumbName: 'General',
+                    title: 'General',
                 },
                 {
                     path: '/layout',
-                    breadcrumbName: 'Layout',
+                    title: 'Layout',
                 },
                 {
                     path: '/navigation',
-                    breadcrumbName: 'Navigation',
+                    title: 'Navigation',
                 },
             ],
         },
         {
             path: 'second',
-            breadcrumbName: 'second',
+            title: 'second',
         },
     ];
 
     function itemRender(route, params, routes, paths) {
         const last = routes.indexOf(route) === routes.length - 1;
         return last ? (
-            <span>{route.breadcrumbName}</span>
+            <span>{route.title}</span>
         ) : (
-            <Link to={paths.join('/')}>{route.breadcrumbName}</Link>
+            <Link to={paths.join('/')}>{route.title}</Link>
         );
     }
     return (
@@ -338,9 +364,7 @@ export const TestCase = () => {
             <BrowserRouter>
                 <Breadcrumb
                     showEllipsis
-                    headItemLength={1}
-                    tailItemLength={3}
-                    routes={routes}
+                    items={routes}
                     itemRender={itemRender}
                 />
             </BrowserRouter>

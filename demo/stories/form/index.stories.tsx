@@ -7,6 +7,7 @@ import Input from '@osui/input';
 import InputNumber from '@osui/input-number';
 import BrandProvider from '@osui/brand-provider';
 import Divider from '@osui/divider';
+import {version} from 'antd';
 import Form from '@osui/form';
 
 export default {
@@ -14,7 +15,6 @@ export default {
 };
 
 export const Demo = () => {
-    Form.useLabelLayout('basic');
     const layout = {
         labelCol: {
             span: 4,
@@ -40,13 +40,14 @@ export const Demo = () => {
 
     return (
         <>
+            {version}
             <strong>注意: BrandProvider应该是App级别的，不是组件级别的</strong>
             <p>表单视觉规范要求：label左对齐，与右边内容间距20px；右边自适应，左边保持不动；左边需要以最宽的内容为主</p>
             <p>前端提供了Form.useLabelLayout hook来方便布局。注意：Form.useLabelLayout的侵入性比较强，只满足视觉需求，比如如果你需要align: right，就不要使用了</p>
             <br />
             <br />
             <Divider>展示</Divider>
-            <BrandProvider brand="icloud">
+            <BrandProvider>
                 <Form
                     {...layout}
                     name="basic"
@@ -55,6 +56,8 @@ export const Demo = () => {
                     }}
                     onFinish={onFinish}
                     onFinishFailed={onFinishFailed}
+                    // 可以通过传入labelMaxWidth来控制label的宽度
+                    labelMaxWidth={80}
                 >
                     <Form.Item
                         label="用户名"
@@ -67,7 +70,7 @@ export const Demo = () => {
                             },
                         ]}
                     >
-                        <Input />
+                        <Input placeholder="请输入用户名" />
                     </Form.Item>
                     <Form.Item
                         label="密码"
@@ -93,8 +96,6 @@ export const Demo = () => {
 };
 
 export const BasicDemo = () => {
-    Form.useLabelLayout('myForm');
-
     const formItemLayout = {
         labelCol: {
             span: 5,
@@ -140,7 +141,6 @@ export const BasicDemo = () => {
                     validateMessageLayout="inline"
                     rules={[
                         {
-                            required: true,
                             message: '必填字段',
                         },
                     ]}
@@ -230,8 +230,6 @@ export const BasicDemo = () => {
 };
 
 export const ValidateMessageDemo = () => {
-    Form.useLabelLayout('basic');
-
     const formItemLayout = {
         labelCol: {
             span: 5,
@@ -300,7 +298,6 @@ export const Api = () => {
 
 
 export const TestCase = () => {
-    Form.useLabelLayout('basic');
     const layout = {
         labelCol: {
             span: 4,
@@ -341,6 +338,7 @@ export const TestCase = () => {
                     }}
                     onFinish={onFinish}
                     onFinishFailed={onFinishFailed}
+                    labelMaxWidth={50}
                 >
                     <Form.Item
                         label="用户名"
@@ -378,8 +376,8 @@ export const TestCase = () => {
                         ]}
                     >
                         <Form.Item
-                            wrapperCol={{pull: 2}}
-                            name="password"
+                            style={{marginLeft: 0}}
+                            name="switch1"
                             rules={[
                                 {
                                     required: true,
@@ -390,8 +388,8 @@ export const TestCase = () => {
                             <Switch />
                         </Form.Item>
                         <Form.Item
-                            wrapperCol={{pull: 2}}
-                            name="password"
+                            style={{marginLeft: 0}}
+                            name="switch2"
                             rules={[
                                 {
                                     required: true,

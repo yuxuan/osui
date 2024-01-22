@@ -1,7 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import { Space } from 'antd';
-import { IconCheckOutlined, IconCloseOutlined } from '@osui/icons';
+import {Space} from 'antd';
+import {IconCheckOutlined, IconCloseOutlined} from '@osui/icons';
+import BrandProvider from '@osui/brand-provider';
 import Switch from '@osui/switch';
 
 export default {
@@ -10,7 +11,7 @@ export default {
 
 export const Demo = () => {
     return (
-        <>
+        <BrandProvider brand="icloud">
             <h3>基础开关</h3>
             <Space>
                 <Switch />
@@ -39,7 +40,7 @@ export const Demo = () => {
                     unCheckedChildren={<IconCloseOutlined />}
                 />
             </Space>
-        </>
+        </BrandProvider>
     );
 };
 

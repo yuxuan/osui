@@ -1,10 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import Menu from '@osui/menu';
-import Button from '@osui/button';
-import Space from '@osui/space';
 import {IconDownOutlined} from '@osui/icons';
 import FlexCentered from '@osui/flex-centered';
+import {MenuProps} from '@osui/menu';
+import Button from '@osui/button';
+import Space from '@osui/space';
 import Dropdown from '@osui/dropdown';
 
 export default {
@@ -12,42 +12,31 @@ export default {
 };
 
 export const Demo = () => {
-    const menu = (
-        <Menu>
-            <Menu.Item>
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="http://www.alipay.com/"
-                >
-                    1st
-                </a>
-            </Menu.Item>
-            <Menu.Item>
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="http://www.taobao.com/"
-                >
-                    2nd
-                </a>
-            </Menu.Item>
-            <Menu.Item>
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="http://www.tmall.com/"
-                >
-                    3rd
-                </a>
-            </Menu.Item>
-        </Menu>
-    );
+    const menu: MenuProps = {
+        items: [
+            {
+                label: '1st menu item',
+                key: '1',
+            },
+            {
+                label: '2nd menu item',
+                key: '2',
+            },
+            {
+                label: '3rd menu item',
+                key: '3',
+            },
+        ],
+        onClick({key}) {
+            console.log(`click on items ${key}`);
+        },
+    };
+
 
     return (
         <>
             <p>文字下拉</p>
-            <Dropdown overlay={menu}>
+            <Dropdown menu={menu}>
                 <a onClick={e => e.preventDefault()}>
                     <FlexCentered>
                         请选择
@@ -74,63 +63,100 @@ export const Api = () => {
 };
 
 export const TestCase = () => {
-    const menu = (
-        <Menu>
-            <Menu.Item key="1">foo</Menu.Item>
-        </Menu>
-    );
+    const handleMenuClick: MenuProps['onClick'] = e => {
+        console.log('click', e);
+    };
+    const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+        console.log('click left button', e);
+    };
+
+    const items = [
+        {
+            label: '1st menu item',
+            key: '1',
+            children: [
+                {
+                    label: '2nd menu item',
+                    key: '2',
+                },
+                {
+                    label: '3rd menu item',
+                    key: '3',
+                },
+            ],
+        },
+        {
+
+            label: '11st menu item',
+            key: '11',
+            children: [
+                {
+                    type: 'group',
+                    label: '2nd menu item',
+                    key: '2',
+                },
+                {
+                    label: '3rd menu item',
+                    key: '3',
+                },
+                {
+                    type: 'group',
+                    label: '4rd menu item',
+                    key: '4',
+                },
+            ],
+        },
+    ];
+    const menuProps = {
+        items,
+        onClick: handleMenuClick,
+    };
     return (
-        <Dropdown.Button
-            overlayClassName="className"
-            overlayStyle={{color: 'red'}}
-            overlay={menu}
-            visible
-        />
+        <Dropdown.Button open menu={menuProps} onClick={handleButtonClick}>
+            Dropdown
+        </Dropdown.Button>
     );
 };
 
 export function TestCase2() {
-    const menu = (
-        <Menu>
-            <Menu.Item>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-                    1st menu item
-                </a>
-            </Menu.Item>
-            <Menu.Item>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-                    2nd menu item
-                </a>
-            </Menu.Item>
-            <Menu.Item>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-                    3rd menu item
-                </a>
-            </Menu.Item>
-        </Menu>
-    );
+    const menu = {
+        items: [
+            {
+                label: '1st menu item',
+                key: '1',
+            },
+            {
+                label: '2nd menu item',
+                key: '2',
+            },
+            {
+                label: '3rd menu item',
+                key: '3',
+            },
+        ],
+    };
 
     return (
         <Space direction="vertical">
             <Space wrap>
-                <Dropdown overlay={menu} placement="bottomLeft">
+                <Dropdown menu={menu} placement="bottomLeft">
                     <Button>bottomLeft</Button>
                 </Dropdown>
                 {/* <Dropdown overlay={menu} placement="bottom">
                     <Button>bottom</Button>
                 </Dropdown> */}
-                <Dropdown overlay={menu} placement="bottomRight">
+                <Dropdown menu={menu} placement="bottomRight">
                     <Button>bottomRight</Button>
                 </Dropdown>
             </Space>
             <Space wrap>
-                <Dropdown arrow overlay={menu} placement="topLeft">
+                <Dropdown arrow menu={menu} placement="topLeft">
                     <Button>topLeft</Button>
                 </Dropdown>
                 {/* <Dropdown arrow overlay={menu} placement="top">
                     <Button>top</Button>
                 </Dropdown> */}
-                <Dropdown arrow overlay={menu} placement="topRight">
+                <Dropdown arrow menu={menu} placement="topRight">
                     <Button>topRight</Button>
                 </Dropdown>
             </Space>
