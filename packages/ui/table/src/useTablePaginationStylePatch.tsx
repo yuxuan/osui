@@ -34,7 +34,6 @@ const handleAddAndRemove: (
 ) => void = (parentDom, prefixCls) => {
     const pageSizeDom = parentDom.querySelector(`.${prefixCls}${pageSizeClassName}`);
     const quickJumperDom = parentDom.querySelector(`.${prefixCls}${quickJumperClassName}`);
-    // const simplePagerDom = parentDom.querySelector(`.${prefixCls}${simplePagerClassName}`);
 
     const paginationOptionDom = setPaginationOptionsWidth(parentDom, prefixCls);
     const marginLeft = Number(paginationOptionDom?.style?.marginInlineStart?.replace('px', '')) || 16;
@@ -70,7 +69,8 @@ const mutationObserverConfig = {attributes: true, childList: true, subtree: true
 
 const useTablePaginationStylePatch = (
     domRef: React.MutableRefObject<HTMLElement | null>,
-    prefixCls: string
+    prefixCls: string,
+    containerDomRef: React.MutableRefObject<HTMLElement | null>
 ) => {
     useEffect(
         () => {
@@ -92,7 +92,7 @@ const useTablePaginationStylePatch = (
             try {
                 if (paginationDomList.length === 0) {
                     const className = (domRef.current.className || '').split(' ').map(v => '.' + v).join(' ');
-                    const dom = document.querySelector(className);
+                    const dom = (containerDomRef.current || document)?.querySelector(className);
                     if (dom) {
                         paginationDomList = [
                             ...dom?.querySelectorAll(`.${prefixCls}${paginationClassName}`) as any,
@@ -124,8 +124,7 @@ const useTablePaginationStylePatch = (
             return () => {
                 observerList?.map(observer => observer?.disconnect());
             };
-        },
-        []
+        }
     );
 };
 

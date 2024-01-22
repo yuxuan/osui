@@ -1,4 +1,4 @@
-import React, {useImperativeHandle, useRef, useContext} from 'react';
+import React, {useImperativeHandle, useRef, useContext, useMemo} from 'react';
 import {Table as AntdTable, ConfigProvider} from 'antd';
 import classNames from 'classnames';
 import {useBrandContext} from '@osui/brand-provider';
@@ -12,14 +12,15 @@ import './index.less';
 const clsPrefix = 'osui-table';
 const icloudLocale = {'jump_to': '跳转至', 'page': '', 'jump_to_confirm': 'Go'};
 
-const osuiExpandIcon: TableProps<any>['expandIcon'] = ({expanded, onExpand, record}) => (expanded
-    ? (
-        <IconRightOutlined
-            onClick={(e: any) => onExpand(record, e)}
-            style={{transform: 'rotate(90deg)'}}
-        />
-    )
-    : (<IconRightOutlined onClick={(e: any) => onExpand(record, e)} />));
+const osuiExpandIcon: Exclude<TableProps<any>['expandable'], undefined>['expandIcon'] =
+    ({expanded, onExpand, record}) => (expanded
+        ? (
+            <IconRightOutlined
+                onClick={(e: any) => onExpand(record, e)}
+                style={{transform: 'rotate(90deg)'}}
+            />
+        )
+        : (<IconRightOutlined onClick={(e: any) => onExpand(record, e)} />));
 
 interface TableProps<T> extends AntdTableProps<T> {
     noRowBorder?: boolean;
@@ -31,29 +32,32 @@ function Table<RecordType extends Record<string, any>>(
     ref: React.Ref<HTMLDivElement> | undefined
 ) {
     const domRef = useRef<HTMLDivElement>(null);
+    const containerDomRef = useRef<HTMLDivElement>(null);
     const {brand} = useBrandContext();
-    const {pagination = {}} = props;
-    let locale = {
-        ...icloudLocale,
-    };
-    let showQuickJumper: false | {
-        goButton?: React.ReactNode | Record<string, any> | null;
-    } | undefined = false;
-    if (pagination) {
-        locale = {
-            ...locale,
-            ...(pagination && pagination.locale ? pagination.locale : {}),
-        };
-        const goButton = <button>{locale.jump_to_confirm}</button>;
-        showQuickJumper = pagination.showQuickJumper === true || pagination.showQuickJumper === undefined
-            ? {goButton}
-            : pagination.showQuickJumper;
-    }
+    const {pagination: paginationIn} = props;
 
+    const mergePagination = useMemo(
+        () => {
+            const goButton = <button>{icloudLocale.jump_to_confirm}</button>;
+            if (!(paginationIn === false || paginationIn === null)) {
+                const pagination = paginationIn || {};
+                return {
+                    ...paginationIn,
+                    locale: {
+                        ...icloudLocale,
+                        ...(pagination && pagination.locale ? pagination.locale : {}),
+                    },
+                    showQuickJumper: pagination.showQuickJumper || {goButton},
+                };
+            }
+            return paginationIn;
+        },
+        [paginationIn]
+    );
     const antdContext = useContext(ConfigProvider.ConfigContext);
     const prefixCls = antdContext.getPrefixCls();
 
-    useTablePaginationStylePatch(domRef, prefixCls);
+    useTablePaginationStylePatch(domRef, prefixCls, containerDomRef);
 
     const className = classNames(
         clsPrefix,
@@ -81,16 +85,13 @@ function Table<RecordType extends Record<string, any>>(
     useImperativeHandle(ref, () => (domRef.current as HTMLDivElement));
 
     return (
-        <div className={className}>
+        <div className={className} ref={containerDomRef}>
             <AntdTable
                 {...props}
                 ref={domRef}
                 columns={columns}
-                pagination={{
-                    ...pagination,
-                    locale,
-                    showQuickJumper,
-                }}
+                pagination={mergePagination}
+                // todo 新方式疑似添加了expandIcon，就必须设置 expandedRowRender
                 expandIcon={props.expandIcon || osuiExpandIcon}
                 onChange={handleChange}
             />
