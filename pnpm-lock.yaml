@@ -26,6 +26,9 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^9.1.2
         version: 9.1.2
+      '@ecomfe/stylelint-config':
+        specifier: ^1.1.2
+        version: 1.1.2(stylelint@14.16.1)
       '@emotion/babel-preset-css-prop':
         specifier: ^11.10.0
         version: 11.11.0(@babel/core@7.23.7)
@@ -283,9 +286,6 @@ importers:
       cpy-cli:
         specifier: ^3.1.1
         version: 3.1.1
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       mkdirp:
         specifier: ^1.0.4
         version: 1.0.4
@@ -349,9 +349,6 @@ importers:
       cpy-cli:
         specifier: ^3.1.1
         version: 3.1.1
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       mkdirp:
         specifier: ^1.0.4
         version: 1.0.4
@@ -466,9 +463,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -614,9 +608,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -756,9 +747,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -901,9 +889,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1040,9 +1025,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1185,9 +1167,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1342,9 +1321,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1490,9 +1466,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1641,9 +1614,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1801,9 +1771,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1943,9 +1910,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -2106,9 +2070,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -2241,9 +2202,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -2386,9 +2344,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -2525,9 +2480,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -2660,9 +2612,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -2811,9 +2760,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -2946,9 +2892,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -3097,9 +3040,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -3232,9 +3172,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -3367,9 +3304,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -3891,9 +3825,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -4048,9 +3979,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -4205,9 +4133,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -4349,9 +4274,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -4518,9 +4440,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -4656,9 +4575,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -4794,9 +4710,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -4939,9 +4852,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -5074,9 +4984,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -5255,9 +5162,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -5409,9 +5313,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -5569,9 +5470,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -5704,9 +5602,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -5843,9 +5738,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -5997,9 +5889,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -6132,9 +6021,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -6280,9 +6166,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -6443,9 +6326,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -6591,9 +6471,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -6729,9 +6606,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -6871,9 +6745,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -7012,9 +6883,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -7169,9 +7037,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -7308,9 +7173,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -7465,9 +7327,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -7604,9 +7463,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -7749,9 +7605,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -7884,9 +7737,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -8010,9 +7860,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -8139,9 +7986,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -8299,9 +8143,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -8443,9 +8284,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -8591,9 +8429,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -8733,9 +8568,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -8872,9 +8704,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -9016,9 +8845,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -9167,9 +8993,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -9306,9 +9129,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -9487,9 +9307,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -9653,9 +9470,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -9819,9 +9633,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -9967,9 +9778,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -10118,9 +9926,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -10269,9 +10074,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -10411,9 +10213,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -10556,9 +10355,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -10691,9 +10487,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -10833,9 +10626,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -10978,9 +10768,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -11120,9 +10907,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -11581,9 +11365,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
@@ -11722,9 +11503,6 @@ importers:
       enzyme:
         specifier: ^3.11.0
         version: 3.11.0
-      husky:
-        specifier: ^4.2.5
-        version: 4.3.8
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0

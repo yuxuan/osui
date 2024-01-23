@@ -32,6 +32,7 @@
         "@babel/core": "^7.18.10",
         "@commitlint/cli": "^9.1.2",
         "@commitlint/config-conventional": "^9.1.2",
+        "@ecomfe/stylelint-config": "^1.1.2",
         "@emotion/babel-preset-css-prop": "^11.10.0",
         "@reskript/cli": "6.1.1",
         "@reskript/cli-lint": "6.1.1",
