@@ -1,6 +1,6 @@
 {
   "name": "@osui/theme",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "",
   "main": "dist/theme/index.js",
   "module": "dist/theme/index.js",
@@ -21,8 +21,8 @@
   ],
   "devDependencies": {
     "@babel/cli": "^7.10.5",
-    "@osui/brand-provider": "^3.0.3",
-    "@osui/icons": "^3.0.3",
+    "@osui/brand-provider": "^3.0.4",
+    "@osui/icons": "^3.0.4",
     "@reskript/cli": "^6.0.0",
     "@reskript/cli-lint": "^6.0.0",
     "@reskript/config-babel": "^6.0.0",
@@ -31,7 +31,7 @@
     "@types/react-dom": "^17.0.2",
     "antd": "^5.8.6",
     "cpy-cli": "^3.1.1",
-        "mkdirp": "^1.0.4",
+    "mkdirp": "^1.0.4",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

@@ -1,6 +1,6 @@
 {
     "name": "@osui/upload",
-    "version": "3.0.3",
+    "version": "3.0.4",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -33,16 +33,16 @@
         "@babel/preset-react": "^7.10.4",
         "@babel/preset-typescript": "^7.23.2",
         "@huse/effect-ref": "^1.1.1",
-        "@osui/brand-provider": "^3.0.3",
-        "@osui/button": "^3.0.3",
-        "@osui/gap": "^3.0.3",
-        "@osui/icloud-theme": "^3.0.2",
-        "@osui/icons": "^3.0.3",
-        "@osui/markdown": "^3.0.3",
-        "@osui/message": "^3.0.3",
-        "@osui/modal": "^3.0.3",
-        "@osui/progress": "^3.0.3",
-        "@osui/theme": "^3.0.2",
+        "@osui/brand-provider": "^3.0.4",
+        "@osui/button": "^3.0.4",
+        "@osui/gap": "^3.0.4",
+        "@osui/icloud-theme": "^3.0.4",
+        "@osui/icons": "^3.0.4",
+        "@osui/markdown": "^3.0.4",
+        "@osui/message": "^3.0.4",
+        "@osui/modal": "^3.0.4",
+        "@osui/progress": "^3.0.4",
+        "@osui/theme": "^3.0.4",
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",
         "@storybook/addon-interactions": "^7.5.1",
@@ -101,6 +101,5 @@
         "hoist-non-react-statics": "^3.3.2"
     },
     "packageManager": "pnpm@8.10.2",
-"gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
-    
+    "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
 }

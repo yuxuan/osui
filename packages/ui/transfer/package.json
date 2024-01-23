@@ -1,6 +1,6 @@
 {
     "name": "@osui/transfer",
-    "version": "3.0.3",
+    "version": "3.0.4",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -31,10 +31,10 @@
         "@babel/preset-env": "^7.10.4",
         "@babel/preset-react": "^7.10.4",
         "@babel/preset-typescript": "^7.23.2",
-        "@osui/brand-provider": "^3.0.3",
-        "@osui/icloud-theme": "^3.0.2",
-        "@osui/icons": "^3.0.3",
-        "@osui/theme": "^3.0.2",
+        "@osui/brand-provider": "^3.0.4",
+        "@osui/icloud-theme": "^3.0.4",
+        "@osui/icons": "^3.0.4",
+        "@osui/theme": "^3.0.4",
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",
         "@storybook/addon-interactions": "^7.5.1",
@@ -87,6 +87,5 @@
         "registry": "https://registry.npmjs.com"
     },
     "packageManager": "pnpm@8.10.2",
-"gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
-    
+    "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
 }
