@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import {Reference} from 'rc-table';
 import './index.less';
 
 const paginationClassName = '-table-pagination';
@@ -68,7 +69,7 @@ const mutationCallback: (
 const mutationObserverConfig = {attributes: true, childList: true, subtree: true};
 
 const useTablePaginationStylePatch = (
-    domRef: React.MutableRefObject<HTMLElement | null>,
+    domRef: React.MutableRefObject<Reference | null>,
     prefixCls: string,
     containerDomRef: React.MutableRefObject<HTMLElement | null>
 ) => {
@@ -83,7 +84,7 @@ const useTablePaginationStylePatch = (
                 // antd 5.11.0 修改了 ref 传递方式
                 // 使用了 Proxy 代理，调用 querySelectorAll 方法会出错
                 paginationDomList = [
-                    ...domRef.current?.querySelectorAll(`.${prefixCls}${paginationClassName}`) as any,
+                    ...domRef.current.nativeElement.querySelectorAll(`.${prefixCls}${paginationClassName}`) as any,
                 ];
             } catch (e: any) {
                 console.error(e?.message);
@@ -91,7 +92,9 @@ const useTablePaginationStylePatch = (
 
             try {
                 if (paginationDomList.length === 0) {
-                    const className = (domRef.current.className || '').split(' ').map(v => '.' + v).join(' ');
+                    const className = (
+                        domRef.current.nativeElement.className || ''
+                    ).split(' ').map(v => '.' + v).join(' ');
                     const dom = (containerDomRef.current || document)?.querySelector(className);
                     if (dom) {
                         paginationDomList = [
@@ -100,7 +103,7 @@ const useTablePaginationStylePatch = (
                     }
                 }
             } catch (e: any) {
-                console.error(domRef.current.className, e?.message);
+                console.error(domRef.current.nativeElement.className, e?.message);
             }
 
             if (!paginationDomList || paginationDomList.length === 0) {

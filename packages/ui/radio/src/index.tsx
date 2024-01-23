@@ -1,5 +1,5 @@
 import React from 'react';
-import {Radio as AntdRadio} from 'antd';
+import {Radio as AntdRadio, CheckboxRef} from 'antd';
 import {RadioProps as AntdRadioProps, RadioGroupProps as AntdRadioGroupProps} from 'antd/es/radio';
 import classNames from 'classnames';
 import './index.less';
@@ -20,7 +20,7 @@ export interface RadioInterface extends React.ForwardRefExoticComponent<RadioPro
     Button: typeof AntdRadio.Button;
 }
 
-const RefRadio: React.ForwardRefRenderFunction<HTMLElement, AntdRadioProps> = ({className, ...restProps}, ref) => {
+const RefRadio: React.ForwardRefRenderFunction<CheckboxRef, AntdRadioProps> = ({className, ...restProps}, ref) => {
     return <AntdRadio ref={ref} className={classNames(clsPrefix, className)} {...restProps} />;
 };
 

@@ -1,6 +1,10 @@
 import React from 'react';
 import {Checkbox as AntdCheckbox} from 'antd';
-import {CheckboxProps as AntdCheckboxProps, CheckboxGroupProps as AntdCheckboxGroupProps} from 'antd/es/checkbox';
+import {
+    CheckboxProps as AntdCheckboxProps,
+    CheckboxGroupProps as AntdCheckboxGroupProps,
+    CheckboxRef,
+} from 'antd/es/checkbox';
 import classNames from 'classnames';
 import './index.less';
 
@@ -15,7 +19,7 @@ const CheckboxGroup: React.FC<CheckboxGroupProps> = ({className, ...props}) => {
     return <AntdCheckboxGroup className={classNames(`${clsPrefix}-group`, className)} {...props} />;
 };
 export interface CompoundedComponent
-    extends React.ForwardRefExoticComponent<CheckboxProps & React.RefAttributes<HTMLInputElement>> {
+    extends React.ForwardRefExoticComponent<CheckboxProps & React.RefAttributes<CheckboxRef>> {
     Group: typeof CheckboxGroup;
     __ANT_CHECKBOX: boolean;
 }

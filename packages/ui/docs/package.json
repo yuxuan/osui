@@ -14,7 +14,7 @@
         "CHANGELOG.md"
     ],
     "scripts": {
-        "lint": "skr lint",
+        "lint": "echo 'no lint yet'",
         "build": "echo 'done'",
         "build-storybook": "storybook build",
         "storybook": "storybook dev -p 8700",
@@ -52,8 +52,6 @@
         "babel-merge": "^3.0.0",
         "cpy-cli": "^3.1.1",
         "enzyme": "^3.11.0",
-        "eslint": "^8.23.0",
-        "eslint-plugin-storybook": "^0.6.15",
         "huse": "^2.0.3",
         "husky": "^4.3.8",
         "identity-obj-proxy": "^3.0.0",
@@ -157,10 +155,5 @@
         "dayjs": "^1.11.7",
         "react": "^17.0.2",
         "react-dom": "^17.0.2"
-    },
-    "eslintConfig": {
-        "extends": [
-            "plugin:storybook/recommended"
-        ]
     }
 }

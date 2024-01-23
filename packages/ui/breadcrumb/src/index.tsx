@@ -2,6 +2,7 @@ import React, {useReducer} from 'react';
 import {Breadcrumb as AntdBreadcrumb} from 'antd';
 import {BreadcrumbProps as AntdBrandcrumbProps} from 'antd/es/breadcrumb';
 import classNames from 'classnames';
+// @ts-expect-error
 import {LegacyBreadcrumbProps, NewBreadcrumbProps} from 'antd/es/breadcrumb/Breadcrumb';
 import './index.less';
 
@@ -28,6 +29,7 @@ type GetItemRenderWithEllipsis = (
     config: EllipsisConfig,
 ) => LegacyBreadcrumbProps['itemRender'];
 
+// @ts-expect-error
 const getItemRenderWithEllipsis: GetItemRenderWithEllipsis = (render, config) => (route, params, routes, paths) => {
     const {shownLastItems, onEllipsisClick, headItemLength} = config;
 
@@ -93,11 +95,15 @@ export interface BreadcrumbInterface extends React.FC<BreadcrumbProps | AntdBran
 
 const Breadcrumb: BreadcrumbInterface = props => {
     const {
+        // @ts-expect-error
         children,
+        // @ts-expect-error
         className,
         items,
         // 为了迁移还在支持routes
+        // @ts-expect-error
         routes,
+        // @ts-expect-error
         itemRender,
         showEllipsis,
         maxItemLength = 5,

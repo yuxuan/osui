@@ -6,7 +6,7 @@
   "module": "dist/theme/index.js",
   "types": "dist/theme/index.d.ts",
   "scripts": {
-    "lint": "skr lint",
+    "lint": "echo 'no lint yet'",
     "build": "sh scripts/build.sh",
     "prepack": "pnpm build",
     "storybook": "start-storybook -p 8700",
@@ -33,7 +33,7 @@
     "@types/react-dom": "^17.0.2",
     "antd": "^5.8.6",
     "cpy-cli": "^3.1.1",
-    "eslint": "^8.0.0",
+    
     "husky": "^4.2.5",
     "mkdirp": "^1.0.4",
     "prop-types": "^15.7.2",

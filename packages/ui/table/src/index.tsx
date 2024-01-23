@@ -1,5 +1,6 @@
 import React, {useImperativeHandle, useRef, useContext, useMemo} from 'react';
 import {Table as AntdTable, ConfigProvider} from 'antd';
+import type {Reference} from 'rc-table';
 import classNames from 'classnames';
 import {useBrandContext} from '@osui/brand-provider';
 import {IconRightOutlined} from '@osui/icons';
@@ -29,9 +30,9 @@ interface TableProps<T> extends AntdTableProps<T> {
 
 function Table<RecordType extends Record<string, any>>(
     props: TableProps<RecordType>,
-    ref: React.Ref<HTMLDivElement> | undefined
+    ref: React.Ref<Reference> | undefined
 ) {
-    const domRef = useRef<HTMLDivElement>(null);
+    const domRef = useRef<Reference>(null);
     const containerDomRef = useRef<HTMLDivElement>(null);
     const {brand} = useBrandContext();
     const {pagination: paginationIn} = props;
@@ -82,7 +83,7 @@ function Table<RecordType extends Record<string, any>>(
         }
     };
 
-    useImperativeHandle(ref, () => (domRef.current as HTMLDivElement));
+    useImperativeHandle(ref, () => domRef.current!);
 
     return (
         <div className={className} ref={containerDomRef}>

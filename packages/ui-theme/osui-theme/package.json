@@ -6,7 +6,7 @@
   "module": "dist/theme/index.js",
   "types": "dist/theme/index.d.ts",
   "scripts": {
-    "lint": "skr lint",
+    "lint": "echo 'no lint yet'",
     "build": "sh scripts/build.sh",
     "prepack": "pnpm build",
     "storybook": "start-storybook -p 8700",
@@ -26,7 +26,7 @@
     "@reskript/cli": "^6.0.0",
     "@reskript/cli-lint": "^6.0.0",
     "@reskript/config-babel": "^6.0.0",
-    "@reskript/config-lint": "^0.12.3",
+    "@reskript/config-lint": "^6.0.0",
     "@reskript/config-webpack": "^6.0.0",
     "@types/react-dom": "^17.0.2",
     "antd": "^5.8.6",

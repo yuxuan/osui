@@ -58,13 +58,9 @@
         "@types/react-dom": "^17.0.2",
         "@types/react-test-renderer": "^17.0.1",
         "antd": "^5.12.5",
-        "babel-loader": "^8.1.0",
-        "babel-merge": "^3.0.0",
         "cpy-cli": "^3.1.1",
         "enzyme": "^3.11.0",
-        "eslint": "^8.0.0",
-        "eslint-plugin-storybook": "^0.6.15",
-        "husky": "^4.2.5",
+            "husky": "^4.2.5",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.0.6",
         "less-plugin-npm-import": "^2.1.0",
@@ -101,11 +97,7 @@
         "classnames": "^2.3.1",
         "hoist-non-react-statics": "^3.3.2"
     },
-    "packageManager": "pnpm@7.14.2",
-    "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f",
-    "eslintConfig": {
-        "extends": [
-            "plugin:storybook/recommended"
-        ]
-    }
+    "packageManager": "pnpm@8.10.2",
+"gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
+    
 }

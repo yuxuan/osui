@@ -77,7 +77,7 @@ export const components: ThemeConfig['components'] = {
         paddingXS: 5.5,
     },
     Tooltip: {
-        colorBgDefault: '#fff',
+        colorBgBase: '#fff',
         colorTextLightSolid: '#151B26',
     },
     Breadcrumb: {
