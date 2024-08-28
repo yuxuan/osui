@@ -3,6 +3,8 @@ rm -rf lib
 
 tsc -p .
 
+mkdir es lib
+
 swc src -d es --source-maps
 cp src/*.less es
 cp -r tmp/* es
