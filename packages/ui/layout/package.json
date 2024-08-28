@@ -35,7 +35,7 @@
         "@osui/brand-provider": "^3.1.0-alpha.2",
         "@osui/breadcrumb": "^3.1.0-alpha.2",
         "@osui/icloud-theme": "^3.1.0-alpha.2",
-        "@osui/icons": "^3.1.0-alpha.2",
+        "@osui/icons": "^3.0.0",
         "@osui/menu": "^3.1.0-alpha.2",
         "@osui/theme": "^3.1.0-alpha.2",
         "@storybook/addon-docs": "^7.5.1",

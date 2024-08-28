@@ -38,7 +38,7 @@
         "@osui/dropdown": "^3.1.0-alpha.2",
         "@osui/flex-centered": "^3.1.0-alpha.2",
         "@osui/icloud-theme": "^3.1.0-alpha.2",
-        "@osui/icons": "^3.1.0-alpha.2",
+        "@osui/icons": "^3.0.0",
         "@osui/menu": "^3.1.0-alpha.2",
         "@osui/text-overflow-tooltip": "^3.1.0-alpha.2",
         "@osui/theme": "^3.1.0-alpha.2",

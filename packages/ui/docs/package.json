@@ -105,7 +105,7 @@
         "@osui/gap": "^3.1.0-alpha.2",
         "@osui/grid": "^3.1.0-alpha.2",
         "@osui/highlight-text": "^3.1.0-alpha.2",
-        "@osui/icons": "^3.1.0-alpha.2",
+        "@osui/icons": "^3.0.0",
         "@osui/image": "^3.1.0-alpha.2",
         "@osui/input": "^3.1.0-alpha.2",
         "@osui/input-number": "^3.1.0-alpha.2",
