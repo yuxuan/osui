@@ -21,7 +21,7 @@
   ],
   "devDependencies": {
     "@babel/cli": "^7.10.5",
-    "@osui/brand-provider": "workspace:^3.1.0",
+    "@osui/brand-provider": "^3.1.0",
     "@osui/icons": "^3.0.0",
     "@reskript/cli": "^6.0.0",
     "@reskript/cli-lint": "^6.0.0",

@@ -31,11 +31,11 @@
         "@babel/preset-env": "^7.10.4",
         "@babel/preset-react": "^7.10.4",
         "@babel/preset-typescript": "^7.23.2",
-        "@osui/brand-provider": "workspace:^3.1.0",
-        "@osui/button": "workspace:^3.1.0",
-        "@osui/icloud-theme": "workspace:^3.1.0",
+        "@osui/brand-provider": "^3.1.0",
+        "@osui/button": "^3.1.0",
+        "@osui/icloud-theme": "^3.1.0",
         "@osui/icons": "^3.0.0",
-        "@osui/theme": "workspace:^3.1.0",
+        "@osui/theme": "^3.1.0",
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",
         "@storybook/addon-interactions": "^7.5.1",
@@ -88,8 +88,8 @@
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
-        "@osui/dropdown": "workspace:^3.1.0",
-        "@osui/menu": "workspace:^3.1.0",
+        "@osui/dropdown": "^3.1.0",
+        "@osui/menu": "^3.1.0",
         "classname": "^0.0.0",
         "classnames": "^2.3.1"
     },
