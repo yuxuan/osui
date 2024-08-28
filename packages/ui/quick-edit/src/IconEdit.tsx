@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import * as React from 'react';
+import React from 'react';
 
 function SvgComponent(props: any) {
     return (

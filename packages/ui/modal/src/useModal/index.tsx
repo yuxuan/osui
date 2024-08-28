@@ -3,7 +3,7 @@
  * // TODO: 目前Antd useModal暂不支持直接使用，后续看是否直接暴露withXXX
  */
 
-import * as React from 'react';
+import React from 'react';
 import type {HookModalRef} from 'antd/es/modal/useModal/HookModal';
 import type {ModalFuncProps} from 'antd/es/modal';
 import HookModal from 'antd/es/modal/useModal/HookModal';

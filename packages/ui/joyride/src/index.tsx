@@ -4,7 +4,7 @@
  * @author zhanglili，huoyuxuan
  */
 
-import * as React from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import Joyride, {
     Props as DefaultJoyrideProps,
