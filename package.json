@@ -77,5 +77,6 @@
     },
     "resolutions": {
         "@types/react": "17.0.53"
-    }
+    },
+    "packageManager": "pnpm@9.7.0"  
 }
