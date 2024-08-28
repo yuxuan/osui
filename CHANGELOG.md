@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/yuxuan/osui/compare/v3.1.0-alpha.2...v3.1.0) (2024-08-28)
+
+
+### Bug Fixes
+
+* 修复peerDeps ([6baf231](https://github.com/yuxuan/osui/commit/6baf23135aa808184fd0b257902c6f0c45ecdfeb))
+* 修复tab表头的字体大小 ([98d8473](https://github.com/yuxuan/osui/commit/98d847370e2306d642f8414a340db846bdb82e90))
+* 修复themeprovider build ([72a8fa4](https://github.com/yuxuan/osui/commit/72a8fa42e1e81f2b8626908bdceb5f9a3c610cca))
+* 修复一下react import ([26b3b62](https://github.com/yuxuan/osui/commit/26b3b62c56832ac843cc6c78ef12605580e6de71))
+* 修复一下类型 ([fc7d962](https://github.com/yuxuan/osui/commit/fc7d962f64bd2afcc98cfcdb6217d756ece5304d))
+* 发布一下patch版本 ([0290a4e](https://github.com/yuxuan/osui/commit/0290a4e2d628ebf761cf1952989d3f56c7f0f42a))
+* 发版 ([9bce571](https://github.com/yuxuan/osui/commit/9bce571ffaa3229d0429366a9dacd9d7b50703a8))
+* 发版 ([6995bd7](https://github.com/yuxuan/osui/commit/6995bd7ac32a176b0bc26a16b5b9b58e90f32b9d))
+* 尝试修复version ([3353ccc](https://github.com/yuxuan/osui/commit/3353ccca664ebaa5998fb53977dc53d8fe083b94))
+* 更新demo ([a2302d7](https://github.com/yuxuan/osui/commit/a2302d7dd54b6e253dbdc9d4145e8f1ffae7a49b))
+* 更新docs ([fbaefcd](https://github.com/yuxuan/osui/commit/fbaefcd59a4eb175ad478bac0d66fcb02d2c4b3c))
+* 调整icon版本 ([c19768e](https://github.com/yuxuan/osui/commit/c19768e1cb62800e4820e0b49cce2eb000515c23))
+
+
+
+
+
 # [3.1.0-alpha.2](https://github.com/yuxuan/osui/compare/v3.0.4...v3.1.0-alpha.2) (2024-04-23)
 
 
