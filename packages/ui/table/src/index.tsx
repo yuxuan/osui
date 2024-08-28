@@ -71,7 +71,10 @@ function Table<RecordType extends Record<string, any>>(
     );
 
     // 替换 antd 默认的 筛选 和 排序图标
-    const {columns, setSortedInfo} = useCustomSortForCustomIcons(props.columns || [], prefixCls);
+    const {columns, setSortedInfo} = useCustomSortForCustomIcons(
+        (props.columns || []) as any,
+        prefixCls
+    );
 
     const handleChange: TableProps<any>['onChange'] = (pagination, filters, sorter, extra) => {
         if (Array.isArray(sorter)) {

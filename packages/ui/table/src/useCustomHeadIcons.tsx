@@ -47,20 +47,16 @@ const getIsSorted = (list: SortedInfo, column: any) => {
     return list.find(item => (item.field || item.columnKey) === column?.dataIndex);
 };
 
-const useCustomHeadIcons: <T extends {
+const useCustomHeadIcons = <T extends {
     title?: React.ReactNode;
     sorter?: boolean | any;
 }>(columns: T[], prefixCls: string) => {
-    columns: T[];
-    sortedInfo: SortedInfo;
-    setSortedInfo: (sortInfo: SortedInfo) => void;
-} = (columns, prefixCls) => {
     const [sortedInfo, setSortedInfo] = useState<SortedInfo>([{}]);
     const onClick = useCallback(
-        column => {
+        (column: T) => {
             const isSortedItem = getIsSorted(sortedInfo, column);
-            const target = {
-                field: column.title,
+            const target: SortedInfoItem = {
+                field: column.title as React.Key,
                 order: getNextOrder(!!isSortedItem, null),
             };
             if (sortedInfo.length === 0) {
