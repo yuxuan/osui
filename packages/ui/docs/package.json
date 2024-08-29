@@ -112,7 +112,6 @@
         "@osui/image": "^3.1.0",
         "@osui/input": "^3.1.0",
         "@osui/input-number": "^3.1.0",
-        "@osui/joyride": "^3.1.0",
         "@osui/layout": "^3.1.0",
         "@osui/list": "^3.1.0",
         "@osui/markdown": "^3.1.0",

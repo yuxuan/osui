@@ -9,7 +9,6 @@ export {default as Pagination} from '@osui/pagination';
 export {default as Form} from '@osui/form';
 export {default as Tooltip} from '@osui/tooltip';
 export {default as Result} from '@osui/result';
-export {default as Joyride} from '@osui/joyride';
 export {default as Calendar} from '@osui/calendar';
 export {default as Radio} from '@osui/radio';
 export {default as Card} from '@osui/card';
@@ -148,4 +147,9 @@ export type {TypographyProps} from '@osui/typography';
 export type {UploadProps} from '@osui/upload';
 export type {ThemeType, SetTheme, ThemeEnum, ThemeContextType} from '@osui/theme-provider';
 export type {SegmentedProps} from '@osui/segmented';
+export type {AppProps} from '@osui/app';
+export type {FlexProps} from '@osui/flex';
+export type {TourProps, TourStepProps} from '@osui/tour';
+export type {WatermarkProps} from '@osui/watermark';
+export type {ColorPickerProps} from '@osui/color-picker';
 

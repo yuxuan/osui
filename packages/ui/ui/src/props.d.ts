@@ -67,4 +67,9 @@ export type {TypographyProps} from '@osui/typography';
 export type {UploadProps} from '@osui/upload';
 export type {ThemeType, SetTheme, ThemeEnum, ThemeContextType} from '@osui/theme-provider';
 export type {SegmentedProps} from '@osui/segmented';
+export type {AppProps} from '@osui/app';
+export type {FlexProps} from '@osui/flex';
+export type {TourProps, TourStepProps} from '@osui/tour';
+export type {WatermarkProps} from '@osui/watermark';
+export type {ColorPickerProps} from '@osui/color-picker';
 

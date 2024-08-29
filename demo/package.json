@@ -110,7 +110,6 @@
     "@osui/image": "^3.1.0-alpha.2",
     "@osui/input": "^3.1.0-alpha.2",
     "@osui/input-number": "^3.1.0-alpha.2",
-    "@osui/joyride": "^3.1.0-alpha.2",
     "@osui/layout": "^3.1.0-alpha.2",
     "@osui/list": "^3.1.0-alpha.2",
     "@osui/markdown": "^3.1.0-alpha.2",
