@@ -5,10 +5,12 @@ tsc -p .
 
 swc src -d es --source-maps
 cp src/*.less es
+cp src/*.png es
 cp -r tmp/* es
 
 swc src -d lib --source-maps --config module.type=commonjs
 cp src/*.less lib
+cp src/*.png lib
 cp -r tmp/* lib
 
 rm -rf tmp
