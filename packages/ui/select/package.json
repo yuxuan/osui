@@ -87,6 +87,7 @@
         "@huse/derived-state": "^1.1.1",
         "@osui/brand-provider": "^3.1.1",
         "@osui/popover": "^3.1.1",
+        "@osui/tooltip": "^3.1.1",
         "@osui/tag": "^3.1.1",
         "classnames": "^2.3.1",
         "hoist-non-react-statics": "^3.3.2"

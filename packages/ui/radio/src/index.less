@@ -108,6 +108,7 @@
                 }
             }
         }
+
         // 第一个元素默认border-left和hover的效果
         .@{ant-radio}-button-wrapper:first-child {
             &:not(.@{ant-radio}-button-wrapper-disabled):not(.@{ant-radio}-button-wrapper-checked) {
@@ -134,9 +135,86 @@
         .@{ant-radio}-button-wrapper-checked:not(.@{ant-radio}-button-wrapper-disabled):focus-within {
             box-shadow: none;
         }
+
+        // 加强样式
+        &.@{osui-radio-class-prefix}-group-strong {
+            .@{ant-radio}-button-wrapper-checked {
+                background-color: var(--color-brand-1);
+            }
+            .@{ant-radio}-button-wrapper {
+                text-align: center;
+
+                &:first-child {
+                    border-start-start-radius: 4px;
+                    border-end-start-radius: 4px;
+                }
+
+                &:last-child {
+                    border-start-end-radius: 4px;
+                    border-end-end-radius: 4px;
+                }
+            }
+        }
     }
 
     .@{ant-radio} {
         top: var(--radio-top);
+    }
+}
+
+.@{osui-radio-class-prefix}-rich-radio-button {
+    padding: 14px;
+    height: auto;
+    line-height: 20px;
+
+    &-title {
+        font-family: PingFangSC-Medium;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 500;
+    }
+
+    &-description {
+        font-size: 12px;
+        color: var(--label-color);
+    }
+
+    &.@{ant-radio}-button-wrapper:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    &.@{ant-radio}-button-wrapper {
+        border-radius: 4px;
+        border-inline-start-width: 1px;
+    }
+
+    &.@{ant-radio}-button-wrapper-checked:not(.@{ant-radio}-button-wrapper-disabled) {
+        background: #eef3fe;
+        border-radius: 4px;
+    }
+
+    &.@{ant-radio}-button-wrapper:not(.@{ant-radio}-button-wrapper-disabled):not(.@{ant-radio}-button-wrapper-checked) {
+        &:hover {
+            border-left: 1px solid;
+        }
+    }
+    &.@{ant-radio}-button-wrapper:not(:first-child) {
+        &::before {
+            content: none;
+        }
+    }
+
+    &-new-tag {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 44px;
+        height: 20px;
+        line-height: 20px;
+        background: url('./tag-bg.png');
+        color: #fff;
+        text-align: right;
+        padding-right: 6px;
+        border-radius: 2px;
     }
 }

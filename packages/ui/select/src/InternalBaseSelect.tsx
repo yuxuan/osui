@@ -5,6 +5,7 @@ import type {BaseSelectRef} from 'rc-select';
 import classNames from 'classnames';
 import {IconDownOutlined, IconCheckSquareFilled, IconCloseOutlined} from '@osui/icons';
 import {useBrandContext} from '@osui/brand-provider';
+import Tooltip from '@osui/tooltip';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import {adjustAntdProps} from './utils';
 import './index.less';
@@ -80,6 +81,16 @@ function InternalSelect<ValueType = any, OptionType extends BaseOptionType | Def
             )}
             loading={loading}
             listHeight={innerListHeight}
+            optionRender={option => {
+                if (option.data.disabled) {
+                    return (
+                        <Tooltip title={option.data.disabledReason}>
+                            <span>{option.data.label}</span>
+                        </Tooltip>
+                    );
+                }
+                return <span>{option.data.label}</span>;
+            }}
             {...adjustedProps}
         />
     );

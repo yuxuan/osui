@@ -10,7 +10,7 @@
       "allowBranch": [
         "hot-fix",
         "v3",
-        "v3-backup"
+        "v3-less"
       ],
       "ignoreChanges": [
         "**/*.md",

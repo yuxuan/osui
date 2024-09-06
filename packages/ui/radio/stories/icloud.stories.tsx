@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
 import Radio from '../src';
+import IconAComponent from './iconA';
+import IconBComponent from './iconB';
 
 export default {
     title: '数据录入/Radio 单选框',
@@ -13,8 +15,8 @@ export const Demo = () => {
     const [value, setValue] = useState(1);
     const [valueButton, setValueButton] = useState('a');
     return (
-        <div style={{ padding: 30 }}>
-            <BrandProvider brand="icloud" >
+        <div style={{padding: 30}}>
+            <BrandProvider brand="icloud">
                 <h3>1、普通单选</h3>
                 <Radio>单选选项</Radio>
                 <Radio disabled>单选选项</Radio>
@@ -30,16 +32,33 @@ export const Demo = () => {
                     <Radio value={5} disabled>E</Radio>
                 </Group>
                 <p></p>
-                <h3>3、加强单选</h3>
+                <h3>3、按钮单选</h3>
                 <p>按钮样式单选组合</p>
-                <Group onChange={e => setValueButton(e.target.value)} value={valueButton}>
+                <p>加强</p>
+                <Group buttonType="strong" onChange={e => setValueButton(e.target.value)} value={valueButton}>
                     <RadioButton value="a">Hangzhou</RadioButton>
                     <RadioButton value="b">Shanghai</RadioButton>
                     <RadioButton value="c">Beijing</RadioButton>
                     <RadioButton value="d">Chengdu</RadioButton>
                     <RadioButton value="e" disabled>guangzhou</RadioButton>
                 </Group>
+                <br />
+                <br />
+                <Group
+                    buttonType="strong"
+                    optionType="button"
+                    options={[
+                        {label: 'Hangzhou', value: 'a'},
+                        {label: 'Shanghai', value: 'b', disabled: true},
+                        {label: 'Beijing', value: 'c'},
+                        {label: 'Chengdu', value: 'd'},
+                        {label: 'guangzhou', value: 'e', disabled: true},
+                    ]}
+                    onChange={e => setValueButton(e.target.value)}
+                    value={valueButton}
+                />
                 <p />
+                <p>普通</p>
                 <Group onChange={e => setValueButton(e.target.value)} value={valueButton}>
                     <RadioButton value="a">Hangzhou</RadioButton>
                     <RadioButton value="b" disabled>Shanghai</RadioButton>
@@ -51,6 +70,26 @@ export const Demo = () => {
                 <Group buttonStyle="solid" value="c">
                     <RadioButton value="b" disabled>Shanghai</RadioButton>
                     <RadioButton disabled value="c">Shanghai</RadioButton>
+                </Group>
+                <p></p>
+                <p></p>
+                <Group onChange={e => setValueButton(e.target.value)} value={valueButton}>
+                    <Radio.RichButton
+                        value="a"
+                        description="自定义训练镜像以及参数的场景"
+                        icon={<IconAComponent />}
+                    >
+                        自定义
+                    </Radio.RichButton>
+                    <Radio.RichButton
+                        value="b"
+                        description="支持9种大模型，智能提高计算资源使用率"
+                        flag="推荐"
+                        icon={<IconBComponent />}
+
+                    >
+                        AIAK 训练加模版
+                    </Radio.RichButton>
                 </Group>
             </BrandProvider>
         </div>

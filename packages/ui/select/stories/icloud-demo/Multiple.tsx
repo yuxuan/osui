@@ -4,8 +4,6 @@ import BrandProvider from '@osui/brand-provider';
 import Select from '../../src';
 
 export default () => {
-    const Option = Select.Option;
-
     const handleChange = useCallback(
         (value: string[]) => {
             console.log(`selected ${value}`);
@@ -18,14 +16,23 @@ export default () => {
             <BrandProvider>
                 <h2>无限制下拉多选</h2>
                 <p>默认多选使用方式：</p>
-                <Select mode="multiple" placeholder="请选择" style={{width: 240}} onChange={handleChange}>
-                    <Option value="jack">Jack</Option>
-                    <Option value="lucy">Lucy</Option>
-                    <Option value="disabled" disabled>
-                        Disabled
-                    </Option>
-                    <Option value="Yiminghe">yiminghe</Option>
-                </Select>
+                <Select
+                    mode="multiple"
+                    placeholder="请选择"
+                    style={{width: 240}}
+                    onChange={handleChange}
+                    options={
+                        [
+                            {value: 'jack', label: 'Jack'},
+                            {value: 'lucy', label: 'Lucy'},
+                            {value: 'disabled', label: 'Disabled', disabled: true},
+                            {value: 'Yiminghe', label: 'yiminghe'},
+                            {value: 'a', label: 'a', disabled: true},
+                            {value: 'b', label: 'b', disabled: true},
+                            {value: 'c', label: 'c', disabled: true},
+                        ]
+                    }
+                />
                 <br />
                 <br />
                 <p>有默认值</p>
@@ -35,17 +42,18 @@ export default () => {
                     defaultValue={['lucy']}
                     style={{width: 240}}
                     onChange={handleChange}
-                >
-                    <Option value="jack">Jack</Option>
-                    <Option value="lucy">Lucy</Option>
-                    <Option value="disabled" disabled>
-                        Disabled
-                    </Option>
-                    <Option value="Yiminghe">yiminghe</Option>
-                    <Option value="a">a</Option>
-                    <Option value="b">b</Option>
-                    <Option value="c">c</Option>
-                </Select>
+                    options={
+                        [
+                            {value: 'jack', label: 'Jack'},
+                            {value: 'lucy', label: 'Lucy'},
+                            {value: 'disabled', label: 'Disabled', disabled: true},
+                            {value: 'Yiminghe', label: 'yiminghe'},
+                            {value: 'a', label: 'a', disabled: true},
+                            {value: 'b', label: 'b', disabled: true},
+                            {value: 'c', label: 'c', disabled: true},
+                        ]
+                    }
+                />
                 <br />
                 <br />
                 <p>可清除样式</p>
@@ -55,14 +63,18 @@ export default () => {
                     defaultValue={['lucy']}
                     style={{width: 240}}
                     onChange={handleChange}
-                >
-                    <Option value="jack">Jack</Option>
-                    <Option value="lucy">Lucy</Option>
-                    <Option value="disabled" disabled>
-                        Disabled
-                    </Option>
-                    <Option value="Yiminghe">yiminghe</Option>
-                </Select>
+                    options={
+                        [
+                            {value: 'jack', label: 'Jack'},
+                            {value: 'lucy', label: 'Lucy'},
+                            {value: 'disabled', label: 'Disabled', disabled: true},
+                            {value: 'Yiminghe', label: 'yiminghe'},
+                            {value: 'a', label: 'a', disabled: true},
+                            {value: 'b', label: 'b', disabled: true},
+                            {value: 'c', label: 'c', disabled: true},
+                        ]
+                    }
+                />
                 <br />
                 <br />
                 <p>禁用</p>
@@ -73,17 +85,18 @@ export default () => {
                     value={['luck', 'jack']}
                     style={{width: 240}}
                     onChange={handleChange}
-                >
-                    <Option value="jack">Jack</Option>
-                    <Option value="lucy">Lucy</Option>
-                    <Option value="disabled" disabled>
-                        Disabled
-                    </Option>
-                    <Option value="Yiminghe">yiminghe</Option>
-                    <Option value="a">a</Option>
-                    <Option value="b">b</Option>
-                    <Option value="c">c</Option>
-                </Select>
+                    options={
+                        [
+                            {value: 'jack', label: 'Jack'},
+                            {value: 'lucy', label: 'Lucy'},
+                            {value: 'disabled', label: 'Disabled', disabled: true},
+                            {value: 'Yiminghe', label: 'yiminghe'},
+                            {value: 'a', label: 'a', disabled: true},
+                            {value: 'b', label: 'b', disabled: true},
+                            {value: 'c', label: 'c', disabled: true},
+                        ]
+                    }
+                />
                 <br />
                 <br />
                 <p>禁用</p>
@@ -93,17 +106,18 @@ export default () => {
                     defaultValue={['lucy', 'jack']}
                     style={{width: 240}}
                     onChange={handleChange}
-                >
-                    <Option value="jack" disabled>Jack</Option>
-                    <Option value="lucy" disabled>Lucy</Option>
-                    <Option value="disabled" disabled>
-                        Disabled
-                    </Option>
-                    <Option value="Yiminghe">yiminghe</Option>
-                    <Option value="a">a</Option>
-                    <Option value="b">b</Option>
-                    <Option value="c">c</Option>
-                </Select>
+                    options={
+                        [
+                            {value: 'jack', label: 'Jack'},
+                            {value: 'lucy', label: 'Lucy'},
+                            {value: 'disabled', label: 'Disabled', disabled: true},
+                            {value: 'Yiminghe', label: 'yiminghe'},
+                            {value: 'a', label: 'a', disabled: true},
+                            {value: 'b', label: 'b', disabled: true},
+                            {value: 'c', label: 'c', disabled: true},
+                        ]
+                    }
+                />
                 <br />
                 <br />
                 <p>有限制下拉多选</p>
