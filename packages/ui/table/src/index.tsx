@@ -43,13 +43,16 @@ function Table<RecordType extends Record<string, any>>(
             const goButton = <button>{icloudLocale.jump_to_confirm}</button>;
             if (!(paginationIn === false || paginationIn === null)) {
                 const pagination = paginationIn || {};
+                const showQuickJumper = paginationIn?.showQuickJumper
+                    ? {goButton: (paginationIn?.showQuickJumper as {goButton: React.ReactNode}).goButton ?? goButton}
+                    : false;
                 return {
                     ...paginationIn,
                     locale: {
                         ...icloudLocale,
                         ...(pagination && pagination.locale ? pagination.locale : {}),
                     },
-                    showQuickJumper: pagination.showQuickJumper || {goButton},
+                    showQuickJumper,
                 };
             }
             return paginationIn;

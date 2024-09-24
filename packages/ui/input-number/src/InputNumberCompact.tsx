@@ -12,6 +12,8 @@ const clsPrefix = 'osui-input-number-compact';
 type ValueType = string | number;
 export interface InputNumberCompactProps<T extends ValueType = ValueType> extends InputNumberProps<T> {
     inputNumberClassName?: string;
+    plusIcon?: React.ReactNode;
+    minusIcon?: React.ReactNode;
 }
 
 function InputNumberCompact<T extends ValueType = ValueType>(
@@ -24,6 +26,8 @@ function InputNumberCompact<T extends ValueType = ValueType>(
         step = 1,
         disabled,
         tailLabel,
+        plusIcon,
+        minusIcon,
         ...props
     }: React.PropsWithChildren<InputNumberCompactProps<T>>,
     ref: React.ForwardedRef<HTMLInputElement>
@@ -57,7 +61,12 @@ function InputNumberCompact<T extends ValueType = ValueType>(
                 compact
                 className={classNames(clsPrefix, className)}
             >
-                <Button disabled={disabled} onClick={handleMinus} icon="-" className={`${clsPrefix}-minus-btn`} />
+                <Button
+                    disabled={disabled}
+                    onClick={handleMinus}
+                    icon={minusIcon ?? '-'}
+                    className={`${clsPrefix}-minus-btn`}
+                />
                 <InputNumber
                     ref={ref}
                     {...props}
@@ -71,7 +80,7 @@ function InputNumberCompact<T extends ValueType = ValueType>(
                     style={{borderTopRightRadius: borderRadius, borderBottomRightRadius: borderRadius}}
                     disabled={disabled}
                     onClick={handlePlus}
-                    icon="+"
+                    icon={plusIcon ?? '+'}
                     className={`${clsPrefix}-plus-btn`}
                 />
                 {

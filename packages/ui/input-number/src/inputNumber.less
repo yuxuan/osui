@@ -14,11 +14,17 @@
         &.@{ant-prefix}-input-number-focused {
             z-index: 1;
         }
+
+        .@{ant-prefix}-input-number-input {
+            text-align: center;
+        }
     }
 
     &-minus-btn,
     &-plus-btn {
-        line-height: 2;
+        &.@{ant-prefix}-btn .@{ant-prefix}-btn-icon {
+            line-height: .125em;
+        }
 
         &.osui-button {
             color: var(--theme-color-text);
