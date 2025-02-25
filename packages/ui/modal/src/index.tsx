@@ -167,8 +167,18 @@ interface ConfirmProps extends ModalFuncProps {
     size?: Size;
 }
 const getConfirmConfig = (
-    {size = 'small', width, okText, cancelText, okButtonProps, cancelButtonProps, closeIcon, ...config}: ConfirmProps,
-    type: 'info'|'warning'|'success'|'error'|'confirm'
+    {
+        size = 'small',
+        width,
+        okText,
+        cancelText,
+        okButtonProps,
+        cancelButtonProps,
+        closeIcon,
+        centered,
+        ...config
+    }: ConfirmProps,
+    type: keyof typeof confirmIconMap
 ) => {
     const baseConfig = config;
     // 对confirm图表的样式调整处理
@@ -178,6 +188,7 @@ const getConfirmConfig = (
 
     return {
         ...baseConfig,
+        centered: centered ?? true,
         width: width ?? getModalSize(size),
         okText: okText ?? '确定',
         cancelText: cancelText ?? '取消',
