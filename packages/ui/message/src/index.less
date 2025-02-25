@@ -2,7 +2,7 @@
 @osui-message-class-prefix: osui-message;
 
 .@{ant-prefix}-message {
-    .@{osui-message-class-prefix}:first-child {
+    .@{ant-prefix}-message-notice-wrapper:first-child {
         margin-top: var(--message-margin-top);
     }
 }
@@ -69,7 +69,7 @@
     // 对original的样式patch
     .@{ant-prefix}-message-custom-content {
         display: flex;
-        align-items: flex-start;
+        align-items: flex-start !important;
         max-width: 400px;
         color: var(--theme-color-text);
         text-align: left;
