@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.5](https://github.com/yuxuan/osui/compare/v3.1.0...v3.1.5) (2025-02-25)
+
+
+### Bug Fixes
+
+* input-number table ([4dcabb1](https://github.com/yuxuan/osui/commit/4dcabb15fa99af41a5947a1e3ea4b1e24485a5b0))
+* message first child margin ([887d58b](https://github.com/yuxuan/osui/commit/887d58bca9a499d213d5a5f4117f03d0c664e5a5))
+* modal.confirm centere ([2ce6941](https://github.com/yuxuan/osui/commit/2ce694108b9d9f3f45c3de4b6a49112ed0818284))
+* radio build ([7b8e163](https://github.com/yuxuan/osui/commit/7b8e163dc642ac26b23c0d5869cb41ef74e5af17))
+* 尝试修复version ([6e644e7](https://github.com/yuxuan/osui/commit/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+* 更新sync cnpm脚本 ([a21012b](https://github.com/yuxuan/osui/commit/a21012b50d7b68cf44dd3a7ca400fd877b6b9d01))
+* 移除joyride ([7177428](https://github.com/yuxuan/osui/commit/717742881d3c3ea98c73e6ebcc7cd2ad505f412a))
+* 调整select和radio ([e5cc2e7](https://github.com/yuxuan/osui/commit/e5cc2e7e0fa3dcfe8b87170d2d34a3db1a5d535e))
+
+
+
+
+
 ## [3.1.4](https://github.com/yuxuan/osui/compare/v3.1.0...v3.1.4) (2024-09-24)
 
 

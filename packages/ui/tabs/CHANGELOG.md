@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.5](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v3.1.0...v3.1.5) (2025-02-25)
+
+
+### Bug Fixes
+
+* 尝试修复version ([6e644e7](https://gitee.com/yuxuanhuo/osui/tree/master/commits/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+
+
+
+
+
 ## [3.1.4](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v3.1.0...v3.1.4) (2024-09-24)
 
 
