@@ -122,5 +122,8 @@ export const components: ThemeConfig['components'] = {
     Layout: {
         colorBgBody: '#F7F7F9',
     },
+    Switch: {
+        handleSize: 11,
+    },
 };
 

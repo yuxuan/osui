@@ -1,15 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {TreeSelect as AntdTreeSelect, TreeSelectProps as AntdTreeSelectProps} from 'antd';
 import classNames from 'classnames';
 import {IconDownOutlined} from '@osui/icons';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import type {BaseSelectRef} from 'rc-select';
-import type {BaseOptionType, DefaultOptionType} from 'antd/es/select';
+import {DataNode} from 'antd/es/tree';
 import './index.less';
 
 const clsPrefix = 'osui-tree-select';
 
-const InternalTreeSelect = <OptionType extends BaseOptionType | DefaultOptionType = BaseOptionType>(
+const InternalTreeSelect = <OptionType extends DataNode = DataNode>(
     {className, popupClassName, ...props}: AntdTreeSelectProps<OptionType>,
     ref: React.Ref<BaseSelectRef>
 ) => {
@@ -20,6 +20,12 @@ const InternalTreeSelect = <OptionType extends BaseOptionType | DefaultOptionTyp
             <IconDownOutlined className={classNames(`${clsPrefix}-switcherIcon`)} />
         </span>
     );
+
+    const [dropdownVisible, setDropdownVisible] = useState(false);
+    const onDropdownVisibleChange = (visible: boolean) => {
+        props.onDropdownVisibleChange?.(visible);
+        setDropdownVisible(visible);
+    };
     return (
         <AntdTreeSelect
             ref={ref}
@@ -27,13 +33,17 @@ const InternalTreeSelect = <OptionType extends BaseOptionType | DefaultOptionTyp
             popupClassName={innerPopupClassName}
             {...props}
             switcherIcon={innerSwitcherIcon}
+            suffixIcon={dropdownVisible
+                ? <IconDownOutlined style={{transform: 'rotate(180deg)', transition: 'transform 0.3s ease-in-out'}} />
+                : <IconDownOutlined style={{transition: 'transform 0.3s ease-in-out'}} />}
+            onDropdownVisibleChange={onDropdownVisibleChange}
         />
     );
 };
 
 const TreeSelectRef = React.forwardRef(InternalTreeSelect) as <
     ValueType = any,
-    OptionType extends BaseOptionType | DefaultOptionType = DefaultOptionType,
+    OptionType extends DataNode = DataNode,
 >(
     props: React.PropsWithChildren<AntdTreeSelectProps<ValueType, OptionType>> & {
         ref?: React.Ref<BaseSelectRef>;

@@ -1,9 +1,9 @@
-import React, {useImperativeHandle, useRef, useContext, useMemo} from 'react';
+import React, {useImperativeHandle, useRef, useContext, useMemo, useState} from 'react';
 import {Table as AntdTable, ConfigProvider} from 'antd';
 import type {Reference} from 'rc-table';
 import classNames from 'classnames';
 import {useBrandContext} from '@osui/brand-provider';
-import {IconRightOutlined} from '@osui/icons';
+import {IconDownOutlined, IconRightOutlined, IconUpOutlined} from '@osui/icons';
 import Spin from '@osui/spin';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import type {TableProps as AntdTableProps} from 'antd/es/table';
@@ -36,7 +36,31 @@ function Table<RecordType extends Record<string, any>>(
     const domRef = useRef<Reference>(null);
     const containerDomRef = useRef<HTMLDivElement>(null);
     const {brand} = useBrandContext();
+
+    // Pagination props
     const {pagination: paginationIn} = props;
+    const [dropdownVisible, setDropdownVisible] = useState(false);
+    const innerSizeChangerConfig = useMemo(
+        () => ({
+            suffixIcon: (
+                dropdownVisible ? <IconUpOutlined /> : <IconDownOutlined />
+            ),
+            onDropdownVisibleChange: (visible: boolean) => {
+                setDropdownVisible(visible);
+            },
+        }),
+        [dropdownVisible]
+    );
+    const showSizeChangerConfig = useMemo(
+        () => !(paginationIn === false || paginationIn === null)
+        && paginationIn?.showSizeChanger && (
+            typeof paginationIn.showSizeChanger === 'object' ? {
+                ...paginationIn.showSizeChanger as any,
+                ...innerSizeChangerConfig,
+            } : innerSizeChangerConfig
+        ),
+        [innerSizeChangerConfig, paginationIn]
+    );
 
     const mergePagination = useMemo(
         () => {
@@ -53,11 +77,12 @@ function Table<RecordType extends Record<string, any>>(
                         ...(pagination && pagination.locale ? pagination.locale : {}),
                     },
                     showQuickJumper,
+                    showSizeChanger: showSizeChangerConfig,
                 };
             }
             return paginationIn;
         },
-        [paginationIn]
+        [paginationIn, showSizeChangerConfig]
     );
     const antdContext = useContext(ConfigProvider.ConfigContext);
     const prefixCls = antdContext.getPrefixCls();
