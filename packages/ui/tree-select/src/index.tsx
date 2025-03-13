@@ -34,8 +34,18 @@ const InternalTreeSelect = <OptionType extends DataNode = DataNode>(
             {...props}
             switcherIcon={innerSwitcherIcon}
             suffixIcon={dropdownVisible
-                ? <IconDownOutlined style={{transform: 'rotate(180deg)', transition: 'transform 0.3s ease-in-out'}} />
-                : <IconDownOutlined style={{transition: 'transform 0.3s ease-in-out'}} />}
+                ? (
+                    <IconDownOutlined
+                        className={classNames(`${clsPrefix}-switcherIcon`)}
+                        style={{transform: 'rotate(180deg)', transition: 'transform 0.3s ease-in-out'}}
+                    />
+                )
+                : (
+                    <IconDownOutlined
+                        className={classNames(`${clsPrefix}-switcherIcon`)}
+                        style={{transition: 'transform 0.3s ease-in-out'}}
+                    />
+                )}
             onDropdownVisibleChange={onDropdownVisibleChange}
         />
     );

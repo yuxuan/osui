@@ -75,6 +75,8 @@ export const components: ThemeConfig['components'] = {
         paddingContentVerticalLG: 11,
         colorTextHeading: '#5C5F66',
         paddingXS: 5.5,
+        bodySortBg: 'transparent',
+        headerSortActiveBg: '#f7f7f9',
     },
     Tooltip: {
         colorBgBase: '#fff',

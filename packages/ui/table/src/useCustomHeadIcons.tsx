@@ -1,10 +1,11 @@
+/* eslint-disable complexity */
 import React, {useState, useMemo, useCallback} from 'react';
 import type {SorterResult, SortOrder, ColumnType} from 'antd/es/table/interface';
 import {
     IconFilterOutlined,
-    IconTableSortOutlined,
 } from '@osui/icons';
-import {ArrowDownOutlined, ArrowUpOutlined} from '@ant-design/icons';
+import {OutlinedUp, OutlinedDown} from 'acud-icon';
+
 import classNames from 'classnames';
 
 const clsPrefix = 'osui-table';
@@ -25,13 +26,42 @@ const getNextOrder: (isSorted: boolean, order: SortOrder | undefined) => SortOrd
     }
 };
 
-const getSortIcon: (order: SortOrder | undefined) => any = sortOrder => {
-    switch (sortOrder) {
-        case ASCEND: return ArrowUpOutlined;
-        case DESCEND: return ArrowDownOutlined;
-        default: return IconTableSortOutlined;
-    }
-};
+const SortIcon = (props: {
+    onClick: () => void;
+    className: string;
+    active: SortOrder | undefined | false;
+}) => (
+    <span
+        style={{
+            display: 'inline-flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            width: '16px',
+            height: '16px',
+            fontSize: '10px',
+        }}
+        onClick={props.onClick}
+    >
+        <OutlinedUp
+            className={classNames(
+                props.className,
+                {
+                    'active': props.active === ASCEND,
+                }
+            )}
+            style={{height: '8px', fontSize: '10px'}}
+        />
+        <OutlinedDown
+            className={classNames(
+                props.className,
+                {
+                    'active': props.active === DESCEND,
+                }
+            )}
+            style={{height: '8px', fontSize: '10px'}}
+        />
+    </span>
+);
 
 function getMultiplePriority<RecordType>(column: ColumnType<RecordType>): number | false {
     if (typeof column.sorter === 'object' && typeof column.sorter.multiple === 'number') {
@@ -77,7 +107,6 @@ const useCustomHeadIcons = <T extends {
     const newColumns = useMemo(
         () => columns.map(column => {
             const isSortedItem = getIsSorted(sortedInfo, column);
-            const Icon = getSortIcon(isSortedItem ? isSortedItem?.order : undefined);
 
             const title = (
                 <>
@@ -89,7 +118,7 @@ const useCustomHeadIcons = <T extends {
                     )}
                     >
                         <span className={`${prefixCls}-table-column-sorter-inner`}>
-                            {Icon && <Icon
+                            <SortIcon
                                 onClick={() => onClick(column)}
                                 className={classNames(
                                     {
@@ -98,11 +127,10 @@ const useCustomHeadIcons = <T extends {
                                             !!isSortedItem && isSortedItem.order === DESCEND,
                                         [`${prefixCls}-table-column-sorter-up`]:
                                             !!isSortedItem && isSortedItem.order === ASCEND,
-                                        active: !!isSortedItem && isSortedItem.order,
                                     }
                                 )}
+                                active={!!isSortedItem && isSortedItem.order}
                             />
-                            }
                         </span>
                     </span>
                 </>
@@ -114,7 +142,7 @@ const useCustomHeadIcons = <T extends {
                 ...(column.sorter ? {title} : {}),
             };
         }),
-        [columns, sortedInfo]
+        [columns, onClick, prefixCls, sortedInfo]
     );
 
     return {

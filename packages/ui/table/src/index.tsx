@@ -43,7 +43,9 @@ function Table<RecordType extends Record<string, any>>(
     const innerSizeChangerConfig = useMemo(
         () => ({
             suffixIcon: (
-                dropdownVisible ? <IconUpOutlined /> : <IconDownOutlined />
+                dropdownVisible
+                    ? <IconUpOutlined className={classNames(`${clsPrefix}-sizeChangerIcon`)} />
+                    : <IconDownOutlined className={classNames(`${clsPrefix}-sizeChangerIcon`)} />
             ),
             onDropdownVisibleChange: (visible: boolean) => {
                 setDropdownVisible(visible);
