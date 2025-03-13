@@ -83,13 +83,15 @@ const urls = [
     'https://registry.npmmirror.com/@osui/watermark/',
 ];
 
+const currentVersion = require('../packages/ui/ui/package.json').version;
+
 Promise.all(urls.map(url => fetch(url).then(res => res.json()).then(data => {
     // eslint-disable-next-line no-underscore-dangle
     console.log(data._id, data['dist-tags']?.latest);
     return [data['dist-tags']?.latest, data._id];
 }))).then(data => {
     const unmatched = data.filter(item => {
-        if (item[0] !== '3.1.6') {
+        if (item[0] !== currentVersion) {
             return item;
         }
         return null;
