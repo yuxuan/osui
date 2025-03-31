@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v3.1.8) (2025-03-31)
+
+
+### Bug Fixes
+
+* input-number table ([4dcabb1](https://gitee.com/gitee-fe/osui/tree/master/commits/4dcabb15fa99af41a5947a1e3ea4b1e24485a5b0))
+* table pagination调整 ([81ba0a7](https://gitee.com/gitee-fe/osui/tree/master/commits/81ba0a769a49741e90ed783fd7a6b759b33e13c2))
+* tree-select icon, pagination icon, switch size ([5d28ebf](https://gitee.com/gitee-fe/osui/tree/master/commits/5d28ebfbfe3963998c42820ac29b468197df5e69))
+* 优化table sorter样式 ([38f41f2](https://gitee.com/gitee-fe/osui/tree/master/commits/38f41f2376cc3d8534b22b2605d4fe5bac2bd380))
+* 尝试修复version ([6e644e7](https://gitee.com/gitee-fe/osui/tree/master/commits/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+
+
+
+
+
 ## [3.1.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v3.1.7) (2025-03-13)
 
 
