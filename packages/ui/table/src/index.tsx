@@ -53,15 +53,18 @@ function Table<RecordType extends Record<string, any>>(
         }),
         [dropdownVisible]
     );
+
+    const {pagination: paginationContext} = useContext(ConfigProvider.ConfigContext);
     const showSizeChangerConfig = useMemo(
         () => !(paginationIn === false || paginationIn === null)
-        && paginationIn?.showSizeChanger && (
-            typeof paginationIn.showSizeChanger === 'object' ? {
-                ...paginationIn.showSizeChanger as any,
-                ...innerSizeChangerConfig,
-            } : innerSizeChangerConfig
+        && (paginationIn?.showSizeChanger || paginationContext?.showSizeChanger) && (
+            (typeof paginationIn?.showSizeChanger === 'object'
+                && typeof paginationContext?.showSizeChanger === 'object') ? {
+                    ...(paginationIn?.showSizeChanger as any),
+                    ...innerSizeChangerConfig,
+                } : innerSizeChangerConfig
         ),
-        [innerSizeChangerConfig, paginationIn]
+        [innerSizeChangerConfig, paginationContext?.showSizeChanger, paginationIn]
     );
 
     const mergePagination = useMemo(

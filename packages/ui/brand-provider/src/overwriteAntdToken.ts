@@ -5,7 +5,7 @@ type AntdToken = Required<ThemeConfig>['token'];
 /* eslint-disable max-len */
 export const acud: AntdToken = {
     borderRadius: 4,
-    borderRadiusSM: 2,
+    borderRadiusSM: 4,
     boxShadowSecondary: `
         0 3px 6px -4px rgba(0, 0, 0, .12),
         0 6px 16px 0 rgba(0, 0, 0, .08),
