@@ -43,6 +43,17 @@
             }
         }
     }
+
+    // 当有empty的时候不要border
+    .@{ant-prefix}-table-thead,
+    .@{ant-prefix}-table-tbody {
+        & > tr {
+            & > td:has(.osui-empty) {
+                border-bottom: 1px solid transparent;
+            }
+        }
+    }
+
     // 修复sticky时升高z-index，不然箭头会被挡住
     .@{ant-prefix}-table-selection-column.@{ant-prefix}-table-cell-fix-left,
     .@{ant-prefix}-table-selection-column.@{ant-prefix}-table-cell-fix-right {

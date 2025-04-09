@@ -86,7 +86,6 @@ export default () => {
                     ]}
                     style={{width: 240}}
                 />
-
             </BrandProvider>
         </>
     );

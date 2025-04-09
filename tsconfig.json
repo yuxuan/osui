@@ -1,12 +1,13 @@
 {
     "compilerOptions": {
-        "target": "esnext",
-        "module": "esnext",
+        "target": "ESNext",
+        "module": "ESNext",
         "lib": [
-            "es2018",
+            "ESNext",
             "dom"
         ],
         "jsx": "react",
+        "forceConsistentCasingInFileNames": true, 
         "allowJs": true,
         "sourceMap": true,
         "moduleResolution": "node",

@@ -10,7 +10,11 @@ export default {
     component: Empty,
 };
 
-export const Demo1 = EmptyInComponents;
+export const Demo1 = () => {
+    return (
+        <EmptyInComponents />
+    );
+};
 export const Demo2 = () => {
     return (
         <BrandProvider>

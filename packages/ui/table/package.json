@@ -82,6 +82,7 @@
     "peerDependencies": {
         "@ant-design/icons": "^5.0.0",
         "@osui/brand-provider": "^3.0.0",
+        "@osui/empty": "^3.0.0",
         "@osui/icons": "^3.0.0",
         "antd": "^5.0.0",
         "react": ">=17.0.0",

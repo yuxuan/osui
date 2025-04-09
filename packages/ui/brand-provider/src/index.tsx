@@ -1,6 +1,7 @@
 import React, {
     useContext, useState, useEffect,
     useRef, useCallback,
+    useMemo,
 } from 'react';
 import {ConfigProvider, ThemeConfig, App} from 'antd';
 import Empty from '@osui/empty';
@@ -16,6 +17,8 @@ type Brand = 'icloud';
 export interface BrandContextValue {
     brand: Brand | undefined;
     designToken?: ThemeConfig;
+    isFilteredEmpty: boolean;
+    setIsFilteredEmpty: (isFilteredEmpty: boolean) => void;
     setTheme: ((theme: ThemeConfig) => ThemeConfig)
     | ((theme: ThemeConfig) => void);
 }
@@ -23,10 +26,9 @@ export interface BrandContextValue {
 export const BrandContext = React.createContext<BrandContextValue>({
     brand: undefined,
     designToken: undefined,
-    setTheme: () => {
-        console.warn('空函数');
-        return {};
-    },
+    isFilteredEmpty: false,
+    setIsFilteredEmpty: () => {},
+    setTheme: () => {},
 });
 
 const theme: ThemeConfig = {
@@ -34,24 +36,6 @@ const theme: ThemeConfig = {
     components,
 };
 
-const iCloudConfigs: ConfigProviderProps = {
-    autoInsertSpaceInButton: false,
-    renderEmpty(componentName) {
-        switch (componentName) {
-            case 'Select':
-            case 'TreeSelect':
-            case 'Cascader':
-            case 'Mentions':
-                return <div style={{display: 'flex', justifyContent: 'center'}}>未查到任何结果</div>;
-            case 'Table':
-            case 'List':
-                return (<Empty />);
-            default:
-                return <Empty />;
-        }
-    },
-    locale: zhCN,
-};
 
 const BrandProvider: React.FC<React.PropsWithChildren<{
     brand?: Brand;
@@ -61,7 +45,29 @@ const BrandProvider: React.FC<React.PropsWithChildren<{
 ) => {
     const themeFromHook = useRef<ThemeConfig>({});
     const [finalTheme, setTheme] = useState(theme);
+    const [isFilteredEmpty, setIsFilteredEmpty] = useState(false);
 
+    const iCloudConfigs: ConfigProviderProps = useMemo(
+        () => ({
+            autoInsertSpaceInButton: false,
+            renderEmpty(componentName) {
+                switch (componentName) {
+                    case 'Select':
+                    case 'TreeSelect':
+                    case 'Cascader':
+                    case 'Mentions':
+                        return <div style={{display: 'flex', justifyContent: 'center'}}>未查到任何结果</div>;
+                    case 'Table':
+                    case 'List':
+                        return (<Empty type={isFilteredEmpty ? 'filteredEmpty' : 'empty'} />);
+                    default:
+                        return <Empty type={isFilteredEmpty ? 'filteredEmpty' : 'empty'} />;
+                }
+            },
+            locale: zhCN,
+        }),
+        [isFilteredEmpty]
+    );
     useEffect(
         () => {
             const newTheme = mergeTheme(
@@ -99,6 +105,8 @@ const BrandProvider: React.FC<React.PropsWithChildren<{
         brand,
         designToken: finalTheme,
         setTheme: setThemeOutside,
+        isFilteredEmpty: isFilteredEmpty,
+        setIsFilteredEmpty,
     };
     return (
         <BrandContext.Provider value={context}>

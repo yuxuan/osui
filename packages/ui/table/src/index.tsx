@@ -35,7 +35,7 @@ function Table<RecordType extends Record<string, any>>(
 ) {
     const domRef = useRef<Reference>(null);
     const containerDomRef = useRef<HTMLDivElement>(null);
-    const {brand} = useBrandContext();
+    const {brand, setIsFilteredEmpty} = useBrandContext();
 
     // Pagination props
     const {pagination: paginationIn} = props;
@@ -94,6 +94,7 @@ function Table<RecordType extends Record<string, any>>(
 
     useTablePaginationStylePatch(domRef, prefixCls, containerDomRef);
 
+    console.log('🛺 dd2722-Log-Info', props.dataSource?.length);
     const className = classNames(
         clsPrefix,
         {[`${clsPrefix}-icloud`]: brand === 'icloud'},
@@ -110,6 +111,12 @@ function Table<RecordType extends Record<string, any>>(
     );
 
     const handleChange: TableProps<any>['onChange'] = (pagination, filters, sorter, extra) => {
+        if (pagination || filters) {
+            setIsFilteredEmpty(true);
+        }
+        else {
+            setIsFilteredEmpty(false);
+        }
         if (Array.isArray(sorter)) {
             setSortedInfo(sorter);
         } else {
@@ -126,6 +133,7 @@ function Table<RecordType extends Record<string, any>>(
     const innerLoading = props.loading ? (
         typeof props.loading === 'boolean' ? {indicator: <Spin size="large" />} : props.loading
     ) : props.loading;
+
 
     return (
         <div className={className} ref={containerDomRef}>

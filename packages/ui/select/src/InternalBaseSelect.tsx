@@ -100,10 +100,9 @@ const Select = React.forwardRef(InternalSelect) as unknown as (<
     ValueType = any,
     OptionType extends BaseOptionType | DefaultOptionType = DefaultOptionType,
 >(
-    props: React.PropsWithChildren<SelectProps<ValueType, OptionType>> & {
-        ref?: React.Ref<BaseSelectRef>;
-    },
+    props: React.PropsWithChildren<SelectProps<ValueType, OptionType>> & React.RefAttributes<BaseSelectRef>,
 ) => React.ReactElement) & {
+    displayName?: string;
     SECRET_COMBOBOX_MODE_DO_NOT_USE: string;
     Option: typeof AntdSelect.Option;
     OptGroup: typeof AntdSelect.OptGroup;

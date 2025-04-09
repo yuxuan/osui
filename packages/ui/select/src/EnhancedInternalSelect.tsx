@@ -14,7 +14,7 @@ type ForwardRefReturn = React.ReactElement<
 
 type DefaultType = string[];
 
-const DisplayTagsInPopoverSelect = forwardRef(<T = DefaultType>(
+const DisplayTagsInPopoverSelect = forwardRef(<T=DefaultType>(
     props: React.ComponentProps<typeof Select<T>>,
     ref: React.Ref<RefSelectProps> | undefined
 ) => {
@@ -97,10 +97,9 @@ function EnhancedInternalSelect<T = DefaultType>(
     return <Select {...restProps} ref={ref} />;
 }
 
-const EnhancedSelect = React.forwardRef(EnhancedInternalSelect) as <T = DefaultType>(
-    props: React.ComponentProps<typeof Select<T>>,
-    ref: React.Ref<RefSelectProps> | undefined
-) => ForwardRefReturn;
+const EnhancedSelect = React.forwardRef(EnhancedInternalSelect) as <T=DefaultType>(
+    props: React.PropsWithChildren<React.ComponentProps<typeof Select<T>>> & React.RefAttributes<RefSelectProps>
+) => React.ReactElement;
 
 hoistNonReactStatics(EnhancedSelect, AntdSelect);
 

@@ -11,7 +11,7 @@ import Button from '../src';
 import {MinWidth} from './icloud-demo';
 import './index.less';
 
-const Blockquote = ({children}) => (
+const Blockquote = ({children}: {children: React.ReactNode}) => (
     <blockquote style={{
         background: 'var(--color-brand-1)',
         borderRadius: '3px',

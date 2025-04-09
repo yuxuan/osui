@@ -4,12 +4,13 @@ import {EmptyProps as AntdEmptyProps} from 'antd/es/empty';
 import classNames from 'classnames';
 import ImageEmpty from './empty';
 import ImageError from './error';
+import ImageFilteredEmpty from './filteredEmpty';
 import './index.less';
 
 const clsPrefix = 'osui-empty';
 
 export interface EmptyProps extends AntdEmptyProps {
-    type?: 'empty' | 'error' | '404';
+    type?: 'empty' | 'error' | '404' | 'filteredEmpty';
     size?: 'small' | 'large';
 }
 const Empty: React.FC<EmptyProps> = ({className, image, type, size, ...props}) => {
@@ -22,6 +23,9 @@ const Empty: React.FC<EmptyProps> = ({className, image, type, size, ...props}) =
     switch (type) {
         case 'empty':
             Image = ImageEmpty;
+            break;
+        case 'filteredEmpty':
+            Image = ImageFilteredEmpty;
             break;
         case 'error':
             Image = ImageError;

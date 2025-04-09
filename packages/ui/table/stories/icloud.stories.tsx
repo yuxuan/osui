@@ -181,7 +181,7 @@ export const Border = () => {
         <div style={{padding: 30}}>
             <BrandProvider brand="icloud">
                 <div>Antd的bordered=false，没有列border</div>
-                <Table columns={columns} dataSource={data} bordered={false} />
+                <Table columns={columns} dataSource={data} bordered />
                 <div style={{paddingBottom: 30}} />
                 <div>noRowBorder，head保留border</div>
                 <Table columns={columns} dataSource={data} noRowBorder />
