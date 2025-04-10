@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v3.1.10) (2025-04-10)
+
+
+### Bug Fixes
+
+* tree-select icon, pagination icon, switch size ([5d28ebf](https://gitee.com/gitee-fe/osui/tree/master/commits/5d28ebfbfe3963998c42820ac29b468197df5e69))
+
+
+
+
+
 ## [3.1.9](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v3.1.9) (2025-04-09)
 
 
