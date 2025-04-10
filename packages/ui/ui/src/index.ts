@@ -45,7 +45,7 @@ export {default as Popover} from '@osui/popover';
 export {default as Row} from '@osui/row';
 export {default as Watermark} from '@osui/watermark';
 export {default as HighlightText} from '@osui/highlight-text';
-export {default as BrandProvider, useBrandContext} from '@osui/brand-provider';
+export {default as BrandProvider} from '@osui/brand-provider';
 export {default as Gap} from '@osui/gap';
 export {default as Button} from '@osui/button';
 export {default as Steps} from '@osui/steps';

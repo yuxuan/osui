@@ -85,7 +85,7 @@ const urls = [
 
 const currentVersion = require('../packages/ui/ui/package.json').version;
 
-Promise.all(urls.map(url => fetch(url).then(res => res.json()).then(data => {
+Promise.all(urls.map(url => fetch(url, {cache: 'no-cache'}).then(res => res.json()).then(data => {
     // eslint-disable-next-line no-underscore-dangle
     console.log(data._id, data['dist-tags']?.latest);
     return [data['dist-tags']?.latest, data._id];

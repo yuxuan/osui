@@ -36,11 +36,14 @@ const theme: ThemeConfig = {
     components,
 };
 
-
-const BrandProvider: React.FC<React.PropsWithChildren<{
+interface BrandProviderComponent extends React.FC<React.PropsWithChildren<{
     brand?: Brand;
     theme?: Partial<ThemeConfig>;
-} & ConfigProviderProps>> = (
+} & ConfigProviderProps>> {
+    useBrandContext: typeof useBrandContext;
+}
+
+const BrandProvider: BrandProviderComponent = (
     {brand, theme: outerTheme, children, ...ConfigProviderProps}
 ) => {
     const themeFromHook = useRef<ThemeConfig>({});
@@ -122,5 +125,7 @@ const BrandProvider: React.FC<React.PropsWithChildren<{
 export const useBrandContext = () => useContext(BrandContext);
 
 export default BrandProvider;
+
+BrandProvider.useBrandContext = useBrandContext;
 
 export const osuiThemeConfig = theme;
