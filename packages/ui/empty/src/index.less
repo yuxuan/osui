@@ -6,7 +6,9 @@
     }
 
     .@{ant-prefix}-empty-description {
-        color: var(--color-gray-9);
+        &:not(a) {
+            color: var(--color-gray-7);
+        }
     }
 
     .@{osui-empty-class-prefix}-large {

@@ -5,6 +5,7 @@ import React, {
 } from 'react';
 import {ConfigProvider, ThemeConfig, App} from 'antd';
 import Empty from '@osui/empty';
+import {css} from '@emotion/css';
 import zhCN from 'antd/locale/zh_CN';
 import {ConfigProviderProps} from 'antd/es/config-provider';
 import {acud} from './overwriteAntdToken';
@@ -62,7 +63,14 @@ const BrandProvider: BrandProviderComponent = (
                         return <div style={{display: 'flex', justifyContent: 'center'}}>未查到任何结果</div>;
                     case 'Table':
                     case 'List':
-                        return (<Empty type={isFilteredEmpty ? 'filteredEmpty' : 'empty'} />);
+                        return (
+                            <div className={css`
+                                margin: 24px 0;
+                            `}
+                            >
+                                <Empty type={isFilteredEmpty ? 'filteredEmpty' : 'empty'} />
+                            </div>
+                        );
                     default:
                         return <Empty type={isFilteredEmpty ? 'filteredEmpty' : 'empty'} />;
                 }
