@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.12](https://github.com/yuxuan/osui/compare/v3.1.0...v3.1.12) (2025-04-24)
+
+
+### Bug Fixes
+
+* empty ([9f28edd](https://github.com/yuxuan/osui/commit/9f28edd38343e77ad3871353d1ff3b1b4e549fa8))
+* input-number table ([4dcabb1](https://github.com/yuxuan/osui/commit/4dcabb15fa99af41a5947a1e3ea4b1e24485a5b0))
+* message first child margin ([887d58b](https://github.com/yuxuan/osui/commit/887d58bca9a499d213d5a5f4117f03d0c664e5a5))
+* modal.confirm centere ([2ce6941](https://github.com/yuxuan/osui/commit/2ce694108b9d9f3f45c3de4b6a49112ed0818284))
+* radio build ([7b8e163](https://github.com/yuxuan/osui/commit/7b8e163dc642ac26b23c0d5869cb41ef74e5af17))
+* table ([7c35ea1](https://github.com/yuxuan/osui/commit/7c35ea1f38f56bd28e3d5054c18111ea44d37cea))
+* table pagination调整 ([81ba0a7](https://github.com/yuxuan/osui/commit/81ba0a769a49741e90ed783fd7a6b759b33e13c2))
+* tree-select icon, pagination icon, switch size ([5d28ebf](https://github.com/yuxuan/osui/commit/5d28ebfbfe3963998c42820ac29b468197df5e69))
+* 优化check版本脚本 ([1b84b16](https://github.com/yuxuan/osui/commit/1b84b163da4f141fcb2bbd6c284f2eb48e49fa43))
+* 优化empty ([cc31b1b](https://github.com/yuxuan/osui/commit/cc31b1bedf615e78d5da21664f55dde2615927ff))
+* 优化table sorter样式 ([38f41f2](https://github.com/yuxuan/osui/commit/38f41f2376cc3d8534b22b2605d4fe5bac2bd380))
+* 尝试修复version ([6e644e7](https://github.com/yuxuan/osui/commit/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+* 更新sync cnpm脚本 ([a21012b](https://github.com/yuxuan/osui/commit/a21012b50d7b68cf44dd3a7ca400fd877b6b9d01))
+* 移除joyride ([7177428](https://github.com/yuxuan/osui/commit/717742881d3c3ea98c73e6ebcc7cd2ad505f412a))
+* 调整select和radio ([e5cc2e7](https://github.com/yuxuan/osui/commit/e5cc2e7e0fa3dcfe8b87170d2d34a3db1a5d535e))
+
+
+
+
+
 ## [3.1.11](https://github.com/yuxuan/osui/compare/v3.1.0...v3.1.11) (2025-04-17)
 
 

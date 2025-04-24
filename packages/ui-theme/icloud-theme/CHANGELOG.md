@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.12](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v3.1.12) (2025-04-24)
+
+
+### Bug Fixes
+
+* table ([7c35ea1](https://gitee.com/gitee-fe/osui/tree/master/commits/7c35ea1f38f56bd28e3d5054c18111ea44d37cea))
+
+
+
+
+
 # [3.1.0](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0-alpha.2...v3.1.0) (2024-08-28)
 
 
