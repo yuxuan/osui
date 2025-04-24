@@ -127,5 +127,8 @@ export const components: ThemeConfig['components'] = {
     Switch: {
         handleSize: 11,
     },
+    Dropdown: {
+        borderRadiusSM: 0,
+    },
 };
 

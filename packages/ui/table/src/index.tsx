@@ -72,8 +72,12 @@ function Table<RecordType extends Record<string, any>>(
             const goButton = <button>{icloudLocale.jump_to_confirm}</button>;
             if (!(paginationIn === false || paginationIn === null)) {
                 const pagination = paginationIn || {};
-                const showQuickJumper = paginationIn?.showQuickJumper
-                    ? {goButton: (paginationIn?.showQuickJumper as {goButton: React.ReactNode}).goButton ?? goButton}
+                // eslint-disable-next-line no-negated-condition
+                const showQuickJumper = !(
+                    // 不主动关的话，没有传入showQuickJumper，默认是true
+                    paginationIn?.showQuickJumper === false || paginationIn?.showQuickJumper === null
+                )
+                    ? {goButton: (paginationIn?.showQuickJumper as {goButton: React.ReactNode})?.goButton ?? goButton}
                     : false;
                 return {
                     ...paginationIn,
@@ -94,7 +98,6 @@ function Table<RecordType extends Record<string, any>>(
 
     useTablePaginationStylePatch(domRef, prefixCls, containerDomRef);
 
-    console.log('🛺 dd2722-Log-Info', props.dataSource?.length);
     const className = classNames(
         clsPrefix,
         {[`${clsPrefix}-icloud`]: brand === 'icloud'},

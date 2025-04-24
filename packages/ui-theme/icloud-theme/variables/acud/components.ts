@@ -397,7 +397,7 @@ export default {
     '--pagination-item-disabled-bg-active': 'var(--disabled-active-bg)',
     '--pagination-item-disabled-border-color': 'transparent',
     '--pagination-item-disabled-color-active': 'rgba(0, 0, 0, 0.25)',
-    '--pagination-item-hover-bg': 'var(--theme-component-bg)',
+    '--pagination-item-hover-bg': 'transparent',
     '--pagination-item-hover-border-color': 'var(--theme-primary-color-hover)',
     '--pagination-item-hover-color': 'var(--theme-primary-color-hover)',
     '--pagination-item-input-bg': 'var(--component-background)',

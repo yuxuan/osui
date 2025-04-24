@@ -54,6 +54,10 @@ const BrandProvider: BrandProviderComponent = (
     const iCloudConfigs: ConfigProviderProps = useMemo(
         () => ({
             autoInsertSpaceInButton: false,
+            pagination: {
+                showSizeChanger: true,
+                showQuickJumper: true,
+            },
             renderEmpty(componentName) {
                 switch (componentName) {
                     case 'Select':

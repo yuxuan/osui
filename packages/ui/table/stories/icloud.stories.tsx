@@ -83,30 +83,11 @@ export const Demo = () => {
         <div style={{padding: 30}}>
             <BrandProvider
                 brand="icloud"
-                theme={{
-                    components: {
-                        Table: {
-                            paddingXS: 5.5,
-                        },
-                    },
-                }}
             >
                 <Table
                     ref={ref}
                     columns={columns}
                     dataSource={data}
-                    pagination={{
-                        showSizeChanger: true,
-                        showQuickJumper: true,
-                        // showQuickJumper: {
-                        //     goButton:  <button>Go</button>
-                        // },
-                        // simple: true,
-                        defaultPageSize: 1,
-                        pageSizeOptions: [1, 2, 10, 100],
-                        // position: ['bottomRight', 'topRight']
-                        position: ['bottomLeft', 'topRight'],
-                    }}
                 />
                 <br />
                 <p>小表格</p>
