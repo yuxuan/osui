@@ -3,14 +3,16 @@ import React, {
     useRef, useCallback,
     useMemo,
 } from 'react';
-import {ConfigProvider, ThemeConfig, App} from 'antd';
+import {ConfigProvider, ThemeConfig, App, theme} from 'antd';
 import Empty from '@osui/empty';
 import {css} from '@emotion/css';
 import zhCN from 'antd/locale/zh_CN';
 import {ConfigProviderProps} from 'antd/es/config-provider';
-import {acud} from './overwriteAntdToken';
+import {acudTheme} from '@osui/icloud-theme';
 import {mergeTheme} from './mergeTheme';
-import {components} from './themeComponents';
+import {
+    config, SetStaticMethodStyle,
+} from './SetStaticMethodStyle';
 
 // 目前只支持一个主题
 type Brand = 'icloud';
@@ -32,10 +34,9 @@ export const BrandContext = React.createContext<BrandContextValue>({
     setTheme: () => {},
 });
 
-const theme: ThemeConfig = {
-    token: acud,
-    components,
-};
+const defaultTheme: ThemeConfig = acudTheme;
+
+export const useBrandContext = () => useContext(BrandContext);
 
 interface BrandProviderComponent extends React.FC<React.PropsWithChildren<{
     brand?: Brand;
@@ -89,11 +90,11 @@ const BrandProvider: BrandProviderComponent = (
                 themeFromHook.current,
                 mergeTheme(
                     outerTheme,
-                    theme
+                    defaultTheme
                 )
             );
             // 合并优先级
-            setTheme(newTheme);
+            setTheme(newTheme as unknown as typeof theme);
         },
         [outerTheme]
     );
@@ -108,9 +109,9 @@ const BrandProvider: BrandProviderComponent = (
                     themeFromHook.current
                 );
             }
-            setTheme(oldThme => mergeTheme(
+            setTheme(oldTheme => mergeTheme(
                 themeFromHook.current,
-                oldThme
+                oldTheme
             ));
         },
         []
@@ -123,10 +124,13 @@ const BrandProvider: BrandProviderComponent = (
         isFilteredEmpty: isFilteredEmpty,
         setIsFilteredEmpty,
     };
+
     return (
         <BrandContext.Provider value={context}>
             <ConfigProvider {...iCloudConfigs} {...ConfigProviderProps} theme={finalTheme}>
                 <App>
+                    {/* <SetHashIdNullDom /> */}
+                    <SetStaticMethodStyle />
                     {children}
                 </App>
             </ConfigProvider>
@@ -134,7 +138,7 @@ const BrandProvider: BrandProviderComponent = (
     );
 };
 
-export const useBrandContext = () => useContext(BrandContext);
+BrandProvider.config = config;
 
 export default BrandProvider;
 

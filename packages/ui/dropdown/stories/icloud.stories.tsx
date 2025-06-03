@@ -1,10 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import {IconDownOutlined} from '@osui/icons';
 import FlexCentered from '@osui/flex-centered';
 import {MenuProps} from '@osui/menu';
 import Button from '@osui/button';
 import Space from '@osui/space';
+import BrandProvider from '@osui/brand-provider';
 import Dropdown from '../src';
 
 export default {
@@ -12,6 +13,13 @@ export default {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
     const menu: MenuProps = {
         items: [
             {
@@ -34,7 +42,13 @@ export const Demo = () => {
 
 
     return (
-        <>
+        <BrandProvider theme={theme}>
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
+
             <p>文字下拉</p>
             <Dropdown menu={menu}>
                 <a onClick={e => e.preventDefault()}>
@@ -44,7 +58,7 @@ export const Demo = () => {
                     </FlexCentered>
                 </a>
             </Dropdown>
-        </>
+        </BrandProvider>
     );
 };
 
@@ -112,9 +126,11 @@ export const TestCase = () => {
         onClick: handleMenuClick,
     };
     return (
-        <Dropdown.Button open menu={menuProps} onClick={handleButtonClick}>
-            Dropdown
-        </Dropdown.Button>
+        <BrandProvider>
+            <Dropdown.Button open menu={menuProps} onClick={handleButtonClick}>
+                Dropdown
+            </Dropdown.Button>
+        </BrandProvider>
     );
 };
 
@@ -137,29 +153,31 @@ export function TestCase2() {
     };
 
     return (
-        <Space direction="vertical">
-            <Space wrap>
-                <Dropdown menu={menu} placement="bottomLeft">
-                    <Button>bottomLeft</Button>
-                </Dropdown>
-                {/* <Dropdown overlay={menu} placement="bottom">
+        <BrandProvider>
+            <Space direction="vertical">
+                <Space wrap>
+                    <Dropdown menu={menu} placement="bottomLeft">
+                        <Button>bottomLeft</Button>
+                    </Dropdown>
+                    {/* <Dropdown overlay={menu} placement="bottom">
                     <Button>bottom</Button>
                 </Dropdown> */}
-                <Dropdown menu={menu} placement="bottomRight">
-                    <Button>bottomRight</Button>
-                </Dropdown>
-            </Space>
-            <Space wrap>
-                <Dropdown arrow menu={menu} placement="topLeft">
-                    <Button>topLeft</Button>
-                </Dropdown>
-                {/* <Dropdown arrow overlay={menu} placement="top">
+                    <Dropdown menu={menu} placement="bottomRight">
+                        <Button>bottomRight</Button>
+                    </Dropdown>
+                </Space>
+                <Space wrap>
+                    <Dropdown arrow menu={menu} placement="topLeft">
+                        <Button>topLeft</Button>
+                    </Dropdown>
+                    {/* <Dropdown arrow overlay={menu} placement="top">
                     <Button>top</Button>
                 </Dropdown> */}
-                <Dropdown arrow menu={menu} placement="topRight">
-                    <Button>topRight</Button>
-                </Dropdown>
+                    <Dropdown arrow menu={menu} placement="topRight">
+                        <Button>topRight</Button>
+                    </Dropdown>
+                </Space>
             </Space>
-        </Space>
+        </BrandProvider>
     );
 }

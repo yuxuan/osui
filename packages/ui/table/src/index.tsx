@@ -1,5 +1,5 @@
 import React, {useImperativeHandle, useRef, useContext, useMemo, useState} from 'react';
-import {Table as AntdTable, ConfigProvider} from 'antd';
+import {Table as AntdTable, ConfigProvider, theme as antdTheme} from 'antd';
 import type {Reference} from 'rc-table';
 import classNames from 'classnames';
 import {useBrandContext} from '@osui/brand-provider';
@@ -8,8 +8,11 @@ import Spin from '@osui/spin';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import type {TableProps as AntdTableProps} from 'antd/es/table';
 import useCustomSortForCustomIcons from './useCustomHeadIcons';
-import useTablePaginationStylePatch from './useTablePaginationStylePatch';
-import './index.less';
+// import useTablePaginationStylePatch from './useTablePaginationStylePatch';
+// import './index.less';
+import {useStyle} from './style';
+import useSetPaginationPaddingRightForQuickJumper from './useSetPaginationPaddingRightForQuickJumper';
+const {useToken} = antdTheme;
 
 const clsPrefix = 'osui-table';
 const icloudLocale = {'jump_to': '跳转至', 'page': '', 'jump_to_confirm': 'Go'};
@@ -29,6 +32,7 @@ interface TableProps<T> extends AntdTableProps<T> {
     noBorder?: boolean;
 }
 
+// eslint-disable-next-line complexity
 function Table<RecordType extends Record<string, any>>(
     props: TableProps<RecordType>,
     ref: React.Ref<Reference> | undefined
@@ -55,6 +59,7 @@ function Table<RecordType extends Record<string, any>>(
     );
 
     const {pagination: paginationContext} = useContext(ConfigProvider.ConfigContext);
+
     const showSizeChangerConfig = useMemo(
         () => !(paginationIn === false || paginationIn === null)
         && (paginationIn?.showSizeChanger || paginationContext?.showSizeChanger) && (
@@ -66,6 +71,8 @@ function Table<RecordType extends Record<string, any>>(
         ),
         [innerSizeChangerConfig, paginationContext?.showSizeChanger, paginationIn]
     );
+
+    const [pageSize, setPageSize] = useState(paginationIn && paginationIn.defaultPageSize || 10);
 
     const mergePagination = useMemo(
         () => {
@@ -87,16 +94,32 @@ function Table<RecordType extends Record<string, any>>(
                     },
                     showQuickJumper,
                     showSizeChanger: showSizeChangerConfig,
+                    onShowSizeChange: (current: number, size: number) => {
+                        paginationIn && paginationIn?.onShowSizeChange?.(current, size);
+                        setPageSize(size);
+                    },
                 };
             }
             return paginationIn;
         },
         [paginationIn, showSizeChangerConfig]
     );
-    const antdContext = useContext(ConfigProvider.ConfigContext);
-    const prefixCls = antdContext.getPrefixCls();
+    // const antdContext = useContext(ConfigProvider.ConfigContext);
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const prefixCls = getPrefixCls();
+    const antTableprefixCls = getPrefixCls('table', props.prefixCls);
+    const cssVar = theme?.cssVar;
+    const wrapSSROsui = useStyle(clsPrefix, antTableprefixCls, cssVar, prefixCls);
+    const {hashId} = useToken();
 
-    useTablePaginationStylePatch(domRef, prefixCls, containerDomRef);
+    // useTablePaginationStylePatch(domRef, prefixCls, containerDomRef);
+    const quickJumperClassName = `showQuickJumper-${clsPrefix}-pagination`;
+    const sizeChangerClassName = `showSizeChanger-${clsPrefix}-pagination`;
+    const simpleClassName = `simple-${clsPrefix}-pagination`;
+    const showQuickJumper = mergePagination
+        && mergePagination.showQuickJumper
+        && props.dataSource?.length
+        && pageSize < props.dataSource.length;
 
     const className = classNames(
         clsPrefix,
@@ -104,9 +127,16 @@ function Table<RecordType extends Record<string, any>>(
         // 表格row是否没有border
         {[`${clsPrefix}-no-row-border`]: props?.noRowBorder},
         // 表格是否没有border
-        {[`${clsPrefix}-no-border`]: props?.noBorder}
+        {[`${clsPrefix}-no-border`]: props?.noBorder},
+        {
+            [quickJumperClassName]: showQuickJumper,
+        },
+        {[sizeChangerClassName]: mergePagination && mergePagination.showSizeChanger},
+        {[simpleClassName]: mergePagination && mergePagination.simple},
+        hashId
     );
 
+    useSetPaginationPaddingRightForQuickJumper({containerDomRef, prefixCls});
     // 替换 antd 默认的 筛选 和 排序图标
     const {columns, setSortedInfo} = useCustomSortForCustomIcons(
         (props.columns || []) as any,
@@ -137,8 +167,7 @@ function Table<RecordType extends Record<string, any>>(
         typeof props.loading === 'boolean' ? {indicator: <Spin size="large" />} : props.loading
     ) : props.loading;
 
-
-    return (
+    return wrapSSROsui(
         <div className={className} ref={containerDomRef}>
             <AntdTable
                 {...props}

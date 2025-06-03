@@ -53,8 +53,7 @@ export const Demo = () => {
     const trigger = collapsed ? <div style={style}>展开</div> : <div style={style}>收起</div>;
     const themeVar = {
         cssVar: cssVar && {
-            prefix: 'ant',
-            key: 'default',
+            prefix: '',
         },
     };
     return (

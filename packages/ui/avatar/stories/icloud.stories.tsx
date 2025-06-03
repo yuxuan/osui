@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import Tooltip from '@osui/tooltip';
 import {Space} from 'antd';
 import {UserOutlined, AntDesignOutlined} from '@ant-design/icons';
@@ -11,10 +11,23 @@ export default {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
     return (
-        <BrandProvider>
+        <BrandProvider theme={theme}>
             <div style={{padding: 30}}>
                 <div style={{marginBottom: 20}}>
+                    <button
+                        onClick={() => setCssVar(v => !v)}
+                    >
+                        切换{cssVar ? '不' : ''}使用cssVar
+                    </button>
                     <p>Avatar 头像</p>
                     <Space>
                         <Avatar size="large" icon={<UserOutlined />} />

@@ -2,15 +2,20 @@ import React, {isValidElement, useCallback, useContext, useState} from 'react';
 import {Input as AntdInput, ConfigProvider} from 'antd';
 import {GroupProps as AntdInputGroupProps} from 'antd/es/input';
 import classNames from 'classnames';
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-input-group';
 
 const OSUIInputGroup = (
     {className, onFocus, onBlur, onMouseEnter, onMouseLeave, children, compact, ...props}: AntdInputGroupProps
 ) => {
-    const {getPrefixCls} = useContext(ConfigProvider.ConfigContext);
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
     const antPrefix = getPrefixCls('input');
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('input', props.prefixCls);
+    const antPrefixO = getPrefixCls('', props.prefixCls);
+    const wrapSSROsui = useStyle('osui-input', prefixCls, cssVar, antPrefixO);
     const [focused, setFocused] = useState(false);
     const [hover, setHover] = useState(false);
     const innerClassNames = classNames(
@@ -76,7 +81,7 @@ const OSUIInputGroup = (
         return child;
     });
 
-    return (
+    return wrapSSROsui(
         <AntdInput.Group
             className={innerClassNames}
             onFocus={handleFocus}

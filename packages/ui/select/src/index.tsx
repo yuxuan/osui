@@ -1,5 +1,5 @@
-import EnhancedInternalSelect from './EnhancedInternalSelect';
+import EnhancedSelect from './EnhancedInternalSelect';
 
-export default EnhancedInternalSelect;
+export default EnhancedSelect;
 
 export {type SelectProps} from './InternalBaseSelect';

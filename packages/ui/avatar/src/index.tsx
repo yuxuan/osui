@@ -1,9 +1,13 @@
-import React from 'react';
-import {Avatar as AntdAvatar} from 'antd';
+import React, {useContext} from 'react';
+import {Avatar as AntdAvatar, ConfigProvider} from 'antd';
 import {AvatarProps as AntdAvatarProps} from 'antd/es/avatar';
 import {IconCheckCircleFilled} from '@osui/icons';
 import classNames from 'classnames';
-import './index.less';
+import {theme} from 'antd';
+import {useStyle} from './style';
+// import './index.less';
+
+const {useToken} = theme;
 
 const clsPrefix = 'osui-avatar';
 
@@ -16,9 +20,16 @@ export interface AvatarInterface extends React.FC<AvatarProps> {
 }
 
 const Avatar: AvatarInterface = props => {
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('avatar', props.prefixCls);
+    const antPrefixCls = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefixCls);
+    const {hashId} = useToken();
+
     if (props.pr) {
-        return (
-            <span className={`${clsPrefix}-wrapper`}>
+        return wrapSSROsui(
+            <span className={`${clsPrefix}-wrapper ${hashId}`}>
                 <AntdAvatar {...props} className={classNames(clsPrefix, props.className)} />
                 {
                     props.pr ? (
@@ -29,7 +40,7 @@ const Avatar: AvatarInterface = props => {
         );
     }
 
-    return (
+    return wrapSSROsui(
         <AntdAvatar {...props} className={classNames(clsPrefix, props.className)} />
     );
 };

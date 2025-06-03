@@ -1,6 +1,6 @@
 import React from 'react';
 import IconEdit from './IconEdit';
-import './index.less';
+// import './index.less';
 
 const clsPrefix = 'osui-quick-edit';
 

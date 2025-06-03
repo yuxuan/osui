@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import {Space} from 'antd';
 import {IconCheckOutlined, IconCloseOutlined} from '@osui/icons';
 import BrandProvider from '@osui/brand-provider';
@@ -10,8 +10,20 @@ export default {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
     return (
-        <BrandProvider brand="icloud">
+        <BrandProvider brand="icloud" theme={theme}>
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
             <h3>基础开关</h3>
             <Space>
                 <Switch />

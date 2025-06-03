@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import message from '@osui/message';
 import Button from '@osui/button';
 import {IconUploadOutlined} from '@osui/icons';
@@ -16,6 +16,13 @@ export default {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
     const props = {
         name: 'file',
         action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76',
@@ -35,9 +42,18 @@ export const Demo = () => {
     };
 
     return (
-        <Upload {...props}>
-            <Button icon={<IconUploadOutlined />}>Click to Upload</Button>
-        </Upload>
+        <BrandProvider theme={theme}>
+            <Upload {...props}>
+                <Button icon={<IconUploadOutlined />}>Click to Upload</Button>
+            </Upload>
+            <div>
+                <button
+                    onClick={() => setCssVar(v => !v)}
+                >
+                    切换{cssVar ? '不' : ''}使用cssVar
+                </button>
+            </div>
+        </BrandProvider>
     );
 };
 
@@ -116,7 +132,7 @@ export const Demo2 = () => {
     );
 
     return (
-        <>
+        <BrandProvider>
             <h2>单图片上传</h2>
             <Upload
                 name="avatar"
@@ -130,7 +146,7 @@ export const Demo2 = () => {
             >
                 {imageUrl ? <img src={imageUrl} alt="avatar" style={{width: '100%'}} /> : uploadButton}
             </Upload>
-        </>
+        </BrandProvider>
     );
 };
 
@@ -233,7 +249,7 @@ export const Demo3 = () => {
     );
 
     return (
-        <>
+        <BrandProvider>
             <BrandProvider brand="icloud">
                 <h2>多图上传</h2>
                 <Upload
@@ -261,7 +277,7 @@ export const Demo3 = () => {
                     )
                 }
             </BrandProvider>
-        </>
+        </BrandProvider>
     );
 };
 
@@ -289,12 +305,14 @@ export const Demo4 = () => {
     };
 
     return (
-        <Dragger {...props} dashedBorder>
-            <p className="ant-upload-drag-icon">
-                <InboxOutlined />
-            </p>
-            <p className="ant-upload-text">点击上传，或拖拽上传</p>
-        </Dragger>
+        <BrandProvider>
+            <Dragger {...props} dashedBorder>
+                <p className="ant-upload-drag-icon">
+                    <InboxOutlined />
+                </p>
+                <p className="ant-upload-text">点击上传，或拖拽上传</p>
+            </Dragger>
+        </BrandProvider>
     );
 };
 

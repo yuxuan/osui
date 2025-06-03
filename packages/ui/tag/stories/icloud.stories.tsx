@@ -15,9 +15,22 @@ export default {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
     return (
-        <BrandProvider brand="icloud">
+        <BrandProvider brand="icloud" theme={theme}>
             {/* success */}
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
             <Divider orientation="left">基本</Divider>
             <Tag>标签</Tag>
             <Tag className={'osui-tag-dome-dashed'} icon={<IconPlusOutlined />}>
@@ -100,41 +113,51 @@ export const Add = () => {
         [tags]
     );
 
-    const showInput = useCallback(() => {
-        setInputVisible(true);
-    }, []
-    );
-
-    const handleInputChange = useCallback(e => {
-        setInputValue(e.target.value);
-    }, []
-    );
-
-    const handleInputConfirm = useCallback(() => {
-        if (inputValue && !tags.includes(inputValue)) {
-            setTags([...tags, inputValue]);
+    const showInput = useCallback(
+        () => {
+            setInputVisible(true);
         }
-        setInputVisible(false);
-        setInputValue('');
-    }, [inputValue, tags]
+        , []
     );
 
-    const handleEditInputChange = useCallback(e => {
-        setEditInputValue(e.target.value);
-    }, []
+    const handleInputChange = useCallback(
+        e => {
+            setInputValue(e.target.value);
+        }
+        , []
     );
 
-    const handleEditInputConfirm = useCallback(() => {
-        const newTags = [...tags];
-        newTags[editInputIndex] = editInputValue;
-        setTags(newTags);
-        setEditInputIndex(-1);
-        setEditInputValue('');
-    }, [editInputIndex, editInputValue, tags]
+    const handleInputConfirm = useCallback(
+        () => {
+            if (inputValue && !tags.includes(inputValue)) {
+                setTags([...tags, inputValue]);
+            }
+            setInputVisible(false);
+            setInputValue('');
+        }
+        , [inputValue, tags]
+    );
+
+    const handleEditInputChange = useCallback(
+        e => {
+            setEditInputValue(e.target.value);
+        }
+        , []
+    );
+
+    const handleEditInputConfirm = useCallback(
+        () => {
+            const newTags = [...tags];
+            newTags[editInputIndex] = editInputValue;
+            setTags(newTags);
+            setEditInputIndex(-1);
+            setEditInputValue('');
+        }
+        , [editInputIndex, editInputValue, tags]
     );
 
     return (
-        <>
+        <BrandProvider>
             {tags.map((tag, index) => {
                 if (editInputIndex === index) {
                     return (
@@ -198,7 +221,7 @@ export const Add = () => {
                     <PlusOutlined /> 添加
                 </Tag>
             )}
-        </>
+        </BrandProvider>
     );
 
 
@@ -240,7 +263,11 @@ export const Checkable = () => {
         }
     }
 
-    return (<HotTags />);
+    return (
+        <BrandProvider>
+            <HotTags />
+        </BrandProvider>
+    );
 };
 
 export const Api = () => {

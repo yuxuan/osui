@@ -1,11 +1,12 @@
-import React, {useCallback} from 'react';
-import {Collapse as AntdCollapse} from 'antd';
+import React, {useCallback, useContext} from 'react';
+import {Collapse as AntdCollapse, ConfigProvider} from 'antd';
 import {CollapseProps as AntdCollapseProps, CollapsePanelProps as AntdCollapsePanelProps} from 'antd/es/collapse';
 import {IconRightOutlined, IconDownOutlined} from '@osui/icons';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
-import './index.less';
-import './patch.less';
+// import './index.less';
+// import './patch.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-collapse';
 
@@ -21,6 +22,12 @@ export interface CollapseInterface extends React.FC<CollapseProps> {
 }
 
 const Collapse: CollapseInterface = ({className, levelChild, ghost, expandIcon, ...restProps}) => {
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('colla', restProps.prefixCls);
+    const antPrefix = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
+
     const defaultProps = {
         className: classNames(
             clsPrefix,
@@ -45,7 +52,12 @@ const Collapse: CollapseInterface = ({className, levelChild, ghost, expandIcon, 
         },
         []
     );
-    return <AntdCollapse {...defaultProps} expandIcon={expandIcon ?? innerExpandIcon} />;
+    return wrapSSROsui(
+        <AntdCollapse
+            {...defaultProps}
+            expandIcon={expandIcon ?? innerExpandIcon}
+        />
+    );
 };
 
 interface CollapsePanelProps extends AntdCollapsePanelProps {
@@ -56,6 +68,11 @@ interface CollapsePanelProps extends AntdCollapsePanelProps {
 }
 
 const CollapsePanel: React.FC<CollapsePanelProps> = ({className, level, ...props}) => {
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('alert', props.prefixCls);
+    const antPrefix = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
     const classes = classNames(
         className,
         {
@@ -63,7 +80,12 @@ const CollapsePanel: React.FC<CollapsePanelProps> = ({className, level, ...props
         }
     );
 
-    return <AntdCollapse.Panel className={classes} {...props} />;
+    return wrapSSROsui(
+        <AntdCollapse.Panel
+            className={classes}
+            {...props}
+        />
+    );
 };
 
 hoistNonReactStatics(Collapse, AntdCollapse);

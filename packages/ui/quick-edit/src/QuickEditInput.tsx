@@ -1,15 +1,17 @@
-import React, {useCallback, useRef} from 'react';
+import React, {useCallback, useContext, useRef} from 'react';
 import Input from '@osui/input';
 import {InputProps} from 'antd/es/input';
 import AbstractQuickEdit, {useQuickEdit, IAbstractQuickEdit} from 'react-abstract-quick-edit';
 import {useDerivedState} from '@huse/derived-state';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
+import {ConfigProvider, theme} from 'antd';
+// import './index.less';
 import QuickEditDisplay from './QuickEditDisplay';
-import './index.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-quick-edit';
-
+const {useToken} = theme;
 // eslint-disable-next-line max-len
 interface AbstractQuickEditProps extends Omit<IAbstractQuickEdit<string, React.MouseEventHandler<HTMLInputElement>>, 'display'> {
     display?: (value: string) => React.ReactNode;
@@ -77,7 +79,12 @@ interface Props extends CombinedProps {
 
 const QuickEditInput = (props: Props) => {
     const {display, showEditIcon, wrapClassName, withConfirm, ...restProps} = props;
-
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('quickEdit', props.prefixCls);
+    const antPrefix = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
+    const {hashId} = useToken();
     const handleDisplay = useCallback(
         value => {
             if (display) {
@@ -95,13 +102,13 @@ const QuickEditInput = (props: Props) => {
 
     const InnerQuickEditInputAdapter = withConfirm ? QuickEditConfirmInputAdapter : QuickEditInputAdapter;
 
-    return (
+    return wrapSSROsui(
         // @ts-ignore
         <InnerQuickEditInputAdapter
             {...restProps}
             display={handleDisplay}
             transformValue={transformValue}
-            wrapClassName={classNames(wrapClassName, `${clsPrefix}-wrapper`)}
+            wrapClassName={classNames(wrapClassName, `${clsPrefix}-wrapper`, hashId)}
         />
     );
 };

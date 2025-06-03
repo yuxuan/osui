@@ -1,5 +1,5 @@
-import React, {FC, useCallback, useReducer} from 'react';
-import {Alert as AntdAlert} from 'antd';
+import React, {FC, useCallback, useContext, useReducer} from 'react';
+import {Alert as AntdAlert, ConfigProvider} from 'antd';
 import {AlertProps as AntdAlertProps} from 'antd/es/alert';
 import {
     IconCheckCircleFilled,
@@ -13,7 +13,8 @@ import classNames from 'classnames';
 import {useBoolean} from '@huse/boolean';
 import {useInterval} from '@huse/timeout';
 import hoistNonReactStatics from 'hoist-non-react-statics';
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-alert';
 
@@ -99,6 +100,11 @@ const Alert: AlertInterface = props => {
         countDown = -1,
         onClose,
     } = props;
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('alert', props.prefixCls);
+    const antPrefixCls = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefixCls);
     const [expanded, {on, off}] = useBoolean(false);
     const [isDestroy, {on: destroy}] = useBoolean(false);
 
@@ -130,7 +136,7 @@ const Alert: AlertInterface = props => {
         }
 
         if (internalActions) {
-            return (
+            return wrapSSROsui(
                 <div className={
                     classNames(`${clsPrefix}-message-wrapper`, {[`${clsPrefix}-message-wrapper-closable`]: closable})
                 }
@@ -161,7 +167,7 @@ const Alert: AlertInterface = props => {
         return null;
     }
 
-    return (
+    return wrapSSROsui(
         <AntdAlert
             {...props}
             icon={patchedIcon}

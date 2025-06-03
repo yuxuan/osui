@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import BrandProvider from '@osui/brand-provider';
 import TreeSelect, {highlightMatchText} from '../src';
 
 export default {
@@ -22,26 +23,28 @@ export const Demo = () => {
 
         render() {
             return (
-                <TreeSelect
-                    showSearch
-                    style={{width: '100%'}}
-                    value={this.state.value}
-                    dropdownStyle={{maxHeight: 400, overflow: 'auto'}}
-                    placeholder="Please select"
-                    allowClear
-                    treeDefaultExpandAll
-                    onChange={this.onChange}
-                >
-                    <TreeNode value="parent 1" title="parent 1">
-                        <TreeNode value="parent 1-0" title="parent 1-0">
-                            <TreeNode value="leaf1" title="my leaf" />
-                            <TreeNode value="leaf2" title="your leaf" />
+                <BrandProvider>
+                    <TreeSelect
+                        showSearch
+                        style={{width: '100%'}}
+                        value={this.state.value}
+                        dropdownStyle={{maxHeight: 400, overflow: 'auto'}}
+                        placeholder="Please select"
+                        allowClear
+                        treeDefaultExpandAll
+                        onChange={this.onChange}
+                    >
+                        <TreeNode value="parent 1" title="parent 1">
+                            <TreeNode value="parent 1-0" title="parent 1-0">
+                                <TreeNode value="leaf1" title="my leaf" />
+                                <TreeNode value="leaf2" title="your leaf" />
+                            </TreeNode>
+                            <TreeNode value="parent 1-1" title="parent 1-1">
+                                <TreeNode value="sss" title="sss" disabled />
+                            </TreeNode>
                         </TreeNode>
-                        <TreeNode value="parent 1-1" title="parent 1-1">
-                            <TreeNode value="sss" title="sss" disabled />
-                        </TreeNode>
-                    </TreeNode>
-                </TreeSelect>
+                    </TreeSelect>
+                </BrandProvider>
             );
         }
     }
@@ -100,7 +103,7 @@ export const HighlightTreeDataOnSearch = () => {
     function SearchTree() {
         const [searchValue, setSearchValue] = React.useState('');
         return (
-            <div>
+            <BrandProvider>
                 <p>只能使用treeData的方式进行高亮，只能match title，高亮title，如果要matchByValue，需要title和value一致</p>
                 <p></p>
                 <TreeSelect
@@ -109,7 +112,7 @@ export const HighlightTreeDataOnSearch = () => {
                     treeData={highlightMatchText(gData, searchValue)}
                     onSearch={setSearchValue}
                 />
-            </div>
+            </BrandProvider>
         );
     }
     return <SearchTree />;

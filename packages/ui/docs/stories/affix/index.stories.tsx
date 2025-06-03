@@ -3,6 +3,7 @@ import Button from '@osui/button';
 import Divider from '@osui/divider';
 import Gap from '@osui/gap';
 import Affix from '@osui/affix';
+import BrandProvider from '@osui/brand-provider';
 
 export default {
     title: '其它/Affix 固钉',
@@ -60,7 +61,11 @@ export const Demo = () => {
         );
     };
 
-    return (<Demo />);
+    return (
+        <BrandProvider>
+            <Demo />
+        </BrandProvider>
+    );
 };
 
 export const Api = () => {

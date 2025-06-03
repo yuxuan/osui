@@ -1,10 +1,11 @@
-import React from 'react';
-import {Popover as AntdPopover} from 'antd';
+import React, {useContext} from 'react';
+import {Popover as AntdPopover, ConfigProvider} from 'antd';
 import {PopoverProps as AntdPopoverProps} from 'antd/es/popover';
 import {IconCloseOutlined} from '@osui/icons';
 import classNames from 'classnames';
 import {TooltipRef} from 'antd/es/tooltip';
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-popover';
 
@@ -13,6 +14,11 @@ export interface PopoverProps extends AntdPopoverProps {
 }
 
 const Popover: React.ForwardRefRenderFunction<TooltipRef, PopoverProps> = (props, ref) => {
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('popover', props.prefixCls);
+    const antPrefix = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
     let innerTitle = props.title;
     if (props.showCloseIcon) {
         innerTitle = (
@@ -26,7 +32,7 @@ const Popover: React.ForwardRefRenderFunction<TooltipRef, PopoverProps> = (props
             </div>
         );
     }
-    return (
+    return wrapSSROsui(
         <AntdPopover
             ref={ref}
             {...props}

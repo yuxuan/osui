@@ -26,14 +26,29 @@ const config = {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
+
     const [visible, setVisible] = useState(false);
     const [modal, modalContextHolder] = Modal.useModal();
     const [modal2, modalContextHolder2] = Modal.useModal();
 
     return (
-        <BrandProvider>
+        <BrandProvider theme={theme}>
             <div style={{padding: 30}}>
                 <ConfigProvider prefixCls="meszhan">
+                    <button
+                        onClick={() => setCssVar(v => !v)}
+                    >
+                        切换{cssVar ? '不' : ''}使用cssVar
+                    </button>
+                    <br />
                     {modalContextHolder2}
                     <Button
                         type="primary"
@@ -335,7 +350,7 @@ export const Confirm = () => {
     }
 
     return (
-        <>
+        <BrandProvider>
             <p>没有title的样式</p>
             <Space direction="horizontal">
                 <Button type="primary" onClick={() => showConfirm()}>
@@ -374,7 +389,7 @@ export const Confirm = () => {
                     Info
                 </Button>
             </Space>
-        </>
+        </BrandProvider>
     );
 };
 
@@ -421,9 +436,8 @@ export const AutoHeight = () => {
     );
 };
 
-export const confirmWithPromise = () => {
+export const Demo2 = () => {
     const {confirm} = Modal;
-
     function showConfirm() {
         confirm({
             title: 'Do you Want to delete these items?',
@@ -495,6 +509,14 @@ export const confirmWithPromise = () => {
                 With extra props
             </Button>
         </Space>
+    );
+};
+
+export const confirmWithPromise = () => {
+    return (
+        <BrandProvider>
+            <Demo2 />
+        </BrandProvider>
     );
 };
 

@@ -4,14 +4,10 @@ import {ButtonProps as AntdButtonProps, ButtonType} from 'antd/es/button';
 import classNames from 'classnames';
 import {IconLoading3QuartersOutlined} from '@osui/icons';
 import Tooltip from '@osui/tooltip';
-import {theme} from 'antd';
-import {useBrandContext} from '@osui/brand-provider';
-import {useStyleRegister, useCacheToken} from '@ant-design/cssinjs';
-import {genButtonStyle, prepareComponentToken} from './style';
+import {useStyle} from './style';
 // import './index.less';
 
 const clsPrefix = 'osui-button';
-const {useToken} = theme;
 type MinWidthProp = string|number|boolean;
 export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
     type?: ButtonType | 'strong' | 'icon';
@@ -89,28 +85,15 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     const loadingProp = (typeof loading === 'object') ? {loading} : {};
     const isLoading = typeof loading === 'boolean' && loading;
 
-    const {getPrefixCls} = useContext(ConfigProvider.ConfigContext);
-    const prefixCls = getPrefixCls('ant-button', props.prefixCls);
-    const outTheme = useBrandContext();
-    const cssVar = outTheme.designToken?.cssVar;
-    const {token: outerToken, theme, hashId} = useToken();
-    const [token] = useCacheToken(
-        theme as any,
-        [prepareComponentToken(outerToken)],
-        {
-            // eslint-disable-next-line no-negated-condition
-            cssVar: !cssVar ? undefined : (cssVar === true ? {prefix: 'ant'} : cssVar),
-        }
-    );
-    const wrapCSSVar = useStyleRegister(
-        {theme: theme as any, token, hashId, path: [prefixCls]},
-        () => [
-            genButtonStyle(prefixCls, token, cssVar, clsPrefix),
-        ]
-    );
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('btn', props.prefixCls);
+    const antPrefixCls = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefixCls);
+
     if (type === 'icon') {
         // icon作为button
-        return wrapCSSVar(<PureIconButton loading={isLoading} icon={icon} disabled={disabled} {...props} />);
+        return wrapSSROsui(<PureIconButton loading={isLoading} icon={icon} disabled={disabled} {...props} />);
     }
 
     // icon在作为children
@@ -180,14 +163,14 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     );
 
     if (disabledReason && disabled) {
-        return wrapCSSVar(
+        return wrapSSROsui(
             <Tooltip placement="top" title={disabledReason}>
                 {PatchedButton}
             </Tooltip>
         );
     }
 
-    return wrapCSSVar(PatchedButton);
+    return wrapSSROsui(PatchedButton);
 };
 
 const Button = React.forwardRef<any, ButtonProps>(InternalButton) as ButtonInterface;

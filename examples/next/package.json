@@ -2,38 +2,21 @@
   "name": "next-test",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "@osui/theme": "^0.13.0",
-    "@osui/ui": "^1.0.0-beta.1",
-    "antd": "^4.15.4",
-    "next": "10.2.0",
-    "react": "17.0.2",
-    "react-dom": "^17.0.2",
-    "style-resources-loader": "^1.4.1"
+    "@osui/theme": "^3.1.0-alpha.14",
+    "@osui/ui": "^3.1.0-alpha.14",
+    "antd": "^5.13.0",
+    "next": "~13.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@ecomfe/class-names-loader": "^2.0.0",
-    "@ecomfe/svg-mixed-loader": "^1.0.1",
-    "babel-plugin-import": "^1.13.3",
-    "classnames": "^2.3.1",
-    "css-loader": "^5.2.4",
-    "extracted-loader": "^1.0.7",
-    "file-loader": "^6.2.0",
-    "find-up": "^5.0.0",
-    "hasha": "^5.2.2",
-    "ignore-loader": "^0.1.2",
-    "less": "^4.1.1",
-    "less-loader": "^8.1.1",
-    "less-plugin-functions": "^1.0.0",
-    "mini-css-extract-plugin": "^1.6.0",
-    "next-transpile-modules": "^7.0.0",
-    "null-loader": "^4.0.1",
-    "postcss-loader": "^5.2.0",
-    "url-loader": "^4.1.1"
+    "eslint-config-next": "~13.0.0"
   }
 }

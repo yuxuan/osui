@@ -1,8 +1,11 @@
-import React from 'react';
-import {InputNumber as AntdInputNumber} from 'antd';
+import React, {useContext} from 'react';
+import {InputNumber as AntdInputNumber, ConfigProvider, theme} from 'antd';
 import {InputNumberProps as AntdInputNumberProps} from 'antd/es/input-number';
 import classNames from 'classnames';
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
+import {useStyle as useNumberStyle} from './style/inputNumber';
+const {useToken} = theme;
 
 const clsPrefix = 'osui-input-number';
 
@@ -12,24 +15,34 @@ interface InputNumberProps<T extends ValueType=ValueType> extends AntdInputNumbe
     tailLabel?: React.ReactNode;
 }
 
-function InputNumber<T extends ValueType=ValueType>(
+function InputNumberDom<T extends ValueType=ValueType>(
     {tailLabel, className, ...props}: InputNumberProps<T>,
     ref: React.Ref<HTMLInputElement> | undefined
 ) {
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('osui-input-number-compact', props.prefixCls);
+    const antPrefix = getPrefixCls('', props.prefixCls);
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
+    const wrapNumbeerSSROsui = useNumberStyle(clsPrefix, prefixCls, cssVar, antPrefix);
     const innerClassName = classNames(clsPrefix, className);
-    return (
+    const {hashId} = useToken();
+
+    return wrapSSROsui(wrapNumbeerSSROsui(
         <>
             <AntdInputNumber ref={ref} className={innerClassName} {...props} />
-            {typeof tailLabel === 'string' ? <span className={`${clsPrefix}-tail-label`}>{tailLabel}</span> : tailLabel}
+            {typeof tailLabel === 'string' ? (
+                <span className={`${clsPrefix}-tail-label ${hashId}`}>{tailLabel}</span>
+            ) : tailLabel}
         </>
-    );
+    ));
 }
 
 export type {InputNumberProps};
 
-const ForwardedInputNumber = React.forwardRef(InputNumber);
+const InputNumber = React.forwardRef(InputNumberDom);
 
-export default ForwardedInputNumber as (<T extends ValueType = ValueType>(
+export default InputNumber as (<T extends ValueType = ValueType>(
     props: React.PropsWithChildren<InputNumberProps<T>> & {
     ref?: React.Ref<HTMLInputElement>;
 },

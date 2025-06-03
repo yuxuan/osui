@@ -1,11 +1,14 @@
-import React, {useCallback} from 'react';
+import React, {useCallback, useContext} from 'react';
 import {InputProps as AntdInputProps} from 'antd/es/input';
 import {useDerivedState} from '@huse/derived-state';
 import classNames from 'classnames';
-import './index.less';
+// import './index.less';
+import {ConfigProvider, theme} from 'antd';
 import OSUIInput from './Input';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-input';
+const {useToken} = theme;
 
 type InputWithCounterProps = Omit<AntdInputProps, 'value'> & {
     showCount?: boolean;
@@ -18,6 +21,13 @@ const InputWithCounter = React.forwardRef<any, InputWithCounterProps>((
     {className, disabled, defaultValue, value, onChange, showCount, maxLength, ...props}
     , ref
 ) => {
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('input', props.prefixCls);
+    const antPrefix = getPrefixCls('', props.prefixCls);
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
+    const {hashId} = useToken();
+
     const initValue = defaultValue === undefined ? (value || '') : defaultValue;
     const [inputValue, setInputValue] = useDerivedState(initValue);
     const innerClassNames = classNames(
@@ -43,7 +53,7 @@ const InputWithCounter = React.forwardRef<any, InputWithCounterProps>((
         // 这个用来固定文字，当由0变成10的时候不会抖动
         textAlign: 'right' as const,
     } || {};
-    return (
+    return wrapSSROsui(
         <>
             <OSUIInput
                 ref={ref}
@@ -56,7 +66,7 @@ const InputWithCounter = React.forwardRef<any, InputWithCounterProps>((
             {
                 showCount && (
                     <div
-                        className={`${clsPrefix}-show-count-counter`}
+                        className={`${clsPrefix}-show-count-counter ${hashId}`}
                         style={showCountWithMaxLengthStyle}
                     >
                         {

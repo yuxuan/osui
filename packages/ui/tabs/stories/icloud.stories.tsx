@@ -1,6 +1,6 @@
 /* eslint-disable react/no-multi-comp */
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import {IconCloseOutlined, IconHomeOutlined, IconDownOutlined, IconPlusOutlined} from '@osui/icons';
 import Divider from '@osui/divider';
 import TextOverflowTooltip from '@osui/text-overflow-tooltip';
@@ -30,8 +30,22 @@ export default {
 
 export const Demo = () => {
     const {TabPane} = Tabs;
+    const [cssVar, setCssVar] = useState(false);
+
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
     return (
-        <BrandProvider>
+        <BrandProvider theme={theme}>
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
             <Tabs defaultActiveKey="1" style={{marginBottom: 50}}>
                 <TabPane tab="选中标签" key="1">
                     Content of Tab Pane 1

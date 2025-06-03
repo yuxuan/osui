@@ -1,15 +1,140 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import {version} from 'antd';
 import Button from '@osui/button';
 import Markdown from '@osui/markdown';
+import BrandProvider from '@osui/brand-provider';
 import message from '../src';
 
 export default {
     title: '反馈/Message 全局提示',
 };
 
-export const Demo = () => {
+const NewApp = () => {
+    const [api, successHolder] = message.useMessage();
+    const success = () => {
+        api.success('This is a success message', 200);
+    };
+    const error = () => {
+        api.error('This is an error message', 10000);
+    };
+    const info = () => {
+        api.info('This is an info message');
+    };
+    const warning = () => {
+        api.warning('This is a warning message');
+    };
+
+    const loading = () => {
+        api.loading('This is a loading message');
+    };
+
+    const success2 = () => {
+        api.success({
+            content: 'This is a success message',
+            showClose: true,
+        }, 100000);
+    };
+
+    const success3 = () => {
+        api.success({title: '创建成功', content: '后续您可在列表中操作'});
+    };
+
+    const success4 = () => {
+        api.success({
+            title: '创建成功',
+            content: (
+                <>
+                    <div>
+                        订单接口返回异常，您可尝试联系集团云值班同学解决，<a>查看集团云值班表</a>
+                    </div>
+                    <div>错误码：ewrfjji-ejjkfnjkbjk-wfjhjjkn-fhihg11</div>
+                </>),
+            showClose: true,
+        });
+    };
+
+    const success5 = () => {
+        api.success({
+            title: '创建成功',
+            showClose: true,
+        }, 10000);
+    };
+
+    const open = () => {
+        api.open({
+            content: 'This is a success message',
+        });
+    };
+
+    return (
+        <>
+            {/* <ConfigProvider> */}
+            <div style={{padding: 30}}>
+                <h3>1、成功提示</h3>
+                <p>基础样式</p>
+                <Button
+                    type="primary"
+                    onClick={() => api.success({
+                        content: 'This is a success message',
+                        duration: 2000,
+                    })}
+                >
+                    Success
+                </Button>
+                <p>基础样式</p>
+                <Button onClick={success}>Success</Button>
+                <p />
+                <p>关闭&倒计时</p>
+                <Button onClick={success2}>Success</Button>
+                <p />
+                <p>标题&内容</p>
+                <Button onClick={success3}>Success</Button>
+                <p>标题</p>
+                <Button onClick={success5}>Success</Button>
+                <p />
+                <p>带操作项</p>
+                <Button onClick={success4}>Success</Button>
+                <h3>2、错误提示</h3>
+                <Button onClick={error}>Error</Button>
+                <h3>3、警示样式</h3>
+                <Button onClick={warning}>Warning</Button>
+                <h3>4、通知样式</h3>
+                <Button onClick={info}>Info</Button>
+                <h3>5、加载样式</h3>
+                <Button onClick={loading}>Loading</Button>
+                <h3>6.open</h3>
+                <Button onClick={open}>Open</Button>
+                <p />
+                {successHolder}
+            </div>
+        </>
+    );
+};
+
+export const NewDemo = () => {
+    const [cssVar, setCssVar] = useState(true);
+
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
+    return (
+        <BrandProvider theme={theme}>
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
+            <NewApp />
+        </BrandProvider>
+    );
+};
+
+const App = () => {
     const success = () => {
         message.success('This is a success message', 200);
     };
@@ -32,7 +157,7 @@ export const Demo = () => {
     };
 
     const success3 = () => {
-        message.success({title: '创建成功', content: '后续您可在列表中操作'});
+        message.success({title: '创建成功', content: '后续您可在列表中操作'}, 10000);
     };
 
     const success4 = () => {
@@ -46,6 +171,12 @@ export const Demo = () => {
                     <div>错误码：ewrfjji-ejjkfnjkbjk-wfjhjjkn-fhihg11</div>
                 </>),
             showClose: true,
+        }, 10000);
+    };
+
+    const open = () => {
+        message.open({
+            content: 'This is a loading message',
         });
     };
 
@@ -56,6 +187,7 @@ export const Demo = () => {
             <code>
                 {"setGlobalConfig({messagePosition: 'center'})"}
             </code>
+            <p>使用静态方法，需要 antd <b>5.13.0+</b> <a href="https://ant.design/components/config-provider-cn#configproviderconfig">ConfigProvider.config</a></p>
             <p></p>
             <h3>1、成功提示</h3>
             <p>基础样式</p>
@@ -77,7 +209,30 @@ export const Demo = () => {
             <Button onClick={info}>Info</Button>
             <h3>5、加载样式</h3>
             <Button onClick={loading}>Loading</Button>
+            <h3>6.open</h3>
+            <Button onClick={open}>Open</Button>
         </div>
+    );
+};
+
+export const Demo = () => {
+    const [cssVar, setCssVar] = useState(true);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
+    return (
+        <BrandProvider theme={theme}>
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
+            <App />
+        </BrandProvider>
     );
 };
 

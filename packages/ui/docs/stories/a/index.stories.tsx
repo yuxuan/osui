@@ -1,4 +1,5 @@
 import React from 'react';
+import BrandProvider from '@osui/brand-provider';
 import Divider from '@osui/divider';
 import './index.css';
 
@@ -43,7 +44,7 @@ export const Demo = () => {
     `;
 
     return (
-        <>
+        <BrandProvider>
             <Blockquote>
                 组件库中不包含A组件，文档只展示a的样式
             </Blockquote>
@@ -63,12 +64,12 @@ export const Demo = () => {
             <h3>加强样式</h3>
             <a href="www.baidu.com">www.baidu.com</a>
             <h3>加强样式disabled</h3>
-            <a href="www.baidu.com" disabled style={{color: 'var(--color-brand-3)'}} >www.baidu.com</a>
+            <a href="www.baidu.com" disabled style={{color: 'var(--color-brand-3)'}}>www.baidu.com</a>
             <Divider>普通样式css代码</Divider>
             <pre>
                 {/* eslint-disable-next-line react/no-danger */}
                 <code lang="css" dangerouslySetInnerHTML={{__html: cssCode}} />
             </pre>
-        </>
+        </BrandProvider>
     );
 };

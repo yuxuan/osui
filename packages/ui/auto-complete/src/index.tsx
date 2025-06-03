@@ -1,5 +1,5 @@
-import React, {useMemo, useCallback} from 'react';
-import {AutoComplete as AntdAutoComplete} from 'antd';
+import React, {useMemo, useCallback, useContext} from 'react';
+import {AutoComplete as AntdAutoComplete, ConfigProvider} from 'antd';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import {useDerivedState} from '@huse/derived-state';
 import type {AutoCompleteProps as AntdAutoCompleteProps} from 'antd/es/auto-complete';
@@ -9,8 +9,9 @@ import HighlightText from '@osui/highlight-text';
 import {adjustAntdProps} from '@osui/select/lib/utils';
 import {IconDownOutlined} from '@osui/icons';
 import classNames from 'classnames';
-import '@osui/select/lib/index.less';
-import './index.less';
+// import '@osui/select/lib/index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-auto-complete';
 
@@ -32,6 +33,12 @@ const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteP
     },
     ref
 ) => {
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('auto-complete', props.prefixCls);
+    const selectAntdprefixCls = getPrefixCls('select', props.prefixCls);
+    const antPrefixCls = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefixCls, selectAntdprefixCls);
     const [derivedKeyword, setDerivedKeyword] = useDerivedState(keyword);
     // osui-select的className是因为，auto-complete实际上就是select
     const innerClassName = classNames(className, clsPrefix, 'osui-select');
@@ -74,7 +81,7 @@ const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteP
         },
     ]);
 
-    return (
+    return wrapSSROsui(
         <AntdAutoComplete
             ref={ref}
             className={innerClassName}

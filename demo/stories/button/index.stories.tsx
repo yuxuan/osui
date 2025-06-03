@@ -9,7 +9,7 @@ import BrandProvider from '@osui/brand-provider';
 import {version} from 'antd';
 import Button from '@osui/button';
 import {MinWidth} from './icloud-demo';
-import './index.less';
+import './index.css';
 
 const Blockquote = ({children}) => (
     <blockquote style={{
@@ -33,8 +33,7 @@ export const Demo = () => {
     const [cssVar, setCssVar] = useState(false);
     const theme = {
         cssVar: cssVar && {
-            prefix: 'ant',
-            key: 'default',
+            prefix: '',
         },
     };
     return (

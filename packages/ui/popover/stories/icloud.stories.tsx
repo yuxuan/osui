@@ -21,7 +21,7 @@ export const Demo1 = () => {
     );
 
     return (
-        <div style={{padding: 30}}>
+        <BrandProvider style={{padding: 30}}>
             <Divider orientation="left">带标题</Divider>
             <Popover
                 title="卡片标题"
@@ -74,7 +74,7 @@ export const Demo1 = () => {
             <Divider orientation="left">Tips文字提示</Divider>
             <h3>Tips文字提示</h3>
             <Popover content={<div>{content}</div>}>文字位置</Popover>
-        </div>
+        </BrandProvider>
     );
 };
 
@@ -87,7 +87,7 @@ export const Demo2 = () => {
     const buttonWidth = 60;
 
     return (
-        <div style={{padding: 30}}>
+        <BrandProvider style={{padding: 30}}>
             <p style={{marginTop: 20}}>气泡位置</p>
             <br />
             <div style={{marginLeft: buttonWidth + 32, whiteSpace: 'nowrap', display: 'flex'}}>
@@ -238,7 +238,7 @@ export const Demo2 = () => {
                     <Button>BR</Button>
                 </Popover>
             </div>
-        </div>
+        </BrandProvider>
     );
 };
 
@@ -252,7 +252,7 @@ export const Demo3 = () => {
     const clickContent = <div>内容内容内容内容内容内容内容内容</div>;
 
     return (
-        <>
+        <BrandProvider>
             <Divider orientation="left">可以从内部关闭的气泡卡片</Divider>
             <p>注意。showCloseIcon要配合onVisibleChange一起使用</p>
             <Popover
@@ -269,7 +269,7 @@ export const Demo3 = () => {
             >
                 <Button>单击</Button>
             </Popover>
-        </>
+        </BrandProvider>
     );
 };
 
@@ -300,11 +300,11 @@ export const FormItemPopover = () => {
     };
 
     return (
-        <>
+        <BrandProvider>
             <Popover content={FormItem}>
                 Form Item Demo
             </Popover>
-        </>
+        </BrandProvider>
     );
 };
 

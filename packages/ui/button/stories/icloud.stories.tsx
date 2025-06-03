@@ -4,12 +4,13 @@ import {IconHomeOutlined, IconPlusOutlined, IconLeftOutlined} from '@osui/icons'
 import Markdown from '@osui/markdown';
 import Divider from '@osui/divider';
 import Space from '@osui/space';
-import FlexCentered from '@osui/flex-centered';
+import Flex from '@osui/flex';
 import BrandProvider from '@osui/brand-provider';
 import {version} from 'antd';
 import Button from '../src';
 import {MinWidth} from './icloud-demo';
-import './index.less';
+// import './index.less';
+import './index.css';
 
 const Blockquote = ({children}: {children: React.ReactNode}) => (
     <blockquote style={{
@@ -30,15 +31,17 @@ export default {
 };
 
 export const Demo = () => {
-    const [cssVar, setCssVar] = useState(false);
+    const [cssVar, setCssVar] = useState(true);
     const theme = {
         cssVar: cssVar && {
-            prefix: 'ant',
-            key: 'default',
+            prefix: '',
+            key: 'tluafed',
         },
     };
     return (
-        <BrandProvider theme={theme}>
+        <BrandProvider
+            theme={theme as any}
+        >
             <Blockquote>
                 UE要求两个字时中间没有空格，通过antd ConfigProvider来配置autoInsertSpaceInButton: false。
                 <br />
@@ -47,44 +50,44 @@ export const Demo = () => {
             <button
                 onClick={() => setCssVar(v => !v)}
             >
-                切换{!cssVar ? '' : '不'}使用cssVar
+                切换{cssVar ? '不' : ''}使用cssVar
             </button>
             <Divider>展示</Divider>
             <h3><b>1、普通按钮</b></h3>
             <p>普通样式</p>
-            <FlexCentered>
+            <Flex>
                 <Button type="default" style={{'margin': '0 20px 20px 0'}}>普通样式</Button>
                 <Button type="default" disabled style={{'margin': '0 20px 20px 0'}}>普通样式</Button>
                 <Button type="default" loading style={{'margin': '0 20px 20px 0'}}>普通样式</Button>
-            </FlexCentered>
+            </Flex>
             <p>加强样式</p>
-            <FlexCentered>
+            <Flex>
                 <Button type="strong" style={{'margin': '0 20px 20px 0'}}>加强样式</Button>
                 <Button type="strong" disabled style={{'margin': '0 20px 20px 0'}}>加强样式</Button>
                 <Button type="strong" loading style={{'margin': '0 20px 20px 0'}}>加强样式</Button>
-            </FlexCentered>
+            </Flex>
             <p>重要样式</p>
-            <FlexCentered>
+            <Flex>
                 <Button type="primary" style={{'margin': '0 20px 20px 0'}}>重要样式</Button>
                 <Button type="primary" disabled style={{'margin': '0 20px 20px 0'}}>重要样式</Button>
                 <Button type="primary" loading style={{'margin': '0 20px 20px 0'}}>重要样式</Button>
-            </FlexCentered>
+            </Flex>
             <h3><b>2、纯文字按钮</b></h3>
             <Blockquote>
                 <p>文字形态的按钮，普通状态（默认黑字hover上变蓝）是用Button type text， 而加强状态（默认蓝色）是使用type link</p>
             </Blockquote>
             <p>普通样式</p>
-            <FlexCentered>
+            <Flex>
                 <Button type="text" style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
                 <Button type="text" disabled style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
                 <Button type="text" loading style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
-            </FlexCentered>
+            </Flex>
             <p>加强样式</p>
-            <FlexCentered>
+            <Flex>
                 <Button type="link" style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
                 <Button type="link" disabled style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
                 <Button type="link" loading style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
-            </FlexCentered>
+            </Flex>
             <h3><strong>3、图文按钮</strong></h3>
             <Blockquote>当icon和文字一起的时候，如果对不齐，可以添加flexCenter属性，如果导致同行不齐，外面包裹div display: flex</Blockquote>
             <p>加强样式</p>

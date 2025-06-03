@@ -10,6 +10,13 @@ export default {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
     const {Step} = Steps;
     const {Step: ProcessOnlyStep} = Steps.ProcessOnlySteps;
     const [current, setCurrent] = useState(-1);
@@ -17,7 +24,12 @@ export const Demo = () => {
         setCurrent(current);
     };
     return (
-        <BrandProvider>
+        <BrandProvider theme={theme}>
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
             <h2>纵向步骤条</h2>
             <Steps direction="vertical" current={1}>
                 <Step title="已完成步骤" description="描述文案" status="finish" />

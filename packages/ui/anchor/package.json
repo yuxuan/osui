@@ -27,6 +27,7 @@
         "es/*.less"
     ],
     "devDependencies": {
+        "@ant-design/cssinjs": "^1.18.4",
         "@babel/cli": "^7.10.5",
         "@osui/brand-provider": "^3.1.12",
         "@osui/divider": "^3.1.12",
@@ -69,7 +70,8 @@
         "typescript": "^4.4.3"
     },
     "peerDependencies": {
-        "antd": "^5.0.0",
+        "@ant-design/cssinjs": "^1.18.4",
+        "antd": "^5.13.0",
         "react": ">=17.0.0",
         "react-dom": ">=17.0.0"
     },

@@ -6,7 +6,12 @@ import Space from '@osui/space';
 import version from '@osui/version';
 import BrandProvider from '@osui/brand-provider';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
+import locale from 'antd/locale/zh_CN';
+import 'dayjs/locale/zh-cn';
 import DatePicker from '../src';
+
+
+dayjs.locale('zh-cn');
 
 const {RangePicker, WeekPicker} = DatePicker;
 
@@ -20,7 +25,7 @@ export default {
 
 export const Demo = () => {
     return (
-        <BrandProvider brand="icloud">
+        <BrandProvider brand="icloud" locale={locale}>
             {version}
             <div style={{padding: 20}}>
                 <h1>日选择</h1>

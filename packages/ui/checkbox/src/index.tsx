@@ -1,12 +1,13 @@
-import React from 'react';
-import {Checkbox as AntdCheckbox} from 'antd';
+import React, {useContext} from 'react';
+import {Checkbox as AntdCheckbox, ConfigProvider} from 'antd';
 import {
     CheckboxProps as AntdCheckboxProps,
     CheckboxGroupProps as AntdCheckboxGroupProps,
     CheckboxRef,
 } from 'antd/es/checkbox';
 import classNames from 'classnames';
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 const AntdCheckboxGroup = AntdCheckbox.Group;
 
@@ -16,7 +17,17 @@ export type CheckboxProps = AntdCheckboxProps;
 export type CheckboxGroupProps = AntdCheckboxGroupProps;
 
 const CheckboxGroup: React.FC<CheckboxGroupProps> = ({className, ...props}) => {
-    return <AntdCheckboxGroup className={classNames(`${clsPrefix}-group`, className)} {...props} />;
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('checkbox-group', props.prefixCls);
+    const antPrefix = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
+    return wrapSSROsui(
+        <AntdCheckboxGroup
+            className={classNames(`${clsPrefix}-group`, className)}
+            {...props}
+        />
+    );
 };
 export interface CompoundedComponent
     extends React.ForwardRefExoticComponent<CheckboxProps & React.RefAttributes<CheckboxRef>> {
@@ -25,7 +36,17 @@ export interface CompoundedComponent
 }
 
 const Checkbox: CompoundedComponent = React.forwardRef(({className, ...props}, ref) => {
-    return <AntdCheckbox ref={ref} className={classNames(clsPrefix, className)} {...props} />;
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('checkbox', props.prefixCls);
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar);
+    return wrapSSROsui(
+        <AntdCheckbox
+            ref={ref}
+            className={classNames(clsPrefix, className)}
+            {...props}
+        />
+    );
 }) as CompoundedComponent;
 
 Checkbox.Group = CheckboxGroup;

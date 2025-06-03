@@ -32,12 +32,14 @@
         "@babel/preset-env": "^7.10.4",
         "@babel/preset-react": "^7.10.4",
         "@babel/preset-typescript": "^7.23.2",
-        "@osui/brand-provider": "^3.1.12",
-        "@osui/collapse": "^3.1.12",
-        "@osui/divider": "^3.1.12",
-        "@osui/icloud-theme": "^3.1.12",
-        "@osui/icons": "^3.0.0",
-        "@osui/theme": "^3.1.12",
+        "@osui/brand-provider": "^3.1.0-alpha.14",
+        "@osui/collapse": "^3.1.0-alpha.14",
+        "@osui/divider": "^3.1.0-alpha.14",
+        "@osui/message": "^3.1.0-alpha.14",
+        "@osui/modal": "^3.1.0-alpha.14",
+        "@osui/icloud-theme": "^3.1.0-alpha.14",
+        "@osui/icons": "^3.1.0-alpha.14",
+        "@osui/theme": "^3.1.0-alpha.14",
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",
         "@storybook/addon-interactions": "^7.5.1",
@@ -54,13 +56,12 @@
         "@types/jest": "^27.0.0",
         "@types/react-dom": "^17.0.2",
         "@types/react-test-renderer": "^17.0.1",
-        "antd": "^5.8.6",
+        "antd": "^5.13.0",
         "chokidar": "^3.5.3",
         "cpy-cli": "^3.1.1",
         "enzyme": "^3.11.0",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.0.6",
-        "less-plugin-npm-import": "^2.1.0",
         "prop-types": "^15.7.2",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
@@ -76,7 +77,7 @@
         "vite": "^4.5.0"
     },
     "peerDependencies": {
-        "antd": "^5.0.0",
+        "antd": "^5.13.0",
         "react": ">=17.0.0",
         "react-dom": ">=17.0.0"
     },
@@ -91,8 +92,7 @@
         "registry": "https://registry.npmjs.com"
     },
     "dependencies": {
-        "@emotion/css": "^11.13.5",
-        "@osui/empty": "^3.1.12"
+        "@osui/empty": "^3.1.0-alpha.14"
     },
     "packageManager": "pnpm@8.10.2",
     "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"

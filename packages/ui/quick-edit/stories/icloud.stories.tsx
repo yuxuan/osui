@@ -12,13 +12,27 @@ export const Demo = () => {
         // `useInputValue` is a shortcut to pick target value from event.
         const [textValue, setTextValue] = useState('default');
         const [selectValue, setSelectValue] = useState('Jack');
+        const [cssVar, setCssVar] = useState(false);
+        const theme = {
+            cssVar: cssVar && {
+                prefix: 'tna',
+                key: 'tluafed',
+            },
+        };
+
+        const style = {width: 240};
 
         return (
-            <BrandProvider>
+            <BrandProvider theme={theme}>
+                <button
+                    onClick={() => setCssVar(v => !v)}
+                >
+                    切换{cssVar ? '不' : ''}使用cssVar
+                </button>
                 <h2>输入框的快速编辑</h2>
                 <QuickEditInput
                     withConfirm
-                    style={{width: 240}}
+                    style={style}
                     wrapClassName="abc"
                     value={textValue}
                     onChange={value => setTextValue(value)}
@@ -26,7 +40,7 @@ export const Demo = () => {
                 <h2>下拉选择器的快速编辑</h2>
                 <QuickEditSelect
                     withConfirm
-                    style={{width: 240}}
+                    style={style}
                     wrapClassName="abc"
                     value={selectValue}
                     onChange={value => setSelectValue(value)}
@@ -50,12 +64,26 @@ export const FEDemo = () => {
         const [textEmptyValue, setTextEmptyValue] = useState('');
         const [textValue, setTextValue] = useState('什么是快乐星球');
         const [selectValue, setSelectValue] = useState('什么是快乐星球');
+        const [cssVar, setCssVar] = useState(false);
+        const theme = {
+            cssVar: cssVar && {
+                prefix: 'tna',
+                key: 'tluafed',
+            },
+        };
+
+        const style = {display: 'flex', alignItems: 'center'};
 
         return (
-            <BrandProvider>
+            <BrandProvider theme={theme}>
+                <button
+                    onClick={() => setCssVar(v => !v)}
+                >
+                    切换{cssVar ? '不' : ''}使用cssVar
+                </button>
                 <h2>前端说明</h2>
                 <p>当没有内容的时候，可以加上showEditIcon</p>
-                <div style={{display: 'flex', alignItems: 'center'}}>
+                <div style={style}>
                     <div>点我：</div>
                     <QuickEditInput
                         withConfirm
@@ -67,7 +95,7 @@ export const FEDemo = () => {
                 </div>
                 <br />
                 <p>目前都是不带withConfirm的</p>
-                <div style={{display: 'flex', alignItems: 'center'}}>
+                <div style={style}>
                     <div>点我：</div>
                     <QuickEditInput
                         wrapClassName="abc"
@@ -78,7 +106,7 @@ export const FEDemo = () => {
                 <br />
                 <br />
                 <p>Select需要点一下外面才会提交</p>
-                <div style={{display: 'flex', alignItems: 'center'}}>
+                <div style={style}>
                     <div>点我：</div>
                     <QuickEditSelect
                         wrapClassName="abc"

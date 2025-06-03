@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
 import Spin from '../src';
 
@@ -8,8 +8,18 @@ export default {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+
     return (
-        <>
+        <BrandProvider>
+            <div>
+                <button
+                    onClick={() => setCssVar(v => !v)}
+                >
+                    切换{cssVar ? '不' : ''}使用cssVar
+                </button>
+            </div>
+
             <Spin size="small" />
             <br />
             <br />
@@ -17,15 +27,15 @@ export const Demo = () => {
             <br />
             <br />
             <Spin size="large" />
-        </>
+        </BrandProvider>
     );
 };
 
 export const Api = () => {
     return (
-        <BrandProvider>
+        <>
             <a target="_blank" rel="noreferrer" href="https://ant.design/components/spin-cn/">Antd Spin API</a>
-        </BrandProvider>
+        </>
     );
 };
 

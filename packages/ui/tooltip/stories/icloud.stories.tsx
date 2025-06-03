@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import Button from '@osui/button';
 import Gap from '@osui/gap';
 import BrandProvider from '@osui/brand-provider';
@@ -10,16 +10,28 @@ export default {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
 
     const text = <span>prompt text</span>;
 
     const buttonWidth = 70;
 
     return (
-        <BrandProvider brand="icloud">
+        <BrandProvider brand="icloud" theme={theme}>
             <div className="demo">
+                <button
+                    onClick={() => setCssVar(v => !v)}
+                >
+                    切换{cssVar ? '不' : ''}使用cssVar
+                </button>
                 <div style={{marginLeft: buttonWidth, whiteSpace: 'nowrap', display: 'flex'}}>
-                    <Tooltip placement="topLeft" title={text}>
+                    <Tooltip placement="topLeft" title={text} open>
                         <Button>TL</Button>
                     </Tooltip>
                     <Gap orientation="horizontal" factor={2} />

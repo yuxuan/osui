@@ -1,11 +1,11 @@
-import React from 'react';
-import {Empty as AntdEmpty} from 'antd';
+import React, {useContext} from 'react';
+import {Empty as AntdEmpty, ConfigProvider} from 'antd';
 import {EmptyProps as AntdEmptyProps} from 'antd/es/empty';
 import classNames from 'classnames';
 import ImageEmpty from './empty';
 import ImageError from './error';
 import ImageFilteredEmpty from './filteredEmpty';
-import './index.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-empty';
 
@@ -14,6 +14,11 @@ export interface EmptyProps extends AntdEmptyProps {
     size?: 'small' | 'large';
 }
 const Empty: React.FC<EmptyProps> = ({className, image, type, size, ...props}) => {
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('empty', props.prefixCls);
+    const antPrefix = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
     const innerClassName = classNames(
         className,
         clsPrefix,
@@ -34,7 +39,13 @@ const Empty: React.FC<EmptyProps> = ({className, image, type, size, ...props}) =
             Image = ImageEmpty;
     }
     const innerImage = image ?? <Image />;
-    return <AntdEmpty className={innerClassName} {...props} image={innerImage} />;
+    return wrapSSROsui(
+        <AntdEmpty
+            className={innerClassName}
+            {...props}
+            image={innerImage}
+        />
+    );
 };
 
 export default Empty;

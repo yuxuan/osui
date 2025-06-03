@@ -1,9 +1,10 @@
-import React from 'react';
-import {Tabs as AntdTabs} from 'antd';
+import React, {useContext} from 'react';
+import {Tabs as AntdTabs, ConfigProvider} from 'antd';
 import {TabsProps as AntdTabsProps, TabPaneProps as AntdTabPaneProps} from 'antd/es/tabs';
 import {IconPlusOutlined} from '@osui/icons';
 import classNames from 'classnames';
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-tabs';
 
@@ -16,7 +17,13 @@ export interface TabInterface extends React.FC<TabsProps> {
 
 const Tabs: TabInterface = props => {
     const innerAddIcon = props.addIcon ?? <IconPlusOutlined />;
-    return (
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('tabs', props.prefixCls);
+    const antPrefix = getPrefixCls('', props.prefixCls);
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
+
+    return wrapSSROsui(
         <AntdTabs
             {...props}
             className={classNames(clsPrefix, props.className)}

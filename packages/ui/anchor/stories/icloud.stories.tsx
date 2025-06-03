@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import Divider from '@osui/divider';
 import BrandProvider from '@osui/brand-provider';
 import Anchor from '../src';
@@ -10,9 +10,17 @@ export default {
 };
 
 export const Demo = () => {
-    const { Link } = Anchor;
+    const {Link} = Anchor;
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
     return (
-        <BrandProvider brand="icloud">
+        <BrandProvider brand="icloud" theme={theme}>
             <p>通过点击锚点可快速找到某类信息在当前页面的位置。</p>
             <h3>一、使用场景</h3>
             <p>
@@ -20,6 +28,11 @@ export const Demo = () => {
                 需要展现当前页面上可供跳转的锚点链接，以及快速在锚点之间跳转。
             </p>
             <p><strong>FE说明：</strong>页面内的导航见Menu，本组件只包含设计稿中其它样式的展示</p>
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
             <Divider>展示</Divider>
             <Anchor>
                 <Link href="#components-anchor-demo-basic" title="Basic demo" />

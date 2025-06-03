@@ -1,7 +1,7 @@
 import React from 'react';
 import type {Meta, StoryObj} from '@storybook/react';
 import BrandProvider from '@osui/brand-provider/';
-import {Button, Space} from 'antd';
+import {Button, Space, Input} from 'antd';
 import App from '../src';
 
 const meta = {
@@ -35,7 +35,8 @@ const Index = () => {
     };
 
     return (
-        <BrandProvider>
+        <>
+            <h1>App</h1>
             <Space wrap>
                 <Button type="primary" onClick={showMessage}>
                     Open message
@@ -46,17 +47,25 @@ const Index = () => {
                 <Button type="primary" onClick={showNotification}>
                     Open notification
                 </Button>
+                <a>test a</a>
             </Space>
-        </BrandProvider>
+
+            <Space>
+                <Input />
+                <Button>button</Button>
+            </Space>
+        </>
     );
 };
 
 export const Demo: Story = {
     render: () => {
         return (
-            <App>
-                <Index />
-            </App>
+            <BrandProvider>
+                <App>
+                    <Index />
+                </App>
+            </BrandProvider>
         );
     },
 };

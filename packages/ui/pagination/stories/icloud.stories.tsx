@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
 import Pagination from '../src';
 
@@ -21,6 +21,14 @@ const Blockquote = ({children}) => (
 );
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
     function onChange(page, pageSize) {
         console.log('page, pageSize', page, pageSize);
     }
@@ -35,7 +43,12 @@ export const Demo = () => {
                 <p>和交互规范有所不同，交互规范想要实现的是：showLessItem分页选中中间的状态 + 正常时在开头和结尾的状态，由于分页item个数是antd内部实现的，目前先不支持，保留与antd一致</p>
                 <p>SizeChanger的实现也不一致，交互需要在头部，而antd内置为在QuickJumper旁边，且不能调整位置</p>
             </Blockquote>
-            <BrandProvider brand="icloud">
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
+            <BrandProvider brand="icloud" theme={theme}>
                 <p>默认状态</p>
                 <Pagination
                     showQuickJumper
@@ -43,6 +56,8 @@ export const Demo = () => {
                     total={70}
                     onChange={onChange}
                     onShowSizeChange={onShowSizeChange}
+                    // eslint-disable-next-line arrow-parens
+                    showTotal={(total) => `Total ${total} items`}
                 />
                 <br />
                 <Pagination showQuickJumper defaultCurrent={2} total={80} onChange={onChange} />

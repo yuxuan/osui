@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
 import Cascader from '../src';
 
@@ -11,6 +11,13 @@ export default {
 const han = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
     const options = [
         {
             value: '操作命令一',
@@ -51,7 +58,13 @@ export const Demo = () => {
     }
 
     return (
-        <BrandProvider>
+        <BrandProvider theme={theme}>
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
+
             <p>基本样式</p>
             <Cascader
                 options={options}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Radio from '../src';
 
 export default {
@@ -12,10 +12,10 @@ export const Demo = () => {
     const [value, setValue] = useState(1);
     const [valueButton, setValueButton] = useState('a');
     return (
-        <div style={{ padding: 30 }}>
+        <div style={{padding: 30}}>
             <p>基础示例</p>
-            <Radio >Radio</Radio>
-            <Radio defaultChecked >Radio</Radio>
+            <Radio>Radio</Radio>
+            <Radio defaultChecked>Radio</Radio>
             <Radio disabled>Radio</Radio>
             <Radio defaultChecked disabled>Radio</Radio>
             <p></p>
@@ -36,5 +36,6 @@ export const Demo = () => {
                 <RadioButton value="d">Chengdu</RadioButton>
                 <RadioButton value="e" disabled>guangzhou</RadioButton>
             </Group>
-        </div>);
+        </div>
+    );
 };

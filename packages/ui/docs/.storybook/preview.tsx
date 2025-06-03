@@ -3,7 +3,7 @@ import type {Preview} from '@storybook/react';
 import {DocsPage, DocsContainer} from '@storybook/addon-docs';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {useDarkMode} from 'storybook-dark-mode';
-import '@osui/icloud-theme/dist/theme/vars.css';
+// import '@osui/icloud-theme/dist/theme/vars.css';
 import {themes} from '@storybook/theming';
 import './global.css';
 const preview: Preview = {

@@ -12,8 +12,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const Index = () => {
-    const {message, modal, notification, ...o} = App.useApp();
-    console.log(123, o);
+    const {message, modal, notification} = App.useApp();
     const showMessage = () => {
         console.log('message', message);
         message.success('Success!');

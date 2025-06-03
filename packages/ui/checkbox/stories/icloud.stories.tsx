@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
 import Checkbox from '../src';
 
@@ -10,6 +10,13 @@ export default {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
     function onChange(checkedValues) {
         console.log('checked = ', checkedValues);
     }
@@ -26,8 +33,14 @@ export const Demo = () => {
         {label: 'Orange', value: 'Orange', disabled: false},
     ];
     return (
-        <BrandProvider>
+        <BrandProvider theme={theme}>
             <div style={{padding: 30}}>
+                <button
+                    onClick={() => setCssVar(v => !v)}
+                >
+                    切换{cssVar ? '不' : ''}使用cssVar
+                </button>
+
                 <h3>1、基础用法</h3>
                 <p>默认状态</p>
                 <section>

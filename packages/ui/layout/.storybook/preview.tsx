@@ -2,7 +2,7 @@ import React from 'react';
 import type {Preview} from '@storybook/react';
 import {DocsPage, DocsContainer} from '@storybook/addon-docs';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
-import '@osui/icloud-theme/dist/theme/vars.css';
+// import '@osui/icloud-theme/dist/theme/vars.css';
 import './global.css';
 const preview: Preview = {
     parameters: {

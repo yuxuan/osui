@@ -1,15 +1,17 @@
-import React, {useCallback, useRef} from 'react';
+import React, {useCallback, useContext, useRef} from 'react';
 import Select from '@osui/select';
 import {SelectProps} from 'antd/es/select';
 import AbstractQuickEdit, {IAbstractQuickEdit, useQuickEdit} from 'react-abstract-quick-edit';
 import classNames from 'classnames';
 import {useDerivedState} from '@huse/derived-state';
 import hoistNonReactStatics from 'hoist-non-react-statics';
+import {ConfigProvider, theme} from 'antd';
 import QuickEditDisplay from './QuickEditDisplay';
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-quick-edit';
-
+const {useToken} = theme;
 interface AbstractQuickEditProps extends Omit<IAbstractQuickEdit<string, any>, 'display'> {
     display?: (value: string) => React.ReactNode;
 }
@@ -80,7 +82,11 @@ const QuickEditSelectAdapter = AbstractQuickEdit.register<QuickEditSelectProps>(
 
 const QuickEditSelect = (props: QuickEditSelectProps) => {
     const {showEditIcon, withConfirm, display, wrapClassName, ...restProps} = props;
-
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('quickEdit', props.prefixCls);
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar);
+    const {hashId} = useToken();
     const handleDisplay = useCallback(
         value => {
             if (display) {
@@ -91,13 +97,13 @@ const QuickEditSelect = (props: QuickEditSelectProps) => {
         [display, showEditIcon]
     );
 
-    return (
+    return wrapSSROsui(
         <QuickEditSelectAdapter
             {...restProps}
             // @ts-ignore
             withConfirm={withConfirm}
             display={handleDisplay}
-            wrapClassName={classNames(wrapClassName, `${clsPrefix}-wrapper`)}
+            wrapClassName={classNames(wrapClassName, `${clsPrefix}-wrapper`, hashId)}
         />
     );
 };

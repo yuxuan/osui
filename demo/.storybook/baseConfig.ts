@@ -1,11 +1,11 @@
 import type {StorybookConfig} from '@storybook/react-vite';
 import {mergeConfig} from 'vite';
-import {resolveInjection, LessInjection} from './lessInjection';
+// import {resolveInjection, LessInjection} from './lessInjection';
 
 export default (getAbsolutePath: (name: string) => any, __dirname: string) => {
     //  const themeEnv = process.env.THEME;
 
-    const resources = [getAbsolutePath('@osui/icloud-theme') + '/dist/antd-vars-patch.less']
+    // const resources = [getAbsolutePath('@osui/icloud-theme') + '/dist/antd-vars-patch.less']
 
 
     const config: StorybookConfig = {
@@ -37,31 +37,31 @@ export default (getAbsolutePath: (name: string) => any, __dirname: string) => {
             autodocs: 'tag',
         },
         async viteFinal(config) {
-            const resolving = [
-                import('less-plugin-npm-import'),
-                resolveInjection(process.cwd(), 'src', resources),
-            ] as const;
-            const [{default: NpmImport}, injection] = await Promise.all(resolving);
+            // const resolving = [
+            //     import('less-plugin-npm-import'),
+            //     resolveInjection(process.cwd(), 'src', resources),
+            // ] as const;
+            // const [{default: NpmImport}, injection] = await Promise.all(resolving);
             // Merge custom configuration into the default config
             return mergeConfig(config, {
                 // Add dependencies to pre-optimization
                 optimizeDeps: {
                     include: ['storybook-dark-mode'],
                 },
-                css: {
-                    preprocessorOptions: {
-                        less: {
-                            plugins: [
-                                new LessInjection(injection),
-                                new NpmImport({prefix: '~'}),
-                            ],
-                            modifyVars: {
-                                'ant-prefix': 'ant',
-                            },
-                            javascriptEnabled: true,
-                        },
-                    },
-                },
+                // css: {
+                //     preprocessorOptions: {
+                //         less: {
+                //             plugins: [
+                //                 new LessInjection(injection),
+                //                 new NpmImport({prefix: '~'}),
+                //             ],
+                //             modifyVars: {
+                //                 'ant-prefix': 'ant',
+                //             },
+                //             javascriptEnabled: true,
+                //         },
+                //     },
+                // },
                 build: {
                     cssCodeSplit: false,
                 },

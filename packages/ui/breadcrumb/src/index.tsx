@@ -1,10 +1,11 @@
-import React, {useReducer} from 'react';
-import {Breadcrumb as AntdBreadcrumb} from 'antd';
+import React, {useContext, useReducer} from 'react';
+import {Breadcrumb as AntdBreadcrumb, ConfigProvider} from 'antd';
 import {BreadcrumbProps as AntdBrandcrumbProps} from 'antd/es/breadcrumb';
 import classNames from 'classnames';
 // @ts-expect-error
 import {LegacyBreadcrumbProps, NewBreadcrumbProps} from 'antd/es/breadcrumb/Breadcrumb';
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-breadcrumb';
 
@@ -111,6 +112,11 @@ const Breadcrumb: BreadcrumbInterface = props => {
         tailItemLength = 2,
         ...restProps
     } = props as BreadcrumbProps & {items: NewBreadcrumbProps['items']};
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('breadcrumb', props.prefixCls || '');
+    const antPrefixCls = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefixCls);
 
     const hasMoreThanXItem = (x: number) => (
         // 使用children的情况
@@ -143,7 +149,7 @@ const Breadcrumb: BreadcrumbInterface = props => {
         tailItemLength,
     };
 
-    return (
+    return wrapSSROsui(
         <AntdBreadcrumb
             className={classNames(clsPrefix, className)}
             itemRender={

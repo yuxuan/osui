@@ -9,6 +9,7 @@ export type {BreadcrumbProps, BreadcrumbItemProps} from '@osui/breadcrumb';
 export type {ButtonProps} from '@osui/button';
 export type {CalendarProps} from '@osui/calendar';
 export type {CardProps} from '@osui/card';
+export type {AppProps} from '@osui/app';
 export type {CollapseProps, CollapsePanelProps} from '@osui/collapse';
 export type {CarouselProps} from '@osui/carousel';
 export type {CascaderProps} from '@osui/cascader';
@@ -39,6 +40,7 @@ export type {RadioProps, RadioChangeEvent, RadioGroupProps} from '@osui/radio';
 export type {RateProps} from '@osui/rate';
 export type {ResultProps} from '@osui/result';
 export type {RowProps} from '@osui/row';
+export type {WatermarkProps} from '@osui/watermark';
 export type {SelectProps} from '@osui/select';
 export type {SkeletonProps} from '@osui/skeleton';
 export type {SliderSingleProps} from '@osui/slider';
@@ -46,6 +48,7 @@ export type {SpaceProps} from '@osui/space';
 export type {SpinProps} from '@osui/spin';
 export type {StepProps, StepsProps} from '@osui/steps';
 export type {SwitchProps} from '@osui/switch';
+export type {TourProps, TourStepProps} from '@osui/tour';
 export type {
     TableProps,
     TablePaginationConfig,
@@ -65,11 +68,10 @@ export type {TimelineProps, TimelineItemProps} from '@osui/timeline';
 export type {TooltipProps} from '@osui/tooltip';
 export type {TypographyProps} from '@osui/typography';
 export type {UploadProps} from '@osui/upload';
-export type {ThemeType, SetTheme, ThemeEnum, ThemeContextType} from '@osui/theme-provider';
 export type {SegmentedProps} from '@osui/segmented';
 export type {AppProps} from '@osui/app';
-export type {FlexProps} from '@osui/flex';
 export type {TourProps, TourStepProps} from '@osui/tour';
 export type {WatermarkProps} from '@osui/watermark';
+export type {FlexProps} from '@osui/flex';
+export type {QRCodeProps, QRPropsCanvas, QRPropsSvg} from '@osui/qr-code';
 export type {ColorPickerProps} from '@osui/color-picker';
-

@@ -1,12 +1,13 @@
-import React, {useCallback, useState, useRef, useMemo} from 'react';
-import {Input as AntdInput} from 'antd';
+import React, {useCallback, useState, useRef, useMemo, useContext} from 'react';
+import {Input as AntdInput, ConfigProvider} from 'antd';
 import {composeRef} from 'rc-util/lib/ref';
 import {useBrandContext} from '@osui/brand-provider';
 import Button from '@osui/button';
 import {IconSearchOutlined} from '@osui/icons';
 import {SearchProps as AntdSearchProps} from 'antd/es/input';
 import classNames from 'classnames';
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 export interface SearchProps extends AntdSearchProps {
     withSuffixIcon?: boolean;
@@ -30,6 +31,11 @@ const Search = React.forwardRef<any, SearchProps>(
             suffix,
             ...inputProps
         } = props;
+        const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+        const cssVar = theme?.cssVar;
+        const prefixCls = getPrefixCls('input', props.prefixCls);
+        const antPrefix = getPrefixCls('', props.prefixCls);
+        const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
         const inputRef = useRef(null);
         const {brand} = useBrandContext();
 
@@ -121,7 +127,7 @@ const Search = React.forwardRef<any, SearchProps>(
             [enterButton, loading, disabled]
         );
         if (innerWithSuffixIcon && !enterButton) {
-            return (
+            return wrapSSROsui(
                 <AntdInput
                     ref={composeRef(inputRef, ref)}
                     {...inputProps}
@@ -135,7 +141,7 @@ const Search = React.forwardRef<any, SearchProps>(
                 />
             );
         }
-        return (
+        return wrapSSROsui(
             <AntdInput.Search
                 ref={composeRef(inputRef, ref)}
                 {...props}

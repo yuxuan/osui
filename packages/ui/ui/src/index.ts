@@ -26,7 +26,6 @@ export {default as Markdown} from '@osui/markdown';
 export {default as Skeleton} from '@osui/skeleton';
 export {default as Layout} from '@osui/layout';
 export {default as Segmented} from '@osui/segmented';
-export {default as ThemeProvider} from '@osui/theme-provider';
 export {default as Cascader} from '@osui/cascader';
 export {default as Checkbox} from '@osui/checkbox';
 export {default as Transfer} from '@osui/transfer';
@@ -78,6 +77,13 @@ export {default as Col} from '@osui/col';
 export {default as FlexCentered} from '@osui/flex-centered';
 export {default as Grid} from '@osui/grid';
 export {default as Badge} from '@osui/badge';
+export {
+    default as iCloudTheme,
+    v1,
+    dark,
+    acud,
+    tokens,
+} from '@osui/icloud-theme';
 export type {AffixProps} from '@osui/affix';
 export type {AnchorProps, AnchorLinkProps} from '@osui/anchor';
 export type {AutoCompleteProps} from '@osui/auto-complete';
@@ -89,6 +95,7 @@ export type {BreadcrumbProps, BreadcrumbItemProps} from '@osui/breadcrumb';
 export type {ButtonProps} from '@osui/button';
 export type {CalendarProps} from '@osui/calendar';
 export type {CardProps} from '@osui/card';
+export type {AppProps} from '@osui/app';
 export type {CollapseProps, CollapsePanelProps} from '@osui/collapse';
 export type {CarouselProps} from '@osui/carousel';
 export type {CascaderProps} from '@osui/cascader';
@@ -119,6 +126,7 @@ export type {RadioProps, RadioChangeEvent, RadioGroupProps} from '@osui/radio';
 export type {RateProps} from '@osui/rate';
 export type {ResultProps} from '@osui/result';
 export type {RowProps} from '@osui/row';
+export type {WatermarkProps} from '@osui/watermark';
 export type {SelectProps} from '@osui/select';
 export type {SkeletonProps} from '@osui/skeleton';
 export type {SliderSingleProps} from '@osui/slider';
@@ -126,6 +134,7 @@ export type {SpaceProps} from '@osui/space';
 export type {SpinProps} from '@osui/spin';
 export type {StepProps, StepsProps} from '@osui/steps';
 export type {SwitchProps} from '@osui/switch';
+export type {TourProps, TourStepProps} from '@osui/tour';
 export type {
     TableProps,
     TablePaginationConfig,
@@ -145,11 +154,10 @@ export type {TimelineProps, TimelineItemProps} from '@osui/timeline';
 export type {TooltipProps} from '@osui/tooltip';
 export type {TypographyProps} from '@osui/typography';
 export type {UploadProps} from '@osui/upload';
-export type {ThemeType, SetTheme, ThemeEnum, ThemeContextType} from '@osui/theme-provider';
 export type {SegmentedProps} from '@osui/segmented';
 export type {AppProps} from '@osui/app';
-export type {FlexProps} from '@osui/flex';
 export type {TourProps, TourStepProps} from '@osui/tour';
 export type {WatermarkProps} from '@osui/watermark';
 export type {ColorPickerProps} from '@osui/color-picker';
-
+export type {FlexProps} from '@osui/flex';
+export type {QRCodeProps, QRPropsCanvas, QRPropsSvg} from '@osui/qr-code';

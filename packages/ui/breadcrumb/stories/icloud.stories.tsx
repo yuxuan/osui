@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import {BrowserRouter, Link} from 'react-router-dom';
 import Menu from '@osui/menu';
 import TextOverflowTooltip from '@osui/text-overflow-tooltip';
@@ -13,8 +13,16 @@ export default {
 };
 
 export const Antd5Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
     return (
-        <BrandProvider>
+        <BrandProvider theme={theme}>
             <h1>新用法</h1>
             <p>
                 产品页面层级较多，用户路径较长，无法仅通过使用返回按钮解决回到首页/列表页诉求，建议层级≥3时全局使用，用户可通过面包屑返回/到达目标页面
@@ -22,6 +30,11 @@ export const Antd5Demo = () => {
             <p>
                 如果需要蓝色hover，放个<code>a</code>标签
             </p>
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
             <Breadcrumb
                 separator=">"
                 items={[

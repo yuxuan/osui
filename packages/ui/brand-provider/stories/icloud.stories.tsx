@@ -10,7 +10,7 @@ export default {
 };
 
 const BrandApp = () => {
-    const { brand } = useBrandContext();
+    const {brand} = useBrandContext();
     return (<div>Hi: {brand}</div>);
 };
 
@@ -19,9 +19,9 @@ export const Demo = () => {
         <>
             <p>用于全局控制品牌，在App入口添加</p>
             <Divider>展示</Divider>
-            <BrandProvider brand="osc">
+            {/* <BrandProvider brand="osc">
                 <BrandApp />
-            </BrandProvider>
+            </BrandProvider> */}
             <BrandProvider brand="icloud">
                 <BrandApp />
             </BrandProvider>
@@ -46,10 +46,10 @@ export const BrandProviderCollapse = () => {
     return (
         <>
             <p>举个例子</p>
-            <p>OSC主题的话，Collapse应该默认是ghost模式</p>
+            {/* <p>OSC主题的话，Collapse应该默认是ghost模式</p>
             <BrandProvider brand="osc">
                 <App />
-            </BrandProvider>
+            </BrandProvider> */}
             <p>iCloud主题的话，Collapse应该默认是正常模式</p>
             <BrandProvider brand="icloud">
                 <App />

@@ -43,6 +43,7 @@ export const Demo = () => {
                     total={70}
                     onChange={onChange}
                     onShowSizeChange={onShowSizeChange}
+                    showTotal={total => `Total ${total} items`}
                 />
                 <br />
                 <Pagination showQuickJumper defaultCurrent={2} total={80} onChange={onChange} />

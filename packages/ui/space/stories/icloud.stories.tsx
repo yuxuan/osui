@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import Button from '@osui/button';
 import BrandProvider from '@osui/brand-provider';
 import {version} from 'antd';
@@ -10,8 +10,21 @@ export default {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
     return (
-        <BrandProvider brand="icloud">
+        <BrandProvider brand="icloud" theme={theme}>
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
             <p>水平方向</p>
             <Space size="small">
                 <Button size="small">取消</Button>

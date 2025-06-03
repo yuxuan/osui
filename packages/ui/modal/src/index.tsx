@@ -1,5 +1,5 @@
-import React from 'react';
-import {Modal as AntdModal} from 'antd';
+import React, {useContext} from 'react';
+import {Modal as AntdModal, ConfigProvider} from 'antd';
 import {ModalProps as AntdModalProps, ModalFuncProps} from 'antd/es/modal';
 import {modalGlobalConfig} from 'antd/es/modal/confirm';
 import classNames from 'classnames';
@@ -11,10 +11,16 @@ import {
     IconExclamationCircleFilled,
 } from '@osui/icons';
 import Button, {ButtonProps} from '@osui/button';
+export {
+    modalGlobalHolderRender,
+    useGetModalWrapSSROsui,
+    useSetStaticMethodStyle,
+} from './useSetStaticMethodStyle';
 
 import useOsuiModal from './useModal';
 
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 const {destroyAll, config} = AntdModal;
 
@@ -77,6 +83,12 @@ const OriginModal: ModalInterface = ({className, bodyBorder, size, ...props}) =>
         fullScreen,
     } = props;
 
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('modal', props.prefixCls);
+    const antPrefix = getPrefixCls('', props.prefixCls);
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
+
     const width = getModalSize(size);
 
     const classes = classNames(
@@ -118,7 +130,7 @@ const OriginModal: ModalInterface = ({className, bodyBorder, size, ...props}) =>
     );
     const innerCentered = centered ?? true;
 
-    return (
+    return wrapSSROsui(
         <AntdModal
             className={classNames(classes)}
             closeIcon={<IconCloseOutlined />}

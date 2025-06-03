@@ -6,7 +6,7 @@ import InputGroup from './InputGroup';
 import Password from './Password';
 import TextArea from './TextArea';
 import Search from './Search';
-import './index.less';
+// import './index.less';
 
 export {type SearchProps} from './Search';
 export {InputProps};

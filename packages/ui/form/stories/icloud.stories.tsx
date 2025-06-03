@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import Switch from '@osui/switch';
 import Radio from '@osui/radio';
 import Button from '@osui/button';
@@ -38,6 +38,9 @@ export const Demo = () => {
         console.log('Failed:', errorInfo);
     };
 
+    const [direction, setDirection] = useState<'horizontal'|'vertical'>('horizontal');
+    const nextDirection = () => (direction === 'horizontal' ? 'vertical' : 'horizontal');
+
     return (
         <BrandProvider>
             {version}
@@ -57,6 +60,7 @@ export const Demo = () => {
                 onFinishFailed={onFinishFailed}
                 // 可以通过传入labelMaxWidth来控制label的宽度
                 labelMaxWidth={80}
+                layout={direction}
             >
                 <Form.Item
                     label="用户名"
@@ -86,6 +90,12 @@ export const Demo = () => {
                 <Form.Item {...tailLayout}>
                     <Button type="primary" htmlType="submit">
                         提交
+                    </Button>
+                    <Button
+                        style={{marginLeft: 10, width: 105}}
+                        onClick={() => setDirection(nextDirection)}
+                    >
+                        切换{nextDirection()}
                     </Button>
                 </Form.Item>
             </Form>

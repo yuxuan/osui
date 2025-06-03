@@ -1,9 +1,10 @@
 /* eslint-disable max-len */
-import React from 'react';
-import {DatePicker as AntdDatePicker} from 'antd';
+import React, {useContext} from 'react';
+import {DatePicker as AntdDatePicker, ConfigProvider} from 'antd';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-picker';
 
@@ -12,7 +13,12 @@ type BaseDatePickerType = typeof AntdDatePicker;
 function attachOSUIClassName(Component: any) {
     const ComponentOut = React.forwardRef<any, any>(
         (props, ref) => {
-            return (
+            const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+            const cssVar = theme?.cssVar;
+            const prefixCls = getPrefixCls('picker', props.prefixCls);
+            const antPrefix = getPrefixCls('');
+            const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
+            return wrapSSROsui(
                 <Component
                     ref={ref}
                     {...props}

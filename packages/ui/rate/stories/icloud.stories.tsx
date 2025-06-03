@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
 import Rate from '../src';
 
@@ -9,8 +9,15 @@ export default {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+
     return (
         <BrandProvider brand="icloud">
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
             <Rate allowHalf defaultValue={2.5} />
         </BrandProvider>
     );

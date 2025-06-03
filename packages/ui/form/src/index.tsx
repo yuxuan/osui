@@ -1,5 +1,5 @@
 import React, {useLayoutEffect, useState, useContext} from 'react';
-import {Form as AntdForm} from 'antd';
+import {Form as AntdForm, ConfigProvider} from 'antd';
 import type {
     FormInstance,
     FormProps as AntdFormProps,
@@ -13,7 +13,8 @@ import {FormContext} from 'antd/es/form/context';
 import type {FormItemProps} from 'antd/es/form/FormItem';
 import classNames from 'classnames';
 import useLabelLayout from './useLabelLayout';
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-form';
 
@@ -25,7 +26,11 @@ type FormProps = AntdFormProps & {
 const InternalForm = React.forwardRef<FormInstance, React.PropsWithChildren<FormProps>>((props, ref) => {
     // 检测是否有required的内容
     const [hasRequiredItem, setHasRequiredItem] = useState(0);
-
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('form', props.prefixCls);
+    const antPrefix = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
     useLayoutEffect(
         () => {
             const formName = props.name;
@@ -41,7 +46,7 @@ const InternalForm = React.forwardRef<FormInstance, React.PropsWithChildren<Form
 
     const internalLableAlign = props.labelAlign ?? 'left';
 
-    return (
+    return wrapSSROsui(
         <AntdForm
             ref={ref}
             {...props}

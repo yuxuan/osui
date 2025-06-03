@@ -11,6 +11,14 @@ export default {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = React.useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
     const [visible, setVisible] = React.useState(false);
 
     const showDrawer = () => {
@@ -26,9 +34,15 @@ export const Demo = () => {
     );
 
     return (
-        <BrandProvider>
+        <BrandProvider theme={theme}>
             <div style={{padding: 30}}>
                 <p>footer没有封装在组件内，按业务逻辑调整</p>
+                <button
+                    onClick={() => setCssVar(v => !v)}
+                >
+                    切换{cssVar ? '不' : ''}使用cssVar
+                </button>
+
                 <Divider orientation="left">基础抽屉</Divider>
                 <Button type="primary" onClick={showDrawer}>
                     Open
@@ -41,6 +55,7 @@ export const Demo = () => {
                     onClose={onClose}
                     visible={visible}
                     footer={footer}
+                    extra={<div>extra</div>}
                 >
                     <p>Some contents...</p>
                     <p>Some contents...</p>

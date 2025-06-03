@@ -1,14 +1,17 @@
-import React, {useCallback} from 'react';
+import React, {useCallback, useContext} from 'react';
 import classNames from 'classnames';
 import {useDerivedState} from '@huse/derived-state';
 import Button from '@osui/button';
 import Input from '@osui/input';
 import {useBrandContext} from '@osui/brand-provider';
+import {ConfigProvider, theme} from 'antd';
+// import './inputNumber.less';
 import InputNumber, {InputNumberProps} from './InputNumber';
-import './inputNumber.less';
+import {useStyle} from './style/inputNumber';
+import {useStyle as useNumberStyle} from './style/inputNumber';
 
 const clsPrefix = 'osui-input-number-compact';
-
+const {useToken} = theme;
 type ValueType = string | number;
 export interface InputNumberCompactProps<T extends ValueType = ValueType> extends InputNumberProps<T> {
     inputNumberClassName?: string;
@@ -32,11 +35,18 @@ function InputNumberCompact<T extends ValueType = ValueType>(
     }: React.PropsWithChildren<InputNumberCompactProps<T>>,
     ref: React.ForwardedRef<HTMLInputElement>
 ) {
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('osui-input-nunmber-compact', props.prefixCls);
+    const antPrefix = getPrefixCls('', props.prefixCls);
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
+    const wrapNumbeerSSROsui = useNumberStyle(clsPrefix, prefixCls, cssVar, antPrefix);
+    const {hashId} = useToken();
     const brandContext = useBrandContext();
     const initValue: T = defaultValue === undefined ? (value || 0 as T) : defaultValue;
     const [inputValue, setInputValue] = useDerivedState<T>(initValue);
     const handleChange = useCallback(
-        value => {
+        (value: any) => {
             setInputValue(value);
             onChange?.(value);
         },
@@ -55,7 +65,7 @@ function InputNumberCompact<T extends ValueType = ValueType>(
         [handleChange, inputValue, step]
     );
     const borderRadius = brandContext.designToken?.token?.borderRadius;
-    return (
+    return wrapSSROsui(wrapNumbeerSSROsui(
         <>
             <Input.Group
                 compact
@@ -85,12 +95,12 @@ function InputNumberCompact<T extends ValueType = ValueType>(
                 />
                 {
                     typeof tailLabel === 'string'
-                        ? <span className={'osui-input-number-tail-label'}>{tailLabel}</span>
+                        ? <span className={`osui-input-number-tail-label ${hashId}`}>{tailLabel}</span>
                         : tailLabel
                 }
             </Input.Group>
         </>
-    );
+    ));
 }
 
 export default React.forwardRef(InputNumberCompact);

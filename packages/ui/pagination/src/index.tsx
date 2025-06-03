@@ -1,13 +1,22 @@
-import {Pagination as AntdPagination} from 'antd';
+import {Pagination as AntdPagination, ConfigProvider, theme} from 'antd';
 import type {PaginationProps} from 'antd/es/Pagination';
-import React, {FC, useState} from 'react';
+import React, {FC, useContext, useState} from 'react';
 import {IconDownOutlined, IconUpOutlined} from '@osui/icons';
-import './index.less';
+import classNames from 'classnames';
+import {useStyle} from './style';
+const {useToken} = theme;
+const clsPrefix = 'osui-pagination';
 
 const icloudLocale = {'jump_to': '跳转至', 'page': '', 'jump_to_confirm': 'Go'};
 // eslint-disable-next-line complexity
 const Pagination: FC<PaginationProps> = props => {
     const [dropdownVisible, setDropdownVisible] = useState(false);
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('pagination', props.prefixCls);
+    const antPrefix = getPrefixCls('', props.prefixCls);
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
+    const {hashId} = useToken();
     const showQuickJumper = (props.showQuickJumper === true || props.showQuickJumper === undefined)
         ? {goButton: true}
         : props.showQuickJumper;
@@ -31,9 +40,19 @@ const Pagination: FC<PaginationProps> = props => {
             ...innerSizeChangerConfig,
         } : innerSizeChangerConfig
     );
-    return (
-        // eslint-disable-next-line max-len
-        <div className={`osui-pagination ${showQuickJumper ? props.simple ? 'simple-showQuickJumper' : 'showQuickJumper' : ''} ${showSizeChanger ? 'showSizeChanger' : ''}`}>
+
+    const className = classNames(
+        hashId,
+        clsPrefix,
+        showQuickJumper
+            ? props.simple
+                ? 'simple-showQuickJumper'
+                : 'showQuickJumper' : '',
+        showSizeChanger ? 'showSizeChanger' : ''
+    );
+
+    return wrapSSROsui(
+        <div className={className}>
             <AntdPagination
                 {...props}
                 locale={{...icloudLocale, ...props.locale}}

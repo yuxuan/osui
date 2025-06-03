@@ -1,8 +1,10 @@
-import React, {useRef, useState} from 'react';
+import React, {useContext, useRef, useState} from 'react';
 import Tooltip from '@osui/tooltip';
 import type {TooltipProps} from 'antd/es/tooltip';
-import './index.less';
-
+// import './index.less';
+import {ConfigProvider, theme} from 'antd';
+import {useStyle} from './style';
+const {useToken} = theme;
 const clsPrefix = 'osui-text-overflow-tooltip';
 
 const isNodeOverflow = (node: HTMLElement) => {
@@ -16,14 +18,21 @@ interface ChildStyleProps {
 }
 
 export const TextOverflowTooltip = React.forwardRef<any, TooltipProps & ChildStyleProps>(
-    ({width, maxWidth, style, ...props}, ref) => {
+    ({width, maxWidth, style, className: classNameIn, ...props}, ref) => {
+        const {hashId} = useToken();
+        const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+        const cssVar = theme?.cssVar;
+        const prefixCls = getPrefixCls('text-overflow-tooltip', props.prefixCls);
+        const antPrefix = getPrefixCls('');
+        const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
+
         const textRef = useRef(null);
         // 控制展示
         const [visible, setVisible] = useState(false);
 
         let child = props.children;
         if (typeof props.children === 'string') {
-            const textNode = (<span ref={textRef} className={`${clsPrefix}-span`}>{child}</span>);
+            const textNode = (<span ref={textRef} className={`${clsPrefix}-span ${hashId}`}>{child}</span>);
             // trigger为hover或click时，增加根据overflow展示tooltip
             let patchedEvent = {};
             if (!props.trigger || props.trigger.includes('hover')) {
@@ -59,7 +68,7 @@ export const TextOverflowTooltip = React.forwardRef<any, TooltipProps & ChildSty
             );
         }
 
-        return (
+        return wrapSSROsui(
             <Tooltip ref={ref} {...props} visible={visible}>
                 {child}
             </Tooltip>

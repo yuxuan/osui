@@ -14,9 +14,23 @@ const RadioButton = Radio.Button;
 export const Demo = () => {
     const [value, setValue] = useState(1);
     const [valueButton, setValueButton] = useState('a');
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
+
     return (
         <div style={{padding: 30}}>
-            <BrandProvider brand="icloud">
+            <BrandProvider brand="icloud" theme={theme}>
+                <button
+                    onClick={() => setCssVar(v => !v)}
+                >
+                    切换{cssVar ? '不' : ''}使用cssVar
+                </button>
                 <h3>1、普通单选</h3>
                 <Radio>单选选项</Radio>
                 <Radio disabled>单选选项</Radio>

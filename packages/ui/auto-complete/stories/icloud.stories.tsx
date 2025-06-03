@@ -23,6 +23,14 @@ export default {
 };
 
 export const Demo1 = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
     const defaultOptions = [
         {value: '一'},
         {value: '二'},
@@ -114,7 +122,7 @@ export const Demo1 = () => {
     };
 
     return (
-        <BrandProvider brand="icloud">
+        <BrandProvider brand="icloud" theme={theme}>
             <p>通过输入关键信息即时联想，选择选项后即完成</p>
             <h3>使用场景</h3>
             <p>需要自动完成时，使用该输入框，用户输入内容，联想相关结果，点击即可选择</p>
@@ -122,6 +130,11 @@ export const Demo1 = () => {
                 <p><strong>FE说明：</strong>AutoComplete的场景是，输入内容即为value，本质是Input，下拉展示的内容可以设置自动完成的数据源。</p>
                 <p><strong>FE说明：</strong>和Select Search的区别是，Select Search只是筛选select里面的内容，最终还是要选中某个选项的</p>
             </Blockquote>
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
             <Divider>展示</Divider>
             <h2>含搜索功能的下拉单选</h2>
             <p>本质：传了allowClear、showArrow true。有默认的options，onSearch的时候返回更新的options</p>
@@ -187,7 +200,7 @@ export const Demo1 = () => {
                 }}
                 placeholder="input here"
             />
-        </BrandProvider >
+        </BrandProvider>
     );
 };
 

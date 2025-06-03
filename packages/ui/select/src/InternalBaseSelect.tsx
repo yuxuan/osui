@@ -1,5 +1,5 @@
-import React from 'react';
-import {Select as AntdSelect} from 'antd';
+import React, {useContext} from 'react';
+import {Select as AntdSelect, ConfigProvider} from 'antd';
 import type {BaseOptionType, DefaultOptionType, SelectProps as AntdSelectProps} from 'antd/es/select';
 import type {BaseSelectRef} from 'rc-select';
 import classNames from 'classnames';
@@ -8,7 +8,8 @@ import {useBrandContext} from '@osui/brand-provider';
 import Tooltip from '@osui/tooltip';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import {adjustAntdProps} from './utils';
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-select';
 
@@ -25,6 +26,11 @@ function InternalSelect<ValueType = any, OptionType extends BaseOptionType | Def
     ref?: React.Ref<BaseSelectRef>
 ): React.ReactElement | null {
     const {className, loading, listHeight, noBorder, ...restProps} = props;
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('select', props.prefixCls);
+    const antPrefix = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
     const {brand} = useBrandContext();
     // 暂时用，后面需要透传下去
     const {mode, popupClassName} = restProps;
@@ -71,7 +77,7 @@ function InternalSelect<ValueType = any, OptionType extends BaseOptionType | Def
 
     const innerListHeight = listHeight ?? (brand === 'icloud' ? 320 : 256);
 
-    return (
+    return wrapSSROsui(
         <AntdSelect
             ref={ref}
             className={classNames(

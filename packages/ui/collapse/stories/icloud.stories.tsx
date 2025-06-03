@@ -1,11 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
-import {version} from 'antd';
-import Select from '@osui/select';
+import {version, Select} from 'antd';
+// import Select from '@osui/select';
 import {SettingOutlined} from '@ant-design/icons';
 import Collapse from '../src';
-
+console.log('Select: ', Select);
 const {Panel} = Collapse;
 
 export default {
@@ -13,11 +13,31 @@ export default {
 };
 
 export const Demo = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar ? {
+            prefix: 'tna',
+            key: 'tluafed',
+        } : false,
+        // components: {
+        //     Collapse: {
+        //         // collapseHeaderBg: 'red',
+        //         collapseContentBg: '#F2F2F4',
+        //         collapseHeaderBg: 'red',
+        //         headerBg: '#F2F2F4',
+        //     },
+        // },
+    };
     const text =
         '百度（纳斯达克：BIDU），全球最大的中文搜索引擎、最大的中文网站。百度愿景是：成为最懂用户，并能帮助人们成长的全球顶级高科技公司。';
     return (
-        <BrandProvider brand="icloud">
+        <BrandProvider brand="icloud" theme={theme}>
             <div style={{padding: 30}}>
+                <button
+                    onClick={() => setCssVar(v => !v)}
+                >
+                    切换{cssVar ? '不' : ''}使用cssVar
+                </button>
                 <p>基础折叠面板</p>
                 <Collapse defaultActiveKey={['1']}>
                     <Panel header="可以折叠或展开的内容区域" key="1">
@@ -161,5 +181,9 @@ export const TestCase2 = () => {
         }
     }
 
-    return <Demo />;
+    return (
+        <BrandProvider>
+            <Demo />
+        </BrandProvider>
+    );
 };

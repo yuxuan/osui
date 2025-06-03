@@ -1,18 +1,15 @@
 import {
     Layout as AntdLayout,
     type SiderProps as AntdSiderProps,
-    ConfigProvider,
+    ConfigProvider, theme,
 } from 'antd';
 export {type LayoutProps} from 'antd';
 import {type CollapseType} from 'antd/es/layout/Sider';
-import {theme} from 'antd';
 import InternalLayout from 'antd/es/layout/layout';
 import React, {useState, useContext} from 'react';
 import {IconCaretDownOutlined} from '@osui/icons';
-import {useBrandContext} from '@osui/brand-provider';
-import {useStyleRegister, useCacheToken} from '@ant-design/cssinjs';
-import {genStyle, prepareComponentToken} from './style';
 // import './index.less';
+import {useStyle} from './style';
 
 const {useToken} = theme;
 
@@ -31,34 +28,19 @@ const Sider: SiderType = React.forwardRef<HTMLDivElement, SiderProps>((
     {newCollapseStyle = false, className, trigger: triggerIn, onCollapse, ...props},
     ref
 ) => {
-    const {getPrefixCls} = useContext(ConfigProvider.ConfigContext);
-    const prefixCls = getPrefixCls('layout-sider', props.prefixCls);
-    const outTheme = useBrandContext();
-    const cssVar = outTheme.designToken?.cssVar;
-    const {token: outerToken, theme, hashId} = useToken();
-    const [token] = useCacheToken(
-        theme,
-        [prepareComponentToken(outerToken)],
-        {
-            cssVar: !cssVar
-                ? undefined
-                : cssVar === true
-                    ? {prefix: 'ant'}
-                    : cssVar,
-        }
-    );
-    const wrapCSSVar = useStyleRegister(
-        {theme, token, hashId, path: [prefixCls]},
-        () => [
-            genStyle(prefixCls, token, cssVar, clsPrefix),
-        ]
-    );
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('layout', props.prefixCls);
+    const antPrefix = getPrefixCls('');
+    const {hashId} = useToken();
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
+
     const [collapsed, setCollapsed] = useState(
         'collapsed' in props ? props.collapsed : props.defaultCollapsed
     );
     const finaleClassName = [
         className ? className : '',
-        newCollapseStyle && ! triggerIn ? ` ${clsPrefix}-new-collapse-style` : '',
+        newCollapseStyle && !triggerIn ? ` ${clsPrefix}-new-collapse-style` : '',
         hashId,
     ].filter(v => v).join(' ');
 
@@ -84,7 +66,7 @@ const Sider: SiderType = React.forwardRef<HTMLDivElement, SiderProps>((
         onCollapse?.(value, type);
     };
 
-    return wrapCSSVar(
+    return wrapSSROsui(
         <AntdLayout.Sider
             {...props}
             ref={ref}

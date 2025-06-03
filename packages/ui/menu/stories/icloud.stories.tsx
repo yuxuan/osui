@@ -73,6 +73,15 @@ export const Demo = () => {
 };
 
 export const Vertical = () => {
+    const [cssVar, setCssVar] = useState(false);
+    const theme = {
+        cssVar: cssVar && {
+            prefix: 'tna',
+            key: 'tluafed',
+        },
+    };
+
+
     const items: MenuProps['items'] = [
         {
             label: 'Navigation One',
@@ -149,7 +158,12 @@ export const Vertical = () => {
     };
 
     return (
-        <BrandProvider>
+        <BrandProvider theme={theme}>
+            <button
+                onClick={() => setCssVar(v => !v)}
+            >
+                切换{cssVar ? '不' : ''}使用cssVar
+            </button>
             <App />
             <p>纵向测导航见：@baidu/icloud-ui-page-layout</p>
         </BrandProvider>

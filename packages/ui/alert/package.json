@@ -55,7 +55,6 @@
         "enzyme": "^3.11.0",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.0.6",
-        "less-plugin-npm-import": "^2.1.0",
         "prop-types": "^15.7.2",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
@@ -69,11 +68,13 @@
         "stylelint": "^14.0.0",
         "ts-jest": "^27.0.3",
         "typescript": "^4.4.3",
-        "vite": "^4.5.0"
+        "vite": "^4.5.0",
+        "@ant-design/cssinjs": "^1.18.4"
     },
     "peerDependencies": {
-        "@osui/icons": "^3.0.0",
-        "antd": "^5.0.0",
+        "@ant-design/cssinjs": "^1.18.4",
+        "@osui/icons": "^3.1.0-alpha.14",
+        "antd": "^5.13.0",
         "react": ">=17.0.0",
         "react-dom": ">=17.0.0"
     },

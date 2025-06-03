@@ -26,12 +26,12 @@
         "es/*.less"
     ],
     "devDependencies": {
-        "@osui/icons": "^3.0.4",
+        "@osui/icons": "^3.1.0-alpha.14",
         "@babel/cli": "^7.10.5",
-        "@osui/brand-provider": "^2.1.9",
-        "@osui/ui": "^3.0.1",
-        "@osui/icloud-theme": "^3.0.1",
-        "@osui/theme": "^3.0.1",
+        "@osui/brand-provider": "^3.1.0-alpha.14",
+        "@osui/ui": "^3.1.0-alpha.14",
+        "@osui/icloud-theme": "^3.1.0-alpha.14",
+        "@osui/theme": "^3.1.0-alpha.14",
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",
         "@storybook/addon-interactions": "^7.5.1",
@@ -48,7 +48,7 @@
         "@types/jest": "^27.0.0",
         "@types/react-dom": "^17.0.2",
         "@types/react-test-renderer": "^17.0.1",
-        "antd": "5.24.2",
+        "antd": "^5.13.0",
         "cpy-cli": "^3.1.1",
         "enzyme": "^3.11.0",
         "identity-obj-proxy": "^3.0.0",
@@ -63,7 +63,7 @@
         "typescript": "^4.4.3"
     },
     "peerDependencies": {
-        "antd": "^5.0.0",
+        "antd": "^5.13.0",
         "react": ">=17.0.0",
         "react-dom": ">=17.0.0"
     },

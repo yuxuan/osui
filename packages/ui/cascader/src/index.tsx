@@ -1,10 +1,11 @@
-import React from 'react';
-import {Cascader as AntdCascader} from 'antd';
+import React, {useContext} from 'react';
+import {Cascader as AntdCascader, ConfigProvider} from 'antd';
 import {CascaderProps as AntdCascaderProps, CascaderRef} from 'antd/es/cascader';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import classNames from 'classnames';
 import {IconDownOutlined, IconRightOutlined} from '@osui/icons';
-import './index.less';
+// import './index.less';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-cascader';
 
@@ -19,6 +20,11 @@ const OSUICascader = (
     }: AntdCascaderProps<any>,
     ref: React.Ref<CascaderRef>
 ) => {
+    const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
+    const cssVar = theme?.cssVar;
+    const prefixCls = getPrefixCls('cascader', props.prefixCls);
+    const antPrefix = getPrefixCls('', props.prefixCls);
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
     const innerClassName = classNames(clsPrefix, className);
     const innerDisplayRender = displayRender ?? (
         (label: string[]) => label.map(
@@ -60,7 +66,7 @@ const OSUICascader = (
     );
     const innerExpandIcon = expandIcon ?? <IconRightOutlined />;
     const innerSuffixIcon = suffixIcon ?? <IconDownOutlined />;
-    return (
+    return wrapSSROsui(
         <AntdCascader
             ref={ref as any}
             className={innerClassName}
