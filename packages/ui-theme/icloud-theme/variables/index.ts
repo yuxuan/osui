@@ -1,7 +1,5 @@
 import {theme} from 'antd';
-import v1 from './v1';
-import acud, {acudTheme} from './acud';
-import dark from './dark';
+import {default as acud, acudTheme} from './acud';
 
 const {getDesignToken: getAntdDesignToken} = theme;
 
@@ -11,10 +9,7 @@ const getDesignToken = () => {
 };
 
 export {
-    v1,
-    dark,
     acud,
     acudTheme,
     getDesignToken,
 };
-export default acud;

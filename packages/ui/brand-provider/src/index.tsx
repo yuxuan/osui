@@ -43,13 +43,14 @@ interface BrandProviderComponent extends React.FC<React.PropsWithChildren<{
     theme?: Partial<ThemeConfig>;
 } & ConfigProviderProps>> {
     useBrandContext: typeof useBrandContext;
+    config: typeof config;
 }
 
 const BrandProvider: BrandProviderComponent = (
     {brand, theme: outerTheme, children, ...ConfigProviderProps}
 ) => {
     const themeFromHook = useRef<ThemeConfig>({});
-    const [finalTheme, setTheme] = useState(theme);
+    const [finalTheme, setTheme] = useState<any>(theme);
     const [isFilteredEmpty, setIsFilteredEmpty] = useState(false);
 
     const iCloudConfigs: ConfigProviderProps = useMemo(
@@ -109,7 +110,7 @@ const BrandProvider: BrandProviderComponent = (
                     themeFromHook.current
                 );
             }
-            setTheme(oldTheme => mergeTheme(
+            setTheme((oldTheme: any) => mergeTheme(
                 themeFromHook.current,
                 oldTheme
             ));
@@ -144,4 +145,3 @@ export default BrandProvider;
 
 BrandProvider.useBrandContext = useBrandContext;
 
-export const osuiThemeConfig = theme;

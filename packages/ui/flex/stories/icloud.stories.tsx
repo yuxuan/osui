@@ -1,5 +1,5 @@
 import React from 'react';
-import type {Meta, StoryObj} from '@storybook/react';
+import type {Meta, StoryObj} from '@storybook/react-vite';
 import {Button, Segmented, Divider} from 'antd';
 import Gap from '@osui/gap';
 import type {SegmentedProps} from '@osui/ui';

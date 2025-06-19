@@ -12,7 +12,6 @@ import {
     TooltipRef,
 } from 'antd/es/tooltip';
 import classNames from 'classnames';
-// import './index.less';
 import {useStyle} from './style';
 
 const clsPrefix = 'osui-tooltip';

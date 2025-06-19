@@ -1,6 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React, {useState} from 'react';
-import {Link} from 'react-omni-link';
 import Divider from '@osui/divider';
 import BrandProvider from '@osui/brand-provider';
 import Alert from '../src';
@@ -43,7 +41,7 @@ export const Demo = () => {
                 message="弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。弹性公网IP（EIP）需绑定在负载均衡（BLB）或预付费云服务器（BCC）上方可进行备案。"
                 type="info"
                 expandable
-                actions={<Link external to="https://www.baidu.com">查看文档</Link>}
+                actions={<a href="https://www.baidu.com" target="_blank" rel="noreferrer">查看文档</a>}
             />
             <br />
             <Alert

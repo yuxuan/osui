@@ -1,7 +1,7 @@
 import React from 'react';
 import BrandProvider from '@osui/brand-provider';
 import {QuestionCircleOutlined} from '@ant-design/icons';
-import {Meta, StoryObj} from '@storybook/react';
+import {Meta, StoryObj} from '@storybook/react-vite';
 import FloatButton from '../src';
 
 const meta = {

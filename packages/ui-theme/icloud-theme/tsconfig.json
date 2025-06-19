@@ -2,8 +2,9 @@
     "extends": "../../../tsconfig.json",
     "compilerOptions": {
         "rootDir": "./variables",
-        "outDir": "./vars",
+        "outDir": "./tmp",
         "module": "commonjs",
+        "emitDeclarationOnly": true,
     },
     "include": ["./variables"]
 }

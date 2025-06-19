@@ -4,8 +4,6 @@ import {CollapseProps as AntdCollapseProps, CollapsePanelProps as AntdCollapsePa
 import {IconRightOutlined, IconDownOutlined} from '@osui/icons';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
-// import './index.less';
-// import './patch.less';
 import {useStyle} from './style';
 
 const clsPrefix = 'osui-collapse';
@@ -43,7 +41,7 @@ const Collapse: CollapseInterface = ({className, levelChild, ghost, expandIcon, 
     };
 
     const innerExpandIcon = useCallback(
-        panelProps => {
+        (panelProps: any) => {
             return (
                 panelProps.isActive
                     ? <span className="icon-wrapper"><IconDownOutlined /> </span>

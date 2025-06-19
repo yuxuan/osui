@@ -13,7 +13,6 @@ import classNames from 'classnames';
 import {useBoolean} from '@huse/boolean';
 import {useInterval} from '@huse/timeout';
 import hoistNonReactStatics from 'hoist-non-react-statics';
-// import './index.less';
 import {useStyle} from './style';
 
 const clsPrefix = 'osui-alert';

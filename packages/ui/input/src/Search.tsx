@@ -51,33 +51,33 @@ const Search = React.forwardRef<any, SearchProps>(
         );
         const innerWithSuffixIcon = withSuffixIcon ?? brand === 'icloud';
         const handleFocus = useCallback(
-            e => {
+            (e: any) => {
                 onFocus && onFocus(e);
                 setFocused(true);
             },
             [onFocus]
         );
         const handleBlur = useCallback(
-            e => {
+            (e: any) => {
                 onBlur && onBlur(e);
                 setFocused(false);
             },
             [onBlur]
         );
         const handleSearch = useCallback(
-            e => {
+            (e: any) => {
                 onSearch && onSearch((inputRef.current as any).input.value, e);
             },
             [onSearch]
         );
         const handleClick = useCallback(
-            e => {
+            (e: any) => {
                 handleSearch(e);
             },
             [handleSearch]
         );
         const handleChange = useCallback(
-            e => {
+            (e: any) => {
                 // 点击清除时也要调用onSearch
                 if (e && e.target && e.type === 'click' && onSearch) {
                     onSearch(e.target.value, e);

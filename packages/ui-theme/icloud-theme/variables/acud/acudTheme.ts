@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 // eslint-disable max-lines
 import {ThemeConfig} from 'antd';
 import {components} from './themeComponents';

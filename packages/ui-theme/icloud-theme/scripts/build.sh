@@ -4,20 +4,20 @@ echo "pnpm $(pnpm -v)"
 
 rm -rf es
 swc variables -d es --source-maps
-cp -r tmp/* es
 
+rm -rf lib
+swc variables -d lib --source-maps --config module.type=commonjs
+
+mkdir -p tmp
+tsc --declaration 
+cp -r tmp/* es
+cp -r tmp/* lib
 rm -rf tmp
 
-rm -rf dist
-rm -rf vars
-mkdir -p dist/theme
-mkdir -p vars
-
-tsc
 echo 'tsc done'
 node scripts/build.mjs
 
-cp -r patches/* dist
-cp -r vars/* dist/theme
+cp -r patches/* es
+cp -r patches/* lib
 
 echo "build success"

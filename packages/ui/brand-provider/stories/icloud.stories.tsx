@@ -2,12 +2,12 @@
 import React from 'react';
 import Collapse from '@osui/collapse';
 import Divider from '@osui/divider';
-import BrandProvider, {useBrandContext} from '@osui/brand-provider';
+import BrandProvider, {useBrandContext} from '../src';
 
 export default {
     title: 'FE/BrandProvider',
     component: BrandProvider,
-};
+} as any;
 
 const BrandApp = () => {
     const {brand} = useBrandContext();

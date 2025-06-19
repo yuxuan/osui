@@ -158,6 +158,6 @@ export type {SegmentedProps} from '@osui/segmented';
 export type {AppProps} from '@osui/app';
 export type {TourProps, TourStepProps} from '@osui/tour';
 export type {WatermarkProps} from '@osui/watermark';
-export type {ColorPickerProps} from '@osui/color-picker';
 export type {FlexProps} from '@osui/flex';
 export type {QRCodeProps, QRPropsCanvas, QRPropsSvg} from '@osui/qr-code';
+export type {ColorPickerProps} from '@osui/color-picker';

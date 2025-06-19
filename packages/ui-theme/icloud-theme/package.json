@@ -1,10 +1,10 @@
 {
   "name": "@osui/icloud-theme",
-  "version": "3.1.12",
+  "version": "4.0.0-beta.1",
   "description": "",
-  "main": "dist/theme/index.js",
-  "module": "dist/theme/index.js",
-  "types": "dist/theme/index.d.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "scripts": {
     "lint": "echo 'no lint yet'",
     "build": "sh scripts/build.sh",
@@ -15,10 +15,11 @@
     "watch": "find variables -name '*.ts' | entr scripts/watch.sh"
   },
   "files": [
-    "dist"
+    "lib",
+    "es"
   ],
   "sideEffects": [
-    "dist/**"
+    "lib/**"
   ],
   "devDependencies": {
     "@babel/cli": "^7.10.5",

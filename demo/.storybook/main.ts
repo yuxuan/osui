@@ -10,9 +10,9 @@ function getAbsolutePath(value: string): any {
 }
 const config = {
     ...genConfig(getAbsolutePath, process.cwd()),
-    stories: [
-        '../stories/**/*.stories.[tj]s{,x}',
-        '../stories/**/*.stories.mdx',
-    ],
+    framework: {
+        name: '@storybook/react-vite',
+        options: {},
+    },
 };
 export default config;

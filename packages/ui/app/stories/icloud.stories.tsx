@@ -1,5 +1,5 @@
 import React from 'react';
-import type {Meta, StoryObj} from '@storybook/react';
+import type {Meta, StoryObj} from '@storybook/react-vite';
 import BrandProvider from '@osui/brand-provider/';
 import {Button, Space, Input} from 'antd';
 import App from '../src';

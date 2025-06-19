@@ -1,5 +1,5 @@
 import React, {useRef, useState} from 'react';
-import {Meta} from '@storybook/react';
+import {Meta} from '@storybook/react-vite';
 import {EllipsisOutlined} from '@ant-design/icons';
 import {Button, Divider, Space} from 'antd';
 import BrandProvider from '@osui/brand-provider';
