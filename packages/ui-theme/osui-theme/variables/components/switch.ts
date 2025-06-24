@@ -1,7 +1,7 @@
 export default {
     '--switch-min-width': '44px',
     '--switch-disable-bg': 'var(--theme-disabled-bg)',
-    '--switch-handle-disable-bg': 'var(--color-gray-5)',
+    '--switch-handle-disable-bg': 'var(--color-gray-7)',
     '--switch-hover-bg': 'var(--color-gray-6)',
     '--switch-active-bg': 'var(--color-gray-6)',
     '--switch-checked-hover-bg': 'var(--theme-primary-color-hover)',

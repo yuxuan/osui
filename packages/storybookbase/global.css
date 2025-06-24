@@ -40,7 +40,7 @@ body {
   font-family: var(--theme-font-family);
   font-variant: normal;
   line-height: 1.5;
-  background-color: var(--body-background);
+  background-color: #fff;
   font-feature-settings: 'tnum';
 }
 [tabindex='-1']:focus {

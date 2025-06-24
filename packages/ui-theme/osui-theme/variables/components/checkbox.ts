@@ -1,10 +1,10 @@
 export default {
     '--checkbox-border-color': 'var(--theme-border-color-base)',
-    '--checkbox-hover-bg': 'var(--color-gray-3)',
+    '--checkbox-hover-bg': 'var(--color-gray-9)',
     '--checkbox-hover-border-color': 'var(--theme-border-color-base)',
-    '--checkbox-focus-bg': 'var(--color-gray-1)',
+    '--checkbox-focus-bg': 'var(--color-gray-11)',
     '--checkbox-active-border-color': 'var(--theme-border-color-base)',
-    '--checkbox-disabled-bg': 'var(--color-gray-1)',
+    '--checkbox-disabled-bg': 'var(--color-gray-11)',
     '--checkbox-disabled-border-color': 'var(--theme-border-color-disabled)',
     '--checkbox-disabled-color': 'var(--theme-disabled-color)',
     '--checkbox-checked-bg': 'var(--theme-primary-color)',
@@ -14,7 +14,7 @@ export default {
     '--checkbox-checked-focus-bg': 'var(--theme-primary-color)',
     '--checkbox-checked-focus-border-color': 'var(--theme-border-color-base)',
     '--checkbox-checked-focus-box-shadow': 'var(--theme-component-focus-box-shadow)',
-    '--checkbox-checked-disabled-bg': 'var(--color-gray-1)',
+    '--checkbox-checked-disabled-bg': 'var(--color-gray-11)',
     '--checkbox-checked-disabled-border-color': 'var(--theme-border-color-disabled)',
     '--checkbox-checked-disabled-inner-color': 'var(--theme-border-color-disabled)',
 

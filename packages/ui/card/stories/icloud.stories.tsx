@@ -21,7 +21,7 @@ export const Demo = () => {
         columnGap: '20px',
     };
     const grayboxStyle = {
-        background: 'var(--color-gray-3)',
+        background: 'var(--color-gray-9)',
         height: 72,
     };
 

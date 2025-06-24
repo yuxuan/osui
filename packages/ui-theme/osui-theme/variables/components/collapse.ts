@@ -1,9 +1,9 @@
 export default {
     '--collapse-content-bg': 'var(--theme-component-bg)',
-    '--collapse-header-bg': 'var(--color-gray-2)',
+    '--collapse-header-bg': 'var(--color-gray-10)',
     '--collapse-disabled-color': 'var(--theme-disabled-color)',
     '--collapse-expand-icon-color': 'var(--theme-text-color)',
-    '--collapse-expand-icon-bg': 'var(--color-gray-3)',
+    '--collapse-expand-icon-bg': 'var(--color-gray-9)',
     '--collapse-border-color': '1px solid var(--theme-border-color-base)',
     '--collapse-bg': 'var(--collapse-header-bg)',
     '--collapse-header-font-weight': '600',

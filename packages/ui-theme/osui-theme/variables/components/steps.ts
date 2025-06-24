@@ -1,7 +1,7 @@
 export default {
     '--steps-item-title-height': '30px',
-    '--steps-item-title-color': 'var(--color-gray-7)',
+    '--steps-item-title-color': 'var(--color-gray-5)',
     '--steps-item-icon-color': 'var(--color-gray-6)',
-    '--steps-item-active-icon-bg-color': 'var(--color-gray-9)',
+    '--steps-item-active-icon-bg-color': 'var(--color-gray-2)',
     '--steps-item-active-icon-color': 'var(--theme-component-bg)',
 };

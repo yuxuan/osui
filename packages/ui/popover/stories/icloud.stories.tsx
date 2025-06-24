@@ -291,7 +291,7 @@ export const FormItemPopover = () => {
                             </div>
                         </Form.Item>
                     </Form>
-                    <div style={{fontSize: 12, color: 'var(--color-gray-7)', marginTop: 8}}>
+                    <div style={{fontSize: 12, color: 'var(--color-gray-5)', marginTop: 8}}>
                         {'支持大小写字母，数字和"-_/.”以字母开头，不超过65'}
                     </div>
                 </BrandProvider>

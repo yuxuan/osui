@@ -136,7 +136,7 @@ function replaceColorsInFile(filePath) {
     }
 }
 
-// 执行替换
+// 执行替换, 将所有颜色值替换为变量
 const targetFile = '../variables/acud/acudTheme.ts';
 
 if (fs.existsSync(targetFile)) {
