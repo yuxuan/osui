@@ -15,15 +15,9 @@ cp -r tmp/* lib
 rm -rf tmp
 
 echo 'tsc done'
-
-# 生成CSS变量文件
 node scripts/build.mjs
-
-# 进行变量替换，将变量引用替换为实际值
-echo 'Starting variable replacement...'
-node scripts/advanced-replacer.mjs
 
 cp -r patches/* es
 cp -r patches/* lib
 
-echo "build success"
+echo "build success (without variable replacement)" 

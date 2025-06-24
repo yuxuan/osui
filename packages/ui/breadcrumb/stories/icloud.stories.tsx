@@ -31,6 +31,7 @@ export const Antd5Demo = () => {
                 如果需要蓝色hover，放个<code>a</code>标签
             </p>
             <button
+                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
             >
                 切换{cssVar ? '不' : ''}使用cssVar

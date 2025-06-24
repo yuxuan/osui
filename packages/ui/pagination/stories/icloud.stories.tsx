@@ -44,6 +44,7 @@ export const Demo = () => {
                 <p>SizeChanger的实现也不一致，交互需要在头部，而antd内置为在QuickJumper旁边，且不能调整位置</p>
             </Blockquote>
             <button
+                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
             >
                 切换{cssVar ? '不' : ''}使用cssVar

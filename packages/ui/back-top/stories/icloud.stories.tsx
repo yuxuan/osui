@@ -22,6 +22,7 @@ export const Demo = () => {
             <p>返回页面顶部的操作按钮</p>
             <h3>一、使用场景</h3>
             <button
+                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
             >
                 切换{cssVar ? '不' : ''}使用cssVar

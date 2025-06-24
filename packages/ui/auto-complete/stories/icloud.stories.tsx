@@ -131,6 +131,7 @@ export const Demo1 = () => {
                 <p><strong>FE说明：</strong>和Select Search的区别是，Select Search只是筛选select里面的内容，最终还是要选中某个选项的</p>
             </Blockquote>
             <button
+                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
             >
                 切换{cssVar ? '不' : ''}使用cssVar

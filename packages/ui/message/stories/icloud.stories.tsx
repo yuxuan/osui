@@ -125,6 +125,7 @@ export const NewDemo = () => {
     return (
         <BrandProvider theme={theme}>
             <button
+                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
             >
                 切换{cssVar ? '不' : ''}使用cssVar
@@ -227,6 +228,7 @@ export const Demo = () => {
     return (
         <BrandProvider theme={theme}>
             <button
+                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
             >
                 切换{cssVar ? '不' : ''}使用cssVar

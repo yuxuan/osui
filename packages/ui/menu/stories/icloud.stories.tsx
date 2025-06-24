@@ -160,6 +160,7 @@ export const Vertical = () => {
     return (
         <BrandProvider theme={theme}>
             <button
+                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
             >
                 切换{cssVar ? '不' : ''}使用cssVar

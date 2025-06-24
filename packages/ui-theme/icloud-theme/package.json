@@ -8,6 +8,8 @@
   "scripts": {
     "lint": "echo 'no lint yet'",
     "build": "sh scripts/build.sh",
+    "build:no-replace": "sh scripts/build-original.sh",
+    "replace-vars": "node scripts/advanced-replacer.mjs",
     "prepack": "pnpm build",
     "storybook": "start-storybook -p 8700",
     "clean": "rm -rf node_modules && rm -rf dist",

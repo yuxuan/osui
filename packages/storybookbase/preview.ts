@@ -1,4 +1,6 @@
 import type {Preview} from '@storybook/react-vite';
+import '../ui-theme/icloud-theme/es/vars.css';
+import './global.css';
 
 const preview: Preview = {
     parameters: {

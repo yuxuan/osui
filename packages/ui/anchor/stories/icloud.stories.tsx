@@ -29,6 +29,7 @@ export const Demo = () => {
             </p>
             <p><strong>FE说明：</strong>页面内的导航见Menu，本组件只包含设计稿中其它样式的展示</p>
             <button
+                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
             >
                 切换{cssVar ? '不' : ''}使用cssVar
