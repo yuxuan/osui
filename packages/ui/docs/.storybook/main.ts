@@ -12,7 +12,6 @@ const config = {
     ...genConfig(getAbsolutePath, process.cwd()),
     stories: [
         '../stories/**/*.stories.[tj]s{,x}',
-        '../stories/**/*.stories.mdx',
     ],
 };
 export default config;

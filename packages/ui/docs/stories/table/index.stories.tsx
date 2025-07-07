@@ -83,30 +83,11 @@ export const Demo = () => {
         <div style={{padding: 30}}>
             <BrandProvider
                 brand="icloud"
-                theme={{
-                    components: {
-                        Table: {
-                            paddingXS: 5.5,
-                        },
-                    },
-                }}
             >
                 <Table
                     ref={ref}
                     columns={columns}
                     dataSource={data}
-                    pagination={{
-                        showSizeChanger: true,
-                        showQuickJumper: true,
-                        // showQuickJumper: {
-                        //     goButton:  <button>Go</button>
-                        // },
-                        // simple: true,
-                        defaultPageSize: 1,
-                        pageSizeOptions: [1, 2, 10, 100],
-                        // position: ['bottomRight', 'topRight']
-                        position: ['bottomLeft', 'topRight'],
-                    }}
                 />
                 <br />
                 <p>小表格</p>
@@ -181,7 +162,7 @@ export const Border = () => {
         <div style={{padding: 30}}>
             <BrandProvider brand="icloud">
                 <div>Antd的bordered=false，没有列border</div>
-                <Table columns={columns} dataSource={data} bordered={false} />
+                <Table columns={columns} dataSource={data} bordered />
                 <div style={{paddingBottom: 30}} />
                 <div>noRowBorder，head保留border</div>
                 <Table columns={columns} dataSource={data} noRowBorder />
@@ -207,7 +188,21 @@ export const ExpandableDemo = () => {
             dataIndex: 'age',
             sorter: {
                 compare: (a, b) => a.age - b.age,
-                multiple: 3,
+                multiple: 2,
+            },
+        },
+        {
+            title: 'Test',
+            dataIndex: 'test',
+            filters: [
+                {
+                    text: '1',
+                    value: '1',
+                },
+            ],
+            sorter: {
+                compare: (a, b) => a.test - b.test,
+                multiple: 1,
             },
         },
         {
@@ -229,9 +224,6 @@ export const ExpandableDemo = () => {
         {
             title: 'Action',
             key: 'action',
-            sorter: {
-                multiple: true,
-            },
             render: () => (
                 <Space size="small">
                     <a>Delete</a>
@@ -246,6 +238,7 @@ export const ExpandableDemo = () => {
             key: i,
             name: 'John Brown',
             age: `${Math.floor(Math.random() * 10)}2`,
+            test: `${Math.floor(Math.random() * 10)}`,
             address: `New York No. ${i} Lake Park`,
             description: `My name is John Brown, I am ${i}2 years old, living in New York No. ${i} Lake Park.`,
         });
@@ -257,7 +250,17 @@ export const ExpandableDemo = () => {
 
     return (
         <>
-            <BrandProvider brand="icloud">
+            <BrandProvider
+                brand="icloud"
+                theme={{
+                    components: {
+                        Table: {
+                            bodySortBg: 'transparent',
+                            headerSortActiveBg: '#f7f7f9',
+                        },
+                    },
+                }}
+            >
                 <Table
                     columns={columns}
                     dataSource={data}

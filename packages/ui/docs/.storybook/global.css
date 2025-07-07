@@ -12,6 +12,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  background: #fff !important;
 }
 input::-ms-clear,
 input::-ms-reveal {
@@ -40,7 +41,7 @@ body {
   font-family: var(--theme-font-family);
   font-variant: normal;
   line-height: 1.5;
-  background-color: var(--body-background);
+  background-color: #fff;
   font-feature-settings: 'tnum';
 }
 [tabindex='-1']:focus {

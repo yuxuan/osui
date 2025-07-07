@@ -36,7 +36,6 @@ const withTM = require('next-transpile-modules')([
   "@osui/image",
   "@osui/input",
   "@osui/input-number",
-  "@osui/joyride",
   "@osui/layout",
   "@osui/list",
   "@osui/markdown",

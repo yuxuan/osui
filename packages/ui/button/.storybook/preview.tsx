@@ -1,4 +1,3 @@
-import React from 'react';
 import type {Preview} from '@storybook/react';
 import {DocsPage, DocsContainer} from '@storybook/addon-docs';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
@@ -25,7 +24,7 @@ const preview: Preview = {
     },
     decorators: [
         (Story) => (
-            <div style= {{ padding: 30, background: '#fff' }} >
+            <div style= {{ background: '#fff' }} >
                 <Story />
             </div>
         )

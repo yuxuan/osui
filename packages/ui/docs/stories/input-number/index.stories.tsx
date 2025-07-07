@@ -2,7 +2,6 @@
 import React from 'react';
 import Form from '@osui/form';
 import Input from '@osui/input';
-import FlexCentered from '@osui/flex-centered';
 import BrandProvider from '@osui/brand-provider';
 import InputNumber from '@osui/input-number';
 
@@ -68,9 +67,34 @@ export const Demo = () => {
     );
 };
 
+
+const PlusIcon = () => (
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
+        <title>8.Icon图标✨/2.操作/加</title>
+        <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" strokeLinecap="round">
+            <g stroke="#151B26">
+                <line x1="2" y1="8" x2="14" y2="8" />
+                <line x1="2" y1="8" x2="14" y2="8" transform="translate(8, 8) rotate(90) translate(-8, -8)" />
+            </g>
+        </g>
+    </svg>
+);
+
+const MinusIcon = () => (
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
+        <title>8.Icon图标✨/2.操作/减@2x</title>
+        <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" strokeLinecap="round">
+            <g stroke="#151B26">
+                <line x1="2" y1="8" x2="14" y2="8" />
+            </g>
+        </g>
+    </svg>
+);
+
 const InputNumberCompact = InputNumber.InputNumberCompact;
 
 export const InputNumberStrongDemo = () => {
+
     return (
         <BrandProvider>
             <InputNumberCompact />
@@ -87,9 +111,11 @@ export const InputNumberStrongDemo = () => {
                     validateStatus="error"
                     help={'格式错误，请按提示规则录入'}
                 >
-                    <FlexCentered>
-                        <InputNumberCompact tailLabel="GB" />
-                    </FlexCentered>
+                    <InputNumberCompact
+                        plusIcon={<PlusIcon />}
+                        minusIcon={<MinusIcon />}
+                        tailLabel="GB"
+                    />
                 </Form.Item>
                 <Form.Item
                     validateMessageLayout="inline"

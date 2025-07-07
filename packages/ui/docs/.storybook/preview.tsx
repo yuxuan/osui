@@ -4,6 +4,7 @@ import {DocsPage, DocsContainer} from '@storybook/addon-docs';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {useDarkMode} from 'storybook-dark-mode';
 import '@osui/icloud-theme/dist/theme/vars.css';
+import BrandProvider from '@osui/brand-provider';
 import {themes} from '@storybook/theming';
 import './global.css';
 const preview: Preview = {
@@ -40,7 +41,6 @@ const preview: Preview = {
     decorators: [
         (Story) => {
             const isDarkMode = useDarkMode();
-            console.log(123, isDarkMode);
             useEffect(
                 () => {
                     document.documentElement.dataset.theme = isDarkMode ? "dark" : "light";
@@ -48,8 +48,10 @@ const preview: Preview = {
                 [isDarkMode]
             );
             return (
-                <div style={{ padding: 30, background: '#fff' }} >
-                    <Story />
+                <div style={{ background: '#fff' }} >
+                    <BrandProvider brand="icloud">
+                        <Story />
+                    </BrandProvider>
                 </div>
             );
         }

@@ -22,7 +22,7 @@ export default (getAbsolutePath: (name: string) => any, __dirname: string) => {
             // '../stories/**/*.stories.[tj]s{,x}',
             // '../stories/**/*.stories.mdx',
             '../stories/**/icloud.stories.[tj]s{,x}',
-            '../stories/**/icloud.stories.mdx',
+            // '../stories/**/icloud.stories.mdx',
         ],
         addons: [
             {

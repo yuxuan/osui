@@ -46,7 +46,6 @@ const all = [
     'image',
     'input',
     'input-number',
-    'joyride',
     'layout',
     'list',
     'markdown',
