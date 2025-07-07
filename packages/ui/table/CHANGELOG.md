@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.13](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.1.8...v3.1.13) (2025-07-07)
+
+
+### Bug Fixes
+
+* input-number table ([4dcabb1](https://gitee.com/gitee-fe/osui/tree/master/commits/4dcabb15fa99af41a5947a1e3ea4b1e24485a5b0))
+* table ([7c35ea1](https://gitee.com/gitee-fe/osui/tree/master/commits/7c35ea1f38f56bd28e3d5054c18111ea44d37cea))
+* table pagination调整 ([81ba0a7](https://gitee.com/gitee-fe/osui/tree/master/commits/81ba0a769a49741e90ed783fd7a6b759b33e13c2))
+* tree-select icon, pagination icon, switch size ([5d28ebf](https://gitee.com/gitee-fe/osui/tree/master/commits/5d28ebfbfe3963998c42820ac29b468197df5e69))
+* 优化empty ([cc31b1b](https://gitee.com/gitee-fe/osui/tree/master/commits/cc31b1bedf615e78d5da21664f55dde2615927ff))
+* 优化table sorter样式 ([38f41f2](https://gitee.com/gitee-fe/osui/tree/master/commits/38f41f2376cc3d8534b22b2605d4fe5bac2bd380))
+* 修复loading ([6f46044](https://gitee.com/gitee-fe/osui/tree/master/commits/6f46044201b56e57fcf32b2618b2554b15394593))
+* 修复peer ([d069841](https://gitee.com/gitee-fe/osui/tree/master/commits/d069841e55f1287ab3e98c4e0a70db14b994e1b7))
+* 修复space, carousel报错, 升级reksript, 修复一点点type问题 ([6c8ec58](https://gitee.com/gitee-fe/osui/tree/master/commits/6c8ec58c90fe5cc63ea6b332e6e443461d1285f2))
+* 修复table sizechanger ([2832f4c](https://gitee.com/gitee-fe/osui/tree/master/commits/2832f4cab889ac5c72be43dc93dbc36e7e126c44))
+* 修复typescript 类型错误 ([f18efab](https://gitee.com/gitee-fe/osui/tree/master/commits/f18efab2a15a47cc163dceba128b521c5522063f))
+* 修复一下类型 ([fc7d962](https://gitee.com/gitee-fe/osui/tree/master/commits/fc7d962f64bd2afcc98cfcdb6217d756ece5304d))
+* 尝试修复version ([6e644e7](https://gitee.com/gitee-fe/osui/tree/master/commits/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+* 尝试修复version ([3353ccc](https://gitee.com/gitee-fe/osui/tree/master/commits/3353ccca664ebaa5998fb53977dc53d8fe083b94))
+* 调整icon版本 ([c19768e](https://gitee.com/gitee-fe/osui/tree/master/commits/c19768e1cb62800e4820e0b49cce2eb000515c23))
+
+
+
+
+
 ## [3.1.12](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v3.1.12) (2025-04-24)
 
 

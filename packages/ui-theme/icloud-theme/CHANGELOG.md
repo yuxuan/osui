@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.13](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.1.8...v3.1.13) (2025-07-07)
+
+
+### Bug Fixes
+
+* button主题调整 ([cf33f3d](https://gitee.com/gitee-fe/osui/tree/master/commits/cf33f3d0840e5bf6145c0896f8a54c03bbed983b))
+* icloud-theme large button字号调整 ([905983e](https://gitee.com/gitee-fe/osui/tree/master/commits/905983e57d3660fa81b164093d51d2131e715c91))
+* PageHeader title字号调整 ([15ef6fb](https://gitee.com/gitee-fe/osui/tree/master/commits/15ef6fb9557e0f303180c30e5e4d5152a61a779d))
+* table ([7c35ea1](https://gitee.com/gitee-fe/osui/tree/master/commits/7c35ea1f38f56bd28e3d5054c18111ea44d37cea))
+* 修复icloud-theme 构建出错 ([94c53a6](https://gitee.com/gitee-fe/osui/tree/master/commits/94c53a639db7d4af62522f13e168ce00d762fd6a))
+* 修复icloud-theme 构建出错 ([3b83276](https://gitee.com/gitee-fe/osui/tree/master/commits/3b832764395d324d116906f2106ab4380c63ba5b))
+* 修复space, carousel报错, 升级reksript, 修复一点点type问题 ([6c8ec58](https://gitee.com/gitee-fe/osui/tree/master/commits/6c8ec58c90fe5cc63ea6b332e6e443461d1285f2))
+* 调整icon版本 ([c19768e](https://gitee.com/gitee-fe/osui/tree/master/commits/c19768e1cb62800e4820e0b49cce2eb000515c23))
+* 调整modal关闭位置,之前的用法关闭掉 ([ae0d210](https://gitee.com/gitee-fe/osui/tree/master/commits/ae0d2102776865959850109e18a47454901fd091))
+
+
+
+
+
 ## [3.1.12](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v3.1.12) (2025-04-24)
 
 

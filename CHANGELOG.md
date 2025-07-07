@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.13](https://github.com/yuxuan/osui/compare/v2.1.8...v3.1.13) (2025-07-07)
+
+
+### Bug Fixes
+
+* button主题调整 ([cf33f3d](https://github.com/yuxuan/osui/commit/cf33f3d0840e5bf6145c0896f8a54c03bbed983b))
+* empty ([9f28edd](https://github.com/yuxuan/osui/commit/9f28edd38343e77ad3871353d1ff3b1b4e549fa8))
+* form 调整嵌套时候的缩进 ([e35221e](https://github.com/yuxuan/osui/commit/e35221e812a49607ddcb6bf6ed96ab91d20b5c8d))
+* icloud-theme large button字号调整 ([905983e](https://github.com/yuxuan/osui/commit/905983e57d3660fa81b164093d51d2131e715c91))
+* input number 增加tailLabel ([1ab91b1](https://github.com/yuxuan/osui/commit/1ab91b1b3d218854ce9a2b8a4cce1ab0453073d8))
+* input-number table ([4dcabb1](https://github.com/yuxuan/osui/commit/4dcabb15fa99af41a5947a1e3ea4b1e24485a5b0))
+* input下拉框border focus时显示错位 ([11bb975](https://github.com/yuxuan/osui/commit/11bb9758d54aa741e095ef0ee2fda882d69612f2))
+* list修复loading的问题 ([121da21](https://github.com/yuxuan/osui/commit/121da21c5795ee2125528b60e0f209b9b1b4bdeb))
+* message first child margin ([887d58b](https://github.com/yuxuan/osui/commit/887d58bca9a499d213d5a5f4117f03d0c664e5a5))
+* modal ([6550c59](https://github.com/yuxuan/osui/commit/6550c59106ae8d2a584833be9382aa672d52e467))
+* modal.confirm centere ([2ce6941](https://github.com/yuxuan/osui/commit/2ce694108b9d9f3f45c3de4b6a49112ed0818284))
+* PageHeader title字号调整 ([15ef6fb](https://github.com/yuxuan/osui/commit/15ef6fb9557e0f303180c30e5e4d5152a61a779d))
+* radio build ([7b8e163](https://github.com/yuxuan/osui/commit/7b8e163dc642ac26b23c0d5869cb41ef74e5af17))
+* table ([7c35ea1](https://github.com/yuxuan/osui/commit/7c35ea1f38f56bd28e3d5054c18111ea44d37cea))
+* table pagination调整 ([81ba0a7](https://github.com/yuxuan/osui/commit/81ba0a769a49741e90ed783fd7a6b759b33e13c2))
+* tree-select icon, pagination icon, switch size ([5d28ebf](https://github.com/yuxuan/osui/commit/5d28ebfbfe3963998c42820ac29b468197df5e69))
+* 优化check版本脚本 ([1b84b16](https://github.com/yuxuan/osui/commit/1b84b163da4f141fcb2bbd6c284f2eb48e49fa43))
+* 优化empty ([cc31b1b](https://github.com/yuxuan/osui/commit/cc31b1bedf615e78d5da21664f55dde2615927ff))
+* 优化table sorter样式 ([38f41f2](https://github.com/yuxuan/osui/commit/38f41f2376cc3d8534b22b2605d4fe5bac2bd380))
+* 修复build demo ([c1d7eaa](https://github.com/yuxuan/osui/commit/c1d7eaacaffa910fac2d853fe4727708e891079f))
+* 修复build demo ([9d38e39](https://github.com/yuxuan/osui/commit/9d38e3990366fccf73e65f25be5c34b9760aad93))
+* 修复build demo ([f756a93](https://github.com/yuxuan/osui/commit/f756a93374fea2d98963959d32a7324deecad4f5))
+* 修复build demo ([5c0d037](https://github.com/yuxuan/osui/commit/5c0d03750fd73f7f97f29a66fdfa0ba6dada977b))
+* 修复build demo ([da53623](https://github.com/yuxuan/osui/commit/da5362307829118a10347d66b2294ef14c77b3b3))
+* 修复build demo ([2bb6ffe](https://github.com/yuxuan/osui/commit/2bb6ffe722178d5dd2a5a337fc12c0b932a49494))
+* 修复checkbox,tree,tree-select ([eb3dd7c](https://github.com/yuxuan/osui/commit/eb3dd7c4c00f68c702be3d0170dc2df8a2e01400))
+* 修复icloud-theme 构建出错 ([94c53a6](https://github.com/yuxuan/osui/commit/94c53a639db7d4af62522f13e168ce00d762fd6a))
+* 修复icloud-theme 构建出错 ([3b83276](https://github.com/yuxuan/osui/commit/3b832764395d324d116906f2106ab4380c63ba5b))
+* 修复input-group-addon样式v1 acud冲突的问题 ([0fb48b7](https://github.com/yuxuan/osui/commit/0fb48b7a92fd94fafb40da3934c5ffaada9b903f))
+* 修复loading ([6f46044](https://github.com/yuxuan/osui/commit/6f46044201b56e57fcf32b2618b2554b15394593))
+* 修复peer ([d069841](https://github.com/yuxuan/osui/commit/d069841e55f1287ab3e98c4e0a70db14b994e1b7))
+* 修复peerDeps ([6baf231](https://github.com/yuxuan/osui/commit/6baf23135aa808184fd0b257902c6f0c45ecdfeb))
+* 修复space, carousel报错, 升级reksript, 修复一点点type问题 ([6c8ec58](https://github.com/yuxuan/osui/commit/6c8ec58c90fe5cc63ea6b332e6e443461d1285f2))
+* 修复table sizechanger ([2832f4c](https://github.com/yuxuan/osui/commit/2832f4cab889ac5c72be43dc93dbc36e7e126c44))
+* 修复tab表头的字体大小 ([98d8473](https://github.com/yuxuan/osui/commit/98d847370e2306d642f8414a340db846bdb82e90))
+* 修复tag ([5a290d2](https://github.com/yuxuan/osui/commit/5a290d2ab8db9e7f667c5ac9c0321ff1eb0d46a6))
+* 修复themeprovider build ([72a8fa4](https://github.com/yuxuan/osui/commit/72a8fa42e1e81f2b8626908bdceb5f9a3c610cca))
+* 修复tree-select依赖问题 ([9b5fc94](https://github.com/yuxuan/osui/commit/9b5fc94c2907520100ba659fc5f11d24efc8c3fa))
+* 修复types ([41948c2](https://github.com/yuxuan/osui/commit/41948c257454f09b3a4903f1edd6d77c79a55cbb))
+* 修复typescript 类型错误 ([f18efab](https://github.com/yuxuan/osui/commit/f18efab2a15a47cc163dceba128b521c5522063f))
+* 修复一下react import ([26b3b62](https://github.com/yuxuan/osui/commit/26b3b62c56832ac843cc6c78ef12605580e6de71))
+* 修复一下类型 ([fc7d962](https://github.com/yuxuan/osui/commit/fc7d962f64bd2afcc98cfcdb6217d756ece5304d))
+* 发布一下patch版本 ([0290a4e](https://github.com/yuxuan/osui/commit/0290a4e2d628ebf761cf1952989d3f56c7f0f42a))
+* 发版 ([9bce571](https://github.com/yuxuan/osui/commit/9bce571ffaa3229d0429366a9dacd9d7b50703a8))
+* 发版 ([6995bd7](https://github.com/yuxuan/osui/commit/6995bd7ac32a176b0bc26a16b5b9b58e90f32b9d))
+* 处理radio、 switch、tag、 result、step样式 ([#23](https://github.com/yuxuan/osui/issues/23)) ([09242ac](https://github.com/yuxuan/osui/commit/09242acfa6f6f261e8336481d8177bd3f8de2497))
+* 尝试修复version ([6e644e7](https://github.com/yuxuan/osui/commit/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+* 尝试修复version ([3353ccc](https://github.com/yuxuan/osui/commit/3353ccca664ebaa5998fb53977dc53d8fe083b94))
+* 更新demo ([a2302d7](https://github.com/yuxuan/osui/commit/a2302d7dd54b6e253dbdc9d4145e8f1ffae7a49b))
+* 更新docs ([fbaefcd](https://github.com/yuxuan/osui/commit/fbaefcd59a4eb175ad478bac0d66fcb02d2c4b3c))
+* 更新sync cnpm脚本 ([a21012b](https://github.com/yuxuan/osui/commit/a21012b50d7b68cf44dd3a7ca400fd877b6b9d01))
+* 移除joyride ([7177428](https://github.com/yuxuan/osui/commit/717742881d3c3ea98c73e6ebcc7cd2ad505f412a))
+* 调整docs ([1ddf048](https://github.com/yuxuan/osui/commit/1ddf048901afbeb59c64bd0417cf43242b964bda))
+* 调整dropdown和menu ([35d503f](https://github.com/yuxuan/osui/commit/35d503fb44fbc74c851809c07ea5695280e95bb1))
+* 调整icon版本 ([c19768e](https://github.com/yuxuan/osui/commit/c19768e1cb62800e4820e0b49cce2eb000515c23))
+* 调整message ([1d750c1](https://github.com/yuxuan/osui/commit/1d750c1252d0f7eee445ca160f70b80cea57a263))
+* 调整modal关闭位置,之前的用法关闭掉 ([ae0d210](https://github.com/yuxuan/osui/commit/ae0d2102776865959850109e18a47454901fd091))
+* 调整select和radio ([e5cc2e7](https://github.com/yuxuan/osui/commit/e5cc2e7e0fa3dcfe8b87170d2d34a3db1a5d535e))
+* 调整slider ([c489d31](https://github.com/yuxuan/osui/commit/c489d31d11fad85689798d2c400d4e1153a40fdb))
+* 调整timeline, upload ([b8ef6c6](https://github.com/yuxuan/osui/commit/b8ef6c628f7aab0e4229f23bacbfaef63a81a670))
+* 调整tooltip和breadcrumb ([2aee4a9](https://github.com/yuxuan/osui/commit/2aee4a987a1e585e00a7f7e66a990701eafd1d01))
+* 调整useMode confirmFunc类型 ([#7](https://github.com/yuxuan/osui/issues/7)) ([ace8554](https://github.com/yuxuan/osui/commit/ace85547750d990e2646f0e838cc2d12604349eb))
+
+
+
+
+
 ## [3.1.12](https://github.com/yuxuan/osui/compare/v3.1.0...v3.1.12) (2025-04-24)
 
 

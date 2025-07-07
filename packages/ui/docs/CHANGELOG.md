@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.13](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.1.8...v3.1.13) (2025-07-07)
+
+
+### Bug Fixes
+
+* button主题调整 ([cf33f3d](https://gitee.com/gitee-fe/osui/tree/master/commits/cf33f3d0840e5bf6145c0896f8a54c03bbed983b))
+* 修复space, carousel报错, 升级reksript, 修复一点点type问题 ([6c8ec58](https://gitee.com/gitee-fe/osui/tree/master/commits/6c8ec58c90fe5cc63ea6b332e6e443461d1285f2))
+* 修复typescript 类型错误 ([f18efab](https://gitee.com/gitee-fe/osui/tree/master/commits/f18efab2a15a47cc163dceba128b521c5522063f))
+* 尝试修复version ([6e644e7](https://gitee.com/gitee-fe/osui/tree/master/commits/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+* 尝试修复version ([3353ccc](https://gitee.com/gitee-fe/osui/tree/master/commits/3353ccca664ebaa5998fb53977dc53d8fe083b94))
+* 更新demo ([a2302d7](https://gitee.com/gitee-fe/osui/tree/master/commits/a2302d7dd54b6e253dbdc9d4145e8f1ffae7a49b))
+* 更新docs ([fbaefcd](https://gitee.com/gitee-fe/osui/tree/master/commits/fbaefcd59a4eb175ad478bac0d66fcb02d2c4b3c))
+* 移除joyride ([7177428](https://gitee.com/gitee-fe/osui/tree/master/commits/717742881d3c3ea98c73e6ebcc7cd2ad505f412a))
+* 调整docs ([1ddf048](https://gitee.com/gitee-fe/osui/tree/master/commits/1ddf048901afbeb59c64bd0417cf43242b964bda))
+* 调整dropdown和menu ([35d503f](https://gitee.com/gitee-fe/osui/tree/master/commits/35d503fb44fbc74c851809c07ea5695280e95bb1))
+* 调整icon版本 ([c19768e](https://gitee.com/gitee-fe/osui/tree/master/commits/c19768e1cb62800e4820e0b49cce2eb000515c23))
+* 调整modal关闭位置,之前的用法关闭掉 ([ae0d210](https://gitee.com/gitee-fe/osui/tree/master/commits/ae0d2102776865959850109e18a47454901fd091))
+
+
+
+
+
 ## [3.1.12](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v3.1.12) (2025-04-24)
 
 

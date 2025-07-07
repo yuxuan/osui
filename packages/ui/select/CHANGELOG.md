@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.13](https://gitee.com/gitee-fe/osui/tree/master/compare/v2.1.8...v3.1.13) (2025-07-07)
+
+
+### Bug Fixes
+
+* tree-select icon, pagination icon, switch size ([5d28ebf](https://gitee.com/gitee-fe/osui/tree/master/commits/5d28ebfbfe3963998c42820ac29b468197df5e69))
+* 优化empty ([cc31b1b](https://gitee.com/gitee-fe/osui/tree/master/commits/cc31b1bedf615e78d5da21664f55dde2615927ff))
+* 修复peer ([d069841](https://gitee.com/gitee-fe/osui/tree/master/commits/d069841e55f1287ab3e98c4e0a70db14b994e1b7))
+* 修复peerDeps ([6baf231](https://gitee.com/gitee-fe/osui/tree/master/commits/6baf23135aa808184fd0b257902c6f0c45ecdfeb))
+* 修复space, carousel报错, 升级reksript, 修复一点点type问题 ([6c8ec58](https://gitee.com/gitee-fe/osui/tree/master/commits/6c8ec58c90fe5cc63ea6b332e6e443461d1285f2))
+* 修复typescript 类型错误 ([f18efab](https://gitee.com/gitee-fe/osui/tree/master/commits/f18efab2a15a47cc163dceba128b521c5522063f))
+* 尝试修复version ([6e644e7](https://gitee.com/gitee-fe/osui/tree/master/commits/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+* 尝试修复version ([3353ccc](https://gitee.com/gitee-fe/osui/tree/master/commits/3353ccca664ebaa5998fb53977dc53d8fe083b94))
+* 调整dropdown和menu ([35d503f](https://gitee.com/gitee-fe/osui/tree/master/commits/35d503fb44fbc74c851809c07ea5695280e95bb1))
+* 调整icon版本 ([c19768e](https://gitee.com/gitee-fe/osui/tree/master/commits/c19768e1cb62800e4820e0b49cce2eb000515c23))
+* 调整select和radio ([e5cc2e7](https://gitee.com/gitee-fe/osui/tree/master/commits/e5cc2e7e0fa3dcfe8b87170d2d34a3db1a5d535e))
+
+
+
+
+
 ## [3.1.12](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v3.1.12) (2025-04-24)
 
 
