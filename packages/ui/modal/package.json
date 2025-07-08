@@ -1,6 +1,6 @@
 {
   "name": "@osui/modal",
-  "version": "4.0.0-beta.1",
+  "version": "5.0.0-beta.1",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -41,12 +41,12 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.23.2",
     "@chromatic-com/storybook": "4.0.0",
-    "@osui/brand-provider": "workspace:^4.0.0-beta.1",
-    "@osui/button": "workspace:^4.0.0-beta.1",
-    "@osui/config-provider": "workspace:^4.0.0-beta.1",
-    "@osui/icloud-theme": "workspace:^4.0.0-beta.1",
-    "@osui/icons": "^3.0.0",
-    "@osui/space": "workspace:^4.0.0-beta.1",
+    "@osui/brand-provider": "^5.0.0-beta.1",
+    "@osui/button": "^5.0.0-beta.1",
+    "@osui/config-provider": "^5.0.0-beta.1",
+    "@osui/icloud-theme": "^5.0.0-beta.1",
+    "@osui/icons": "^5.0.0-beta.1",
+    "@osui/space": "^5.0.0-beta.1",
     "@reskript/cli": "^6.1.1",
     "@reskript/cli-lint": "^6.1.1",
     "@reskript/config-lint": "^6.1.1",
@@ -82,7 +82,7 @@
     "vite": "^6.3.5"
   },
   "peerDependencies": {
-    "@osui/icons": "^3.0.0",
+    "@osui/icons": "^5.0.0-beta.1",
     "antd": "^5.0.0",
     "react": ">=17.0.0",
     "react-dom": ">=17.0.0"

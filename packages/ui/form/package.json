@@ -1,6 +1,6 @@
 {
   "name": "@osui/form",
-  "version": "4.0.0-beta.1",
+  "version": "5.0.0-beta.1",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -33,18 +33,19 @@
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.23.2",
-    "@osui/brand-provider": "workspace:^4.0.0-beta.1",
-    "@osui/button": "workspace:^4.0.0-beta.1",
-    "@osui/checkbox": "workspace:^4.0.0-beta.1",
-    "@osui/date-picker": "workspace:^4.0.0-beta.1",
-    "@osui/divider": "workspace:^4.0.0-beta.1",
-    "@osui/icloud-theme": "workspace:^4.0.0-beta.1",
-    "@osui/icons": "^3.0.0",
-    "@osui/input": "workspace:^4.0.0-beta.1",
-    "@osui/input-number": "workspace:^4.0.0-beta.1",
-    "@osui/radio": "workspace:^4.0.0-beta.1",
-    "@osui/select": "workspace:^4.0.0-beta.1",
-    "@osui/switch": "workspace:^4.0.0-beta.1",
+    "@chromatic-com/storybook": "4.0.0",
+    "@osui/brand-provider": "^5.0.0-beta.1",
+    "@osui/button": "^5.0.0-beta.1",
+    "@osui/checkbox": "^5.0.0-beta.1",
+    "@osui/date-picker": "^5.0.0-beta.1",
+    "@osui/divider": "^5.0.0-beta.1",
+    "@osui/icloud-theme": "^5.0.0-beta.1",
+    "@osui/icons": "^5.0.0-beta.1",
+    "@osui/input": "^5.0.0-beta.1",
+    "@osui/input-number": "^5.0.0-beta.1",
+    "@osui/radio": "^5.0.0-beta.1",
+    "@osui/select": "^5.0.0-beta.1",
+    "@osui/switch": "^5.0.0-beta.1",
     "@storybook/addon-docs": "9.0.11",
     "@storybook/cli": "9.0.11",
     "@storybook/react-vite": "9.0.11",
@@ -74,8 +75,7 @@
     "stylelint": "^14.0.0",
     "ts-jest": "^27.0.3",
     "typescript": "^4.4.3",
-    "vite": "^6.3.5",
-    "@chromatic-com/storybook": "4.0.0"
+    "vite": "^6.3.5"
   },
   "peerDependencies": {
     "antd": "^5.0.0",
@@ -83,7 +83,7 @@
     "react-dom": ">=17.0.0"
   },
   "dependencies": {
-    "@osui/brand-provider": "workspace:^4.0.0-beta.1",
+    "@osui/brand-provider": "^5.0.0-beta.1",
     "classnames": "^2.3.1"
   },
   "repository": {

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0-beta.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v5.0.0-beta.1) (2025-07-08)
+
+
+### Bug Fixes
+
+* tree-select icon, pagination icon, switch size ([5d28ebf](https://gitee.com/gitee-fe/osui/tree/master/commits/5d28ebfbfe3963998c42820ac29b468197df5e69))
+* 优化empty ([cc31b1b](https://gitee.com/gitee-fe/osui/tree/master/commits/cc31b1bedf615e78d5da21664f55dde2615927ff))
+* 尝试修复version ([6e644e7](https://gitee.com/gitee-fe/osui/tree/master/commits/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+* 调整select和radio ([e5cc2e7](https://gitee.com/gitee-fe/osui/tree/master/commits/e5cc2e7e0fa3dcfe8b87170d2d34a3db1a5d535e))
+
+
+### Features
+
+* 修复大部分样式问题 ([fb36e90](https://gitee.com/gitee-fe/osui/tree/master/commits/fb36e904967ed2528d0f6bb5a35df1f345896c21))
+
+
+
+
+
 # [4.0.0-beta.1](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v4.0.0-beta.1) (2025-06-19)
 
 

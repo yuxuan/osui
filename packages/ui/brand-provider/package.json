@@ -1,6 +1,6 @@
 {
   "name": "@osui/brand-provider",
-  "version": "4.0.0-beta.1",
+  "version": "5.0.0-beta.1",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -34,12 +34,12 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.23.2",
     "@chromatic-com/storybook": "4.0.0",
-    "@osui/collapse": "workspace:^4.0.0-beta.1",
-    "@osui/divider": "workspace:^4.0.0-beta.1",
-    "@osui/icloud-theme": "workspace:^4.0.0-beta.1",
-    "@osui/icons": "^3.1.0-alpha.14",
-    "@osui/message": "workspace:^4.0.0-beta.1",
-    "@osui/modal": "workspace:^4.0.0-beta.1",
+    "@osui/collapse": "^5.0.0-beta.1",
+    "@osui/divider": "^5.0.0-beta.1",
+    "@osui/icloud-theme": "^5.0.0-beta.1",
+    "@osui/icons": "^5.0.0-beta.1",
+    "@osui/message": "^5.0.0-beta.1",
+    "@osui/modal": "^5.0.0-beta.1",
     "@storybook/addon-docs": "9.0.11",
     "@storybook/cli": "9.0.11",
     "@storybook/react-vite": "9.0.11",
@@ -88,8 +88,8 @@
   },
   "dependencies": {
     "@emotion/css": "^11.13.5",
-    "@osui/empty": "workspace:^4.0.0-beta.1",
-    "@osui/icloud-theme": "workspace:^4.0.0-beta.1"
+    "@osui/empty": "^5.0.0-beta.1",
+    "@osui/icloud-theme": "^5.0.0-beta.1"
   },
   "packageManager": "pnpm@10.12.1",
   "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
