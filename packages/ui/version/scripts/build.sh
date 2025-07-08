@@ -1,16 +1,7 @@
 rm -rf es
 rm -rf lib
 
-tsc -p .
+mkdir -p es
+mkdir -p lib
 
-swc src -d es --source-maps
-# 
-cp -r tmp/* es
-
-swc src -d lib --source-maps --config module.type=commonjs
-# 
-cp -r tmp/* lib
-
-rm -rf tmp
-
-echo "build success"
+node --experimental-specifier-resolution=node ./scripts/version.mjs

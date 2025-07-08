@@ -33,13 +33,7 @@ find $ROOT -maxdepth 1 -type d | grep -v -E $EXCLUDE_FOLDER | ( while IFS= read 
     echo "export {default as $COMPONENT_NAME} from '$PACKAGE_NAME';" >> ./src/index.ts
 done
 # 手动写一个 icloud-theme 的, 要获取 css in js 变量
-echo "export {
-    default as iCloudTheme,
-    v1,
-    dark,
-    acud,
-    tokens,
-} from '@osui/icloud-theme';" >> ./src/index.ts
+echo "export * from '@osui/icloud-theme';" >> ./src/index.ts
 echo "$DEPENDENCIES" ) # while 是 subshell， 括号来group subshell
 
 echo "Add interfaces"

@@ -1,5 +1,9 @@
 # osui
 
+
+# v5版本注意！
+现在这个版本有比较严重的性能问题，测试阶段不要升级
+
 ## 介绍
 osui是基于开源组件库（例如antd，导出了所有antd组件），封装的一套业务性质的组件。按照UE规范，对antd组件样式和部分功能做了调整
 
@@ -12,11 +16,10 @@ osui是基于开源组件库（例如antd，导出了所有antd组件），封�
 ## 使用说明
 
 注意：
-- 需要项目自行安装antd
+- 需要项目自行安装antd v5 
 - 需要项目安装主题
-- 需要项目在less入口文件添加 `@import "~@osui/theme/dist/theme/vars.css"`
 - 需要项目配置webpack，可以参考`examples`
-- 需要项目的less-loader配置`modifyVars: {'ant-prefix': 'ant'}`或其他prefix
+
 ### 使用组件
 
 使用OSUI有两种方式
@@ -76,10 +79,6 @@ yarn add @osui/icons
 4. `craco.config.js`是CRA没有的
 5. `eslint`需要自己配置
 
-### 结合reskript使用
-
-参考`example/reskript/my-app`的方式，（简单粗暴的复制粘贴吧）
-
 #### 说明
 
 1. 注意`package.json`中的依赖，`dependencies`和`devDependencies`都是必须的
@@ -91,8 +90,7 @@ yarn add @osui/icons
 在入口js引入下面代码：
 
 ```
-import '@osui/theme/dist/theme/vars.css';
-import '@osui/theme/antd4-styles-patch.css'; // 去掉antd动效等全局覆盖
+import '@osui/icloud-theme/es/vars.css';
 ```
 
 ## 参与贡献
@@ -268,3 +266,11 @@ cd 项目root目录
    1. 项目中对同样组件，用了同样的class覆盖，并且权重 > osui 组件样式
    2. modifyVars被覆盖
    3. osui样式没有覆盖到，或者是osui的bug ==> 这个问题请参看是不是demo也是不对的
+
+
+## OSUI v5
+- 支持antd v5版本
+- 取消了less，使用antd的cssinjs解决方案重构所有的样式
+- 取消了osui/theme，目前只支持acud主题，引用css vars需要从`@osui/icloud-theme/es/vars.css`引入
+
+

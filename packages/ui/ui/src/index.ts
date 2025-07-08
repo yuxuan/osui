@@ -76,13 +76,7 @@ export {default as Upload} from '@osui/upload';
 export {default as Col} from '@osui/col';
 export {default as Grid} from '@osui/grid';
 export {default as Badge} from '@osui/badge';
-export {
-    default as iCloudTheme,
-    v1,
-    dark,
-    acud,
-    tokens,
-} from '@osui/icloud-theme';
+export * from '@osui/icloud-theme';
 export type {AffixProps} from '@osui/affix';
 export type {AnchorProps, AnchorLinkProps} from '@osui/anchor';
 export type {AutoCompleteProps} from '@osui/auto-complete';

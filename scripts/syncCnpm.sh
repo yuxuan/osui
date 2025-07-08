@@ -29,7 +29,6 @@ urls=(
 "https://registry-direct.npmmirror.com/-/package/@osui/dropdown/syncs"
 "https://registry-direct.npmmirror.com/-/package/@osui/empty/syncs"
 "https://registry-direct.npmmirror.com/-/package/@osui/flex/syncs"
-"https://registry-direct.npmmirror.com/-/package/@osui/flex-centered/syncs"
 "https://registry-direct.npmmirror.com/-/package/@osui/float-button/syncs"
 "https://registry-direct.npmmirror.com/-/package/@osui/form/syncs"
 "https://registry-direct.npmmirror.com/-/package/@osui/gap/syncs"

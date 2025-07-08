@@ -5,7 +5,6 @@ import hoistNonReactStatics from 'hoist-non-react-statics';
 import {SubMenuProps as AntdSubMenuProps} from 'antd/es/menu/SubMenu';
 import classNames from 'classnames';
 import {IconRightOutlined} from '@osui/icons';
-// import './index.less';
 import {useStyle} from './style';
 
 const clsPrefix = 'osui-menu';
