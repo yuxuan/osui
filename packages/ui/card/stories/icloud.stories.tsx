@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Table from '@osui/table';
-import FlexCentered from '@osui/flex-centered';
+import Flex from '@osui/flex';
 import {IconRightOutlined} from '@osui/icons';
 import BrandProvider from '@osui/brand-provider';
 import Markdown from '@osui/markdown';
@@ -105,14 +105,14 @@ export const Demo1 = () => {
     const Li = ({content, time}: {content: string, time: string}) => {
         return (
             <li style={{marginBottom: 12}}>
-                <FlexCentered style={{justifyContent: 'space-between'}}>
+                <Flex style={{justifyContent: 'space-between'}}>
                     <div>
                         {content}
                     </div>
                     <div>
                         {time}
                     </div>
-                </FlexCentered>
+                </Flex>
             </li>
         );
     };
@@ -125,9 +125,9 @@ export const Demo1 = () => {
                         compact
                         title="TOP3 域名"
                         extra={
-                            <FlexCentered>
+                            <Flex>
                                 更多 <IconRightOutlined style={{color: 'var(--theme-icon-color)'}} />
-                            </FlexCentered>
+                            </Flex>
                         }
                     >
                         <Table dataSource={data} columns={columns} pagination={false} />
@@ -138,9 +138,9 @@ export const Demo1 = () => {
                         compact
                         title="TOP3 域名"
                         extra={
-                            <FlexCentered>
+                            <Flex>
                                 更多 <IconRightOutlined style={{color: 'var(--theme-icon-color)'}} />
-                            </FlexCentered>
+                            </Flex>
                         }
                     >
                         <ul style={{paddingLeft: 14}}>

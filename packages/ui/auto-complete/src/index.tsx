@@ -9,8 +9,6 @@ import HighlightText from '@osui/highlight-text';
 import {adjustAntdProps} from '@osui/select/lib/utils';
 import {IconDownOutlined} from '@osui/icons';
 import classNames from 'classnames';
-// import '@osui/select/lib/index.less';
-// import './index.less';
 import {useStyle} from './style';
 
 const clsPrefix = 'osui-auto-complete';

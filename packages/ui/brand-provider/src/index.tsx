@@ -85,6 +85,7 @@ const BrandProvider: BrandProviderComponent = (
         }),
         [isFilteredEmpty]
     );
+
     useEffect(
         () => {
             const newTheme = mergeTheme(

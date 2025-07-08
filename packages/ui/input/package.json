@@ -37,7 +37,7 @@
     "@osui/button": "workspace:^4.0.0-beta.1",
     "@osui/cascader": "workspace:^4.0.0-beta.1",
     "@osui/divider": "workspace:^4.0.0-beta.1",
-    "@osui/flex-centered": "workspace:^4.0.0-beta.1",
+    "@osui/flex": "workspace:^4.0.0-beta.1",
     "@osui/form": "workspace:^4.0.0-beta.1",
     "@osui/gap": "workspace:^4.0.0-beta.1",
     "@osui/icloud-theme": "workspace:^4.0.0-beta.1",

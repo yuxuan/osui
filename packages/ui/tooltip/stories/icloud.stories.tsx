@@ -12,10 +12,7 @@ export default {
 export const Demo = () => {
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
 
     const text = <span>prompt text</span>;
@@ -27,6 +24,7 @@ export const Demo = () => {
             <div className="demo">
                 <button
                     onClick={() => setCssVar(v => !v)}
+                    style={{display: 'none'}}
                 >
                     切换{cssVar ? '不' : ''}使用cssVar
                 </button>

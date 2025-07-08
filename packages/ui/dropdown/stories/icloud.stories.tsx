@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, {useState} from 'react';
 import {IconDownOutlined} from '@osui/icons';
-import FlexCentered from '@osui/flex-centered';
+import Flex from '@osui/flex';
 import {MenuProps} from '@osui/menu';
 import Button from '@osui/button';
 import Space from '@osui/space';
@@ -15,10 +15,7 @@ export default {
 export const Demo = () => {
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
     const menu: MenuProps = {
         items: [
@@ -44,8 +41,8 @@ export const Demo = () => {
     return (
         <BrandProvider theme={theme}>
             <button
-                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
+                style={{display: 'none'}}
             >
                 切换{cssVar ? '不' : ''}使用cssVar
             </button>
@@ -53,10 +50,10 @@ export const Demo = () => {
             <p>文字下拉</p>
             <Dropdown menu={menu}>
                 <a onClick={e => e.preventDefault()}>
-                    <FlexCentered>
+                    <Flex align="center">
                         请选择
                         <IconDownOutlined style={{paddingLeft: '5px'}} />
-                    </FlexCentered>
+                    </Flex>
                 </a>
             </Dropdown>
         </BrandProvider>

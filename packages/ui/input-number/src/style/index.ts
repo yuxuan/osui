@@ -83,16 +83,142 @@ export const genInputNumberStyle: (props: {
                     'background': token['colorBrand1'],
                 },
 
-                [`&.${prefixCls}.@ant-prefix-input-number-disabled`]: {
+                [`&.${prefixCls}.${antPrefix}-input-number-disabled`]: {
                     'border-color': token['themeBorderColorDisabled'],
                 },
+            },
+        },
+        {
+            [`.${clsPrefix}-compact`]: {
+                [`.${antPrefix}-btn-default.osui-button-disabled`]: {
+                    'border': `1px solid ${token['themeBorderColorDisabled']} !important`,
+                },
 
-                '&-compact': {
-                    [`".${antPrefix}-btn-default.osui-button-disabled`]: {
-                        'border': `1px solid ${token['themeBorderColorDisabled']}`,
+                [`&.${antPrefix}-input-group.${antPrefix}-input-group-compact`]: {
+                    display: 'inline-block',
+                    width: 'auto',
+                },
+
+                '&-input-number': {
+                    'max-width': 'calc(100% - 60px)',
+
+                    '&:hover': {
+                        'z-index': '1',
+                    },
+
+                    '&:focus': {
+                        'z-index': '1',
+                    },
+
+                    [`&.${prefixCls}-focused`]: {
+                        'z-index': '1',
+                    },
+
+                    [`.${antPrefix}-input-number-input`]: {
+                        'text-align': 'center',
+                    },
+                },
+
+                '&-minus-btn': {
+                    'line-height': 2,
+
+                    '&.osui-button': {
+                        color: token['themeColorText'],
+                    },
+
+                    '&:hover': {
+                        'z-index': '1',
+                    },
+                    '&:focus': {
+                        'z-index': '1',
+                    },
+                },
+
+                '&-plus-btn': {
+                    'line-height': '2',
+
+                    '&.osui-button': {
+                        color: token['themeColorText'],
+                    },
+
+                    '&:hover': {
+                        'z-index': '1',
+                    },
+                    '&:focus': {
+                        'z-index': '1',
+                    },
+                },
+
+                /* Chrome, Safari, Edge, Opera */
+                'input::-webkit-outer-spin-button': {
+                    margin: 0,
+                    '-webkit-appearance': 'none',
+                },
+                'input::-webkit-inner-spin-button': {
+                    margin: 0,
+                    '-webkit-appearance': 'none',
+                },
+
+                /* Firefox */
+                'input[type=number]': {
+                    '-moz-appearance': 'textfield',
+                },
+            },
+
+            '&.osui-input-number-tail-label': {
+                position: 'absolute',
+                top: '25%',
+                'margin-left': 4,
+                color: token.labelColor,
+            },
+
+            [`.${antPrefix}-form-item-has-error`]: {
+                [`.${clsPrefix}`]: {
+                    '&-input-number': {
+                        'border-color': token.colorError6,
+
+                        '&:hover': {
+                            'border-color': token.colorError6,
+                        },
+                        '&:focus': {
+                            'border-color': token.colorError6,
+                        },
+
+                        '&[disabled]': {
+                            'border-color': token.themeBorderColorDisabled,
+                        },
+                    },
+                    [`&-minus-btn.${antPrefix}-btn`]: {
+                        'border-color': token.colorError6,
+
+                        '&:hover': {
+                            'border-color': token.colorError6,
+                        },
+                        '&:focus': {
+                            'border-color': token.colorError6,
+                        },
+
+                        '&[disabled]': {
+                            'border-color': token.themeBorderColorDisabled,
+                        },
+                    },
+                    [`&-plus-btn.${antPrefix}-btn`]: {
+                        'border-color': token.colorError6,
+
+                        '&:hover': {
+                            'border-color': token.colorError6,
+                        },
+                        '&:focus': {
+                            'border-color': token.colorError6,
+                        },
+
+                        '&[disabled]': {
+                            'border-color': token.themeBorderColorDisabled,
+                        },
                     },
                 },
             },
+
         }];
     };
 

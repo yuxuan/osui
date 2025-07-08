@@ -4,7 +4,6 @@ import {ProgressProps as AntdProgressProps} from 'antd/es/progress';
 import classNames from 'classnames';
 import {useBrandContext} from '@osui/brand-provider';
 import {useStyle} from './style';
-// import './index.less';
 
 const clsPrefix = 'osui-progress';
 

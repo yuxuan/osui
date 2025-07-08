@@ -25,13 +25,49 @@ const config = {
     ),
 };
 
+
+export const Basic = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const showModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleOk = () => {
+        setIsModalOpen(false);
+    };
+
+    const handleCancel = () => {
+        setIsModalOpen(false);
+    };
+
+    return (
+        <BrandProvider
+            brand="icloud"
+            theme={{cssVar: false}}
+        >
+            <Button type="primary" onClick={showModal}>
+                Open Modal
+            </Button>
+            <Modal
+                title="Basic Modal"
+                closable={{'aria-label': 'Custom Close Button'}}
+                open={isModalOpen}
+                onOk={handleOk}
+                onCancel={handleCancel}
+            >
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+            </Modal>
+        </BrandProvider>
+    );
+};
+
 export const Demo = () => {
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
 
 
@@ -45,6 +81,7 @@ export const Demo = () => {
                 <ConfigProvider prefixCls="meszhan">
                     <button
                         onClick={() => setCssVar(v => !v)}
+                        style={{display: 'none'}}
                     >
                         切换{cssVar ? '不' : ''}使用cssVar
                     </button>
@@ -134,7 +171,7 @@ export const Demo = () => {
 
                 <Modal
                     title="我是标题我是标题"
-                    visible={visible}
+                    open={visible}
                     onOk={() => setVisible(false)}
                     onCancel={() => setVisible(false)}
                 >
@@ -163,7 +200,7 @@ export const Size = () => {
                 <Modal
                     size="small"
                     title="我是标题我是标题"
-                    visible={visibleA}
+                    open={visibleA}
                     onOk={() => setVisibleA(false)}
                     onCancel={() => setVisibleA(false)}
                 >
@@ -181,7 +218,7 @@ export const Size = () => {
                 <Modal
                     size="default"
                     title="我是标题我是标题"
-                    visible={visibleB}
+                    open={visibleB}
                     onOk={() => setVisibleB(false)}
                     onCancel={() => setVisibleB(false)}
                 >
@@ -199,7 +236,7 @@ export const Size = () => {
                 <Modal
                     size="large"
                     title="我是标题我是标题"
-                    visible={visibleC}
+                    open={visibleC}
                     onOk={() => setVisibleC(false)}
                     onCancel={() => setVisibleC(false)}
                 >
@@ -350,7 +387,7 @@ export const Confirm = () => {
     }
 
     return (
-        <BrandProvider>
+        <BrandProvider theme={{cssVar: false}}>
             <p>没有title的样式</p>
             <Space direction="horizontal">
                 <Button type="primary" onClick={() => showConfirm()}>
@@ -404,7 +441,7 @@ export const AutoHeight = () => {
                 <Modal
                     autoHeight
                     title="我是标题我是标题"
-                    visible={visibleA}
+                    open={visibleA}
                     onOk={() => setVisibleA(false)}
                     onCancel={() => setVisibleA(false)}
                 >
@@ -499,16 +536,18 @@ export const Demo2 = () => {
     }
 
     return (
-        <Space>
-            <Button onClick={showConfirm}>Confirm</Button>
-            <Button onClick={showPromiseConfirm}>With promise</Button>
-            <Button onClick={showDeleteConfirm} type="dashed">
-                Delete
-            </Button>
-            <Button onClick={showPropsConfirm} type="dashed">
-                With extra props
-            </Button>
-        </Space>
+        <BrandProvider theme={{cssVar: false}}>
+            <Space>
+                <Button onClick={showConfirm}>Confirm</Button>
+                <Button onClick={showPromiseConfirm}>With promise</Button>
+                <Button onClick={showDeleteConfirm} type="dashed">
+                    Delete
+                </Button>
+                <Button onClick={showPropsConfirm} type="dashed">
+                    With extra props
+                </Button>
+            </Space>
+        </BrandProvider>
     );
 };
 
@@ -524,7 +563,7 @@ export const FullSizeDemo = () => {
     const [visible, setVisible] = useState(false);
 
     return (
-        <>
+        <BrandProvider theme={{cssVar: false}}>
             <Button type="primary" onClick={() => setVisible(true)}>
                 全屏弹框
             </Button>
@@ -532,7 +571,7 @@ export const FullSizeDemo = () => {
                 何时使用：需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal
                 在当前页面正中打开一个浮层，承载相应的操作。
             </Modal>
-        </>
+        </BrandProvider>
     );
 };
 

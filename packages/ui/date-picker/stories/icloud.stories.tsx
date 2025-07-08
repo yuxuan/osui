@@ -3,7 +3,7 @@ import React from 'react';
 import {Row} from 'antd';
 import dayjs from 'dayjs';
 import Space from '@osui/space';
-import version from '@osui/version';
+import version from 'antd/es/version';
 import BrandProvider from '@osui/brand-provider';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 import locale from 'antd/locale/zh_CN';

@@ -207,6 +207,10 @@ export const genTableStyle: (props: {
                     'background': '#e6f0ff',
                 },
 
+                [`${antPrefix}-pagination-item`]: {
+                    'background-color': 'transparent',
+                },
+
                 [`.${antPrefix}-pagination-item:not(.${antPrefix}}-pagination-item-active):hover`]: {
                     'background-color': token['paginationItemHoverBg'],
 

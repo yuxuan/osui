@@ -1,3 +1,28 @@
+/**
+ * 高级变量替换工具
+ *
+ * 该脚本用于在指定的文件中替换变量引用，支持以下替换模式：
+ * - 十六进制颜色值（如 "#ffffff"）
+ * - CSS 变量函数调用（如 var(--primary-color)）
+ * - colors[] 数组访问（如 colors['primary']）
+ *
+ * 用法：
+ *   node advanced-replacer.mjs <文件路径1> [文件路径2] [文件路径3] ...
+ *
+ * 示例：
+ *   node advanced-replacer.mjs ../lib/index.js
+ *   node advanced-replacer.mjs ../lib/index.js ../es/index.js
+ *   node advanced-replacer.mjs ../lib/*.js
+ *
+ * 参数：
+ *   文件路径 - 需要处理的文件路径，支持相对路径和绝对路径
+ *
+ * 注意事项：
+ *   - 脚本会自动加载 ../lib/index.js 中的变量定义
+ *   - 只处理指定的文件，不会递归处理目录
+ *   - 会自动跳过不存在的文件并给出提示
+ */
+
 import fs from 'fs';
 import path from 'path';
 import {fileURLToPath} from 'url';
@@ -25,31 +50,6 @@ async function loadVariables() {
     }
 }
 
-/**
- * 递归获取所有文件
- */
-function getAllFiles(dir, extensions = ['.js', '.mjs']) {
-    const files = [];
-
-    if (!fs.existsSync(dir)) {
-        return files;
-    }
-
-    const items = fs.readdirSync(dir);
-
-    for (const item of items) {
-        const fullPath = path.join(dir, item);
-        const stat = fs.statSync(fullPath);
-
-        if (stat.isDirectory()) {
-            files.push(...getAllFiles(fullPath, extensions));
-        } else if (extensions.some(ext => item.endsWith(ext))) {
-            files.push(fullPath);
-        }
-    }
-
-    return files;
-}
 
 /**
  * 获取不带引号的变量值
@@ -63,6 +63,14 @@ function getUnquotedValue(value) {
         }
     }
     return value;
+}
+
+/**
+ * 清理双重引号
+ */
+function cleanDoubleQuotes(content) {
+    // 清理可能产生的双重引号
+    return content.replace(/""/g, '"').replace(/''/g, '\'');
 }
 
 /**
@@ -98,17 +106,17 @@ function replaceVariablesInContent(content, variables) {
             },
         },
         // 替换var()函数调用
-        // {
-        //     pattern: /var\((--[^)]+)\)/g,
-        //     replacer: (match, varName) => {
-        //         if (variables[varName]) {
-        //             replacedCount++;
-        //             const cleanValue = getUnquotedValue(variables[varName]);
-        //             return `"${cleanValue}"`;
-        //         }
-        //         return match;
-        //     },
-        // },
+        {
+            pattern: /var\((--[^)]+)\)/g,
+            replacer: (match, varName) => {
+                if (variables[varName]) {
+                    replacedCount++;
+                    const cleanValue = getUnquotedValue(variables[varName]);
+                    return `"${cleanValue}"`;
+                }
+                return match;
+            },
+        },
         // 替换colors[...]调用
         {
             pattern: /colors\[(['"`])([^'"`]+)\1\]/g,
@@ -129,7 +137,7 @@ function replaceVariablesInContent(content, variables) {
     }
 
     // 清理可能产生的双重引号
-    // replacedContent = cleanDoubleQuotes(replacedContent);
+    replacedContent = cleanDoubleQuotes(replacedContent);
 
     return {content: replacedContent, replacedCount};
 }
@@ -163,6 +171,17 @@ async function main() {
     // eslint-disable-next-line no-console
     console.log('🚀 开始高级变量替换...');
 
+    // 获取命令行参数中的文件路径
+    const targetFiles = process.argv.slice(2);
+
+    if (targetFiles.length === 0) {
+        // eslint-disable-next-line no-console
+        console.error('❌ 请提供要处理的文件路径');
+        // eslint-disable-next-line no-console
+        console.log('用法: node advanced-replacer.mjs <文件路径1> [文件路径2] ...');
+        process.exit(1);
+    }
+
     // 加载变量
     const variables = await loadVariables();
     if (!variables || Object.keys(variables).length === 0) {
@@ -174,31 +193,29 @@ async function main() {
     // eslint-disable-next-line no-console
     console.log(`📋 加载了 ${Object.keys(variables).length} 个变量`);
 
-    // 处理目标目录
-    const targetDirs = [
-        path.join(__dirname, '../lib'),
-        path.join(__dirname, '../es'),
-    ];
-
     let totalReplacements = 0;
 
-    for (const targetDir of targetDirs) {
-        if (!fs.existsSync(targetDir)) {
+    // 处理指定的文件
+    for (const filePath of targetFiles) {
+        const resolvedPath = path.resolve(filePath);
+
+        if (!fs.existsSync(resolvedPath)) {
             // eslint-disable-next-line no-console
-            console.log(`⚠️ 目录不存在，跳过: ${targetDir}`);
+            console.log(`⚠️ 文件不存在，跳过: ${filePath}`);
+            continue;
+        }
+
+        const stat = fs.statSync(resolvedPath);
+        if (!stat.isFile()) {
+            // eslint-disable-next-line no-console
+            console.log(`⚠️ 不是文件，跳过: ${filePath}`);
             continue;
         }
 
         // eslint-disable-next-line no-console
-        console.log(`\n📁 处理目录: ${path.relative(process.cwd(), targetDir)}`);
+        console.log(`\n📄 处理文件: ${path.relative(process.cwd(), resolvedPath)}`);
 
-        const files = getAllFiles(targetDir);
-        // eslint-disable-next-line no-console
-        console.log(`找到 ${files.length} 个文件`);
-
-        for (const file of files) {
-            totalReplacements += processFile(file, variables);
-        }
+        totalReplacements += processFile(resolvedPath, variables);
     }
 
     // eslint-disable-next-line no-console

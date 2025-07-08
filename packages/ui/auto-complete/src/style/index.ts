@@ -2,6 +2,7 @@ import type {CSSObject} from '@ant-design/cssinjs';
 import {useBrandContext} from '@osui/brand-provider';
 import {useStyleRegister, useCacheToken} from '@ant-design/cssinjs';
 import {theme, ThemeConfig} from 'antd';
+import {genSelectStyle} from '@osui/select/es/style';
 
 const {useToken} = theme;
 
@@ -28,25 +29,9 @@ export const genAutoCompleteStyle: (props: {
     cssVar: CssVar;
     selectAntdprefixCls: string;
 }) => CSSObject[] =
-    ({clsPrefix, token, selectAntdprefixCls}) => {
-        return [{
-            [`.${clsPrefix}-dropdown`]: {
-                [`.${selectAntdprefixCls}-item-option-active:not(.${selectAntdprefixCls}-item-option-disabled`]: {
-                    '&:hover': {
-                        'background-color': token['SelectItemActiveBg'],
-                    },
-
-                    '&:active': {
-                        'background-color': token['ColorGray4'],
-                    },
-                },
-
-                // 修复 select item 不居中
-                [`.${selectAntdprefixCls}-item`]: {
-                    'line-height': '22px',
-                },
-            },
-        }];
+    ({selectAntdprefixCls, token, cssVar}) => {
+        const selectStyle = genSelectStyle({clsPrefix: 'osui-select', prefixCls: selectAntdprefixCls, token, cssVar});
+        return selectStyle;
     };
 
 export const useStyle = (

@@ -11,10 +11,7 @@ export default {
 export const Demo = () => {
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
 
     return (
@@ -22,8 +19,8 @@ export const Demo = () => {
             <p>返回页面顶部的操作按钮</p>
             <h3>一、使用场景</h3>
             <button
-                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
+                style={{display: 'none'}}
             >
                 切换{cssVar ? '不' : ''}使用cssVar
             </button>

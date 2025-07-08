@@ -90,8 +90,10 @@ export const genSelectStyle: (props: {
                     },
                 },
 
-                [`&.${prefixCls}-open.${prefixCls}-arrow:not(.${prefixCls}-arrow-loading) > svg`]: {
-                    'transform': token['selectArrowOpenTransformRotate'],
+                [`&.${prefixCls}-open`]: {
+                    [`.${prefixCls}-arrow:not(.${prefixCls}-arrow-loading) > svg`]: {
+                        'transform': 'rotate(180deg)',
+                    },
                 },
 
                 // no-border

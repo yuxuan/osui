@@ -8,7 +8,10 @@ const defaultTheme: ThemeConfig = {
 
 type OverrideToken = Required<ThemeConfig>['components'];
 
-export const mergeTheme = (theme: ThemeConfig = defaultTheme, parentTheme: ThemeConfig = defaultTheme) => {
+export const mergeTheme = (
+    theme: ThemeConfig = defaultTheme,
+    parentTheme: ThemeConfig = defaultTheme
+) => {
     if (!theme) {
         return parentTheme;
     }
@@ -27,13 +30,10 @@ export const mergeTheme = (theme: ThemeConfig = defaultTheme, parentTheme: Theme
             } as any;
         });
     }
-
-
     // Base token
     return {
         ...parentTheme,
         ...theme,
-
         token: {
             ...parentTheme.token,
             ...theme.token,

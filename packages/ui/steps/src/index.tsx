@@ -5,7 +5,6 @@ import {
     StepProps as AntdStepProps,
 } from 'antd/es/steps';
 import classNames from 'classnames';
-// import './index.less';
 import {useStyle} from './style';
 
 const clsPrefix = 'osui-steps';
@@ -48,15 +47,17 @@ const ProcessOnlySteps: ProcessOnlyStepsInterface = props => {
     const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
     const cssVar = theme?.cssVar;
     const prefixCls = getPrefixCls('alert', props.prefixCls);
-    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar);
+    const antPrefix = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
     return wrapSSROsui(<Steps {...props} />);
 };
 
-const ProcessOnlyStep: React.FC<AntdStepProps> = props => {
+const ProcessOnlyStep: React.FC<AntdStepProps & {prefixCls?: string}> = props => {
     const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
     const cssVar = theme?.cssVar;
     const prefixCls = getPrefixCls('alert', props.prefixCls);
-    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar);
+    const antPrefix = getPrefixCls('');
+    const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
     const innerStatus = props.status === 'finish' ? 'process' : props.status;
     return wrapSSROsui(
         <AntdSteps.Step

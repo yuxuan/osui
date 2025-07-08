@@ -8,7 +8,6 @@ import {useBrandContext} from '@osui/brand-provider';
 import Tooltip from '@osui/tooltip';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import {adjustAntdProps} from './utils';
-// import './index.less';
 import {useStyle} from './style';
 
 const clsPrefix = 'osui-select';

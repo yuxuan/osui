@@ -52,9 +52,7 @@ export const Demo = () => {
     } : {};
     const trigger = collapsed ? <div style={style}>展开</div> : <div style={style}>收起</div>;
     const themeVar = {
-        cssVar: cssVar && {
-            prefix: '',
-        },
+        cssVar: false,
     };
     return (
         <BrandProvider theme={themeVar}>
@@ -122,6 +120,7 @@ export const Demo = () => {
 
                             <button
                                 onClick={() => setCssVar(v => !v)}
+                                style={{display: 'none'}}
                             >
                                 切换{!cssVar ? '' : '不'}使用cssVar
                             </button>

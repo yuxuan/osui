@@ -2,9 +2,8 @@ import React, {useContext} from 'react';
 import {InputNumber as AntdInputNumber, ConfigProvider, theme} from 'antd';
 import {InputNumberProps as AntdInputNumberProps} from 'antd/es/input-number';
 import classNames from 'classnames';
-// import './index.less';
 import {useStyle} from './style';
-import {useStyle as useNumberStyle} from './style/inputNumber';
+import {useStyle as useNumberStyle} from './style';
 const {useToken} = theme;
 
 const clsPrefix = 'osui-input-number';

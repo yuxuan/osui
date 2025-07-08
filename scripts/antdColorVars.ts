@@ -135,7 +135,6 @@ function transformAntdLessToCss(
             Object.keys(cssVars).forEach(key => {
                 if (cssRefs[key]) {
                     cssVars[key] = cssRefs[key];
-                    // console.log(`'${key}': '${cssVars[key]}',`);
                 }
             });
         }

@@ -1,6 +1,6 @@
 import type {CSSObject} from '@ant-design/cssinjs';
-import {useBrandContext} from '@osui/brand-provider';
 import {useStyleRegister, useCacheToken} from '@ant-design/cssinjs';
+import {useBrandContext} from '@osui/brand-provider';
 import {theme, ThemeConfig} from 'antd';
 
 const {useToken} = theme;
@@ -16,10 +16,13 @@ export const prepareComponentToken: (token: any) => any = token => {
     return ret;
 };
 
-type CssVar = boolean | {
-    prefix?: string | undefined;
-    key?: string | undefined;
-} | undefined;
+type CssVar =
+    | boolean
+    | {
+          prefix?: string | undefined;
+          key?: string | undefined;
+      }
+    | undefined;
 
 export const genModalStyle: (props: {
     clsPrefix: string;
@@ -27,135 +30,135 @@ export const genModalStyle: (props: {
     token: Record<string, string>;
     cssVar: CssVar;
     antPrefix: string;
-}) => CSSObject[] =
-    ({clsPrefix, prefixCls, token, antPrefix}) => {
-        const confirmCss = {
-            [`.${prefixCls}-content`]: {
-                'border-radius': token['borderRadiusBase'],
-                'padding': '0 0',
+}) => CSSObject[] = ({clsPrefix, prefixCls, token, antPrefix}) => {
+    const confirmCss = {
+        [`.${prefixCls}-content`]: {
+            'border-radius': token['borderRadiusBase'],
+            padding: '0 0',
+        },
+
+        [`&.${prefixCls} .${prefixCls}-body`]: {
+            padding: 24,
+        },
+
+        [`.${prefixCls}-confirm-body`]: {
+            'min-height': 80,
+            'border-bottom': token['modalBodyBorderBottom'],
+            'align-items': 'start',
+
+            '& > svg.osui-icon': {
+                float: 'left',
+                width: token['modalConfirmIconWidth20'] || '20px',
+                height: token['modalConfirmIconHeight20'] || '20px',
+                'margin-right': 12,
+                'font-size': 14,
+            },
+        },
+
+        [`&.${prefixCls}-confirm .${prefixCls}-confirm-body`]: {
+            'min-height': 80,
+            'border-bottom': token['modalBodyBorderBottom'],
+            'align-items': 'start',
+            '&svg.osui-icon': {
+                float: 'left',
+                width: token['modalConfirmIconWidth20'],
+                height: token['modalConfirmIconHeight20'],
+                'margin-right': 12,
+                'font-size': 14,
+            },
+        },
+
+        [`.${prefixCls}-confirm-content`]: {
+            flex: '1',
+        },
+
+        [`.${prefixCls}-confirm-body .${prefixCls}-confirm-title`]: {
+            'font-size': 16,
+            flex: 'auto',
+        },
+
+        [`.${prefixCls}-confirm-body .${prefixCls}-confirm-content`]: {
+            'margin-top': 0,
+        },
+
+        [`&.${prefixCls}-confirm-warning .${prefixCls}-confirm-body > svg.osui-icon`]: {
+            color: token['themeWarningColor'],
+        },
+
+        [`&.${prefixCls}-confirm-confirm .${prefixCls}-confirm-body > svg.osui-icon`]: {
+            color: token['themeWarningColor'],
+        },
+
+        [`&.${prefixCls}-confirm-success .${prefixCls}-confirm-body > svg.osui-icon`]: {
+            color: token['themeSuccessColor'],
+        },
+
+        [`&.${prefixCls}-confirm-info .${prefixCls}-confirm-body > svg.osui-icon`]: {
+            color: token['themeInfoColor'],
+        },
+
+        [`&.${prefixCls}-confirm-error .${prefixCls}-confirm-body > svg.osui-icon`]: {
+            color: token['themeErrorColor'],
+        },
+
+        // eslint-disable-next-line max-len
+        [`.${prefixCls}-confirm-body > svg.osui-icon + .${prefixCls}-confirm-title + .${prefixCls}-confirm-content`]: {
+            'margin-top': 8,
+            'margin-left': 32,
+        },
+
+        [`.${prefixCls}-close`]: {
+            top: token['modalCloseTop'],
+            right: token['modalCloseRight'],
+            height: 20,
+            width: 20,
+
+            [`.${prefixCls}-close-x`]: {
+                'line-height': 10,
+            },
+        },
+
+        [`.${prefixCls}-confirm-btns`]: {
+            'margin-top': 24,
+
+            [`.${antPrefix}-btn-default`]: {
+                'border-color': '#d4d6d9',
             },
 
-            [`&.${prefixCls} .${prefixCls}-body`]: {
-                'padding': 24,
+            [`.${antPrefix}-btn-primary`]: {
+                'border-color': '#2468f2',
+                'box-shadow': '0 2px 0 rgba(0, 0, 0, .045)',
             },
+        },
 
-            [`.${prefixCls}-confirm-body`]: {
-                'min-height': 80,
-                'border-bottom': token['modalBodyBorderBottom'],
-                'align-items': 'start',
+        [`.${prefixCls}-confirm-btns .${antPrefix}-btn`]: {
+            width: token['modalFooterBtnWidth'],
+        },
 
-                '& > svg.osui-icon': {
-                    'float': 'left',
-                    'width': token['modalConfirmIconWidth20'] || '20px',
-                    'height': token['modalConfirmIconHeight20'] || '20px',
-                    'margin-right': 12,
-                    'font-size': 14,
-                },
-            },
+        [`.${prefixCls}-confirm-btns .${antPrefix}-btn + .${antPrefix}-btn`]: {
+            'margin-left': token['modalFooterButtonGroupGap'],
+        },
+    };
 
-            [`&.${prefixCls}-confirm .${prefixCls}-confirm-body`]: {
-                'min-height': 80,
-                'border-bottom': token['modalBodyBorderBottom'],
-                'align-items': 'start',
-                '&svg.osui-icon': {
-                    'float': 'left',
-                    'width': token['modalConfirmIconWidth20'],
-                    'height': token['modalConfirmIconHeight20'],
-                    'margin-right': 12,
-                    'font-size': 14,
-                },
-            },
-
-            [`.${prefixCls}-confirm-content`]: {
-                'flex': '1',
-            },
-
-            [`.${prefixCls}-confirm-body .${prefixCls}-confirm-title`]: {
-                'font-size': 16,
-                'flex': 'auto',
-            },
-
-            [`.${prefixCls}-confirm-body .${prefixCls}-confirm-content`]: {
-                'margin-top': 0,
-            },
-
-            [`&.${prefixCls}-confirm-warning .${prefixCls}-confirm-body > svg.osui-icon`]: {
-                'color': token['themeWarningColor'],
-            },
-
-            [`&.${prefixCls}-confirm-confirm .${prefixCls}-confirm-body > svg.osui-icon`]: {
-                'color': token['themeWarningColor'],
-            },
-
-            [`&.${prefixCls}-confirm-success .${prefixCls}-confirm-body > svg.osui-icon`]: {
-                'color': token['themeSuccessColor'],
-            },
-
-            [`&.${prefixCls}-confirm-info .${prefixCls}-confirm-body > svg.osui-icon`]: {
-                'color': token['themeInfoColor'],
-            },
-
-            [`&.${prefixCls}-confirm-error .${prefixCls}-confirm-body > svg.osui-icon`]: {
-                'color': token['themeErrorColor'],
-            },
-
-            // eslint-disable-next-line max-len
-            [`.${prefixCls}-confirm-body > svg.osui-icon + .${prefixCls}-confirm-title + .${prefixCls}-confirm-content`]: {
-                'margin-top': 8,
-                'margin-left': 32,
-            },
-
-            [`.${prefixCls}-close`]: {
-                'top': token['modalCloseTop'],
-                'right': token['modalCloseRight'],
-                'height': 10,
-                'width': 10,
-
-                [`.${prefixCls}-close-x`]: {
-                    'line-height': 10,
-                },
-            },
-
-            [`.${prefixCls}-confirm-btns`]: {
-                'margin-top': 24,
-
-                [`.${antPrefix}-btn-default`]: {
-                    'border-color': '#d4d6d9',
-                },
-
-                [`.${antPrefix}-btn-primary`]: {
-                    'border-color': '#2468f2',
-                    'box-shadow': '0 2px 0 rgba(0, 0, 0, .045)',
-                },
-            },
-
-            [`.${prefixCls}-confirm-btns .${antPrefix}-btn`]: {
-                'width': token['modalFooterBtnWidth'],
-            },
-
-            [`.${prefixCls}-confirm-btns .${antPrefix}-btn + .${antPrefix}-btn`]: {
-                'margin-left': token['modalFooterButtonGroupGap'],
-            },
-        };
-
-        return [{
+    return [
+        {
             [`.${clsPrefix}`]: {
                 [`.${prefixCls}-header`]: {
-                    'padding': token['modalHeaderPadding'],
+                    padding: token['modalHeaderPadding'],
                     'border-radius': `${token['borderRadiusBase']} ${token['borderRadiusBase']} 0 0`,
                     'border-bottom': '1px solid #fff',
                 },
 
                 [`.${prefixCls}-body`]: {
                     'max-height': token['modalBodyMaxHeight'],
-                    'margin': token['modalBodyMargin'],
-                    'padding': token['modalBodyPadding'],
-                    'overflow': 'auto',
+                    margin: token['modalBodyMargin'],
+                    padding: token['modalBodyPadding'],
+                    overflow: 'auto',
                     'border-bottom': token['modalBodyBorderBottom'],
                 },
 
                 [`.${prefixCls}-footer`]: {
-                    'padding': token['modalFooterPadding'],
+                    padding: token['modalFooterPadding'],
                     'border-top': token['modalFooterBorderTop'],
 
                     [`.${antPrefix}-btn + .${antPrefix}-btn:not(.${antPrefix}-dropdown-trigger)`]: {
@@ -178,37 +181,37 @@ export const genModalStyle: (props: {
 
                 [`.${prefixCls}-content`]: {
                     'border-radius': token['borderRadiusBase'],
-                    'padding': '0 0',
+                    padding: '0 0',
 
                     [`.${prefixCls}-close`]: {
-                        'top': token['modalCloseTop'],
-                        'right': token['modalCloseRight'],
-                        'height': 10,
-                        'width': 10,
+                        top: token['modalCloseTop'],
+                        right: token['modalCloseRight'],
+                        height: 20,
+                        width: 20,
 
                         [`.${prefixCls}-close-x`]: {
                             'line-height': 10,
                         },
 
-                        'svg': {
-                            'height': token['modalCloseIconHeight'],
-                            'color': token['themeIconColor'],
+                        svg: {
+                            height: token['modalCloseIconHeight'],
+                            color: token['themeIconColor'],
                         },
                     },
                 },
 
                 '&-full-screen': {
-                    'width': '100vw !important',
+                    width: '100vw !important',
                     'max-width': '100vw',
 
                     [`.${prefixCls}-content`]: {
-                        'width': '100vw',
-                        'height': '100vh',
+                        width: '100vw',
+                        height: '100vh',
                         'border-radius': '0',
                     },
 
                     [`.${prefixCls}-body`]: {
-                        'height': 'calc(100vh - 60px)',
+                        height: 'calc(100vh - 60px)',
                         'max-height': 'calc(100vh - 60px)',
                         'border-radius': '0',
                     },
@@ -222,8 +225,9 @@ export const genModalStyle: (props: {
             // Confirm
             [`.${clsPrefix}-confirm`]: confirmCss,
             [`.${prefixCls}-confirm`]: confirmCss,
-        }] as CSSObject[];
-    };
+        },
+    ] as CSSObject[];
+};
 
 export const useStyle = (
     clsPrefix: string,
@@ -236,25 +240,15 @@ export const useStyle = (
     const hashed = outTheme.designToken?.hashed;
     const {token: outerToken, theme, hashId} = useToken();
 
-    const [token] = useCacheToken(
-        theme as any,
-        [
-            prepareComponentToken(tokenIn || outerToken),
-        ],
-        {
-            salt: typeof hashed === 'string'
-                ? hashed
-                : Math.random().toString(36).slice(-8),
-            cssVar: cssVar
-                ? {
-                    prefix: (typeof cssVar === 'object'
-                        && typeof cssVar.prefix === 'string')
-                        ? cssVar.prefix
-                        : antPrefix,
-                }
-                : undefined,
-        }
-    );
+    const [token] = useCacheToken(theme as any, [prepareComponentToken(tokenIn || outerToken)], {
+        salt: typeof hashed === 'string' ? hashed : Math.random().toString(36).slice(-8),
+        cssVar: cssVar
+            ? {
+                prefix: typeof cssVar === 'object' && typeof cssVar.prefix === 'string' ? cssVar.prefix : antPrefix,
+            }
+            : undefined,
+    });
+
     const wrapSSROsui = useStyleRegister(
         {
             theme: theme as any,
@@ -264,7 +258,11 @@ export const useStyle = (
         },
         () => [
             genModalStyle({
-                clsPrefix, prefixCls, token, cssVar, antPrefix,
+                clsPrefix,
+                prefixCls,
+                token,
+                cssVar,
+                antPrefix,
             }),
         ]
     );

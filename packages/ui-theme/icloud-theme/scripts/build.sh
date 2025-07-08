@@ -21,7 +21,8 @@ node scripts/build.mjs
 
 # 进行变量替换，将变量引用替换为实际值
 echo 'Starting variable replacement...'
-node scripts/advanced-replacer.mjs
+node scripts/advanced-replacer.mjs es/acud/acudTheme.js
+node scripts/advanced-replacer.mjs lib/acud/acudTheme.js
 
 cp -r patches/* es
 cp -r patches/* lib

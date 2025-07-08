@@ -1,9 +1,7 @@
-/* eslint-disable max-len */
 import React, {useContext} from 'react';
 import {DatePicker as AntdDatePicker, ConfigProvider} from 'antd';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
-// import './index.less';
 import {useStyle} from './style';
 
 const clsPrefix = 'osui-picker';
@@ -46,11 +44,17 @@ const DatePicker = attachOSUIClassName(AntdDatePicker) as unknown as DatePickerI
 hoistNonReactStatics(DatePicker, AntdDatePicker);
 
 // 覆盖
+// eslint-disable-next-line max-len
 DatePicker.MonthPicker = attachOSUIClassName(AntdDatePicker.MonthPicker) as unknown as typeof AntdDatePicker.MonthPicker;
+// eslint-disable-next-line max-len
 DatePicker.WeekPicker = attachOSUIClassName(AntdDatePicker.WeekPicker) as unknown as typeof AntdDatePicker.WeekPicker;
+// eslint-disable-next-line max-len
 DatePicker.YearPicker = attachOSUIClassName(AntdDatePicker.YearPicker) as unknown as typeof AntdDatePicker.YearPicker;
+// eslint-disable-next-line max-len
 DatePicker.QuarterPicker = attachOSUIClassName(AntdDatePicker.QuarterPicker) as unknown as typeof AntdDatePicker.QuarterPicker;
+// eslint-disable-next-line max-len
 DatePicker.TimePicker = attachOSUIClassName(AntdDatePicker.TimePicker) as unknown as typeof AntdDatePicker.TimePicker;
+// eslint-disable-next-line max-len
 DatePicker.RangePicker = attachOSUIClassName(AntdDatePicker.RangePicker) as unknown as typeof AntdDatePicker.RangePicker;
 
 

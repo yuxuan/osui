@@ -27,6 +27,7 @@
     "es/**/*.less"
   ],
   "devDependencies": {
+    "antd": "5.24.2",
     "@ant-design/cssinjs": "^1.18.4",
     "@babel/cli": "^7.10.5",
     "@osui/brand-provider": "^2.1.9",
@@ -95,7 +96,6 @@
     "@osui/dropdown": "workspace:^4.0.0-beta.1",
     "@osui/empty": "workspace:^4.0.0-beta.1",
     "@osui/flex": "workspace:^4.0.0-beta.1",
-    "@osui/flex-centered": "workspace:^4.0.0-beta.1",
     "@osui/float-button": "workspace:^4.0.0-beta.1",
     "@osui/form": "workspace:^4.0.0-beta.1",
     "@osui/gap": "workspace:^4.0.0-beta.1",

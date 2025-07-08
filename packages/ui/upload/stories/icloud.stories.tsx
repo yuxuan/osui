@@ -18,10 +18,7 @@ export default {
 export const Demo = () => {
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
     const props = {
         name: 'file',
@@ -49,6 +46,7 @@ export const Demo = () => {
             <div>
                 <button
                     onClick={() => setCssVar(v => !v)}
+                    style={{display: 'none'}}
                 >
                     切换{cssVar ? '不' : ''}使用cssVar
                 </button>

@@ -12,17 +12,14 @@ export default {
 export const Demo = () => {
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
 
     return (
         <BrandProvider brand="icloud" theme={theme}>
             <button
-                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
+                style={{display: 'none'}}
             >
                 切换{cssVar ? '不' : ''}使用cssVar
             </button>
@@ -127,7 +124,7 @@ export const TestCase = () => {
                 </Space>
             </Space>
             <p />
-            <p>垂直+水平</p>
+            <p>垂直+水平11</p>
             <Space direction="vertical">
                 <Button>1</Button>
                 <Button>2</Button>

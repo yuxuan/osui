@@ -13,10 +13,7 @@ export const Demo = () => {
     const {Link} = Anchor;
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
 
     return (
@@ -29,8 +26,8 @@ export const Demo = () => {
             </p>
             <p><strong>FE说明：</strong>页面内的导航见Menu，本组件只包含设计稿中其它样式的展示</p>
             <button
-                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
+                style={{display: 'none'}}
             >
                 切换{cssVar ? '不' : ''}使用cssVar
             </button>

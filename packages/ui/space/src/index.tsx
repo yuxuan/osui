@@ -2,7 +2,6 @@ import React, {FC, useContext} from 'react';
 import {ConfigProvider, Space as AntdSpace} from 'antd';
 import {SpaceProps} from 'antd/es/space';
 import classNames from 'classnames';
-// import './index.less';
 import {useStyle} from './style';
 
 const clsPrefix = 'osui-space';

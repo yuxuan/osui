@@ -23,7 +23,7 @@ export const Demo = () => {
 
         render() {
             return (
-                <BrandProvider>
+                <BrandProvider brand="icloud" theme={{cssVar: false}}>
                     <TreeSelect
                         showSearch
                         style={{width: '100%'}}
@@ -103,7 +103,7 @@ export const HighlightTreeDataOnSearch = () => {
     function SearchTree() {
         const [searchValue, setSearchValue] = React.useState('');
         return (
-            <BrandProvider>
+            <BrandProvider brand="icloud" theme={{cssVar: false}}>
                 <p>只能使用treeData的方式进行高亮，只能match title，高亮title，如果要matchByValue，需要title和value一致</p>
                 <p></p>
                 <TreeSelect
@@ -127,6 +127,10 @@ export const Api = () => {
 };
 
 export const TestCase = () => {
-    return (<TreeSelect style={{width: '100%'}} open notFoundContent="notFoundContent" />);
+    return (
+        <BrandProvider brand="icloud" theme={{cssVar: false}}>
+            <TreeSelect style={{width: '100%'}} open notFoundContent="notFoundContent" />
+        </BrandProvider>
+    );
 };
 

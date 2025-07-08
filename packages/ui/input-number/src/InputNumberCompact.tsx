@@ -5,10 +5,8 @@ import Button from '@osui/button';
 import Input from '@osui/input';
 import {useBrandContext} from '@osui/brand-provider';
 import {ConfigProvider, theme} from 'antd';
-// import './inputNumber.less';
 import InputNumber, {InputNumberProps} from './InputNumber';
-import {useStyle} from './style/inputNumber';
-import {useStyle as useNumberStyle} from './style/inputNumber';
+import {useStyle} from './style';
 
 const clsPrefix = 'osui-input-number-compact';
 const {useToken} = theme;
@@ -40,7 +38,6 @@ function InputNumberCompact<T extends ValueType = ValueType>(
     const prefixCls = getPrefixCls('osui-input-nunmber-compact', props.prefixCls);
     const antPrefix = getPrefixCls('', props.prefixCls);
     const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefix);
-    const wrapNumbeerSSROsui = useNumberStyle(clsPrefix, prefixCls, cssVar, antPrefix);
     const {hashId} = useToken();
     const brandContext = useBrandContext();
     const initValue: T = defaultValue === undefined ? (value || 0 as T) : defaultValue;
@@ -65,7 +62,7 @@ function InputNumberCompact<T extends ValueType = ValueType>(
         [handleChange, inputValue, step]
     );
     const borderRadius = brandContext.designToken?.token?.borderRadius;
-    return wrapSSROsui(wrapNumbeerSSROsui(
+    return wrapSSROsui(
         <>
             <Input.Group
                 compact
@@ -100,7 +97,7 @@ function InputNumberCompact<T extends ValueType = ValueType>(
                 }
             </Input.Group>
         </>
-    ));
+    );
 }
 
 export default React.forwardRef(InputNumberCompact);

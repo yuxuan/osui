@@ -74,7 +74,6 @@ export {default as FloatButton} from '@osui/float-button';
 export {default as Affix} from '@osui/affix';
 export {default as Upload} from '@osui/upload';
 export {default as Col} from '@osui/col';
-export {default as FlexCentered} from '@osui/flex-centered';
 export {default as Grid} from '@osui/grid';
 export {default as Badge} from '@osui/badge';
 export {

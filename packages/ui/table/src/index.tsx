@@ -61,14 +61,20 @@ function Table<RecordType extends Record<string, any>>(
     const {pagination: paginationContext} = useContext(ConfigProvider.ConfigContext);
 
     const showSizeChangerConfig = useMemo(
-        () => !(paginationIn === false || paginationIn === null)
-        && (paginationIn?.showSizeChanger || paginationContext?.showSizeChanger) && (
-            (typeof paginationIn?.showSizeChanger === 'object'
-                && typeof paginationContext?.showSizeChanger === 'object') ? {
+        () => {
+            // 如果明确paginationIn为false，或showSizeChanger为false，则不显示sizeChanger
+            if (paginationIn === false || paginationIn === null || paginationIn?.showSizeChanger === false) {
+                return false;
+            }
+            if (typeof paginationIn?.showSizeChanger === 'object'
+                || typeof paginationContext?.showSizeChanger === 'object') {
+                return {
                     ...(paginationIn?.showSizeChanger as any),
                     ...innerSizeChangerConfig,
-                } : innerSizeChangerConfig
-        ),
+                };
+            }
+            return innerSizeChangerConfig;
+        },
         [innerSizeChangerConfig, paginationContext?.showSizeChanger, paginationIn]
     );
 

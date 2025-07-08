@@ -14,8 +14,8 @@ export const Demo = () => {
     return (
         <BrandProvider brand="icloud">
             <button
-                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
+                style={{display: 'none'}}
             >
                 切换{cssVar ? '不' : ''}使用cssVar
             </button>

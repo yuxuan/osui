@@ -32,9 +32,7 @@ export default {
 export const Demo = () => {
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: '',
-        },
+        cssVar: false,
     };
     return (
         <BrandProvider theme={theme}>
@@ -45,6 +43,7 @@ export const Demo = () => {
             </Blockquote>
             <button
                 onClick={() => setCssVar(v => !v)}
+                style={{display: 'none'}}
             >
                 切换{!cssVar ? '' : '不'}使用cssVar
             </button>

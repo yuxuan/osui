@@ -7,9 +7,12 @@
   "types": "es/index.d.ts",
   "scripts": {
     "lint": "echo 'no lint yet'",
-    "build": "sh scripts/build.sh",
+    "build": "sh scripts/build-with-replacement.sh",
+    "build:original": "sh scripts/build.sh",
     "build:no-replace": "sh scripts/build-original.sh",
     "replace-vars": "node scripts/advanced-replacer.mjs",
+    "replace-ts-vars": "node scripts/ts-theme-replacer.mjs",
+    "test-replacement": "node scripts/test-replacement.mjs",
     "prepack": "pnpm build",
     "storybook": "start-storybook -p 8700",
     "clean": "rm -rf node_modules && rm -rf dist",

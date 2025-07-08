@@ -11,10 +11,11 @@ export const Demo = () => {
     const [cssVar, setCssVar] = useState(false);
 
     return (
-        <BrandProvider>
+        <BrandProvider theme={{cssVar: false}}>
             <div>
                 <button
                     onClick={() => setCssVar(v => !v)}
+                    style={{display: 'none'}}
                 >
                     切换{cssVar ? '不' : ''}使用cssVar
                 </button>

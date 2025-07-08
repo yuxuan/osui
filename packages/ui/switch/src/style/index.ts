@@ -50,10 +50,6 @@ export const genSwitchStyle: (props: {
                     [`&.${prefixCls}-small`]: {
                         'min-width': '28px',
                     },
-
-                    '&-checked': {
-                        'background-color': token['switchBgColor'],
-                    },
                 },
 
                 [`.${prefixCls}-loading-icon`]: {

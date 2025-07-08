@@ -1,9 +1,13 @@
+import {theme, ThemeConfig} from 'antd';
 import type {CSSObject} from '@ant-design/cssinjs';
 import {useBrandContext} from '@osui/brand-provider';
 import {useStyleRegister, useCacheToken} from '@ant-design/cssinjs';
-import {theme, ThemeConfig} from 'antd';
 
 const {useToken} = theme;
+
+// Arrow SVG as data URI
+// eslint-disable-next-line max-len
+const ARROW_SVG_DATA_URI = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTI1NiA3OTguMjU1TDU2My4yIDUxMiAyNTYgMjI1Ljc0NSAzNTguNCAxMjggNzY4IDUxMiAzNTguNCA4OTZ6Ii8+PC9zdmc+';
 
 export const prepareComponentToken: (token: any) => any = token => {
     const ret: any = {};
@@ -58,8 +62,8 @@ export const genStepsStyle: (props: {
                         'background-color': token['themeIconColor'],
                         'transform': 'none',
                         'content': '""',
-                        '-webkit-mask': "url('./arrow.svg') no-repeat 50% 50%",
-                        'mask': "url('./arrow.svg') no-repeat 50% 50%",
+                        '-webkit-mask': `url(${ARROW_SVG_DATA_URI}) no-repeat 50% 50%`,
+                        'mask': `url(${ARROW_SVG_DATA_URI}) no-repeat 50% 50%`,
                         '-webkit-mask-size': 'cover',
                         'mask-size': 'cover',
                     },

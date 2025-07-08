@@ -1,26 +1,18 @@
 import React, {useContext} from 'react';
+import Button, {ButtonProps} from '@osui/button';
+import {
+    IconCheckCircleFilled,
+    IconCloseCircleFilled,
+    IconExclamationCircleFilled,
+    IconInfoCircleFilled,
+    IconCloseOutlined,
+} from '@osui/icons';
 import {Modal as AntdModal, ConfigProvider} from 'antd';
 import {ModalProps as AntdModalProps, ModalFuncProps} from 'antd/es/modal';
 import {modalGlobalConfig} from 'antd/es/modal/confirm';
 import classNames from 'classnames';
-import {
-    IconCloseOutlined,
-    IconCheckCircleFilled,
-    IconCloseCircleFilled,
-    IconInfoCircleFilled,
-    IconExclamationCircleFilled,
-} from '@osui/icons';
-import Button, {ButtonProps} from '@osui/button';
-export {
-    modalGlobalHolderRender,
-    useGetModalWrapSSROsui,
-    useSetStaticMethodStyle,
-} from './useSetStaticMethodStyle';
-
-import useOsuiModal from './useModal';
-
-// import './index.less';
 import {useStyle} from './style';
+import useOsuiModal from './useModal';
 
 const {destroyAll, config} = AntdModal;
 
@@ -46,7 +38,7 @@ const clsPrefix = 'osui-modal';
 
 export interface ModalProps extends AntdModalProps {
     /**
-     * @description 是否展示body上的boder
+     * @description 是否展示body上的border
      */
     bodyBorder?: boolean;
     /**
@@ -54,7 +46,7 @@ export interface ModalProps extends AntdModalProps {
      */
     size?: Size;
     /**
-     * @deprecated 目前没有height的限制时，自动就是autoheight
+     * @deprecated 目前没有height的限制时，自动就是auto height
      */
     autoHeight?: boolean;
     /**
@@ -112,14 +104,11 @@ const OriginModal: ModalInterface = ({className, bodyBorder, size, ...props}) =>
 
     const footer = (
         <div style={footerStyle}>
-            <Button
-                onClick={onCancel as any}
-                {...cancelButtonProps}
-            >
+            <Button onClick={onCancel as any} {...cancelButtonProps}>
                 {cancelText}
             </Button>
             <Button
-                type={okType as ButtonProps['type'] ?? 'primary'}
+                type={(okType as ButtonProps['type']) ?? 'primary'}
                 onClick={onOk as any}
                 loading={confirmLoading}
                 {...okButtonProps}
@@ -145,9 +134,7 @@ const OriginModal: ModalInterface = ({className, bodyBorder, size, ...props}) =>
 OriginModal.useModal = useOsuiModal;
 
 // Modal function component such as confirm
-export type ModalFunc = (
-    props: ConfirmProps,
-) => {
+export type ModalFunc = (props: ConfirmProps) => {
     destroy: () => void;
     update: (newConfig: ModalFuncProps) => void;
 };
@@ -161,8 +148,7 @@ export interface ModalStaticFunctions {
     confirm: ModalFunc;
 }
 
-type ModalType = typeof OriginModal &
-    ModalStaticFunctions & { destroyAll: () => void, config: typeof modalGlobalConfig };
+type ModalType = typeof OriginModal & ModalStaticFunctions & {destroyAll: () => void, config: typeof modalGlobalConfig};
 
 const Modal = OriginModal as ModalType;
 
@@ -230,3 +216,5 @@ Modal.config = config;
 
 export type {ModalFuncProps} from 'antd';
 export default Modal;
+
+export {modalGlobalHolderRender, useGetModalWrapSSROsui, useSetStaticMethodStyle} from './useSetStaticMethodStyle';

@@ -32,10 +32,7 @@ export default {
 export const Demo = () => {
     const [cssVar, setCssVar] = useState(true);
     const theme = {
-        cssVar: cssVar && {
-            prefix: '',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
     return (
         <div id="imagediff-button1">
@@ -49,6 +46,7 @@ export const Demo = () => {
                 </Blockquote>
                 <button
                     onClick={() => setCssVar(v => !v)}
+                    style={{display: 'none'}}
                 >
                     切换{cssVar ? '不' : ''}使用cssVar
                 </button>

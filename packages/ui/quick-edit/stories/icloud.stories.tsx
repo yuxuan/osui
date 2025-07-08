@@ -14,10 +14,7 @@ export const Demo = () => {
         const [selectValue, setSelectValue] = useState('Jack');
         const [cssVar, setCssVar] = useState(false);
         const theme = {
-            cssVar: cssVar && {
-                prefix: 'tna',
-                key: 'tluafed',
-            },
+            cssVar: false,
         };
 
         const style = {width: 240};
@@ -26,6 +23,7 @@ export const Demo = () => {
             <BrandProvider theme={theme}>
                 <button
                     onClick={() => setCssVar(v => !v)}
+                    style={{display: 'none'}}
                 >
                     切换{cssVar ? '不' : ''}使用cssVar
                 </button>
@@ -66,10 +64,7 @@ export const FEDemo = () => {
         const [selectValue, setSelectValue] = useState('什么是快乐星球');
         const [cssVar, setCssVar] = useState(false);
         const theme = {
-            cssVar: cssVar && {
-                prefix: 'tna',
-                key: 'tluafed',
-            },
+            cssVar: false,
         };
 
         const style = {display: 'flex', alignItems: 'center'};
@@ -78,6 +73,7 @@ export const FEDemo = () => {
             <BrandProvider theme={theme}>
                 <button
                     onClick={() => setCssVar(v => !v)}
+                    style={{display: 'none'}}
                 >
                     切换{cssVar ? '不' : ''}使用cssVar
                 </button>

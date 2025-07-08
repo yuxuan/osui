@@ -5,7 +5,6 @@ import classNames from 'classnames';
 import {IconLoading3QuartersOutlined} from '@osui/icons';
 import Tooltip from '@osui/tooltip';
 import {useStyle} from './style';
-// import './index.less';
 
 const clsPrefix = 'osui-button';
 type MinWidthProp = string|number|boolean;
@@ -88,6 +87,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     const {getPrefixCls, theme} = useContext(ConfigProvider.ConfigContext);
     const cssVar = theme?.cssVar;
     const prefixCls = getPrefixCls('btn', props.prefixCls);
+
     const antPrefixCls = getPrefixCls('');
     const wrapSSROsui = useStyle(clsPrefix, prefixCls, cssVar, antPrefixCls);
 

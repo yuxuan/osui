@@ -79,6 +79,7 @@ export const genPaginationStyle: (props: {
                 [`.${prefixCls}-item`]: {
                     'margin-right': token['paginationItemMarginRight'],
                     'border': `1px solid  ${token['paginationItemBorderColor']}`,
+                    'background-color': 'transparent',
 
                     '&:hover': {
                         'background-color': token['paginationItemHoverBg'],

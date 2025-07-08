@@ -11,9 +11,8 @@
     "version": {
       "allowBranch": [
         "hot-fix",
-        "v3",
         "v3-less",
-        "v4-beta"
+        "v5-beta"
       ],
       "ignoreChanges": [
         "**/*.md",

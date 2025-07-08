@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
 import Radio from '../src';
-import IconAComponent from './iconA';
-import IconBComponent from './iconB';
 
 export default {
     title: '数据录入/Radio 单选框',
@@ -16,10 +14,7 @@ export const Demo = () => {
     const [valueButton, setValueButton] = useState('a');
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
 
 
@@ -28,6 +23,7 @@ export const Demo = () => {
             <BrandProvider brand="icloud" theme={theme}>
                 <button
                     onClick={() => setCssVar(v => !v)}
+                    style={{display: 'none'}}
                 >
                     切换{cssVar ? '不' : ''}使用cssVar
                 </button>
@@ -86,25 +82,6 @@ export const Demo = () => {
                     <RadioButton disabled value="c">Shanghai</RadioButton>
                 </Group>
                 <p></p>
-                <p></p>
-                <Group onChange={e => setValueButton(e.target.value)} value={valueButton}>
-                    <Radio.RichButton
-                        value="a"
-                        description="自定义训练镜像以及参数的场景"
-                        icon={<IconAComponent />}
-                    >
-                        自定义
-                    </Radio.RichButton>
-                    <Radio.RichButton
-                        value="b"
-                        description="支持9种大模型，智能提高计算资源使用率"
-                        flag="推荐"
-                        icon={<IconBComponent />}
-
-                    >
-                        AIAK 训练加模版
-                    </Radio.RichButton>
-                </Group>
             </BrandProvider>
         </div>
     );

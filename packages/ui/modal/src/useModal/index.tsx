@@ -3,13 +3,6 @@
  * // TODO: 目前Antd useModal暂不支持直接使用，后续看是否直接暴露withXXX
  */
 
-import React from 'react';
-import type {HookModalRef} from 'antd/es/modal/useModal/HookModal';
-import type {ModalFuncProps} from 'antd/es/modal';
-import HookModal from 'antd/es/modal/useModal/HookModal';
-import usePatchElement from 'antd/es/_util/hooks/usePatchElement';
-import {withError, withInfo, withSuccess, withWarn, withConfirm} from 'antd/es/modal/confirm';
-import {HookAPI} from 'antd/es/modal/useModal';
 import {
     IconCheckCircleFilled,
     IconCloseCircleFilled,
@@ -17,6 +10,13 @@ import {
     IconInfoCircleFilled,
     IconCloseOutlined,
 } from '@osui/icons';
+import usePatchElement from 'antd/es/_util/hooks/usePatchElement';
+import type {ModalFuncProps} from 'antd/es/modal';
+import {withError, withInfo, withSuccess, withWarn, withConfirm} from 'antd/es/modal/confirm';
+import {HookAPI} from 'antd/es/modal/useModal';
+import type {HookModalRef} from 'antd/es/modal/useModal/HookModal';
+import HookModal from 'antd/es/modal/useModal/HookModal';
+import React from 'react';
 
 let uuid = 0;
 
@@ -95,12 +95,7 @@ export default function useOsuiModal() {
 
                 let closeFunc: () => void = () => {};
                 const modal = (
-                    <HookModal
-                        key={`modal-${uuid}`}
-                        config={withFunc(config)}
-                        ref={modalRef}
-                        afterClose={closeFunc}
-                    />
+                    <HookModal key={`modal-${uuid}`} config={withFunc(config)} ref={modalRef} afterClose={closeFunc} />
                 );
 
                 closeFunc = holderRef.current?.patchElement(modal) as () => void;
@@ -145,5 +140,8 @@ export default function useOsuiModal() {
     );
 
     // eslint-disable-next-line react/jsx-key, max-len
-    return [fns as HookAPI, <ElementsHolder ref={holderRef} />] as readonly [instance: HookAPI, contextHolder: React.ReactElement];
+    return [fns as HookAPI, <ElementsHolder ref={holderRef} />] as readonly [
+        instance: HookAPI,
+        contextHolder: React.ReactElement,
+    ];
 }

@@ -50,7 +50,7 @@ export const SizeDemo = () => {
         };
 
         return (
-            <BrandProvider>
+            <BrandProvider brand="icloud" theme={{cssVar: false}}>
                 <p>默认没有default value，不是以下的任何一种，而是antd自身的。即：line-height: 24px, font-size: 14px</p>
                 <p>Size: small。font-size: 12px, line-height: 24px;</p>
                 <Tree
@@ -131,7 +131,7 @@ export const Demo = () => {
         };
 
         return (
-            <BrandProvider>
+            <BrandProvider brand="icloud" theme={{cssVar: false}}>
                 <Tree
                     defaultExpandedKeys={['0-0-0']}
                     defaultSelectedKeys={['0-0-0']}
@@ -258,7 +258,7 @@ export const DraggableDemo = () => {
         render() {
             console.log(this.state.gData);
             return (
-                <BrandProvider>
+                <BrandProvider brand="icloud" theme={{cssVar: false}}>
                     <p>可拖拽</p>
                     <Tree
                         className="draggable-tree"
@@ -414,7 +414,7 @@ export const SearchDemo = () => {
     }
 
     return (
-        <BrandProvider>
+        <BrandProvider brand="icloud" theme={{cssVar: false}}>
             <SearchTree />
         </BrandProvider>
     );
@@ -484,7 +484,7 @@ export const TestCase = () => {
         };
 
         return (
-            <BrandProvider>
+            <BrandProvider brand="icloud" theme={{cssVar: false}}>
                 <p>
                     {`
                     selectable={false}时，需要添加osui-tree-tree-node-unselectable这个className

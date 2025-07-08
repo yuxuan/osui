@@ -1,6 +1,6 @@
-import {useContext, useLayoutEffect, cloneElement, ReactNode, ReactElement} from 'react';
 import {theme as AntdTheme, ConfigProvider} from 'antd';
 import classNames from 'classnames';
+import {useContext, useLayoutEffect, cloneElement, ReactNode, ReactElement} from 'react';
 import {useStyle} from './style';
 
 const {useToken} = AntdTheme;
@@ -10,30 +10,27 @@ interface Props {
     wrapSSROsui: (v: ReactElement) => ReactElement;
 }
 
-export const modalGlobalHolderRender = ({
-    hashId,
-    wrapSSROsui,
-}: Props) => (children: ReactNode) => {
-    if (typeof children === 'string'
-        || typeof children === 'number'
-        || typeof children === 'boolean'
-        || !children
-        || !('props' in children)
-    ) {
-        return children;
-    }
-    const classNameIn: string = children?.props?.className || '';
-    const className = classNameIn?.includes(hashId)
-        ? classNameIn
-        : classNames(classNameIn, hashId);
+export const modalGlobalHolderRender =
+    ({hashId, wrapSSROsui}: Props) =>
+        (children: ReactNode) => {
+            if (
+                typeof children === 'string'
+            || typeof children === 'number'
+            || typeof children === 'boolean'
+            || !children
+            || !('props' in children)
+            ) {
+                return children;
+            }
+            const classNameIn: string = children?.props?.className || '';
+            const className = classNameIn?.includes(hashId) ? classNameIn : classNames(classNameIn, hashId);
 
-    return wrapSSROsui(
-        cloneElement(
-            children, {
-                className,
-            })
-    );
-};
+            return wrapSSROsui(
+                cloneElement(children, {
+                    className,
+                })
+            );
+        };
 
 export const useGetModalWrapSSROsui = () => {
     const {token: outerToken, hashId} = useToken();
@@ -52,7 +49,8 @@ export const useSetStaticMethodStyle = () => {
         () => {
             ConfigProvider.config({
                 holderRender: modalGlobalHolderRender({
-                    hashId, wrapSSROsui,
+                    hashId,
+                    wrapSSROsui,
                 }),
             });
         },

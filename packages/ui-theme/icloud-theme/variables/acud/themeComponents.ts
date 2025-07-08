@@ -3,6 +3,7 @@ import {ThemeConfig} from 'antd';
 export const components: ThemeConfig['components'] = {
     Button: {
         paddingContentHorizontal: 12,
+        paddingInline: 11,
         borderRadiusSM: 4,
         marginXS: 4,
     },
@@ -31,7 +32,6 @@ export const components: ThemeConfig['components'] = {
     Modal: {
         paddingMD: 0,
         paddingContentHorizontalLG: 0,
-        marginXS: 0,
         marginSM: 0,
         lineHeightHeading5: 1.375,
         lineHeight: 1.5,
@@ -52,12 +52,10 @@ export const components: ThemeConfig['components'] = {
     },
     DatePicker: {
         paddingSM: 13,
-        boxShadowSecondary: `0 3px 6px -4px rgba(0, 0, 0, 0.12),
-            0 6px 16px 0 rgba(0, 0, 0, 0.08),
-            0 9px 28px 8px rgba(0, 0, 0, 0.05)`,
+        // eslint-disable-next-line max-len
+        boxShadowSecondary: '0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05)',
     },
     Pagination: {
-        marginXS: 0,
         controlHeightSM: 32,
     },
     Steps: {
@@ -104,7 +102,6 @@ export const components: ThemeConfig['components'] = {
     Result: {
         fontSizeHeading3: 24,
         colorTextDescription: '#5c5f66',
-        marginXS: 0,
         lineHeightHeading3: 1.8,
         lineHeight: 1.6,
     },
@@ -118,9 +115,6 @@ export const components: ThemeConfig['components'] = {
         containerSizeSM: 16,
         // fontSize: 12,
     },
-    Checkbox: {
-        marginXS: 0,
-    },
     Layout: {
         colorBgBody: '#f7f7f9',
     },
@@ -133,9 +127,6 @@ export const components: ThemeConfig['components'] = {
         borderRadiusLG: 8,
         contentPadding: '9px 12px',
         lineHeight: 1.5,
-    },
-    Progress: {
-        marginXS: 0,
     },
     Switch: {
         handleSize: 11,

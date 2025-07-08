@@ -1,7 +1,7 @@
+import {theme, ThemeConfig} from 'antd';
 import type {CSSObject} from '@ant-design/cssinjs';
 import {useBrandContext} from '@osui/brand-provider';
 import {useStyleRegister, useCacheToken} from '@ant-design/cssinjs';
-import {theme, ThemeConfig} from 'antd';
 
 const {useToken} = theme;
 
@@ -188,7 +188,6 @@ export const genRadioStyle: (props: {
                         'box-shadow': 'none',
                     },
                 },
-
                 [`.${prefixCls}`]: {
                     'top': token['radioTop'],
                 },

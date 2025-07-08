@@ -15,7 +15,7 @@ export const Demo = () => {
         console.log('changed', value);
     };
     return (
-        <BrandProvider>
+        <BrandProvider brand="icloud" theme={{cssVar: false}}>
             <h3>基础数字输入框</h3>
             <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />
             <br />
@@ -96,7 +96,7 @@ const InputNumberCompact = InputNumber.InputNumberCompact;
 export const InputNumberStrongDemo = () => {
 
     return (
-        <BrandProvider>
+        <BrandProvider brand="icloud" theme={{cssVar: false}}>
             <InputNumberCompact />
             <br />
             <br />

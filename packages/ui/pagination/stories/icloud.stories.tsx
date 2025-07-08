@@ -23,10 +23,7 @@ const Blockquote = ({children}) => (
 export const Demo = () => {
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
 
     function onChange(page, pageSize) {
@@ -44,8 +41,8 @@ export const Demo = () => {
                 <p>SizeChanger的实现也不一致，交互需要在头部，而antd内置为在QuickJumper旁边，且不能调整位置</p>
             </Blockquote>
             <button
-                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
+                style={{display: 'none'}}
             >
                 切换{cssVar ? '不' : ''}使用cssVar
             </button>

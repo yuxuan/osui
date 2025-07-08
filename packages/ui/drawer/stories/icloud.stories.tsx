@@ -13,10 +13,7 @@ export default {
 export const Demo = () => {
     const [cssVar, setCssVar] = React.useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
 
     const [visible, setVisible] = React.useState(false);
@@ -39,6 +36,7 @@ export const Demo = () => {
                 <p>footer没有封装在组件内，按业务逻辑调整</p>
                 <button
                     onClick={() => setCssVar(v => !v)}
+                    style={{display: 'none'}}
                 >
                     切换{cssVar ? '不' : ''}使用cssVar
                 </button>

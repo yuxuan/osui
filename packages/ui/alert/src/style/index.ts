@@ -46,13 +46,16 @@ export const genAlertStyle: (props: {
                     },
                 },
 
-                [`&.${prefixCls}-with-description .${prefixCls}-icon`]: {
-                    'align-self': 'flex-start',
-                    'margin-top': '3px',
-                },
-
                 [`&.${prefixCls}-with-description`]: {
                     [`.${prefixCls}-icon`]: {
+                        'align-self': 'flex-start',
+                        'margin-top': '3px',
+                        'top': '11px',
+                    },
+
+                    [`.${prefixCls}-close-icon`]: {
+                        'align-self': 'flex-start',
+                        'margin-top': '3px',
                         'top': '11px',
                     },
 
@@ -128,7 +131,6 @@ export const useStyle = (
     const outTheme = useBrandContext();
     const hashed = outTheme.designToken?.hashed;
     const {token: outerToken, theme, hashId} = useToken();
-
     const [token] = useCacheToken(
         theme as any,
         [

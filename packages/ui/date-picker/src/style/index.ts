@@ -34,7 +34,7 @@ export const genDatePickerStyle: (props: {
                     'color': token['datePickerSuffixColor'],
                 },
                 [`&.${prefixCls}-disabled`]: {
-                    'background': 'none',
+                    'background': token['themeDisabledBg'],
                     'border-color': token['themeBorderColorDisabled'],
                 },
             },

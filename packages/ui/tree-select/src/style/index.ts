@@ -24,10 +24,11 @@ type CssVar = boolean | {
 export const genTreeSelectStyle: (props: {
     clsPrefix: string;
     prefixCls: string;
+    antPrefix: string;
     token: Record<string, string>;
     cssVar: CssVar;
 }) => CSSObject[] =
-    ({clsPrefix, prefixCls, token}) => {
+    ({clsPrefix, prefixCls, token, antPrefix}) => {
         return [{
             [`.${clsPrefix}`]: {
                 '&-dropdown': {
@@ -41,6 +42,14 @@ export const genTreeSelectStyle: (props: {
                         'height': 14,
                         'color': token['themeIconColor'],
                     },
+                },
+
+                [`.${antPrefix}-select-arrow`]: {
+                    'color': token['themeIconColor'],
+                    'width': 14,
+                    'height': 14,
+                    'top': token['selectArrowTop'],
+                    'right': 11,
                 },
             },
 
@@ -117,7 +126,7 @@ export const useStyle = (
         },
         () => [
             genTreeSelectStyle({
-                clsPrefix, prefixCls, token, cssVar,
+                clsPrefix, prefixCls, token, cssVar, antPrefix,
             }),
         ]
     );

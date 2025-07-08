@@ -3,7 +3,7 @@ import React from 'react';
 import Select from '@osui/select';
 import Divider from '@osui/divider';
 import AutoComplete from '@osui/auto-complete';
-import FlexCentered from '@osui/flex-centered';
+import Flex from '@osui/flex';
 import BrandProvider from '@osui/brand-provider';
 import Button from '@osui/button';
 import Form from '@osui/form';
@@ -35,7 +35,7 @@ export const Demo = () => {
     return (
         <>
             {version}
-            <BrandProvider>
+            <BrandProvider brand="icloud" theme={{cssVar: false}}>
                 <h3>基础输入框展示形式</h3>
                 <p>默认样式</p>
                 <Input
@@ -172,7 +172,7 @@ export const Demo = () => {
 
 export const Size = () => {
     return (
-        <BrandProvider>
+        <BrandProvider brand="icloud" theme={{cssVar: false}}>
             <Blockquote>
                 <p>大小高度两种：1. small: 24px，2. default: 30px；默认为30px</p>
                 <p>宽度有三种： 160px，240px，320px。宽度没有给出默认设置，产品根据规范按需从这三个宽度选择合适的宽度</p>
@@ -254,7 +254,7 @@ export const Complete = () => {
         </Select>
     );
     return (
-        <BrandProvider>
+        <BrandProvider brand="icloud" theme={{cssVar: false}}>
             <Divider orientation="left">1. 含推荐功能的输入框</Divider>
             <p>见AutoComplete，支持输入，同时支持选择内容</p>
             <Divider orientation="left">2. 含搜索联想功能的输入框</Divider>
@@ -456,13 +456,13 @@ export const Complete = () => {
 
 export const Search = () => {
     return (
-        <BrandProvider>
+        <BrandProvider brand="icloud" theme={{cssVar: false}}>
             <BrandProvider brand="icloud">
                 <Blockquote>
                     注意：使用enterButton时不可以和withSuffixIcon一起用，也不合理，enterButton会覆盖掉withSuffixIcon
                 </Blockquote>
                 <h3>基础搜索框</h3>
-                <FlexCentered>
+                <Flex>
                     <Input.Search
                         allowClear
                         withSuffixIcon
@@ -480,9 +480,9 @@ export const Search = () => {
                             width: 240,
                         }}
                     />
-                </FlexCentered>
+                </Flex>
                 <br />
-                <FlexCentered>
+                <Flex>
                     <Input.Search
                         disabled
                         withSuffixIcon
@@ -511,7 +511,7 @@ export const Search = () => {
                             width: 240,
                         }}
                     />
-                </FlexCentered>
+                </Flex>
                 <Blockquote>
                     下面第一个这种不在规范内，不要使用，如果要用，加上 withSuffixIcon
                 </Blockquote>
@@ -528,7 +528,7 @@ export const Search = () => {
 
 export const CounterDemo = () => {
     return (
-        <BrandProvider>
+        <BrandProvider brand="icloud" theme={{cssVar: false}}>
             <p>提供了一个简易的Input + showCount + maxLength的组件： InputWithCounter</p>
             <p>使用方式如下：</p>
             <p>注意：该方式可能不满足某些设计交互，如达到字数限制时允许用户继续输入，只展示表单错误</p>
@@ -598,7 +598,7 @@ export const Api = () => {
 
 export const TestCase = () => {
     return (
-        <BrandProvider>
+        <BrandProvider brand="icloud" theme={{cssVar: false}}>
             {version}
             <Blockquote>
                 说明：记录走查问题的测试case。 不需要走查

@@ -265,7 +265,7 @@ export const genInputStyle: (props: {
                 '&-counter': {
                     'position': 'relative',
                     'right': '21px',
-                    'z-index': 1,
+                    'z-index': '1',
                     'display': 'inline-block',
                     'color': token['colorGray7'],
                     'white-space': 'nowrap',

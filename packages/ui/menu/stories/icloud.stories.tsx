@@ -75,10 +75,7 @@ export const Demo = () => {
 export const Vertical = () => {
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
 
 
@@ -160,8 +157,8 @@ export const Vertical = () => {
     return (
         <BrandProvider theme={theme}>
             <button
-                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
+                style={{display: 'none'}}
             >
                 切换{cssVar ? '不' : ''}使用cssVar
             </button>

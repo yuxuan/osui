@@ -90,14 +90,12 @@ export const Demo = () => {
                             paddingXS: 5.5,
                         },
                     },
-                    cssVar: cssVar && {
-                        prefix: 'tna',
-                        key: 'tluafed',
-                    },
+                    cssVar: false,
                 }}
             >
                 <button
                     onClick={() => setCssVar(v => !v)}
+                    style={{display: 'none'}}
                 >
                     切换{cssVar ? '不' : ''}使用cssVar
                 </button>

@@ -11,10 +11,7 @@ export default {
 export const Demo = () => {
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
 
     return (
@@ -25,8 +22,8 @@ export const Demo = () => {
             <p>常用于反馈提示用户系统中需要关注的信息，需要完成的任务和可能发生的错误。信息反馈样式均统一为右侧浮层，分类为：结果反馈、业务报错、消息通知三大类，浮层定宽不定高，规则如下：</p>
             <p><strong>FE说明：</strong>根据UE标注说明，应该是message组件的弹出效果，但是内容与Alert一致</p>
             <button
-                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
+                style={{display: 'none'}}
             >
                 切换{cssVar ? '不' : ''}使用cssVar
             </button>

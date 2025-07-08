@@ -4,7 +4,7 @@ import Markdown from '@osui/markdown';
 import BrandProvider from '@osui/brand-provider';
 import AutoComplete from '../src';
 
-const Blockquote = ({children}) => (
+const Blockquote = ({children}: any) => (
     <blockquote style={{
         background: 'var(--color-brand-1)',
         borderRadius: '3px',
@@ -25,10 +25,7 @@ export default {
 export const Demo1 = () => {
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: true,
     };
 
     const defaultOptions = [
@@ -57,7 +54,7 @@ export const Demo1 = () => {
     };
 
     const onSearch = useCallback(
-        searchText => {
+        (searchText: any) => {
             setonSearchValue(searchText);
             setOptions(
                 searchText ? [
@@ -77,7 +74,7 @@ export const Demo1 = () => {
         []
     );
     const defaultEmptyOptionsOnSearch = useCallback(
-        searchText => {
+        (searchText: any) => {
             setDefaultEmptyOptions(
                 searchText ? [
                     mockVal(searchText, '一'),
@@ -90,36 +87,45 @@ export const Demo1 = () => {
                     mockVal(searchText, '八'),
                     mockVal(searchText, '九'),
                     mockVal(searchText, '十'),
-                ] : []
+                ] : [] as any
             );
         },
         []
     );
-    const defaultOtherOptionsOnSearch = (searchText: string) => {
-        setDefaultOtherOptions(
-            searchText ? [
-                mockVal(searchText, '一'),
-                mockVal(searchText, '二'),
-                mockVal(searchText, '三'),
-                mockVal(searchText, '四'),
-                mockVal(searchText, '五'),
-                mockVal(searchText, '六'),
-                mockVal(searchText, '七'),
-                mockVal(searchText, '八'),
-                mockVal(searchText, '九'),
-                mockVal(searchText, '十'),
-            ] : defaultOtherOptions
-        );
-    };
+    const defaultOtherOptionsOnSearch = useCallback(
+        (searchText: string) => {
+            setDefaultOtherOptions(
+                searchText ? [
+                    mockVal(searchText, '一'),
+                    mockVal(searchText, '二'),
+                    mockVal(searchText, '三'),
+                    mockVal(searchText, '四'),
+                    mockVal(searchText, '五'),
+                    mockVal(searchText, '六'),
+                    mockVal(searchText, '七'),
+                    mockVal(searchText, '八'),
+                    mockVal(searchText, '九'),
+                    mockVal(searchText, '十'),
+                ] : defaultOtherOptions
+            );
+        },
+        [defaultOtherOptions]
+    );
 
-    const onSelect = (data: any) => {
-        setonSelectValue(data);
-        console.log('onSelect', data);
-    };
+    const onSelect = useCallback(
+        (data: any) => {
+            setonSelectValue(data);
+            console.log('onSelect', data);
+        },
+        []
+    );
 
-    const onChange = (data: any) => {
-        setonChangeValue(data);
-    };
+    const onChange = useCallback(
+        (data: any) => {
+            setonChangeValue(data);
+        },
+        []
+    );
 
     return (
         <BrandProvider brand="icloud" theme={theme}>
@@ -131,8 +137,8 @@ export const Demo1 = () => {
                 <p><strong>FE说明：</strong>和Select Search的区别是，Select Search只是筛选select里面的内容，最终还是要选中某个选项的</p>
             </Blockquote>
             <button
-                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
+                style={{display: 'none'}}
             >
                 切换{cssVar ? '不' : ''}使用cssVar
             </button>
@@ -142,7 +148,6 @@ export const Demo1 = () => {
             <div style={{display: 'flex', alignItems: 'center'}}>
                 <AutoComplete
                     allowClear
-                    showArrow
                     options={options}
                     style={{
                         width: 240,

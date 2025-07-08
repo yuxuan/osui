@@ -3,7 +3,6 @@ import {Tree as AntdTree, ConfigProvider} from 'antd';
 import type {TreeProps as AntdTreeProps, TreeNodeProps, TreeDataNode} from 'antd';
 import classNames from 'classnames';
 import {IconDownOutlined} from '@osui/icons';
-// import './index.less';
 import {useStyle} from './style';
 
 const clsPrefix = 'osui-tree';

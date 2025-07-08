@@ -12,16 +12,16 @@ export default {
 export const Demo = () => {
     const [cssVar, setCssVar] = useState(false);
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
+        cssVar: {
+            key: 'switch',
+            prefix: 'osui',
         },
     };
     return (
         <BrandProvider brand="icloud" theme={theme}>
             <button
-                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
+                style={{display: 'none'}}
             >
                 切换{cssVar ? '不' : ''}使用cssVar
             </button>

@@ -5,7 +5,7 @@ import {IconCloseOutlined, IconHomeOutlined, IconDownOutlined, IconPlusOutlined}
 import Divider from '@osui/divider';
 import TextOverflowTooltip from '@osui/text-overflow-tooltip';
 import Dropdown from '@osui/dropdown';
-import FlexCentered from '@osui/flex-centered';
+import Flex from '@osui/flex';
 import Menu from '@osui/menu';
 import Button from '@osui/button';
 import BrandProvider from '@osui/brand-provider';
@@ -33,17 +33,14 @@ export const Demo = () => {
     const [cssVar, setCssVar] = useState(false);
 
     const theme = {
-        cssVar: cssVar && {
-            prefix: 'tna',
-            key: 'tluafed',
-        },
+        cssVar: false,
     };
 
     return (
         <BrandProvider theme={theme}>
             <button
-                style={{display: 'none'}}
                 onClick={() => setCssVar(v => !v)}
+                style={{display: 'none'}}
             >
                 切换{cssVar ? '不' : ''}使用cssVar
             </button>
@@ -192,10 +189,10 @@ export const ExtraDemo = () => {
                 <TabPane
                     tab={
                         <Dropdown overlay={menu}>
-                            <FlexCentered>
+                            <Flex>
                                 {active}
                                 <IconDownOutlined style={{paddingLeft: '5px'}} />
-                            </FlexCentered>
+                            </Flex>
                         </Dropdown>
                     }
                     key="3"
