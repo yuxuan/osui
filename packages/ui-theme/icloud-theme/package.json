@@ -1,6 +1,6 @@
 {
   "name": "@osui/icloud-theme",
-  "version": "3.1.13",
+  "version": "3.1.14",
   "description": "",
   "main": "dist/theme/index.js",
   "module": "dist/theme/index.js",
@@ -22,7 +22,7 @@
   ],
   "devDependencies": {
     "@babel/cli": "^7.10.5",
-    "@osui/icons": "^3.1.13",
+    "@osui/icons": "^3.1.14",
     "@reskript/cli": "^6.0.0",
     "@reskript/cli-lint": "^6.0.0",
     "@reskript/config-babel": "^6.0.0",
