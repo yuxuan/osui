@@ -4,6 +4,18 @@
     &-dropdown.@{ant-prefix}-tree-select-dropdown {
         .@{ant-prefix}-select-tree-node-content-wrapper.@{ant-prefix}-select-tree-node-selected {
             color: var(--tree-select-selected-color);
+            background-color: var(--tree-node-selected-bg);
+
+            &:hover {
+                color: var(--tree-select-selected-color);
+            }
+        }
+
+        .@{ant-prefix}-select-tree-treenode:not(.ant-select-tree-treenode-disabled) {
+            .@{ant-prefix}-select-tree-node-content-wrapper:hover {
+                color: var(--tree-select-selected-color);
+                background-color: var(--tree-node-selected-bg);
+            }
         }
     }
 
