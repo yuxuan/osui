@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v3.1.16) (2025-07-23)
+
+
+### Bug Fixes
+
+* input-number table ([4dcabb1](https://gitee.com/gitee-fe/osui/tree/master/commits/4dcabb15fa99af41a5947a1e3ea4b1e24485a5b0))
+* table ([7c35ea1](https://gitee.com/gitee-fe/osui/tree/master/commits/7c35ea1f38f56bd28e3d5054c18111ea44d37cea))
+* table pagination调整 ([81ba0a7](https://gitee.com/gitee-fe/osui/tree/master/commits/81ba0a769a49741e90ed783fd7a6b759b33e13c2))
+* tree-select icon, pagination icon, switch size ([5d28ebf](https://gitee.com/gitee-fe/osui/tree/master/commits/5d28ebfbfe3963998c42820ac29b468197df5e69))
+* 优化empty ([cc31b1b](https://gitee.com/gitee-fe/osui/tree/master/commits/cc31b1bedf615e78d5da21664f55dde2615927ff))
+* 优化table sorter样式 ([38f41f2](https://gitee.com/gitee-fe/osui/tree/master/commits/38f41f2376cc3d8534b22b2605d4fe5bac2bd380))
+* 修复table sizechanger ([2832f4c](https://gitee.com/gitee-fe/osui/tree/master/commits/2832f4cab889ac5c72be43dc93dbc36e7e126c44))
+* 尝试修复version ([6e644e7](https://gitee.com/gitee-fe/osui/tree/master/commits/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+
+
+
+
+
 ## [3.1.15](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v3.1.15) (2025-07-22)
 
 
