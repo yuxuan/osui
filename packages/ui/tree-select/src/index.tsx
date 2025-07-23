@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useMemo, useState} from 'react';
 import {TreeSelect as AntdTreeSelect, TreeSelectProps as AntdTreeSelectProps} from 'antd';
 import classNames from 'classnames';
 import {IconDownOutlined} from '@osui/icons';
@@ -26,6 +26,22 @@ const InternalTreeSelect = <OptionType extends DataNode = DataNode>(
         props.onDropdownVisibleChange?.(visible);
         setDropdownVisible(visible);
     };
+    const suffixIcon = useMemo(
+        () => (props.loading ? undefined : dropdownVisible
+            ? (
+                <IconDownOutlined
+                    className={classNames(`${clsPrefix}-switcherIcon`)}
+                    style={{transform: 'rotate(180deg)', transition: 'transform 0.3s ease-in-out'}}
+                />
+            )
+            : (
+                <IconDownOutlined
+                    className={classNames(`${clsPrefix}-switcherIcon`)}
+                    style={{transition: 'transform 0.3s ease-in-out'}}
+                />
+            )),
+        [props.loading, dropdownVisible]
+    );
     return (
         <AntdTreeSelect
             ref={ref}
@@ -33,19 +49,7 @@ const InternalTreeSelect = <OptionType extends DataNode = DataNode>(
             popupClassName={innerPopupClassName}
             {...props}
             switcherIcon={innerSwitcherIcon}
-            suffixIcon={dropdownVisible
-                ? (
-                    <IconDownOutlined
-                        className={classNames(`${clsPrefix}-switcherIcon`)}
-                        style={{transform: 'rotate(180deg)', transition: 'transform 0.3s ease-in-out'}}
-                    />
-                )
-                : (
-                    <IconDownOutlined
-                        className={classNames(`${clsPrefix}-switcherIcon`)}
-                        style={{transition: 'transform 0.3s ease-in-out'}}
-                    />
-                )}
+            suffixIcon={suffixIcon}
             onDropdownVisibleChange={onDropdownVisibleChange}
         />
     );
