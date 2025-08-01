@@ -422,7 +422,7 @@ export default {
     '--popover-color': 'var(--text-color)',
     '--popover-customize-border-color': 'var(--border-color-split)',
     '--popover-font-size': '12px',
-    '--popover-inner-content-padding': '8px 12px',
+    '--popover-inner-content-padding': '12px 12px',
     '--popover-line-height': '20px',
     '--popover-title-padding': '16px 24px 4px 24px',
     '--process-tail-color': 'var(--border-color-split)',

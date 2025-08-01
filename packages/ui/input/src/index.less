@@ -137,6 +137,22 @@
     }
 }
 
+.@{osui-input-class-prefix}.@{ant-prefix}-input-group-wrapper-outlined.@{ant-prefix}-input-group-wrapper-status-error {
+    .@{ant-prefix}-input-wrapper {
+        .@{ant-prefix}-input-affix-wrapper {
+            border-color: var(--theme-error-color);
+        }
+
+        &:hover {
+            .@{ant-prefix}-input-group-addon,
+            .@{ant-prefix}-input-affix-wrapper,
+            input {
+                border-color: var(--theme-error-color-hover);
+            }
+        }
+    }
+}
+
 // text count
 .@{osui-input-class-prefix}-textarea {
     .ant-input-data-count {
