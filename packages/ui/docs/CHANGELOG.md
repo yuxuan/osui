@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.17](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v3.1.17) (2025-08-01)
+
+
+### Bug Fixes
+
+* tree-select选中样式 ([ba4daec](https://gitee.com/gitee-fe/osui/tree/master/commits/ba4daec6fb7f7a4d53e42dbf13374f478888ce78))
+* 尝试修复version ([6e644e7](https://gitee.com/gitee-fe/osui/tree/master/commits/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+* 移除joyride ([7177428](https://gitee.com/gitee-fe/osui/tree/master/commits/717742881d3c3ea98c73e6ebcc7cd2ad505f412a))
+* 调整docs ([1ddf048](https://gitee.com/gitee-fe/osui/tree/master/commits/1ddf048901afbeb59c64bd0417cf43242b964bda))
+
+
+
+
+
 ## [3.1.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v3.1.16) (2025-07-23)
 
 
