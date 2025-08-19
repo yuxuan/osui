@@ -80,6 +80,8 @@ const getIsSorted = (list: SortedInfo, column: any) => {
 const useCustomHeadIcons = <T extends {
     title?: React.ReactNode;
     sorter?: boolean | any;
+    originalTitle?: React.ReactNode;
+    children?: T[];
 }>(columns: T[], prefixCls: string) => {
     const [sortedInfo, setSortedInfo] = useState<SortedInfo>([{}]);
     const onClick = useCallback(
@@ -103,14 +105,18 @@ const useCustomHeadIcons = <T extends {
         },
         [sortedInfo]
     );
+    // 处理单个列的通用函数
+    const processColumn = useCallback(
+        (column: T): T => {
+            // 保存原始标题
+            if (!column.originalTitle) {
+                column.originalTitle = column.title;
+            }
 
-    const newColumns = useMemo(
-        () => columns.map(column => {
             const isSortedItem = getIsSorted(sortedInfo, column);
-
             const title = (
                 <>
-                    {column.title}
+                    {column.originalTitle}
                     <span className={classNames(
                         `${prefixCls}-table-column-sorter`,
                         `${prefixCls}-table-column-sorter-full`,
@@ -141,8 +147,30 @@ const useCustomHeadIcons = <T extends {
                 ...column,
                 ...(column.sorter ? {title} : {}),
             };
-        }),
-        [columns, onClick, prefixCls, sortedInfo]
+        },
+        [onClick, prefixCls, sortedInfo]
+    );
+
+    // 递归处理列及其所有children
+    const processColumnsRecursively = useCallback(
+        (columns: T[]): T[] => {
+            return columns.map(column => {
+                const processedColumn = processColumn(column);
+
+                // 如果有children，递归处理
+                if (processedColumn.children) {
+                    processedColumn.children = processColumnsRecursively(processedColumn.children);
+                }
+
+                return processedColumn;
+            });
+        },
+        [processColumn]
+    );
+
+    const newColumns = useMemo(
+        () => processColumnsRecursively(columns),
+        [columns, processColumnsRecursively]
     );
 
     return {
