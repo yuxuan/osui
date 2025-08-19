@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.18](https://github.com/yuxuan/osui/compare/v3.1.0...v3.1.18) (2025-08-19)
+
+**Note:** Version bump only for package @osui/icons-builder
+
+
+
+
+
 ## [3.1.17](https://github.com/yuxuan/osui/compare/v3.1.0...v3.1.17) (2025-08-01)
 
 **Note:** Version bump only for package @osui/icons-builder
