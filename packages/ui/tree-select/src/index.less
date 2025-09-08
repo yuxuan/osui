@@ -1,21 +1,10 @@
 @osui-tree-select-class-prefix: osui-tree-select;
 
 .@{osui-tree-select-class-prefix} {
-    &-dropdown.@{ant-prefix}-tree-select-dropdown {
+    &-dropdown {
         .@{ant-prefix}-select-tree-node-content-wrapper.@{ant-prefix}-select-tree-node-selected {
             color: var(--tree-select-selected-color);
-            background-color: var(--tree-node-selected-bg);
-
-            &:hover {
-                color: var(--tree-select-selected-color);
-            }
-        }
-
-        .@{ant-prefix}-select-tree-treenode:not(.ant-select-tree-treenode-disabled) {
-            .@{ant-prefix}-select-tree-node-content-wrapper:hover {
-                color: var(--tree-select-selected-color);
-                background-color: var(--tree-node-selected-bg);
-            }
+            background-color: var(--tree-node-selected-bg) !important;
         }
     }
 
@@ -37,18 +26,18 @@
         .@{ant-prefix}-select-tree-node-content-wrapper,
         .@{ant-prefix}-select-tree-node-content-wrapper-normal {
             &:not(.@{ant-prefix}-select-tree-node-selected):active {
-                background-color: var(--color-gray-4);
+                background-color: var(--gray-color-4);
             }
         }
     }
 
     .@{ant-prefix}-select-tree-node-selected {
         &:hover {
-            background: var(--color-brand-1);
+            background: var(--brand-color-1);
         }
 
         &:active {
-            background: var(--color-brand-2);
+            background: var(--brand-color-2);
         }
     }
     // #endregion

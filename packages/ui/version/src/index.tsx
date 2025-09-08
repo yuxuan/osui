@@ -1,6 +1,3 @@
-import {version} from 'antd';
-import data from '../package.json';
+export const osuiVersion = '4.0.0';
 
-export const osuiVersion = data.version;
-
-export default version;
+export default osuiVersion;

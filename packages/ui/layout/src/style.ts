@@ -56,7 +56,7 @@ export const genStyle: (
 
                     [`&:hover .${clsPrefix}-item`]: {
                         fill: '#2468f2 !important',
-                        color: cssVar ? 'var(--color-brand-6)' : '#2468f2',
+                        color: cssVar ? 'var(--brand-color-6)' : '#2468f2',
                     },
 
                     [`.${clsPrefix}-item`]: {

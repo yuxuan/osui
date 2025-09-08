@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 import {fileURLToPath} from 'url';
-import defaultVars, {v1, acud, dark} from '../vars/index.js';
+import defaultVars, {acud} from '../vars/index.js';
 import formatToCSS from './jsToCssVars.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -15,9 +15,7 @@ const generateCSSVars = scoped => {
 };
 
 const generateDifferentCSSVars = () => {
-    fs.writeFileSync(path.join(destination, 'v1.vars.css'), formatToCSS(v1, false));
     fs.writeFileSync(path.join(destination, 'acud.vars.css'), formatToCSS(acud, false));
-    fs.writeFileSync(path.join(destination, 'dark.vars.css'), formatToCSS(dark, '[data-theme="dark"]'));
 };
 
 generateCSSVars();

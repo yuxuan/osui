@@ -158,14 +158,14 @@
 
         &:active {
             color: ~"var(--theme-@{face}-color-hover)";
-            background-color: ~"var(--color-@{face}-1)";
+            background-color: ~"var(--@{face}-color-1)";
             border-color: ~"var(--theme-@{face}-color-hover)";
         }
 
         &[disabled] {
-            color: ~"var(--color-@{face}-3)";
-            background-color: ~"var(--color-@{face}-1)";
-            border-color: ~"var(--color-@{face}-2)";
+            color: ~"var(--@{face}-color-3)";
+            background-color: ~"var(--@{face}-color-1)";
+            border-color: ~"var(--@{face}-color-2)";
         }
     }
 
@@ -194,8 +194,8 @@
 
         &[disabled] {
             color: ~"var(--btn-primary-color)";
-            background-color: ~"var(--color-@{face}-2)";
-            border-color: ~"var(--color-@{face}-2)";
+            background-color: ~"var(--@{face}-color-2)";
+            border-color: ~"var(--@{face}-color-2)";
         }
     }
 

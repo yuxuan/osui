@@ -14,9 +14,9 @@ import Table from '@osui/table';
 
 const Blockquote = ({children}) => (
     <blockquote style={{
-        background: 'var(--color-brand-1)',
+        background: 'var(--brand-color-1)',
         borderRadius: '3px',
-        borderLeft: '5px solid var(--color-brand-6)',
+        borderLeft: '5px solid var(--brand-color-6)',
         margin: '30px 0',
         padding: '30px',
     }}
@@ -116,6 +116,115 @@ export const Demo = () => {
     );
 };
 
+export const Nested = () => {
+    const columns = [
+        {
+            title: 'Name',
+            dataIndex: 'name',
+            key: 'name',
+            width: 100,
+            fixed: 'left',
+            filters: [
+                {
+                    text: 'Joe',
+                    value: 'Joe',
+                },
+                {
+                    text: 'John',
+                    value: 'John',
+                },
+            ],
+            onFilter: (value, record) => record.name.indexOf(value) === 0,
+        },
+        {
+            title: 'Other',
+            children: [
+                {
+                    title: 'Age',
+                    dataIndex: 'age',
+                    key: 'age',
+                    width: 150,
+                    sorter: (a, b) => a.age - b.age,
+                },
+                {
+                    title: 'Address',
+                    children: [
+                        {
+                            title: 'Street',
+                            dataIndex: 'street',
+                            key: 'street',
+                            width: 150,
+                        },
+                        {
+                            title: 'Block',
+                            children: [
+                                {
+                                    title: 'Building',
+                                    dataIndex: 'building',
+                                    key: 'building',
+                                    width: 100,
+                                },
+                                {
+                                    title: 'Door No.',
+                                    dataIndex: 'number',
+                                    key: 'number',
+                                    width: 100,
+                                    sorter: true,
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
+        {
+            title: 'Company',
+            children: [
+                {
+                    title: 'Company Address',
+                    dataIndex: 'companyAddress',
+                    key: 'companyAddress',
+                    width: 200,
+                },
+                {
+                    title: 'Company Name',
+                    dataIndex: 'companyName',
+                    key: 'companyName',
+                },
+            ],
+        },
+        {
+            title: 'Gender',
+            dataIndex: 'gender',
+            key: 'gender',
+            width: 80,
+            fixed: 'right',
+        },
+    ];
+    const dataSource = Array.from({length: 100}).map((_, i) => ({
+        key: i,
+        name: 'John Brown',
+        age: i + 1,
+        street: 'Lake Park',
+        building: 'C',
+        number: 2035,
+        companyAddress: 'Lake Street 42',
+        companyName: 'SoftLake Co',
+        gender: 'M',
+    }));
+
+    return (
+        <BrandProvider brand="icloud">
+            <Table
+                columns={columns}
+                dataSource={dataSource}
+                bordered
+                size="middle"
+                scroll={{x: 'calc(700px + 50%)', y: 47 * 5}}
+            />
+        </BrandProvider>
+    );
+};
 
 export const Border = () => {
 

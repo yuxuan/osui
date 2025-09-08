@@ -13,9 +13,9 @@ import Tabs from '../src';
 
 const Blockquote = ({children}) => (
     <blockquote style={{
-        background: 'var(--color-brand-1)',
+        background: 'var(--brand-color-1)',
         borderRadius: '3px',
-        borderLeft: '5px solid var(--color-brand-6)',
+        borderLeft: '5px solid var(--brand-color-6)',
         margin: '30px 0',
         padding: '30px',
     }}

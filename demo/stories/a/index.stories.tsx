@@ -8,9 +8,9 @@ export default {
 
 const Blockquote = ({children}) => (
     <blockquote style={{
-        background: 'var(--color-brand-1)',
+        background: 'var(--brand-color-1)',
         borderRadius: '3px',
-        borderLeft: '5px solid var(--color-brand-6)',
+        borderLeft: '5px solid var(--brand-color-6)',
         margin: '30px 0',
         padding: '30px',
     }}
@@ -38,7 +38,7 @@ export const Demo = () => {
     }
     // 加强样式disabled颜色
     .text-link-strong:disabled {
-        color: var(--color-brand-3);
+        color: var(--brand-color-3);
     }
     `;
 
@@ -63,7 +63,7 @@ export const Demo = () => {
             <h3>加强样式</h3>
             <a href="www.baidu.com">www.baidu.com</a>
             <h3>加强样式disabled</h3>
-            <a href="www.baidu.com" disabled style={{color: 'var(--color-brand-3)'}} >www.baidu.com</a>
+            <a href="www.baidu.com" disabled style={{color: 'var(--brand-color-3)'}}>www.baidu.com</a>
             <Divider>普通样式css代码</Divider>
             <pre>
                 {/* eslint-disable-next-line react/no-danger */}

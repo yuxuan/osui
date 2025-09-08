@@ -10,7 +10,7 @@ export default {
 };
 
 const BrandApp = () => {
-    const { brand } = useBrandContext();
+    const {brand} = useBrandContext();
     return (<div>Hi: {brand}</div>);
 };
 

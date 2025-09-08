@@ -83,7 +83,7 @@ export const Primary = () => {
                         flex: 1,
                         width: 'calc(100vw - 160px)',
                         height: '400px',
-                        backgroundColor: 'var(--color-brand-1)',
+                        backgroundColor: 'var(--brand-color-1)',
                     }}
                 >
                     content

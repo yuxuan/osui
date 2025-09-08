@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
 import Radio from '@osui/radio';
+import IconAComponent from './iconA';
+import IconBComponent from './iconB';
 
 export default {
     title: '数据录入/Radio 单选框',
@@ -68,6 +70,26 @@ export const Demo = () => {
                 <Group buttonStyle="solid" value="c">
                     <RadioButton value="b" disabled>Shanghai</RadioButton>
                     <RadioButton disabled value="c">Shanghai</RadioButton>
+                </Group>
+                <p></p>
+                <p></p>
+                <Group onChange={e => setValueButton(e.target.value)} value={valueButton}>
+                    <Radio.RichButton
+                        value="a"
+                        description="自定义训练镜像以及参数的场景"
+                        icon={<IconAComponent />}
+                    >
+                        自定义
+                    </Radio.RichButton>
+                    <Radio.RichButton
+                        value="b"
+                        description="支持9种大模型，智能提高计算资源使用率"
+                        flag="推荐"
+                        icon={<IconBComponent />}
+
+                    >
+                        AIAK 训练加模版
+                    </Radio.RichButton>
                 </Group>
             </BrandProvider>
         </div>

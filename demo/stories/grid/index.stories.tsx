@@ -14,11 +14,11 @@ export const Demo = () => {
     };
 
     const bgLight = {
-        background: 'var(--color-brand-6)',
+        background: 'var(--brand-color-6)',
     };
 
     const bgLighter = {
-        background: 'var(--color-brand-5)',
+        background: 'var(--brand-color-5)',
 
     };
 

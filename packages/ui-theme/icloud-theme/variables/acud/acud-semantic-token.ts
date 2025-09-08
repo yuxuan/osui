@@ -1,0 +1,72 @@
+export default {
+    '--brand-color': 'var(--brand-color-6)',
+    '--brand-color-hover': 'var(--brand-color-5)',
+    '--brand-color-active': 'var(--brand-color-7)',
+    '--brand-color-light': 'var(--brand-color-2)',
+    '--brand-color-light-hover': 'var(--brand-color-1)',
+    '--brand-color-light-active': 'var(--brand-color-3)',
+
+    '--warning-color': 'var(--orange-color-6)',
+    '--warning-color-hover': 'var(--orange-color-5)',
+    '--warning-color-active': 'var(--orange-color-7)',
+    '--warning-color-light': 'var(--orange-color-2)',
+    '--warning-color-light-hover': 'var(--orange-color-1)',
+    '--warning-color-light-active': 'var(--orange-color-3)',
+
+    '--success-color': 'var(--green-color-6)',
+    '--success-color-hover': 'var(--green-color-5)',
+    '--success-color-active': 'var(--green-color-7)',
+    '--success-color-light': 'var(--green-color-2)',
+    '--success-color-light-hover': 'var(--green-color-1)',
+    '--success-color-light-active': 'var(--green-color-3)',
+
+    '--error-color': 'var(--red-color-6)',
+    '--error-color-hover': 'var(--red-color-5)',
+    '--error-color-active': 'var(--red-color-7)',
+    '--error-color-light': 'var(--red-color-2)',
+    '--error-color-light-hover': 'var(--red-color-1)',
+    '--error-color-light-active': 'var(--red-color-3)',
+
+    '--text-color-primary': 'var(--gray-color-10)',
+    '--text-color-secondary': 'var(--gray-colorB-8)',
+    '--text-color-tertiary': 'var(--gray-colorB-6)',
+    '--text-color-disabled': 'var(--gray-colorB-5)',
+    '--text-color-white': 'var(--gray-color-1)',
+    '--text-brand-color': 'var(--brand-color-6)',
+    '--text-brand-color-hover': 'var(--brand-color-5)',
+    '--text-brand-color-active': 'var(--brand-color-7)',
+    '--text-color-money': 'var(--color-amount-color)',
+
+    '--icon-color-primary': 'var(--gray-color-10)',
+    '--icon-color-secondary': 'var(--gray-colorB-8)',
+    '--icon-color-tertiary': 'var(--gray-colorB-6)',
+    '--icon-color-disabled': 'var(--gray-colorB-5)',
+    '--icon-color-white': 'var(--gray-color-1)',
+    '--icon-brand-color': 'var(--brand-color-6)',
+    '--icon-brand-color-hover': 'var(--brand-color-5)',
+    '--icon-brand-color-active': 'var(--brand-color-7)',
+
+    '--bg-color-white': 'var(--gray-color-1)',
+    '--bg-color-black': 'var(--gray-color-10)',
+    '--bg-gray-color': 'var(--gray-colorB-1)',
+
+    '--component-color-border': 'var(--color-line-color-2)',
+    '--component-color-white': 'var(--gray-color-1)',
+    '--component-color-black': 'var(--gray-color-10)',
+    '--component-color-black-hover': 'var(--gray-color-7)',
+    '--component-color-black-active': 'var(--gray-color-8)',
+    '--component-gray-colorB1': 'var(--gray-colorB-1)',
+    '--component-gray-colorB2': 'var(--gray-colorB-2)',
+    '--component-gray-colorB-active': 'var(--gray-colorB-3)',
+    '--component-gray-colorB-disable': 'var(--gray-colorB-1)',
+
+    '--table-color-white': 'var(--gray-colorB-1)',
+    '--table-gray-color': 'var(--gray-colorB-3)',
+
+    '--border-color-level1': 'var(--color-line-color-1)',
+    '--border-color-level2': 'var(--color-line-color-3)',
+
+    '--ant-line': 'var(--gray-colorB-color-6)',
+
+    '--masking-layer-color': 'var(--color-mask-color)',
+};
