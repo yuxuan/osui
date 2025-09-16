@@ -42,7 +42,7 @@
         "@osui/message": "^4.0.0-beta.1",
         "@osui/modal": "^4.0.0-beta.1",
         "@osui/progress": "^4.0.0-beta.1",
-        "@osui/theme": "^4.0.0-beta.1",
+        
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",
         "@storybook/addon-interactions": "^7.5.1",

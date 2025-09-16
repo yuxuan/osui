@@ -19,7 +19,7 @@ export const Demo = () => {
         <BrandProvider brand="icloud">
             <div className="demo">
                 <div style={{marginLeft: buttonWidth, whiteSpace: 'nowrap', display: 'flex'}}>
-                    <Tooltip placement="topLeft" title={text}>
+                    <Tooltip placement="topLeft" title={text} open>
                         <Button>TL</Button>
                     </Tooltip>
                     <Gap orientation="horizontal" factor={2} />

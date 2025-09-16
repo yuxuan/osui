@@ -2,23 +2,21 @@ Global:
   version: 2.0
 
 Default:
-  profile: [build]
+  profile: [build-docs]
 
 Profiles:
   - profile:
-    name: build
+    name: build-docs
     mode: AGENT
     environment:
-      cluster: DECK_CENTOS7U5_K3
+      cluster: DECK_STD_CENTOS7
       resourceType: MEDIUM
       tools:
-        - nodejs: 18.3.0
-        - pnpm: 7.2.1
+        - nodejs: 20.latest
+        - yarn: 1.22.22
     build:
-      command: sh ./scripts/build.sh
+      command: sh ./scripts/build-docs.sh
       cache:
           enable: true              # 开启缓存
-          paths:
-          - .pnpm-store
     artifacts:
       release: true

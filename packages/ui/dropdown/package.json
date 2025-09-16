@@ -38,7 +38,7 @@
         "@osui/icons": "^4.0.0-beta.1",
         "@osui/menu": "^4.0.0-beta.1",
         "@osui/space": "^4.0.0-beta.1",
-        "@osui/theme": "^4.0.0-beta.1",
+        
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",
         "@storybook/addon-interactions": "^7.5.1",

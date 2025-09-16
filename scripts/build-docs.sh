@@ -1,4 +1,4 @@
 #!/bin/bash
-cd demo && pnpm run build-storybook
+cd demo && yarn install && yarn run build-storybook
 
 echo "DONE"
