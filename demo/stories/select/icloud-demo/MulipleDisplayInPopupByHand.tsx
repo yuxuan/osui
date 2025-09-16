@@ -6,7 +6,6 @@ import BrandProvider from '@osui/brand-provider';
 import Select from '@osui/select';
 
 export default () => {
-    const Option = Select.Option;
     const [selectedValue, setSelectedValue] = useState<string[]>([]);
     const handleChange = useCallback(
         (value: string[]) => {
@@ -64,17 +63,18 @@ export default () => {
                 onChange={handleChange}
                 maxTagCount="responsive"
                 maxTagPlaceholder={renderMaxTagPlaceholder}
-            >
-                <Option value="jack">Jack</Option>
-                <Option value="lucy">Lucy</Option>
-                <Option value="disabled" disabled>
-                    Disabled
-                </Option>
-                <Option value="Yiminghe">yiminghe</Option>
-                <Option value="a">a</Option>
-                <Option value="b">b</Option>
-                <Option value="c">c</Option>
-            </Select>
+                options={
+                    [
+                        {value: 'jack', label: 'Jack'},
+                        {value: 'lucy', label: 'Lucy'},
+                        {value: 'disabled', label: 'Disabled', disabled: true},
+                        {value: 'Yiminghe', label: 'yiminghe'},
+                        {value: 'a', label: 'a', disabled: true},
+                        {value: 'b', label: 'b', disabled: true},
+                        {value: 'c', label: 'c', disabled: true},
+                    ]
+                }
+            />
         </BrandProvider>
     );
 };

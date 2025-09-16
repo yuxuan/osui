@@ -1,11 +1,11 @@
 import React from 'react';
 import Table from '@osui/table';
 import BrandProvider from '@osui/brand-provider';
-import Select from '@osui/select';
 import Popover from '@osui/popover';
 import Modal from '@osui/modal';
 import Button from '@osui/button';
 import Empty from '@osui/empty';
+import Select from '@osui/select';
 
 export default () => {
     const style = {
