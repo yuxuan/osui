@@ -27,7 +27,7 @@ const Blockquote = ({children}) => (
 
 
 export default {
-    title: '数据展示/Table 表格',
+    title: '数据展示/表格 Table',
 };
 
 export const Demo = () => {

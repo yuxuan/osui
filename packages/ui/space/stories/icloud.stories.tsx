@@ -6,7 +6,7 @@ import {version} from 'antd';
 import Space from '../src';
 
 export default {
-    title: '布局/Space 间距',
+    title: '布局/间距 Space',
 };
 
 export const Demo = () => {

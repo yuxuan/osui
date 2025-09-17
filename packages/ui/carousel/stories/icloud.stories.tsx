@@ -4,7 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import Carousel from '../src';
 
 export default {
-    title: '数据展示/Carousel 走马灯',
+    title: '数据展示/走马灯 Carousel',
     component: Carousel,
 };
 

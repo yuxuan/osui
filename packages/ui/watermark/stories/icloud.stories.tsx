@@ -3,7 +3,7 @@ import {Meta, StoryObj} from '@storybook/react';
 import Watermark from '../src';
 
 const meta = {
-    title: 'Watermark 水印',
+    title: '反馈/水印 Watermark',
     component: Watermark,
     parameters: {
         height: 1000,

@@ -136,6 +136,7 @@
         "@osui/statistic": "^4.0.0-beta.1",
         "@osui/steps": "^4.0.0-beta.1",
         "@osui/switch": "^4.0.0-beta.1",
+        "@osui/splitter": "^4.0.0-beta.1",
         "@osui/table": "^4.0.0-beta.1",
         "@osui/tabs": "^4.0.0-beta.1",
         "@osui/tag": "^4.0.0-beta.1",

@@ -4,7 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import TextOverflowTooltip from '../src';
 
 export default {
-    title: '数据展示/TextOverflowTooltip',
+    title: '数据展示/超长提示 TextOverflowTooltip',
 };
 
 export const Demo = () => {

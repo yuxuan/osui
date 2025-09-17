@@ -4,7 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import Segmented from '../src';
 
 export default {
-    title: '数据展示/Segmented',
+    title: '数据展示/分段控制器 Segmented',
 };
 
 export const Demo = () => {

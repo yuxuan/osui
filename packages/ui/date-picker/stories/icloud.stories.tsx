@@ -15,7 +15,7 @@ dayjs.extend(customParseFormat);
 const dateFormat = 'YYYY-MM-DD';
 
 export default {
-    title: '数据录入/DatePicker 日期选择框',
+    title: '数据录入/日期选择框 DatePicker',
 };
 
 export const Demo = () => {

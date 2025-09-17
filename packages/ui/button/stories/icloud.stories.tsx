@@ -25,8 +25,7 @@ const Blockquote = ({children}: {children: React.ReactNode}) => (
 );
 
 export default {
-    title: '通用/Button 按钮',
-    component: Button,
+    title: '通用/按钮 Button',
 };
 
 export const Demo = () => {

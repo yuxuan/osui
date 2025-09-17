@@ -4,7 +4,7 @@ import Button from '@osui/button';
 import notification from '../src';
 
 export default {
-    title: '反馈/Notification 通知提醒框',
+    title: '反馈/通知提醒框 Notification',
     component: Notification,
 };
 

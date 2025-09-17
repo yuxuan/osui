@@ -4,8 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import Descriptions from '../src';
 
 export default {
-    title: '数据展示/Descriptions 描述列表',
-    component: Descriptions,
+    title: '数据展示/描述列表 Descriptions',
 };
 
 export const Demo = () => {

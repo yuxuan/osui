@@ -6,7 +6,7 @@ import Empty from '../src';
 import {EmptyInComponents} from './icloud-demo';
 
 export default {
-    title: '数据展示/Empty 空状态',
+    title: '数据展示/空状态 Empty',
     component: Empty,
 };
 

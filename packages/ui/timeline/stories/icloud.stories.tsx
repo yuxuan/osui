@@ -4,7 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import Timeline from '../src';
 
 export default {
-    title: '数据展示/Timeline 时间轴',
+    title: '数据展示/时间轴 Timeline',
 };
 
 export const Demo = () => {

@@ -7,7 +7,7 @@ import BrandProvider from '@osui/brand-provider';
 import Flex, {type FlexProps} from '../src';
 
 const meta = {
-    title: 'Flex 弹性布局',
+    title: '布局/弹性布局 Flex',
     component: Flex,
     argTypes: {
         vertical: {

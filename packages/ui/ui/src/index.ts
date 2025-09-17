@@ -78,6 +78,7 @@ export {default as Col} from '@osui/col';
 export {default as FlexCentered} from '@osui/flex-centered';
 export {default as Grid} from '@osui/grid';
 export {default as Badge} from '@osui/badge';
+export {default as Splitter} from '@osui/splitter';
 export type {AffixProps} from '@osui/affix';
 export type {AnchorProps, AnchorLinkProps} from '@osui/anchor';
 export type {AutoCompleteProps} from '@osui/auto-complete';
@@ -152,4 +153,5 @@ export type {FlexProps} from '@osui/flex';
 export type {TourProps, TourStepProps} from '@osui/tour';
 export type {WatermarkProps} from '@osui/watermark';
 export type {ColorPickerProps} from '@osui/color-picker';
+export type {SplitterProps} from '@osui/splitter';
 

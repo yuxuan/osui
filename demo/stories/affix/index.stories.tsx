@@ -5,7 +5,7 @@ import Gap from '@osui/gap';
 import Affix from '@osui/affix';
 
 export default {
-    title: '其它/Affix 固钉',
+    title: '其它/固钉Affix',
     component: Affix,
 };
 

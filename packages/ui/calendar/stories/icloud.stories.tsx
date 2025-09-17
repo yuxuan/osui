@@ -4,7 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import Calendar from '../src';
 
 export default {
-    title: '数据展示/Calendar 日历',
+    title: '数据展示/日历 Calendar',
     component: Calendar,
 };
 

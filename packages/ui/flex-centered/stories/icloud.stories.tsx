@@ -8,7 +8,7 @@ import FlexCentered from '../src';
 
 
 export default {
-    title: '布局/FlexCentered',
+    title: '布局/居中布局 FlexCentered',
 };
 
 export const Demo = () => {

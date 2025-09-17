@@ -6,7 +6,7 @@ import BrandProvider from '@osui/brand-provider';
 import Tour, {type TourProps} from '../src';
 
 const meta = {
-    title: 'Tour 漫游式引导',
+    title: '数据展示/漫游式引导 Tour',
     component: Tour,
     parameters: {
         height: 1000,

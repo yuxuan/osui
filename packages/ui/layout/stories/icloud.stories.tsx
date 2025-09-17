@@ -8,7 +8,7 @@ import Layout from '../src';
 // import { Layout } from 'antd';
 
 export default {
-    title: '布局/Layout 布局',
+    title: '布局/布局 Layout',
     component: Layout,
 };
 

@@ -6,8 +6,7 @@ import Form from '@osui/form';
 import TimePicker from '../src';
 
 export default {
-    title: '数据录入/TimePicker 时间选择框',
-    component: TimePicker,
+    title: '数据录入/时间选择框 TimePicker',
 };
 
 export const Demo = () => {

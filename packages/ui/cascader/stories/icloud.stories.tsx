@@ -4,8 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import Cascader from '../src';
 
 export default {
-    title: '数据录入/Cascader 级联选择',
-    component: Cascader,
+    title: '数据录入/级联选择 Cascader',
 };
 
 const han = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];

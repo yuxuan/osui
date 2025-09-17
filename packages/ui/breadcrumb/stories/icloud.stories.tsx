@@ -9,7 +9,7 @@ import Markdown from '@osui/markdown';
 import Breadcrumb from '../src';
 
 export default {
-    title: '导航/Breadcrumb 面包屑',
+    title: '导航/面包屑 Breadcrumb',
 };
 
 export const Antd5Demo = () => {

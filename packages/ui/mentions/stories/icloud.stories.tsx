@@ -4,8 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import Mentions from '../src';
 
 export default {
-    title: '数据录入/Mentions 提及',
-    component: Mentions,
+    title: '数据录入/提及 Mentions',
 };
 
 export const Demo = () => {

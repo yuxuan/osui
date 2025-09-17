@@ -6,7 +6,7 @@ import BrandProvider from '@osui/brand-provider';
 import InputNumber from '../src';
 
 export default {
-    title: '数据录入/InputNumber 数字输入框',
+    title: '数据录入/数字输入框 InputNumber',
     component: InputNumber,
 };
 

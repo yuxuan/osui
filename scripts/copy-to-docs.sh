@@ -1,17 +1,16 @@
 #!/bin/bash
 
-# 将stories从组件文件夹复制到docs中
+# 将stories从组件文件夹复制到demo中
 # Example:
-# pnpm copy-to-docs all osui
-# pnpm copy-to-docs all icloud
-# pnpm copy-to-docs all # 默认是icloud
+# pnpm copy-to-docs all
 
 COMPONENT_NAME_ARG=$1
 TARGET="icloud" # 默认
 UI_FODER=./packages/ui/
 EXCLUDE_FOLDER='/$|ui$|/docs$|\.\.$'
 
-COMPONENT_LIST="affix alert anchor auto-complete avatar back-top badge brand-provider breadcrumb button calendar card carousel cascader checkbox col collapse config-provider date-picker descriptions divider drawer dropdown empty form gap grid image input input-number layout list mentions menu message modal notification pagination popconfirm popover progress radio rate result row select skeleton slider space spin statistic steps switch table tabs tag time-picker timeline tooltip transfer tree tree-select typography upload version highlight-text quick-edit theme-provider segmented"
+# 列出所有 packages/ui/下面的目录名称，除了ui
+COMPONENT_LIST=$(find $UI_FODER -maxdepth 1 -type d | grep -v -E $EXCLUDE_FOLDER | sed 's|./packages/ui/||' | sed 's|^/||')
 # 根据target给出是哪个component list，来选择复制组件到docs中去
 echo $COMPONENT_LIST
 

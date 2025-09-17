@@ -5,7 +5,7 @@ import {Button, Space} from 'antd';
 import App from '../src';
 
 const meta = {
-    title: 'App',
+    title: '其他/包裹组件 App',
 } satisfies Meta<typeof App>;
 
 export default meta;

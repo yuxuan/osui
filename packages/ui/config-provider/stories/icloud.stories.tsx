@@ -3,8 +3,7 @@ import React from 'react';
 import ConfigProvider from '../src';
 
 export default {
-    title: 'FE/ConfigProvider',
-    component: ConfigProvider,
+    title: '其他/全局化配置 ConfigProvider',
 };
 
 export const Demo = () => {

@@ -5,7 +5,7 @@ import BrandProvider from '@osui/brand-provider';
 import Menu, {MenuProps} from '../src';
 
 export default {
-    title: '导航/Menu 导航菜单',
+    title: '导航/导航菜单 Menu',
     component: Menu,
 };
 

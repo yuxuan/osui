@@ -4,8 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import Divider from '../src';
 
 export default {
-    title: '布局/Divider 分割线',
-    component: Divider,
+    title: '布局/分割线 Divider',
 };
 
 export const Demo = () => {

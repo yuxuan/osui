@@ -6,7 +6,7 @@ import BrandProvider from '@osui/brand-provider';
 import Switch from '../src';
 
 export default {
-    title: '数据录入/Switch 开关',
+    title: '数据录入/开关 Switch',
 };
 
 export const Demo = () => {

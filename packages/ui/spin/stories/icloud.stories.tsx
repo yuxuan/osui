@@ -3,7 +3,7 @@ import BrandProvider from '@osui/brand-provider';
 import Spin from '../src';
 
 export default {
-    title: '反馈/Spin 加载中',
+    title: '反馈/加载中 Spin',
     component: Spin,
 };
 

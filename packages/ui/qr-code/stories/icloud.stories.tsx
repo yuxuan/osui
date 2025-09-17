@@ -5,7 +5,7 @@ import {Flex} from 'antd';
 import QRCode from '../src';
 
 const meta = {
-    title: 'QRCode 二维码',
+    title: '数据展示/二维码 QRCode',
     component: QRCode,
     argTypes: {
         value: {

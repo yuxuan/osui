@@ -6,7 +6,7 @@ import List from '../src';
 
 
 export default {
-    title: '数据展示/List 列表',
+    title: '数据展示/列表 List',
     component: List,
 };
 

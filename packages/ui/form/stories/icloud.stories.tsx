@@ -11,7 +11,7 @@ import {version} from 'antd';
 import Form from '../src';
 
 export default {
-    title: '数据录入/Form 表单',
+    title: '数据录入/表单 Form',
 };
 
 export const Demo = () => {

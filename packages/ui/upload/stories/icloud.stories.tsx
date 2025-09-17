@@ -12,7 +12,7 @@ import {PlusOutlined, InboxOutlined} from '@ant-design/icons';
 import Upload from '../src';
 
 export default {
-    title: '数据录入/Upload 上传',
+    title: '数据录入/上传 Upload',
 };
 
 export const Demo = () => {

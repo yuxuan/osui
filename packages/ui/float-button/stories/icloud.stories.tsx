@@ -5,7 +5,7 @@ import {Meta, StoryObj} from '@storybook/react';
 import FloatButton from '../src';
 
 const meta = {
-    title: '通用/FloatButton 悬浮按钮',
+    title: '通用/悬浮按钮 FloatButton',
     component: FloatButton,
     argTypes: {
         tooltip: {

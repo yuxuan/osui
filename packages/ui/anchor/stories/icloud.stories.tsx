@@ -5,12 +5,12 @@ import BrandProvider from '@osui/brand-provider';
 import Anchor from '../src';
 
 export default {
-    title: '其它/Anchor 锚点',
+    title: '其它/锚点 Anchor',
     component: Anchor,
 };
 
 export const Demo = () => {
-    const { Link } = Anchor;
+    const {Link} = Anchor;
     return (
         <BrandProvider brand="icloud">
             <p>通过点击锚点可快速找到某类信息在当前页面的位置。</p>

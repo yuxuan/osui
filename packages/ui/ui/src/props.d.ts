@@ -72,4 +72,5 @@ export type {FlexProps} from '@osui/flex';
 export type {TourProps, TourStepProps} from '@osui/tour';
 export type {WatermarkProps} from '@osui/watermark';
 export type {ColorPickerProps} from '@osui/color-picker';
+export type {SplitterProps} from '@osui/splitter';
 

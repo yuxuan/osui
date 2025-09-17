@@ -13,13 +13,8 @@ function getAbsolutePath(value: string): any {
 const stories = glob.sync('../**/stories/*.stories.[tj]s{,x}', {
     ignore: ['../ui/stories/*.stories.[tj]s{,x}', '../**/node_modules/**'],
 }).map((story) => story.replace('../', '../../'));
-console.log(stories);
 const config = {
     ...genConfig(getAbsolutePath, process.cwd()),
-    stories: [
-        // 列出所有上层目录的stories
-        '../../alert/stories/*.stories.[tj]s{,x}',
-        ...stories,
-    ],
+    stories,
 };
 export default config;

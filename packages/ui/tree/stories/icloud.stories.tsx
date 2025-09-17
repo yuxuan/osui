@@ -8,7 +8,7 @@ import {IconSearchOutlined} from '@osui/icons';
 import Tree, {TreeProps} from '../src';
 
 export default {
-    title: '数据展示/Tree 树形组件',
+    title: '数据展示/树形组件 Tree',
 };
 
 export const SizeDemo = () => {
