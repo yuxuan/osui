@@ -4,7 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import Pagination from '@osui/pagination';
 
 export default {
-    title: '导航/Pagination 分页',
+    title: '导航/分页 Pagination',
 };
 
 const Blockquote = ({children}) => (

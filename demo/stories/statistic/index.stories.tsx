@@ -7,7 +7,7 @@ import BrandProvider from '@osui/brand-provider';
 import Statistic from '@osui/statistic';
 
 export default {
-    title: '数据展示/Statistic 统计数值',
+    title: '数据展示/统计数值 Statistic',
     component: Statistic,
 };
 

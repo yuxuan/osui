@@ -5,13 +5,12 @@ import Divider from '@osui/divider';
 import BrandProvider, {useBrandContext} from '@osui/brand-provider';
 
 export default {
-    title: 'FE/BrandProvider',
-    component: BrandProvider,
+    title: '其他/全局化配置 BrandProvider',
 };
 
 const BrandApp = () => {
-    const { brand } = useBrandContext();
-    return (<div>Hi: {brand}</div>);
+    const {brand} = useBrandContext();
+    return (<div>Hi2: {brand}</div>);
 };
 
 export const Demo = () => {

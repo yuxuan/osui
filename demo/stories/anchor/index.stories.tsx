@@ -5,7 +5,7 @@ import BrandProvider from '@osui/brand-provider';
 import Anchor from '@osui/anchor';
 
 export default {
-    title: '其它/Anchor 锚点',
+    title: '其它/锚点 Anchor',
     component: Anchor,
 };
 

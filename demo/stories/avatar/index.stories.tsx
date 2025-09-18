@@ -7,7 +7,7 @@ import BrandProvider from '@osui/brand-provider';
 import Avatar from '@osui/avatar';
 
 export default {
-    title: '数据展示/Avatar 头像',
+    title: '数据展示/头像 Avatar',
 };
 
 export const Demo = () => {

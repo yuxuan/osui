@@ -11,7 +11,7 @@ import BrandProvider from '@osui/brand-provider';
 import Tag from '@osui/tag';
 
 export default {
-    title: '数据展示/Tag 标签',
+    title: '数据展示/标签 Tag',
 };
 
 export const Demo = () => {
@@ -100,37 +100,47 @@ export const Add = () => {
         [tags]
     );
 
-    const showInput = useCallback(() => {
-        setInputVisible(true);
-    }, []
+    const showInput = useCallback(
+        () => {
+            setInputVisible(true);
+        },
+        []
     );
 
-    const handleInputChange = useCallback(e => {
-        setInputValue(e.target.value);
-    }, []
+    const handleInputChange = useCallback(
+        e => {
+            setInputValue(e.target.value);
+        },
+        []
     );
 
-    const handleInputConfirm = useCallback(() => {
-        if (inputValue && !tags.includes(inputValue)) {
-            setTags([...tags, inputValue]);
-        }
-        setInputVisible(false);
-        setInputValue('');
-    }, [inputValue, tags]
+    const handleInputConfirm = useCallback(
+        () => {
+            if (inputValue && !tags.includes(inputValue)) {
+                setTags([...tags, inputValue]);
+            }
+            setInputVisible(false);
+            setInputValue('');
+        },
+        [inputValue, tags]
     );
 
-    const handleEditInputChange = useCallback(e => {
-        setEditInputValue(e.target.value);
-    }, []
+    const handleEditInputChange = useCallback(
+        e => {
+            setEditInputValue(e.target.value);
+        },
+        []
     );
 
-    const handleEditInputConfirm = useCallback(() => {
-        const newTags = [...tags];
-        newTags[editInputIndex] = editInputValue;
-        setTags(newTags);
-        setEditInputIndex(-1);
-        setEditInputValue('');
-    }, [editInputIndex, editInputValue, tags]
+    const handleEditInputConfirm = useCallback(
+        () => {
+            const newTags = [...tags];
+            newTags[editInputIndex] = editInputValue;
+            setTags(newTags);
+            setEditInputIndex(-1);
+            setEditInputValue('');
+        },
+        [editInputIndex, editInputValue, tags]
     );
 
     return (

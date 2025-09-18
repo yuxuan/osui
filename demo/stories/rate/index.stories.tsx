@@ -4,7 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import Rate from '@osui/rate';
 
 export default {
-    title: '数据录入/Rate 评分',
+    title: '数据录入/评分 Rate',
     component: Rate,
 };
 

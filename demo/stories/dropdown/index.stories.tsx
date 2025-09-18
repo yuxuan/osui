@@ -8,7 +8,7 @@ import Space from '@osui/space';
 import Dropdown from '@osui/dropdown';
 
 export default {
-    title: '数据录入/Dropdown 下拉菜单',
+    title: '数据录入/下拉菜单 Dropdown',
 };
 
 export const Demo = () => {

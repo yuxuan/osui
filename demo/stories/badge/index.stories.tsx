@@ -7,7 +7,7 @@ import BrandProvider from '@osui/brand-provider';
 import Badge from '@osui/badge';
 
 export default {
-    title: '数据展示/Badge 徽标数',
+    title: '数据展示/徽标数 Badge',
 };
 
 export const Demo = () => {

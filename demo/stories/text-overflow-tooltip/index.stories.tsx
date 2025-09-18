@@ -1,14 +1,18 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import BrandProvider from '@osui/brand-provider';
 import TextOverflowTooltip from '@osui/text-overflow-tooltip';
 
 export default {
-    title: '数据展示/TextOverflowTooltip',
+    title: '数据展示/超长提示 TextOverflowTooltip',
 };
 
 export const Demo = () => {
     return (
-        <TextOverflowTooltip width={50} title="Hover me">
-            Hover me
-        </TextOverflowTooltip>
+        <BrandProvider>
+            <TextOverflowTooltip width={50} title="Hover me">
+                Hover me
+            </TextOverflowTooltip>
+        </BrandProvider>
     );
 };

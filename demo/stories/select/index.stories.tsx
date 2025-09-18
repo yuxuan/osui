@@ -12,7 +12,7 @@ import {
 } from './icloud-demo';
 
 export default {
-    title: '数据录入/Select 选择器',
+    title: '数据录入/选择器 Select',
 };
 
 export const BasicDemo = Basic;

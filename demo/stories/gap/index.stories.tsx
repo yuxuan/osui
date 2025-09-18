@@ -5,8 +5,7 @@ import BrandProvider from '@osui/brand-provider';
 import Gap from '@osui/gap';
 
 export default {
-    title: '布局/Gap 间隔',
-    component: Gap,
+    title: '布局/间隔 Gap',
 };
 
 export const Demo = () => {

@@ -1,10 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React, {useState} from 'react';
-import {IconHomeOutlined, IconPlusOutlined, IconLeftOutlined} from '@osui/icons';
+import React from 'react';
+import {OutlinedPlusNew, OutlinedLeft} from 'acud-icon';
 import Markdown from '@osui/markdown';
 import Divider from '@osui/divider';
 import Space from '@osui/space';
-import FlexCentered from '@osui/flex-centered';
+import Flex from '@osui/flex';
 import BrandProvider from '@osui/brand-provider';
 import {version} from 'antd';
 import Button from '@osui/button';
@@ -25,199 +25,288 @@ const Blockquote = ({children}: {children: React.ReactNode}) => (
 );
 
 export default {
-    title: '通用/Button 按钮',
-    component: Button,
+    title: '通用/按钮 Button',
 };
 
 export const Demo = () => {
-    const [cssVar, setCssVar] = useState(false);
-    const theme = {
-        cssVar: cssVar && {
-            prefix: 'ant',
-            key: 'default',
-        },
-    };
     return (
-        <div id="imagediff-button1">
-            <BrandProvider theme={theme}>
-                <Blockquote>
-                    UE要求两个字时中间没有空格，通过antd ConfigProvider来配置autoInsertSpaceInButton: false。
-                    <br />
-                    <strong>注意</strong>Button loading自动添加了flexedCenter，当作为button组时，需要外面裹一下div flex center
-                </Blockquote>
-                <button
-                    onClick={() => setCssVar(v => !v)}
-                >
-                    切换{!cssVar ? '' : '不'}使用cssVar
-                </button>
-                <Divider>展示</Divider>
-                <h3><b>1、普通按钮</b></h3>
-                <p>普通样式</p>
-                <FlexCentered>
-                    <Button type="default" style={{'margin': '0 20px 20px 0'}}>普通样式</Button>
-                    <Button type="default" disabled style={{'margin': '0 20px 20px 0'}}>普通样式</Button>
-                    <Button type="default" loading style={{'margin': '0 20px 20px 0'}}>普通样式</Button>
-                </FlexCentered>
-                <p>加强样式</p>
-                <FlexCentered>
-                    <Button type="strong" style={{'margin': '0 20px 20px 0'}}>加强样式</Button>
-                    <Button type="strong" disabled style={{'margin': '0 20px 20px 0'}}>加强样式</Button>
-                    <Button type="strong" loading style={{'margin': '0 20px 20px 0'}}>加强样式</Button>
-                </FlexCentered>
-                <p>重要样式</p>
-                <FlexCentered>
-                    <Button type="primary" style={{'margin': '0 20px 20px 0'}}>重要样式</Button>
-                    <Button type="primary" disabled style={{'margin': '0 20px 20px 0'}}>重要样式</Button>
-                    <Button type="primary" loading style={{'margin': '0 20px 20px 0'}}>重要样式</Button>
-                </FlexCentered>
-                <h3><b>2、纯文字按钮</b></h3>
-                <Blockquote>
-                    <p>文字形态的按钮，普通状态（默认黑字hover上变蓝）是用Button type text， 而加强状态（默认蓝色）是使用type link</p>
-                </Blockquote>
-                <p>普通样式</p>
-                <FlexCentered>
-                    <Button type="text" style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
-                    <Button type="text" disabled style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
-                    <Button type="text" loading style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
-                </FlexCentered>
-                <p>加强样式</p>
-                <FlexCentered>
-                    <Button type="link" style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
-                    <Button type="link" disabled style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
-                    <Button type="link" loading style={{'margin': '0 20px 20px 0'}}>文字按钮</Button>
-                </FlexCentered>
-                <h3><strong>3、图文按钮</strong></h3>
-                <Blockquote>当icon和文字一起的时候，如果对不齐，可以添加flexCenter属性，如果导致同行不齐，外面包裹div display: flex</Blockquote>
-                <p>加强样式</p>
-                <Button
-                    type="link"
-                    flexCenter
-                    icon={<IconHomeOutlined />}
-                    style={{'margin': '0 20px 20px 0'}}
-                >
-                    图文按钮
-                </Button>
-                <Button
-                    disabled
-                    type="link"
-                    flexCenter
-                    icon={<IconHomeOutlined />}
-                    style={{'margin': '0 20px 20px 0'}}
-                >
-                    图文按钮
-                </Button>
-                <Button
-                    loading
-                    type="link"
-                    flexCenter
-                    icon={<IconHomeOutlined />}
-                    style={{'margin': '0 20px 20px 0'}}
-                >
-                    图文按钮
-                </Button>
-                <p>普通样式</p>
-                <Button
-                    type="text"
-                    flexCenter
-                    icon={<IconHomeOutlined />}
-                    style={{'margin': '0 20px 20px 0'}}
-                >
-                    图文按钮
-                </Button>
-                <Button
-                    disabled
-                    type="text"
-                    flexCenter
-                    icon={<IconHomeOutlined />}
-                    style={{'margin': '0 20px 20px 0'}}
-                >
-                    图文按钮
-                </Button>
-                <Button
-                    loading
-                    type="text"
-                    flexCenter
-                    icon={<IconHomeOutlined />}
-                    style={{'margin': '0 20px 20px 0'}}
-                >
-                    图文按钮
-                </Button>
-                <p>按钮形式普通样式</p>
-                <Button flexCenter icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}}>
-                    图文按钮
-                </Button>
-                <Button flexCenter disabled icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}}>
-                    图文按钮
-                </Button>
-                <Button flexCenter loading icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}}>
-                    图文按钮
-                </Button>
-                <p>按钮形式重要样式</p>
-                <Button flexCenter type="primary" icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}}>
-                    图文按钮
-                </Button>
-                <Button
-                    flexCenter
-                    disabled
-                    type="primary"
-                    icon={<IconHomeOutlined />}
-                    style={{'margin': '0 20px 20px 0'}}
-                >
-                    图文按钮
-                </Button>
-                <Button
-                    flexCenter
-                    loading
-                    type="primary"
-                    icon={<IconHomeOutlined />}
-                    style={{'margin': '0 20px 20px 0'}}
-                >
-                    图文按钮
-                </Button>
-                <p>图文按钮跳转</p>
-                <Button
-                    href="http://eefe.baidu-int.com/sites/icloud/?path=/story/osui%E4%BB%8B%E7%BB%8D-%E6%AC%A2%E8%BF%8E%E4%BD%BF%E7%94%A8--demo"
-                    flexCenter
-                    type="text"
-                    icon={<IconLeftOutlined />}
-                    style={{'margin': '0 20px 20px 0'}}
-                >
-                    返回ECI资源管理
-                </Button>
-                <h3><strong>4、图标按钮</strong></h3>
-                <Blockquote>
-                    有两种形式：一种是没有type=&quot;icon&quot;，
-                    另一种是加了type=&quot;icon&quot;的，区别是加了type的是不会有其它类似于primary的这种用法，只是单独一个icon
-                </Blockquote>
-                <p>普通样式</p>
-                <div>
-                    <Button icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                    <Button disabled icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                    <Button loading icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                </div>
-                <p>加强样式</p>
-                <div>
-                    <Button type="strong" icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                    <Button type="strong" disabled icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                    <Button type="strong" loading icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                </div>
-                <p>重要样式</p>
-                <div>
-                    <Button type="primary" icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                    <Button type="primary" disabled icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                    <Button type="primary" loading icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                </div>
-                <p>纯图标按钮</p>
-                <div>
-                    <Button type="icon" icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                    <Button type="icon" disabled icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                    <Button type="icon" loading icon={<IconHomeOutlined />} style={{'margin': '0 20px 20px 0'}} />
-                </div>
-                <p>纯图标按钮加强</p>
-                <Blockquote>颜色需要自己调整一下css</Blockquote>
+        <BrandProvider>
+            <Divider>基础</Divider>
+            <p>基础按钮</p>
+            <Flex gap="small">
+                <Button type="primary" custom>个性按钮</Button>
+                <Button type="primary">强按钮</Button>
+                <Button type="primary" danger>危险按钮</Button>
+                <Button type="primary" neutral>中按钮</Button>
+                <Button type="primary" weak>弱按钮</Button>
+            </Flex>
+            <p />
+            <p>描边按钮</p>
+            <Flex gap="small">
+                <Button type="strong">强按钮</Button>
+                <Button>弱按钮</Button>
+                <Button danger>危险按钮</Button>
+            </Flex>
+            <p />
+            <p>文字按钮</p>
+            <Flex gap="small">
+                <Button type="text" strongText>强按钮</Button>
+                <Button type="text">弱按钮</Button>
+            </Flex>
+            <p />
+
+            <Divider>禁用</Divider>
+            <p>基础按钮</p>
+            <Flex gap="small">
+                <Button type="primary" custom disabled>个性按钮</Button>
+                <Button type="primary" disabled>强按钮</Button>
+                <Button type="primary" danger disabled>危险按钮</Button>
+                <Button type="primary" neutral disabled>中按钮</Button>
+                <Button type="primary" weak disabled>弱按钮</Button>
+            </Flex>
+            <p />
+            <p>描边按钮</p>
+            <Flex gap="small">
+                <Button type="strong" disabled>强按钮</Button>
+                <Button disabled>弱按钮</Button>
+                <Button danger disabled>危险按钮</Button>
+            </Flex>
+            <p />
+            <p>文字按钮</p>
+            <Flex gap="small">
+                <Button type="text" disabled strongText>强按钮</Button>
+                <Button type="text" disabled>弱按钮</Button>
+            </Flex>
+            <p />
+
+            <Divider>圆角</Divider>
+            <p>基础按钮</p>
+            <Flex gap="small">
+                <Button type="primary" custom rounded>个性按钮</Button>
+                <Button type="primary" rounded>强按钮</Button>
+                <Button type="primary" danger rounded>危险按钮</Button>
+                <Button type="primary" neutral rounded>中按钮</Button>
+                <Button type="primary" weak rounded>弱按钮</Button>
+            </Flex>
+            <p />
+            <p>描边按钮</p>
+            <Flex gap="small">
+                <Button type="strong" rounded>强按钮</Button>
+                <Button rounded>弱按钮</Button>
+                <Button danger rounded>危险按钮</Button>
+            </Flex>
+            <p />
+            <Divider>尺寸</Divider>
+            <p>基础按钮</p>
+            <Flex gap="small">
+                <Button type="primary" custom size="small">个性按钮</Button>
+                <Button type="primary" custom>个性按钮</Button>
+                <Button type="primary" custom size="large">个性按钮</Button>
+            </Flex>
+            <p />
+            <Flex gap="small">
+                <Button type="primary" custom rounded size="small">个性按钮</Button>
+                <Button type="primary" custom rounded>个性按钮</Button>
+                <Button type="primary" custom rounded size="large">个性按钮</Button>
+            </Flex>
+            <p />
+            <Flex gap="small">
+                <Button type="primary" size="small">强按钮</Button>
+                <Button type="primary">强按钮</Button>
+                <Button type="primary" size="large">强按钮</Button>
+            </Flex>
+            <p />
+            <Flex gap="small">
+                <Button type="primary" rounded size="small">强按钮</Button>
+                <Button type="primary" rounded>强按钮</Button>
+                <Button type="primary" rounded size="large">强按钮</Button>
+            </Flex>
+            <p />
+            <p>描边按钮</p>
+            <Flex gap="small">
+                <Button type="strong" size="small">强按钮</Button>
+                <Button type="strong">强按钮</Button>
+                <Button type="strong" size="large">强按钮</Button>
+            </Flex>
+            <p />
+            <Flex gap="small">
+                <Button type="strong" rounded size="small">强按钮</Button>
+                <Button type="strong" rounded>强按钮</Button>
+                <Button type="strong" rounded size="large">强按钮</Button>
+            </Flex>
+            <p />
+            <Flex gap="small">
+                <Button size="small">弱按钮</Button>
+                <Button>弱按钮</Button>
+                <Button size="large">弱按钮</Button>
+            </Flex>
+            <p />
+            <Flex gap="small">
+                <Button rounded size="small">弱按钮</Button>
+                <Button rounded>弱按钮</Button>
+                <Button rounded size="large">弱按钮</Button>
+            </Flex>
+            <p />
+            <Divider>加载中</Divider>
+            <p>基础按钮</p>
+            <Flex gap="small">
+                <Button type="primary" custom loading>个性按钮</Button>
+                <Button type="primary" loading>强按钮</Button>
+                <Button type="primary" danger loading>危险按钮</Button>
+                <Button type="primary" neutral loading>中按钮</Button>
+                <Button type="primary" weak loading>弱按钮</Button>
+            </Flex>
+            <p />
+            <p>描边按钮</p>
+            <Flex gap="small">
+                <Button type="strong" loading>强按钮</Button>
+                <Button loading>弱按钮</Button>
+                <Button danger loading>危险按钮</Button>
+            </Flex>
+            <p />
+            <p>文字按钮</p>
+            <Flex gap="small">
+                <Button type="text" loading strongText>强按钮</Button>
+                <Button type="text" loading>弱按钮</Button>
+            </Flex>
+            <p />
+
+            <Divider>图文按钮</Divider>
+            <p>加强样式</p>
+            <Button
+                type="text"
+                strongText
+                flexCenter
+                icon={<OutlinedPlusNew />}
+                style={{'margin': '0 20px 20px 0'}}
+            >
+                图文按钮
+            </Button>
+            <Button
+                disabled
+                type="text"
+                strongText
+                flexCenter
+                icon={<OutlinedPlusNew />}
+                style={{'margin': '0 20px 20px 0'}}
+            >
+                图文按钮
+            </Button>
+            <Button
+                loading
+                type="link"
+                flexCenter
+                icon={<OutlinedPlusNew />}
+                style={{'margin': '0 20px 20px 0'}}
+            >
+                图文按钮
+            </Button>
+            <p>普通样式</p>
+            <Button
+                type="text"
+                flexCenter
+                icon={<OutlinedPlusNew />}
+                style={{'margin': '0 20px 20px 0'}}
+            >
+                图文按钮
+            </Button>
+            <Button
+                disabled
+                type="text"
+                flexCenter
+                icon={<OutlinedPlusNew />}
+                style={{'margin': '0 20px 20px 0'}}
+            >
+                图文按钮
+            </Button>
+            <Button
+                loading
+                type="text"
+                flexCenter
+                icon={<OutlinedPlusNew />}
+                style={{'margin': '0 20px 20px 0'}}
+            >
+                图文按钮
+            </Button>
+            <p>按钮形式普通样式</p>
+            <Button flexCenter icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}}>
+                图文按钮
+            </Button>
+            <Button flexCenter disabled icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}}>
+                图文按钮
+            </Button>
+            <Button flexCenter loading icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}}>
+                图文按钮
+            </Button>
+            <p>按钮形式重要样式</p>
+            <Button flexCenter type="primary" icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}}>
+                图文按钮
+            </Button>
+            <Button
+                flexCenter
+                disabled
+                type="primary"
+                icon={<OutlinedPlusNew />}
+                style={{'margin': '0 20px 20px 0'}}
+            >
+                图文按钮
+            </Button>
+            <Button
+                flexCenter
+                loading
+                type="primary"
+                icon={<OutlinedPlusNew />}
+                style={{'margin': '0 20px 20px 0'}}
+            >
+                图文按钮
+            </Button>
+            <p>图文按钮跳转</p>
+            <Button
+                href="http://eefe.baidu-int.com/sites/icloud/?path=/story/osui%E4%BB%8B%E7%BB%8D-%E6%AC%A2%E8%BF%8E%E4%BD%BF%E7%94%A8--demo"
+                flexCenter
+                type="text"
+                icon={<OutlinedLeft />}
+                style={{'margin': '0 20px 20px 0'}}
+            >
+                返回ECI资源管理
+            </Button>
+            <h3><strong>4、图标按钮</strong></h3>
+            <Blockquote>
+                有两种形式：一种是没有type=&quot;icon&quot;，
+                另一种是加了type=&quot;icon&quot;的，区别是加了type的是不会有其它类似于primary的这种用法，只是单独一个icon
+            </Blockquote>
+            <p>普通样式</p>
+            <div>
+                <Button icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
+                <Button disabled icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
+                <Button loading icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
+            </div>
+            <p>加强样式</p>
+            <div>
+                <Button type="strong" icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
+                <Button type="strong" disabled icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
+                <Button type="strong" loading icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
+            </div>
+            <p>重要样式</p>
+            <div>
+                <Button type="primary" icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
+                <Button type="primary" disabled icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
+                <Button type="primary" loading icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
+            </div>
+            <p>纯图标按钮</p>
+            <div>
+                <Flex gap="small">
+                    <Button type="icon" icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
+                    <Button type="icon" disabled icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
+                    <Button type="icon" loading icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
+                </Flex>
+            </div>
+            <p />
+            <p>纯图标按钮加强</p>
+            <Flex gap="small">
                 <Button
                     type="icon"
-                    icon={<IconHomeOutlined />}
+                    icon={<OutlinedPlusNew />}
                     className="icon-strong"
                     style={{'margin': '0 20px 20px 0'}}
                 />
@@ -225,18 +314,18 @@ export const Demo = () => {
                     className="icon-strong"
                     type="icon"
                     disabled
-                    icon={<IconHomeOutlined />}
+                    icon={<OutlinedPlusNew />}
                     style={{'margin': '0 20px 20px 0'}}
                 />
                 <Button
                     className="icon-strong"
                     type="icon"
                     loading
-                    icon={<IconHomeOutlined />}
+                    icon={<OutlinedPlusNew />}
                     style={{'margin': '0 20px 20px 0'}}
                 />
-            </BrandProvider>
-        </div>
+            </Flex>
+        </BrandProvider>
     );
 };
 export const MinWidthDemo = MinWidth;
@@ -384,7 +473,7 @@ export const DisabledReasonDemo = () => {
                     disabled
                     type="primary"
                     disabledReason="您没有权限使用这个功能"
-                    icon={<IconPlusOutlined />}
+                    icon={<OutlinedPlusNew />}
                 >
                     申请创建资源账户
                 </Button>
@@ -393,7 +482,7 @@ export const DisabledReasonDemo = () => {
                     flexCenter
                     disabled
                     disabledReason="您没有权限使用这个功能"
-                    icon={<IconPlusOutlined />}
+                    icon={<OutlinedPlusNew />}
                 >
                     申请创建资源账户
                 </Button>
@@ -461,7 +550,6 @@ export const TestCase = () => {
         </BrandProvider>
     );
 };
-
 
 export const TestCase2 = () => {
     return (

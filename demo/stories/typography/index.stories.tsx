@@ -4,8 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import Typography from '@osui/typography';
 
 export default {
-    title: '布局/Typography 排版',
-    component: Typography,
+    title: '通用/排版 Typography',
 };
 
 export const Demo = () => {

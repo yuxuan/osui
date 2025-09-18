@@ -27,7 +27,7 @@ const Blockquote = ({children}: {children: React.ReactNode}) => (
 );
 
 export default {
-    title: '数据录入/Input 输入框',
+    title: '数据录入/输入框 Input',
 };
 
 export const Demo = () => {

@@ -6,7 +6,7 @@ import BrandProvider from '@osui/brand-provider';
 import Alert from '@osui/alert';
 
 export default {
-    title: '反馈/警告提示Alert',
+    title: '反馈/警告提示 Alert',
     component: Alert,
 };
 

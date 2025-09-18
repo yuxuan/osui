@@ -4,7 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import TreeSelect, {highlightMatchText} from '@osui/tree-select';
 
 export default {
-    title: '数据展示/TreeSelect 树选择',
+    title: '数据展示/树选择 TreeSelect',
     component: TreeSelect,
 };
 

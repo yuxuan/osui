@@ -6,7 +6,7 @@ import BrandProvider from '@osui/brand-provider';
 import Tooltip from '@osui/tooltip';
 
 export default {
-    title: '反馈/Tooltip 文字提示',
+    title: '反馈/文字提示 Tooltip',
 };
 
 export const Demo = () => {

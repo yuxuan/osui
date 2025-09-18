@@ -18,8 +18,7 @@ const Blockquote = ({children}) => (
 );
 
 export default {
-    title: '数据录入/AutoComplete 自动完成',
-    component: AutoComplete,
+    title: '数据录入/自动完成 AutoComplete',
 };
 
 export const Demo1 = () => {

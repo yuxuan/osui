@@ -4,8 +4,8 @@ import BrandProvider from '@osui/brand-provider';
 import Popover from '@osui/popover';
 import Modal from '@osui/modal';
 import Button from '@osui/button';
+import Select from '../../../select';
 import Empty from '@osui/empty';
-import Select from '@osui/select';
 
 export default () => {
     const style = {

@@ -3,7 +3,7 @@ import BrandProvider from '@osui/brand-provider';
 import Transfer from '@osui/transfer';
 
 export default {
-    title: '数据录入/Transfer 穿梭框',
+    title: '数据录入/穿梭框 Transfer',
     component: Transfer,
 };
 

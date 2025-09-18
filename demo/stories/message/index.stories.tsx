@@ -6,7 +6,7 @@ import Markdown from '@osui/markdown';
 import message from '@osui/message';
 
 export default {
-    title: '反馈/Message 全局提示',
+    title: '反馈/全局提示 Message',
 };
 
 export const Demo = () => {

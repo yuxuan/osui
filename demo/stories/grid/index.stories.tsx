@@ -5,7 +5,7 @@ import Row from '@osui/row';
 import BrandProvider from '@osui/brand-provider';
 
 export default {
-    title: '布局/Grid',
+    title: '布局/栅格 Grid',
 };
 
 export const Demo = () => {

@@ -10,7 +10,7 @@ import Col from '@osui/col';
 import Card from '@osui/card';
 
 export default {
-    title: '数据展示/Card 卡片',
+    title: '数据展示/卡片 Card',
     component: Card,
 };
 

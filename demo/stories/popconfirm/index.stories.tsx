@@ -5,7 +5,7 @@ import Button from '@osui/button';
 import Popconfirm, {ConfirmContentWithTitle} from '@osui/popconfirm';
 
 export default {
-    title: '反馈/Popconfirm 气泡确认框',
+    title: '反馈/气泡确认框 Popconfirm',
     component: Popconfirm,
 };
 
@@ -20,7 +20,7 @@ export const Demo = () => {
     return (
         <div className="demo">
             <p></p>
-            <div style={{ marginLeft: 70, whiteSpace: 'nowrap' }}>
+            <div style={{marginLeft: 70, whiteSpace: 'nowrap'}}>
                 <Popconfirm
                     placement="topLeft"
                     title={text}
@@ -43,7 +43,7 @@ export const Demo = () => {
                     <Button>TR</Button>
                 </Popconfirm>
             </div>
-            <div style={{ width: 70, float: 'left' }}>
+            <div style={{width: 70, float: 'left'}}>
                 <Popconfirm placement="leftTop" title={text} onConfirm={confirm} okText="Yes" cancelText="No">
                     <Button>LT</Button>
                 </Popconfirm>
@@ -60,7 +60,7 @@ export const Demo = () => {
                     <Button>LB</Button>
                 </Popconfirm>
             </div>
-            <div style={{ width: 70, marginLeft: 304 }}>
+            <div style={{width: 70, marginLeft: 304}}>
                 <Popconfirm
                     placement="rightTop"
                     title={text}
@@ -83,7 +83,7 @@ export const Demo = () => {
                     <Button>RB</Button>
                 </Popconfirm>
             </div>
-            <div style={{ marginLeft: 70, clear: 'both', whiteSpace: 'nowrap' }}>
+            <div style={{marginLeft: 70, clear: 'both', whiteSpace: 'nowrap'}}>
                 <Popconfirm
                     placement="bottomLeft"
                     title={text}

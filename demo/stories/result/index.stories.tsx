@@ -4,7 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import Result from '@osui/result';
 
 export default {
-    title: '数据展示/Result 结果',
+    title: '数据展示/结果 Result',
     component: Result,
 };
 
