@@ -6,18 +6,13 @@
     color: @color;
     background: @background;
     border-color: @border-color;
-
-    svg {
-        color: @icon-color;
-    }
 }
 
 .generate(@i: length(@button-types)) when (@i > 0) {
     @type: extract(@button-types, @i);
 
-    .@{osui-button-class-prefix}.@{ant-prefix}-btn-@{type},
-    .@{osui-button-class-prefix} .@{ant-prefix}-btn-@{type} {
-
+    .@{osui-button-class-prefix}.@{ant-prefix}-btn.@{ant-prefix}-btn-@{type},
+    .@{osui-button-class-prefix} .@{ant-prefix}-btn.@{ant-prefix}-btn-@{type} {
         .button-color-mixin(
             ~'var(--btn-@{type}-color)';
             ~'var(--btn-@{type}-bg)';
@@ -61,6 +56,8 @@
                 ~'var(--btn-@{type}-disable-border-color)';
                 ~'var(--btn-@{type}-disable-color)';
             );
+
+            opacity: .4;
         }
 
         &.@{osui-button-class-prefix}-loading {
@@ -76,7 +73,7 @@
     .generate((@i - 1));
 }
 
-// antd 移除了default的样式，需要直接应用到ant-btn上，需要放到gengerate上面，确保有type的能覆盖它
+// default样式
 /* stylelint-disable no-duplicate-selectors */
 .@{osui-button-class-prefix}.@{ant-prefix}-btn,
 .@{osui-button-class-prefix} .@{ant-prefix}-btn {
@@ -123,6 +120,8 @@
             ~'var(--btn-default-disable-border-color)';
             ~'var(--btn-default-disable-color)';
         );
+
+        opacity: .4;
     }
 
     &.@{osui-button-class-prefix}-loading {
@@ -137,65 +136,70 @@
 
 .generate();
 
-@osui-buttno-faces: success, error, warning;
+@osui-button-faces: success, error, warning, custom, neutral, weak, danger, strongText;
 
-.generate-face(@i: length(@osui-buttno-faces)) when (@i > 0) {
-    @face: extract(@osui-buttno-faces, @i);
-
+.generate-face(@i: length(@osui-button-faces)) when (@i > 0) {
+    @face: extract(@osui-button-faces, @i);
+    // default
     .@{ant-prefix}-btn.@{osui-button-class-prefix}.@{osui-button-class-prefix}-face-@{face} {
-        color: ~"var(--theme-@{face}-color)";
-        border-color: ~"var(--theme-@{face}-color)";
+        color: ~"var(--btn-face-@{face}-color)";
+        background-color: ~"var(--theme-component-bg)";
+        border-color: ~"var(--btn-face-@{face}-color)";
 
         &:focus {
-            color: ~"var(--theme-@{face}-color)";
-            border-color: ~"var(--theme-@{face}-color)";
+            color: ~"var(--btn-face-@{face}-color)";
+            background-color: ~"var(--theme-component-bg)";
+            border-color: ~"var(--btn-face-@{face}-color)";
         }
 
         &:hover {
-            color: ~"var(--theme-@{face}-color-hover)";
-            border-color: ~"var(--theme-@{face}-color-hover)";
+            color: ~"var(--btn-face-@{face}-color-hover)";
+            background-color: ~"var(--theme-component-bg)";
+            border-color: ~"var(--btn-face-@{face}-color-hover)";
         }
 
         &:active {
-            color: ~"var(--theme-@{face}-color-hover)";
-            background-color: ~"var(--@{face}-color-1)";
-            border-color: ~"var(--theme-@{face}-color-hover)";
+            color: ~"var(--btn-face-@{face}-color-hover)";
+            background-color: ~"var(--theme-component-bg)";
+            border-color: ~"var(--btn-face-@{face}-color-hover)";
         }
 
         &[disabled] {
-            color: ~"var(--@{face}-color-3)";
-            background-color: ~"var(--@{face}-color-1)";
-            border-color: ~"var(--@{face}-color-2)";
+            color: ~"var(--btn-face-@{face}-color)";
+            background-color: ~"var(--theme-component-bg)";
+            border-color: ~"var(--btn-face-@{face}-color)";
+            opacity: .4;
         }
     }
-
+    // primary
     .@{osui-button-class-prefix}.@{ant-prefix}-btn-primary.@{osui-button-class-prefix}-face-@{face} {
-        color: ~"var(--btn-primary-color)";
-        background-color: ~"var(--theme-@{face}-color)";
-        border-color: ~"var(--theme-@{face}-color)";
+        color: ~"var(--btn-face-@{face}-text-color)";
+        background-color: ~"var(--btn-face-@{face}-color)";
+        border-color: ~"var(--btn-face-@{face}-color)";
 
         &:focus {
-            color: ~"var(--btn-primary-color)";
-            background-color: ~"var(--theme-@{face}-color)";
-            border-color: ~"var(--theme-@{face}-color)";
+            color: ~"var(--btn-face-@{face}-text-color)";
+            background-color: ~"var(--btn-face-@{face}-color)";
+            border-color: ~"var(--btn-face-@{face}-color)";
         }
 
         &:hover {
-            color: ~"var(--btn-primary-color)";
-            background-color: ~"var(--theme-@{face}-color-hover)";
-            border-color: ~"var(--theme-@{face}-color-hover)";
+            color: ~"var(--btn-face-@{face}-text-color)";
+            background-color: ~"var(--btn-face-@{face}-color-hover)";
+            border-color: ~"var(--btn-face-@{face}-color-hover)";
         }
 
         &:active {
-            color: ~"var(--btn-primary-color)";
-            background-color: ~"var(--theme-@{face}-color-active)";
-            border-color: ~"var(--theme-@{face}-color-active)";
+            color: ~"var(--btn-face-@{face}-text-color)";
+            background-color: ~"var(--btn-face-@{face}-color-active)";
+            border-color: ~"var(--btn-face-@{face}-color-active)";
         }
 
         &[disabled] {
-            color: ~"var(--btn-primary-color)";
-            background-color: ~"var(--@{face}-color-2)";
-            border-color: ~"var(--@{face}-color-2)";
+            color: ~"var(--btn-face-@{face}-text-color)";
+            background-color: ~"var(--btn-face-@{face}-color)";
+            border-color: ~"var(--btn-face-@{face}-color)";
+            opacity: .4;
         }
     }
 
@@ -204,15 +208,39 @@
 
 .generate-face();
 
-// 对error text link 的button处理
-.@{ant-prefix}-btn.@{ant-prefix}-btn-text,
-.@{ant-prefix}-btn.@{ant-prefix}-btn-link {
-    &.@{osui-button-class-prefix}.@{osui-button-class-prefix}-face-error {
-        background: transparent;
+// strongText样式
+.@{ant-prefix}-btn.@{osui-button-class-prefix}.@{osui-button-class-prefix}-face-strongText {
+    color: ~"var(--btn-face-strongText-color)";
+    background-color: ~"var(--theme-component-bg)";
+    border-color: ~"var(--btn-face-strongText-color)";
+
+    &:focus {
+        color: ~"var(--btn-face-strongText-color)";
+        background-color: ~"var(--component-color-grayB2)";
+        border-color: ~"var(--btn-face-strongText-color)";
+    }
+
+    &:hover {
+        color: ~"var(--btn-face-strongText-color-hover)";
+        background-color: ~"var(--component-color-grayB1)";
+        border-color: ~"var(--btn-face-strongText-color-hover)";
+    }
+
+    &:active {
+        color: ~"var(--btn-face-strongText-color-hover)";
+        background-color: ~"var(--component-color-grayB2)";
+        border-color: ~"var(--btn-face-strongText-color-hover)";
+    }
+
+    &[disabled] {
+        color: ~"var(--btn-face-strongText-color)";
+        background-color: ~"var(--theme-component-bg)";
+        border-color: ~"var(--btn-face-strongText-color)";
+        opacity: .4;
     }
 }
 
-// ghost
+// ghost样式
 .@{ant-prefix}-btn.@{ant-prefix}-btn-background-ghost {
     &.@{osui-button-class-prefix} {
         color: var(--theme-component-bg);
@@ -235,6 +263,38 @@
 }
 
 .@{osui-button-class-prefix} {
+    .acudicon {
+        line-height: 1;
+    }
+
+    &.@{ant-prefix}-btn {
+        // border-radius: var(--btn-border-radius-base);
+        transition: none;
+
+        &.@{ant-prefix}-btn-sm {
+            height: var(--component-height-l);
+            font-size: var(--font-size-2xs);
+        }
+
+        &.@{ant-prefix}-btn-lg {
+            height: var(--component-height-2xl);
+            font-size: var(--font-size-s);
+        }
+
+        // 圆角 + 尺寸
+        &.@{osui-button-class-prefix}-rounded {
+            border-radius: var(--radius-xl);
+
+            &.@{ant-prefix}-btn-sm {
+                border-radius: var(--radius-l);
+            }
+
+            &.@{ant-prefix}-btn-lg {
+                border-radius: var(--radius-3xl);
+            }
+        }
+    }
+
     &-flex-center,
     &-flex-center.@{ant-prefix}-btn,
     &-flex-center .@{ant-prefix}-btn {
@@ -246,11 +306,6 @@
         margin-left: 4px;
     }
 
-    &.@{ant-prefix}-btn {
-        // border-radius: var(--btn-border-radius-base);
-        transition: none;
-    }
-
     // loading的时候隐藏spinner后面的内容，除非强制keep-children
     &-loading &-icon-spinner:not(&-keep-children) + * {
         display: var(--btn-loading-text-display);
@@ -259,12 +314,25 @@
     &.@{ant-prefix}-btn-link,
     &.@{ant-prefix}-btn-text {
         height: auto;
-        margin: var(--btn-link-margin);
-        padding: var(--btn-link-padding);
+        margin: 0;
+        padding: 6px 16px;
         border: 0;
 
         & span:hover {
             text-decoration: var(--btn-link-text-decoration);
+        }
+    }
+
+    // 对error text link 的button处理
+    .@{ant-prefix}-btn.@{ant-prefix}-btn-text,
+    .@{ant-prefix}-btn.@{ant-prefix}-btn-link {
+        &.@{osui-button-class-prefix}.@{osui-button-class-prefix}-face-error {
+            background: transparent;
+
+            &[disabled] {
+                background: transparent;
+                opacity: .4;
+            }
         }
     }
 
@@ -338,6 +406,8 @@
             ~'var(--btn-icon-disable-border-color)';
             ~'var(--btn-icon-disable-color)';
         );
+
+        opacity: .4;
     }
 
     &.@{osui-button-class-prefix}-loading {
@@ -356,8 +426,4 @@ a.@{osui-button-class-prefix} {
         padding-top: 0;
         padding-bottom: 0;
     }
-}
-
-.@{ant-prefix}-btn.@{ant-prefix}-btn-sm {
-    padding: 2px 11px;
 }

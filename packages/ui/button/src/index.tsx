@@ -24,6 +24,26 @@ export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
      */
     warning?: boolean;
     /**
+     * @description 表示neutral状态的button
+     */
+    neutral?: boolean;
+    /**
+     * @description 表示weak状态的button
+     */
+    weak?: boolean;
+    /**
+     * @description 表示danger状态的button
+     */
+    danger?: boolean;
+    /**
+     * @description 表示custom状态的button
+     */
+    custom?: boolean;
+    /**
+     * @description 表示strong-text状态的button
+     */
+    strongText?: boolean;
+    /**
      * @description 当button带icon时，vertical-align尝尝会有问题，flexCenter: true 添加display: flex; align-items: center;
      */
     flexCenter?: boolean;
@@ -35,6 +55,10 @@ export interface ButtonProps extends Omit<AntdButtonProps, 'type'> {
      * @description 设置button的最小宽度，设计需要两个字时有最小宽度
      */
     minWidth?: MinWidthProp;
+    /**
+     * @description 是否为圆角按钮
+     */
+    rounded?: boolean;
 }
 
 // eslint-disable-next-line max-len
@@ -75,6 +99,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
         icon,
         disabled,
         flexCenter,
+        rounded,
         disabledReason,
         style,
         minWidth,
@@ -123,7 +148,27 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
         innerIcon = <IconLoading3QuartersOutlined spin className={`${clsPrefix}-icon-spinner`} />;
     }
 
-    const {success, error, danger, warning} = props;
+    const {success, error, danger, warning, neutral, weak, custom, strongText} = props;
+
+    // 生成face状态相关的类名
+    const generateFaceClassNames = () => {
+        const faceStates = {
+            success,
+            error: error || danger, // error和danger是OR关系
+            warning,
+            neutral,
+            weak,
+            custom,
+            strongText,
+        };
+
+        return Object.entries(faceStates).reduce((acc, [faceType, isActive]) => {
+            if (isActive) {
+                acc[`${clsPrefix}-face-${faceType}`] = true;
+            }
+            return acc;
+        }, {} as Record<string, boolean>);
+    };
 
     // 如果minWidth为falsy时，不要minWidth属性
     const innerStyle: React.CSSProperties | undefined = (
@@ -141,10 +186,9 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
                     {
                         [`${clsPrefix}-loading`]: isLoading,
                         [`${clsPrefix}-disabled`]: isLoading || disabled,
-                        [`${clsPrefix}-face-success`]: success,
-                        [`${clsPrefix}-face-error`]: error || danger,
-                        [`${clsPrefix}-face-warning`]: warning,
                         [`${clsPrefix}-flex-center`]: flexCenter || isLoading,
+                        [`${clsPrefix}-rounded`]: rounded,
+                        ...generateFaceClassNames(),
                     },
                     props.className
                 )

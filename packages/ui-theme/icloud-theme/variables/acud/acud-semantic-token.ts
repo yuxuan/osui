@@ -28,9 +28,9 @@ export default {
     '--error-color-light-active': 'var(--red-color-3)',
 
     '--text-color-primary': 'var(--gray-color-10)',
-    '--text-color-secondary': 'var(--gray-colorB-8)',
-    '--text-color-tertiary': 'var(--gray-colorB-6)',
-    '--text-color-disabled': 'var(--gray-colorB-5)',
+    '--text-color-secondary': 'var(--grayB-color-8)',
+    '--text-color-tertiary': 'var(--grayB-color-6)',
+    '--text-color-disabled': 'var(--grayB-color-5)',
     '--text-color-white': 'var(--gray-color-1)',
     '--text-brand-color': 'var(--brand-color-6)',
     '--text-brand-color-hover': 'var(--brand-color-5)',
@@ -38,9 +38,9 @@ export default {
     '--text-color-money': 'var(--color-amount-color)',
 
     '--icon-color-primary': 'var(--gray-color-10)',
-    '--icon-color-secondary': 'var(--gray-colorB-8)',
-    '--icon-color-tertiary': 'var(--gray-colorB-6)',
-    '--icon-color-disabled': 'var(--gray-colorB-5)',
+    '--icon-color-secondary': 'var(--grayB-color-8)',
+    '--icon-color-tertiary': 'var(--grayB-color-6)',
+    '--icon-color-disabled': 'var(--grayB-color-5)',
     '--icon-color-white': 'var(--gray-color-1)',
     '--icon-brand-color': 'var(--brand-color-6)',
     '--icon-brand-color-hover': 'var(--brand-color-5)',
@@ -48,25 +48,25 @@ export default {
 
     '--bg-color-white': 'var(--gray-color-1)',
     '--bg-color-black': 'var(--gray-color-10)',
-    '--bg-gray-color': 'var(--gray-colorB-1)',
+    '--bg-gray-color': 'var(--grayB-color-1)',
 
     '--component-color-border': 'var(--color-line-color-2)',
     '--component-color-white': 'var(--gray-color-1)',
     '--component-color-black': 'var(--gray-color-10)',
     '--component-color-black-hover': 'var(--gray-color-7)',
     '--component-color-black-active': 'var(--gray-color-8)',
-    '--component-gray-colorB1': 'var(--gray-colorB-1)',
-    '--component-gray-colorB2': 'var(--gray-colorB-2)',
-    '--component-gray-colorB-active': 'var(--gray-colorB-3)',
-    '--component-gray-colorB-disable': 'var(--gray-colorB-1)',
+    '--component-color-grayB1': 'var(--grayB-color-1)',
+    '--component-color-grayB2': 'var(--grayB-color-2)',
+    '--component-color-grayB-active': 'var(--grayB-color-3)',
+    '--component-color-grayB-disable': 'var(--grayB-color-1)',
 
-    '--table-color-white': 'var(--gray-colorB-1)',
-    '--table-gray-color': 'var(--gray-colorB-3)',
+    '--table-color-white': 'var(--grayB-color-1)',
+    '--table-gray-color': 'var(--grayB-color-3)',
 
     '--border-color-level1': 'var(--color-line-color-1)',
     '--border-color-level2': 'var(--color-line-color-3)',
 
-    '--ant-line': 'var(--gray-colorB-color-6)',
+    '--ant-line': 'var(--grayB-color-color-6)',
 
     '--masking-layer-color': 'var(--color-mask-color)',
 };

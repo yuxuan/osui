@@ -84,7 +84,7 @@ export default {
     '--component-height-s': '18px',
     '--component-height-m': '20px',
     '--component-height-l': '24px',
-    '--component-height-x|': '32px',
+    '--component-height-xl': '32px',
     '--component-height-2xl': '40px',
     '--component-height-3xl': '60px',
     '--component-height-4xl': '78px',
