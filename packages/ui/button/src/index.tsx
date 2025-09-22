@@ -2,7 +2,7 @@ import React from 'react';
 import {Button as AntdButton} from 'antd';
 import {ButtonProps as AntdButtonProps, ButtonType} from 'antd/es/button';
 import classNames from 'classnames';
-import {IconLoading3QuartersOutlined} from '@osui/icons';
+import {OutlinedLoading} from 'acud-icon';
 import Tooltip from '@osui/tooltip';
 import './index.less';
 
@@ -72,7 +72,7 @@ const PureIconButton: React.FC<ButtonProps> = props => {
     const innerClassName = classNames(`${clsPrefix}-btn-icon`, props.className);
     if (props.loading) {
         return React.cloneElement(
-            <IconLoading3QuartersOutlined spin />,
+            <OutlinedLoading className="osui-icon-spin" />,
             {
                 ...props,
                 disabled: true,
@@ -136,16 +136,15 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (
     // 当loading且有icon的button时，icon替换成spinner，不论什么情况都要保持后面的chidlren
     if (isLoading && icon) {
         innerIcon = (
-            <IconLoading3QuartersOutlined
-                spin
-                className={`${clsPrefix}-icon-spinner ${clsPrefix}-keep-children`}
+            <OutlinedLoading
+                className={`${clsPrefix}-icon-spinner ${clsPrefix}-keep-children osui-icon-spin`}
             />
         );
     }
     // 当loading但没有icon时，children替换成spinner，根据主题保留或者隐藏children。
     // osc的文字按钮loading时，文字替换成loading icon；而icloud主题则是保留icon和文字
     if (isLoading && !icon) {
-        innerIcon = <IconLoading3QuartersOutlined spin className={`${clsPrefix}-icon-spinner`} />;
+        innerIcon = <OutlinedLoading className={`${clsPrefix}-icon-spinner osui-icon-spin`} />;
     }
 
     const {success, error, danger, warning, neutral, weak, custom, strongText} = props;

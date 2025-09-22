@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import {OutlinedPlusNew, OutlinedLeft} from 'acud-icon';
 import Markdown from '@osui/markdown';
@@ -98,50 +97,50 @@ export const Demo = () => {
             <p />
             <Divider>尺寸</Divider>
             <p>基础按钮</p>
-            <Flex gap="small">
+            <Flex gap="small" align="center">
                 <Button type="primary" custom size="small">个性按钮</Button>
                 <Button type="primary" custom>个性按钮</Button>
                 <Button type="primary" custom size="large">个性按钮</Button>
             </Flex>
             <p />
-            <Flex gap="small">
+            <Flex gap="small" align="center">
                 <Button type="primary" custom rounded size="small">个性按钮</Button>
                 <Button type="primary" custom rounded>个性按钮</Button>
                 <Button type="primary" custom rounded size="large">个性按钮</Button>
             </Flex>
             <p />
-            <Flex gap="small">
+            <Flex gap="small" align="center">
                 <Button type="primary" size="small">强按钮</Button>
                 <Button type="primary">强按钮</Button>
                 <Button type="primary" size="large">强按钮</Button>
             </Flex>
             <p />
-            <Flex gap="small">
+            <Flex gap="small" align="center">
                 <Button type="primary" rounded size="small">强按钮</Button>
                 <Button type="primary" rounded>强按钮</Button>
                 <Button type="primary" rounded size="large">强按钮</Button>
             </Flex>
             <p />
             <p>描边按钮</p>
-            <Flex gap="small">
+            <Flex gap="small" align="center">
                 <Button type="strong" size="small">强按钮</Button>
                 <Button type="strong">强按钮</Button>
                 <Button type="strong" size="large">强按钮</Button>
             </Flex>
             <p />
-            <Flex gap="small">
+            <Flex gap="small" align="center">
                 <Button type="strong" rounded size="small">强按钮</Button>
                 <Button type="strong" rounded>强按钮</Button>
                 <Button type="strong" rounded size="large">强按钮</Button>
             </Flex>
             <p />
-            <Flex gap="small">
+            <Flex gap="small" align="center">
                 <Button size="small">弱按钮</Button>
                 <Button>弱按钮</Button>
                 <Button size="large">弱按钮</Button>
             </Flex>
             <p />
-            <Flex gap="small">
+            <Flex gap="small" align="center">
                 <Button rounded size="small">弱按钮</Button>
                 <Button rounded>弱按钮</Button>
                 <Button rounded size="large">弱按钮</Button>
@@ -149,7 +148,7 @@ export const Demo = () => {
             <p />
             <Divider>加载中</Divider>
             <p>基础按钮</p>
-            <Flex gap="small">
+            <Flex gap="small" align="center">
                 <Button type="primary" custom loading>个性按钮</Button>
                 <Button type="primary" loading>强按钮</Button>
                 <Button type="primary" danger loading>危险按钮</Button>
@@ -276,55 +275,92 @@ export const Demo = () => {
                 另一种是加了type=&quot;icon&quot;的，区别是加了type的是不会有其它类似于primary的这种用法，只是单独一个icon
             </Blockquote>
             <p>普通样式</p>
-            <div>
-                <Button icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
-                <Button disabled icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
-                <Button loading icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
-            </div>
+            <Flex gap="small" align="center">
+                <Button icon={<OutlinedPlusNew />} size="small" />
+                <Button icon={<OutlinedPlusNew />} />
+                <Button icon={<OutlinedPlusNew />} size="large" />
+            </Flex>
+            <p />
+            <Flex gap="small" align="center">
+                <Button disabled icon={<OutlinedPlusNew />} size="small" />
+                <Button disabled icon={<OutlinedPlusNew />} />
+                <Button disabled icon={<OutlinedPlusNew />} size="large" />
+            </Flex>
+            <p />
+            <Flex gap="small" align="center">
+                <Button rounded icon={<OutlinedPlusNew />} size="small" />
+                <Button rounded icon={<OutlinedPlusNew />} />
+                <Button rounded icon={<OutlinedPlusNew />} size="large" />
+            </Flex>
             <p>加强样式</p>
-            <div>
-                <Button type="strong" icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
-                <Button type="strong" disabled icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
-                <Button type="strong" loading icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
-            </div>
+            <Flex gap="small" align="center">
+                <Button type="strong" icon={<OutlinedPlusNew />} size="small" />
+                <Button type="strong" icon={<OutlinedPlusNew />} />
+                <Button type="strong" icon={<OutlinedPlusNew />} size="large" />
+            </Flex>
+            <p />
+            <Flex gap="small" align="center">
+                <Button disabled type="strong" icon={<OutlinedPlusNew />} size="small" />
+                <Button disabled type="strong" icon={<OutlinedPlusNew />} />
+                <Button disabled type="strong" icon={<OutlinedPlusNew />} size="large" />
+            </Flex>
+            <p />
+            <Flex gap="small" align="center">
+                <Button type="strong" rounded icon={<OutlinedPlusNew />} size="small" />
+                <Button type="strong" rounded icon={<OutlinedPlusNew />} />
+                <Button type="strong" rounded icon={<OutlinedPlusNew />} size="large" />
+            </Flex>
             <p>重要样式</p>
-            <div>
-                <Button type="primary" icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
-                <Button type="primary" disabled icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
-                <Button type="primary" loading icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
-            </div>
+            <Flex gap="small" align="center">
+                <Button type="primary" icon={<OutlinedPlusNew />} size="small" />
+                <Button type="primary" icon={<OutlinedPlusNew />} />
+                <Button type="primary" icon={<OutlinedPlusNew />} size="large" />
+            </Flex>
+            <p />
+            <Flex gap="small" align="center">
+                <Button disabled type="primary" icon={<OutlinedPlusNew />} size="small" />
+                <Button disabled type="primary" icon={<OutlinedPlusNew />} />
+                <Button disabled type="primary" icon={<OutlinedPlusNew />} size="large" />
+            </Flex>
+            <p />
+            <Flex gap="small" align="center">
+                <Button type="primary" rounded icon={<OutlinedPlusNew />} size="small" />
+                <Button type="primary" rounded icon={<OutlinedPlusNew />} />
+                <Button type="primary" rounded icon={<OutlinedPlusNew />} size="large" />
+            </Flex>
             <p>纯图标按钮</p>
-            <div>
-                <Flex gap="small">
-                    <Button type="icon" icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
-                    <Button type="icon" disabled icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
-                    <Button type="icon" loading icon={<OutlinedPlusNew />} style={{'margin': '0 20px 20px 0'}} />
-                </Flex>
-            </div>
+            <p />
+            <Flex gap="small" align="center">
+                <Button type="text" icon={<OutlinedPlusNew />} />
+                <Button type="text" disabled icon={<OutlinedPlusNew />} />
+                <Button type="text" loading icon={<OutlinedPlusNew />} />
+            </Flex>
             <p />
             <p>纯图标按钮加强</p>
-            <Flex gap="small">
+            <p />
+            <Flex gap="small" align="center">
                 <Button
-                    type="icon"
+                    strongText
+                    type="text"
                     icon={<OutlinedPlusNew />}
-                    className="icon-strong"
-                    style={{'margin': '0 20px 20px 0'}}
                 />
                 <Button
-                    className="icon-strong"
-                    type="icon"
+                    strongText
+                    type="text"
                     disabled
                     icon={<OutlinedPlusNew />}
-                    style={{'margin': '0 20px 20px 0'}}
                 />
                 <Button
-                    className="icon-strong"
-                    type="icon"
+                    strongText
+                    type="text"
                     loading
                     icon={<OutlinedPlusNew />}
-                    style={{'margin': '0 20px 20px 0'}}
                 />
             </Flex>
+            <p />
+            <p />
+            <p />
+            <p />
         </BrandProvider>
     );
 };

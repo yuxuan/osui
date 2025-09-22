@@ -1,10 +1,12 @@
 import {ThemeConfig} from 'antd';
+import matrics from '@osui/icloud-theme/variables/acud/matrics';
 
 export const components: ThemeConfig['components'] = {
     Button: {
-        paddingContentHorizontal: 12,
-        borderRadiusSM: 4,
-        marginXS: 4,
+        paddingContentHorizontal: parseInt(matrics['--space-s'], 10),
+        borderRadius: parseInt(matrics['--radius-xs'], 10),
+        borderRadiusSM: parseInt(matrics['--radius-2xs'], 10),
+        marginXS: parseInt(matrics['--radius-2xs'], 10),
     },
     Divider: {
         colorSplit: 'rgba(0, 0, 0, 0.06)',
@@ -44,7 +46,7 @@ export const components: ThemeConfig['components'] = {
         paddingSM: 13,
         fontWeightStrong: 400,
         controlHeightSM: 24,
-        borderRadiusSM: 4,
+        borderRadiusSM: parseInt(matrics['--radius-xs'], 10),
     },
     Anchor: {
         fontSize: 12,
@@ -128,7 +130,7 @@ export const components: ThemeConfig['components'] = {
         handleSize: 11,
     },
     Dropdown: {
-        borderRadiusSM: 0,
+        borderRadiusSM: parseInt(matrics['--radius-2xs'], 10),
     },
 };
 
