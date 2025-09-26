@@ -1,6 +1,6 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React, {useState} from 'react';
 import Space from '@osui/space';
+import Divider from '@osui/divider';
 import Button from '@osui/button';
 import BrandProvider from '@osui/brand-provider';
 import Steps from '@osui/steps';
@@ -11,20 +11,39 @@ export default {
 
 export const Demo = () => {
     const {Step} = Steps;
-    const {Step: ProcessOnlyStep} = Steps.ProcessOnlySteps;
-    const [current, setCurrent] = useState(-1);
-    const onChange = current => {
-        setCurrent(current);
-    };
     return (
-        <BrandProvider>
-            <h2>纵向步骤条</h2>
+        <BrandProvider brand="icloud">
+            <Divider>水平步骤条</Divider>
+            <Steps current={1}>
+                <Step title="已完成步骤" description="描述文案" status="finish" />
+                <Step title="当前步骤" description="描述文案" />
+                <Step title="未完成步骤" description="描述文案" />
+            </Steps>
+            <Divider>不带序号的水平步骤条</Divider>
+            <Steps progressDot current={1}>
+                <Step title="已完成步骤" description="这是一段描述性的文字" />
+                <Step title="当前步骤" description="这是一段描述性的文字" status="process" />
+                <Step title="未完成步骤" description="这是一段描述性的文字" />
+            </Steps>
+            <Divider>纵向步骤条</Divider>
             <Steps direction="vertical" current={1}>
                 <Step title="已完成步骤" description="描述文案" status="finish" />
                 <Step title="当前步骤" description="描述文案" />
-                <Step title="出错步骤" description="描述文案" status="error" />
                 <Step title="未完成步骤" description="描述文案" />
             </Steps>
+        </BrandProvider>
+    );
+};
+export const Others = () => {
+    const {Step} = Steps;
+    const {Step: ProcessOnlyStep} = Steps.ProcessOnlySteps;
+    const [current, setCurrent] = useState(-1);
+    const onChange = (current: number) => {
+        setCurrent(current);
+    };
+
+    return (
+        <>
             <p>以下当前错误状态的展示</p>
             <Steps direction="vertical" current={0}>
                 <Step title="当前错误" description="描述文案" status="error" />
@@ -114,7 +133,7 @@ export const Demo = () => {
                 <Button onClick={() => setCurrent(step => step + 1)}>下一步</Button>
                 <Button onClick={() => setCurrent(step => step - 1)}>上一步</Button>
             </Space>
-        </BrandProvider>
+        </>
     );
 };
 

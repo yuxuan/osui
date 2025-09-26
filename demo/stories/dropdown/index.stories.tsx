@@ -1,10 +1,10 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-import {IconDownOutlined} from '@osui/icons';
-import FlexCentered from '@osui/flex-centered';
+import {OutlinedDown} from 'acud-icon';
+import Flex from '@osui/flex';
 import {MenuProps} from '@osui/menu';
 import Button from '@osui/button';
 import Space from '@osui/space';
+import BrandProvider from '@osui/brand-provider';
 import Dropdown from '@osui/dropdown';
 
 export default {
@@ -34,17 +34,15 @@ export const Demo = () => {
 
 
     return (
-        <>
-            <p>文字下拉</p>
+        <BrandProvider brand="icloud">
             <Dropdown menu={menu}>
-                <a onClick={e => e.preventDefault()}>
-                    <FlexCentered>
-                        请选择
-                        <IconDownOutlined style={{paddingLeft: '5px'}} />
-                    </FlexCentered>
-                </a>
+                <Button type="text">
+                    <Flex align="center" gap="small">
+                        请选择 <OutlinedDown />
+                    </Flex>
+                </Button>
             </Dropdown>
-        </>
+        </BrandProvider>
     );
 };
 
