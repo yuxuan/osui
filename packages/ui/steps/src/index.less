@@ -49,6 +49,16 @@
     // == 结束 ==
 
     // == 对description调整字体行高 ==
+    &.@{ant-prefix}-steps .@{ant-prefix}-steps-item-process,
+    &.@{ant-prefix}-steps .@{ant-prefix}-steps-item-finish,
+    &.@{ant-prefix}-steps .@{ant-prefix}-steps-item-wait {
+        >.@{ant-prefix}-steps-item-container
+        >.@{ant-prefix}-steps-item-content
+        >.@{ant-prefix}-steps-item-description {
+            color: var(--text-color-tertiary);
+        }
+    }
+
     .@{ant-prefix}-steps-item .@{ant-prefix}-steps-item-description {
         font-size: 12px;
     }
@@ -74,14 +84,15 @@
     .@{ant-prefix}-steps-item-wait {
         > .@{ant-prefix}-steps-item-container {
             > .@{ant-prefix}-steps-item-icon {
-                border-color: var(--steps-item-icon-color);
+                background-color: var(--component-color-grayB2);
+                border-color: var(--component-color-grayB2);
 
                 .@{ant-prefix}-steps-icon {
-                    color: var(--steps-item-title-color);
+                    color: var(--text-color-secondary);
                 }
             }
             > .@{ant-prefix}-steps-item-content > .@{ant-prefix}-steps-item-title {
-                color: var(--steps-item-title-color);
+                color: var(--text-color-secondary);
             }
         }
     }
@@ -122,10 +133,11 @@
         > .@{ant-prefix}-steps-item-container {
             > .@{ant-prefix}-steps-item-icon {
                 line-height: 28px;
-                border-color: var(--gray-color-7);
+                border-color: var(--brand-color-light);
+                background-color: var(--brand-color-light);
 
                 .@{ant-prefix}-steps-icon {
-                    color: var(--gray-color-7);
+                    color: var(--brand-color);
                 }
             }
         }

@@ -33,6 +33,7 @@
         "@babel/preset-typescript": "^7.23.2",
         "@osui/brand-provider": "^4.0.0-beta.2",
         "@osui/button": "^4.0.0-beta.2",
+        "@osui/flex": "^4.0.0-beta.2",
         "@osui/flex-centered": "^4.0.0-beta.2",
         "@osui/icloud-theme": "^4.0.0-beta.2",
         "@osui/icons": "^4.0.0-beta.2",
@@ -55,6 +56,7 @@
         "@types/jest": "^27.0.0",
         "@types/react-dom": "^17.0.2",
         "@types/react-test-renderer": "^17.0.1",
+        "acud-icon": "^1.1.1",
         "antd": "5.24.2",
         "cpy-cli": "^3.1.1",
         "enzyme": "^3.11.0",
@@ -94,6 +96,6 @@
         "classnames": "^2.3.1",
         "hoist-non-react-statics": "^3.3.2"
     },
-    "packageManager": "pnpm@8.10.2",
+    "packageManager": "pnpm@10.17.1",
     "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
 }

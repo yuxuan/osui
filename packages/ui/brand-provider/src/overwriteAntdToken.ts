@@ -1,3 +1,4 @@
+import acudSemanticTokens from '@osui/icloud-theme/variables/acud/acud-semantic-token';
 import {ThemeConfig} from 'antd';
 
 type AntdToken = Required<ThemeConfig>['token'];
@@ -58,8 +59,9 @@ export const acud: AntdToken = {
     controlHeight: 32,
     controlHeightLG: 40,
     controlHeightSM: 24,
-    controlItemBgActive: '#E6F0FF',
-    controlItemBgHover: '#E6F0FF',
+    controlItemBgActive: acudSemanticTokens['--component-color-grayB2'],
+    controlItemBgHover: acudSemanticTokens['--component-color-grayB2'],
+    colorTextDescription: acudSemanticTokens['--text-color-tertiary'],
     controlOutline: '#2468F2',
     controlOutlineWidth: 0,
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',

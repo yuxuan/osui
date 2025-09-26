@@ -1,18 +1,5 @@
 @osui-dropdown-class-prefix: osui-dropdown;
 
-// 这个弹窗不在osui的scope之内，所以需要全局覆盖
-
-.@{ant-prefix}-dropdown-menu,
-.@{ant-prefix}-dropdown-menu-submenu {
-    margin-left: -4px !important;
-    margin-right: -4px !important;
-
-    li {
-        margin-left: -4px !important;
-        margin-right: -4px !important;
-    }
-}
-
 .@{osui-dropdown-class-prefix} {
     min-width: var(--dropdown-menu-min-width) !important; // 覆盖inline计算出来的style
 }

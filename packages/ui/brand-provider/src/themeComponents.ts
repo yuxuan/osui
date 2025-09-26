@@ -1,12 +1,13 @@
 import {ThemeConfig} from 'antd';
-import matrics from '@osui/icloud-theme/variables/acud/matrics';
+import acudMatricsTokens from '@osui/icloud-theme/variables/acud/matrics';
+import acudSemanticTokens from '@osui/icloud-theme/variables/acud/acud-semantic-token';
 
 export const components: ThemeConfig['components'] = {
     Button: {
-        paddingContentHorizontal: parseInt(matrics['--space-s'], 10),
-        borderRadius: parseInt(matrics['--radius-xs'], 10),
-        borderRadiusSM: parseInt(matrics['--radius-2xs'], 10),
-        marginXS: parseInt(matrics['--radius-2xs'], 10),
+        paddingContentHorizontal: parseInt(acudMatricsTokens['--space-s'], 10),
+        borderRadius: parseInt(acudMatricsTokens['--radius-xs'], 10),
+        borderRadiusSM: parseInt(acudMatricsTokens['--radius-2xs'], 10),
+        marginXS: parseInt(acudMatricsTokens['--radius-2xs'], 10),
     },
     Divider: {
         colorSplit: 'rgba(0, 0, 0, 0.06)',
@@ -46,7 +47,7 @@ export const components: ThemeConfig['components'] = {
         paddingSM: 13,
         fontWeightStrong: 400,
         controlHeightSM: 24,
-        borderRadiusSM: parseInt(matrics['--radius-xs'], 10),
+        borderRadiusSM: parseInt(acudMatricsTokens['--radius-xs'], 10),
     },
     Anchor: {
         fontSize: 12,
@@ -66,7 +67,8 @@ export const components: ThemeConfig['components'] = {
         controlHeight: 26,
         fontSize: 14,
         controlItemBgActive: '#FFF',
-        colorTextDescription: '#5C5F66',
+        colorTextDescription: acudSemanticTokens['--text-color-tertiary'],
+        colorText: acudSemanticTokens['--text-color-primary'],
         marginXS: 10,
         controlHeightLG: 42,
         colorFillContent: '#FFF',
@@ -130,7 +132,8 @@ export const components: ThemeConfig['components'] = {
         handleSize: 11,
     },
     Dropdown: {
-        borderRadiusSM: parseInt(matrics['--radius-2xs'], 10),
+        borderRadiusSM: parseInt(acudMatricsTokens['--radius-2xs'], 10),
+        controlItemBgHover: acudSemanticTokens['--component-color-grayB2'],
     },
 };
 

@@ -33,6 +33,8 @@
         "@babel/preset-typescript": "^7.23.2",
         "@osui/brand-provider": "^4.0.0-beta.2",
         "@osui/button": "^4.0.0-beta.2",
+        "@osui/divider": "^4.0.0-beta.2",
+        "@osui/flex": "4.0.0-beta.2",
         "@osui/icloud-theme": "^4.0.0-beta.2",
         "@osui/icons": "^4.0.0-beta.2",
         "@osui/space": "^4.0.0-beta.2",
@@ -92,6 +94,6 @@
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "packageManager": "pnpm@8.10.2",
+    "packageManager": "pnpm@10.17.1",
     "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
 }

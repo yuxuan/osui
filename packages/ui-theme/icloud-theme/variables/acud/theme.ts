@@ -13,7 +13,7 @@ export default {
     '--theme-component-bg': 'var(--gray-color-1)',
     '--theme-component-focus-box-shadow': 'none',
     '--theme-disabled-bg': 'var(--gray-color-2)',
-    '--theme-disabled-color': 'var(--gray-color-6)',
+    '--theme-disabled-color': 'var(--grayB-color-5)',
     '--theme-error-color-active': 'var(--error-color-active)',
     '--theme-error-color-hover': 'var(--error-color-hover)',
     '--theme-error-color': 'var(--error-color)',

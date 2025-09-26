@@ -94,6 +94,6 @@
         "hoist-non-react-statics": "^3.3.2",
         "react-abstract-quick-edit": "^0.0.7"
     },
-    "packageManager": "pnpm@8.10.2",
+    "packageManager": "pnpm@10.17.1",
     "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
 }

@@ -94,6 +94,6 @@
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "packageManager": "pnpm@8.10.2",
+    "packageManager": "pnpm@10.17.1",
     "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
 }

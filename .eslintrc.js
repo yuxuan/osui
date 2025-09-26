@@ -18,6 +18,11 @@ module.exports = {
             'no-console': 'off',
             'import/no-extraneous-dependencies': 'off',
         },
+    }, {
+        'files': ['**/stories/*.stories.tsx'],
+        'rules': {
+            'indent': 'off',
+        },
     }],
     root: true,
     ignorePatterns: ['examples/**/*'],

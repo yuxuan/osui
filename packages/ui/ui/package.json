@@ -29,7 +29,7 @@
     "devDependencies": {
         "@babel/cli": "^7.10.5",
         "@osui/brand-provider": "^2.1.9",
-        "@osui/icloud-theme": "workspace:^4.0.0-beta.2",
+        "@osui/icloud-theme": "^4.0.0-beta.2",
         "@osui/icons": "^4.0.0-beta.2",
         "@reskript/cli": "^6.0.0",
         "@reskript/cli-lint": "^6.0.0",
