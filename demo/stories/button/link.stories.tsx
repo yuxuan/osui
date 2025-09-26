@@ -6,7 +6,7 @@ import {OutlinedLink} from 'acud-icon';
 import './index.less';
 
 export default {
-    title: '通用/链接 Link',
+    title: '通用/[new0]链接 Link',
 };
 
 const ExportIcon = () => {

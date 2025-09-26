@@ -6,7 +6,7 @@ import BrandProvider from '@osui/brand-provider';
 import Steps from '@osui/steps';
 
 export default {
-    title: '导航/步骤条 Steps',
+    title: '导航/[new0]步骤条 Steps',
 };
 
 export const Demo = () => {
