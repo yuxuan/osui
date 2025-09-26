@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.3](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v4.0.0-beta.3) (2025-09-26)
+
+
+### Bug Fixes
+
+* empty ([9f28edd](https://gitee.com/gitee-fe/osui/tree/master/commits/9f28edd38343e77ad3871353d1ff3b1b4e549fa8))
+* table ([7c35ea1](https://gitee.com/gitee-fe/osui/tree/master/commits/7c35ea1f38f56bd28e3d5054c18111ea44d37cea))
+* table pagination调整 ([81ba0a7](https://gitee.com/gitee-fe/osui/tree/master/commits/81ba0a769a49741e90ed783fd7a6b759b33e13c2))
+* tree-select icon, pagination icon, switch size ([5d28ebf](https://gitee.com/gitee-fe/osui/tree/master/commits/5d28ebfbfe3963998c42820ac29b468197df5e69))
+* 优化empty ([cc31b1b](https://gitee.com/gitee-fe/osui/tree/master/commits/cc31b1bedf615e78d5da21664f55dde2615927ff))
+* 优化table sorter样式 ([38f41f2](https://gitee.com/gitee-fe/osui/tree/master/commits/38f41f2376cc3d8534b22b2605d4fe5bac2bd380))
+* 尝试修复version ([6e644e7](https://gitee.com/gitee-fe/osui/tree/master/commits/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+
+
+
+
+
 # [4.0.0-beta.2](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v4.0.0-beta.2) (2025-09-18)
 
 
