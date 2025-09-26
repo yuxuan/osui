@@ -1,0 +1,50 @@
+import {Meta, Story, Canvas} from '@storybook/addon-docs';
+import * as stories from './icloud.stories';
+
+<Meta title="设计文档/Progress 进度条"  />
+
+# OSUI Progress
+
+## API
+
+### 基本属性
+
+支持所有antd属性：见[antd文档](https://ant.design/components/progress-cn/#API)
+
+## 主要样式
+
+<Canvas>
+  <Story name="Demo" story={stories.Demo} />
+</Canvas>
+
+### 2、含读数的进度条
+
+常用于有精准进度比例的场景。
+
+<Canvas>
+  <Story name="Status" story={stories.Status} />
+</Canvas>
+
+### 3、含图标的进度条
+
+通过醒目的视觉图标提醒用户进度。
+
+<Canvas>
+  <Story name="StatusIcon" story={stories.StatusIcon} />
+</Canvas>
+
+### 4、含操作的进度条
+
+TODO
+
+### 5、基础进度环
+
+<Canvas>
+  <Story name="Circle" story={stories.Circle} />
+</Canvas>
+
+### 6、含读数、图标进度环
+
+<Canvas>
+  <Story name="CircleInfo" story={stories.CircleInfo} />
+</Canvas>

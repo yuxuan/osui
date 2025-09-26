@@ -25,10 +25,12 @@ then
         for var in $COMPONENT_LIST; do
             if [[ $COMPONENT_NAME =~ (^|[[:space:]])$var($|[[:space:]]) ]]
             then
-                cp ${COMPONENT_DIR}/stories/${TARGET}.stories.tsx demo/stories/${COMPONENT_NAME}/index.stories.tsx
-                cp ${COMPONENT_DIR}/stories/${TARGET}.stories.mdx demo/stories/${COMPONENT_NAME}/index.stories.mdx
-                ## Ubuntu ships with GNU sed, where the suffix for the -i option is optional. OS X ships with BSD sed, where the suffix is mandatory. Try sed -i ''
-                sed -i.bak "s|../src|@osui/${COMPONENT_NAME}|" demo/stories/${COMPONENT_NAME}/index.stories.tsx && rm -- "demo/stories/${COMPONENT_NAME}/index.stories.tsx.bak"
+                mkdir -p demo/stories/${COMPONENT_NAME}/
+                # 复制剩余的所有内容
+                cp -r ${COMPONENT_DIR}/stories/* demo/stories/${COMPONENT_NAME}/
+                # 替换../src并清理bak文件
+                find demo/stories/${COMPONENT_NAME}/*.tsx -print0 |xargs -0 sed -i.bak "s|../src|@osui/${COMPONENT_NAME}|"
+                find demo/stories/${COMPONENT_NAME}/*.bak -print0 |xargs -0 rm -f
                 # 复制demo目录
                 if [[ -d "${COMPONENT_DIR}/stories/${TARGET}-demo" ]]
                 then
@@ -44,17 +46,12 @@ then
 else
     # 单个组件复制
     mkdir -p demo/stories/${COMPONENT_NAME_ARG}
-    cp packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}.stories.tsx demo/stories/${COMPONENT_NAME_ARG}/index.stories.tsx
-    cp packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}.stories.mdx demo/stories/${COMPONENT_NAME_ARG}/index.stories.mdx
+    cp -r packages/ui/${COMPONENT_NAME_ARG}/stories/* demo/stories/${COMPONENT_NAME_ARG}/
+    find demo/stories/${COMPONENT_NAME_ARG}/*.tsx -print0 |xargs -0 sed -i.bak "s|../src|@osui/${COMPONENT_NAME_ARG}|"
+    find demo/stories/${COMPONENT_NAME_ARG}/*.bak -print0 |xargs -0 rm -f
     # 复制demo目录
     rm -rf packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}-demo && cp -r packages/ui/${COMPONENT_NAME_ARG}/stories/${TARGET}-demo demo/stories/${COMPONENT_NAME}/${TARGET}-demo
-    sed -i.bak "s|../src|@osui/${COMPONENT_NAME_ARG}|" demo/stories/${COMPONENT_NAME_ARG}/index.stories.tsx && rm -- "demo/stories/${COMPONENT_NAME_ARG}/index.stories.tsx.bak"
-    # 替换../../src并清理bak文件
     find demo/stories/${COMPONENT_NAME_ARG}/${TARGET}-demo/*.tsx -print0 |xargs -0 sed -i.bak "s|../../src|@osui/${COMPONENT_NAME_ARG}|"
     find demo/stories/${COMPONENT_NAME_ARG}/${TARGET}-demo/*.bak -print0 |xargs -0 rm -f
+    # 替换../../src并清理bak文件
 fi
-
-
-# 替换掉修改的mdx import from './index.tsx'
-find demo/stories/ -type f -name "*.mdx" |xargs sed -i.bk "s|import \* as stories from \'\./${TARGET}\.stories';|import * as stories from './index.stories';|"
-find demo/stories/ -type f -name "*.bk" |xargs rm
