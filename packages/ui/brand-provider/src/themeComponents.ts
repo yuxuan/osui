@@ -8,6 +8,9 @@ export const components: ThemeConfig['components'] = {
         borderRadius: parseInt(acudMatricsTokens['--radius-xs'], 10),
         borderRadiusSM: parseInt(acudMatricsTokens['--radius-2xs'], 10),
         borderRadiusLG: parseInt(acudMatricsTokens['--radius-xs'], 10),
+        paddingInline: parseInt(acudMatricsTokens['--space-m'], 10),
+        paddingInlineSM: parseInt(acudMatricsTokens['--space-2xs'], 10),
+        paddingInlineLG: parseInt(acudMatricsTokens['--space-xl'], 10),
         marginXS: parseInt(acudMatricsTokens['--radius-2xs'], 10),
     },
     Divider: {
