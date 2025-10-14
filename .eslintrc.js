@@ -19,7 +19,7 @@ module.exports = {
             'import/no-extraneous-dependencies': 'off',
         },
     }, {
-        'files': ['**/stories/*.stories.tsx'],
+        'files': ['**/stories/*.stories.tsx', 'demo/**/*.stories.tsx'],
         'rules': {
             'indent': 'off',
         },

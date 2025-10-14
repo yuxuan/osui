@@ -4,8 +4,8 @@ import Markdown from '@osui/markdown';
 import Divider from '@osui/divider';
 import Space from '@osui/space';
 import Flex from '@osui/flex';
-import BrandProvider from '@osui/brand-provider';
 import {version} from 'antd';
+import BrandProvider from '@osui/brand-provider';
 import Button from '@osui/button';
 import {MinWidth} from './icloud-demo';
 import './index.less';
@@ -24,7 +24,7 @@ const Blockquote = ({children}: {children: React.ReactNode}) => (
 );
 
 export default {
-    title: '通用/[new0]按钮 Button',
+    title: '通用/[new]按钮 Button',
 };
 
 export const Demo = () => {

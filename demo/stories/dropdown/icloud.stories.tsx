@@ -8,7 +8,7 @@ import BrandProvider from '@osui/brand-provider';
 import Dropdown from '@osui/dropdown';
 
 export default {
-    title: '数据录入/[new0]下拉菜单 Dropdown',
+    title: '数据录入/[new_dev]下拉菜单 Dropdown',
 };
 
 export const Demo = () => {
