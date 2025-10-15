@@ -1,4 +1,5 @@
 import acudSemanticTokens from '@osui/icloud-theme/dist/theme/acud/acud-semantic-token';
+import acudColors from '@osui/icloud-theme/dist/theme/acud/colors';
 import {ThemeConfig} from 'antd';
 
 type AntdToken = Required<ThemeConfig>['token'];
@@ -23,7 +24,7 @@ export const acud: AntdToken = {
     colorErrorBorder: '#ffccc7',
     colorErrorHover: '#FF6966',
     colorHighlight: '#F33E3E',
-    colorIcon: 'inherit',
+    colorIcon: acudColors['--icon-color-secondary'],
     colorIconHover: 'rgba(0, 0, 0, 0.75)',
     colorInfo: '#2468F2',
     colorLink: '#2468F2',
@@ -45,7 +46,7 @@ export const acud: AntdToken = {
     colorSuccessBg: '#f6ffed',
     colorSuccessBgHover: '#54CC39',
     colorSuccessBorder: '#b7eb8f',
-    colorText: '#151B26',
+    colorText: acudColors['--text-color-primary'],
     colorTextDisabled: '#B8BABF',
     colorTextHeading: '#151B26',
     colorTextPlaceholder: '#B8BABF',
@@ -73,7 +74,7 @@ export const acud: AntdToken = {
     fontSizeHeading5: 14,
     fontSizeLG: 16,
     fontSizeSM: 12,
-    lineHeight: 1.5,
+    lineHeight: 1.5714285714285714,
     lineWidth: 1,
     margin: 16,
     marginLG: 24,

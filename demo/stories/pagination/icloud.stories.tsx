@@ -1,24 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import Divider from '@osui/divider';
 import BrandProvider from '@osui/brand-provider';
 import Pagination from '@osui/pagination';
 
 export default {
-    title: '导航/分页 Pagination',
+    title: '导航/[new_dev]分页 Pagination',
 };
-
-const Blockquote = ({children}) => (
-    <blockquote style={{
-        background: 'var(--brand-color-1)',
-        borderRadius: '3px',
-        borderLeft: '5px solid var(--brand-color-6)',
-        margin: '30px 0',
-        padding: '30px',
-    }}
-    >
-        {children}
-    </blockquote>
-);
 
 export const Demo = () => {
     function onChange(page, pageSize) {
@@ -31,37 +19,67 @@ export const Demo = () => {
 
     return (
         <div style={{padding: 30}}>
-            <Blockquote>
-                <p>和交互规范有所不同，交互规范想要实现的是：showLessItem分页选中中间的状态 + 正常时在开头和结尾的状态，由于分页item个数是antd内部实现的，目前先不支持，保留与antd一致</p>
-                <p>SizeChanger的实现也不一致，交互需要在头部，而antd内置为在QuickJumper旁边，且不能调整位置</p>
-            </Blockquote>
             <BrandProvider brand="icloud">
+                <Divider>基础分页</Divider>
                 <p>默认状态</p>
                 <Pagination
-                    showQuickJumper
-                    defaultCurrent={2}
+                    defaultCurrent={1}
                     total={70}
                     onChange={onChange}
                     onShowSizeChange={onShowSizeChange}
                 />
-                <br />
-                <Pagination showQuickJumper defaultCurrent={2} total={80} onChange={onChange} />
-                <br />
-                <Pagination showQuickJumper defaultCurrent={6} total={100} onChange={onChange} />
-                <br />
-                <Pagination showQuickJumper defaultCurrent={10} total={100} onChange={onChange} />
-                <br />
-                <p>对于位置比较小的部分，可以使用showLessItems</p>
-                <Pagination showQuickJumper defaultCurrent={6} total={100} onChange={onChange} showLessItems />
+                <p />
                 <p>disabled</p>
-                <Pagination showQuickJumper defaultCurrent={2} total={500} onChange={onChange} disabled />
-                <br />
+                <Pagination
+                    disabled
+                    defaultCurrent={1}
+                    total={70}
+                    onChange={onChange}
+                    onShowSizeChange={onShowSizeChange}
+                />
+                <p />
+                <p>不显示条数、跳转、页面条数选择</p>
+                <Pagination
+                    showQuickJumper={false}
+                    showSizeChanger={false}
+                    showTotal={false}
+                    total={70}
+                    defaultCurrent={1}
+                />
+                <p />
+                <Divider>基础分页页面较多</Divider>
+                <Pagination showQuickJumper defaultCurrent={2} total={80} onChange={onChange} />
+                <p>disabled</p>
+                <Pagination disabled showQuickJumper defaultCurrent={1} total={100} onChange={onChange} />
+                <Divider>页码跳转的分页</Divider>
+                <p />
+                <Pagination
+                    showQuickJumper
+                    showSizeChanger={false}
+                    defaultCurrent={10}
+                    total={100}
+                    onChange={onChange}
+                />
+                <Divider>简洁分页</Divider>
+                <p>类型为simple时</p>
+                <Pagination showQuickJumper={false} defaultCurrent={1} total={70} onChange={onChange} simple />
+                <p />
+                <p>disabled</p>
+                <Pagination disabled showQuickJumper={false} defaultCurrent={1} total={70} onChange={onChange} simple />
+                <p />
+                <Divider>组件大小</Divider>
+                <p>正常大小</p>
+                <Pagination defaultCurrent={2} total={500} onChange={onChange} />
+                <p />
                 <p>size为small时</p>
                 <Pagination size="small" showQuickJumper defaultCurrent={2} total={500} onChange={onChange} />
-                <br />
-                <p>类型为simple时</p>
-                <Pagination showQuickJumper defaultCurrent={2} total={70} onChange={onChange} simple />
-                <br />
+                <p />
+                <Divider>其他</Divider>
+                <p />
+                <p>对于位置比较小的部分，可以使用showLessItems</p>
+                <Pagination showQuickJumper defaultCurrent={6} total={100} onChange={onChange} showLessItems />
+                <p />
+                <p />
                 <p>隐藏sizeChange和quickJump</p>
                 <Pagination
                     showQuickJumper={false}
@@ -70,13 +88,13 @@ export const Demo = () => {
                     onChange={onChange}
                     showSizeChanger={false}
                 />
-                <br />
+                <p />
                 <p>只显示quickJump</p>
-                <Pagination onChange={onChange} defaultCurrent={4} total={40} />
-                <br />
+                <Pagination onChange={onChange} showQuickJumper defaultCurrent={4} total={40} />
+                <p />
                 <p>只显示sizeChange</p>
                 <Pagination onChange={onChange} defaultCurrent={4} total={51} showQuickJumper={false} />
-                <br />
+                <p />
             </BrandProvider>
         </div>
     );

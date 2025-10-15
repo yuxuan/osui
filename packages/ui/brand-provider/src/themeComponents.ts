@@ -66,6 +66,9 @@ export const components: ThemeConfig['components'] = {
     Pagination: {
         marginXS: 0,
         controlHeightSM: 32,
+        borderRadius: parseInt(acudMatricsTokens['--radius-xs'], 10),
+        colorTextDisabled: acudSemanticTokens['--text-color-disabled'],
+        colorBgContainerDisabled: acudSemanticTokens['--component-color-grayB1'],
     },
     Steps: {
         controlHeight: 26,

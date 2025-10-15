@@ -1,17 +1,15 @@
 import {Pagination as AntdPagination} from 'antd';
 import type {PaginationProps} from 'antd/es/Pagination';
-import React, {FC, useState} from 'react';
-import {IconDownOutlined, IconUpOutlined} from '@osui/icons';
+import React, {ComponentProps, FC, useState} from 'react';
+import {OutlinedDown, OutlinedUp} from 'acud-icon';
 import './index.less';
 
-const icloudLocale = {'jump_to': '跳转至', 'page': '', 'jump_to_confirm': 'Go'};
-// eslint-disable-next-line complexity
-const Pagination: FC<PaginationProps> = props => {
+type showTotal = ((total: number, range: [number, number]) => React.ReactNode) | boolean;
+// eslint-disable-next-line complexity, max-len
+const Pagination: FC<Omit<PaginationProps, 'showTotal'> & {showTotal?: showTotal}> = props => {
     const [dropdownVisible, setDropdownVisible] = useState(false);
-    const showQuickJumper = (props.showQuickJumper === true || props.showQuickJumper === undefined)
-        ? {goButton: true}
-        : props.showQuickJumper;
-
+    const showTotal = props.showTotal ?? (total => `共${total}条`);
+    const showQuickJumper = props.showQuickJumper ?? true;
     const showSizeChanger = !props.simple
         && props.showSizeChanger !== false
         && ((props?.total && props?.total > (props.totalBoundaryShowSizeChanger || 50))
@@ -19,7 +17,7 @@ const Pagination: FC<PaginationProps> = props => {
 
     const innerSizeChangerConfig = {
         suffixIcon: (
-            dropdownVisible ? <IconUpOutlined /> : <IconDownOutlined />
+            dropdownVisible ? <OutlinedUp /> : <OutlinedDown />
         ),
         onDropdownVisibleChange: (visible: boolean) => {
             setDropdownVisible(visible);
@@ -33,10 +31,10 @@ const Pagination: FC<PaginationProps> = props => {
     );
     return (
         // eslint-disable-next-line max-len
-        <div className={`osui-pagination ${showQuickJumper ? props.simple ? 'simple-showQuickJumper' : 'showQuickJumper' : ''} ${showSizeChanger ? 'showSizeChanger' : ''}`}>
+        <div className={`osui-pagination ${showQuickJumper ? (props.simple ? 'simple-showQuickJumper' : 'showQuickJumper') : ''} ${showSizeChanger ? 'showSizeChanger' : ''}`}>
             <AntdPagination
                 {...props}
-                locale={{...icloudLocale, ...props.locale}}
+                showTotal={showTotal as Pick<ComponentProps<typeof AntdPagination>, 'showTotal'>['showTotal']}
                 showQuickJumper={showQuickJumper}
                 showSizeChanger={showSizeChanger ? showSizeChangerConfig : false}
             />
