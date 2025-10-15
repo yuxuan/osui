@@ -1,6 +1,6 @@
 {
     "name": "@osui/pagination",
-    "version": "4.0.0-beta.6",
+    "version": "4.0.0-beta.7",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -27,15 +27,14 @@
         "es/*.less"
     ],
     "devDependencies": {
-        "acud-icon": "^1.1.1",
         "@babel/cli": "^7.10.5",
         "@babel/preset-env": "^7.10.4",
         "@babel/preset-react": "^7.10.4",
         "@babel/preset-typescript": "^7.23.2",
-        "@osui/brand-provider": "^4.0.0-beta.6",
-        "@osui/icloud-theme": "^4.0.0-beta.6",
-        "@osui/divider": "^4.0.0-beta.6",
-        "@osui/icons": "^4.0.0-beta.6",
+        "@osui/brand-provider": "^4.0.0-beta.7",
+        "@osui/divider": "^4.0.0-beta.7",
+        "@osui/icloud-theme": "^4.0.0-beta.7",
+        "@osui/icons": "^4.0.0-beta.7",
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",
         "@storybook/addon-interactions": "^7.5.1",
@@ -52,6 +51,7 @@
         "@types/jest": "^27.0.0",
         "@types/react-dom": "^17.0.2",
         "@types/react-test-renderer": "^17.0.1",
+        "acud-icon": "^1.1.1",
         "antd": "5.24.2",
         "cpy-cli": "^3.1.1",
         "enzyme": "^3.11.0",
@@ -87,7 +87,7 @@
     "author": "zhangxingchang",
     "license": "MIT",
     "dependencies": {
-        "@osui/button": "^4.0.0-beta.6",
+        "@osui/button": "^4.0.0-beta.7",
         "classnames": "^2.3.1"
     },
     "publishConfig": {

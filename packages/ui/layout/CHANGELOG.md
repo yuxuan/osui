@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v4.0.0-beta.7) (2025-10-15)
+
+
+### Bug Fixes
+
+* 尝试修复version ([6e644e7](https://gitee.com/gitee-fe/osui/tree/master/commits/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+
+
+
+
+
 # [4.0.0-beta.6](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v4.0.0-beta.6) (2025-10-14)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v4.0.0-beta.7) (2025-10-15)
+
+**Note:** Version bump only for package @osui/splitter
+
+
+
+
+
 # [4.0.0-beta.6](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v4.0.0-beta.6) (2025-10-14)
 
 **Note:** Version bump only for package @osui/splitter

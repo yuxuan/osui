@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.7](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v3.1.0...v4.0.0-beta.7) (2025-10-15)
+
+
+### Bug Fixes
+
+* table ([7c35ea1](https://gitee.com/yuxuanhuo/osui/tree/master/commits/7c35ea1f38f56bd28e3d5054c18111ea44d37cea))
+* tree-select icon, pagination icon, switch size ([5d28ebf](https://gitee.com/yuxuanhuo/osui/tree/master/commits/5d28ebfbfe3963998c42820ac29b468197df5e69))
+* 修复button走查问题 ([619a064](https://gitee.com/yuxuanhuo/osui/tree/master/commits/619a064dd656991dd901f08e770d456c392c1d34))
+* 尝试修复version ([6e644e7](https://gitee.com/yuxuanhuo/osui/tree/master/commits/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+* 调整pagniation ([e88aaf3](https://gitee.com/yuxuanhuo/osui/tree/master/commits/e88aaf3944496520d2f9397f67370046337a3bbb))
+
+
+
+
+
 # [4.0.0-beta.6](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v3.1.0...v4.0.0-beta.6) (2025-10-14)
 
 
