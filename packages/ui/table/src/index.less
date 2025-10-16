@@ -12,13 +12,21 @@
         }
     }
 
+    .@{ant-prefix}-table:not(.@{ant-prefix}-table-bordered) .@{ant-prefix}-table-thead > tr > th {
+        border-bottom: 1px solid #fff;
+
+        &:not(.@{ant-prefix}-table-selection-column):not(.@{ant-prefix}-table-row-expand-icon-cell) {
+            border-inline-end: 1px solid #fff;
+        }
+    }
+
     .@{ant-prefix}-table-pagination.@{ant-prefix}-pagination {
         margin: var(--table-pagination-margin);
     }
 
     .@{ant-prefix}-table-thead > tr > th:not(:last-child):not(.@{ant-prefix}-table-selection-column):not(.@{ant-prefix}-table-row-expand-icon-cell):not([colspan])::before {
         height: 100%;
-        background: var(--gray-color-1);
+        background: #f7f7f9;
     }
 
     &-no-row-border {
