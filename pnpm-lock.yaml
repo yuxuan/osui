@@ -146,7 +146,7 @@ importers:
     devDependencies:
       '@osui/icons':
         specifier: 3.0.4
-        version: https://registry.npmjs.org/@osui/icons/-/icons-3.0.4.tgz(react@17.0.2)
+        version: 3.0.4(react@17.0.2)
       '@swc/cli':
         specifier: ^0.1.62
         version: 0.1.65(@swc/core@1.13.5)(chokidar@3.6.0)
@@ -4411,7 +4411,7 @@ importers:
         version: 4.0.0-beta.7(@osui/icons@4.0.0-beta.7(react@17.0.2))(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@osui/input-number':
         specifier: latest
-        version: 4.0.0-beta.3(@osui/icons@4.0.0-beta.7(react@17.0.2))(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 3.1.20(@osui/icons@4.0.0-beta.7(react@17.0.2))(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@osui/radio':
         specifier: ^4.0.0-beta.7
         version: 4.0.0-beta.7(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
@@ -9305,6 +9305,9 @@ importers:
       '@osui/brand-provider':
         specifier: ^4.0.0-beta.7
         version: 4.0.0-beta.7(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      '@osui/divider':
+        specifier: ^3.1.20
+        version: 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@osui/form':
         specifier: ^4.0.0-beta.7
         version: 4.0.0-beta.7(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
@@ -13748,6 +13751,7 @@ packages:
   '@lerna/legacy-package-management@6.6.2':
     resolution: {integrity: sha512-0hZxUPKnHwehUO2xC4ldtdX9bW0W1UosxebDIQlZL2STnZnA2IFmIk2lJVUyFW+cmTPQzV93jfS0i69T9Z+teg==}
     engines: {node: ^14.17.0 || >=16.0.0}
+    deprecated: In v9 of lerna, released in September 2025, the `lerna bootstrap`, `lerna add` and `lerna link` commands were finally fully removed after over 2 years of being deprecated. If you are still using these commands, please migrate to using your package manager's long-supported `workspaces` feature. You may find https://lerna.js.org/docs/legacy-package-management useful for this transition.
 
   '@mdx-js/react@2.3.0':
     resolution: {integrity: sha512-zQH//gdOmuu7nt2oJR29vFhDv88oGPmVw6BggmrHeMI+xgEkp1B2dX9/bMBSYtK0dyLX/aOmesKS09g222K1/g==}
@@ -14058,6 +14062,13 @@ packages:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
 
+  '@osui/brand-provider@3.1.20':
+    resolution: {integrity: sha512-22qOerSM2bh5tkSpQIS+RoAkuZz4/IvjR+p0Gvt3S7rT+X0ZvuTjrxxNT+luxWKD5IijMT/0NHPm477TfihSZg==}
+    peerDependencies:
+      antd: ^5.0.0
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+
   '@osui/brand-provider@4.0.0-beta.7':
     resolution: {integrity: sha512-3n1YD0G1gGJaDpz5yoptglQN9CNe+DLd5vvGVGB4c8kQoTBfZjlST5gxMaF8QzgJC0xSSRNB9lBOTpfgLn4BsQ==}
     peerDependencies:
@@ -14068,6 +14079,14 @@ packages:
   '@osui/breadcrumb@4.0.0-beta.7':
     resolution: {integrity: sha512-Of2xbqCXMhkSyxHcYsWMOse8AFy2H1ZpTO5DsvsV3wYlX8Tn6RXcQWYud0Uq2dwiH/Bf3FprK8GU/O/9Ws2bqw==}
     peerDependencies:
+      antd: ^5.0.0
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+
+  '@osui/button@3.1.20':
+    resolution: {integrity: sha512-6KmYYk10v7fTOw+kpYOU/FsRghQFpXTYXa+8V7PTHdX5CULPUWFb6RiX7dslYN0TTW7QrGqEn2Rd7hDztv978Q==}
+    peerDependencies:
+      '@osui/icons': ^3.0.0
       antd: ^5.0.0
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
@@ -14160,6 +14179,13 @@ packages:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
 
+  '@osui/divider@3.1.20':
+    resolution: {integrity: sha512-dXHg/BCZ7OZ0TC7BD+KvSnoqIFuthItEeXwiIhrhyYhEYj1XB4oEOMiLALU6vnVDQRtHdY4Mga9OV3MzosZ52A==}
+    peerDependencies:
+      antd: ^5.0.0
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+
   '@osui/divider@4.0.0-beta.7':
     resolution: {integrity: sha512-QMThEDFBC1nWF3mxE4J5DsKoB/xLwopt7LlxqPZZm7eMERHeuYTwwTCfQkdYApnmSyNIMQvzpilJH0Ij0mVoHA==}
     peerDependencies:
@@ -14177,6 +14203,13 @@ packages:
 
   '@osui/dropdown@4.0.0-beta.7':
     resolution: {integrity: sha512-kSEJva3wza44sXyLHCA/tKCZSx4Mz4faL+U4GBUFnvagBD4EAQABWzOuy/M/N8lzMnZri13v8lYyOubKS9W1yw==}
+    peerDependencies:
+      antd: ^5.0.0
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+
+  '@osui/empty@3.1.20':
+    resolution: {integrity: sha512-qGmjs1Iwly60wWIOngwnD4AdLJBkF0T5+yR6a3MwrANS0Pak7Ennmgzh6jASnybSOVte2osr/pXAuajErVfgGw==}
     peerDependencies:
       antd: ^5.0.0
       react: '>=17.0.0'
@@ -14243,14 +14276,13 @@ packages:
     peerDependencies:
       antd: ^5.0.0
 
-  '@osui/icons@4.0.0-beta.7':
-    resolution: {integrity: sha512-ogv2Rz29mjKPQewMy+f8/snzoc8iip5jcCl7+weRtOdc3D1f1cTAPVBqGfDmTn0yf2FO/TBmcPSlDHZuWZMNWg==}
+  '@osui/icons@3.0.4':
+    resolution: {integrity: sha512-I6Zi97O8dnuFXMWM89tCf4A2sqdIISGWSPu9bDjGgaIal0CGX64+MJWB8Jbqtm+KBbrGJ05cDQ4/bkN6syeW1w==}
     peerDependencies:
       react: '>=17'
 
-  '@osui/icons@https://registry.npmjs.org/@osui/icons/-/icons-3.0.4.tgz':
-    resolution: {integrity: sha512-I6Zi97O8dnuFXMWM89tCf4A2sqdIISGWSPu9bDjGgaIal0CGX64+MJWB8Jbqtm+KBbrGJ05cDQ4/bkN6syeW1w==}
-    version: 3.0.4
+  '@osui/icons@4.0.0-beta.7':
+    resolution: {integrity: sha512-ogv2Rz29mjKPQewMy+f8/snzoc8iip5jcCl7+weRtOdc3D1f1cTAPVBqGfDmTn0yf2FO/TBmcPSlDHZuWZMNWg==}
     peerDependencies:
       react: '>=17'
 
@@ -14261,8 +14293,8 @@ packages:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
 
-  '@osui/input-number@4.0.0-beta.3':
-    resolution: {integrity: sha512-IlcysE9scCFzjt7v2/IFOa/ISj49OUfa17EfMZHTc42GmqKJcY8dFUuHQDXpnbidhkU1uWhHq88c4nv9BV2PUw==}
+  '@osui/input-number@3.1.20':
+    resolution: {integrity: sha512-GSJ7vSjmx5x/UBm1kMcku0Qfc/oCblu82/8xmXWz4SNzoER/QZfgF/QhFLJ0QTl2GBO+WqsqqgHotF6+eZ9YTA==}
     peerDependencies:
       antd: ^5.0.0
       react: '>=17.0.0'
@@ -14536,6 +14568,13 @@ packages:
 
   '@osui/timeline@4.0.0-beta.7':
     resolution: {integrity: sha512-dWipMwU63HtsJ/ineDf5YU1Z4s+CvWHBETyUPWXIgvoXthoaDOu9TCd90ffMM9ui6H1csBj44o/Fh5qyVcAzFw==}
+    peerDependencies:
+      antd: ^5.0.0
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+
+  '@osui/tooltip@3.1.20':
+    resolution: {integrity: sha512-HxxDyXR+nCXgUfV3BOyvrT4e+pvf3Y2qu9Bw5x5pXUr2mrZPG3jYLtewCJq8Bo7DP4AxIhTSxq8W0YL9P8KJIA==}
     peerDependencies:
       antd: ^5.0.0
       react: '>=17.0.0'
@@ -28680,6 +28719,16 @@ snapshots:
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
 
+  '@osui/brand-provider@3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+    dependencies:
+      '@emotion/css': 11.13.5
+      '@osui/empty': 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      antd: 5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+    transitivePeerDependencies:
+      - supports-color
+
   '@osui/brand-provider@4.0.0-beta.7(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
     dependencies:
       '@emotion/css': 11.13.5
@@ -28697,6 +28746,18 @@ snapshots:
       classnames: 2.5.1
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
+
+  '@osui/button@3.1.20(@osui/icons@4.0.0-beta.7(react@17.0.2))(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+    dependencies:
+      '@osui/brand-provider': 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      '@osui/icons': 4.0.0-beta.7(react@17.0.2)
+      '@osui/tooltip': 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      antd: 5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      classnames: 2.5.1
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+    transitivePeerDependencies:
+      - supports-color
 
   '@osui/button@4.0.0-beta.7(@osui/icons@4.0.0-beta.7(react@17.0.2))(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
     dependencies:
@@ -28789,6 +28850,12 @@ snapshots:
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
 
+  '@osui/divider@3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+    dependencies:
+      antd: 5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+
   '@osui/divider@4.0.0-beta.7(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
     dependencies:
       antd: 5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
@@ -28808,6 +28875,13 @@ snapshots:
       antd: 5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       classnames: 2.5.1
       hoist-non-react-statics: 3.3.2
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+
+  '@osui/empty@3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+    dependencies:
+      antd: 5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      classnames: 2.5.1
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
 
@@ -28869,12 +28943,12 @@ snapshots:
     dependencies:
       antd: 5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
 
-  '@osui/icons@4.0.0-beta.7(react@17.0.2)':
+  '@osui/icons@3.0.4(react@17.0.2)':
     dependencies:
       classnames: 2.5.1
       react: 17.0.2
 
-  '@osui/icons@https://registry.npmjs.org/@osui/icons/-/icons-3.0.4.tgz(react@17.0.2)':
+  '@osui/icons@4.0.0-beta.7(react@17.0.2)':
     dependencies:
       classnames: 2.5.1
       react: 17.0.2
@@ -28885,10 +28959,10 @@ snapshots:
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
 
-  '@osui/input-number@4.0.0-beta.3(@osui/icons@4.0.0-beta.7(react@17.0.2))(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+  '@osui/input-number@3.1.20(@osui/icons@4.0.0-beta.7(react@17.0.2))(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
     dependencies:
       '@huse/derived-state': 1.1.1(react@17.0.2)
-      '@osui/button': 4.0.0-beta.7(@osui/icons@4.0.0-beta.7(react@17.0.2))(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      '@osui/button': 3.1.20(@osui/icons@4.0.0-beta.7(react@17.0.2))(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       antd: 5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       classnames: 2.5.1
       react: 17.0.2
@@ -29220,6 +29294,13 @@ snapshots:
       react-dom: 17.0.2(react@17.0.2)
 
   '@osui/timeline@4.0.0-beta.7(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+    dependencies:
+      antd: 5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      classnames: 2.5.1
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+
+  '@osui/tooltip@3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
     dependencies:
       antd: 5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       classnames: 2.5.1
