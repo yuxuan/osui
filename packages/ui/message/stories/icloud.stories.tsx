@@ -73,8 +73,6 @@ export const Demo = () => {
             <Button onClick={loading}>loading</Button>
 
             <Divider>带关闭按钮全局提示</Divider>
-            <p>常规</p>
-            <Button onClick={success}>常规</Button>
             <p />
             <p>成功</p>
             <Button onClick={success2}>success</Button>
