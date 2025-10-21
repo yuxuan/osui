@@ -2,6 +2,10 @@
 import React, {createContext, useState} from 'react';
 import Button from '@osui/button';
 import Space from '@osui/space';
+import Table from '@osui/table';
+import Alert from '@osui/alert';
+import Input from '@osui/input';
+import Divider from '@osui/divider';
 import ConfigProvider from '@osui/config-provider';
 import {IconExclamationCircleFilled} from '@osui/icons';
 import BrandProvider from '@osui/brand-provider';
@@ -25,7 +29,148 @@ const config = {
     ),
 };
 
+const ModalDemo = ({text, content, ...props}: any) => {
+    const [visible, setVisible] = useState(false);
+
+    return (
+        <>
+            <Button onClick={() => setVisible(true)}>
+                {text || 'open'}
+            </Button>
+            <Modal {...props} visible={visible} onCancel={() => setVisible(false)}>
+                {content || (
+                    <>
+                        <p>Some contents...</p>
+                        <p>Some contents...</p>
+                        <p>Some contents...</p>
+                    </>
+                )}
+            </Modal>
+        </>
+    );
+};
+
+const TableContent = ({topContent}: any) => {
+    const columns = [
+        {dataIndex: 'a', title: '列A'},
+        {dataIndex: 'b', title: '列B'},
+        {dataIndex: 'c', title: '列C'},
+    ];
+    const data = [{a: '1', b: '2', c: '3'}, {a: '4', b: '5', c: '6'}];
+    return (
+        <>
+            {topContent}
+            <Table dataSource={data} columns={columns} />
+        </>
+    );
+};
+
 export const Demo = () => {
+
+    return (
+        <BrandProvider brand="icloud">
+            <Divider>基础对话框</Divider>
+            <Space>
+                <Button
+                    type="primary"
+                    onClick={() => {
+                            Modal.warning({
+                                title: '警告提示',
+                                content: 'This is a Warning Dialog.',
+                            });
+                        }}
+                >
+                    警告提示
+                </Button>
+                <Button
+                    type="primary"
+                    onClick={() => {
+                            Modal.success({
+                                title: '成功提示',
+                                content: 'This is a Success Dialog.',
+                            });
+                        }}
+                >
+                    成功提示
+                </Button>
+                <Button
+                    type="primary"
+                    onClick={() => {
+                            Modal.info({title: '普通通知', content: 'This is a Info Dialog.'});
+                        }}
+                >
+                    普通通知
+                </Button>
+                <Button
+                    type="primary"
+                    onClick={() => {
+                        Modal.error({title: '报错通知', content: 'This is a Error Dialog.'});
+                    }}
+                >
+                    报错通知
+                </Button>
+            </Space>
+
+            <Divider>无图标对话框</Divider>
+            <Button
+                type="primary"
+                onClick={() => {
+                    Modal.confirm({title: '通知标题', content: '内容内容内容内容内容内容内容内容', icon: null});
+                }}
+            >
+                通知
+            </Button>
+
+            <Divider>带表格对话框</Divider>
+            <Space>
+                <Button
+                    type="primary"
+                    onClick={() => {
+                    Modal.confirm({
+                        title: '通知标题', content: (
+                            <TableContent topContent={<Alert message="文案文案文案文案" />} />
+                        ),
+                });
+                }}
+                >
+                    带文案强调
+                </Button>
+                <Button
+                    type="primary"
+                    onClick={() => {
+                    Modal.confirm({
+                        title: '通知标题', content: (
+                            <TableContent topContent={<div>文案文案文案文案</div>} />
+                        ),
+                });
+                }}
+                >
+                    带文案描述
+                </Button>
+                <Button
+                    type="primary"
+                    onClick={() => {
+                    Modal.confirm({
+                        title: '通知标题', content: (
+                            <TableContent topContent={<Input />} />
+                        ),
+                });
+                }}
+                >
+                    带基础组件
+                </Button>
+            </Space>
+
+            <Divider>全屏模式对话框</Divider>
+            <Space>
+                <ModalDemo title="标题" />
+                <ModalDemo title="全屏" fullScreen />
+            </Space>
+        </BrandProvider>
+    );
+};
+
+export const DemoModal = () => {
     const [visible, setVisible] = useState(false);
     const [modal, modalContextHolder] = Modal.useModal();
     const [modal2, modalContextHolder2] = Modal.useModal();
