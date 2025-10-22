@@ -17,7 +17,7 @@ export const Demo = () => {
 
     return (
         <BrandProvider brand="icloud">
-            <div className="demo">
+            <div className="demo" style={{margin: '100px 300px'}}>
                 <div style={{marginLeft: buttonWidth, whiteSpace: 'nowrap', display: 'flex'}}>
                     <Tooltip placement="topLeft" title={text} open>
                         <Button>TL</Button>
@@ -44,7 +44,7 @@ export const Demo = () => {
                         <Button>LB</Button>
                     </Tooltip>
                 </div>
-                <div style={{width: buttonWidth, marginLeft: buttonWidth * 4 + 24}}>
+                <div style={{width: buttonWidth, marginLeft: buttonWidth * 4}}>
                     <Tooltip placement="rightTop" title={text}>
                         <Button>RT</Button>
                     </Tooltip>

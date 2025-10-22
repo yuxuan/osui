@@ -3,6 +3,7 @@ import React from 'react';
 import Button from '@osui/button';
 import Divider from '@osui/divider';
 import Space from '@osui/space';
+import {Form} from 'antd';
 import BrandProvider from '@osui/brand-provider';
 import Drawer from '../src';
 
@@ -10,7 +11,113 @@ export default {
     title: '反馈/抽屉 Drawer',
 };
 
+const BaseDrawer = ({content, text, ...props}: any) => {
+    const [visible, setVisible] = React.useState(false);
+
+    const showDrawer = () => {
+        setVisible(true);
+    };
+
+    const onClose = () => {
+        setVisible(false);
+    };
+    return (
+        <>
+            <Button onClick={showDrawer}>
+                {text || 'Open'}
+            </Button>
+            <Drawer
+                closable
+                title="标题"
+                onClose={onClose}
+                visible={visible}
+                {...props}
+            >
+                {content || (
+                    <>
+                        <p>Some contents...</p>
+                        <p>Some contents...</p>
+                        <p>Some contents...</p>
+                    </>
+                )}
+
+            </Drawer>
+        </>
+    );
+};
 export const Demo = () => {
+    const footer = (
+        <div style={{display: 'flex', gap: 20, justifyContent: 'flex-end'}}>
+            <Button>取消</Button>
+            <Button type="primary">确认</Button>
+        </div>
+    );
+    const formContent = (
+        <Form>
+            <Form.Item label="用户名">
+                <input placeholder="请输入用户名" style={{width: '100%'}} />
+            </Form.Item>
+            <Form.Item label="密码">
+                <input placeholder="请输入密码" style={{width: '100%'}} />
+            </Form.Item>
+            <Form.Item label="备注">
+                <input placeholder="请输入备注" style={{width: '100%'}} />
+            </Form.Item>
+        </Form>
+    );
+    return (
+        <BrandProvider brand="icloud">
+            <Divider>基础抽屉</Divider>
+            <h3>不同方位</h3>
+            <p style={{paddingLeft: 20}}>
+                <Space>
+                    右侧
+                    <BaseDrawer />
+                </Space>
+            </p>
+            <p style={{paddingLeft: 20}}>
+                <Space>
+                    左侧
+                    <BaseDrawer placement="left" />
+                </Space>
+            </p>
+            <p style={{paddingLeft: 20}}>
+                <Space>
+                    上方
+                    <BaseDrawer placement="top" />
+                </Space>
+            </p>
+            <p style={{paddingLeft: 20}}>
+                <Space>
+                    下方
+                    <BaseDrawer placement="bottom" />
+                </Space>
+            </p>
+            <h3>无蒙层</h3>
+            <BaseDrawer mask={false} />
+            <p />
+            <h3>带主操作按钮</h3>
+            <BaseDrawer footer={footer} />
+            <p />
+            <h3>无标题</h3>
+            <BaseDrawer title={null} />
+            <p />
+            <h3>表单抽屉</h3>
+            <BaseDrawer content={formContent} footer={footer} />
+            <p />
+            <h3>多层抽屉</h3>
+            <BaseDrawer content={<BaseDrawer />} />
+
+            <Divider>抽屉大小</Divider>
+            <BaseDrawer width="25vw" text="小" />
+            <BaseDrawer width="33vw" text="中" />
+            <BaseDrawer width="66vw" text="大" />
+
+        </BrandProvider>
+    );
+};
+
+export const Demo1 = () => {
     const [visible, setVisible] = React.useState(false);
 
     const showDrawer = () => {

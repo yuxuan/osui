@@ -33,6 +33,7 @@
         "@babel/preset-react": "^7.10.4",
         "@babel/preset-typescript": "^7.23.2",
         "@osui/brand-provider": "^4.0.0-beta.7",
+        "@osui/divider": "^3.1.20",
         "@osui/form": "^4.0.0-beta.7",
         "@osui/icloud-theme": "^4.0.0-beta.7",
         "@osui/icons": "^4.0.0-beta.7",

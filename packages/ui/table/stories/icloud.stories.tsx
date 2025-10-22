@@ -5,6 +5,7 @@ import React, {useRef, useEffect} from 'react';
 import Switch from '@osui/switch';
 import Radio from '@osui/radio';
 import Form from '@osui/form';
+import Divider from '@osui/divider';
 import Space from '@osui/space';
 import {IconDownOutlined} from '@osui/icons';
 import BrandProvider from '@osui/brand-provider';
@@ -31,6 +32,81 @@ export default {
 };
 
 export const Demo = () => {
+const columns = [
+        {
+            title: 'Name',
+            dataIndex: 'name',
+            key: 'name',
+        },
+        {
+            title: 'Age',
+            dataIndex: 'age',
+            key: 'age',
+        },
+        {
+            title: 'Address',
+            dataIndex: 'address',
+            key: 'address',
+        },
+    ];
+
+    const data = [
+        {
+            key: '1',
+            name: 'John Brown',
+            age: 32,
+            address: 'New York No. 1 Lake Park',
+        },
+        {
+            key: '2',
+            name: 'Jim Green',
+            age: 42,
+            address: 'London No. 1 Lake Park',
+        },
+        {
+            key: '3',
+            name: 'Joe Black',
+            age: 32,
+            address: 'Sidney No. 1 Lake Park',
+        },
+    ];
+    return (
+        <BrandProvider brand="icloud">
+            <Divider>默认表格</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>斑马纹表格</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>可选择表格</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>可拖拽表格</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>固定头尾表格</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>可调节宽度表格</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>展开收起表格</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>嵌套子表格</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>可调节宽度表格</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>多级表头表格</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>大尺寸表格</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>内嵌组件表格</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>数据文本截断与操作收起展开</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>全局加载与局部加载</Divider>
+            <Table columns={columns} dataSource={data} />
+            <Divider>列表可添加</Divider>
+            <Table columns={columns} dataSource={data} />
+        </BrandProvider>
+    );
+};
+
+export const Demo1 = () => {
     const ref = useRef(null);
 
     const columns = [
