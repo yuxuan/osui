@@ -1,6 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import {version} from 'antd';
+import BrandProvider from '@osui/brand-provider';
+import Divider from '@osui/divider';
 import Button from '@osui/button';
 import Markdown from '@osui/markdown';
 import message from '@osui/message';
@@ -9,7 +11,93 @@ export default {
     title: '反馈/全局提示 Message',
 };
 
+
 export const Demo = () => {
+ const success = () => {
+        message.success('This is a success message', 200);
+    };
+    const error = () => {
+        message.error('This is an error message');
+    };
+    const info = () => {
+        message.info('This is an info message');
+    };
+    const warning = () => {
+        message.warning('This is a warning message');
+    };
+
+    const loading = () => {
+        message.loading('This is a loading message');
+    };
+
+    const success2 = () => {
+        message.success({content: 'This is a success message', showClose: true});
+    };
+    const action = () => {
+        message.success({
+            content: (
+                <div>
+                    订单接口返回异常，您可尝试联系集团云值班同学解决，<a>查看集团云值班表</a>
+                </div>
+            ),
+            showClose: true,
+        });
+    };
+    const min = () => {
+        message.success({
+            content: '最小尺寸',
+            showClose: true,
+        });
+    };
+
+
+    return (
+        <BrandProvider brand="icloud">
+            <Divider>常规全局提示</Divider>
+            <p>常规</p>
+            <Button onClick={success}>常规</Button>
+            <p />
+            <p>成功</p>
+            <Button onClick={success2}>success</Button>
+            <p />
+            <p>失败</p>
+            <Button onClick={error}>error</Button>
+            <p />
+            <p>警告</p>
+            <Button onClick={warning}>warning</Button>
+            <p />
+            <p>通知</p>
+            <Button onClick={info}>info</Button>
+            <p />
+            <p>加载</p>
+            <Button onClick={loading}>loading</Button>
+
+            <Divider>带关闭按钮全局提示</Divider>
+            <p />
+            <p>成功</p>
+            <Button onClick={success2}>success</Button>
+            <p />
+            <p>失败</p>
+            <Button onClick={error}>error</Button>
+            <p />
+            <p>警告</p>
+            <Button onClick={warning}>warning</Button>
+            <p />
+            <p>通知</p>
+            <Button onClick={info}>info</Button>
+            <p />
+            <p>加载</p>
+            <Button onClick={loading}>loading</Button>
+
+            <Divider>带操作</Divider>
+            <Button onClick={action}>操作</Button>
+            <Divider>最小尺寸</Divider>
+            <Button onClick={min}>小尺寸</Button>
+        </BrandProvider>
+    );
+};
+
+export const OldDemo = () => {
     const success = () => {
         message.success('This is a success message', 200);
     };

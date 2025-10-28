@@ -26,14 +26,14 @@ const OSUITimePickerRange = React.forwardRef(
     ({popupClassName, ...props}: TimeRangePickerProps, ref) => {
         const innerPopupClassName = classNames(`${clsPrefix}-dropdown`, popupClassName);
         return (
-            <AntdTimePicker.RangePicker ref={ref} popupClassName={innerPopupClassName} {...props} />
+            <AntdTimePicker.RangePicker ref={ref as any} popupClassName={innerPopupClassName} {...props} />
         );
     }
 );
 
-OSUITimePicker.RangePicker = OSUITimePickerRange;
+OSUITimePicker.RangePicker = OSUITimePickerRange as unknown as typeof AntdTimePicker.RangePicker;
 
 export type {TimePickerProps, TimeRangePickerProps};
-export default OSUITimePicker as unknown as typeof AntdTimePicker;
+export default OSUITimePicker as typeof AntdTimePicker;
 
 

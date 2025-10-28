@@ -38,33 +38,153 @@ export const Antd5Demo = () => {
 };
 
 export const Demo = () => {
+    const menuItems = [
+        {
+            key: '1',
+            label: '下拉菜单',
+        },
+        {
+            key: '2',
+            label: (
+                <a target="_blank" rel="noopener noreferrer" href="/">
+                    下拉菜单2
+                </a>
+            ),
+        },
+    ];
     return (
         <BrandProvider>
-            <h1>旧的用法</h1>
             <p>
-                产品页面层级较多，用户路径较长，无法仅通过使用返回按钮解决回到首页/列表页诉求，建议层级≥3时全局使用，用户可通过面包屑返回/到达目标页面
+                面包屑是辅助导航模式，用于识别页面在层次结构内的位置，并根据需要向上返回。
+            </p>
+            <h3>何时使用</h3>
+            <p>
+                1.多层级网站: 当你的网站存在两个及以上的页面层级，并且是分类清晰明确的多层级结构时，应当使用面包屑辅助用户进行页面之间的导航。
             </p>
             <p>
-                如果需要蓝色hover，放个<code>a</code>标签
+                2.当层级内容带有下拉菜单时，建议采用斜杠分隔符样式。
             </p>
-            <Breadcrumb>
-                <Breadcrumb.Item>
-                    <a href="">一级页面名称</a>
-                </Breadcrumb.Item>
-                <Breadcrumb.Item>
-                    <a href="">二级页面名称</a>
-                </Breadcrumb.Item>
-                <Breadcrumb.Item>
-                    <a href="">三级页面名称</a>
-                </Breadcrumb.Item>
-                <Breadcrumb.Item>
-                    <a href="">四级页面名称</a>
-                </Breadcrumb.Item>
-                <Breadcrumb.Item>
-                    <a href="">末级页面名称</a>
-                </Breadcrumb.Item>
-            </Breadcrumb>
+            <Divider>基础面包屑</Divider>
+            <Breadcrumb
+                separator=">"
+                items={[
+                    {title: '首页'},
+                    {title: <a href="">上级页面</a>},
+                    {title: '上级页面', href: ''},
+                    {title: '当前页面'},
+                ]}
+            />
+            <Divider>带前置icon面包屑</Divider>
+            <Breadcrumb
+                separator=">"
+                items={[
+                    {title: <div>+ 首页</div>},
+                    {title: <a href="">@ 上级页面</a>},
+                    {title: <div>@ 上级页面</div>, href: ''},
+                    {title: '当前页面'},
+                ]}
+            />
+            <Divider>带下拉的面包屑</Divider>
+            <Breadcrumb
+                items={[
+                    {title: '首页'},
+                    {title: <a href="">上级页面</a>, menu: {items: menuItems}},
+                    {title: '上级页面', href: '', menu: {items: menuItems}},
+                    {title: '当前页面'},
+                ]}
+            />
+            <Divider>自定义分隔符的面包屑</Divider>
+            <Breadcrumb
+                separator=">"
+                items={[
+                    {title: '首页'},
+                    {title: <a href="">上级页面</a>},
+                    {title: '上级页面', href: ''},
+                    {title: '当前页面'},
+                ]}
+            />
             <br />
+            <Breadcrumb
+                items={[
+                    {title: '首页'},
+                    {title: <a href="">上级页面</a>},
+                    {title: '上级页面', href: ''},
+                    {title: '当前页面'},
+                ]}
+            />
+
+            <Divider>不同大小</Divider>
+            <Breadcrumb
+                items={[
+                    {title: '首页'},
+                    {title: <a href="">上级页面</a>},
+                    {title: '上级页面', href: ''},
+                    {title: '当前页面'},
+                ]}
+            />
+            <br />
+            <Breadcrumb
+                items={[
+                    {title: '首页'},
+                    {title: <a href="">上级页面</a>},
+                    {title: '上级页面', href: ''},
+                    {title: '当前页面'},
+                ]}
+            />
+            <br />
+            <Breadcrumb
+                items={[
+                    {title: '首页'},
+                    {title: <a href="">上级页面</a>},
+                    {title: '上级页面', href: ''},
+                    {title: '当前页面'},
+                ]}
+            />
+            <Divider>面包屑超长</Divider>
+            <p>文案超长</p>
+            <Breadcrumb
+                items={[
+                    {title: '首页'},
+                    {title: <a href="">上级页面</a>},
+                    {
+                        title: (
+                            <TextOverflowTooltip
+                                maxWidth={154}
+                                title="上级页面特别长的时候需要hover上去才显示"
+                            >
+                                上级页面特别长的时候需要hover上去才显示
+                            </TextOverflowTooltip>
+                        ), href: '',
+                        },
+                    {
+                        title: (
+                            <TextOverflowTooltip
+                                maxWidth={154}
+                                title="当前页面特别长的时候需要hover上去才显示"
+                            >
+                                当前页面特别长的时候需要hover上去才显示
+                            </TextOverflowTooltip>
+                        ),
+                    },
+                ]}
+            />
+            <br />
+            <p>级数超长</p>
+            <Breadcrumb
+                showEllipsis
+                items={[
+                    {title: '首页'},
+                    {title: <a href="">二级页面</a>},
+                    {title: '三级页面', href: ''},
+                    {title: '四级页面'},
+                    {title: '五级页面'},
+                    {title: '六级页面'},
+                    {title: '七级页面'},
+                    {
+                        title: '当前页面',
+                    },
+                ]}
+            />
         </BrandProvider>
     );
 };
@@ -368,6 +488,31 @@ export const TestCase = () => {
                     itemRender={itemRender}
                 />
             </BrowserRouter>
+
+            <h1>旧的用法</h1>
+            <p>
+                产品页面层级较多，用户路径较长，无法仅通过使用返回按钮解决回到首页/列表页诉求，建议层级≥3时全局使用，用户可通过面包屑返回/到达目标页面
+            </p>
+            <p>
+                如果需要蓝色hover，放个<code>a</code>标签
+            </p>
+            <Breadcrumb>
+                <Breadcrumb.Item>
+                    <a href="">一级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">二级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">三级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">四级页面名称</a>
+                </Breadcrumb.Item>
+                <Breadcrumb.Item>
+                    <a href="">末级页面名称</a>
+                </Breadcrumb.Item>
+            </Breadcrumb>
         </>
     );
 };

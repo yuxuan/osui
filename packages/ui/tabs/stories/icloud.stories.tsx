@@ -9,7 +9,7 @@ import Dropdown from '@osui/dropdown';
 import FlexCentered from '@osui/flex-centered';
 import Menu from '@osui/menu';
 import Button from '@osui/button';
-import BrandProvider from '../../brand-provider';
+import BrandProvider from '@osui/brand-provider';
 import Tabs from '../src';
 
 const Blockquote: React.FC<{ children: React.ReactNode }> = ({children}) => (
@@ -26,7 +26,7 @@ const Blockquote: React.FC<{ children: React.ReactNode }> = ({children}) => (
 );
 
 export default {
-    title: '数据展示/标签页 Tabs',
+    title: '数据展示/[new_dev]标签页 Tabs',
 };
 
 const ClosableTabs: React.FC = () => {

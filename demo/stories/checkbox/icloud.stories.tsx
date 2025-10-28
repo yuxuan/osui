@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import BrandProvider from '@osui/brand-provider';
+import Divider from '@osui/divider';
 import Checkbox from '@osui/checkbox';
 
 const Group = Checkbox.Group;
@@ -29,24 +30,53 @@ export const Demo = () => {
     return (
         <BrandProvider>
             <div style={{padding: 30}}>
-                <h3>1、基础用法</h3>
-                <p>默认状态</p>
-                <section>
-                    <Checkbox>Checkbox</Checkbox>
-                    <Checkbox disabled>Checkbox</Checkbox>
-                </section>
-                <p />
-                <p>选中状态</p>
-                <section>
-                    <Checkbox defaultChecked>Checkbox</Checkbox>
-                    <Checkbox defaultChecked disabled>Checkbox</Checkbox>
-                </section>
-                <p />
-                <p>部分选中状态</p>
-                <Checkbox indeterminate>Checkbox</Checkbox>
-                <Checkbox indeterminate disabled>Checkbox</Checkbox>
-                <p />
-                <h3>2、组合</h3>
+                <Divider>基础用法</Divider>
+                <h3>常规</h3>
+                <p style={{display: 'flex', gap: 80, paddingLeft: 20}}>
+                    <span>未选</span>
+                    <section>
+                        <Checkbox />
+                        <Checkbox disabled />
+                    </section>
+                </p>
+                <p style={{display: 'flex', gap: 80, paddingLeft: 20}}>
+                    <span>已选</span>
+                    <section>
+                        <Checkbox defaultChecked />
+                        <Checkbox defaultChecked disabled />
+                    </section>
+                </p>
+                <p style={{display: 'flex', gap: 80, paddingLeft: 20}}>
+                    <span>半选</span>
+                    <section>
+                        <Checkbox indeterminate />
+                        <Checkbox indeterminate disabled />
+                    </section>
+                </p>
+                <h3>带文字</h3>
+                <p style={{display: 'flex', gap: 80, paddingLeft: 20}}>
+                    <span>未选</span>
+                    <section>
+                        <Checkbox>选项一</Checkbox>
+                        <Checkbox disabled>选项二</Checkbox>
+                    </section>
+                </p>
+                <p style={{display: 'flex', gap: 80, paddingLeft: 20}}>
+                    <span>已选</span>
+                    <section>
+                        <Checkbox defaultChecked>选项一</Checkbox>
+                        <Checkbox defaultChecked disabled>选项二</Checkbox>
+                    </section>
+                </p>
+                <p style={{display: 'flex', gap: 80, paddingLeft: 20}}>
+                    <span>半选</span>
+                    <section>
+                        <Checkbox indeterminate>选项一</Checkbox>
+                        <Checkbox indeterminate disabled>选项二</Checkbox>
+                    </section>
+                </p>
+
+                <Divider>多选组合</Divider>
                 <Group options={plainOptions} defaultValue={['Apple']} onChange={onChange} />
                 <br />
                 <br />
@@ -59,6 +89,23 @@ export const Demo = () => {
                     defaultValue={['Apple']}
                     onChange={onChange}
                 />
+
+                <Divider>卡片多选</Divider>
+                <p>默认</p>
+                <p style={{display: 'flex', gap: 80, paddingLeft: 20}}>
+                    <span>未选</span>
+                    <section>
+                        <Checkbox />
+                        <Checkbox disabled />
+                    </section>
+                </p>
+                <p style={{display: 'flex', gap: 80, paddingLeft: 20}}>
+                    <span>已选</span>
+                    <section>
+                        <Checkbox defaultChecked />
+                        <Checkbox defaultChecked disabled />
+                    </section>
+                </p>
             </div>
         </BrandProvider>
     );
