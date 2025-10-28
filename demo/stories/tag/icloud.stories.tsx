@@ -15,6 +15,112 @@ export default {
 };
 
 export const Demo = () => {
+
+    return (
+        <BrandProvider brand="icloud">
+            <Divider>胶囊形</Divider>
+            <p>常规</p>
+            <p>
+                <span>S：</span>
+                <Tag color="success" round>成功</Tag>
+                <Tag color="processing" round>运行中/待运行</Tag>
+                <Tag color="error" round>失败</Tag>
+                <Tag color="default" round>常规/停止</Tag>
+                <Tag color="warning" round>异常</Tag>
+            </p>
+            <p>
+                <span>M：</span>
+                <Tag color="success" round>成功</Tag>
+                <Tag color="processing" round>运行中/待运行</Tag>
+                <Tag color="error" round>失败</Tag>
+                <Tag color="default" round>常规/停止</Tag>
+                <Tag color="warning" round>异常</Tag>
+            </p>
+            <p>后置icon</p>
+            <p>
+                <span>S：</span>
+                <Tag color="success" round>成功</Tag>
+                <Tag color="processing" round>运行中/待运行</Tag>
+                <Tag color="error" round>失败</Tag>
+                <Tag color="default" round>常规/停止</Tag>
+                <Tag color="warning" round>异常</Tag>
+            </p>
+            <p>
+                <span>M：</span>
+                <Tag color="success" round>成功</Tag>
+                <Tag color="processing" round>运行中/待运行</Tag>
+                <Tag color="error" round>失败</Tag>
+                <Tag color="default" round>常规/停止</Tag>
+                <Tag color="warning" round>异常</Tag>
+            </p>
+            <Divider>点+文字</Divider>
+            详见 Badge徽标数
+            <Divider>方形</Divider>
+            <p>
+                <Tag color="success">模型蒸馏</Tag>
+                <Tag color="processing">推理结果集</Tag>
+                <Tag color="error">模型评估</Tag>
+                <Tag color="default">批量推理</Tag>
+                <Tag color="warning">候补颜色</Tag>
+            </p>
+            <p>文案说明</p>
+            <p>
+                <Tag color="default">小号文案说明</Tag>
+                <Tag color="default">大号文案说明</Tag>
+            </p>
+
+            <Divider>多选标签</Divider>
+            <p>默认</p>
+            <p>
+                <Tag.CheckableTag checked={false}>教育培训</Tag.CheckableTag>
+            </p>
+            <p>选中</p>
+            <p>
+                <Tag.CheckableTag outlined checked>教育培训</Tag.CheckableTag>
+            </p>
+
+            <Divider>切换标签</Divider>
+            <p>未选</p>
+            <p>
+                <Tag.CheckableTag checked={false}>教育培训</Tag.CheckableTag>
+                <Tag.CheckableTag checked={false} icon={<ClockCircleOutlined />}>教育培训</Tag.CheckableTag>
+            </p>
+            <p>默认选中</p>
+            <p>
+                <Tag.CheckableTag checked>教育培训</Tag.CheckableTag>
+                <Tag.CheckableTag checked icon={<ClockCircleOutlined />}>教育培训</Tag.CheckableTag>
+
+            </p>
+            <p>禁用</p>
+            <p>
+                <Tag.CheckableTag disabled checked={false}>教育培训</Tag.CheckableTag>
+                <Tag.CheckableTag disabled checked={false} icon={<ClockCircleOutlined />}>教育培训</Tag.CheckableTag>
+            </p>
+            <p>选中禁用</p>
+            <p>
+                <Tag.CheckableTag disabled checked>教育培训</Tag.CheckableTag>
+                <Tag.CheckableTag disabled checked icon={<ClockCircleOutlined />}>教育培训</Tag.CheckableTag>
+            </p>
+            <Divider>切换标签 组合样式</Divider>
+            <p>前置icon</p>
+            <p>
+                <Tag.CheckableTag checked icon={<ClockCircleOutlined />}>语言大模型</Tag.CheckableTag>
+                <Tag.CheckableTag checked={false} icon={<ClockCircleOutlined />}>语言大模型</Tag.CheckableTag>
+                <Tag.CheckableTag checked={false} icon={<ClockCircleOutlined />}>语言大模型</Tag.CheckableTag>
+                <Tag.CheckableTag checked={false} icon={<ClockCircleOutlined />}>语言大模型</Tag.CheckableTag>
+            </p>
+            <p>纯文字</p>
+            <p>
+                <Tag.CheckableTag checked>语言大模型</Tag.CheckableTag>
+                <Tag.CheckableTag checked={false}>语言大模型</Tag.CheckableTag>
+                <Tag.CheckableTag checked={false}>语言大模型</Tag.CheckableTag>
+                <Tag.CheckableTag checked={false}>语言大模型</Tag.CheckableTag>
+            </p>
+        </BrandProvider>
+    );
+};
+
+export const OldDemo = () => {
     return (
         <BrandProvider brand="icloud">
             {/* success */}

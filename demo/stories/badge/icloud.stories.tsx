@@ -37,6 +37,26 @@ export const Demo = () => {
             <Badge count={99} type="success">
                 <a href="#" style={{width: 76, height: 30, background: '#ddd', display: 'inline-block'}} />
             </Badge>
+
+            <Divider>状态</Divider>
+            <p>常规</p>
+            <Space size={20}>
+                <Badge status="success" text="成功" />
+                <Badge status="error" text="失败" />
+                <Badge status="default" text="停止" />
+                <Badge status="processing" text="运行中" />
+                <Badge status="warning" text="异常" />
+            </Space>
+            <p />
+            <p>后置icon</p>
+            <Space size={20}>
+                <Badge status="success" text={<Space>成功 +</Space>} />
+                <Badge status="error" text={<Space>失败 +</Space>} />
+                <Badge status="default" text={<Space>停止 +</Space>} />
+                <Badge status="processing" text={<Space>运行中 +</Space>} />
+                <Badge status="warning" text={<Space>异常 +</Space>} />
+            </Space>
+
         </BrandProvider>
     );
 };

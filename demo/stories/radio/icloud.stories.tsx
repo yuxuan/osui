@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
+import Divider from '@osui/divider';
 import Radio from '@osui/radio';
 import IconAComponent from './iconA';
 import IconBComponent from './iconB';
@@ -17,13 +18,20 @@ export const Demo = () => {
     return (
         <div style={{padding: 30}}>
             <BrandProvider brand="icloud">
-                <h3>1、普通单选</h3>
+                <Divider>普通单选</Divider>
+                <p>常规</p>
+                <Radio />
+                <Radio disabled />
+                <Radio defaultChecked />
+                <Radio defaultChecked disabled />
+                <p></p>
+                <p>带文字</p>
                 <Radio>单选选项</Radio>
                 <Radio disabled>单选选项</Radio>
                 <Radio defaultChecked>单选选项</Radio>
                 <Radio defaultChecked disabled>单选选项</Radio>
                 <p></p>
-                <h3>2、组合</h3>
+                <Divider>组合</Divider>
                 <Group onChange={e => setValue(e.target.value)} value={value}>
                     <Radio value={1}>A</Radio>
                     <Radio value={2}>B</Radio>
@@ -32,24 +40,24 @@ export const Demo = () => {
                     <Radio value={5} disabled>E</Radio>
                 </Group>
                 <p></p>
-                <h3>3、按钮单选</h3>
-                <p>按钮样式单选组合</p>
+                <Divider>按钮单选</Divider>
                 <p>加强</p>
-                <Group buttonType="strong" onChange={e => setValueButton(e.target.value)} value={valueButton}>
+                <Group buttonType="strong" value={'a'}>
                     <RadioButton value="a">Hangzhou</RadioButton>
                     <RadioButton value="b">Shanghai</RadioButton>
-                    <RadioButton value="c">Beijing</RadioButton>
-                    <RadioButton value="d">Chengdu</RadioButton>
                     <RadioButton value="e" disabled>guangzhou</RadioButton>
                 </Group>
-                <br />
-                <br />
+                <p></p>
+                <Group buttonType="strong" value={'a'}>
+                    <RadioButton value="a" disabled>Hangzhou</RadioButton>
+                </Group>
+                <p>加强单选组</p>
                 <Group
                     buttonType="strong"
                     optionType="button"
                     options={[
                         {label: 'Hangzhou', value: 'a'},
-                        {label: 'Shanghai', value: 'b', disabled: true},
+                        {label: 'Shanghai', value: 'b'},
                         {label: 'Beijing', value: 'c'},
                         {label: 'Chengdu', value: 'd'},
                         {label: 'guangzhou', value: 'e', disabled: true},
@@ -71,8 +79,7 @@ export const Demo = () => {
                     <RadioButton value="b" disabled>Shanghai</RadioButton>
                     <RadioButton disabled value="c">Shanghai</RadioButton>
                 </Group>
-                <p></p>
-                <p></p>
+                <Divider>卡片单选</Divider>
                 <Group onChange={e => setValueButton(e.target.value)} value={valueButton}>
                     <Radio.RichButton
                         value="a"
@@ -86,9 +93,28 @@ export const Demo = () => {
                         description="支持9种大模型，智能提高计算资源使用率"
                         flag="推荐"
                         icon={<IconBComponent />}
-
                     >
                         AIAK 训练加模版
+                    </Radio.RichButton>
+                    <Radio.RichButton
+                        value="c"
+                        description="使用百度智能云 IAM 进行身份管理和访问权限控制，不兼容 OpenAI SDK"
+                        icon={<IconBComponent />}
+                        disabled
+                    >
+                        V1
+                    </Radio.RichButton>
+                </Group>
+                <p></p>
+                <p>已选禁用</p>
+                <Group value={'a'}>
+                    <Radio.RichButton
+                        value="a"
+                        description="自定义训练镜像以及参数的场景"
+                        icon={<IconAComponent />}
+                        disabled
+                    >
+                        自定义
                     </Radio.RichButton>
                 </Group>
             </BrandProvider>

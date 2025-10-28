@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v4.0.0-beta.8) (2025-10-28)
+
+
+### Bug Fixes
+
+* input-group 和 popover margin样式调整 ([31e45f8](https://gitee.com/gitee-fe/osui/tree/master/commits/31e45f80932d8bfe05466c5dc433001bd09fd70d))
+* table ([7c35ea1](https://gitee.com/gitee-fe/osui/tree/master/commits/7c35ea1f38f56bd28e3d5054c18111ea44d37cea))
+* tabs样式调整 ([4af8380](https://gitee.com/gitee-fe/osui/tree/master/commits/4af83803c9fced9ebf329f04db09908f2b10028e))
+* 调整pagniation ([e88aaf3](https://gitee.com/gitee-fe/osui/tree/master/commits/e88aaf3944496520d2f9397f67370046337a3bbb))
+
+
+
+
+
 # [4.0.0-beta.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v4.0.0-beta.7) (2025-10-15)
 
 

@@ -2,7 +2,9 @@
     "extends": "../../../tsconfig.json",
     "compilerOptions": {
         "rootDir": "./src",
-        "outDir": "./tmp"
+        "outDir": "./tmp",
+        "lib": ["DOM", "DOM.Iterable", "ES6"],
+        "moduleResolution": "node",
     },
     "include": ["src"]
 }

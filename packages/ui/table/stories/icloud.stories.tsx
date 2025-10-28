@@ -294,7 +294,6 @@ export const Nested = () => {
             <Table
                 columns={columns}
                 dataSource={dataSource}
-                bordered
                 size="middle"
                 scroll={{x: 'calc(700px + 50%)', y: 47 * 5}}
             />

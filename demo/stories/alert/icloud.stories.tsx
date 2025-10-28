@@ -3,6 +3,7 @@ import React from 'react';
 import {Link} from 'react-omni-link';
 import Divider from '@osui/divider';
 import BrandProvider from '@osui/brand-provider';
+import {Button} from 'antd';
 import Alert from '@osui/alert';
 
 export default {
@@ -11,6 +12,112 @@ export default {
 };
 
 export const Demo = () => {
+
+    return (
+        <BrandProvider brand="icloud">
+            <Divider>基础警告</Divider>
+            <Alert message="提示普通的文案" />
+            <br />
+            <Alert type="error" message="提示普通的文案" />
+            <br />
+            <Alert type="info" message="提示普通的文案" />
+            <br />
+            <Alert type="success" message="提示普通的文案" />
+            <br />
+            <Alert type="warning" message="提示普通的文案" />
+            <Divider>带图标警告</Divider>
+            <Alert showIcon message="提示普通的文案" />
+            <br />
+            <Alert showIcon type="error" message="提示普通的文案" />
+            <br />
+            <Alert showIcon type="info" message="提示普通的文案" />
+            <br />
+            <Alert showIcon type="success" message="提示普通的文案" />
+            <br />
+            <Alert
+                style={{width: 600}}
+                showIcon
+                type="warning"
+                message="折行情况的提示通知的文案提示通知的文案提示通知的文案提示通知
+            的文案提示通知的文案提示通知的文案提示通知的文案提示通知的文案提示通知的文案"
+            />
+            <Divider>带标题的警告</Divider>
+            <Alert message="提示标题" description="提示普通的文案" />
+            <br />
+            <Alert type="error" message="提示标题" description="提示普通的文案" />
+            <br />
+            <Alert type="success" message="提示标题" description="提示普通的文案" />
+            <br />
+            <Alert type="warning" message="提示标题" description="提示普通的文案" />
+
+            <Divider>带图标和标题警告</Divider>
+            <Alert showIcon message="提示标题" description="提示普通的文案" />
+            <br />
+            <Alert showIcon type="error" message="提示标题" description="提示普通的文案" />
+            <br />
+            <Alert showIcon type="success" message="提示标题" description="提示普通的文案" />
+            <br />
+            <Alert showIcon type="warning" message="提示标题" description="提示普通的文案" />
+
+            <Divider>可关闭警告</Divider>
+            <Alert closable message="提示普通的文案" />
+            <br />
+            <Alert closable message="提示标题" description="提示普通的文案" />
+            <br />
+            <Alert closable showIcon message="提示普通的文案" />
+            <br />
+            <Alert closable showIcon message="提示标题" description="提示普通的文案" />
+
+            <Divider>可自定义警告</Divider>
+            <Alert closable={{closeIcon: <>知道了</>}} message="提示普通的文案" />
+            <br />
+            <Alert closable={{closeIcon: '不在提醒'}} showIcon message="提示标题" description="提示普通的文案" />
+
+            <Divider>带操作项警告</Divider>
+            <Alert closable action={<a>查看详情</a>} message="提示普通的文案" />
+            <br />
+            <Alert closable action={<a>查看详情</a>} message="提示标题" description="提示普通的文案" />
+            <br />
+            <Alert action={<Button color={'red'} variant="solid">操作</Button>} showIcon type="error" message="提示普通的文案" />
+            <br />
+            <Alert
+                action={<Button color="green" variant="solid">操作</Button>}
+                showIcon
+                type="success"
+                message="提示普通的文案"
+            />
+            <br />
+            <Alert
+                action={<Button color="orange" variant="solid">操作</Button>}
+                showIcon
+                type="warning"
+                message="提示普通的文案"
+            />
+            <br />
+            <Alert action={<Button color="blue" variant="solid">操作</Button>} showIcon type="info" message="提示普通的文案" />
+
+            <Divider>带操作入口警告</Divider>
+            <Alert closable message={<>提示普通的文案 <a href="">操作入口</a></>} />
+            <br />
+            <Alert closable type="error" message={<>提示普通的文案 <a href="">操作入口</a></>} />
+            <br />
+            <Alert closable type="info" message={<>提示普通的文案 <a href="">操作入口</a></>} />
+            <br />
+            <Alert closable type="success" message={<>提示普通的文案 <a href="">操作入口</a></>} />
+
+            <Divider>自定义图标警告（建议使用面性icon）</Divider>
+            <Alert showIcon icon="+" message={'提示普通的文案'} />
+
+            <Divider>通栏警告</Divider>
+            <Alert closable message={'提示普通的文案'} />
+            <br />
+            <Alert showIcon message={'提示普通的文案'} />
+
+        </BrandProvider>
+
+    );
+};
+export const OldDemo = () => {
     return (
         <BrandProvider brand="icloud">
             <p>常用于反馈提示用户系统中需要关注的信息，需要完成的任务和可能发生的错误。信息反馈样式均统一为右侧浮层，分类为：结果反馈、业务报错、消息通知三大类，浮层定宽不定高，规则如下：</p>

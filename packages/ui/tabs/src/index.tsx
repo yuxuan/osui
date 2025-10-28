@@ -7,23 +7,27 @@ import './index.less';
 
 const clsPrefix = 'osui-tabs';
 
-export type TabsProps = AntdTabsProps;
+export type TabsProps = AntdTabsProps & {
+    grayNavbar?: boolean;
+};
 export type TabPaneProps = AntdTabPaneProps;
 
 export interface TabInterface extends React.FC<TabsProps> {
     TabPane: typeof AntdTabs.TabPane;
 }
 
-const Tabs: TabInterface = props => {
+const Tabs = ((props: TabsProps) => {
     const innerAddIcon = props.addIcon ?? <IconPlusOutlined />;
     return (
         <AntdTabs
             {...props}
-            className={classNames(clsPrefix, props.className)}
+            className={classNames(clsPrefix, props.className, {
+                [`${clsPrefix}-gray-navbar`]: props.grayNavbar,
+            })}
             addIcon={innerAddIcon}
         />
     );
-};
+}) as TabInterface;
 
 Tabs.TabPane = AntdTabs.TabPane;
 
