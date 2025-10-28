@@ -35,7 +35,7 @@
         "@osui/brand-provider": "^4.0.0-beta.7",
         "@osui/collapse": "^4.0.0-beta.7",
         "@osui/divider": "^4.0.0-beta.7",
-        "@osui/icloud-theme": "^4.0.0-beta.3",
+        "@osui/icloud-theme": "^4.0.0-beta.7",
         "@osui/icons": "^4.0.0-beta.7",
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",
@@ -91,8 +91,7 @@
     },
     "dependencies": {
         "@emotion/css": "^11.13.5",
-        "@osui/empty": "^4.0.0-beta.7",
-        "@osui/icloud-theme": "^4.0.0-beta.7"
+        "@osui/empty": "^4.0.0-beta.7"
     },
     "packageManager": "pnpm@10.17.1",
     "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
