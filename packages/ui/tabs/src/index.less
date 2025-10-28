@@ -32,25 +32,38 @@
         }
     }
 
-    .@{ant-prefix}-tabs-tab .@{ant-prefix}-tabs-tab-btn {
-        em.num {
-            display: inline-block;
-            width: 25px;
-            height: 20px;
-            margin-left: 5px;
-            color: var(--tabs-tab-color);
-            font-size: 12px;
-            font-style: normal;
-            line-height: 20px;
-            text-align: center;
-            background: var(--gray-color-3);
-            border-radius: 10px;
+    .@{ant-prefix}-tabs-tab {
+        margin: 0;
+
+        .@{ant-prefix}-tabs-tab-btn {
+            padding: 5px 12px;
+
+            em.num {
+                display: inline-block;
+                width: 25px;
+                height: 20px;
+                margin-left: 5px;
+                color: var(--tabs-tab-color);
+                font-size: 12px;
+                font-style: normal;
+                line-height: 20px;
+                text-align: center;
+                background: var(--gray-color-3);
+                border-radius: 10px;
+            }
+
+            &:hover {
+                em.num {
+                    color: var(--link-color);
+                    background: var(--brand-color-1);
+                }
+            }
         }
 
-        &:hover {
-            em.num {
-                color: var(--link-color);
-                background: var(--brand-color-1);
+        &:not(.@{ant-prefix}-tabs-tab-active):not(.@{ant-prefix}-tabs-tab-disabled):hover {
+            .@{ant-prefix}-tabs-tab-btn {
+                background: var(--component-color-grayB1);
+                border-radius: var(--radius-2xs);
             }
         }
     }
@@ -59,65 +72,52 @@
         margin: var(--tabs-horizontal-margin);
     }
 
-    .@{ant-prefix}-tabs-tab {
-        margin: 0;
+    // 灰底
+    &.@{osui-tabs-class-prefix}-gray-navbar {
+        .@{ant-prefix}-tabs-nav {
+            background: var(--component-color-grayB1);
+        }
+
+        .@{ant-prefix}-tabs-tab {
+            &:not(.@{ant-prefix}-tabs-tab-active):not(.@{ant-prefix}-tabs-tab-disabled):hover {
+                .@{ant-prefix}-tabs-tab-btn {
+                    background: var(--component-color-grayB-active);
+                }
+            }
+        }
     }
 
     // card 模式 // 以下覆盖没有考虑osc的样式
     &.@{ant-prefix}-tabs-card {
-        &.@{ant-prefix}-tabs > .@{ant-prefix}-tabs-nav,
-        &.@{ant-prefix}-tabs > div > .@{ant-prefix}-tabs-nav {
-            background: var(--tabs-card-bg);
-        }
-
-        .@{ant-prefix}-tabs-nav-list {
-            padding: var(--tabs-card-nav-list-padding);
-        }
-
         & > .@{ant-prefix}-tabs-nav .@{ant-prefix}-tabs-tab,
         & > div > .@{ant-prefix}-tabs-nav .@{ant-prefix}-tabs-tab {
-            border: 1px solid var(--gray-color-3);
+            border-radius: 6px 6px 0 0;
+            padding: 5px 8px;
 
             &.@{ant-prefix}-tabs-tab-active {
-                border-bottom: 1px solid transparent;
+                box-shadow: 0 2px 0 0 var(--brand-color-6) inset;
             }
 
-            &:not(.@{ant-prefix}-tabs-tab-active) {
-                background: var(--gray-color-3);
-                border-bottom: var(--tabs-border-bottom);
+            &:not(.@{ant-prefix}-tabs-tab-active):not(.@{ant-prefix}-tabs-tab-disabled) {
+                background: var(--component-color-grayB1);
+
+                &:hover {
+                    transition: 0s;
+                    background: var(--component-color-grayB-active);
+
+                    .@{ant-prefix}-tabs-tab-btn {
+                        background: var(--component-color-grayB-active);
+                    }
+                }
             }
         }
+    }
 
-        .@{ant-prefix}-tabs-tab.@{ant-prefix}-tabs-tab-with-remove {
-            button {
-                margin-left: 0;
-                padding-right: 0;
-                padding-left: 10px;
-            }
-        }
-
-        .@{ant-prefix}-tabs-nav-add {
-            align-self: center;
-            width: 30px;
-            min-width: 30px;
-            height: 30px;
-            color: var(--gray-color-8);
-            background: var(--gray-color-3);
-            border: 1px solid var(--gray-color-6);
-        }
-
-        &.@{ant-prefix}-tabs-editable {
-            .@{ant-prefix}-tabs-tab-remove {
-                display: inline-flex;
-                align-items: center;
-                color: var(--tag-icon-color);
-            }
-
-            .@{ant-prefix}-tabs-nav-add {
-                display: inline-flex;
-                align-items: center;
-                color: var(--theme-text-color);
-            }
+    // add button
+    &.ant-tabs > .ant-tabs-nav .ant-tabs-nav-add,
+    &.ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-add {
+        &:hover {
+            background: var(--component-color-grayB1);
         }
     }
 }

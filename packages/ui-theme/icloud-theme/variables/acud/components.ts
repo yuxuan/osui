@@ -622,7 +622,7 @@ export default {
     '--tabs-card-bg': 'var(--gray-color-3)',
     '--tabs-card-nav-list-padding': '4px 0 0 10px',
     '--tabs-tab-active-font-weight': '500',
-    '--tabs-horizontal-margin': '0 0 0 40px',
+    '--tabs-horizontal-margin': '0 0 0 16px',
     '--tabs-active-color': 'var(--theme-primary-color-active)',
     '--tabs-card-active-color': 'var(--text-selection-bg)',
     '--tabs-card-head-background': '#fafafa',

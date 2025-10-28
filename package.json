@@ -41,7 +41,7 @@
         "@storybook/react-vite": "^7.6.20",
         "@types/css": "^0.0.33",
         "@types/less": "^3.0.6",
-        "@types/react": "17.0.53",
+        "@types/react": "^18.0.0",
         "@typescript-eslint/eslint-plugin": "^6.21.0",
         "@typescript-eslint/parser": "^6.21.0",
         "commitizen": "^4.3.0",
@@ -75,8 +75,5 @@
             "path": "cz-conventional-changelog"
         }
     },
-    "resolutions": {
-        "@types/react": "17.0.53"
-    },
-    "packageManager": "pnpm@10.17.1"
+    "packageManager": "pnpm@10.18.3"
 }

@@ -97,6 +97,11 @@ export const components: ThemeConfig['components'] = {
     },
     Tabs: {
         fontSize: 14,
+        lineWidthFocus: 0,
+        colorText: acudSemanticTokens['--text-color-secondary'],
+        itemHoverColor: acudSemanticTokens['--text-color-secondary'],
+        horizontalItemPadding: '4px 0px',
+        cardGutter: 8,
     },
     Breadcrumb: {
         colorBgTextHover: 'transparent',
