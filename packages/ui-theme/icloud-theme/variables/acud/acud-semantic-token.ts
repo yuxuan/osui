@@ -60,13 +60,22 @@ export default {
     '--component-color-grayB-active': 'var(--grayB-color-3)',
     '--component-color-grayB-disable': 'var(--grayB-color-1)',
 
+    '--line-color-1': '#EAEEF2',
+    '--line-color-2': '#E5E9ED',
+    '--line-color-3': '#E4E7EB',
+
     '--table-color-white': 'var(--grayB-color-1)',
     '--table-gray-color': 'var(--grayB-color-3)',
 
-    '--border-color-level1': 'var(--color-line-color-1)',
-    '--border-color-level2': 'var(--color-line-color-3)',
+    '--mask-color': '#000000',
+
+    '--border-color-level1': 'var(--line-color-1)',
+    '--border-color-level2': 'var(--line-color-3)',
 
     '--ant-line': 'var(--grayB-color-color-6)',
 
     '--masking-layer-color': 'var(--color-mask-color)',
+
+    // 商业化色（价格）
+    '--amount-color': '#FF713D',
 };
