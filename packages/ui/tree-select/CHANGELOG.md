@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v4.0.0-beta.8) (2025-10-28)
+
+
+### Bug Fixes
+
+* tree-select icon, pagination icon, switch size ([5d28ebf](https://gitee.com/gitee-fe/osui/tree/master/commits/5d28ebfbfe3963998c42820ac29b468197df5e69))
+* tree-select loading ([5390976](https://gitee.com/gitee-fe/osui/tree/master/commits/5390976f69fa362ece06bbfa802921852b514e6e))
+* tree-select选中样式 ([86b2799](https://gitee.com/gitee-fe/osui/tree/master/commits/86b2799ef3697dd151a95e822dc796d8992e70b5))
+* tree-select选中样式 ([ba4daec](https://gitee.com/gitee-fe/osui/tree/master/commits/ba4daec6fb7f7a4d53e42dbf13374f478888ce78))
+* 优化table sorter样式 ([38f41f2](https://gitee.com/gitee-fe/osui/tree/master/commits/38f41f2376cc3d8534b22b2605d4fe5bac2bd380))
+* 修复button走查问题 ([619a064](https://gitee.com/gitee-fe/osui/tree/master/commits/619a064dd656991dd901f08e770d456c392c1d34))
+* 尝试修复version ([6e644e7](https://gitee.com/gitee-fe/osui/tree/master/commits/6e644e74a0bf1810ef9a29f436253c5c44ecd241))
+
+
+
+
+
 # [4.0.0-beta.7](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v4.0.0-beta.7) (2025-10-15)
 
 
