@@ -15,10 +15,12 @@
     "watch": "find variables -name '*.ts' | entr scripts/watch.sh"
   },
   "files": [
-    "dist"
+    "dist",
+    "es"
   ],
   "sideEffects": [
-    "dist/**"
+    "dist/**",
+    "es/**"
   ],
   "devDependencies": {
     "@babel/cli": "^7.10.5",
