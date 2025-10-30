@@ -1,6 +1,6 @@
 import {ThemeConfig} from 'antd';
-import acudMatricsTokens from '@osui/icloud-theme/dist/theme/acud/matrics';
-import acudSemanticTokens from '@osui/icloud-theme/dist/theme/acud/acud-semantic-token';
+import acudMatricsTokens from '@osui/icloud-theme/es/theme/acud/matrics';
+import acudSemanticTokens from '@osui/icloud-theme/es/theme/acud/acud-semantic-token';
 
 export const components: ThemeConfig['components'] = {
     Button: {

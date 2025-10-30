@@ -51,6 +51,7 @@
         "@types/jest": "^27.0.0",
         "@types/react-dom": "^17.0.2",
         "@types/react-test-renderer": "^17.0.1",
+        "@types/hoist-non-react-statics": "^3.3.1",
         "antd": "5.24.2",
         "cpy-cli": "^3.1.1",
         "enzyme": "^3.11.0",
@@ -77,7 +78,8 @@
         "react-dom": ">=17.0.0"
     },
     "dependencies": {
-        "classnames": "^2.3.1"
+        "classnames": "^2.3.1",
+        "hoist-non-react-statics": "^3.3.2"
     },
     "repository": {
         "type": "git",

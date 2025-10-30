@@ -2,6 +2,8 @@ import React, {FC, useContext} from 'react';
 import {ConfigProvider, Space as AntdSpace} from 'antd';
 import {SpaceProps} from 'antd/es/space';
 import classNames from 'classnames';
+import hoistNonReactStatics from 'hoist-non-react-statics';
+
 import './index.less';
 
 const clsPrefix = 'osui-space';
@@ -19,5 +21,9 @@ const Space: FC<SpaceProps> = ({className, ...props}) => {
     );
 };
 
+hoistNonReactStatics(Space, AntdSpace);
+
 export type {SpaceProps} from 'antd';
 export default Space;
+
+

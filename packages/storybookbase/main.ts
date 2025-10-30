@@ -7,14 +7,14 @@ export default (getAbsolutePath: (name: string) => any, __dirname: string) => {
     const isOsuiTheme = themeEnv === 'osui';
 
     const styleResources = isOsuiTheme ? (
-        [getAbsolutePath('@osui/theme') + '/dist/antd-vars-patch.less']
+        [getAbsolutePath('@osui/theme') + '/es/antd-vars-patch.less']
     ) : (
-        [getAbsolutePath('@osui/icloud-theme') + '/dist/antd-vars-patch.less']
+        [getAbsolutePath('@osui/icloud-theme') + '/es/antd-vars-patch.less']
     );
 
     const resources = [
         ...styleResources,
-        getAbsolutePath('@osui/icloud-theme') + '/dist/less-functions-overrides.less',
+        getAbsolutePath('@osui/icloud-theme') + '/es/less-functions-overrides.less',
     ];
 
     const config: StorybookConfig = {
