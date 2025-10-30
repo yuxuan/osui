@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.10](https://github.com/yuxuan/osui/compare/v4.0.0-beta.8...v4.0.0-beta.10) (2025-10-30)
+
+
+### Bug Fixes
+
+* icloud-theme build ([a81ca1a](https://github.com/yuxuan/osui/commit/a81ca1aa604129708301279ed8eb2a3976f078fe))
+* 修复icloud-theme打包问题,修复space导出问题 ([5ef687b](https://github.com/yuxuan/osui/commit/5ef687b999b1f3eb4e6a589a2b407e9650947247))
+* 增加颜色变量line-color ([0c96f27](https://github.com/yuxuan/osui/commit/0c96f27f4207f75925575e7a380a88cb151ecfb2))
+* 更新文档 ([25f319f](https://github.com/yuxuan/osui/commit/25f319f1a21e5a801bc953fbf8dea05beda185cc))
+* 更新文档 ([5ab38f1](https://github.com/yuxuan/osui/commit/5ab38f18acc91a79eebc4ffcba02ba142b046361))
+
+
+
+
+
 # [4.0.0-beta.9](https://github.com/yuxuan/osui/compare/v4.0.0-beta.8...v4.0.0-beta.9) (2025-10-30)
 
 

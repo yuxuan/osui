@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.10](https://github.com/yuxuan/osui/compare/v4.0.0-beta.8...v4.0.0-beta.10) (2025-10-30)
+
+
+### Bug Fixes
+
+* 更新文档 ([25f319f](https://github.com/yuxuan/osui/commit/25f319f1a21e5a801bc953fbf8dea05beda185cc))
+
+
+
+
+
 # [4.0.0-beta.8](https://github.com/yuxuan/osui/compare/v3.1.0...v4.0.0-beta.8) (2025-10-28)
 
 **Note:** Version bump only for package @osui/icons
