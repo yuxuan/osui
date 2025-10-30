@@ -248,7 +248,7 @@ importers:
         specifier: ^7.10.5
         version: 7.28.3(@babel/core@7.28.4)
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@reskript/cli':
         specifier: ^6.0.0
@@ -323,22 +323,22 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/gap':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../gap
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -468,16 +468,16 @@ importers:
         specifier: ^7.10.5
         version: 7.28.3(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: 7.5.1
@@ -604,16 +604,16 @@ importers:
         specifier: ^7.10.5
         version: 7.28.3(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -736,13 +736,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -856,10 +856,10 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/highlight-text':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../highlight-text
       '@osui/select':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../select
       classnames:
         specifier: ^2.3.1
@@ -872,19 +872,19 @@ importers:
         specifier: ^7.10.5
         version: 7.28.3(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/markdown':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../markdown
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -1008,16 +1008,16 @@ importers:
         specifier: ^7.10.5
         version: 7.28.3(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/tooltip':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../tooltip
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -1150,16 +1150,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -1292,22 +1292,22 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/space':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../space
       '@osui/tooltip':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../tooltip
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -1424,7 +1424,7 @@ importers:
         specifier: ^11.13.5
         version: 11.13.5
       '@osui/empty':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../empty
     devDependencies:
       '@babel/cli':
@@ -1440,19 +1440,19 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: 'link:'
       '@osui/collapse':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../collapse
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -1582,25 +1582,25 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/markdown':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../markdown
       '@osui/menu':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../menu
       '@osui/text-overflow-tooltip':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../text-overflow-tooltip
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -1711,13 +1711,13 @@ importers:
   packages/ui/button:
     dependencies:
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/tooltip':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../tooltip
       classnames:
         specifier: ^2.3.1
@@ -1739,22 +1739,22 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/flex':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../flex
       '@osui/gap':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../gap
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/markdown':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../markdown
       '@osui/space':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../space
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -1887,13 +1887,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -2032,28 +2032,28 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/col':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../col
       '@osui/flex-centered':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../flex-centered
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/markdown':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../markdown
       '@osui/row':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../row
       '@osui/table':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../table
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -2179,13 +2179,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -2315,13 +2315,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -2451,16 +2451,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
         specifier: ^3.1.20
         version: 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -2583,13 +2583,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -2722,16 +2722,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/select':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../select
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -2860,13 +2860,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -2989,13 +2989,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -3125,19 +3125,19 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/space':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../space
       '@osui/version':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../version
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -3266,13 +3266,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -3395,13 +3395,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -3528,22 +3528,22 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/space':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../space
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -3673,28 +3673,28 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/flex':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../flex
       '@osui/flex-centered':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../flex-centered
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/menu':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../menu
       '@osui/space':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../space
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -3827,31 +3827,31 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/modal':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../modal
       '@osui/popover':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../popover
       '@osui/select':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../select
       '@osui/table':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../table
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -3977,16 +3977,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/gap':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../gap
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -4109,22 +4109,22 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/gap':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../gap
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -4250,13 +4250,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -4367,7 +4367,7 @@ importers:
   packages/ui/form:
     dependencies:
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       classnames:
         specifier: ^2.3.1
@@ -4389,37 +4389,37 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/checkbox':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../checkbox
       '@osui/date-picker':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../date-picker
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/input':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../input
       '@osui/input-number':
         specifier: latest
         version: link:../input-number
       '@osui/radio':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../radio
       '@osui/select':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../select
       '@osui/switch':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../switch
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -4542,16 +4542,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -4674,16 +4674,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/col':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../col
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/row':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../row
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -4813,16 +4813,16 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/input':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../input
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -4945,13 +4945,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -5065,7 +5065,7 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       classnames:
         specifier: ^2.3.1
@@ -5090,37 +5090,37 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/auto-complete':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../auto-complete
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/cascader':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../cascader
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/flex-centered':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../flex-centered
       '@osui/form':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../form
       '@osui/gap':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../gap
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/select':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../select
       '@osui/version':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../version
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -5240,7 +5240,7 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       classnames:
         specifier: ^2.3.1
@@ -5259,22 +5259,22 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/flex-centered':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../flex-centered
       '@osui/form':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../form
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/input':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../input
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -5400,19 +5400,19 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/breadcrumb':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../breadcrumb
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/menu':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../menu
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -5523,7 +5523,7 @@ importers:
   packages/ui/list:
     dependencies:
       '@osui/spin':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../spin
       hoist-non-react-statics:
         specifier: ^3.3.2
@@ -5533,16 +5533,16 @@ importers:
         specifier: ^7.10.5
         version: 7.28.3(@babel/core@7.28.4)
       '@osui/avatar':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../avatar
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -5684,13 +5684,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -5816,13 +5816,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -5955,13 +5955,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -6084,7 +6084,7 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/config-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../config-provider
       classnames:
         specifier: ^2.3.1
@@ -6106,22 +6106,22 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/divider':
         specifier: ^3.1.20
         version: 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/markdown':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../markdown
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -6251,34 +6251,34 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/alert':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../alert
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/config-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../config-provider
       '@osui/divider':
         specifier: ^3.1.20
         version: 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/input':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../input
       '@osui/space':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../space
       '@osui/table':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../table
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -6401,19 +6401,19 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/divider':
         specifier: ^3.1.20
         version: 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -6524,7 +6524,7 @@ importers:
   packages/ui/pagination:
     dependencies:
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       classnames:
         specifier: ^2.3.1
@@ -6543,16 +6543,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -6678,19 +6678,19 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/message':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../message
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -6817,31 +6817,31 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/form':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../form
       '@osui/gap':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../gap
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/input':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../input
       '@osui/markdown':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../markdown
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -6952,7 +6952,7 @@ importers:
   packages/ui/progress:
     dependencies:
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       classnames:
         specifier: ^2.3.1
@@ -6971,10 +6971,10 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -7100,13 +7100,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -7220,10 +7220,10 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/input':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../input
       '@osui/select':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../select
       classnames:
         specifier: ^2.3.1
@@ -7248,13 +7248,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -7384,16 +7384,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
         specifier: ^3.1.20
         version: 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -7523,13 +7523,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -7655,13 +7655,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -7775,13 +7775,13 @@ importers:
         specifier: ^7.10.5
         version: 7.28.3(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -7898,19 +7898,19 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/flex':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../flex
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -8024,16 +8024,16 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/popover':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../popover
       '@osui/tag':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../tag
       '@osui/tooltip':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../tooltip
       classnames:
         specifier: ^2.3.1
@@ -8058,16 +8058,16 @@ importers:
         specifier: ^3.1.20
         version: 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/space':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../space
       '@osui/spin':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../spin
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -8202,13 +8202,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -8319,7 +8319,7 @@ importers:
   packages/ui/slider:
     dependencies:
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       classnames:
         specifier: ^2.3.1
@@ -8338,19 +8338,19 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/gap':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../gap
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/input-number':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../input-number
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -8463,6 +8463,9 @@ importers:
       classnames:
         specifier: ^2.3.1
         version: 2.5.1
+      hoist-non-react-statics:
+        specifier: ^3.3.2
+        version: 3.3.2
     devDependencies:
       '@babel/cli':
         specifier: ^7.10.5
@@ -8477,16 +8480,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -8527,6 +8530,9 @@ importers:
       '@types/enzyme':
         specifier: ^3.10.9
         version: 3.10.19
+      '@types/hoist-non-react-statics':
+        specifier: ^3.3.1
+        version: 3.3.7(@types/react@18.3.26)
       '@types/jest':
         specifier: ^27.0.0
         version: 27.5.2
@@ -8613,16 +8619,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
         specifier: ^3.1.20
         version: 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -8748,16 +8754,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/typography':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../typography
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -8880,22 +8886,22 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/col':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../col
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/row':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../row
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -9022,25 +9028,25 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/flex':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../flex
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/space':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../space
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -9173,16 +9179,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
         specifier: ^3.1.20
         version: 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -9293,10 +9299,10 @@ importers:
   packages/ui/table:
     dependencies:
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/spin':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../spin
       classnames:
         specifier: ^2.3.1
@@ -9333,31 +9339,31 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
         specifier: ^3.1.20
         version: 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@osui/form':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../form
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/pagination':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../pagination
       '@osui/radio':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../radio
       '@osui/space':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../space
       '@osui/switch':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../switch
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -9496,31 +9502,31 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/dropdown':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../dropdown
       '@osui/flex-centered':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../flex-centered
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/menu':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../menu
       '@osui/text-overflow-tooltip':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../text-overflow-tooltip
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -9640,13 +9646,13 @@ importers:
   packages/ui/tag:
     dependencies:
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/input':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../input
       '@osui/tooltip':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../tooltip
       classnames:
         specifier: ^2.3.1
@@ -9677,13 +9683,13 @@ importers:
         specifier: ^11.8.1
         version: 11.14.1(@emotion/react@11.14.0(@types/react@18.3.26)(react@17.0.2))(@types/react@18.3.26)(react@17.0.2)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -9803,7 +9809,7 @@ importers:
   packages/ui/text-overflow-tooltip:
     dependencies:
       '@osui/tooltip':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../tooltip
     devDependencies:
       '@babel/cli':
@@ -9819,16 +9825,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -9939,10 +9945,10 @@ importers:
   packages/ui/theme-provider:
     dependencies:
       '@osui/dropdown':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../dropdown
       '@osui/menu':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../menu
       classname:
         specifier: ^0.0.0
@@ -9964,16 +9970,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -10103,19 +10109,19 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/form':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../form
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -10248,13 +10254,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -10381,19 +10387,19 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/gap':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../gap
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -10519,13 +10525,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -10648,13 +10654,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -10781,16 +10787,16 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/input':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../input
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -10920,13 +10926,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -11062,13 +11068,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -11179,244 +11185,244 @@ importers:
   packages/ui/ui:
     dependencies:
       '@osui/affix':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../affix
       '@osui/alert':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../alert
       '@osui/anchor':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../anchor
       '@osui/app':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../app
       '@osui/auto-complete':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../auto-complete
       '@osui/avatar':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../avatar
       '@osui/back-top':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../back-top
       '@osui/badge':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../badge
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/breadcrumb':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../breadcrumb
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/calendar':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../calendar
       '@osui/card':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../card
       '@osui/carousel':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../carousel
       '@osui/cascader':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../cascader
       '@osui/checkbox':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../checkbox
       '@osui/col':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../col
       '@osui/collapse':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../collapse
       '@osui/color-picker':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../color-picker
       '@osui/config-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../config-provider
       '@osui/date-picker':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../date-picker
       '@osui/descriptions':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../descriptions
       '@osui/divider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../divider
       '@osui/drawer':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../drawer
       '@osui/dropdown':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../dropdown
       '@osui/empty':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../empty
       '@osui/flex':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../flex
       '@osui/flex-centered':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../flex-centered
       '@osui/float-button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../float-button
       '@osui/form':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../form
       '@osui/gap':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../gap
       '@osui/grid':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../grid
       '@osui/highlight-text':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../highlight-text
       '@osui/image':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../image
       '@osui/input':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../input
       '@osui/input-number':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../input-number
       '@osui/layout':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../layout
       '@osui/list':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../list
       '@osui/markdown':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../markdown
       '@osui/mentions':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../mentions
       '@osui/menu':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../menu
       '@osui/message':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../message
       '@osui/modal':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../modal
       '@osui/notification':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../notification
       '@osui/pagination':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../pagination
       '@osui/popconfirm':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../popconfirm
       '@osui/popover':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../popover
       '@osui/progress':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../progress
       '@osui/qr-code':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../qr-code
       '@osui/quick-edit':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../quick-edit
       '@osui/radio':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../radio
       '@osui/rate':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../rate
       '@osui/result':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../result
       '@osui/row':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../row
       '@osui/segmented':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../segmented
       '@osui/select':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../select
       '@osui/skeleton':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../skeleton
       '@osui/slider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../slider
       '@osui/space':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../space
       '@osui/spin':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../spin
       '@osui/splitter':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../splitter
       '@osui/statistic':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../statistic
       '@osui/steps':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../steps
       '@osui/switch':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../switch
       '@osui/table':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../table
       '@osui/tabs':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../tabs
       '@osui/tag':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../tag
       '@osui/text-overflow-tooltip':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../text-overflow-tooltip
       '@osui/theme-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../theme-provider
       '@osui/time-picker':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../time-picker
       '@osui/timeline':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../timeline
       '@osui/tooltip':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../tooltip
       '@osui/tour':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../tour
       '@osui/transfer':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../transfer
       '@osui/tree':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../tree
       '@osui/tree-select':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../tree-select
       '@osui/typography':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../typography
       '@osui/upload':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../upload
       '@osui/version':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../version
       '@osui/watermark':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../watermark
       classnames:
         specifier: ^2.3.1
@@ -11438,10 +11444,10 @@ importers:
         specifier: ^7.10.5
         version: 7.28.3(@babel/core@7.28.4)
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@reskript/cli':
         specifier: ^6.0.0
@@ -11559,31 +11565,31 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/button':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../button
       '@osui/gap':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../gap
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@osui/markdown':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../markdown
       '@osui/message':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../message
       '@osui/modal':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../modal
       '@osui/progress':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../progress
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -11712,13 +11718,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -11847,13 +11853,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../brand-provider
       '@osui/icloud-theme':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
       '@osui/icons':
-        specifier: ^4.0.0-beta.8
+        specifier: ^4.0.0-beta.10
         version: link:../../ui-icons/osui-icons
       '@storybook/addon-docs':
         specifier: ^7.5.1

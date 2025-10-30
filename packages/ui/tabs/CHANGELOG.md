@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.10](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v4.0.0-beta.8...v4.0.0-beta.10) (2025-10-30)
+
+
+### Bug Fixes
+
+* 更新文档 ([5ab38f1](https://gitee.com/yuxuanhuo/osui/tree/master/commits/5ab38f18acc91a79eebc4ffcba02ba142b046361))
+
+
+
+
+
+# [4.0.0-beta.9](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v4.0.0-beta.8...v4.0.0-beta.9) (2025-10-30)
+
+
+### Bug Fixes
+
+* 更新文档 ([5ab38f1](https://gitee.com/yuxuanhuo/osui/tree/master/commits/5ab38f18acc91a79eebc4ffcba02ba142b046361))
+
+
+
+
+
 # [4.0.0-beta.8](https://gitee.com/yuxuanhuo/osui/tree/master/compare/v3.1.0...v4.0.0-beta.8) (2025-10-28)
 
 

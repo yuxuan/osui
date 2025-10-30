@@ -1,5 +1,5 @@
-import acudSemanticTokens from '@osui/icloud-theme/dist/theme/acud/acud-semantic-token';
-import acudColors from '@osui/icloud-theme/dist/theme/acud/colors';
+import acudSemanticTokens from '@osui/icloud-theme/es/theme/acud/acud-semantic-token';
+import acudColors from '@osui/icloud-theme/es/theme/acud/colors';
 import {ThemeConfig} from 'antd';
 
 type AntdToken = Required<ThemeConfig>['token'];

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.8...v4.0.0-beta.10) (2025-10-30)
+
+
+### Bug Fixes
+
+* 修复icloud-theme打包问题,修复space导出问题 ([5ef687b](https://gitee.com/gitee-fe/osui/tree/master/commits/5ef687b999b1f3eb4e6a589a2b407e9650947247))
+
+
+
+
+
+# [4.0.0-beta.9](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.8...v4.0.0-beta.9) (2025-10-30)
+
+
+### Bug Fixes
+
+* 修复icloud-theme打包问题,修复space导出问题 ([5ef687b](https://gitee.com/gitee-fe/osui/tree/master/commits/5ef687b999b1f3eb4e6a589a2b407e9650947247))
+
+
+
+
+
 # [4.0.0-beta.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v4.0.0-beta.8) (2025-10-28)
 
 
