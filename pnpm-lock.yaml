@@ -7884,6 +7884,10 @@ importers:
         version: 4.9.5
 
   packages/ui/segmented:
+    dependencies:
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
     devDependencies:
       '@babel/cli':
         specifier: ^7.10.5
@@ -7960,6 +7964,9 @@ importers:
       '@types/react-test-renderer':
         specifier: ^17.0.1
         version: 17.0.9
+      acud-icon:
+        specifier: ^1.1.1
+        version: 1.1.1(lodash@4.17.21)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       antd:
         specifier: 5.24.2
         version: 5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
@@ -22472,6 +22479,7 @@ packages:
     engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
     deprecated: |-
       You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+
       (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
 
   qs@6.13.0:
