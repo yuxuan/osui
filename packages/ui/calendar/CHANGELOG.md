@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.9](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.8...v4.0.0-beta.9) (2025-10-30)
+
+**Note:** Version bump only for package @osui/calendar
+
+
+
+
+
 # [4.0.0-beta.8](https://gitee.com/gitee-fe/osui/tree/master/compare/v3.1.0...v4.0.0-beta.8) (2025-10-28)
 
 
