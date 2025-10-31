@@ -395,13 +395,13 @@ export const Demo = () => {
             </div>
             <Divider>带组件</Divider>
             <div style={{display: 'flex', gap: 20}}>
-                <Popover content={FormItem}>
+                <Popover content={FormItem} trigger="click">
                     Form表单
                 </Popover>
-                <Popover content={ImgContent}>
+                <Popover content={ImgContent} trigger="click">
                     带图片
                 </Popover>
-                <Popover content={InfoContent}>
+                <Popover content={InfoContent} trigger="click">
                     带信息
                 </Popover>
             </div>

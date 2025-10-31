@@ -94,6 +94,10 @@ export const components: ThemeConfig['components'] = {
         // antd 5 在某个版本之后更改了 token 名
         colorBgSpotlight: '#fff',
         colorTextLightSolid: '#151B26',
+        borderRadius: acudSemanticTokens['--radius-xs'],
+        boxShadowSecondary: acudSemanticTokens['--drop-shadow-m'],
+        fontSize: acudSemanticTokens['--font-size-2xs'],
+        lineHeight: acudSemanticTokens['--font-height-2xs'],
     },
     Tabs: {
         fontSize: 14,
@@ -114,8 +118,12 @@ export const components: ThemeConfig['components'] = {
         marginXXS: 0,
     },
     Tag: {
-        lineHeight: 1.8,
+        lineHeight: acudSemanticTokens['component-height-2XS'],
         colorFillQuaternary: '#F7F7F9',
+        defaultColor: acudSemanticTokens['--text-color-secondary'],
+        defaultBg: acudSemanticTokens['--component-color-grayB1'],
+        colorBorder: acudSemanticTokens['--component-color-grayB-active'],
+        fontSize: acudSemanticTokens['font-size-2xs'],
     },
     Result: {
         fontSizeHeading3: 24,
