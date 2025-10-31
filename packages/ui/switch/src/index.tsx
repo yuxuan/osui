@@ -6,7 +6,9 @@ import './index.less';
 
 const clsPrefix = 'osui-switch';
 
-export type SwitchProps = AntdSwitchProps;
+export type SwitchProps = Omit<AntdSwitchProps, 'size'> & {
+    size?: 'small' | 'middle' | 'default';
+};
 
 export interface CompoundedComponent extends React.ForwardRefExoticComponent<
     SwitchProps & React.RefAttributes<HTMLElement>
@@ -15,9 +17,16 @@ export interface CompoundedComponent extends React.ForwardRefExoticComponent<
 }
 
 // eslint-disable-next-line max-len
-const Switch: CompoundedComponent = React.forwardRef<HTMLButtonElement, AntdSwitchProps & React.RefAttributes<HTMLButtonElement>>(
-    ({className, ...restProps}, ref) => {
-        return <AntdSwitch ref={ref} className={classNames(clsPrefix, className)} {...restProps} />;
+const Switch: CompoundedComponent = React.forwardRef<HTMLButtonElement, SwitchProps & React.RefAttributes<HTMLButtonElement>>(
+    ({className, size, ...restProps}, ref) => {
+        return (
+            <AntdSwitch
+                ref={ref}
+                className={classNames(clsPrefix, className, {[`${clsPrefix}-middle`]: size === 'middle'})}
+                size={size as AntdSwitchProps['size']}
+                {...restProps}
+            />
+        );
     }) as CompoundedComponent;
 
 // eslint-disable-next-line no-underscore-dangle

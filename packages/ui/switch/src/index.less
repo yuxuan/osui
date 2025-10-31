@@ -8,27 +8,46 @@
 
     .@{ant-prefix}-switch-handle {
         height: 16px;
-        width: 18px;
+        width: 16px;
 
         &::before {
-            border-radius: 9px;
+            border-radius: 8px;
         }
     }
 
     &.@{ant-prefix}-switch {
         min-width: var(--switch-min-width);
+        background-color: var(--component-color-grayB-active);
 
         &.@{ant-prefix}-switch-small {
             min-width: 28px;
         }
 
+        &.@{osui-switch-class-prefix}-middle {
+            min-width: 34px;
+            height: 18px;
+
+            .@{ant-prefix}-switch-handle {
+                height: 14px;
+                width: 14px;
+
+                &::before {
+                    border-radius: 7px;
+                }
+            }
+
+            .@{ant-prefix}-switch-loading-icon {
+                font-size: 10.5px;
+            }
+        }
+
         &-checked {
-            background-color: var(--switch-bg-color);
+            background-color: var(--brand-color);
         }
     }
 
-    .@{ant-prefix}-switch-loading-icon {
-        vertical-align: top;
+    .@{ant-prefix}-switch-loading-icon.anticon {
+        top: 2px;
     }
 
     &.@{ant-prefix}-switch-disabled {
@@ -39,9 +58,9 @@
         }
     }
 
-    &.@{ant-prefix}-switch-disabled.@{ant-prefix}-switch-checked {
-        opacity: var(--switch-checked-disabled-opacity);
-    }
+    // &.@{ant-prefix}-switch-disabled.@{ant-prefix}-switch-checked {
+    //     opacity: var(--switch-checked-disabled-opacity);
+    // }
 
     .@{ant-prefix}-switch-inner .osui-icon {
         // 用osui-icon的时候调整高度
@@ -59,7 +78,7 @@
 
     &.@{ant-prefix}-switch.@{ant-prefix}-switch-checked:not(.@{ant-prefix}-switch-disabled) {
         &:hover {
-            background: var(--switch-checked-hover-bg);
+            background: var(--brand-color-hover);
         }
 
         &:active {
@@ -69,20 +88,24 @@
 
     &.@{ant-prefix}-switch:not(.@{ant-prefix}-switch-disabled) {
         &:hover {
-            background: var(--switch-hover-bg);
+            background: var(--component-color-grayB2);
         }
 
         &:active {
-            background: var(--switch-active-bg);
+            background: var(--grayB-color-4);
         }
     }
 
     &.@{ant-prefix}-switch-checked .@{ant-prefix}-switch-handle {
-        left: ~'calc(100% - 18px - @{switch-padding})';
+        left: ~'calc(100% - 16px - @{switch-padding})';
     }
 
     &.@{ant-prefix}-switch-small.osui-switch.@{ant-prefix}-switch-checked .@{ant-prefix}-switch-handle {
         left: ~'calc(100% - 12px - @{switch-padding})';
+    }
+
+    &.@{osui-switch-class-prefix}-middle.osui-switch.@{ant-prefix}-switch-checked .@{ant-prefix}-switch-handle {
+        left: ~'calc(100% - 14px - @{switch-padding})';
     }
 
     .@{ant-prefix}-switch-inner {
