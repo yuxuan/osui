@@ -27,7 +27,7 @@ export const Demo = () => {
             <br />
             <Alert type="error" message="提示错误的文案" />
             <br />
-            <Alert type="info" message="提示信息的文案" />
+            <Alert type="info" message="提示通知的文案" />
             <br />
             <Alert type="success" message="提示成功的文案" />
             <br />
@@ -37,7 +37,7 @@ export const Demo = () => {
             <br />
             <Alert showIcon type="error" message="提示错误的文案" />
             <br />
-            <Alert showIcon type="info" message="提示信息的文案" />
+            <Alert showIcon type="info" message="提示通知的文案" />
             <br />
             <Alert showIcon type="success" message="提示成功的文案" />
             <br />
@@ -51,92 +51,92 @@ export const Demo = () => {
             的文案提示通知的文案提示通知的文案提示通知的文案提示通知的文案提示通知的文案"
             />
             <Divider>带标题的警告</Divider>
-            <Alert message="提示标题" description="提示普通的文案" />
+            <Alert message="提示标题" description="提示通知的文案" />
             <br />
-            <Alert type="error" message="提示标题" description="提示普通的文案" />
+            <Alert type="error" message="提示标题" description="提示错误的文案" />
             <br />
-            <Alert type="success" message="提示标题" description="提示普通的文案" />
+            <Alert type="success" message="提示标题" description="提示成功的文案" />
             <br />
-            <Alert type="warning" message="提示标题" description="提示普通的文案" />
+            <Alert type="warning" message="提示标题" description="提示警告的文案" />
 
             <Divider>带图标和标题警告</Divider>
-            <Alert showIcon message="提示标题" description="提示普通的文案" />
+            <Alert showIcon message="提示标题" description="提示通知的文案" />
             <br />
-            <Alert showIcon type="error" message="提示标题" description="提示普通的文案" />
+            <Alert showIcon type="error" message="提示标题" description="提示错误的文案" />
             <br />
-            <Alert showIcon type="success" message="提示标题" description="提示普通的文案" />
+            <Alert showIcon type="success" message="提示标题" description="提示成功的文案" />
             <br />
-            <Alert showIcon type="warning" message="提示标题" description="提示普通的文案" />
+            <Alert showIcon type="warning" message="提示标题" description="提示警告的文案" />
 
             <Divider>可关闭警告</Divider>
-            <Alert closable message="提示普通的文案" />
+            <Alert closable message="提示通知的文案" />
             <br />
-            <Alert closable message="提示标题" description="提示普通的文案" />
+            <Alert closable message="提示标题" description="提示通知的文案" />
             <br />
-            <Alert closable showIcon message="提示普通的文案" />
+            <Alert closable showIcon message="提示通知的文案" />
             <br />
-            <Alert closable showIcon message="提示标题" description="提示普通的文案" />
+            <Alert closable showIcon message="提示标题" description="提示通知的文案" />
 
             <Divider>可自定义警告</Divider>
-            <Alert closeText="知道了" closable message="提示普通的文案" />
+            <Alert closeText="知道了" closable message="提示通知的文案" />
             <br />
-            <Alert closeText="不再提醒" closable showIcon message="提示普通的文案" />
+            <Alert closeText="不再提醒" closable showIcon message="提示通知的文案" />
 
             <Divider>带操作项警告</Divider>
-            <Alert closable action={<a>查看详情</a>} message="提示普通的文案" />
+            <Alert closable action={<a>查看详情</a>} message="提示通知的文案" />
             <br />
-            <Alert closable type="error" action={<a>查看详情</a>} message="提示普通的文案" />
+            <Alert closable type="error" action={<a>查看详情</a>} message="提示错误的文案" />
             <br />
-            <Alert closable type="success" action={<a>查看详情</a>} message="提示普通的文案" />
+            <Alert closable type="success" action={<a>查看详情</a>} message="提示成功的文案" />
             <br />
-            <Alert closable type="warning" action={<a>查看详情</a>} message="提示普通的文案" />
+            <Alert closable type="warning" action={<a>查看详情</a>} message="提示警告的文案" />
             <br />
             <Alert
                 action={<Btn bkg="#FA423C">操作按钮</Btn>}
                 showIcon
                 type="error"
-                message="提示普通的文案"
+                message="提示错误的文案"
             />
             <br />
             <Alert
                 action={<Btn bkg="#13B982">操作按钮</Btn>}
                 showIcon
                 type="success"
-                message="提示普通的文案"
+                message="提示成功的文案"
             />
             <br />
             <Alert
                 action={<Btn bkg="#FF7E0D">操作按钮</Btn>}
                 showIcon
                 type="warning"
-                message="提示普通的文案"
+                message="提示警告的文案"
             />
             <br />
             <Alert
                 action={<Btn bkg="#352EFF">操作按钮</Btn>}
                 showIcon
                 type="info"
-                message="提示普通的文案"
+                message="提示通知的文案"
             />
 
             <Divider>带操作入口警告</Divider>
-            <Alert closable showIcon message={<>提示普通的文案 <a href="">操作入口</a></>} />
+            <Alert closable showIcon message={<>提示通知的文案 <a href="">操作入口</a></>} />
             <br />
-            <Alert closable showIcon type="error" message={<>提示普通的文案 <a href="">操作入口</a></>} />
+            <Alert closable showIcon type="error" message={<>提示错误的文案 <a href="">操作入口</a></>} />
             <br />
-            <Alert closable showIcon type="info" message={<>提示普通的文案 <a href="">操作入口</a></>} />
+            <Alert closable showIcon type="info" message={<>提示通知的文案 <a href="">操作入口</a></>} />
             <br />
-            <Alert closable showIcon type="success" message={<>提示普通的文案 <a href="">操作入口</a></>} />
+            <Alert closable showIcon type="success" message={<>提示成功的文案 <a href="">操作入口</a></>} />
 
             <Divider>自定义图标警告（建议使用面性icon）</Divider>
-            <Alert showIcon icon={<IconSwitchTick />} message={'提示普通的文案'} />
+            <Alert showIcon icon={<IconSwitchTick />} message={'提示通知的文案'} />
 
             <Divider>通栏警告</Divider>
-            <Alert closable banner message={'提示普通的文案'} />
+            <Alert closable banner message={'提示通知的文案'} />
             <br />
-            <Alert showIcon={false} type="warning" banner message={'提示普通的文案'} />
+            <Alert showIcon={false} type="warning" banner message={'提示警告的文案'} />
             <br />
-            <Alert type="error" banner message={'提示普通的文案'} />
+            <Alert type="error" banner message={'提示错误的文案'} />
 
         </BrandProvider>
 
