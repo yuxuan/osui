@@ -2,8 +2,37 @@
 
 .@{osui-breadcrumb-class-prefix} {
     font-size: 14px; // 设计需求，固定面包屑字号为14px
+    line-height: 22px;
 
-    &.@{ant-prefix}-breadcrumb > span:last-child:not(:first-child) {
+    .@{ant-prefix}-breadcrumb-separator,
+    .acudicon {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &.@{osui-breadcrumb-class-prefix}-small {
+        font-size: 12px;
+        line-height: 18px;
+
+        .@{ant-prefix}-breadcrumb-separator,
+        .acudicon {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    &.@{osui-breadcrumb-class-prefix}-large {
+        font-size: 16px;
+        line-height: 24px;
+
+        .@{ant-prefix}-breadcrumb-separator,
+        .acudicon {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    &.@{ant-prefix}-breadcrumb  li:last-child:not(:first-child) {
         font-weight: var(--breadcrumb-last-child-font-weight);
     }
 
@@ -13,11 +42,11 @@
 
     &.@{ant-prefix}-breadcrumb a {
         &:hover {
-            color: var(--link-hover-color);
+            color: var(--text-color-tertiary);
         }
 
         &:active {
-            color: var(--link-active-color);
+            color: var(--text-color-tertiary);
         }
     }
 

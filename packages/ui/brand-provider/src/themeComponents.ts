@@ -94,10 +94,10 @@ export const components: ThemeConfig['components'] = {
         // antd 5 在某个版本之后更改了 token 名
         colorBgSpotlight: '#fff',
         colorTextLightSolid: '#151B26',
-        borderRadius: acudSemanticTokens['--radius-xs'],
-        boxShadowSecondary: acudSemanticTokens['--drop-shadow-m'],
-        fontSize: acudSemanticTokens['--font-size-2xs'],
-        lineHeight: acudSemanticTokens['--font-height-2xs'],
+        borderRadius: parseInt(acudMatricsTokens['--radius-xs'], 10),
+        boxShadowSecondary: acudMatricsTokens['--drop-shadow-m'],
+        fontSize: parseInt(acudMatricsTokens['--font-size-2xs'], 10),
+        lineHeight: parseInt(acudMatricsTokens['--font-height-2xs'], 10),
     },
     Tabs: {
         fontSize: 14,
@@ -110,6 +110,9 @@ export const components: ThemeConfig['components'] = {
     Breadcrumb: {
         colorBgTextHover: 'transparent',
         colorTextDescription: '#5c5f66',
+        separatorColor: acudSemanticTokens['--icon-color-disabled'],
+        lastItemColor: acudSemanticTokens['--text-color-primary'],
+        itemColor: acudSemanticTokens['--text-color-secondary'],
     },
     Menu: {
         colorItemTextHover: '#2468F2',
@@ -118,12 +121,12 @@ export const components: ThemeConfig['components'] = {
         marginXXS: 0,
     },
     Tag: {
-        lineHeight: acudSemanticTokens['component-height-2XS'],
+        lineHeight: parseInt(acudMatricsTokens['--component-height-2xs'], 10),
         colorFillQuaternary: '#F7F7F9',
         defaultColor: acudSemanticTokens['--text-color-secondary'],
         defaultBg: acudSemanticTokens['--component-color-grayB1'],
         colorBorder: acudSemanticTokens['--component-color-grayB-active'],
-        fontSize: acudSemanticTokens['font-size-2xs'],
+        fontSize: parseInt(acudMatricsTokens['--font-size-2xs'], 10),
     },
     Result: {
         fontSizeHeading3: 24,
