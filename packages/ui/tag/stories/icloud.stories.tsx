@@ -3,7 +3,7 @@ import React, {useCallback, useState} from 'react';
 import Divider from '@osui/divider';
 import Input from '@osui/input';
 import Tooltip from '@osui/tooltip';
-import {PlusOutlined} from '@ant-design/icons';
+import {PlusOutlined, QuestionCircleOutlined} from '@ant-design/icons';
 import {IconPlusOutlined} from '@osui/icons';
 import {ClockCircleOutlined} from '@ant-design/icons';
 import styled from '@emotion/styled';
@@ -39,33 +39,33 @@ export const Demo = () => {
             <p>后置icon</p>
             <p>
                 <span>S：</span>
-                <Tag color="success" round>成功</Tag>
-                <Tag color="processing" round>运行中/待运行</Tag>
-                <Tag color="error" round>失败</Tag>
-                <Tag color="default" round>常规/停止</Tag>
-                <Tag color="warning" round>异常</Tag>
+                <Tag color="success" round>成功<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="processing" round>运行中/待运行<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="error" round>失败<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="default" round>常规/停止<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="warning" round>异常<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
             </p>
             <p>
                 <span>M：</span>
-                <Tag color="success" round>成功</Tag>
-                <Tag color="processing" round>运行中/待运行</Tag>
-                <Tag color="error" round>失败</Tag>
-                <Tag color="default" round>常规/停止</Tag>
-                <Tag color="warning" round>异常</Tag>
+                <Tag color="success" round>成功<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="processing" round>运行中/待运行<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="error" round>失败<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="default" round>常规/停止<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="warning" round>异常<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
             </p>
             <Divider>点+文字</Divider>
             详见 Badge徽标数
             <Divider>方形</Divider>
             <p>
-                <Tag color="success">模型蒸馏</Tag>
-                <Tag color="processing">推理结果集</Tag>
-                <Tag color="error">模型评估</Tag>
-                <Tag color="default">批量推理</Tag>
-                <Tag color="warning">候补颜色</Tag>
+                <Tag color="green">模型蒸馏</Tag>
+                <Tag color="blue">推理结果集</Tag>
+                <Tag color="brand">模型评估</Tag>
+                <Tag color="pink">批量推理</Tag>
+                <Tag color="yellow">候补颜色</Tag>
             </p>
             <p>文案说明</p>
             <p>
-                <Tag color="default">小号文案说明</Tag>
+                <Tag>小号文案说明</Tag>
                 <Tag color="default">大号文案说明</Tag>
             </p>
 
@@ -104,10 +104,18 @@ export const Demo = () => {
             <Divider>切换标签 组合样式</Divider>
             <p>前置icon</p>
             <p>
-                <Tag.CheckableTag checked icon={<ClockCircleOutlined />}>语言大模型</Tag.CheckableTag>
-                <Tag.CheckableTag checked={false} icon={<ClockCircleOutlined />}>语言大模型</Tag.CheckableTag>
-                <Tag.CheckableTag checked={false} icon={<ClockCircleOutlined />}>语言大模型</Tag.CheckableTag>
-                <Tag.CheckableTag checked={false} icon={<ClockCircleOutlined />}>语言大模型</Tag.CheckableTag>
+                <Tag.CheckableTag checked>
+                    <ClockCircleOutlined style={{marginRight: 4}} />语言大模型
+                </Tag.CheckableTag>
+                <Tag.CheckableTag checked={false}>
+                    <ClockCircleOutlined style={{marginRight: 4}} />语言大模型
+                </Tag.CheckableTag>
+                <Tag.CheckableTag checked={false}>
+                    <ClockCircleOutlined style={{marginRight: 4}} />语言大模型
+                </Tag.CheckableTag>
+                <Tag.CheckableTag checked={false}>
+                    <ClockCircleOutlined style={{marginRight: 4}} />语言大模型
+                </Tag.CheckableTag>
             </p>
             <p>纯文字</p>
             <p>

@@ -25,7 +25,6 @@ export interface TagType extends React.ForwardRefExoticComponent<TagProps & Reac
 
 const colorMap = {
     // by category
-    brand: 'blue',
     info: 'blue',
     success: 'green',
     warning: 'yellow',
@@ -36,6 +35,8 @@ const colorMap = {
     blue: 'blue',
     green: 'green',
     red: 'red',
+    error: 'red',
+    processing: 'brand',
 };
 
 const Tag = React.forwardRef<HTMLSpanElement, TagProps>((props, ref) => {
@@ -47,13 +48,14 @@ const Tag = React.forwardRef<HTMLSpanElement, TagProps>((props, ref) => {
     else {
         patchedIcon = <IconCloseOutlined />;
     }
+    const curColor = colorMap[props.color] ? colorMap[props.color] : props.color;
     const classnames = classNames(
         clsPrefix,
         {[`${clsPrefix}-solid`]: solid},
         {[`${clsPrefix}-round`]: round},
         {[`${clsPrefix}-outlined`]: outlined},
         {[`${clsPrefix}-disabled`]: disabled},
-        {[`${clsPrefix}-${color}`]: colorMap[props.color as keyof typeof colorMap] ?? props.color},
+        {[`${clsPrefix}-${curColor}`]: colorMap[props.color as keyof typeof colorMap] ?? props.color},
         props.className
     );
 
