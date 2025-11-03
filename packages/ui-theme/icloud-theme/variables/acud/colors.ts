@@ -91,7 +91,7 @@ export const uiColors = {
     // 绿色
     '--green-color-1': '#E6FAF1',
     '--green-color-2': '#DAF7EA',
-    '--green-color-3': '#B6FODA',
+    '--green-color-3': '#B6F0DA',
     '--green-color-4': '#61D4AA',
     '--green-color-5': '#28C78F',
     '--green-color-6': '#13B982',

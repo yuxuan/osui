@@ -17,15 +17,17 @@ import './index.less';
 
 const clsPrefix = 'osui-alert';
 
-export interface AlertProps extends AntdAlertProps {
+export interface AlertProps extends Omit<AntdAlertProps, 'type'> {
     actions?: React.ReactNode;
     expandable?: boolean;
     countDown?: number | null;
+    type?: 'success' | 'info' | 'warning' | 'error' | 'common';
 }
 
-type iconTypes = 'info' | 'success' | 'error' | 'warning';
+type iconTypes = 'info' | 'success' | 'error' | 'warning' | 'common';
 
 const typeToIcon: Record<iconTypes, React.ReactNode> = {
+    common: <IconInfoCircleFilled className={`${clsPrefix}-commonIcon`} />,
     info: <IconInfoCircleFilled className={`${clsPrefix}-infoIcon`} />,
     success: <IconCheckCircleFilled className={`${clsPrefix}-successIcon`} />,
     error: <IconCloseCircleFilled className={`${clsPrefix}-errorIcon`} />,
@@ -90,7 +92,7 @@ const Alert: AlertInterface = props => {
     const {
         icon,
         closeText,
-        type,
+        type = 'info',
         className,
         closable,
         message,
@@ -164,9 +166,10 @@ const Alert: AlertInterface = props => {
     return (
         <AntdAlert
             {...props}
+            type={type === 'common' ? undefined : type}
             icon={patchedIcon}
             closeText={patchedCloseText}
-            className={classNames(clsPrefix, className)}
+            className={classNames(clsPrefix, className, {[`${clsPrefix}-common`]: type === 'common'})}
             message={patchedMessage}
             closable={patchedClosable}
         />
