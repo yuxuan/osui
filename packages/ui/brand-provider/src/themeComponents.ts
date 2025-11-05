@@ -19,9 +19,15 @@ export const components: ThemeConfig['components'] = {
     Input: {
         paddingSM: 13,
         controlPaddingHorizontal: 13,
-        colorBgContainerDisabled: '#F7F7F9',
-        colorFillAlter: '#F7F7F9',
-        colorTextPlaceholder: '#B8BABF',
+        colorFillAlter: acudSemanticTokens['--bg-color-white'],
+        colorTextPlaceholder: acudSemanticTokens['--text-color-disabled'],
+        colorBorder: acudSemanticTokens['--component-color-border'],
+        hoverBorderColor: acudSemanticTokens['--brand-color'],
+        activeBorderColor: acudSemanticTokens['--brand-color-active'],
+        activeShadow: `0 0 0 1px ${acudSemanticTokens['--brand-color-light-active']}`,
+        colorBgContainerDisabled: acudSemanticTokens['--component-color-grayB-disable'],
+        colorTextDisabled: acudSemanticTokens['--text-color-tertiary'],
+        colorTextDescription: acudSemanticTokens['--text-color-tertiary'],
     },
     Alert: {
         colorInfoBorder: '#E6F0FF',
@@ -94,10 +100,10 @@ export const components: ThemeConfig['components'] = {
         // antd 5 在某个版本之后更改了 token 名
         colorBgSpotlight: '#fff',
         colorTextLightSolid: '#151B26',
-        borderRadius: acudSemanticTokens['--radius-xs'],
-        boxShadowSecondary: acudSemanticTokens['--drop-shadow-m'],
-        fontSize: acudSemanticTokens['--font-size-2xs'],
-        lineHeight: acudSemanticTokens['--font-height-2xs'],
+        borderRadius: parseInt(acudMatricsTokens['--radius-xs'], 10),
+        boxShadowSecondary: acudMatricsTokens['--drop-shadow-m'],
+        fontSize: parseInt(acudMatricsTokens['--font-size-2xs'], 10),
+        lineHeight: parseInt(acudMatricsTokens['--font-height-2xs'], 10),
     },
     Tabs: {
         fontSize: 14,
@@ -118,12 +124,12 @@ export const components: ThemeConfig['components'] = {
         marginXXS: 0,
     },
     Tag: {
-        lineHeight: acudSemanticTokens['component-height-2XS'],
+        lineHeight: parseInt(acudMatricsTokens['--component-height-2xs'], 10),
         colorFillQuaternary: '#F7F7F9',
         defaultColor: acudSemanticTokens['--text-color-secondary'],
         defaultBg: acudSemanticTokens['--component-color-grayB1'],
         colorBorder: acudSemanticTokens['--component-color-grayB-active'],
-        fontSize: acudSemanticTokens['font-size-2xs'],
+        fontSize: parseInt(acudMatricsTokens['--font-size-2xs'], 10),
     },
     Result: {
         fontSizeHeading3: 24,

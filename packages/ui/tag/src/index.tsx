@@ -17,10 +17,12 @@ export interface TagProps extends AntdTagProps {
     round?: boolean;
     outlined?: boolean;
     disabled?: boolean;
+    size?: 'small' | 'medium' | 'default';
 }
 
 export interface TagType extends React.ForwardRefExoticComponent<TagProps & React.RefAttributes<HTMLElement>> {
     CheckableTag: typeof CheckableTag;
+    TagTab: typeof TagTab;
 }
 
 const colorMap = {
@@ -38,9 +40,14 @@ const colorMap = {
     error: 'red',
     processing: 'brand',
 };
+const sizeMap = {
+    small: 'small',
+    medium: 'medium',
+    default: 'medium',
+};
 
 const Tag = React.forwardRef<HTMLSpanElement, TagProps>((props, ref) => {
-    const {closeIcon, color, solid, round, outlined, disabled, ...restProps} = props;
+    const {closeIcon, color, solid, round, outlined, disabled, size = 'default', ...restProps} = props;
     let patchedIcon = null;
     if (closeIcon === false || closeIcon === undefined) {
         patchedIcon = null;
@@ -48,14 +55,16 @@ const Tag = React.forwardRef<HTMLSpanElement, TagProps>((props, ref) => {
     else {
         patchedIcon = <IconCloseOutlined />;
     }
-    const curColor = colorMap[props.color] ? colorMap[props.color] : props.color;
+    const curSize = sizeMap[size] || sizeMap.default;
+    const curColor = colorMap[color] ? colorMap[color] : color;
     const classnames = classNames(
         clsPrefix,
         {[`${clsPrefix}-solid`]: solid},
         {[`${clsPrefix}-round`]: round},
         {[`${clsPrefix}-outlined`]: outlined},
         {[`${clsPrefix}-disabled`]: disabled},
-        {[`${clsPrefix}-${curColor}`]: colorMap[props.color as keyof typeof colorMap] ?? props.color},
+        {[`${clsPrefix}-${curColor}`]: color},
+        {[`${clsPrefix}-${curSize}`]: size},
         props.className
     );
 
@@ -74,6 +83,31 @@ const CheckableTag: React.FC<CheckableTagProps> = props => {
     );
 };
 
+const TagTab = (props: CheckableTagProps) => {
+    const {disabled, onChange, className, ...restProps} = props;
+    const classnames = classNames(
+        `${clsPrefix}-tagtab`,
+        {[`${clsPrefix}-disabled`]: disabled},
+        className
+    );
+
+    return (
+        <AntdTag.CheckableTag
+            className={classnames}
+            onChange={checked => {
+                // 新增disabled判断
+                if (disabled) {
+                    return;
+                }
+                onChange?.(checked);
+            }}
+            disabled={disabled}
+            {...restProps}
+        />
+    );
+};
+
 Tag.CheckableTag = CheckableTag;
+Tag.TagTab = TagTab;
 
 export default Tag;

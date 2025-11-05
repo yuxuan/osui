@@ -15,6 +15,97 @@ export default {
 };
 
 export const Demo = () => {
+    const list1 = [
+        {lable: '语言大模型', value: '1', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+        {lable: '语言大模型', value: '2', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+        {lable: '语言大模型', value: '3', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+        {lable: '语言大模型', value: '4', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+        {lable: '语言大模型', value: '5', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+        {lable: '语言大模型', value: '8', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+    ];
+    const list2 = [
+        {lable: '语言大模型', value: '1', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+        {lable: '语言大模型', value: '2', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+        {lable: '语言大模型', value: '3', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+        {lable: '语言大模型', value: '4', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+        {lable: '语言大模型', value: '5', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+        {lable: '语言大模型', value: '6', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+        {lable: '语言大模型', value: '7', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+        {lable: '语言大模型', value: '8', icon: <ClockCircleOutlined style={{marginRight: 4}} />},
+    ];
+    const list3 = [
+        {lable: '语言大模型', value: '1'},
+        {lable: '语言大模型', value: '2'},
+        {lable: '语言大模型', value: '3'},
+        {lable: '语言大模型', value: '4'},
+        {lable: '语言大模型', value: '5'},
+        {lable: '语言大模型', value: '6'},
+        {lable: '语言大模型', value: '7'},
+        {lable: '语言大模型', value: '8'},
+    ];
+    const list4 = [
+        {lable: '语言大模型', value: '1', icon: <ClockCircleOutlined style={{marginRight: 4}} />, disabled: true},
+        {lable: '语言大模型', value: '2', icon: <ClockCircleOutlined style={{marginRight: 4}} />, disabled: true},
+    ];
+    const list5 = [
+        {lable: '教育培训', value: '1'},
+        {lable: '教育培训', value: '2'},
+        {lable: '教育培训', value: '3'},
+        {lable: '教育培训', value: '4'},
+        {lable: '教育培训', value: '5'},
+    ];
+    const [tags1, setTags1] = React.useState<string[]>(['1']);
+    const [tags2, setTags2] = React.useState<string[]>(['1']);
+    const [tags3, setTags3] = React.useState<string[]>(['1']);
+    const [tags4, setTags4] = React.useState<string[]>(['1']);
+    const [tags5, setTags5] = React.useState<string[]>(['1']);
+    const TagtabDemo = ({tagsData, selectedTags, setSelectedTags}: any) => {
+        const handleChange = (tag: string, checked: boolean) => {
+            const nextSelectedTags = checked
+                ? [tag]
+                : [tag];
+            setSelectedTags(nextSelectedTags);
+        };
+
+        return (
+            <>
+                {tagsData.map<React.ReactNode>(tag => (
+                    <Tag.TagTab
+                        key={tag.value}
+                        checked={selectedTags.includes(tag.value)}
+                        disabled={tag.disabled}
+                        onChange={checked => handleChange(tag.value, checked)}
+                    >
+                        {tag.icon}
+                        {tag.lable}
+                    </Tag.TagTab>
+                ))}
+            </>
+        );
+    };
+
+    const CheckableTagDemo = ({tagsData, selectedTags, setSelectedTags}: any) => {
+        const handleChange = (tag: string, checked: boolean) => {
+            const nextSelectedTags = checked
+                ? [...selectedTags, tag]
+                : selectedTags.filter(t => t !== tag);
+            setSelectedTags(nextSelectedTags);
+        };
+
+        return (
+            <>
+                {tagsData.map<React.ReactNode>(tag => (
+                    <Tag.CheckableTag
+                        key={tag.value}
+                        checked={selectedTags.includes(tag.value)}
+                        onChange={checked => handleChange(tag.value, checked)}
+                    >
+                        {tag.lable}
+                    </Tag.CheckableTag>
+                ))}
+            </>
+        );
+    };
 
     return (
         <BrandProvider brand="icloud">
@@ -22,36 +113,40 @@ export const Demo = () => {
             <p>常规</p>
             <p>
                 <span>S：</span>
-                <Tag color="success" round>成功</Tag>
-                <Tag color="processing" round>运行中/待运行</Tag>
-                <Tag color="error" round>失败</Tag>
-                <Tag color="default" round>常规/停止</Tag>
-                <Tag color="warning" round>异常</Tag>
+                <Tag color="success" size="small" round>成功</Tag>
+                <Tag color="processing" size="small" round>运行中/待运行</Tag>
+                <Tag color="error" size="small" round>失败</Tag>
+                <Tag color="default" size="small" round>常规/停止</Tag>
+                <Tag color="warning" size="small" round>异常</Tag>
             </p>
             <p>
                 <span>M：</span>
-                <Tag color="success" round>成功</Tag>
-                <Tag color="processing" round>运行中/待运行</Tag>
-                <Tag color="error" round>失败</Tag>
-                <Tag color="default" round>常规/停止</Tag>
-                <Tag color="warning" round>异常</Tag>
+                <Tag color="success" size="medium" round>成功</Tag>
+                <Tag color="processing" size="medium" round>运行中/待运行</Tag>
+                <Tag color="error" size="medium" round>失败</Tag>
+                <Tag color="default" size="medium" round>常规/停止</Tag>
+                <Tag color="warning" size="medium" round>异常</Tag>
             </p>
             <p>后置icon</p>
             <p>
                 <span>S：</span>
-                <Tag color="success" round>成功<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
-                <Tag color="processing" round>运行中/待运行<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
-                <Tag color="error" round>失败<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
-                <Tag color="default" round>常规/停止<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
-                <Tag color="warning" round>异常<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="success" size="small" round>成功<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="processing" size="small" round>
+                    运行中/待运行<QuestionCircleOutlined style={{marginLeft: 4}} />
+                </Tag>
+                <Tag color="error" size="small" round>失败<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="default" size="small" round>常规/停止<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="warning" size="small" round>异常<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
             </p>
             <p>
                 <span>M：</span>
-                <Tag color="success" round>成功<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
-                <Tag color="processing" round>运行中/待运行<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
-                <Tag color="error" round>失败<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
-                <Tag color="default" round>常规/停止<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
-                <Tag color="warning" round>异常<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="success" size="medium" round>成功<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="processing" size="medium" round>
+                    运行中/待运行<QuestionCircleOutlined style={{marginLeft: 4}} />
+                </Tag>
+                <Tag color="error" size="medium" round>失败<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="default" size="medium" round>常规/停止<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
+                <Tag color="warning" size="medium" round>异常<QuestionCircleOutlined style={{marginLeft: 4}} /></Tag>
             </p>
             <Divider>点+文字</Divider>
             详见 Badge徽标数
@@ -65,64 +160,31 @@ export const Demo = () => {
             </p>
             <p>文案说明</p>
             <p>
-                <Tag>小号文案说明</Tag>
-                <Tag color="default">大号文案说明</Tag>
+                <Tag size="small">小号文案说明</Tag>
+                <Tag size="medium" color="default">大号文案说明</Tag>
             </p>
 
             <Divider>多选标签</Divider>
-            <p>默认</p>
-            <p>
-                <Tag.CheckableTag checked={false}>教育培训</Tag.CheckableTag>
-            </p>
-            <p>选中</p>
-            <p>
-                <Tag.CheckableTag outlined checked>教育培训</Tag.CheckableTag>
-            </p>
+            <p>默认、选中、hover</p>
+            <p><CheckableTagDemo tagsData={list5} selectedTags={tags5} setSelectedTags={setTags5} /></p>
 
-            <Divider>切换标签</Divider>
-            <p>未选</p>
+            <Divider>tag-tab 切换标签</Divider>
+            <p>默认、选中、hover</p>
             <p>
-                <Tag.CheckableTag checked={false}>教育培训</Tag.CheckableTag>
-                <Tag.CheckableTag checked={false} icon={<ClockCircleOutlined />}>教育培训</Tag.CheckableTag>
-            </p>
-            <p>默认选中</p>
-            <p>
-                <Tag.CheckableTag checked>教育培训</Tag.CheckableTag>
-                <Tag.CheckableTag checked icon={<ClockCircleOutlined />}>教育培训</Tag.CheckableTag>
-
+                <TagtabDemo tagsData={list1} selectedTags={tags1} setSelectedTags={setTags1} />
             </p>
             <p>禁用</p>
             <p>
-                <Tag.CheckableTag disabled checked={false}>教育培训</Tag.CheckableTag>
-                <Tag.CheckableTag disabled checked={false} icon={<ClockCircleOutlined />}>教育培训</Tag.CheckableTag>
+                <TagtabDemo tagsData={list4} selectedTags={tags4} setSelectedTags={setTags4} />
             </p>
-            <p>选中禁用</p>
-            <p>
-                <Tag.CheckableTag disabled checked>教育培训</Tag.CheckableTag>
-                <Tag.CheckableTag disabled checked icon={<ClockCircleOutlined />}>教育培训</Tag.CheckableTag>
-            </p>
-            <Divider>切换标签 组合样式</Divider>
+            <Divider>tag-tab 切换标签 组合样式</Divider>
             <p>前置icon</p>
             <p>
-                <Tag.CheckableTag checked>
-                    <ClockCircleOutlined style={{marginRight: 4}} />语言大模型
-                </Tag.CheckableTag>
-                <Tag.CheckableTag checked={false}>
-                    <ClockCircleOutlined style={{marginRight: 4}} />语言大模型
-                </Tag.CheckableTag>
-                <Tag.CheckableTag checked={false}>
-                    <ClockCircleOutlined style={{marginRight: 4}} />语言大模型
-                </Tag.CheckableTag>
-                <Tag.CheckableTag checked={false}>
-                    <ClockCircleOutlined style={{marginRight: 4}} />语言大模型
-                </Tag.CheckableTag>
+                <TagtabDemo tagsData={list2} selectedTags={tags2} setSelectedTags={setTags2} />
             </p>
             <p>纯文字</p>
             <p>
-                <Tag.CheckableTag checked>语言大模型</Tag.CheckableTag>
-                <Tag.CheckableTag checked={false}>语言大模型</Tag.CheckableTag>
-                <Tag.CheckableTag checked={false}>语言大模型</Tag.CheckableTag>
-                <Tag.CheckableTag checked={false}>语言大模型</Tag.CheckableTag>
+                <TagtabDemo tagsData={list3} selectedTags={tags3} setSelectedTags={setTags3} />
             </p>
         </BrandProvider>
     );
