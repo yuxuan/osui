@@ -1,5 +1,12 @@
 @osui-auto-complete-class-prefix: osui-auto-complete;
 
+.@{osui-auto-complete-class-prefix} {
+    // 隐藏下拉图标
+    .@{ant-prefix}-select-arrow {
+        display: none;
+    }
+}
+
 .@{osui-auto-complete-class-prefix}-dropdown {
     .@{ant-prefix}-select-item-option-active:not(.@{ant-prefix}-select-item-option-disabled) {
         &:hover {

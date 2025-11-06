@@ -1,4 +1,5 @@
 @osui-input-number-class-prefix: osui-input-number-compact;
+@osui-prefix: osui;
 
 .@{osui-input-number-class-prefix} {
     &.@{ant-prefix}-input-group.@{ant-prefix}-input-group-compact {
@@ -8,11 +9,13 @@
 
     &-input-number {
         max-width: ~"calc(100% - 60px)";
+        border-color: var(--component-color-border);
+        z-index: 1;
 
         &:hover,
         &:focus,
         &.@{ant-prefix}-input-number-focused {
-            z-index: 1;
+            z-index: 2;
         }
 
         .@{ant-prefix}-input-number-input {
@@ -22,17 +25,37 @@
 
     &-minus-btn,
     &-plus-btn {
+        font-size: 16px;
+
         &.@{ant-prefix}-btn .@{ant-prefix}-btn-icon {
             line-height: .125em;
         }
 
-        &.osui-button {
-            color: var(--theme-color-text);
+        &.@{osui-prefix}-button:not(.@{osui-prefix}-button-disabled) {
+            color: var(--text-color-secondary);
+            border-color: var(--component-color-border);
+
+            &:hover {
+                color: var(--icon-brand-color-hover);
+                border-color: var(--brand-color-hover);
+            }
+
+            &:focus {
+                color: var(--icon-brand-color-active);
+                border-color: var(--brand-color-active);
+                box-shadow: 0 0 0 1px var(--brand-color-light-active);
+            }
+        }
+
+        &.@{ant-prefix}-btn.@{osui-prefix}-button-disabled {
+            color: var(--text-color-disabled);
+            border-color: var(--component-color-border);
+            background: var(--component-color-grayB-disable);
         }
 
         &:hover,
         &:focus {
-            z-index: 1;
+            z-index: 2;
         }
     }
 
@@ -54,23 +77,4 @@
     top: 25%;
     margin-left: 4px;
     color: var(--label-color);
-}
-
-.@{ant-prefix}-form-item-has-error {
-    .@{osui-input-number-class-prefix} {
-        &-input-number,
-        &-minus-btn,
-        &-plus-btn {
-            border-color: var(--error-color);
-
-            &:hover,
-            &:focus {
-                border-color: var(--error-color);
-            }
-
-            &[disabled] {
-                border-color: var(--theme-border-color-disabled);
-            }
-        }
-    }
 }
