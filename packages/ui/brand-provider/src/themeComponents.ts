@@ -155,5 +155,12 @@ export const components: ThemeConfig['components'] = {
         itemHoverColor: acudSemanticTokens['--text-color-secondary'],
         trackBg: acudSemanticTokens['--component-color-grayB1'],
     },
+    Tree: {
+        nodeHoverBg: acudSemanticTokens['--component-color-grayB1'],
+        nodeSelectedBg: acudSemanticTokens['--component-color-grayB2'],
+        directoryNodeSelectedBg: acudSemanticTokens['--component-color-grayB2'],
+        // nodeSelectedColor: acudSemanticTokens['--text-color-brand'],
+        // directoryNodeSelectedColor: acudSemanticTokens['--text-color-brand'],
+    },
 };
 
