@@ -1,9 +1,6 @@
 @osui-tag-class-prefix: osui-tag;
 
 .@{osui-tag-class-prefix}.@{ant-prefix}-tag {
-    padding: var(--tag-padding);
-    border-radius: var(--tag-border-radius);
-
     &.@{ant-prefix}-tag > .anticon + span,
     &.@{ant-prefix}-tag > span + .anticon,
     &.@{ant-prefix}-tag > .osui-icon + span,
@@ -11,24 +8,20 @@
         margin-left: 4px;
     }
 
-    > svg.osui-icon {
-        height: 12px;
-        margin-right: var(--tag-icon-maring-horizontal);
-        color: var(--tag-icon-color);
-        font-size: 12px;
-    }
-
     &:hover {
         background: var(--tag-default-hover-bg);
     }
 
-    .@{ant-prefix}-tag-close-icon {
-        margin-left: 4px;
-        color: var(--tag-icon-color);
+    &.@{osui-tag-class-prefix}-small {
+        padding: 0 6px;
+        line-height: var(--component-height-xs);
+        font-size: var(--font-size-3xs);
+    }
 
-        svg.osui-icon {
-            height: 12px;
-        }
+    &.@{osui-tag-class-prefix}-medium {
+        padding: 0 8px;
+        line-height: var(--component-height-m);
+        font-size: var(--font-size-2xs);
     }
 
     &.@{osui-tag-class-prefix}-blue {
@@ -99,6 +92,8 @@
     background: var(--component-color-grayB1);
     border: 1px solid transparent;
     border-radius: var(--radius-xs);
+    line-height: 32px;
+    padding: 0 12px;
 
     &:not(.@{ant-prefix}-tag-checkable-checked):hover {
         color: var(--text-color-primary);
@@ -119,6 +114,36 @@
         &:hover {
             color: var(--brand-color-hover);
             font-weight: var(--font-weight-regular);
+        }
+    }
+}
+
+.@{osui-tag-class-prefix}-tagtab {
+    color: var(--text-color-secondary);
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: var(--radius-xs);
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-regular);
+    line-height: 32px;
+    padding: 0 12px;
+
+    &:not(.@{ant-prefix}-tag-checkable-checked, .@{osui-tag-class-prefix}-disabled):hover {
+        color: var(--text-color-secondary);
+        background: var(--component-color-grayB2);
+    }
+
+    &.@{ant-prefix}-tag-checkable-checked {
+        color: var(--text-color-primary);
+        background: var(--component-color-grayB1);
+        font-weight: var(--font-weight-medium);
+    }
+
+    &.@{osui-tag-class-prefix}-disabled {
+        color: var(--text-color-disabled);
+        &:not(.@{ant-prefix}-tag-checkable-checked):hover {
+            color: var(--text-color-disabled);
+            background: transparent;
         }
     }
 }

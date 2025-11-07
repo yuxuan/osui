@@ -17,12 +17,14 @@ const Popover: React.ForwardRefRenderFunction<TooltipRef, PopoverProps> = (props
     if (props.showCloseIcon) {
         innerTitle = (
             <div>
-                {props.title}
-                <IconCloseOutlined
-                    className={`${clsPrefix}-close-icon`}
-                    // eslint-disable-next-line react/jsx-no-bind
-                    onClick={() => props.onVisibleChange && props.onVisibleChange(false)}
-                />
+                <>
+                    {props.title}
+                    <IconCloseOutlined
+                        className={`${clsPrefix}-close-icon`}
+                        // eslint-disable-next-line react/jsx-no-bind
+                        onClick={() => props.onVisibleChange && props.onVisibleChange(false)}
+                    />
+                </>
             </div>
         );
     }

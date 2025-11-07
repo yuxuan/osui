@@ -2,7 +2,8 @@ import React from 'react';
 import {Tree as AntdTree} from 'antd';
 import type {TreeProps as AntdTreeProps, TreeNodeProps, TreeDataNode} from 'antd';
 import classNames from 'classnames';
-import {IconDownOutlined} from '@osui/icons';
+import {OutlinedCaretDown2} from 'acud-icon';
+// import {IconDownOutlined} from '@osui/icons';
 import './index.less';
 
 const clsPrefix = 'osui-tree';
@@ -23,9 +24,14 @@ const Tree = React.forwardRef<any, TreeProps>(({className, size, blockNode, swit
         className
     );
     const innerBlockNode = blockNode ?? true;
+    // const innerSwitcherIcon = switcherIcon ?? (
+    //     <span role="img" aria-label="caret-down">
+    //         <IconDownOutlined className={classNames(`${clsPrefix}-switcherIcon`)} />
+    //     </span>
+    // );
     const innerSwitcherIcon = switcherIcon ?? (
         <span role="img" aria-label="caret-down">
-            <IconDownOutlined className={classNames(`${clsPrefix}-switcherIcon`)} />
+            <OutlinedCaretDown2 className={classNames(`${clsPrefix}-switcherIcon`)} />
         </span>
     );
     return (

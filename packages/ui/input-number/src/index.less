@@ -7,49 +7,60 @@
         transition: none;
     }
 
-    &.@{ant-prefix}-input-number-sm input {
-        height: var(--input-number-input-height-sm);
-    }
-
-    &.@{ant-prefix}-input-number-lg input {
-        height: var(--input-number-input-height-lg);
-    }
-
-    .@{ant-prefix}-input-number input {
-        height: var(--input-number-input-height);
-    }
-
-    .@{ant-prefix}-input-number-handler-up:hover,
-    .@{ant-prefix}-input-number-handler-down:hover {
-        height: 50% !important;
-    }
-
-    .@{ant-prefix}-input-number-handler-wrap:hover .@{ant-prefix}-input-number-handler {
-        height: 50% !important;
-    }
-
     .@{ant-prefix}-input-number-handler-up-inner,
     .@{ant-prefix}-input-number-handler-down-inner {
         // 修复箭头不居中的问题
         line-height: 12px;
     }
 
-    .@{ant-prefix}-input-number-handler:hover .@{ant-prefix}-input-number-handler-up-inner,
-    .@{ant-prefix}-input-number-handler:hover .@{ant-prefix}-input-number-handler-down-inner {
-        color: var(--theme-primary-color-hover);
+    .@{ant-prefix}-input-number-handler:hover {
+        .@{ant-prefix}-input-number-handler-up-inner, .@{ant-prefix}-input-number-handler-down-inner {
+            color: var(--brand-color);
+        }
+        &.@{ant-prefix}-input-number-handler-up-disabled,
+        &.@{ant-prefix}-input-number-handler-down-disabled {
+            .@{ant-prefix}-input-number-handler-up-inner, .@{ant-prefix}-input-number-handler-down-inner {
+                color: var(--text-color-disabled);
+            }
+
+            background: var(--component-color-grayB-disable);
+        }
+    }
+
+    &.@{ant-prefix}-input-number-disabled {
+        color: var(--text-color-disabled);
+        border-color: var(--component-color-border);
+        background: var(--component-color-grayB-disable);
     }
 
     .@{ant-prefix}-input-number-handler:active {
-        background: var(--brand-color-1);
+        color: var(--brand-color-active);
     }
+}
 
-    &.@{ant-prefix}-input-number.@{ant-prefix}-input-number-disabled {
-        border-color: var(--theme-border-color-disabled);
-    }
+// 表单内报错样式覆盖
+.@{ant-prefix}-form-item-has-error {
+    .@{ant-prefix}-input-number-status-error:not(.@{ant-prefix}-input-number-disabled) {
+        color: var(--text-color-disabled);
+        border-color: var(--error-color);
+        background: var(--error-color-light-hover);
+        .@{ant-prefix}-input-number-handler {
+            background: var(--error-color-light-hover);
+        }
 
-    &-compact {
-        .@{ant-prefix}-btn-default.osui-button-disabled {
-            border: 1px solid var(--theme-border-color-disabled);
+        &:hover {
+            border-color: var(--error-color-hover);
+            background: var(--error-color-light-hover);
+        }
+
+        &:focus-within {
+            color: var(--text-color-primary);
+            background: var(--bg-color-white);
+            border-color: var(--error-color-active);
+            box-shadow: 0 0 0 1px var(--error-color-light-active);
+            .@{ant-prefix}-input-number-handler {
+                background: var(--bg-color-white);
+            }
         }
     }
 }

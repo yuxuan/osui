@@ -26,7 +26,7 @@ export const Demo = () => {
     const FormItem = () => {
         return (
             <BrandProvider brand="icloud">
-                <Form size="small">
+                <Form size="small" style={{padding: '8px 6px'}}>
                     <Form.Item style={{width: 180}} extra="提示文案">
                         <Input placeholder="输入名称" />
                     </Form.Item>
