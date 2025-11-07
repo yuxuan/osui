@@ -7,6 +7,7 @@ import FlexCentered from '@osui/flex-centered';
 import BrandProvider from '@osui/brand-provider';
 import Button from '@osui/button';
 import Form from '@osui/form';
+import {IconSearchOutlined} from '@osui/icons';
 import {version} from 'antd';
 import Cascader from '@osui/cascader';
 import Gap from '@osui/gap';
@@ -31,6 +32,308 @@ export default {
 };
 
 export const Demo = () => {
+    const {Option} = Select;
+    return (
+        <BrandProvider>
+            <h2>组件类型</h2>
+            <h3>基础输入框</h3>
+            <p>无字数限制</p>
+            <Input
+                style={{
+                    width: 240,
+                }}
+                placeholder="请输入"
+            />
+            <br />
+            <br />
+            <p>有字数限制</p>
+            <Input
+                style={{
+                    width: 240,
+                }}
+                placeholder="请输入"
+                count={{
+                    show: true,
+                    max: 30,
+                }}
+            />
+            <br />
+            <br />
+            <h3>可清空内容的输入框</h3>
+            <p>无字数限制</p>
+            <Input
+                style={{
+                    width: 240,
+                }}
+                defaultValue={'输入完成'}
+                placeholder="请输入"
+                allowClear
+            />
+            <br />
+            <br />
+            <p>有字数限制</p>
+            <Input
+                style={{
+                    width: 240,
+                }}
+                defaultValue={'输入完成'}
+                placeholder="请输入"
+                count={{
+                    show: true,
+                    max: 30,
+                }}
+                allowClear
+            />
+            <br />
+            <br />
+            <h3>多行文本框</h3>
+            <p>无字数限制</p>
+            <Input.TextArea
+                style={{
+                    width: 320,
+                    height: 78,
+                }}
+                placeholder="请输入"
+            />
+            <br />
+            <br />
+            <p>有字数限制</p>
+            <Input.TextArea
+                showCount
+                style={{
+                    width: 320,
+                    height: 78,
+                }}
+                placeholder="请输入"
+                maxLength={100}
+            />
+            <br />
+            <br />
+            <h3>密码输入框</h3>
+            <Input.Password
+                style={{
+                    width: 240,
+                }}
+                defaultValue={'123456'}
+                placeholder="请输入"
+            />
+            <br />
+            <br />
+            <h3>含推荐功能和搜索联想的输入框</h3>
+            见AutoComplete
+            <br />
+            <br />
+            <h3>多标签输入框</h3>
+            见Select
+            <br />
+            <br />
+            <h3>组合输入框</h3>
+            <p>下拉框+输入框</p>
+            <Input.Group compact>
+                <Select
+                    className="input-group-addon"
+                    defaultValue="Sign Up"
+                >
+                    <Option value="Sign Up" label="Sign Up" />
+                    <Option value="Sign In" label="Sign In" />
+                </Select>
+                <Input
+                    style={{
+                        width: '240px',
+                    }}
+                    placeholder="Email"
+                />
+            </Input.Group>
+            <br />
+            <br />
+            <h3>输入装饰器</h3>
+            <p>默认</p>
+            <Input style={{width: 320}} allowClear addonBefore={'http://'} addonAfter={'.com'} defaultValue="mysite" />
+            <br />
+            <br />
+            <h3>可选择前后标签</h3>
+            <Input
+                style={{width: 320}}
+                allowClear
+                addonBefore={
+                    <Select
+                        className="input-group-addon"
+                        defaultValue="http://"
+                    >
+                        <Option value="http://" label="http://" />
+                        <Option value="https://" label="https://" />
+                    </Select>
+                }
+                addonAfter={
+                    <Select
+                        className="input-group-addon"
+                        defaultValue=".com"
+                    >
+                        <Option value=".com" label=".com" />
+                        <Option value=".cn" label=".cn" />
+                    </Select>
+                }
+                defaultValue="mysite"
+            />
+            <br />
+            <br />
+            <h2>组件状态</h2>
+            <h3>报错状态</h3>
+            <Form
+                name="demo"
+                labelAlign="left"
+                wrapperCol={{span: 12}}
+            >
+                <Form.Item
+                    label="报错"
+                    name="name"
+                    validateStatus="error"
+                    help={['报错文案']}
+                    rules={[{required: true, message: '必填'}]}
+                >
+                    <Input defaultValue={'错误信息'} />
+                </Form.Item>
+            </Form>
+            <br />
+            <br />
+            <h3>禁用状态</h3>
+            <Input
+                style={{
+                    width: 240,
+                }}
+                defaultValue={'禁用可读'}
+                placeholder="请输入"
+                disabled
+            />
+            <br />
+            <br />
+            <h2>组件大小</h2>
+            <h3>不同尺寸输入框</h3>
+            <p>小尺寸 - 24px</p>
+            <Input.Password
+                style={{
+                    width: 240,
+                }}
+                placeholder="请输入"
+                size="small"
+            />
+            <br />
+            <br />
+            <p>中尺寸 - 32px</p>
+            <Input.Password
+                style={{
+                    width: 240,
+                }}
+                placeholder="请输入"
+                size="middle"
+            />
+            <br />
+            <br />
+            <p>大尺寸 - 40px</p>
+            <Input.Password
+                style={{
+                    width: 240,
+                }}
+                placeholder="请输入"
+                size="large"
+            />
+            <br />
+            <br />
+        </BrandProvider>
+    );
+};
+
+export const Search = () => {
+    const {Option} = Select;
+    return (
+        <BrandProvider>
+            <h2>组件类型</h2>
+            <h3>基础输入框</h3>
+            <p>图标在后（常规）</p>
+            <Input.Search
+                allowClear
+                withSuffixIcon
+                style={{
+                    width: 240,
+                }}
+                placeholder="请搜索"
+            />
+            <br />
+            <br />
+            <p>图标在前</p>
+            <Input
+                allowClear
+                prefix={<IconSearchOutlined />}
+                style={{
+                    width: 240,
+                    color: 'var(--icon-color-disabled)',
+                }}
+                placeholder="请搜索"
+            />
+            <br />
+            <br />
+            <h3>含推荐功能和搜索联想的输入框</h3>
+            见AutoComplete
+            <br />
+            <br />
+            <h3>含搜索联想功能且支持多标签的输入框</h3>
+            见Select
+            <br />
+            <br />
+            <h3>组合输入框</h3>
+            <p>下拉框+输入框</p>
+            <Input.Group compact>
+                <Select
+                    className="input-group-addon"
+                    defaultValue="Sign Up"
+                >
+                    <Option value="Sign Up" label="Sign Up" />
+                    <Option value="Sign In" label="Sign In" />
+                </Select>
+                <Input.Search
+                    withSuffixIcon
+                    style={{
+                        width: '240px',
+                    }}
+                    placeholder="Email"
+                />
+            </Input.Group>
+            <br />
+            <br />
+            <h2>组件状态</h2>
+            <h3>报错状态</h3>
+            <Form
+                name="demo"
+                labelAlign="left"
+                wrapperCol={{span: 12}}
+            >
+                <Form.Item
+                    label="报错"
+                    name="name"
+                    validateStatus="error"
+                    help={['报错文案']}
+                    rules={[{required: true, message: '必填'}]}
+                >
+                    <Input.Search withSuffixIcon defaultValue={'错误信息'} />
+                </Form.Item>
+            </Form>
+            <br />
+            <br />
+            <h3>禁用状态</h3>
+            <Input.Search
+                withSuffixIcon
+                style={{
+                    width: 240,
+                }}
+                defaultValue={'禁用可读'}
+                placeholder="请输入"
+                disabled
+            />
+        </BrandProvider>
+    );
+};
+
+export const OldDemo = () => {
     const inputRef = React.useRef(null);
     return (
         <>
@@ -454,7 +757,7 @@ export const Complete = () => {
     );
 };
 
-export const Search = () => {
+export const OldSearch = () => {
     return (
         <BrandProvider>
             <BrandProvider brand="icloud">

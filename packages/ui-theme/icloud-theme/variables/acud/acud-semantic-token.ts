@@ -50,7 +50,7 @@ export default {
     '--bg-color-black': 'var(--gray-color-10)',
     '--bg-gray-color': 'var(--grayB-color-1)',
 
-    '--component-color-border': 'var(--color-line-color-2)',
+    '--component-color-border': 'var(--line-color-2)',
     '--component-color-white': 'var(--gray-color-1)',
     '--component-color-black': 'var(--gray-color-10)',
     '--component-color-black-hover': 'var(--gray-color-7)',

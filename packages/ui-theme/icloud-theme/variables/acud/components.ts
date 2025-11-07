@@ -471,7 +471,7 @@ export default {
     '--popover-color': 'var(--text-color-primary)',
     '--popover-customize-border-color': 'var(--border-color-split)',
     '--popover-font-size': 'var(--font-size-2xs)',
-    '--popover-inner-content-padding': 'var(--space-m)',
+    '--popover-inner-content-padding': '8px 10px',
     '--popover-line-height': 'var(--paragraph-height-xs)',
     '--popover-title-padding': '16px 24px 4px 24px',
     '--process-tail-color': 'var(--border-color-split)',
