@@ -2,12 +2,41 @@
 
 .@{osui-alert-class-prefix} {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    color: var(--text-color-primary);
+    border-radius: var(--radius-s);
+    line-height: var(--font-height-m);
+    font-size: var(--font-size-s);
+
+    a {
+        text-decoration: underline;
+    }
+
+    &.@{ant-prefix}-alert-banner {
+        border-radius: 0;
+    }
+
+    .@{ant-prefix}-alert-content:not(:last-child) {
+        margin-right: calc(var(--space-2xl) - var(--space-l));
+    }
+
+    .@{ant-prefix}-alert-action {
+        .@{ant-prefix}-btn {
+            height: var(--font-height-m);
+            padding: 0 8px;
+        }
+    }
 
     .@{ant-prefix}-alert-close-icon {
         height: 14px;
-        margin-left: var(--alert-close-icon-margin-left);
         font-size: 14px;
+        margin-block-start: 4px;
+        margin-inline-start: var(--space-l);
+        color: var(--icon-color-tertiary);
+
+        &:hover {
+            color: var(--icon-color-disabled);
+        }
     }
 
     .@{ant-prefix}-alert-close-text {
@@ -17,43 +46,57 @@
         }
     }
 
-    &.ant-alert-with-description .@{ant-prefix}-alert-icon {
-        // position: absolute;
-        // left: 14px;
-        // top: 7px;
-        align-self: flex-start;
-        margin-top: 3px;
+    .@{ant-prefix}-alert-icon {
+        width: 21px;
+        height: 21px;
+        margin-block-start: 1.5px;
+        display: flex;
+        align-items: center;
+    }
+
+    &.@{ant-prefix}-alert-success {
+        background-color: var(--green-color-1);
+        border-color: var(--green-color-3);
+    }
+
+    &.@{ant-prefix}-alert-error {
+        background-color: var(--red-color-1);
+        border-color: var(--red-color-3);
+    }
+
+    &.@{ant-prefix}-alert-warning {
+        background-color: var(--orange-color-1);
+        border-color: var(--orange-color-3);
+    }
+
+    &.@{ant-prefix}-alert-info {
+        background-color: var(--brand-color-1);
+        border-color: var(--brand-color-3);
+    }
+
+    &.@{osui-alert-class-prefix}-common {
+        background-color: var(--grayB-color-1);
+        border-color: var(--grayB-color-3);
+
+        .@{ant-prefix}-alert-icon {
+            color: var(--icon-color-tertiary);
+        }
     }
 
     &.@{ant-prefix}-alert-with-description {
         // with-description时，不能display：flex
         // display: block;
 
-        .@{ant-prefix}-alert-icon {
-            // 由于alert-with-description的icon现在是小的，所以有description时，距离上面要和.@{ant-prefix}-alert-icon一样
-            top: 11px;
-        }
-
         .@{ant-prefix}-alert-message {
             font-weight: bold;
-            font-size: 14px;
-        }
-
-        .@{ant-prefix}-alert-close-icon {
-            // 由于alert-with-description的icon现在是小的，所以有description时，距离上面要和.@{ant-prefix}-alert-icon一样
-            // top: 11px;
-            align-self: flex-start;
-            // 和 左侧 icon 水平对齐
-            margin-block-start: 4px;
+            font-size: var(--font-size-m);
+            margin-bottom: 4px;
         }
     }
 
-    &.@{ant-prefix}-alert {
-        padding: var(--alert-padding);
-    }
-
-    &.@{ant-prefix}-alert.@{ant-prefix}-alert-no-icon {
-        padding: var(--alert-no-icon-padding);
+    &.@{ant-prefix}-alert,
+    .@{ant-prefix}-alert.@{ant-prefix}-alert-no-icon {
+        padding: var(--space-s) var(--space-m);
     }
 
     &-message {

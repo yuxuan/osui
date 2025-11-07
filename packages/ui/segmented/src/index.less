@@ -1,0 +1,46 @@
+@osui-segmented-class-prefix: osui-segmented;
+
+.@{osui-segmented-class-prefix} {
+    border: .5px solid var(--border-color-level2);
+    border-radius: var(--radius-xs);
+    font-size: var(--font-size-xs);
+
+    &.@{osui-segmented-class-prefix}-gray-bg {
+        background-color: var(--component-color-grayB-active);
+    }
+
+    &.@{ant-prefix}-segmented {
+        .@{ant-prefix}-segmented-item-label {
+            padding: 0 12px;
+        }
+
+        &.@{osui-segmented-class-prefix}-huge {
+            padding: 4px;
+
+            .@{ant-prefix}-segmented-group {
+                gap: 4px;
+            }
+
+            .@{ant-prefix}-segmented-item-label {
+                min-height: 40px;
+                line-height: 40px;
+                font-size: var(--font-size-m);
+                padding: 0 20px;
+            }
+        }
+
+        &.@{ant-prefix}-segmented-lg {
+            .@{ant-prefix}-segmented-item-label {
+                padding: 0 20px;
+            }
+        }
+    }
+
+    .@{ant-prefix}-segmented-item-selected {
+        font-weight: var(--font-weight-medium);
+    }
+
+    .@{ant-prefix}-segmented-group {
+        gap: 2px;
+    }
+}

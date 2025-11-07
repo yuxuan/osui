@@ -52,6 +52,7 @@
         "@types/jest": "^27.0.0",
         "@types/react-dom": "^17.0.2",
         "@types/react-test-renderer": "^17.0.1",
+        "acud-icon": "^1.1.1",
         "antd": "5.24.2",
         "cpy-cli": "^3.1.1",
         "enzyme": "^3.11.0",
@@ -88,5 +89,8 @@
         "registry": "https://registry.npmjs.com"
     },
     "packageManager": "pnpm@10.17.1",
-    "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
+    "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f",
+    "dependencies": {
+        "classnames": "^2.5.1"
+    }
 }

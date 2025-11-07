@@ -186,5 +186,20 @@ export const components: ThemeConfig['components'] = {
         borderRadiusSM: parseInt(acudMatricsTokens['--radius-2xs'], 10),
         controlItemBgHover: acudSemanticTokens['--component-color-grayB2'],
     },
+    Segmented: {
+        itemHoverBg: acudSemanticTokens['--component-color-white'],
+        itemActiveBg: acudSemanticTokens['--component-color-white'],
+        itemSelectedColor: acudSemanticTokens['--text-color-primary'],
+        itemColor: acudSemanticTokens['--text-color-secondary'],
+        itemHoverColor: acudSemanticTokens['--text-color-secondary'],
+        trackBg: acudSemanticTokens['--component-color-grayB1'],
+    },
+    Tree: {
+        nodeHoverBg: acudSemanticTokens['--component-color-grayB1'],
+        nodeSelectedBg: acudSemanticTokens['--component-color-grayB2'],
+        directoryNodeSelectedBg: acudSemanticTokens['--component-color-grayB2'],
+        // nodeSelectedColor: acudSemanticTokens['--text-color-brand'],
+        // directoryNodeSelectedColor: acudSemanticTokens['--text-color-brand'],
+    },
 };
 

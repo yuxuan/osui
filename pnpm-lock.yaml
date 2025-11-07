@@ -7884,6 +7884,10 @@ importers:
         version: 4.9.5
 
   packages/ui/segmented:
+    dependencies:
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
     devDependencies:
       '@babel/cli':
         specifier: ^7.10.5
@@ -7960,6 +7964,9 @@ importers:
       '@types/react-test-renderer':
         specifier: ^17.0.1
         version: 17.0.9
+      acud-icon:
+        specifier: ^1.1.1
+        version: 1.1.1(lodash@4.17.21)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       antd:
         specifier: 5.24.2
         version: 5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
@@ -10789,6 +10796,12 @@ importers:
       '@osui/brand-provider':
         specifier: ^4.0.0-beta.10
         version: link:../brand-provider
+      '@osui/divider':
+        specifier: ^4.0.0-beta.10
+        version: link:../divider
+      '@osui/dropdown':
+        specifier: ^4.0.0-beta.10
+        version: link:../dropdown
       '@osui/icloud-theme':
         specifier: ^4.0.0-beta.10
         version: link:../../ui-theme/icloud-theme
@@ -10846,6 +10859,9 @@ importers:
       '@types/react-test-renderer':
         specifier: ^17.0.1
         version: 17.0.9
+      acud-icon:
+        specifier: ^1.1.1
+        version: 1.1.1(lodash@4.17.21)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       antd:
         specifier: 5.24.2
         version: 5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
@@ -10889,7 +10905,7 @@ importers:
         specifier: ^3.0.1
         version: 3.0.3(@types/react-dom@17.0.26(@types/react@18.3.26))(@types/react@18.3.26)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       styled-components:
-        specifier: ~5.3.5
+        specifier: ~5.3.11
         version: 5.3.11(@babel/core@7.28.4)(react-dom@17.0.2(react@17.0.2))(react-is@17.0.2)(react@17.0.2)
       stylelint:
         specifier: ^14.0.0
@@ -13793,6 +13809,7 @@ packages:
   '@lerna/legacy-package-management@6.6.2':
     resolution: {integrity: sha512-0hZxUPKnHwehUO2xC4ldtdX9bW0W1UosxebDIQlZL2STnZnA2IFmIk2lJVUyFW+cmTPQzV93jfS0i69T9Z+teg==}
     engines: {node: ^14.17.0 || >=16.0.0}
+    deprecated: In v9 of lerna, released in September 2025, the `lerna bootstrap`, `lerna add` and `lerna link` commands were finally fully removed after over 2 years of being deprecated. If you are still using these commands, please migrate to using your package manager's long-supported `workspaces` feature. You may find https://lerna.js.org/docs/legacy-package-management useful for this transition.
 
   '@mdx-js/react@2.3.0':
     resolution: {integrity: sha512-zQH//gdOmuu7nt2oJR29vFhDv88oGPmVw6BggmrHeMI+xgEkp1B2dX9/bMBSYtK0dyLX/aOmesKS09g222K1/g==}
@@ -14044,14 +14061,14 @@ packages:
     resolution: {integrity: sha512-D4iHGTdAnEEVsB8fl95m1hiz7D5YiRdQ9b/OEb3BYRVwbLsGHcRVPz+u+BgRLNk0Q0/4iZCBqDN96j2XNxfXrA==}
 
   '@osui/divider@3.1.20':
-    resolution: {integrity: sha512-dXHg/BCZ7OZ0TC7BD+KvSnoqIFuthItEeXwiIhrhyYhEYj1XB4oEOMiLALU6vnVDQRtHdY4Mga9OV3MzosZ52A==, tarball: https://registry.npmjs.org/@osui/divider/-/divider-3.1.20.tgz}
+    resolution: {integrity: sha512-dXHg/BCZ7OZ0TC7BD+KvSnoqIFuthItEeXwiIhrhyYhEYj1XB4oEOMiLALU6vnVDQRtHdY4Mga9OV3MzosZ52A==}
     peerDependencies:
       antd: ^5.0.0
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
 
   '@osui/icons@3.0.4':
-    resolution: {integrity: sha512-I6Zi97O8dnuFXMWM89tCf4A2sqdIISGWSPu9bDjGgaIal0CGX64+MJWB8Jbqtm+KBbrGJ05cDQ4/bkN6syeW1w==, tarball: https://registry.npmjs.org/@osui/icons/-/icons-3.0.4.tgz}
+    resolution: {integrity: sha512-I6Zi97O8dnuFXMWM89tCf4A2sqdIISGWSPu9bDjGgaIal0CGX64+MJWB8Jbqtm+KBbrGJ05cDQ4/bkN6syeW1w==}
     peerDependencies:
       react: '>=17'
 
