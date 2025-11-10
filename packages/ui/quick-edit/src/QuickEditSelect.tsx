@@ -25,7 +25,7 @@ const InnerSelect = (props: InnerSelectProps) => {
     const {onChangeValueByEffect, switchEditStatus} = useQuickEdit();
     const [value, setValue] = useDerivedState(originValue.current);
     const handleChange = useCallback(
-        (value, option) => {
+        (value: any, option: any) => {
             onChange && onChange(value, option);
             setValue(value);
         },
@@ -82,7 +82,7 @@ const QuickEditSelect = (props: QuickEditSelectProps) => {
     const {showEditIcon, withConfirm, display, wrapClassName, ...restProps} = props;
 
     const handleDisplay = useCallback(
-        value => {
+        (value: any) => {
             if (display) {
                 return display(value);
             }
