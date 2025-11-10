@@ -36,7 +36,7 @@ const Collapse: CollapseInterface = ({className, levelChild, ghost, expandIcon, 
     };
 
     const innerExpandIcon = useCallback(
-        panelProps => {
+        (panelProps: any) => {
             return (
                 panelProps.isActive
                     ? <span className="icon-wrapper"><IconDownOutlined /> </span>

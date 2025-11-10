@@ -103,7 +103,6 @@
         "@storybook/react-vite": "^7.5.1",
         "@storybook/testing-library": "^0.2.2",
         "@storybook/theming": "^6.4.19",
-        "@types/bun": "latest",
         "@types/enzyme": "^3.10.12",
         "@types/jest": "^27.0.0",
         "@types/react-dom": "^17.0.17",

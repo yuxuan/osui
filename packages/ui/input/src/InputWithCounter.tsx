@@ -29,7 +29,7 @@ const InputWithCounter = React.forwardRef<any, InputWithCounterProps>((
         className
     );
     const handleChange = useCallback(
-        e => {
+        (e: any) => {
             setInputValue(e.target.value);
             onChange?.(e);
         },
