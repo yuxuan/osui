@@ -1,10 +1,8 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
 import BrandProvider from '@osui/brand-provider';
 import Divider from '../src';
 
 export default {
-    title: '布局/分割线 Divider',
+    title: '布局/[new_dev]分割线 Divider',
 };
 
 export const Demo = () => {

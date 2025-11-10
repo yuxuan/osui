@@ -105,5 +105,5 @@
         "registry": "https://registry.npmjs.com"
     },
     "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f",
-    "packageManager": "pnpm@8.10.2"
+    "packageManager": "pnpm@10.20.0"
 }

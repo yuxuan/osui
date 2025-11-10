@@ -30,7 +30,7 @@ const Search = React.forwardRef<any, SearchProps>(
             suffix,
             ...inputProps
         } = props;
-        const inputRef = useRef(null);
+        const inputRef = useRef<HTMLInputElement>(null);
         const {brand} = useBrandContext();
 
         const [focused, setFocused] = useState(false);
@@ -45,33 +45,33 @@ const Search = React.forwardRef<any, SearchProps>(
         );
         const innerWithSuffixIcon = withSuffixIcon ?? brand === 'icloud';
         const handleFocus = useCallback(
-            e => {
+            (e: React.FocusEvent<HTMLInputElement>) => {
                 onFocus && onFocus(e);
                 setFocused(true);
             },
             [onFocus]
         );
         const handleBlur = useCallback(
-            e => {
+            (e: React.FocusEvent<HTMLInputElement>) => {
                 onBlur && onBlur(e);
                 setFocused(false);
             },
             [onBlur]
         );
         const handleSearch = useCallback(
-            e => {
+            (e: React.KeyboardEvent<HTMLInputElement> | React.MouseEvent<HTMLDivElement>) => {
                 onSearch && onSearch((inputRef.current as any).input.value, e);
             },
             [onSearch]
         );
         const handleClick = useCallback(
-            e => {
+            (e: React.MouseEvent<HTMLDivElement>) => {
                 handleSearch(e);
             },
             [handleSearch]
         );
         const handleChange = useCallback(
-            e => {
+            (e: React.ChangeEvent<HTMLInputElement>) => {
                 // 点击清除时也要调用onSearch
                 if (e && e.target && e.type === 'click' && onSearch) {
                     onSearch(e.target.value, e);

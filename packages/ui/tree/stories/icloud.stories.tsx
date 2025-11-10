@@ -13,7 +13,7 @@ import styled from 'styled-components';
 import Tree, {TreeProps} from '../src';
 
 export default {
-    title: '数据展示/树形组件 Tree',
+    title: '数据展示/[new_dev]树形组件 Tree',
 };
 
 const StyledFlex = styled(Flex)`

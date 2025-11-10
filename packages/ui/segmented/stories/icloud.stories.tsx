@@ -7,7 +7,7 @@ import BrandProvider from '../../brand-provider';
 import Segmented from '../src';
 
 export default {
-    title: '数据展示/分段控制器 Segmented',
+    title: '数据展示/[new_dev]分段控制器 Segmented',
 };
 
 export const Demo = () => {

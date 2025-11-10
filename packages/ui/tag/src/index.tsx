@@ -1,8 +1,3 @@
-/**
- * @file Tag组件
- * @author yangpeng
- * */
-
 import React from 'react';
 import {Tag as AntdTag} from 'antd';
 import {TagProps as AntdTagProps, CheckableTagProps as AntdCheckableTagProps} from 'antd/es/tag';
@@ -18,6 +13,7 @@ export interface TagProps extends AntdTagProps {
     outlined?: boolean;
     disabled?: boolean;
     size?: 'small' | 'medium' | 'default';
+    color?: keyof typeof colorMap;
 }
 
 export interface TagType extends React.ForwardRefExoticComponent<TagProps & React.RefAttributes<HTMLElement>> {
@@ -25,7 +21,7 @@ export interface TagType extends React.ForwardRefExoticComponent<TagProps & Reac
     TagTab: typeof TagTab;
 }
 
-const colorMap = {
+const colorMap: Record<string, string> = {
     // by category
     info: 'blue',
     success: 'green',
@@ -40,11 +36,13 @@ const colorMap = {
     error: 'red',
     processing: 'brand',
 };
+
 const sizeMap = {
     small: 'small',
     medium: 'medium',
     default: 'medium',
 };
+
 
 const Tag = React.forwardRef<HTMLSpanElement, TagProps>((props, ref) => {
     const {closeIcon, color, solid, round, outlined, disabled, size = 'default', ...restProps} = props;
@@ -56,7 +54,7 @@ const Tag = React.forwardRef<HTMLSpanElement, TagProps>((props, ref) => {
         patchedIcon = <IconCloseOutlined />;
     }
     const curSize = sizeMap[size] || sizeMap.default;
-    const curColor = colorMap[color] ? colorMap[color] : color;
+    const curColor = props.color && (colorMap[props.color] ? colorMap[props.color] : props.color);
     const classnames = classNames(
         clsPrefix,
         {[`${clsPrefix}-solid`]: solid},
@@ -71,7 +69,7 @@ const Tag = React.forwardRef<HTMLSpanElement, TagProps>((props, ref) => {
     return <AntdTag ref={ref} {...restProps} color={color} closeIcon={patchedIcon} className={classnames} />;
 }) as TagType;
 
-export type CheckableTagProps = AntdCheckableTagProps;
+export type CheckableTagProps = TagProps & AntdCheckableTagProps;
 
 // antd 没有ref forward
 const CheckableTag: React.FC<CheckableTagProps> = props => {
@@ -85,6 +83,7 @@ const CheckableTag: React.FC<CheckableTagProps> = props => {
 
 const TagTab = (props: CheckableTagProps) => {
     const {disabled, onChange, className, ...restProps} = props;
+
     const classnames = classNames(
         `${clsPrefix}-tagtab`,
         {[`${clsPrefix}-disabled`]: disabled},
@@ -101,7 +100,6 @@ const TagTab = (props: CheckableTagProps) => {
                 }
                 onChange?.(checked);
             }}
-            disabled={disabled}
             {...restProps}
         />
     );

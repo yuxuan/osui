@@ -6,7 +6,7 @@ import BrandProvider from '../../brand-provider';
 import Tooltip from '../src';
 
 export default {
-    title: '反馈/文字提示 Tooltip',
+    title: '反馈/[new_dev]文字提示 Tooltip',
 };
 
 export const Demo = () => {

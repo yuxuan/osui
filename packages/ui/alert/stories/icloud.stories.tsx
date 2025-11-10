@@ -8,7 +8,7 @@ import {Button} from 'antd';
 import Alert from '../src';
 
 export default {
-    title: '反馈/警告提示 Alert',
+    title: '反馈/[new_dev]警告提示 Alert',
     component: Alert,
 };
 const Btn = ({bkg}: any) => {

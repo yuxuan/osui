@@ -101,5 +101,5 @@
         "classnames": "^2.3.1",
         "hoist-non-react-statics": "^3.3.2"
     },
-    "packageManager": "pnpm@10.18.3"
+    "packageManager": "pnpm@10.20.0"
 }

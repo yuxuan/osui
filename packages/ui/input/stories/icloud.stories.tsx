@@ -1,6 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
-import Select from '@osui/select';
+import {version} from 'antd';
 import Divider from '@osui/divider';
 import AutoComplete from '@osui/auto-complete';
 import FlexCentered from '@osui/flex-centered';
@@ -8,9 +6,9 @@ import BrandProvider from '@osui/brand-provider';
 import Button from '@osui/button';
 import Form from '@osui/form';
 import {IconSearchOutlined} from '@osui/icons';
-import {version} from 'antd';
 import Cascader from '@osui/cascader';
 import Gap from '@osui/gap';
+import Select from '../../select';
 import Input from '../src';
 const {TextArea} = Input;
 
@@ -159,19 +157,23 @@ export const Demo = () => {
                     <Select
                         className="input-group-addon"
                         defaultValue="http://"
-                    >
-                        <Option value="http://" label="http://" />
-                        <Option value="https://" label="https://" />
-                    </Select>
+                        options={[
+                            {value: 'http://', label: 'http://'},
+                            {value: 'https://', label: 'https://'},
+                        ]}
+                    />
                 }
                 addonAfter={
                     <Select
                         className="input-group-addon"
                         defaultValue=".com"
-                    >
-                        <Option value=".com" label=".com" />
-                        <Option value=".cn" label=".cn" />
-                    </Select>
+                        options={
+                            [
+                                {value: '.com', label: '.com'},
+                                {value: '.cn', label: '.cn'},
+                            ]
+                        }
+                    />
                 }
                 defaultValue="mysite"
             />

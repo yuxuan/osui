@@ -22,14 +22,14 @@ const OSUIInput = React.forwardRef<HTMLInputElement, InputProps>((
         className
     );
     const handleFocus = useCallback(
-        e => {
+        (e: React.FocusEvent<HTMLInputElement>) => {
             onFocus && onFocus(e);
             setFocused(true);
         },
         [onFocus]
     );
     const handleBlur = useCallback(
-        e => {
+        (e: React.FocusEvent<HTMLInputElement>) => {
             onBlur && onBlur(e);
             setFocused(false);
         },

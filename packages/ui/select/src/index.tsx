@@ -1,5 +1,9 @@
-import EnhancedInternalSelect from './EnhancedInternalSelect';
+import {Select as AntdSelect} from 'antd';
+import hoistNonReactStatics from 'hoist-non-react-statics';
+import EnhancedSelect, {SelectProps} from './EnhancedInternalSelect';
+export {type SelectProps};
 
-export default EnhancedInternalSelect;
+hoistNonReactStatics(EnhancedSelect, AntdSelect);
 
-export {type SelectProps} from './InternalBaseSelect';
+export default EnhancedSelect;
+
