@@ -8,7 +8,7 @@ import Form from '@osui/form';
 import {IconSearchOutlined} from '@osui/icons';
 import Cascader from '@osui/cascader';
 import Gap from '@osui/gap';
-import Select from '../../select';
+import Select from '@osui/select';
 import Input from '../src';
 const {TextArea} = Input;
 

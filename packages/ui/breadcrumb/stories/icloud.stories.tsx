@@ -5,7 +5,7 @@ import Dropdown from '@osui/dropdown';
 import TextOverflowTooltip from '@osui/text-overflow-tooltip';
 import BrandProvider from '@osui/brand-provider';
 import Divider from '@osui/divider';
-import Space from '../../space';
+import Space from '@osui/space';
 import Breadcrumb from '../src';
 
 export default {

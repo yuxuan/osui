@@ -5,7 +5,7 @@ import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {useDarkMode} from 'storybook-dark-mode';
 import '../../../ui-theme/icloud-theme/es/theme/vars.css';
 import {themes} from '@storybook/theming';
-import BrandProvider from '../../brand-provider';
+import BrandProvider from '@osui/brand-provider';
 import './global.css';
 const preview: Preview = {
     parameters: {

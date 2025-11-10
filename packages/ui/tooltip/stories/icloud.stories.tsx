@@ -2,7 +2,7 @@
 import React from 'react';
 import Button from '@osui/button';
 import Gap from '@osui/gap';
-import BrandProvider from '../../brand-provider';
+import BrandProvider from '@osui/brand-provider';
 import Tooltip from '../src';
 
 export default {
