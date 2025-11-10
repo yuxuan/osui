@@ -1,6 +1,6 @@
 {
     "name": "@osui/anchor",
-    "version": "4.0.0-beta.10",
+    "version": "4.0.0-beta.11",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -28,9 +28,9 @@
     ],
     "devDependencies": {
         "@babel/cli": "^7.10.5",
-        "@osui/brand-provider": "^4.0.0-beta.10",
-        "@osui/divider": "^4.0.0-beta.10",
-        "@osui/icloud-theme": "^4.0.0-beta.10",
+        "@osui/brand-provider": "^4.0.0-beta.11",
+        "@osui/divider": "^4.0.0-beta.11",
+        "@osui/icloud-theme": "^4.0.0-beta.11",
         "@osui/icons": "^4.0.0-beta.10",
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.11](https://github.com/yuxuan/osui/compare/v4.0.0-beta.10...v4.0.0-beta.11) (2025-11-10)
+
+
+### Bug Fixes
+
+* 调整doc demo文档 ([6e7eee2](https://github.com/yuxuan/osui/commit/6e7eee26e52ed134b01dff50e27219ddb1a5211d))
+* 调整组件 ([b99e5db](https://github.com/yuxuan/osui/commit/b99e5dbd86ccfacdae631905c6f8001a35ba9103))
+* 调整面包屑,divider ([0330f9d](https://github.com/yuxuan/osui/commit/0330f9d41a4af155576b5a26389a4ef44ac841cc))
+
+
+
+
+
 # [4.0.0-beta.10](https://github.com/yuxuan/osui/compare/v4.0.0-beta.8...v4.0.0-beta.10) (2025-10-30)
 
 

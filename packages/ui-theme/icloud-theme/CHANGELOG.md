@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.11](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.10...v4.0.0-beta.11) (2025-11-10)
+
+
+### Bug Fixes
+
+* 调整面包屑,divider ([0330f9d](https://gitee.com/gitee-fe/osui/tree/master/commits/0330f9d41a4af155576b5a26389a4ef44ac841cc))
+
+
+
+
+
 # [4.0.0-beta.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.8...v4.0.0-beta.10) (2025-10-30)
 
 

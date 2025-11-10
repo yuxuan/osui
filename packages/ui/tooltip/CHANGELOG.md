@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.11](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.10...v4.0.0-beta.11) (2025-11-10)
+
+
+### Bug Fixes
+
+* 调整doc demo文档 ([6e7eee2](https://gitee.com/gitee-fe/osui/tree/master/commits/6e7eee26e52ed134b01dff50e27219ddb1a5211d))
+* 调整组件 ([b99e5db](https://gitee.com/gitee-fe/osui/tree/master/commits/b99e5dbd86ccfacdae631905c6f8001a35ba9103))
+
+
+
+
+
 # [4.0.0-beta.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.8...v4.0.0-beta.10) (2025-10-30)
 
 **Note:** Version bump only for package @osui/tooltip
