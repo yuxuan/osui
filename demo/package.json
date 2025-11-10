@@ -29,6 +29,7 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.23.2",
     "@emotion/styled": "^11.8.1",
+    "styled-components": "~5.3.11",
     "@huse/boolean": "^1.1.2",
     "@huse/input-value": "^1.1.1",
     "@storybook/addon-docs": "^7.5.1",
