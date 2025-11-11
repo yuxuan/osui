@@ -76,10 +76,5 @@
             "path": "cz-conventional-changelog"
         }
     },
-    "packageManager": "pnpm@10.20.0",
-    "pnpm": {
-        "overrides": {
-            "@types/node": "^20.0.0"
-        }
-    }
+    "packageManager": "pnpm@10.20.0"
 }
