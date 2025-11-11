@@ -15,7 +15,7 @@
         "lint:fix": "lerna run lint -- --fix",
         "clean": "lerna run clean",
         "storybook": "start-storybook -p 8777 -s public",
-        "version": "lerna version --conventional-commits --no-push",
+        "version": "lerna version --conventional-commits --no-push --force-publish",
         "commit": "git-cz",
         "new-component": "sh scripts/new-component.sh",
         "copy-to-docs": "sh scripts/copy-to-docs.sh",
