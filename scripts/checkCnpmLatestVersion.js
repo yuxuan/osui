@@ -81,6 +81,7 @@ const urls = [
     'https://registry.npmmirror.com/@osui/upload/',
     'https://registry.npmmirror.com/@osui/version/',
     'https://registry.npmmirror.com/@osui/watermark/',
+    'https://registry.npmmirror.com/@osui/icons/',
 ];
 
 const currentVersion = require('../packages/ui/ui/package.json').version;
