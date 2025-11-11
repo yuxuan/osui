@@ -859,10 +859,10 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/highlight-text':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../highlight-text
       '@osui/select':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../select
       classnames:
         specifier: ^2.3.1
@@ -875,7 +875,7 @@ importers:
         specifier: ^7.10.5
         version: 7.28.3(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/divider':
         specifier: ^4.0.0-beta.12
@@ -1427,7 +1427,7 @@ importers:
         specifier: ^11.13.5
         version: 11.13.5
       '@osui/empty':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../empty
     devDependencies:
       '@babel/cli':
@@ -1443,10 +1443,10 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: 'link:'
       '@osui/collapse':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../collapse
       '@osui/divider':
         specifier: ^4.0.0-beta.12
@@ -2740,7 +2740,7 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/icloud-theme':
         specifier: ^4.0.0-beta.12
@@ -2749,7 +2749,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../../ui-icons/osui-icons
       '@osui/select':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../select
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -3845,7 +3845,7 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/button':
         specifier: ^4.0.0-beta.12
@@ -3860,16 +3860,16 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../../ui-icons/osui-icons
       '@osui/modal':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../modal
       '@osui/popover':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../popover
       '@osui/select':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../select
       '@osui/table':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../table
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -4385,7 +4385,7 @@ importers:
   packages/ui/form:
     dependencies:
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       classnames:
         specifier: ^2.3.1
@@ -4425,7 +4425,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../../ui-icons/osui-icons
       '@osui/input':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../input
       '@osui/input-number':
         specifier: latest
@@ -4434,7 +4434,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../radio
       '@osui/select':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../select
       '@osui/switch':
         specifier: ^4.0.0-beta.12
@@ -4831,7 +4831,7 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/icloud-theme':
         specifier: ^4.0.0-beta.12
@@ -4840,7 +4840,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../../ui-icons/osui-icons
       '@osui/input':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../input
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -5083,7 +5083,7 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       classnames:
         specifier: ^2.3.1
@@ -5108,7 +5108,7 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/auto-complete':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../auto-complete
       '@osui/button':
         specifier: ^4.0.0-beta.12
@@ -5123,7 +5123,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../flex-centered
       '@osui/form':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../form
       '@osui/gap':
         specifier: ^4.0.0-beta.12
@@ -5135,7 +5135,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../../ui-icons/osui-icons
       '@osui/select':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../select
       '@osui/version':
         specifier: ^4.0.0-beta.12
@@ -5277,13 +5277,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/flex-centered':
         specifier: ^4.0.0-beta.12
         version: link:../flex-centered
       '@osui/form':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../form
       '@osui/icloud-theme':
         specifier: ^4.0.0-beta.12
@@ -5292,7 +5292,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../../ui-icons/osui-icons
       '@osui/input':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../input
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -6272,7 +6272,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../alert
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/button':
         specifier: ^4.0.0-beta.12
@@ -6290,13 +6290,13 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../../ui-icons/osui-icons
       '@osui/input':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../input
       '@osui/space':
         specifier: ^4.0.0-beta.12
         version: link:../space
       '@osui/table':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../table
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -6835,7 +6835,7 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/button':
         specifier: ^4.0.0-beta.12
@@ -6844,7 +6844,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../divider
       '@osui/form':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../form
       '@osui/gap':
         specifier: ^4.0.0-beta.12
@@ -6856,7 +6856,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../../ui-icons/osui-icons
       '@osui/input':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../input
       '@osui/markdown':
         specifier: ^4.0.0-beta.12
@@ -7238,10 +7238,10 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/input':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../input
       '@osui/select':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../select
       classnames:
         specifier: ^2.3.1
@@ -7266,7 +7266,7 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/icloud-theme':
         specifier: ^4.0.0-beta.12
@@ -8049,13 +8049,13 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/popover':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../popover
       '@osui/tag':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../tag
       '@osui/tooltip':
         specifier: ^4.0.0-beta.12
@@ -8344,7 +8344,7 @@ importers:
   packages/ui/slider:
     dependencies:
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       classnames:
         specifier: ^2.3.1
@@ -8375,7 +8375,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../../ui-icons/osui-icons
       '@osui/input-number':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../input-number
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -9364,13 +9364,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/divider':
         specifier: ^3.1.20
         version: 3.1.20(antd@5.24.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@osui/form':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../form
       '@osui/icloud-theme':
         specifier: ^4.0.0-beta.12
@@ -9674,7 +9674,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../divider
       '@osui/input':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../input
       '@osui/tooltip':
         specifier: ^4.0.0-beta.12
@@ -9708,7 +9708,7 @@ importers:
         specifier: ^11.8.1
         version: 11.14.1(@emotion/react@11.14.0(@types/react@18.3.26)(react@17.0.2))(@types/react@18.3.26)(react@17.0.2)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/icloud-theme':
         specifier: ^4.0.0-beta.12
@@ -10134,13 +10134,13 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/divider':
         specifier: ^4.0.0-beta.12
         version: link:../divider
       '@osui/form':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../form
       '@osui/icloud-theme':
         specifier: ^4.0.0-beta.12
@@ -10812,7 +10812,7 @@ importers:
         specifier: ^7.23.2
         version: 7.27.1(@babel/core@7.28.4)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/divider':
         specifier: ^4.0.0-beta.12
@@ -10827,7 +10827,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../../ui-icons/osui-icons
       '@osui/input':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../input
       '@storybook/addon-docs':
         specifier: ^7.5.1
@@ -11231,7 +11231,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../app
       '@osui/auto-complete':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../auto-complete
       '@osui/avatar':
         specifier: ^4.0.0-beta.12
@@ -11243,7 +11243,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../badge
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/breadcrumb':
         specifier: ^4.0.0-beta.12
@@ -11270,7 +11270,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../col
       '@osui/collapse':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../collapse
       '@osui/color-picker':
         specifier: ^4.0.0-beta.12
@@ -11294,7 +11294,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../dropdown
       '@osui/empty':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../empty
       '@osui/flex':
         specifier: ^4.0.0-beta.12
@@ -11306,7 +11306,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../float-button
       '@osui/form':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../form
       '@osui/gap':
         specifier: ^4.0.0-beta.12
@@ -11315,16 +11315,16 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../grid
       '@osui/highlight-text':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../highlight-text
       '@osui/image':
         specifier: ^4.0.0-beta.12
         version: link:../image
       '@osui/input':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../input
       '@osui/input-number':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../input-number
       '@osui/layout':
         specifier: ^4.0.0-beta.12
@@ -11345,7 +11345,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../message
       '@osui/modal':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../modal
       '@osui/notification':
         specifier: ^4.0.0-beta.12
@@ -11357,7 +11357,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../popconfirm
       '@osui/popover':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../popover
       '@osui/progress':
         specifier: ^4.0.0-beta.12
@@ -11366,7 +11366,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../qr-code
       '@osui/quick-edit':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../quick-edit
       '@osui/radio':
         specifier: ^4.0.0-beta.12
@@ -11384,13 +11384,13 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../segmented
       '@osui/select':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../select
       '@osui/skeleton':
         specifier: ^4.0.0-beta.12
         version: link:../skeleton
       '@osui/slider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../slider
       '@osui/space':
         specifier: ^4.0.0-beta.12
@@ -11411,13 +11411,13 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../switch
       '@osui/table':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../table
       '@osui/tabs':
         specifier: ^4.0.0-beta.12
         version: link:../tabs
       '@osui/tag':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../tag
       '@osui/text-overflow-tooltip':
         specifier: ^4.0.0-beta.12
@@ -11426,7 +11426,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../theme-provider
       '@osui/time-picker':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../time-picker
       '@osui/timeline':
         specifier: ^4.0.0-beta.12
@@ -11441,7 +11441,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../transfer
       '@osui/tree':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../tree
       '@osui/tree-select':
         specifier: ^4.0.0-beta.12
@@ -11450,7 +11450,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../typography
       '@osui/upload':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../upload
       '@osui/version':
         specifier: ^4.0.0-beta.12
@@ -11668,7 +11668,7 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@17.0.2)
       '@osui/brand-provider':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../brand-provider
       '@osui/button':
         specifier: ^4.0.0-beta.12
@@ -11689,7 +11689,7 @@ importers:
         specifier: ^4.0.0-beta.12
         version: link:../message
       '@osui/modal':
-        specifier: ^4.0.0-beta.12
+        specifier: ^4.0.0-beta.13
         version: link:../modal
       '@osui/progress':
         specifier: ^4.0.0-beta.12
