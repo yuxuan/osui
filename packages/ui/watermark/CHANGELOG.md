@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.12](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.11...v4.0.0-beta.12) (2025-11-11)
+
+**Note:** Version bump only for package @osui/watermark
+
+
+
+
+
 # [4.0.0-beta.11](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.10...v4.0.0-beta.11) (2025-11-10)
 
 
