@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import {Select as AntdSelect} from 'antd';
 import type {BaseOptionType, DefaultOptionType, SelectProps as AntdSelectProps} from 'antd/es/select';
 import type {BaseSelectRef} from 'rc-select';
@@ -12,6 +12,63 @@ import './index.less';
 
 const clsPrefix = 'osui-select';
 
+type TagRenderProps = Parameters<
+  NonNullable<SelectProps<string>['tagRender']>
+>[0];
+
+interface ExtendedTagRenderProps extends TagRenderProps {
+  maxTagTextLength?: number;
+}
+const EllipsisTag = ({label, closable, disabled, onClose, maxTagTextLength}: ExtendedTagRenderProps) => {
+    const textRef = useRef(null);
+    const [isOverflow, setIsOverflow] = useState(false);
+
+    useEffect(
+        () => {
+            const el = textRef.current as unknown as HTMLElement;
+            if (el) {
+                if (typeof label === 'string' && maxTagTextLength && label.length > maxTagTextLength) {
+                    setIsOverflow(true);
+                } else {
+                    // 判断内容是否超出容器宽度
+                    setIsOverflow(el.scrollWidth > el.clientWidth);
+                }
+            }
+        },
+        [label]
+    );
+
+    const displayText = typeof label === 'string' && label.length > maxTagTextLength
+        ? label.slice(0, maxTagTextLength) + '...'
+        : label;
+
+    const TagContent = (
+        <span
+            className={classNames(
+                'ant-select-selection-item',
+                {
+                    'ant-select-selection-item-disabled': disabled,
+                }
+            )}
+        >
+            <span ref={textRef} className="ant-select-selection-item-content">
+                {displayText}
+            </span>
+            {closable && (
+                <span className="ant-select-selection-item-remove">
+                    <IconCloseOutlined className={`${clsPrefix}-remove-icon`} onClick={onClose} />
+                </span>
+            )}
+        </span>
+    );
+
+    return isOverflow ? (
+        <Tooltip title={label}>{TagContent}</Tooltip>
+    ) : (
+        TagContent
+    );
+};
+
 export interface SelectProps<
     ValueType = any,
     OptionType extends BaseOptionType | DefaultOptionType = DefaultOptionType
@@ -24,7 +81,7 @@ function InternalSelect<ValueType = any, OptionType extends BaseOptionType | Def
     props: SelectProps<ValueType, OptionType>,
     ref?: React.Ref<BaseSelectRef>
 ): React.ReactElement | null {
-    const {className, loading, listHeight, noBorder, ...restProps} = props;
+    const {className, loading, listHeight, noBorder, maxTagTextLength, ...restProps} = props;
     const {brand} = useBrandContext();
     // 暂时用，后面需要透传下去
     const {mode, popupClassName} = restProps;
@@ -91,7 +148,20 @@ function InternalSelect<ValueType = any, OptionType extends BaseOptionType | Def
                 }
                 return <span>{option.data.label}</span>;
             }}
+            tagRender={option => {
+                return (
+                    <EllipsisTag {...option} maxTagTextLength={maxTagTextLength} />
+                );
+            }}
+            maxTagPlaceholder={option => {
+                return (
+                    <Tooltip title={<>剩余{option.length}项未展示</>}>
+                        <span>+{option.length}</span>
+                    </Tooltip>
+                );
+            }}
             {...adjustedProps}
+            maxTagTextLength={null}
         />
     );
 }

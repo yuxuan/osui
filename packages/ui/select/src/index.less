@@ -84,7 +84,6 @@
     // 只有在arrow后面时，偏移30px
     .@{ant-prefix}-select-arrow + .@{ant-prefix}-select-clear {
         top: var(--select-clear-icon-top);
-        right: var(--select-clear-icon-right);
         opacity: var(--select-clear-icon-opacity);
     }
 
@@ -104,46 +103,76 @@
         }
     }
 
-    &.@{ant-prefix}-select-focused,
-    &:hover {
-        .@{ant-prefix}-select-clear {
-            opacity: 1 !important; // hover时显示clearIcon，符合antd的效果，也符合osui需要效果
-        }
-    }
-
     .@{osui-select-class-prefix}-remove-icon {
         width: 12px;
         height: 12px;
     }
+
+    &.@{ant-prefix}-select-open:not(.@{ant-prefix}-select-status-error) {
+        .@{ant-prefix}-select-selector {
+            box-shadow: 0 0 0 1px var(--brand-color-light-active) !important;
+        }
+    }
 }
 
 .@{osui-select-class-prefix}.@{ant-prefix}-select-multiple {
-    .@{ant-prefix}-select-selection-item .@{ant-prefix}-select-selection-item-remove {
-        color: var(--gray-color-6);
+    .@{ant-prefix}-select-selection-item-remove {
+        width: 16px;
+        height: 16px;
+        border-radius: var(--border-radius-3);
+
+        &:hover {
+            background-color: var(--component-color-grayB-active);
+        }
+    }
+
+    .@{ant-prefix}-select-selection-overflow {
+        &-item > span {
+            max-width: 100%;
+        }
     }
 
     .@{ant-prefix}-select-selection-item {
-        border: 1px solid var(--theme-disabled-bg);
-        border-radius: var(--border-radius-2);
-        background: var(--select-selection-item-bg);
-        margin-top: 3px;
-        margin-bottom: 3px;
+        align-items: center;
+    }
+
+    &.@{ant-prefix}-select-sm {
+        .@{ant-prefix}-select-selection-item,
+        .@{ant-prefix}-select-selector:after {
+            height: 16px;
+        }
+    }
+
+    &.@{ant-prefix}-select-lg {
+        .@{ant-prefix}-select-selection-item,
+        .@{ant-prefix}-select-selector:after {
+            height: 32px;
+        }
     }
 
     // disabled状态
     &.@{ant-prefix}-select-disabled .@{ant-prefix}-select-selection-item,
     .@{ant-prefix}-select-selection-item-disabled {
-        color: var(--theme-disabled-color);
-        background: var(--select-multiple-item-disabled-bg);
-        border: 1px solid var(--select-multiple-item-disabled-bg);
+        color: var(--text-color-tertiary);
+        font-weight: var(--font-weight-regular);
+        background: var(--component-color-grayB-active);
     }
 
-    &.@{osui-select-class-prefix}.@{ant-prefix}-select.@{ant-prefix}-select-focused .@{ant-prefix}-select-selector {
-        border-color: var(--primary-color-hover);
+    &.@{ant-prefix}-select-focused:hover:not(&.@{ant-prefix}-select-disabled) {
+        .@{ant-prefix}-select-clear {
+            opacity: 1 !important; // hover时显示clearIcon，符合antd的效果，也符合osui需要效果
+        }
+        &:not(.@{ant-prefix}-select-open) {
+            .@{ant-prefix}-select-arrow:not(.@{ant-prefix}-select-arrow + .@{ant-prefix}-select-clear) {
+                display: none;
+            }
+        }
     }
 
-    .@{ant-prefix}-select-selector {
-        padding: 2px 24px 2px 6px;
+    &.@{ant-prefix}-select-open {
+        .@{ant-prefix}-select-arrow + .@{ant-prefix}-select-clear {
+            display: none;
+        }
     }
 }
 
@@ -194,24 +223,41 @@
         height: var(--select-check-icon-size);
         border-radius: var(--border-radius-2);
     }
+
+    .@{ant-prefix}-select-item-option:not(.@{ant-prefix}-select-item-option-disabled) {
+        color: var(--text-color-primary);
+        background-color: var(--bg-color-white);
+        font-weight: var(--font-weight-regular);
+
+        &:hover {
+            background-color: var(--component-color-grayB1);
+        }
+    }
 }
 
-.@{osui-select-class-prefix}-dropdown {
+.@{osui-select-class-prefix}-dropdown:not(.@{osui-select-class-prefix}-multiple-dropdown) {
     padding: 4px 0;
+    color: var(--text-color-primary);
+    font-weight: var(--font-weight-regular);
 
     .@{ant-prefix}-select-item-option-selected:not(.@{ant-prefix}-select-item-option-disabled) {
-        background-color: var(--select-item-selected-bg);
-        color: var(--select-item-selected-color);
+        color: var(--brand-color-active);
+        background-color: var(--component-color-grayB2);
+        font-weight: var(--font-weight-medium);
     }
 
-    .@{ant-prefix}-select-item-option-active:not(.@{ant-prefix}-select-item-option-disabled) {
+    .@{ant-prefix}-select-item-option:not(.@{ant-prefix}-select-item-option-disabled) {
         &:hover {
-            background-color: var(--select-item-active-bg);
+            background-color: var(--component-color-grayB1);
         }
 
         &:active {
-            background-color: var(--gray-color-4);
+            color: var(--brand-color-active);
+            background-color: var(--component-color-grayB2);
         }
+    }
+    .@{ant-prefix}-select-item-option-disabled {
+        color: var(--text-color-disabled);
     }
 
     // 修复 select item 不居中
@@ -222,12 +268,33 @@
 }
 
 .@{ant-prefix}-select-multiple {
-    .@{ant-prefix}-select-selection-item {
-        line-height: 18px;
-        height: 20px;
+    .@{ant-prefix}-select-selection-wrap:after {
+        margin: 0 2px;
     }
-
     .@{ant-prefix}-select-selector:after {
-        height: 20px;
+        height: 24px;
+        margin: 0;
+    }
+}
+
+// 表单内报错样式覆盖
+.@{ant-prefix}-form-item-has-error {
+    .@{ant-prefix}-select-status-error:not(.@{ant-prefix}-select-disabled) {
+        .@{ant-prefix}-select-selector {
+            border-color: var(--error-color);
+            background: var(--error-color-light-hover);
+
+            &:hover {
+                border-color: var(--error-color-hover);
+                background: var(--error-color-light-hover);
+            }
+        }
+
+        &.@{ant-prefix}-select-open .@{ant-prefix}-select-selector {
+            color: var(--text-color-primary);
+            background: var(--bg-color-white);
+            border-color: var(--error-color-active) !important;
+            box-shadow: 0 0 0 1px var(--error-color-light-active) !important;
+        }
     }
 }

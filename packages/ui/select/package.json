@@ -86,6 +86,8 @@
     "dependencies": {
         "@huse/derived-state": "^1.1.1",
         "@osui/brand-provider": "^4.0.0-beta.10",
+        "@osui/form": "^4.0.0-beta.10",
+        "@osui/input": "^4.0.0-beta.10",
         "@osui/popover": "^4.0.0-beta.10",
         "@osui/tag": "^4.0.0-beta.10",
         "@osui/tooltip": "^4.0.0-beta.10",

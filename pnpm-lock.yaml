@@ -8026,6 +8026,12 @@ importers:
       '@osui/brand-provider':
         specifier: ^4.0.0-beta.10
         version: link:../brand-provider
+      '@osui/form':
+        specifier: ^4.0.0-beta.10
+        version: link:../form
+      '@osui/input':
+        specifier: ^4.0.0-beta.10
+        version: link:../input
       '@osui/popover':
         specifier: ^4.0.0-beta.10
         version: link:../popover
@@ -14044,14 +14050,14 @@ packages:
     resolution: {integrity: sha512-D4iHGTdAnEEVsB8fl95m1hiz7D5YiRdQ9b/OEb3BYRVwbLsGHcRVPz+u+BgRLNk0Q0/4iZCBqDN96j2XNxfXrA==}
 
   '@osui/divider@3.1.20':
-    resolution: {integrity: sha512-dXHg/BCZ7OZ0TC7BD+KvSnoqIFuthItEeXwiIhrhyYhEYj1XB4oEOMiLALU6vnVDQRtHdY4Mga9OV3MzosZ52A==, tarball: https://registry.npmjs.org/@osui/divider/-/divider-3.1.20.tgz}
+    resolution: {integrity: sha512-dXHg/BCZ7OZ0TC7BD+KvSnoqIFuthItEeXwiIhrhyYhEYj1XB4oEOMiLALU6vnVDQRtHdY4Mga9OV3MzosZ52A==}
     peerDependencies:
       antd: ^5.0.0
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
 
   '@osui/icons@3.0.4':
-    resolution: {integrity: sha512-I6Zi97O8dnuFXMWM89tCf4A2sqdIISGWSPu9bDjGgaIal0CGX64+MJWB8Jbqtm+KBbrGJ05cDQ4/bkN6syeW1w==, tarball: https://registry.npmjs.org/@osui/icons/-/icons-3.0.4.tgz}
+    resolution: {integrity: sha512-I6Zi97O8dnuFXMWM89tCf4A2sqdIISGWSPu9bDjGgaIal0CGX64+MJWB8Jbqtm+KBbrGJ05cDQ4/bkN6syeW1w==}
     peerDependencies:
       react: '>=17'
 
