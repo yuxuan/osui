@@ -103,19 +103,14 @@
         }
     }
 
-    .@{osui-select-class-prefix}-remove-icon {
-        width: 12px;
-        height: 12px;
-    }
-
-    &.@{ant-prefix}-select-open:not(.@{ant-prefix}-select-status-error) {
+    &.@{ant-prefix}-select-focused:not(.@{ant-prefix}-select-status-error) {
         .@{ant-prefix}-select-selector {
             box-shadow: 0 0 0 1px var(--brand-color-light-active) !important;
         }
     }
 }
 
-.@{osui-select-class-prefix}.@{ant-prefix}-select-multiple {
+.@{ant-prefix}-select-multiple {
     .@{ant-prefix}-select-selection-item-remove {
         width: 16px;
         height: 16px;
@@ -123,6 +118,11 @@
 
         &:hover {
             background-color: var(--component-color-grayB-active);
+        }
+
+        .@{osui-select-class-prefix}-remove-icon {
+            width: 12px;
+            height: 12px;
         }
     }
 
@@ -169,10 +169,18 @@
         }
     }
 
-    &.@{ant-prefix}-select-open {
+    &.@{ant-prefix}-select-focused {
         .@{ant-prefix}-select-arrow + .@{ant-prefix}-select-clear {
             display: none;
         }
+    }
+
+    .@{ant-prefix}-select-selection-wrap:after {
+        margin: 0 2px;
+    }
+    .@{ant-prefix}-select-selector:after {
+        height: 24px;
+        margin: 0;
     }
 }
 
@@ -267,16 +275,6 @@
     }
 }
 
-.@{ant-prefix}-select-multiple {
-    .@{ant-prefix}-select-selection-wrap:after {
-        margin: 0 2px;
-    }
-    .@{ant-prefix}-select-selector:after {
-        height: 24px;
-        margin: 0;
-    }
-}
-
 // 表单内报错样式覆盖
 .@{ant-prefix}-form-item-has-error {
     .@{ant-prefix}-select-status-error:not(.@{ant-prefix}-select-disabled) {
@@ -290,7 +288,7 @@
             }
         }
 
-        &.@{ant-prefix}-select-open .@{ant-prefix}-select-selector {
+        &.@{ant-prefix}-select-focused .@{ant-prefix}-select-selector {
             color: var(--text-color-primary);
             background: var(--bg-color-white);
             border-color: var(--error-color-active) !important;

@@ -4,6 +4,8 @@ import {CascaderProps as AntdCascaderProps, CascaderRef} from 'antd/es/cascader'
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import classNames from 'classnames';
 import {IconDownOutlined, IconRightOutlined} from '@osui/icons';
+import Tooltip from '@osui/tooltip';
+import {EllipsisTag} from '@osui/select';
 import './index.less';
 
 const clsPrefix = 'osui-cascader';
@@ -14,26 +16,12 @@ const OSUICascader = (
         popupClassName,
         expandIcon,
         suffixIcon,
-        displayRender,
+        maxTagTextLength,
         ...props
     }: AntdCascaderProps<any>,
     ref: React.Ref<CascaderRef>
 ) => {
     const innerClassName = classNames(clsPrefix, className);
-    const innerDisplayRender = displayRender ?? (
-        (label: string[]) => label.map(
-            (item, index) => (
-                index === label.length - 1 // 最后一个后面不加icon
-                    // eslint-disable-next-line react/jsx-key
-                    ? (<span>{item}</span>)
-                    : (
-                        <>
-                            <span>{item}</span>&nbsp;&gt;&nbsp;
-                        </>
-                    )
-            )
-        )
-    );
 
     const maxChildrenLength = React.useMemo(
         () => {
@@ -64,12 +52,24 @@ const OSUICascader = (
         <AntdCascader
             ref={ref as any}
             className={innerClassName}
-            displayRender={innerDisplayRender}
             popupClassName={innerPopupClassName}
             expandIcon={innerExpandIcon}
             suffixIcon={innerSuffixIcon}
             style={{...props.style, minHeight: cascaderMinHeight}}
+            tagRender={option => {
+                return (
+                    <EllipsisTag {...option} maxTagTextLength={maxTagTextLength} />
+                );
+            }}
+            maxTagPlaceholder={option => {
+                return (
+                    <Tooltip title={<>剩余{option.length}项未展示</>}>
+                        <span>+{option.length}</span>
+                    </Tooltip>
+                );
+            }}
             {...props}
+            maxTagTextLength={null}
         />
     );
 };
