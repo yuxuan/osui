@@ -49,7 +49,7 @@ export default {
     '--border-color-inverse': 'var(--white)',
     '--border-color-split': 'var(--border-color-split)',
     '--breadcrumb-base-color': 'var(--text-color-secondary)',
-    '--breadcrumb-last-child-font-weight': '600',
+    '--breadcrumb-last-child-font-weight': '500',
     '--breadcrumb-last-item-color': 'var(--text-color)',
     '--breadcrumb-link-color': 'var(--text-color-secondary)',
     '--breadcrumb-link-color-hover': 'var(--theme-primary-color)',

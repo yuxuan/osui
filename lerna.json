@@ -2,7 +2,7 @@
   "packages": [
     "packages/*"
   ],
-  "version": "4.0.0-beta.10",
+  "version": "4.0.0-beta.14",
   "npmClient": "pnpm",
   "useWorkspaces": true,
   "command": {
@@ -27,7 +27,8 @@
         "*.md"
       ],
       "verifyAccess": false,
-      "verifyRegistry": false
+      "verifyRegistry": false,
+      "distTag": "beta"
     }
   }
 }

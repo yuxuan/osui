@@ -1,30 +1,27 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
 import BrandProvider from '@osui/brand-provider';
 import Divider from '@osui/divider';
 
 export default {
-    title: '布局/分割线 Divider',
+    title: '布局/[new_dev]分割线 Divider',
 };
 
 export const Demo = () => {
     return (
         <BrandProvider brand="icloud">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-                probare, quae sunt a te dicta? Refert tamen, quo modo.
-            </p>
+            <Divider>使用场景</Divider>
+            <p>实线</p>
+            <p></p>
             <Divider />
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-                probare, quae sunt a te dicta? Refert tamen, quo modo.
-            </p>
+            <p>虚线</p>
             <Divider dashed />
-            <Divider>展示</Divider>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-                probare, quae sunt a te dicta? Refert tamen, quo modo.
-            </p>
+            <p></p>
+            <Divider>对齐方式</Divider>
+            <p>左对齐</p>
+            <Divider orientation="left">Left Align</Divider>
+            <p>右对齐</p>
+            <Divider orientation="right">Right Align</Divider>
+            <p>居中对齐</p>
+            <Divider orientation="center">Center Align</Divider>
         </BrandProvider>
     );
 };

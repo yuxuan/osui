@@ -39,7 +39,7 @@ function InputNumberCompact<T extends ValueType = ValueType>(
     const initValue: T = defaultValue === undefined ? (value || 0 as T) : defaultValue;
     const [inputValue, setInputValue] = useDerivedState<T>(initValue);
     const handleChange = useCallback(
-        value => {
+        (value: any) => {
             setInputValue(value);
             onChange?.(value);
         },

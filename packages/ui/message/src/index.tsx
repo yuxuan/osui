@@ -31,6 +31,7 @@ export interface MessageArgsProps extends AntdMessageArgsProps {
     showCountDown?: boolean;
     showClose?: boolean;
     title?: string | React.ReactNode;
+    _localInnerKey?: number;
 }
 
 type JointContent = React.ReactNode | MessageArgsProps;
@@ -162,7 +163,7 @@ const getMessageContent = (props: MessageArgsProps) => {
 
 // 对antd message args的调整
 // 调整icon，调整className
-const getPatchedArgs = (argsProps: MessageArgsProps & {_localInnerKey?: number}) => {
+const getPatchedArgs = (argsProps: MessageArgsProps) => {
     if (argsProps.original) {
         // 如果传入original为true则只覆盖icon和className
         return {

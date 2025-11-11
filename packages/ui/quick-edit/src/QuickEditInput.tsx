@@ -36,7 +36,7 @@ const ConfirmInput = (props: InputProps & React.HTMLAttributes<HTMLDivElement>) 
     );
 
     const handleChange = useCallback(
-        e => {
+        (e: any) => {
             onChange && onChange(e);
             setValue(e.target.value);
         },
@@ -79,7 +79,7 @@ const QuickEditInput = (props: Props) => {
     const {display, showEditIcon, wrapClassName, withConfirm, ...restProps} = props;
 
     const handleDisplay = useCallback(
-        value => {
+        (value: any) => {
             if (display) {
                 return display(value);
             }
@@ -89,7 +89,7 @@ const QuickEditInput = (props: Props) => {
     );
 
     const transformValue = useCallback(
-        e => e.target.value,
+        (e: any) => e.target.value,
         []
     );
 

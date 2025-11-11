@@ -1,6 +1,6 @@
 {
     "name": "@osui/row",
-    "version": "4.0.0-beta.10",
+    "version": "4.0.0-beta.14",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -28,9 +28,9 @@
     ],
     "devDependencies": {
         "@babel/cli": "^7.10.5",
-        "@osui/brand-provider": "^4.0.0-beta.10",
-        "@osui/icloud-theme": "^4.0.0-beta.10",
-        "@osui/icons": "^4.0.0-beta.10",
+        "@osui/brand-provider": "^4.0.0-beta.14",
+        "@osui/icloud-theme": "^4.0.0-beta.14",
+        "@osui/icons": "^4.0.0-beta.14",
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",
         "@storybook/addon-interactions": "^7.5.1",
@@ -80,6 +80,6 @@
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "packageManager": "pnpm@10.17.1",
+    "packageManager": "pnpm@10.20.0",
     "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
 }

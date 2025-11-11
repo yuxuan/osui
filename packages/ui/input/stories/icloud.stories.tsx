@@ -1,6 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
-import Select from '@osui/select';
+import {version} from 'antd';
 import Divider from '@osui/divider';
 import AutoComplete from '@osui/auto-complete';
 import FlexCentered from '@osui/flex-centered';
@@ -11,6 +9,7 @@ import {IconSearchOutlined} from '@osui/icons';
 import {version} from 'antd';
 import Cascader from '@osui/cascader';
 import Gap from '@osui/gap';
+import Select from '@osui/select';
 import Input from '../src';
 const {TextArea} = Input;
 

@@ -5,11 +5,381 @@
 import React from 'react';
 import Input from '@osui/input';
 import {IconSearchOutlined} from '@osui/icons';
+import BrandProvider from '@osui/brand-provider';
+import Divider from '@osui/divider';
+import {OutlinedSearchDocument, OutlinedEllipsis, OutlinedPlusNew, OutlinedEdit} from 'acud-icon';
+import {Flex, Dropdown} from 'antd';
+import styled from 'styled-components';
 import Tree, {TreeProps} from '@osui/tree';
 
 export default {
-    title: '数据展示/树形组件 Tree',
+    title: '数据展示/[new_dev]树形组件 Tree',
 };
+
+const StyledFlex = styled(Flex)`
+    .action-outlined-ellipsis-icon {
+        visibility: hidden;
+        width: 16px;
+        height: 16px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: #E4E8F0;
+        }
+    }
+
+    &:hover {
+        .action-outlined-ellipsis-icon {
+            visibility: visible;
+        }
+    }
+`;
+const StyledActionIcon = styled.div`
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+
+    &:hover {
+        background-color: #E4E8F0;
+    }
+`;
+const ActionDemo = ({title, items}: any) => {
+
+    return (
+        <StyledFlex align="center" justify="space-between" gap={8}>
+            <span>{title}</span>
+            <Dropdown menu={{items}} getPopupContainer={t => t}>
+                <div className="action-outlined-ellipsis-icon">
+                    <OutlinedEllipsis />
+                </div>
+            </Dropdown>
+        </StyledFlex>
+    );
+};
+const ActionDemo1 = ({title}: any) => {
+
+    return (
+        <Flex align="center" justify="space-between" gap={8}>
+            <span>{title}</span>
+            <Flex align="center" justify="space-between" gap={8}>
+                <StyledActionIcon>
+                    <OutlinedPlusNew />
+                </StyledActionIcon>
+                <StyledActionIcon>
+                    <OutlinedEdit />
+                </StyledActionIcon>
+            </Flex>
+        </Flex>
+    );
+};
+const ActionTree = () => {
+    const items: any = [
+        {
+            key: '1',
+            label: <div style={{width: 40}}>操作1</div>,
+        },
+        {
+            key: '2',
+            label: <div>操作2</div>,
+        },
+        {
+            key: '3',
+            label: <div>操作3</div>,
+        },
+    ];
+    const treeData = [
+        {
+            title: <ActionDemo title="一级树" items={items} />,
+            key: '0-0',
+            children: [
+                {
+                    title: <ActionDemo title="二级树" items={items} />,
+                    key: '0-0-0',
+                    children: [
+                        {
+                            title: <ActionDemo title="三级树" items={items} />,
+                            key: '0-0-0-0',
+                            isLeaf: false,
+                        },
+                        {title: '基础树', key: '0-0-0-1'},
+                    ],
+                },
+            ],
+        },
+    ];
+    const onSelect = (selectedKeys: React.Key[], info: any) => {
+        console.log('selected', selectedKeys, info);
+    };
+
+    const onCheck: TreeProps['onCheck'] = (checkedKeys, info) => {
+        console.log('onCheck', checkedKeys, info);
+    };
+    return (
+        <Tree
+            defaultExpandedKeys={['0-0-0']}
+            defaultSelectedKeys={['0-0-0']}
+            defaultCheckedKeys={['0-0-0']}
+            onSelect={onSelect}
+            onCheck={onCheck}
+            treeData={treeData}
+        />
+    );
+};
+
+
+export const Demo = () => {
+    const treeData = [
+        {
+            title: '一级树',
+            key: '0-0',
+            children: [
+                {
+                    title: '二级树',
+                    key: '0-0-0',
+                    children: [
+                        {
+                            title: '三级树',
+                            key: '0-0-0-0',
+                            isLeaf: false,
+                        },
+                        {title: '基础树', key: '0-0-0-1'},
+                    ],
+                },
+            ],
+        },
+    ];
+
+    const treeData1 = [
+        {
+            title: '一级树',
+            key: '0-0',
+            icon: <OutlinedSearchDocument />,
+            children: [
+                {
+                    title: '二级树',
+                    key: '0-0-0',
+                    icon: <OutlinedSearchDocument />,
+                    children: [
+                        {
+                            title: '三级树',
+                            key: '0-0-0-0',
+                            isLeaf: false,
+                            icon: <OutlinedSearchDocument />,
+                        },
+                        {title: '基础树', key: '0-0-0-1', icon: <OutlinedSearchDocument />},
+                    ],
+                },
+            ],
+        },
+    ];
+
+    const treeDataAction = [
+        {
+            title: <ActionDemo1 title="一级树" />,
+            key: '0-0',
+            children: [
+                {
+                    title: <ActionDemo1 title="二级树" />,
+                    key: '0-0-0',
+                    children: [
+                        {
+                            title: <ActionDemo1 title="三级树" />,
+                            key: '0-0-0-0',
+                            isLeaf: false,
+                        },
+                        {title: '基础树', key: '0-0-0-1'},
+                    ],
+                },
+                {
+                    title: <ActionDemo1 title="二级树2" />,
+                    key: '0-0-1',
+                    children: [
+                        {
+                            title: <ActionDemo1 title="三级树1" />,
+                            key: '0-0-1-0',
+                        },
+                        {title: <ActionDemo1 title="基础树" />, key: '0-0-1-1'},
+                    ],
+                },
+            ],
+        },
+    ];
+    const treeData2 = [
+        {
+            title: '一级树',
+            key: '0-0',
+            children: [
+                {
+                    title: '二级树',
+                    key: '0-0-0',
+                    children: [
+                        {
+                            title: '三级树',
+                            key: '0-0-0-0',
+                            isLeaf: false,
+                        },
+                        {title: '基础树', key: '0-0-0-1'},
+                    ],
+                },
+                {
+                    title: '二级树2',
+                    key: '0-0-1',
+                    children: [
+                        {
+                            title: '三级树',
+                            key: '0-0-1-0',
+                        },
+                        {title: '基础树', key: '0-0-1-1'},
+                    ],
+                },
+            ],
+        },
+        {
+            title: '一级树',
+            key: '0-1',
+            children: [
+                {
+                    title: '二级树',
+                    key: '0-1-0',
+                    children: [
+                        {
+                            title: '三级树',
+                            key: '0-1-0-0',
+                        },
+                        {title: '基础树', key: '0-1-0-1'},
+                    ],
+                },
+                {
+                    title: '二级树2',
+                    key: '0-1-1',
+                    children: [
+                        {
+                            title: '三级树',
+                            key: '0-1-1-0',
+                        },
+                        {title: '基础树', key: '0-1-1-1'},
+                    ],
+                },
+            ],
+        },
+    ];
+
+    const Demo = () => {
+        const onSelect = (selectedKeys: React.Key[], info: any) => {
+            console.log('selected', selectedKeys, info);
+        };
+
+        const onCheck: TreeProps['onCheck'] = (checkedKeys, info) => {
+            console.log('onCheck', checkedKeys, info);
+        };
+
+        return (
+            <BrandProvider>
+                <Divider>基础树</Divider>
+                <Tree
+                    defaultExpandedKeys={['0-0-0']}
+                    defaultSelectedKeys={['0-0-0']}
+                    defaultCheckedKeys={['0-0-0']}
+                    onSelect={onSelect}
+                    onCheck={onCheck}
+                    treeData={treeData}
+                />
+                <Divider>带图标树</Divider>
+                <Tree
+                    defaultExpandedKeys={['0-0-0']}
+                    defaultSelectedKeys={['0-0-0']}
+                    defaultCheckedKeys={['0-0-0']}
+                    onSelect={onSelect}
+                    onCheck={onCheck}
+                    treeData={treeData1}
+                    showIcon
+                />
+                <Divider>带复选树</Divider>
+                <Tree
+                    defaultExpandedKeys={['0-0-0']}
+                    defaultSelectedKeys={['0-0-0']}
+                    defaultCheckedKeys={['0-0-0']}
+                    onSelect={onSelect}
+                    onCheck={onCheck}
+                    treeData={treeData}
+                    checkable
+                />
+                <Divider>带复选图标树</Divider>
+                <Flex gap={32}>
+                    <div style={{width: 360}}>
+                        <Tree
+                            defaultExpandedKeys={['0-0-0']}
+                            defaultSelectedKeys={['0-0-0']}
+                            defaultCheckedKeys={['0-0-0']}
+                            onSelect={onSelect}
+                            onCheck={onCheck}
+                            treeData={treeData1}
+                            showIcon
+                            checkable
+                        />
+                    </div>
+                    <div style={{width: 360}}>
+                        <Tree
+                            defaultExpandedKeys={['0-0-0']}
+                            defaultSelectedKeys={['0-0-0']}
+                            defaultCheckedKeys={['0-0-0']}
+                            onSelect={onSelect}
+                            onCheck={onCheck}
+                            treeData={treeData1}
+                            showIcon
+                            checkable
+                            disabled
+                        />
+                    </div>
+                </Flex>
+                <Divider>带气泡操作树</Divider>
+                <div style={{width: 500}}>
+                    <ActionTree />
+                </div>
+                <Divider>带拖拽操作树</Divider>
+                <Tree
+                    defaultExpandedKeys={['0-0-0']}
+                    defaultSelectedKeys={['0-0-0']}
+                    defaultCheckedKeys={['0-0-0']}
+                    onSelect={onSelect}
+                    onCheck={onCheck}
+                    treeData={treeData}
+                    draggable
+                />
+                <Divider>带图标操作树</Divider>
+                <Tree
+                    defaultExpandedKeys={['0-0-0']}
+                    defaultSelectedKeys={['0-0-0']}
+                    defaultCheckedKeys={['0-0-0']}
+                    onSelect={onSelect}
+                    onCheck={onCheck}
+                    treeData={treeDataAction}
+                    showIcon
+                />
+                <Divider>连接线树</Divider>
+                <Tree
+                    defaultExpandedKeys={['0-0-0', '0-1-0']}
+                    defaultSelectedKeys={['0-0-0']}
+                    defaultCheckedKeys={['0-0-0']}
+                    onSelect={onSelect}
+                    onCheck={onCheck}
+                    treeData={treeData2}
+                    showLine
+                />
+            </BrandProvider>
+        );
+    };
+
+    return <Demo />;
+};
+
 
 export const SizeDemo = () => {
     const treeData = [
@@ -82,62 +452,6 @@ export const SizeDemo = () => {
                     treeData={treeData}
                 />
             </>
-        );
-    };
-
-    return <Demo />;
-};
-
-
-export const Demo = () => {
-    const treeData = [
-        {
-            title: 'parent 1',
-            key: '0-0',
-            children: [
-                {
-                    title: 'parent 1-0',
-                    key: '0-0-0',
-                    children: [
-                        {
-                            title: 'leaf',
-                            key: '0-0-0-0',
-                            disableCheckbox: true,
-                        },
-                        {
-                            title: 'leaf',
-                            key: '0-0-0-1',
-                            disabled: true,
-                        },
-                    ],
-                },
-                {
-                    title: 'parent 1-1',
-                    key: '0-0-1',
-                    children: [{title: <span>sss</span>, key: '0-0-1-0'}],
-                },
-            ],
-        },
-    ];
-
-    const Demo = () => {
-        const onSelect = (selectedKeys: React.Key[], info: any) => {
-            console.log('selected', selectedKeys, info);
-        };
-
-        const onCheck: TreeProps['onCheck'] = (checkedKeys, info) => {
-            console.log('onCheck', checkedKeys, info);
-        };
-
-        return (
-            <Tree
-                defaultExpandedKeys={['0-0-0']}
-                defaultSelectedKeys={['0-0-0']}
-                defaultCheckedKeys={['0-0-0']}
-                onSelect={onSelect}
-                onCheck={onCheck}
-                treeData={treeData}
-            />
         );
     };
 

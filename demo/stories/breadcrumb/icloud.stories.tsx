@@ -1,47 +1,26 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
 import {BrowserRouter, Link} from 'react-router-dom';
-import Menu from '@osui/menu';
+import {OutlinedHome, OutlinedDown} from 'acud-icon';
+import Dropdown from '@osui/dropdown';
 import TextOverflowTooltip from '@osui/text-overflow-tooltip';
 import BrandProvider from '@osui/brand-provider';
 import Divider from '@osui/divider';
-import Markdown from '@osui/markdown';
+import Space from '@osui/space';
 import Breadcrumb from '@osui/breadcrumb';
 
 export default {
-    title: '导航/面包屑 Breadcrumb',
-};
-
-export const Antd5Demo = () => {
-    return (
-        <BrandProvider>
-            <h1>新用法</h1>
-            <p>
-                产品页面层级较多，用户路径较长，无法仅通过使用返回按钮解决回到首页/列表页诉求，建议层级≥3时全局使用，用户可通过面包屑返回/到达目标页面
-            </p>
-            <p>
-                如果需要蓝色hover，放个<code>a</code>标签
-            </p>
-            <Breadcrumb
-                separator=">"
-                items={[
-                    {title: '一级页面名称', href: ''},
-                    {title: '二级页面名称', href: ''},
-                    {title: '三级页面名称', href: ''},
-                    {title: '四级页面名称', href: ''},
-                    {title: '末级页面名称'},
-                ]}
-            />
-            <br />
-        </BrandProvider>
-    );
+    title: '导航/[new_dev]面包屑 Breadcrumb',
 };
 
 export const Demo = () => {
     const menuItems = [
         {
             key: '1',
-            label: '下拉菜单',
+            label: (
+                <a target="_blank" rel="noopener noreferrer" href="/">
+                    下拉菜单
+                </a>
+            ),
         },
         {
             key: '2',
@@ -66,7 +45,6 @@ export const Demo = () => {
             </p>
             <Divider>基础面包屑</Divider>
             <Breadcrumb
-                separator=">"
                 items={[
                     {title: '首页'},
                     {title: <a href="">上级页面</a>},
@@ -76,26 +54,27 @@ export const Demo = () => {
             />
             <Divider>带前置icon面包屑</Divider>
             <Breadcrumb
-                separator=">"
                 items={[
-                    {title: <div>+ 首页</div>},
-                    {title: <a href="">@ 上级页面</a>},
-                    {title: <div>@ 上级页面</div>, href: ''},
+                    {title: <Space size={4} align="center"><OutlinedHome /> 首页</Space>},
+                    {title: <Space size={4} align="center"><OutlinedHome /> 上级页面</Space>, href: ''},
+                    {title: <Space size={4} align="center"><OutlinedHome /> 上级页面</Space>, href: ''},
                     {title: '当前页面'},
                 ]}
             />
             <Divider>带下拉的面包屑</Divider>
             <Breadcrumb
+                itemRender={item => {
+                    return <span>{item.title}</span>;
+            }}
                 items={[
                     {title: '首页'},
-                    {title: <a href="">上级页面</a>, menu: {items: menuItems}},
-                    {title: '上级页面', href: '', menu: {items: menuItems}},
+                    {title: <Dropdown menu={{items: menuItems}}><a>上级页面1 <OutlinedDown /></a></Dropdown>},
+                    {title: <Dropdown menu={{items: menuItems}}><a>上级页面2 <OutlinedDown /></a></Dropdown>},
                     {title: '当前页面'},
                 ]}
             />
             <Divider>自定义分隔符的面包屑</Divider>
             <Breadcrumb
-                separator=">"
                 items={[
                     {title: '首页'},
                     {title: <a href="">上级页面</a>},
@@ -114,7 +93,30 @@ export const Demo = () => {
             />
 
             <Divider>不同大小</Divider>
+            <p>large</p>
             <Breadcrumb
+                size="large"
+                items={[
+                    {title: '首页'},
+                    {title: <a href="">上级页面</a>},
+                    {title: '上级页面', href: ''},
+                    {title: '当前页面'},
+                ]}
+            />
+            <p />
+            <p>Medium</p>
+            <Breadcrumb
+                items={[
+                    {title: '首页'},
+                    {title: <a href="">上级页面</a>},
+                    {title: '上级页面', href: ''},
+                    {title: '当前页面'},
+                ]}
+            />
+            <p />
+            <p>Small</p>
+            <Breadcrumb
+                size="small"
                 items={[
                     {title: '首页'},
                     {title: <a href="">上级页面</a>},
@@ -123,23 +125,7 @@ export const Demo = () => {
                 ]}
             />
             <br />
-            <Breadcrumb
-                items={[
-                    {title: '首页'},
-                    {title: <a href="">上级页面</a>},
-                    {title: '上级页面', href: ''},
-                    {title: '当前页面'},
-                ]}
-            />
-            <br />
-            <Breadcrumb
-                items={[
-                    {title: '首页'},
-                    {title: <a href="">上级页面</a>},
-                    {title: '上级页面', href: ''},
-                    {title: '当前页面'},
-                ]}
-            />
+
             <Divider>面包屑超长</Divider>
             <p>文案超长</p>
             <Breadcrumb
@@ -185,6 +171,30 @@ export const Demo = () => {
                     },
                 ]}
             />
+        </BrandProvider>
+    );
+};
+
+export const Antd5Demo = () => {
+    return (
+        <BrandProvider>
+            <h1>新用法</h1>
+            <p>
+                产品页面层级较多，用户路径较长，无法仅通过使用返回按钮解决回到首页/列表页诉求，建议层级≥3时全局使用，用户可通过面包屑返回/到达目标页面
+            </p>
+            <p>
+                如果需要蓝色hover，放个<code>a</code>标签
+            </p>
+            <Breadcrumb
+                items={[
+                    {title: '一级页面名称', href: ''},
+                    {title: '二级页面名称', href: ''},
+                    {title: '三级页面名称', href: ''},
+                    {title: '四级页面名称', href: ''},
+                    {title: '末级页面名称'},
+                ]}
+            />
+            <br />
         </BrandProvider>
     );
 };
@@ -281,54 +291,55 @@ export const Routes = () => {
     );
 };
 
-export const Dropdown = () => {
-    const menu = (
-        <Menu style={{maxHeight: 300, overflow: 'auto'}}>
-            <Menu.Item>
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="http://www.alipay.com/"
-                >
-                    General
-                </a>
-            </Menu.Item>
-            <Menu.Item>
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="http://www.taobao.com/"
-                >
-                    Layout
-                </a>
-            </Menu.Item>
-            <Menu.Item>
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="http://www.tmall.com/"
-                >
-                    Navigation
-                </a>
-            </Menu.Item>
-        </Menu>
-    );
+export const DropdownDemo = () => {
+    const menuItems = [
+        {
+          key: '1',
+          label: (
+              <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
+                  General
+              </a>
+          ),
+        },
+        {
+          key: '2',
+          label: (
+              <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+                  Layout
+              </a>
+          ),
+        },
+        {
+          key: '3',
+          label: (
+              <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                  Navigation
+              </a>
+          ),
+        },
+      ];
 
     return (
         <>
-            <p>注意：箭头icon目前无法覆盖</p>
-            <Breadcrumb>
-                <Breadcrumb.Item>
-                    <a href="">Ant Design</a>
-                </Breadcrumb.Item>
-                <Breadcrumb.Item>
-                    <a href="">Component</a>
-                </Breadcrumb.Item>
-                <Breadcrumb.Item overlay={menu}>
-                    <a href="">General</a>
-                </Breadcrumb.Item>
-                <Breadcrumb.Item>Button</Breadcrumb.Item>
-            </Breadcrumb>
+            <p>注意：箭头icon目前无法覆盖menus里面原始的icon</p>
+            <p>如果需要覆盖的话，需要传入Dropdown组件</p>
+            <Breadcrumb
+                items={[
+                {
+                    title: 'Ant Design',
+                },
+                {
+                    title: <a href="">Component</a>,
+                },
+                {
+                    title: <a href="">General</a>,
+                    menu: {items: menuItems},
+                },
+                {
+                    title: <Dropdown menu={{items: menuItems}}><a>Button <OutlinedDown /></a></Dropdown>,
+                },
+                ]}
+            />
         </>
     );
 };
@@ -367,15 +378,6 @@ export const EllipsisText = () => {
 };
 
 export const Api = () => {
-    const content = `
-| 参数 | 说明 | 类型 | 默认值
-| --- | --- | --- | --- |
-| showEllipsis | 是否展示 ... 当为true时，超过maxItemLength个数时，会展示... | boolean, undefined | undefined |
-| maxItemLength | 做多显示的面包屑个数 | number, undefined | 5 |
-| headItemLength | 头部显示面包屑个数 | number, undefined | 2 |
-| tailItemLength | 尾部显示面包屑个数 | number, undefined | 2 |
-
-    `;
     return (
         <>
             <a
@@ -386,7 +388,6 @@ export const Api = () => {
                 Antd Breadcrumb API
             </a>
             <h2>新增参数</h2>
-            <Markdown content={content} />
         </>
     );
 };

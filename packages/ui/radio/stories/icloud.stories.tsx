@@ -6,7 +6,7 @@ import IconAComponent from './iconA';
 import IconBComponent from './iconB';
 
 export default {
-    title: '数据录入/单选框 Radio',
+    title: '数据录入/[new_dev]单选框 Radio',
 };
 
 const Group = Radio.Group;

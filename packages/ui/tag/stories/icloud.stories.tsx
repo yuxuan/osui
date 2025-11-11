@@ -11,7 +11,7 @@ import BrandProvider from '@osui/brand-provider';
 import Tag from '../src';
 
 export default {
-    title: '数据展示/标签 Tag',
+    title: '数据展示/[new_dev]标签 Tag',
 };
 
 export const Demo = () => {
@@ -218,7 +218,7 @@ export const OldDemo = () => {
             <Tag color="#87d068">#87d068</Tag>
             <br />
             <br />
-            <Tag color="blue" solid>标签</Tag>
+            <Tag color="var(--theme-primary-color)">标签</Tag>
             <Tag color="green" solid>标签</Tag>
             <Tag color="yellow" solid>标签</Tag>
             <Tag color="red" solid>标签</Tag>
@@ -251,7 +251,7 @@ export const OldDemo = () => {
     );
 };
 
-const StyledInput = styled(Input)`
+const StyledInput = styled(Input as any)`
     width: 60px;
 `;
 
@@ -263,12 +263,12 @@ export const Add = () => {
     const [editInputIndex, setEditInputIndex] = useState(-1);
 
     const inputFocus = useCallback(
-        element => element && element.focus(),
+        (element: HTMLInputElement | null) => element && element.focus(),
         []
     );
 
     const handleClose = useCallback(
-        removedTag => {
+        (removedTag: any) => {
             const localtags = tags.filter(tag => tag !== removedTag);
             console.log(localtags);
             setTags(localtags);
@@ -284,7 +284,7 @@ export const Add = () => {
     );
 
     const handleInputChange = useCallback(
-        e => {
+        (e: any) => {
             setInputValue(e.target.value);
         },
         []
@@ -302,7 +302,7 @@ export const Add = () => {
     );
 
     const handleEditInputChange = useCallback(
-        e => {
+        (e: any) => {
             setEditInputValue(e.target.value);
         },
         []
@@ -400,7 +400,7 @@ export const Checkable = () => {
             selectedTags: ['Books'],
         };
 
-        handleChange(tag, checked) {
+        handleChange(tag: any, checked: any) {
             const {selectedTags} = this.state;
             const nextSelectedTags = checked ? [...selectedTags, tag] : selectedTags.filter(t => t !== tag);
             console.log('You are interested in: ', nextSelectedTags);
