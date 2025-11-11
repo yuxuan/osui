@@ -9,13 +9,17 @@ const AntdRadioGroup = AntdRadio.Group;
 const clsPrefix = 'osui-radio';
 
 export type RadioProps = AntdRadioProps;
-export type RadioGroupProps = AntdRadioGroupProps & {buttonType?: 'strong' | 'default'};
+export type RadioGroupProps = AntdRadioGroupProps & {buttonType?: 'strong' | 'default', vertical?: boolean};
 
-const RadioGroup = React.forwardRef<HTMLDivElement, RadioGroupProps>(({className, buttonType, ...restProps}, ref) => {
+const RadioGroup = React.forwardRef<HTMLDivElement, RadioGroupProps>(({className, buttonType, vertical, ...restProps}, ref) => {
     return (
         <AntdRadioGroup
             ref={ref}
-            className={classNames(`${clsPrefix}-group`, {[`${clsPrefix}-group-${buttonType}`]: buttonType}, className)}
+            className={classNames(
+                `${clsPrefix}-group`,
+                {[`${clsPrefix}-group-${buttonType}`]: buttonType},
+                {[`${clsPrefix}-group-vertical`]: vertical},
+                className)}
             {...restProps}
         />
     );
@@ -25,6 +29,7 @@ export interface RadioInterface extends React.ForwardRefExoticComponent<RadioPro
     Group: typeof RadioGroup;
     Button: typeof AntdRadio.Button;
     RichButton: typeof RichRadioButton;
+    CardButton: typeof CardRadioButton;
 }
 
 const RefRadio: React.ForwardRefRenderFunction<CheckboxRef, AntdRadioProps> = ({className, ...restProps}, ref) => {
@@ -38,6 +43,12 @@ interface RichRadioProps extends React.ComponentProps<typeof Radio.Button>{
     flag?: React.ReactNode;
     style?: React.CSSProperties;
     icon?: React.ReactNode;
+}
+
+interface CardRadioProps extends React.ComponentProps<typeof Radio.Button>{
+    description?: string;
+    flag?: React.ReactNode;
+    style?: React.CSSProperties;
 }
 
 function RichRadioButton(props: RichRadioProps) {
@@ -78,10 +89,41 @@ function RichRadioButton(props: RichRadioProps) {
         </Radio.Button>
     );
 }
+function CardRadioButton(props: CardRadioProps) {
+    const {flag, ...restProps} = props;
+    return (
+        <Radio.Button
+            {...restProps}
+            className={classNames(`${clsPrefix}-card-radio-button`, props.className)}
+        >
+            <div style={{display: 'flex', alignItems: 'center'}}>
+                <div>
+                    {/* 有description时，children作为title */}
+                    <div className={classNames({[`${clsPrefix}-card-radio-button-title`]: props.description})}>
+                        {props.children}
+                    </div>
+                    {props.description && (
+                        <>
+                            <div style={{height: 4}} />
+                            <div className={classNames(`${clsPrefix}-card-radio-button-description`, props.className)}>
+                                {props.description}
+                            </div>
+                        </>
+                    )
+                    }
+                </div>
+            </div>
+            {
+                flag && <span className={`${clsPrefix}-card-radio-button-new-tag`}>{flag}</span>
+            }
+        </Radio.Button>
+    );
+}
 
 Radio.Group = RadioGroup;
 Radio.Button = AntdRadio.Button;
 Radio.RichButton = RichRadioButton;
+Radio.CardButton = CardRadioButton;
 
 export type {RadioChangeEvent} from 'antd';
 export default Radio;
