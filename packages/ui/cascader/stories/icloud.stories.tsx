@@ -69,6 +69,7 @@ export const Demo = () => {
                 options={options}
                 onChange={onChange}
                 placeholder="请选择"
+                style={{width: 240}}
             />
             <p></p>
             <p>报错</p>
@@ -76,6 +77,7 @@ export const Demo = () => {
                 name="demo"
                 labelAlign="left"
                 wrapperCol={{span: 12}}
+                style={{width: 240}}
             >
                 <Form.Item
                     label="报错"
@@ -89,6 +91,7 @@ export const Demo = () => {
                         onChange={onChange}
                         placeholder="请选择"
                         showSearch
+                        style={{width: 240}}
                     />
                 </Form.Item>
             </Form>
@@ -99,6 +102,7 @@ export const Demo = () => {
                 options={options}
                 onChange={onChange}
                 placeholder="请选择"
+                style={{width: 240}}
             />
             <p></p>
             <h3>可搜索级联选择器</h3>
@@ -108,6 +112,7 @@ export const Demo = () => {
                 onChange={onChange}
                 placeholder="请选择"
                 showSearch
+                style={{width: 240}}
             />
             <p></p>
             <p>报错</p>
@@ -128,6 +133,7 @@ export const Demo = () => {
                         onChange={onChange}
                         placeholder="请选择"
                         showSearch
+                        style={{width: 240}}
                     />
                 </Form.Item>
             </Form>
@@ -139,6 +145,7 @@ export const Demo = () => {
                 onChange={onChange}
                 placeholder="请选择"
                 showSearch
+                style={{width: 240}}
             />
             <p></p>
             <h3>多选级联选择器</h3>
@@ -150,6 +157,7 @@ export const Demo = () => {
                 placeholder="请选择"
                 showCheckedStrategy={Cascader.SHOW_CHILD}
                 showSearch
+                style={{width: 240}}
             />
             <p></p>
             <p>超出限制</p>
@@ -162,6 +170,7 @@ export const Demo = () => {
                 showSearch
                 maxTagCount="responsive"
                 maxTagTextLength={7}
+                style={{width: 240}}
             />
         </BrandProvider>
     );

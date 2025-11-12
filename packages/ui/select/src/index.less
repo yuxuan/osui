@@ -73,12 +73,6 @@
                 background: var(--theme-component-bg);
             }
         }
-
-        &.@{ant-prefix}-select-open .@{ant-prefix}-select-selector {
-            background: var(--theme-component-bg);
-            border: 1px solid var(--theme-primary-color-hover);
-            box-shadow: 0 0 0 0 var(--theme-border-focus-color);
-        }
     }
 
     // 只有在arrow后面时，偏移30px
@@ -103,10 +97,10 @@
         }
     }
 
-    &.@{ant-prefix}-select-focused:not(.@{ant-prefix}-select-status-error) {
-        .@{ant-prefix}-select-selector {
-            box-shadow: 0 0 0 1px var(--brand-color-light-active) !important;
-        }
+    // 选中时边框
+    &.@{ant-prefix}-select-focused:not(&.@{ant-prefix}-select-status-error):not(&.@{ant-prefix}-select-disabled)
+    .@{ant-prefix}-select-selector {
+        box-shadow: 0 0 0 1px var(--brand-color-light-active);
     }
 }
 

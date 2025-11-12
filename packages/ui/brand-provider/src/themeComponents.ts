@@ -158,7 +158,6 @@ export const components: ThemeConfig['components'] = {
         borderRadius: parseInt(acudMatricsTokens['--radius-xs'], 10),
         boxShadowSecondary: acudMatricsTokens['--drop-shadow-m'],
         fontSize: parseInt(acudMatricsTokens['--font-size-2xs'], 10),
-        lineHeight: parseInt(acudMatricsTokens['--font-height-2xs'], 10) / 10,
     },
     Tabs: {
         fontSize: 14,

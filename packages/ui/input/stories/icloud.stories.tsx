@@ -1,3 +1,4 @@
+import React from 'react';
 import {version} from 'antd';
 import Divider from '@osui/divider';
 import AutoComplete from '@osui/auto-complete';
@@ -6,7 +7,6 @@ import BrandProvider from '@osui/brand-provider';
 import Button from '@osui/button';
 import Form from '@osui/form';
 import {IconSearchOutlined} from '@osui/icons';
-import {version} from 'antd';
 import Cascader from '@osui/cascader';
 import Gap from '@osui/gap';
 import Select from '@osui/select';
@@ -262,11 +262,8 @@ export const Search = () => {
             <p>图标在前</p>
             <Input
                 allowClear
-                prefix={<IconSearchOutlined />}
-                style={{
-                    width: 240,
-                    color: 'var(--icon-color-disabled)',
-                }}
+                prefix={<IconSearchOutlined style={{color: 'var(--icon-color-disabled)'}} />}
+                style={{width: 240}}
                 placeholder="请搜索"
             />
             <br />

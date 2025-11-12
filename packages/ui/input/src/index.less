@@ -133,7 +133,6 @@
 // 表单内报错样式覆盖
 .@{ant-prefix}-form-item-has-error {
     .@{ant-prefix}-input-status-error:not(.@{ant-prefix}-input-disabled) {
-        color: var(--text-color-disabled);
         border-color: var(--error-color);
         background: var(--error-color-light-hover);
 
@@ -202,6 +201,10 @@
                     border: 1px solid var(--brand-color);
                     box-shadow: 0 0 0 1px var(--brand-color-light-active);
                     z-index: 2;
+                }
+
+                .@{ant-prefix}-select-selector {
+                    box-shadow: none !important;
                 }
             }
         }
