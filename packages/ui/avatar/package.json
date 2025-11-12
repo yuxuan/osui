@@ -1,6 +1,6 @@
 {
     "name": "@osui/avatar",
-    "version": "4.0.0-beta.14",
+    "version": "4.0.0-beta.15",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -29,10 +29,10 @@
     "devDependencies": {
         "@ant-design/icons": "^5.0.0",
         "@babel/cli": "^7.10.5",
-        "@osui/brand-provider": "^4.0.0-beta.14",
-        "@osui/icloud-theme": "^4.0.0-beta.14",
-        "@osui/icons": "^4.0.0-beta.14",
-        "@osui/tooltip": "^4.0.0-beta.14",
+        "@osui/brand-provider": "^4.0.0-beta.15",
+        "@osui/icloud-theme": "^4.0.0-beta.15",
+        "@osui/icons": "^4.0.0-beta.15",
+        "@osui/tooltip": "^4.0.0-beta.15",
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",
         "@storybook/addon-interactions": "^7.5.1",
