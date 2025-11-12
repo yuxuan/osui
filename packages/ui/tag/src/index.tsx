@@ -54,7 +54,7 @@ const Tag = React.forwardRef<HTMLSpanElement, TagProps>((props, ref) => {
         patchedIcon = <IconCloseOutlined />;
     }
     const curSize = sizeMap[size] || sizeMap.default;
-    const curColor = props.color && (colorMap[props.color] ? colorMap[props.color] : props.color);
+    const curColor = colorMap[color] ? colorMap[color] : color;
     const classnames = classNames(
         clsPrefix,
         {[`${clsPrefix}-solid`]: solid},
@@ -83,7 +83,6 @@ const CheckableTag: React.FC<CheckableTagProps> = props => {
 
 const TagTab = (props: CheckableTagProps) => {
     const {disabled, onChange, className, ...restProps} = props;
-
     const classnames = classNames(
         `${clsPrefix}-tagtab`,
         {[`${clsPrefix}-disabled`]: disabled},
@@ -100,6 +99,7 @@ const TagTab = (props: CheckableTagProps) => {
                 }
                 onChange?.(checked);
             }}
+            disabled={disabled}
             {...restProps}
         />
     );

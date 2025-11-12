@@ -4,8 +4,8 @@
     @iterations: 10;
     .loop (@i) when (@i > 0) {
         &.@{osui-cascader-class-prefix}-menu-@{i} .@{ant-prefix}-cascader-menu {
-            height: ~"calc(@{i} * 30px + 8px)";
-            min-height: ~"calc(@{i} * 30px + 8px)";
+            height: ~"calc(@{i} * 32px + 10px)";
+            min-height: ~"calc(@{i} * 32px + 10px)";
         }
         .loop(@i - 1);
     }
@@ -27,33 +27,55 @@
         right: 10px;
     }
 
+    // hover时边框
+    &:not(.@{ant-prefix}-select-focused):not(.@{ant-prefix}-select-status-error):not(.@{ant-prefix}-select-disabled)
+    .@{ant-prefix}-select-selector:hover {
+        border-color: var(--brand-color);
+    }
+
+    // 选中时边框
+    &.@{ant-prefix}-select-focused:not(&.@{ant-prefix}-select-status-error):not(&.@{ant-prefix}-select-disabled)
+    .@{ant-prefix}-select-selector {
+        border-color: var(--brand-color-active);
+        box-shadow: 0 0 0 1px var(--brand-color-light-active);
+    }
+
     // ==================== Menu ====================
     &-menu {
-        .minHeightMixin();
+        color: var(--text-color-primary);
+        font-weight: var(--font-weight-regular);
 
-        &.@{ant-prefix}-cascader-menu,
-        &.@{ant-prefix}-cascader-menus .@{ant-prefix}-cascader-menu {
-            min-width: 112px;
+        &:not(.@{ant-prefix}-select-dropdown-empty) {
+            .minHeightMixin();
         }
 
         .@{ant-prefix}-cascader-menu-item:not(.@{ant-prefix}-cascader-menu-item-disabled):hover {
-            background-color: var(--brand-color-1);
+            background-color: var(--component-color-grayB1);
         }
 
         .@{ant-prefix}-cascader-menu-item-active:not(.@{ant-prefix}-cascader-menu-item-disabled),
         .@{ant-prefix}-cascader-menu-item-active:not(.@{ant-prefix}-cascader-menu-item-disabled):hover {
-            color: var(--theme-primary-color);
+            color: var(--brand-color-active);
+            background-color: var(--component-color-grayB2);
+            font-weight: var(--font-weight-medium);
 
             .@{ant-prefix}-cascader-menu-item-expand-icon {
-                color: var(--theme-primary-color);
+                color: var(--brand-color-active);
             }
         }
 
         .@{ant-prefix}-cascader-menu-item-expand .@{ant-prefix}-cascader-menu-item-expand-icon,
         .@{ant-prefix}-cascader-menu-item-loading-icon {
+            display: flex;
+            align-items: center;
             right: 7px;
-            color: var(--theme-icon-color);
+            color: var(--text-color-primary);
             font-size: 14px;
+        }
+
+        // 联想关键词
+        .@{ant-prefix}-cascader-menu-item-keyword {
+            color: var(--text-brand-color);
         }
     }
     // === 转动arrow ===
@@ -66,6 +88,28 @@
         svg {
             font-size: 14px;
             transition: var(--select-arrow-transition);
+        }
+    }
+}
+
+// 表单内报错样式覆盖
+.@{ant-prefix}-form-item-has-error {
+    .@{ant-prefix}-select-status-error:not(.@{ant-prefix}-select-disabled) {
+        .@{ant-prefix}-select-selector {
+            border-color: var(--error-color);
+            background: var(--error-color-light-hover);
+
+            &:hover {
+                border-color: var(--error-color-hover);
+                background: var(--error-color-light-hover);
+            }
+        }
+
+        &.@{ant-prefix}-select-focused .@{ant-prefix}-select-selector {
+            color: var(--text-color-primary);
+            background: var(--bg-color-white);
+            border-color: var(--error-color-active) !important;
+            box-shadow: 0 0 0 1px var(--error-color-light-active) !important;
         }
     }
 }

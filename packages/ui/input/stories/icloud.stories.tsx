@@ -1,3 +1,4 @@
+import React from 'react';
 import {version} from 'antd';
 import Divider from '@osui/divider';
 import AutoComplete from '@osui/auto-complete';
@@ -157,23 +158,19 @@ export const Demo = () => {
                     <Select
                         className="input-group-addon"
                         defaultValue="http://"
-                        options={[
-                            {value: 'http://', label: 'http://'},
-                            {value: 'https://', label: 'https://'},
-                        ]}
-                    />
+                    >
+                        <Option value="http://" label="http://" />
+                        <Option value="https://" label="https://" />
+                    </Select>
                 }
                 addonAfter={
                     <Select
                         className="input-group-addon"
                         defaultValue=".com"
-                        options={
-                            [
-                                {value: '.com', label: '.com'},
-                                {value: '.cn', label: '.cn'},
-                            ]
-                        }
-                    />
+                    >
+                        <Option value=".com" label=".com" />
+                        <Option value=".cn" label=".cn" />
+                    </Select>
                 }
                 defaultValue="mysite"
             />
@@ -265,11 +262,8 @@ export const Search = () => {
             <p>图标在前</p>
             <Input
                 allowClear
-                prefix={<IconSearchOutlined />}
-                style={{
-                    width: 240,
-                    color: 'var(--icon-color-disabled)',
-                }}
+                prefix={<IconSearchOutlined style={{color: 'var(--icon-color-disabled)'}} />}
+                style={{width: 240}}
                 placeholder="请搜索"
             />
             <br />

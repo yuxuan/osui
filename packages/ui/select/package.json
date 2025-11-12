@@ -85,10 +85,12 @@
     },
     "dependencies": {
         "@huse/derived-state": "^1.1.1",
-        "@osui/brand-provider": "^4.0.0-beta.14",
-        "@osui/popover": "^4.0.0-beta.14",
-        "@osui/tag": "^4.0.0-beta.14",
-        "@osui/tooltip": "^4.0.0-beta.14",
+        "@osui/brand-provider": "^4.0.0-beta.10",
+        "@osui/form": "^4.0.0-beta.10",
+        "@osui/input": "^4.0.0-beta.10",
+        "@osui/popover": "^4.0.0-beta.10",
+        "@osui/tag": "^4.0.0-beta.10",
+        "@osui/tooltip": "^4.0.0-beta.10",
         "classnames": "^2.3.1",
         "hoist-non-react-statics": "^3.3.2"
     },

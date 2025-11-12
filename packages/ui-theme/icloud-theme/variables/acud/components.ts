@@ -667,7 +667,7 @@ export default {
     '--tooltip-bg': 'var(--gray-color-1)',
     '--tooltip-color': 'var(--theme-text-color)',
     '--tooltip-min-height': '30px',
-    '--tooltip-inner-padding': '10px 12px',
+    '--tooltip-inner-padding': '8px 10px',
     '--transfer-disabled-bg': 'var(--disabled-bg)',
     '--transfer-item-hover-bg': 'var(--item-hover-bg)',
     '--transfer-item-selected-hover-bg': '#dcf4ff',
