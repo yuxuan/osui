@@ -27,8 +27,7 @@
         "*.md"
       ],
       "verifyAccess": false,
-      "verifyRegistry": false,
-      "distTag": "beta"
+      "verifyRegistry": false
     }
   }
 }
