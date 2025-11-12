@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.17](https://github.com/yuxuan/osui/compare/v4.0.0-beta.16...v4.0.0-beta.17) (2025-11-12)
+
+**Note:** Version bump only for package @osui/icons
+
+
+
+
+
 # [4.0.0-beta.16](https://github.com/yuxuan/osui/compare/v4.0.0-beta.15...v4.0.0-beta.16) (2025-11-12)
 
 **Note:** Version bump only for package @osui/icons
