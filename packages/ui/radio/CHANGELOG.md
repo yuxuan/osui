@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.15...v4.0.0-beta.16) (2025-11-12)
+
+**Note:** Version bump only for package @osui/radio
+
+
+
+
+
 # [4.0.0-beta.15](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.14...v4.0.0-beta.15) (2025-11-12)
 
 **Note:** Version bump only for package @osui/radio
