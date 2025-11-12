@@ -3,22 +3,23 @@ import React from 'react';
 import Form from '@osui/form';
 import Input from '@osui/input';
 import BrandProvider from '@osui/brand-provider';
+import Divider from '@osui/divider';
 import InputNumber from '../src';
 
 export default {
-    title: '数据录入/数字输入框 InputNumber',
+    title: '数据录入/[new_dev]数字输入框 InputNumber',
     component: InputNumber,
 };
 
 const InputNumberCompact = InputNumber.InputNumberCompact;
 
 export const Demo = () => {
-    const onChange = value => {
+    const onChange = (value: any) => {
         console.log('changed', value);
     };
     return (
         <BrandProvider>
-            <h3>基础数字输入框</h3>
+            <Divider>基础数字输入框</Divider>
             <p>默认</p>
             <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />
             <br />
@@ -37,7 +38,7 @@ export const Demo = () => {
             <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} disabled />
             <br />
             <br />
-            <h3>加强数字输入框</h3>
+            <Divider>加强数字输入框</Divider>
             <p>默认</p>
             <InputNumberCompact min={0} max={10} />
             <br />
@@ -56,7 +57,7 @@ export const Demo = () => {
             <InputNumberCompact disabled />
             <br />
             <br />
-            <h2>组件大小</h2>
+            <Divider>组件大小</Divider>
             <h3>基础数字输入框</h3>
             <p>小</p>
             <InputNumber size="small" />
@@ -88,7 +89,7 @@ export const Demo = () => {
 };
 
 export const oldDemo = () => {
-    const onChange = value => {
+    const onChange = (value: any) => {
         console.log('changed', value);
     };
     return (

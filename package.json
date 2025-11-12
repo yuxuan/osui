@@ -13,7 +13,7 @@
         "lint": "SKR_LOGGING=debug lerna run lint",
         "build": "lerna run --stream --sort build && pnpm --filter @osui/ui build-all",
         "lint:fix": "lerna run lint -- --fix",
-        "clean": "lerna run clean",
+        "clean": "find . \\( -type d -name 'node_modules' -o -type d -name 'es' -o -type d -name 'lib' \\) -exec rm -rf {} +",
         "storybook": "start-storybook -p 8777 -s public",
         "version": "lerna version --conventional-commits --no-push --force-publish",
         "commit": "git-cz",

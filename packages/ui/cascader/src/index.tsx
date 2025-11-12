@@ -69,7 +69,7 @@ const OSUICascader = (
                 );
             }}
             {...props}
-            maxTagTextLength={null}
+            maxTagTextLength={null as any}
         />
     );
 };

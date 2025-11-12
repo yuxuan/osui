@@ -34,6 +34,6 @@ const OSUITimePickerRange = React.forwardRef(
 OSUITimePicker.RangePicker = OSUITimePickerRange as unknown as typeof AntdTimePicker.RangePicker;
 
 export type {TimePickerProps, TimeRangePickerProps};
-export default OSUITimePicker as typeof AntdTimePicker;
+export default OSUITimePicker as unknown as typeof AntdTimePicker;
 
 

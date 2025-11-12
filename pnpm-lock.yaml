@@ -5288,6 +5288,9 @@ importers:
       '@osui/brand-provider':
         specifier: ^4.0.0-beta.14
         version: link:../brand-provider
+      '@osui/divider':
+        specifier: ^4.0.0-beta.14
+        version: link:../divider
       '@osui/flex-centered':
         specifier: ^4.0.0-beta.14
         version: link:../flex-centered

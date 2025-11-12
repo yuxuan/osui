@@ -17,7 +17,7 @@ import {
 } from './icloud-demo';
 
 export default {
-    title: '数据录入/选择器 Select',
+    title: '数据录入/[new_dev]选择器 Select',
 };
 
 export const Demo = () => {
