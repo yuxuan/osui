@@ -242,5 +242,9 @@ export const components: ThemeConfig['components'] = {
     Notification: {
         width: 400,
     },
+    Collapse: {
+        headerBg: acudSemanticTokens['--component-color-white'],
+        marginSM: 4,
+    },
 };
 

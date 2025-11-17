@@ -1,11 +1,10 @@
 import React, {useCallback} from 'react';
 import {Collapse as AntdCollapse} from 'antd';
 import {CollapseProps as AntdCollapseProps, CollapsePanelProps as AntdCollapsePanelProps} from 'antd/es/collapse';
-import {IconRightOutlined, IconDownOutlined} from '@osui/icons';
+import {OutlinedCaretDown2} from 'acud-icon';
 import classNames from 'classnames';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import './index.less';
-import './patch.less';
 
 const clsPrefix = 'osui-collapse';
 
@@ -39,8 +38,8 @@ const Collapse: CollapseInterface = ({className, levelChild, ghost, expandIcon, 
         (panelProps: any) => {
             return (
                 panelProps.isActive
-                    ? <span className="icon-wrapper"><IconDownOutlined /> </span>
-                    : <span className="icon-wrapper"><IconRightOutlined /></span>
+                    ? <span className="icon-wrapper"><OutlinedCaretDown2 /> </span>
+                    : <span className="icon-wrapper icon-wrapper-left"><OutlinedCaretDown2 /></span>
             );
         },
         []

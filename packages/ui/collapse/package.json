@@ -27,6 +27,7 @@
         "es/*.less"
     ],
     "devDependencies": {
+        "acud-icon": "^1.1.1",
         "@ant-design/icons": "^5.0.0",
         "@babel/cli": "^7.10.5",
         "@babel/preset-env": "^7.10.4",

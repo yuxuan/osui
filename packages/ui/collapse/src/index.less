@@ -4,16 +4,16 @@
     &:not(.@{ant-prefix}-collapse-ghost) {
         &.@{ant-prefix}-collapse {
             background: var(--collapse-bg);
-            border: var(--collapse-border);
+            border: 1px solid var(--collapse-border-color);
         }
 
         &.@{ant-prefix}-collapse > .@{ant-prefix}-collapse-item {
             background: var(--collapse-bg);
-            border-bottom: var(--collapse-border);
+            border-bottom: 1px solid var(--collapse-border-color);
         }
 
         .@{ant-prefix}-collapse-content {
-            border-top: var(--collapse-border);
+            border-top: 0 solid var(--collapse-border-color);
         }
     }
 
@@ -27,9 +27,7 @@
             padding-bottom: 0;
             color: var(--theme-text-color);
             font-weight: var(--collapse-header-font-weight);
-            font-size: var(--collapse-header-font-size);
             line-height: var(--collapse-header-height);
-            background: var(--collapse-header-bg);
 
             .icon-wrapper {
                 top: auto;
@@ -39,15 +37,19 @@
                 line-height: 0;
                 background: var(--collapse-expand-icon-bg);
                 border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform-origin: center;
+
+                &-left {
+                    transform: rotate(-90deg);
+                }
             }
         }
     }
 
     .@{ant-prefix}-collapse-item.@{ant-prefix}-collapse-item-disabled {
-        .@{ant-prefix}-collapse-header {
-            background-color: var(--collapse-header-bg);
-        }
-
         .@{ant-prefix}-collapse-header,
         .@{ant-prefix}-collapse-arrow {
             color: var(--collapse-disabled-color);

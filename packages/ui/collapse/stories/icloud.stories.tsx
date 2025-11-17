@@ -31,6 +31,30 @@ export const Demo = () => {
                     </Panel>
                 </Collapse>
                 <p></p>
+            </div>
+        </BrandProvider>
+    );
+};
+
+export const OldDemo = () => {
+    const text =
+        '百度（纳斯达克：BIDU），全球最大的中文搜索引擎、最大的中文网站。百度愿景是：成为最懂用户，并能帮助人们成长的全球顶级高科技公司。';
+    return (
+        <BrandProvider brand="icloud">
+            <div style={{padding: 30}}>
+                <p>基础折叠面板</p>
+                <Collapse defaultActiveKey={['1']}>
+                    <Panel header="可以折叠或展开的内容区域" key="1">
+                        {text}
+                    </Panel>
+                    <Panel header="可以折叠或展开的内容区域" key="2">
+                        {text}
+                    </Panel>
+                    <Panel header="可以折叠或展开的内容区域" key="3" disabled>
+                        {text}
+                    </Panel>
+                </Collapse>
+                <p></p>
                 <p>多层级折叠面板</p>
                 <strong color="red">
                     为了满足UE设计，多层级时，需要加level属性，和levelChild属性
