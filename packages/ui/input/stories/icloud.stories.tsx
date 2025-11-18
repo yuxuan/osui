@@ -27,14 +27,14 @@ const Blockquote = ({children}: {children: React.ReactNode}) => (
 );
 
 export default {
-    title: '数据录入/输入框 Input',
+    title: '数据录入/[new_dev]输入框 Input',
 };
 
 export const Demo = () => {
     const {Option} = Select;
     return (
         <BrandProvider>
-            <h2>组件类型</h2>
+            <Divider>组件类型</Divider>
             <h3>基础输入框</h3>
             <p>无字数限制</p>
             <Input
@@ -176,7 +176,7 @@ export const Demo = () => {
             />
             <br />
             <br />
-            <h2>组件状态</h2>
+            <Divider>组件状态</Divider>
             <h3>报错状态</h3>
             <Form
                 name="demo"

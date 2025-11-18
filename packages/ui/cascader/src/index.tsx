@@ -6,6 +6,8 @@ import classNames from 'classnames';
 import {IconDownOutlined, IconRightOutlined} from '@osui/icons';
 import Tooltip from '@osui/tooltip';
 import {EllipsisTag} from '@osui/select';
+import Tooltip from '@osui/tooltip';
+import {EllipsisTag} from '@osui/select';
 import './index.less';
 
 const clsPrefix = 'osui-cascader';
@@ -69,7 +71,7 @@ const OSUICascader = (
                 );
             }}
             {...props}
-            maxTagTextLength={null}
+            maxTagTextLength={null as any}
         />
     );
 };

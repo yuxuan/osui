@@ -5,7 +5,7 @@ import Form from '@osui/form';
 import Cascader from '../src';
 
 export default {
-    title: '数据录入/级联选择 Cascader',
+    title: '数据录入/[new_dev]级联选择 Cascader',
 };
 
 const han = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
@@ -57,7 +57,7 @@ export const Demo = () => {
         },
     ];
 
-    function onChange(value) {
+    function onChange(value: any) {
         console.log(value);
     }
 
@@ -212,7 +212,7 @@ export const OldDemo = () => {
         },
     ];
 
-    function onChange(value) {
+    function onChange(value: any) {
         console.log(value);
     }
 
@@ -248,11 +248,11 @@ export const Load = () => {
     const LazyOptions = () => {
         const [options, setOptions] = React.useState(optionLists);
 
-        const onChange = (value, selectedOptions) => {
+        const onChange = (value: any, selectedOptions: any) => {
             console.log(value, selectedOptions);
         };
 
-        const loadData = selectedOptions => {
+        const loadData = (selectedOptions: any) => {
             const targetOption = selectedOptions[selectedOptions.length - 1];
             targetOption.loading = true;
 

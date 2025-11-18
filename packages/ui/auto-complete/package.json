@@ -1,6 +1,6 @@
 {
     "name": "@osui/auto-complete",
-    "version": "4.0.0-beta.14",
+    "version": "4.0.0-beta.17",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -28,11 +28,11 @@
     ],
     "devDependencies": {
         "@babel/cli": "^7.10.5",
-        "@osui/brand-provider": "^4.0.0-beta.14",
-        "@osui/divider": "^4.0.0-beta.14",
-        "@osui/icloud-theme": "^4.0.0-beta.14",
-        "@osui/icons": "^4.0.0-beta.14",
-        "@osui/markdown": "^4.0.0-beta.14",
+        "@osui/brand-provider": "^4.0.0-beta.17",
+        "@osui/divider": "^4.0.0-beta.17",
+        "@osui/icloud-theme": "^4.0.0-beta.17",
+        "@osui/icons": "^4.0.0-beta.17",
+        "@osui/markdown": "^4.0.0-beta.17",
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",
         "@storybook/addon-interactions": "^7.5.1",
@@ -88,8 +88,8 @@
     },
     "dependencies": {
         "@huse/derived-state": "^1.1.1",
-        "@osui/highlight-text": "^4.0.0-beta.14",
-        "@osui/select": "^4.0.0-beta.14",
+        "@osui/highlight-text": "^4.0.0-beta.17",
+        "@osui/select": "^4.0.0-beta.17",
         "classnames": "^2.3.1",
         "hoist-non-react-statics": "^3.3.2"
     },
