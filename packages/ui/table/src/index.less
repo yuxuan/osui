@@ -1,15 +1,31 @@
 @osui-table-class-prefix: osui-table;
 
 .@{osui-table-class-prefix} {
-    .@{ant-prefix}-table-thead {
-        font-size: 12px;
+    &:not(&-no-border) {
+        border: 1px solid var(--border-color-level2);
+        border-radius: var(--radius-xs);
 
-        > tr {
-            > th {
-                font-weight: var(--table-header-font-weight);
-                border-bottom: 1px solid var(--table-header-border-bottom-color);
+        .@{ant-prefix}-table-thead > tr:first-of-type,
+        .@{ant-prefix}-table-tbody > tr {
+            & > th:last-of-type,
+            & > td:last-of-type {
+                border-inline-end: none !important;
             }
         }
+
+        .@{ant-prefix}-table-container {
+            border: none !important;
+        }
+    }
+
+    .@{ant-prefix}-table-thead {
+        font-size: var(--font-size-xs);
+        font-weight: var(--table-header-font-weight);
+    }
+
+    .@{ant-prefix}-table-selection-col,
+    .@{ant-prefix}-table-expand-icon-col {
+        width: 40px;
     }
 
     .@{ant-prefix}-table:not(.@{ant-prefix}-table-bordered) .@{ant-prefix}-table-thead > tr > th {
@@ -70,20 +86,9 @@
 
     // ===== 以下用class来patch，因为侵入性比较强 ======
     &-icloud {
-        // 用于固定expand-icon列宽度
-        .@{ant-prefix}-table-expand-icon-col {
-            width: 32px !important;
-        }
-
         &-expandableIcon {
             color: var(--theme-icon-color);
             cursor: pointer;
-        }
-
-        .@{ant-prefix}-pagination-options-quick-jumper input[disabled] {
-            color: var(--theme-disabled-color);
-            background-color: var(--theme-disabled-bg-color);
-            border-color: var(--theme-border-color-disabled);
         }
 
         .@{ant-prefix}-table-cell-with-append {
@@ -105,39 +110,18 @@
         flex: initial;
     }
 
-    .@{ant-prefix}-table-column-sorter,
     .@{ant-prefix}-table-filter-trigger {
-        margin-left: 8px;
-        color: #bfbfbf;
+        margin-left: var(--space-2xs);
+        color: var(--icon-color-tertiary);
+    }
+
+    .@{ant-prefix}-table-column-sorter {
+        margin-left: 0;
+        color: var(--icon-color-tertiary);
     }
 
     .@{ant-prefix}-table-filter-trigger:hover {
         background: transparent;
-    }
-
-    // Go button 样式
-    .@{ant-prefix}-pagination-options-quick-jumper {
-        display: inline-flex;
-
-        input {
-            &:focus,
-            &:hover {
-                z-index: 2;
-            }
-
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-
-        .osui-pagination-go-button {
-            margin-left: -9px;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-
-            &[disabled] {
-                border: 1px solid var(--theme-border-color-disabled);
-            }
-        }
     }
 
     tr.@{ant-prefix}-table-expanded-row > td,
@@ -151,7 +135,7 @@
 
     .@{ant-prefix}-table-column-sorter-up.active,
     .@{ant-prefix}-table-column-sorter-down.active {
-        color: var(--primary-color);
+        color: var(--brand-color);
     }
 
     .@{ant-prefix}-table-column-has-sorters .@{ant-prefix}-table-column-title {
@@ -159,44 +143,27 @@
         align-items: center;
     }
 
-    .@{ant-prefix}-table-wrapper .@{ant-prefix}-table-tbody >tr.@{ant-prefix}-table-row:hover>td {
-        background: #e6f0ff;
-    }
-
-    .@{ant-prefix}-pagination-item {
-        background-color: transparent;
-    }
-
-    .@{ant-prefix}-pagination-item:not(.@{ant-prefix}-pagination-item-active):hover {
-        background-color: var(--pagination-item-hover-bg);
-
-        a {
-            color: var(--pagination-item-hover-color);
-        }
-    }
-
-    .@{ant-prefix}-pagination-next,
-    .@{ant-prefix}-pagination-prev {
-        &:hover:not(.@{ant-prefix}-pagination-disabled) {
-            .@{ant-prefix}-pagination-item-link {
-                background-color: initial;
-            }
-
-            svg {
-                color: var(--theme-primary-color-hover);
-            }
-        }
-    }
-
-    .@{osui-table-class-prefix}-sizeChangerIcon {
-        color: var(--theme-icon-color);
-        width: 14px;
-        height: 14px;
-        right: 11px;
-    }
-
     .@{ant-prefix}-table-wrapper .@{ant-prefix}-table-filter-trigger {
         padding: 0;
+    }
+
+    &-expand-icon-open {
+        color: var(--icon-brand-color);
+    }
+
+    // 嵌套子表格
+    .@{ant-prefix}-table-tbody >tr >td >.@{ant-prefix}-table-wrapper:only-child {
+        border: none;
+
+        .@{ant-prefix}-table-tbody >tr >td,
+        .@{ant-prefix}-table-tbody >tr:hover > td {
+            background: var(--table-expanded-row-bg);
+        }
+    }
+
+    // 斑马纹颜色
+    .table-row-dark {
+        background-color: var(--component-color-grayB2);
     }
 }
 
@@ -212,29 +179,6 @@
 
 //调整分页器样式
 .@{ant-prefix}-table-wrapper .@{ant-prefix}-table-pagination.@{ant-prefix}-pagination {
-    // 调整分页期 sizeChanger 和 jumper 位置
-    .@{ant-prefix}-pagination-options {
-        order: -10;
-        position: absolute;
-        width: 336px;
-    }
-
-    .@{ant-prefix}-pagination-item,
-    .@{ant-prefix}-pagination-prev,
-    .@{ant-prefix}-pagination-next {
-        z-index: 99;
-    }
-
-    &.@{ant-prefix}-table-pagination-left .@{ant-prefix}-pagination-options {
-        left: 0;
-    }
-
-    &.@{ant-prefix}-table-pagination-right {
-        .@{ant-prefix}-pagination-options {
-            right: 0;
-        }
-    }
-
     .@{ant-prefix}-pagination-options-size-changer {
         float: left;
 
@@ -249,96 +193,80 @@
 
     .@{ant-prefix}-pagination-options .@{ant-prefix}-pagination-options-quick-jumper,
     .@{ant-prefix}-pagination-simple-pager {
-        color: var(--pagination-prev-next-icon-color);
-        float: right;
+        color: var(--text-color-secondary);
 
         input {
             margin: 0 8px;
         }
+    }
 
-        button {
-            appearance: button;
-            position: relative;
-            margin-left: -9px;
-            line-height: 18px;
-            padding: 6px 11px;
-            background-color: var(--btn-default-hover-bg);
-            outline: 0;
-            outline-style: none;
-            box-shadow: 0 2px 0 rgba(0, 0, 0, 0);
-            user-select: none;
-            touch-action: manipulation;
-            border: 1px solid transparent;
-            border-radius: var(--btn-border-radius-base);
-            border-color: var(--btn-default-border-color);
-            color: var(--text-color);
+    .@{ant-prefix}-pagination-item:not(.@{ant-prefix}-pagination-item-active) {
+        margin-right: var(--pagination-item-margin-right);
+        border: 1px solid var(--pagination-item-border-color);
 
-            &:hover {
-                color: var(--btn-default-hover-color);
-                background: var(--btn-default-hover-bg);
-                border-color: var(--btn-default-hover-border-color);
-            }
+        &:hover {
+            background-color: var(--pagination-item-hover-bg);
 
-            &:active {
-                color: var(--btn-default-active-color);
-                background: var(--btn-default-active-bg);
-                border-color: var(--btn-default-active-border-color);
-            }
-
-            &[disabled] {
-                border: 1px solid var(--theme-border-color-disabled);
-                color: var(--btn-default-disable-color);
-                background: var(--btn-default-disable-bg);
-            }
-
-            &:not([disabled]) {
-                cursor: pointer;
-                background: var(--btn-default-bg);
+            a {
+                color: var(--pagination-item-hover-color);
             }
         }
     }
 
-    .@{ant-prefix}-pagination-simple-pager {
-        button {
-            padding: 2px 11px;
-            margin-left: 0;
+    .@{ant-prefix}-pagination-item-active {
+        background: var(--pagination-item-active-bg);
+        border-color: var(--pagination-item-active-border-color);
+
+        a {
+            color: var(--pagination-item-active-color);
         }
 
-        input {
-            width: 48px;
-            height: 22px;
-            margin: 0 8px 0 0;
-        }
+        &:hover {
+            background: var(--component-color-grayB-active);
+            border-color: var(--component-color-grayB-active);
 
-        .@{ant-prefix}-pagination-slash {
-            margin: 0 16px;
+            a {
+                color: var(--pagination-item-active-color);
+            }
         }
-    }
-
-    .@{ant-prefix}-pagination-item,
-    .@{ant-prefix}-pagination-prev {
-        margin-inline-end: 0;
     }
 
     .@{ant-prefix}-pagination-next,
     .@{ant-prefix}-pagination-prev {
-        min-width: 32px;
-        color: var(--text-color);
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        margin-right: var(--pagination-item-margin-right);
+        border: var(--pagination-prev-next-border);
 
         svg {
             color: var(--pagination-prev-next-icon-color);
         }
 
-        &:hover svg,
-        &:active svg {
-            color: var(--theme-primary-color-hover);
+        &:hover {
+            svg {
+                color: var(--icon-color-secondary);
+            }
         }
 
-        &.@{ant-prefix}-pagination-disabled svg {
-            color: var(--pagination-prev-next-icon-color-disabled);
+        &:active {
+            svg {
+                color: var(--icon-color-secondary);
+            }
+        }
+
+        &.@{ant-prefix}-pagination-disabled {
+            svg {
+                color: var(--pagination-prev-next-icon-color-disabled);
+            }
+        }
+    }
+
+    .@{ant-prefix}-pagination-options {
+        margin-inline-start: 4px;
+
+        &-quick-jumper {
+            margin-inline-start: 8px;
         }
     }
 }
