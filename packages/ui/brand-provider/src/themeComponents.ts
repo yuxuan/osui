@@ -162,8 +162,5 @@ export const components: ThemeConfig['components'] = {
         // nodeSelectedColor: acudSemanticTokens['--text-color-brand'],
         // directoryNodeSelectedColor: acudSemanticTokens['--text-color-brand'],
     },
-    Radio: {
-        // buttonCheckedBg: acudSemanticTokens['--brand-color-light-hover'],
-    },
 };
 
