@@ -7,7 +7,7 @@ import Checkbox from '@osui/checkbox';
 const Group = Checkbox.Group;
 
 export default {
-    title: '数据录入/复选框 Checkbox',
+    title: '数据录入/[new_dev]复选框 Checkbox',
     component: Checkbox,
 };
 

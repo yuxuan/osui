@@ -26,7 +26,7 @@ export const Demo = () => {
     const FormItem = () => {
         return (
             <BrandProvider brand="icloud">
-                <Form size="small">
+                <Form size="small" style={{padding: '8px 6px'}}>
                     <Form.Item style={{width: 180}} extra="提示文案">
                         <Input placeholder="输入名称" />
                     </Form.Item>
@@ -395,13 +395,13 @@ export const Demo = () => {
             </div>
             <Divider>带组件</Divider>
             <div style={{display: 'flex', gap: 20}}>
-                <Popover content={FormItem}>
+                <Popover content={FormItem} trigger="click">
                     Form表单
                 </Popover>
-                <Popover content={ImgContent}>
+                <Popover content={ImgContent} trigger="click">
                     带图片
                 </Popover>
-                <Popover content={InfoContent}>
+                <Popover content={InfoContent} trigger="click">
                     带信息
                 </Popover>
             </div>

@@ -1,10 +1,6 @@
 @osui-tag-class-prefix: osui-tag;
 
 .@{osui-tag-class-prefix}.@{ant-prefix}-tag {
-    padding: var(--tag-padding);
-    border: 1px solid transparent;
-    border-radius: var(--tag-border-radius);
-
     &.@{ant-prefix}-tag > .anticon + span,
     &.@{ant-prefix}-tag > span + .anticon,
     &.@{ant-prefix}-tag > .osui-icon + span,
@@ -12,96 +8,62 @@
         margin-left: 4px;
     }
 
-    > svg.osui-icon {
-        height: 12px;
-        margin-right: var(--tag-icon-maring-horizontal);
-        color: var(--tag-icon-color);
-        font-size: 12px;
-    }
-
     &:hover {
         background: var(--tag-default-hover-bg);
     }
 
-    .@{ant-prefix}-tag-close-icon {
-        margin-left: 4px;
-        color: var(--tag-icon-color);
-        line-height: 14px;
-        vertical-align: middle;
+    &.@{osui-tag-class-prefix}-small {
+        padding: 0 6px;
+        line-height: var(--component-height-xs);
+        font-size: var(--font-size-3xs);
+    }
 
-        svg.osui-icon {
-            height: 12px;
-        }
+    &.@{osui-tag-class-prefix}-medium {
+        padding: 0 8px;
+        line-height: var(--component-height-m);
+        font-size: var(--font-size-2xs);
     }
 
     &.@{osui-tag-class-prefix}-blue {
-        color: var(--tag-blue-font-color);
-        background: var(--tag-blue-bg-color);
-
-        &.@{osui-tag-class-prefix}-solid {
-            color: var(--theme-component-bg);
-            background: var(--tag-blue-solid-bg-color);
-        }
-
-        &.@{osui-tag-class-prefix}-outlined {
-            background: var(--theme-component-bg);
-            border-color: var(--tag-blue-font-color);
-        }
+        color: var(--blue-color-7);
+        background: var(--blue-color-1);
+        border-color: var(--blue-color-3);
     }
 
     &.@{osui-tag-class-prefix}-green {
-        color: var(--tag-green-font-color);
-        background: var(--tag-green-bg-color);
-
-        &.@{osui-tag-class-prefix}-solid {
-            color: var(--theme-component-bg);
-            background: var(--tag-green-solid-bg-color);
-        }
-
-        &.@{osui-tag-class-prefix}-outlined {
-            background: var(--theme-component-bg);
-            border-color: var(--tag-green-font-color);
-        }
+        color: var(--success-color);
+        background: var(--success-color-light-hover);
+        border-color: var(--success-color-light-active);
     }
 
     &.@{osui-tag-class-prefix}-red {
-        color: var(--tag-red-font-color);
-        background: var(--tag-red-bg-color);
-
-        &.@{osui-tag-class-prefix}-solid {
-            color: var(--theme-component-bg);
-            background: var(--tag-red-solid-bg-color);
-        }
-
-        &.@{osui-tag-class-prefix}-outlined {
-            background: var(--theme-component-bg);
-            border-color: var(--tag-red-font-color);
-        }
+        color: var(--error-color);
+        background: var(--error-color-light-hover);
+        border-color: var(--error-color-light-active);
     }
 
     &.@{osui-tag-class-prefix}-yellow {
-        color: var(--tag-yellow-font-color);
-        background: var(--tag-yellow-bg-color);
+        color: var(--warning-color);
+        background: var(--warning-color-light-hover);
+        border-color: var(--warning-color-light-active);
+    }
 
-        &.@{osui-tag-class-prefix}-solid {
-            color: var(--theme-component-bg);
-            background: var(--tag-yellow-solid-bg-color);
-        }
-
-        &.@{osui-tag-class-prefix}-outlined {
-            background: var(--theme-component-bg);
-            border-color: var(--tag-yellow-font-color);
-        }
+    &.@{osui-tag-class-prefix}-brand {
+        color: var(--brand-color);
+        background: var(--brand-color-light-hover);
+        border-color: var(--brand-color-light-active);
     }
 
     &.@{osui-tag-class-prefix}-purple {
-        color: var(--color-purple-6);
-        background: var(--tag-purple-color);
+        color: var(--purple-color-7);
+        background: var(--purple-color-1);
+        border-color: var(--purple-color-3);
+    }
 
-        &.@{osui-tag-class-prefix}-outlined {
-            background: var(--theme-component-bg);
-            border-color: var(--color-purple-6);
-        }
+    &.@{osui-tag-class-prefix}-pink {
+        color: var(--pink-color-7);
+        background: var(--pink-color-1);
+        border-color: var(--pink-color-3);
     }
 
     &.@{osui-tag-class-prefix}-disabled {
@@ -115,16 +77,27 @@
             color: var(--theme-disabled-color);
         }
     }
+
+    &.@{ant-prefix}-tag-borderless {
+        border-color: transparent;
+    }
+
+    &.@{osui-tag-class-prefix}-outlined {
+        background: var(--theme-component-bg);
+    }
 }
 
 .@{osui-tag-class-prefix}-checkable {
-    color: var(--text-color);
-    background: var(--tag-default-bg);
+    color: var(--text-color-primary);
+    background: var(--component-color-grayB1);
     border: 1px solid transparent;
-    border-radius: var(--tag-border-radius);
+    border-radius: var(--radius-xs);
+    line-height: 32px;
+    padding: 0 12px;
 
     &:not(.@{ant-prefix}-tag-checkable-checked):hover {
-        color: var(--text-color);
+        color: var(--text-color-primary);
+        background: var(--component-color-grayB2);
     }
 
     &.@{ant-prefix}-tag {
@@ -132,13 +105,46 @@
     }
 
     &.@{ant-prefix}-tag-checkable-checked {
-        color: var(--text-color-inverse);
-        background: var(--theme-primary-color);
-        border: 1px solid transparent;
+        color: var(--brand-color);
+        background: var(--brand-color-light-hover);
+        border-color: var(--brand-color-hover);
+        font-weight: var(--font-weight-medium);
         transition: none;
 
         &:hover {
-            background: var(--theme-primary-color-hover);
+            color: var(--brand-color-hover);
+            font-weight: var(--font-weight-regular);
+        }
+    }
+}
+
+.@{osui-tag-class-prefix}-tagtab {
+    color: var(--text-color-secondary);
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: var(--radius-xs);
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-regular);
+    line-height: 32px;
+    padding: 0 12px;
+
+    &:not(.@{ant-prefix}-tag-checkable-checked):not(.@{osui-tag-class-prefix}-disabled):hover {
+        color: var(--text-color-secondary);
+        background: var(--component-color-grayB2);
+    }
+
+    &.@{ant-prefix}-tag-checkable-checked {
+        color: var(--text-color-primary);
+        background: var(--component-color-grayB1);
+        font-weight: var(--font-weight-medium);
+    }
+
+    &.@{osui-tag-class-prefix}-disabled {
+        color: var(--text-color-disabled);
+        cursor: not-allowed;
+        &:not(.@{ant-prefix}-tag-checkable-checked):hover {
+            color: var(--text-color-disabled);
+            background: transparent;
         }
     }
 }
@@ -156,9 +162,7 @@
 
 .@{osui-tag-class-prefix}-round {
     &.@{ant-prefix}-tag {
-        height: 24px;
         padding: 0 8px;
-        line-height: 24px;
-        border-radius: 14px;
+        border-radius: var(--radius-3xl);
     }
 }

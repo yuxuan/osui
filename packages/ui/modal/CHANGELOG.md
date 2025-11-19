@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-beta.17](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.16...v4.0.0-beta.17) (2025-11-12)
+
+**Note:** Version bump only for package @osui/modal
+
+
+
+
+
+# [4.0.0-beta.16](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.15...v4.0.0-beta.16) (2025-11-12)
+
+**Note:** Version bump only for package @osui/modal
+
+
+
+
+
+# [4.0.0-beta.15](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.14...v4.0.0-beta.15) (2025-11-12)
+
+**Note:** Version bump only for package @osui/modal
+
+
+
+
+
+# [4.0.0-beta.14](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.13...v4.0.0-beta.14) (2025-11-11)
+
+**Note:** Version bump only for package @osui/modal
+
+
+
+
+
+# [4.0.0-beta.13](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.12...v4.0.0-beta.13) (2025-11-11)
+
+**Note:** Version bump only for package @osui/modal
+
+
+
+
+
+# [4.0.0-beta.12](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.11...v4.0.0-beta.12) (2025-11-11)
+
+**Note:** Version bump only for package @osui/modal
+
+
+
+
+
+# [4.0.0-beta.11](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.10...v4.0.0-beta.11) (2025-11-10)
+
+**Note:** Version bump only for package @osui/modal
+
+
+
+
+
 # [4.0.0-beta.10](https://gitee.com/gitee-fe/osui/tree/master/compare/v4.0.0-beta.8...v4.0.0-beta.10) (2025-10-30)
 
 **Note:** Version bump only for package @osui/modal

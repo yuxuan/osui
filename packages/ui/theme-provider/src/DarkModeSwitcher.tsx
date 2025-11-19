@@ -66,7 +66,7 @@ const Content: FC<ContentProps> = (
     {changeTheme, value, onModeChange, lightIcon, darkIcon, autoIcon}
 ) => {
     const handleModeClick = useCallback(
-        type => {
+        (type: any) => {
             changeTheme(type);
             onModeChange && onModeChange(type);
         },

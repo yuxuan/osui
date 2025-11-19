@@ -73,10 +73,10 @@ export default {
     '--font-height-5xl': '54px',
     '--font-height-6xl': '60px',
     /* paragraph height 段落行高 */
-    '--paragraph-height-xs': '22',
-    '--paragraph-height-s': '24',
-    '--paragraph-height-m': '26',
-    '--paragraph-height-l': '30',
+    '--paragraph-height-xs': '22px',
+    '--paragraph-height-s': '24px',
+    '--paragraph-height-m': '26px',
+    '--paragraph-height-l': '30px',
     /* component height 组件高度 */
     '--component-height-3xs': '8px',
     '--component-height-2xs': '14px',

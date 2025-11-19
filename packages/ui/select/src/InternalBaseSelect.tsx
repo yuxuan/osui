@@ -1,12 +1,12 @@
 import React from 'react';
 import {Select as AntdSelect} from 'antd';
-import type {BaseOptionType, DefaultOptionType, SelectProps as AntdSelectProps} from 'antd/es/select';
+import type {BaseOptionType, DefaultOptionType, SelectProps as AntdSelectProps, OptionProps} from 'antd/es/select';
 import type {BaseSelectRef} from 'rc-select';
 import classNames from 'classnames';
 import {IconDownOutlined, IconCheckSquareFilled, IconCloseOutlined} from '@osui/icons';
 import {useBrandContext} from '@osui/brand-provider';
 import Tooltip from '@osui/tooltip';
-import hoistNonReactStatics from 'hoist-non-react-statics';
+import EllipsisTag from './EllipsisTag';
 import {adjustAntdProps} from './utils';
 import './index.less';
 
@@ -24,7 +24,7 @@ function InternalSelect<ValueType = any, OptionType extends BaseOptionType | Def
     props: SelectProps<ValueType, OptionType>,
     ref?: React.Ref<BaseSelectRef>
 ): React.ReactElement | null {
-    const {className, loading, listHeight, noBorder, ...restProps} = props;
+    const {className, loading, listHeight, noBorder, maxTagTextLength, ...restProps} = props;
     const {brand} = useBrandContext();
     // 暂时用，后面需要透传下去
     const {mode, popupClassName} = restProps;
@@ -91,7 +91,20 @@ function InternalSelect<ValueType = any, OptionType extends BaseOptionType | Def
                 }
                 return <span>{option.data.label}</span>;
             }}
+            tagRender={option => {
+                return (
+                    <EllipsisTag {...option} maxTagTextLength={maxTagTextLength} />
+                );
+            }}
+            maxTagPlaceholder={option => {
+                return (
+                    <Tooltip title={<>剩余{option.length}项未展示</>}>
+                        <span>+{option.length}</span>
+                    </Tooltip>
+                );
+            }}
             {...adjustedProps}
+            maxTagTextLength={null}
         />
     );
 }
@@ -104,10 +117,12 @@ const Select = React.forwardRef(InternalSelect) as unknown as (<
 ) => React.ReactElement) & {
     displayName?: string;
     SECRET_COMBOBOX_MODE_DO_NOT_USE: string;
-    Option: typeof AntdSelect.Option;
+    Option: React.FC<Omit<OptionProps, 'children'>> & {
+        /** Legacy for check if is a Option Group */
+        isSelectOption: boolean;
+        children?: React.ReactNode;
+    } ;
     OptGroup: typeof AntdSelect.OptGroup;
 };
-
-hoistNonReactStatics(Select, AntdSelect);
 
 export default Select;

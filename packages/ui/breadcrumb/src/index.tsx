@@ -4,6 +4,8 @@ import {BreadcrumbProps as AntdBrandcrumbProps} from 'antd/es/breadcrumb';
 import classNames from 'classnames';
 // @ts-expect-error
 import {LegacyBreadcrumbProps, NewBreadcrumbProps} from 'antd/es/breadcrumb/Breadcrumb';
+import hoistNonReactStatics from 'hoist-non-react-statics';
+import {OutlinedRight} from 'acud-icon';
 import './index.less';
 
 const clsPrefix = 'osui-breadcrumb';
@@ -86,6 +88,10 @@ export interface BreadcrumbProps extends LegacyBreadcrumbProps {
      * @description 面包屑过长时尾部items个数 ...
      */
     tailItemLength?: number;
+    /**
+     * @description 面包屑大小， 默认大小不用传
+     */
+    size?: 'small' | 'large';
 }
 
 export interface BreadcrumbInterface extends React.FC<BreadcrumbProps | AntdBrandcrumbProps> {
@@ -109,6 +115,7 @@ const Breadcrumb: BreadcrumbInterface = props => {
         maxItemLength = 5,
         headItemLength = 2,
         tailItemLength = 2,
+        size,
         ...restProps
     } = props as BreadcrumbProps & {items: NewBreadcrumbProps['items']};
 
@@ -143,9 +150,13 @@ const Breadcrumb: BreadcrumbInterface = props => {
         tailItemLength,
     };
 
+    const separator = (restProps as any).separator ?? <OutlinedRight />;
+
     return (
         <AntdBreadcrumb
-            className={classNames(clsPrefix, className)}
+            className={classNames(clsPrefix, {
+                [`${clsPrefix}-${size}`]: size,
+            }, className)}
             itemRender={
                 isShowEllipsis && itemRender
                     ? getItemRenderWithEllipsis(itemRender, config)
@@ -154,6 +165,7 @@ const Breadcrumb: BreadcrumbInterface = props => {
             // 如果有items用items如果没有用routes
             {...(items ? {items} : {routes})}
             {...restProps}
+            separator={separator}
         >
             {isShowEllipsis && children
                 ? getChildrenWithEllipsis(children, config)
@@ -162,8 +174,11 @@ const Breadcrumb: BreadcrumbInterface = props => {
     );
 };
 
+hoistNonReactStatics(Breadcrumb, AntdBreadcrumb);
+
 Breadcrumb.Item = AntdBreadcrumb.Item;
 Breadcrumb.Separator = AntdBreadcrumb.Separator;
+
 
 export type {BreadcrumbItemProps} from 'antd';
 

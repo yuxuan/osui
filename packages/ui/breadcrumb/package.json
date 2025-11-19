@@ -1,6 +1,6 @@
 {
     "name": "@osui/breadcrumb",
-    "version": "4.0.0-beta.10",
+    "version": "4.0.0-beta.17",
     "description": "",
     "main": "lib/index.js",
     "module": "es/index.js",
@@ -31,13 +31,15 @@
         "@babel/preset-env": "^7.10.4",
         "@babel/preset-react": "^7.10.4",
         "@babel/preset-typescript": "^7.23.2",
-        "@osui/brand-provider": "^4.0.0-beta.10",
-        "@osui/divider": "^4.0.0-beta.10",
-        "@osui/icloud-theme": "^4.0.0-beta.10",
-        "@osui/icons": "^4.0.0-beta.10",
-        "@osui/markdown": "^4.0.0-beta.10",
-        "@osui/menu": "^4.0.0-beta.10",
-        "@osui/text-overflow-tooltip": "^4.0.0-beta.10",
+        "@osui/brand-provider": "^4.0.0-beta.17",
+        "@osui/divider": "^4.0.0-beta.17",
+        "@osui/dropdown": "^4.0.0-beta.17",
+        "@osui/icloud-theme": "^4.0.0-beta.17",
+        "@osui/icons": "^4.0.0-beta.17",
+        "@osui/markdown": "^4.0.0-beta.17",
+        "@osui/menu": "^4.0.0-beta.17",
+        "@osui/space": "^4.0.0-beta.17",
+        "@osui/text-overflow-tooltip": "^4.0.0-beta.17",
         "@storybook/addon-docs": "^7.5.1",
         "@storybook/addon-essentials": "^7.5.1",
         "@storybook/addon-interactions": "^7.5.1",
@@ -51,12 +53,15 @@
         "@swc/cli": "^0.1.62",
         "@swc/core": "^1.3.40",
         "@types/enzyme": "^3.10.9",
+        "@types/hoist-non-react-statics": "^3.3.1",
         "@types/jest": "^27.0.0",
         "@types/react-dom": "^17.0.2",
         "@types/react-test-renderer": "^17.0.1",
+        "acud-icon": "^1.1.1",
         "antd": "5.24.2",
         "cpy-cli": "^3.1.1",
         "enzyme": "^3.11.0",
+        "hoist-non-react-statics": "^3.3.2",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.0.6",
         "less-plugin-npm-import": "^2.1.0",
@@ -80,7 +85,8 @@
         "react-dom": ">=17.0.0"
     },
     "dependencies": {
-        "classnames": "^2.3.1"
+        "classnames": "^2.3.1",
+        "hoist-non-react-statics": "^3.3.1"
     },
     "repository": {
         "type": "git",
@@ -92,6 +98,6 @@
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "packageManager": "pnpm@10.17.1",
+    "packageManager": "pnpm@10.20.0",
     "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
 }

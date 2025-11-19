@@ -7,7 +7,7 @@ import Divider from '@osui/divider';
 import Switch from '../src';
 
 export default {
-    title: '数据录入/开关 Switch',
+    title: '数据录入/[new_dev]开关 Switch',
 };
 
 export const Demo = () => {

@@ -1,12 +1,14 @@
 @osui-tooltip-class-prefix: osui-tooltip;
 
 .@{osui-tooltip-class-prefix} {
-    .@{ant-prefix}-tooltip-content {
-        box-shadow: var(--shadow-1);
-    }
 
     .@{ant-prefix}-tooltip-inner {
+        min-width: 36px;
+        max-width: 300px;
         min-height: var(--tooltip-min-height);
-        padding: var(--tooltip-inner-padding, 6px 8px);
+        padding: var(--tooltip-inner-padding);
+        word-break: break-all;
+        font-weight: var(--font-weight-regular);
+        line-height: var(--font-height-2xs);
     }
 }

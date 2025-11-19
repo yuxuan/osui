@@ -116,7 +116,7 @@ export const uiColors = {
     '--orange-color-3': '#FFD09E',
     '--orange-color-4': '#FFB66E',
     '--orange-color-5': '#FF9B3D',
-    '--orange-color-6': '#FF7EOD',
+    '--orange-color-6': '#FF7E0D',
     '--orange-color-7': '#D95E00',
     '--orange-color-8': '#B34700',
     '--orange-color-9': '#8C3300',

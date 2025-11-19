@@ -7,7 +7,7 @@ import Divider from '@osui/divider';
 import Switch from '@osui/switch';
 
 export default {
-    title: '数据录入/开关 Switch',
+    title: '数据录入/[new_dev]开关 Switch',
 };
 
 export const Demo = () => {
@@ -45,8 +45,8 @@ export const Demo = () => {
             <Space size={50}>
                 <div style={{width: 60}}>正常</div>
                 <Space>
-                    <Switch />
-                    <Switch defaultChecked />
+                    <Switch size="middle" />
+                    <Switch size="middle" defaultChecked />
                 </Space>
             </Space>
             <br />
@@ -54,8 +54,8 @@ export const Demo = () => {
             <Space size={50}>
                 <div style={{width: 60}}>禁用</div>
                 <Space>
-                    <Switch disabled />
-                    <Switch disabled defaultChecked />
+                    <Switch size="middle" disabled />
+                    <Switch size="middle" disabled defaultChecked />
                 </Space>
             </Space>
             <br />
@@ -63,8 +63,8 @@ export const Demo = () => {
             <Space size={50}>
                 <div style={{width: 60}}>Loading</div>
                 <Space>
-                    <Switch loading />
-                    <Switch loading defaultChecked />
+                    <Switch size="middle" loading />
+                    <Switch size="middle" loading defaultChecked />
                 </Space>
             </Space>
 

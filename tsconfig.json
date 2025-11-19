@@ -20,5 +20,5 @@
         "declaration":true,
         "allowSyntheticDefaultImports": true
     },
-    "exclude": ["commitlint.config.js"]
+    "exclude": ["commitlint.config.js", "node_modules", "**/node_modules", "demo/**", "examples/**", "**/*.js", "**/*.mjs"]
 }

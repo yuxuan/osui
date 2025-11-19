@@ -3,11 +3,11 @@ import React from 'react';
 import Divider from '@osui/divider';
 import Flex from '@osui/flex';
 import {OutlinedAppstore, OutlinedSetting, OutlinedSmile, OutlinedCloud} from 'acud-icon';
-import BrandProvider from '../../brand-provider';
+import BrandProvider from '@osui/brand-provider';
 import Segmented from '../src';
 
 export default {
-    title: '数据展示/分段控制器 Segmented',
+    title: '数据展示/[new_dev]分段控制器 Segmented',
 };
 
 export const Demo = () => {

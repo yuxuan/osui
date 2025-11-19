@@ -3,15 +3,93 @@ import React from 'react';
 import Form from '@osui/form';
 import Input from '@osui/input';
 import BrandProvider from '@osui/brand-provider';
+import Divider from '@osui/divider';
 import InputNumber from '../src';
 
 export default {
-    title: '数据录入/数字输入框 InputNumber',
+    title: '数据录入/[new_dev]数字输入框 InputNumber',
     component: InputNumber,
 };
 
+const InputNumberCompact = InputNumber.InputNumberCompact;
+
 export const Demo = () => {
-    const onChange = value => {
+    const onChange = (value: any) => {
+        console.log('changed', value);
+    };
+    return (
+        <BrandProvider>
+            <Divider>基础数字输入框</Divider>
+            <p>默认</p>
+            <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />
+            <br />
+            <br />
+            <p>报错</p>
+            <Form name="demo" wrapperCol={{span: 12}}>
+                <Form.Item
+                    label="磁盘大小"
+                    validateStatus="error"
+                    help={'格式错误，请按提示规则录入'}
+                >
+                    <InputNumber />
+                </Form.Item>
+            </Form>
+            <p>禁用</p>
+            <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} disabled />
+            <br />
+            <br />
+            <Divider>加强数字输入框</Divider>
+            <p>默认</p>
+            <InputNumberCompact min={0} max={10} />
+            <br />
+            <br />
+            <p>报错</p>
+            <Form name="demo" wrapperCol={{span: 12}}>
+                <Form.Item
+                    label="磁盘大小"
+                    validateStatus="error"
+                    help={'格式错误，请按提示规则录入'}
+                >
+                    <InputNumberCompact />
+                </Form.Item>
+            </Form>
+            <p>禁用</p>
+            <InputNumberCompact disabled />
+            <br />
+            <br />
+            <Divider>组件大小</Divider>
+            <h3>基础数字输入框</h3>
+            <p>小</p>
+            <InputNumber size="small" />
+            <br />
+            <br />
+            <p>中</p>
+            <InputNumber size="middle" />
+            <br />
+            <br />
+            <p>大</p>
+            <InputNumber size="large" />
+            <br />
+            <br />
+            <h3>加强数字输入框</h3>
+            <p>小</p>
+            <InputNumberCompact size="small" />
+            <br />
+            <br />
+            <p>中</p>
+            <InputNumberCompact size="middle" />
+            <br />
+            <br />
+            <p>大</p>
+            <InputNumberCompact size="large" />
+            <br />
+            <br />
+        </BrandProvider>
+    );
+};
+
+export const oldDemo = () => {
+    const onChange = (value: any) => {
         console.log('changed', value);
     };
     return (
@@ -90,8 +168,6 @@ const MinusIcon = () => (
         </g>
     </svg>
 );
-
-const InputNumberCompact = InputNumber.InputNumberCompact;
 
 export const InputNumberStrongDemo = () => {
 

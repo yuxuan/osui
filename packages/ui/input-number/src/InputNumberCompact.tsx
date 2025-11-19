@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React, {useCallback, useMemo} from 'react';
 import classNames from 'classnames';
 import {useDerivedState} from '@huse/derived-state';
 import Button from '@osui/button';
@@ -28,6 +28,9 @@ function InputNumberCompact<T extends ValueType = ValueType>(
         tailLabel,
         plusIcon,
         minusIcon,
+        max,
+        min,
+        size,
         ...props
     }: React.PropsWithChildren<InputNumberCompactProps<T>>,
     ref: React.ForwardedRef<HTMLInputElement>
@@ -36,7 +39,7 @@ function InputNumberCompact<T extends ValueType = ValueType>(
     const initValue: T = defaultValue === undefined ? (value || 0 as T) : defaultValue;
     const [inputValue, setInputValue] = useDerivedState<T>(initValue);
     const handleChange = useCallback(
-        value => {
+        (value: any) => {
             setInputValue(value);
             onChange?.(value);
         },
@@ -54,6 +57,18 @@ function InputNumberCompact<T extends ValueType = ValueType>(
         },
         [handleChange, inputValue, step]
     );
+    const plusDisabled = useMemo(
+        () => {
+            return Number(inputValue) >= Number(max);
+        },
+        [inputValue, max]
+    );
+    const minusDisabled = useMemo(
+        () => {
+            return Number(inputValue) <= Number(min);
+        },
+        [inputValue, min]
+    );
     const borderRadius = brandContext.designToken?.token?.borderRadius;
     return (
         <>
@@ -62,7 +77,8 @@ function InputNumberCompact<T extends ValueType = ValueType>(
                 className={classNames(clsPrefix, className)}
             >
                 <Button
-                    disabled={disabled}
+                    size={size}
+                    disabled={disabled || minusDisabled}
                     onClick={handleMinus}
                     icon={minusIcon ?? '-'}
                     className={`${clsPrefix}-minus-btn`}
@@ -70,6 +86,7 @@ function InputNumberCompact<T extends ValueType = ValueType>(
                 <InputNumber
                     ref={ref}
                     {...props}
+                    size={size}
                     value={inputValue}
                     onChange={handleChange}
                     className={classNames(`${clsPrefix}-input-number`, inputNumberClassName)}
@@ -77,8 +94,9 @@ function InputNumberCompact<T extends ValueType = ValueType>(
                     disabled={disabled}
                 />
                 <Button
+                    size={size}
                     style={{borderTopRightRadius: borderRadius, borderBottomRightRadius: borderRadius}}
-                    disabled={disabled}
+                    disabled={disabled || plusDisabled}
                     onClick={handlePlus}
                     icon={plusIcon ?? '+'}
                     className={`${clsPrefix}-plus-btn`}

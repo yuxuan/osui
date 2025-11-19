@@ -13,9 +13,9 @@
         "lint": "SKR_LOGGING=debug lerna run lint",
         "build": "lerna run --stream --sort build && pnpm --filter @osui/ui build-all",
         "lint:fix": "lerna run lint -- --fix",
-        "clean": "lerna run clean",
+        "clean": "find . \\( -type d -name 'node_modules' -o -type d -name 'es' -o -type d -name 'lib' \\) -exec rm -rf {} +",
         "storybook": "start-storybook -p 8777 -s public",
-        "version": "lerna version --conventional-commits --no-push",
+        "version": "lerna version --conventional-commits --no-push --force-publish",
         "commit": "git-cz",
         "new-component": "sh scripts/new-component.sh",
         "copy-to-docs": "sh scripts/copy-to-docs.sh",
@@ -41,6 +41,7 @@
         "@storybook/react-vite": "^7.6.20",
         "@types/css": "^0.0.33",
         "@types/less": "^3.0.6",
+        "@types/node": "^20.0.0",
         "@types/react": "^18.0.0",
         "@typescript-eslint/eslint-plugin": "^6.21.0",
         "@typescript-eslint/parser": "^6.21.0",
@@ -75,5 +76,5 @@
             "path": "cz-conventional-changelog"
         }
     },
-    "packageManager": "pnpm@10.18.3"
+    "packageManager": "pnpm@10.20.0"
 }
