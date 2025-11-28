@@ -13,80 +13,80 @@ export default {
 
 
 export const Demo = () => {
+    const [api, contextHolder] = notification.useNotification();
     const openNotification = () => {
-        notification.open({
+        api.open({
             message: '普通通知',
             closeIcon: false,
-            description:
-                `
-                This is the content of the notification.
-                This is the content of the notification.
-                `,
+            description: '这是一条消息通知这是一条消息通知这是一条消息通知这是一条消息通知这是一条消息通知这是一条消息通知',
+            duration: 100,
             onClick: () => {
                 console.log('Notification Clicked!');
             },
         });
     };
     const openNotificationIcon = () => {
-        notification.open({
+        api.info({
             message: '普通通知',
             closeIcon: false,
-            icon: '+',
-            description:
-                `
-                This is the content of the notification.
-                This is the content of the notification.
-                `,
+            description: '这是一条消息通知这是一条消息通知这是一条消息通知这是一条消息通知这是一条消息通知这是一条消息通知',
         });
     };
     const openNotificationClose = () => {
-        notification.open({
+        api.info({
             message: '普通通知',
-            icon: '+',
-            description:
-                `
-                This is the content of the notification.
-                This is the content of the notification.
-                `,
+            description: '这是一条消息通知',
+            duration: 100,
         });
     };
     const info = () => {
-        notification.info({
+        api.info({
             message: '普通通知',
+            closeIcon: false,
             description: 'This is the content of the notification.',
         });
     };
     const success = () => {
-        notification.success({
+        api.success({
             message: '成功提示',
+            closeIcon: false,
             description: 'This is the content of the notification.',
         });
     };
     const error = () => {
-        notification.error({
+
+        api.error({
             message: '错误提示',
+            closeIcon: false,
             description: 'This is the content of the notification.',
         });
     };
     const warning = () => {
-        notification.warning({
+        api.warning({
             message: '警告提示',
+            closeIcon: false,
             description: 'This is the content of the notification.',
         });
     };
-    const large = () => {
-        notification.open({
-            message: '警告提示',
-            description: (
-                <>
-                    <div>This is the content of the notification.</div>
-                    <div>错误码：xxxxx-xxxxx-xxxx-xxx</div>
-                </>
-            ),
+    const small = () => {
+        api.open({
+            message: '提示',
+            closeIcon: false,
+            description: '小尺寸',
+            duration: 100,
+        });
+    };
+    const errorLarge = () => {
+        api.error({
+            message: '当前子用户权限不足，无法完成操作',
+            code: 'xxxx-xxxxx-xxxx-xxxx-xxxxxx-xxxxxx123123123123123121312331312123',
+            description: '当前子用户没有资源(am-nyku90v15vh1)的操作权限(DescribeModelSet、DescribeModelSet)',
+            duration: 100,
         });
     };
     return (
         <BrandProvider brand="icloud">
+            {contextHolder}
             <Divider>基础消息通知</Divider>
             <Space>
                 <Button onClick={openNotification}>
@@ -117,9 +117,14 @@ export const Demo = () => {
             </Space>
 
             <Divider>组件尺寸</Divider>
-            <Button onClick={large}>
-                大尺寸
-            </Button>
+            <Space>
+                <Button onClick={small}>
+                    小尺寸
+                </Button>
+                <Button onClick={errorLarge}>
+                    大尺寸
+                </Button>
+            </Space>
         </BrandProvider>
 
     );
