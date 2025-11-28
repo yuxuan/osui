@@ -8,21 +8,25 @@ import Spin from '@osui/spin';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import type {TableProps as AntdTableProps} from 'antd/es/table';
 import useCustomSortForCustomIcons from './useCustomHeadIcons';
-import useTablePaginationStylePatch from './useTablePaginationStylePatch';
 import './index.less';
 
 const clsPrefix = 'osui-table';
-const icloudLocale = {'jump_to': '跳转至', 'page': '', 'jump_to_confirm': 'Go'};
 
 const osuiExpandIcon: Exclude<TableProps<any>['expandable'], undefined>['expandIcon'] =
     ({expanded, onExpand, record}) => (expanded
         ? (
             <IconRightOutlined
                 onClick={(e: any) => onExpand(record, e)}
-                style={{transform: 'rotate(90deg)'}}
+                className={[`${clsPrefix}-expand-icon-open`]}
+                style={{transform: 'rotate(270deg)'}}
             />
         )
-        : (<IconRightOutlined onClick={(e: any) => onExpand(record, e)} />));
+        : (
+            <IconRightOutlined
+                onClick={(e: any) => onExpand(record, e)}
+                style={{transform: 'rotate(90deg)'}}
+            />
+        ));
 
 interface TableProps<T> extends AntdTableProps<T> {
     noRowBorder?: boolean;
@@ -34,7 +38,6 @@ function Table<RecordType extends Record<string, any>>(
     ref: React.Ref<Reference> | undefined
 ) {
     const domRef = useRef<Reference>(null);
-    const containerDomRef = useRef<HTMLDivElement>(null);
     const {brand, setIsFilteredEmpty} = useBrandContext();
 
     // Pagination props
@@ -75,24 +78,13 @@ function Table<RecordType extends Record<string, any>>(
 
     const mergePagination = useMemo(
         () => {
-            const goButton = <button>{icloudLocale.jump_to_confirm}</button>;
             if (!(paginationIn === false || paginationIn === null)) {
                 const pagination = paginationIn || {};
-                // eslint-disable-next-line no-negated-condition
-                const showQuickJumper = !(
-                    // 不主动关的话，没有传入showQuickJumper，默认是true
-                    paginationIn?.showQuickJumper === false || paginationIn?.showQuickJumper === null
-                )
-                    ? {goButton: (paginationIn?.showQuickJumper as {goButton: React.ReactNode})?.goButton ?? goButton}
-                    : false;
                 return {
                     ...paginationIn,
-                    locale: {
-                        ...icloudLocale,
-                        ...(pagination && pagination.locale ? pagination.locale : {}),
-                    },
-                    showQuickJumper,
                     showSizeChanger: showSizeChangerConfig,
+                    showQuickJumper: pagination.showQuickJumper ?? true,
+                    size: 'default',
                 };
             }
             return paginationIn;
@@ -101,8 +93,6 @@ function Table<RecordType extends Record<string, any>>(
     );
     const antdContext = useContext(ConfigProvider.ConfigContext);
     const prefixCls = antdContext.getPrefixCls();
-
-    useTablePaginationStylePatch(domRef, prefixCls, containerDomRef);
 
     const className = classNames(
         clsPrefix,
@@ -145,18 +135,17 @@ function Table<RecordType extends Record<string, any>>(
 
 
     return (
-        <div className={className} ref={containerDomRef}>
-            <AntdTable
-                {...props}
-                ref={domRef}
-                columns={columns}
-                pagination={mergePagination}
-                // todo 新方式疑似添加了expandIcon，就必须设置 expandedRowRender
-                expandIcon={props.expandIcon || osuiExpandIcon}
-                onChange={handleChange}
-                loading={innerLoading}
-            />
-        </div>
+        <AntdTable
+            {...props}
+            ref={domRef}
+            className={className}
+            columns={columns}
+            pagination={mergePagination}
+            // todo 新方式疑似添加了expandIcon，就必须设置 expandedRowRender
+            expandIcon={props.expandIcon || osuiExpandIcon}
+            onChange={handleChange}
+            loading={innerLoading}
+        />
     );
 }
 

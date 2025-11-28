@@ -99,6 +99,7 @@ const TagTab = (props: CheckableTagProps) => {
                 }
                 onChange?.(checked);
             }}
+            disabled={disabled}
             {...restProps}
         />
     );
