@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
 import Gap from '@osui/gap';
 import Divider from '@osui/divider';
-import InputNumber from '../../input-number/src';
+import InputNumber from '@osui/input-number';
 import Slider from '../src';
 
 export default {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Tooltip from '@osui/tooltip';
 import type {TableColumnsType} from 'antd';
-import Table from '../../src';
+import Table from '@osui/table';
 
 interface DataType {
     key: React.Key;

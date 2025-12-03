@@ -2,7 +2,7 @@ import {useState} from 'react';
 import type {TableProps} from 'antd';
 import {OutlinedPlusNew} from 'acud-icon';
 import styled from '@emotion/styled';
-import Table from '../../src';
+import Table from '@osui/table';
 
 const AddItem = styled.div`
     width: 100%;

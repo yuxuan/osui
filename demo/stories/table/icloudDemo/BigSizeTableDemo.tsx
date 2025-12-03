@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import {css} from '@emotion/css';
 import Typography from '@osui/typography';
 import {OutlinedFolder, OutlinedCopy} from 'acud-icon';
-import Table from '../../src';
+import Table from '@osui/table';
 
 const LeftBox = styled.div`
     display: flex;

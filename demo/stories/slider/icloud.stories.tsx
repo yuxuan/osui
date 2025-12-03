@@ -4,7 +4,7 @@ import BrandProvider from '@osui/brand-provider';
 import Gap from '@osui/gap';
 import Divider from '@osui/divider';
 import Slider from '@osui/slider';
-import InputNumber from '../../input-numb@osui/slider';
+import InputNumber from '@osui/input-number';
 
 export default {
     title: '数据录入/滑动输入条 Slider',

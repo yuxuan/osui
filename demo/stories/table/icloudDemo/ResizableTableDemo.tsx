@@ -1,7 +1,7 @@
 import React from 'react';
 import {Resizable} from 'react-resizable';
 import type {ColumnsType} from 'antd/es/table';
-import Table from '../../src';
+import Table from '@osui/table';
 
 interface DataType {
     key: React.Key;

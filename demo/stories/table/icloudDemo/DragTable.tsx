@@ -12,7 +12,7 @@ import {CSS} from '@dnd-kit/utilities';
 import {arrayMove} from '@dnd-kit/sortable';
 import type {TableProps, ColumnsType} from 'antd/es/table';
 import {OutlinedDrag} from 'acud-icon';
-import Table from '../../src';
+import Table from '@osui/table';
 
 interface RowContextProps {
     setActivatorNodeRef?: (element: HTMLElement | null) => void;

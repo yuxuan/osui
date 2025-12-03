@@ -7,7 +7,7 @@ import React from 'react';
 import type {HookModalRef} from 'antd/es/modal/useModal/HookModal';
 import type {ModalFuncProps} from 'antd/es/modal';
 import HookModal from 'antd/es/modal/useModal/HookModal';
-import usePatchElement from 'antd/es/_util/hooks/usePatchElement';
+import {usePatchElement} from 'antd/es/_util/hooks/usePatchElement';
 import {withError, withInfo, withSuccess, withWarn, withConfirm} from 'antd/es/modal/confirm';
 import {HookAPI} from 'antd/es/modal/useModal';
 import {

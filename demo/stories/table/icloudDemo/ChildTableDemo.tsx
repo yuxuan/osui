@@ -2,7 +2,7 @@ import type {ColumnsType} from 'antd/es/table';
 import Space from '@osui/space';
 import Badge from '@osui/badge';
 import React from 'react';
-import Table from '../../src';
+import Table from '@osui/table';
 
 interface DataType {
   key: React.Key;
