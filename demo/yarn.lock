@@ -72,7 +72,7 @@
   dependencies:
     default-browser-id "3.0.0"
 
-"@babel/cli@^7.18.10":
+"@babel/cli@^7.19.10":
   version "7.28.3"
   resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.28.3.tgz#f33693753bc103ab0084a5776ccf8ab8a140038b"
   integrity sha512-n1RU5vuCX0CsaqaXm9I0KUCNKNQMy5epmzl/xdSSm70bSqhg9GWhgeosypyQLc0bK24+Xpk1WGzZlI9pJtkZdg==
@@ -2089,280 +2089,280 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@osui/affix@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/affix/-/affix-4.0.0-beta.18.tgz#672ce6ff5ca6fccbd7081706b8d8a48dc10b65f0"
-  integrity sha512-1clqdajZ8uak71yqErJmJCK011EsDiaO9PjEbTm5x/bDG9W2xQ0Fzh2LVGbB+uwD3aaugQh2rn4Hq+v72+9ivg==
+"@osui/affix@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/affix/-/affix-4.0.0-beta.19.tgz#0bd8aa4b349e004c168b88e5aee8dc5eb023f8a2"
+  integrity sha512-btrE2Yt5iK2jci00TY1UXTfrgEAkHNxXciEMrLACyvCB4Cw/KZ1+9sBwRqHjSM34iweQD2rVEuR/+VoczxrX7A==
 
-"@osui/alert@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/alert/-/alert-4.0.0-beta.18.tgz#186492ca1238d71171a6d0703a657fae8d7ef3ff"
-  integrity sha512-Bb0BaStKLJuIsjYZ4gklCxqKCiGTBDQcwJlJ3OP1hm3KSsDhE+077nYTlPrRVpYuSUccE7gWRtepa9qHp1iVRg==
+"@osui/alert@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/alert/-/alert-4.0.0-beta.19.tgz#29d2cf21f0b3c0966b33203f3053e120f9f31396"
+  integrity sha512-z4kPugxo1hk3I6zkNMukG08BELqs2pdBqQ9dDme2lA961VZKk9EDNuEIR8SXcYXscPPFNvqL0os7YXIIjLPzRQ==
   dependencies:
     "@huse/boolean" "^1.1.2"
     "@huse/timeout" "^1.1.1"
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/anchor@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/anchor/-/anchor-4.0.0-beta.18.tgz#915fd807083375c433303dcd77a87d0cb098bded"
-  integrity sha512-zSoX6gp2BSOSeT0fUY5om/jcQV5/SgEBCybVkZK7jEuEYqBpJbhk/C6ewNF3QbtK8w1h7PHDLJrwoIDAaQJH+w==
+"@osui/anchor@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/anchor/-/anchor-4.0.0-beta.19.tgz#5614dce075c7af654454acac264e0dd67365618b"
+  integrity sha512-J8Xbd0XGKzHAzgnK1hmXQdZyCvzaM/cXaQnICI+fzyUviP/9anN+6ouoG3rxPYSCzpox+N0lbinfl81B+4PhTg==
   dependencies:
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/app@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/app/-/app-4.0.0-beta.18.tgz#a38805c674126e538baae68386ea3c6b4002698b"
-  integrity sha512-Kyl4vDGBMBV4SBiakBagVWuyy85QwWy57O798q3qbmjHvP0H2GzfhxurxgQ+uctmo/7dBuqNMiNkxiOtvnmkrw==
+"@osui/app@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/app/-/app-4.0.0-beta.19.tgz#9a0fcea224b9ae6352a496187cfcdf1209bb953c"
+  integrity sha512-vs5GIRmE1QoZN9WcAND+S3XQybGDPZUbWvO9gvOdutvDMsKie8VH3BYoQlVoVcaV5lQeQnrqVP9ZkyPZ6RaPJA==
 
-"@osui/auto-complete@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/auto-complete/-/auto-complete-4.0.0-beta.18.tgz#722f02bd2c3313a2ead63bb7fb2227d678b71b76"
-  integrity sha512-/r09FHT9xodZ3dDbtMzRSEagTPm30FhwNR9i7KAWzbiCXFl9kpPB/m5QNYCm12ZnFtjiGjFllbdYJnGm1tah8A==
+"@osui/auto-complete@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/auto-complete/-/auto-complete-4.0.0-beta.19.tgz#4a8b68bba76bb33b6544c862a60b398d9c451aca"
+  integrity sha512-frfz+69A7NGZvrlcSgq9bj/dxU1k6y+xR8Fv1VM/WNT9xy4wkfmN6IfFN2DXjRaPrmemc9JrcuW+Bpg4PAM2sw==
   dependencies:
     "@huse/derived-state" "^1.1.1"
-    "@osui/highlight-text" "^4.0.0-beta.18"
-    "@osui/select" "^4.0.0-beta.18"
+    "@osui/highlight-text" "^4.0.0-beta.19"
+    "@osui/select" "^4.0.0-beta.19"
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/avatar@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/avatar/-/avatar-4.0.0-beta.18.tgz#3b7045122a4f472aacd7a35238b2ad6ebd1a751a"
-  integrity sha512-n3jyG5+PkjRQh92Ni6PnJVfQDeTdNyON7E671EOSvKpt9LhUSZfDd4SrY7fjn4kCka45uowqZ3HfU2y+PAZkig==
+"@osui/avatar@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/avatar/-/avatar-4.0.0-beta.19.tgz#4c7bccbbb25794902331d8ac7186e88b0567c75e"
+  integrity sha512-9cCcVO0yQS/Xgrhn19M04iN9sw+pfwrPSIMlkGlBqd+T8au52jU7DzlTXcNBTbchLfl9V72J+XvZPc7TJrSgPQ==
   dependencies:
     classnames "^2.3.1"
 
-"@osui/back-top@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/back-top/-/back-top-4.0.0-beta.18.tgz#eb6f8533b8b1b327476e03e8d0ed60f14baa877e"
-  integrity sha512-AH84ijSa4RsObhMps5DiIi92ngIeJc2mEIVyxbcMe7y0iwVfqNzvob49qOvZRDpHcJKYZeXKafqfBuL0mvqlaQ==
+"@osui/back-top@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/back-top/-/back-top-4.0.0-beta.19.tgz#c2f1d1d66466da2b222bc46c73a1b374d6d34f26"
+  integrity sha512-SSw1qgUfz0PqvdLPXsIim4XSNMhl4GqSYvP+pNjDZSVUPJWdtfRUCggUYhvVRk6z3OVqQCyE6jH6qL4+mDzXpg==
   dependencies:
     classnames "^2.3.1"
 
-"@osui/badge@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/badge/-/badge-4.0.0-beta.18.tgz#33c46bbbc3f5519b5b301c244674e6f4fb6dd1aa"
-  integrity sha512-AnXW5X0zd65LBrxDtl+nVBj37GerZb7oACq/Vx7heOmptiWJyOAykbJJkU4o31Dq9vj4RentH6zlAaOG2vCfRw==
+"@osui/badge@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/badge/-/badge-4.0.0-beta.19.tgz#0d646d0ef44065d598e7c8e72c2b8015e20b53c3"
+  integrity sha512-kE4erRo6vG4y3+6F+5gHRCm+t0dZuhkbeFQxtvAlwCHrQHWbzas/gInAQBzK9iTXnP7nGVGLvdNQHBvsVNChKg==
   dependencies:
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/brand-provider@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/brand-provider/-/brand-provider-4.0.0-beta.18.tgz#a704bf8fc37b7413ac477f1f700c755705219b79"
-  integrity sha512-fvUbiCYxe2OfwGWqtm2x7VGQYYgGsAdIo8LeKm54B2mwVGot2l2AY3d/FAIlLXTf14lf9000ne/rIshYIO2Rzw==
+"@osui/brand-provider@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/brand-provider/-/brand-provider-4.0.0-beta.19.tgz#9db840a60685ba02d57bda173536f26f9da41beb"
+  integrity sha512-se7Z1SG4HrhHEb4ALqTi+atm3+6mi0CHerbmBU9Jg3L7wfygVwj443+6bZyhN0+92QOojCAQuedlgZliwqupmw==
   dependencies:
     "@emotion/css" "^11.13.5"
-    "@osui/empty" "^4.0.0-beta.18"
+    "@osui/empty" "^4.0.0-beta.19"
 
-"@osui/breadcrumb@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/breadcrumb/-/breadcrumb-4.0.0-beta.18.tgz#f45232d1e14a58abb8f48c129d46b24e0ee355ce"
-  integrity sha512-ctBGBhTHYfar7/3edvdRA3fTKOwPJpaEWPLUyfoo85DUE5tGwMbTrLwsDj2KVYxH0oGdUVkTr9hfA60X6yn1KA==
+"@osui/breadcrumb@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/breadcrumb/-/breadcrumb-4.0.0-beta.19.tgz#5909b015f42ad2e201a6c30bafe98209bc4e63dd"
+  integrity sha512-GoSilQqWWsQ+qvIcb1xu/uyLTJv2yuTXNO7l+IJb0p9ctBOTFFK0az4UjrUVv6jNFcldxmCowgyeAQXvU/M99g==
   dependencies:
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.1"
 
-"@osui/button@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/button/-/button-4.0.0-beta.18.tgz#d2137d30d4772d0d8d77dd0ac023582bb779ef9c"
-  integrity sha512-0xvxeIwrw0TVSD5HxhO+m61kWVPeLhdSlZdQYWHWoHMkCtV+RhBQM2YjnGjxnM+T5TW9oGhK8izg+ObSQaoGnA==
+"@osui/button@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/button/-/button-4.0.0-beta.19.tgz#4c78bee63c58613843711d804ee11b9656f73674"
+  integrity sha512-hkxOf6nX+uKj/sKS1caGcJppVit/lwfnP+7+RCYdabmYlLaXhJ8OR9IbtpQX5cVvC0nexC3ytfnAT6sPQKsr4A==
   dependencies:
-    "@osui/brand-provider" "^4.0.0-beta.18"
-    "@osui/icons" "^4.0.0-beta.18"
-    "@osui/tooltip" "^4.0.0-beta.18"
+    "@osui/brand-provider" "^4.0.0-beta.19"
+    "@osui/icons" "^4.0.0-beta.19"
+    "@osui/tooltip" "^4.0.0-beta.19"
     classnames "^2.3.1"
 
-"@osui/calendar@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/calendar/-/calendar-4.0.0-beta.18.tgz#e2b54ca0e4e4c0ebc934fbc637cbefc90b94dec1"
-  integrity sha512-B1CABx42X82Wp3ZLIinhOD08BX/RlDN7rgm1DRzxq8TFLEcU1bJFzXjmRtGac5cCzZ5kwZneezV82PyRpUi5Tg==
+"@osui/calendar@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/calendar/-/calendar-4.0.0-beta.19.tgz#5fcb6f9f0cd7bdcfbd1e7c6deaec278529cd7eed"
+  integrity sha512-/8339EldaOpuDQuXUiwhQJ4exQWVG3j4qAeZQSlwlpOr/ICGusKn+UEH+heVde3F3ghcuKJDnKg0EUuY0MPJSw==
   dependencies:
     hoist-non-react-statics "^3.3.2"
 
-"@osui/card@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/card/-/card-4.0.0-beta.18.tgz#1b4ed1b5b18ce07c090521e82eae6dacc4eac063"
-  integrity sha512-IMUAXBzXHHqvnenPXcHauNhITTc4relCgidKpAa6s4ruqcmmq8YuR6IDNG/98jcQ9n0I8YHnQgh6cAtRcQr52Q==
-  dependencies:
-    classnames "^2.3.1"
-    hoist-non-react-statics "^3.3.2"
-
-"@osui/carousel@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/carousel/-/carousel-4.0.0-beta.18.tgz#a61bc3ba8362e5653d7783f925fc25508a541be9"
-  integrity sha512-/PIAezHWRFaf8Yr79g6ZLopyZsPhTfxk3lr+SOrOtTmfM8+13c63oPY72jQNJnzvjAHnnBgbq/G2Ut+nUEMSlg==
-
-"@osui/cascader@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/cascader/-/cascader-4.0.0-beta.18.tgz#f23e9b40f4d3093e6398d37caa0ba19df0cb81da"
-  integrity sha512-JveLOmHk/YGpE7+9NWoLRKWnMU9SKiMPbiWrzNvg0MtsFRGByE1GYeOMK5Ern/c3aco91X0Xj7EIanyqE1vRKg==
+"@osui/card@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/card/-/card-4.0.0-beta.19.tgz#fcde64389ff6b7e0920e70f75789a86dc9636797"
+  integrity sha512-/TCi6q1tapNt6EGPCmaqhYVtC+DkKg+SufkeR7DWd7js2UvKCLRUAykVKGUoGQBg8DXFvMhO0azT4dLYnVy/GA==
   dependencies:
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/checkbox@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/checkbox/-/checkbox-4.0.0-beta.18.tgz#b0237310877d1d78f64bc3ab9873de2cde9c7463"
-  integrity sha512-naexGRg/JJQxo81pst6uMixGaSI5KAQDDi13seBaQdrJVJ8a+ZZmhcGz69G4gmvJKwRgZmdmaD8N30VdViyngA==
-  dependencies:
-    classnames "^2.3.1"
+"@osui/carousel@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/carousel/-/carousel-4.0.0-beta.19.tgz#fce50767b3f32bf3c993433473f57332f936a198"
+  integrity sha512-LRTdyZ+ZxErJIyr8QG2F57TUws3LesHAWM1Y4JPPALxFCSkhdpbTO4ooWuuvRir2+DeCI6wk8MnOsj6N//Wh6w==
 
-"@osui/col@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/col/-/col-4.0.0-beta.18.tgz#7c75f395f32cac4e4af1a2cee75f74f02a6968a6"
-  integrity sha512-o+pyT92cu1UsNPjPuDj2G8fEQWV/WAM7PESB2uQPJQncaqc/BwD32Q8DsVG0mDj+kNfxB6oCQ2l1/fSEQ48Maw==
-
-"@osui/collapse@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/collapse/-/collapse-4.0.0-beta.18.tgz#31378a2926199dd60fa94cf6278c698aff152bf3"
-  integrity sha512-s/3dC9zPA7XXGFEcmTKgXoGAyyO9BJvcXmVHyVatkqFA64YIRTWeIlNYgNhOfvk1mm66orrn5VgkKYyB3s4LPw==
+"@osui/cascader@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/cascader/-/cascader-4.0.0-beta.19.tgz#d2883e1bce079a6014322eb0bff8d77f08399e79"
+  integrity sha512-wz4PVOF95CHB2h1KZzKS/6+CzWTas3TvpRuHScGHkZHEjUnOGk4EubUdjffbSp4KI3Lw/M/YBaxsXQ4XPGAPbg==
   dependencies:
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/config-provider@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/config-provider/-/config-provider-4.0.0-beta.18.tgz#940c9de7f85a4973109277883ffad9fe3ae49edb"
-  integrity sha512-0xIYLRA4zZkCLBdOepLbStZcM6+mI3C16PqFwoDsmuWNgBKzTJVlzrZtdUYYuGJehg1i9Z7rfxjf5ua3Rb0/8w==
+"@osui/checkbox@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/checkbox/-/checkbox-4.0.0-beta.19.tgz#ff0e8aaaa622279a9e30f72574f25e370eb17ecc"
+  integrity sha512-uj4kDidZO8oibUto4Zd7GZEnYPDMLaMhF3leLoDt5mT7WOZ4wQjzGOYLGVc7BTYJF/RVO2DnF1m/129xm3+4EQ==
+  dependencies:
+    classnames "^2.3.1"
 
-"@osui/date-picker@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/date-picker/-/date-picker-4.0.0-beta.18.tgz#9bc402592ac4bd1adac8a737287d64381f1f5d79"
-  integrity sha512-goog3+m5H0VxLM6Q2pb9zvHjLS1751DAtVmwSo4cLpcW2naeKKb2h4K1iIbFHYarW8P2oSqZGOPBVHKPLMZaIg==
+"@osui/col@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/col/-/col-4.0.0-beta.19.tgz#d3a5006d38e1c47455ad8adfabcf3f679606d1ac"
+  integrity sha512-5EOyS6Et39DP7ScaYoprAuVrlvH6pVj+cYdfdMNZ3Lno4fLVLoihiidw8fuOm/JLD/lOR1VTFd/LjWoZLXq5Vw==
+
+"@osui/collapse@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/collapse/-/collapse-4.0.0-beta.19.tgz#333337942fb086a5dbdb3e0cac9efc5c9f2f1252"
+  integrity sha512-/5NSkDCcwGF+uNvrBJtXIVomoGdUUzbQR3mR5hB+vFRTwVuLzxNCnUQ0azQGkm8G5NxVzJQFgxStA7iPfPzC2g==
   dependencies:
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/descriptions@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/descriptions/-/descriptions-4.0.0-beta.18.tgz#3bab74919246e9e2849a6e06edce29410c67e5a7"
-  integrity sha512-9qD27xFr1wzOT1dAUhvx/H5z7/xo/7xKdYUT36E4mgS89YIhsdrmbs1W2QnO2mIY1334l2/XJN8fEDvbXn0XYw==
+"@osui/config-provider@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/config-provider/-/config-provider-4.0.0-beta.19.tgz#3dc8abfa918e494ca138676d2eba6cdb911ee386"
+  integrity sha512-zIqNgQtszWByinIj86TbVqQrRMz4tHXnQNsPtJOB3T6iWT2vxJp8XeAoeEXHQwi+/XwQPYtxR2i8I4E4tC5ZyA==
 
-"@osui/divider@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/divider/-/divider-4.0.0-beta.18.tgz#d50816cb7841819df0ab4544b0997576e951b7af"
-  integrity sha512-hIiwlbvHlwRRBFZVSXqNa5CfWZ3AmwmO9GNKstIcD6t34GI8YsleafzXxiA2kAq3RcnJUirZMpO870wlvI8Hcw==
-
-"@osui/drawer@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/drawer/-/drawer-4.0.0-beta.18.tgz#943dcd99754151b6fc92e731838a2d43660ed8be"
-  integrity sha512-mVJA2HvgjYJ5nthW4VtWIYhp02AP3dYD4a9SFTUsAdD77CX1GHtALK1WGq/CAvRTAfqkSxi7+Y8nI2otlWZNkg==
-  dependencies:
-    classnames "^2.3.1"
-
-"@osui/dropdown@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/dropdown/-/dropdown-4.0.0-beta.18.tgz#3ab3da275b2a5bca6c1f4b5d1be23700646e17bc"
-  integrity sha512-rsuwDC/MnN6tOD15jDTWV0sy/niE4RKFkn/+n/NC+0ySWfkkPkekbnN/SjSx/I11k9kkYpUjwP7jDBY10rZz3g==
+"@osui/date-picker@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/date-picker/-/date-picker-4.0.0-beta.19.tgz#3aa1dc87cebb4c9b4a0e9739b6306675aebc4125"
+  integrity sha512-Psxk8QL0bIPLjc/XGh9ZCysXjaoCdm4tQL0sQTk02mwTu2FKY0DHLGbEbqnIUxEOpwJZ1c2QBPMsGEenhA2+fg==
   dependencies:
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/empty@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/empty/-/empty-4.0.0-beta.18.tgz#fa2f380fb60c33f81569ff719d55e6a4db503d5d"
-  integrity sha512-8FVTtMJkv2ZlzLJMdjxL239DgS6dPngwocJqwLKyWqYzxlJZDSrPHmJxQSJCtWo+M1xhnJ8U802+1Fy9sr5VFw==
+"@osui/descriptions@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/descriptions/-/descriptions-4.0.0-beta.19.tgz#ba1a26ed527f3b4fe49ee12dd74f9f7289b6e71c"
+  integrity sha512-Aq28sH7lFgdrOF2vr2ZBbfWAMWbkKeTD2FnImCtuQx0KAqXllsfuhxSS8M+bKAD/yIP6JliVwUNtPQgn/fVpKg==
+
+"@osui/divider@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/divider/-/divider-4.0.0-beta.19.tgz#5b3db15ff768fe69c23ff337a2a4702dbb248cac"
+  integrity sha512-/wpaeBFoGVPeCYjkvq/1daGJ1iU/68f2ZrDSBgKu/AU460KwRcghWObe9irpEsEXQYYRMXBtcLRBLm75UnzP+g==
+
+"@osui/drawer@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/drawer/-/drawer-4.0.0-beta.19.tgz#fa212ebde54e17ee2abc01809c658a99276cc481"
+  integrity sha512-8uY2trUoiltD1fDKzssZd/aclv9VZtGWyoKRw7T4L8XlxSDpM+kyHOIcerPdzu/tTbmv1suuGB0Xqt8FSz9AcA==
   dependencies:
     classnames "^2.3.1"
 
-"@osui/flex-centered@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/flex-centered/-/flex-centered-4.0.0-beta.18.tgz#9bd52d2e6144ec8496aedc63f39e582558013641"
-  integrity sha512-kS5JDu/Ay6hvMPIDFWA5MtquR1B+NknDuKrdRkEeXZbtfO/J3zbYwPpEs9I8n6rQmSi273E6JygYkHgHg0gMYg==
-
-"@osui/flex@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/flex/-/flex-4.0.0-beta.18.tgz#956e4fa68aed3517804c6952eec1e8b78525b9b3"
-  integrity sha512-JbpuwYoM1wc43mA7vr6qs53fNAIDWSGR+NhGEPojGwp0Xp5PxL6CjDjGlkk6mjA/y87e6MANOIkoRczeymDZjQ==
-
-"@osui/float-button@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/float-button/-/float-button-4.0.0-beta.18.tgz#c004960f890f8c13e1a00e8770efa64acd35377f"
-  integrity sha512-glChAFcVj0WEyx98T5xyPNi8WhGcmvPW/TCDupVCtC4n0z/JAWxJ/IVq1EO7Skb+ApEVF2MX+7/B5p/adegAmw==
-
-"@osui/form@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/form/-/form-4.0.0-beta.18.tgz#1205faadcc36bbee4c531f38fc2de464f440efb1"
-  integrity sha512-pOhRKLTY73YFWE4t3oqqZvZa21lHpPa1nBc6SUd8HvSE4WjMnDXiHr2l3uzQSYAt2GvCSVvX7mFZEqPDD4Azzw==
+"@osui/dropdown@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/dropdown/-/dropdown-4.0.0-beta.19.tgz#9cfec48e60ba59b973b8c0521d0686004564f3b1"
+  integrity sha512-i3KXzXjG/X39rKOwrS21PAKq9Qjz/MWFYQKjoAxYHJKnsTxl8I9VeFbMY5cK3KOhPCzbAnRpGxPCEtokVRTUfg==
   dependencies:
-    "@osui/brand-provider" "^4.0.0-beta.18"
     classnames "^2.3.1"
+    hoist-non-react-statics "^3.3.2"
 
-"@osui/gap@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/gap/-/gap-4.0.0-beta.18.tgz#e70fd2e12132506a1c4da11bcc89ddcec186485a"
-  integrity sha512-wDhMnew253RT8kcrfODXtEQLleeIGfspaos9BcoHP3kxupUzERjZXGA3Zsc0hhHEZ2f1SQ+xLxroY5vIvTD0rg==
-
-"@osui/grid@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/grid/-/grid-4.0.0-beta.18.tgz#bf14ae6c82a1ee5e92d79da25e0e7fced0a53385"
-  integrity sha512-xxWtUoWkqgJFaNGb5fX6rZLp/wqUro5nrDSy8KvoEueQkSbI0+9sQ6Ymi4B4QJjO/tcB7Q1MxbmhSvyp4hQM1A==
-
-"@osui/highlight-text@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/highlight-text/-/highlight-text-4.0.0-beta.18.tgz#c51f51966621e6575e5ec56ba7ec1318eaf444db"
-  integrity sha512-QsaLuJo0wfJzPlZGkCZgrJn+iXx4kRyzgwLQwZTnqYQTYWvoe/hBk/hZtOLgoUgqNaXo+/j6pOTcEY5qSwzRZQ==
+"@osui/empty@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/empty/-/empty-4.0.0-beta.19.tgz#07253911366e31690b6d3b1426e3dcb2a788f330"
+  integrity sha512-1rmuan9HzXj7wA76hEvge4EN0oazK8i649i2UNK8eR6uFAvmP2ppZjwgO5Y5A/t5ch0vCBBQbRFpSoFjfhTnlg==
   dependencies:
     classnames "^2.3.1"
 
-"@osui/icloud-theme@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/icloud-theme/-/icloud-theme-4.0.0-beta.18.tgz#e264b06eb596c3d7f1363e0966cf5a9182dfb23a"
-  integrity sha512-jjzf3NvCzWTpWBmALWNewJBWDOBWWA8EuuH60p3mGLNBW+w77ZeNIpO7qxwctIAk/nIQTwyklR1/AUgnYjBcuQ==
+"@osui/flex-centered@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/flex-centered/-/flex-centered-4.0.0-beta.19.tgz#cb5d132ed13d2165bcef6ef367bd2a6d4a56eb2b"
+  integrity sha512-spzbRouRaLJJiPBN7n7QZUXJnm0/v6E9eIssofPhWVONaQY5+2L+Q+mB++AHOb6gTHblQwtnpbrocfWotsrJJg==
 
-"@osui/icons@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/icons/-/icons-4.0.0-beta.18.tgz#79a1b4ca993e2b0384c58700275cac32d63f1d91"
-  integrity sha512-DOitDA9mApu51Adgdhodi6MkspKlMJHx03RE3utb+6xVRBOS/tHRb6WhBln06/Mg5DP0TpJD+Sf2f6w3tm3rhg==
+"@osui/flex@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/flex/-/flex-4.0.0-beta.19.tgz#7e4f2f438dc4ad3db7b1c5926473fefabc0608b8"
+  integrity sha512-SRlx1o/zNlyQNARsWuQnVxQ4J+nlxRe1caFcGY0c+dn7yC1MPa4fqxbE2q7Ia+u9pscP0Sug5BociEfzmUcXtw==
+
+"@osui/float-button@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/float-button/-/float-button-4.0.0-beta.19.tgz#04b5257eb9c9ce0ded34b4d14c2e16aff2334f55"
+  integrity sha512-Pryh+MyQMM3udIXuh7vGOCG4BuW6ACVd9KXvpAxS6+FrKfjaPRW5W1/i6fmGmYmCZrivuBMHL6WabDqZNkwkWw==
+
+"@osui/form@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/form/-/form-4.0.0-beta.19.tgz#b93f25cf9a0b075f7ca5ff437f7552d603baee60"
+  integrity sha512-lofwwv3e6N5VgMBcWoQLAYSYdtvXW5XHKHlX5a4bl01hPs9hFFQ8nHc6FBYoz0cnk6GDwKBD07PmPvLeKPEXhA==
+  dependencies:
+    "@osui/brand-provider" "^4.0.0-beta.19"
+    classnames "^2.3.1"
+
+"@osui/gap@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/gap/-/gap-4.0.0-beta.19.tgz#cb18c1dc7037477aad3a6889d3f34e62d4acee7f"
+  integrity sha512-BAWaN4J9DDam3hvracD3zTBay7x0yrLIYjakwVM5JXOmuQmhDJpXcxeP/LFoY+eVn/Li0+NMfooON8xwmgGw5Q==
+
+"@osui/grid@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/grid/-/grid-4.0.0-beta.19.tgz#d0283f0cedbdc6bdd053b666dd1327f76e179625"
+  integrity sha512-nthKLtgItqSlrq4nd3BOEa4oNN+4RbnQ7rMS+fDzfA6hNGSpRQijmEAbYTukvcnwjQrYDfXg0N7T9W9dQCwFbw==
+
+"@osui/highlight-text@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/highlight-text/-/highlight-text-4.0.0-beta.19.tgz#810839fe493cbcaa5271542d50852634b1713cfd"
+  integrity sha512-WYBWB5oP/aX7Q1D9/yTRIu5FHZSFozj/qmjVkGktL4381krnq/IqZqliZDu4KCz4MAJesYcFPc21AprFXWco/Q==
   dependencies:
     classnames "^2.3.1"
 
-"@osui/image@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/image/-/image-4.0.0-beta.18.tgz#93e38c05e700e4a65f6e9af737e8c7ce0984698b"
-  integrity sha512-l3vlEfMywSoB4lQgHhLEzWnc/hjs78lVTdvB9rS5ntm5SAzNMlmlEqXXBGBegJ9mqT1Vb2BEpzYfvaMb/DdYtg==
+"@osui/icloud-theme@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/icloud-theme/-/icloud-theme-4.0.0-beta.19.tgz#7ab391b4c318d91cab108baa45e4453aad1a344e"
+  integrity sha512-sS9b/XZDka1QvBhfY+m69In69NezdzGQq1wfhfcMXzmgVH0rcRXz7dqKpjveL9Sc7n0LDUyd6AeVYfCPPCQ83w==
 
-"@osui/input-number@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/input-number/-/input-number-4.0.0-beta.18.tgz#c9adf892376a16bfe52afb9862f9e3c2c050655f"
-  integrity sha512-jFnHd9oztaCUm5CAEcQpAsLMfWBWbAy6c8lDXeQCfjWH2MLcVrnXxL+mCAxZdOOh7Gv0WutpIDigRmKyPnscYA==
+"@osui/icons@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/icons/-/icons-4.0.0-beta.19.tgz#8828e38ba1d724a9a7cd5ed22cd28b7171f3cac3"
+  integrity sha512-BjNq0YeyePCCbnoA89hteLtEhUmfwJOMQmgKL/LL9SFhjoaB1bS9lUOdH8mufl9rsjmrnbz4ROntMASr5PqZFg==
+  dependencies:
+    classnames "^2.3.1"
+
+"@osui/image@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/image/-/image-4.0.0-beta.19.tgz#bd55c095eb64dbd99dc49f716d2f8fe477983fab"
+  integrity sha512-UDBBItUn7VXI367B0JjF693H2aaHhgWUYYqBPLwilQVcP9dkBUvrgVD9FZ71tdUfaxHvGK9d0EXpcR0/9LgHtw==
+
+"@osui/input-number@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/input-number/-/input-number-4.0.0-beta.19.tgz#218cde3be8699c1eaac39c8943b931026d1deab7"
+  integrity sha512-uhgYMtqFHItGyYDA9KWWtTiAv2MMvwnRhOAhpJNhvMl3ti9kN9/b09+8cHz1F5M/eIfoyvCFhEkcmvbo/pehkg==
   dependencies:
     "@huse/derived-state" "^1.1.1"
-    "@osui/button" "^4.0.0-beta.18"
+    "@osui/button" "^4.0.0-beta.19"
     classnames "^2.3.1"
 
-"@osui/input@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/input/-/input-4.0.0-beta.18.tgz#8fbd945de47804b65e9109a81d2d928632dd7012"
-  integrity sha512-2KyZOWl8jetp4NOA1phJiIq9GJt4LcAqoE41ITT4a8WnxPT7Ftq8biirHMDXwSr5Ai1iEYZwJ2evsm1MuN40Rw==
+"@osui/input@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/input/-/input-4.0.0-beta.19.tgz#b81efe8d031912d011077fbf827f96110975d363"
+  integrity sha512-vZo1CMWpkoe223n/HQtCxKSQ30TP+CFzQr7jb0GDZo8mYrA1XD0z2nCGM/c9WTWLTFinXPh+jvzbk4lVRVuGOg==
   dependencies:
     "@huse/derived-state" "^1.1.1"
-    "@osui/brand-provider" "^4.0.0-beta.18"
+    "@osui/brand-provider" "^4.0.0-beta.19"
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
     rc-util "^5.21.2"
 
-"@osui/layout@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/layout/-/layout-4.0.0-beta.18.tgz#04b7716df2240017be9878e2c0738b8be669b376"
-  integrity sha512-hLlzNbNXSuRYmYowKD5eFe5TkNdpInslN3M4MPZYGqAsiDio8p5uaSSfaC3Kelm+Rwq38f6/ax0SVtFLr28VOw==
+"@osui/layout@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/layout/-/layout-4.0.0-beta.19.tgz#9b8888df7c412055410ff0072c6b9f77a5c45b22"
+  integrity sha512-wo5oquQ3pSl9/ju5Q77Oa273EK0l68xeB2OGF/9p96Y0VagxXhkHZKBjICsLSgKFY5rnU9P+nBm469wP60R3FQ==
 
-"@osui/list@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/list/-/list-4.0.0-beta.18.tgz#f56253842c026268184b616b3a34e54bd1d73562"
-  integrity sha512-UupQFcJd7FvKmGAyUBXDwveOmUV+/I6NbmNBTlHKgq9zIK2GiVsN3wWDPB+AMez70XfrKbOozPiMLHkh+2w2Hw==
+"@osui/list@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/list/-/list-4.0.0-beta.19.tgz#17f974a8cd265550db77f4aae61d90cb2f1b20d6"
+  integrity sha512-FLTGHzDvy9RP0zpwYNCY0knBlmb6JFViYZAI5AZ0RP6xhUJIOiz1nx7KjCQhe7RW7EIO4Xsda205catnCG288A==
   dependencies:
-    "@osui/spin" "^4.0.0-beta.18"
+    "@osui/spin" "^4.0.0-beta.19"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/markdown@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/markdown/-/markdown-4.0.0-beta.18.tgz#c7fc2010729921f6affa5ca47c8b303260e36973"
-  integrity sha512-LoApFBDIF4HWXdyk665+SVt+9hCx41N4DylZOK3uwptvd66B0/on067Q6B4cS7glozTdIfuHa2B46B50rz+UPQ==
+"@osui/markdown@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/markdown/-/markdown-4.0.0-beta.19.tgz#92b49c5dc465a44422fea1e44070473a7a125fdc"
+  integrity sha512-no2fcevSIKN7HqlTtrUKZEa7ig3TJVF5nITivhl9Xs2zPaBqqZMLIX1cxt+UaWsxOoaFQJJWpHRREEmV51QDAA==
   dependencies:
     classnames "^2.3.1"
     github-markdown-css "^4.0.0"
@@ -2370,193 +2370,193 @@
     remark-html "^12.0.0"
     unist-util-visit "^2.0.3"
 
-"@osui/mentions@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/mentions/-/mentions-4.0.0-beta.18.tgz#e388cc753596fba7bebe4de3f0dfe6ae06ce7b42"
-  integrity sha512-GI2BnEhA1a6lsuIneaVwMzeOxvMbbJB5iy5BYaWe6Q4zYsGZDGnoTGYUNV3MSLVkXtGkGZ2es8zTiu1cIKDvrg==
+"@osui/mentions@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/mentions/-/mentions-4.0.0-beta.19.tgz#f78d95a7aa6f09022e16f32e3c54e8a73758fb6b"
+  integrity sha512-Xkr5Zbqk8gcSJL9SXHbzheofcu2kUeElzHQaGdk0fyqdEv6CbSGqBZc3G0EiQCjoRPfImpRDOMHyceVKuPxDIA==
 
-"@osui/menu@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/menu/-/menu-4.0.0-beta.18.tgz#a0e7f8f8f918d203c526eb808ca2f84cd42b515c"
-  integrity sha512-5K/G8DrM1Y1UYXvsJubZ/xWDJVu2yl+w+1QJMeWoRxHbJub355V2mqSr71DrClWeqNdwRk+Un8/oWhkkZBEJ2g==
+"@osui/menu@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/menu/-/menu-4.0.0-beta.19.tgz#8654949a581eafc5d44df655ad8feb47b4bd62d2"
+  integrity sha512-/m9uYz39iTFjNYuvXLsWA+s0XUyhMM7CPklF4/3tlzWjUEyafPv1kfFTIPZgaH/wIjSrRg6u22W4cDIJxegmBA==
   dependencies:
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/message@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/message/-/message-4.0.0-beta.18.tgz#35fab49970c620ca43015be8551e2b0298c257b3"
-  integrity sha512-yu42gfEng9h8AJ5bcFl8TElZpmj77Cra8pvryBrE87kQLQgheQY66E8GMFi5aKBK2shxrd9GPVr0CZQyX18JkA==
+"@osui/message@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/message/-/message-4.0.0-beta.19.tgz#4a1d537ca4e26dc6e2f0ec25dd12fee95624a3b2"
+  integrity sha512-9uEbOM3qslvjkce0MsdGwfXxxNPSVyy8QC5UnT1EOLxB8u+nfAsS6eNpZzRBLp6v0s9QhgX32DGELDnGIfAucQ==
   dependencies:
     "@huse/timeout" "^1.1.1"
-    "@osui/config-provider" "^4.0.0-beta.18"
+    "@osui/config-provider" "^4.0.0-beta.19"
     classnames "^2.3.1"
     lodash.partial "^4.2.1"
 
-"@osui/modal@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/modal/-/modal-4.0.0-beta.18.tgz#21dd00cdb2cf5db16d222ac6f4631790b5900663"
-  integrity sha512-B/t45zsqbMTrVgoQ7LwBfvMAEsJQodfv4jFZ3yvDc39tnUlMiK7eYZ9lIsKK6yc3pqUBnU2A6aU3GYh4i4qAog==
+"@osui/modal@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/modal/-/modal-4.0.0-beta.19.tgz#536bd369d690f8528eddc86eed6e368459b214b5"
+  integrity sha512-xGDKgMWmYQMXuPVoVGLlYCgQ847E7MWGGcKo7cyiQNYt2KRprEEpfJo34o2VP1b+tA7uOoAF2ebPTLb90wBFAw==
   dependencies:
     classnames "^2.3.1"
 
-"@osui/notification@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/notification/-/notification-4.0.0-beta.18.tgz#12f03314e59f2a1f5047ad34106d3d97957ced4b"
-  integrity sha512-d8u+/1HndlrLmAYYn9/zlIyQG7ELftqSHpAwPdFzVsXcbJeMS8zvZOHu+2XrMM6IupsYT2rjDcf7xWpw0wSEiw==
+"@osui/notification@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/notification/-/notification-4.0.0-beta.19.tgz#6295a0c7270db43bf5e8e53906fd12e51abf39a2"
+  integrity sha512-QzQ40zS+U4KnHn49KInJ93p6XApw2ycZMiU8QocIjyMXmm9q1FkDDKy+7fycdbFciHjzLA5unhsQZsebvepOKw==
   dependencies:
-    "@osui/typography" "^4.0.0-beta.18"
+    "@osui/typography" "^4.0.0-beta.19"
     acud-icon "^1.1.1"
     classnames "^2.5.1"
 
-"@osui/pagination@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/pagination/-/pagination-4.0.0-beta.18.tgz#6970611e7232b39c73aa73c599ec4861f5869036"
-  integrity sha512-8FG0rOJHspXkIqtwiuzmlfN1EomVYcSGaabKvhS/KXEunQV0OOt2y8xH1uwRuv0Dz39qF+Y4zXTNcfPPZgr33w==
+"@osui/pagination@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/pagination/-/pagination-4.0.0-beta.19.tgz#1e17c2e0c909b415dac440be5fa0b87ff6dd78d6"
+  integrity sha512-yiTQcGVFD7fWCJKs2WnZ71opDmql/IAfMzAYPzj3++Y6O9kZ+bTQtmzcFvnsxe8kApq4q2Ky1xitXcrkk2aJ/g==
   dependencies:
-    "@osui/button" "^4.0.0-beta.18"
+    "@osui/button" "^4.0.0-beta.19"
     classnames "^2.3.1"
 
-"@osui/popconfirm@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/popconfirm/-/popconfirm-4.0.0-beta.18.tgz#53a43864a673fda1d1ff1cab1b92ffb2855e3923"
-  integrity sha512-7EyDpFId7doQrhM6HGkiWgu56CHmwLLCoK8w0OkEP5HaVgwXiabHz3Y+BOFCPZAOIXZRBfGviGhk2RklbLy5Aw==
+"@osui/popconfirm@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/popconfirm/-/popconfirm-4.0.0-beta.19.tgz#424e7006b340724fa33abecc07fcfe9367496d63"
+  integrity sha512-ngHcfBBoED/e9O6X2cRZyPCraqVh4nH7rYkEnDYTY1l/rT2DdcIBvHL4foIz3Yji48K8AnabE6fLks3pr++fFg==
 
-"@osui/popover@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/popover/-/popover-4.0.0-beta.18.tgz#cbd9b4bb5bcbb603ab03a82b0af1bdcf1253f0a5"
-  integrity sha512-PN9gH2cNRNYK6COSk5+hCGJLtgE5DzUReBjqHLhNq1OgmGcIBfZF1jqtle2yWPMPI/q/beddzO84xDhS49EubA==
+"@osui/popover@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/popover/-/popover-4.0.0-beta.19.tgz#22dbeedca28bd3f4a5c33370f7b10c0edc2f27b8"
+  integrity sha512-oDWspCFYhz9kJlTTEDZ/5acCDup1+dv5dvNup6BB5j5fxhUhUtMAa50VaNblEowOifz9RCN7iXIlxnLzZYaeHg==
   dependencies:
     classnames "^2.3.1"
 
-"@osui/progress@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/progress/-/progress-4.0.0-beta.18.tgz#45aa9dafdba74264b95acd232796687671129ff5"
-  integrity sha512-UGvGRSqFowDC6JfwVo9sXz59g7Fr2V+VwpZyVDeYmrtHSWbeQfe7EEdR112Es/Y5yefA5enqeeW+yfCM9QgKWQ==
+"@osui/progress@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/progress/-/progress-4.0.0-beta.19.tgz#afb9533d550ea4d1dd3108feb46b6a89f17f15cb"
+  integrity sha512-BEw+60Iv6l1/ryWke3eJn7Bz9fc5sYCUiG8uO0DlmoL9+eTkBz6TpF+SZoo17gOvsKdQK5O9sO6s3IwB4KQp8A==
   dependencies:
-    "@osui/brand-provider" "^4.0.0-beta.18"
+    "@osui/brand-provider" "^4.0.0-beta.19"
     classnames "^2.3.1"
 
-"@osui/qr-code@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/qr-code/-/qr-code-4.0.0-beta.18.tgz#975c7af1097f6b312c9548613483b90afcb9482d"
-  integrity sha512-qtRVn0HHGNC+afDt2JqzBUOwArYBhAqYTUnQ5FrJZKfq5UT0K3a6BZJJCm0GWpmmQa5DwIlCHNVOjleGzqd2Mw==
+"@osui/qr-code@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/qr-code/-/qr-code-4.0.0-beta.19.tgz#1b4fe546f332d5d804e72d6a25a7d26717287560"
+  integrity sha512-cOAKkbWr/tECMvtCBtIi8WN6SHw1j5iOneZGTH/94Vj8t1rbGMqk1CAPV/S5xMw6uzQ51vSWeECfvf2fZvcJIg==
 
-"@osui/quick-edit@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/quick-edit/-/quick-edit-4.0.0-beta.18.tgz#ad0d9188999d1fae6901484c7f648c08e2a14d0a"
-  integrity sha512-wvsl6XUfPAmoiyBCYzsKG/dVAZdBAn7rB+4IWCuFSkCKxZ7uMwnc8Bdr19d3tze9aTZhbWefQ2E0LMXH9nF9uw==
+"@osui/quick-edit@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/quick-edit/-/quick-edit-4.0.0-beta.19.tgz#49821d1873e6c0edb3350a5b9072f5af0dd31d42"
+  integrity sha512-zsjjyBzb9iir3zdIIsjaiB2gn67KjamBBYJ4ChP8EUhJEvshYAbaWj/EiQwcXGFzPN78cS+GEcZ5BblcIiZlVQ==
   dependencies:
     "@huse/derived-state" "^1.1.1"
-    "@osui/input" "^4.0.0-beta.18"
-    "@osui/select" "^4.0.0-beta.18"
+    "@osui/input" "^4.0.0-beta.19"
+    "@osui/select" "^4.0.0-beta.19"
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
     react-abstract-quick-edit "^0.0.7"
 
-"@osui/radio@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/radio/-/radio-4.0.0-beta.18.tgz#f944dc600915ffae5d13ff95961a7bb8b4dd2537"
-  integrity sha512-XmOg/xIyi+Uhg5sTfeNmapeI68S4axYMqB/e2VvVhNeA3PAWIEWj2/lXncCQid2udW03R884GIz6FGRJMipODg==
+"@osui/radio@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/radio/-/radio-4.0.0-beta.19.tgz#b702ef7330ed0cb691390ddb3e90af7958905e17"
+  integrity sha512-40zL4nx7/JgekguYhyzZ9RbKijCZePZrI59VagA2LbXBNvCayQeWZpiubXLh8+iXiX4fhYv0LVZBKWReWfC+mA==
   dependencies:
     classnames "^2.3.1"
 
-"@osui/rate@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/rate/-/rate-4.0.0-beta.18.tgz#58dce9750836e95c63d9830b8ee0f1c355c8165b"
-  integrity sha512-h8YI4CHJ5Eqgg+GjBlzELEe8dxsPGF9FdQo2l/V63afkPMG6ruVtgPi7s4GZMjOxng/sGklGzzNFyAkSWXfU5A==
+"@osui/rate@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/rate/-/rate-4.0.0-beta.19.tgz#4d3c4aadd3b3a936a62091c89d21039c80e2ded5"
+  integrity sha512-n7K4y38sKYY8iJ95NxJ30RgvZy6RZgXkueleUo0ZJO1OeG4MPnr43dNUmWmjQdPTe356PKLBk2IyxMZJ08vA+w==
   dependencies:
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/result@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/result/-/result-4.0.0-beta.18.tgz#504e7a649939e1204a1ced95c4c3a9d5a89e0581"
-  integrity sha512-qaPvlMp3t51sKqymHuJz/OiouwGkLyW1vypMCQRLq1Q0GzzIRNbgttfiCPv3kZQTeyBU7T4KlHXQcSMFTDf9mg==
+"@osui/result@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/result/-/result-4.0.0-beta.19.tgz#6aca2567e817004e8805f9c51e00cab8e1e4c685"
+  integrity sha512-CS5DuF6BdFef7UBXLhxHXfGyZR912H8c1VXUoDkOXG0gAvnIAuJqQXKHGzwO8mr+CwpsLwG3rO9wDpRZ46QbKQ==
 
-"@osui/row@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/row/-/row-4.0.0-beta.18.tgz#0b1c39e24db2753b2f52c3a5c4cd2c4c71632671"
-  integrity sha512-FFtQIqFR32dZSp4Alc+GW1Zud8oAAZ5G5qfB0GZGXZq/MYh1YDTVQASLv9pbXnkVcTLOV4L6CdfYXlXL4lT3fQ==
+"@osui/row@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/row/-/row-4.0.0-beta.19.tgz#276b09fb777d2b6ffe46e2321938edd615da306f"
+  integrity sha512-rXB0SiLLZANZCSBfgdPXHq1r1EdkOY2V1VQW+8dKJPJzM7SLj6CRnCt4q9E3wF+FMelJb1zVZ3n4TkP5N0nYug==
 
-"@osui/segmented@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/segmented/-/segmented-4.0.0-beta.18.tgz#c38510bf18a4d0d34407c1206c7c5f0a9e4a3851"
-  integrity sha512-Cm89sN37B7NYcITsGi0jIXuxKJuLPxkjBzhKn49ciLzYSnfYQNuS4eJZtQlCRv9JQoxf0Kae8Yvr7U6y4ArD2A==
+"@osui/segmented@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/segmented/-/segmented-4.0.0-beta.19.tgz#0c6092be722a19c8acdc9e7eff45b14061af7649"
+  integrity sha512-q6X/7UUASPE4DFXu3YdrLIQgHVDwiHfIU8OhvPLYCE2qG6LMjxTFV3rVXSelBq30asWQDV+MgymuCcam9nEs3g==
   dependencies:
     classnames "^2.5.1"
 
-"@osui/select@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/select/-/select-4.0.0-beta.18.tgz#03cc94ab469192e6b6629f552e67d53e9d7a4e5c"
-  integrity sha512-jITLBL1+p4yNKk33kBr1zHzYOGzE/86PISStcukSgCaOYk2bfVDiO2678wgABEc/ZpIt9H+2zC0ptWthzicylg==
+"@osui/select@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/select/-/select-4.0.0-beta.19.tgz#bbfe484eff10ae7b958e425d99b465d754eada35"
+  integrity sha512-hM3Y4dDFHs6Dz7puP8Mvq5ObS6WP7Qq98yBlqwykeoKEq/oddsb0yoSSqVOkq3c1BQDpiWTSQ93DJEtjs081Yg==
   dependencies:
     "@huse/derived-state" "^1.1.1"
-    "@osui/brand-provider" "^4.0.0-beta.18"
-    "@osui/form" "^4.0.0-beta.18"
-    "@osui/input" "^4.0.0-beta.18"
-    "@osui/popover" "^4.0.0-beta.18"
-    "@osui/tag" "^4.0.0-beta.18"
-    "@osui/tooltip" "^4.0.0-beta.18"
+    "@osui/brand-provider" "^4.0.0-beta.19"
+    "@osui/form" "^4.0.0-beta.19"
+    "@osui/input" "^4.0.0-beta.19"
+    "@osui/popover" "^4.0.0-beta.19"
+    "@osui/tag" "^4.0.0-beta.19"
+    "@osui/tooltip" "^4.0.0-beta.19"
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/skeleton@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/skeleton/-/skeleton-4.0.0-beta.18.tgz#410bfe0a887ab945c50c2019cf104dd1b32006c5"
-  integrity sha512-gpn/jwNyDAuFMO/VajxS0EphmOqtYEr8T0qRAPBz9g+9RIAOE63xhrEG89HImFyR0QUGBwin+HXVj6WnFnm2aQ==
+"@osui/skeleton@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/skeleton/-/skeleton-4.0.0-beta.19.tgz#a053b87642ce77b03157dd27d8ffe663f77136b8"
+  integrity sha512-GgfBKh18sBXCuEpQqBT3ay3dINrVh60+pQLSFmtv3F/ASeSlxKOgOvd3gQWCz3yJu9nOKICfg99A6NlphM/RaQ==
 
-"@osui/slider@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/slider/-/slider-4.0.0-beta.18.tgz#e516379803aebc216de01072efebe909dd9eaf47"
-  integrity sha512-apKVcsd8ClcOB/glY6ARgwlsDDCGOXBZl5q7UWEDro4fiOHiU9HW36qmJay0xwJDUjhiO9yrmfpdO9m52ckTjA==
+"@osui/slider@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/slider/-/slider-4.0.0-beta.19.tgz#6485bd41bb733cd10e43568d3daec68d9ffcb903"
+  integrity sha512-kC51UuPcKTJE4qFNSZlIpgBVUNPP4DOOH4hvq6DBDXAhhMmU4/NEvlDOqUPQLNjpwRd3+FM2bDllaO/0Svyj+A==
   dependencies:
-    "@osui/brand-provider" "^4.0.0-beta.18"
+    "@osui/brand-provider" "^4.0.0-beta.19"
     classnames "^2.3.1"
 
-"@osui/space@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/space/-/space-4.0.0-beta.18.tgz#debaffc924c9a0ff5942f75e6c06a9ce6c07cdeb"
-  integrity sha512-5S8YlUNzMbtqoKsVLPoEjgYa590vMV9fd8u1l9y00THXtxWE7zlvzDLg3xcrr9XajGqR1PaZgd2zt1VwZORlAw==
+"@osui/space@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/space/-/space-4.0.0-beta.19.tgz#709d04680e27f8b8aac9c9fc2085ee6f98fa23d4"
+  integrity sha512-bwnJSqpv2NZVxO4ePtAK9fmGobbM6EUbDzUOsOR3kkMDbtGgY6M9yo1ua01qbJtJrPieMXROZ2j1Q2t6L57b0A==
   dependencies:
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/spin@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/spin/-/spin-4.0.0-beta.18.tgz#beae0eb71bfc05a5bd7288b9727295165229e008"
-  integrity sha512-wxE58OVpzJD5Uv3uOLx36KTZXFwPL34c53dhC/xBHCY4nknaY4irM986NDFpU9GiwnFb7zTHv8yByMd7sdqxmQ==
+"@osui/spin@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/spin/-/spin-4.0.0-beta.19.tgz#399289bf08eded16870774f417b40b0e029e90df"
+  integrity sha512-X4s8DJ2g4tDENT9KxJncKqJ1mwyH6sWJQwcpwbG3JfUwe5SZvtfeMsPhi2K2wNfW/lB+ITcftKAlGOQglFilTw==
   dependencies:
     classnames "^2.3.1"
 
-"@osui/splitter@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/splitter/-/splitter-4.0.0-beta.18.tgz#754405063a59d68132485a370dd04253a8cbc26a"
-  integrity sha512-8TRx6Cj7oGcGaLXRWyPLM2abWfUJnsNCHF/MOYDF4QHEGfjg6yOscPnep17osMEJtRPhFAyvU79cAIdhEZgG0g==
+"@osui/splitter@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/splitter/-/splitter-4.0.0-beta.19.tgz#7e002318416e9e840348a45463044e788062d3d8"
+  integrity sha512-509M2nABmWpCknipdtMZADqejafWB1jX3Il2mOu6cQYy+vkakDvak+/1CsIH1SEXNF2twfC4YaD278ftr8RBKQ==
 
-"@osui/statistic@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/statistic/-/statistic-4.0.0-beta.18.tgz#46c1e2e1fc11ddea4a3a0d385fd5d79cedfd158b"
-  integrity sha512-ueDo4Bpp/d9Z2a+CcZZx9TCXKngGgDfdGQKPLXh4gp52yJVZnNX/GLGlCjjrvIUkjMX1pAGFXCaOYskgAgXncQ==
+"@osui/statistic@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/statistic/-/statistic-4.0.0-beta.19.tgz#412f6ff281a7bbad18c40ce90aa418cc963516b2"
+  integrity sha512-r2pTS3dBd9gwad2jBzvS42jydcBsmdv+IIPavHiZ2eYiVOhX6Lf7twnW0onjQM26XZQMr9CIuZH6e5NTbCxU8A==
 
-"@osui/steps@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/steps/-/steps-4.0.0-beta.18.tgz#cfd4461e86398eb6a44f2254b47e214e40f85b66"
-  integrity sha512-x8YDb7KVKBlfWLmy2IkUOFZJXJt9O1tU1LZ67oOAPCBbs/Ju/mRAsmhmG9qLi3raJC/Ju5FIAjHIHunb7J5WXQ==
+"@osui/steps@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/steps/-/steps-4.0.0-beta.19.tgz#82245f72e618b4c570b6217c04457f427eb90297"
+  integrity sha512-Jxduv59qrehoVy/Kyp5KnflofJZvvkTC+HGwCvCINpWPgNiJa5Npqt5KmiKLj8wUQ9/uKBnZKXyNkV1GbzR60g==
   dependencies:
     classnames "^2.3.1"
 
-"@osui/switch@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/switch/-/switch-4.0.0-beta.18.tgz#c8e1a408e0991e5cc936639458ba30e852a99cba"
-  integrity sha512-LYbSjM+hdQI53BUpoHfWwnIIGhYMUabuP77J262fvremgajwwUKZYzj3B4utLiN9td8MjevYnDu4csux+1jg2w==
+"@osui/switch@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/switch/-/switch-4.0.0-beta.19.tgz#00075a0d4cafa94ad0a3c9a01ed9fb46916f9d0d"
+  integrity sha512-Y6+FBWH5kIAIeZt/wqqO51xBX8O62FxAcQNnD+JkK5d4ixUCl6WTI002shOsi4tvH4uNT0ZpoPGDp2sxU3FymA==
   dependencies:
     classnames "^2.3.1"
 
-"@osui/table@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/table/-/table-4.0.0-beta.18.tgz#dfb460b3b883f4d5356699af36adb4262eead105"
-  integrity sha512-y3jyc0imwuJwo3kL9LPy+rMU6XiNGgXNyEU95MFBO+Tql8OxfgSp19b7C6NoZRWBqYY/r1KYMTxqZSHuT7A7yg==
+"@osui/table@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/table/-/table-4.0.0-beta.19.tgz#5efc9e527e7d7c4abf7ade7f2ee65c79a83a6d64"
+  integrity sha512-4lm7k4ZYArMgGY7VXuZCVG1O+cPMV3D9D5sAVP7X56515hcCdIAx2N339nnuF5D9HRRNAo2+TphUAebLp51bpw==
   dependencies:
     "@dnd-kit/core" "^6.3.1"
     "@dnd-kit/modifiers" "^9.0.0"
@@ -2564,8 +2564,8 @@
     "@dnd-kit/utilities" "^3.2.2"
     "@emotion/css" "^11.13.5"
     "@emotion/styled" "^11.14.1"
-    "@osui/button" "^4.0.0-beta.18"
-    "@osui/spin" "^4.0.0-beta.18"
+    "@osui/button" "^4.0.0-beta.19"
+    "@osui/spin" "^4.0.0-beta.19"
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
     lodash "^4.17.21"
@@ -2574,112 +2574,112 @@
     rc-util "^5.21.2"
     react-resizable "^3.0.5"
 
-"@osui/tabs@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/tabs/-/tabs-4.0.0-beta.18.tgz#20deece78486c2c78bc4a0d0f2daeb13339784c6"
-  integrity sha512-JoIhf3lq3KDFjgaI9mzxX80CfY4n3E/Z4F/Kx4npbPdvJC2S5kgFmXt31reAC/ariIv0IjxNdrvOQXndL0eMOQ==
+"@osui/tabs@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/tabs/-/tabs-4.0.0-beta.19.tgz#1a7e4548c455ce73983e860119ed9b888f5aa935"
+  integrity sha512-F/oH7tUeJoO8vfGGFWHF2ZvCaBOM9faTvvn6aaSfLqPHfzXUM71rnuv6E9HFcL2Pj+FhOiWkPOlM8zZP51ADUQ==
   dependencies:
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/tag@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/tag/-/tag-4.0.0-beta.18.tgz#8ae6f9648fc83a8344cf401c60fa15682f79446a"
-  integrity sha512-ziEr0Dz84JN/XZbpDET1yfYKyCAMrARR+36YujD655kvIfHqBnPzaWxTbdcseZemteoM7CFhoftmEfA/4dN7Vg==
+"@osui/tag@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/tag/-/tag-4.0.0-beta.19.tgz#41c9342c1715bbe0b7abd3902235ddeb37b4ecf7"
+  integrity sha512-32JyArTzoF/1/31mF5TzbSIeMt/v8u7zREd2/KdDRL69HNzxurikQgzLLWkfAw0orw1CeQUrLZWK9BlCMxX8Qg==
   dependencies:
-    "@osui/divider" "^4.0.0-beta.18"
-    "@osui/input" "^4.0.0-beta.18"
-    "@osui/tooltip" "^4.0.0-beta.18"
+    "@osui/divider" "^4.0.0-beta.19"
+    "@osui/input" "^4.0.0-beta.19"
+    "@osui/tooltip" "^4.0.0-beta.19"
     classnames "^2.3.1"
 
-"@osui/text-overflow-tooltip@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/text-overflow-tooltip/-/text-overflow-tooltip-4.0.0-beta.18.tgz#cbbe17eddae7576e8ee5c8fbba0d666f74cba4d2"
-  integrity sha512-k9M1KIehetardLL0tsmpfMHu2ZvCT6/4y3eMHtDr14Vlb2RKBhN2gm0tfPjkSxsTy6Orw7DX7Ui08K921bEp5w==
+"@osui/text-overflow-tooltip@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/text-overflow-tooltip/-/text-overflow-tooltip-4.0.0-beta.19.tgz#6ea2cc075b09e37bf5d9e1599ed30193aba64f7d"
+  integrity sha512-USeVmv4yUsiMQNXtwXnGHmVeXPayuuk2cuGNfxogLFf74E+Dng1srpevry/yeFVjF1jRlNfmUmsVsVCEwpBV0Q==
   dependencies:
-    "@osui/tooltip" "^4.0.0-beta.18"
+    "@osui/tooltip" "^4.0.0-beta.19"
 
-"@osui/theme-provider@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/theme-provider/-/theme-provider-4.0.0-beta.18.tgz#5821ba3fa38066f1e21567518fb1dad8f277fcd9"
-  integrity sha512-NJF/TsWyuNGGzazCxSlelPW0OzpBj7t1Nd0GmBVAuFyWDLALrzSJr0MTMcURgQ48KXKawdmv4tOj8LQjL8A9dA==
+"@osui/theme-provider@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/theme-provider/-/theme-provider-4.0.0-beta.19.tgz#750e093b5757de91749b629afb388f4500983043"
+  integrity sha512-Mn7RTSiUJJqy5n5oBnvgG3EIe0EJ6R9qNYHrwS4ApmP1ONO74Zz4jv+63NQa2M2Vs7dPtGH8BAbTA8Yz6lFDcQ==
   dependencies:
-    "@osui/dropdown" "^4.0.0-beta.18"
-    "@osui/menu" "^4.0.0-beta.18"
+    "@osui/dropdown" "^4.0.0-beta.19"
+    "@osui/menu" "^4.0.0-beta.19"
     classname "^0.0.0"
     classnames "^2.3.1"
 
-"@osui/time-picker@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/time-picker/-/time-picker-4.0.0-beta.18.tgz#724392e8651ec924bd578aad24430bbf9484d94b"
-  integrity sha512-b4+SjHoO0bMhN0rUPT5nv932+p+3BDoF1tAOzL05LNVct79R45gOkDEqBNwXyTJfJR8/I5opevzMYUGSEuw7hw==
+"@osui/time-picker@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/time-picker/-/time-picker-4.0.0-beta.19.tgz#3fd405d86cff9e9ff762a941644a8ee82c56846e"
+  integrity sha512-CzfUzIB2n/+/cplcSCLycwZYBRooJrZGVxiWi7hBNC+ueUDGAVrl7MzfNLffTkw+So5IBdOIRrFe25olFBPHww==
   dependencies:
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/timeline@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/timeline/-/timeline-4.0.0-beta.18.tgz#3a1081f81b7413c018b2c24403c0d8e9afa4ae35"
-  integrity sha512-924dOhaxX7P5PzUP00R3krT67xqBTor9eetqW6DnRiYzsDFyUkn4dDbVOm5JHI4tD6khmqF+FgW7Ssz/Ux4zLQ==
+"@osui/timeline@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/timeline/-/timeline-4.0.0-beta.19.tgz#86a0d7d9a1ae7368805380b79208aca98109cd70"
+  integrity sha512-Mi9uP0Ekh+dV3ifz3IltrpVXS6hPE6pdom3PRabfS3Kb2a+H57lksYV9uZKdBnS4/x92klgKm6IorkMmiFurRg==
   dependencies:
     classnames "^2.3.1"
 
-"@osui/tooltip@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/tooltip/-/tooltip-4.0.0-beta.18.tgz#40c6c390d06082dda67113d6b02933f8ffb85a42"
-  integrity sha512-U1Qqn9PT1gJhu735SB2Vf+MR5Vj4X1Fn1cs7Ed7wcJNe8xTtkNk2LttoKkvoVWsMnXYF697tVhAF3+EL3KORqg==
+"@osui/tooltip@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/tooltip/-/tooltip-4.0.0-beta.19.tgz#e5bdd70d4d17d0303f6f24383d1dcf7763e7fe38"
+  integrity sha512-a6+SnM+4yEXvWg2M2QovudX7OuD83FjBuNd/qMVOOV3xUtmEBV7Yj929kvRnnBC2bfVE2WUVOLKCMYYDdA2pkw==
   dependencies:
     classnames "^2.3.1"
 
-"@osui/tour@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/tour/-/tour-4.0.0-beta.18.tgz#d3f2439bf81829bc0bc2cfeadb30a28e5fea94bf"
-  integrity sha512-a1GJaO+UkPtwJNm5Lkyw/xovrYx4eMfHfJ7Nuc+LT0mcoUzpfK3VGX3rNo02ZUl5rqgnUuIQqE65fd61uAF/Xw==
+"@osui/tour@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/tour/-/tour-4.0.0-beta.19.tgz#32ab98015131f9e8d449582c62f8c5eba14926ba"
+  integrity sha512-GbeSf61wgdnXctwZsrRJCNLiSQYBSk9y2zNfi6Ln24Yvk+MO654VzW3uMAEFMdGXo4iUrQYqo4tzoS/4ZLVBeg==
 
-"@osui/transfer@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/transfer/-/transfer-4.0.0-beta.18.tgz#7955c997da76bf2501656dd6a447c26bde26572d"
-  integrity sha512-XdeD7EFNTUT/Ukh4ngLSB6iumFBmvPSQDimbokuMdkgi8lP7FMSv0aJXjGHs4h5TqiY9pb0Rpk+lffZzsu65ng==
+"@osui/transfer@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/transfer/-/transfer-4.0.0-beta.19.tgz#a8a3f747417538195c37ea09beae7a6f6dfb257e"
+  integrity sha512-uo+gmDd0uttVTb8cPNRUGqqwIjWRYOOM5BjAqZaJMogRT8RwOplp2jmTRW/o69ThKWghBNDlz6ZU5dt1Z1/04A==
 
-"@osui/tree-select@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/tree-select/-/tree-select-4.0.0-beta.18.tgz#33ad1dd146b9924b78068eeb1c8740e22ea2f35d"
-  integrity sha512-vNfnpVFMGwltvMlU6tdrDkXFtVPnMReg0RV4lVc+o71i+o0DzNiv6BzAE3fYxnchoQ8p/hnrtW2uiG0s0xXFuw==
-  dependencies:
-    classnames "^2.3.1"
-    hoist-non-react-statics "^3.3.2"
-
-"@osui/tree@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/tree/-/tree-4.0.0-beta.18.tgz#b754af8a3077289a96aff3d4f9894af40fb82cff"
-  integrity sha512-EsvpHyav8ZfcLOdswwws97AYF436AtWTGIjmujiCH75Gb7MOUadJebI9W4m9j3vHsh4eYq9T8zLMoKcjn8RvGg==
-  dependencies:
-    classnames "^2.3.1"
-
-"@osui/typography@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/typography/-/typography-4.0.0-beta.18.tgz#efe058278b6bb5c616dcafbd50c2af393b453481"
-  integrity sha512-SWoNr5OFY9UwTRejm498SXvolma/Be6oi1Fml57+otvlw4LfbAUIQA75NxdlA0bYVI5Sc1KCbrBBHqQuHTcdNA==
-  dependencies:
-    classnames "^2.3.1"
-
-"@osui/upload@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/upload/-/upload-4.0.0-beta.18.tgz#c6fa6478457c10351a7f7fa65a72b925b9e01bee"
-  integrity sha512-LTZ/7lk3w1UZ2XhSQMDWCzmTxMquTy68VSt+y7QwFk+QgmrY8jHe6uuRFCmJD7/Wixy62Hi+LwIQD6a5ZUgbRQ==
+"@osui/tree-select@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/tree-select/-/tree-select-4.0.0-beta.19.tgz#09a7ac8853df3feb5781bb44324cb5ac0af46bb5"
+  integrity sha512-wspPB9Dqt2PN+Ih3CwY/O7ILidoUjqAWtkTXDh0NDbZc7ZWJINp+MKUVgo3Waig0Vx5IeaXA7q9+Lv/HXW3VlA==
   dependencies:
     classnames "^2.3.1"
     hoist-non-react-statics "^3.3.2"
 
-"@osui/version@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/version/-/version-4.0.0-beta.18.tgz#0838a987552086ce113d3fbbca6557747387e3c7"
-  integrity sha512-FbGY6XaiZyH1CbGw4VPPoQmAmfG3IhOukTt/b045yDAfDs3jyFA6S+ITGN8FHXKTr4lQBkFXlZTODTCinbcI6g==
+"@osui/tree@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/tree/-/tree-4.0.0-beta.19.tgz#15f5db08d47ae87633d61f30b08c0b7649665f93"
+  integrity sha512-P+x0XpEZnBb2f3bXKffy6Lya4bPlFH7/d/LZKkMM977cXYCKXHRW9fwMa8y0HZMXES8z/2Absp42yXmggTokrQ==
+  dependencies:
+    classnames "^2.3.1"
 
-"@osui/watermark@^4.0.0-beta.18":
-  version "4.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@osui/watermark/-/watermark-4.0.0-beta.18.tgz#df3803b1220599ac2308a1f5a290aa11e0e94a09"
-  integrity sha512-baN/Z+Q+8sz7XNN89FDBJW3weHaaPLWrIykhcPuoUvkvWDIbcc244pcxDVmbHUzp/0xj/1pz5Iea3JyuRnD/8Q==
+"@osui/typography@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/typography/-/typography-4.0.0-beta.19.tgz#6e7c0ccf5fde6407df519619dd1fc6cc8949b8a5"
+  integrity sha512-AxOqtoicIqra85Hmn8rBAzMbWmrjJVxPbKNX/Z37MTuc0IR1jrKBdShuMXPgAb3tZx0SVuc5jscZMmDaorw3qg==
+  dependencies:
+    classnames "^2.3.1"
+
+"@osui/upload@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/upload/-/upload-4.0.0-beta.19.tgz#a975186b6a24c1b62590a5317008b968a52d84c3"
+  integrity sha512-avxvCOki8sh42wgeaJ8lH0IBTtzkEmLspelcWGF5VvMNWZSE6ahmt1zcrNA6XIgYGTYauI5qFl0bzO2C7OnH5g==
+  dependencies:
+    classnames "^2.3.1"
+    hoist-non-react-statics "^3.3.2"
+
+"@osui/version@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/version/-/version-4.0.0-beta.19.tgz#568d5c390fcd847405dbf430aa6be453bea10217"
+  integrity sha512-ExGifRH+0BkczKLYJrBoUIa2U2H0kS+XHmZsT6uoCIqvNh1VaLMf+ncHfQSz8/OAFNsxBsoB0wdjwfznKIz8cQ==
+
+"@osui/watermark@^4.0.0-beta.19":
+  version "4.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@osui/watermark/-/watermark-4.0.0-beta.19.tgz#8158bc46dc965191768b2355fb000e1892317817"
+  integrity sha512-oiElusn5RlEYPcD3mMlFB9OMC5N+GuqT7Fae8UG/HRICG0eIVEr0wIDY+3ERpfRSEkU7/V3kpPkCxyGk42bm0A==
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
@@ -4200,19 +4200,19 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.7.tgz#50ae4353eaaddc04044279812f52c8c65857dbcb"
   integrity sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==
 
-"@types/react-dom@^18.0.18":
-  version "18.3.7"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.3.7.tgz#b89ddf2cd83b4feafcc4e2ea41afdfb95a0d194f"
-  integrity sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==
+"@types/react-dom@^19.0.19":
+  version "19.2.3"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-19.2.3.tgz#c1e305d15a52a3e508d54dca770d202cb63abf2c"
+  integrity sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==
 
-"@types/react-test-renderer@^18.0.2":
-  version "18.3.1"
-  resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-18.3.1.tgz#225bfe8d4ad7ee3b04c2fa27642bb74274a5961d"
-  integrity sha512-vAhnk0tG2eGa37lkU9+s5SoroCsRI08xnsWFiAXOuPH2jqzMbcXvKExXViPi1P5fIklDeCvXqyrdmipFaSkZrA==
+"@types/react-test-renderer@^19.0.2":
+  version "19.1.0"
+  resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-19.1.0.tgz#1d0af8f2e1b5931e245b8b5b234d1502b854dc10"
+  integrity sha512-XD0WZrHqjNrxA/MaR9O22w/RNidWR9YZmBdRGI7wcnWGrv/3dA8wKCJ8m63Sn+tLJhcjmuhOi629N66W6kgWzQ==
   dependencies:
-    "@types/react" "^18"
+    "@types/react" "*"
 
-"@types/react@>=16":
+"@types/react@*", "@types/react@>=16":
   version "19.2.7"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-19.2.7.tgz#84e62c0f23e8e4e5ac2cadcea1ffeacccae7f62f"
   integrity sha512-MWtvHrGZLFttgeEj28VXHxpmwYbor/ATPYbBfSFZEIRK0ecCFLl2Qo55z52Hss+UV9CRN7trSeq1zbgx7YDWWg==
@@ -4226,14 +4226,6 @@
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "^0.16"
-    csstype "^3.2.2"
-
-"@types/react@^18":
-  version "18.3.27"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.27.tgz#74a3b590ea183983dc65a474dc17553ae1415c34"
-  integrity sha512-cisd7gxkzjBKU2GgdYrTdtQx1SORymWyaAFhaxQPK9bYO9ot3Y5OikQRvY0VYQtvwjeQnizCINJAenh/V7MK2w==
-  dependencies:
-    "@types/prop-types" "*"
     csstype "^3.2.2"
 
 "@types/resolve@^1.20.2":
@@ -8804,7 +8796,7 @@ longest-streak@^2.0.1:
   resolved "https://registry.yarnpkg.com/longest-streak/-/longest-streak-2.0.4.tgz#b8599957da5b5dab64dee3fe316fa774597d90e4"
   integrity sha512-vM6rUVCVUJJt33bnmHiZEvr7wPT78ztX7rojL+LW51bHtLh6HTjx84LA5W4+oa6aKEJA7jJu5LR6vQRBpA5DVg==
 
-loose-envify@^1.1.0, loose-envify@^1.2.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
+loose-envify@^1.2.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -10478,13 +10470,12 @@ react-docgen@^7.0.0:
     resolve "^1.22.1"
     strip-indent "^4.0.0"
 
-react-dom@^18.0.2:
-  version "18.3.1"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.3.1.tgz#c2265d79511b57d479b3dd3fdfa51536494c5cb4"
-  integrity sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
+react-dom@^19.0.2:
+  version "19.2.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.2.0.tgz#00ed1e959c365e9a9d48f8918377465466ec3af8"
+  integrity sha512-UlbRu4cAiGaIewkPyiRGJk0imDN2T3JjieT6spoL2UeSf5od4n5LB/mQ4ejmxhCFT1tYe8IvaFulzynWovsEFQ==
   dependencies:
-    loose-envify "^1.1.0"
-    scheduler "^0.23.2"
+    scheduler "^0.27.0"
 
 react-draggable@^4.0.3:
   version "4.5.0"
@@ -10508,11 +10499,6 @@ react-is@18.1.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.1.0.tgz#61aaed3096d30eacf2a2127118b5b41387d32a67"
   integrity sha512-Fl7FuabXsJnV5Q1qIOQwx/sagGF18kogb4gpfcG4gjLBWO0WDiiz1ko/ExayuxE7InyQkBLkxRFG5oxY6Uu3Kg==
 
-"react-is@^16.12.0 || ^17.0.0 || ^18.0.0", react-is@^18.0.2, react-is@^18.2.0, react-is@^18.3.1:
-  version "18.3.1"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.3.1.tgz#e83557dc12eae63a99e003a46388b1dcbb44db7e"
-  integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
-
 react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -10522,6 +10508,16 @@ react-is@^17.0.1:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
+
+react-is@^18.2.0:
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.3.1.tgz#e83557dc12eae63a99e003a46388b1dcbb44db7e"
+  integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
+
+react-is@^19.0.2, react-is@^19.2.0:
+  version "19.2.0"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-19.2.0.tgz#ddc3b4a4e0f3336c3847f18b806506388d7b9973"
+  integrity sha512-x3Ax3kNSMIIkyVYhWPyO09bu0uttcAIoecO/um/rKGQ4EltYWVYtyiGkS/3xMynrbVQdS69Jhlv8FXUEZehlzA==
 
 react-omni-link@^2.1.1:
   version "2.1.1"
@@ -10593,14 +10589,6 @@ react-router@5.3.4:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-shallow-renderer@^16.15.0:
-  version "16.15.0"
-  resolved "https://registry.yarnpkg.com/react-shallow-renderer/-/react-shallow-renderer-16.15.0.tgz#48fb2cf9b23d23cde96708fe5273a7d3446f4457"
-  integrity sha512-oScf2FqQ9LFVQgA73vr86xl2NaOIX73rh+YFqcOp68CWj56tSfgtGKrEbyhCj0rSijyG9M1CYprTh39fBi5hzA==
-  dependencies:
-    object-assign "^4.1.1"
-    react-is "^16.12.0 || ^17.0.0 || ^18.0.0"
-
 react-style-singleton@^2.2.1, react-style-singleton@^2.2.2:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/react-style-singleton/-/react-style-singleton-2.2.3.tgz#4265608be69a4d70cfe3047f2c6c88b2c3ace388"
@@ -10609,21 +10597,18 @@ react-style-singleton@^2.2.1, react-style-singleton@^2.2.2:
     get-nonce "^1.0.0"
     tslib "^2.0.0"
 
-react-test-renderer@^18.0.2:
-  version "18.3.1"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.3.1.tgz#e693608a1f96283400d4a3afead6893f958b80b4"
-  integrity sha512-KkAgygexHUkQqtvvx/otwxtuFu5cVjfzTCtjXLH9boS19/Nbtg84zS7wIQn39G8IlrhThBpQsMKkq5ZHZIYFXA==
+react-test-renderer@^19.0.2:
+  version "19.2.0"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-19.2.0.tgz#5c9782b4a4ba0630a77d7ce092779fdf9ccde209"
+  integrity sha512-zLCFMHFE9vy/w3AxO0zNxy6aAupnCuLSVOJYDe/Tp+ayGI1f2PLQsFVPANSD42gdSbmYx5oN+1VWDhcXtq7hAQ==
   dependencies:
-    react-is "^18.3.1"
-    react-shallow-renderer "^16.15.0"
-    scheduler "^0.23.2"
+    react-is "^19.2.0"
+    scheduler "^0.27.0"
 
-react@^18.0.2:
-  version "18.3.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.3.1.tgz#49ab892009c53933625bd16b2533fc754cab2891"
-  integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
-  dependencies:
-    loose-envify "^1.1.0"
+react@^19.0.2:
+  version "19.2.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-19.2.0.tgz#d33dd1721698f4376ae57a54098cb47fc75d93a5"
+  integrity sha512-tmbWg6W31tQLeB5cdIBOicJDJRR2KzXsV7uSK9iNfLWQ5bIZfxuPEHp7M8wiHyHnn0DD1i7w3Zmin0FtkrwoCQ==
 
 read-pkg-up@^7.0.1:
   version "7.0.1"
@@ -11042,12 +11027,10 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-scheduler@^0.23.2:
-  version "0.23.2"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.2.tgz#414ba64a3b282892e944cf2108ecc078d115cdc3"
-  integrity sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==
-  dependencies:
-    loose-envify "^1.1.0"
+scheduler@^0.27.0:
+  version "0.27.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.27.0.tgz#0c4ef82d67d1e5c1e359e8fc76d3a87f045fe5bd"
+  integrity sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==
 
 schema-utils@^2.6.5:
   version "2.7.1"
