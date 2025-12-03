@@ -4,7 +4,7 @@ import Divider from '@osui/divider';
 import Spin from '../src';
 
 export default {
-    title: '反馈/加载中 Spin',
+    title: '反馈/[new_dev]加载中 Spin',
     component: Spin,
 };
 

@@ -147,7 +147,7 @@ export const Demo = () => {
     );
 };
 
-export const Demo = () => {
+export const Demo2 = () => {
     const options = [
         {label: '选项1', value: '1'},
         {label: '选项2', value: '2'},

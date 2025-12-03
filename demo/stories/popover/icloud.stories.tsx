@@ -10,7 +10,7 @@ import BrandProvider from '@osui/brand-provider';
 import Popover from '@osui/popover';
 
 export default {
-    title: '数据展示/气泡卡片 Popover',
+    title: '数据展示/[new_dev]气泡卡片 Popover',
 };
 
 

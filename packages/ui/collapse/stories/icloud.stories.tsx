@@ -9,7 +9,7 @@ import Collapse from '../src';
 const {Panel} = Collapse;
 
 export default {
-    title: '数据展示/折叠面板 Collapse',
+    title: '数据展示/[new_dev]折叠面板 Collapse',
 };
 
 export const Demo = () => {

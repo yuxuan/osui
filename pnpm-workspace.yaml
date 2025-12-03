@@ -3,3 +3,9 @@ packages:
   - 'packages/ui/*'
   - 'packages/ui-icons/*'
   - 'packages/ui-theme/*'
+
+# pnpm 配置
+autoInstallPeers: false
+strictPeerDependencies: false
+linkWorkspacePackages: true
+preferWorkspacePackages: true

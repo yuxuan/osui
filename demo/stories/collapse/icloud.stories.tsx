@@ -9,10 +9,34 @@ import Collapse from '@osui/collapse';
 const {Panel} = Collapse;
 
 export default {
-    title: '数据展示/折叠面板 Collapse',
+    title: '数据展示/[new_dev]折叠面板 Collapse',
 };
 
 export const Demo = () => {
+    const text =
+        '百度（纳斯达克：BIDU），全球最大的中文搜索引擎、最大的中文网站。百度愿景是：成为最懂用户，并能帮助人们成长的全球顶级高科技公司。';
+    return (
+        <BrandProvider brand="icloud">
+            <div style={{padding: 30}}>
+                <p>基础折叠面板</p>
+                <Collapse defaultActiveKey={['1']}>
+                    <Panel header="可以折叠或展开的内容区域" key="1">
+                        {text}
+                    </Panel>
+                    <Panel header="可以折叠或展开的内容区域" key="2">
+                        {text}
+                    </Panel>
+                    <Panel header="可以折叠或展开的内容区域" key="3" disabled>
+                        {text}
+                    </Panel>
+                </Collapse>
+                <p></p>
+            </div>
+        </BrandProvider>
+    );
+};
+
+export const OldDemo = () => {
     const text =
         '百度（纳斯达克：BIDU），全球最大的中文搜索引擎、最大的中文网站。百度愿景是：成为最懂用户，并能帮助人们成长的全球顶级高科技公司。';
     return (

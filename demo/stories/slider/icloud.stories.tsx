@@ -1,10 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
-import InputNumber from '@osui/input-number';
 import Gap from '@osui/gap';
 import Divider from '@osui/divider';
 import Slider from '@osui/slider';
+import InputNumber from '../../input-numb@osui/slider';
 
 export default {
     title: '数据录入/滑动输入条 Slider',

@@ -1,9 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, {useState} from 'react';
 import BrandProvider from '@osui/brand-provider';
-import InputNumber from '@osui/input-number';
 import Gap from '@osui/gap';
 import Divider from '@osui/divider';
+import InputNumber from '../../input-number/src';
 import Slider from '../src';
 
 export default {

@@ -8,7 +8,7 @@ import Markdown from '@osui/markdown';
 import message from '../src';
 
 export default {
-    title: '反馈/全局提示 Message',
+    title: '反馈/[new_dev]全局提示 Message',
 };
 
 

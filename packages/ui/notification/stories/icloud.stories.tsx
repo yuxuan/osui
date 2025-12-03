@@ -7,7 +7,7 @@ import Divider from '@osui/divider';
 import notification from '../src';
 
 export default {
-    title: '反馈/通知提醒框 Notification',
+    title: '反馈/[new_dev]通知提醒框 Notification',
     component: Notification,
 };
 

@@ -12,7 +12,7 @@ import BrandProvider from '@osui/brand-provider';
 import Modal from '../src';
 
 export default {
-    title: '反馈/对话框 Modal',
+    title: '反馈/[new_dev]对话框 Dialog(Modal)',
 };
 
 const ReachableContext = createContext<string | null>(null);
