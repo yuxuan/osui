@@ -239,5 +239,8 @@ export const components: ThemeConfig['components'] = {
         // nodeSelectedColor: acudSemanticTokens['--text-color-brand'],
         // directoryNodeSelectedColor: acudSemanticTokens['--text-color-brand'],
     },
+    Notification: {
+        width: 400,
+    },
 };
 

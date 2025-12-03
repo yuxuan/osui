@@ -88,5 +88,10 @@
         "registry": "https://registry.npmjs.com"
     },
     "packageManager": "pnpm@10.20.0",
-    "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f"
+    "gitHead": "a9b8eb0a08430c6a35bd7f6553c3e583021eb96f",
+    "dependencies": {
+        "@osui/typography": "workspace:^",
+        "acud-icon": "^1.1.1",
+        "classnames": "^2.5.1"
+    }
 }
