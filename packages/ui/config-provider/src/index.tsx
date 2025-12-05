@@ -6,7 +6,7 @@ interface GlobalConfig {
     messagePosition: MessagePosition;
 }
 
-let globalMessagePosition: MessagePosition = 'right';
+let globalMessagePosition: MessagePosition = 'center';
 
 export const setGlobalConfig = ({messagePosition}: GlobalConfig) => {
     if (messagePosition !== undefined) {

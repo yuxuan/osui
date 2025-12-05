@@ -14,7 +14,7 @@ type ColumnType = NonNullable<ColumnsType<DataType>[number]>;
 
 type ResizableTitleProps = React.ThHTMLAttributes<HTMLTableCellElement> & {
     width?: number;
-    onResize?: (e: React.SyntheticEvent<Element>, data: {size: {width: number; height: number}}) => void;
+    onResize?: (e: React.SyntheticEvent<Element>, data: {size: {width: number, height: number}}) => void;
 };
 
 const ResizableTitle: React.FC<ResizableTitleProps> = props => {
@@ -115,15 +115,15 @@ const ResizableTableDemo: React.FC = () => {
 
     const handleResize =
         (index: number) =>
-        (_e: React.SyntheticEvent<Element>, {size}: {size: {width: number; height: number}}) => {
-            setColumns(prev => {
-                const next = [...prev] as ColumnType[];
-                const col = {...(next[index] || {})};
-                col.width = Math.max(60, Math.floor(size.width));
-                next[index] = col;
-                return next as ColumnsType<DataType>;
-            });
-        };
+            (_e: React.SyntheticEvent<Element>, {size}: {size: {width: number, height: number}}) => {
+                setColumns(prev => {
+                    const next = [...prev] as ColumnType[];
+                    const col = {...(next[index] || {})};
+                    col.width = Math.max(60, Math.floor(size.width));
+                    next[index] = col;
+                    return next as ColumnsType<DataType>;
+                });
+            };
 
     const columnsWithResize = React.useMemo(() => {
         return (columns as ColumnType[]).map((col, index) => ({

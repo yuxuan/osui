@@ -1,3 +1,4 @@
+import acudMatricsTokens from '@osui/icloud-theme/es/theme/acud/matrics';
 import acudSemanticTokens from '@osui/icloud-theme/es/theme/acud/acud-semantic-token';
 import acudColors from '@osui/icloud-theme/es/theme/acud/colors';
 import {ThemeConfig} from 'antd';
@@ -66,7 +67,7 @@ export const acud: AntdToken = {
     controlOutline: '#2468F2',
     controlOutlineWidth: 0,
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-    fontSize: 12,
+    fontSize: parseInt(acudMatricsTokens['--font-size-xs'], 10),
     fontSizeHeading1: 33,
     fontSizeHeading2: 26,
     fontSizeHeading3: 21,

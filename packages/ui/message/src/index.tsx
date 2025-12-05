@@ -90,8 +90,8 @@ const getMessageContent = (props: MessageArgsProps) => {
         className,
         onClose,
         onClick,
-        showClose = true,
-        showCountDown = true,
+        showClose,
+        showCountDown,
     } = props;
 
     const handleClose = () => {

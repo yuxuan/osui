@@ -3,7 +3,7 @@
 
 .@{ant-prefix}-message {
     .@{ant-prefix}-message-notice-wrapper:first-child {
-        margin-top: var(--message-margin-top);
+        margin-top: 31px;
     }
 }
 
@@ -71,19 +71,34 @@
         display: flex;
         align-items: flex-start !important;
         max-width: 400px;
-        color: var(--theme-color-text);
+        color: var(--text-color-primary);
         text-align: left;
+
+        > svg + span {
+            flex: 1;
+        }
 
         > svg.osui-icon {
             flex-shrink: 0;
-            margin-top: 4px;
             padding-right: var(--alert-icon-padding-right);
+        }
+
+        > svg.osui-icon,
+        .anticon-loading {
+            margin-top: 4px;
         }
 
         .close-icon {
             margin-top: 5px;
-            margin-left: 8px;
+            margin-left: var(--space-2xl);
             cursor: pointer;
+            justify-items: flex-end;
+        }
+
+        &:has(.@{osui-message-class-prefix}-count-down-close) {
+            .close-icon {
+                margin-left: 8px;
+            }
         }
     }
 
@@ -93,6 +108,7 @@
         &-inline {
             display: flex;
             align-items: flex-start;
+            justify-content: space-between;
         }
 
         &-title {
@@ -113,11 +129,15 @@
 
         .close-icon {
             display: flex;
+            color: var(--icon-color-tertiary);
+
+            &:hover {
+                color: var(--icon-color-disabled);
+            }
 
             svg {
                 width: 14px;
                 height: 14px;
-                color: var(--theme-icon-color);
             }
         }
     }
@@ -142,55 +162,70 @@
         }
     }
 
-    // 颜色
-    &-message-success {
-        .@{ant-prefix}-message-notice-content {
-            background: var(--message-alert-success-bg-color);
-            border: 1px solid var(--message-alert-success-border-color);
-        }
-    }
+    // // 颜色
+    // &-message-success {
+    //     .@{ant-prefix}-message-notice-content {
+    //         background: var(--message-alert-success-bg-color);
+    //         border: 1px solid var(--message-alert-success-border-color);
+    //     }
+    // }
 
-    &-message-warning {
-        .@{ant-prefix}-message-notice-content {
-            background: var(--message-alert-warning-bg-color);
-            border: 1px solid var(--message-alert-warning-border-color);
-        }
-    }
+    // &-message-warning {
+    //     .@{ant-prefix}-message-notice-content {
+    //         background: var(--message-alert-warning-bg-color);
+    //         border: 1px solid var(--message-alert-warning-border-color);
+    //     }
+    // }
 
-    &-message-error {
-        .@{ant-prefix}-message-notice-content {
-            background: var(--message-alert-error-bg-color);
-            border: 1px solid var(--message-alert-error-border-color);
-        }
-    }
+    // &-message-error {
+    //     .@{ant-prefix}-message-notice-content {
+    //         background: var(--message-alert-error-bg-color);
+    //         border: 1px solid var(--message-alert-error-border-color);
+    //     }
+    // }
 
-    &-message-info,
-    &-message-loading {
-        .@{ant-prefix}-message-notice-content {
-            background: var(--message-alert-info-bg-color);
-            border: 1px solid var(--message-alert-info-border-color);
-        }
-    }
+    // &-message-info,
+    // &-message-loading {
+    //     .@{ant-prefix}-message-notice-content {
+    //         background: var(--message-alert-info-bg-color);
+    //         border: 1px solid var(--message-alert-info-border-color);
+    //     }
+    // }
 
-    &-message-notify {
+    // &-message-notify {
+    //     .@{ant-prefix}-message-notice-content {
+    //         border: 1px solid var(--theme-border-color-base);
+    //     }
+    // }
+
+    &.@{ant-prefix}-message-notice {
         .@{ant-prefix}-message-notice-content {
-            border: 1px solid var(--theme-border-color-base);
+            color: var(--text-color-primary);
+            background: var(--component-color-white);
+            border: 1px solid var(--line-color-2);
+            padding: var(--space-s) var(--space-m);
+            line-height: var(--font-height-m);
+            min-width: 180px;
+
+            a {
+                color: var(--brand-color-6);
+            }
         }
     }
 
     &-infoIcon {
-        color: var(--theme-info-color);
+        color: #352eff;
     }
 
     &-successIcon {
-        color: var(--theme-success-color);
+        color: var(--success-color);
     }
 
     &-errorIcon {
-        color: var(--theme-error-color);
+        color: #fa423c;
     }
 
     &-warningIcon {
-        color: var(--theme-warning-color);
+        color: var(--warning-color);
     }
 }

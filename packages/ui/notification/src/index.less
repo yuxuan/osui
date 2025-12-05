@@ -1,0 +1,72 @@
+/* stylelint-disable no-duplicate-selectors */
+@osui-notification-class-prefix: osui-notification;
+@ant-notification: ~'@{ant-prefix}-notification';
+
+.@{ant-notification} .@{ant-notification}-notice-wrapper:has(.@{osui-notification-class-prefix}) {
+    background-color: var(--component-color-white);
+    border: 1px solid var(--component-color-border);
+    border-radius: var(--radius-s);
+
+    .@{osui-notification-class-prefix} {
+        width: 400px;
+        padding: var(--space-l);
+
+        .@{ant-notification}-notice-message {
+            color: var(--text-color-primary);
+            font-weight: var(--font-weight-medium);
+            font-size: var(--font-size-m);
+            line-height: var(--font-height-m);
+            margin-bottom: var(--space-3xs);
+        }
+
+        .@{ant-notification}-notice-icon {
+            font-size: 20px;
+            top: 22px;
+        }
+
+        .@{ant-notification}-notice-with-icon {
+            .@{ant-notification}-notice-message,
+            .@{ant-notification}-notice-description {
+                margin-inline-start: 28px;
+            }
+        }
+
+        .@{ant-notification}-notice-description {
+            color: var(--text-color-secondary);
+            font-size: var(--font-size-s);
+            line-height: var(--font-height-s);
+
+            &:has(.@{osui-notification-class-prefix}-error-content) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.@{osui-notification-class-prefix} {
+    .@{osui-notification-class-prefix}-error-content {
+        margin-top: var(--space-m);
+
+        .@{osui-notification-class-prefix}-error-content-info {
+            font-size: var(--font-size-2xs);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-color-secondary);
+            margin-bottom: var(--space-2xs);
+        }
+
+        .@{osui-notification-class-prefix}-error-content-description {
+            padding: var(--space-s);
+            border-radius: var(--radius-2xs);
+            background: #f7f9fc;
+            font-size: var(--font-size-2xs);
+            line-height: var(--paragraph-height-xs);
+            white-space: pre-wrap;
+            margin-bottom: var(--space-m);
+        }
+
+        .@{osui-notification-class-prefix}-error-content-code {
+            display: flex;
+            margin-bottom: calc(var(--space-m) - var(--space-l));
+        }
+    }
+}

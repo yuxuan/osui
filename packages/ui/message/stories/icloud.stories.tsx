@@ -8,13 +8,20 @@ import Markdown from '@osui/markdown';
 import message from '../src';
 
 export default {
-    title: '反馈/全局提示 Message',
+    title: '反馈/[new_dev]全局提示 Message',
 };
 
 
 export const Demo = () => {
- const success = () => {
-        message.success('This is a success message', 200);
+    const general = () => {
+        message.open({
+            content: 'This is a general message',
+            duration: 300,
+        });
+    };
+
+    const success = () => {
+        message.success('This is an success message');
     };
     const error = () => {
         message.error('This is an error message');
@@ -23,21 +30,48 @@ export const Demo = () => {
         message.info('This is an info message');
     };
     const warning = () => {
-        message.warning('This is a warning message');
+        message.warning('This is an warning message');
     };
-
     const loading = () => {
-        message.loading('This is a loading message');
+        message.loading('This is an loading message');
     };
 
     const success2 = () => {
-        message.success({content: 'This is a success message', showClose: true});
-    };
-    const action = () => {
         message.success({
+            content: 'This is an success message',
+            showClose: true,
+        }, 300);
+    };
+    const error2 = () => {
+        message.error({
+            content: 'This is an error message',
+            showClose: true,
+        });
+    };
+    const info2 = () => {
+        message.info({
+            content: 'This is an info message',
+            showClose: true,
+        });
+    };
+    const warning2 = () => {
+        message.warning({
+            content: 'This is an warning message',
+            showClose: true,
+        });
+    };
+    const loading2 = () => {
+        message.loading({
+            content: 'This is an loading message',
+            showClose: true,
+        });
+    };
+
+    const action = () => {
+        message.error({
             content: (
                 <div>
-                    订单接口返回异常，您可尝试联系集团云值班同学解决，<a>查看集团云值班表</a>
+                    账户已欠费，请立即 <a>充值</a>
                 </div>
             ),
             showClose: true,
@@ -46,7 +80,6 @@ export const Demo = () => {
     const min = () => {
         message.success({
             content: '最小尺寸',
-            showClose: true,
         });
     };
 
@@ -55,10 +88,10 @@ export const Demo = () => {
         <BrandProvider brand="icloud">
             <Divider>常规全局提示</Divider>
             <p>常规</p>
-            <Button onClick={success}>常规</Button>
+            <Button onClick={general}>常规</Button>
             <p />
             <p>成功</p>
-            <Button onClick={success2}>success</Button>
+            <Button onClick={success}>success</Button>
             <p />
             <p>失败</p>
             <Button onClick={error}>error</Button>
@@ -78,16 +111,16 @@ export const Demo = () => {
             <Button onClick={success2}>success</Button>
             <p />
             <p>失败</p>
-            <Button onClick={error}>error</Button>
+            <Button onClick={error2}>error</Button>
             <p />
             <p>警告</p>
-            <Button onClick={warning}>warning</Button>
+            <Button onClick={warning2}>warning</Button>
             <p />
             <p>通知</p>
-            <Button onClick={info}>info</Button>
+            <Button onClick={info2}>info</Button>
             <p />
             <p>加载</p>
-            <Button onClick={loading}>loading</Button>
+            <Button onClick={loading2}>loading</Button>
 
             <Divider>带操作</Divider>
             <Button onClick={action}>操作</Button>
@@ -116,11 +149,11 @@ export const OldDemo = () => {
     };
 
     const success2 = () => {
-        message.success({content: 'This is a success message', showClose: true});
+        message.success({content: 'This is a success message', showClose: true, showCountDown: true});
     };
 
     const success3 = () => {
-        message.success({title: '创建成功', content: '后续您可在列表中操作'});
+        message.success({title: '创建成功', content: '后续您可在列表中操作', showClose: true, showCountDown: true});
     };
 
     const success4 = () => {
@@ -201,7 +234,7 @@ export const TestCase = () => {
     };
 
     const success3 = () => {
-        message.success({content: 'ok', showClose: true});
+        message.success({content: 'ok', showClose: true}, 200);
     };
 
     const success4 = () => {

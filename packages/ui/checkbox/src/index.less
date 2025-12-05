@@ -2,143 +2,290 @@
 @osui-checkbox-class-prefix: osui-checkbox;
 @ant-checkbox: ~'@{ant-prefix}-checkbox';
 
-// 全局
+// // 全局
+// .@{osui-checkbox-class-prefix},
+// .@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
+//     .@{ant-checkbox}-inner,
+//     .@{ant-checkbox}-checked::after {
+//         border-radius: var(--checkbox-border-radius);
+//         transition: none;
+//         animation: none;
+//         animation-fill-mode: none;
+//     }
+
+//     .@{ant-checkbox} + span {
+//         padding-right: var(--checkbox-padding-horizontal);
+//         padding-left: var(--checkbox-padding-horizontal);
+//     }
+// }
+
+// // 一般状态
+// .@{osui-checkbox-class-prefix},
+// .@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
+//     // 默认边框颜色
+//     .@{ant-checkbox}-inner {
+//         border-color: var(--checkbox-border-color);
+//     }
+//     // focus时box-shadow的效果
+//     .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
+//         box-shadow: var(--checkbox-checked-focus-box-shadow);
+//     }
+//     // hover
+//     &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-inner,
+//     .@{ant-checkbox}:hover .@{ant-checkbox}-inner,
+//     .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
+//         background-color: var(--checkbox-hover-bg);
+//         border-color: var(--checkbox-hover-border-color);
+//     }
+//     // active focus
+//     &.@{ant-checkbox}-wrapper:active .@{ant-checkbox}-inner,
+//     .@{ant-checkbox}:active .@{ant-checkbox}-inner,
+//     .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
+//         background-color: var(--checkbox-hover-bg);
+//         border-color: var(--checkbox-active-border-color);
+//     }
+
+//     // disabled
+//     .@{ant-checkbox}-disabled .@{ant-checkbox}-inner {
+//         background-color: var(--checkbox-disabled-bg);
+//         border-color: var(--checkbox-disabled-border-color) !important;
+
+//         &::after {
+//             border-color: var(--checkbox-checked-disabled-inner-color);
+//         }
+//     }
+
+//     &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-disabled .@{ant-checkbox}-inner,
+//     .@{ant-checkbox}-disabled:hover .@{ant-checkbox}-inner {
+//         background-color: var(--checkbox-disabled-bg);
+//     }
+// }
+
+// // 选中状态
+// .@{osui-checkbox-class-prefix},
+// .@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
+//     // hover
+//     &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-checked .@{ant-checkbox}-inner,
+//     .@{ant-checkbox}-checked:hover .@{ant-checkbox}-inner {
+//         background-color: var(--checkbox-checked-hover-bg);
+//         border-color: var(--checkbox-checked-hover-border-color);
+//     }
+
+//     &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-checked::after,
+//     .@{ant-checkbox}-checked .@{ant-checkbox}-inner {
+//         border-color: var(--checkbox-checked-border-color);
+//     }
+
+//     // focus时的效果
+//     .@{ant-checkbox}-checked .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
+//         background-color: var(--checkbox-checked-focus-bg);
+//         border-color: var(--checkbox-checked-border-color);
+//         box-shadow: var(--checkbox-checked-focus-box-shadow);
+//     }
+
+//     &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-checked.@{ant-checkbox}-disabled .@{ant-checkbox}-inner,
+//     .@{ant-checkbox}-disabled:hover.@{ant-checkbox}-checked .@{ant-checkbox}-inner,
+//     .@{ant-checkbox}-checked.@{ant-checkbox}-disabled .@{ant-checkbox}-inner {
+//         background-color: var(--checkbox-checked-disabled-bg);
+//         border-color: var(--checkbox-checked-disabled-border-color) !important;
+
+//         &::after {
+//             border-color: var(--checkbox-checked-disabled-inner-color);
+//         }
+//     }
+// }
+
+// // 半选状态
+// .@{osui-checkbox-class-prefix},
+// .@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
+//     .@{ant-checkbox}-indeterminate .@{ant-checkbox}-inner {
+//         background-color: var(--theme-component-bg);
+//         border-color: var(--theme-primary-color);
+//     }
+
+//     // hover
+//     &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-indeterminate .@{ant-checkbox}-inner,
+//     .@{ant-checkbox}-indeterminate:hover .@{ant-checkbox}-inner {
+//         background-color: var(--theme-component-bg);
+//         border-color: var(--checkbox-checked-hover-border-color);
+//     }
+
+//     // focus时的效果
+//     .@{ant-checkbox}-indeterminate .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
+//         background-color: var(--theme-component-bg);
+//         border-color: var(--theme-primary-color);
+//         box-shadow: var(--checkbox-checked-focus-box-shadow);
+//     }
+
+//     &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-indeterminate.@{ant-checkbox}-disabled .@{ant-checkbox}-inner,
+//     .@{ant-checkbox}-disabled:hover.@{ant-checkbox}-indeterminate .@{ant-checkbox}-inner,
+//     .@{ant-checkbox}-indeterminate.@{ant-checkbox}-disabled .@{ant-checkbox}-inner {
+//         background-color: var(--theme-component-bg);
+//         border-color: var(--checkbox-checked-disabled-border-color) !important;
+
+//         &::after {
+//             background-color: var(--checkbox-checked-disabled-border-color);
+//         }
+//     }
+// }
+
+// .@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
+//     margin-right: var(--checkbox-group-item-margin-right);
+// }
+
+// // 当其他组件内置了checkbox时，进行全局的覆盖
+// // Global
+// .@{ant-prefix}-checkbox-indeterminate .@{ant-prefix}-checkbox-inner {
+//     border-color: var(--theme-primary-color);
+// }
+
+// .@{ant-checkbox}-wrapper+.@{ant-checkbox}-wrapper {
+//     margin-inline-start: 8px;
+// }
+
+.@{osui-checkbox-class-prefix}-group {
+    row-gap: var(--space-s);
+    column-gap: var(--space-xl);
+}
+
 .@{osui-checkbox-class-prefix},
 .@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
-    .@{ant-checkbox}-inner,
-    .@{ant-checkbox}-checked::after {
-        border-radius: var(--checkbox-border-radius);
-        transition: none;
-        animation: none;
-        animation-fill-mode: none;
+    // 正常状态
+    .@{ant-checkbox}-inner {
+        border-color: var(--line-color-2);
+
+        &::after {
+            top: 45%;
+        }
+    }
+
+    .@{ant-checkbox}-indeterminate .@{ant-checkbox}-inner {
+        border-color: var(--line-color-2);
+
+        &::after {
+            background-color: var(--brand-color);
+            border-radius: 2px;
+            top: 50%;
+        }
     }
 
     .@{ant-checkbox} + span {
-        padding-right: var(--checkbox-padding-horizontal);
-        padding-left: var(--checkbox-padding-horizontal);
-    }
-}
-
-// 一般状态
-.@{osui-checkbox-class-prefix},
-.@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
-    // 默认边框颜色
-    .@{ant-checkbox}-inner {
-        border-color: var(--checkbox-border-color);
-    }
-    // focus时box-shadow的效果
-    .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
-        box-shadow: var(--checkbox-checked-focus-box-shadow);
-    }
-    // hover
-    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-inner,
-    .@{ant-checkbox}:hover .@{ant-checkbox}-inner,
-    .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
-        background-color: var(--checkbox-hover-bg);
-        border-color: var(--checkbox-hover-border-color);
-    }
-    // active focus
-    &.@{ant-checkbox}-wrapper:active .@{ant-checkbox}-inner,
-    .@{ant-checkbox}:active .@{ant-checkbox}-inner,
-    .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
-        background-color: var(--checkbox-hover-bg);
-        border-color: var(--checkbox-active-border-color);
+        padding-inline-end: 0;
     }
 
-    // disabled
-    .@{ant-checkbox}-disabled .@{ant-checkbox}-inner {
-        background-color: var(--checkbox-disabled-bg);
-        border-color: var(--checkbox-disabled-border-color) !important;
-
-        &::after {
-            border-color: var(--checkbox-checked-disabled-inner-color);
+    // 选中状态
+    .@{ant-checkbox}-checked:not(.@{ant-checkbox}-disabled) {
+        .@{ant-checkbox}-inner {
+            background: var(--brand-color);
+            border-color: var(--brand-color);
         }
     }
 
-    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-disabled .@{ant-checkbox}-inner,
-    .@{ant-checkbox}-disabled:hover .@{ant-checkbox}-inner {
-        background-color: var(--checkbox-disabled-bg);
+    &.@{ant-checkbox}-wrapper {
+        color: var(--text-color-primary);
+        font-size: var(--font-size-xs);
+        // 滑上hover
+        &:not(.@{ant-checkbox}-wrapper-disabled):hover {
+            .@{ant-checkbox}-inner {
+                border-color: var(--brand-color);
+            }
+
+            .@{ant-checkbox}-checked:not(.@{ant-checkbox}-disabled) {
+                .@{ant-checkbox}-inner {
+                    background-color: var(--brand-color-hover);
+                    border-color: var(--brand-color-hover);
+                }
+            }
+
+            .@{ant-checkbox}-indeterminate .@{ant-checkbox}-inner {
+                border-color: var(--brand-color) !important;
+            }
+        }
     }
-}
+    // 禁用状态
+    .@{ant-checkbox}-disabled {
+        .@{ant-checkbox}-inner {
+            background: var(--component-color-grayB-disable);
 
-// 选中状态
-.@{osui-checkbox-class-prefix},
-.@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
-    // hover
-    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-checked .@{ant-checkbox}-inner,
-    .@{ant-checkbox}-checked:hover .@{ant-checkbox}-inner {
-        background-color: var(--checkbox-checked-hover-bg);
-        border-color: var(--checkbox-checked-hover-border-color);
-    }
+            &::after {
+                border-color: var(--icon-color-disabled);
+            }
+        }
 
-    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-checked::after,
-    .@{ant-checkbox}-checked .@{ant-checkbox}-inner {
-        border-color: var(--checkbox-checked-border-color);
-    }
+        &.@{ant-checkbox}-indeterminate {
+            .@{ant-checkbox}-inner {
+                &::after {
+                    background: var(--icon-color-disabled);
+                }
+            }
+        }
 
-    // focus时的效果
-    .@{ant-checkbox}-checked .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
-        background-color: var(--checkbox-checked-focus-bg);
-        border-color: var(--checkbox-checked-border-color);
-        box-shadow: var(--checkbox-checked-focus-box-shadow);
-    }
-
-    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-checked.@{ant-checkbox}-disabled .@{ant-checkbox}-inner,
-    .@{ant-checkbox}-disabled:hover.@{ant-checkbox}-checked .@{ant-checkbox}-inner,
-    .@{ant-checkbox}-checked.@{ant-checkbox}-disabled .@{ant-checkbox}-inner {
-        background-color: var(--checkbox-checked-disabled-bg);
-        border-color: var(--checkbox-checked-disabled-border-color) !important;
-
-        &::after {
-            border-color: var(--checkbox-checked-disabled-inner-color);
+        & + span {
+            color: var(--text-color-disabled);
         }
     }
 }
+// 卡片多选
+.@{osui-checkbox-class-prefix}.@{osui-checkbox-class-prefix}-card {
+    &.@{ant-checkbox}-wrapper {
+        border: 1px solid var(--line-color-2);
+        border-radius: var(--radius-s);
+        padding: 12px;
+        align-items: flex-start;
 
-// 半选状态
-.@{osui-checkbox-class-prefix},
-.@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
-    .@{ant-checkbox}-indeterminate .@{ant-checkbox}-inner {
-        background-color: var(--theme-component-bg);
-        border-color: var(--theme-primary-color);
-    }
+        .@{osui-checkbox-class-prefix}-card-title {
+            line-height: var(--font-height-s);
+            font-size: var(--font-size-s);
+            font-weight: 500;
+            color: var(--text-color-primary);
+        }
 
-    // hover
-    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-indeterminate .@{ant-checkbox}-inner,
-    .@{ant-checkbox}-indeterminate:hover .@{ant-checkbox}-inner {
-        background-color: var(--theme-component-bg);
-        border-color: var(--checkbox-checked-hover-border-color);
-    }
+        .@{osui-checkbox-class-prefix}-card-description {
+            line-height: var(--font-height-2xs);
+            font-size: var(--font-size-2xs);
+            color: var(--text-color-tertiary);
+        }
 
-    // focus时的效果
-    .@{ant-checkbox}-indeterminate .@{ant-checkbox}-input:focus + .@{ant-checkbox}-inner {
-        background-color: var(--theme-component-bg);
-        border-color: var(--theme-primary-color);
-        box-shadow: var(--checkbox-checked-focus-box-shadow);
-    }
+        .@{ant-checkbox}-label {
+            display: inline-flex;
+            flex-direction: column;
+            gap: 4px;
+        }
 
-    &.@{ant-checkbox}-wrapper:hover .@{ant-checkbox}-indeterminate.@{ant-checkbox}-disabled .@{ant-checkbox}-inner,
-    .@{ant-checkbox}-disabled:hover.@{ant-checkbox}-indeterminate .@{ant-checkbox}-inner,
-    .@{ant-checkbox}-indeterminate.@{ant-checkbox}-disabled .@{ant-checkbox}-inner {
-        background-color: var(--theme-component-bg);
-        border-color: var(--checkbox-checked-disabled-border-color) !important;
+        // 滑上hover
+        &:not(.@{ant-checkbox}-wrapper-disabled):hover {
+            border-color: var(--brand-color-hover);
 
-        &::after {
-            background-color: var(--checkbox-checked-disabled-border-color);
+            .@{ant-checkbox}-inner {
+                border-color: var(--line-color-2);
+            }
+        }
+
+        &:has(.@{ant-checkbox}-checked) {
+            background: var(--brand-color-light-hover);
+            border-color: var(--brand-color-hover);
+
+            .@{osui-checkbox-class-prefix}-card-title {
+                color: var(--brand-color-6);
+            }
+
+            .@{osui-checkbox-class-prefix}-card-description {
+                color: var(--text-color-secondary);
+            }
+        }
+
+        &.@{ant-checkbox}-wrapper-disabled {
+            border-color: var(--line-color-2);
+            background: var(--component-color-grayB-disable);
+
+            .@{osui-checkbox-class-prefix}-card-title,
+            .@{osui-checkbox-class-prefix}-card-description {
+                color: var(--text-color-disabled);
+            }
         }
     }
-}
 
-.@{osui-checkbox-class-prefix}-group .@{ant-prefix}-checkbox-group-item {
-    margin-right: var(--checkbox-group-item-margin-right);
-}
-
-// 当其他组件内置了checkbox时，进行全局的覆盖
-// Global
-.@{ant-prefix}-checkbox-indeterminate .@{ant-prefix}-checkbox-inner {
-    border-color: var(--theme-primary-color);
-}
-
-.@{ant-checkbox}-wrapper+.@{ant-checkbox}-wrapper {
-    margin-inline-start: 8px;
+    .@{ant-checkbox} {
+        align-self: flex-start;
+    }
 }

@@ -1,3 +1,4 @@
+import React from 'react';
 import {version} from 'antd';
 import Divider from '@osui/divider';
 import AutoComplete from '@osui/auto-complete';
@@ -26,14 +27,14 @@ const Blockquote = ({children}: {children: React.ReactNode}) => (
 );
 
 export default {
-    title: '数据录入/输入框 Input',
+    title: '数据录入/[new_dev]输入框 Input',
 };
 
 export const Demo = () => {
     const {Option} = Select;
     return (
         <BrandProvider>
-            <h2>组件类型</h2>
+            <Divider>组件类型</Divider>
             <h3>基础输入框</h3>
             <p>无字数限制</p>
             <Input
@@ -157,29 +158,25 @@ export const Demo = () => {
                     <Select
                         className="input-group-addon"
                         defaultValue="http://"
-                        options={[
-                            {value: 'http://', label: 'http://'},
-                            {value: 'https://', label: 'https://'},
-                        ]}
-                    />
+                    >
+                        <Option value="http://" label="http://" />
+                        <Option value="https://" label="https://" />
+                    </Select>
                 }
                 addonAfter={
                     <Select
                         className="input-group-addon"
                         defaultValue=".com"
-                        options={
-                            [
-                                {value: '.com', label: '.com'},
-                                {value: '.cn', label: '.cn'},
-                            ]
-                        }
-                    />
+                    >
+                        <Option value=".com" label=".com" />
+                        <Option value=".cn" label=".cn" />
+                    </Select>
                 }
                 defaultValue="mysite"
             />
             <br />
             <br />
-            <h2>组件状态</h2>
+            <Divider>组件状态</Divider>
             <h3>报错状态</h3>
             <Form
                 name="demo"
@@ -265,11 +262,8 @@ export const Search = () => {
             <p>图标在前</p>
             <Input
                 allowClear
-                prefix={<IconSearchOutlined />}
-                style={{
-                    width: 240,
-                    color: 'var(--icon-color-disabled)',
-                }}
+                prefix={<IconSearchOutlined style={{color: 'var(--icon-color-disabled)'}} />}
+                style={{width: 240}}
                 placeholder="请搜索"
             />
             <br />

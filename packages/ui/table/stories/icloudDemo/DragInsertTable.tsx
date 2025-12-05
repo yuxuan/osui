@@ -1,5 +1,5 @@
 import React, {useContext, useMemo, useState} from 'react';
-import type {DragEndEvent, DragStartEvent} from '@dnd-kit/core';
+import type {DragEndEvent} from '@dnd-kit/core';
 import {DndContext} from '@dnd-kit/core';
 import {restrictToVerticalAxis} from '@dnd-kit/modifiers';
 import {
@@ -12,8 +12,8 @@ import {CSS} from '@dnd-kit/utilities';
 import {arrayMove} from '@dnd-kit/sortable';
 import type {TableProps, ColumnsType} from 'antd/es/table';
 import {OutlinedDrag, OutlinedPlusNew} from 'acud-icon';
-import Table from '../../src';
 import styled from '@emotion/styled';
+import Table from '../../src';
 
 const AddItem = styled.div`
     width: 100%;
@@ -118,7 +118,7 @@ const DragInsertRow: React.FC<any> = props => {
                     >
                         <div className="table-insert-icon-box">
                             <OutlinedPlusNew
-                                onClick={(e) => {
+                                onClick={e => {
                                     e.stopPropagation();
                                     const index = value.findIndex(
                                         (item: any) => item[rowKey] === record
@@ -168,7 +168,7 @@ export function DragInsertTable<T extends {[key: string]: any}>(
     }, [dataSource]);
 
     /** 拖拽开始处理 */
-    const onDragStart = (_event: DragStartEvent) => {
+    const onDragStart = () => {
         setIsAnyDragging(true);
         setHoverKey(null); // 拖拽开始时清除悬停状态
     };

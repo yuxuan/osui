@@ -7,11 +7,22 @@ import Radio from '@osui/radio';
 import Form from '@osui/form';
 import Divider from '@osui/divider';
 import Space from '@osui/space';
+import Badge from '@osui/badge';
 import {IconDownOutlined} from '@osui/icons';
 import BrandProvider from '@osui/brand-provider';
 import {TableProps} from 'antd/es/table';
 import {version} from 'antd';
 import Table from '@osui/table';
+import DragTableDemo from './icloudDemo/DragTableDemo';
+import FixedTableDemo from './icloudDemo/FixedTableDemo';
+import ResizableTable from './icloudDemo/ResizableTableDemo';
+import ExpandableTableDemo from './icloudDemo/ExpandableTableDemo';
+import ChildTableDemo from './icloudDemo/ChildTableDemo';
+import HeadTableDemo from './icloudDemo/HeadTableDemo';
+import EditTableDemo from './icloudDemo/EditTableDemo';
+import EllipsisTableDemo from './icloudDemo/EllipsisTableDemo';
+import DragInsertTableDemo from './icloudDemo/DragInsertTableDemo';
+import BigSizeTableDemo from './icloudDemo/BigSizeTableDemo';
 
 const Blockquote = ({children}) => (
     <blockquote style={{
@@ -28,80 +39,118 @@ const Blockquote = ({children}) => (
 
 
 export default {
-    title: '数据展示/表格 Table',
+    title: '数据展示/[new_dev]表格 Table',
 };
 
 export const Demo = () => {
-const columns = [
+    const columns = [
         {
-            title: 'Name',
+            title: '项目名称',
             dataIndex: 'name',
             key: 'name',
         },
         {
-            title: 'Age',
-            dataIndex: 'age',
-            key: 'age',
+            title: '项目名称',
+            dataIndex: 'status',
+            key: 'status',
+            filters: [
+                {
+                  text: '成功',
+                  value: 'success',
+                },
+                {
+                  text: '失败',
+                  value: 'error',
+                },
+            ],
+            render: () => <Badge status="success" text="成功" />,
         },
         {
-            title: 'Address',
-            dataIndex: 'address',
-            key: 'address',
+            title: '项目名称',
+            dataIndex: 'desc',
+            key: 'desc',
+        },
+        {
+            title: '项目名称',
+            dataIndex: 'status',
+            key: 'status',
+            render: () => <Switch />,
+        },
+        {
+            title: '项目名称',
+            dataIndex: 'link',
+            key: 'link',
+            render: () => (
+                <a className="ant-dropdown-link">
+                    项目链接地址点击可跳转
+                </a>
+            ),
+        },
+        {
+            title: '项目名称',
+            key: 'action',
+            render: () => (
+                <Space size="small" align="center">
+                    <a>操作</a>
+                    <a>操作</a>
+                    <a>操作</a>
+                </Space>
+            ),
         },
     ];
 
-    const data = [
-        {
-            key: '1',
-            name: 'John Brown',
-            age: 32,
-            address: 'New York No. 1 Lake Park',
-        },
-        {
-            key: '2',
-            name: 'Jim Green',
-            age: 42,
-            address: 'London No. 1 Lake Park',
-        },
-        {
-            key: '3',
-            name: 'Joe Black',
-            age: 32,
-            address: 'Sidney No. 1 Lake Park',
-        },
-    ];
+    const data = Array.from({length: 46}).map((_, i) => ({
+        key: i,
+        name: '这里一段关于项目的描述',
+        desc: 'ID 名称点击图标可复制',
+    }));
+
     return (
         <BrandProvider brand="icloud">
             <Divider>默认表格</Divider>
-            <Table columns={columns} dataSource={data} />
+            <Table
+                columns={columns}
+                dataSource={data}
+                pagination={false}
+            />
             <Divider>斑马纹表格</Divider>
-            <Table columns={columns} dataSource={data} />
+            <Table
+                columns={columns}
+                dataSource={data}
+                rowClassName={(_, index) =>
+                    (index % 2 === 0 ? 'table-row-light' : 'table-row-dark')
+                }
+            />
             <Divider>可选择表格</Divider>
-            <Table columns={columns} dataSource={data} />
+            <Table
+                columns={columns}
+                dataSource={data}
+                rowSelection={{
+                    type: 'checkbox',
+                }}
+            />
             <Divider>可拖拽表格</Divider>
-            <Table columns={columns} dataSource={data} />
+            <DragTableDemo />
             <Divider>固定头尾表格</Divider>
-            <Table columns={columns} dataSource={data} />
+            <FixedTableDemo />
             <Divider>可调节宽度表格</Divider>
-            <Table columns={columns} dataSource={data} />
+            <ResizableTable />
             <Divider>展开收起表格</Divider>
-            <Table columns={columns} dataSource={data} />
+            <ExpandableTableDemo />
             <Divider>嵌套子表格</Divider>
-            <Table columns={columns} dataSource={data} />
-            <Divider>可调节宽度表格</Divider>
-            <Table columns={columns} dataSource={data} />
+            <ChildTableDemo />
             <Divider>多级表头表格</Divider>
-            <Table columns={columns} dataSource={data} />
+            <HeadTableDemo />
             <Divider>大尺寸表格</Divider>
-            <Table columns={columns} dataSource={data} />
+            <BigSizeTableDemo />
             <Divider>内嵌组件表格</Divider>
-            <Table columns={columns} dataSource={data} />
-            <Divider>数据文本截断与操作收起展开</Divider>
-            <Table columns={columns} dataSource={data} />
-            <Divider>全局加载与局部加载</Divider>
-            <Table columns={columns} dataSource={data} />
-            <Divider>列表可添加</Divider>
-            <Table columns={columns} dataSource={data} />
+            <EditTableDemo />
+            <Divider>数据文本截断</Divider>
+            <EllipsisTableDemo />
+            <Divider>全局加载</Divider>
+            <Table columns={columns} dataSource={data} loading />
+            <Divider>列表可添加 & 操作可隐藏</Divider>
+            <DragInsertTableDemo />
         </BrandProvider>
     );
 };
