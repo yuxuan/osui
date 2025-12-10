@@ -6,15 +6,33 @@ import './index.less';
 
 const clsPrefix = 'osui-timeline';
 
-export type TimelineProps = AntdTimelineProps;
+export type TimelineProps = AntdTimelineProps & {
+    variant?: 'filled' | 'outlined';
+    orientation?: 'vertical' | 'horizontal';
+};
 export type TimelineItemProps = AntdTimelineItemProps;
 
 export interface TimelineType extends React.FC<TimelineProps> {
     Item: React.FC<TimelineItemProps>;
 }
 
-const Timeline: TimelineType = props => {
-    return <AntdTimeline className={classNames(clsPrefix, props.className)} {...props} />;
+const Timeline: TimelineType = ({
+    className,
+    variant = 'filled',
+    orientation = 'vertical',
+    ...restProps
+}) => {
+    return (
+        <AntdTimeline
+            className={classNames(
+                clsPrefix,
+                {[`${clsPrefix}-timeline-filled`]: variant === 'filled'},
+                {[`${clsPrefix}-timeline-horizontal`]: orientation === 'horizontal'},
+                className
+            )}
+            {...restProps}
+        />
+    );
 };
 
 Timeline.Item = AntdTimeline.Item;
