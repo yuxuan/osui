@@ -246,5 +246,13 @@ export const components: ThemeConfig['components'] = {
         headerBg: acudSemanticTokens['--component-color-white'],
         marginSM: 4,
     },
+    Slider: {
+        railBg: acudSemanticTokens['--component-color-border'],
+        trackBg: acudSemanticTokens['--icon-brand-color'],
+        trackBgDisabled: acudSemanticTokens['--icon-brand-color'],
+    },
+    Progress: {
+        remainingColor: acudSemanticTokens['--component-color-grayB2'],
+    },
 };
 

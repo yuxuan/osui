@@ -3,38 +3,50 @@
 .@{osui-slider-class-prefix} {
     &.@{ant-prefix}-slider {
         .@{ant-prefix}-slider-handle::after {
-            box-shadow: 0 0 0 1px var(--theme-primary-color);
+            box-shadow: 0 0 0 1px var(--icon-brand-color);
+        }
 
-            &:focus,
-            &:hover {
-                width: 12px;
-                height: 12px;
+        .@{ant-prefix}-slider-handle:focus,
+        .@{ant-prefix}-slider-handle:hover {
+            &::after {
+                border: 1px solid var(--brand-color-active);
+                outline: 2px solid var(--brand-color-light-active);
             }
         }
 
         .@{ant-prefix}-slider-handle-dragging {
             &.@{ant-prefix}-slider-handle::after {
-                box-shadow: 0 0 0 2px var(--theme-primary-color);
+                box-shadow: 0 0 0 2px var(--icon-brand-color);
             }
         }
         .@{ant-prefix}-slider-rail {
-            background: var(--theme-border-color-base);
+            border-radius: 20px;
         }
 
         .@{ant-prefix}-slider-dot {
             width: 4px;
             height: 4px;
-            border: 2px solid #fff;
-            inset-block-start: 0;
-        }
+            border: 2px solid var(--component-color-border);
+            box-sizing: content-box;
 
+            &-active {
+                border-color: var(--icon-brand-color);
+            }
+        }
         &.@{ant-prefix}-slider-disabled {
+            filter: opacity(.4);
+
             .@{ant-prefix}-slider-handle:hover::after {
                 width: 10px;
                 height: 10px;
             }
-            .@{ant-prefix}-slider-handle::after {
-                box-shadow: 0 0 0 1px var(--gray-color-5);
+
+            .@{ant-prefix}-slider-handle:focus,
+            .@{ant-prefix}-slider-handle:hover {
+                &::after {
+                    border: none;
+                    outline: none;
+                }
             }
         }
     }

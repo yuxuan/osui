@@ -1,33 +1,111 @@
 @osui-timeline-class-prefix: osui-timeline;
 
 .@{osui-timeline-class-prefix} {
+    --timeline-item-head-size: 6px;
+    --timeline-item-tail-offset: calc(var(--timeline-item-head-size) + 8px);
 
     &.@{ant-prefix}-timeline {
+        &.@{osui-timeline-class-prefix}-timeline-filled {
+            .@{ant-prefix}-timeline-item-head {
+                width: var(--timeline-item-head-size);
+                height: var(--timeline-item-head-size);
+                margin-left: 2px;
+                // background-color: currentColor;
+            }
 
-        .@{ant-prefix}-timeline-item-head {
-            border: 2px solid transparent;
-            border-color: var(--theme-primary-color);
+            .@{ant-prefix}-timeline-item-head.@{ant-prefix}-timeline-item-head-custom {
+                width: auto;
+                height: auto;
+                margin-left: 0;
+            }
+
+            .@{ant-prefix}-timeline-item-tail {
+                height: calc(100% - 24px);
+                inset-block-start: var(--timeline-item-tail-offset);
+                inset-block-end: var(--timeline-item-tail-offset);
+                inset-inline-start: 4px;
+                border-inline-start: 1px solid var(--border-color-level2);
+            }
+            &.@{ant-prefix}-timeline-right .@{ant-prefix}-timeline-item-tail {
+                inset-inline-start: calc(100% - 2px);
+            }
+            &.@{ant-prefix}-timeline-alternate .@{ant-prefix}-timeline-item-tail {
+                inset-inline-start: calc(50% + 4px);
+            }
         }
 
-        .@{ant-prefix}-timeline-item-tail {
-            inset-inline-start: 4px;
-            border-inline-start: 1px solid var(--theme-border-color-base);
+        &.@{osui-timeline-class-prefix}-timeline-horizontal {
+            display: flex;
+
+            .@{ant-prefix}-timeline-item {
+                position: relative;
+                padding-bottom: 0;
+                flex: 1 1 0;
+                min-height: 0;
+            }
+
+            .@{ant-prefix}-timeline-item-head {
+                position: relative;
+                inset-inline-start: 0;
+                margin-inline-start: 0;
+                transform: none;
+            }
+
+            .@{ant-prefix}-timeline-item-tail {
+                width: calc(100% - 24px);
+                height: 0;
+                inset-block-start: 2px; // keep the 1px line vertically centered
+                inset-inline-start: var(--timeline-item-tail-offset);
+                inset-inline-end: var(--timeline-item-tail-offset);
+                border-block-start: 1px solid var(--border-color-level2);
+            }
+            .@{ant-prefix}-timeline-item:last-child {
+                .@{ant-prefix}-timeline-item-tail {
+                    display: none;
+                }
+            }
+
+            .@{ant-prefix}-timeline-item-content {
+                margin-left: 0;
+                margin-top: 16px;
+                text-align: start;
+            }
+
+            .@{ant-prefix}-timeline-item-right {
+                .@{ant-prefix}-timeline-item-tail {
+                    inset-inline-start: var(--timeline-item-tail-offset);
+                }
+                .@{ant-prefix}-timeline-item-content {
+                    inset-block-start: -100%;
+                    margin-bottom: 8px;
+                }
+            }
+            &.@{ant-prefix}-timeline-alternate {
+                .@{ant-prefix}-timeline-item-tail {
+                    inset-inline-start: var(--timeline-item-tail-offset);
+                }
+                .@{ant-prefix}-timeline-item-left .@{ant-prefix}-timeline-item-content {
+                    inset-inline-start: 0;
+                }
+            }
+        }
+
+        &.ant-timeline-label {
+            .@{ant-prefix}-timeline-item-tail {
+                inset-inline-start: calc(50% + 4px);
+            }
         }
     }
 
+    .@{ant-prefix}-timeline-item-right .@{ant-prefix}-timeline-item-label {
+        margin-left: 8px;
+    }
+
     .@{ant-prefix}-timeline-item-content {
-        margin-left: var(--timeline-item-content-margin-left);
+        margin-left: 24px;
         // 里面是link时，颜色默认为文字色
         > a {
-            color: var(--theme-text-color);
-
-            &:hover {
-                color: var(--link-hover-color);
-            }
-
-            &:active {
-                color: var(--link-active-color);
-            }
+            color: var(--text-brand-color);
         }
     }
 }
