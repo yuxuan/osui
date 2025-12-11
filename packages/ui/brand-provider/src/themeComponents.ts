@@ -251,5 +251,8 @@ export const components: ThemeConfig['components'] = {
         trackBg: acudSemanticTokens['--icon-brand-color'],
         trackBgDisabled: acudSemanticTokens['--icon-brand-color'],
     },
+    Progress: {
+        remainingColor: acudSemanticTokens['--component-color-grayB2'],
+    },
 };
 

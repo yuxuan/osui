@@ -2,18 +2,27 @@
 
 .@{osui-progress-class-prefix} {
     &.@{ant-prefix}-progress-circle {
+        width: 156px;
+        height: 156px;
         .@{ant-prefix}-progress-text {
             font-size: var(--progress-circle-text-font-size) !important;
+        }
+
+        .@{ant-prefix}-progress-circle-path {
+            stroke-linecap: round;
+            stroke: url(#defaultGradient) !important;
         }
     }
 
     &.@{ant-prefix}-progress-line {
         font-size: 14px;
+        display: flex;
     }
 
     .@{ant-prefix}-progress-text {
         color: var(--progress-text-color);
         font-size: var(--progress-text-font-size);
+        font-weight: 500;
     }
 
     &.@{ant-prefix}-progress-status-exception .@{ant-prefix}-progress-text {
@@ -34,6 +43,31 @@
             border-radius: var(--progress-radius);
             animation: osui-progress-active 2.4s cubic-bezier(.23, 1, .32, 1) infinite;
         }
+    }
+
+    &.@{ant-prefix}-progress .@{ant-prefix}-progress-bg {
+        background: linear-gradient(to right, #b082ff 0%, #8b64ff 50%, #4346ff 100%);
+    }
+    &.@{ant-prefix}-progress-status-success .@{ant-prefix}-progress-bg {
+        background: linear-gradient(to right, #06c485 0%, #22c68a 50%, #00d181 100%);
+    }
+    &.@{ant-prefix}-progress-status-exception .@{ant-prefix}-progress-bg {
+        background: linear-gradient(to right, #ff6c64 0%, #fa423c 50%, #fa423c 100%);
+    }
+    &.@{ant-prefix}-progress-status-success .ant-progress-circle-path {
+        stroke: url(#successGradient) !important;
+    }
+    &.@{ant-prefix}-progress-status-exception .ant-progress-circle-path {
+        stroke: url(#exceptionGradient) !important;
+    }
+
+    &-circle-text {
+        font-size: 32px;
+        color: var(--text-color-primary);
+    }
+
+    &-circle-unit {
+        font-size: 13px;
     }
 }
 
