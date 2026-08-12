@@ -1,3 +1,5 @@
+
+
 # osui
 
 ## 介绍
@@ -251,7 +253,7 @@ cd 项目root目录
     **这个在antd4.10.0修复了。**
 
 2. 构建项目时，报错`Variable @ant-prefix is undefined`。
-    是因为项目webpack的less-loader没有配置，modifyVars: {'ant-prefix': 'antd'}
+    是因为项目webpack的less-loader没有配置，`modifyVars: {'ant-prefix': 'ant'}`
 
 3. 构建项目时，报错某些less变量undefined。
     检查是否`style-resources-loader`有添加`antd-vars-patch.less`。检查`style-resources-loader`的rules test是否命中了antd和osui。或者使用`modifyVars`是否正确
